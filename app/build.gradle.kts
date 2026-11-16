@@ -116,6 +116,7 @@ dependencies {
     // Coil
     implementation(libs.coil.compose)
     implementation(libs.coil.okhttp)
+    implementation(libs.okio)
     implementation(libs.kotlinx.serialization)
     implementation(libs.androidx.datastore)
 
