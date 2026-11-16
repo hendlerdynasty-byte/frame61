@@ -22,7 +22,10 @@ data class SearchUiState(
 
 @HiltViewModel
 class SearchViewModel @Inject constructor(
-    private val sources: List<MetadataSource>
+    // Kotlin's declaration-site variance makes this List<? extends MetadataSource>
+    // in bytecode; the @Provides binding is List<MetadataSource>. Dagger sees
+    // different types without @JvmSuppressWildcards (documented in the error).
+    @JvmSuppressWildcards private val sources: List<MetadataSource>
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(SearchUiState())
