@@ -1,0 +1,171 @@
+package de.hendler.frame61.player
+
+import android.content.Context
+import androidx.media3.common.C
+import androidx.media3.common.MediaItem
+import androidx.media3.common.PlaybackException
+import androidx.media3.common.Player
+import androidx.media3.common.TrackSelectionOverride
+import androidx.media3.common.Tracks
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+
+/** Everything the UI needs to render the player, in one immutable snapshot. */
+data class PlayerUiState(
+    val isPlaying: Boolean = false,
+    val positionMs: Long = 0L,
+    val durationMs: Long = 0L,
+    val bufferedPercent: Int = 0,
+    val isReady: Boolean = false,
+    val error: String? = null,
+    val audioTracks: List<TrackLabel> = emptyList(),
+    val textTracks: List<TrackLabel> = emptyList(),
+    val selectedAudio: String? = null,
+    val selectedText: String? = null,
+    val speed: Float = 1.0f
+) {
+    val fraction: Float get() = if (durationMs > 0) positionMs.toFloat() / durationMs else 0f
+    val isNearEnd: Boolean get() = durationMs > 0 && fraction >= 0.9f
+}
+
+data class TrackLabel(val id: String, val label: String, val language: String?)
+
+/**
+ * Media3 wrapper.
+ *
+ * Every state change is published as [PlayerUiState]. [publish] is the single
+ * place that reports playback progress, so the watchdog has one source of truth.
+ */
+class Media3Frame61Player(
+    context: Context
+) {
+
+    private val trackSelector = DefaultTrackSelector(context)
+    private val player: ExoPlayer = ExoPlayer.Builder(context)
+        .setTrackSelector(trackSelector)
+        .build()
+
+    private val _state = MutableStateFlow(PlayerUiState())
+    val state: StateFlow<PlayerUiState> = _state.asStateFlow()
+
+    /**
+     * The underlying Media3 player, for views that need the instance itself
+     * (`PlayerView.player`). Wrapped by this class otherwise — no caller should
+     * bypass it for control, only for rendering.
+     */
+    val exoPlayer: ExoPlayer get() = player
+
+    /** Called on every published frame tick — the watchdog consumes this. */
+    var onFrame: ((positionMs: Long, durationMs: Long) -> Unit)? = null
+
+    private val listener = object : Player.Listener {
+        override fun onPlaybackStateChanged(playbackState: Int) = publish()
+        override fun onIsPlayingChanged(isPlaying: Boolean) = publish()
+        override fun onTracksChanged(tracks: Tracks) = publish()
+        override fun onRenderedFirstFrame() = publish()
+        override fun onPlayerError(error: PlaybackException) {
+            _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
+        }
+    }
+
+    fun attach() {
+        player.addListener(listener)
+        publish()
+    }
+
+    fun open(url: String, mimeType: String = "application/x-mpegURL", startAtMs: Long = 0L) {
+        val item = MediaItem.Builder().setUri(url).setMimeType(mimeType).build()
+        player.setMediaItem(item, startAtMs.coerceAtLeast(0L))
+        player.prepare()
+        player.play()
+        _state.value = _state.value.copy(error = null, positionMs = startAtMs, durationMs = 0L)
+    }
+
+    fun play() = player.play()
+
+    fun pause() {
+        player.pause()
+        publish()
+    }
+
+    fun stop() {
+        player.stop()
+        _state.value = _state.value.copy(isPlaying = false, positionMs = 0L)
+    }
+
+    fun release() {
+        player.removeListener(listener)
+        player.release()
+    }
+
+    fun seekTo(positionMs: Long) {
+        player.seekTo(positionMs.coerceAtLeast(0L))
+        _state.value = _state.value.copy(positionMs = positionMs.coerceAtLeast(0L))
+    }
+
+    fun setSpeed(speed: Float) {
+        val clamped = speed.coerceIn(0.5f, 2.0f)
+        player.setPlaybackSpeed(clamped)
+        _state.value = _state.value.copy(speed = clamped)
+    }
+
+    fun selectAudio(trackId: String?) = selectTrack(C.TRACK_TYPE_AUDIO, trackId) { copy(selectedAudio = trackId) }
+    fun selectText(trackId: String?) = selectTrack(C.TRACK_TYPE_TEXT, trackId) { copy(selectedText = trackId) }
+
+    private fun selectTrack(
+        type: Int,
+        trackId: String?,
+        update: PlayerUiState.() -> PlayerUiState
+    ) {
+        val params = trackSelector.buildUponParameters()
+        val group = player.currentTracks.groups.firstOrNull { it.type == type }
+
+        if (trackId == null || group == null) {
+            params.clearOverridesOfType(type)
+        } else {
+            val index = (0 until group.length).firstOrNull { group.getTrackFormat(it).id == trackId }
+            if (index == null) {
+                params.clearOverridesOfType(type)
+            } else {
+                params.setOverrideForType(TrackSelectionOverride(group.mediaTrackGroup, listOf(index)))
+            }
+        }
+
+        runCatching { trackSelector.setParameters(params.build()) }
+        _state.value = _state.value.update()
+    }
+
+    /** Reads position/duration/buffer, publishes state and emits a frame tick. */
+    fun publish() {
+        val position = player.currentPosition.coerceAtLeast(0L)
+        val duration = if (player.duration == C.TIME_UNSET) 0L else player.duration.coerceAtLeast(0L)
+        val buffered = player.bufferedPosition
+        val percent = if (duration > 0) ((buffered * 100L) / duration).toInt().coerceIn(0, 100) else 0
+
+        _state.value = _state.value.copy(
+            isPlaying = player.isPlaying,
+            positionMs = position,
+            durationMs = duration,
+            bufferedPercent = percent,
+            isReady = player.playbackState == Player.STATE_READY,
+            audioTracks = labels(C.TRACK_TYPE_AUDIO),
+            textTracks = labels(C.TRACK_TYPE_TEXT)
+        )
+        onFrame?.invoke(position, duration)
+    }
+
+    private fun labels(type: Int): List<TrackLabel> =
+        player.currentTracks.groups.filter { it.type == type }.flatMap { group ->
+            (0 until group.length).map { index ->
+                val format = group.getTrackFormat(index)
+                TrackLabel(
+                    id = format.id ?: "track-$index",
+                    label = format.label ?: format.language ?: "Spur ${index + 1}",
+                    language = format.language
+                )
+            }
+        }
+}

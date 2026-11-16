@@ -1,0 +1,34 @@
+{
+  "id": "streamtape",
+  "name": "Streamtape",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "streamtape.com",
+    "streamtape.to"
+  ],
+  "result": "final",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "document\\.getElementById\\('robotlink'\\)\\.innerHTML = '([^']+)'",
+      "group": 1,
+      "saveAs": "raw"
+    },
+    {
+      "action": "sleep",
+      "ms": 250
+    },
+    {
+      "action": "get",
+      "url": "{raw}",
+      "saveAs": "final"
+    }
+  ]
+}

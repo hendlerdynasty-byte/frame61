@@ -1,0 +1,33 @@
+{
+  "id": "voe",
+  "name": "Voe",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "voe.sx",
+    "voe-unblock.com",
+    "voeunblock.com"
+  ],
+  "captcha": "webview",
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "<source[^>]+src=\"([^\"]+)\"",
+      "group": 1,
+      "saveAs": "src"
+    },
+    {
+      "action": "json",
+      "input": "src",
+      "path": "file",
+      "saveAs": "file"
+    }
+  ]
+}

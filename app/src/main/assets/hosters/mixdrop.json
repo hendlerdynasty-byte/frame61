@@ -1,0 +1,26 @@
+{
+  "id": "mixdrop",
+  "name": "Mixdrop",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "mixdrop.co",
+    "mixdrop.to",
+    "mixdrop.ch"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "MDCore\\.wurl=\"([^\"]+)\"",
+      "group": 1,
+      "saveAs": "file"
+    }
+  ]
+}

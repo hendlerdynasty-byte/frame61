@@ -1,0 +1,39 @@
+{
+  "id": "archive-org",
+  "name": "Archive.org",
+  "version": 2,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": true,
+  "kind": "api",
+  "baseUrl": "https://archive.org",
+  "verified": true,
+  "search": {
+    "endpoint": "/advancedsearch.php",
+    "method": "GET",
+    "queryParam": "q",
+    "pageLimit": 20,
+    "headers": {
+      "Accept": "application/json"
+    },
+    "jsonPath": "response.docs",
+    "idPath": "identifier",
+    "titlePath": "title",
+    "yearPath": "year",
+    "typePath": "mediatype"
+  },
+  "detail": {
+    "endpoint": "/metadata/{titleId}",
+    "method": "GET",
+    "jsonPath": "metadata"
+  },
+  "streams": {
+    "endpoint": "/metadata/{titleId}",
+    "method": "GET",
+    "jsonPath": "files",
+    "streamPath": "files",
+    "streamNamePath": "name",
+    "streamQualityPath": "format",
+    "streamUrlTemplate": "https://archive.org/download/{id}/{name}"
+  }
+}

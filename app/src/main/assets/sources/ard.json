@@ -1,0 +1,40 @@
+{
+  "id": "ard",
+  "name": "ARD",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": true,
+  "baseUrl": "https://www.ard.de",
+  "search": {
+    "endpoint": "/suche/{query}",
+    "queryParam": null,
+    "resultSelector": ".sendung-item",
+    "titleSelector": "h3 a",
+    "yearSelector": ".datum",
+    "typeSelector": ".typ",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/sendung/{titleId}",
+    "episodeSelector": ".folge-list .folge",
+    "seasonSelector": ".staffel-tab",
+    "episodeTitleSelector": "a",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": null
+  },
+  "streams": {
+    "selector": ".player-source a",
+    "urlAttr": "href",
+    "qualitySelector": ".qualitaet",
+    "langSelector": ".sprache",
+    "hosterSelector": ".hoster",
+    "healthAttr": "data-health",
+    "minHealth": 0.7,
+    "qualityMap": { "HD": "1080", "FHD": "1080", "SD": "720" },
+    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "referrers": [
+      { "domain": "ard.de", "accept": true }
+    ]
+  }
+}

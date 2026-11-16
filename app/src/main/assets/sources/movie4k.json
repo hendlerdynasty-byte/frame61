@@ -1,0 +1,40 @@
+{
+  "id": "movie4k",
+  "name": "Movie4k",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "B",
+  "legalFree": false,
+  "baseUrl": "https://movie4k.to",
+  "search": {
+    "endpoint": "/search/{query}",
+    "queryParam": null,
+    "resultSelector": ".movie-item",
+    "titleSelector": "h3 a",
+    "yearSelector": ".jahr",
+    "typeSelector": null,
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/movie/{titleId}",
+    "episodeSelector": ".episode-list .episode",
+    "seasonSelector": ".season-tab",
+    "episodeTitleSelector": "a",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": null
+  },
+  "streams": {
+    "selector": ".stream-item a",
+    "urlAttr": "href",
+    "qualitySelector": ".quality",
+    "langSelector": ".language",
+    "hosterSelector": ".hoster",
+    "healthAttr": "data-health",
+    "minHealth": 0.5,
+    "qualityMap": { "4K": "2160", "HD": "1080", "FHD": "1080", "SD": "720" },
+    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "referrers": [
+      { "domain": "movie4k.to", "accept": true }
+    ]
+  }
+}

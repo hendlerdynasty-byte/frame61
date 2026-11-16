@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Frame61" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/frame61_window_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/frame61_canvas</item>
+        <item name="android:navigationBarColor">@color/frame61_canvas</item>
+        <item name="colorAccent">@color/frame61_accent</item>
+    </style>
+</resources>

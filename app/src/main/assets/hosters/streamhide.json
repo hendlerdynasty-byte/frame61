@@ -1,0 +1,25 @@
+{
+  "id": "streamhide",
+  "name": "Streamhide",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "streamhide.to",
+    "streamhide.com"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "<source[^>]+src=\"([^\"]+)\"",
+      "group": 1,
+      "saveAs": "file"
+    }
+  ]
+}

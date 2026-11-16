@@ -1,0 +1,40 @@
+{
+  "id": "kinokiste",
+  "name": "Kinokiste",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://kinokiste.cloud",
+  "search": {
+    "endpoint": "/suche/{query}",
+    "queryParam": null,
+    "resultSelector": ".movie-item",
+    "titleSelector": "h3 a",
+    "yearSelector": ".jahr",
+    "typeSelector": null,
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/film/{titleId}",
+    "episodeSelector": ".episode-list .episode",
+    "seasonSelector": ".season-tab",
+    "episodeTitleSelector": "a",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": null
+  },
+  "streams": {
+    "selector": ".stream-item a",
+    "urlAttr": "href",
+    "qualitySelector": ".quality",
+    "langSelector": ".language",
+    "hosterSelector": ".hoster",
+    "healthAttr": "data-health",
+    "minHealth": 0.6,
+    "qualityMap": { "HD": "1080", "FHD": "1080", "SD": "720" },
+    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "referrers": [
+      { "domain": "kinokiste.cloud", "accept": true }
+    ]
+  }
+}

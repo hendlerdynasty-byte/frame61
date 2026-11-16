@@ -1,0 +1,25 @@
+{
+  "id": "luluvdo",
+  "name": "Luluvdo",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "luluvdo.com",
+    "luluvdo.net"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "src:\\s*\"([^\"]+\\.m3u8[^\"]*)\"",
+      "group": 1,
+      "saveAs": "file"
+    }
+  ]
+}

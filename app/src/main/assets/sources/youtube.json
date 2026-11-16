@@ -1,0 +1,40 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": true,
+  "baseUrl": "https://www.youtube.com",
+  "search": {
+    "endpoint": "/results?q={query}",
+    "queryParam": "q",
+    "resultSelector": ".yt-search-item",
+    "titleSelector": "h3 a",
+    "yearSelector": ".year",
+    "typeSelector": null,
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/watch?v={titleId}",
+    "episodeSelector": ".playlist-item",
+    "seasonSelector": null,
+    "episodeTitleSelector": "a",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": "data-videoId"
+  },
+  "streams": {
+    "selector": ".video-source a",
+    "urlAttr": "href",
+    "qualitySelector": ".quality",
+    "langSelector": ".language",
+    "hosterSelector": ".hoster",
+    "healthAttr": "data-health",
+    "minHealth": 0.7,
+    "qualityMap": { "4K": "2160", "HD": "1080", "FHD": "1080", "SD": "720" },
+    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "referrers": [
+      { "domain": "youtube.com", "accept": true }
+    ]
+  }
+}

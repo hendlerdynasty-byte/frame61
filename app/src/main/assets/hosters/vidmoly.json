@@ -1,0 +1,25 @@
+{
+  "id": "vidmoly",
+  "name": "Vidmoly",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "vidmoly.to",
+    "vidmoly.me"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "file:\\s*\"([^\"]+)\"",
+      "group": 1,
+      "saveAs": "file"
+    }
+  ]
+}

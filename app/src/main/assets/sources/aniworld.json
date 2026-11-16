@@ -1,0 +1,40 @@
+{
+  "id": "aniworld",
+  "name": "aniworld.to",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://aniworld.to",
+  "search": {
+    "endpoint": "/suche/{query}",
+    "queryParam": null,
+    "resultSelector": ".anime-item",
+    "titleSelector": "h3 a",
+    "yearSelector": ".jahr",
+    "typeSelector": ".type",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/anime/{titleId}",
+    "episodeSelector": ".episode-list .episode",
+    "seasonSelector": ".season-tab",
+    "episodeTitleSelector": "a",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": "data-episode"
+  },
+  "streams": {
+    "selector": ".stream-item a",
+    "urlAttr": "href",
+    "qualitySelector": ".quality",
+    "langSelector": ".language",
+    "hosterSelector": ".hoster",
+    "healthAttr": "data-health",
+    "minHealth": 0.6,
+    "qualityMap": { "HD": "1080", "FHD": "1080", "SD": "720" },
+    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "referrers": [
+      { "domain": "aniworld.to", "accept": true }
+    ]
+  }
+}

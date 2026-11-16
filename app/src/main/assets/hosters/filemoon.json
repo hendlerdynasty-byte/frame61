@@ -1,0 +1,36 @@
+{
+  "id": "filemoon",
+  "name": "Filemoon",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "filemoon.to",
+    "filemoon.sx"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "<iframe[^>]+src=\"([^\"]+)\"",
+      "group": 1,
+      "saveAs": "iframe"
+    },
+    {
+      "action": "get",
+      "url": "{iframe}",
+      "saveAs": "player"
+    },
+    {
+      "action": "json",
+      "input": "player",
+      "path": "sources.0.file",
+      "saveAs": "file"
+    }
+  ]
+}
