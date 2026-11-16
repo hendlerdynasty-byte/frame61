@@ -125,6 +125,8 @@ sonst reparieren. Details: `docs/STATE.md`, `docs/AUDIT.md`.
 
 ## Dokumentation
 
+- `docs/OWNER-ÜBERSICHT.md` — **ein Dokument für alles**: Ziel/Wunsch, Ist-Stand,
+  was nicht umgesetzt ist und warum, DoD-Checkliste, offene Punkte
 - `docs/STATE.md` — was läuft, was offen ist, mit Belegen
 - `docs/SOURCE_PACK.md` — Vertrag für Source Packs (Pflichtfelder, Dialekte)
 - `docs/SCRAPER.md` — Scraper-Engine und Resolver
