@@ -9,31 +9,65 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavController
+import dagger.hilt.android.lifecycle.HiltViewModel
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.ui.player.PlayerRoute
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.stateIn
+import javax.inject.Inject
+
+/** Aktive Profil-ID für den Player — Resume ist ein Profil-Namespace. */
+@HiltViewModel
+class ProfileSessionViewModel @Inject constructor(
+    private val prefs: ProfileDataStore
+) : ViewModel() {
+
+    val currentProfileId: StateFlow<Long> = prefs.currentProfileId
+        .stateIn(viewModelScope, SharingStarted.Eagerly, 0L)
+
+    /** One-shot read: the profile at playback start, no later profile switch. */
+    suspend fun profileAtStart(): Long = prefs.currentProfileId.first()
+}
 
 /**
  * Resolves the catalog item for [titleId] and hands it to the player.
  *
  * A title that cannot be resolved produces a visible message rather than a crash.
+ * Resume is stored per profile: the player waits until the active profile id is
+ * known, then starts — before this, playback was hard-wired to profile 0.
  */
 @Composable
 fun PlayerRouteFor(titleId: String, navController: NavController) {
     val catalog: CatalogRepository = hiltViewModel<DetailViewModel>().catalog
+    val session: ProfileSessionViewModel = hiltViewModel()
 
     val item by produceState<CatalogItem?>(initialValue = null, titleId, catalog) {
         value = catalog.byId(titleId)
     }
 
+    val profileId by produceState<Long?>(initialValue = null, titleId) {
+        value = session.profileAtStart()
+    }
+
     val resolved = item
-    if (resolved != null) {
-        PlayerRoute(item = resolved, profileId = 0L, onExit = { navController.popBackStack() })
+    val resolvedProfile = profileId
+    if (resolved != null && resolvedProfile != null) {
+        PlayerRoute(
+            item = resolved,
+            profileId = resolvedProfile,
+            onExit = { navController.popBackStack() }
+        )
     } else {
         Surface {
             Box(modifier = Modifier.fillMaxSize()) {
-                Text(text = "Titel nicht gefunden: $titleId")
+                Text(text = if (resolved == null) "Titel nicht gefunden: $titleId" else "Lade …")
             }
         }
     }

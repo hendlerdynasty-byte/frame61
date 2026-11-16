@@ -43,7 +43,7 @@ import de.hendler.frame61.player.PlayerUiState
  * alternative; the opt-in uses the AndroidX marker because the lint check
  * recognises it.
  */
-@androidx.annotation.OptIn(markerClass = UnstableApi::class)
+@androidx.annotation.OptIn(UnstableApi::class)
 @Composable
 fun PlayerScreen(
     state: PlayerUiState,
@@ -260,7 +260,7 @@ internal fun formatTime(ms: Long): String {
 }
 
 /** The only place that builds a [PlayerView]; carries the unstable-API opt-in. */
-@androidx.annotation.OptIn(markerClass = UnstableApi::class)
+@androidx.annotation.OptIn(UnstableApi::class)
 private fun createPlayerView(context: android.content.Context): PlayerView =
     PlayerView(context).apply {
         useController = false

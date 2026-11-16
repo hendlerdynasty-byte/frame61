@@ -17,6 +17,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.contentDescription
@@ -46,7 +47,7 @@ fun SearchScreen(
             modifier = Modifier.fillMaxWidth().tvFocusable(id = "search-input", onClick = { })
         )
 
-        Row(horizontalArrangement = Arrangements.spacedBy(12.dp)) {
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(
                 text = "Quellen: ${state.sources.joinToString(", ")}",
                 style = MaterialTheme.typography.labelSmall,

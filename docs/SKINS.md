@@ -1,109 +1,64 @@
 # SKINS.md — Frame61 Skin-System
 
+Stand: 2026-11-16. Beschreibt den tatsächlichen Code (`SkinManager`,
+`SkinJsonParser`, `DefaultAssetSkinManager`, `FileSkinManager`).
+
 ## Übersicht
 
-Frame61 verwendet ein token-basiertes Skin-System. Jeder Skin wird als JSON-Datei in `assets/skins/<id>.json` definiert und zur Laufzeit geladen.
+Jeder Skin ist eine JSON-Datei `app/src/main/assets/skins/<id>.json` und wird
+zur Laufzeit geparst. Kein Screen kennt einen Skin beim Namen; Screens lesen
+Tokens über `LocalSkin` (`core/design`).
 
-### SkinManager
-- Interface: `SkinManager` (core/design)
-- Implementation: `SkinManagerImpl` mit `SkinDefinitions` (11 vordefinierte Skins)
-- `Frame61Skin` Data-Klasse mit allen Tokens
-- Layout wird pro Profil gespeichert (DataStore)
+### Klassen
+
+- `SkinManager` (Interface): `getSkin(id)`, `getAllSkins()`,
+  `getAvailableSkins()`, `reload()`.
+- `DefaultAssetSkinManager` — liest `assets/skins/*.json`, parst alle Dateien,
+  fällt bei einer kaputten Datei pro Skin auf `DefaultFrame61Skin` zurück.
+- `FileSkinManager` — dasselbe vom Dateisystem (Tests, Source-Lab-Vorschau).
+- `SkinJsonParser` — `parse(content)` → `Frame61Skin`; `displayName(id)`,
+  `parseMotionLevel(value)`, `color(hex)`.
+- `SkinViewModel` (app) — hält den aktiven Skin; Auswahl landet in DataStore,
+  `Frame61Theme(skin = …)` rendert die App.
 
 ### Skin-Tokens
 
 | Token | Typ | Beschreibung |
 |-------|-----|-------------|
-| canvas | String | Hintergrundfarbe (HEX) |
-| surfaces | String | Oberflächenfarbe (HEX) |
-| accents | String | Akzentfarbe (HEX) |
-| text | String | Textfarbe (HEX) |
+| canvas | String (HEX) | Hintergrundfarbe |
+| surfaces | String (HEX) | Oberflächenfarbe |
+| accents | String (HEX) | Akzentfarbe |
+| text | String (HEX) | Textfarbe |
 | radius | Int | Border-Radius (dp) |
-| cardAspect | Double | Seitenverhältnis der Karten |
+| cardAspect | Float | Seitenverhältnis der Karten |
 | rowHeight | Int | Reihen-Höhe (dp) |
 | gutter | Int | Abstand zwischen Reihen (dp) |
 | navModel | String | Navigations-Modell (bottom-bar, left-bar, pill) |
 | focusTreatment | String | Fokus-Behandlung (scale, lift, glow, ring) |
-| motionLevel | String | Animations-Stufe (low, medium, high) |
-| typeScale | Double | Typo-Skalierung |
+| motionLevel | String | Animations-Stufe (none, low, medium, high) |
+| typeScale | Float | Typo-Skalierung |
 | billboardHeight | Int | Billboard-Höhe (dp) |
 | detailLayout | String | Detail-Layout (vertical, horizontal) |
 | playerChrome | String | Player-Chrome (dark, light, minimal) |
 
-## Vordefinierte Skins
+Unbekannte Tokens werden ignoriert (`ignoreUnknownKeys = true`); ein
+fehlendes Token behält seinen Default.
 
-### 1. Netflix
-- canvas: #141414, accents: #e50914
-- navModel: bottom-bar, focusTreatment: scale
-- motionLevel: medium, typeScale: 1.0
-- rowHeight: 180, cardAspect: 0.5625
+## Vordefinierte Skins (assets/skins/)
 
-### 2. Disney+
-- canvas: #05060b, accents: #0063e5
-- navModel: left-bar, focusTreatment: lift
-- motionLevel: high, typeScale: 1.05
-- rowHeight: 200, cardAspect: 0.75
+`netflix`, `disneyplus`, `appletv`, `primevideo`, `hbomax`, `paramount`,
+`plex`, `crunchyroll`, `kodimodus`, `frame61`, `custom` — plus
+`frame61-indigo` (interne Variante). `custom` ist die leere Vorlage für
+eigene Anpassungen.
 
-### 3. Apple TV
-- canvas: #000000, accents: #ffffff
-- navModel: pill, focusTreatment: glow
-- motionLevel: low, typeScale: 0.95
-- rowHeight: 170, cardAspect: 0.6
+Werte bitte **den JSON-Dateien** entnehmen, nicht dieser Tabelle — die Dateien
+sind die Quelle der Wahrheit (`SkinJsonParser` parst sie 1:1).
 
-### 4. Prime Video
-- canvas: #0f1218, accents: #00a8e1
-- navModel: bottom-bar, focusTreatment: scale
-- motionLevel: medium, typeScale: 1.0
-- rowHeight: 190, cardAspect: 0.5625
-
-### 5. HBO Max
-- canvas: #150524, accents: #9945ff
-- navModel: left-bar, focusTreatment: lift
-- motionLevel: high, typeScale: 1.02
-- rowHeight: 185, cardAspect: 0.7
-
-### 6. Paramount+
-- canvas: #06080d, accents: #0064ff
-- navModel: pill, focusTreatment: glow
-- motionLevel: medium, typeScale: 0.98
-- rowHeight: 175, cardAspect: 0.65
-
-### 7. Plex
-- canvas: #131721, accents: #e5a00d
-- navModel: left-bar, focusTreatment: scale
-- motionLevel: low, typeScale: 1.0
-- rowHeight: 195, cardAspect: 0.7
-
-### 8. Crunchyroll
-- canvas: #120a3b, accents: #fa861b
-- navModel: left-bar, focusTreatment: lift
-- motionLevel: high, typeScale: 1.05
-- rowHeight: 210, cardAspect: 0.75
-
-### 9. Kodi Modus
-- canvas: #000000, accents: #ff6600
-- navModel: pill, focusTreatment: ring
-- motionLevel: low, typeScale: 0.9
-- rowHeight: 160, cardAspect: 0.5
-
-### 10. Frame61 (Standard)
-- canvas: #0d0e12, accents: #5b6aff
-- navModel: bottom-bar, focusTreatment: scale
-- motionLevel: medium, typeScale: 1.0
-- rowHeight: 180, cardAspect: 0.6
-
-### 11. Custom
-- canvas: #000000, accents: #888888
-- navModel: bottom-bar, focusTreatment: scale
-- motionLevel: medium, typeScale: 1.0
-- rowHeight: 180, cardAspect: 0.5625
-- Leer-Skin für benutzerdefinierte Anpassung
-
-## Reihen-Layout
+## Reihen-Layout (Layout-Builder)
 
 | Reihen | Beschreibung |
 |--------|-------------|
-| Billboard | Haupt-Banner mit hero image |
+| Billboard | Haupt-Banner (immer erste Zeile) |
 | ContinueWatching | Fortsetzungs-Reihe |
 | BecauseYouWatched | Empfehlungen |
 | Top10 | Top-10-Rangliste |
@@ -116,26 +71,28 @@ Frame61 verwendet ein token-basiertes Skin-System. Jeder Skin wird als JSON-Date
 | SourceRail | Nach Quelle sortiert |
 | Marathon | Marathon-Wahl |
 
+Der Layout-Builder (`LayoutBuilderScreen`) wählt die Reihen; gespeichert wird
+die Auswahl **pro Profil** als `layoutId` (kommagetrennte `RailKind.key`-Liste,
+siehe `LayoutPrefs`). Home liest das aktive Profil.
+
 ## Nutzung
 
 ```kotlin
-val skinManager = SkinManager.getInstance()
-val skin = skinManager.getSkin("netflix")
-// Oder benutzerdefiniert:
-val customSkin = skinManager.getSkin("custom")
+// Theme folgt dem in DataStore gespeicherten Skin:
+val skinViewModel: SkinViewModel = hiltViewModel()
+Frame61Theme(skin = skin) { … }
+
+// Skin direkt laden (Tests, Vorschau):
+val skin = DefaultAssetSkinManager(context).getSkin("netflix")
 ```
 
-Profil speichert layoutId:
+Ein Profil hält `skinId` und `layoutId`:
+
 ```kotlin
-val profile = Profile(
-    id = "user1",
-    name = "Max",
-    pinHash = "abc123",
-    skinId = "netflix",
-    layoutId = "default"
-)
+Profile(id = 1, name = "Max", pinHash = "", allowedSources = "",
+        skinId = "netflix", layoutId = "default")
 ```
 
 ---
 
-*SKINS.md erstellt am 2026-11-14.*
+*SKINS.md rewritten 2026-11-16 (actual class names, profile layout persistence).*

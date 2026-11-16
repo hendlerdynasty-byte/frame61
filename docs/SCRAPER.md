@@ -1,125 +1,122 @@
 # SCRAPER.md — Frame61 Scraper-Engine
 
+Stand: 2026-11-16. Diese Datei beschreibt den **tatsächlichen** Code; ältere
+Fassungen nannten Klassen, die es nicht gibt (`Resolver.kt`,
+`MirrorResolver`, `SkinManagerImpl`).
+
 ## Architektur
 
 ```
-UI ──► Resolver ──► ScraperEngine ──► JsoupClient ──► HTTP
-                     │
-                     └──► MirrorResolver ──► MirrorResult
+UI ──► PackInterpreter ──► PackHttpClient ──► HTTP
+        │  (Regeln aus assets/sources/*.json)
+        └──► HosterResolver ──► MirrorSelector ──► PlaybackWatchdog
 ```
 
-### ScraperEngine
-- `scraper/engine/src/main/java/de/hendler/frame61/scraper/engine/Engine.kt`
-- Scrape → parse → score Pipeline
-- Parallel scraping pro Quelle
-- HealthScoring: `healthScore * 0.5 + langScore * 0.25 + qualityScore * 0.25`
+Die Engine ist datengetrieben: Sie führt **JSON-Packs** aus, sie kennt keine
+Seite im Code. Ein Pack beschreibt, *wie* gesucht, detailliert und aufgelöst
+wird — nie, ob eine Quelle legal ist.
 
-### MirrorResolver
-- `scraper/resolver/src/main/java/de/hendler/frame61/resolver/Resolver.kt`
-- Sortiert nach: healthScore (desc) → Sprache (de first) → Qualität (desc) → legal-free priority
-- FailoverController mit 8s Watchdog
-- DefaultSourceConfigRepository lädt 26 Quellen aus Memory (persistiert via assets/)
+## Module und Klassen
 
-### SourceConfig
-- `scraper/engine/src/main/java/de/hendler/frame61/scraper/engine/SourceConfig.kt`
-- SourceConfig mit SearchConfig, DetailConfig, StreamsConfig
-- SourceRegistry: 26 Quellen (8 Tier-A + 6 Tier-B + 11 Tier-C)
-- SourceTier: A, B, C
+### :scraper:engine
 
-### JsoupClient
-- `core/net/src/main/java/de/hendler/frame61/net/JsoupClient.kt`
-- fetch(query): Suche nach Titel
-- fetchWithJsoup(url): HTML-Parsing
-- parseStreamLinks(html): Extrahiert Stream-URLs
-- parseVideoElements(html): Extrahiert Video-Elemente
+- `PackLoader` — lädt `assets/sources/*.json` **und** das interne
+  `sources/`-Verzeichnis (`loadAllPacks()`); validiert jedes Pack einzeln.
+  `FilePackLoader` ist die dateibasierte Variante für Fixtures/Tests.
+  `PackLoaderValidator` validiert ohne Android-Context (in Tests wiederverwendet).
+- `PackInterpreter` — führt `search(pack, query, page)`, `detail(...)`,
+  `episodes(...)`, `streams(pack, id, episodeId)` aus. `kind=api` liest
+  JSON per Dot-Path, `kind=html` per Jsoup-CSS mit `@attr`/`@text`.
+  Platzhalter: `{{q}} {{page}} {{id}} {{url}}`.
+- `PackHttpClient` — OkHttp-Front-end für Pack-Regeln (`get`/`post`),
+  rendert Platzhalter, baut Query-Parameter.
+- `FixtureRunner` — spielt `search.body.*` / `streams.body.*` gegen die
+  erwarteten JSONs ein, **ohne Netz**. Fehlendes Fixture = skipped, nicht rot.
+- `SourceConfig.kt` — `SourceRegistry` mit den Tier-Listen (A/B/C) als
+  **Klassifikation**, keine Steuerung. `SourceConfig` ist ein älteres,
+  separates Schema (urlTemplate/selector) und wird von der Pack-Engine nicht
+  mehr ausgeführt.
+- `Engine.kt` — `ScraperEngine`, `HealthScoring`, `ScrapingJob` (ältere
+  Pipeline, von den Packs nicht mehr genutzt).
 
-### Network
-- `core/net/src/main/java/de/hendler/frame61/net/Network.kt`
-- HttpClientFactory: OkHttp mit 8s Timeouts
-- ChainlinkLoggingInterceptor: Logging für Failover-Chain
-- HealthChecker: checkSource + scoreMirror
+### :scraper:resolver
 
-## Quellen
+- `HosterResolver` — Domain-Match gegen `assets/hosters/*.json`, führt
+  `steps[]` aus (`get|regex|json|post|sleep`). Ergebnis:
+  `Resolved | CaptchaRequired | Unknown | Failed`.
+- `MirrorSelector` — `MirrorCandidate` sortieren: healthScore → Sprache
+  (`de` zuerst) → Qualität → legal-free gewinnt Gleichstand.
+- `PlaybackWatchdog` — 8 s ohne Frame → `isStalled()`; `reportFrame()`
+  hält Position und Zeitstempel.
+- `OkHttpBodyFetcher` — `BodyFetcher`-Implementierung für den Resolver.
 
-### Tier A (8 Quellen)
-| ID | Domain | legalFree |
-|----|--------|-----------|
-| streamkiste | streamkiste.sx | false |
-| filmpalast | filmpalast.sx | false |
-| cine | cine.to | false |
-| s-to | s.to | false |
-| aniworld | aniworld.to | false |
-| kinokiste | kinokiste.cloud | false |
-| megakino | megakino.de | false |
-| dokujunkies | dokujunkies.org | false |
+### :core:net
 
-### Tier B (6 Quellen)
-| ID | Domain | legalFree |
-|----|--------|-----------|
-| movie4k | movie4k.to | false |
-| hdfilme | hdfilme.to | false |
-| kinox | kinox.to | false |
-| filmfans | filmfans.org | false |
-| bs-to | bs.to | false |
-| anime-loads | anime-loads.org | false |
+- `HttpClientFactory` — OkHttp mit 8-s-Timeouts (12 s für WebView).
+- `JsoupClient` — `fetch`, `fetchWithJsoup`, `parseStreamLinks`,
+  `parseVideoElements` (ältere Helfer, von den Packs nicht mehr genutzt).
+- `HealthChecker` — `checkSource(url)`, `scoreMirror(mirror)`.
 
-### Tier C Legal-Free (11 Quellen)
-| ID | Domain | legalFree |
-|----|--------|-----------|
-| ard | ard.de | true |
-| zdf | zdf.de | true |
-| arte | arte.tv | true |
-| 3sat | 3sat.de | true |
-| kika | kika.de | true |
-| pluto-tv | pluto.tv | true |
-| netzkino | netzkino.de | true |
-| rakuten-free | rakuten.tv | true |
-| plex-free | plex.tv | true |
-| youtube | youtube.com | true |
-| archive-org | archive.org | true |
+## Quellen und Wahrheitsstatus
 
-## Resolver (9)
-| Resolver | Domain | Captcha |
-|----------|--------|---------|
-| voe | voe.sx | WebView |
-| vidoza | vidoza.net | — |
-| streamtape | streamtape.com | — |
-| filemoon | filemoon.to | — |
-| vidmoly | vidmoly.to | — |
-| luluvdo | luluvdo.com | — |
-| mixdrop | mixdrop.co | — |
-| streamhide | streamhide.to | — |
-| loadx | loadx.ws | — |
+**Verbindliche Regel:** Grauzonen-Indexseiten (streamkiste, s.to, cine.to,
+filmpalast, aniworld, megakino, kinokiste, dokujunkies, movie4k, hdfilme,
+kinox, bs.to, filmfans, anime-loads) sind **Attrappen**. Ihre Packs enthalten
+synthetische Platzhalter-Selektoren, keine recherchierten echten Selektoren.
+Sie sind `verified: false` (Default) und damit **UNVERIFIED**. Es wird nichts
+recherchiert und nichts automatiert.
+
+Eine Quelle ist erst GRÜN, wenn ihr Fixture-Test grün ist. Ohne Fixture ist
+sie UNVERIFIED, egal wie plausibel die Selektoren aussehen.
+
+### Tier A — Grauzone (Attrappen, UNVERIFIED)
+
+`streamkiste`, `filmpalast`, `cine`, `s-to`, `aniworld`, `kinokiste`,
+`megakino`, `dokujunkies`
+
+### Tier B — Grauzone (Attrappen, UNVERIFIED)
+
+`movie4k`, `hdfilme`, `kinox`, `filmfans`, `bs-to`, `anime-loads`
+
+### Tier C — legal-frei (Fixtures vorhanden, Live-Nachweis offen)
+
+`ard`, `zdf`, `arte`, `3sat`, `kika`, `pluto-tv`, `netzkino`, `rakuten-free`,
+`plex-free`, `youtube`, `archive-org`
+
+Fixtures liegen in `scraper/engine/src/test/resources/fixtures/<id>/`
+(`meta.json`, `search.body.*`, `search.expected.json`, `streams.body.*`,
+`streams.expected.json`). Sie sind **Strukturmodelle**, kein Live-Nachweis:
+Die APIs liefern ohne Auth 404/401 oder ändern ihre Form.
+
+### Hoster (9)
+
+`voe`, `vidoza`, `streamtape`, `filemoon`, `vidmoly`, `luluvdo`, `mixdrop`,
+`streamhide`, `loadx` — `assets/hosters/*.json`, `verified: false`,
+Live-Nachweis NOT_RUN.
 
 ## Health-Scoring
 
-```kotlin
-fun scoreMirror(source: Source, health: Double, lang: String, quality: String): Double {
-    val healthScore = health
-    val langScore = if (lang == "de") 1.0 else 0.7
-    val qualityScore = when (quality) {
-        "2160" -> 1.0
-        "1080" -> 0.85
-        "720" -> 0.7
-        else -> 0.5
-    }
-    return healthScore * 0.5 + langScore * 0.25 + qualityScore * 0.25
-}
-```
+`SourceRegistry` führt Packs mit `healthScore`: **+2** bei Erfolg (max. 100),
+**−10** bei Fehler, **−30** bei Timeout. Unter 20 fällt das Pack aus der
+Rotation. `HealthScoring` in `Engine.kt` ist die ältere Mirror-Formel
+(`health*0.5 + lang*0.25 + quality*0.25`).
 
 ## Failover
 
-1. MirrorResolver sortiert Mirrors
-2. FailoverController startet 8s Watchdog pro Mirror
-3. Bei Timeout: nächster Mirror in Chain
-4. Failover ohne UI-Flackern (asynchron)
-5. Voe-Captcha über WebView (nicht WebView-Intent)
+1. `MirrorSelector` sortiert Mirrors (healthScore, Sprache, Qualität,
+   legal-free).
+2. `PlayerViewModel` füttert den `PlaybackWatchdog` pro Frame.
+3. 8 s ohne Frame → `rotateMirror()` mit Positionsübernahme, ohne UI-Flackern.
+4. `CaptchaRequired` → sichtbarer WebView-Frame (`CaptchaWebViewFrame`),
+   kein Hard-Fail.
 
 ## Assets
 
-- `assets/sources/<id>.json` — 26 Source-Konfigurationen
-- Struktur: id, version, minEngine, tier, legalFree, search{}, detail{}, streams{}
+- `app/src/main/assets/sources/<id>.json` — 25 Source-Packs
+- `app/src/main/assets/hosters/<id>.json` — 9 Hoster-Packs
+- `app/src/main/assets/catalog/catalog.json` — mitgelieferter Katalog
+- `scraper/engine/src/test/resources/fixtures/<id>/` — Fixtures
 
 ---
 
-*SCRAPER.md erstellt am 2026-11-14.*
+*SCRAPER.md rewritten 2026-11-16 (code-named classes, legal status explicit).*
