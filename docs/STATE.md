@@ -1,10 +1,11 @@
 # STATE.md — Frame61 Status
 
-## Stand: 2026-11-16
+## Stand: 2026-11-16 (Abend)
 
-Kurzfassung: Fundament, Skins, Branding, TV-Home, Detail, Player und Watchdog
-stehen. Gate grün mit **50 Tests**. Am Gerät nur P3 vollständig belegt — P4 ist
-durch den gesperrten A52 blockiert.
+Kurzfassung: P5 ist umgesetzt und der **volle Gate grün** — 81 Tests, 0 Fehler,
+Lint 0 Errors, signierter Debug-APK mit Hash. Am Gerät ist P3 belegt; P4/P5
+(Wiedergabe, Resume, Watchdog, Episoden, Skins, Layout) sind durch den
+gesperrten A52 **BLOCKED**. Die Grauzone bleibt Attrappen/UNVERIFIED.
 
 ---
 
@@ -12,32 +13,39 @@ durch den gesperrten A52 blockiert.
 
 | Schritt | Inhalt | Beleg |
 |---------|--------|-------|
-| M0 | 11 Module, Room (6 Entities, v2), Hilt, Theme, TV-Fokus, Manifest | Gate grün |
-| M1 | PackLoader, PackInterpreter (html + api), Fixture-Runner, Source Lab | 5 Tests |
-| M2 | 9 legal-freie Quellen mit Fixture, Katalog mit 46 echten Titeln | 6 + 6 Tests |
-| M3 | HosterResolver, Mirror-Failover, 8-s-Watchdog, 9 Hoster-Packs | 20 Tests |
-| P0 | `:oscardp` entfernt, tote Reflection-Dateien gelöscht, Fokus repariert | 6 Tests |
-| P1 | Skins werden aus JSON gelesen und **vom Theme benutzt** | 5 Tests |
-| P2 | Brand-Assets (Icon, Banner, Logo, Farben) eingebunden | am Gerät belegt |
-| P3 | TV-Home mit Billboard + Rails aus dem Katalog | A52 PASS, Bilder |
-| P4 | Detail, Player, Resume, Autoplay-Countdown, Watchdog | 8 Tests, Gerät BLOCKED |
+| M0 | 10 Module, Room (6 Entities, **Version 1**, exportSchema), Hilt, Theme, TV-Fokus, Manifest | Gate grün, `Frame61Database` v1 |
+| M1 | PackLoader (Assets + internes `sources/`), PackInterpreter (html+api), Fixture-Runner, Source Lab mit Import/Export | `PackLoader.loadAllPacks`, `PackFixtureTest` 5/5 |
+| M2 | 25 Source-Packs (davon 14 Grauzone = Attrappen, `verified:false`), 9 Fixture-Serien, Katalog 46 Titel | `assets/sources/*.json`, `fixtures/` |
+| M3 | HosterResolver (9 Hoster-Packs), MirrorSelector, 8-s-Watchdog | `HosterResolverTest` 7/7, `PlaybackWatchdogTest` 5/5 |
+| P0 | `:oscardp` entfernt, tote Reflection-Dateien gelöscht, Fokus repariert | `HomeFocusTargetTest` 6/6 |
+| P1 | Skins aus JSON, vom Theme benutzt | `SkinJsonParserTest` 5/5, 12 Skin-Dateien |
+| P2 | Brand-Assets (Icon, Banner, Logo, Farben) | am A52 belegt (P3-Lauf) |
+| P3 | TV-Home mit Billboard + Regalen | A52 PASS (Bilder, 88 158 Farben, Marken-Canvas 20,7 %) |
+| P4 | Detail, Player, Resume, Autoplay-Countdown, Watchdog | `PlaybackLogicTest` 8/8; Gerät BLOCKED |
+| P5 | NavBar (6 Ziele), Suche, Skins, Profile/PIN, Player-Spuren, Layout-Builder, Episoden (TVmaze), Source-Lab-Import/Export, Updater, Coil-Cache | Gate grün; Gerät BLOCKED |
 
-## Build-Gate
+## Build-Gate (voll)
 
 | Befehl | Status |
 |--------|--------|
 | `:app:assembleDebug` | ✅ |
-| `:app:lint` | ✅ |
-| Unit-Tests (7 Module) | ✅ **50 Tests, 0 Fehler, 0 übersprungen** |
+| `:app:lint` | ✅ **0 Errors, 124 Warnings** |
+| `testDebugUnitTest` (alle Module) | ✅ **81 Tests, 0 Fehler, 0 übersprungen** |
 
-Letzter Lauf: contabo-Build `frame61-p4`, `exit_code: 0`, BUILD SUCCESSFUL.
+- **Job:** `frame61-gate3` · `exit_code: 0` · BUILD SUCCESSFUL in 7m 37s
+- **Quellstand:** `4e83c41d39358a9d0c37b3530fa7651745fac577` (sauberer HEAD,
+  isoliertes Snapshot-Repo `frame61/.git`, kein Monorepo-Commit)
+- **Bauweg:** `python3 ~/hendler-device-ops/remote_build.py --repo <frame61>
+  --tasks ":app:assembleDebug :app:lint testDebugUnitTest"` auf `contabo-build`
+  (JDK17/SDK36, Serverlease, 2 Worker, 2 GiB Heap)
 
 ## APK-Artefakt
 
 - **Datei:** `debug-app-debug.apk`
-- **Größe:** 23 MB
-- **SHA-256:** `1344f3cb912cd61a281dabd28222556fb026678c3e39535a50200e56eb768174`
-- **Pfad:** `~/hendler-build-lab/artifacts/frame61-p4/debug-app-debug.apk`
+- **Größe:** 24.487.318 Bytes (23,4 MB) — Grenze 45 MB eingehalten
+- **SHA-256:** `e6945977ad73cf4caad2b8cc3ec927b7e5c5005d70a06157635dc711150e06f4`
+  (lokal gegen Manifest nachgehasht: identisch)
+- **Pfad:** `~/.hendler-dynasty/device-ops/remote-builds/frame61-gate3/debug-app-debug.apk`
 - **Grenze:** Debug-Bau, kein signiertes Release, keine Store-Aussage
 
 ## Geräte-Nachweise (Samsung A52 · SM A525F · Android 14)
@@ -45,62 +53,70 @@ Letzter Lauf: contabo-Build `frame61-p4`, `exit_code: 0`, BUILD SUCCESSFUL.
 | Lauf | Suite | Verdikt | Was es zeigt |
 |------|-------|---------|--------------|
 | `job-e400af84cac346ca` | QUICK_SMOKE | PASS | erste lauffähige Fassung |
-| `job-f026bdd46c1d44a3` | QUICK_SMOKE | PASS | **Skin verdrahtet**: Ring `#FFBCA4` 0,556 %, Default-Indigo 0,475 % → 0,001 % |
-| `job-b919fa8047fc4753` | QUICK_SMOKE | PASS | P4 installiert + startet ohne Crash; **aber** `mCurrentFocus=NotificationShade`, `resumed: (leer)` |
+| `job-f026bdd46c1d44a3` | QUICK_SMOKE | PASS | Skin verdrahtet (Ring `#FFBCA4` 0,556 %, Default 0,001 %) |
+| `job-b919fa8047fc4753` | QUICK_SMOKE | PASS | P4 installiert + startet ohne Crash; Fokus auf NotificationShade |
 
-`evidence_scope` im Original: „Physical PASS applies only to SM A525F / Android 14
-(SDK 34). It is not API-level, OEM or form-factor coverage."
-
-**Am Gerät belegt (P3):** UI-Hierarchie mit echten Katalogtiteln („Stranger Things",
-„Top 10", „Neue Folgen", „Shōgun", „Fallout"), 88 158 Farben, Marken-Canvas
+**Am Gerät belegt (P3):** UI-Hierarchie mit echten Katalogtiteln, Marken-Canvas
 `#060913` 20,7 %, Fokus auf dem Billboard, Ring in Markenfarbe.
-
-**BLOCKED (P4):** Wiedergabe, Resume und Watchdog sind am Gerät **nicht** belegt.
-Der A52 liegt im gesicherten Keyguard; Screenshots zeigen den Sperrbildschirm
-(Marken-Canvas 0,08 %). Es fehlt die Owner-Entsperrung des Geräts.
+**BLOCKED (P4/P5):** Wiedergabe, Resume, Watchdog, Episoden, Skins, Layout,
+PIN — der A52 liegt im gesicherten Keyguard; Owner-Entsperrung nötig
+(`OWNER_UNLOCK_REQUIRED`). Keine neuen Geräteläufe in dieser Runde.
 
 ## Offen
 
-1. **P4-Gerätenachweis** — braucht entsperrten A52: Play → Kill → Resume, Watchdog.
-2. **Coil-Härtung** (RGB_565, 512-MB-Disk-Cache) fehlt; die Builder-API von Coil 3.1
-   wurde nicht verifiziert, daher Default-Loader (im Code dokumentiert).
-3. **Live-Suche** (TVmaze/Wikipedia) hat Code, ist aber nicht am Gerät getestet.
-4. **Live-Nachweis** für ARD, ZDF, Arte, 3sat, KiKa, Pluto TV, Netzkino, Rakuten Free
-   (API ohne Auth 404/401; Fixtures sind Strukturmodelle).
-5. **Live-Nachweis** für die 9 Hoster-Packs (alle `verified: false`).
-6. **WebView-Captcha am Gerät**: Code vorhanden, `NOT_RUN`; Hoster-Hosts fehlen in
-   `network_security_config`.
-7. **Grauzone-Tier-A** (streamkiste, filmpalast, s.to, cine.to, aniworld, kinokiste,
-   megakino, dokujunkies, movie4k, hdfilme, kinox, bs.to, filmfans, anime-loads)
-   bleiben Attrappen und `UNVERIFIED` — keine echten Selektoren, keine Recherche.
-8. **Signiertes Release-APK**: Signing-Config existiert, Keystore/Secrets nicht
-   übertragen → `BLOCKED_EXTERNAL`.
-9. **Room-Migration 1→2** im Code, aber nicht als Instrumentierungstest belegt.
-10. **`docs/AUDIT.md`** ist veraltet (nennt eine gelöschte `Resolver.kt`, falsche
-    Datei- und Testzahlen).
-11. **Bauhost-Platte**: `contabo-build` lief mehrfach knapp unter 10 GiB (Schwelle im
-    `remote-build.sh`), weil `hendler-build-lab/projects` 64 GB fremder Projekte
-    belegt. Ich habe **nur eigene** `frame61-*`-Verzeichnisse geräumt und gewartet;
-    fremde Jobs und Daten blieben unangetastet.
+1. **Geräte-Abnahme P4/P5** — BLOCKED (A52-Keyguard): Play → Kill → Resume,
+   Watchdog, Episodenliste, Skins/Layout/PIN am Gerät.
+2. **RGB_565-Bitmap-Konfiguration** — BLOCKED belegt: Coil 3.1.0 hat **keine**
+   öffentliche API (javap gegen die 3.1.0-Artefakte: kein `bitmapConfig` an
+   `ImageLoader.Builder`/`ImageRequest.Builder`, `BitmapFactoryDecoder` final).
+   Ein eigener `Decoder.Factory` wäre nötig; ohne Gerät nicht belegbar.
+3. **Coil-Cache-Wirkung** — Memory 25 % + Disk 512 MB implementiert (API per
+   javap verifiziert, `Frame61Application`), Wirkung nicht gemessen (kein Gerät).
+4. **Live-Nachweis legal-freie Quellen** (ARD, ZDF, Arte, 3sat, KiKa, Pluto,
+   Netzkino, Rakuten, Plex, YouTube, Archive.org) — NOT_RUN: APIs liefern ohne
+   Auth 404/401; Fixtures sind Strukturmodelle.
+5. **Live-Nachweis Hoster (9)** — NOT_RUN, alle `verified:false`.
+6. **WebView-Captcha am Gerät** — NOT_RUN; Code vorhanden (`CaptchaWebViewFrame`).
+7. **Grauzone Tier A/B** (streamkiste, s.to, cine.to, filmpalast, aniworld,
+   megakino, kinokiste, dokujunkies, movie4k, hdfilme, kinox, bs.to, filmfans,
+   anime-loads) — Attrappen mit synthetischen Selektoren, `UNVERIFIED`;
+   keine Recherche, keine echten Selektoren (verbindliche Quellenpolitik).
+8. **Signiertes Release-APK** — BLOCKED_EXTERNAL: Keystore/Secrets nicht
+   übertragen (Owner-Policy); Signing-Config existiert.
+9. **Room-Migration** — Schema ist Version 1 mit `exportSchema`; eine
+   Migration 1→2 ist damit nicht nötig, aber ab jeder Schemaänderung Pflicht.
+10. **Performance** (Kaltstart <2,5 s, Row <100 ms, RSS <350 MB) — NOT MEASURED,
+    braucht Gerät.
+11. **Updater-Livepfad** — Code + Parser-Tests grün; ein echtes `update.json`
+    wurde nicht ausgeliefert (NOT_RUN).
+12. **`docs/DEPS.md`-Abweichung** `minSdk` (gradle.properties 22 vs. Catalog 23)
+    — dokumentiert, nicht angeglichen (eigene Aufgabe).
 
 ## Bau-Hinweise (Lehren aus dieser Runde)
 
-- **Lokale Bauten sind per Owner-Policy gesperrt** → alles über
-  `~/hendler-build-lab/remote-build.sh <job> "<tasks>"`.
-- **`remote-build.sh` bricht still mit exit 75 ab**, wenn Platte < 10 GiB oder RAM
-  < 4 GiB. Vor jedem Lauf `df -Pk` und `lsof build.lock` prüfen; bei Fremd-Lock
-  warten, nie killen.
-- **`androidx.tv:foundation:1.0.0` hat keine Lazy-Listen** (AAR: 3 Klassen).
-  Verwendet: `androidx.compose.foundation.lazy.*` + `Modifier.focusGroup()`, Karten
-  aus `androidx.tv:material3`.
-- **Kotlin-`@OptIn` erfüllt den AndroidX-Lint-Check nicht**; er verlangt
-  `androidx.annotation.OptIn`.
-- **Lint-Reports können veraltet sein** — bei widersprüchlichen Meldungen immer den
-  Task-Log (`logs/<job>.log`) lesen, nicht den Report.
-- **A52-Fokusfalle**: `mCurrentFocus=NotificationShade` heißt, die App ist nicht
-  vorn; Screenshots sind dann wertlos. Vor Captures `HOME`/`BACK`, sonst sieht man
-  den Sperrbildschirm statt der App.
+- **`remote-build.sh` hat drei still Exit-75-Punkte:** `flock` (REMOTE_BUSY),
+  `MemAvailable < 4 GiB`, `df < 10 GiB`. Vor jedem Lauf alle drei prüfen;
+  Fremd-Locks nie killen, Retry-Schleife nutzen.
+- **`--reuse-job`** hält den Gradle-Cache im Job-Ordner; nach Kompilierfehlern
+  aus dem Vorgängerstand lieber frischen Job nehmen.
+- **`remote_build.py` bettet bei REMOTE_BUSY den alten Host-Log ins Fehlerbild
+  ein** — die Schleife muss auf `exit 75` prüfen, nicht auf Log-Inhalte.
+- **Dagger + Kotlin-Generics:** `List<MetadataSource>` wird im Bytecode zu
+  `List<? extends MetadataSource>`; `@JvmSuppressWildcards` hilft im
+  Hilt-generierten Java-Code nicht. Einzelquellen injizieren und die Liste
+  selbst bauen.
+- **`HashMap.putIfAbsent` ist API 24** → Lint `NewApi` bei minSdk 23;
+  `MutableMap.getOrPut` verwenden.
+- **`androidx.annotation.OptIn` ist vararg** → positional übergeben
+  (`@androidx.annotation.OptIn(UnstableApi::class)`).
+- **`JsonElement.jsonObject`/`.jsonPrimitive` werfen bei `JsonNull`** → bei
+  echten APIs (z. B. `"image": null`) sichere Casts verwenden.
+- **Kanonische Enum-Reihenfolge** schlägt jede „logische" Reihenfolge:
+  `BECAUSE_YOU_WATCHED` steht vor `TOP10` (LayoutPrefs/Tests beachten).
+- **Mimosa-Pre-Commit-Scan** lief in dieser Sitzung nur partiell
+  (library_source/callgraph unavailable) — keine Sicherheitsaussage ableitbar.
 
 ---
 
-*Stand 2026-11-16. Gate grün (50 Tests). P3 am Gerät belegt, P4 device-blocked.*
+*Stand 2026-11-16. Voller Gate grün (81 Tests, 0 Fehler, Lint 0E/124W). P3 am
+Gerät belegt, P4/P5 device-blocked. HEAD 4e83c41, APK e6945977…*

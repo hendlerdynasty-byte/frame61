@@ -42,8 +42,14 @@
 - `app/proguard-rules.pro` neu angelegt (Release-Referenz war leer).
 
 #### Belege
-- Build-Gate: siehe `docs/STATE.md` (wird nach dem Lauf nachgetragen).
-- Tests: `LayoutPrefsTest`, `UpdateManifestTest` neu.
+- **Voller Gate grün:** `:app:assembleDebug` + `:app:lint` (**0 Errors,
+  124 Warnings**) + `testDebugUnitTest` über alle Module (**81 Tests,
+  0 Fehler, 0 übersprungen**) — Job `frame61-gate3`, exit 0,
+  BUILD SUCCESSFUL in 7m 37s, HEAD `4e83c41`.
+- APK `debug-app-debug.apk`, 24.487.318 B, SHA-256
+  `e6945977ad73cf4caad2b8cc3ec927b7e5c5005d70a06157635dc711150e06f4`
+  (lokal gegen Manifest verifiziert).
+- Neue Tests: `LayoutPrefsTest`, `UpdateManifestTest`, `TvmazeEpisodesTest`.
 
 ### P4 — Detail, Player, Resume, Watchdog (2026-11-16)
 

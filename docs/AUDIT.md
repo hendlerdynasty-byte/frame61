@@ -1,190 +1,94 @@
 # AUDIT — Frame61 Android TV
 
-## A BUILD
+Stand: 2026-11-16 (Abend). Diese Fassung ersetzt die veraltete 20.10.-Version
+(sie nannte u. a. ein gelöschtes `:oscardp`-Modul, eine nicht existierende
+`Resolver.kt` und „ECHT"-Scraper für Grauzone-Packs — das war falsch).
+
+## A. Build-Gate (voll)
 
 | Task | Status | Details | Beleg |
 |------|--------|---------|-------|
-| assembleDebug | GRÜN | 320 tasks, alle UP-TO-DATE | `./gradlew assembleDebug` |
-| lint | ROT | 24 Errors, 105 Warnings | `./gradlew lint` — erster Error: MissingClass androidx.startup.InitializationProvider (AndroidManifest.xml:55) |
-| testDebugUnitTest | GRÜN | 188 tasks, BUILD SUCCESSFUL | `./gradlew testDebugUnitTest` — 22 executed, 166 up-to-date |
+| `:app:assembleDebug` | GRÜN | 24.487.318 B APK | Job `frame61-gate3`, exit 0 |
+| `:app:lint` | GRÜN | **0 Errors, 124 Warnings** | `lint-results-debug.txt` |
+| `testDebugUnitTest` (alle Module) | GRÜN | **81 Tests, 0 Fehler, 0 übersprungen** | 16 Testklassen, XMLs |
+| Quellstand | `4e83c41` | sauberer HEAD, isoliertes Snapshot-Repo | Manifest `source.sha` |
+| Artefakt-Hash | `e6945977…06f4` | lokal gegen Manifest verifiziert | `shasum -a 256` |
 
-## B MODULE
+## B. Module (85 .kt-Dateien)
 
-| Modul | Zweck | .kt-Dateien | Zeilen (ca.) |
-|-------|-------|-------------|--------------|
-| :app | Entry Point, Navigation, Profiles | 3 | ~450 |
-| :core:design | Composables, Skins, Fokus-Engine | 10 | ~500 |
-| :core:data | Room Schemas, DataStore | 11 | ~400 |
-| :core:meta | TMDB/TVDB/JustWatch Mapping | 3 | ~150 |
-| :core:net | OkHttp, Jsoup HttpClient | 3 | ~200 |
-| :scraper:engine | Site Scraping, Health Scoring | 2 | ~250 |
-| :scraper:resolver | Mirror Resolution, Failover | 1 | ~180 |
-| :player | Media3 Player-Wrapper | 1 | ~100 |
-| :recs | Recommendation Engine | 1 | ~80 |
-| :sources:free | Legal-Free Tier-C Sources | 0 | 0 |
-| :oscardp | TvFoundationLayout Stub | 1 | ~20 |
-| **gesamt** | | **37** | **~2330** |
+| Modul | Zweck | .kt | Tests |
+|-------|-------|-----|-------|
+| :app | MainActivity, Navigation, Screens, DI, Updater | 35 | 25 (5 Klassen) |
+| :core:design | Skins, Fokus-Registry, Theme | 5 | 5 |
+| :core:data | Room (6 Entities, v1), DataStore, Resume, PIN | 15 | 8 (2 Klassen) |
+| :core:meta | Katalog, TVmaze (Suche + Episoden), Wikipedia | 8 | 10 (2 Klassen) |
+| :core:net | OkHttp, Jsoup, HealthChecker | 3 | — |
+| :player | Media3-Wrapper, Countdown | 3 | 8 |
+| :recs | Empfehlungen | 1 | — |
+| :scraper:engine | PackLoader/Interpreter/FixtureRunner | 8 | 5 |
+| :scraper:resolver | HosterResolver, MirrorSelector, Watchdog | 7 | 20 (4 Klassen) |
+| :sources:free | leerer Platzhalter (0 Dateien) | 0 | — |
 
-## C SCREENS
+## C. Screens (10)
 
-| Datei:Zeile | Composable | Zweck | TV-Fokus |
-|-------------|-----------|-------|----------|
-| HomeScreen.kt:49 | HomeScreen | Hauptnavigation mit Reihen | ja (TvFoundationLayout + LazyColumn) |
-| HomeScreen.kt:81 | DetailScreen | Titel-Details | ja (TvFoundationLayout + LazyColumn) |
-| HomeScreen.kt:93 | BillboardSection | Hero-Banner | ja (Card) |
-| HomeScreen.kt:105 | ContinueWatchingRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:120 | BecauseYouWatchedRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:135 | TopTenRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:150 | NewEpisodesRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:165 | GenreRailRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:180 | FreeLegalRow | Horizontaler Karussell | ja (LazyRow) |
-| HomeScreen.kt:195 | AiringTodayRow | Horizontaler Karussell | ja (LazyRow) |
-| DetailActivity.kt:21 | DetailScreenComposable | Detailansicht | ja (Box + Text) |
+Home (Billboard + Regale), Suche, Detail (inkl. Folgenliste), Player,
+Profilwahl/-Edit (PIN setzen/ändern/entfernen), Skins, Layout-Builder,
+Quellen (Source Lab), Einstellungen (Autoplay, Schwelle, Layout, Update),
+Captcha-WebView-Frame. Jede Route ist über die NavBar oder einen Button
+erreichbar; TV-Fokus über `FocusRestorer`/`tvFocusable`.
 
-## D QUELLEN
+## D. Quellen und Wahrheitsstatus
 
-| Datei | id | legalFree | search | detail | streams | Typ |
-|-------|----|-----------|--------|--------|---------|-----|
-| streamkiste.json | streamkiste | false | j | j | j | ECHT |
-| filmpalast.json | filmpalast | false | j | j | j | ECHT |
-| cine.json | cine | false | j | j | j | ECHT |
-| s-to.json | s-to | false | j | j | j | ECHT |
-| aniworld.json | aniworld | false | j | j | j | ECHT |
-| kinokiste.json | kinokiste | false | j | j | j | ECHT |
-| megakino.json | megakino | false | j | j | j | ECHT |
-| dokujunkies.json | dokujunkies | false | j | j | j | ECHT |
-| movie4k.json | movie4k | false | j | j | j | ECHT |
-| hdfilme.json | hdfilme | false | j | j | j | ECHT |
-| kinox.json | kinox | false | j | j | j | ECHT |
-| filmfans.json | filmfans | false | j | j | j | ECHT |
-| bs-to.json | bs-to | false | j | j | j | ECHT |
-| anime-loads.json | anime-loads | false | j | j | j | ECHT |
-| youtube.json | youtube | true | j | j | j | ECHT |
-| ard.json | ard | true | j | j | j | ECHT |
-| zdf.json | zdf | true | j | j | j | ECHT |
-| arte.json | arte | true | j | j | j | ECHT |
-| 3sat.json | 3sat | true | j | j | j | ECHT |
-| kika.json | kika | true | j | j | j | ECHT |
-| pluto-tv.json | pluto-tv | true | j | j | j | ECHT |
-| netzkino.json | netzkino | true | j | j | j | ATTRAAPE |
-| rakuten-free.json | rakuten-free | true | j | j | j | ATTRAAPE |
-| plex-free.json | plex-free | true | j | j | j | ATTRAAPE |
-| archive-org.json | archive-org | true | j | j | j | ATTRAAPE |
+| Gruppe | Anzahl | Status |
+|--------|--------|--------|
+| Grauzone Tier A/B (streamkiste, s.to, cine.to, filmpalast, aniworld, megakino, kinokiste, dokujunkies, movie4k, hdfilme, kinox, bs.to, filmfans, anime-loads) | 14 | **Attrappen, UNVERIFIED** — synthetische Selektoren, `verified:false`, keine Recherche |
+| Legal-frei Tier C (ard, zdf, arte, 3sat, kika, pluto-tv, netzkino, rakuten-free, plex-free, youtube, archive-org) | 11 | Fixtures vorhanden (Strukturmodelle), **Live-Nachweis NOT_RUN** |
+| Hoster (voe, vidoza, streamtape, filemoon, vidmoly, luluvdo, mixdrop, streamhide, loadx) | 9 | `verified:false`, Live-Nachweis NOT_RUN |
+| Katalog (TMDB/TVmaze/Wikipedia-Metadaten, offline) | 46 Titel | im APK, Poster HEAD-geprüft (8/8 beim Build) |
 
-## E RESOLVER
+## E. Datenbank
 
-| Hoster | Datei | Status | Captcha |
-|--------|-------|--------|---------|
-| streamkiste.sx | streamkiste.json | implementiert | nicht prüfbar |
-| cine.to | cine.json | implementiert | nicht prüfbar |
-| movie4k.to | movie4k.json | implementiert | nicht prüfbar |
-| youtube.com | youtube.json | implementiert | nicht prüfbar |
-| **Resolver.kt** | scraper/resolver/Resolver.kt | implementiert | — |
-| **Engine.kt** | scraper/engine/Engine.kt | implementiert | — |
+Room **Version 1**, `exportSchema = true`, 6 Entities (Title, Mirror, Episode,
+PlaybackState, Profile, RecVector), DAOs vollständig, `DatabaseProvider`
+(Hilt). Migrationen: keine nötig (v1); ab jeder Schemaänderung Pflicht.
 
-## F DATENBANK
+## F. Player
 
-| Entity | Tabelle | Room-Version | Migrationen |
-|--------|---------|-------------|-------------|
-| Title | titles | 2.7.0 (Room) | j (exportSchema=true) |
-| Mirror | mirrors | 2.7.0 (Room) | j |
-| Episode | episodes | 2.7.0 (Room) | j |
-| PlaybackState | playback_states | 2.7.0 (Room) | j |
-| Profile | profiles | 2.7.0 (Room) | j |
-| RecVector | rec_vectors | 2.7.0 (Room) | j |
+Media3 (HLS), Spurwahl Audio/Untertitel, Tempo, Watchdog 8 s (`PlaybackWatchdog`,
+`PlaybackWatchdogTest` 5/5), Mirror-Failover mit Positionsübernahme,
+Autoplay-Countdown 8 s ab 90 %, Resume alle 5 s (Room, `ResumeRepository`),
+`>90 % = gesehen` (`ResumeThresholds`). Gerät: BLOCKED (Keyguard).
 
-## G SKINS
+## G. Skins
 
-| Datei | id | Tokens vorhanden | Tokens fehlend |
-|-------|----|-----------------|---------------|
-| frame61.json | frame61 | alle 15 (canvas, surfaces, accents, text, radius, cardAspect, rowHeight, gutter, navModel, focusTreatment, motionLevel, typeScale, billboardHeight, detailLayout, playerChrome) | — |
-| netflix.json | netflix | alle 15 | — |
-| primevideo.json | primevideo | alle 15 | — |
-| disneyplus.json | disneyplus | alle 15 | — |
-| hbomax.json | hbomax | alle 15 | — |
-| plex.json | plex | alle 15 | — |
-| crunchyroll.json | crunchyroll | alle 15 | — |
-| appletv.json | appletv | alle 15 | — |
-| paramount.json | paramount | alle 15 | — |
-| kodimodus.json | kodimodus | alle 15 | — |
-| custom.json | custom | alle 15 | — |
+12 JSON-Dateien (`netflix`, `disneyplus`, `appletv`, `primevideo`, `hbomax`,
+`paramount`, `plex`, `crunchyroll`, `kodimodus`, `frame61`, `frame61-indigo`,
+`custom`), 15 Tokens je Datei, Parser tolerant (`SkinJsonParserTest` 5/5:
+alle 12 parsen, kaputte Datei fällt einzeln aus). Aktiver Skin in DataStore,
+`Frame61Theme(skin=…)` rendert; Auswahl in den Skins-Screen.
 
-## H PLAYER
+## H. Rechtliches / Quellenpolitik
 
-| Merkmal | Status | Beleg |
-|---------|--------|-------|
-| Media3 | j | media3 version 1.6.0 in libs.versions.toml:9, player/src/main/java/PlayerEngine.kt |
-| Resume-Store | j | core/data/PlaybackState.kt + DataStore |
-| Watchdog | UNKLAR | nicht geprüft |
-| Failover | j | scraper/resolver/Resolver.kt |
-| Spurwahl | UNKLAR | nicht geprüft |
-| HLS | UNKLAR | nicht geprüft |
+- Grauzone-Indexseiten: ausschließlich JSON-Packs, Attrappen, UNVERIFIED.
+- Keine echten Selektoren, keine Recherche, keine Hoster-Recherche.
+- Legal-freie Quellen + TVmaze (Metadaten/Episoden) + mitgelieferter Katalog
+  sind die einzigen echten Datenwege.
+- `network_security_config` enthält weiter die (historisch gewachsenen)
+  Domain-Einträge der Grauzone; sie sind kein Scraper und wurden nicht erweitert.
 
-## I FIXTURES
+## I. Offene Punkte (Details in STATE.md)
 
-| Datei | Zugehörige Quelle | echter HTML-Snapshot |
-|-------|-----------------|---------------------|
-| (keine separaten Fixture-Dateien gefunden) | — | — |
+1. Geräte-Abnahme P4/P5 — BLOCKED (A52-Keyguard, Owner-Entsperrung).
+2. RGB_565 — BLOCKED belegt (keine öffentliche Coil-3.1.0-API).
+3. Live-Nachweise legal-frei/Hoster/Captcha — NOT_RUN.
+4. Signiertes Release-APK — BLOCKED_EXTERNAL (keine Signing-Secrets).
+5. Performance-Messungen — NOT MEASURED (kein Gerät).
+6. Updater-Livepfad — NOT_RUN (kein `update.json` ausgeliefert).
+7. Mimosa-Pre-Commit-Scan in dieser Sitzung nur partiell — keine
+   Sicherheitsaussage.
 
-## J STUBS
+## J. Gerät
 
-| Datei:Zeile | Inhalt |
-|-------------|--------|
-| oscardp/src/main/java/.../TvFoundationLayout.kt:1 | leerer Stub (classes.jar: 4270 byte, nur 3 Klassen) |
-| HomeScreen.kt:106–115 | ContinueWatchingRow: items(10) hardkodiert, keine Datenbindung |
-| HomeScreen.kt:121–130 | BecauseYouWatchedRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:136–145 | TopTenRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:151–160 | NewEpisodesRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:166–175 | GenreRailRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:181–190 | FreeLegalRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:196–205 | AiringTodayRow: items(10) hardkodiert, placeholder titleId |
-| HomeScreen.kt:93–102 | BillboardSection: Icon ic_menu_gallery (System-Ressource, kein echter Screenshot) |
-| DetailActivity.kt:36 | DetailScreenComposable: Box + Text nur (kein echter Detailinhalt) |
-
-## K BRÜCHE
-
-| Was | Status | Detail | Beleg |
-|-----|--------|--------|-------|
-| MissingClass | ERROR | androidx.startup.InitializationProvider nicht in Dependencies | AndroidManifest.xml:55, lint error |
-| NetworkSecurityConfig | 22 ERRORS | `<domain>` als unerwartetes Element in network_security_config.xml | network_security_config.xml:10–32 |
-| LeanbackUsesWifi | WARNING | ACCESS_WIFI_STATE erfordert WiFi auf TV-Geräten | AndroidManifest.xml:8 |
-| RedundantLabel | WARNING | Redundantes Label im Manifest | AndroidManifest.xml:38 |
-| AGP Version | WARNING | Neuere AGP-Version verfügbar (9.5.1, 8.9.3) | libs.versions.toml:5 |
-
-## L DoD
-
-| Punkt | Erledigt | Beleg |
-|-------|---------|-------|
-| Kotlin 2.1.20 | erledigt | libs.versions.toml:6 — kotlin = "2.1.20" |
-| Compose + tv-material3 | erledigt | libs.versions.toml: tvMaterial = "1.0.0", compose = "1.8.1" |
-| Media3 | erledigt | libs.versions.toml: media3 = "1.6.0" |
-| Room | erledigt | libs.versions.toml: room = "2.7.0" |
-| DataStore | erledigt | libs.versions.toml: datastore = "1.1.3" |
-| Hilt | erledigt | libs.versions.toml: hilt = "2.55" |
-| OkHttp | erledigt | libs.versions.toml: okhttp = "4.12.0" |
-| Jsoup | erledigt | libs.versions.toml: jsoup = "1.19.1" |
-| minSdk 23 | erledigt | libs.versions.toml: minSdk = "23" |
-| ABIs arm64-v8a + armeabi-v7a | erledigt | standard AGP |
-| APK < 45 MB | nicht geprüft | — |
-| RSS < 350 MB | nicht geprüft | — |
-| Coil | erledigt | libs.versions.toml: coil = "3.1.0" |
-| assembleDebug | erledigt | BUILD SUCCESSFUL |
-| lint | teilweise | 24 errors (1 MissingClass, 22 NetworkSecurityConfig, 1 Warning) |
-| testDebugUnitTest | erledigt | BUILD SUCCESSFUL, 22 executed |
-
-## M MILESTONES
-
-| Milestone | Prozent | Begründung |
-|-----------|--------|------------|
-| M0: Build-System | 100% | Kotlin 2.1.20, AGP 8.9.1, Gradle 8.x, assembleDebug + lint + testDebugUnitTest laufen |
-| M1: UI-Basis | 70% | HomeScreen mit LazyColumn/LazyRow, DetailScreen existiert, Fokus-Engine aktiv, 8 Datenreihen stubt |
-| M2: Datenbindung | 60% | 37 Source-Konfigurationen, 6 Room-Entities, DataStore-Profile, Navigation mit NavHost |
-| M3: Quellen | 70% | Tier-A (8), Tier-B (6), Tier-C (5) konfiguriert, search/detail/streams vollständig |
-| M4: Scraper-Engine | 50% | Engine.kt + SourceConfig.kt implementiert, HealthScore-Type fix, Stub-Skin-Resolution |
-| M5: Player | 40% | Media3 integriert, PlayerEngine existiert, Resume-Store via DataStore, Failover implementiert |
-| M6: Navigation | 60% | NavHost mit Home/Detail-Routing, DetailActivity mit intent extras, TvFoundationLayout-Bridge |
-| M7: Skins + Themes | 80% | 11 Skin-Konfigurationen mit allen Tokens, Frame61Theme + TvFocusEngine |
-
-## N NÄCHSTER SCHRITT
-
-androidx.startup.InitializationProvider zur app/build.gradle.kts hinzufügen und network_security_config.xml anpassen (domain-Element als Unterelement von <domains> statt direkt unter <network-security-config>), damit lint fehlerfrei durchläuft.
+Samsung A52 (SM A525F, Android 14): P3 am Gerät belegt (UI, Marken-Canvas,
+Fokus). P4/P5 BLOCKED durch gesicherten Keyguard — keine Installation, keine
+Interaktion in dieser Runde. Fire TV: unangetastet (Owner-Policy).
