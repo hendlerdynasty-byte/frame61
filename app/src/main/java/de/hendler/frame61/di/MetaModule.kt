@@ -10,6 +10,7 @@ import de.hendler.frame61.meta.BundledCatalogSource
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.ChainedMetadataSource
 import de.hendler.frame61.meta.MetadataSource
+import de.hendler.frame61.meta.TvmazeEpisodeSource
 import de.hendler.frame61.meta.TvmazeMetadataSource
 import de.hendler.frame61.meta.WikipediaMetadataSource
 import javax.inject.Singleton
@@ -37,4 +38,9 @@ object MetaModule {
                 WikipediaMetadataSource()
             )
         )
+
+    /** Keyless TVmaze episode lists for the series detail screen. */
+    @Provides
+    @Singleton
+    fun provideEpisodeSource(): TvmazeEpisodeSource = TvmazeEpisodeSource()
 }

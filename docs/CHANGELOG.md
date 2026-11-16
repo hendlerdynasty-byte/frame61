@@ -28,6 +28,10 @@
   Manifest-URL in den Einstellungen, SHA-256-geprüfter Download,
   Systeminstaller. `REQUEST_INSTALL_PACKAGES` + `file_paths.xml`.
 - **Doku**: `README.md`, `docs/DEPS.md`, `docs/STATE_TEMPLATE.md` neu.
+- **Episoden-Navigation**: `TvmazeEpisodeSource` (schlüsselfrei, legal) liefert
+  Folgenlisten für Serien; `DetailScreen` zeigt Staffeln/Folgen, ein Tipp auf
+  eine Folge startet den Player mit `episodeId` (Resume je Folge). Parse ist
+  fixture-getestet (`TvmazeEpisodesTest`).
 
 #### Behoben
 - `HomeScreen`: doppelte, falsche `PlayerRouteFor`-Imports entfernt.

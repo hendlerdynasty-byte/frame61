@@ -17,13 +17,16 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import dagger.hilt.android.AndroidEntryPoint
 import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.meta.CatalogRepository
+import de.hendler.frame61.meta.EpisodeInfo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import de.hendler.frame61.design.Frame61Theme
@@ -75,9 +78,18 @@ fun Frame61(
                         DetailScreen(entry.arguments?.getString("titleId").orEmpty(), navController)
                     }
                     composable("source_lab") { SourceLabScreen() }
-                    composable("player/{titleId}") { entry ->
+                    composable(
+                        route = "player/{titleId}?episodeId={episodeId}",
+                        arguments = listOf(
+                            navArgument("episodeId") {
+                                type = NavType.LongType
+                                defaultValue = 0L
+                            }
+                        )
+                    ) { entry ->
                         val titleId = entry.arguments?.getString("titleId").orEmpty()
-                        PlayerRouteFor(titleId, navController)
+                        val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
+                        PlayerRouteFor(titleId, navController, episodeId)
                     }
                     composable("search") { SearchScreen(onOpenTitle = { id ->
                         navController.navigate("detail/$id")
@@ -128,9 +140,26 @@ fun HomeScreen(navController: NavController) {
 
 @Composable
 fun DetailScreen(titleId: String, navController: NavController) {
-    val catalog: CatalogRepository = hiltViewModel<DetailViewModel>().catalog
-    val item by produceState<CatalogItem?>(initialValue = null, titleId) {
+    val detailViewModel: DetailViewModel = hiltViewModel()
+    val catalog: CatalogRepository = detailViewModel.catalog
+    val episodeSource = detailViewModel.episodes
+
+    val item by produceState<CatalogItem?>(initialValue = null, titleId, catalog) {
         value = withContext(Dispatchers.IO) { catalog.byId(titleId) }
+    }
+
+    // Episoden kommen von TVmaze (schlüsselfrei, legal) — nur für Serien.
+    val episodes by produceState<List<EpisodeInfo>>(
+        initialValue = emptyList(),
+        item?.id,
+        episodeSource
+    ) {
+        val current = item
+        value = if (current != null && current.type == "series") {
+            withContext(Dispatchers.IO) { episodeSource.episodes(current.title) }
+        } else {
+            emptyList()
+        }
     }
 
     // Der Klick liegt auf dem Button, nicht auf der Karte: eine Card mit
@@ -142,18 +171,18 @@ fun DetailScreen(titleId: String, navController: NavController) {
                 .padding(16.dp)
         ) {
             Text(text = item?.title ?: "Detail: $titleId")
-            item?.let {
+            item?.let { current ->
                 Text(text = buildString {
-                    it.year?.let { y -> append(y).append("  ·  ") }
-                    append(it.genres.joinToString(", "))
+                    current.year?.let { y -> append(y).append("  ·  ") }
+                    append(current.genres.joinToString(", "))
                 })
                 Spacer(Modifier.height(8.dp))
-                Text(text = it.overview)
+                Text(text = current.overview)
                 Spacer(Modifier.height(16.dp))
                 androidx.compose.material3.Button(
-                    onClick = { navController.navigate("player/${it.id}") },
+                    onClick = { navController.navigate("player/${current.id}") },
                     modifier = Modifier.tvFocusable(id = "detail-play", onClick = {
-                        navController.navigate("player/${it.id}")
+                        navController.navigate("player/${current.id}")
                     })
                 ) {
                     Text(text = "Abspielen")
@@ -166,6 +195,24 @@ fun DetailScreen(titleId: String, navController: NavController) {
                     })
                 ) {
                     Text(text = "Ähnliche suchen")
+                }
+
+                if (current.type == "series" && episodes.isNotEmpty()) {
+                    Spacer(Modifier.height(16.dp))
+                    Text(text = "Folgen (${episodes.size})")
+                    episodes.take(60).forEach { ep ->
+                        Text(
+                            text = ep.label,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 2.dp)
+                                .tvFocusable(id = "episode-${ep.id}", onClick = {
+                                    navController.navigate(
+                                        "player/${current.id}?episodeId=${ep.id}"
+                                    )
+                                })
+                        )
+                    }
                 }
             } ?: run {
                 Text(text = "Lade …")

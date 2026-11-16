@@ -44,7 +44,7 @@ class ProfileSessionViewModel @Inject constructor(
  * known, then starts — before this, playback was hard-wired to profile 0.
  */
 @Composable
-fun PlayerRouteFor(titleId: String, navController: NavController) {
+fun PlayerRouteFor(titleId: String, navController: NavController, episodeId: Long = 0L) {
     val catalog: CatalogRepository = hiltViewModel<DetailViewModel>().catalog
     val session: ProfileSessionViewModel = hiltViewModel()
 
@@ -62,6 +62,7 @@ fun PlayerRouteFor(titleId: String, navController: NavController) {
         PlayerRoute(
             item = resolved,
             profileId = resolvedProfile,
+            episodeId = episodeId,
             onExit = { navController.popBackStack() }
         )
     } else {
