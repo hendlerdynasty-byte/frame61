@@ -2,6 +2,45 @@
 
 ## [Unreleased]
 
+### P5 — Navigation, Suche, Skins, Profile/PIN, Player-Spuren, Source-Lab-Import, Layout-Builder, Updater (2026-11-16)
+
+#### Hinzugefügt
+- **Navigation**: `NavBar` mit Start, Suche, Skins, Quellen, Profile,
+  Einstellungen — jede Route hat einen fokussierbaren Eintrag. Der Source Lab
+  war vorher kompiliert, aber nicht erreichbar.
+- **Suche**: `SearchScreen`/`SearchViewModel` über den `ChainedMetadataSource`
+  (Katalog → TVmaze → Wikipedia), Dedupe nach Titel/Jahr, D-Pad-taugliche
+  Trefferliste.
+- **Skins**: `SkinsScreen`/`SkinsViewModel` — alle geparsten Skins als
+  Vorschau; Auswahl landet in DataStore, das Theme folgt sofort.
+- **Profile + PIN**: `ProfileScreen`/`ProfileViewModel` mit PIN setzen,
+  ändern und entfernen (SHA-256, Salt = Profil-ID), Auswahl wird persistiert.
+- **Player**: `TrackPanel` (Audio/Untertitel/Tempo), `ErrorPanel` mit Retry —
+  der „kein Text"-Punkt aus dem Nutzerfeedback.
+- **Layout-Builder**: `LayoutBuilderScreen`/`LayoutBuilderViewModel`; 12
+  Reihen, Auswahl pro Profil als `layoutId` in DataStore, Home liest das
+  aktive Profil.
+- **Source Lab Import/Export**: SAF-Dateipick aus Downloads, Manifest-URL mit
+  optionaler SHA-256-Prüfung, Ablage im internen `sources/`, Export als JSON.
+  `PackLoader.loadAllPacks()` führt Assets und interne Packs zusammen;
+  fehlerhafte Packs werden einzeln verworfen.
+- **Sideload-Updater**: `UpdaterManager` (HttpURLConnection + FileProvider),
+  Manifest-URL in den Einstellungen, SHA-256-geprüfter Download,
+  Systeminstaller. `REQUEST_INSTALL_PACKAGES` + `file_paths.xml`.
+- **Doku**: `README.md`, `docs/DEPS.md`, `docs/STATE_TEMPLATE.md` neu.
+
+#### Behoben
+- `HomeScreen`: doppelte, falsche `PlayerRouteFor`-Imports entfernt.
+- `ProfileViewModel`: `PinHasher` statt nicht existierendem `ProfilePin`.
+- `PlayerScreen`: `androidx.annotation.OptIn` statt Kotlin-`@OptIn`.
+- `SearchScreen`: fehlender `width`-Import; Leersuche beim Start entfernt.
+- `CatalogPlayback.stableId`: SHA-256/UTF-8 statt SHA-1 (Mimosa-High-Finding).
+- `app/proguard-rules.pro` neu angelegt (Release-Referenz war leer).
+
+#### Belege
+- Build-Gate: siehe `docs/STATE.md` (wird nach dem Lauf nachgetragen).
+- Tests: `LayoutPrefsTest`, `UpdateManifestTest` neu.
+
 ### P4 — Detail, Player, Resume, Watchdog (2026-11-16)
 
 #### Hinzugefügt

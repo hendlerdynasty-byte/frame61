@@ -25,6 +25,7 @@ enum class NavDestination(val route: String, val label: String) {
     SEARCH("search", "Suche"),
     SKINS("skins", "Skins"),
     SOURCES("source_lab", "Quellen"),
+    PROFILES("profiles", "Profile"),
     SETTINGS("settings", "Einstellungen")
 }
 

@@ -30,6 +30,7 @@ import de.hendler.frame61.design.Frame61Theme
 import de.hendler.frame61.design.ProvideTvFocusRegistry
 import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.ui.home.HomeViewModel
+import de.hendler.frame61.ui.layout.LayoutBuilderScreen
 import de.hendler.frame61.ui.profile.ProfileScreen
 import de.hendler.frame61.ui.search.SearchScreen
 import de.hendler.frame61.ui.settings.SettingsScreen
@@ -82,8 +83,15 @@ fun Frame61(
                         navController.navigate("detail/$id")
                     }) }
                     composable("skins") { SkinsScreen() }
-                    composable("settings") { SettingsScreen() }
-                    composable("profiles") { ProfileScreen() }
+                    composable("layout_builder") {
+                        LayoutBuilderScreen(onDone = { navController.popBackStack() })
+                    }
+                    composable("settings") {
+                        SettingsScreen(onOpenLayout = { navController.navigate("layout_builder") })
+                    }
+                    composable("profiles") {
+                        ProfileScreen(onProfileChosen = { navController.popBackStack() })
+                    }
                 }
 
                 val backStack by navController.currentBackStackEntryAsState()

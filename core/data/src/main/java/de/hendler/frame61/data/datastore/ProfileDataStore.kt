@@ -17,6 +17,7 @@ object PreferencesKeys {
     val RESUME_INTERVAL_MS = longPreferencesKey("resume_interval_ms")
     val WATCHED_PERCENTAGE = floatPreferencesKey("watched_percentage")
     val COIL_FORMAT = stringPreferencesKey("coil_format")
+    val UPDATE_URL = stringPreferencesKey("update_url")
 }
 
 class ProfileDataStore(private val dataStore: DataStore<androidx.datastore.preferences.core.Preferences>) {
@@ -37,6 +38,19 @@ class ProfileDataStore(private val dataStore: DataStore<androidx.datastore.prefe
         prefs[PreferencesKeys.WATCHED_PERCENTAGE] ?: 0.9f
     }
 
+    /** Update manifest URL (sideload updater); blank means "not configured". */
+    val updateUrl: Flow<String> = dataStore.data.map { prefs ->
+        prefs[PreferencesKeys.UPDATE_URL] ?: ""
+    }
+
+    /**
+     * Layout id per profile. The key carries the profileId, so two profiles can
+     * keep different home layouts; "default" means the built-in rail set.
+     */
+    fun layoutFor(profileId: Long): Flow<String> = dataStore.data.map { prefs ->
+        prefs[stringPreferencesKey("layout_$profileId")] ?: "default"
+    }
+
     suspend fun setCurrentProfileId(id: Long) {
         dataStore.edit { prefs ->
             prefs[PreferencesKeys.CURRENT_PROFILE_ID] = id
@@ -52,6 +66,18 @@ class ProfileDataStore(private val dataStore: DataStore<androidx.datastore.prefe
     suspend fun setAutoplay(enabled: Boolean) {
         dataStore.edit { prefs ->
             prefs[PreferencesKeys.AUTOPLAY] = enabled
+        }
+    }
+
+    suspend fun setUpdateUrl(url: String) {
+        dataStore.edit { prefs ->
+            prefs[PreferencesKeys.UPDATE_URL] = url.trim()
+        }
+    }
+
+    suspend fun setLayout(profileId: Long, layoutId: String) {
+        dataStore.edit { prefs ->
+            prefs[stringPreferencesKey("layout_$profileId")] = layoutId
         }
     }
 

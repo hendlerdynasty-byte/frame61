@@ -99,6 +99,20 @@ class PackLoader(private val context: Context) {
         files.mapNotNull { loadPackFromAssets(it) }
     }
 
+    /** Internal directory for hot-loaded packs (Source Lab import). */
+    fun internalSourcesDir(): File = File(context.filesDir, "sources")
+
+    /**
+     * Every pack the app knows: bundled assets plus the internal directory.
+     *
+     * A broken pack is dropped on its own in both places; the app keeps running
+     * with whatever validates. Duplicate ids keep the first (bundled) version.
+     */
+    suspend fun loadAllPacks(): List<SourcePack> = withContext(Dispatchers.IO) {
+        val internal = FilePackLoader(internalSourcesDir()).loadAll()
+        (loadPacks() + internal).distinctBy { it.id }
+    }
+
     suspend fun loadPackFromAssets(file: String): SourcePack? = withContext(Dispatchers.IO) {
         runCatching {
             val content = context.assets.open("sources/$file").bufferedReader().use { it.readText() }

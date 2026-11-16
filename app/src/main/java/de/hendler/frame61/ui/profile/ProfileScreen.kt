@@ -3,15 +3,19 @@ package de.hendler.frame61.ui.profile
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -29,8 +33,9 @@ import de.hendler.frame61.design.tvFocusable
 /**
  * Profile picker with optional PIN.
  *
- * Each profile is its own namespace: resume, recommendations and allowed
- * sources are keyed by profileId.
+ * Each profile is its own namespace: resume, recommendations, home layout and
+ * allowed sources are keyed by profileId. The PIN can be set, changed and
+ * removed per profile; a profile without a PIN opens directly.
  */
 @Composable
 fun ProfileScreen(
@@ -40,50 +45,67 @@ fun ProfileScreen(
     val state by viewModel.state.collectAsStateWithLifecycle()
     var name by remember { mutableStateOf("") }
     var pin by remember { mutableStateOf("") }
+    var pinDialogFor by remember { mutableStateOf<Long?>(null) }
+    var pinInput by remember { mutableStateOf("") }
 
     Column(modifier = Modifier.fillMaxSize().padding(horizontal = 24.dp, vertical = 16.dp)) {
         Text(text = "Profil wählen", style = MaterialTheme.typography.headlineSmall)
 
         state.profiles.forEach { profile ->
-            Surface(
-                onClick = {
-                    viewModel.select(profile.id)
-                    onProfileChosen(profile.id)
-                },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp)
-                    .padding(vertical = 4.dp)
-                    .tvFocusable(id = "profile-${profile.id}", onClick = {
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(vertical = 3.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Surface(
+                    onClick = {
                         viewModel.select(profile.id)
                         onProfileChosen(profile.id)
-                    })
-                    .semantics { contentDescription = "Profil ${profile.name}" }
-            ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
+                    },
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(56.dp)
+                        .tvFocusable(id = "profile-${profile.id}", onClick = {
+                            viewModel.select(profile.id)
+                            onProfileChosen(profile.id)
+                        })
+                        .semantics { contentDescription = "Profil ${profile.name}" }
+                ) {
                     Text(
                         text = profile.name + if (profile.pinHash.isNotBlank()) "  ·  PIN" else "",
                         style = MaterialTheme.typography.titleMedium,
                         modifier = Modifier.padding(start = 16.dp)
                     )
                 }
+                OutlinedButton(
+                    onClick = {
+                        pinDialogFor = profile.id
+                        pinInput = ""
+                    },
+                    modifier = Modifier
+                        .padding(start = 8.dp)
+                        .tvFocusable(id = "profile-pin-edit-${profile.id}", onClick = {
+                            pinDialogFor = profile.id
+                            pinInput = ""
+                        })
+                ) { Text(text = if (profile.pinHash.isBlank()) "PIN" else "PIN ändern") }
             }
         }
 
         state.error?.let { Text(text = it, color = MaterialTheme.colorScheme.error) }
 
+        Spacer(Modifier.height(16.dp))
+
         OutlinedTextField(
             value = name,
             onValueChange = { name = it },
             label = { Text("Name") },
-            modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
-                .tvFocusable(id = "profile-name", onClick = { })
+            modifier = Modifier.fillMaxWidth().tvFocusable(id = "profile-name", onClick = {})
         )
         OutlinedTextField(
             value = pin,
             onValueChange = { pin = it },
             label = { Text("PIN (optional)") },
-            modifier = Modifier.fillMaxWidth().tvFocusable(id = "profile-pin", onClick = { })
+            modifier = Modifier.fillMaxWidth().tvFocusable(id = "profile-pin", onClick = {})
         )
         Button(
             onClick = {
@@ -99,5 +121,40 @@ fun ProfileScreen(
         ) {
             Text(text = "Profil anlegen")
         }
+    }
+
+    val dialogProfileId = pinDialogFor
+    if (dialogProfileId != null) {
+        val hasPin = state.profiles.firstOrNull { it.id == dialogProfileId }?.pinHash?.isNotBlank() == true
+        AlertDialog(
+            onDismissRequest = { pinDialogFor = null },
+            title = { Text(text = "PIN für Profil $dialogProfileId") },
+            text = {
+                Column {
+                    OutlinedTextField(
+                        value = pinInput,
+                        onValueChange = { pinInput = it },
+                        label = { Text("Neue PIN (leer = entfernen)") }
+                    )
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    viewModel.setPin(dialogProfileId, pinInput)
+                    pinDialogFor = null
+                }) { Text(text = "Speichern") }
+            },
+            dismissButton = {
+                Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                    if (hasPin) {
+                        TextButton(onClick = {
+                            viewModel.removePin(dialogProfileId)
+                            pinDialogFor = null
+                        }) { Text(text = "Entfernen") }
+                    }
+                    TextButton(onClick = { pinDialogFor = null }) { Text(text = "Abbrechen") }
+                }
+            }
+        )
     }
 }

@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.PinHasher
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.data.database.ProfileDao
 import de.hendler.frame61.data.database.entities.Profile
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -22,13 +23,18 @@ data class ProfileUiState(
 /**
  * Profile picker.
  *
- * Every profile keeps its own namespace: resume, recommendation vectors and
- * allowed sources are keyed by profileId, so two users on one device do not
- * see each other's state.
+ * Every profile keeps its own namespace: resume, recommendation vectors, home
+ * layout and allowed sources are keyed by profileId, so two users on one device
+ * do not see each other's state.
+ *
+ * PIN handling: a PIN is optional per profile, stored as SHA-256 with the
+ * profile id as salt. It can be set, changed and removed here; an empty PIN
+ * always clears the hash.
  */
 @HiltViewModel
 class ProfileViewModel @Inject constructor(
-    private val profileDao: ProfileDao
+    private val profileDao: ProfileDao,
+    private val prefs: ProfileDataStore
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(ProfileUiState())
@@ -47,6 +53,7 @@ class ProfileViewModel @Inject constructor(
 
     fun select(id: Long) {
         _state.update { it.copy(selectedId = id) }
+        viewModelScope.launch { prefs.setCurrentProfileId(id) }
     }
 
     /** Creates a profile with an optional PIN. Empty name is refused. */
@@ -78,6 +85,25 @@ class ProfileViewModel @Inject constructor(
     fun remove(id: Long) {
         viewModelScope.launch {
             profileDao.remove(id)
+            load()
+        }
+    }
+
+    /** Sets or changes a profile's PIN; a blank PIN clears it. */
+    fun setPin(id: Long, pin: String) {
+        val profile = _state.value.profiles.firstOrNull { it.id == id } ?: return
+        val hash = if (pin.isBlank()) "" else PinHasher.hash(pin, id.toString())
+        viewModelScope.launch {
+            profileDao.upsert(profile.copy(pinHash = hash))
+            load()
+        }
+    }
+
+    /** Removes a profile's PIN — the profile stays, the lock is gone. */
+    fun removePin(id: Long) {
+        val profile = _state.value.profiles.firstOrNull { it.id == id } ?: return
+        viewModelScope.launch {
+            profileDao.upsert(profile.copy(pinHash = ""))
             load()
         }
     }

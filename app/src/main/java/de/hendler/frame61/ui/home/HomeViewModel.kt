@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -17,13 +17,15 @@ data class HomeUiState(
     val isLoading: Boolean = true,
     val content: HomeContent = HomeContent(billboard = null, rails = emptyList()),
     val layout: Set<RailKind> = HomeContentBuilder.DEFAULT_LAYOUT,
+    val profileId: Long = 0L,
     val error: String? = null
 )
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     application: Application,
-    private val catalog: CatalogRepository
+    private val catalog: CatalogRepository,
+    private val prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
 
     private val _state = MutableStateFlow(HomeUiState())
@@ -31,6 +33,18 @@ class HomeViewModel @Inject constructor(
 
     init {
         load()
+        // Profile wechseln heißt Layout wechseln: der Layout-Builder schreibt
+        // pro Profil, Home liest genau das Profil, das gerade aktiv ist.
+        viewModelScope.launch {
+            prefs.currentProfileId.collect { profileId ->
+                prefs.layoutFor(profileId).collect { layoutId ->
+                    _state.update {
+                        it.copy(profileId = profileId, layout = LayoutPrefs.decode(layoutId))
+                    }
+                    rebuild(seed = 0)
+                }
+            }
+        }
     }
 
     fun load(seed: Int = 0) {
@@ -40,31 +54,35 @@ class HomeViewModel @Inject constructor(
                 _state.update { it.copy(isLoading = false, error = "Katalog leer") }
                 return@launch
             }
-            _state.update {
-                it.copy(
-                    isLoading = false,
-                    content = HomeContentBuilder.build(
-                        catalog = items,
-                        layout = it.layout,
-                        seed = seed
-                    ),
-                    error = null
-                )
-            }
+            rebuild(seed)
+        }
+    }
+
+    private fun rebuild(seed: Int) {
+        val items = runCatching { catalog.all() }.getOrDefault(emptyList())
+        if (items.isEmpty()) {
+            _state.update { it.copy(isLoading = false, error = "Katalog leer") }
+            return
+        }
+        val layout = _state.value.layout
+        _state.update {
+            it.copy(
+                isLoading = false,
+                content = HomeContentBuilder.build(
+                    catalog = items,
+                    layout = layout,
+                    seed = seed
+                ),
+                error = null
+            )
         }
     }
 
     /** The layout builder flips the rail set at runtime. */
     fun applyLayout(layout: Set<RailKind>) {
-        viewModelScope.launch {
-            val items = runCatching { catalog.all() }.getOrDefault(emptyList())
-            _state.update {
-                it.copy(
-                    layout = layout,
-                    content = HomeContentBuilder.build(items, layout, seed = it.content.rails.size)
-                )
-            }
-        }
+        val seed = _state.value.content.rails.size
+        _state.update { it.copy(layout = layout) }
+        rebuild(seed)
     }
 
     fun openRandom() {
