@@ -4,9 +4,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.contentOrNull
-import kotlinx.serialization.json.jsonObject
-import kotlinx.serialization.json.jsonPrimitive
 
 /** One episode as shown in the detail screen. */
 data class EpisodeInfo(
@@ -30,7 +31,10 @@ data class EpisodeInfo(
  * ambiguous titles — the detail screen shows the matched show name so the user
  * sees what was loaded.
  *
- * [parse] is pure and fixture-tested; the network path never throws.
+ * [parse] is pure and fixture-tested; the network path never throws. Parsing
+ * uses safe casts only: `JsonElement.jsonObject` throws for `null` values, and
+ * real episodes may carry `"image": null` — one such episode must not wipe the
+ * whole list (that bug was caught by the fixture test).
  */
 class TvmazeEpisodeSource(
     private val client: okhttp3.OkHttpClient = okhttp3.OkHttpClient()
@@ -47,33 +51,36 @@ class TvmazeEpisodeSource(
 
     /** Matched show name, so the UI can show which show the episodes belong to. */
     fun matchedShowName(body: String): String? = runCatching {
-        json.parseToJsonElement(body).jsonObject["name"]?.jsonPrimitive?.contentOrNull
+        (json.parseToJsonElement(body) as? JsonObject)?.get("name").stringOrNull()
     }.getOrNull()
 
     companion object {
         private val json = Json { ignoreUnknownKeys = true; isLenient = true }
 
         fun parse(body: String): List<EpisodeInfo> = runCatching {
-            val root = json.parseToJsonElement(body).jsonObject
-            val episodes = root["_embedded"]?.jsonObject
-                ?.get("episodes")?.let { it as? JsonArray } ?: return emptyList()
+            val root = json.parseToJsonElement(body) as? JsonObject ?: return emptyList()
+            val episodes = (root["_embedded"] as? JsonObject)
+                ?.get("episodes") as? JsonArray ?: return emptyList()
             episodes.mapNotNull { element ->
-                val e = element.jsonObject
-                val id = e["id"]?.jsonPrimitive?.contentOrNull?.toLongOrNull()
-                    ?: return@mapNotNull null
-                val season = e["season"]?.jsonPrimitive?.contentOrNull?.toIntOrNull() ?: 0
-                val number = e["number"]?.jsonPrimitive?.contentOrNull?.toIntOrNull() ?: 0
-                val name = e["name"]?.jsonPrimitive?.contentOrNull ?: "Folge"
+                val e = element as? JsonObject ?: return@mapNotNull null
+                val id = e["id"].longOrNull() ?: return@mapNotNull null
                 EpisodeInfo(
                     id = id,
-                    season = season,
-                    number = number,
-                    name = name,
-                    airDate = e["airdate"]?.jsonPrimitive?.contentOrNull,
-                    runtime = e["runtime"]?.jsonPrimitive?.contentOrNull?.toIntOrNull(),
-                    still = e["image"]?.jsonObject?.get("medium")?.jsonPrimitive?.contentOrNull
+                    season = e["season"].intOrNull() ?: 0,
+                    number = e["number"].intOrNull() ?: 0,
+                    name = e["name"].stringOrNull() ?: "Folge",
+                    airDate = e["airdate"].stringOrNull(),
+                    runtime = e["runtime"].intOrNull(),
+                    still = (e["image"] as? JsonObject)?.get("medium").stringOrNull()
                 )
             }
         }.getOrDefault(emptyList())
+
+        private fun JsonElement?.stringOrNull(): String? =
+            (this as? JsonPrimitive)?.contentOrNull
+
+        private fun JsonElement?.intOrNull(): Int? = this.stringOrNull()?.toIntOrNull()
+
+        private fun JsonElement?.longOrNull(): Long? = this.stringOrNull()?.toLongOrNull()
     }
 }
