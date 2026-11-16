@@ -13,10 +13,11 @@ class LayoutPrefsTest {
     @Test
     fun `default layout is encoded as default`() {
         // profileLayoutId collapses the built-in rail set to "default";
-        // encode() itself is the explicit, canonical key list.
+        // encode() itself is the explicit list in canonical RailKind order
+        // (BECAUSE_YOU_WATCHED precedes TOP10 in the enum).
         assertEquals(LayoutPrefs.DEFAULT_ID, LayoutPrefs.profileLayoutId(HomeContentBuilder.DEFAULT_LAYOUT))
         assertEquals(
-            "continue_watching,top10,new_episodes,because_you_watched," +
+            "continue_watching,because_you_watched,top10,new_episodes," +
                 "genre_rail,free_legal,random,marathon",
             LayoutPrefs.encode(HomeContentBuilder.DEFAULT_LAYOUT)
         )
