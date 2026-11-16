@@ -64,7 +64,9 @@ class SearchViewModel @Inject constructor(
             for (source in sources) {
                 val hits = runCatching { source.search(needle, 20) }.getOrDefault(emptyList())
                 for (hit in hits) {
-                    merged.putIfAbsent("${hit.title}|${hit.year}", hit)
+                    // getOrPut statt HashMap.putIfAbsent: putIfAbsent ist API 24,
+                    // die App läuft ab minSdk 23 (Lint NewApi).
+                    merged.getOrPut("${hit.title}|${hit.year}") { hit }
                 }
             }
             _state.update {

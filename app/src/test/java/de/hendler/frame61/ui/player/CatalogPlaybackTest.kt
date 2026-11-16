@@ -49,7 +49,7 @@ class SearchMergeTest {
         val a = listOf(hit("1", "Dark", 2017))
         val b = listOf(hit("2", "Dark", 2017))
         val merged = LinkedHashMap<String, de.hendler.frame61.meta.SearchHit>()
-        (a + b).forEach { merged.putIfAbsent("${it.title}|${it.year}", it) }
+        (a + b).forEach { merged.getOrPut("${it.title}|${it.year}") { it } }
         assertEquals(1, merged.size)
     }
 
@@ -57,7 +57,7 @@ class SearchMergeTest {
     fun `different years keep both entries`() {
         val hits = listOf(hit("1", "Dark", 2017), hit("2", "Dark", 2022))
         val merged = LinkedHashMap<String, de.hendler.frame61.meta.SearchHit>()
-        hits.forEach { merged.putIfAbsent("${it.title}|${it.year}", it) }
+        hits.forEach { merged.getOrPut("${it.title}|${it.year}") { it } }
         assertEquals(2, merged.size)
     }
 
