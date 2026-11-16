@@ -43,4 +43,18 @@ object MetaModule {
     @Provides
     @Singleton
     fun provideEpisodeSource(): TvmazeEpisodeSource = TvmazeEpisodeSource()
+
+    /**
+     * Individual sources for screens that merge results themselves (search).
+     * `SearchViewModel` collects this list; the single [MetadataSource] above is
+     * the chained façade for everyone else.
+     */
+    @Provides
+    @Singleton
+    fun provideMetadataSources(catalog: CatalogRepository): List<MetadataSource> =
+        listOf(
+            BundledCatalogSource(catalog),
+            TvmazeMetadataSource(),
+            WikipediaMetadataSource()
+        )
 }
