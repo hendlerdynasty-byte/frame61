@@ -68,6 +68,14 @@ Watchdog: 8 s ohne Frame → nächster Mirror, ohne UI-Flackern.
 Next-Episode-Countdown: 8 s ab 90 %, abbrechbar.
 Resume nach Kill exakt, offline aus Room.
 
+## Episoden
+
+Für Serien zeigt die Detailseite die Folgenliste von **TVmaze**
+(schlüsselfrei, legal, keine API-Autorisierung nötig). Ein Tipp auf eine Folge
+startet den Player mit `episodeId`; Resume wird je Folge gespeichert. Die
+Folgennamen kommen per Name-Suche (`singlesearch/shows?embed=episodes`); bei
+mehrdeutigen Titeln zeigt die Detailseite den tatsächlich geladenen Seriennamen.
+
 ## UI
 
 Elf Token-Skins aus `assets/skins/<id>.json` (canvas, surfaces, accents, text,

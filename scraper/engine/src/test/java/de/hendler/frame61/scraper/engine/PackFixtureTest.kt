@@ -37,9 +37,11 @@ class PackFixtureTest {
     @Test
     fun `all packs load and validate`() {
         val activeLoader = requirePacks()
-        val files: List<File> = packsDir!!.listFiles { f ->
-            f.isFile && f.extension == "json" && !f.name.startsWith("._")
-        }?.toList() ?: emptyList()
+        val files: List<File> = requireNotNull(packsDir) { "frame61.packsDir missing" }
+            .listFiles { f ->
+                f.isFile && f.extension == "json" && !f.name.startsWith("._")
+            }
+            ?.toList() ?: emptyList()
         assertTrue("no packs found in $packsDir", files.isNotEmpty())
 
         val rejected = mutableListOf<String>()
@@ -128,7 +130,7 @@ class PackFixtureTest {
              "search":{"endpoint":"/s","resultSelector":".item","titleSelector":"h3 a@text",
                        "yearSelector":".d@text","linkSelector":"h3 a","idAttr":"href"}}
             """.trimIndent()
-        )!!
+        ) ?: error("pack must parse")
         val results = interpreter.parseSearchHtml(pack, html)
         assertEquals(1, results.size)
         assertEquals("abc-1", results.first().id)
@@ -141,7 +143,7 @@ class PackFixtureTest {
              "search":{"endpoint":"/s","jsonPath":"response.docs",
                        "idPath":"identifier","titlePath":"title","yearPath":"year"}}
             """.trimIndent()
-        )!!
+        ) ?: error("api pack must parse")
         val body = """{"response":{"docs":[{"identifier":"i1","title":"Film","year":1999}]}}"""
         val api = interpreter.parseSearchApi(apiPack, body)
         assertEquals(1, api.size)
