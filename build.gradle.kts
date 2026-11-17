@@ -32,6 +32,13 @@ val fetchToolTests = tasks.register<Exec>("testFetchTools") {
     )
 }
 
+val packsReport = tasks.register<Exec>("packsReport") {
+    group = "verification"
+    description = "Prueft, ob docs/PACKS.md zu den Assets passt"
+    workingDir = rootDir
+    commandLine("python3", "tools/packs_report.py", "--root", rootDir.absolutePath, "--check")
+}
+
 val apkSizeLimitBytes = 45L * 1024L * 1024L
 
 val checkApkSize = tasks.register("checkApkSize") {
@@ -72,6 +79,7 @@ tasks.register("gate") {
     description = "Frame61-Gate: Lint, Unit-Tests, Asset-Validator, APK-Groesse"
     dependsOn(assetValidator)
     dependsOn(fetchToolTests)
+    dependsOn(packsReport)
     dependsOn(checkApkSize)
     dependsOn(":app:lint")
     dependsOn(unitTestModules.map { "$it:testDebugUnitTest" })

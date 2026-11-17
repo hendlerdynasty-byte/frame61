@@ -12,7 +12,8 @@
       "kind": "api",
       "url": "https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Babylon",
       "detail_url": "https://api.ardmediathek.de/page-gateway/pages/ard/grouping/{id}?embedded=true&seasoned=true&single=false",
-      "note": "keylose page-gateway-API. Der Worker prueft Suche+Detail; die Stream-Ebene braucht eine Episoden-ID und ist ueber Fixture + Geraetelauf belegt (docs/SOURCE_LIVE.md)."
+      "stream_url": "https://api.ardmediathek.de/page-gateway/pages/ard/item/{id}?embedded=true",
+      "note": "keylose page-gateway-API. Worker prueft Suche, Detail, erste Folge und deren Stream."
     }
   }
 }

@@ -239,7 +239,25 @@ def check_html_pack(pack: dict, body: str, detail_body: str | None) -> tuple[boo
     return not misses, misses, checked
 
 
-def check_api_pack(pack: dict, body: str, detail_body: str | None) -> tuple[bool, list[str], list[str]]:
+def first_episode_id(pack: dict, body: str) -> str | None:
+    """First id produced by the pack's episodes rule — for the stream URL."""
+    rule = pack.get("episodes") or {}
+    try:
+        root = json.loads(body)
+    except json.JSONDecodeError:
+        return None
+    items = walk(root, rule.get("jsonPath") or "")
+    if isinstance(items, dict):
+        items = [items]
+    if not isinstance(items, list) or not items:
+        return None
+    value = walk(items[0], rule.get("idPath") or "")
+    return str(value) if value is not None else None
+
+
+def check_api_pack(
+    pack: dict, body: str, detail_body: str | None, stream_body: str | None = None
+) -> tuple[bool, list[str], list[str]]:
     misses: list[str] = []
     checked: list[str] = []
     try:
@@ -279,7 +297,14 @@ def check_api_pack(pack: dict, body: str, detail_body: str | None) -> tuple[bool
             path = streams.get("streamPath") or streams.get("jsonPath")
             if path:
                 checked.append("streams.streamPath")
-                if walk(detail_root, path) is None:
+                source = detail_root
+                if stream_body:
+                    try:
+                        source = json.loads(stream_body)
+                    except json.JSONDecodeError:
+                        misses.append("streams: kein JSON")
+                        source = None
+                if source is not None and walk(source, path) is None:
                     misses.append("streams.streamPath")
     elif pack.get("detail") or pack.get("streams"):
         checked.append("detail/streams (kein detail_url im Ziel)")
@@ -337,9 +362,23 @@ def run_pack(pack_path: Path, target: dict | None, write: bool) -> dict:
                             _, detail_body = fetch(url, pack.get("baseUrl") or "")
                         except Exception as exc:  # noqa: BLE001
                             result.update(status="detail_failed", detail=str(exc))
+
+                stream_body = None
+                stream_url = target.get("stream_url")
+                if stream_url and detail_body:
+                    episode_id = first_episode_id(pack, detail_body)
+                    if episode_id:
+                        url = ID_PLACEHOLDER.sub(episode_id, stream_url)
+                        try:
+                            _, stream_body = fetch(url, pack.get("baseUrl") or "")
+                        except Exception as exc:  # noqa: BLE001
+                            result.update(status="stream_failed", detail=str(exc))
+
                 if result["status"] == "no_target":
                     if is_json:
-                        ok, misses, checked = check_api_pack(pack, body, detail_body)
+                        ok, misses, checked = check_api_pack(
+                            pack, body, detail_body, stream_body
+                        )
                     else:
                         ok, misses, checked = check_html_pack(pack, body, detail_body)
                     result.update(

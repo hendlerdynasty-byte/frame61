@@ -68,6 +68,11 @@ if command -v python3 >/dev/null 2>&1; then
   else
     bad "Fetch-Werkzeug-Tests"
   fi
+  if python3 tools/packs_report.py --root "$ROOT" --check >/dev/null 2>&1; then
+    ok "PACKS.md aktuell"
+  else
+    bad "PACKS.md veraltet (tools/packs_report.py laufen lassen)"
+  fi
 fi
 
 # --- Code-Regeln -----------------------------------------------------------
