@@ -51,6 +51,8 @@ dependencies {
     implementation(libs.jetbrains.kotlinx.metadata.jvm)
     // Compiler-classpath: needed for virtual package resolution
     implementation(libs.kotlin.reflect)
+    // Central PosterCard owns image loading and the clip stack
+    implementation(libs.coil.compose)
     // Skin files are JSON — one parser, no second token path
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
 

@@ -10,15 +10,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
@@ -27,12 +22,10 @@ import androidx.compose.foundation.focusGroup
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.tv.material3.Surface
-import coil3.compose.AsyncImage
 import de.hendler.frame61.design.LocalFrame61Typography
 import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.LocalSkin
-import de.hendler.frame61.design.tvFocusable
+import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.meta.CatalogItem
 
 /**
@@ -142,13 +135,17 @@ private fun TvRail(
         contentPadding = PaddingValues(horizontal = 4.dp)
     ) {
         items(rail.items, key = { it.id }) { item ->
-            PosterCard(item = item, onClick = { onOpenTitle(item) })
+            CatalogPoster(item = item, onClick = { onOpenTitle(item) })
         }
     }
 }
 
+/**
+ * Rail cover. All clip/shape work lives in [PosterCard]; this function only
+ * adds the label overlay and the rail geometry.
+ */
 @Composable
-private fun PosterCard(
+private fun CatalogPoster(
     item: CatalogItem,
     onClick: () -> Unit
 ) {
@@ -156,35 +153,37 @@ private fun PosterCard(
     val typography = LocalFrame61Typography.current
     val width = skin.layout.rowHeightDp * skin.layout.cardAspectRatio
 
-    // The wrapper owns focus AND click. The Card must not be clickable itself:
-    // The surface is deliberately not clickable: a clickable surface is a
-    // focus target of its own and used to steal focus from this box, so no ring
-    // was ever drawn (verified on the A52).
-    Box(
+    PosterCard(
+        posterUrl = item.poster,
         modifier = Modifier
             .width(width)
-            .height(skin.layout.rowHeightDp)
-            .tvFocusable(
-                id = "card-${item.id}",
-                focusedColor = skin.colors.focus,
-                onClick = onClick
-            )
-            .semantics { contentDescription = "${item.title} ${item.year ?: ""}".trim() }
+            .height(skin.layout.rowHeightDp),
+        cornerRadius = skin.layout.cardRadius,
+        contentDescription = "${item.title} ${item.year ?: ""}".trim(),
+        focusId = "card-${item.id}",
+        onClick = onClick
     ) {
-        Surface(modifier = Modifier.fillMaxSize()) {
-            Box(modifier = Modifier.fillMaxSize()) {
-                Artwork(item = item, modifier = Modifier.fillMaxSize())
-                androidx.compose.material3.Text(
-                    text = item.title,
-                    style = TextStyle(fontSize = typography.cardTitle),
-                    maxLines = 2,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier
-                        .align(Alignment.BottomStart)
-                        .padding(8.dp)
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.BottomCenter)
+                .height(72.dp)
+                .background(
+                    Brush.verticalGradient(
+                        listOf(androidx.compose.ui.graphics.Color.Transparent,
+                            androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.82f))
+                    )
                 )
-            }
-        }
+        )
+        androidx.compose.material3.Text(
+            text = item.title,
+            style = TextStyle(fontSize = typography.cardTitle),
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier
+                .align(Alignment.BottomStart)
+                .padding(8.dp)
+        )
     }
 }
 
@@ -196,68 +195,47 @@ private fun Billboard(
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
 
-    // Ring on the wrapper; the surface stays unclickable so it cannot take focus.
-    Box(
+    PosterCard(
+        posterUrl = item.poster,
         modifier = Modifier
             .fillMaxWidth()
-            .height(skin.layout.billboardHeightDp)
-            .tvFocusable(
-                id = "billboard-${item.id}",
-                focusedColor = skin.colors.focus,
-                onClick = onClick
-            )
-            .semantics { contentDescription = item.title }
+            .height(skin.layout.billboardHeightDp),
+        cornerRadius = skin.layout.cardRadius,
+        contentDescription = item.title,
+        focusId = "billboard-${item.id}",
+        onClick = onClick
     ) {
-        Surface(modifier = Modifier.fillMaxSize()) {
-            Box(modifier = Modifier.fillMaxSize()) {
-                Artwork(item = item, modifier = Modifier.fillMaxSize())
-                Column(
-                    modifier = Modifier
-                        .align(Alignment.BottomStart)
-                        .padding(24.dp)
-                ) {
-                    androidx.compose.material3.Text(
-                        text = item.title,
-                        style = TextStyle(fontSize = typography.billboardTitle)
-                    )
-                    androidx.compose.material3.Text(
-                        text = buildString {
-                            item.year?.let { append(it).append("  ·  ") }
-                            if (item.genres.isNotEmpty()) append(item.genres.take(2).joinToString(", "))
-                        },
-                        style = TextStyle(
-                            fontSize = typography.caption,
-                            color = skin.colors.textSecondary
-                        )
-                    )
-                }
-            }
-        }
-    }
-}
-
-/** Real artwork, or a gradient placeholder — never a broken image. */
-@Composable
-private fun Artwork(item: CatalogItem, modifier: Modifier = Modifier) {
-    val skin = LocalSkin.current
-    val shape = RoundedCornerShape(skin.layout.cardRadius)
-    if (item.poster.isNotBlank()) {
-        AsyncImage(
-            model = item.poster,
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
-            modifier = modifier.clip(shape)
-        )
-    } else {
         Box(
-            modifier = modifier
-                .clip(shape)
+            modifier = Modifier
+                .fillMaxSize()
                 .background(
-                    Brush.linearGradient(
-                        listOf(skin.colors.primary.copy(alpha = 0.35f), skin.colors.surface)
+                    Brush.verticalGradient(
+                        0f to androidx.compose.ui.graphics.Color.Transparent,
+                        0.55f to androidx.compose.ui.graphics.Color.Transparent,
+                        1f to androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.85f)
                     )
                 )
         )
+        Column(
+            modifier = Modifier
+                .align(Alignment.BottomStart)
+                .padding(24.dp)
+        ) {
+            androidx.compose.material3.Text(
+                text = item.title,
+                style = TextStyle(fontSize = typography.billboardTitle)
+            )
+            androidx.compose.material3.Text(
+                text = buildString {
+                    item.year?.let { append(it).append("  ·  ") }
+                    if (item.genres.isNotEmpty()) append(item.genres.take(2).joinToString(", "))
+                },
+                style = TextStyle(
+                    fontSize = typography.caption,
+                    color = skin.colors.textSecondary
+                )
+            )
+        }
     }
 }
 

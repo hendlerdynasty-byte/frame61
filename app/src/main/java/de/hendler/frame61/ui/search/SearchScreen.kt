@@ -26,8 +26,8 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import coil3.compose.AsyncImage
 import de.hendler.frame61.design.LocalSkin
+import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.design.tvFocusable
 
 @Composable
@@ -91,10 +91,12 @@ fun SearchScreen(
                 ) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         if (!hit.poster.isNullOrBlank()) {
-                            AsyncImage(
-                                model = hit.poster,
-                                contentDescription = null,
-                                modifier = Modifier.height(88.dp).width(66.dp)
+                            PosterCard(
+                                posterUrl = hit.poster,
+                                modifier = Modifier
+                                    .height(88.dp)
+                                    .width(66.dp),
+                                cornerRadius = 8.dp
                             )
                         }
                         Column(modifier = Modifier.padding(start = 12.dp)) {

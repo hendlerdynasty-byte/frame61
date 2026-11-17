@@ -1,11 +1,13 @@
 package de.hendler.frame61.ui
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,6 +27,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import dagger.hilt.android.AndroidEntryPoint
 import de.hendler.frame61.design.FocusRestorer
+import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.EpisodeInfo
@@ -191,13 +194,31 @@ fun DetailScreen(titleId: String, navController: NavController) {
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            Text(text = item?.title ?: "Detail: $titleId")
+            if (item == null) Text(text = "Detail: $titleId")
             item?.let { current ->
-                Text(text = buildString {
-                    current.year?.let { y -> append(y).append("  ·  ") }
-                    append(current.genres.joinToString(", "))
-                })
-                Spacer(Modifier.height(8.dp))
+                androidx.compose.foundation.layout.Row(
+                    verticalAlignment = Alignment.Top
+                ) {
+                    PosterCard(
+                        posterUrl = current.poster,
+                        modifier = Modifier
+                            .width(120.dp)
+                            .height(180.dp),
+                        cornerRadius = 12.dp
+                    )
+                    Spacer(Modifier.width(16.dp))
+                    androidx.compose.foundation.layout.Column {
+                        Text(
+                            text = current.title,
+                            style = androidx.compose.material3.MaterialTheme.typography.headlineSmall
+                        )
+                        Text(text = buildString {
+                            current.year?.let { y -> append(y).append("  ·  ") }
+                            append(current.genres.joinToString(", "))
+                        })
+                    }
+                }
+                Spacer(Modifier.height(12.dp))
                 Text(text = current.overview)
                 Spacer(Modifier.height(16.dp))
                 androidx.compose.material3.Button(
