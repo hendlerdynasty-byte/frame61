@@ -1,6 +1,6 @@
 package de.hendler.frame61.ui
 
-import android.app.Activity
+import androidx.activity.compose.LocalActivity
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Row
@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -76,7 +75,7 @@ fun Frame61(
     val skinViewModel: SkinViewModel = hiltViewModel()
     val skin by skinViewModel.skin.collectAsStateWithLifecycle()
 
-    val activity = LocalContext.current as? Activity
+    val activity = LocalActivity.current
     val windowSizeClass = activity?.let {
         runCatching { calculateWindowSizeClass(it) }.getOrNull()
     }
