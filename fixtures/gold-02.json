@@ -1,0 +1,49 @@
+{
+  "id": "gold-api",
+  "name": "Gold API Source",
+  "version": 2,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": false,
+  "kind": "api",
+  "baseUrl": "https://api.example.invalid",
+  "verified": false,
+  "search": {
+    "endpoint": "/search",
+    "method": "GET",
+    "queryParam": "q",
+    "pageLimit": 20,
+    "headers": {
+      "Accept": "application/json"
+    },
+    "jsonPath": "response.docs",
+    "idPath": "identifier",
+    "titlePath": "title",
+    "yearPath": "year",
+    "typePath": "mediatype"
+  },
+  "detail": {
+    "endpoint": "/meta/{{titleId}}",
+    "method": "GET",
+    "jsonPath": "metadata",
+    "titlePath": "title",
+    "yearPath": "year"
+  },
+  "episodes": {
+    "endpoint": "/meta/{{titleId}}",
+    "method": "GET",
+    "jsonPath": "episodes",
+    "idPath": "id",
+    "titlePath": "name"
+  },
+  "streams": {
+    "endpoint": "/meta/{{titleId}}",
+    "method": "GET",
+    "jsonPath": "files",
+    "streamPath": "files",
+    "streamNamePath": "name",
+    "streamQualityPath": "format",
+    "streamLangPath": "language",
+    "streamUrlTemplate": "https://cdn.example.invalid/{{id}}/{{name}}"
+  }
+}

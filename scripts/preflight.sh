@@ -53,7 +53,7 @@ for dir in app/src/main/assets/sources app/src/main/assets/hosters app/src/main/
   fi
 done
 
-for doc in docs/SOURCE_PACK.md docs/SKINS.md docs/STATE.md docs/AUDIT.md docs/STAND.md; do
+for doc in docs/SOURCE_PACK.md docs/SCHEMA.md docs/SKINS.md docs/STATE.md docs/AUDIT.md docs/STAND.md; do
   if [ -f "$doc" ]; then ok "Doku: $doc"; else bad "Doku fehlt: $doc"; fi
 done
 

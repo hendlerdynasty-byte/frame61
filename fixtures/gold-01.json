@@ -1,0 +1,53 @@
+{
+  "id": "gold-html",
+  "name": "Gold HTML Source",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": true,
+  "kind": "html",
+  "baseUrl": "https://example.invalid",
+  "verified": false,
+  "search": {
+    "endpoint": "/suche?q={{q}}&page={{page}}",
+    "method": "GET",
+    "headers": {
+      "Accept": "text/html"
+    },
+    "resultSelector": ".result-item",
+    "titleSelector": "h3 a",
+    "linkSelector": "h3 a",
+    "yearSelector": ".year",
+    "typeSelector": ".type",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/titel/{{titleId}}",
+    "episodeSelector": ".episode-list .episode",
+    "seasonSelector": ".season",
+    "episodeTitleSelector": ".episode-title",
+    "episodeLinkSelector": "a",
+    "episodeIndexSelector": null
+  },
+  "streams": {
+    "selector": ".stream-list .stream a",
+    "urlAttr": "href",
+    "qualitySelector": ".quality",
+    "langSelector": ".language",
+    "hosterSelector": ".hoster",
+    "qualityMap": {
+      "HD": "1080",
+      "SD": "720"
+    },
+    "langMap": {
+      "DE": "de",
+      "OmU": "de"
+    },
+    "referrers": [
+      {
+        "domain": "example.invalid",
+        "accept": true
+      }
+    ]
+  }
+}

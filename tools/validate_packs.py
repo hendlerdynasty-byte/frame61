@@ -120,7 +120,9 @@ def recorded_fixture(root: Path, pack_id: str) -> tuple[bool, str]:
     return True, ""
 
 
-def validate_source_pack(path: Path, root: Path, report: Report) -> None:
+def validate_source_pack(
+    path: Path, root: Path, report: Report, check_filename: bool = True
+) -> None:
     data = load_json(path, report)
     if not isinstance(data, dict):
         if data is not None:
@@ -133,7 +135,7 @@ def validate_source_pack(path: Path, root: Path, report: Report) -> None:
         if not non_empty(data.get(field)):
             report.error(where, f"{field} fehlt oder ist leer")
     pack_id = data.get("id")
-    if non_empty(pack_id) and pack_id != path.stem:
+    if check_filename and non_empty(pack_id) and pack_id != path.stem:
         report.error(where, f"id={pack_id!r} != Dateiname {path.stem!r}")
 
     kind = data.get("kind", "html")
@@ -360,6 +362,18 @@ def validate_meta(root: Path, report: Report) -> None:
                 report.error(where, f"episodes[{position}] season/number fehlt")
 
 
+def validate_gold(root: Path, report: Report) -> None:
+    """Die zwei Gold-Fixtures muessen exakt dem eingefrorenen Schema folgen."""
+    fixture_dir = root / "fixtures"
+    gold_files = [fixture_dir / "gold-01.json", fixture_dir / "gold-02.json"]
+    for path in gold_files:
+        if not path.is_file():
+            report.error(str(path), "Gold-Fixture fehlt")
+            continue
+        report.count("gold_fixtures")
+        validate_source_pack(path, root, report, check_filename=False)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -384,6 +398,7 @@ def main() -> int:
         report.error(str(catalog), "Katalog fehlt")
     validate_fixtures(root, report)
     validate_meta(root, report)
+    validate_gold(root, report)
 
     print(
         "Geprueft: "
