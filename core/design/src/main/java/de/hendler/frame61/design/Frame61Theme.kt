@@ -1,6 +1,7 @@
 package de.hendler.frame61.design
 
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
@@ -122,7 +123,11 @@ fun Frame61Theme(
 
     CompositionLocalProvider(
         LocalSkin provides skin,
-        LocalFrame61Typography provides skin.typography
+        LocalFrame61Typography provides skin.typography,
+        // Screens that are a plain Column (Detail, Search, Settings …) have no
+        // Material Surface above them. Without this, Text falls back to black
+        // on the dark canvas — measured on the A52 (unreadable body text).
+        LocalContentColor provides skin.colors.textPrimary
     ) {
         MaterialTheme(
             colorScheme = colorScheme,

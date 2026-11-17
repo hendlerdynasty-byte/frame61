@@ -77,10 +77,22 @@ class Media3Frame61Player(
     }
 
     fun open(url: String, mimeType: String = "application/x-mpegURL", startAtMs: Long = 0L) {
-        val item = MediaItem.Builder().setUri(url).setMimeType(mimeType).build()
-        player.setMediaItem(item, startAtMs.coerceAtLeast(0L))
-        player.prepare()
-        player.play()
+        // A missing media-source class used to kill the whole process
+        // (ClassNotFoundException: HlsMediaSource$Factory, A52 15:14:32).
+        // The dependency is fixed, but a broken build must never crash the UI:
+        // surface it as the normal error panel instead.
+        runCatching {
+            val item = MediaItem.Builder().setUri(url).setMimeType(mimeType).build()
+            player.setMediaItem(item, startAtMs.coerceAtLeast(0L))
+            player.prepare()
+            player.play()
+        }.onFailure { error ->
+            _state.value = _state.value.copy(
+                error = error.message ?: error.javaClass.simpleName,
+                isPlaying = false
+            )
+            return
+        }
         _state.value = _state.value.copy(error = null, positionMs = startAtMs, durationMs = 0L)
     }
 

@@ -68,6 +68,16 @@ class CatalogRepositoryTest {
     }
 
     @Test
+    fun `overviews are plain text`() {
+        val items = repo().all()
+        assertTrue(
+            "catalog overviews still contain markup: " +
+                items.filter { '<' in it.overview }.take(3).map { it.title },
+            items.none { '<' in it.overview || '>' in it.overview }
+        )
+    }
+
+    @Test
     fun `bundled source finds titles offline`() = kotlinx.coroutines.runBlocking {
         val source = BundledCatalogSource(repo())
         val hits = source.search("dark", 5)

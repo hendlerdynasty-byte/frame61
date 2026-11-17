@@ -26,7 +26,10 @@ enum class NavDestination(val route: String, val label: String) {
     SKINS("skins", "Skins"),
     SOURCES("source_lab", "Quellen"),
     PROFILES("profiles", "Profile"),
-    SETTINGS("settings", "Einstellungen")
+
+    // Short label on purpose: "Einstellungen" wrapped into two lines inside the
+    // 1/6 slot of the bottom bar (measured on the A52 at 1080 px width).
+    SETTINGS("settings", "Optionen")
 }
 
 /**

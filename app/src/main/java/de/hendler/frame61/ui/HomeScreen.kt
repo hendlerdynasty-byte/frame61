@@ -111,7 +111,14 @@ fun Frame61(
                 NavBar(
                     currentRoute = backStack?.destination?.route ?: "home",
                     onNavigate = { route ->
-                        if (route != "home") navController.navigate(route) { popUpTo("home") }
+                        if (route == "home") {
+                            // "Start" used to be a no-op: the old code skipped
+                            // the navigation for the home route, so the tab did
+                            // nothing from any other screen (measured on A52).
+                            navController.popBackStack("home", inclusive = false)
+                        } else {
+                            navController.navigate(route) { popUpTo("home") }
+                        }
                     },
                     modifier = Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
                 )

@@ -73,7 +73,14 @@ class CatalogRepository private constructor(
 
     private fun load(): Catalog {
         cache?.let { return it }
-        return loader().also { cache = it }
+        // The bundled catalog carries TVmaze-style markup ("<b>Breaking Bad</b>
+        // follows …"). Compose would render it literally (measured on the A52),
+        // so strip it once at load instead of in every screen.
+        return loader()
+            .let { raw ->
+                raw.copy(items = raw.items.map { it.copy(overview = stripHtml(it.overview)) })
+            }
+            .also { cache = it }
     }
 
     companion object {
@@ -96,3 +103,12 @@ class CatalogRepository private constructor(
         }
     }
 }
+
+/** Removes the simple markup/entities the bundled catalog carries. */
+internal fun stripHtml(text: String): String = text
+    .replace(Regex("<[^>]*>"), "")
+    .replace("&amp;", "&")
+    .replace("&quot;", "\"")
+    .replace("&#39;", "'")
+    .replace("&nbsp;", " ")
+    .trim()

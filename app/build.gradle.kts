@@ -122,6 +122,10 @@ dependencies {
 
     // Media3 for the player screen (PlayerView lives in media3-ui)
     implementation(libs.androidx.media3.exoplayer)
+    // HLS lives in its own artifact. Without it ExoPlayer throws
+    // ClassNotFoundException: HlsMediaSource$Factory at setMediaItem time
+    // (measured on the A52, crash buffer 15:14:32).
+    implementation(libs.androidx.media3.exoplayer.hls)
     implementation(libs.androidx.media3.ui)
     implementation(libs.androidx.media3.common)
 

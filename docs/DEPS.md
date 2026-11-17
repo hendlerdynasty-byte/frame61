@@ -13,7 +13,7 @@ eigenem Gate-Lauf.
 | Compose BOM | 2025.03.00 | UI, Material3, Tooling |
 | Compose Compiler | 2.1.20 | `kotlinCompilerExtensionVersion` |
 | androidx.tv | 1.0.0 | tv-material + tv-foundation; **keine Lazy-Listen** in 1.0.0 |
-| Media3 | 1.6.0 | exoplayer, ui, session, common |
+| Media3 | 1.6.0 | exoplayer, **exoplayer-hls** (HLS-Quelle; fehlte und crashte am A52), ui, common |
 | Room | 2.7.0 | Schema v1, `exportSchema = true` |
 | Hilt | 2.55 | KSP-Compiler |
 | Coil | 3.1.0 | coil-compose + coil-network-okhttp |
