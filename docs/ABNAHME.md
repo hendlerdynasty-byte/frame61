@@ -64,6 +64,8 @@ Fix: `CatalogRepository` entfernt Markup beim Laden; neuer Test
 | Ursache 2 | Crash-Buffer nach Nachtest | `SQLiteConstraintException: FOREIGN KEY constraint failed (787)` in `PlaybackStateDao.upsert` — `profileId=0` existiert nicht in `profiles` |
 | Zusatzbefund | Code-Analyse | `PlaybackState.id` war immer 0 → REPLACE löschte den vorherigen Titel; Resume kannte nur einen Eintrag |
 | Nachtest 2 | Build `f43802d`, Player geöffnet | **FAIL (kein Crash, aber kein Bild)** — nach 8 s „Alle Mirrors ausgefallen"; Zurück landet auf Home statt Detail |
+| Nachtest 3 | Build `16dbb98`, Player 14 s geöffnet | **PASS** — Video sichtbar (Big-Buck-Bunny-Demo), Fortschritt `0:24 / 10:34`, Audiospur „Spur 1", Tempo 1,00x, Pause/±10 s; kein Fatal |
+| Rückweg | `back` aus dem Player | **PASS** — Detailseite mit Folgenliste (kein Doppel-Pop mehr) |
 | Ursache 3 | Code + Gerät | Watchdog wurde nur einmal beim Öffnen gefüttert und schlug nach 8 s zu, obwohl der Stream lief; `PlayerRoute` rief beim Dispose `popBackStack()` und nahm die Detailseite mit |
 | Fixes 3 | – | Watchdog misst Fortschritt (`positionMs` ändert sich) statt Tickergeräusche; `DisposableEffect`/`onExit` entfernt, Zurück navigiert normal |
 | Fixes 1+2 | – | `media3-exoplayer-hls`; `PlayerEngine.open` fängt Fehler; Default-Profil wird lazy angelegt; deterministische Resume-Row-ID; Index `(profileId,titleId,episodeId)` + Migration 1→2 |
@@ -78,14 +80,24 @@ Fix: `CatalogRepository` entfernt Markup beim Laden; neuer Test
 | Profile | **PASS** — „Profil wählen", Name/PIN, „Profil anlegen" (Dump 33) |
 | Optionen | **PASS** — Autoplay, Gesehen-Schwelle 80/90/95 %, Layout, Update-URL (Dump 37) |
 
-## 6. Offene Punkte bis Block-2-Abschluss
+## 6. Gate und Abschluss Block 2
 
-1. Zweiten Rebuild (`./gradlew gate` remote) mit HLS- und Room-Fix bauen,
-   APK installieren (überschreibt die v1-Datenbank → Migration 1→2 wird real
-   ausgeführt).
-2. Start-Tab, Label, Kontrast, Detail-Markup und Player-Übergang erneut prüfen.
-3. Skins-, Quellen-, Profil- und Options-Screen einmal öffnen.
-4. Erst danach Block 2 als grün führen.
+| Nachweis | Wert |
+|---|---|
+| Gate-Job | `frame61-16dbb98823b9-1794927880`, exit 0, BUILD SUCCESSFUL in 11m 53s, 451 Tasks |
+| Quellstand | `16dbb98` (sauberer HEAD) |
+| Tests | **86/86** grün (17 Klassen), 0 Failures, 0 Errors, 0 Skipped |
+| Lint | `:app:lint` grün (0 Errors; Warnungszahl im Lint-Report) |
+| APK | 24.208.533 B (23,1 MiB), SHA-256 `343680cb72a54ab74bfe1c49af5676e64f3ccdea574339d1353c02ea2dd4d6e9` |
+| Installation | `device-lab` Job `job-405879e17c68402f`, `install_update rc=0`, kein Fatal |
+| Player | Screenshot `frame61-block2-player2/12.png` (Video, 0:24/10:34) |
+| Rückweg | UI-Dump `frame61-block2-player2/17.xml` = Detailseite |
+
+**Grenzen:** Der Player spielt den öffentlichen Mux-Demo-HLS, nicht den Katalog-
+Stream (der kommt in Block 6). Die Texteingabe im Suchfeld ist über die Brücke
+nicht automatisierbar (kein `type`-Op) → **NOT_RUN**; die Suchlogik ist durch
+Unit-Tests belegt. Der Upgrade-Pfad v1→v2 wurde durch die Installation über die
+bestehende App real ausgeführt (App startete, DB öffnete, Resume schrieb).
 
 **Bedienhinweis:** Nach einem App-Absturz landet der Tap auf der NavBar-Leiste
 im Launcher bzw. Play Store. Vor jedem Tap muss per UI-Dump geprüft werden, dass
@@ -94,5 +106,4 @@ im Launcher bzw. Play Store. Vor jedem Tap muss per UI-Dump geprüft werden, das
 
 ---
 
-*Zwischenstand 17.11.2026, 15:20. Kein Block-2-PASS, solange der Nachtest
-nicht gelaufen ist.*
+*Block 2 abgeschlossen am 17.11.2026, 16:22. Gate grün, Gerät belegt.*
