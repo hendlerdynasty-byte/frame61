@@ -90,7 +90,7 @@ fun Frame61(
                     ) { entry ->
                         val titleId = entry.arguments?.getString("titleId").orEmpty()
                         val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
-                        PlayerRouteFor(titleId, navController, episodeId)
+                        PlayerRouteFor(titleId, episodeId)
                     }
                     composable("search") { SearchScreen(onOpenTitle = { id ->
                         navController.navigate("detail/$id")

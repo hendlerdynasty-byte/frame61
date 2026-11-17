@@ -50,6 +50,7 @@ class PlayerViewModel @Inject constructor(
     private var episodeId: Long = 0L
     private var mirrors: List<MirrorCandidate> = emptyList()
     private var mirrorIndex = 0
+    private var lastPositionMs: Long = -1L
     private var tickJob: kotlinx.coroutines.Job? = null
 
     /** The Media3 instance the [PlayerScreen] renders into. */
@@ -84,6 +85,7 @@ class PlayerViewModel @Inject constructor(
             return
         }
         mirrorIndex = index
+        lastPositionMs = startAtMs
         mediaPlayer.open(mirror.url, startAtMs = startAtMs)
         watchdog.reportFrame(startAtMs)
         _state.update { it.copy(loading = false, fatal = null) }
@@ -93,6 +95,14 @@ class PlayerViewModel @Inject constructor(
     private fun onFrame(positionMs: Long, durationMs: Long) {
         val current = _state.value
         _state.update { it.copy(ui = mediaPlayer.state.value) }
+
+        // The watchdog measures *progress*, not the presence of the 1 s ticker:
+        // feeding it on every publish made it fire after 8 s even while the
+        // stream was fine ("Alle Mirrors ausgefallen", measured on the A52).
+        if (positionMs != lastPositionMs) {
+            lastPositionMs = positionMs
+            watchdog.reportFrame(positionMs)
+        }
 
         viewModelScope.launch {
             resumeRepository.saveThrottled(

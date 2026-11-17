@@ -37,6 +37,11 @@ Fixes (Code, noch nicht neu gebaut): `NavBar` navigiert für `home` per
 `popBackStack("home")`; Label „Optionen" statt „Einstellungen";
 `Frame61Theme` liefert `LocalContentColor = skin.colors.textPrimary`.
 
+**Nachtest 2 (Build `f43802d`):** „Start" führt von jeder Seite zurück auf Home;
+die NavBar zeigt „Start · Suche · Skins · Quellen · Profile · Optionen" in einer
+Zeile. Suche, Skins, Source Lab, Profile und Einstellungen wurden geöffnet
+(UI-Dumps 25/29/33/37).
+
 ## 3. Katalogliste und Detailseite
 
 | Punkt | Vorgehen | Ergebnis |
@@ -58,14 +63,20 @@ Fix: `CatalogRepository` entfernt Markup beim Laden; neuer Test
 | Nachtest | neuer Build `7544ac2`, erneuter Tap | **FAIL (Crash 2, behoben)** — App schließt ohne Dialog |
 | Ursache 2 | Crash-Buffer nach Nachtest | `SQLiteConstraintException: FOREIGN KEY constraint failed (787)` in `PlaybackStateDao.upsert` — `profileId=0` existiert nicht in `profiles` |
 | Zusatzbefund | Code-Analyse | `PlaybackState.id` war immer 0 → REPLACE löschte den vorherigen Titel; Resume kannte nur einen Eintrag |
-| Fixes | – | `media3-exoplayer-hls`; `PlayerEngine.open` fängt Fehler; Default-Profil wird lazy angelegt; deterministische Resume-Row-ID; Index `(profileId,titleId,episodeId)` + Migration 1→2 |
+| Nachtest 2 | Build `f43802d`, Player geöffnet | **FAIL (kein Crash, aber kein Bild)** — nach 8 s „Alle Mirrors ausgefallen"; Zurück landet auf Home statt Detail |
+| Ursache 3 | Code + Gerät | Watchdog wurde nur einmal beim Öffnen gefüttert und schlug nach 8 s zu, obwohl der Stream lief; `PlayerRoute` rief beim Dispose `popBackStack()` und nahm die Detailseite mit |
+| Fixes 3 | – | Watchdog misst Fortschritt (`positionMs` ändert sich) statt Tickergeräusche; `DisposableEffect`/`onExit` entfernt, Zurück navigiert normal |
+| Fixes 1+2 | – | `media3-exoplayer-hls`; `PlayerEngine.open` fängt Fehler; Default-Profil wird lazy angelegt; deterministische Resume-Row-ID; Index `(profileId,titleId,episodeId)` + Migration 1→2 |
 
 ## 5. Weitere Screens
 
 | Screen | Ergebnis |
 |---|---|
 | Suche | **PASS (Render)** — Texteingabe über die Brücke nicht möglich (kein `type`-Op); Suchfunktion nur per Unit-Test, Geräte-Texteingabe **NOT_RUN** |
-| Skins / Quellen / Profile / Optionen | nach dem Rebuild nachzuziehen (Block 2 Nachtest) |
+| Skins | **PASS** — Skin-Liste, „Aktiv: appletv", Auswahl sichtbar (Dump 25) |
+| Quellen (Source Lab) | **PASS** — „Available Packs (25)", Importfelder, Pack-Liste (Dump 29) |
+| Profile | **PASS** — „Profil wählen", Name/PIN, „Profil anlegen" (Dump 33) |
+| Optionen | **PASS** — Autoplay, Gesehen-Schwelle 80/90/95 %, Layout, Update-URL (Dump 37) |
 
 ## 6. Offene Punkte bis Block-2-Abschluss
 

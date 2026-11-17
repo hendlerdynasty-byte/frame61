@@ -11,7 +11,6 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.navigation.NavController
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogItem
@@ -44,7 +43,7 @@ class ProfileSessionViewModel @Inject constructor(
  * known, then starts — before this, playback was hard-wired to profile 0.
  */
 @Composable
-fun PlayerRouteFor(titleId: String, navController: NavController, episodeId: Long = 0L) {
+fun PlayerRouteFor(titleId: String, episodeId: Long = 0L) {
     val catalog: CatalogRepository = hiltViewModel<DetailViewModel>().catalog
     val session: ProfileSessionViewModel = hiltViewModel()
 
@@ -62,8 +61,7 @@ fun PlayerRouteFor(titleId: String, navController: NavController, episodeId: Lon
         PlayerRoute(
             item = resolved,
             profileId = resolvedProfile,
-            episodeId = episodeId,
-            onExit = { navController.popBackStack() }
+            episodeId = episodeId
         )
     } else {
         Surface {

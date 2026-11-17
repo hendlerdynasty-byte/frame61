@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -25,8 +24,7 @@ import de.hendler.frame61.meta.CatalogItem
 fun PlayerRoute(
     item: CatalogItem,
     profileId: Long,
-    episodeId: Long = 0L,
-    onExit: () -> Unit = {}
+    episodeId: Long = 0L
 ) {
     val viewModel: PlayerViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -62,7 +60,7 @@ fun PlayerRoute(
         }
     }
 
-    DisposableEffect(Unit) {
-        onDispose { onExit() }
-    }
+    // No DisposableEffect here: disposing the route happens on a normal back
+    // press too, and the old onDispose popped the *detail* screen as well
+    // (measured on the A52: back from the player landed on home).
 }
