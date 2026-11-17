@@ -1,7 +1,10 @@
 package de.hendler.frame61.data
 
 import de.hendler.frame61.data.database.PlaybackStateDao
+import de.hendler.frame61.data.database.ProfileDao
 import de.hendler.frame61.data.database.entities.PlaybackState
+import de.hendler.frame61.data.database.entities.Profile
+import java.security.MessageDigest
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -35,15 +38,15 @@ data class ResumePoint(
  */
 @Singleton
 class ResumeRepository @Inject constructor(
-    private val dao: PlaybackStateDao
+    private val dao: PlaybackStateDao,
+    private val profiles: ProfileDao
 ) {
 
     private val lastSave = HashMap<String, Long>()
 
     suspend fun load(profileId: Long, titleId: Long, episodeId: Long): ResumePoint? {
-        val state = dao.getForProfileAndTitle(profileId, titleId) ?: return null
-        // A different episode must not inherit the movie's position.
-        if (state.episodeId != episodeId) return null
+        val state = dao.getForProfileTitleAndEpisode(profileId, titleId, episodeId)
+            ?: return null
         return state.toPoint()
     }
 
@@ -73,8 +76,13 @@ class ResumeRepository @Inject constructor(
         durationMs: Long,
         nowMs: Long = System.currentTimeMillis()
     ) {
+        ensureProfile(profileId)
         dao.upsert(
             PlaybackState(
+                // Without a stable per-key id every row is id=0 and REPLACE
+                // overwrites the previous title; resume then only knew the last
+                // played item. Measured on the A52 (only one resume row).
+                id = resumeRowId(profileId, titleId, episodeId),
                 profileId = profileId,
                 titleId = titleId,
                 episodeId = episodeId,
@@ -84,6 +92,26 @@ class ResumeRepository @Inject constructor(
             )
         )
         lastSave["$profileId:$titleId:$episodeId"] = nowMs
+    }
+
+    /**
+     * A PlaybackState carries a foreign key to profiles. The app starts with
+     * profileId 0 before anyone created a profile; the first save then failed
+     * with SQLiteConstraintException(787) and killed the process. The default
+     * profile is created lazily here, once.
+     */
+    private suspend fun ensureProfile(profileId: Long) {
+        if (profiles.getById(profileId) != null) return
+        profiles.upsert(
+            Profile(
+                id = profileId,
+                name = if (profileId == 0L) "Standard" else "Profil $profileId",
+                pinHash = "",
+                allowedSources = "",
+                skinId = "frame61",
+                layoutId = "default"
+            )
+        )
     }
 
     suspend fun clear(profileId: Long, titleId: Long) {
@@ -99,4 +127,21 @@ class ResumeRepository @Inject constructor(
         durationMs = durationMs,
         updatedAt = updatedAt
     )
+}
+
+/**
+ * Deterministic positive row id for (profile, title, episode).
+ *
+ * The first 8 bytes of SHA-256, with 0 mapped to 1 so Room never sees "not set".
+ * Not a security function — it only has to be stable and collision-resistant
+ * enough for local resume rows.
+ */
+internal fun resumeRowId(profileId: Long, titleId: Long, episodeId: Long): Long {
+    val digest = MessageDigest.getInstance("SHA-256")
+        .digest("resume:$profileId:$titleId:$episodeId".toByteArray(Charsets.UTF_8))
+    var value = 0L
+    for (index in 0 until 8) {
+        value = (value shl 8) or (digest[index].toLong() and 0xFF)
+    }
+    return (value and Long.MAX_VALUE).takeIf { it != 0L } ?: 1L
 }

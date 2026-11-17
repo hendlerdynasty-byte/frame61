@@ -54,6 +54,16 @@ interface PlaybackStateDao {
     @Query("SELECT * FROM playback_states WHERE profileId = :profileId AND titleId = :titleId")
     suspend fun getForProfileAndTitle(profileId: Long, titleId: Long): PlaybackState?
 
+    @Query(
+        "SELECT * FROM playback_states WHERE profileId = :profileId " +
+            "AND titleId = :titleId AND episodeId = :episodeId"
+    )
+    suspend fun getForProfileTitleAndEpisode(
+        profileId: Long,
+        titleId: Long,
+        episodeId: Long
+    ): PlaybackState?
+
     @Query("DELETE FROM playback_states WHERE profileId = :profileId AND titleId = :titleId")
     suspend fun deleteForTitle(profileId: Long, titleId: Long)
 

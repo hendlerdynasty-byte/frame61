@@ -16,7 +16,9 @@ import androidx.room.PrimaryKey
         )
     ],
     indices = [
-        Index(value = ["profileId", "titleId"], unique = true)
+        // Resume is per episode: a series must not lose S01E02's position when
+        // S01E03 is watched. The old index (profileId,titleId) did exactly that.
+        Index(value = ["profileId", "titleId", "episodeId"], unique = true)
     ]
 )
 data class PlaybackState(

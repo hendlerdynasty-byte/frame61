@@ -53,13 +53,12 @@ Fix: `CatalogRepository` entfernt Markup beim Laden; neuer Test
 
 | Punkt | Vorgehen | Ergebnis |
 |---|---|---|
-| „Abspielen" | Tap auf den Button | **FAIL (Crash)** — App wird geschlossen, Systemdialog „Fehler bei Frame61 aufgetreten" |
-| Ursache | Crash-Buffer (`adb logcat -d -b crash`, leerer Device-Lease) | `java.lang.IllegalStateException: ClassNotFoundException: androidx.media3.exoplayer.hls.HlsMediaSource$Factory` in `Media3Frame61Player.open` (PlayerEngine.kt:81) |
-| Bewertung | – | Die App deklarierte HLS, aber `media3-exoplayer-hls` fehlte; der Fehler trat beim ersten `setMediaItem` auf und riss den Prozess mit |
-
-Fixes: `media3-exoplayer-hls` als Abhängigkeit (Version Catalog + App-Modul),
-`PlayerEngine.open` fängt Fehler und zeigt das vorhandene Error-Panel statt zu
-crashen; `docs/DEPS.md` nachgeführt.
+| „Abspielen" | Tap auf den Button | **FAIL (Crash 1, behoben)** — App wird geschlossen, Systemdialog „Fehler bei Frame61 aufgetreten" |
+| Ursache 1 | Crash-Buffer (`adb logcat -d -b crash`, leerer Device-Lease) | `java.lang.IllegalStateException: ClassNotFoundException: androidx.media3.exoplayer.hls.HlsMediaSource$Factory` in `Media3Frame61Player.open` (PlayerEngine.kt:81) |
+| Nachtest | neuer Build `7544ac2`, erneuter Tap | **FAIL (Crash 2, behoben)** — App schließt ohne Dialog |
+| Ursache 2 | Crash-Buffer nach Nachtest | `SQLiteConstraintException: FOREIGN KEY constraint failed (787)` in `PlaybackStateDao.upsert` — `profileId=0` existiert nicht in `profiles` |
+| Zusatzbefund | Code-Analyse | `PlaybackState.id` war immer 0 → REPLACE löschte den vorherigen Titel; Resume kannte nur einen Eintrag |
+| Fixes | – | `media3-exoplayer-hls`; `PlayerEngine.open` fängt Fehler; Default-Profil wird lazy angelegt; deterministische Resume-Row-ID; Index `(profileId,titleId,episodeId)` + Migration 1→2 |
 
 ## 5. Weitere Screens
 
@@ -70,10 +69,17 @@ crashen; `docs/DEPS.md` nachgeführt.
 
 ## 6. Offene Punkte bis Block-2-Abschluss
 
-1. Neu bauen (`./gradlew gate` remote), APK installieren.
+1. Zweiten Rebuild (`./gradlew gate` remote) mit HLS- und Room-Fix bauen,
+   APK installieren (überschreibt die v1-Datenbank → Migration 1→2 wird real
+   ausgeführt).
 2. Start-Tab, Label, Kontrast, Detail-Markup und Player-Übergang erneut prüfen.
 3. Skins-, Quellen-, Profil- und Options-Screen einmal öffnen.
 4. Erst danach Block 2 als grün führen.
+
+**Bedienhinweis:** Nach einem App-Absturz landet der Tap auf der NavBar-Leiste
+im Launcher bzw. Play Store. Vor jedem Tap muss per UI-Dump geprüft werden, dass
+`de.hendler.frame61` im Vordergrund ist — sonst werden fremde Apps bedient
+(am 17.11. einmal passiert, keine Käufe/Installationen ausgelöst).
 
 ---
 

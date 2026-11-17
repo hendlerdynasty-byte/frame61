@@ -15,6 +15,8 @@ class DatabaseProvider @Inject constructor(
             context,
             Frame61Database::class.java,
             Frame61Database.DATABASE_NAME
-        ).build()
+        )
+            .addMigrations(Frame61Database.MIGRATION_1_2)
+            .build()
     }
 }

@@ -2,6 +2,8 @@ package de.hendler.frame61.data.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import de.hendler.frame61.data.database.entities.Episode
 import de.hendler.frame61.data.database.entities.Mirror
 import de.hendler.frame61.data.database.entities.PlaybackState
@@ -18,7 +20,7 @@ import de.hendler.frame61.data.database.entities.Title
         Profile::class,
         RecVector::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 abstract class Frame61Database : RoomDatabase() {
@@ -32,5 +34,21 @@ abstract class Frame61Database : RoomDatabase() {
 
     companion object {
         const val DATABASE_NAME = "frame61.db"
+
+        /**
+         * 1 → 2: resume is per episode. The old unique index was
+         * (profileId,titleId), so watching S01E03 deleted S01E02's position.
+         * The new index includes episodeId.
+         */
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DROP INDEX IF EXISTS index_playback_states_profileId_titleId")
+                db.execSQL(
+                    "CREATE UNIQUE INDEX IF NOT EXISTS " +
+                        "index_playback_states_profileId_titleId_episodeId " +
+                        "ON playback_states (profileId, titleId, episodeId)"
+                )
+            }
+        }
     }
 }
