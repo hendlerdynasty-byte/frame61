@@ -78,7 +78,7 @@ fun TvHome(
 ) {
     val skin = LocalSkin.current
     val compact = LocalWindowSizeClass.current?.widthSizeClass ==
-        androidx.compose.material3.windowsizeclass.WindowSizeClass.WidthSizeClass.Compact
+        androidx.compose.material3.windowsizeclass.WindowWidthSizeClass.Compact
     // Compact = fewer visible columns because the 190 dp poster keeps its size.
     val outer = if (compact) 12.dp else 24.dp
 
