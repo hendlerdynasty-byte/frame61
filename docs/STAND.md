@@ -66,7 +66,7 @@ Lokale Heavy-Builds sind per Owner-Policy gesperrt; der Gate-Lauf läuft über
 
 | Bereich | Beleg |
 |---|---|
-| Build | Block-8-Gate: siehe ABSCHLUSS (exit 0) |
+| Build | **Block-8-Gate: grün.** Job `frame61-00b96efa534d-1794938264`, exit 0, 8m 56s, 453 Tasks; 93/93 Tests; Lint 0 Errors/126 Warnings; APK 24.328.977 B, SHA-256 `67c1ca71…` |
 | Gerät | A52: Start, Navigation, Detail, Folgen, Player, Suche, Skins, Source Lab, Profile, Optionen, Info (Screenshots/UI-Dumps) |
 | ARD live | Babylon Berlin S01/E01, Label „ARD Mediathek", `0:10 / 44:55`, Video |
 | Suche | Suchfeld + IME/Button; Treffer „Babylon Berlin" |

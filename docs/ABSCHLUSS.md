@@ -1,7 +1,7 @@
 # ABSCHLUSS.md — Frame61, Blöcke 1–8
 
 Stand: 2026-11-17. Quellstand: `block-8` auf Basis `2d3acc9`.
-Gate: **Block-8-Lauf** (`{GATE_JOB}`, exit `{GATE_EXIT}`) — Zahlen unten.
+Gate: **Block-8-Lauf** (`frame61-00b96efa534d-1794938264`, exit `0`) — Zahlen unten.
 
 ## 1. DoD-Abgleich
 
@@ -39,13 +39,13 @@ Gate: **Block-8-Lauf** (`{GATE_JOB}`, exit `{GATE_EXIT}`) — Zahlen unten.
 
 | Kennzahl | Wert |
 |---|---|
-| Job | `{GATE_JOB}` |
-| Exit | `{GATE_EXIT}` |
-| Dauer | `{GATE_DURATION}` |
-| Tests | `{GATE_TESTS}` (0 Failures, 0 Errors, 0 Skipped) |
-| Lint | 0 Errors |
-| APK | `{APK_BYTES}` B (`{APK_MIB}` MiB) |
-| APK-SHA-256 | `{APK_SHA}` |
+| Job | `frame61-00b96efa534d-1794938264` |
+| Exit | `0` |
+| Dauer | `8m 56s, 453 Tasks` |
+| Tests | `93/93` (0 Failures, 0 Errors, 0 Skipped) |
+| Lint | 0 Errors, 126 Warnings |
+| APK | `24.328.977` B (`23,2` MiB) |
+| APK-SHA-256 | `67c1ca71d466acf16f90dd27a355ea124d7bed35a1ec8838276aa69e43d7c274` |
 | Validator | 0 Fehler, 0 Warnungen |
 
 ## 3. Packs mit Status
