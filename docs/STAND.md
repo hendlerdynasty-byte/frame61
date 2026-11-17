@@ -71,8 +71,8 @@ Validator-Erstlauf: **25 Source-Packs, 9 Hoster, 12 Skins, 46 Katalogtitel,
 
 | Bereich | Belegter Stand | Nicht belegt |
 |---|---|---|
-| Build | Letzter fremder Lauf: `frame61-gate3`, 81 Tests, Lint 0E/124W, APK 24.487.318 B (`e6945977…`), Quellstand `4e83c41` | Block-1-Gate auf `db8e05d` + Gate-Task (läuft in dieser Runde) |
-| Gerät A52 | P3 (UI, Marken-Canvas, Fokus) am Gerät belegt | P4/P5; Gerät ist aktuell als `device` verbunden, Keyguard-Zustand unbestätigt |
+| Build | **Block-1-Gate: grün.** Job `frame61-d551f702588b-1794923161`, exit 0, BUILD SUCCESSFUL in 11m 43s, 451 Tasks, Quellstand `d551f70`. 81/81 Tests, Lint 0 Errors/124 Warnings, APK 24.110.215 B (23,0 MiB), SHA-256 `64398e0c08c7eb666c002de3491eaf823471fa2961a995ea85ebb70260c4d627` | Geräte-Runtime, Release |
+| Gerät A52 | P3 (UI, Marken-Canvas, Fokus) am Gerät belegt (älterer Lauf) | P4/P5; Gerät ist aktuell als `device` verbunden, Keyguard-Zustand unbestätigt |
 | Packs | Parser-Fixtures; archive-org mit echter Antwort (recorded) | Live-Nachweis aller anderen Packs; alle 14 Grauzone-Packs `verified:false` |
 | Hoster | Resolver-Tests 20/20 | Live-Nachweis 9/9 NOT_RUN, alle `verified:false` |
 | Player | Logik-Tests 8/8 | Wiedergabe am Gerät; aktuell **nur Demo-HLS** (`CatalogPlayback`, Mux-Teststream) |
@@ -91,7 +91,7 @@ maschinell zu bestätigen.
 
 | # | Punkt | Status | Anmerkung |
 |---|---|---|---|
-| 1 | Build grün auf frischem Klon | ✅ berichtet | Block-1-Gate bindet HEAD `db8e05d` |
+| 1 | Build grün auf frischem Klon | ✅ | Block-1-Gate auf `d551f70`: exit 0, 81 Tests, Lint 0E, APK 23,0 MiB |
 | 2 | kein `!!` | ✅ gemessen | 0 Vorkommen, Preflight prüft weiter |
 | 3 | Versionen gepinnt | ✅ | `gradle/libs.versions.toml`, `docs/DEPS.md` |
 | 4 | Room migrierbar | ✅ (v1) | `exportSchema`; Migration ab Schemaänderung Pflicht |
