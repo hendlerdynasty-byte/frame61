@@ -26,9 +26,16 @@ Jobstart an einer GitHub-Billing-Meldung des **privaten** Repos. Nach dem
 
 ## Gate
 
-- Lokal: `./gradlew gate` (Block-0.5-Vorgabe), Ergebnis wird nach dem Lauf
-  eingetragen.
-- Remote-Gate bleibt der verbindliche CI-Weg (`remote_build.py --tasks gate`).
+- **Remote-Gate: GRÜN.** Job `frame61-3f720511d452-1794942134`, exit 0,
+  BUILD SUCCESSFUL in 8m 15s, 453 Tasks. APK `67c1ca71…` (24.328.977 B).
+- Lokal: `./gradlew gate` angestoßen, aber **nicht durchgeführt** — die
+  Owner-Ressourcengates sind verletzt (22 GiB intern frei < 25 GiB,
+  8 GiB RAM, Load 5,6; externes Volume 16 GiB frei). Ein 10-Modul-Android-Build
+  auf dem Mac wäre genau der laut SOP unzulässige schwere Lokaljob.
+- Ersatz ist der etablierte Remote-Gate auf `contabo-build` (Last 0,04,
+  10 GiB RAM frei, 35 GiB Disk) — maschineller Beleg, kein „grün durch
+  Hinsehen".
+- `scripts/preflight.sh` lokal: **27 OK, 0 FAIL, 0 WARN**.
 
 ## Nächster Schritt
 
