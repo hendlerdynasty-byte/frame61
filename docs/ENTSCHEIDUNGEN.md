@@ -29,3 +29,14 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Fingerprint.
 - GitHub-Actions-Secrets gesetzt: `FRAME61_KEYSTORE_BASE64`,
   `FRAME61_STORE_PASS`, `FRAME61_KEY_PASS`, `FRAME61_KEY_ALIAS`.
+
+## 2026-11-17 — GitHub Actions blockiert (Billing)
+
+- **BLOCKED_EXTERNAL:** Zwei `bootstrap`-Läufe (`44151864618`,
+  `44152085841`) wurden vor dem Jobstart abgelehnt: „recent account payments
+  have failed or your spending limit needs to be increased".
+- Default: kein Public-Schalten, kein Kontowechsel, kein Bezahl-Fallback,
+  keine weiteren Blöcke bis Actions grün ist.
+- Owner-Handlung: GitHub Billing für `hendlerdynasty-byte` klären; danach
+  `gh workflow run bootstrap.yml --ref main`.
+- Details: `docs/CHECKPOINT-BLOCK0.md`.
