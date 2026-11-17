@@ -34,6 +34,7 @@ import de.hendler.frame61.design.Frame61Theme
 import de.hendler.frame61.design.ProvideTvFocusRegistry
 import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.ui.home.HomeViewModel
+import de.hendler.frame61.ui.info.InfoScreen
 import de.hendler.frame61.ui.layout.LayoutBuilderScreen
 import de.hendler.frame61.ui.profile.ProfileScreen
 import de.hendler.frame61.ui.search.SearchScreen
@@ -100,7 +101,13 @@ fun Frame61(
                         LayoutBuilderScreen(onDone = { navController.popBackStack() })
                     }
                     composable("settings") {
-                        SettingsScreen(onOpenLayout = { navController.navigate("layout_builder") })
+                        SettingsScreen(
+                            onOpenLayout = { navController.navigate("layout_builder") },
+                            onOpenInfo = { navController.navigate("info") }
+                        )
+                    }
+                    composable("info") {
+                        InfoScreen(onBack = { navController.popBackStack() })
                     }
                     composable("profiles") {
                         ProfileScreen(onProfileChosen = { navController.popBackStack() })
@@ -156,7 +163,8 @@ fun DetailScreen(titleId: String, navController: NavController) {
         value = withContext(Dispatchers.IO) { catalog.byId(titleId) }
     }
 
-    // Episoden kommen von TVmaze (schlüsselfrei, legal) — nur für Serien.
+    // Episoden kommen aus dem lokalen Snapshot (assets/meta/<id>.json) —
+    // kein Live-Call im Client, kein Namens-Matching.
     val episodes by produceState<List<EpisodeInfo>>(
         initialValue = emptyList(),
         item?.id,
@@ -164,7 +172,7 @@ fun DetailScreen(titleId: String, navController: NavController) {
     ) {
         val current = item
         value = if (current != null && current.type == "series") {
-            withContext(Dispatchers.IO) { episodeSource.episodes(current.title) }
+            withContext(Dispatchers.IO) { episodeSource.episodes(current.id) }
         } else {
             emptyList()
         }

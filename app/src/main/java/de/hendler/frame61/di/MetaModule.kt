@@ -6,13 +6,11 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import de.hendler.frame61.meta.BundledCatalogSource
 import de.hendler.frame61.meta.CatalogRepository
-import de.hendler.frame61.meta.ChainedMetadataSource
 import de.hendler.frame61.meta.MetadataSource
-import de.hendler.frame61.meta.TvmazeEpisodeSource
-import de.hendler.frame61.meta.TvmazeMetadataSource
-import de.hendler.frame61.meta.WikipediaMetadataSource
+import de.hendler.frame61.meta.SnapshotEpisodeSource
+import de.hendler.frame61.meta.SnapshotMetadataSource
+import de.hendler.frame61.meta.SnapshotRepository
 import javax.inject.Singleton
 
 @Module
@@ -25,30 +23,28 @@ object MetaModule {
         CatalogRepository.fromAsset(context)
 
     /**
-     * Bundled catalog first (always answers offline), then the two keyless live
-     * sources. No API key anywhere; if both live sources fail the catalog stands.
+     * The client reads only bundled snapshots (`assets/meta/`). The live
+     * TVmaze/Wikipedia classes still exist for the fetch worker, but they are
+     * deliberately not provided here: a screen cannot trigger a live call.
      */
     @Provides
     @Singleton
-    fun provideMetadataSource(catalog: CatalogRepository): MetadataSource =
-        ChainedMetadataSource(
-            listOf(
-                BundledCatalogSource(catalog),
-                TvmazeMetadataSource(),
-                WikipediaMetadataSource()
-            )
-        )
-
-    /** Keyless TVmaze episode lists for the series detail screen. */
-    @Provides
-    @Singleton
-    fun provideEpisodeSource(): TvmazeEpisodeSource = TvmazeEpisodeSource()
+    fun provideSnapshotRepository(@ApplicationContext context: Context): SnapshotRepository =
+        SnapshotRepository.fromAssets(context)
 
     @Provides
     @Singleton
-    fun provideTvmazeMetadataSource(): TvmazeMetadataSource = TvmazeMetadataSource()
+    fun provideSnapshotMetadataSource(
+        snapshots: SnapshotRepository,
+        catalog: CatalogRepository
+    ): SnapshotMetadataSource = SnapshotMetadataSource(snapshots, catalog)
 
     @Provides
     @Singleton
-    fun provideWikipediaMetadataSource(): WikipediaMetadataSource = WikipediaMetadataSource()
+    fun provideMetadataSource(source: SnapshotMetadataSource): MetadataSource = source
+
+    @Provides
+    @Singleton
+    fun provideEpisodeSource(snapshots: SnapshotRepository): SnapshotEpisodeSource =
+        SnapshotEpisodeSource(snapshots)
 }

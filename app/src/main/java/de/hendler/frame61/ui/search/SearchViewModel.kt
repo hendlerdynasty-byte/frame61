@@ -7,8 +7,7 @@ import de.hendler.frame61.meta.BundledCatalogSource
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.MetadataSource
 import de.hendler.frame61.meta.SearchHit
-import de.hendler.frame61.meta.TvmazeMetadataSource
-import de.hendler.frame61.meta.WikipediaMetadataSource
+import de.hendler.frame61.meta.SnapshotMetadataSource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -25,24 +24,20 @@ data class SearchUiState(
 )
 
 /**
- * Federated search over the individual sources.
+ * Federated search over the local snapshot index and the bundled catalog.
  *
- * The sources are injected one by one instead of as a `List<MetadataSource>`:
- * Kotlin's declaration-site variance made the constructor parameter
- * `List<? extends MetadataSource>` in bytecode, which Dagger could not match
- * against a `List<MetadataSource>` provider (`hiltJavaCompileDebug` failure).
+ * There is no live source here: `assets/meta/` is refreshed by the fetch worker
+ * (tools/fetch/tvmaze_snapshots.py), so a search never waits on an API.
  */
 @HiltViewModel
 class SearchViewModel @Inject constructor(
     private val catalog: CatalogRepository,
-    private val tvmaze: TvmazeMetadataSource,
-    private val wikipedia: WikipediaMetadataSource
+    snapshots: SnapshotMetadataSource
 ) : ViewModel() {
 
     private val sources: List<MetadataSource> = listOf(
-        BundledCatalogSource(catalog),
-        tvmaze,
-        wikipedia
+        snapshots,
+        BundledCatalogSource(catalog)
     )
 
     private val _state = MutableStateFlow(SearchUiState())

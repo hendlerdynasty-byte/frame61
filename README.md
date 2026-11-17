@@ -18,7 +18,7 @@ recherchiert. Die App ist ohne einen einzigen Index-Treffer voll benutzbar —
 
 ```
 :app ──► :core:design  (Skins, Fokus, Theme)
-   │ ──► :core:meta     (Katalog, TVmaze, Wikipedia)
+   │ ──► :core:meta     (Katalog, Offline-Snapshots, Suche)
    │ ──► :core:data     (Room, DataStore, Resume, PIN)
    │ ──► :core:net      (OkHttp, Jsoup)
    │ ──► :scraper:engine (Packs laden, interpretieren, Fixtures)
@@ -68,13 +68,15 @@ Watchdog: 8 s ohne Frame → nächster Mirror, ohne UI-Flackern.
 Next-Episode-Countdown: 8 s ab 90 %, abbrechbar.
 Resume nach Kill exakt, offline aus Room.
 
-## Episoden
+## Episoden und Metadaten
 
-Für Serien zeigt die Detailseite die Folgenliste von **TVmaze**
-(schlüsselfrei, legal, keine API-Autorisierung nötig). Ein Tipp auf eine Folge
-startet den Player mit `episodeId`; Resume wird je Folge gespeichert. Die
-Folgennamen kommen per Name-Suche (`singlesearch/shows?embed=episodes`); bei
-mehrdeutigen Titeln zeigt die Detailseite den tatsächlich geladenen Seriennamen.
+Der Client liest ausschließlich lokale Snapshots aus `assets/meta/<id>.json`
+(plus `index.json` für den Suchindex). Es gibt **keinen Live-API-Call** in der
+App. Die Snapshots werden vorab mit `tools/fetch/tvmaze_snapshots.py` erzeugt
+(TVmaze, CC BY-SA 4.0; Filme aus dem Katalog). Ein Tipp auf eine Folge startet
+den Player mit `episodeId`; Resume wird je Folge gespeichert. Fehlt eine
+Snapshot-Datei, fällt die Suche auf den mitgelieferten Katalog zurück.
+Attribution und Snapshot-Stand stehen unter **Optionen → Info & Quellen**.
 
 ## UI
 

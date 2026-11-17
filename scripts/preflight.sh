@@ -45,7 +45,7 @@ fi
 if command -v python3 >/dev/null 2>&1; then ok "python3"; else bad "python3 fehlt (Pack-Validator)"; fi
 
 # --- Assets und Vertrag ----------------------------------------------------
-for dir in app/src/main/assets/sources app/src/main/assets/hosters app/src/main/assets/skins app/src/main/assets/catalog; do
+for dir in app/src/main/assets/sources app/src/main/assets/hosters app/src/main/assets/skins app/src/main/assets/catalog app/src/main/assets/meta; do
   if [ -d "$dir" ] && [ -n "$(find "$dir" -type f -name '*.json' -print -quit)" ]; then
     ok "Assets: $dir"
   else

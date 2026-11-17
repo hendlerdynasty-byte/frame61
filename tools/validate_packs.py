@@ -279,6 +279,87 @@ def validate_fixtures(root: Path, report: Report) -> None:
             load_json(expected, report)
 
 
+def validate_meta(root: Path, report: Report) -> None:
+    """Prueft die Offline-Metadaten-Snapshots (assets/meta)."""
+    meta_dir = root / "app/src/main/assets/meta"
+    index_path = meta_dir / "index.json"
+    if not meta_dir.is_dir() or not index_path.is_file():
+        report.error(str(meta_dir), "Metadaten-Ordner oder index.json fehlt")
+        return
+    index = load_json(index_path, report)
+    if not isinstance(index, dict):
+        if index is not None:
+            report.error(str(index_path), "Wurzel ist kein Objekt")
+        return
+    entries = index.get("entries")
+    if not isinstance(entries, list) or not entries:
+        report.error(str(index_path), "entries fehlt oder ist leer")
+        return
+    report.counts["meta_index_entries"] = len(entries)
+    ids: set[str] = set()
+    for position, entry in enumerate(entries):
+        if not isinstance(entry, dict) or not non_empty(entry.get("id")):
+            report.error(str(index_path), f"entries[{position}] ohne id")
+            continue
+        if entry["id"] in ids:
+            report.error(str(index_path), f"doppelte id {entry['id']!r}")
+        ids.add(entry["id"])
+
+    files = sorted(p for p in meta_dir.glob("*.json") if p.name != "index.json")
+    file_ids = {p.stem for p in files}
+    for missing in sorted(ids - file_ids):
+        report.error(str(meta_dir), f"index nennt {missing!r}, Datei fehlt")
+    for extra in sorted(file_ids - ids):
+        report.error(str(meta_dir), f"Datei {extra!r} fehlt im index")
+
+    allowed_sources = {"tvmaze", "catalog", "wikipedia"}
+    for path in files:
+        report.count("meta_snapshots")
+        data = load_json(path, report)
+        if not isinstance(data, dict):
+            if data is not None:
+                report.error(str(path), "Wurzel ist kein Objekt")
+            continue
+        where = path.name
+        if data.get("schema") != 1:
+            report.error(where, f"schema={data.get('schema')!r} (erwartet 1)")
+        if data.get("id") != path.stem:
+            report.error(where, f"id={data.get('id')!r} != Dateiname {path.stem!r}")
+        if not non_empty(data.get("title")):
+            report.error(where, "title fehlt")
+        if data.get("type") not in ("movie", "series"):
+            report.error(where, f"type={data.get('type')!r}")
+        if data.get("source") not in allowed_sources:
+            report.error(where, f"source={data.get('source')!r}")
+        if data.get("live") is True:
+            if data.get("source") != "tvmaze":
+                report.error(where, "live=true nur mit source=tvmaze")
+            if not non_empty(data.get("sourceId")):
+                report.error(where, "live=true ohne sourceId")
+            if not non_empty(data.get("fetchedAt")):
+                report.error(where, "live=true ohne fetchedAt")
+        episodes = data.get("episodes")
+        if not isinstance(episodes, list):
+            report.error(where, "episodes ist keine Liste")
+            continue
+        seen_episode_ids: set[int] = set()
+        for position, episode in enumerate(episodes):
+            if not isinstance(episode, dict):
+                report.error(where, f"episodes[{position}] ist kein Objekt")
+                continue
+            episode_id = episode.get("id")
+            if not isinstance(episode_id, int):
+                report.error(where, f"episodes[{position}].id ist keine Zahl")
+            elif episode_id in seen_episode_ids:
+                report.error(where, f"doppelte Episoden-id {episode_id}")
+            else:
+                seen_episode_ids.add(episode_id)
+            if not isinstance(episode.get("season"), int) or not isinstance(
+                episode.get("number"), int
+            ):
+                report.error(where, f"episodes[{position}] season/number fehlt")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -302,6 +383,7 @@ def main() -> int:
     else:
         report.error(str(catalog), "Katalog fehlt")
     validate_fixtures(root, report)
+    validate_meta(root, report)
 
     print(
         "Geprueft: "

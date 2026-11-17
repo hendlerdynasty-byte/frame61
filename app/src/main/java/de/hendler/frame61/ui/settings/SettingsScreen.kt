@@ -32,7 +32,8 @@ import de.hendler.frame61.design.tvFocusable
 @Composable
 fun SettingsScreen(
     viewModel: SettingsViewModel = hiltViewModel(),
-    onOpenLayout: () -> Unit = {}
+    onOpenLayout: () -> Unit = {},
+    onOpenInfo: () -> Unit = {}
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
@@ -75,6 +76,13 @@ fun SettingsScreen(
             onClick = onOpenLayout,
             modifier = Modifier.tvFocusable(id = "settings-layout", onClick = onOpenLayout)
         ) { Text(text = "Layout bearbeiten") }
+
+        Spacer(Modifier.height(8.dp))
+
+        OutlinedButton(
+            onClick = onOpenInfo,
+            modifier = Modifier.tvFocusable(id = "settings-info", onClick = onOpenInfo)
+        ) { Text(text = "Info & Quellen") }
 
         Spacer(Modifier.height(8.dp))
 
