@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -44,8 +45,24 @@ fun SearchScreen(
             value = state.query,
             onValueChange = { viewModel.onQueryChange(it) },
             label = { Text("Titel, Genre, Jahr") },
+            singleLine = true,
+            keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(
+                imeAction = androidx.compose.ui.text.input.ImeAction.Search
+            ),
+            keyboardActions = androidx.compose.foundation.text.KeyboardActions(
+                onSearch = { viewModel.search(state.query) }
+            ),
             modifier = Modifier.fillMaxWidth().tvFocusable(id = "search-input", onClick = { })
         )
+
+        Button(
+            onClick = { viewModel.search(state.query) },
+            modifier = Modifier
+                .padding(top = 8.dp)
+                .tvFocusable(id = "search-submit", onClick = { viewModel.search(state.query) })
+        ) {
+            Text(text = "Suchen")
+        }
 
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(
