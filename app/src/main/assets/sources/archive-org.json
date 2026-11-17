@@ -35,5 +35,19 @@
     "streamNamePath": "name",
     "streamQualityPath": "format",
     "streamUrlTemplate": "https://archive.org/download/{id}/{name}"
+  },
+  "last_check": "2026-11-17T15:59:23Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "detail.jsonPath",
+      "streams.streamPath"
+    ],
+    "misses": [],
+    "http_status": 200
   }
 }

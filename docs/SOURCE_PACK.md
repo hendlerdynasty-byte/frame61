@@ -22,6 +22,8 @@ Ein Source Pack ist die JSON-Datei `assets/sources/<id>.json`. Sie beschreibt
 | `legalFree` | bool | `false` | kennzeichnet legal-freie Quellen; wird bei Gleichstand bevorzugt |
 | `kind` | string | `html` | `html` (Jsoup-CSS) oder `api` (JSON-Dot-Path) |
 | `verified` | bool | `false` | live nachgewiesen — **nur** mit echten Antworten setzen |
+| `last_check` | string | – | ISO-8601-Zeitpunkt des letzten Worker-Laufs |
+| `check` | object | – | Worker-Ergebnis: `status`, `reason`, `checked[]`, `misses[]`, `http_status` |
 
 ## Regeln (`search`, `detail`, `episodes`, `streams`)
 

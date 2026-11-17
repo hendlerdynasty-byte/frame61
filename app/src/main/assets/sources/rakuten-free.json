@@ -31,10 +31,30 @@
     "hosterSelector": ".hoster",
     "healthAttr": "data-health",
     "minHealth": 0.7,
-    "qualityMap": { "HD": "1080", "FHD": "1080", "SD": "720" },
-    "langMap": { "DE": "de", "EN": "en", "OmU": "de" },
+    "qualityMap": {
+      "HD": "1080",
+      "FHD": "1080",
+      "SD": "720"
+    },
+    "langMap": {
+      "DE": "de",
+      "EN": "en",
+      "OmU": "de"
+    },
     "referrers": [
-      { "domain": "rakuten.tv", "accept": true }
+      {
+        "domain": "rakuten.tv",
+        "accept": true
+      }
     ]
+  },
+  "verified": false,
+  "last_check": "2026-11-17T15:59:25Z",
+  "check": {
+    "status": "no_target",
+    "reason": "kein Ziel in tools/fetch/targets.json",
+    "checked": [],
+    "misses": [],
+    "http_status": null
   }
 }

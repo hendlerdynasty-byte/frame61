@@ -63,6 +63,11 @@ if command -v python3 >/dev/null 2>&1; then
   else
     bad "Pack-/Asset-Validator (Details oben)"
   fi
+  if python3 -m unittest discover -s tools/fetch -p 'test_*.py' >/dev/null 2>&1; then
+    ok "Fetch-Werkzeug-Tests"
+  else
+    bad "Fetch-Werkzeug-Tests"
+  fi
 fi
 
 # --- Code-Regeln -----------------------------------------------------------

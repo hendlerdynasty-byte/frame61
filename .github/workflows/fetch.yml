@@ -1,0 +1,68 @@
+name: fetch
+
+# Taeglicher Lauf auf ungerader Minute. Der Job committet sein Ergebnis selbst,
+# damit GitHub Actions den Workflow nach 60 Tagen Inaktivitaet nicht abschaltet.
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: frame61-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Selektor-Matcher testen
+        run: python3 -m unittest discover -s tools/fetch -p 'test_*.py'
+
+      - name: Packs pruefen (Rotation, Retry/Backoff im Worker)
+        run: |
+          OFFSET=$(python3 -c "import datetime; print((datetime.date.today().timetuple().tm_yday % 3) * 10)")
+          python3 tools/fetch/pack_worker.py --limit 10 --offset "$OFFSET" --strict
+
+      - name: TVmaze-Snapshots (20 Calls/10 s)
+        run: python3 tools/fetch/tvmaze_snapshots.py
+
+      - name: Asset-Validator
+        run: python3 tools/validate_packs.py
+
+      - name: Ergebnis committen
+        run: |
+          if git diff --quiet -- app/src/main/assets; then
+            echo "Keine Aenderungen an den Assets."
+            exit 0
+          fi
+          git config user.name "frame61-bot"
+          git config user.email "frame61-bot@users.noreply.github.com"
+          git add app/src/main/assets
+          git commit -m "fetch: Snapshots und Pack-Status $(date -u +%F)"
+          git push
+
+      - name: Issue bei Bruch
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Fetch-Worker fehlgeschlagen $(date -u +%F)" \
+            --body "Lauf: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            || true
