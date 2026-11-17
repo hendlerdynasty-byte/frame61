@@ -11,8 +11,28 @@ keine Secrets im Repository, keine Übertragung ohne konkrete Autorisierung.
   - `FRAME61_STORE_PASS`
   - `FRAME61_KEY_ALIAS` (Default `frame61`)
   - `FRAME61_KEY_PASS`
-- `frame61.jks` existiert nicht → `:app:assembleRelease` ist ohne Keystore
-  nicht lauffähig. Das ist ein **BLOCKED_EXTERNAL**, kein Buildfehler.
+- `frame61.jks` existiert nicht im Repo → `:app:assembleRelease` ist ohne
+  Keystore nicht lauffähig. Der Keystore liegt **außerhalb** des Repos; siehe
+  „Erzeugter Keystore".
+
+## Erzeugter Keystore (17.11.2026)
+
+| Feld | Wert |
+|---|---|
+| Datei | `~/hendler-dynasty/keys/frame61-release.jks` (mode 600) |
+| Alias | `frame61` |
+| Algorithmus | RSA 4096, Gültigkeit 10000 Tage (bis 2054-04-04) |
+| SHA-256 (Datei) | `31f5cd50bf6074e4e74de57793f20b97e4ccafb1bd96366086f6090e20ca3b08` |
+| Zertifikat-SHA-256 | `12:01:F4:6D:50:D1:67:AB:10:71:2D:AD:BE:64:75:1A:F8:9B:F9:D6:1F:12:07:67:2D:1B:0C:E0:6D:EC:4C:52` |
+| Base64-Backup | `~/hendler-dynasty/keys/frame61-release.jks.b64` (mode 600), SHA-256 `bec249b421241c8570f103a64cca883c68cf167202c4385f24be1e6b0b7c775e` |
+| Passwort | macOS Keychain, Service `frame61-keystore-pass`, Account `frame61` (Fallback-Datei mode 600 außerhalb des Repos) |
+
+Das Base64-Backup steht **nicht** in dieser Datei: Keystore und Passwort sind
+Zugangsdaten und gehören nicht in ein Repository (auch kein privates). Pfad,
+Hashes und Fingerprint oben sind die überprüfbaren Belege.
+
+GitHub-Actions-Secrets sind gesetzt: `FRAME61_KEYSTORE_BASE64`,
+`FRAME61_STORE_PASS`, `FRAME61_KEY_PASS`, `FRAME61_KEY_ALIAS`.
 
 ## Keystore erzeugen (einmalig, offline, nicht committen)
 

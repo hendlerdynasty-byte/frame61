@@ -1,0 +1,24 @@
+name: bootstrap
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain und Repo
+        run: |
+          python3 --version
+          java -version
+          test -f settings.gradle.kts
+          test -f scripts/preflight.sh
+          test -f tools/validate_packs.py
+          echo "Frame61 bootstrap: Repo und Toolchain lesbar"
+      - name: Fetch-Werkzeug-Tests
+        run: python3 -m unittest discover -s tools/fetch -p 'test_*.py'
