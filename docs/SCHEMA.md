@@ -73,6 +73,7 @@ Selektor-Syntax: `h3 a@text` (Text), `a@href` (Attribut), `a` = `@text`,
 | `jsonPath` | search/detail/episodes/streams | Dot-Path auf Array/Objekt |
 | `idPath`, `titlePath`, `yearPath`, `typePath` | search/detail | Feld-Paths im Treffer |
 | `streamPath`, `streamNamePath`, `streamQualityPath`, `streamLangPath` | streams | Pfade in der Stream-Liste |
+| `episodeSeasonPath`, `episodeNumberPath` | episodes | Staffel-/Folgennummer im API-Eintrag; sonst aus dem Titel (`(S01/E02)`) oder Index |
 | `streamUrlTemplate` | streams | URL-Vorlage, z. B. `https://cdn/{{id}}/{{name}}` |
 
 Dot-Path: `a.b.0.c`; numerische Segmente indexieren Arrays.
@@ -95,10 +96,11 @@ Siehe `fixtures/gold-01.json` (HTML) und `fixtures/gold-02.json` (API).
 | `result` | string | nein | erwarteter Ergebnistyp (`file`, `url`, …) |
 | `steps` | object[] | ja | Aktionskette |
 
-Schritte: `{action: "get"\|"post"\|"regex"\|"json"\|"sleep", ...}` mit
+Schritte: `{action: "get"|"post"|"regex"|"json"|"sleep"|"copy", ...}` mit
 `url`, `headers`, `body`, `input`, `pattern`, `group`, `path`, `saveAs`,
 `seconds`. Jeder Schritt speichert unter `saveAs`; `regex` braucht `pattern`,
-`json` braucht `path`, `get`/`post` brauchen `url`.
+`json` braucht `path`, `get`/`post`/`copy` brauchen `url`.
+`copy` reicht `{{url}}` unverändert durch (Direktstream ohne Hoster-Seite).
 
 ---
 

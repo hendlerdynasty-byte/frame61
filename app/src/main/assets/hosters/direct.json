@@ -1,0 +1,20 @@
+{
+  "id": "direct",
+  "name": "Direktstream",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "akamaihd.net",
+    "daserste.de",
+    "ardmediathek.de",
+    "ard.de"
+  ],
+  "result": "stream",
+  "steps": [
+    {
+      "action": "copy",
+      "url": "{{url}}",
+      "saveAs": "stream"
+    }
+  ]
+}

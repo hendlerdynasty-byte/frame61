@@ -31,6 +31,18 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         return parseSearch(pack, body)
     }
 
+    fun detail(pack: SourcePack, id: String): DetailResult? {
+        val rule = pack.detail ?: return null
+        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id))
+        return parseDetail(pack, body)
+    }
+
+    fun episodes(pack: SourcePack, id: String): List<EpisodeResult> {
+        val rule = pack.episodes ?: pack.detail ?: return emptyList()
+        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id))
+        return parseEpisodes(pack, body)
+    }
+
     fun streams(pack: SourcePack, id: String, episodeId: String? = null): List<StreamResult> {
         val rule = pack.streams ?: return emptyList()
         val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id, "episodeId" to (episodeId ?: "")))
@@ -140,18 +152,47 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
 
     // ----------------------------------------------------------- dispatch ---
 
+    fun parseDetailApi(pack: SourcePack, body: String): DetailResult? {
+        val rule = pack.detail ?: return null
+        val root = runCatching { bodyJson.parseToJsonElement(body) }.getOrNull() ?: return null
+        val title = rule.titlePath.stringOn(root).orEmpty()
+        if (title.isBlank()) return null
+        val year = rule.yearPath.stringOn(root)?.toIntOrNull()
+        return DetailResult(id = "", title = title, year = year)
+    }
+
+    /**
+     * API episodes: the rule's `jsonPath` points at the episode array; the
+     * season/number are read from `episodeSeasonPath`/`episodeNumberPath` when
+     * present, otherwise from a title like "Folge 1 · Staffel 2 … (S02/E01)".
+     * The fallback is the array index (1-based), never a silent zero.
+     */
+    fun parseEpisodesApi(pack: SourcePack, body: String): List<EpisodeResult> {
+        val rule = pack.episodes ?: return emptyList()
+        val items = rule.jsonPath.arrayIn(body) ?: return emptyList()
+        return items.mapIndexedNotNull { index, item ->
+            val id = rule.idPath.stringOn(item) ?: return@mapIndexedNotNull null
+            val title = rule.titlePath.stringOn(item).orEmpty().ifBlank { "Folge ${index + 1}" }
+            val seasonFromTitle = Regex("""\(\s*S(\d+)\s*/\s*E(\d+)\s*\)""").find(title)
+            val season = rule.episodeSeasonPath.stringOn(item)?.toIntOrNull()
+                ?: seasonFromTitle?.groupValues?.getOrNull(1)?.toIntOrNull()
+                ?: Regex("""Staffel\s+(\d+)""").find(title)?.groupValues?.getOrNull(1)?.toIntOrNull()
+                ?: 1
+            val number = rule.episodeNumberPath.stringOn(item)?.toIntOrNull()
+                ?: seasonFromTitle?.groupValues?.getOrNull(2)?.toIntOrNull()
+                ?: (index + 1)
+            EpisodeResult(id = id, season = season, episode = number, title = title)
+        }
+    }
+
     fun parseSearch(pack: SourcePack, body: String): List<SearchResult> =
         if (pack.isApi()) parseSearchApi(pack, body) else parseSearchHtml(pack, body)
 
     fun parseDetail(pack: SourcePack, body: String): DetailResult? =
-        if (pack.isApi()) {
-            parseSearchApi(pack, body).firstOrNull()?.let { DetailResult(it.id, it.title, year = it.year) }
-        } else {
-            parseDetailHtml(pack, body)
-        }
+        if (pack.isApi()) parseDetailApi(pack, body) else parseDetailHtml(pack, body)
 
     fun parseEpisodes(pack: SourcePack, body: String): List<EpisodeResult> =
-        if (pack.isApi()) emptyList() else parseEpisodesHtml(pack, body)
+        if (pack.isApi()) parseEpisodesApi(pack, body) else parseEpisodesHtml(pack, body)
 
     fun parseStreams(pack: SourcePack, body: String, params: Map<String, String> = emptyMap()): List<StreamResult> =
         if (pack.isApi()) parseStreamsApi(pack, body, params) else parseStreamsHtml(pack, body)

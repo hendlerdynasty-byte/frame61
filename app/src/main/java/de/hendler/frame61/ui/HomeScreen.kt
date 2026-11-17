@@ -81,17 +81,22 @@ fun Frame61(
                     }
                     composable("source_lab") { SourceLabScreen() }
                     composable(
-                        route = "player/{titleId}?episodeId={episodeId}",
+                        route = "player/{titleId}?episodeId={episodeId}&episodeNumber={episodeNumber}",
                         arguments = listOf(
                             navArgument("episodeId") {
                                 type = NavType.LongType
                                 defaultValue = 0L
+                            },
+                            navArgument("episodeNumber") {
+                                type = NavType.IntType
+                                defaultValue = 0
                             }
                         )
                     ) { entry ->
                         val titleId = entry.arguments?.getString("titleId").orEmpty()
                         val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
-                        PlayerRouteFor(titleId, episodeId)
+                        val episodeNumber = entry.arguments?.getInt("episodeNumber") ?: 0
+                        PlayerRouteFor(titleId, episodeId, episodeNumber)
                     }
                     composable("search") { SearchScreen(onOpenTitle = { id ->
                         navController.navigate("detail/$id")
@@ -224,7 +229,8 @@ fun DetailScreen(titleId: String, navController: NavController) {
                                 .padding(vertical = 2.dp)
                                 .tvFocusable(id = "episode-${ep.id}", onClick = {
                                     navController.navigate(
-                                        "player/${current.id}?episodeId=${ep.id}"
+                                        "player/${current.id}?episodeId=${ep.id}" +
+                                            "&episodeNumber=${ep.number}"
                                     )
                                 })
                         )

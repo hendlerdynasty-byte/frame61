@@ -43,7 +43,7 @@ class ProfileSessionViewModel @Inject constructor(
  * known, then starts — before this, playback was hard-wired to profile 0.
  */
 @Composable
-fun PlayerRouteFor(titleId: String, episodeId: Long = 0L) {
+fun PlayerRouteFor(titleId: String, episodeId: Long = 0L, episodeNumber: Int = 0) {
     val catalog: CatalogRepository = hiltViewModel<DetailViewModel>().catalog
     val session: ProfileSessionViewModel = hiltViewModel()
 
@@ -61,7 +61,8 @@ fun PlayerRouteFor(titleId: String, episodeId: Long = 0L) {
         PlayerRoute(
             item = resolved,
             profileId = resolvedProfile,
-            episodeId = episodeId
+            episodeId = episodeId,
+            episodeNumber = episodeNumber
         )
     } else {
         Surface {

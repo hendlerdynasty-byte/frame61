@@ -24,17 +24,20 @@ import de.hendler.frame61.meta.CatalogItem
 fun PlayerRoute(
     item: CatalogItem,
     profileId: Long,
-    episodeId: Long = 0L
+    episodeId: Long = 0L,
+    episodeNumber: Int = 0
 ) {
     val viewModel: PlayerViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
 
-    LaunchedEffect(item.id, episodeId) {
+    LaunchedEffect(item.id, episodeId, episodeNumber) {
         viewModel.start(
             profileId = profileId,
             titleId = item.id,
+            title = item.title,
             episodeId = episodeId,
-            candidates = CatalogPlayback.candidates(item)
+            episodeNumber = episodeNumber,
+            fallbackCandidates = CatalogPlayback.candidates(item)
         )
     }
 
@@ -42,6 +45,7 @@ fun PlayerRoute(
         state = state.ui,
         player = viewModel.player,
         countdownSeconds = state.countdownSeconds,
+        sourceNote = state.sourceNote,
         onTogglePlay = viewModel::togglePlay,
         onSeekBack = { viewModel.seekBy(-10_000L) },
         onSeekForward = { viewModel.seekBy(10_000L) },

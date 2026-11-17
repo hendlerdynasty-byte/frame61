@@ -9,6 +9,7 @@ import de.hendler.frame61.data.ResumeRepository
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
 import de.hendler.frame61.player.PlayerUiState
+import de.hendler.frame61.playback.ArdPlaybackResolver
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import kotlinx.coroutines.delay
@@ -23,7 +24,9 @@ data class PlayerScreenState(
     val ui: PlayerUiState = PlayerUiState(),
     val loading: Boolean = true,
     val countdownSeconds: Int? = null,
-    val fatal: String? = null
+    val fatal: String? = null,
+    /** "ARD Mediathek" when the real source resolved, "Demo-Stream" otherwise. */
+    val sourceNote: String? = null
 )
 
 /**
@@ -35,7 +38,8 @@ data class PlayerScreenState(
 @HiltViewModel
 class PlayerViewModel @Inject constructor(
     application: Application,
-    private val resumeRepository: ResumeRepository
+    private val resumeRepository: ResumeRepository,
+    private val ardResolver: ArdPlaybackResolver
 ) : AndroidViewModel(application) {
 
     private val mediaPlayer = Media3Frame61Player(application)
@@ -59,19 +63,30 @@ class PlayerViewModel @Inject constructor(
     fun start(
         profileId: Long,
         titleId: String,
+        title: String,
         episodeId: Long,
-        candidates: List<MirrorCandidate>
+        episodeNumber: Int,
+        fallbackCandidates: List<MirrorCandidate>
     ) {
         this.profileId = profileId
         this.titleId = titleId
         this.episodeId = episodeId
-        this.mirrors = candidates
+        this.mirrors = fallbackCandidates
         this.mirrorIndex = 0
 
         mediaPlayer.attach()
         mediaPlayer.onFrame = ::onFrame
 
         viewModelScope.launch {
+            // Real source first (ARD), demo only as a visible fallback.
+            val resolved = runCatching { ardResolver.resolve(title, episodeNumber) }
+                .getOrDefault(emptyList())
+            mirrors = resolved.ifEmpty { fallbackCandidates }
+            _state.update {
+                it.copy(
+                    sourceNote = if (resolved.isNotEmpty()) "ARD Mediathek" else "Demo-Stream"
+                )
+            }
             val resume = resumeRepository.load(profileId, CatalogPlayback.stableId(titleId), episodeId)
             openMirror(index = 0, startAtMs = resume?.positionMs ?: 0L)
             startTicker()

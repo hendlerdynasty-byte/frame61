@@ -1,0 +1,60 @@
+{
+  "id": "ard-mediathek",
+  "name": "ARD Mediathek",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "C",
+  "legalFree": true,
+  "kind": "api",
+  "baseUrl": "https://api.ardmediathek.de",
+  "verified": false,
+  "search": {
+    "endpoint": "/page-gateway/pages/ard/search?searchString={{q}}&page={{page}}",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "pageLimit": 20,
+    "jsonPath": "showResults",
+    "idPath": "id",
+    "titlePath": "longTitle",
+    "typePath": "coreAssetType"
+  },
+  "detail": {
+    "endpoint": "/page-gateway/pages/ard/grouping/{{titleId}}?embedded=true&seasoned=true&single=false",
+    "method": "GET",
+    "jsonPath": "widgets",
+    "titlePath": "title"
+  },
+  "episodes": {
+    "endpoint": "/page-gateway/pages/ard/grouping/{{titleId}}?embedded=true&seasoned=true&single=false",
+    "method": "GET",
+    "jsonPath": "widgets.0.teasers",
+    "idPath": "id",
+    "titlePath": "longTitle"
+  },
+  "streams": {
+    "endpoint": "/page-gateway/pages/ard/item/{{episodeId}}?embedded=true",
+    "method": "GET",
+    "jsonPath": "widgets.0.mediaCollection.embedded.streams.0.media",
+    "streamPath": "widgets.0.mediaCollection.embedded.streams.0.media",
+    "streamQualityPath": "maxHResolutionPx",
+    "streamLangPath": "audios.0.languageCode"
+  },
+  "last_check": "2026-11-17T16:53:38Z",
+  "check": {
+    "status": "selector_missing",
+    "reason": "Selektoren ohne Treffer: streams.streamPath",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "detail.jsonPath",
+      "streams.streamPath"
+    ],
+    "misses": [
+      "streams.streamPath"
+    ],
+    "http_status": 200
+  }
+}

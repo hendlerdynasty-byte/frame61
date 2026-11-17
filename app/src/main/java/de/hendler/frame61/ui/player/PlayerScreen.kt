@@ -49,6 +49,7 @@ fun PlayerScreen(
     state: PlayerUiState,
     player: ExoPlayer?,
     countdownSeconds: Int? = null,
+    sourceNote: String? = null,
     onTogglePlay: () -> Unit = {},
     onSeekBack: () -> Unit = {},
     onSeekForward: () -> Unit = {},
@@ -97,6 +98,17 @@ fun PlayerScreen(
             onCycleSpeed = onCycleSpeed,
             modifier = Modifier.align(Alignment.TopStart).padding(16.dp)
         )
+
+        // Visible provenance: "ARD Mediathek" for the real source, "Demo-Stream"
+        // when the resolver fell back. Never pretend a demo is the title.
+        sourceNote?.let { note ->
+            Text(
+                text = note,
+                color = skin.colors.textSecondary,
+                style = MaterialTheme.typography.labelMedium,
+                modifier = Modifier.align(Alignment.TopEnd).padding(16.dp)
+            )
+        }
 
         PlayerControls(
             state = state,

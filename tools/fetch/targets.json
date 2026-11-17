@@ -7,6 +7,12 @@
       "url": "https://archive.org/advancedsearch.php?q=collection%3Afeature_films&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=year&fl%5B%5D=mediatype&rows=3&page=1&output=json",
       "detail_url": "https://archive.org/metadata/{id}",
       "note": "keylose Advancedsearch-API; URL stammt aus dem recorded Fixture (responseSha256 im Fixture-meta)."
+    },
+    "ard-mediathek": {
+      "kind": "api",
+      "url": "https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Babylon",
+      "detail_url": "https://api.ardmediathek.de/page-gateway/pages/ard/grouping/{id}?embedded=true&seasoned=true&single=false",
+      "note": "keylose page-gateway-API. Der Worker prueft Suche+Detail; die Stream-Ebene braucht eine Episoden-ID und ist ueber Fixture + Geraetelauf belegt (docs/SOURCE_LIVE.md)."
     }
   }
 }

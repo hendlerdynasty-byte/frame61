@@ -45,7 +45,7 @@ data class HosterStep(
 /** Validation and file loading without an Android Context. */
 object HosterPackValidator {
 
-    val ACTIONS = setOf("get", "regex", "json", "post", "sleep")
+    val ACTIONS = setOf("get", "regex", "json", "post", "sleep", "copy")
 
     val json = Json {
         ignoreUnknownKeys = true
@@ -79,6 +79,7 @@ object HosterPackValidator {
                     if (step.path.isNullOrBlank()) return "step $index: path fehlt"
                 }
                 "sleep" -> if (step.ms < 0) return "step $index: negative sleep"
+                "copy" -> if (step.url.isNullOrBlank()) return "step $index: url fehlt"
             }
         }
         if (!pack.result.isNullOrBlank() && pack.result !in pack.steps.mapNotNull { it.saveAs }) {

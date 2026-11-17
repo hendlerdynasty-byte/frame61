@@ -151,4 +151,33 @@ class PackFixtureTest {
         assertEquals("Film", api.first().title)
         assertEquals(1999, api.first().year)
     }
+
+    @Test
+    fun `api detail and episodes use the detail rule`() {
+        val pack = PackLoaderValidator.parse(
+            """
+            {"id":"a","name":"A","baseUrl":"https://x.invalid","kind":"api",
+             "detail":{"endpoint":"/d","jsonPath":"widgets","titlePath":"title","yearPath":"year"},
+             "episodes":{"endpoint":"/d","jsonPath":"widgets.0.teasers",
+                         "idPath":"id","titlePath":"longTitle"}}
+            """.trimIndent()
+        ) ?: error("api pack must parse")
+
+        val detail = """{"title":"Babylon Berlin","year":2017,"widgets":[]}"""
+        assertEquals("Babylon Berlin", interpreter.parseDetailApi(pack, detail)?.title)
+        assertEquals(2017, interpreter.parseDetailApi(pack, detail)?.year)
+
+        val episodes = """
+            {"widgets":[{"teasers":[
+              {"id":"e1","longTitle":"Folge 1 · Staffel 1 | Babylon Berlin (S01/E01)"},
+              {"id":"e2","longTitle":"Folge 2 · Staffel 1 | Babylon Berlin (S01/E02)"}
+            ]}]}
+        """.trimIndent()
+        val parsed = interpreter.parseEpisodesApi(pack, episodes)
+        assertEquals(2, parsed.size)
+        assertEquals(1, parsed[0].season)
+        assertEquals(1, parsed[0].episode)
+        assertEquals(2, parsed[1].episode)
+        assertEquals("e2", parsed[1].id)
+    }
 }

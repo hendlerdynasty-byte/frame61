@@ -55,6 +55,9 @@ data class PackRule(
     val episodeTitleSelector: String? = null,
     val episodeLinkSelector: String? = null,
     val episodeIndexSelector: String? = null,
+    // api: season/number paths inside an episode entry
+    val episodeSeasonPath: String? = null,
+    val episodeNumberPath: String? = null,
     // html: streams
     val selector: String? = null,
     val urlAttr: String? = null,

@@ -85,6 +85,12 @@ class HosterResolver(
                         ?: return HosterOutcome.Failed(url, "json: Pfad '${step.path}' ohne Wert", used)
                     vars[step.saveAs ?: "json"] = value
                 }
+                "copy" -> {
+                    // Direct stream: no hoster page, just pass the URL through.
+                    val value = expand(step.url.orEmpty(), url, vars)
+                    if (value.isBlank()) return HosterOutcome.Failed(url, "copy ohne Wert", used)
+                    vars[step.saveAs ?: "copy"] = value
+                }
             }
         }
 
@@ -108,6 +114,7 @@ class HosterResolver(
         var out = template
         hostOf(sourceUrl)?.let { out = out.replace("{host}", it) }
         pathOf(sourceUrl)?.let { out = out.replace("{path}", it) }
+        out = out.replace("{{url}}", sourceUrl)
         out = out.replace("{url}", sourceUrl)
         for ((key, value) in vars) out = out.replace("{$key}", value)
         return out

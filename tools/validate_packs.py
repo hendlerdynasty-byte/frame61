@@ -38,7 +38,7 @@ SKIN_TOKENS = (
     "detailLayout",
     "playerChrome",
 )
-HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep"}
+HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep", "copy"}
 COLOR_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
 
 
@@ -198,6 +198,8 @@ def validate_hoster(path: Path, report: Report) -> None:
             report.error(where, f"steps[{index}] ohne pattern")
         if step.get("action") == "json" and not non_empty(step.get("path")):
             report.error(where, f"steps[{index}] ohne path")
+        if step.get("action") == "copy" and not non_empty(step.get("url")):
+            report.error(where, f"steps[{index}] copy ohne url")
     if data.get("verified") is True:
         report.warn(where, "verified=true, aber es gibt keinen Hoster-Live-Nachweis im Repo")
 

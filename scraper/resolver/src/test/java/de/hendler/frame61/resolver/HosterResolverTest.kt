@@ -52,6 +52,28 @@ class HosterResolverTest {
     }
 
     @Test
+    fun `direct copy passes the stream url through`() = runTest {
+        val p = pack(
+            id = "direct",
+            domains = listOf("akamaihd.net"),
+            result = "stream",
+            steps = listOf(
+                HosterStep(action = "copy", url = "{{url}}", saveAs = "stream")
+            )
+        )
+        val fetcher = FakeFetcher()
+        val out = HosterResolver(listOf(p), fetcher)
+            .resolve("https://wdradaptiv-vh.akamaihd.net/i/x/master.m3u8")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals(
+            "https://wdradaptiv-vh.akamaihd.net/i/x/master.m3u8",
+            (out as HosterOutcome.Resolved).url
+        )
+        assertTrue("copy darf keinen Netzaufruf machen", fetcher.calls.isEmpty())
+    }
+
+    @Test
     fun `unknown host returns Unknown and never throws`() = runTest {
         val resolver = HosterResolver(emptyList(), FakeFetcher())
         val out = resolver.resolve("https://nowhere.invalid/e/1")
