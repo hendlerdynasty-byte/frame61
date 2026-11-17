@@ -1,6 +1,10 @@
 package de.hendler.frame61.ui.player
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import de.hendler.frame61.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -109,6 +113,18 @@ fun PlayerScreen(
                 modifier = Modifier.align(Alignment.TopEnd).padding(16.dp)
             )
         }
+
+        // Brand wordmark from the design package (transparent PNG, 3:1). Never
+        // stretched: ContentScale.Fit, fixed width.
+        Image(
+            painter = painterResource(R.drawable.frame61_logo_horizontal),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+                .padding(top = 12.dp)
+                .width(180.dp)
+        )
 
         PlayerControls(
             state = state,

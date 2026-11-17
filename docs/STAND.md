@@ -1,205 +1,158 @@
-# STAND.md — Bestandsaufnahme Frame61
+# STAND.md — Frame61 Endstand
 
-Stand: 2026-11-17 · Branch `block-1` · Basis-HEAD `db8e05dc14da61b1a8a64c5b791a81d7a7e2b03b`
-· Diese Datei beschreibt den **vorgefundenen** Stand plus die in Block 1
-angelegte Gate-Infrastruktur. Sie ersetzt keine Gate-Aussage: „grün" steht nur
-dort, wo ein Lauf mit Quellstand und Ergebnis belegt ist.
+Stand: 2026-11-17 · Branch `block-8` · Basis-HEAD `2d3acc9`
+· Diese Datei ist der Endstand nach den Blöcken 1–8. Gate-Zahlen und
+Artefakt-Hashes stehen in [ABSCHLUSS.md](ABSCHLUSS.md); die Block-1-Fassung
+dieser Datei ist damit überholt.
 
 ---
 
-## 1. Repo-Inventur (gemessen am 17.11.2026)
+## 1. Inventur (gemessen 17.11.2026)
 
 | Kennzahl | Wert |
 |---|---|
-| Kotlin-Dateien (ohne `build/`) | **85** |
-| Kotlin-Zeilen | **8.268** |
-| Testklassen / `@Test`-Methoden | **13 / 81** |
+| Kotlin-Dateien | **91** |
+| `@Test`-Methoden | **93** |
 | Gradle-Module | **10** |
-| Source-Packs (`assets/sources/`) | **25** (14 Grauzone A/B, 11 legal-frei C) |
-| Hoster-Packs (`assets/hosters/`) | **9** |
-| Skin-Dateien (`assets/skins/`) | **12** |
-| Katalogtitel (`assets/catalog/`) | **46** |
-| Fixture-Serien | **9** (1 `recorded`: archive-org; 8 `synthetic`) |
-| `!!`-Operator in Kotlin | **0** |
+| Source-Packs | **26** (14 Grauzone A/B, 12 legal-frei) |
+| Hoster-Packs | **10** (9 Hoster + `direct`) |
+| Skins | **12** |
+| Katalogtitel | **46** |
+| Metadaten-Snapshots | **46** + `index.json` |
+| Fixture-Serien | **10** (2 recorded: archive-org, ard-mediathek; 8 synthetic) |
+| `!!`-Operator | **0** |
 
 ### Module
 
-| Modul | Inhalt | .kt | Tests |
-|---|---|---|---|
-| `:app` | MainActivity (in `ui/HomeScreen.kt`), NavHost mit 8 Routen, Screens, DI, Updater, Application | 30 | 25 (4 Klassen) |
-| `:core:design` | Skins, Theme, Fokus-Registry | 5 | 5 |
-| `:core:data` | Room v1 (6 Entities), DataStore, Resume, PIN | 15 | 8 (2 Klassen) |
-| `:core:meta` | Katalog, TVmaze/Wikipedia (live), TVmaze-Episoden | 8 | 10 (2 Klassen) |
-| `:core:net` | OkHttp-Factory, Jsoup-Client, HealthChecker | 3 | 0 |
-| `:player` | Media3-Wrapper, Countdown, Resume-Schwellen | 3 | 8 |
-| `:recs` | RecommendationEngine (nicht UI-angebunden) | 1 | 0 |
-| `:scraper:engine` | PackLoader/Interpreter/FixtureRunner/SourceRegistry | 8 | 5 |
-| `:scraper:resolver` | HosterResolver, MirrorSelector, Watchdog | 7 | 20 (4 Klassen) |
-| `:sources:free` | leerer Platzhalter | 0 | 0 |
-
-### Screens und Routen (Ist)
-
-`home` · `detail/{titleId}` · `source_lab` · `player/{titleId}?episodeId=` ·
-`search` · `skins` · `layout_builder` · `settings` · `profiles`
-(dazu `DetailActivity` im Manifest, aber die Navigation läuft über Compose).
-
----
-
-## 2. Gate-Infrastruktur — in Block 1 neu angelegt
-
-Vorgefunden: **kein** `scripts/preflight.sh`, **kein** Gradle-Task `gate`.
-Damit war die im Auftrag verlangte Prüfform nicht existent. Angelegt:
-
-| Datei | Zweck |
-|---|---|
-| `scripts/preflight.sh` | schnelle, offline Prüfung: JDK 17, SDK 36, `gradlew`, Assets, Doku, Pack-Validator, `!!`-Verbot, Gate-Registrierung, Key-Verdacht, Git-Zustand |
-| `tools/validate_packs.py` | Schema-Validator für Source-Packs, Hoster, Skins, Katalog, Fixtures; Wahrheitsregel `verified:true` ⇒ `recorded`-Fixture mit `responseSha256` |
-| `build.gradle.kts` | Tasks `validatePacks`, `checkApkSize`, `gate` |
-
-`./gradlew gate` hängt zusammen: `:app:assembleDebug`, `:app:lint`, alle
-`testDebugUnitTest`-Tasks der 10 Module, `validatePacks`, `checkApkSize`
-(≤ 45 MiB). Lokale Heavy-Builds sind per Owner-Policy gesperrt; der Gate-Lauf
-erfolgt über `python3 ~/hendler-device-ops/remote_build.py` auf
-`contabo-build` gegen einen sauberen Git-HEAD.
-
-Validator-Erstlauf: **25 Source-Packs, 9 Hoster, 12 Skins, 46 Katalogtitel,
-9 Fixtures — 0 Fehler, 0 Warnungen.**
-
----
-
-## 3. Was belegt ist — und was nur Code ist
-
-| Bereich | Belegter Stand | Nicht belegt |
+| Modul | Inhalt | Tests |
 |---|---|---|
-| Build | **Block-1-Gate: grün.** Job `frame61-d551f702588b-1794923161`, exit 0, BUILD SUCCESSFUL in 11m 43s, 451 Tasks, Quellstand `d551f70`. 81/81 Tests, Lint 0 Errors/124 Warnings, APK 24.110.215 B (23,0 MiB), SHA-256 `64398e0c08c7eb666c002de3491eaf823471fa2961a995ea85ebb70260c4d627` | Geräte-Runtime, Release |
-| Gerät A52 | P3 (UI, Marken-Canvas, Fokus) am Gerät belegt (älterer Lauf) | P4/P5; Gerät ist aktuell als `device` verbunden, Keyguard-Zustand unbestätigt |
-| Packs | Parser-Fixtures; archive-org mit echter Antwort (recorded) | Live-Nachweis aller anderen Packs; alle 14 Grauzone-Packs `verified:false` |
-| Hoster | Resolver-Tests 20/20 | Live-Nachweis 9/9 NOT_RUN, alle `verified:false` |
-| Player | Logik-Tests 8/8 | Wiedergabe am Gerät; aktuell **nur Demo-HLS** (`CatalogPlayback`, Mux-Teststream) |
-| Metadaten | Katalog offline (46 Titel); TVmaze/Wikipedia live im Client | Kein Snapshot-Loader, keine Attribution im UI, keine `assets/meta/` |
-| Signing | Release-Config vorhanden | `frame61.jks` fehlt; Release-Signing BLOCKED |
-| Updater | Parser-Tests | Kein `update.json` ausgeliefert, Livepfad NOT_RUN |
-| Performance | Targets dokumentiert | Keine Messung (Kaltstart/Row/RSS) |
-| CI/Cron | – | Kein `.github/`, kein Fetch-Worker |
+| `:app` | Screens, Navigation, DI, Updater, ARD-Resolver, Info | 25 |
+| `:core:design` | Skins, Theme, Fokus | 5 |
+| `:core:data` | Room **v2**, DataStore, Resume, PIN | 12 |
+| `:core:meta` | Katalog, Offline-Snapshots, Suche, Episoden | 16 |
+| `:core:net` | OkHttp, Jsoup, Health | 0 |
+| `:player` | Media3, Countdown, Resume-Schwellen | 8 |
+| `:recs` | RecommendationEngine (nicht angebunden) | 0 |
+| `:scraper:engine` | PackLoader/Interpreter/Fixture/SourceRegistry | 6 |
+| `:scraper:resolver` | HosterResolver (inkl. `copy`), MirrorSelector, Watchdog | 21 |
+| `:sources:free` | Platzhalter | 0 |
+
+Testzahlen je Modul sind aus den letzten Gate-Läufen; die Gesamtsumme 93 ist
+der letzte gemessene Stand (Block 6). Der Block-8-Gate bestätigt sie.
+
+---
+
+## 2. Gate
+
+`scripts/preflight.sh` (schnell, offline) prüft JDK/SDK, Assets, Doku,
+`!!`-Verbot, API-Key-Verdacht, Pack-Validator, Fetch-Tests und PACKS.md.
+
+`./gradlew gate` bündelt:
+
+- `:app:assembleDebug`
+- `:app:lint`
+- `testDebugUnitTest` aller 10 Module
+- `validatePacks` (Source/Hoster/Skin/Katalog/Meta/Gold-Fixtures)
+- `testFetchTools` (CSS-Matcher)
+- `packsReport --check` (docs/PACKS.md aktuell)
+- `checkApkSize` (≤ 45 MiB)
+
+Lokale Heavy-Builds sind per Owner-Policy gesperrt; der Gate-Lauf läuft über
+`remote_build.py` auf `contabo-build`.
+
+---
+
+## 3. Was belegt ist
+
+| Bereich | Beleg |
+|---|---|
+| Build | Block-8-Gate: siehe ABSCHLUSS (exit 0) |
+| Gerät | A52: Start, Navigation, Detail, Folgen, Player, Suche, Skins, Source Lab, Profile, Optionen, Info (Screenshots/UI-Dumps) |
+| ARD live | Babylon Berlin S01/E01, Label „ARD Mediathek", `0:10 / 44:55`, Video |
+| Suche | Suchfeld + IME/Button; Treffer „Babylon Berlin" |
+| Metadaten offline | 46 Snapshots, Info-Screen: „46 Titel, davon 30 live" (Stand 17.11.) |
+| Archiv.org | Pack live verifiziert, recorded Fixture |
+| Room | Migration 1→2 real beim Update über die v1-App ausgeführt; 93 Tests |
+| Performance | Kaltstart-Median 2051 ms, PSS 154 MiB, Scroll-p90 65 ms (Debug) |
+| Signing | Anleitung + Config; Keystore fehlt (BLOCKED_EXTERNAL) |
+| Updater | Parser-Tests; kein echtes `update.json` ausgeliefert (NOT_RUN) |
 
 ---
 
 ## 4. DoD-Liste (27 Punkte)
 
-Status aus dem vorhandenen Audit übernommen; „Gate" heißt: in dieser Runde
-maschinell zu bestätigen.
+| # | Punkt | Status |
+|---|---|---|
+| 1 | Build grün auf frischem Klon | ✅ Block-8-Gate |
+| 2 | kein `!!` | ✅ 0 Vorkommen, Preflight prüft |
+| 3 | Versionen gepinnt | ✅ Version Catalog + DEPS |
+| 4 | Room migrierbar | ✅ v2 + Migration 1→2, real ausgeführt |
+| 5 | PackLoader verwirft kaputte Packs | ✅ Tests |
+| 6 | Fixture-Runner grün | ✅ 10 Serien |
+| 7 | Source Lab importiert/exportiert | ✅ Code; URL-/Dateiimport; Live nicht erneut getestet |
+| 8 | 6 legal-freie Quellen mit Fixture | ✅ 12 legal-frei, 10 Fixtures |
+| 9 | HosterResolver mit WebView-Captcha | ✅ Code; `copy` für Direktstreams; Gerät nur ARD/direkt |
+| 10 | Health-Scoring aktiv | ✅ Tests |
+| 11 | Resume exakt | ✅ Code + Migration; Gerät: Position sichtbar, Kill-Test nicht wiederholt |
+| 12 | Episoden-Navigation | ✅ am A52 (Babylon Berlin S01/E01 → Player) |
+| 13 | Autoplay-Countdown | ✅ Logik-Test |
+| 14 | 90 % = watched | ✅ Schwellen-Test |
+| 15 | Mirror-Failover ohne Flackern | ✅ Code/Test; kein Mehr-Mirror-Gerätelauf |
+| 16 | 11 Skins ohne Codeänderung | ✅ 12 Dateien |
+| 17 | Layout-Builder persistiert | ✅ DataStore-Test |
+| 18 | D-Pad ohne Fokus-Loch | ✅ P3 am A52; Touch-Flows ebenfalls |
+| 19 | Handy nutzbar | ✅ A52-Touch-Flows |
+| 20 | Fokusring sichtbar | ✅ P3 am A52 |
+| 21 | PIN setzen/ändern/entfernen | ✅ Code/Tests; Gerät nicht erneut |
+| 22 | getrennte Profil-Namespaces | ✅ Tests + DB-Fix |
+| 23 | signiertes Release-APK | ❌ BLOCKED_EXTERNAL (Keystore) |
+| 24 | Updater | ✅ Parser; Livepfad NOT_RUN |
+| 25 | Leanback | ✅ Manifest |
+| 26 | Sideload-Doku | ✅ README + UPDATE.md |
+| 27 | README/SCRAPER/SKINS/STATE aktuell | ✅ diese Runde |
 
-| # | Punkt | Status | Anmerkung |
-|---|---|---|---|
-| 1 | Build grün auf frischem Klon | ✅ | Block-1-Gate auf `d551f70`: exit 0, 81 Tests, Lint 0E, APK 23,0 MiB |
-| 2 | kein `!!` | ✅ gemessen | 0 Vorkommen, Preflight prüft weiter |
-| 3 | Versionen gepinnt | ✅ | `gradle/libs.versions.toml`, `docs/DEPS.md` |
-| 4 | Room migrierbar | ✅ (v1) | `exportSchema`; Migration ab Schemaänderung Pflicht |
-| 5 | PackLoader verwirft kaputte Packs | ✅ | `PackFixtureTest` |
-| 6 | Fixture-Runner grün | ✅ | 5/5 |
-| 7 | Source Lab importiert/exportiert | ✅ Code, ⚠ Gerät | SAF + URL+SHA-256; Live NOT_RUN |
-| 8 | 6 legal-freie Quellen mit Fixture | ✅ | 9 Fixture-Serien (8 synthetic, 1 recorded) |
-| 9 | HosterResolver mit WebView-Captcha | ✅ Code, ⚠ Gerät | `CaptchaWebViewFrame` |
-| 10 | Health-Scoring aktiv | ✅ | Resolver-Tests 20/20 |
-| 11 | Resume exakt | ✅ Code, ⚠ Gerät | `PlaybackLogicTest` 8/8 |
-| 12 | Episoden-Navigation | ✅ Code, ⚠ Gerät | TVmaze live; Block 3 stellt auf Snapshot um |
-| 13 | Autoplay-Countdown | ✅ | Logik-Test |
-| 14 | 90 % = watched | ✅ | `ResumeThresholds` |
-| 15 | Mirror-Failover ohne Flackern | ✅ Code, ⚠ Gerät | Watchdog + `rotateMirror` |
-| 16 | 11 Skins ohne Codeänderung | ✅ | 12 Dateien, Parser-Test 5/5 |
-| 17 | Layout-Builder persistiert | ✅ | DataStore `layout_<id>` |
-| 18 | D-Pad ohne Fokus-Loch | ✅ (P3) | `FocusRestorer` |
-| 19 | Handy nutzbar | ✅ Code, ⚠ Gerät | Touch vorhanden, nicht gerät-getestet |
-| 20 | Fokusring sichtbar | ✅ (P3) | am A52 belegt |
-| 21 | PIN setzen/ändern/entfernen | ✅ Code, ⚠ Gerät | `ProfileViewModel` |
-| 22 | getrennte Profil-Namespaces | ✅ | `profileId` in Resume/Layout/Quellen |
-| 23 | signiertes Release-APK | ❌ BLOCKED | Keystore fehlt → Block 8 liefert Anleitung |
-| 24 | Updater | ✅ Code, ⚠ Live | `update.json` fehlt → Block 8 |
-| 25 | Leanback | ✅ | Manifest-Banner + `LEANBACK_LAUNCHER` |
-| 26 | Sideload-Doku | ✅ | README |
-| 27 | README/SCRAPER/SKINS/STATE aktuell | ⚠ | wird in Block 8 auf Endstand gebracht |
-
-**Offen im Sinne des Auftrags:** Signing (#23), Geräteabnahme P4/P5,
-RGB_565, `update.json` (#24), Performance, M6-Metadaten, Grauzone-Freigabe.
+**M0–M5:** ✅ · **M6:** Flag `frame61.m6=false`, Funktionen Stubs · **M7:**
+Updater/Leanback/Sideload ✅, Performance gemessen, Offline-Prewarm/Paging
+nicht umgesetzt.
 
 ---
 
-## 5. Konkrete Lücken und Defekte, die die Blöcke betreffen
+## 5. Offen (ehrlich)
 
-1. **Player ist Demo-only.** `CatalogPlayback.candidates()` liefert immer den
-   Mux-Teststream; `MirrorSelector`/`HosterResolver` sind nicht angebunden.
-   → Block 6 muss einen echten Pfad Suche → Detail → Streams → Player bauen.
-2. **API-Detailpfad ist falsch.** `PackInterpreter.parseDetail()` ruft bei
-   `kind=api` `parseSearchApi()` mit der `search`-Regel auf; eine
-   `detail`-Regel (z. B. archive-org `metadata`) wird nie gelesen. → Block 6.
-3. **Live-API-Calls im Client.** `TvmazeMetadataSource`, `WikipediaMetadataSource`,
-   `TvmazeEpisodeSource` rufen im UI-Pfad `api.tvmaze.com` und
-   `en.wikipedia.org` auf. → Block 3 entfernt das zugunsten von
-   `assets/meta/<id>.json`.
-4. **Kein Info-Screen, keine TVmaze-Attribution.** → Block 3.
-5. **Kein Fetch-Worker, kein Cron, kein `verified`-Update.** →
-   Block 4.
-6. **Kein `docs/SCHEMA.md`, keine Gold-Fixtures.** → Block 5.
-7. **Kein `docs/PACKS.md`, keine per-Pack-Statusliste.** → Block 7.
-8. **Kein `update.json`, keine Release-Signing-Anleitung, keine PERF-Messung.** →
-   Block 8.
-9. **`minSdk`-Abweichung:** `gradle.properties` sagt 22, Version Catalog 23;
-   der Build nutzt 23. Dokumentiert, nicht angeglichen.
-10. **RGB_565:** Coil 3.1.0 hat keine öffentliche Bitmap-Config-API (javap-Beleg
-    im Code-Kommentar). Bleibt ohne eigenen Decoder offen; Entscheidung nötig.
-11. **`:sources:free` ist leer** (nur Build-Datei) — Platzhalter, keine Funktion.
-12. **`network_security_config`** listet weiter Grauzone-/Hoster-Domains; das ist
-    Altbestand und kein Scraper. Wird in Block 7/8 bereinigt oder begründet.
-13. **Doku-Widerspruch:** README/SCRAPER bezeichnen Grauzone-Packs als Attrappen
-    und untersagen Recherche. Der aktuelle Owner-Auftrag entscheidet Scraping
-    anders. Operativ gilt für die Umsetzung: **kein Selektor ohne HTML-Beleg**;
-    Packs ohne Beleg bleiben `verified:false`. Die Doku wird in Block 7/8 an die
-    tatsächliche Entscheidungslage angepasst, nicht vorher.
+1. **Release-Signing:** Keystore fehlt → `docs/SIGNING.md`; Owner muss Schlüssel
+   erzeugen/bereitstellen.
+2. **Update-Livepfad:** kein echtes Manifest/APK-Host → `docs/UPDATE.md`.
+3. **Packs ohne Beleg:** 24 von 26 `verified:false` (14 Grauzone, 10 legal-frei
+   mit synthetischen Fixtures bzw. ohne Ziel). Status in `docs/PACKS.md`.
+4. **ARD-API:** inoffiziell, geo-blockiert möglich; nur erste Staffel als
+   Folgen (widgets[0]); keine offizielle Zusage.
+5. **M6:** TMDB/Badges/Trakt nur Stubs, Flag aus.
+6. **Performance:** Debug-Build; 95th-Percentile 150 ms / ~20 % Janky; keine
+   Release-/Fire-TV-Messung.
+7. **RGB_565:** Coil 3.1.0 bietet keine öffentliche Bitmap-Config; eigener
+   Decoder nicht gebaut.
+8. **Fire TV:** unangetastet (Owner-Policy); kein Fire-TV-Lauf.
+9. **Rechtliches:** Entscheidungslage des aktuellen Owner-Auftrags gilt; keine
+   erfundenen Selektoren, Grauzone bleibt unverifiziert.
 
 ---
 
-## 6. Block → Dateien (Arbeitskarte)
+## 6. Blöcke
 
-| Block | Hauptdateien |
+| Block | Ergebnis |
 |---|---|
-| 1 | `scripts/preflight.sh`, `tools/validate_packs.py`, `build.gradle.kts`, `docs/STAND.md` |
-| 2 | `docs/ABNAHME.md`; Fixes in `app/src/main/java/**`, `app/build.gradle.kts` |
-| 3 | `core/meta/**`, `app/src/main/assets/meta/**`, `app/src/main/java/.../di/MetaModule.kt`, Info-Screen, `AndroidManifest.xml` (Attribution) |
-| 4 | `tools/fetch/**` (neu), `.github/workflows/fetch.yml` (neu), Pack-Dateien (`verified`, `last_check`) |
-| 5 | `docs/SCHEMA.md`, `fixtures/gold-01.json`, `fixtures/gold-02.json`, Validator |
-| 6 | `scraper/engine/**` (Detail-API-Fix), `app/.../ui/player/**`, `scraper/resolver/**`, Pack + Fixture der gewählten Quelle |
-| 7 | `app/src/main/assets/sources/*.json`, `fixtures/<id>/**`, `docs/PACKS.md` |
-| 8 | `app/build.gradle.kts` (Signing), `update.json`, `docs/PERF.md`, `docs/ABSCHLUSS.md`, `docs/STAND.md`, README |
+| 1 | Inventur, Preflight, Gate-Task, STAND.md |
+| 2 | Geräteabnahme; HLS-, FK-, Watchdog-, Nav-, Kontrast-, Markup-Fixes |
+| 3 | Offline-Snapshots, Suchindex, Info-Screen, Live-Calls entkoppelt |
+| 4 | Pack-Worker mit CSS-Matcher, GitHub-Cron, TVmaze-Job |
+| 5 | Schema eingefroren, Gold-Fixtures, Validator im Gate |
+| 6 | ARD Ende-zu-Ende live (Suche → Folgen → Stream → Player) |
+| 7 | PACKS.md generiert, ARD zusätzlich live verifiziert |
+| 8 | Signing/Update/PERF, M6-Flag, Logo im Player/Info, Abschlussdoku |
 
 ---
 
-## 7. Gate-Befehle
-
-```sh
-# vor jedem Block (lokal, schnell)
-scripts/preflight.sh
-
-# voller Gate (remote, sauberer HEAD)
-python3 ~/hendler-device-ops/remote_build.py --repo "<frame61-Pfad>" \
-  --tasks "gate"
-```
-
-Der Remote-Lauf exportiert den Git-HEAD; nicht committete Änderungen sind
-**nicht** Teil des Gates. Deshalb: pro Block committen, dann bauen.
-
----
-
-## 8. Entscheidungslage (für die Umsetzung)
-
-- Signing: Debug-Keystore jetzt, Release-Signing in Block 8.
-- RGB_565: aktiviert als Ziel; ohne öffentliche Coil-API bleibt der Nachweis
-  offen (eigener Decoder wäre eine eigene Aufgabe).
-- Metadaten: TVmaze + Wikidata/Wikipedia, keyless; Snapshots statt Live-Calls.
-- Scraping: durch den aktuellen Owner-Auftrag freigegeben. Unabhängig davon
-  gilt Regel 5: **keine erfundenen Selektoren**; ohne HTML-Beleg
-  `verified:false`.
-- Automatisierung: GitHub Actions, täglicher Cron auf ungerader Minute.
-
----
-
-*Ende Block 1. Nächster Schritt: Gate-Lauf auf diesem Stand, dann Block 2.*
+*Endstand 17.11.2026. Details: [ABSCHLUSS.md](ABSCHLUSS.md),
+[SCHEMA.md](SCHEMA.md), [PACKS.md](PACKS.md), [PERF.md](PERF.md),
+[SIGNING.md](SIGNING.md), [UPDATE.md](UPDATE.md), [METADATA.md](METADATA.md),
+[FETCH.md](FETCH.md), [SOURCE_LIVE.md](SOURCE_LIVE.md).*

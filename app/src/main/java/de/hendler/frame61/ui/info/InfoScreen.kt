@@ -1,12 +1,16 @@
 package de.hendler.frame61.ui.info
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -20,6 +24,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.BuildConfig
+import de.hendler.frame61.M6Features
+import de.hendler.frame61.R
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.meta.SnapshotRepository
@@ -77,6 +83,13 @@ fun InfoScreen(
             .padding(24.dp)
     ) {
         Text(text = "Info & Quellen", style = MaterialTheme.typography.headlineSmall)
+        Spacer(Modifier.height(12.dp))
+        Image(
+            painter = painterResource(R.drawable.frame61_logo_horizontal),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.width(200.dp)
+        )
         Spacer(Modifier.height(16.dp))
 
         Text(
@@ -95,6 +108,11 @@ fun InfoScreen(
         )
         Text(
             text = "Katalog und Poster: eigene Zusammenstellung, offline mitgeliefert.",
+            style = MaterialTheme.typography.bodyLarge
+        )
+        Text(
+            text = "M6 (TMDB/Badges/Trakt): " +
+                if (M6Features.enabled) "Flag an, Funktionen sind Stubs" else "deaktiviert",
             style = MaterialTheme.typography.bodyLarge
         )
         Spacer(Modifier.height(16.dp))

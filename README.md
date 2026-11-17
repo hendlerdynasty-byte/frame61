@@ -99,13 +99,31 @@ Profile: optional PIN (SHA-256 mit Profil-ID als Salt), setzen/ändern/
 entfernen. Getrennte Namespaces: Resume, Empfehlungen, Layout und erlaubte
 Quellen sind je Profil keyed.
 
+## Quellen
+
+- **ARD Mediathek** (legal-frei, keyless): Suche → Show → Folgen → HLS/MP4 →
+  Player. Der Direktstream läuft über den `direct`-Hoster (Pass-through).
+  Live am A52 belegt (Babylon Berlin, S01/E01).
+- **Archive.org** (legal-frei, keyless): API-Pack mit recorded Fixture, vom
+  Worker live verifiziert.
+- Alle übrigen Packs sind `verified: false`; Status und Grund stehen in
+  [docs/PACKS.md](docs/PACKS.md). Es werden keine Selektoren ohne HTML-Beleg
+  erfunden.
+- Der Player zeigt die Quelle an („ARD Mediathek" oder „Demo-Stream"). Der
+  Demo-HLS ist nur ein sichtbarer Fallback.
+
 ## Bauen und Prüfen
 
 Lokale Gradle-Builds sind per Owner-Policy gesperrt. Der Gate-Build läuft
 remote:
 
 ```sh
-python3 ~/hendler-device-ops/remote_build.py --repo "<absoluter Pfad zu frame61>"
+# schnell, lokal, ohne Gradle
+scripts/preflight.sh
+
+# voller Gate (remote)
+python3 ~/hendler-device-ops/remote_build.py \
+  --repo "<absoluter Pfad zu frame61>" --tasks "gate"
 ```
 
 Das Skript exportiert einen sauberen Git-HEAD (signing-/env-Dateien
@@ -113,13 +131,18 @@ ausgeschlossen), baut auf `contabo-build` (JDK17/SDK36), prüft Hashes und
 lädt die Artefakte zurück. Voraussetzung: sauberer HEAD; bei WIP einen
 isolierten Snapshot anlegen, niemals fremden WIP committen.
 
-Gate: `:app:assembleDebug`, `:app:lint`, `:app:testDebugUnitTest` → grün,
-sonst reparieren. Details: `docs/STATE.md`, `docs/AUDIT.md`.
+`./gradlew gate` bündelt `:app:assembleDebug`, `:app:lint`, alle
+Unit-Tests, den Pack-/Meta-Validator, die Fetch-Werkzeug-Tests, den
+PACKS.md-Abgleich und die APK-Größenprüfung (≤ 45 MiB). Details:
+[STAND.md](docs/STAND.md), [SCHEMA.md](docs/SCHEMA.md),
+[PACKS.md](docs/PACKS.md), [PERF.md](docs/PERF.md),
+[SIGNING.md](docs/SIGNING.md), [UPDATE.md](docs/UPDATE.md).
 
 ## Sideload
 
 1. APK auf das Gerät bringen (USB, `adb install`, Downloads-Ordner).
 2. Installation erlauben (Unbekannte Quellen), App starten.
+3. Updates über `update.json` (siehe [docs/UPDATE.md](docs/UPDATE.md)).
 3. Updater optional: in den Einstellungen eine Manifest-URL setzen
    (`update.json` mit `versionCode`, `versionName`, `apkUrl`, optional
    `sha256`). „Jetzt prüfen" vergleicht die Version; „Installieren" lädt

@@ -19,6 +19,11 @@ android {
         versionCode = 1
         versionName = "1.0.0"
 
+        // M6 (TMDB de-DE, Verfügbarkeits-Badges, Trakt) ist optional und
+        // standardmäßig aus. Die Pfade sind Stubs; kein Key, kein Live-Call.
+        val m6 = (project.findProperty("frame61.m6") as? String)?.toBoolean() ?: false
+        buildConfigField("boolean", "M6_ENABLED", m6.toString())
+
         vectorDrawables {
             useSupportLibrary = true
         }

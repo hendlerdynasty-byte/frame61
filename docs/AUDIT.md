@@ -1,94 +1,70 @@
 # AUDIT — Frame61 Android TV
 
-Stand: 2026-11-16 (Abend). Diese Fassung ersetzt die veraltete 20.10.-Version
-(sie nannte u. a. ein gelöschtes `:oscardp`-Modul, eine nicht existierende
-`Resolver.kt` und „ECHT"-Scraper für Grauzone-Packs — das war falsch).
+Stand: 2026-11-17 (Block 8). Ersetzt die Fassung vom 16.11. (dort: Room v1,
+81 Tests, 85 Dateien). Maßgeblich sind die Gate-Artefakte.
 
-## A. Build-Gate (voll)
+## A. Build-Gate
 
-| Task | Status | Details | Beleg |
-|------|--------|---------|-------|
-| `:app:assembleDebug` | GRÜN | 24.487.318 B APK | Job `frame61-gate3`, exit 0 |
-| `:app:lint` | GRÜN | **0 Errors, 124 Warnings** | `lint-results-debug.txt` |
-| `testDebugUnitTest` (alle Module) | GRÜN | **81 Tests, 0 Fehler, 0 übersprungen** | 16 Testklassen, XMLs |
-| Quellstand | `4e83c41` | sauberer HEAD, isoliertes Snapshot-Repo | Manifest `source.sha` |
-| Artefakt-Hash | `e6945977…06f4` | lokal gegen Manifest verifiziert | `shasum -a 256` |
+| Task | Status | Beleg |
+|---|---|---|
+| `:app:assembleDebug` | GRÜN | Block-8-Gate, exit 0 |
+| `:app:lint` | GRÜN | 0 Errors |
+| Unit-Tests (10 Module) | GRÜN | **93/93**, 0 Failures/Errors/Skipped |
+| Asset-Validator | GRÜN | 26 Packs, 10 Hoster, 12 Skins, 46 Meta, 2 Gold |
+| Fetch-Tests | GRÜN | CSS-Matcher (4) |
+| PACKS-Abgleich | GRÜN | `tools/packs_report.py --check` |
+| APK-Größe | GRÜN | ≤ 45 MiB (Wert in ABSCHLUSS.md) |
 
-## B. Module (85 .kt-Dateien)
+## B. Module (91 Kotlin-Dateien)
 
-| Modul | Zweck | .kt | Tests |
-|-------|-------|-----|-------|
-| :app | MainActivity, Navigation, Screens, DI, Updater | 35 | 25 (5 Klassen) |
-| :core:design | Skins, Fokus-Registry, Theme | 5 | 5 |
-| :core:data | Room (6 Entities, v1), DataStore, Resume, PIN | 15 | 8 (2 Klassen) |
-| :core:meta | Katalog, TVmaze (Suche + Episoden), Wikipedia | 8 | 10 (2 Klassen) |
-| :core:net | OkHttp, Jsoup, HealthChecker | 3 | — |
-| :player | Media3-Wrapper, Countdown | 3 | 8 |
-| :recs | Empfehlungen | 1 | — |
-| :scraper:engine | PackLoader/Interpreter/FixtureRunner | 8 | 5 |
-| :scraper:resolver | HosterResolver, MirrorSelector, Watchdog | 7 | 20 (4 Klassen) |
-| :sources:free | leerer Platzhalter (0 Dateien) | 0 | — |
+| Modul | Inhalt | Tests |
+|---|---|---|
+| `:app` | Screens, Nav, DI, Updater, ARD-Resolver, Info | 25 |
+| `:core:design` | Skins, Theme, Fokus | 5 |
+| `:core:data` | Room **v2**, DataStore, Resume, PIN | 12 |
+| `:core:meta` | Katalog, Snapshots, Suche, Episoden | 16 |
+| `:core:net` | OkHttp, Jsoup, Health | 0 |
+| `:player` | Media3, Countdown, Schwellen | 8 |
+| `:recs` | RecommendationEngine | 0 |
+| `:scraper:engine` | PackLoader/Interpreter/Fixture | 6 |
+| `:scraper:resolver` | HosterResolver, MirrorSelector, Watchdog | 21 |
+| `:sources:free` | Platzhalter | 0 |
 
-## C. Screens (10)
-
-Home (Billboard + Regale), Suche, Detail (inkl. Folgenliste), Player,
-Profilwahl/-Edit (PIN setzen/ändern/entfernen), Skins, Layout-Builder,
-Quellen (Source Lab), Einstellungen (Autoplay, Schwelle, Layout, Update),
-Captcha-WebView-Frame. Jede Route ist über die NavBar oder einen Button
-erreichbar; TV-Fokus über `FocusRestorer`/`tvFocusable`.
-
-## D. Quellen und Wahrheitsstatus
+## C. Quellen und Wahrheitsstatus
 
 | Gruppe | Anzahl | Status |
-|--------|--------|--------|
-| Grauzone Tier A/B (streamkiste, s.to, cine.to, filmpalast, aniworld, megakino, kinokiste, dokujunkies, movie4k, hdfilme, kinox, bs.to, filmfans, anime-loads) | 14 | **Attrappen, UNVERIFIED** — synthetische Selektoren, `verified:false`, keine Recherche |
-| Legal-frei Tier C (ard, zdf, arte, 3sat, kika, pluto-tv, netzkino, rakuten-free, plex-free, youtube, archive-org) | 11 | Fixtures vorhanden (Strukturmodelle), **Live-Nachweis NOT_RUN** |
-| Hoster (voe, vidoza, streamtape, filemoon, vidmoly, luluvdo, mixdrop, streamhide, loadx) | 9 | `verified:false`, Live-Nachweis NOT_RUN |
-| Katalog (TMDB/TVmaze/Wikipedia-Metadaten, offline) | 46 Titel | im APK, Poster HEAD-geprüft (8/8 beim Build) |
+|---|---|---|
+| Live verifiziert | **2** | `ard-mediathek` (Suche/Detail/Folge/Stream + Gerät), `archive-org` (API) |
+| Legal-frei ohne Live-Beleg | 10 | `verified:false`, Fixtures synthetisch oder kein Ziel |
+| Grauzone Tier A/B | 14 | `verified:false`, Attrappen, kein HTML-Beleg |
+| Hoster | 10 | 9 alte + `direct`; alle `verified:false` (Hoster-Live nicht geführt) |
 
-## E. Datenbank
+Details und Begründung je Pack: `docs/PACKS.md`.
 
-Room **Version 1**, `exportSchema = true`, 6 Entities (Title, Mirror, Episode,
-PlaybackState, Profile, RecVector), DAOs vollständig, `DatabaseProvider`
-(Hilt). Migrationen: keine nötig (v1); ab jeder Schemaänderung Pflicht.
+## D. Datenbank
 
-## F. Player
+Room **Version 2**, `exportSchema = true`, 6 Entities. Migration 1→2:
+Resume-Index `(profileId,titleId,episodeId)` statt `(profileId,titleId)`.
+Default-Profil wird lazy angelegt (FK-Fehler behoben). Migration lief real
+beim Update über die v1-App.
 
-Media3 (HLS), Spurwahl Audio/Untertitel, Tempo, Watchdog 8 s (`PlaybackWatchdog`,
-`PlaybackWatchdogTest` 5/5), Mirror-Failover mit Positionsübernahme,
-Autoplay-Countdown 8 s ab 90 %, Resume alle 5 s (Room, `ResumeRepository`),
-`>90 % = gesehen` (`ResumeThresholds`). Gerät: BLOCKED (Keyguard).
+## E. Player
 
-## G. Skins
+Media3 1.6.0 inkl. `media3-exoplayer-hls`; HLS/MP4, Spurwahl, Tempo,
+Watchdog (Fortschritt statt Ticker), Direktstream-Hoster (`copy`), sichtbares
+Quellenlabel („ARD Mediathek"/„Demo-Stream"). ARD-Slice am A52 belegt.
 
-12 JSON-Dateien (`netflix`, `disneyplus`, `appletv`, `primevideo`, `hbomax`,
-`paramount`, `plex`, `crunchyroll`, `kodimodus`, `frame61`, `frame61-indigo`,
-`custom`), 15 Tokens je Datei, Parser tolerant (`SkinJsonParserTest` 5/5:
-alle 12 parsen, kaputte Datei fällt einzeln aus). Aktiver Skin in DataStore,
-`Frame61Theme(skin=…)` rendert; Auswahl in den Skins-Screen.
+## F. Metadaten
 
-## H. Rechtliches / Quellenpolitik
+46 Offline-Snapshots + Index; Client ohne Metadaten-Live-Call; Attribution im
+Info-Screen. Fetch-Werkzeug und Cron in `tools/fetch/`, `docs/FETCH.md`.
 
-- Grauzone-Indexseiten: ausschließlich JSON-Packs, Attrappen, UNVERIFIED.
-- Keine echten Selektoren, keine Recherche, keine Hoster-Recherche.
-- Legal-freie Quellen + TVmaze (Metadaten/Episoden) + mitgelieferter Katalog
-  sind die einzigen echten Datenwege.
-- `network_security_config` enthält weiter die (historisch gewachsenen)
-  Domain-Einträge der Grauzone; sie sind kein Scraper und wurden nicht erweitert.
+## G. Offene Punkte
 
-## I. Offene Punkte (Details in STATE.md)
-
-1. Geräte-Abnahme P4/P5 — BLOCKED (A52-Keyguard, Owner-Entsperrung).
-2. RGB_565 — BLOCKED belegt (keine öffentliche Coil-3.1.0-API).
-3. Live-Nachweise legal-frei/Hoster/Captcha — NOT_RUN.
-4. Signiertes Release-APK — BLOCKED_EXTERNAL (keine Signing-Secrets).
-5. Performance-Messungen — NOT MEASURED (kein Gerät).
-6. Updater-Livepfad — NOT_RUN (kein `update.json` ausgeliefert).
-7. Mimosa-Pre-Commit-Scan in dieser Sitzung nur partiell — keine
-   Sicherheitsaussage.
-
-## J. Gerät
-
-Samsung A52 (SM A525F, Android 14): P3 am Gerät belegt (UI, Marken-Canvas,
-Fokus). P4/P5 BLOCKED durch gesicherten Keyguard — keine Installation, keine
-Interaktion in dieser Runde. Fire TV: unangetastet (Owner-Policy).
+1. Release-Signing (Keystore) — BLOCKED_EXTERNAL.
+2. `update.json`-Livepfad — NOT_RUN.
+3. 24 Packs ohne Live-Beleg — bewusst `verified:false`.
+4. M6 (TMDB/Badges/Trakt) — Flag aus, Stubs.
+5. RGB_565 — ohne eigenen Decoder nicht umgesetzt.
+6. Fire TV — unangetastet (Owner-Policy).
+7. Performance — Debug-Build; 95th-Percentile 150 ms, ~20 % Jank.
