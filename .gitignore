@@ -4,6 +4,7 @@ build/
 **/build/
 .mimosa/
 local.properties
+.idea/local.properties
 .DS_Store
 *.iml
 .idea/
@@ -11,6 +12,16 @@ captures/
 app/release/
 *.apk
 *.aab
+
+# Signing / Credentials — niemals committen
+*.jks
+*.keystore
+*.p12
+*.pem
+.env
+.env.*
+signing.properties
+keystore.properties
 
 # Python
 __pycache__/

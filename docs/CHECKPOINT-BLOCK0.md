@@ -16,6 +16,18 @@ Das ist kein Workflow-Fehler: `actions/permissions` ist `enabled=true`,
 `hendlerdynasty-byte` nicht gestartet. Ein dritter Retry ist sinnlos, solange
 der Kontostatus unverändert ist.
 
+## Sicherheitsprüfung vor Public (17.11.2026)
+
+| Prüfung | Ergebnis |
+|---|---|
+| Getrackte sensible Dateien | keine (`local.properties`, `*.jks`, `.env` nicht getrackt) |
+| History-Pfade | keine |
+| History-Inhaltsscan | 2 Treffer, beide der alte Platzhalter-Fallback `?: "frame61"` in `app/build.gradle.kts`; **kein echtes Passwort**, kein Schlüssel |
+| Maßnahme | Fallbacks entfernt; Signing liest nur noch `FRAME61_*` aus der Umgebung |
+| `.gitignore` | ergänzt: `*.jks`, `*.keystore`, `*.p12`, `*.pem`, `.env*`, `signing.properties`, `keystore.properties`, `.idea/local.properties` |
+| Repo-Größe | `.git` 1,5 MB, 315 getrackte Dateien, 35 Commits |
+| Bewertung | sauber für Public; der alte Platzhalter ist kein Zugangsdatum |
+
 ## Was Block 0 bereits erledigt hat
 
 | Schritt | Beleg |

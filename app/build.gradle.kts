@@ -34,9 +34,10 @@ android {
     signingConfigs {
         create("release") {
             storeFile = file("../frame61.jks")
-            storePassword = System.getenv("FRAME61_STORE_PASS") ?: "frame61"
-            keyAlias = System.getenv("FRAME61_KEY_ALIAS") ?: "frame61"
-            keyPassword = System.getenv("FRAME61_KEY_PASS") ?: "frame61"
+            // Nur aus der Umgebung; kein Passwort-Fallback im Repository.
+            storePassword = System.getenv("FRAME61_STORE_PASS")
+            keyAlias = System.getenv("FRAME61_KEY_ALIAS")
+            keyPassword = System.getenv("FRAME61_KEY_PASS")
         }
     }
 
