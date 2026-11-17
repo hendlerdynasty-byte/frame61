@@ -27,6 +27,7 @@ import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.ui.LocalWindowSizeClass
 
 /**
  * One rail of the home screen. [RailKind] mirrors the 12 row types from the
@@ -76,12 +77,16 @@ fun TvHome(
     modifier: Modifier = Modifier
 ) {
     val skin = LocalSkin.current
+    val compact = LocalWindowSizeClass.current?.widthSizeClass ==
+        androidx.compose.material3.windowsizeclass.WindowSizeClass.WidthSizeClass.Compact
+    // Compact = fewer visible columns because the 190 dp poster keeps its size.
+    val outer = if (compact) 12.dp else 24.dp
 
     LazyColumn(
         modifier = modifier.fillMaxSize(),
         contentPadding = PaddingValues(
-            start = skin.layout.gutterDp,
-            end = skin.layout.gutterDp,
+            start = outer,
+            end = outer,
             bottom = skin.layout.gutterDp * 2
         ),
         verticalArrangement = Arrangement.spacedBy(skin.layout.gutterDp)
@@ -151,13 +156,15 @@ private fun CatalogPoster(
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
-    val width = skin.layout.rowHeightDp * skin.layout.cardAspectRatio
+    // TV poster standard: 190 dp high, exactly 2:3.
+    val posterHeight = 190.dp
+    val width = posterHeight * (2f / 3f)
 
     PosterCard(
         posterUrl = item.poster,
         modifier = Modifier
             .width(width)
-            .height(skin.layout.rowHeightDp),
+            .height(posterHeight),
         cornerRadius = skin.layout.cardRadius,
         contentDescription = "${item.title} ${item.year ?: ""}".trim(),
         focusId = "card-${item.id}",
@@ -194,12 +201,15 @@ private fun Billboard(
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
+    // Hero never exceeds 40 % of the screen height.
+    val screenHeight = androidx.compose.ui.platform.LocalConfiguration.current.screenHeightDp.dp
+    val heroHeight = minOf(skin.layout.billboardHeightDp, screenHeight * 0.4f)
 
     PosterCard(
         posterUrl = item.poster,
         modifier = Modifier
             .fillMaxWidth()
-            .height(skin.layout.billboardHeightDp),
+            .height(heroHeight),
         cornerRadius = skin.layout.cardRadius,
         contentDescription = item.title,
         focusId = "billboard-${item.id}",

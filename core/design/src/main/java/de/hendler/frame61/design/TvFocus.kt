@@ -14,6 +14,7 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.material3.minimumInteractiveComponentSize
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
@@ -81,7 +82,8 @@ fun rememberTvFocusRegistry(): TvFocusRegistry = remember { DefaultTvFocusRegist
 /** Ring metrics, so no screen invents its own. */
 object TvFocusStyle {
     val ringWidth: Dp = 3.dp
-    val scale: Float = 1.04f
+    /** 10-foot focus feedback: 8 % growth, still inside the layout bounds. */
+    val scale: Float = 1.08f
     val cornerRadius: Dp = 12.dp
 }
 
@@ -116,6 +118,8 @@ fun Modifier.tvFocusable(
     }
 
     return this
+        // Touch targets are at least 48 dp; TV cards are larger anyway.
+        .minimumInteractiveComponentSize()
         .focusRequester(requester)
         .focusable(enabled = enabled, interactionSource = interaction)
         .then(

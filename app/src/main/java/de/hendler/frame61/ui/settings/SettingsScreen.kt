@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.tvFocusable
 
 /**
@@ -116,4 +117,6 @@ fun SettingsScreen(
             Text(text = "Gespeichert", style = MaterialTheme.typography.labelSmall)
         }
     }
+
+    FocusRestorer(targetId = "settings-autoplay")
 }

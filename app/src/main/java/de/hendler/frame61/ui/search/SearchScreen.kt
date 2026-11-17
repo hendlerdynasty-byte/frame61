@@ -26,6 +26,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.design.tvFocusable
@@ -116,4 +117,5 @@ fun SearchScreen(
         }
     }
 
+    FocusRestorer(targetId = "search-input")
 }

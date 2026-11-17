@@ -1,6 +1,8 @@
 package de.hendler.frame61.ui
 
+import android.app.Activity
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,6 +10,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -59,6 +65,7 @@ class MainActivity : androidx.appcompat.app.AppCompatActivity() {
 }
 
 /** App shell: theme, focus registry and the navigation graph. */
+@OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @Composable
 fun Frame61(
     content: @Composable (NavController) -> Unit
@@ -69,15 +76,29 @@ fun Frame61(
     val skinViewModel: SkinViewModel = hiltViewModel()
     val skin by skinViewModel.skin.collectAsStateWithLifecycle()
 
-    Frame61Theme(skin = skin) {
-        ProvideTvFocusRegistry {
-            val navController = rememberNavController()
-            Box(modifier = Modifier.fillMaxSize()) {
-                androidx.navigation.compose.NavHost(
-                    navController = navController,
-                    startDestination = "home",
-                    modifier = Modifier.padding(bottom = 64.dp)
-                ) {
+    val activity = LocalContext.current as? Activity
+    val windowSizeClass = activity?.let {
+        runCatching { calculateWindowSizeClass(it) }.getOrNull()
+    }
+
+    CompositionLocalProvider(LocalWindowSizeClass provides windowSizeClass) {
+        Frame61Theme(skin = skin) {
+            ProvideTvFocusRegistry {
+                val navController = rememberNavController()
+                BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+                    // Overscan safe area: 5 % horizontally, 3 % vertically.
+                    val safeH = maxWidth * 0.05f
+                    val safeV = maxHeight * 0.03f
+                    androidx.navigation.compose.NavHost(
+                        navController = navController,
+                        startDestination = "home",
+                        modifier = Modifier.padding(
+                            start = safeH,
+                            end = safeH,
+                            top = safeV,
+                            bottom = 64.dp + safeV
+                        )
+                    ) {
                     composable("home") { HomeScreen(navController) }
                     composable("detail/{titleId}") { entry ->
                         DetailScreen(entry.arguments?.getString("titleId").orEmpty(), navController)
@@ -135,8 +156,11 @@ fun Frame61(
                             navController.navigate(route) { popUpTo("home") }
                         }
                     },
-                    modifier = Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
+                    modifier = Modifier
+                        .align(androidx.compose.ui.Alignment.BottomCenter)
+                        .padding(start = safeH, end = safeH, bottom = safeV)
                 )
+                }
             }
         }
     }

@@ -37,6 +37,7 @@ data class Frame61Colors(
  */
 data class Frame61Typography(
     val billboardTitle: TextUnit = 36.sp,
+    val screenTitle: TextUnit = 32.sp,
     val rowTitle: TextUnit = 20.sp,
     val cardTitle: TextUnit = 14.sp,
     val body: TextUnit = 16.sp,
@@ -45,6 +46,7 @@ data class Frame61Typography(
 ) {
     fun scaled(factor: Float): Frame61Typography = copy(
         billboardTitle = billboardTitle * factor,
+        screenTitle = screenTitle * factor,
         rowTitle = rowTitle * factor,
         cardTitle = cardTitle * factor,
         body = body * factor,
@@ -52,14 +54,21 @@ data class Frame61Typography(
         typeScale = factor
     )
 
-    /** Material [Typography] derived from the tokens. */
+    /** Material [Typography] derived from the tokens, with TV minimums. */
     fun toMaterial(): Typography {
         val base = Typography()
         return base.copy(
-            displaySmall = base.displaySmall.copy(fontSize = billboardTitle),
-            headlineSmall = base.headlineSmall.copy(fontSize = rowTitle),
+            displaySmall = base.displaySmall.copy(
+                fontSize = billboardTitle.coerceAtLeast(32.sp)
+            ),
+            // Screen headings (Detail, Settings, Suche …) are never below 32 sp.
+            headlineSmall = base.headlineSmall.copy(
+                fontSize = screenTitle.coerceAtLeast(32.sp)
+            ),
             titleMedium = base.titleMedium.copy(fontSize = cardTitle),
-            bodyLarge = base.bodyLarge.copy(fontSize = body),
+            // Body copy is never below 16 sp — TV viewing distance.
+            bodyLarge = base.bodyLarge.copy(fontSize = body.coerceAtLeast(16.sp)),
+            bodyMedium = base.bodyMedium.copy(fontSize = body.coerceAtLeast(16.sp)),
             labelSmall = base.labelSmall.copy(fontSize = caption)
         )
     }
@@ -70,10 +79,11 @@ data class Frame61Typography(
  */
 data class Frame61Layout(
     val radius: Int = 8,
-    val cardAspectRatio: Float = 0.6f,
-    val rowHeight: Int = 180,
+    /** 2:3 cover, the TV poster standard. */
+    val cardAspectRatio: Float = 2f / 3f,
+    val rowHeight: Int = 190,
     val gutter: Int = 12,
-    val billboardHeight: Int = 380,
+    val billboardHeight: Int = 420,
     val detailLayout: String = "vertical",
     val playerChrome: String = "dark"
 ) {
