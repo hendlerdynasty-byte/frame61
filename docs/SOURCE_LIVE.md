@@ -57,7 +57,22 @@ aktuelle Seite. Live-Nachweis: Geräte-Slice (siehe unten).
 - Fallback: Wenn ARD nichts Passendes liefert, spielt der öffentliche
   Mux-Demo-HLS; die UI zeigt „Demo-Stream". Das ist kein Quellennachweis.
 
-## Live-Nachweis
+## Live-Nachweis (A52, 17.11.2026)
 
-Wird nach dem Gerätelauf ergänzt: Katalog → Babylon Berlin → Folge → Player,
-Screenshot + Quellenlabel.
+Build `ed30818`, APK `995528f86f49d760917d7f6f882b91d32d43fd04a4d50ca9b099ed664b2b0e40`,
+Installationsjob `job-91dde4ed45554020` (PASS, 0 Fatal).
+
+| Schritt | Ergebnis |
+|---|---|
+| Suche | „Babylon" eingegeben, „Suchen" gedrückt → Treffer „Babylon Berlin 2017 · series" |
+| Detail | 48 Folgen aus dem Snapshot, „Abspielen" und Folgenliste sichtbar |
+| Folge S01/E01 | Tap startet den Player; UI-Dump: Quelle `ARD Mediathek`, `0:12 / 44:55`, Audiospur „Spur 1" |
+| Bild | Screenshot `frame61-b6-player/03.png`: ARD-Titelkarte „BERLIN 1929", Fortschritt `0:10 / 44:55` |
+
+Damit ist die Kette Suche → Detail → Folgen → Stream → Direktstream-Hoster →
+Player live belegt. Der Player-Fallback „Demo-Stream" wurde in diesem Lauf nicht
+benötigt.
+
+**Zusatzfund und Fix:** Das Suchfeld löste ohne IME-Event/Button nie eine Suche
+aus (am Gerät reproduziert). `SearchScreen` hat jetzt `ImeAction.Search` und
+einen fokussierbaren „Suchen"-Button.
