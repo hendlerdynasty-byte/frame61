@@ -43,10 +43,16 @@ Fehlermeldung, stürzt nicht.
 
 ## Betrieb
 
+- Basis-URL (Pages, aktiv): `https://hendlerdynasty-byte.github.io/frame61/`
+  → Manifest: `https://hendlerdynasty-byte.github.io/frame61/update.json`
+- Die Datei wird in Block 12 mit echtem `versionCode`, APK-URL und SHA-256
+  veröffentlicht; APK und Manifest liegen dann unter derselben Basis.
 - Manifest und APK müssen über HTTPS erreichbar sein; `sha256` aus
   `shasum -a 256` eintragen.
-- Ein echtes Manifest wurde in dieser Umgebung **nicht ausgeliefert**
-  (kein erreichbarer Host) → Livepfad **NOT_RUN**. Parser und
-  Fehlerbehandlung sind durch `UpdateManifestTest` belegt.
+- Fallback, falls Pages ausfällt: Release-Asset
+  `https://github.com/hendlerdynasty-byte/frame61/releases/latest/download/update.json`
+  mit der signierten APK daneben.
+- Ein echtes Manifest ist noch **nicht** ausgeliefert → Livepfad **NOT_RUN**.
+  Parser und Fehlerbehandlung sind durch `UpdateManifestTest` belegt.
 - Signatur: Sideload-Updates brauchen denselben Signaturschlüssel wie die
   installierte App; siehe `docs/SIGNING.md`.

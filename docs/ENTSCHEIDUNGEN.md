@@ -3,20 +3,31 @@
 Stand: 2026-11-17. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 
-## 2026-11-17 — GitHub-Repo
+## 2026-11-17 — GitHub-Repo ist öffentlich
 
-- Remote: `hendlerdynasty-byte/frame61`, **privat**, Default-Branch `main`.
-- Begründung: Ownerauftrag Block 0; aktives `gh`-Konto ist
-  `hendlerdynasty-byte` (workflow-Scope vorhanden).
+- Remote: `hendlerdynasty-byte/frame61`, **public**, Default-Branch `main`.
+- Ownerauftrag Block 0.5; vorher Sicherheitscheck:
+  - keine getrackten `local.properties`/`*.jks`/`.env`,
+  - History-Scan: nur der alte Platzhalter-Fallback `?: "frame61"`, kein
+    echtes Passwort, kein Schlüssel,
+  - Fallbacks entfernt, `.gitignore` um Schlüssel-/Env-Dateien erweitert.
+- `.git` 1,5 MB, 315 getrackte Dateien, 35 Commits zum Zeitpunkt des Wechsels.
 
-## 2026-11-17 — GitHub Pages
+## 2026-11-17 — GitHub Pages aktiv
 
-- **BLOCKED_EXTERNAL:** GitHub Pages ist für dieses private Repo im aktuellen
-  Plan nicht verfügbar (API `POST /pages` → HTTP 422 „plan does not support").
-- Default: Repo bleibt privat; keine stille Umstellung auf public.
-  `pages.yml` ist korrekt angelegt, aber dormant (nur `workflow_dispatch`).
-- Fallback für Block 12: Cloudflare Pages/Worker der Firmeninfrastruktur oder
-  Owner-Plan-Upgrade; Entscheidung fällt, sobald der Update-Host gebraucht wird.
+- Pages ist aktiviert (`build_type=workflow`), URL:
+  `https://hendlerdynasty-byte.github.io/frame61/`.
+- `pages.yml` deployt `site/`; Lauf `44153289832` grün, URL liefert HTTP 200.
+- Update-Manifest folgt in Block 12 unter derselben Basis
+  (`…/frame61/update.json`), sofern nicht der Release-Asset-Weg nötig wird.
+
+## 2026-11-17 — GitHub Actions
+
+- Erste Läufe (`44151864618`, `44152085841`) scheiterten vor dem Jobstart an
+  einer GitHub-Billing-Meldung des privaten Repos.
+- Nach dem Wechsel auf public: `bootstrap`-Lauf `44153299724` **grün** (8 s).
+  Der Billing-Blocker ist damit für dieses Repo nicht mehr wirksam.
+- Default: Actions bleibt die CI; lokale Heavy-Builds bleiben gesperrt.
 
 ## 2026-11-17 — Keystore und Secrets
 
@@ -24,19 +35,19 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   `~/hendler-dynasty/keys/frame61-release.jks` (mode 600).
 - Base64-Backup liegt ebenfalls außerhalb des Repos
   (`frame61-release.jks.b64`, mode 600). **Keine** Keystore-/Passwort-Literale
-  in `SIGNING.md`, Quelltext oder Tests — Sicherheitsvorgabe hat Vorrang vor
-  der Formulierung „Backup in SIGNING.md"; dort stehen Pfad, Hashes und
+  in `SIGNING.md`, Quelltext oder Tests; dort stehen Pfad, Hashes und
   Fingerprint.
 - GitHub-Actions-Secrets gesetzt: `FRAME61_KEYSTORE_BASE64`,
   `FRAME61_STORE_PASS`, `FRAME61_KEY_PASS`, `FRAME61_KEY_ALIAS`.
 
-## 2026-11-17 — GitHub Actions blockiert (Billing)
+## 2026-11-17 — Signing ohne Passwort-Fallback
 
-- **BLOCKED_EXTERNAL:** Zwei `bootstrap`-Läufe (`44151864618`,
-  `44152085841`) wurden vor dem Jobstart abgelehnt: „recent account payments
-  have failed or your spending limit needs to be increased".
-- Default: kein Public-Schalten, kein Kontowechsel, kein Bezahl-Fallback,
-  keine weiteren Blöcke bis Actions grün ist.
-- Owner-Handlung: GitHub Billing für `hendlerdynasty-byte` klären; danach
-  `gh workflow run bootstrap.yml --ref main`.
-- Details: `docs/CHECKPOINT-BLOCK0.md`.
+- `app/build.gradle.kts` liest `FRAME61_STORE_PASS`/`FRAME61_KEY_PASS` nur aus
+  der Umgebung; die alten `?: "frame61"`-Fallbacks sind entfernt.
+- Ein Release-Build ohne gesetzte Variablen bricht ab, statt einen
+  Platzhalter-Schlüssel zu verwenden.
+
+## 2026-11-17 — M6 bleibt optional
+
+- `frame61.m6=false`; TMDB/Badges/Trakt bleiben Stubs. Kein Key, kein
+  Live-Call. Einschalten ist eine eigene Produktentscheidung.
