@@ -59,20 +59,24 @@ data class Frame61Typography(
         val base = Typography()
         return base.copy(
             displaySmall = base.displaySmall.copy(
-                fontSize = billboardTitle.coerceAtLeast(32.sp)
+                fontSize = billboardTitle.atLeast(32.sp)
             ),
             // Screen headings (Detail, Settings, Suche …) are never below 32 sp.
             headlineSmall = base.headlineSmall.copy(
-                fontSize = screenTitle.coerceAtLeast(32.sp)
+                fontSize = screenTitle.atLeast(32.sp)
             ),
             titleMedium = base.titleMedium.copy(fontSize = cardTitle),
             // Body copy is never below 16 sp — TV viewing distance.
-            bodyLarge = base.bodyLarge.copy(fontSize = body.coerceAtLeast(16.sp)),
-            bodyMedium = base.bodyMedium.copy(fontSize = body.coerceAtLeast(16.sp)),
+            bodyLarge = base.bodyLarge.copy(fontSize = body.atLeast(16.sp)),
+            bodyMedium = base.bodyMedium.copy(fontSize = body.atLeast(16.sp)),
             labelSmall = base.labelSmall.copy(fontSize = caption)
         )
     }
 }
+
+/** Minimum font size in sp, independent of the skin's type scale. */
+private fun TextUnit.atLeast(minimum: TextUnit): TextUnit =
+    if (this.value < minimum.value) minimum else this
 
 /**
  * Layout tokens from a skin.
