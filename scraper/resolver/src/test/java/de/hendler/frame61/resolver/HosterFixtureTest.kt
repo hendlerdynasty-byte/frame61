@@ -55,11 +55,13 @@ class HosterFixtureTest {
             val metaFile = File(dir, "meta.json")
             if (!metaFile.isFile) return@forEach
             val meta = HosterPackValidator.json.parseToJsonElement(metaFile.readText()).jsonObject
-            val packId = meta["id"]!!.jsonPrimitive.content
-            val sourceUrl = meta["sourceUrl"]!!.jsonPrimitive.content
-            val expected = HosterPackValidator.json
-                .parseToJsonElement(File(dir, "result.expected.json").readText())
-                .jsonObject["url"]!!.jsonPrimitive.content
+            val packId = requireNotNull(meta["id"]) { "meta.id fehlt" }.jsonPrimitive.content
+            val sourceUrl = requireNotNull(meta["sourceUrl"]) { "meta.sourceUrl fehlt" }.jsonPrimitive.content
+            val expected = requireNotNull(
+                HosterPackValidator.json
+                    .parseToJsonElement(File(dir, "result.expected.json").readText())
+                    .jsonObject["url"]
+            ) { "result.expected.url fehlt" }.jsonPrimitive.content
             val pack = packs[packId] ?: throw AssertionError("$packId: kein Hoster-Pack")
             val bodies = dir.listFiles { f -> f.name.contains(".body.") }
                 ?.sortedBy { it.name }
@@ -67,7 +69,9 @@ class HosterFixtureTest {
                 ?: emptyList()
             assertTrue("$packId: keine aufgezeichnete Antwort", bodies.isNotEmpty())
 
-            val recordedHash = meta["responseSha256"]!!.jsonPrimitive.content
+            val recordedHash = requireNotNull(meta["responseSha256"]) {
+                "meta.responseSha256 fehlt"
+            }.jsonPrimitive.content
             val actualHash = MessageDigest.getInstance("SHA-256")
                 .digest(bodies.first().toByteArray(Charsets.UTF_8))
                 .joinToString("") { "%02x".format(it) }
