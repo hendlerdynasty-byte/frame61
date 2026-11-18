@@ -8,6 +8,7 @@ import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.MetadataSource
 import de.hendler.frame61.meta.SearchHit
 import de.hendler.frame61.meta.SnapshotMetadataSource
+import de.hendler.frame61.search.AggregatedIndexSource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -32,10 +33,12 @@ data class SearchUiState(
 @HiltViewModel
 class SearchViewModel @Inject constructor(
     private val catalog: CatalogRepository,
-    snapshots: SnapshotMetadataSource
+    snapshots: SnapshotMetadataSource,
+    index: AggregatedIndexSource
 ) : ViewModel() {
 
     private val sources: List<MetadataSource> = listOf(
+        index,
         snapshots,
         BundledCatalogSource(catalog)
     )

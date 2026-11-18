@@ -1,0 +1,181 @@
+package de.hendler.frame61.playback
+
+import android.content.Context
+import android.util.Log
+import dagger.hilt.android.qualifiers.ApplicationContext
+import de.hendler.frame61.data.ProfileDataStore
+import de.hendler.frame61.resolver.HosterOutcome
+import de.hendler.frame61.resolver.HosterPack
+import de.hendler.frame61.resolver.HosterPackValidator
+import de.hendler.frame61.resolver.HosterResolver
+import de.hendler.frame61.resolver.MirrorCandidate
+import de.hendler.frame61.resolver.OkHttpBodyFetcher
+import de.hendler.frame61.scraper.engine.PackInterpreter
+import de.hendler.frame61.scraper.engine.PackLoader
+import de.hendler.frame61.scraper.engine.SourcePack
+import de.hendler.frame61.scraper.engine.StreamResult
+import de.hendler.frame61.ui.player.CatalogPlayback
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeoutOrNull
+import java.util.concurrent.ConcurrentHashMap
+import javax.inject.Inject
+import javax.inject.Singleton
+
+/**
+ * Automatic source resolution. The user never picks a source.
+ *
+ * 1. Every active source pack is searched in parallel (4 s per source).
+ * 2. Stream URLs run through the hoster chain (4 s per candidate).
+ * 3. The first usable candidate wins; failures are logged, never shown.
+ * 4. The resolved list is cached for 15 minutes per (title, episode, active set).
+ */
+@Singleton
+class AutoPlaybackResolver @Inject constructor(
+    @ApplicationContext private val context: Context,
+    private val packLoader: PackLoader,
+    private val interpreter: PackInterpreter,
+    private val ardResolver: ArdPlaybackResolver,
+    private val prefs: ProfileDataStore
+) {
+
+    private data class CacheEntry(val at: Long, val mirrors: List<MirrorCandidate>)
+
+    private val cache = ConcurrentHashMap<String, CacheEntry>()
+
+    private val hosterPacks: List<HosterPack> by lazy {
+        val assets = context.assets
+        (assets.list("hosters") ?: emptyArray())
+            .filter { it.endsWith(".json") && !it.startsWith("._") }
+            .mapNotNull { file ->
+                runCatching {
+                    assets.open("hosters/$file").bufferedReader().use { reader ->
+                        HosterPackValidator.parse(reader.readText())
+                    }
+                }.getOrNull()
+            }
+    }
+
+    private val hosterResolver: HosterResolver by lazy {
+        HosterResolver(hosterPacks, OkHttpBodyFetcher())
+    }
+
+    suspend fun resolve(title: String, episodeNumber: Int = 0): List<MirrorCandidate> =
+        withContext(Dispatchers.IO) {
+            val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
+            val key = "$title|$episodeNumber|${disabled.hashCode()}"
+            val now = System.currentTimeMillis()
+            cache[key]?.takeIf { now - it.at < CACHE_MS }?.let {
+                Log.i(TAG, "cache hit '$title' (${it.mirrors.size} mirrors)")
+                return@withContext it.mirrors
+            }
+
+            val packs = packLoader.loadAllPacks().filter { it.id !in disabled }
+            Log.i(
+                TAG,
+                "resolve '$title' ep=$episodeNumber active=${packs.size} " +
+                    "disabled=${disabled.sorted()}"
+            )
+
+            val candidates = coroutineScope {
+                packs.map { pack ->
+                    async {
+                        val started = System.currentTimeMillis()
+                        val result = runCatching {
+                            withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
+                                resolvePack(pack, title, episodeNumber)
+                            }.orEmpty()
+                        }.getOrDefault(emptyList())
+                        Log.i(
+                            TAG,
+                            "${pack.id}: ${result.size} candidate(s) in " +
+                                "${System.currentTimeMillis() - started} ms" +
+                                if (result.isEmpty()) " (no usable stream)" else ""
+                        )
+                        result
+                    }
+                }.awaitAll().flatten()
+            }
+
+            val ordered = order(candidates)
+            if (ordered.isEmpty()) {
+                Log.w(TAG, "all sources exhausted for '$title' ep=$episodeNumber")
+            }
+            cache[key] = CacheEntry(now, ordered)
+            ordered
+        }
+
+    private suspend fun resolvePack(
+        pack: SourcePack,
+        title: String,
+        episodeNumber: Int
+    ): List<MirrorCandidate> {
+        if (pack.id == ArdPlaybackResolver.PACK_ID) {
+            return ardResolver.resolve(title, episodeNumber)
+        }
+        val hits = interpreter.search(pack, title)
+        val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
+            ?: return emptyList()
+        val streams = interpreter.streams(pack, hit.id, episodeNumber.toString())
+        return streams.mapNotNull { stream ->
+            val url = resolveHoster(pack, stream)
+            url?.let {
+                MirrorCandidate(
+                    sourceId = pack.id,
+                    titleId = CatalogPlayback.stableId(hit.id),
+                    episodeId = if (episodeNumber > 0) episodeNumber.toLong() else null,
+                    url = it,
+                    lang = stream.lang?.take(2) ?: "de",
+                    quality = stream.quality ?: "auto",
+                    hosterId = stream.hosterId,
+                    healthScore = 1.0,
+                    legalFree = pack.legalFree
+                )
+            }
+        }
+    }
+
+    private suspend fun resolveHoster(pack: SourcePack, stream: StreamResult): String? {
+        if (!stream.url.startsWith("https://")) {
+            Log.w(TAG, "${pack.id}: non-https stream rejected")
+            return null
+        }
+        val outcome = runCatching {
+            withTimeoutOrNull(HOSTER_TIMEOUT_MS) { hosterResolver.resolve(stream.url) }
+        }.getOrNull()
+        return when (outcome) {
+            is HosterOutcome.Resolved -> outcome.url
+            is HosterOutcome.Unknown -> stream.url
+            is HosterOutcome.CaptchaRequired -> null
+            is HosterOutcome.Failed -> {
+                Log.w(TAG, "${pack.id}: hoster failed (${outcome.reason})")
+                null
+            }
+            null -> {
+                Log.w(TAG, "${pack.id}: hoster timeout")
+                null
+            }
+        }
+    }
+
+    private fun order(candidates: List<MirrorCandidate>): List<MirrorCandidate> =
+        candidates.distinctBy { it.url }.sortedWith(
+            compareByDescending<MirrorCandidate> { it.legalFree }
+                .thenByDescending { it.lang.startsWith("de", ignoreCase = true) }
+                .thenByDescending {
+                    it.quality.filter(Char::isDigit).toIntOrNull() ?: 0
+                }
+                .thenByDescending { it.healthScore }
+        )
+
+    companion object {
+        private const val TAG = "Frame61Resolve"
+        private const val SOURCE_TIMEOUT_MS = 4_000L
+        private const val HOSTER_TIMEOUT_MS = 4_000L
+        private const val CACHE_MS = 15L * 60L * 1000L
+    }
+}

@@ -6,11 +6,15 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.MetadataSource
 import de.hendler.frame61.meta.SnapshotEpisodeSource
 import de.hendler.frame61.meta.SnapshotMetadataSource
 import de.hendler.frame61.meta.SnapshotRepository
+import de.hendler.frame61.scraper.engine.PackInterpreter
+import de.hendler.frame61.scraper.engine.PackLoader
+import de.hendler.frame61.search.AggregatedIndexSource
 import javax.inject.Singleton
 
 @Module
@@ -42,6 +46,15 @@ object MetaModule {
     @Provides
     @Singleton
     fun provideMetadataSource(source: SnapshotMetadataSource): MetadataSource = source
+
+    @Provides
+    @Singleton
+    fun provideAggregatedIndexSource(
+        packLoader: PackLoader,
+        interpreter: PackInterpreter,
+        catalog: CatalogRepository,
+        prefs: ProfileDataStore
+    ): AggregatedIndexSource = AggregatedIndexSource(packLoader, interpreter, catalog, prefs)
 
     @Provides
     @Singleton

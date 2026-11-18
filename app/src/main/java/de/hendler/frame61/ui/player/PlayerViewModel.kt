@@ -10,7 +10,7 @@ import de.hendler.frame61.data.ResumeRepository
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
 import de.hendler.frame61.player.PlayerUiState
-import de.hendler.frame61.playback.ArdPlaybackResolver
+import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import kotlinx.coroutines.delay
@@ -42,7 +42,7 @@ data class PlayerScreenState(
 class PlayerViewModel @Inject constructor(
     application: Application,
     private val resumeRepository: ResumeRepository,
-    private val ardResolver: ArdPlaybackResolver,
+    private val autoResolver: AutoPlaybackResolver,
     prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
 
@@ -88,13 +88,17 @@ class PlayerViewModel @Inject constructor(
         mediaPlayer.onFrame = ::onFrame
 
         viewModelScope.launch {
-            // Real source first (ARD), demo only as a visible fallback.
-            val resolved = runCatching { ardResolver.resolve(title, episodeNumber) }
+            // Real sources first; the demo is only a last-resort fallback and is
+            // never labelled as a source (source failures are log-only).
+            val resolved = runCatching { autoResolver.resolve(title, episodeNumber) }
                 .getOrDefault(emptyList())
             mirrors = resolved.ifEmpty { fallbackCandidates }
             _state.update {
                 it.copy(
-                    sourceNote = if (resolved.isNotEmpty()) "ARD Mediathek" else "Demo-Stream"
+                    sourceNote = resolved.firstOrNull()?.let { candidate ->
+                        if (candidate.sourceId == "ard") "ARD Mediathek"
+                        else candidate.sourceId
+                    }
                 )
             }
             val resume = resumeRepository.load(profileId, CatalogPlayback.stableId(titleId), episodeId)

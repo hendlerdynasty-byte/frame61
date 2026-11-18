@@ -29,7 +29,9 @@ data class SearchHit(
     val year: Int? = null,
     val type: String? = null,       // "movie" | "series"
     val poster: String? = null,
-    val overview: String? = null
+    val overview: String? = null,
+    /** "de" for German index hits; null when unknown. */
+    val lang: String? = null
 )
 
 /**
