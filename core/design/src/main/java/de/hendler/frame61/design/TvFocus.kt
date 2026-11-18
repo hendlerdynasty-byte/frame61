@@ -19,6 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.KeyEventType
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.onKeyEvent
+import androidx.compose.ui.input.key.type
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
@@ -107,6 +112,7 @@ fun Modifier.tvFocusable(
     // is handed to `focusable()`. `onFocusChanged` was unreliable here (measured
     // on the A52: uiautomator reported a focused node, the ring never drew).
     val focused by interaction.collectIsFocusedAsState()
+    val action = onClick
 
     DisposableEffect(id, requester) {
         registry.register(id, requester)
@@ -146,12 +152,29 @@ fun Modifier.tvFocusable(
             }
         )
         .then(
-            if (onClick != null && enabled) {
-                Modifier.clickable(
-                    interactionSource = interactionSource,
-                    indication = null,
-                    onClick = onClick
-                )
+            if (action != null && enabled) {
+                Modifier
+                    // D-pad OK/Enter must activate the focused target. Compose's
+                    // clickable alone did move focus but did not fire on the A52
+                    // with a hardware D-pad (measured: ring moved, detail did not
+                    // open). Consume the key event here, centrally.
+                    .onKeyEvent { event ->
+                        if (event.type == KeyEventType.KeyUp &&
+                            (event.key == Key.DirectionCenter ||
+                                event.key == Key.Enter ||
+                                event.key == Key.NumPadEnter)
+                        ) {
+                            action()
+                            true
+                        } else {
+                            false
+                        }
+                    }
+                    .clickable(
+                        interactionSource = interactionSource,
+                        indication = null,
+                        onClick = action
+                    )
             } else {
                 Modifier
             }
