@@ -165,22 +165,26 @@ fun Frame61(
                 }
 
                 val backStack by navController.currentBackStackEntryAsState()
-                NavBar(
-                    currentRoute = backStack?.destination?.route ?: "home",
-                    onNavigate = { route ->
-                        if (route == "home") {
-                            // "Start" used to be a no-op: the old code skipped
-                            // the navigation for the home route, so the tab did
-                            // nothing from any other screen (measured on A52).
-                            navController.popBackStack("home", inclusive = false)
-                        } else {
-                            navController.navigate(route) { popUpTo("home") }
-                        }
-                    },
-                    modifier = Modifier
-                        .align(androidx.compose.ui.Alignment.BottomCenter)
-                        .padding(start = safeH, end = safeH, bottom = safeV)
-                )
+                val currentRoute = backStack?.destination?.route ?: "home"
+                // The player is full-screen: no permanent navigation HUD.
+                if (!currentRoute.startsWith("player")) {
+                    NavBar(
+                        currentRoute = currentRoute,
+                        onNavigate = { route ->
+                            if (route == "home") {
+                                // "Start" used to be a no-op: the old code skipped
+                                // the navigation for the home route, so the tab did
+                                // nothing from any other screen (measured on A52).
+                                navController.popBackStack("home", inclusive = false)
+                            } else {
+                                navController.navigate(route) { popUpTo("home") }
+                            }
+                        },
+                        modifier = Modifier
+                            .align(androidx.compose.ui.Alignment.BottomCenter)
+                            .padding(start = safeH, end = safeH, bottom = safeV)
+                    )
+                }
                 }
             }
         }

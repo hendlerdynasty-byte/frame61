@@ -197,16 +197,19 @@ fun PlayerScreen(
         }
 
         if (controlsVisible) {
-            // Brand wordmark, only while the overlay is up.
-            Image(
-                painter = painterResource(R.drawable.frame61_logo_horizontal),
-                contentDescription = null,
-                contentScale = ContentScale.Fit,
-                modifier = Modifier
-                    .align(Alignment.TopCenter)
-                    .padding(top = 12.dp)
-                    .width(180.dp)
-            )
+            // Brand wordmark, only while the overlay is up and no track panel
+            // overlaps it.
+            if (!infoVisible) {
+                Image(
+                    painter = painterResource(R.drawable.frame61_logo_horizontal),
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .align(Alignment.TopCenter)
+                        .padding(top = 12.dp)
+                        .width(180.dp)
+                )
+            }
 
             if (infoVisible) {
                 TrackPanel(
