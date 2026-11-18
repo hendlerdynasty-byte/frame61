@@ -153,6 +153,28 @@ class PackFixtureTest {
     }
 
     @Test
+    fun `api search strips html and mixed rules use their format`() {
+        val pack = PackLoaderValidator.parse(
+            """
+            {"id":"m","name":"M","baseUrl":"https://x.invalid","kind":"api",
+             "search":{"endpoint":"/s","jsonPath":".","idPath":"link","titlePath":"title"},
+             "detail":{"endpoint":"/d","format":"html","resultSelector":"body","titleSelector":"h1"}}
+            """.trimIndent()
+        ) ?: error("mixed pack must parse")
+
+        val search = interpreter.parseSearch(
+            pack,
+            """[{"link":"/anime/stream/naruto","title":"<em>Naruto</em>"}]"""
+        )
+        assertEquals(1, search.size)
+        assertEquals("naruto", search.first().id)
+        assertEquals("Naruto", search.first().title)
+
+        val detail = interpreter.parseDetail(pack, "<html><body><h1>Naruto</h1></body></html>")
+        assertEquals("Naruto", detail?.title)
+    }
+
+    @Test
     fun `api detail and episodes use the detail rule`() {
         val pack = PackLoaderValidator.parse(
             """

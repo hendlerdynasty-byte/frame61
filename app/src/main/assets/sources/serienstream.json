@@ -1,0 +1,40 @@
+{
+  "id": "serienstream",
+  "name": "SerienStream",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://serienstream.to",
+  "kind": "html",
+  "search": {
+    "endpoint": "/api/search/suggest",
+    "queryParam": "term",
+    "format": "api",
+    "jsonPath": "shows",
+    "idPath": "url",
+    "titlePath": "name",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/serie/{titleId}",
+    "format": "html",
+    "resultSelector": "body",
+    "titleSelector": "h1"
+  },
+  "verified": true,
+  "last_check": "2026-11-18T07:37:25Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "detail.resultSelector",
+      "detail.titleSelector"
+    ],
+    "misses": [],
+    "http_status": 200
+  }
+}

@@ -65,3 +65,17 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Konsequenz: Der Resolver nutzt die verbleibenden Hoster und faellt bei
   `CaptchaRequired`/`Failed` auf den naechsten Kandidaten zurueck; die
   WebView-Token-Rueckgabe ist ein eigener Block.
+
+## 2026-11-18 — Gemischte Index-Packs und ehrliche 6/14
+
+- Eine Regel darf ihr eigenes `format` (`html`/`api`) tragen. Damit kann ein
+  Pack per JSON suchen und Detail/Folgen per HTML lesen, ohne zwei Pack-IDs.
+- `api`-Titel werden von HTML befreit; AniWorld liefert `<em>`-Treffer.
+- 6 der 14 Indexseiten sind live verifiziert (aniworld, filmpalast,
+  filmstarts, filmo, s.to, serienstream). Fuenf weitere sind erreichbar, aber
+  ohne auswertbaren Suchpfad; drei Domains sind tot.
+- Fuer tote Domains (moflix, movie2k, streamcloud) wird **kein** Pack mit
+  erfundenen Selektoren angelegt. Der Befund steht in `docs/INDEX.md`.
+- `s-to` und `serienstream` sind dieselbe Site unter zwei IDs; beide behalten
+  eigene Fixtures, damit die Ziel-Liste ehrlich abbildbar bleibt.
+

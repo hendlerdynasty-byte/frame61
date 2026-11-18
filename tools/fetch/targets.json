@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Nur belegte URLs. HTML-Ziele werden erst aufgenommen, wenn ein echter Seitenabruf die Selektoren traegt (Block 7).",
+  "note": "Nur belegte URLs. Jede Suchantwort ist eine echte Serverantwort; Fixtures werden auf die Trefferliste begrenzt.",
   "targets": {
     "archive-org": {
       "kind": "api",
@@ -14,6 +14,126 @@
       "detail_url": "https://api.ardmediathek.de/page-gateway/pages/ard/grouping/{id}?embedded=true&seasoned=true&single=false",
       "stream_url": "https://api.ardmediathek.de/page-gateway/pages/ard/item/{id}?embedded=true",
       "note": "keylose page-gateway-API. Worker prueft Suche, Detail, erste Folge und deren Stream."
+    },
+    "aniworld": {
+      "url": "https://aniworld.to/ajax/search",
+      "method": "POST",
+      "headers": {
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      "body": "keyword=naruto",
+      "detail_url": "https://aniworld.to/anime/stream/{titleId}",
+      "fixture": {
+        "trim_path": "",
+        "limit": 2,
+        "expected": [
+          {
+            "id": "naruto",
+            "title": "Naruto"
+          },
+          {
+            "id": "naruto-shippuden",
+            "title": "Naruto Shippuden"
+          }
+        ]
+      }
+    },
+    "s-to": {
+      "url": "https://serienstream.to/api/search/suggest?term=black%20doves",
+      "detail_url": "https://serienstream.to/serie/{titleId}",
+      "fixture": {
+        "trim_path": "shows",
+        "limit": 1,
+        "expected": [
+          {
+            "id": "black-doves",
+            "title": "Black Doves"
+          }
+        ]
+      }
+    },
+    "serienstream": {
+      "url": "https://serienstream.to/api/search/suggest?term=black%20doves",
+      "detail_url": "https://serienstream.to/serie/{titleId}",
+      "fixture": {
+        "trim_path": "shows",
+        "limit": 1,
+        "expected": [
+          {
+            "id": "black-doves",
+            "title": "Black Doves"
+          }
+        ]
+      }
+    },
+    "filmo": {
+      "url": "https://filmo.to/search/suggest?q=inception",
+      "detail_url": "https://filmo.to/movies/{titleId}",
+      "fixture": {
+        "trim_path": "movies",
+        "limit": 1,
+        "expected": [
+          {
+            "id": "inception",
+            "title": "Inception"
+          }
+        ]
+      }
+    },
+    "filmpalast": {
+      "url": "https://filmpalast.to/search/title/Inception",
+      "detail_url": "https://filmpalast.to/stream/{titleId}",
+      "fixture": {
+        "html_regex": "(?s)<article class=\"liste.*?</article>",
+        "expected": [
+          {
+            "id": "inception",
+            "title": "Inception"
+          }
+        ]
+      }
+    },
+    "filmstarts": {
+      "url": "https://www.filmstarts.de/_/autocomplete/Inception",
+      "fixture": {
+        "expected": [
+          {
+            "id": "37286",
+            "title": "Dexter: Wiedererwachen",
+            "type": "series"
+          },
+          {
+            "id": "143692",
+            "title": "Inception",
+            "type": "movie"
+          },
+          {
+            "id": "40066",
+            "title": "Hans Zimmer",
+            "type": "person"
+          }
+        ]
+      }
+    },
+    "bs-to": {
+      "url": "https://burningseries.ac/search",
+      "note": "Suche liefert nur eine <option>-Liste (Serien-ID, kein Slug); ohne idFromTitle/Slug-Aufloesung nicht als Trefferliste abbildbar."
+    },
+    "cine": {
+      "url": "https://cine.to/",
+      "note": "Suche filtert clientseitig im Browser; kein servergerenderter Suchpfad."
+    },
+    "kinokiste": {
+      "url": "https://kinokiste.cloud/",
+      "note": "JWT-/Bot-Gate; Folgeabruf ohne Browser-Session HTTP 401."
+    },
+    "kinox": {
+      "url": "https://kinox.to/",
+      "note": "Domain liefert nur einen Meta-Refresh auf kion.ru; kein Index mehr."
+    },
+    "megakino": {
+      "url": "https://megakino.de/",
+      "note": "HTTP 436, keine auswertbare Seite."
     }
   }
 }

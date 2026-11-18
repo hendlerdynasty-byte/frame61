@@ -49,12 +49,16 @@
     ]
   },
   "verified": false,
-  "last_check": "2026-11-17T17:35:17Z",
+  "last_check": "2026-11-18T07:37:15Z",
   "check": {
-    "status": "no_target",
-    "reason": "kein Ziel in tools/fetch/targets.json",
-    "checked": [],
-    "misses": [],
-    "http_status": null
+    "status": "selector_missing",
+    "reason": "Selektoren ohne Treffer: search.resultSelector; JWT-/Bot-Gate; Folgeabruf ohne Browser-Session HTTP 401.",
+    "checked": [
+      "search.resultSelector"
+    ],
+    "misses": [
+      "search.resultSelector"
+    ],
+    "http_status": 200
   }
 }
