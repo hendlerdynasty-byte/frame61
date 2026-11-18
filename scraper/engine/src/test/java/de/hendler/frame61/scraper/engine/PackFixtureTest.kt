@@ -168,6 +168,20 @@ class PackFixtureTest {
     }
 
     @Test
+    fun `embedded json is extracted before api parsing`() {
+        val pack = PackLoaderValidator.parse(
+            """{"id":"e","name":"E","baseUrl":"https://x.invalid","kind":"api",
+                "search":{"endpoint":"/s","jsonExtractRegex":"\"data\":(\\[.*?\\])",
+                          "jsonPath":".","idPath":"id","titlePath":"title"}}""".trimIndent()
+        ) ?: error("embedded pack must parse")
+        val body = """<script>{"data":[{"id":"1","title":"Film"}]}</script>"""
+        val results = interpreter.parseSearch(pack, body)
+        assertEquals(1, results.size)
+        assertEquals("1", results.first().id)
+        assertEquals("Film", results.first().title)
+    }
+
+    @Test
     fun `api search strips html and mixed rules use their format`() {
         val pack = PackLoaderValidator.parse(
             """

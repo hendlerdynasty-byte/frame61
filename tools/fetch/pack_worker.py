@@ -364,6 +364,12 @@ def _check_html_search(rule: dict, body: str) -> tuple[list[str], list[str]]:
 def _check_api_search(rule: dict, body: str) -> tuple[list[str], list[str]]:
     misses: list[str] = []
     checked: list[str] = []
+    pattern = rule.get("jsonExtractRegex")
+    if pattern:
+        match = re.search(pattern, body, re.S)
+        if not match:
+            return [f"search.jsonExtractRegex ohne Treffer"], checked
+        body = match.group(1)
     try:
         root = json.loads(body)
     except json.JSONDecodeError:

@@ -115,6 +115,32 @@
         ]
       }
     },
+    "streamcloud": {
+      "url": "https://streamcloud.date/suche?q=Inception",
+      "detail_url": "https://streamcloud.date/filme/{titleId}",
+      "origin": "streamcloud.plus -> 302 streamcloud.date; .my timeout, .eu geparkt",
+      "fixture": {
+        "expected": [
+          {
+            "id": "27205-inception-stream-deutsch",
+            "title": "Inception",
+            "year": 2010
+          }
+        ]
+      }
+    },
+    "moflix": {
+      "url": "https://moflix-stream.top/search/Inception",
+      "fixture": {
+        "expected": [
+          { "id": "8972", "title": "Inception", "year": 2010, "type": "movie" },
+          { "id": "4557470", "title": "Eiskalte Engel", "year": 1999, "type": "movie" },
+          { "id": "4554637", "title": "Eiskalte Engel 3", "year": 2004, "type": "movie" },
+          { "id": "104863", "title": "Infection", "year": 2019, "type": "movie" },
+          { "id": "1155156", "title": "The Mothers of Invention" }
+        ]
+      }
+    },
     "bs-to": {
       "url": "https://burningseries.ac/search",
       "method": "POST",
@@ -134,8 +160,23 @@
       }
     },
     "cine": {
-      "url": "https://cine.to/",
-      "note": "Suche filtert clientseitig im Browser; kein servergerenderter Suchpfad."
+      "url": "https://cine.to/request/search",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": "https://cine.to/"
+      },
+      "body": "kind=all&term=Inception&language=0&page=1&count=4&genre=&rating=1&year[]=1900&year[]=2026",
+      "fixture": {
+        "expected": [
+          {
+            "id": "1375666",
+            "title": "Inception",
+            "year": 2010
+          }
+        ]
+      }
     },
     "kinokiste": {
       "url": "https://kinokiste.cloud/",

@@ -1,10 +1,11 @@
 # Indexseiten — Stand und Nachweise
 
 Stand: 18.11.2026. Ziel waren 14 Indexseiten mit echter Suche, getrimmter
-Aufzeichnung (`responseSha256`) und `verified`. Erreicht sind **7 von 14**:
-aniworld, bs-to, filmpalast, filmstarts, filmo, s.to und serienstream. Sechs
-weitere Seiten sind erreichbar, aber ohne auswertbaren Suchpfad; eine Domain
-ist tot. Jeder nicht verifizierte Pack traegt `check.status` und `check.reason`.
+Aufzeichnung (`responseSha256`) und `verified`. Erreicht sind **10 von 14**:
+aniworld, bs-to, cine, filmpalast, filmstarts, filmo, moflix, s.to,
+serienstream und streamcloud. Vier Seiten sind nach jeweils mindestens drei
+Domain-/Pfadversuchen als `blocked_external` mit Beleg versehen: kinox,
+kinokiste, megakino und movie2k.
 
 ## Methode
 
@@ -30,16 +31,16 @@ Engine wie die App. `provenance: recorded`, `responseSha256` und
 | 2 | burningseries | `bs-to` | `verified` | POST `/search`, `option[value]` + `idFromTitle`; Fixture `sourceId`-Liste → `/serie/Naruto` |
 | 3 | filmpalast.to | `filmpalast` | `verified` | GET `/search/title/Inception`; 1 Treffer; Fixture `8156913a…` |
 | 4 | filmstarts.de | `filmstarts` | `verified` | GET `/_/autocomplete/Inception`; 3 Treffer; Fixture `b0a7a1c9…` |
-| 5 | kinokiste.cloud | `kinokiste` | `selector_missing` | JWT-/Bot-Gate; Block 13 oeffnet WebView, uebernimmt Cookies und wiederholt die Suche — Selektoren weiter ohne Treffer |
-| 6 | kinox.to | `kinox` | `selector_missing` | nur Meta-Refresh auf `kion.ru`; kein Index mehr |
-| 7 | megakino.de | `megakino` | `selector_missing` | Erstaufruf HTTP 436; Block 13 WebView-Cookie-Pfad vorhanden, keine Treffer |
-| 8 | moflix | — | `blocked_external` | `moflix-stream.com` parkt/leitet auf `yfdabv11.com`, `.xyz` Cloudflare 403 |
-| 9 | movie2k | — | `blocked_external` | `movie2k.to` leitet auf Domain-Parking `yfdabv11.com` |
+| 5 | kinokiste.cloud | `kinokiste` | `blocked_external` | JWT-/Bot-Gate: 477/401, Chrome-Headless 40 B; WebView-Cookie-Pfad ausgefuehrt |
+| 6 | kinox.to | `kinox` | `blocked_external` | 6 Rotationsdomains geprueft: kion.ru, JS-Redirects, DNS, Domain-for-sale, /lander |
+| 7 | megakino.de | `megakino` | `blocked_external` | DNS nicht aufloesbar, frueher 436; .co/.to Platzhalter; Header/WebView erfolglos |
+| 8 | moflix | `moflix` | `verified` | `moflix-stream.top/search/Inception`, eingebettetes Loader-JSON, 5 Treffer |
+| 9 | movie2k | — | `blocked_external` | `.to` Parking, `.ch` 6-KB-Platzhalter, `movie2ktv.cyou` Vue-Suche ohne Serverantwort |
 | 10 | s.to / SerienStream | `s-to` | `verified` | GET `/api/search/suggest?term=black%20doves`; Fixture `7c49b699…` |
 | 11 | serienstream.to | `serienstream` | `verified` | gleiche API/Domain wie s.to; eigener Pack, gleiches Fixture |
-| 12 | streamcloud | — | `blocked_external` | `streamcloud.eu` parkt (`ww38.streamcloud.eu`), `.sx` ohne Index |
+| 12 | streamcloud | `streamcloud` | `verified` | `streamcloud.plus` → 302 `streamcloud.date`, `/suche?q=Inception`, 1 Treffer |
 | 13 | filmo.to | `filmo` | `verified` | GET `/search/suggest?q=inception`; Fixture `b0bf2ef8…` |
-| 14 | cine.to | `cine` | `selector_missing` | Suche filtert clientseitig, kein servergerenderter Pfad |
+| 14 | cine.to | `cine` | `verified` | POST `/request/search` (AJAX), 1 Treffer; Fixture im Repo |
 
 ## Verifizierte Suchpfade
 
@@ -47,6 +48,9 @@ Engine wie die App. `provenance: recorded`, `responseSha256` und
 |---|---|---|---|
 | `aniworld` | POST `/ajax/search`, `keyword={{query}}`, JSON-Array, `link`/`title` | HTML `/anime/stream/{titleId}`, `h1`; Folgen `table.seasonEpisodesList` | `search.body.json`, Hash `ae4d9d4c21e47c04…` |
 | `bs-to` | POST `/search`, `search[text]={{query}}`, `option[value]`, `idFromTitle` `^(.+)$` | HTML `/serie/{titleId}`, `h2` | `search.body.html`, Hash im Fixture-meta |
+| `cine` | POST `/request/search`, Formularfelder inkl. `rating=1`, JSON `entries[]`, `imdb`/`title`/`year` | – | `search.body.json`, Hash im Fixture-meta |
+| `moflix` | GET `/search/{query}`, `jsonExtractRegex` auf `loaders.searchPage.results`, JSON `id`/`name`/`year` | – | `search.body.json`, Hash im Fixture-meta |
+| `streamcloud` | GET `/suche?q=`, `a.cv`, `.cv-t`, `.cv-m` | HTML `/filme/{titleId}`, `.sc-h1` | `search.body.html`, Hash im Fixture-meta |
 | `filmpalast` | GET `/search/title/{{query}}`, `article.liste`, `h2 a` | HTML `/stream/{titleId}`, `[itemprop="name"]`; Stream `ul.currentStreamLinks a.iconPlay` | `search.body.html`, Hash `8156913a3f3fc504…` |
 | `filmstarts` | GET `/_/autocomplete/{query}`, `results[]`, `entity_id`/`label`/`facet` | – | `search.body.json`, Hash `b0a7a1c970898939…` |
 | `filmo` | GET `/search/suggest?q=`, `movies[]`, `url`/`title` | HTML `/movies/{titleId}`, `h1` | `search.body.json`, Hash `b0bf2ef8532d524f…` |
@@ -59,14 +63,23 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 
 - **Burning Series**: mit `idFromTitle` gelöst: Die `<option>`-Liste liefert
   den Klartext `Naruto`, der als ID für `/serie/Naruto` genutzt wird.
-- **Kinokiste / MegaKino**: Block 13 oeffnet bei leerer Suche den
-  WebView-Frame, uebernimmt Cookies und wiederholt die Suche. Die Domains
-  liefern weiter keine Selektoren; Block 14 setzt dort fort.
-- **Kinox**: Domain zeigt nur einen Meta-Refresh auf `kion.ru`. Kein Pack-Ziel.
-- **Cine.to**: Suche filtert die bereits geladene DOM-Liste; kein
-  serverseitiger Suchpfad.
-- **Moflix / Movie2k / Streamcloud**: Domains parken oder sind nicht
-  aufloesbar. Fuer sie gibt es bewusst keinen Pack, statt Attrappen zu bauen.
+- **Cine.to**: Der AJAX-Endpunkt `/request/search` wurde im Netzwerk-Log der
+  Seite gefunden (`core.js`); mit `language=0`, `rating=1`, `year[]=1900`,
+  `year[]=2026` liefert er echte Treffer.
+- **Moflix**: `moflix-stream.top` (Board-Meldung zur Ersatzdomain) liefert
+  `loaders.searchPage.results` im HTML; `jsonExtractRegex` hebt das JSON
+  heraus. `.xyz` bleibt Cloudflare 403, `.com` parking.
+- **Streamcloud**: `streamcloud.plus` leitet auf `streamcloud.date`; dort
+  liegen echte Treffer unter `/suche?q=`. `.my` timeout, `.eu` geparkt.
+- **Kinokiste**: 477/401, Chrome-Headless 40 B; Block-13-WebView-Cookie-Pfad
+  ausgefuehrt, danach weiter keine Selektoren.
+- **Kinox**: sechs Rotationsdomains geprueft (kion.ru, JS-Redirects, DNS,
+  Domain-for-sale, /lander) — kein Index erreichbar.
+- **MegaKino**: DNS nicht aufloesbar, frueher 436; .co/.to Platzhalter;
+  Header-Profil und WebView-Pfad erfolglos.
+- **Movie2k**: `.to` Parking, `.ch` 6-KB-Platzhalter,
+  `movie2ktv.cyou` Vue-Suche ohne Serverantwort. Fuer diese vier Domains
+  gibt es bewusst keinen Attrappen-Pack, sondern `blocked_external`.
 
 ## Offener Umfang
 

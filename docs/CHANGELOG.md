@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+### Block 14 — Indizes 10/14 (2026-11-18)
+
+#### Hinzugefügt
+- `jsonExtractRegex` fuer API-Regeln: eingebettetes Loader-JSON aus HTML
+  loesen (Moflix `loaders.searchPage.results`).
+- Neue verifizierte Packs: `moflix` (Ersatzdomain `.top`), `streamcloud`
+  (`streamcloud.date`), `cine` (AJAX `/request/search`).
+- `docs/INDEX.md`: 10/14 verifiziert, vier `blocked_external` mit Domain- und
+  Pfadbelegen (kinox 6 Domains, kinokiste, megakino, movie2k).
+
+#### Geändert
+- `bs-to` per `idFromTitle` verifiziert, `cine`-Pack von DOM-Suche auf echten
+  AJAX-Endpunkt umgestellt.
+- Validator und `SOURCE_PACK.md` um `jsonExtractRegex` erweitert.
+
 ### Block 13 — Motor: Schema, WebView, Hoster-Ziele (2026-11-18)
 
 #### Hinzugefügt

@@ -131,6 +131,19 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Weitere Ziele kommen aus filmpalast, filmo und s.to/serienstream; fuer
   Hoster ohne Ziel im Katalog bleibt `check.reason` mit echtem Befund.
 
+## 2026-11-18 — Block 14: RESTE MIT BELEG
+
+- Moflix nutzt die aus dem Board belegte Ersatzdomain `.top`; die Suche
+  liegt als JSON in der HTML-Seite und wird per `jsonExtractRegex` gelesen.
+- Streamcloud ist ueber `streamcloud.plus → streamcloud.date` erreichbar;
+  Movie2k bleibt trotz drei geprueften Domains ohne echten Suchpfad.
+- Cine.to hat einen echten AJAX-Endpunkt `/request/search`; die fruehere
+  Annahme „nur clientseitige Suche“ war falsch und ist korrigiert.
+- Kinox (6 Rotationsdomains), Kinokiste (JWT/Bot-Gate), Megakino (DNS)
+  und Movie2k (Parking/SPA) sind `blocked_external` — erst nach den
+  dokumentierten Versuchen, nie als vorzeitiges Etikett.
+
+
 
 
 

@@ -52,14 +52,16 @@
   "verified": false,
   "last_check": "2026-11-18T07:37:16Z",
   "check": {
-    "status": "selector_missing",
-    "reason": "Selektoren ohne Treffer: search.resultSelector; HTTP 436, keine auswertbare Seite.",
+    "status": "blocked_external",
+    "reason": "megakino.de DNS nicht aufloesbar, frueher HTTP 436; Alternativen megakino.co (990 B Platzhalter) und .to (Domain-for-sale); Header-Profil und WebView-Pfad erfolglos",
     "checked": [
-      "search.resultSelector"
+      "megakino.de",
+      "megakino.co",
+      "megakino.to",
+      "header-profile",
+      "webview-cookie-retry"
     ],
-    "misses": [
-      "search.resultSelector"
-    ],
-    "http_status": 200
+    "misses": [],
+    "http_status": null
   }
 }

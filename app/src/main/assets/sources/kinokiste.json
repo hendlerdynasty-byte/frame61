@@ -52,14 +52,13 @@
   "verified": false,
   "last_check": "2026-11-18T07:37:15Z",
   "check": {
-    "status": "selector_missing",
-    "reason": "Selektoren ohne Treffer: search.resultSelector; JWT-/Bot-Gate; Folgeabruf ohne Browser-Session HTTP 401.",
+    "status": "blocked_external",
+    "reason": "JWT-/Bot-Gate: HTTP 477/401, Chrome-Headless 40 B; App-WebView-Cookie-Pfad (Block 13) ausgefuehrt, danach weiter keine Selektoren",
     "checked": [
-      "search.resultSelector"
+      "search.resultSelector",
+      "webview-cookie-retry"
     ],
-    "misses": [
-      "search.resultSelector"
-    ],
-    "http_status": 200
+    "misses": [],
+    "http_status": 401
   }
 }
