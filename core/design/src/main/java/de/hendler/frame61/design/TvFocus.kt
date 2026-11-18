@@ -103,6 +103,8 @@ fun Modifier.tvFocusable(
     enabled: Boolean = true,
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
     focusedColor: Color = LocalSkin.current.colors.focus,
+    /** Player chrome wants 4 dp; other screens use the skin token. */
+    ringWidth: Dp? = null,
     onClick: (() -> Unit)? = null
 ): Modifier {
     val registry = LocalTvFocusRegistry.current
@@ -140,7 +142,7 @@ fun Modifier.tvFocusable(
                     // over by the child, which made the ring invisible.
                     .drawWithContent {
                         drawContent()
-                        val w = focusTokens.ringWidth.toPx()
+                        val w = (ringWidth ?: focusTokens.ringWidth).toPx()
                         drawRect(
                             color = focusedColor,
                             topLeft = Offset(w / 2f, w / 2f),

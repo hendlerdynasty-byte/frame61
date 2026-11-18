@@ -1,7 +1,9 @@
 package de.hendler.frame61.ui.player
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.focusable
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import de.hendler.frame61.R
@@ -10,6 +12,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -21,9 +24,23 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.KeyEventType
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.onPreviewKeyEvent
+import androidx.compose.ui.input.key.type
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -36,6 +53,7 @@ import androidx.media3.ui.PlayerView
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.player.PlayerUiState
+import kotlinx.coroutines.delay
 
 /**
  * Full-screen player.
@@ -66,8 +84,74 @@ fun PlayerScreen(
     modifier: Modifier = Modifier
 ) {
     val skin = LocalSkin.current
+    var controlsVisible by remember { mutableStateOf(true) }
+    var infoVisible by remember { mutableStateOf(false) }
+    var interaction by remember { mutableIntStateOf(0) }
+    var seekDirection by remember { mutableIntStateOf(0) }
+    var sourceVisible by remember(sourceNote) { mutableStateOf(sourceNote != null) }
+    val focusRequester = remember { FocusRequester() }
 
-    Box(modifier = modifier.fillMaxSize().background(Color.Black)) {
+    LaunchedEffect(sourceNote) {
+        sourceVisible = sourceNote != null
+        if (sourceVisible) {
+            delay(3_000)
+            sourceVisible = false
+        }
+    }
+    LaunchedEffect(controlsVisible, interaction) {
+        if (controlsVisible) {
+            delay(3_000)
+            controlsVisible = false
+            infoVisible = false
+        }
+    }
+    LaunchedEffect(seekDirection) {
+        if (seekDirection != 0) {
+            delay(600)
+            seekDirection = 0
+        }
+    }
+    LaunchedEffect(Unit) { runCatching { focusRequester.requestFocus() } }
+
+    // First back hides the overlay, a second back leaves the player.
+    BackHandler(enabled = controlsVisible) {
+        controlsVisible = false
+        infoVisible = false
+    }
+
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color.Black)
+            .focusRequester(focusRequester)
+            .focusable()
+            .onPreviewKeyEvent { event ->
+                if (event.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
+                controlsVisible = true
+                interaction++
+                when (event.key) {
+                    Key.DirectionLeft -> {
+                        onSeekBack()
+                        seekDirection = -1
+                        true
+                    }
+                    Key.DirectionRight -> {
+                        onSeekForward()
+                        seekDirection = 1
+                        true
+                    }
+                    Key.DirectionCenter, Key.Enter, Key.NumPadEnter -> {
+                        onTogglePlay()
+                        true
+                    }
+                    Key.DirectionUp -> {
+                        infoVisible = !infoVisible
+                        true
+                    }
+                    else -> false
+                }
+            }
+    ) {
         if (player != null) {
             androidx.compose.ui.viewinterop.AndroidView(
                 modifier = Modifier.fillMaxSize(),
@@ -102,44 +186,82 @@ fun PlayerScreen(
             )
         }
 
-        TrackPanel(
-            state = state,
-            onSelectAudio = onSelectAudio,
-            onSelectText = onSelectText,
-            onCycleSpeed = onCycleSpeed,
-            modifier = Modifier.align(Alignment.TopStart).padding(16.dp)
-        )
-
-        // Visible provenance: "ARD Mediathek" for the real source, "Demo-Stream"
-        // when the resolver fell back. Never pretend a demo is the title.
-        sourceNote?.let { note ->
+        // Source provenance only for the first 3 seconds.
+        if (sourceVisible && sourceNote != null) {
             Text(
-                text = note,
+                text = sourceNote,
                 color = skin.colors.textSecondary,
                 style = MaterialTheme.typography.labelMedium,
                 modifier = Modifier.align(Alignment.TopEnd).padding(16.dp)
             )
         }
 
-        // Brand wordmark from the design package (transparent PNG, 3:1). Never
-        // stretched: ContentScale.Fit, fixed width.
-        Image(
-            painter = painterResource(R.drawable.frame61_logo_horizontal),
-            contentDescription = null,
-            contentScale = ContentScale.Fit,
-            modifier = Modifier
-                .align(Alignment.TopCenter)
-                .padding(top = 12.dp)
-                .width(180.dp)
-        )
+        if (controlsVisible) {
+            // Brand wordmark, only while the overlay is up.
+            Image(
+                painter = painterResource(R.drawable.frame61_logo_horizontal),
+                contentDescription = null,
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 12.dp)
+                    .width(180.dp)
+            )
 
-        PlayerControls(
-            state = state,
-            onTogglePlay = onTogglePlay,
-            onSeekBack = onSeekBack,
-            onSeekForward = onSeekForward,
-            modifier = Modifier.align(Alignment.BottomCenter)
-        )
+            if (infoVisible) {
+                TrackPanel(
+                    state = state,
+                    onSelectAudio = onSelectAudio,
+                    onSelectText = onSelectText,
+                    onCycleSpeed = onCycleSpeed,
+                    modifier = Modifier.align(Alignment.TopStart).padding(16.dp)
+                )
+            }
+
+            PlayerControls(
+                state = state,
+                onTogglePlay = onTogglePlay,
+                onSeekBack = onSeekBack,
+                onSeekForward = onSeekForward,
+                modifier = Modifier.align(Alignment.BottomCenter)
+            )
+        }
+
+        // 10-second seek feedback: a short gradient at the edge, no HUD.
+        if (seekDirection != 0) {
+            val colors = if (seekDirection < 0) {
+                listOf(skin.colors.primary.copy(alpha = 0.45f), Color.Transparent)
+            } else {
+                listOf(Color.Transparent, skin.colors.primary.copy(alpha = 0.45f))
+            }
+            Box(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .fillMaxWidth(0.3f)
+                    .align(
+                        if (seekDirection < 0) Alignment.CenterStart else Alignment.CenterEnd
+                    )
+                    .background(Brush.horizontalGradient(colors))
+            )
+        }
+
+        // Subtle buffer progress while the stream is still filling.
+        if (state.bufferedPercent in 1..99) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .height(2.dp)
+                    .background(skin.colors.textSecondary.copy(alpha = 0.15f))
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth(state.bufferedPercent / 100f)
+                        .height(2.dp)
+                        .background(skin.colors.primary.copy(alpha = 0.45f))
+                )
+            }
+        }
     }
 }
 
@@ -276,7 +398,11 @@ private fun PlayerControls(
 private fun ControlButton(label: String, id: String, onClick: () -> Unit) {
     val skin = LocalSkin.current
     Surface(
-        modifier = Modifier.tvFocusable(id = id, onClick = onClick),
+        modifier = Modifier.tvFocusable(
+            id = id,
+            ringWidth = 4.dp,
+            onClick = onClick
+        ),
         color = skin.colors.surface
     ) {
         Text(
