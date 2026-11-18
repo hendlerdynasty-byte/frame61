@@ -16,8 +16,13 @@ android {
         applicationId = "de.hendler.frame61"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0.0"
+        // Version comes from version.properties so an old signed build can be
+        // produced for a real update run without editing this file.
+        val versionProps = java.util.Properties().apply {
+            rootProject.file("version.properties").inputStream().use { load(it) }
+        }
+        versionCode = versionProps.getProperty("versionCode").toInt()
+        versionName = versionProps.getProperty("versionName")
 
         // M6 (TMDB de-DE, Verfügbarkeits-Badges, Trakt) ist optional und
         // standardmäßig aus. Die Pfade sind Stubs; kein Key, kein Live-Call.
@@ -49,7 +54,13 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("release")
+            // Remote builds without the signing env produce an unsigned artifact;
+            // it is signed only on the Mac with the out-of-repo keystore.
+            signingConfig = if (System.getenv("FRAME61_STORE_PASS") != null) {
+                signingConfigs.getByName("release")
+            } else {
+                null
+            }
         }
         getByName("debug") {
             isMinifyEnabled = false
