@@ -78,6 +78,13 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 
 ## Gate-Nachweis (18.11.2026)
 
+Aktuell: `frame61-037fc63f6f75-1795015007`, Exit 0, 103/103 Tests,
+Debug-APK `94b7d82f…` (31.630.631 Bytes). Der fruehere Block-9-Lauf
+`frame61-0c7da0c0539d-1794987598` hatte 7 Fixtures und 6 verifizierte Packs;
+mit `idFromTitle` kam Burning Series hinzu.
+
+Aelterer Beleg:
+
 - Remote-Gate `frame61-0c7da0c0539d-1794987598`, Quellstand `0c7da0c`, Exit 0.
 - Debug-APK `f8a9ac79d2a439aa8216ba3c91913252e8ab785230871ab0c71c556c6e5013f7`,
   24.434.378 Bytes (unter 45 MiB).

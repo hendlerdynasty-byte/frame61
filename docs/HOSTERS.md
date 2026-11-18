@@ -108,6 +108,16 @@ bleiben in `hoster_targets.json` erhalten.
 
 ## Gate-Nachweis (18.11.2026)
 
+- Remote-Gate `frame61-037fc63f6f75-1795015007`, Quellstand `037fc63`, Exit 0.
+- Debug-APK `94b7d82fba7e94af903d02dc19a3851bfd7e2c3717e8ad39537e4c515328e98d`,
+  31.630.631 Bytes (unter 45 MiB), **103/103 Tests**, 0 Fehler.
+- Geraet: `docs/design/block13/webview/07.png` zeigt den sichtbaren
+  WebView-Frame mit „Abbrechen“ waehrend der Auto-Auflösung auf dem A52;
+  danach wurde die Release-APK 1.1.0 wieder installiert.
+- `validatePacks`: 17 Source-Fixtures, 2 Hoster-Fixtures, 0 Fehler.
+
+### Frueherer Block-8-Nachweis
+
 - Remote-Gate `frame61-76f3432c4b50-1794985462`, Quellstand `76f3432`, Exit 0.
 - Debug-APK `db2fe4c6c8c140c8291bbc8ede357c63dc4112f57a313eb98d9bcafd3b9374d1`,
   24.432.615 Bytes (unter 45 MiB).
