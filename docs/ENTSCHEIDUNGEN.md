@@ -91,4 +91,18 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Filter sind Genre und Jahrzehnt; „Meine Liste“ bleibt DataStore-persistent,
   Fortschritt kommt aus dem letzten Room-Stand je Titel.
 
+## 2026-11-18 — Performance-Messung mit R8-Perf-Variante
+
+- Der `perf`-Buildtyp nutzt die Release-Regeln (R8, Shrink, Baseline Profile),
+  aber Debug-Signatur und `applicationIdSuffix ".perf"`. Er dient nur der
+  Messung und ist keine Release-/Store-Freigabe.
+- Die Performance-Ziele werden auf diesem Build gemessen: Kaltstart-p95
+  323 ms, Scroll-p95 24 ms, Jank 3,71 % auf dem A52.
+- Das Baseline Profile stammt aus einem echten Geraete-Dump; die HRF-Datei
+  wird mit `tools/perf/profile_to_hrf.py` erzeugt und ist im APK als
+  `assets/dexopt/baseline.prof` nachweisbar.
+- Debug-Zahlen bleiben als Vergleich dokumentiert, gelten aber nicht als
+  Zielerreichung.
+
+
 

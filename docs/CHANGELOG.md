@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+### Block 11 — Performance (2026-11-18)
+
+#### Hinzugefügt
+- `app/src/main/baseline-prof.txt` aus einem echten A52-Profil-Dump
+  (`cmd package dump-profiles`), 25.774 Methoden; `profileinstaller` 1.4.1 und
+  `art-profile-r8-rewriting`.
+- `tools/perf/profile_to_hrf.py`: reproduzierbare Umwandlung Dump → HRF.
+- `perf`-Buildtyp: R8/Shrink wie Release, Debug-Key, eigene ID für Messungen.
+- `docs/PERF2.md`: Messaufbau, Debug-/R8-Vergleich, p95 und Jank.
+
+#### Geändert
+- `HomeViewModel` lädt Katalog und Rails über `Dispatchers.IO`; Kaltstart
+  Debug 2,8 s → 1,6 s.
+- `BrowseViewModel` lädt 120 Titel pro Seite nach; Filter setzen die Seite
+  zurück.
+- `PlayerViewModel.onCleared` speichert den letzten Stand in einem
+  IO-Scope statt im bereits gecancelten `viewModelScope`.
+- `CatalogRepository.load` ist synchronisiert (paralleler Erstzugriff).
+
+#### Messergebnis (A52, R8-Perf-APK `a52abc65…`)
+- Kaltstart p95 **323 ms** (Ziel < 1200 ms).
+- Scroll p95 **24 ms**, Jank **3,71 %** (Ziele < 40 ms / < 5 %).
+- Debug-Vergleich: 1702 ms, 32 ms, 5,23 %.
+
 ### Block 10 — Katalog 600 (2026-11-18)
 
 #### Hinzugefügt
