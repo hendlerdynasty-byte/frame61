@@ -148,7 +148,8 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
 
     fun parseSearchApi(pack: SourcePack, body: String): List<SearchResult> {
         val rule = pack.search ?: return emptyList()
-        val items = rule.jsonPath.arrayIn(body) ?: return emptyList()
+        val source = body.extractJson(rule)
+        val items = rule.jsonPath.arrayIn(source) ?: return emptyList()
         return items.mapNotNull { item ->
             val id = rule.idPath.stringOn(item).orEmpty().toTitleId()
             val rawTitle = rule.titlePath.stringOn(item).orEmpty()
@@ -328,6 +329,15 @@ private fun JsonElement.walk(path: String): JsonElement? {
         } ?: return null
     }
     return current
+}
+
+/** Embedded loader JSON (Moflix) can be lifted out of an HTML page. */
+private fun String.extractJson(rule: PackRule?): String {
+    val pattern = rule?.jsonExtractRegex ?: return this
+    if (pattern.isBlank()) return this
+    return runCatching {
+        Regex("(?s)$pattern").find(this)?.groupValues?.getOrNull(1).orEmpty()
+    }.getOrDefault("")
 }
 
 private fun String?.arrayIn(body: String): List<JsonElement>? {

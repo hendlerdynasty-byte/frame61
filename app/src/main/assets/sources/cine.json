@@ -1,64 +1,40 @@
 {
   "id": "cine",
   "name": "Cine.to",
-  "version": 1,
+  "version": 2,
   "minEngine": "1.0.0",
   "tier": "A",
   "legalFree": false,
   "baseUrl": "https://cine.to",
+  "kind": "api",
   "search": {
-    "endpoint": "/search/{query}",
-    "queryParam": null,
-    "resultSelector": ".movie-item",
-    "titleSelector": "h3 a",
-    "yearSelector": ".jahr",
-    "typeSelector": null,
+    "endpoint": "/request/search",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "X-Requested-With": "XMLHttpRequest",
+      "Referer": "https://cine.to/"
+    },
+    "body": "kind=all&term={{query}}&language=0&page=1&count=4&genre=&rating=1&year[]=1900&year[]=2026",
+    "format": "api",
+    "jsonPath": "entries",
+    "idPath": "imdb",
+    "titlePath": "title",
+    "yearPath": "year",
     "pageLimit": 20
   },
-  "detail": {
-    "endpoint": "/film/{titleId}",
-    "episodeSelector": ".episode-list .episode",
-    "seasonSelector": ".season-tab",
-    "episodeTitleSelector": "a",
-    "episodeLinkSelector": "a",
-    "episodeIndexSelector": null
-  },
-  "streams": {
-    "selector": ".stream-item a",
-    "urlAttr": "href",
-    "qualitySelector": ".quality",
-    "langSelector": ".language",
-    "hosterSelector": ".hoster",
-    "healthAttr": "data-health",
-    "minHealth": 0.6,
-    "qualityMap": {
-      "HD": "1080",
-      "FHD": "1080",
-      "SD": "720"
-    },
-    "langMap": {
-      "DE": "de",
-      "EN": "en",
-      "OmU": "de"
-    },
-    "referrers": [
-      {
-        "domain": "cine.to",
-        "accept": true
-      }
-    ]
-  },
-  "verified": false,
-  "last_check": "2026-11-18T07:37:13Z",
+  "verified": true,
+  "last_check": "2026-11-18T16:13:19Z",
   "check": {
-    "status": "selector_missing",
-    "reason": "Selektoren ohne Treffer: search.resultSelector; Suche filtert clientseitig im Browser; kein servergerenderter Suchpfad.",
+    "status": "verified",
+    "reason": "",
     "checked": [
-      "search.resultSelector"
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "search.yearPath"
     ],
-    "misses": [
-      "search.resultSelector"
-    ],
+    "misses": [],
     "http_status": 200
   }
 }

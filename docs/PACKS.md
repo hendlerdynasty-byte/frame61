@@ -5,10 +5,10 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 ## Übersicht
 
-- Source-Packs: **29**
-- legal-frei: **13**, Grauzone Tier A/B: **17**
-- live verifiziert: **9** (aniworld, archive-org, ard-mediathek, bs-to, filmo, filmpalast, filmstarts, s-to, serienstream)
-- Fixtures: 9 recorded, 8 synthetic, 12 ohne
+- Source-Packs: **31**
+- legal-frei: **13**, Grauzone Tier A/B: **19**
+- live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
+- Fixtures: 12 recorded, 8 synthetic, 11 ohne
 - Hoster-Packs: **11** (live verifiziert: 2)
 
 ## Source-Packs
@@ -23,7 +23,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `ard` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `arte` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `bs-to` | B | nein | html | ja | 2026-11-18T14:36:31Z | recorded | — |
-| `cine` | A | nein | html | nein | 2026-11-18T07:37:13Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `cine` | A | nein | api | ja | 2026-11-18T16:13:19Z | recorded | — |
 | `dokujunkies` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmfans` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmo` | A | nein | html | ja | 2026-11-18T07:37:14Z | recorded | — |
@@ -31,9 +31,10 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `filmstarts` | B | ja | api | ja | 2026-11-18T07:37:14Z | recorded | — |
 | `hdfilme` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `kika` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `kinokiste` | A | nein | html | nein | 2026-11-18T07:37:15Z | – | Selektoren ohne Treffer: search.resultSelector |
-| `kinox` | B | nein | html | nein | 2026-11-18T07:37:15Z | – | Selektoren ohne Treffer: search.resultSelector |
-| `megakino` | A | nein | html | nein | 2026-11-18T07:37:16Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `kinokiste` | A | nein | html | nein | 2026-11-18T07:37:15Z | – | blocked_external |
+| `kinox` | B | nein | html | nein | 2026-11-18T07:37:15Z | – | blocked_external |
+| `megakino` | A | nein | html | nein | 2026-11-18T07:37:16Z | – | blocked_external |
+| `moflix` | A | nein | api | ja | 2026-11-18T15:53:58Z | recorded | — |
 | `movie4k` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `netzkino` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `plex-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
@@ -41,6 +42,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `rakuten-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `s-to` | A | nein | html | ja | 2026-11-18T07:37:16Z | recorded | — |
 | `serienstream` | A | nein | html | ja | 2026-11-18T07:37:25Z | recorded | — |
+| `streamcloud` | A | nein | html | ja | 2026-11-18T16:05:25Z | recorded | — |
 | `streamkiste` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `youtube` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `zdf` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |

@@ -91,6 +91,7 @@ data class PackRule(
     val langMap: Map<String, String> = emptyMap(),
     val referrers: List<Referrer>? = null,
     // api: dot-paths
+    val jsonExtractRegex: String? = null,
     val jsonPath: String? = null,
     val idPath: String? = null,
     val titlePath: String? = null,
@@ -219,6 +220,11 @@ object PackLoaderValidator {
         rules.firstOrNull { it.idFromTitle && !it.idRegex.isNullOrBlank() }?.let { rule ->
             runCatching { Regex(rule.idRegex.orEmpty()) }.onFailure {
                 return "idRegex ungültig (${it.message})"
+            }
+        }
+        rules.firstOrNull { !it.jsonExtractRegex.isNullOrBlank() }?.let { rule ->
+            runCatching { Regex(rule.jsonExtractRegex.orEmpty()) }.onFailure {
+                return "jsonExtractRegex ungültig (${it.message})"
             }
         }
         val addressable = rules.count {

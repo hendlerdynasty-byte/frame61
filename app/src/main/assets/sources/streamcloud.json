@@ -1,0 +1,41 @@
+{
+  "id": "streamcloud",
+  "name": "StreamCloud",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://streamcloud.date",
+  "kind": "html",
+  "search": {
+    "endpoint": "/suche",
+    "queryParam": "q",
+    "format": "html",
+    "resultSelector": "a.cv",
+    "titleSelector": ".cv-t",
+    "yearSelector": ".cv-m",
+    "idAttr": "href",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/filme/{titleId}",
+    "format": "html",
+    "resultSelector": "body",
+    "titleSelector": ".sc-h1"
+  },
+  "verified": true,
+  "last_check": "2026-11-18T16:05:25Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.resultSelector",
+      "search.titleSelector",
+      "search.yearSelector",
+      "detail.resultSelector",
+      "detail.titleSelector"
+    ],
+    "misses": [],
+    "http_status": 200
+  }
+}

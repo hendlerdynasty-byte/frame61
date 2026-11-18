@@ -104,9 +104,17 @@ def validate_rule(where: str, name: str, rule: object, kind: str, report: Report
             report.error(where, "episodes.episodeSelector fehlt (html-Pack)")
     else:
         if name in ("search", "detail") and not (
-            non_empty(rule.get("jsonPath")) or non_empty(rule.get("resultSelector"))
+            non_empty(rule.get("jsonPath"))
+            or non_empty(rule.get("resultSelector"))
+            or non_empty(rule.get("jsonExtractRegex"))
         ):
             report.error(where, f"{name}.jsonPath fehlt (api-Pack)")
+        pattern = rule.get("jsonExtractRegex")
+        if pattern:
+            try:
+                re.compile(pattern)
+            except re.error as exc:
+                report.error(where, f"{name}.jsonExtractRegex ungültig: {exc}")
         if name == "streams" and not (
             non_empty(rule.get("streamPath"))
             or non_empty(rule.get("jsonPath"))

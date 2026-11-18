@@ -1,0 +1,36 @@
+{
+  "id": "moflix",
+  "name": "Moflix-Stream",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://moflix-stream.top",
+  "kind": "api",
+  "search": {
+    "endpoint": "/search/{query}",
+    "format": "api",
+    "jsonExtractRegex": "\"loaders\"\\s*:\\s*\\{\"searchPage\"\\s*:\\s*\\{\"results\"\\s*:(\\[.*?\\])",
+    "jsonPath": ".",
+    "idPath": "id",
+    "titlePath": "name",
+    "yearPath": "year",
+    "typePath": "type",
+    "pageLimit": 20
+  },
+  "verified": true,
+  "last_check": "2026-11-18T15:53:58Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "search.yearPath",
+      "search.typePath"
+    ],
+    "misses": [],
+    "http_status": 200
+  }
+}
