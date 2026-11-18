@@ -76,3 +76,15 @@ und wurden ueber die 301-Redirects der Seite aufgeloest:
 Diese Punkte sind externe Blockaden, keine Parserfehler. Die Packs bleiben
 geladen und liefern im Betrieb einen klaren `check.reason`; der Resolver faellt
 auf den naechsten Hoster zurueck.
+
+## Gate-Nachweis (18.11.2026)
+
+- Remote-Gate `frame61-76f3432c4b50-1794985462`, Quellstand `76f3432`, Exit 0.
+- Debug-APK `db2fe4c6c8c140c8291bbc8ede357c63dc4112f57a313eb98d9bcafd3b9374d1`,
+  24.432.615 Bytes (unter 45 MiB).
+- `HosterFixtureTest`: 1 Test, 0 Fehler, 0 uebersprungen; `:scraper:resolver`
+  gesamt 22 Tests ohne Fehler. `validatePacks`, `testFetchTools`,
+  `packsReport --check` und `checkApkSize` liefen im Gate mit.
+- Einschraenkung: Der Gate belegt Build, Parser und Fixture-Kette, nicht die
+  Wiedergabe der sechs blockierten Hoster.
+
