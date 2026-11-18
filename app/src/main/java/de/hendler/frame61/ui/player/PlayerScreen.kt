@@ -54,6 +54,7 @@ fun PlayerScreen(
     player: ExoPlayer?,
     countdownSeconds: Int? = null,
     sourceNote: String? = null,
+    subtitleScale: Float = 1.0f,
     onTogglePlay: () -> Unit = {},
     onSeekBack: () -> Unit = {},
     onSeekForward: () -> Unit = {},
@@ -70,8 +71,14 @@ fun PlayerScreen(
         if (player != null) {
             androidx.compose.ui.viewinterop.AndroidView(
                 modifier = Modifier.fillMaxSize(),
-                factory = { ctx -> createPlayerView(ctx) },
-                update = { view -> view.player = player }
+                factory = { ctx -> createPlayerView(ctx, subtitleScale) },
+                update = { view ->
+                    view.player = player
+                    view.subtitleView?.setFixedTextSize(
+                        android.util.TypedValue.COMPLEX_UNIT_SP,
+                        18f * subtitleScale
+                    )
+                }
             )
         }
 
@@ -289,9 +296,13 @@ internal fun formatTime(ms: Long): String {
 
 /** The only place that builds a [PlayerView]; carries the unstable-API opt-in. */
 @androidx.annotation.OptIn(UnstableApi::class)
-private fun createPlayerView(context: android.content.Context): PlayerView =
+private fun createPlayerView(context: android.content.Context, subtitleScale: Float): PlayerView =
     PlayerView(context).apply {
         useController = false
         resizeMode = AspectRatioFrameLayout.RESIZE_MODE_FIT
         setShutterBackgroundColor(android.graphics.Color.BLACK)
+        subtitleView?.setFixedTextSize(
+            android.util.TypedValue.COMPLEX_UNIT_SP,
+            18f * subtitleScale
+        )
     }

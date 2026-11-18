@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.media3.exoplayer.ExoPlayer
 import dagger.hilt.android.lifecycle.HiltViewModel
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.data.ResumeRepository
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
@@ -14,8 +15,10 @@ import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -39,8 +42,15 @@ data class PlayerScreenState(
 class PlayerViewModel @Inject constructor(
     application: Application,
     private val resumeRepository: ResumeRepository,
-    private val ardResolver: ArdPlaybackResolver
+    private val ardResolver: ArdPlaybackResolver,
+    prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
+
+    val subtitleScale: StateFlow<Float> = prefs.subtitleScale.stateIn(
+        viewModelScope,
+        SharingStarted.WhileSubscribed(5_000),
+        1.0f
+    )
 
     private val mediaPlayer = Media3Frame61Player(application)
     private val watchdog = PlaybackWatchdog(timeoutMs = WATCHDOG_MS)

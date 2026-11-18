@@ -74,13 +74,17 @@ fun Frame61(
     // default canvas instead of the brand skin).
     val skinViewModel: SkinViewModel = hiltViewModel()
     val skin by skinViewModel.skin.collectAsStateWithLifecycle()
+    val uiDensity by skinViewModel.uiDensity.collectAsStateWithLifecycle()
 
     val activity = LocalActivity.current
     val windowSizeClass = activity?.let {
         runCatching { calculateWindowSizeClass(it) }.getOrNull()
     }
 
-    CompositionLocalProvider(LocalWindowSizeClass provides windowSizeClass) {
+    CompositionLocalProvider(
+        LocalWindowSizeClass provides windowSizeClass,
+        LocalUiDensity provides uiDensity
+    ) {
         Frame61Theme(skin = skin) {
             ProvideTvFocusRegistry {
                 val navController = rememberNavController()
@@ -99,6 +103,23 @@ fun Frame61(
                         )
                     ) {
                     composable("home") { HomeScreen(navController) }
+                    composable("films") {
+                        BrowseScreen(
+                            type = "movie",
+                            title = "Filme",
+                            onOpenTitle = { id -> navController.navigate("detail/$id") }
+                        )
+                    }
+                    composable("series") {
+                        BrowseScreen(
+                            type = "series",
+                            title = "Serien",
+                            onOpenTitle = { id -> navController.navigate("detail/$id") }
+                        )
+                    }
+                    composable("watchlist") {
+                        WatchlistScreen(onOpenTitle = { id -> navController.navigate("detail/$id") })
+                    }
                     composable("detail/{titleId}") { entry ->
                         DetailScreen(entry.arguments?.getString("titleId").orEmpty(), navController)
                     }
@@ -131,7 +152,8 @@ fun Frame61(
                     composable("settings") {
                         SettingsScreen(
                             onOpenLayout = { navController.navigate("layout_builder") },
-                            onOpenInfo = { navController.navigate("info") }
+                            onOpenInfo = { navController.navigate("info") },
+                            onOpenSources = { navController.navigate("source_lab") }
                         )
                     }
                     composable("info") {
@@ -189,6 +211,7 @@ fun DetailScreen(titleId: String, navController: NavController) {
     val detailViewModel: DetailViewModel = hiltViewModel()
     val catalog: CatalogRepository = detailViewModel.catalog
     val episodeSource = detailViewModel.episodes
+    val watchlist by detailViewModel.watchlist.collectAsStateWithLifecycle()
 
     val item by produceState<CatalogItem?>(initialValue = null, titleId, catalog) {
         value = withContext(Dispatchers.IO) { catalog.byId(titleId) }
@@ -260,6 +283,21 @@ fun DetailScreen(titleId: String, navController: NavController) {
                     })
                 ) {
                     Text(text = "Ähnliche suchen")
+                }
+                Spacer(Modifier.height(8.dp))
+                androidx.compose.material3.OutlinedButton(
+                    onClick = { detailViewModel.toggleWatchlist(current.id) },
+                    modifier = Modifier.tvFocusable(id = "detail-watchlist", onClick = {
+                        detailViewModel.toggleWatchlist(current.id)
+                    })
+                ) {
+                    Text(
+                        text = if (current.id in watchlist) {
+                            "Aus Meine Liste"
+                        } else {
+                            "In Meine Liste"
+                        }
+                    )
                 }
 
                 if (current.type == "series" && episodes.isNotEmpty()) {

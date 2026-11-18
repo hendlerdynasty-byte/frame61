@@ -3,6 +3,7 @@ package de.hendler.frame61.scraper.engine
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
@@ -26,10 +27,22 @@ data class SourcePack(
     val legalFree: Boolean = false,
     val kind: String = "html",
     val verified: Boolean = false,
+    val lastCheck: String? = null,
+    val check: PackCheck? = null,
     val search: PackRule? = null,
     val detail: PackRule? = null,
     val episodes: PackRule? = null,
     val streams: PackRule? = null
+)
+
+/** Worker result stored in the pack (additive, optional). */
+@Serializable
+data class PackCheck(
+    val status: String? = null,
+    val reason: String? = null,
+    val checked: List<String> = emptyList(),
+    val misses: List<String> = emptyList(),
+    @SerialName("http_status") val httpStatus: Int? = null
 )
 
 @Serializable

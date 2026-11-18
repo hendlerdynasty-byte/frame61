@@ -27,6 +27,7 @@ import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.PosterCard
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.ui.LocalUiDensity
 import de.hendler.frame61.ui.LocalWindowSizeClass
 
 /**
@@ -79,8 +80,14 @@ fun TvHome(
     val skin = LocalSkin.current
     val compact = LocalWindowSizeClass.current?.widthSizeClass ==
         androidx.compose.material3.windowsizeclass.WindowWidthSizeClass.Compact
-    // Compact = fewer visible columns because the 190 dp poster keeps its size.
-    val outer = if (compact) skin.density.contentPadding * 0.5f else skin.density.contentPadding
+    val densityScale = when (LocalUiDensity.current) {
+        0 -> 0.9f
+        2 -> 1.1f
+        else -> 1f
+    }
+    // Compact = fewer visible columns because the poster keeps its size.
+    val outer = (if (compact) skin.density.contentPadding * 0.5f else skin.density.contentPadding) *
+        densityScale
 
     LazyColumn(
         modifier = modifier.fillMaxSize(),
@@ -156,8 +163,13 @@ private fun CatalogPoster(
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
-    // TV poster standard: 2:3; skin density controls the height (190 dp default).
-    val posterHeight = skin.density.posterHeight
+    // TV poster standard: 2:3; skin density + user override control the height.
+    val densityScale = when (LocalUiDensity.current) {
+        0 -> 0.9f
+        2 -> 1.1f
+        else -> 1f
+    }
+    val posterHeight = skin.density.posterHeight * densityScale
     val width = posterHeight * (2f / 3f)
 
     PosterCard(

@@ -32,6 +32,10 @@ class SkinViewModel @Inject constructor(
         viewModelScope, SharingStarted.WhileSubscribed(5_000), "frame61"
     )
 
+    val uiDensity: StateFlow<Int> = prefs.uiDensity.stateIn(
+        viewModelScope, SharingStarted.WhileSubscribed(5_000), 1
+    )
+
     private val _skin = MutableStateFlow(DefaultFrame61Skin)
     val skin: StateFlow<Frame61Skin> = _skin.asStateFlow()
 

@@ -1,5 +1,6 @@
 package de.hendler.frame61.ui
 
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -7,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,17 +21,14 @@ import androidx.navigation.NavController
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
 
-/** The destinations every screen needs to reach — the missing "Tools". */
+/** The six TV destinations. Technical tools live inside Settings. */
 enum class NavDestination(val route: String, val label: String) {
     HOME("home", "Start"),
+    FILMS("films", "Filme"),
+    SERIES("series", "Serien"),
     SEARCH("search", "Suche"),
-    SKINS("skins", "Skins"),
-    SOURCES("source_lab", "Quellen"),
-    PROFILES("profiles", "Profile"),
-
-    // Short label on purpose: "Einstellungen" wrapped into two lines inside the
-    // 1/6 slot of the bottom bar (measured on the A52 at 1080 px width).
-    SETTINGS("settings", "Optionen")
+    WATCHLIST("watchlist", "Meine Liste"),
+    SETTINGS("settings", "Einstellungen")
 }
 
 /**
@@ -49,18 +48,20 @@ fun NavBar(
         modifier = modifier
             .fillMaxWidth()
             .height(56.dp)
+            .horizontalScroll(rememberScrollState())
             .padding(horizontal = 8.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         NavDestination.entries.forEach { dest ->
             val selected = currentRoute == dest.route
             Text(
                 text = dest.label,
-                style = MaterialTheme.typography.labelLarge,
+                style = MaterialTheme.typography.labelMedium,
+                maxLines = 1,
                 color = if (selected) skin.colors.primary else skin.colors.textSecondary,
                 modifier = Modifier
-                    .padding(horizontal = 10.dp)
+                    .padding(horizontal = 6.dp)
                     .semantics { contentDescription = dest.label }
                     .tvFocusable(id = "nav-${dest.route}", onClick = { onNavigate(dest.route) })
             )

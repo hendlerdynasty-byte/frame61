@@ -6,6 +6,8 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.BuildConfig
 import de.hendler.frame61.data.ProfileDataStore
+import de.hendler.frame61.scraper.engine.PackLoader
+import de.hendler.frame61.scraper.engine.SourcePack
 import de.hendler.frame61.update.UpdateCheck
 import de.hendler.frame61.update.UpdateInstall
 import de.hendler.frame61.update.UpdateManifest
@@ -17,19 +19,36 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/** One row in Settings → Erweitert → Quellen. */
+data class SourceStatus(
+    val id: String,
+    val name: String,
+    val verified: Boolean,
+    val lastCheck: String?,
+    val status: String?,
+    val reason: String?
+)
+
 data class SettingsUiState(
     val autoplay: Boolean = true,
     val watchedPercentage: Float = 0.9f,
     val saved: Boolean = false,
     val updateUrl: String = "",
     val updateStatus: String = "",
-    val updateAvailable: Boolean = false
+    val updateAvailable: Boolean = false,
+    val uiDensity: Int = 1,
+    val subtitleScale: Float = 1.0f,
+    val hosterPriority: String = "",
+    val preferredQuality: String = "auto",
+    val disabledSources: Set<String> = emptySet(),
+    val sources: List<SourceStatus> = emptyList()
 )
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
     application: Application,
-    private val prefs: ProfileDataStore
+    private val prefs: ProfileDataStore,
+    private val packLoader: PackLoader
 ) : AndroidViewModel(application) {
 
     private val updater = UpdaterManager(application, BuildConfig.VERSION_CODE)
@@ -54,6 +73,62 @@ class SettingsViewModel @Inject constructor(
                 _state.update { it.copy(updateUrl = value) }
             }
         }
+        viewModelScope.launch {
+            prefs.uiDensity.collect { value -> _state.update { it.copy(uiDensity = value) } }
+        }
+        viewModelScope.launch {
+            prefs.subtitleScale.collect { value -> _state.update { it.copy(subtitleScale = value) } }
+        }
+        viewModelScope.launch {
+            prefs.hosterPriority.collect { value -> _state.update { it.copy(hosterPriority = value) } }
+        }
+        viewModelScope.launch {
+            prefs.preferredQuality.collect { value -> _state.update { it.copy(preferredQuality = value) } }
+        }
+        viewModelScope.launch {
+            prefs.disabledSources.collect { value -> _state.update { it.copy(disabledSources = value) } }
+        }
+        loadSources()
+    }
+
+    fun loadSources() {
+        viewModelScope.launch {
+            val packs = runCatching { packLoader.loadAllPacks() }.getOrDefault(emptyList())
+            _state.update { it.copy(sources = packs.map { pack -> pack.toStatus() }) }
+        }
+    }
+
+    private fun SourcePack.toStatus() = SourceStatus(
+        id = id,
+        name = name,
+        verified = verified,
+        lastCheck = lastCheck,
+        status = check?.status,
+        reason = check?.reason
+    )
+
+    fun setUiDensity(value: Int) {
+        _state.update { it.copy(uiDensity = value.coerceIn(0, 2)) }
+        viewModelScope.launch { prefs.setUiDensity(value) }
+    }
+
+    fun setSubtitleScale(value: Float) {
+        _state.update { it.copy(subtitleScale = value) }
+        viewModelScope.launch { prefs.setSubtitleScale(value) }
+    }
+
+    fun setHosterPriority(value: String) {
+        _state.update { it.copy(hosterPriority = value) }
+        viewModelScope.launch { prefs.setHosterPriority(value) }
+    }
+
+    fun setPreferredQuality(value: String) {
+        _state.update { it.copy(preferredQuality = value) }
+        viewModelScope.launch { prefs.setPreferredQuality(value) }
+    }
+
+    fun setSourceEnabled(id: String, enabled: Boolean) {
+        viewModelScope.launch { prefs.setSourceEnabled(id, enabled) }
     }
 
     fun setAutoplay(enabled: Boolean) {

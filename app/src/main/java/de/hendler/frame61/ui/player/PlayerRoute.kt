@@ -29,6 +29,7 @@ fun PlayerRoute(
 ) {
     val viewModel: PlayerViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val subtitleScale by viewModel.subtitleScale.collectAsStateWithLifecycle()
 
     LaunchedEffect(item.id, episodeId, episodeNumber) {
         viewModel.start(
@@ -46,6 +47,7 @@ fun PlayerRoute(
         player = viewModel.player,
         countdownSeconds = state.countdownSeconds,
         sourceNote = state.sourceNote,
+        subtitleScale = subtitleScale,
         onTogglePlay = viewModel::togglePlay,
         onSeekBack = { viewModel.seekBy(-10_000L) },
         onSeekForward = { viewModel.seekBy(10_000L) },

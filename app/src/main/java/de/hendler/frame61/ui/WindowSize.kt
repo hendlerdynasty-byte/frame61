@@ -10,3 +10,6 @@ import androidx.compose.runtime.compositionLocalOf
  * and the number of visible columns change.
  */
 val LocalWindowSizeClass = compositionLocalOf<WindowSizeClass?> { null }
+
+/** User density override: 0 = compact, 1 = regular, 2 = roomy. */
+val LocalUiDensity = compositionLocalOf { 1 }
