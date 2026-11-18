@@ -120,6 +120,33 @@ def recorded_fixture(root: Path, pack_id: str) -> tuple[bool, str]:
     return True, ""
 
 
+def hoster_fixture_dir(root: Path, pack_id: str) -> Path:
+    return root / "scraper/resolver/src/test/resources/fixtures-hosters" / pack_id
+
+
+def recorded_hoster_fixture(root: Path, pack_id: str) -> tuple[bool, str]:
+    fixture_dir = hoster_fixture_dir(root, pack_id)
+    meta_path = fixture_dir / "meta.json"
+    if not meta_path.is_file():
+        return False, "kein Hoster-Fixture-meta.json"
+    meta = load_json(meta_path, Report())
+    if not isinstance(meta, dict):
+        return False, "Hoster-Fixture-meta ist kein Objekt"
+    if meta.get("id") != pack_id:
+        return False, f"Fixture-id {meta.get('id')!r} != {pack_id!r}"
+    if meta.get("provenance") != "recorded":
+        return False, f"Fixture-Provenienz ist {meta.get('provenance')!r}, nicht 'recorded'"
+    if not non_empty(meta.get("responseSha256")):
+        return False, "Hoster-Fixture ohne responseSha256"
+    if not non_empty(meta.get("sourceUrl")):
+        return False, "Hoster-Fixture ohne sourceUrl"
+    if not list(fixture_dir.glob("*.body.*")):
+        return False, "Hoster-Fixture ohne *.body.*"
+    if not list(fixture_dir.glob("*.expected.json")):
+        return False, "Hoster-Fixture ohne *.expected.json"
+    return True, ""
+
+
 def validate_source_pack(
     path: Path, root: Path, report: Report, check_filename: bool = True
 ) -> None:
@@ -166,7 +193,7 @@ def validate_source_pack(
                 report.error(where, f"verified=true nicht belegbar: {reason}")
 
 
-def validate_hoster(path: Path, report: Report) -> None:
+def validate_hoster(path: Path, root: Path, report: Report) -> None:
     data = load_json(path, report)
     if not isinstance(data, dict):
         if data is not None:
@@ -200,8 +227,20 @@ def validate_hoster(path: Path, report: Report) -> None:
             report.error(where, f"steps[{index}] ohne path")
         if step.get("action") == "copy" and not non_empty(step.get("url")):
             report.error(where, f"steps[{index}] copy ohne url")
+
+    check = data.get("check")
+    if not isinstance(check, dict) or not non_empty(check.get("status")):
+        report.error(where, "check.status fehlt (Worker nicht gelaufen)")
     if data.get("verified") is True:
-        report.warn(where, "verified=true, aber es gibt keinen Hoster-Live-Nachweis im Repo")
+        pack_id = data.get("id")
+        if not non_empty(pack_id):
+            report.error(where, "verified=true ohne id")
+        else:
+            ok, reason = recorded_hoster_fixture(root, pack_id)
+            if not ok:
+                report.error(where, f"verified=true nicht belegbar: {reason}")
+    elif isinstance(check, dict) and not non_empty(check.get("reason")):
+        report.error(where, "verified=false ohne check.reason")
 
 
 def validate_skin(path: Path, report: Report) -> None:
@@ -281,6 +320,36 @@ def validate_fixtures(root: Path, report: Report) -> None:
                 report.error(str(directory), "recorded ohne *.body.*")
         for expected in directory.glob("*.expected.json"):
             load_json(expected, report)
+
+
+def validate_hoster_fixtures(root: Path, report: Report) -> None:
+    """Prueft die echten Hoster-Aufzeichnungen unter fixtures-hosters."""
+    fixture_root = root / "scraper/resolver/src/test/resources/fixtures-hosters"
+    if not fixture_root.is_dir():
+        return
+    for directory in sorted(p for p in fixture_root.iterdir() if p.is_dir()):
+        report.count("hoster_fixtures")
+        meta = load_json(directory / "meta.json", report)
+        if not isinstance(meta, dict):
+            if meta is not None:
+                report.error(str(directory / "meta.json"), "kein Objekt")
+            continue
+        if meta.get("id") != directory.name:
+            report.error(str(directory / "meta.json"), f"id={meta.get('id')!r} != {directory.name!r}")
+        if meta.get("provenance") != "recorded":
+            report.error(str(directory / "meta.json"), f"provenance={meta.get('provenance')!r}")
+        if not non_empty(meta.get("capturedAt")):
+            report.error(str(directory / "meta.json"), "capturedAt fehlt")
+        if not non_empty(meta.get("sourceUrl")):
+            report.error(str(directory / "meta.json"), "sourceUrl fehlt")
+        if not non_empty(meta.get("responseSha256")):
+            report.error(str(directory / "meta.json"), "responseSha256 fehlt")
+        if not list(directory.glob("*.body.*")):
+            report.error(str(directory), "recorded ohne *.body.*")
+        for expected in directory.glob("*.expected.json"):
+            data = load_json(expected, report)
+            if isinstance(data, dict) and not non_empty(data.get("url")):
+                report.error(str(expected), "url fehlt")
 
 
 def validate_meta(root: Path, report: Report) -> None:
@@ -390,7 +459,7 @@ def main() -> int:
     for path in sorted((root / "app/src/main/assets/sources").glob("*.json")):
         validate_source_pack(path, root, report)
     for path in sorted((root / "app/src/main/assets/hosters").glob("*.json")):
-        validate_hoster(path, report)
+        validate_hoster(path, root, report)
     for path in sorted((root / "app/src/main/assets/skins").glob("*.json")):
         validate_skin(path, report)
     catalog = root / "app/src/main/assets/catalog/catalog.json"
@@ -399,6 +468,7 @@ def main() -> int:
     else:
         report.error(str(catalog), "Katalog fehlt")
     validate_fixtures(root, report)
+    validate_hoster_fixtures(root, report)
     validate_meta(root, report)
     validate_gold(root, report)
 

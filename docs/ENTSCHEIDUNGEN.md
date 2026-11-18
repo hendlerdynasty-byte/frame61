@@ -51,3 +51,17 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 
 - `frame61.m6=false`; TMDB/Badges/Trakt bleiben Stubs. Kein Key, kein
   Live-Call. Einschalten ist eine eigene Produktentscheidung.
+
+## 2026-11-18 — Hoster-Wahrheit statt Vollstaendigkeitsetikett
+
+- `verified: true` gilt nur mit aufgezeichneter Serverantwort
+  (`fixtures-hosters/<id>/`, `provenance: recorded`, `responseSha256`) und
+  bestandenem `HosterFixtureTest`. Der Validator erzwingt das.
+- Nicht erreichbare Hoster bleiben `verified: false` mit `check.status` und
+  `check.reason`. Kein erfundener Ziel-URL, kein Platzhalter-Fixture.
+- VOE, Doodstream und Filemoon sind an der Quelle blockiert (JS-Redirect,
+  Cloudflare-Challenge, PoW-Token). Streamtape, Vidoza, Mixdrop, Luluvdo,
+  Loadx und Streamhide haben am 18.11.2026 kein erreichbares Dateiziel.
+- Konsequenz: Der Resolver nutzt die verbleibenden Hoster und faellt bei
+  `CaptchaRequired`/`Failed` auf den naechsten Kandidaten zurueck; die
+  WebView-Token-Rueckgabe ist ein eigener Block.

@@ -9,7 +9,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 - legal-frei: **12**, Grauzone Tier A/B: **14**
 - live verifiziert: **2** (archive-org, ard-mediathek)
 - Fixtures: 2 recorded, 8 synthetic, 16 ohne
-- Hoster-Packs: **10** (live verifiziert: 0)
+- Hoster-Packs: **11** (live verifiziert: 1)
 
 ## Source-Packs
 
@@ -47,15 +47,16 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | ID | Domains | Schritte | verified |
 |---|---|---|---|
 | `direct` | akamaihd.net, daserste.de, ardmediathek.de, ard.de | 1 | nein |
-| `filemoon` | filemoon.to, filemoon.sx | 4 | nein |
+| `doodstream` | doodstream.com, dood.watch, dood.re, do7go.com, playmogo.com | 2 | nein |
+| `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com | 4 | nein |
 | `loadx` | loadx.ws | 2 | nein |
 | `luluvdo` | luluvdo.com, luluvdo.net | 2 | nein |
 | `mixdrop` | mixdrop.co, mixdrop.to, mixdrop.ch | 2 | nein |
 | `streamhide` | streamhide.to, streamhide.com | 2 | nein |
 | `streamtape` | streamtape.com, streamtape.to | 4 | nein |
-| `vidmoly` | vidmoly.to, vidmoly.me | 2 | nein |
+| `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net | 2 | ja |
 | `vidoza` | vidoza.net | 2 | nein |
-| `voe` | voe.sx, voe-unblock.com, voeunblock.com | 3 | nein |
+| `voe` | voe.sx, voe-unblock.com, voeunblock.com, arianathankspecial.com | 3 | nein |
 
 ## Regeln
 

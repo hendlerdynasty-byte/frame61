@@ -2,6 +2,35 @@
 
 ## [Unreleased]
 
+### Block 8 — Hoster-Nachweise (2026-11-18)
+
+#### Hinzugefügt
+- `tools/fetch/hoster_worker.py`: echter Durchlauf der Hoster-Schrittketten mit
+  Browser-User-Agent, Referer, Cookie-Jar, drei Versuchen und Backoff.
+- `tools/fetch/hoster_targets.json`: belegte Ziele aus `aniworld.to`-Redirects
+  (Vidmoly, VOE, Doodstream, Filemoon) plus dokumentierte Gründe für neun
+  nicht erreichbare Ziele.
+- `scraper/resolver/src/test/resources/fixtures-hosters/vidmoly/`: echte
+  Serverantwort, erwartete Stream-URL und `responseSha256` (`6db7c3c1…`).
+- `HosterFixtureTest`: prüft Fixture-Hash und führt die Pack-Schrittkette gegen
+  die Aufzeichnung aus.
+- `docs/HOSTERS.md`: Status, Ziele, Blockaden und nächster technischer Schritt.
+
+#### Geändert
+- `vidmoly.json` auf Version 2: `vidmoly.net`, Regex für einfache und doppelte
+  Anführungszeichen; `verified: true` mit Fixture.
+- `doodstream.json`: Domains `do7go.com` und `playmogo.com`, generischer
+  m3u8/mp4-Regex.
+- `voe.json`: Domain `arianathankspecial.com`; `filemoon.json`: Domain
+  `bysezejataos.com`.
+- `tools/validate_packs.py`: `verified: true` nur mit Hoster-Fixture; jeder
+  unverifizierte Pack braucht `check.reason`; Hoster-Fixtures werden geprüft.
+
+#### Ergebnis
+- Vidmoly `verified`; VOE/Doodstream/Filemoon `step_failed` mit konkretem
+  Grund (JS-Redirect, Cloudflare, SPA/PoW); sechs Hoster `no_target` mit
+  Erreichbarkeitsbefund. Keine erfundenen URLs oder Fixtures.
+
 ### P5 — Navigation, Suche, Skins, Profile/PIN, Player-Spuren, Source-Lab-Import, Layout-Builder, Updater (2026-11-16)
 
 #### Hinzugefügt
