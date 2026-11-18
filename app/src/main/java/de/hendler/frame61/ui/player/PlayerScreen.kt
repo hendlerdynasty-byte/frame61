@@ -116,7 +116,6 @@ fun PlayerScreen(
     // so OK/UP work even while the Media3 surface owns the focus.
     DisposableEffect(Unit) {
         PlayerKeyRouter.handler = { event ->
-            android.util.Log.i("Frame61Keys", "player handler key=${event.keyCode} action=${event.action}")
             when (event.action) {
                 android.view.KeyEvent.ACTION_DOWN -> {
                     controlsVisible = true
@@ -197,7 +196,9 @@ fun PlayerScreen(
             NextEpisodeOverlay(
                 seconds = countdownSeconds,
                 onCancel = onCancelCountdown,
-                modifier = Modifier.align(Alignment.BottomEnd).padding(48.dp)
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(end = 48.dp, bottom = 160.dp)
             )
         }
 
