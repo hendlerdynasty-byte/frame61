@@ -177,8 +177,10 @@ private fun CatalogPoster(
                 .height(72.dp)
                 .background(
                     Brush.verticalGradient(
-                        listOf(androidx.compose.ui.graphics.Color.Transparent,
-                            androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.82f))
+                        listOf(
+                            androidx.compose.ui.graphics.Color.Transparent,
+                            skin.colors.canvas.copy(alpha = 0.9f)
+                        )
                     )
                 )
         )
