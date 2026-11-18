@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -18,7 +20,7 @@ android {
         targetSdk = libs.versions.targetSdk.get().toInt()
         // Version comes from version.properties so an old signed build can be
         // produced for a real update run without editing this file.
-        val versionProps = java.util.Properties().apply {
+        val versionProps = Properties().apply {
             rootProject.file("version.properties").inputStream().use { load(it) }
         }
         versionCode = versionProps.getProperty("versionCode").toInt()
