@@ -64,10 +64,19 @@ Poster und Duplikatfreiheit.
 | `docs/design/block10/filters/05.png` | Filme: 16 Seed-Titel, gleiche Filter |
 | `docs/design/block10/filters2/07.png` | Genre Action: 162 Titel |
 | `docs/design/block10/filters2/10.png` | Action + 2020er: 7 Titel |
-| `docs/design/block10/progress/12.png` | Start mit sichtbarer Fortschrittsspur (Breaking Bad) |
+| `docs/design/block10/progress4/20.png` | Fortschrittsspur nach 60 s Wiedergabe (Stranger Things) |
 
 Die Bilder stammen aus dem QUICK_SMOKE-Lauf `job-114ada04f6c44d8b`
 (PASS, APK `1945345c…`) und interaktiven Bruecken-Sitzungen am A52.
+
+## Gate-Nachweis (18.11.2026)
+
+- Remote-Gate `frame61-5d75e47dbe09-1794995232`, Quellstand `5d75e47`, Exit 0.
+- Debug-APK `657cf2cbc13c55647b83ddff3d571ea02f41cc4d6d2eeedda8f81b159760d944`,
+  31.597.522 Bytes (30,1 MiB, unter 45 MiB).
+- `CatalogRepositoryTest` 7 Tests, 0 Fehler; Validator 600 Katalogeintraege,
+  600 Meta-Snapshots, 600 Posterdateien.
+- QUICK_SMOKE `job-ec3bbb8bb0814803` PASS auf dem A52.
 
 ## Offen
 
