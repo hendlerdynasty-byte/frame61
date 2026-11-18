@@ -71,5 +71,7 @@ Die Bilder stammen aus QUICK_SMOKE `job-114ada04f6c44d8b` und Bruecken-Sitzungen
 
 ## Gate-Nachweis
 
-Block 10: `frame61-5d75e47dbe09-1794995232`, Exit 0, APK `657cf2cb…` (600 Titel).
-Block 15: wird nach dem Remote-Gate in `docs/ABSCHLUSS-TV.md` nachgefuehrt.
+- Block 10: `frame61-5d75e47dbe09-1794995232`, Exit 0, APK `657cf2cb…` (600 Titel).
+- Block 15: `frame61-d544bb22659c-1795035675`, Exit 0, **104/104 Tests**,
+  Debug-APK `a4e7529a0d22c2781fa1855c10a0b7d34d10038b2c87ded234c270d3d4ea55c5`.
+- Validator: 1000 Katalogeinträge, 1000 Meta-Snapshots, 1000 Index-Einträge, 0 Fehler.
