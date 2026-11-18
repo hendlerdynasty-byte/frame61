@@ -28,9 +28,10 @@ class CatalogRepositoryTest {
     @Test
     fun `catalog loads and is usable offline`() {
         val items = repo().all()
-        assertTrue("catalog is too small: ${items.size}", items.size >= 600)
+        assertTrue("catalog is too small: ${items.size}", items.size >= 1_000)
         assertTrue("every item needs a title", items.all { it.title.isNotBlank() })
         assertTrue("every item needs a type", items.all { it.type == "movie" || it.type == "series" })
+        assertTrue("too few movies: ${items.count { it.type == "movie" }}", items.count { it.type == "movie" } >= 400)
         assertTrue(
             "posters must be bundled locally",
             items.all { it.poster.startsWith("file:///android_asset/posters/") }

@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### Block 15 — Filme im Katalog (2026-11-18)
+
+#### Hinzugefügt
+- `tools/fetch/film_builder.py`: keyloser Wikidata-Export mit deutscher
+  Beschreibung, Genres, Laufzeit und lokalen Wikimedia-Postern.
+- 400 Filme (IDs `wiki-Q…`), damit **1000 Titel / 416 Filme** im Katalog.
+- Laufzeit-Filter (`< 90`, `90–120`, `> 120 Min`) in `BrowseScreen`.
+
+#### Geändert
+- `CatalogRepositoryTest`: ≥ 1000 Titel und ≥ 400 Filme.
+- `docs/CATALOG.md`: neue Quellen, Umfang und Filter.
+
 ### Block 14 — Indizes 10/14 (2026-11-18)
 
 #### Hinzugefügt

@@ -59,6 +59,8 @@ data class BrowseState(
     val decades: List<Int> = emptyList(),
     val selectedGenre: String? = null,
     val selectedDecade: Int? = null,
+    val selectedRuntime: String? = null,
+    val hasRuntime: Boolean = false,
     val progress: Map<String, Float> = emptyMap()
 )
 
@@ -105,6 +107,15 @@ fun BrowseScreen(
                 onSelect = { label ->
                     viewModel.setDecade(label?.removeSuffix("er")?.toIntOrNull())
                 }
+            )
+        }
+        if (state.hasRuntime) {
+            FilterRow(
+                label = "Laufzeit",
+                options = listOf("< 90 Min", "90–120 Min", "> 120 Min"),
+                selected = state.selectedRuntime,
+                allLabel = "Alle Laufzeiten",
+                onSelect = viewModel::setRuntime
             )
         }
         Text(
@@ -228,6 +239,12 @@ class BrowseViewModel @Inject constructor(
         publish()
     }
 
+    fun setRuntime(runtime: String?) {
+        _state.value = _state.value.copy(selectedRuntime = runtime)
+        visibleCount = PAGE_SIZE
+        publish()
+    }
+
     fun loadMore() {
         if (visibleCount >= _state.value.total) return
         visibleCount += PAGE_SIZE
@@ -244,9 +261,20 @@ class BrowseViewModel @Inject constructor(
 
     private fun publish() {
         val current = _state.value
+        val runtimeMatches: (CatalogItem) -> Boolean = { item ->
+            val minutes = item.runtime
+            when (current.selectedRuntime) {
+                null -> true
+                "< 90 Min" -> minutes != null && minutes < 90
+                "90–120 Min" -> minutes != null && minutes in 90..120
+                "> 120 Min" -> minutes != null && minutes > 120
+                else -> true
+            }
+        }
         val filtered = base.filter { item ->
             (current.selectedGenre == null || item.genres.any { it.equals(current.selectedGenre, true) }) &&
-                (current.selectedDecade == null || (item.year?.div(10)?.times(10) == current.selectedDecade))
+                (current.selectedDecade == null || (item.year?.div(10)?.times(10) == current.selectedDecade)) &&
+                runtimeMatches(item)
         }
         val progress = base.associate { item ->
             item.id to (progressByTitle[CatalogPlayback.stableId(item.id)] ?: 0f)
@@ -256,6 +284,7 @@ class BrowseViewModel @Inject constructor(
             total = filtered.size,
             genres = base.flatMap { it.genres }.distinct().sorted(),
             decades = base.mapNotNull { it.year?.div(10)?.times(10) }.distinct().sortedDescending(),
+            hasRuntime = base.any { it.runtime != null },
             progress = progress
         )
     }
