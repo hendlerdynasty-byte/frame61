@@ -182,6 +182,7 @@ def collect(pages: int, wanted: int) -> list[dict]:
         and show.get("premiered")
         and (show.get("image") or {}).get("medium")
         and show.get("type") in ALLOWED_TYPES
+        and "Adult" not in (show.get("genres") or [])
     ]
     candidates.sort(
         key=lambda show: (
@@ -252,6 +253,7 @@ def write_outputs(
         key = dedupe_key(title, year)
         if not title or key in seen_keys:
             return False
+        genres = [genre for genre in genres if genre != "Adult"]
         stem = safe_stem(item_id)
         poster_path = poster_dir / f"{stem}.jpg"
         if not poster_path.is_file():

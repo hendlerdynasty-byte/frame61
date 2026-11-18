@@ -27,6 +27,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -67,7 +68,10 @@ fun BrowseScreen(
     val viewModel: BrowseViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
     LaunchedEffect(type) { viewModel.load(type) }
-    LaunchedEffect(Unit) { viewModel.refreshProgress() }
+    LifecycleResumeEffect(Unit) {
+        viewModel.refreshProgress()
+        onPauseOrDispose { }
+    }
 
     Column(modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
         Text(text = title, style = MaterialTheme.typography.headlineSmall)
