@@ -53,6 +53,11 @@ import de.hendler.frame61.ui.home.TvHome
 @AndroidEntryPoint
 class MainActivity : androidx.appcompat.app.AppCompatActivity() {
 
+    override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
+        if (de.hendler.frame61.ui.player.PlayerKeyRouter.dispatch(event)) return true
+        return super.dispatchKeyEvent(event)
+    }
+
     override fun onCreate(savedInstanceState: android.os.Bundle?) {
         super.onCreate(savedInstanceState)
         val content = androidx.compose.ui.platform.ComposeView(this)

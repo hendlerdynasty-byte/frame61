@@ -24,6 +24,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -89,7 +90,6 @@ fun PlayerScreen(
     var interaction by remember { mutableIntStateOf(0) }
     var seekDirection by remember { mutableIntStateOf(0) }
     var sourceVisible by remember(sourceNote) { mutableStateOf(sourceNote != null) }
-    val focusRequester = remember { FocusRequester() }
 
     LaunchedEffect(sourceNote) {
         sourceVisible = sourceNote != null
@@ -111,11 +111,42 @@ fun PlayerScreen(
             seekDirection = 0
         }
     }
-    LaunchedEffect(player) {
-        // The AndroidView attaches after composition and used to take focus,
-        // so D-pad OK/UP never reached the overlay handler.
-        delay(150)
-        runCatching { focusRequester.requestFocus() }
+
+    // Focus-independent routing: Activity.dispatchKeyEvent feeds this handler,
+    // so OK/UP work even while the Media3 surface owns the focus.
+    DisposableEffect(Unit) {
+        PlayerKeyRouter.handler = { event ->
+            if (event.action != android.view.KeyEvent.ACTION_DOWN) {
+                false
+            } else {
+                controlsVisible = true
+                interaction++
+                when (event.keyCode) {
+                    android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
+                        onSeekBack()
+                        seekDirection = -1
+                        true
+                    }
+                    android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
+                        onSeekForward()
+                        seekDirection = 1
+                        true
+                    }
+                    android.view.KeyEvent.KEYCODE_DPAD_CENTER,
+                    android.view.KeyEvent.KEYCODE_ENTER,
+                    android.view.KeyEvent.KEYCODE_NUMPAD_ENTER -> {
+                        onTogglePlay()
+                        true
+                    }
+                    android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                        infoVisible = !infoVisible
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }
+        onDispose { PlayerKeyRouter.handler = null }
     }
 
     // First back hides the overlay, a second back leaves the player.
@@ -128,34 +159,6 @@ fun PlayerScreen(
         modifier = modifier
             .fillMaxSize()
             .background(Color.Black)
-            .focusRequester(focusRequester)
-            .focusable()
-            .onPreviewKeyEvent { event ->
-                if (event.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
-                controlsVisible = true
-                interaction++
-                when (event.key) {
-                    Key.DirectionLeft -> {
-                        onSeekBack()
-                        seekDirection = -1
-                        true
-                    }
-                    Key.DirectionRight -> {
-                        onSeekForward()
-                        seekDirection = 1
-                        true
-                    }
-                    Key.DirectionCenter, Key.Enter, Key.NumPadEnter -> {
-                        onTogglePlay()
-                        true
-                    }
-                    Key.DirectionUp -> {
-                        infoVisible = !infoVisible
-                        true
-                    }
-                    else -> false
-                }
-            }
     ) {
         if (player != null) {
             androidx.compose.ui.viewinterop.AndroidView(
