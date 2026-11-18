@@ -3,6 +3,7 @@ package de.hendler.frame61.player
 import android.content.Context
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
+import androidx.media3.common.MimeTypes
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
 import androidx.media3.common.TrackSelectionOverride
@@ -76,14 +77,20 @@ class Media3Frame61Player(
         publish()
     }
 
-    fun open(url: String, mimeType: String = "application/x-mpegURL", startAtMs: Long = 0L) {
+    fun open(url: String, mimeType: String? = null, startAtMs: Long = 0L) {
         // A missing media-source class used to kill the whole process
         // (ClassNotFoundException: HlsMediaSource$Factory, A52 15:14:32).
         // The dependency is fixed, but a broken build must never crash the UI:
         // surface it as the normal error panel instead.
         runCatching {
-            val item = MediaItem.Builder().setUri(url).setMimeType(mimeType).build()
-            player.setMediaItem(item, startAtMs.coerceAtLeast(0L))
+            val inferred = mimeType ?: when {
+                url.contains(".m3u8", ignoreCase = true) -> MimeTypes.APPLICATION_M3U8
+                url.contains(".mp4", ignoreCase = true) -> MimeTypes.VIDEO_MP4
+                else -> null
+            }
+            val builder = MediaItem.Builder().setUri(url)
+            inferred?.let { builder.setMimeType(it) }
+            player.setMediaItem(builder.build(), startAtMs.coerceAtLeast(0L))
             player.prepare()
             player.play()
         }.onFailure { error ->
