@@ -116,35 +116,41 @@ fun PlayerScreen(
     // so OK/UP work even while the Media3 surface owns the focus.
     DisposableEffect(Unit) {
         PlayerKeyRouter.handler = { event ->
-            android.util.Log.i("Frame61Keys", "player handler key=${event.keyCode}")
-            if (event.action != android.view.KeyEvent.ACTION_DOWN) {
-                false
-            } else {
-                controlsVisible = true
-                interaction++
-                when (event.keyCode) {
-                    android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
-                        onSeekBack()
-                        seekDirection = -1
-                        true
-                    }
-                    android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
-                        onSeekForward()
-                        seekDirection = 1
-                        true
-                    }
-                    android.view.KeyEvent.KEYCODE_DPAD_CENTER,
-                    android.view.KeyEvent.KEYCODE_ENTER,
-                    android.view.KeyEvent.KEYCODE_NUMPAD_ENTER -> {
-                        onTogglePlay()
-                        true
-                    }
-                    android.view.KeyEvent.KEYCODE_DPAD_UP -> {
-                        infoVisible = !infoVisible
-                        true
-                    }
-                    else -> false
+            android.util.Log.i("Frame61Keys", "player handler key=${event.keyCode} action=${event.action}")
+            when (event.action) {
+                android.view.KeyEvent.ACTION_DOWN -> {
+                    controlsVisible = true
+                    interaction++
+                    false
                 }
+                android.view.KeyEvent.ACTION_UP -> {
+                    controlsVisible = true
+                    interaction++
+                    when (event.keyCode) {
+                        android.view.KeyEvent.KEYCODE_DPAD_LEFT -> {
+                            onSeekBack()
+                            seekDirection = -1
+                            true
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> {
+                            onSeekForward()
+                            seekDirection = 1
+                            true
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_CENTER,
+                        android.view.KeyEvent.KEYCODE_ENTER,
+                        android.view.KeyEvent.KEYCODE_NUMPAD_ENTER -> {
+                            onTogglePlay()
+                            true
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_UP -> {
+                            infoVisible = !infoVisible
+                            true
+                        }
+                        else -> false
+                    }
+                }
+                else -> false
             }
         }
         onDispose { PlayerKeyRouter.handler = null }
