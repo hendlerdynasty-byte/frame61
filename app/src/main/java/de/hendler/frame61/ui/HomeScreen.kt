@@ -54,6 +54,11 @@ import de.hendler.frame61.ui.home.TvHome
 class MainActivity : androidx.appcompat.app.AppCompatActivity() {
 
     override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
+        android.util.Log.i(
+            "Frame61Keys",
+            "dispatch key=${event.keyCode} action=${event.action} " +
+                "handler=${de.hendler.frame61.ui.player.PlayerKeyRouter.handler != null}"
+        )
         if (de.hendler.frame61.ui.player.PlayerKeyRouter.dispatch(event)) return true
         return super.dispatchKeyEvent(event)
     }
