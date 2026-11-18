@@ -91,10 +91,10 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 
 ## Gate-Nachweis (18.11.2026)
 
-Aktuell: `frame61-037fc63f6f75-1795015007`, Exit 0, 103/103 Tests,
-Debug-APK `94b7d82f…` (31.630.631 Bytes). Der fruehere Block-9-Lauf
-`frame61-0c7da0c0539d-1794987598` hatte 7 Fixtures und 6 verifizierte Packs;
-mit `idFromTitle` kam Burning Series hinzu.
+Aktuell: `frame61-f843b2abc544-1795022941`, Exit 0, **104/104 Tests**,
+Debug-APK `68ffe83bed006247426e40b739be48c6f76a3262d8ebbef2cbfdf41db2691627`
+(31,6 MiB). Damit sind 10 von 14 Packs live verifiziert; vier Reste haben
+Domain-/Pfadbelege im Pack und in diesem Dokument.
 
 Aelterer Beleg:
 
