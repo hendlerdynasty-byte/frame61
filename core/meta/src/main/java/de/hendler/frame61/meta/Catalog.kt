@@ -78,7 +78,11 @@ class CatalogRepository private constructor(
         // so strip it once at load instead of in every screen.
         return loader()
             .let { raw ->
-                raw.copy(items = raw.items.map { it.copy(overview = stripHtml(it.overview)) })
+                raw.copy(
+                    items = raw.items
+                        .distinctBy { "${it.title.trim().lowercase()}|${it.year ?: 0}" }
+                        .map { it.copy(overview = stripHtml(it.overview)) }
+                )
             }
             .also { cache = it }
     }

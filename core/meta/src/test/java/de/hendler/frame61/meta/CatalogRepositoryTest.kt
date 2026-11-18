@@ -28,12 +28,17 @@ class CatalogRepositoryTest {
     @Test
     fun `catalog loads and is usable offline`() {
         val items = repo().all()
-        assertTrue("catalog is empty", items.size >= 40)
+        assertTrue("catalog is too small: ${items.size}", items.size >= 600)
         assertTrue("every item needs a title", items.all { it.title.isNotBlank() })
         assertTrue("every item needs a type", items.all { it.type == "movie" || it.type == "series" })
         assertTrue(
-            "every item should have artwork",
-            items.all { it.poster.startsWith("http") }
+            "posters must be bundled locally",
+            items.all { it.poster.startsWith("file:///android_asset/posters/") }
+        )
+        assertEquals(
+            "title/year duplicates",
+            items.size,
+            items.distinctBy { it.title.trim().lowercase() + "|" + (it.year ?: 0) }.size
         )
     }
 

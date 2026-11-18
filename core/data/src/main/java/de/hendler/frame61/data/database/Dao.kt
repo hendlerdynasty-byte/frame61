@@ -51,7 +51,10 @@ interface EpisodeDao {
 @Dao
 interface PlaybackStateDao {
 
-    @Query("SELECT * FROM playback_states WHERE profileId = :profileId AND titleId = :titleId")
+    @Query(
+        "SELECT * FROM playback_states WHERE profileId = :profileId AND titleId = :titleId " +
+            "ORDER BY updatedAt DESC LIMIT 1"
+    )
     suspend fun getForProfileAndTitle(profileId: Long, titleId: Long): PlaybackState?
 
     @Query(
