@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
@@ -49,19 +50,19 @@ fun NavBar(
             .fillMaxWidth()
             .height(56.dp)
             .horizontalScroll(rememberScrollState())
-            .padding(horizontal = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
+            .padding(horizontal = 4.dp),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         NavDestination.entries.forEach { dest ->
             val selected = currentRoute == dest.route
             Text(
                 text = dest.label,
-                style = MaterialTheme.typography.labelMedium,
+                style = MaterialTheme.typography.labelMedium.copy(fontSize = 11.sp),
                 maxLines = 1,
                 color = if (selected) skin.colors.primary else skin.colors.textSecondary,
                 modifier = Modifier
-                    .padding(horizontal = 6.dp)
+                    .padding(horizontal = 2.dp)
                     .semantics { contentDescription = dest.label }
                     .tvFocusable(id = "nav-${dest.route}", onClick = { onNavigate(dest.route) })
             )
