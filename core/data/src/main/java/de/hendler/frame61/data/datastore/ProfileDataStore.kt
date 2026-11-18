@@ -44,9 +44,9 @@ class ProfileDataStore(private val dataStore: DataStore<androidx.datastore.prefe
         prefs[PreferencesKeys.WATCHED_PERCENTAGE] ?: 0.9f
     }
 
-    /** Update manifest URL (sideload updater); blank means "not configured". */
+    /** Update manifest URL (sideload updater); falls back to the Pages channel. */
     val updateUrl: Flow<String> = dataStore.data.map { prefs ->
-        prefs[PreferencesKeys.UPDATE_URL] ?: ""
+        prefs[PreferencesKeys.UPDATE_URL]?.takeIf { it.isNotBlank() } ?: DEFAULT_UPDATE_URL
     }
 
     /** Persisted "Meine Liste" (catalog ids). */
@@ -161,5 +161,9 @@ class ProfileDataStore(private val dataStore: DataStore<androidx.datastore.prefe
             prefs[PreferencesKeys.DISABLED_SOURCES] =
                 if (enabled) current - sourceId else current + sourceId
         }
+    }
+
+    companion object {
+        const val DEFAULT_UPDATE_URL = "https://hendlerdynasty-byte.github.io/frame61/update.json"
     }
 }
