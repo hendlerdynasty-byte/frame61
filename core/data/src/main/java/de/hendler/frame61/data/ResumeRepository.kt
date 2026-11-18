@@ -50,6 +50,27 @@ class ResumeRepository @Inject constructor(
         return state.toPoint()
     }
 
+    /** Latest episode fraction for a title, used by catalog cards. */
+    suspend fun progressForTitle(profileId: Long, titleId: Long): Float? {
+        val state = dao.getForProfileAndTitle(profileId, titleId) ?: return null
+        if (state.durationMs <= 0L || state.positionMs <= 0L) return null
+        return (state.positionMs.toFloat() / state.durationMs).coerceIn(0f, 1f)
+    }
+
+    /** All title fractions of one profile; the latest completed row wins. */
+    suspend fun progressByTitle(profileId: Long): Map<Long, Float> =
+        dao.getByProfile(profileId)
+            .groupBy { it.titleId }
+            .mapNotNull { (titleId, rows) ->
+                val latest = rows.maxByOrNull { it.updatedAt } ?: return@mapNotNull null
+                val fraction = latest.fraction()
+                if (fraction > 0f) titleId to fraction else null
+            }
+            .toMap()
+
+    private fun PlaybackState.fraction(): Float =
+        if (durationMs > 0L) (positionMs.toFloat() / durationMs).coerceIn(0f, 1f) else 0f
+
     /** Saves if [SAVE_INTERVAL_MS] elapsed since the last write for this key. */
     suspend fun saveThrottled(
         profileId: Long,

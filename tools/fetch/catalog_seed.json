@@ -1,0 +1,658 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-15T18:54:15Z",
+  "provenance": {
+    "series": "TVmaze API (api.tvmaze.com), schlüsselfrei, Originalposter",
+    "movies": "Wikipedia REST API (en.wikipedia.org), schlüsselfrei, Poster aus der enzyklopädischen Abbildung",
+    "note": "Alle Poster-URLs am Erzeugungstag per HEAD geprüft (HTTP 200, image/*). Kein TMDB, kein API-Key."
+  },
+  "items": [
+    {
+      "id": "tvmaze-2993",
+      "title": "Stranger Things",
+      "type": "series",
+      "year": 2016,
+      "genres": [
+        "Drama",
+        "Horror",
+        "Science-Fiction"
+      ],
+      "rating": 8.4,
+      "runtime": null,
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489169.jpg"
+    },
+    {
+      "id": "tvmaze-169",
+      "title": "Breaking Bad",
+      "type": "series",
+      "year": 2008,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "rating": 9.2,
+      "runtime": 60,
+      "overview": "<b>Breaking Bad</b> follows protagonist Walter White, a chemistry teacher who lives in New Mexico with his wife and teenage son who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prog",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253519.jpg"
+    },
+    {
+      "id": "tvmaze-17861",
+      "title": "Dark",
+      "type": "series",
+      "year": 2017,
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Supernatural"
+      ],
+      "rating": 8.2,
+      "runtime": null,
+      "overview": "A family saga with a supernatural twist, <b>Dark</b> is set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/504/1262352.jpg"
+    },
+    {
+      "id": "tvmaze-46562",
+      "title": "The Last of Us",
+      "type": "series",
+      "year": 2023,
+      "genres": [
+        "Drama",
+        "Action",
+        "Horror"
+      ],
+      "rating": 7.9,
+      "runtime": null,
+      "overview": "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/563/1409008.jpg"
+    },
+    {
+      "id": "tvmaze-44778",
+      "title": "House of the Dragon",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Drama",
+        "Action",
+        "Fantasy"
+      ],
+      "rating": 7.6,
+      "runtime": null,
+      "overview": "Set 200 years before the events of <i>Game of Thrones, </i><b>House of the Dragon</b> tells the history of House Targaryen as they fight through a civil war.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/627/1568449.jpg"
+    },
+    {
+      "id": "tvmaze-54198",
+      "title": "The Bear",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Food"
+      ],
+      "rating": 7.3,
+      "runtime": null,
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/629/1574642.jpg"
+    },
+    {
+      "id": "tvmaze-44933",
+      "title": "Severance",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Mystery"
+      ],
+      "rating": 7.7,
+      "runtime": null,
+      "overview": "Mark Scout leads a team at Lumon Industries, whose employees have undergone a severance procedure, which surgically divides their memories between their work and personal lives. This daring experiment in \"work-life balance\" is called into question as Mark finds himself at the center of an unraveling",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/548/1371406.jpg"
+    },
+    {
+      "id": "tvmaze-53647",
+      "title": "Wednesday",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Supernatural"
+      ],
+      "rating": 7.9,
+      "runtime": null,
+      "overview": "Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends — and foes — at Nevermore Academy.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/586/1466410.jpg"
+    },
+    {
+      "id": "tvmaze-28276",
+      "title": "The Witcher",
+      "type": "series",
+      "year": 2019,
+      "genres": [
+        "Drama",
+        "Action",
+        "Fantasy"
+      ],
+      "rating": 7.8,
+      "runtime": null,
+      "overview": "Based on the best-selling fantasy series, <b>The Witcher</b> is an epic tale of fate and family. Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. But when destiny hurtles him toward a powerful sorceress, and a young ",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486674.jpg"
+    },
+    {
+      "id": "tvmaze-59307",
+      "title": "Money Heist: Korea – Joint Economic Area",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "rating": 6.6,
+      "runtime": null,
+      "overview": "Thieves overtake the mint of a unified Korea. With hostages trapped inside, the police must stop them — as well as the shadowy mastermind behind it all.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/430/1076004.jpg"
+    },
+    {
+      "id": "tvmaze-43687",
+      "title": "Squid Game",
+      "type": "series",
+      "year": 2021,
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "rating": 7.9,
+      "runtime": null,
+      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/576/1440521.jpg"
+    },
+    {
+      "id": "tvmaze-50701",
+      "title": "Lupin",
+      "type": "series",
+      "year": 2021,
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Crime"
+      ],
+      "rating": 7.4,
+      "runtime": null,
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/646/1617244.jpg"
+    },
+    {
+      "id": "tvmaze-25245",
+      "title": "Babylon Berlin",
+      "type": "series",
+      "year": 2017,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "rating": 7.8,
+      "runtime": null,
+      "overview": "A metropolis in turmoil. From economy to culture, politics to the underworld – everything is in the grip of radical change.Speculation and inflation are already tearing away at the foundations of the still young Weimar Republic. Growing poverty and unemployment stand in stark contrast to the excesse",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/579/1448426.jpg"
+    },
+    {
+      "id": "tvmaze-56198",
+      "title": "Kleo",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Action",
+        "Thriller",
+        "Espionage"
+      ],
+      "rating": 6.1,
+      "runtime": null,
+      "overview": "After the fall of the Berlin Wall, a former East German spy resolves to find out who betrayed her and why — and use her lethal skills to exact revenge.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/535/1339213.jpg"
+    },
+    {
+      "id": "tvmaze-3594",
+      "title": "The Crown",
+      "type": "series",
+      "year": 2016,
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "rating": 8.4,
+      "runtime": null,
+      "overview": "<b>The Crown</b> tells the inside story of two of the most famous addresses in the world -- Buckingham Palace and 10 Downing Street - and the intrigues, love lives and machinations behind the great events that shaped the second half of the 20th century. Two houses, two courts, one Crown.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580063.jpg"
+    },
+    {
+      "id": "tvmaze-618",
+      "title": "Better Call Saul",
+      "type": "series",
+      "year": 2015,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Legal"
+      ],
+      "rating": 8.6,
+      "runtime": 60,
+      "overview": "<b>Better Call Saul</b> is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman became Walter White's lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hust",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253515.jpg"
+    },
+    {
+      "id": "tvmaze-919",
+      "title": "Attack on Titan",
+      "type": "series",
+      "year": 2013,
+      "genres": [
+        "Action",
+        "Anime",
+        "Fantasy",
+        "Horror"
+      ],
+      "rating": 8.9,
+      "runtime": 25,
+      "overview": "Known in Japan as Shingeki no Kyojin, many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/632/1582290.jpg"
+    },
+    {
+      "id": "tvmaze-46065",
+      "title": "One Piece",
+      "type": "series",
+      "year": 2023,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "rating": 7.7,
+      "runtime": null,
+      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure in this live-action adaptation of the popular manga.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/617/1543011.jpg"
+    },
+    {
+      "id": "tvmaze-55138",
+      "title": "Arcane: League of Legends",
+      "type": "series",
+      "year": 2021,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "rating": 8.5,
+      "runtime": null,
+      "overview": "Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions — and the power that will tear them apart.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/536/1340287.jpg"
+    },
+    {
+      "id": "tvmaze-51112",
+      "title": "Blue Eye Samurai",
+      "type": "series",
+      "year": 2023,
+      "genres": [
+        "Drama",
+        "Action"
+      ],
+      "rating": 8.4,
+      "runtime": null,
+      "overview": "Raised by a swordsmith and trained to wield blades with deadly precision, Mizu is a highly skilled warrior — and she's out for bloody revenge.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/488/1220768.jpg"
+    },
+    {
+      "id": "tvmaze-41375",
+      "title": "Pachinko",
+      "type": "series",
+      "year": 2022,
+      "genres": [
+        "Drama"
+      ],
+      "rating": 8.1,
+      "runtime": null,
+      "overview": "Told in three different languages: Korean, Japanese and English, <b>Pachinko</b> chronicles the hopes and dreams of four generations of a Korean immigrant family.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/532/1330795.jpg"
+    },
+    {
+      "id": "tvmaze-37336",
+      "title": "Shōgun",
+      "type": "series",
+      "year": 2024,
+      "genres": [
+        "Drama",
+        "Adventure",
+        "History"
+      ],
+      "rating": 8.5,
+      "runtime": null,
+      "overview": "<b>Shōgun </b>is set in Japan in the year 1600 at the dawn of a century-defining civil war. Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/506/1265637.jpg"
+    },
+    {
+      "id": "tvmaze-49041",
+      "title": "Fallout",
+      "type": "series",
+      "year": 2024,
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "rating": 7.9,
+      "runtime": null,
+      "overview": "Based on one of the greatest video game series of all time, <b>Fallout</b> is the story of haves and have nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, a peaceful denizen from a cozy fallout shelter is forced to return to the surface and is shocked to ",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/599/1499142.jpg"
+    },
+    {
+      "id": "tvmaze-15299",
+      "title": "The Boys",
+      "type": "series",
+      "year": 2019,
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adult"
+      ],
+      "rating": 8.3,
+      "runtime": null,
+      "overview": "In a world where superheroes embrace the darker side of their massive celebrity and fame, <b>The Boys</b> centres on a group of vigilantes known informally as \"The Boys,\" who set out to take down corrupt superheroes with no more than blue collar grit and a willingness to fight dirty.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/619/1547768.jpg"
+    },
+    {
+      "id": "tvmaze-23470",
+      "title": "Succession",
+      "type": "series",
+      "year": 2018,
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "rating": 7.5,
+      "runtime": null,
+      "overview": "<b>Succession </b>follows the saga of the Roys, a fictional, American global-media family that is not only rich and powerful but also powerfully dysfunctional. The drama will explore family loyalty, international business and the perils of power in the 21st century.Power, politics, money...it's all ",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/453/1134275.jpg"
+    },
+    {
+      "id": "tvmaze-30770",
+      "title": "Chernobyl",
+      "type": "series",
+      "year": 2019,
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "rating": 8.9,
+      "runtime": null,
+      "overview": "<b>Chernobyl</b> dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries focuses on the heartbreaking scope of the nuclear plant disaster that occurred in Ukraine in A",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/193/482599.jpg"
+    },
+    {
+      "id": "tvmaze-465",
+      "title": "Band of Brothers",
+      "type": "series",
+      "year": 2001,
+      "genres": [
+        "Drama",
+        "Action",
+        "War"
+      ],
+      "rating": 9,
+      "runtime": 60,
+      "overview": "Drawn from interviews with survivors of Easy Company, as well as their journals and letters, <b>Band of Brothers</b> chronicles the experiences of these men from paratrooper training in Georgia through the end of the war. As an elite rifle company parachuting into Normandy early on D-Day morning, pa",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/80/201679.jpg"
+    },
+    {
+      "id": "tvmaze-22036",
+      "title": "Planet Earth II",
+      "type": "series",
+      "year": 2016,
+      "genres": [
+        "Nature"
+      ],
+      "rating": 8.9,
+      "runtime": 60,
+      "overview": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/87/219457.jpg"
+    },
+    {
+      "id": "tvmaze-17868",
+      "title": "Our Planet",
+      "type": "series",
+      "year": 2019,
+      "genres": [
+        "Nature"
+      ],
+      "rating": 8.1,
+      "runtime": null,
+      "overview": "Experience our planet's natural beauty and examine how climate change impacts all living creatures in this ambitious documentary of spectacular scope.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/606/1516540.jpg"
+    },
+    {
+      "id": "tvmaze-41074",
+      "title": "Formula 1: Drive to Survive",
+      "type": "series",
+      "year": 2019,
+      "genres": [
+        "Sports"
+      ],
+      "rating": 7.6,
+      "runtime": null,
+      "overview": "Drivers, managers and team owners live life in the fast lane -- both on and off the track -- during one cutthroat season of Formula 1 racing.",
+      "poster": "https://static.tvmaze.com/uploads/images/original_untouched/615/1539219.jpg"
+    },
+    {
+      "id": "wiki-interstellar",
+      "title": "Interstellar",
+      "type": "movie",
+      "year": 2014,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 169,
+      "overview": "Interstellar is a 2014 epic science fiction drama film directed by Christopher Nolan, who co-wrote the screenplay with his brother, Jonathan Nolan. It features an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopi",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-dune-(2021-film)",
+      "title": "Dune",
+      "type": "movie",
+      "year": 2021,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 155,
+      "overview": "Dune is a 2021 American epic space opera film co-produced and directed by Denis Villeneuve, who co-wrote the screenplay with Jon Spaihts and Eric Roth. It is the first of a two-part adaptation of the 1965 novel by Frank Herbert and the first installment in Villeneuve's Dune film trilogy. The cast in",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-the-dark-knight",
+      "title": "The Dark Knight",
+      "type": "movie",
+      "year": 2008,
+      "genres": [
+        "Action"
+      ],
+      "rating": null,
+      "runtime": 152,
+      "overview": "The Dark Knight is a 2008 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan. Based on the DC Comics superhero Batman, it is the sequel to Batman Begins (2005), and the second installment in The Dark Knight trilogy. The plot follows the vigilante Batm",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-inception",
+      "title": "Inception",
+      "type": "movie",
+      "year": 2010,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 148,
+      "overview": "Inception is a 2010 science fiction heist film written and directed by Christopher Nolan, who also produced it with his wife Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating his targets' subconscious. He is offered a chance to have his crim",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-parasite-(2019-film)",
+      "title": "Parasite",
+      "type": "movie",
+      "year": 2019,
+      "genres": [
+        "Thriller"
+      ],
+      "rating": null,
+      "runtime": 132,
+      "overview": "Parasite is a 2019 South Korean black comedy thriller film directed by Bong Joon Ho, who co-wrote the screenplay with Han Jin-won. It stars Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam, Jang Hye-jin, Park Myung-hoon, and Lee Jung-eun. The film follows a poor family who infil",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-blade-runner-2049",
+      "title": "Blade Runner 2049",
+      "type": "movie",
+      "year": 2017,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 164,
+      "overview": "Blade Runner 2049 is a 2017 American science fiction thriller film directed by Denis Villeneuve from a screenplay by Hampton Fancher and Michael Green, based on a story by Fancher. A sequel to Blade Runner (1982), the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin ",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-arrival",
+      "title": "Arrival",
+      "type": "movie",
+      "year": 2016,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 116,
+      "overview": "Arrival is a 2016 American science fiction drama film directed by Denis Villeneuve and written by Eric Heisserer, based on the 1998 novella \"Story of Your Life\" by Ted Chiang. The film stars Amy Adams as Louise Banks, a linguist engaged by the United States Army to discover how to communicate with e",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-mad-max:-fury-road",
+      "title": "Mad Max: Fury Road",
+      "type": "movie",
+      "year": 2015,
+      "genres": [
+        "Action"
+      ],
+      "rating": null,
+      "runtime": 120,
+      "overview": "Mad Max: Fury Road is a 2015 Australian post-apocalyptic action film co-written, co-produced and directed by George Miller, who collaborated with Brendan McCarthy and Nico Lathouris on the screenplay. The fourth instalment in the Mad Max franchise, it was produced by Village Roadshow Pictures and Ke",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-whiplash-(2014-film)",
+      "title": "Whiplash",
+      "type": "movie",
+      "year": 2014,
+      "genres": [
+        "Drama"
+      ],
+      "rating": null,
+      "runtime": 107,
+      "overview": "Whiplash is a 2014 American psychological drama film written and directed by Damien Chazelle, and starring Miles Teller, J. K. Simmons, and Paul Reiser. It focuses on an ambitious music student and aspiring jazz drummer (Teller), who is pushed to his limit by his abusive instructor (Simmons).",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-grand-budapest-hotel",
+      "title": "Grand Budapest Hotel",
+      "type": "movie",
+      "year": 2014,
+      "genres": [
+        "Komödie"
+      ],
+      "rating": null,
+      "runtime": 100,
+      "overview": "The Grand Budapest Hotel is a 2014 comedy-drama film written and directed by Wes Anderson. The film's seventeen-actor ensemble cast is led by Ralph Fiennes as Monsieur Gustave H., famed concierge of a twentieth-century mountainside resort in the fictional country of Zubrowka. After being framed for ",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Grand_Budapest_Hotel.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-la-la-land",
+      "title": "La La Land",
+      "type": "movie",
+      "year": 2016,
+      "genres": [
+        "Musical"
+      ],
+      "rating": null,
+      "runtime": 128,
+      "overview": "La La Land is a 2016 American musical romantic comedy drama film written and directed by Damien Chazelle. It stars Ryan Gosling and Emma Stone as a struggling jazz pianist and an aspiring actress who meet and fall in love while pursuing their dreams in Los Angeles. The supporting cast includes John ",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-everything-everywhere-all-at-once",
+      "title": "Everything Everywhere All at Once",
+      "type": "movie",
+      "year": 2022,
+      "genres": [
+        "Science Fiction"
+      ],
+      "rating": null,
+      "runtime": 139,
+      "overview": "Everything Everywhere All at Once is a 2022 American absurdist comedy-drama film written and directed by Daniel Kwan and Daniel Scheinert who produced it with Anthony and Joe Russo and Jonathan Wang. The film incorporates media from several genres, including surreal comedy, science fiction, fantasy,",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-oppenheimer",
+      "title": "Oppenheimer",
+      "type": "movie",
+      "year": 2023,
+      "genres": [
+        "Drama"
+      ],
+      "rating": null,
+      "runtime": 180,
+      "overview": "Oppenheimer is a 2023 epic biographical thriller film written, co-produced, and directed by Christopher Nolan. It follows the life of J. Robert Oppenheimer, the American theoretical physicist who led the development of the first nuclear weapons during World War II. Based on the 2005 biography Americ",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-the-godfather",
+      "title": "Der Pate",
+      "type": "movie",
+      "year": 1972,
+      "genres": [
+        "Drama"
+      ],
+      "rating": null,
+      "runtime": 175,
+      "overview": "The Godfather is a 1972 American epic gangster film directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo based on Puzo's best-selling 1969 novel. The film features an ensemble cast that includes Marlon Brando, Al Pacino, James Caan, Richard Castellano, Robert Duvall, Sterlin",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-spirited-away",
+      "title": "Chihiros Reise ins Zauberland",
+      "type": "movie",
+      "year": 2001,
+      "genres": [
+        "Animation"
+      ],
+      "rating": null,
+      "runtime": 125,
+      "overview": "Spirited Away is a 2001 Japanese animated fantasy film written and directed by Hayao Miyazaki. It was produced by Toshio Suzuki, animated by Studio Ghibli, and distributed by Toho. The film stars Rumi Hiiragi, alongside Miyu Irino, Mari Natsuki, Takashi Naito, Yasuko Sawaguchi, Tsunehiko Kamijō, Tak",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+      "id": "wiki-your-name",
+      "title": "Your Name",
+      "type": "movie",
+      "year": 2016,
+      "genres": [
+        "Animation"
+      ],
+      "rating": null,
+      "runtime": 106,
+      "overview": "Your Name is a 2016 Japanese animated romantic fantasy film written and directed by Makoto Shinkai, produced by CoMix Wave Films, and distributed by Toho. The first installment of what critics deem Shinkai's \"disaster trilogy\", themed by the frequency of natural disasters in Japan, the film follows ",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    }
+  ]
+}

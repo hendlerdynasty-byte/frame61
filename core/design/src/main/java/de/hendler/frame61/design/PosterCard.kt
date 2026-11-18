@@ -5,8 +5,11 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
@@ -42,6 +45,7 @@ fun PosterCard(
     showBorder: Boolean = false,
     focusId: String? = null,
     onClick: (() -> Unit)? = null,
+    progress: Float? = null,
     overlay: @Composable BoxScope.() -> Unit = {}
 ) {
     val skin = LocalSkin.current
@@ -100,6 +104,24 @@ fun PosterCard(
                 modifier = Modifier
                     .fillMaxSize()
                     .border(1.dp, skin.colors.textPrimary.copy(alpha = 0.35f), shape)
+            )
+        }
+
+        if (progress != null && progress > 0f) {
+            // Fortschritt pro Titel: duenne Spur am unteren Rand, innerhalb des Clips.
+            Box(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .height(4.dp)
+                    .background(skin.colors.textPrimary.copy(alpha = 0.25f))
+            )
+            Box(
+                modifier = Modifier
+                    .align(Alignment.BottomStart)
+                    .fillMaxWidth(progress.coerceIn(0f, 1f))
+                    .height(4.dp)
+                    .background(skin.colors.focus)
             )
         }
 

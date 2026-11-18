@@ -269,7 +269,7 @@ def validate_skin(path: Path, report: Report) -> None:
             report.error(where, f"{token}={value!r} ist keine #RRGGBB-Farbe")
 
 
-def validate_catalog(path: Path, report: Report) -> None:
+def validate_catalog(path: Path, root: Path, report: Report) -> None:
     data = load_json(path, report)
     if not isinstance(data, dict):
         if data is not None:
@@ -282,6 +282,7 @@ def validate_catalog(path: Path, report: Report) -> None:
         report.error(where, "items fehlt oder ist leer")
         return
     seen: set[str] = set()
+    seen_titles: set[str] = set()
     for index, item in enumerate(items):
         if not isinstance(item, dict):
             report.error(where, f"items[{index}] ist kein Objekt")
@@ -293,10 +294,23 @@ def validate_catalog(path: Path, report: Report) -> None:
         if item_id in seen:
             report.error(where, f"doppelte id {item_id!r}")
         seen.add(item_id)
-        if not non_empty(item.get("title")):
+        title = item.get("title")
+        if not non_empty(title):
             report.error(where, f"items[{index}] ({item_id}) ohne title")
+        else:
+            key = f"{title.strip().lower()}|{item.get('year') or 0}"
+            if key in seen_titles:
+                report.error(where, f"doppelter Titel/Jahr {key!r}")
+            seen_titles.add(key)
         if item.get("type") not in ("movie", "series"):
             report.error(where, f"items[{index}] ({item_id}) type={item.get('type')!r}")
+        poster = item.get("poster")
+        if not non_empty(poster):
+            report.error(where, f"items[{index}] ({item_id}) ohne poster")
+        elif poster.startswith("file:///android_asset/"):
+            relative = poster.removeprefix("file:///android_asset/")
+            if not (root / "app/src/main/assets" / relative).is_file():
+                report.error(where, f"items[{index}] ({item_id}) Poster fehlt: {relative}")
     report.counts["catalog_items"] = len(items)
 
 
@@ -471,7 +485,7 @@ def main() -> int:
         validate_skin(path, report)
     catalog = root / "app/src/main/assets/catalog/catalog.json"
     if catalog.is_file():
-        validate_catalog(catalog, report)
+        validate_catalog(catalog, root, report)
     else:
         report.error(str(catalog), "Katalog fehlt")
     validate_fixtures(root, report)

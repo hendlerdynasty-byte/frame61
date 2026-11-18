@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+### Block 10 — Katalog 600 (2026-11-18)
+
+#### Hinzugefügt
+- `tools/fetch/catalog_builder.py`: keyloser TVmaze-Katalogbau mit
+  Allowlist/SSRF-Schutz, 2:3-Postern (180×270 JPEG) und Meta-Snapshots.
+- 600 Katalogeinträge, 600 lokale Poster (`assets/posters`), 600
+  Meta-Snapshots (`assets/meta`) und `index.json`.
+- `BrowseViewModel`: Genre- und Jahrzehnt-Filter, Trefferzahl, Fortschritt.
+- `ResumeRepository.progressByTitle` und `PosterCard(progress = …)`: 4-dp-Spur
+  am unteren Posterrand, innerhalb des Clips.
+- `docs/CATALOG.md`.
+
+#### Geändert
+- `catalog.json` auf Version 3, Posterpfade `file:///android_asset/posters/...`.
+- `CatalogRepository` dedupliziert nach Titel/Jahr beim Laden.
+- `CatalogRepositoryTest` verlangt ≥600 Titel, lokale Poster und
+  Duplikatfreiheit.
+- `validate_packs.py` prüft Titel/Jahr-Dedupe und die Existenz jeder
+  Posterdatei.
+- `BrowseScreen`/`WatchlistScreen` nutzen dieselbe Karte mit Fortschritt;
+  „Meine Liste“ bleibt DataStore-persistent.
+
 ### Block 9 — Indexseiten-Nachweise (2026-11-18)
 
 #### Hinzugefügt

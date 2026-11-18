@@ -79,3 +79,16 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - `s-to` und `serienstream` sind dieselbe Site unter zwei IDs; beide behalten
   eigene Fixtures, damit die Ziel-Liste ehrlich abbildbar bleibt.
 
+## 2026-11-18 — Katalog aus TVmaze, Poster lokal
+
+- Der gebundelte Katalog kommt aus der keylosen TVmaze-API (Scripted,
+  Animation, Documentary, Mini-Series mit Poster). Auswahl nach Gewicht,
+  Rating, ID; Dedupe nach Titel/Jahr.
+- 600 Titel mit 180×270-JPEG-Postern unter `assets/posters` und
+  Meta-Snapshots unter `assets/meta`. Keine Remote-Poster im Katalog.
+- Neue Titel tragen leere Episodenlisten; die Detailansicht nutzt die
+  bestehende Live-TVmaze-Quelle. Alte Episodenlisten bleiben erhalten.
+- Filter sind Genre und Jahrzehnt; „Meine Liste“ bleibt DataStore-persistent,
+  Fortschritt kommt aus dem letzten Room-Stand je Titel.
+
+
