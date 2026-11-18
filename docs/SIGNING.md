@@ -50,22 +50,27 @@ keytool -genkeypair -v \
 - `keytool -list -v -keystore frame61.jks` liefert den SHA-256-Fingerprint für
   die Dokumentation.
 
-## Release bauen
+## Release bauen (seit 18.11.2026)
+
+- Version aus `version.properties` (`versionCode`, `versionName`).
+- Remote-Build ohne Signing-Env: `:app:assembleRelease :app:bundleRelease`
+  erzeugt `release-app-release-unsigned.apk` und `release-app-release.aab`.
+- Lokal signieren (Secrets bleiben auf dem Mac):
 
 ```sh
-export FRAME61_STORE_PASS='…'
-export FRAME61_KEY_ALIAS='frame61'
-export FRAME61_KEY_PASS='…'
-python3 ~/hendler-device-ops/remote_build.py \
-  --repo "<frame61-Pfad>" --target aab \
-  --tasks ":app:bundleRelease"
+zipalign -p 4 <unsigned.apk> <aligned.apk>
+apksigner sign --ks ~/hendler-dynasty/keys/frame61-release.jks \
+  --ks-key-alias frame61 --ks-pass env:KS_PASS --key-pass env:KS_PASS \
+  --out frame61-1.1.0.apk <aligned.apk>
+jarsigner -keystore ~/hendler-dynasty/keys/frame61-release.jks \
+  -storepass:env KS_PASS -keypass:env KS_PASS \
+  -sigalg SHA256withRSA -digestalg SHA-256 <unsigned.aab> frame61
 ```
 
-- Signing-Secrets dürfen **nur** nach ausdrücklicher Owner-Freigabe auf den
-  Bauhost übertragen werden; der Remote-Build schließt Signing-Dateien beim
-  Export bewusst aus.
-- Der Debug-Gate bleibt davon unberührt: `./gradlew gate` baut und prüft nur
-  Debug.
+- 1.1.0: APK `1c902e37…`, AAB `f2a198df…`, siehe `docs/RELEASE.md`.
+- `apksigner verify --print-certs` muss den Fingerprint
+  `12:01:F4:…:4C:52` zeigen.
+- Signing-Secrets werden **nicht** auf den Bauhost übertragen.
 - Ein signiertes AAB ist kein Store-Nachweis; Upload/Rollout sind eigene
   Freigaben.
 

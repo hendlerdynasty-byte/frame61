@@ -104,5 +104,20 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Debug-Zahlen bleiben als Vergleich dokumentiert, gelten aber nicht als
   Zielerreichung.
 
+## 2026-11-18 — Release 1.1.0 und Update-Kanal
+
+- Version kommt aus `version.properties`. Fuer den echten Update-Test wurde
+  1.0.0 (versionCode 1) gebaut und installiert, danach 1.1.0 (versionCode 2).
+- Der Remote-Build erzeugt ohne Signing-Env eine unsignierte Release-APK/AAB;
+  signiert wird ausschliesslich lokal mit dem Keystore ausserhalb des Repos.
+  Keine Signing-Secrets auf dem Bauhost.
+- Veroeffentlichung: GitHub-Release `v1.1.0` (APK, AAB, Manifest) plus
+  Pages-Manifest `https://hendlerdynasty-byte.github.io/frame61/update.json`.
+- Play Protect blockiert die letzte Installationsbestaetigung mit
+  „App-Scan empfohlen“. Es wird kein APK an Google gesendet. Die
+  Release-Installation wird per `adb install -r` aus dem Release-Asset
+  belegt; der Updater-Pfad bis zum System-Installer ist live.
+
+
 
 

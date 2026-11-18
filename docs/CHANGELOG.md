@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+### Block 12 — Signierter Release und Update-Kanal (2026-11-18)
+
+#### Hinzugefügt
+- `version.properties` (1.1.0/versionCode 2) und versionsabhängiger
+  Release-Build; `perf`-Variante bleibt separat.
+- Signierter Release 1.1.0 (APK `1c902e37…`, AAB `f2a198df…`) und Altstand
+  1.0.0 für einen echten Update-Durchlauf.
+- `site/update.json` mit Release-URL, SHA-256 und Notes; Default-Update-URL
+  auf den Pages-Kanal.
+- GitHub-Release `v1.1.0` mit APK, AAB und Manifest; Pages-Lauf `44308280114`
+  grün, Manifest HTTP 200.
+- `docs/RELEASE.md` mit Artefakten, Signaturen, Update-Livepfad und Grenzen.
+
+#### Geändert
+- Release-Signatur nur mit lokalem Env; Remote-Build liefert unsigned,
+  Signatur erfolgt lokal mit dem Keystore außerhalb des Repos.
+- `ProfileDataStore.updateUrl` fällt auf den Pages-Kanal zurück.
+
+#### Ergebnis
+- Update-Pfad live: 1.0.0 → „Version 2 verfügbar“ → Download → SHA-256 →
+  System-Installer. Play Protect blockiert die letzte Bestätigung extern;
+  1.1.0 wurde aus dem Release-Asset installiert (`versionCode=2`).
+- Kein Play-Store-Upload, kein Rollout.
+
 ### Block 11 — Performance (2026-11-18)
 
 #### Hinzugefügt
