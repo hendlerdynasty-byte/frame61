@@ -8,8 +8,8 @@ bleibt als Historie des ersten Ziels liegen.
 
 | Kennzahl | Wert |
 |---|---|
-| Job | `frame61-3747730c4e0b-1795004986` |
-| Quellstand | `3747730` (Block-12-Branch, identisch gemergt) |
+| Job | `frame61-b3a91c5ff53d-1795008028` |
+| Quellstand | `b3a91c5` (Block-12-Fix, nach Merge `a0bfb3f`) |
 | Exit | `0` |
 | Tests | **95/95**, 0 Failures, 0 Errors, 0 Skipped |
 | Lint | **0 Errors**, 128 Warnings |

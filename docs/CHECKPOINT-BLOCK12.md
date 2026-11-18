@@ -6,10 +6,10 @@ Frame61 als 10-Foot-TV-App (Fire TV/Android TV, Handy identisch), Blöcke 0–12
 
 ## Quellstand
 
-- `main` = `abe3982` (Merge `block-12-docs`), davor `24a1198` (Merge Block 12).
+- `main` = `a0bfb3f` (Merge `block-12-fix`), davor `abe3982`/`24a1198`.
 - Branches: `block-8`, `block-9`, `block-10`, `block-11`, `block-12`,
-  `block-12-docs` gepusht.
-- Gate: `frame61-3747730c4e0b-1795004986`, Exit 0, 95/95 Tests,
+  `block-12-docs`, `block-12-fix` gepusht.
+- Gate: `frame61-b3a91c5ff53d-1795008028`, Exit 0, 95/95 Tests,
   Lint 0 Fehler/128 Warnungen, APK 30,1 MiB.
 
 ## Release
