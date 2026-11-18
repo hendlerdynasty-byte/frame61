@@ -111,7 +111,12 @@ fun PlayerScreen(
             seekDirection = 0
         }
     }
-    LaunchedEffect(Unit) { runCatching { focusRequester.requestFocus() } }
+    LaunchedEffect(player) {
+        // The AndroidView attaches after composition and used to take focus,
+        // so D-pad OK/UP never reached the overlay handler.
+        delay(150)
+        runCatching { focusRequester.requestFocus() }
+    }
 
     // First back hides the overlay, a second back leaves the player.
     BackHandler(enabled = controlsVisible) {
@@ -428,6 +433,8 @@ internal fun formatTime(ms: Long): String {
 private fun createPlayerView(context: android.content.Context, subtitleScale: Float): PlayerView =
     PlayerView(context).apply {
         useController = false
+        isFocusable = false
+        isFocusableInTouchMode = false
         resizeMode = AspectRatioFrameLayout.RESIZE_MODE_FIT
         setShutterBackgroundColor(android.graphics.Color.BLACK)
         subtitleView?.setFixedTextSize(
