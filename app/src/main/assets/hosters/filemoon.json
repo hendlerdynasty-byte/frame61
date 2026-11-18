@@ -99,9 +99,16 @@
   "last_check": "2026-11-18T07:37:12Z",
   "check": {
     "status": "step_failed",
-    "reason": "SPA: HTML ohne Stream-URL, JS/API erforderlich",
-    "checked": [],
-    "misses": [],
-    "http_status": null
+    "reason": "PoW live geloest und per /captcha/verify bestaetigt (status ok); /api/videos/{code}/playback liefert ohne Browser-Kontext HTTP 405",
+    "checked": [
+      "captcha nonce/difficulty/token",
+      "pow filemoon-v1",
+      "captcha/verify status ok",
+      "playback HTTP 405"
+    ],
+    "misses": [
+      "playback.sources"
+    ],
+    "http_status": 405
   }
 }

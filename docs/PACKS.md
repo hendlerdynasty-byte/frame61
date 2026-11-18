@@ -7,9 +7,9 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 - Source-Packs: **29**
 - legal-frei: **13**, Grauzone Tier A/B: **17**
-- live verifiziert: **8** (aniworld, archive-org, ard-mediathek, filmo, filmpalast, filmstarts, s-to, serienstream)
-- Fixtures: 8 recorded, 8 synthetic, 13 ohne
-- Hoster-Packs: **11** (live verifiziert: 1)
+- live verifiziert: **9** (aniworld, archive-org, ard-mediathek, bs-to, filmo, filmpalast, filmstarts, s-to, serienstream)
+- Fixtures: 9 recorded, 8 synthetic, 12 ohne
+- Hoster-Packs: **11** (live verifiziert: 2)
 
 ## Source-Packs
 
@@ -22,7 +22,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `ard-mediathek` | C | ja | api | ja | 2026-11-17T17:35:16Z | recorded | — |
 | `ard` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `arte` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `bs-to` | B | nein | html | nein | 2026-11-18T07:37:12Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `bs-to` | B | nein | html | ja | 2026-11-18T14:36:31Z | recorded | — |
 | `cine` | A | nein | html | nein | 2026-11-18T07:37:13Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `dokujunkies` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmfans` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
@@ -49,9 +49,9 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 | ID | Domains | Schritte | verified |
 |---|---|---|---|
-| `direct` | akamaihd.net, daserste.de, ardmediathek.de, ard.de | 1 | nein |
+| `direct` | akamaihd.net, daserste.de, ardmediathek.de, ard.de | 1 | ja |
 | `doodstream` | doodstream.com, dood.watch, dood.re, do7go.com, playmogo.com | 2 | nein |
-| `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com | 4 | nein |
+| `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com, n1mwq.org | 11 | nein |
 | `loadx` | loadx.ws | 2 | nein |
 | `luluvdo` | luluvdo.com, luluvdo.net | 2 | nein |
 | `mixdrop` | mixdrop.co, mixdrop.to, mixdrop.ch | 2 | nein |

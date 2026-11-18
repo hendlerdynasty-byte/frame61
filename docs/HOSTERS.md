@@ -1,10 +1,10 @@
 # Hoster — Stand und Nachweise
 
 Stand: 18.11.2026. Ziel waren 10 Hoster mit echter Schrittkette, aufgezeichneter
-Antwort (`responseSha256`) und Status `verified`. Erreicht ist ein belegter
-Hoster (Vidmoly); drei weitere wurden mit echten Zielen durchlaufen und sind an
-der Quelle blockiert, sechs haben kein erreichbares Dateiziel. Jeder nicht
-verifizierte Pack traegt `check.status` und `check.reason`.
+Antwort (`responseSha256`) und Status `verified`. Erreicht sind **2 von 10**:
+Vidmoly und `direct` (ARD-Slice). Die Kette ist seit Block 13 um `js`, `pow`
+und Cookie-/WebView-Rueckgabe erweitert; die verbleibenden Hoster haben
+benannte, live gepruefte Gruende.
 
 ## Methode
 
@@ -31,16 +31,16 @@ python3 -I tools/validate_packs.py
 | Hoster | Status | Ziel / Befund |
 |---|---|---|
 | Vidmoly | `verified` | `vidmoly.net/embed-8irnzzsknabi.html` liefert `sources: [{ file: '…master.m3u8…' }]`; Fixture mit Hash `6db7c3c1…` |
-| VOE | `step_failed` | `voe.sx` leitet per JavaScript auf `arianathankspecial.com/e/…`; das HTML enthaelt kein `<source>` (verschleierte Quelle) |
-| Doodstream | `step_failed` | `do7go.com` leitet auf `playmogo.com`; Antwort ist Cloudflare `Just a moment...` (HTTP 403) |
-| Filemoon | `step_failed` | `filemoon.to/d/…` ist eine SPA ohne Player-HTML; Stream-URL nur ueber `/api/videos/…` mit PoW-Token |
+| VOE | `step_failed` | Filmpalast-Ziel `voe.sx/pid7osbd3o2b`; JS-Redirect, kein `<source>` im HTML; `js`-Schritt + WebView-Kette vorhanden |
+| Doodstream | `step_failed` | `do7go.com` leitet auf `playmogo.com`; Cloudflare `Just a moment...` (HTTP 403); WebView-Cookie-Kette vorhanden |
+| Filemoon | `step_failed` | PoW live geloest und per `/captcha/verify` bestaetigt; `/api/videos/{code}/playback` liefert ohne Browser-Kontext HTTP 405 |
 | Streamtape | `no_target` | Homepage ohne oeffentliche Dateiliste; API nur mit Konto |
 | Vidoza | `no_target` | Landingpage ohne oeffentliche Dateiliste |
 | Mixdrop | `no_target` | `mixdrop.co` TLS-Verbindung fehlgeschlagen (18.11.2026) |
 | Luluvdo | `no_target` | `luluvdo.com`/`.net` nicht aufloesbar (18.11.2026) |
 | Loadx | `no_target` | `loadx.ws` Timeout (18.11.2026) |
 | Streamhide | `no_target` | `streamhide.com` liefert nur einen JS-Redirect ohne Dateilink |
-| `direct` (Zusatz) | `no_target` | Direktstream-Pack fuer ARD/MP4/HLS, kein Hoster-Ziel |
+| `direct` (Zusatz) | `verified` | ARD-page-gateway-Antwort mit echtem MP4, im ARD-Slice auf dem A52 abgespielt; Fixture `0c7f414f…` |
 
 ## Belegte Ziele
 
@@ -76,6 +76,35 @@ und wurden ueber die 301-Redirects der Seite aufgeloest:
 Diese Punkte sind externe Blockaden, keine Parserfehler. Die Packs bleiben
 geladen und liefern im Betrieb einen klaren `check.reason`; der Resolver faellt
 auf den naechsten Hoster zurueck.
+
+## Block 13 — Code statt Etikett
+
+- **Schema:** `js`-Schritt (WebView, 8 s) und `pow`-Schritt (`filemoon-v1`,
+  `sha256`) im Hoster-Pack; beide im Validator und in Unit-Tests abgesichert.
+  `PowSolverTest` nutzt eine echte Filemoon-Challenge: Nonce
+  `71354556…2adec`, difficulty 16, Lösung `3643` — von
+  `/api/videos/<code>/captcha/verify` mit `status: ok` bestaetigt.
+- **WebView:** `CaptchaBroker` verbindet `CaptchaWebViewFrame` mit dem
+  Resolver. Token, Cookies und ggf. die Stream-URL aus `video/source`,
+  `window.sources`, jwplayer und Performance-Eintragen werden an den
+  HTTP-Kontext uebergeben; Timeout 20 s, danach naechster Kandidat.
+  `WebViewJsEvaluator` fuehrt `js`-Schritte in einer kurzlebigen WebView aus.
+- **Quellen-Captcha:** `kinokiste` und `megakino` tragen `captcha: "webview"`;
+  ein fehlgeschlagener Suchlauf oeffnet den Frame, uebernimmt die Cookies und
+  wiederholt die Suche.
+- **Zielherkunft (nicht mehr nur aniworld):**
+
+| Index | Gepruefte Seite | Hoster-Ziele |
+|---|---|---|
+| aniworld | Naruto S01E01 | VOE `voe.sx/e/cvrluqyituus`, Dood `do7go.com/e/5hyj5kblvy1n`, Filemoon `filemoon.to/d/89crzins1ufc`, Vidmoly `vidmoly.net/embed-8irnzzsknabi.html` |
+| filmpalast | The Mummy — Bride of the Dead | VOE `voe.sx/pid7osbd3o2b`, Firestream `firestream.to/e/twtee08p`, Vidaraa `vidaraa.cc/e/zrCCKFq5bLSf5` |
+| filmo | Inception | VOE-Provider-Chip (`data-p`-Token, kein direkter Link im HTML) |
+| s.to / serienstream | Black Doves S01E01 | `/r?t=…` → 302 `https://voe.sx/e/hn4pl228sgzd` |
+
+Firestream und Vidaraa stehen nicht in den 10 geforderten Ziel-Hostern und
+haben daher keinen Pack. Streamtape, Vidoza, Mixdrop, Luluvdo, Loadx und
+Streamhide tauchen auf keinem der verifizierten Indizes auf; ihre Gruende
+bleiben in `hoster_targets.json` erhalten.
 
 ## Gate-Nachweis (18.11.2026)
 

@@ -21,6 +21,7 @@ Ein Source Pack ist die JSON-Datei `assets/sources/<id>.json`. Sie beschreibt
 | `tier` | string | – | `A` \| `B` \| `C` (Beschreibung, keine Steuerung) |
 | `legalFree` | bool | `false` | kennzeichnet legal-freie Quellen; wird bei Gleichstand bevorzugt |
 | `kind` | string | `html` | `html` (Jsoup-CSS) oder `api` (JSON-Dot-Path) |
+| `captcha` | string | – | optional `webview`: leere Suche oeffnet den sichtbaren WebView-Frame, uebernimmt Cookies und wiederholt die Suche |
 | `verified` | bool | `false` | live nachgewiesen — **nur** mit echten Antworten setzen |
 | `last_check` | string | – | ISO-8601-Zeitpunkt des letzten Worker-Laufs |
 | `check` | object | – | Worker-Ergebnis: `status`, `reason`, `checked[]`, `misses[]`, `http_status` |
