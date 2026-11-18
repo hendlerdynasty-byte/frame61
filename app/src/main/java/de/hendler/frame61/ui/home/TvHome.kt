@@ -80,7 +80,7 @@ fun TvHome(
     val compact = LocalWindowSizeClass.current?.widthSizeClass ==
         androidx.compose.material3.windowsizeclass.WindowWidthSizeClass.Compact
     // Compact = fewer visible columns because the 190 dp poster keeps its size.
-    val outer = if (compact) 12.dp else 24.dp
+    val outer = if (compact) skin.density.contentPadding * 0.5f else skin.density.contentPadding
 
     LazyColumn(
         modifier = modifier.fillMaxSize(),
@@ -156,8 +156,8 @@ private fun CatalogPoster(
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
-    // TV poster standard: 190 dp high, exactly 2:3.
-    val posterHeight = 190.dp
+    // TV poster standard: 2:3; skin density controls the height (190 dp default).
+    val posterHeight = skin.density.posterHeight
     val width = posterHeight * (2f / 3f)
 
     PosterCard(
@@ -203,7 +203,10 @@ private fun Billboard(
     val typography = LocalFrame61Typography.current
     // Hero never exceeds 40 % of the screen height.
     val screenHeight = androidx.compose.ui.platform.LocalConfiguration.current.screenHeightDp.dp
-    val heroHeight = minOf(skin.layout.billboardHeightDp, screenHeight * 0.4f)
+    val heroHeight = minOf(
+        skin.layout.billboardHeightDp,
+        screenHeight * skin.hero.maxHeightFraction
+    )
 
     PosterCard(
         posterUrl = item.poster,
@@ -215,17 +218,27 @@ private fun Billboard(
         focusId = "billboard-${item.id}",
         onClick = onClick
     ) {
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(
-                    Brush.verticalGradient(
-                        0f to androidx.compose.ui.graphics.Color.Transparent,
-                        0.55f to androidx.compose.ui.graphics.Color.Transparent,
-                        1f to androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.85f)
-                    )
-                )
-        )
+        val scrim = skin.colors.canvas.copy(alpha = skin.hero.strength)
+        val gradientColors = when (skin.hero.gradient) {
+            de.hendler.frame61.design.GradientRule.BOTTOM -> listOf(
+                androidx.compose.ui.graphics.Color.Transparent,
+                androidx.compose.ui.graphics.Color.Transparent,
+                scrim
+            )
+            de.hendler.frame61.design.GradientRule.TOP -> listOf(
+                scrim,
+                androidx.compose.ui.graphics.Color.Transparent,
+                androidx.compose.ui.graphics.Color.Transparent
+            )
+            de.hendler.frame61.design.GradientRule.NONE -> emptyList()
+        }
+        if (gradientColors.isNotEmpty()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(Brush.verticalGradient(gradientColors))
+            )
+        }
         Column(
             modifier = Modifier
                 .align(Alignment.BottomStart)

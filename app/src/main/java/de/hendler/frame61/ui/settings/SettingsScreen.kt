@@ -1,5 +1,6 @@
 package de.hendler.frame61.ui.settings
 
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,6 +9,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -24,6 +27,17 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.tvFocusable
+import de.hendler.frame61.ui.skins.SkinsViewModel
+
+/** The six selectable showcase skins (Block 4). */
+private val SHOWCASE_SKINS = listOf(
+    "cinema-red",
+    "magic-blue",
+    "midnight-gold",
+    "arctic-light",
+    "neon-grid",
+    "kino-noir"
+)
 
 /**
  * Settings: autoplay, watched threshold, layout builder, sideload updates.
@@ -37,10 +51,55 @@ fun SettingsScreen(
     onOpenInfo: () -> Unit = {}
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val skinsViewModel: SkinsViewModel = hiltViewModel()
+    val skinsState by skinsViewModel.state.collectAsStateWithLifecycle()
+    val showcase = skinsState.skins.filter { it.id in SHOWCASE_SKINS }
 
-    Column(modifier = Modifier.fillMaxSize().padding(horizontal = 24.dp, vertical = 16.dp)) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+            .padding(horizontal = 24.dp, vertical = 16.dp)
+    ) {
         Text(text = "Einstellungen", style = MaterialTheme.typography.headlineSmall)
 
+        Spacer(Modifier.height(12.dp))
+        Text(text = "Darstellung", style = MaterialTheme.typography.titleMedium)
+        Spacer(Modifier.height(8.dp))
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            showcase.forEach { skin ->
+                val selected = skin.id == skinsState.activeSkinId
+                val onClick = { skinsViewModel.select(skin.id) }
+                if (selected) {
+                    Button(
+                        onClick = onClick,
+                        modifier = Modifier.tvFocusable(
+                            id = "skin-${skin.id}",
+                            onClick = onClick
+                        )
+                    ) { Text(text = skin.name) }
+                } else {
+                    OutlinedButton(
+                        onClick = onClick,
+                        modifier = Modifier.tvFocusable(
+                            id = "skin-${skin.id}",
+                            onClick = onClick
+                        )
+                    ) { Text(text = skin.name) }
+                }
+            }
+        }
+        Text(
+            text = "Aktiv: ${skinsState.activeSkinId} · sofort angewendet, in DataStore gespeichert",
+            style = MaterialTheme.typography.labelSmall
+        )
+
+        Spacer(Modifier.height(16.dp))
         Row(
             modifier = Modifier.fillMaxWidth().padding(vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically

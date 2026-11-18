@@ -112,6 +112,7 @@ fun Modifier.tvFocusable(
     // is handed to `focusable()`. `onFocusChanged` was unreliable here (measured
     // on the A52: uiautomator reported a focused node, the ring never drew).
     val focused by interaction.collectIsFocusedAsState()
+    val focusTokens = LocalSkin.current.focus
     val action = onClick
 
     DisposableEffect(id, requester) {
@@ -132,14 +133,14 @@ fun Modifier.tvFocusable(
             if (focused) {
                 Modifier
                     .graphicsLayer {
-                        scaleX = TvFocusStyle.scale
-                        scaleY = TvFocusStyle.scale
+                        scaleX = focusTokens.scale
+                        scaleY = focusTokens.scale
                     }
                     // Draw after the content: a `border` on a wrapper is painted
                     // over by the child, which made the ring invisible.
                     .drawWithContent {
                         drawContent()
-                        val w = TvFocusStyle.ringWidth.toPx()
+                        val w = focusTokens.ringWidth.toPx()
                         drawRect(
                             color = focusedColor,
                             topLeft = Offset(w / 2f, w / 2f),

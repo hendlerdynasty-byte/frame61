@@ -97,12 +97,37 @@ data class Frame61Layout(
     val billboardHeightDp: androidx.compose.ui.unit.Dp get() = billboardHeight.dp
 }
 
+/** Density tokens: how big a cover is and how much air the screens get. */
+data class DensityTokens(
+    val posterHeight: androidx.compose.ui.unit.Dp = 190.dp,
+    val gutter: androidx.compose.ui.unit.Dp = 12.dp,
+    val contentPadding: androidx.compose.ui.unit.Dp = 24.dp
+)
+
+/** Focus tokens: skin-specific feedback without changing the navigation logic. */
+data class FocusTokens(
+    val scale: Float = 1.08f,
+    val ringWidth: androidx.compose.ui.unit.Dp = 3.dp
+)
+
+enum class GradientRule { BOTTOM, TOP, NONE }
+
+/** Hero behaviour per skin. The 40 % ceiling is enforced on construction. */
+data class HeroTokens(
+    val maxHeightFraction: Float = 0.4f,
+    val gradient: GradientRule = GradientRule.BOTTOM,
+    val strength: Float = 0.85f
+)
+
 data class Frame61Skin(
     val id: String,
     val name: String,
     val colors: Frame61Colors = Frame61Colors(),
     val typography: Frame61Typography = Frame61Typography(),
     val layout: Frame61Layout = Frame61Layout(),
+    val density: DensityTokens = DensityTokens(),
+    val focus: FocusTokens = FocusTokens(),
+    val hero: HeroTokens = HeroTokens(),
     val navModel: String = "bottom-bar",
     val focusTreatment: String = "scale",
     val motionLevel: MotionLevel = MotionLevel.MEDIUM,
@@ -112,7 +137,8 @@ data class Frame61Skin(
 @Composable
 fun Frame61Theme(
     skin: Frame61Skin = LocalSkin.current,
-    darkTheme: Boolean = isSystemInDarkTheme() || skin.darkMode,
+    // The skin decides light/dark; the system theme must not override Arctic Light.
+    darkTheme: Boolean = skin.darkMode,
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) {
@@ -135,6 +161,14 @@ fun Frame61Theme(
         )
     }
 
+    val shapes = androidx.compose.material3.Shapes(
+        small = androidx.compose.foundation.shape.RoundedCornerShape(
+            maxOf(skin.layout.radius - 4, 2).dp
+        ),
+        medium = androidx.compose.foundation.shape.RoundedCornerShape(skin.layout.radius.dp),
+        large = androidx.compose.foundation.shape.RoundedCornerShape((skin.layout.radius + 8).dp)
+    )
+
     CompositionLocalProvider(
         LocalSkin provides skin,
         LocalFrame61Typography provides skin.typography,
@@ -146,6 +180,7 @@ fun Frame61Theme(
         MaterialTheme(
             colorScheme = colorScheme,
             typography = skin.typography.toMaterial(),
+            shapes = shapes,
             content = content
         )
     }

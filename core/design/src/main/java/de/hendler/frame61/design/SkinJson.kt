@@ -1,5 +1,6 @@
 package de.hendler.frame61.design
 
+import androidx.compose.ui.unit.dp
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -24,7 +25,16 @@ data class SkinJson(
     val typeScale: Float = 1.0f,
     val billboardHeight: Int = 380,
     val detailLayout: String = "vertical",
-    val playerChrome: String = "dark"
+    val playerChrome: String = "dark",
+    val darkMode: Boolean = true,
+    /** "compact" | "regular" | "roomy" — affects poster height and spacing. */
+    val density: String = "regular",
+    val posterHeight: Int? = null,
+    val focusScale: Float = 1.08f,
+    val focusRing: Int = 3,
+    val heroPercent: Float = 0.4f,
+    val gradientRule: String = "bottom",
+    val gradientStrength: Float = 0.85f
 )
 
 /**
@@ -67,10 +77,36 @@ class SkinJsonParser(private val json: Json = Json {
             detailLayout = detailLayout,
             playerChrome = playerChrome
         ),
+        density = when (density.lowercase().trim()) {
+            "compact" -> DensityTokens(
+                posterHeight = (posterHeight ?: 170).dp,
+                gutter = maxOf(gutter - 4, 8).dp,
+                contentPadding = 16.dp
+            )
+            "roomy" -> DensityTokens(
+                posterHeight = (posterHeight ?: 200).dp,
+                gutter = (gutter + 4).dp,
+                contentPadding = 32.dp
+            )
+            else -> DensityTokens(
+                posterHeight = (posterHeight ?: 190).dp,
+                gutter = gutter.dp,
+                contentPadding = 24.dp
+            )
+        },
+        focus = FocusTokens(
+            scale = focusScale.coerceIn(1.0f, 1.15f),
+            ringWidth = focusRing.coerceIn(1, 6).dp
+        ),
+        hero = HeroTokens(
+            maxHeightFraction = heroPercent.coerceIn(0.2f, 0.4f),
+            gradient = parseGradient(gradientRule),
+            strength = gradientStrength.coerceIn(0f, 1f)
+        ),
         navModel = navModel,
         focusTreatment = focusTreatment,
         motionLevel = parseMotionLevel(motionLevel),
-        darkMode = true
+        darkMode = darkMode
     )
 
     companion object {
@@ -88,7 +124,20 @@ class SkinJsonParser(private val json: Json = Json {
             "frame61" -> "Frame61"
             "frame61-indigo" -> "Frame61 Indigo"
             "custom" -> "Custom"
+            "cinema-red" -> "Cinema Red"
+            "magic-blue" -> "Magic Blue"
+            "midnight-gold" -> "Midnight Gold"
+            "arctic-light" -> "Arctic Light"
+            "neon-grid" -> "Neon Grid"
+            "kino-noir" -> "Kino Noir"
             else -> id
+        }
+
+        /** `"bottom"` → [GradientRule.BOTTOM]; unknown falls back to BOTTOM. */
+        fun parseGradient(value: String): GradientRule = when (value.lowercase().trim()) {
+            "top" -> GradientRule.TOP
+            "none", "off" -> GradientRule.NONE
+            else -> GradientRule.BOTTOM
         }
 
         /** `"medium"` → [MotionLevel.MEDIUM]; unknown values fall back to [MotionLevel.MEDIUM]. */

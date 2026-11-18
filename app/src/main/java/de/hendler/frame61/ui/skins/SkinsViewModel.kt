@@ -3,11 +3,13 @@ package de.hendler.frame61.ui.skins
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.design.SkinDefinition
 import de.hendler.frame61.design.SkinManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -20,7 +22,8 @@ data class SkinsUiState(
 
 @HiltViewModel
 class SkinsViewModel @Inject constructor(
-    private val skinManager: SkinManager
+    private val skinManager: SkinManager,
+    private val prefs: ProfileDataStore
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(SkinsUiState())
@@ -34,10 +37,11 @@ class SkinsViewModel @Inject constructor(
         viewModelScope.launch {
             val all = runCatching { skinManager.getAllSkins() }.getOrDefault(emptyList())
             val defs = runCatching { skinManager.getAvailableSkins() }.getOrDefault(emptyList())
+            val active = runCatching { prefs.activeSkin.first() }.getOrDefault("frame61")
             _state.update {
                 it.copy(
                     skins = defs.ifEmpty { all.map { s -> SkinDefinition(s.id, s.name, "", "") } },
-                    activeSkinId = all.firstOrNull()?.id ?: "frame61"
+                    activeSkinId = active
                 )
             }
         }
@@ -46,6 +50,11 @@ class SkinsViewModel @Inject constructor(
     fun select(skinId: String) {
         viewModelScope.launch {
             val ok = runCatching { skinManager.getSkin(skinId) }.isSuccess
+            if (ok) {
+                // DataStore is the single source; the shell observes it and
+                // re-renders immediately (no restart).
+                prefs.setActiveSkin(skinId)
+            }
             _state.update {
                 it.copy(
                     activeSkinId = if (ok) skinId else it.activeSkinId,
