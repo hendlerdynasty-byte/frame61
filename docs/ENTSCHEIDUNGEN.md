@@ -143,6 +143,17 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   und Movie2k (Parking/SPA) sind `blocked_external` — erst nach den
   dokumentierten Versuchen, nie als vorzeitiges Etikett.
 
+## 2026-11-18 — Block 15: Filme ohne API-Key
+
+- Spielfilme stammen aus Wikidata (SPARQL + wbgetentities) und Wikimedia
+  Commons; nur Eintraege mit deutscher Beschreibung und lokalem Poster
+  werden aufgenommen.
+- Der Katalog hat damit 1000 Titel (584 Serien, 416 Filme); die 400 neuen
+  Filme sind gegen Serien und untereinander dedupliziert.
+- Die Laufzeit kommt aus P2047 (ISO-8601) und ist der dritte Filter neben
+  Genre und Jahrzehnt.
+
+
 
 
 
