@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -22,6 +23,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
@@ -44,6 +46,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -51,6 +54,7 @@ import javax.inject.Inject
 
 data class BrowseState(
     val titles: List<CatalogItem> = emptyList(),
+    val total: Int = 0,
     val genres: List<String> = emptyList(),
     val decades: List<Int> = emptyList(),
     val selectedGenre: String? = null,
@@ -71,6 +75,14 @@ fun BrowseScreen(
     LifecycleResumeEffect(Unit) {
         viewModel.refreshProgress()
         onPauseOrDispose { }
+    }
+    val gridState = rememberLazyGridState()
+    LaunchedEffect(gridState, state.titles.size) {
+        snapshotFlow { gridState.layoutInfo.visibleItemsInfo.lastOrNull()?.index ?: 0 }
+            .distinctUntilChanged()
+            .collect { last ->
+                if (last >= state.titles.lastIndex - 24) viewModel.loadMore()
+            }
     }
 
     Column(modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
@@ -96,12 +108,13 @@ fun BrowseScreen(
             )
         }
         Text(
-            text = "${state.titles.size} Titel",
+            text = "${state.total} Titel",
             style = MaterialTheme.typography.bodyMedium,
             modifier = Modifier.padding(top = 8.dp)
         )
         LazyVerticalGrid(
             columns = GridCells.Adaptive(minSize = 140.dp),
+            state = gridState,
             contentPadding = PaddingValues(vertical = 12.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
@@ -191,10 +204,12 @@ class BrowseViewModel @Inject constructor(
     private var base: List<CatalogItem> = emptyList()
     private var loadedType: String? = null
     private var progressByTitle: Map<Long, Float> = emptyMap()
+    private var visibleCount = PAGE_SIZE
 
     fun load(type: String) {
         if (loadedType == type) return
         loadedType = type
+        visibleCount = PAGE_SIZE
         viewModelScope.launch(Dispatchers.IO) {
             base = catalog.byType(type)
             publish()
@@ -203,11 +218,19 @@ class BrowseViewModel @Inject constructor(
 
     fun setGenre(genre: String?) {
         _state.value = _state.value.copy(selectedGenre = genre)
+        visibleCount = PAGE_SIZE
         publish()
     }
 
     fun setDecade(decade: Int?) {
         _state.value = _state.value.copy(selectedDecade = decade)
+        visibleCount = PAGE_SIZE
+        publish()
+    }
+
+    fun loadMore() {
+        if (visibleCount >= _state.value.total) return
+        visibleCount += PAGE_SIZE
         publish()
     }
 
@@ -229,11 +252,16 @@ class BrowseViewModel @Inject constructor(
             item.id to (progressByTitle[CatalogPlayback.stableId(item.id)] ?: 0f)
         }
         _state.value = current.copy(
-            titles = filtered,
+            titles = filtered.take(visibleCount),
+            total = filtered.size,
             genres = base.flatMap { it.genres }.distinct().sorted(),
             decades = base.mapNotNull { it.year?.div(10)?.times(10) }.distinct().sortedDescending(),
             progress = progress
         )
+    }
+
+    private companion object {
+        const val PAGE_SIZE = 120
     }
 }
 
