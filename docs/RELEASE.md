@@ -63,6 +63,13 @@ Update-Belege:
 aktualisieren?“), `docs/design/block12/installer.png` (Play-Protect-Gate),
 `docs/design/block12/scroll/11.png` (Update-Abschnitt mit Default-URL).
 
+Update auf dem Android-TV-Emulator (Block 17): signiertes 1.0.0 installiert,
+Manifest lieferte „Version 2 verfügbar", System-Installer bestätigt,
+anschließend `versionCode=2`/`versionName=1.1.0` und `InstallSuccess`.
+Belege: `docs/design/block17/update-available.png`, `installer-ready.png`,
+`unknown-settings.png`, `update-done.png`, `update-opened.png`;
+Details in `docs/PLAYPROTECT.md`.
+
 ## Grenzen
 
 - Kein Play-Store-Upload, kein Rollout, keine Store-Freigabe.

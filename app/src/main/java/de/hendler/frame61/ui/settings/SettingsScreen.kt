@@ -1,5 +1,6 @@
 package de.hendler.frame61.ui.settings
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,11 +23,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.design.FocusRestorer
 import de.hendler.frame61.design.tvFocusable
+import de.hendler.frame61.R
 import de.hendler.frame61.ui.skins.SkinsViewModel
 
 /** The six selectable showcase skins (Block 4). */
@@ -280,6 +284,21 @@ fun SettingsScreen(
         if (state.saved) {
             Text(text = "Gespeichert", style = MaterialTheme.typography.labelSmall)
         }
+
+        Spacer(Modifier.height(16.dp))
+        Text(text = "Sideload-Hinweis (Android)", style = MaterialTheme.typography.titleMedium)
+        Text(
+            text = "Zeigt Play Protect „App-Scan empfohlen“, „Abbrechen“ wählen und in den " +
+                "Einstellungen „Trotzdem installieren“ bestätigen. Auf Fire TV erscheint " +
+                "dieser Dialog nicht.",
+            style = MaterialTheme.typography.bodySmall
+        )
+        Image(
+            painter = painterResource(R.drawable.play_protect_hint),
+            contentDescription = "Echter Play-Protect-Dialog mit Abbrechen und Einstellungen",
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.fillMaxWidth().height(190.dp)
+        )
     }
 
     FocusRestorer(targetId = "settings-autoplay")
