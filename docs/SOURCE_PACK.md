@@ -21,6 +21,7 @@ Ein Source Pack ist die JSON-Datei `assets/sources/<id>.json`. Sie beschreibt
 | `tier` | string | – | `A` \| `B` \| `C` (Beschreibung, keine Steuerung) |
 | `legalFree` | bool | `false` | kennzeichnet legal-freie Quellen; wird bei Gleichstand bevorzugt |
 | `kind` | string | `html` | `html` (Jsoup-CSS) oder `api` (JSON-Dot-Path) |
+| `captcha` | string | – | optional `webview`: leere Suche oeffnet den sichtbaren WebView-Frame, uebernimmt Cookies und wiederholt die Suche |
 | `verified` | bool | `false` | live nachgewiesen — **nur** mit echten Antworten setzen |
 | `last_check` | string | – | ISO-8601-Zeitpunkt des letzten Worker-Laufs |
 | `check` | object | – | Worker-Ergebnis: `status`, `reason`, `checked[]`, `misses[]`, `http_status` |
@@ -55,6 +56,9 @@ stehen; unbekannte Parameter werden ignoriert.
 | `titleSelector`, `yearSelector`, `typeSelector` | Feldselektor **innerhalb** eines Treffers |
 | `linkSelector` | Selektor auf das Link-Element (Standard: erstes `<a>`) |
 | `idAttr` | Attribut mit der ID (Standard: `href`) |
+| `idFromTitle` | bool; leitet die ID aus dem Treffertext ab, wenn kein Link-Attribut existiert |
+| `idRegex` | Regex auf den Treffertext; Capture-Gruppe `idGroup` wird die ID |
+| `idGroup` | int, Standard 1 |
 | `episodeSelector`, `seasonSelector`, `episodeTitleSelector`, `episodeLinkSelector`, `episodeIndexSelector` | Episodenliste |
 | `selector` | Stream-Knoten (z. B. `.player-source a`) |
 | `urlAttr` | Attribut mit der Stream-URL (Standard: `href`) |
@@ -80,6 +84,25 @@ Jsoup absolut aufgelöst.
 
 **Dot-Path:** `a.b.0.c` durchläuft Objekte und Arrays; numerische Segmente
 indexieren Arrays.
+
+## Hoster-Schrittketten (`assets/hosters/<id>.json`)
+
+Hoster-Packs nutzen dieselbe Variablenkette, aber eigene Aktionen:
+
+| Aktion | Felder | Bedeutung |
+|---|---|---|
+| `get`/`post`/`regex`/`json`/`sleep`/`copy` | wie oben | HTTP, Parsing, Pause, direkte URL |
+| `js` | `script`, optional `url`, `saveAs` | führt das Skript nach `url` (Standard: Hoster-URL) in einem WebView aus; Timeout 8 s; Rückgabe landet in `saveAs` |
+| `pow` | `algorithm`, `input`, `difficulty` oder `difficultyInput`, `targetPrefix`, `separator`, `maxIterations`, `saveAs` | löst deterministisch einen Proof-of-Work |
+
+`pow`-Algorithmen:
+
+- `filemoon-v1`: Filemoons `pow-*.js`-Hash über `nonce + separator + counter`; akzeptiert bei mindestens `difficulty` führenden Nullbits. Der Zähler ist das Ergebnis.
+- `sha256`: Hex-SHA-256 über `input + separator + counter` muss mit `targetPrefix` beginnen.
+
+`js`-Skripte laufen ohne JavaScript-Bridge; die Rückgabe ist ein String. Ein
+`pow`-Schritt liefert den Zähler als String. Beide Aktionen sind über
+`PackLoaderValidator` und die Python-Validierung abgesichert.
 
 ## Validierung
 

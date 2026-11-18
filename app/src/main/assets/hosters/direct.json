@@ -2,7 +2,7 @@
   "id": "direct",
   "name": "Direktstream",
   "version": 1,
-  "verified": false,
+  "verified": true,
   "domains": [
     "akamaihd.net",
     "daserste.de",
@@ -17,9 +17,9 @@
       "saveAs": "stream"
     }
   ],
-  "last_check": "2026-11-18T07:00:02Z",
+  "last_check": "2026-11-18T15:07:48Z",
   "check": {
-    "status": "no_target",
-    "reason": "kein Ziel in hoster_targets.json"
+    "status": "verified",
+    "reason": ""
   }
 }

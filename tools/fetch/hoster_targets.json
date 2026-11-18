@@ -1,7 +1,14 @@
 {
   "targets": {
     "direct": {
-      "reason": "Direktstream-Pack (ARD/MP4/HLS), kein Hoster-Ziel"
+      "url": "https://ctv-videos.daserste.de/de/2026/05/07/409/409_16651_sendeton_960x540-50p-1600kbit.mp4",
+      "referer": "https://api.ardmediathek.de/",
+      "origin": "ARD-page-gateway-Fixture; im ARD-Slice auf dem A52 abgespielt",
+      "fixture": {
+        "expected": {
+          "url": "https://ctv-videos.daserste.de/de/2026/05/07/409/409_16651_sendeton_960x540-50p-1600kbit.mp4"
+        }
+      }
     },
     "vidmoly": {
       "url": "https://vidmoly.net/embed-8irnzzsknabi.html",
@@ -9,9 +16,9 @@
       "origin": "aniworld.to/redirect/3049671 (301)"
     },
     "voe": {
-      "url": "https://arianathankspecial.com/e/cvrluqyituus",
-      "referer": "https://voe.sx/",
-      "origin": "aniworld.to/redirect/3523796 -> voe.sx/e/cvrluqyituus -> JS-Redirect"
+      "url": "https://voe.sx/pid7osbd3o2b",
+      "referer": "https://filmpalast.to/stream/the-mummy-bride-of-the-dead",
+      "origin": "filmpalast.to Detailseite; Alternative aniworld.to/redirect/3523796 -> voe.sx/e/cvrluqyituus"
     },
     "doodstream": {
       "url": "https://do7go.com/e/5hyj5kblvy1n",

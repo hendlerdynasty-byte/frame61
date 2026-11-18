@@ -1,7 +1,7 @@
 {
   "id": "voe",
   "name": "Voe",
-  "version": 1,
+  "version": 2,
   "verified": false,
   "domains": [
     "voe.sx",
@@ -18,20 +18,18 @@
       "saveAs": "page"
     },
     {
-      "action": "regex",
-      "input": "page",
-      "pattern": "<source[^>]+src=\"([^\"]+)\"",
-      "group": 1,
-      "saveAs": "src"
+      "action": "js",
+      "url": "{url}",
+      "script": "(function(){try{var s=window.sources;if(s&&s[0]&&s[0].file)return s[0].file;var v=document.querySelector('video source,video');if(v&&v.src)return v.src;var e=performance.getEntriesByType('resource');for(var i=e.length-1;i>=0;i--){if(/\\.(m3u8|mp4)/.test(e[i].name))return e[i].name;}}catch(x){}return '';})()",
+      "saveAs": "stream"
     },
     {
-      "action": "json",
-      "input": "src",
-      "path": "file",
+      "action": "copy",
+      "url": "{stream}",
       "saveAs": "file"
     }
   ],
-  "last_check": "2026-11-18T07:00:03Z",
+  "last_check": "2026-11-18T15:07:49Z",
   "check": {
     "status": "step_failed",
     "reason": "JS-Redirect/verschleierte Quelle, kein <source> im HTML"

@@ -43,19 +43,26 @@ class HttpStatusError(RuntimeError):
 
 
 def fetch(
-    url: str, referer: str, opener, attempts: int = RETRIES, data: bytes | None = None
+    url: str,
+    referer: str,
+    opener,
+    attempts: int = RETRIES,
+    data: bytes | None = None,
+    headers: dict[str, str] | None = None,
 ) -> tuple[int, str]:
     last: Exception | None = None
     for attempt in range(1, attempts + 1):
+        request_headers = {
+            "User-Agent": UA,
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+            "Accept-Language": "de-DE,de;q=0.9,en;q=0.7",
+            "Referer": referer,
+        }
+        request_headers.update(headers or {})
         request = urllib.request.Request(
             url,
             data=data,
-            headers={
-                "User-Agent": UA,
-                "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
-                "Accept-Language": "de-DE,de;q=0.9,en;q=0.7",
-                "Referer": referer,
-            },
+            headers=request_headers,
         )
         try:
             with opener.open(request, timeout=25) as response:
@@ -77,8 +84,9 @@ def fetch(
 def render(template: str, source_url: str, variables: dict[str, str]) -> str:
     parsed = urllib.parse.urlparse(source_url)
     out = template.replace("{host}", parsed.netloc).replace("{path}", parsed.path)
-    out = out.replace("{url}", source_url)
+    out = out.replace("{{url}}", source_url).replace("{url}", source_url)
     for key, value in variables.items():
+        out = out.replace("{{" + key + "}}", value)
         out = out.replace("{" + key + "}", value)
     return out
 
@@ -102,6 +110,102 @@ def walk(value, path: str):
     return current
 
 
+M32 = 0xFFFFFFFF
+FM_LR = 2654435761
+FM_HR = 2246822519
+
+
+def _rotl32(value: int, bits: int) -> int:
+    value &= M32
+    return ((value << bits) | (value >> (32 - bits))) & M32
+
+
+def _fm_ye(t: list[int]) -> None:
+    t[0] = (t[0] + t[1]) & M32
+    t[3] = _rotl32(t[3] ^ t[0], 16)
+    t[2] = (t[2] + t[3]) & M32
+    t[1] = _rotl32(t[1] ^ t[2], 12)
+    t[0] = (t[0] + t[1]) & M32
+    t[3] = _rotl32(t[3] ^ t[0], 8)
+    t[2] = (t[2] + t[3]) & M32
+    t[1] = _rotl32(t[1] ^ t[2], 7)
+
+
+def filemoon_hash(data: bytes) -> list[int]:
+    e = [1779033703, 3144134277, 1013904242, 2773480762]
+    for byte in data:
+        e[0] = (e[0] + byte) & M32
+        e[0] = _rotl32(e[0], 7)
+        _fm_ye(e)
+    for _ in range(8):
+        _fm_ye(e)
+    r = [0] * 512
+    for i in range(512):
+        _fm_ye(e)
+        r[i] = (e[0] ^ e[2]) & M32
+    for _ in range(2):
+        for s in range(512):
+            a = r[s] & 511
+            c = _rotl32((r[s] + r[a]) & M32, 13)
+            c = (c ^ ((r[(s + 1) & 511] * FM_LR) & M32)) & M32
+            r[s] = c
+            e[0] = (e[0] ^ c) & M32
+            _fm_ye(e)
+    n = [0] * 8
+    for i in range(8):
+        _fm_ye(e)
+        ss = e[0]
+        for c in range(64):
+            d = r[i * 64 + c]
+            ss = (ss + d) & M32
+            ss = _rotl32(ss, 5)
+            ss = (ss ^ ((d * FM_HR) & M32)) & M32
+        n[i] = (ss ^ e[2]) & M32
+    return n
+
+
+def leading_zero_bits(words: list[int]) -> int:
+    bits = 0
+    for word in words:
+        if word == 0:
+            bits += 32
+            continue
+        return bits + 32 - word.bit_length()
+    return bits
+
+
+def solve_pow(step: dict, variables: dict[str, str]) -> str | None:
+    algorithm = step.get("algorithm")
+    raw_input = variables.get(step.get("input") or "")
+    if raw_input is None:
+        return None
+    separator = step.get("separator", ":")
+    max_iterations = int(step.get("maxIterations", 1_000_000))
+    if algorithm == "filemoon-v1":
+        difficulty = step.get("difficulty")
+        difficulty_input = step.get("difficultyInput")
+        if difficulty_input:
+            difficulty = variables.get(difficulty_input)
+        try:
+            difficulty = int(difficulty)
+        except (TypeError, ValueError):
+            return None
+        for counter in range(max_iterations):
+            if leading_zero_bits(filemoon_hash(f"{raw_input}{separator}{counter}".encode())) >= difficulty:
+                return str(counter)
+        return None
+    if algorithm == "sha256":
+        prefix = (step.get("targetPrefix") or "").lower()
+        if not prefix:
+            return None
+        for counter in range(max_iterations):
+            digest = hashlib.sha256(f"{raw_input}{separator}{counter}".encode()).hexdigest()
+            if digest.startswith(prefix):
+                return str(counter)
+        return None
+    return None
+
+
 def run_steps(pack: dict, source_url: str, opener, referer: str) -> tuple[str | None, str | None, str]:
     variables: dict[str, str] = {}
     page_body = ""
@@ -114,8 +218,12 @@ def run_steps(pack: dict, source_url: str, opener, referer: str) -> tuple[str | 
             payload = None
             if action == "post":
                 payload = render(step.get("body", ""), source_url, variables).encode("utf-8")
+            step_headers = {
+                key: render(value, source_url, variables)
+                for key, value in (step.get("headers") or {}).items()
+            }
             try:
-                _, body = fetch(url, referer, opener, data=payload)
+                _, body = fetch(url, referer, opener, data=payload, headers=step_headers)
             except HttpStatusError as exc:
                 return None, exc.body, f"step {index} {action}: HTTP {exc.status}"
             except Exception as exc:  # noqa: BLE001
@@ -148,6 +256,13 @@ def run_steps(pack: dict, source_url: str, opener, referer: str) -> tuple[str | 
             )
         elif action == "sleep":
             time.sleep(min(max(step.get("ms", 0), 0), 5_000) / 1000)
+        elif action == "pow":
+            solution = solve_pow(step, variables)
+            if solution is None:
+                return None, page_body, f"step {index}: pow ohne Lösung"
+            variables[step.get("saveAs") or "solution"] = solution
+        elif action == "js":
+            return None, page_body, f"step {index}: js nur im App-WebView ausführbar"
     result_name = pack.get("result")
     final = variables.get(result_name or "") if result_name else None
     if not final:
@@ -220,6 +335,11 @@ def main() -> int:
 
         if ok and target:
             fixture_dir = fixture_root / pack_id
+            existing_meta = fixture_dir / "meta.json"
+            # `copy`-only packs (direct) have no fetched body; keep the recorded
+            # ARD fixture instead of overwriting it with an empty file.
+            if not page_body and existing_meta.exists():
+                continue
             fixture_dir.mkdir(parents=True, exist_ok=True)
             (fixture_dir / "page.body.html").write_text(page_body, encoding="utf-8")
             (fixture_dir / "result.expected.json").write_text(

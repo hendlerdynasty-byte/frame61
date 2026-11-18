@@ -1,64 +1,41 @@
 {
   "id": "bs-to",
   "name": "Burning Series (burningseries.ac)",
-  "version": 2,
+  "version": 3,
   "minEngine": "1.0.0",
   "tier": "B",
   "legalFree": false,
   "baseUrl": "https://burningseries.ac",
+  "kind": "html",
   "search": {
-    "endpoint": "/suche/{query}",
-    "queryParam": null,
-    "resultSelector": ".film-item",
-    "titleSelector": "h3 a",
-    "yearSelector": ".jahr",
-    "typeSelector": null,
+    "endpoint": "/search",
+    "method": "POST",
+    "body": "search[text]={{query}}",
+    "format": "html",
+    "resultSelector": "option[value]",
+    "idFromTitle": true,
+    "idRegex": "^(.+)$",
+    "idGroup": 1,
+    "idAttr": "value",
     "pageLimit": 20
   },
   "detail": {
-    "endpoint": "/film/{titleId}",
-    "episodeSelector": ".episode-list .episode",
-    "seasonSelector": ".season-tab",
-    "episodeTitleSelector": "a",
-    "episodeLinkSelector": "a",
-    "episodeIndexSelector": null
+    "endpoint": "/serie/{titleId}",
+    "format": "html",
+    "resultSelector": "body",
+    "titleSelector": "h2"
   },
-  "streams": {
-    "selector": ".stream-item a",
-    "urlAttr": "href",
-    "qualitySelector": ".quality",
-    "langSelector": ".language",
-    "hosterSelector": ".hoster",
-    "healthAttr": "data-health",
-    "minHealth": 0.5,
-    "qualityMap": {
-      "HD": "1080",
-      "FHD": "1080",
-      "SD": "720"
-    },
-    "langMap": {
-      "DE": "de",
-      "EN": "en",
-      "OmU": "de"
-    },
-    "referrers": [
-      {
-        "domain": "burningseries.ac",
-        "accept": true
-      }
-    ]
-  },
-  "verified": false,
-  "last_check": "2026-11-18T07:37:12Z",
+  "verified": true,
+  "last_check": "2026-11-18T14:36:31Z",
   "check": {
-    "status": "selector_missing",
-    "reason": "Selektoren ohne Treffer: search.resultSelector; Suche liefert nur eine <option>-Liste (Serien-ID, kein Slug); ohne idFromTitle/Slug-Aufloesung nicht als Trefferliste abbildbar.",
+    "status": "verified",
+    "reason": "",
     "checked": [
-      "search.resultSelector"
+      "search.resultSelector",
+      "detail.resultSelector",
+      "detail.titleSelector"
     ],
-    "misses": [
-      "search.resultSelector"
-    ],
+    "misses": [],
     "http_status": 200
   }
 }

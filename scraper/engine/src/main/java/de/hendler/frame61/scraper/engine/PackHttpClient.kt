@@ -16,10 +16,16 @@ class PackHttpClient(
 ) {
 
     @Throws(IOException::class)
-    fun get(pack: SourcePack, rule: PackRule, params: Map<String, String>): String {
+    fun get(
+        pack: SourcePack,
+        rule: PackRule,
+        params: Map<String, String>,
+        cookies: String? = null
+    ): String {
         val url = buildUrl(pack, rule, params)
         val builder = Request.Builder().url(url)
         rule.headers.forEach { (key, value) -> builder.header(key, value) }
+        if (!cookies.isNullOrBlank()) builder.header("Cookie", cookies)
 
         if (rule.method.equals("POST", ignoreCase = true)) {
             val body = render(rule.body.orEmpty(), params).toRequestBody(null)
@@ -48,7 +54,7 @@ class PackHttpClient(
 
         fun buildUrl(pack: SourcePack, rule: PackRule, params: Map<String, String>): String {
             val path = (rule.endpoint ?: rule.path).orEmpty()
-            val rendered = render(path, params)
+            val rendered = renderPath(path, params)
             val base = pack.baseUrl.trimEnd('/')
             val url = when {
                 rendered.startsWith("http") -> rendered
@@ -65,6 +71,21 @@ class PackHttpClient(
             }
             return url
         }
+
+        /**
+         * Path placeholders are percent-encoded: a title-derived id such as
+         * "Two and a Half Men" must become a valid path segment. `id` stays raw
+         * because some packs use it as an already-complete URL.
+         */
+        fun renderPath(template: String, params: Map<String, String>): String {
+            val encoded = params.mapValues { (key, value) ->
+                if (key in PATH_ENCODED) java.net.URLEncoder.encode(value, "UTF-8").replace("+", "%20")
+                else value
+            }
+            return render(template, encoded)
+        }
+
+        private val PATH_ENCODED = setOf("query", "q", "titleId", "episodeId")
 
         private fun String.toHttpUrlOrNull() = runCatching { toHttpUrl() }.getOrNull()
     }

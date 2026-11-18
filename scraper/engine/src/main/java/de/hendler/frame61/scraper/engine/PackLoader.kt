@@ -26,6 +26,7 @@ data class SourcePack(
     val tier: String? = null,
     val legalFree: Boolean = false,
     val kind: String = "html",
+    val captcha: String? = null,
     val verified: Boolean = false,
     val lastCheck: String? = null,
     val check: PackCheck? = null,
@@ -64,6 +65,11 @@ data class PackRule(
     val typeSelector: String? = null,
     val linkSelector: String? = null,
     val idAttr: String? = null,
+    /** Derive the id from the hit title when no link attribute exists. */
+    val idFromTitle: Boolean = false,
+    /** Regex applied to the hit title; group [idGroup] becomes the id. */
+    val idRegex: String? = null,
+    val idGroup: Int = 1,
     // html: episodes
     val episodeSelector: String? = null,
     val seasonSelector: String? = null,
@@ -185,6 +191,7 @@ object PackLoaderValidator {
     fun isValid(pack: SourcePack): Boolean {
         if (pack.id.isBlank() || pack.name.isBlank() || pack.baseUrl.isBlank()) return false
         if (pack.kind !in setOf("html", "api")) return false
+        if (pack.captcha != null && pack.captcha != "webview") return false
         val rules = listOfNotNull(pack.search, pack.detail, pack.episodes, pack.streams)
         if (rules.isEmpty()) return false
         if (rules.any { it.format != null && it.format !in setOf("html", "api") }) return false
@@ -205,6 +212,14 @@ object PackLoaderValidator {
         if (rules.isEmpty()) return "keine Regel"
         rules.firstOrNull { it.format != null && it.format !in setOf("html", "api") }?.let {
             return "format='${it.format}'"
+        }
+        rules.firstOrNull { it.idFromTitle && it.idGroup < 1 }?.let {
+            return "idGroup=${it.idGroup}"
+        }
+        rules.firstOrNull { it.idFromTitle && !it.idRegex.isNullOrBlank() }?.let { rule ->
+            runCatching { Regex(rule.idRegex.orEmpty()) }.onFailure {
+                return "idRegex ungültig (${it.message})"
+            }
         }
         val addressable = rules.count {
             it.endpoint.orEmpty().isNotBlank() || it.path.orEmpty().isNotBlank()

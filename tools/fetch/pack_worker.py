@@ -175,6 +175,14 @@ def pick_first_result(pack: dict, body: str, is_json: bool) -> str | None:
     first = nodes[0]
     link_selector = rule.get("linkSelector") or "a"
     link = cssmini.select_first(first, link_selector) or cssmini.select_first(first, "a") or first
+    if rule.get("idFromTitle"):
+        title_node = cssmini.select_first(first, rule.get("titleSelector") or "") or link
+        title = title_node.text().strip()
+        pattern = rule.get("idRegex")
+        if pattern:
+            match = re.search(pattern, title)
+            return match.group(rule.get("idGroup", 1)) if match else None
+        return title or None
     href = link.attr(rule.get("idAttr") or "href")
     return href.rstrip("/").rsplit("/", 1)[-1].split("?")[0] or None
 

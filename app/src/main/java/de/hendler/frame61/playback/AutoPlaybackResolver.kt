@@ -40,6 +40,8 @@ class AutoPlaybackResolver @Inject constructor(
     private val packLoader: PackLoader,
     private val interpreter: PackInterpreter,
     private val ardResolver: ArdPlaybackResolver,
+    private val captchaBroker: CaptchaBroker,
+    private val jsEvaluator: WebViewJsEvaluator,
     private val prefs: ProfileDataStore
 ) {
 
@@ -61,7 +63,7 @@ class AutoPlaybackResolver @Inject constructor(
     }
 
     private val hosterResolver: HosterResolver by lazy {
-        HosterResolver(hosterPacks, OkHttpBodyFetcher())
+        HosterResolver(hosterPacks, OkHttpBodyFetcher(), jsEvaluator)
     }
 
     suspend fun resolve(title: String, episodeNumber: Int = 0): List<MirrorCandidate> =
@@ -117,10 +119,21 @@ class AutoPlaybackResolver @Inject constructor(
         if (pack.id == ArdPlaybackResolver.PACK_ID) {
             return ardResolver.resolve(title, episodeNumber)
         }
-        val hits = interpreter.search(pack, title)
+        var cookies: String? = null
+        var hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
+        val sourceCaptcha = pack.captcha
+        if (hits.isEmpty() && sourceCaptcha != null) {
+            Log.i(TAG, "${pack.id}: source captcha $sourceCaptcha -> WebView")
+            val solved = captchaBroker.await(pack.baseUrl, sourceCaptcha, pack.id)
+            cookies = solved?.cookies
+            if (!cookies.isNullOrBlank()) {
+                hits = runCatching { interpreter.search(pack, title, cookies = cookies) }
+                    .getOrDefault(emptyList())
+            }
+        }
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
             ?: return emptyList()
-        val streams = interpreter.streams(pack, hit.id, episodeNumber.toString())
+        val streams = interpreter.streams(pack, hit.id, episodeNumber.toString(), cookies)
         return streams.mapNotNull { stream ->
             val url = resolveHoster(pack, stream)
             url?.let {
@@ -143,6 +156,29 @@ class AutoPlaybackResolver @Inject constructor(
         if (!stream.url.startsWith("https://")) {
             Log.w(TAG, "${pack.id}: non-https stream rejected")
             return null
+        }
+        val hosterCaptcha = pack.captcha
+        if (hosterCaptcha != null) {
+            Log.i(TAG, "${pack.id}: captcha $hosterCaptcha -> WebView")
+            val result = captchaBroker.await(stream.url, hosterCaptcha, pack.id)
+            result?.streamUrl?.takeIf { it.startsWith("https://") }?.let { return it }
+            val cookies = result?.cookies
+            if (cookies.isNullOrBlank()) {
+                Log.w(TAG, "${pack.id}: captcha ohne Cookie/Stream beendet")
+                return null
+            }
+            val second = runCatching {
+                withTimeoutOrNull(HOSTER_TIMEOUT_MS * 5) {
+                    hosterResolver.resolve(stream.url, cookies)
+                }
+            }.getOrNull()
+            return when (second) {
+                is HosterOutcome.Resolved -> second.url
+                else -> {
+                    Log.w(TAG, "${pack.id}: Kette nach Captcha ohne Ergebnis")
+                    null
+                }
+            }
         }
         val outcome = runCatching {
             withTimeoutOrNull(HOSTER_TIMEOUT_MS) { hosterResolver.resolve(stream.url) }

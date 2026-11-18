@@ -2,6 +2,30 @@
 
 ## [Unreleased]
 
+### Block 13 — Motor: Schema, WebView, Hoster-Ziele (2026-11-18)
+
+#### Hinzugefügt
+- Hoster-Aktionen `js` (WebView, 8 s) und `pow` (`filemoon-v1`, `sha256`),
+  inklusive `PowSolver` mit echtem Filemoon-Vektor (Nonce → Lösung `3643`,
+  live per `/captcha/verify` bestätigt).
+- `idFromTitle`/`idRegex`/`idGroup` für Treffer ohne Link-Attribut;
+  Burning Series ist damit verifiziert (7/14).
+- `CaptchaBroker`, `CaptchaWebViewFrame` und `WebViewJsEvaluator`: Token,
+  Cookies und Stream-URL aus der WebView in den Resolver; 20 s Timeout.
+  Kinokiste/Megakino nutzen denselben Pfad auf Quellenebene.
+- `direct` mit ARD-Fixture verifiziert; Hoster-Ziele nicht mehr nur aus
+  aniworld, sondern auch aus filmpalast, filmo, s.to/serienstream.
+
+#### Geändert
+- `PackHttpClient` kodiert Pfad-Platzhalter und akzeptiert Cookies.
+- Hoster-Worker beherrscht `pow` und Header-Templates; Source-Worker
+  berücksichtigt `idFromTitle`.
+- Validator und `SOURCE_PACK.md` um die neuen Felder erweitert.
+
+#### Ergebnis
+- Hoster 2/10 verifiziert; VOE, Doodstream und Filemoon mit konkreten live
+  geprüften Restgründen. Kein "extern blockiert" ohne Codepfad und Versuch.
+
 ### Block 12 — Signierter Release und Update-Kanal (2026-11-18)
 
 #### Hinzugefügt

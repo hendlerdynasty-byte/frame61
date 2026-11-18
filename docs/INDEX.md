@@ -1,10 +1,10 @@
 # Indexseiten — Stand und Nachweise
 
 Stand: 18.11.2026. Ziel waren 14 Indexseiten mit echter Suche, getrimmter
-Aufzeichnung (`responseSha256`) und `verified`. Erreicht sind **6 von 14**:
-aniworld, filmpalast, filmstarts, filmo, s.to und serienstream. Fuenf weitere
-Seiten sind erreichbar, aber ohne auswertbaren Suchpfad; drei Domains sind tot.
-Jeder nicht verifizierte Pack traegt `check.status` und `check.reason`.
+Aufzeichnung (`responseSha256`) und `verified`. Erreicht sind **7 von 14**:
+aniworld, bs-to, filmpalast, filmstarts, filmo, s.to und serienstream. Sechs
+weitere Seiten sind erreichbar, aber ohne auswertbaren Suchpfad; eine Domain
+ist tot. Jeder nicht verifizierte Pack traegt `check.status` und `check.reason`.
 
 ## Methode
 
@@ -27,12 +27,12 @@ Engine wie die App. `provenance: recorded`, `responseSha256` und
 | # | Seite | Pack | Status | Beleg / Grund |
 |---|---|---|---|---|
 | 1 | aniworld.to | `aniworld` | `verified` | POST `/ajax/search` `keyword=naruto`; 2 Treffer; Fixture `ae4d9d4c…` |
-| 2 | burningseries | `bs-to` | `selector_missing` | `/search` liefert nur `<option value="134">`-Liste, keinen Slug-Link |
+| 2 | burningseries | `bs-to` | `verified` | POST `/search`, `option[value]` + `idFromTitle`; Fixture `sourceId`-Liste → `/serie/Naruto` |
 | 3 | filmpalast.to | `filmpalast` | `verified` | GET `/search/title/Inception`; 1 Treffer; Fixture `8156913a…` |
 | 4 | filmstarts.de | `filmstarts` | `verified` | GET `/_/autocomplete/Inception`; 3 Treffer; Fixture `b0a7a1c9…` |
-| 5 | kinokiste.cloud | `kinokiste` | `selector_missing` | JWT-/Bot-Gate, Folgeabruf ohne Browser-Session HTTP 401 |
+| 5 | kinokiste.cloud | `kinokiste` | `selector_missing` | JWT-/Bot-Gate; Block 13 oeffnet WebView, uebernimmt Cookies und wiederholt die Suche — Selektoren weiter ohne Treffer |
 | 6 | kinox.to | `kinox` | `selector_missing` | nur Meta-Refresh auf `kion.ru`; kein Index mehr |
-| 7 | megakino.de | `megakino` | `selector_missing` | Erstaufruf HTTP 436, aktuell keine Suchtreffer |
+| 7 | megakino.de | `megakino` | `selector_missing` | Erstaufruf HTTP 436; Block 13 WebView-Cookie-Pfad vorhanden, keine Treffer |
 | 8 | moflix | — | `blocked_external` | `moflix-stream.com` parkt/leitet auf `yfdabv11.com`, `.xyz` Cloudflare 403 |
 | 9 | movie2k | — | `blocked_external` | `movie2k.to` leitet auf Domain-Parking `yfdabv11.com` |
 | 10 | s.to / SerienStream | `s-to` | `verified` | GET `/api/search/suggest?term=black%20doves`; Fixture `7c49b699…` |
@@ -46,6 +46,7 @@ Engine wie die App. `provenance: recorded`, `responseSha256` und
 | Pack | Suchregel | Detail | Fixture |
 |---|---|---|---|
 | `aniworld` | POST `/ajax/search`, `keyword={{query}}`, JSON-Array, `link`/`title` | HTML `/anime/stream/{titleId}`, `h1`; Folgen `table.seasonEpisodesList` | `search.body.json`, Hash `ae4d9d4c21e47c04…` |
+| `bs-to` | POST `/search`, `search[text]={{query}}`, `option[value]`, `idFromTitle` `^(.+)$` | HTML `/serie/{titleId}`, `h2` | `search.body.html`, Hash im Fixture-meta |
 | `filmpalast` | GET `/search/title/{{query}}`, `article.liste`, `h2 a` | HTML `/stream/{titleId}`, `[itemprop="name"]`; Stream `ul.currentStreamLinks a.iconPlay` | `search.body.html`, Hash `8156913a3f3fc504…` |
 | `filmstarts` | GET `/_/autocomplete/{query}`, `results[]`, `entity_id`/`label`/`facet` | – | `search.body.json`, Hash `b0a7a1c970898939…` |
 | `filmo` | GET `/search/suggest?q=`, `movies[]`, `url`/`title` | HTML `/movies/{titleId}`, `h1` | `search.body.json`, Hash `b0bf2ef8532d524f…` |
@@ -56,13 +57,12 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 
 ## Blockaden und naechster technischer Schritt
 
-- **Burning Series**: Die Suche liefert eine Auswahlliste
-  (`<option value="134">Naruto</option>`). Der Serien-Slug steht nur im
-  Klartext-Label. Ein `idFromTitle`/Slug-Feld im Schema wuerde das loesen.
-- **Kinokiste**: JWT im Loader; ohne Browser-Session HTTP 401. Braucht
-  Cookie-/Token-Handoff aus dem WebView.
+- **Burning Series**: mit `idFromTitle` gelöst: Die `<option>`-Liste liefert
+  den Klartext `Naruto`, der als ID für `/serie/Naruto` genutzt wird.
+- **Kinokiste / MegaKino**: Block 13 oeffnet bei leerer Suche den
+  WebView-Frame, uebernimmt Cookies und wiederholt die Suche. Die Domains
+  liefern weiter keine Selektoren; Block 14 setzt dort fort.
 - **Kinox**: Domain zeigt nur einen Meta-Refresh auf `kion.ru`. Kein Pack-Ziel.
-- **Megakino**: HTTP 436 beim Erstaufruf, danach Bot-/JS-Seite ohne Treffer.
 - **Cine.to**: Suche filtert die bereits geladene DOM-Liste; kein
   serverseitiger Suchpfad.
 - **Moflix / Movie2k / Streamcloud**: Domains parken oder sind nicht
@@ -77,6 +77,13 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 - `filmstarts` ist eine Metadaten-Suche ohne Streams (kein Hoster).
 
 ## Gate-Nachweis (18.11.2026)
+
+Aktuell: `frame61-037fc63f6f75-1795015007`, Exit 0, 103/103 Tests,
+Debug-APK `94b7d82f…` (31.630.631 Bytes). Der fruehere Block-9-Lauf
+`frame61-0c7da0c0539d-1794987598` hatte 7 Fixtures und 6 verifizierte Packs;
+mit `idFromTitle` kam Burning Series hinzu.
+
+Aelterer Beleg:
 
 - Remote-Gate `frame61-0c7da0c0539d-1794987598`, Quellstand `0c7da0c`, Exit 0.
 - Debug-APK `f8a9ac79d2a439aa8216ba3c91913252e8ab785230871ab0c71c556c6e5013f7`,

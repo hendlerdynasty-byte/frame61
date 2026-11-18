@@ -11,6 +11,8 @@ import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
 import de.hendler.frame61.player.PlayerUiState
 import de.hendler.frame61.playback.AutoPlaybackResolver
+import de.hendler.frame61.playback.CaptchaBroker
+import de.hendler.frame61.playback.CaptchaRequest
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import kotlinx.coroutines.CoroutineScope
@@ -46,8 +48,11 @@ class PlayerViewModel @Inject constructor(
     application: Application,
     private val resumeRepository: ResumeRepository,
     private val autoResolver: AutoPlaybackResolver,
+    private val captchaBroker: CaptchaBroker,
     prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
+
+    val captchaRequest: StateFlow<CaptchaRequest?> = captchaBroker.request
 
     val subtitleScale: StateFlow<Float> = prefs.subtitleScale.stateIn(
         viewModelScope,
@@ -206,6 +211,14 @@ class PlayerViewModel @Inject constructor(
     }
 
     fun cancelCountdown() = countdown.cancel()
+
+    fun submitCaptcha(result: de.hendler.frame61.playback.CaptchaResult) {
+        captchaBroker.submit(result)
+    }
+
+    fun cancelCaptcha() {
+        captchaBroker.cancel()
+    }
 
     override fun onCleared() {
         tickJob?.cancel()

@@ -38,7 +38,7 @@ SKIN_TOKENS = (
     "detailLayout",
     "playerChrome",
 )
-HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep", "copy"}
+HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep", "copy", "js", "pow"}
 COLOR_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
 
 
@@ -88,6 +88,16 @@ def validate_rule(where: str, name: str, rule: object, kind: str, report: Report
     if kind == "html":
         if name == "search" and not non_empty(rule.get("resultSelector")):
             report.error(where, "search.resultSelector fehlt (html-Pack)")
+        if rule.get("idFromTitle") is True:
+            pattern = rule.get("idRegex")
+            if pattern:
+                try:
+                    re.compile(pattern)
+                except re.error as exc:
+                    report.error(where, f"search.idRegex ungültig: {exc}")
+            group = rule.get("idGroup", 1)
+            if not isinstance(group, int) or group < 1:
+                report.error(where, f"search.idGroup={group!r} (>=1 erwartet)")
         if name == "streams" and not non_empty(rule.get("selector")):
             report.error(where, "streams.selector fehlt (html-Pack)")
         if name == "episodes" and not non_empty(rule.get("episodeSelector")):
@@ -168,6 +178,8 @@ def validate_source_pack(
     kind = data.get("kind", "html")
     if kind not in ("html", "api"):
         report.error(where, f"kind={kind!r} ist nicht html|api")
+    if data.get("captcha") not in (None, "webview"):
+        report.error(where, f"captcha={data.get('captcha')!r} (nur 'webview')")
 
     rules = [name for name in RULE_KEYS if name in data]
     if not rules:
@@ -234,6 +246,19 @@ def validate_hoster(path: Path, root: Path, report: Report) -> None:
             report.error(where, f"steps[{index}] ohne path")
         if step.get("action") == "copy" and not non_empty(step.get("url")):
             report.error(where, f"steps[{index}] copy ohne url")
+        if step.get("action") == "js" and not non_empty(step.get("script")):
+            report.error(where, f"steps[{index}] js ohne script")
+        if step.get("action") == "pow":
+            if not non_empty(step.get("input")):
+                report.error(where, f"steps[{index}] pow ohne input")
+            algorithm = step.get("algorithm")
+            if algorithm not in ("filemoon-v1", "sha256"):
+                report.error(where, f"steps[{index}] pow algorithm={algorithm!r}")
+            elif algorithm == "filemoon-v1":
+                if step.get("difficulty") is None and not non_empty(step.get("difficultyInput")):
+                    report.error(where, f"steps[{index}] pow ohne difficulty/difficultyInput")
+            elif not non_empty(step.get("targetPrefix")):
+                report.error(where, f"steps[{index}] pow ohne targetPrefix")
 
     check = data.get("check")
     if not isinstance(check, dict) or not non_empty(check.get("status")):

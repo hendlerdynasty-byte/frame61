@@ -1,42 +1,114 @@
 {
   "id": "filemoon",
   "name": "Filemoon",
-  "version": 1,
+  "version": 3,
   "verified": false,
   "domains": [
     "filemoon.to",
     "filemoon.sx",
-    "bysezejataos.com"
+    "bysezejataos.com",
+    "n1mwq.org"
   ],
   "result": "file",
   "steps": [
     {
-      "action": "get",
-      "url": "https://{host}{path}",
-      "saveAs": "page"
+      "action": "copy",
+      "url": "{path}",
+      "saveAs": "pagePath"
     },
     {
       "action": "regex",
-      "input": "page",
-      "pattern": "<iframe[^>]+src=\"([^\"]+)\"",
+      "input": "pagePath",
+      "pattern": "/d/([A-Za-z0-9]+)",
       "group": 1,
-      "saveAs": "iframe"
+      "saveAs": "code"
     },
     {
-      "action": "get",
-      "url": "{iframe}",
-      "saveAs": "player"
+      "action": "post",
+      "url": "https://{host}/api/videos/{code}/captcha",
+      "headers": {
+        "Content-Type": "application/json",
+        "Origin": "https://{host}",
+        "Referer": "https://{host}/d/{code}"
+      },
+      "body": "{}",
+      "saveAs": "challenge"
     },
     {
       "action": "json",
-      "input": "player",
-      "path": "sources.0.file",
+      "input": "challenge",
+      "path": "pow_nonce",
+      "saveAs": "nonce"
+    },
+    {
+      "action": "json",
+      "input": "challenge",
+      "path": "pow_token",
+      "saveAs": "powToken"
+    },
+    {
+      "action": "json",
+      "input": "challenge",
+      "path": "pow_difficulty",
+      "saveAs": "difficulty"
+    },
+    {
+      "action": "pow",
+      "algorithm": "filemoon-v1",
+      "input": "nonce",
+      "difficultyInput": "difficulty",
+      "separator": ":",
+      "maxIterations": 2000000,
+      "saveAs": "solution"
+    },
+    {
+      "action": "post",
+      "url": "https://{host}/api/videos/{code}/captcha/verify",
+      "headers": {
+        "Content-Type": "application/json",
+        "Origin": "https://{host}",
+        "Referer": "https://{host}/d/{code}"
+      },
+      "body": "{\"pow_token\":\"{powToken}\",\"solution\":\"{solution}\"}",
+      "saveAs": "verify"
+    },
+    {
+      "action": "json",
+      "input": "verify",
+      "path": "token",
+      "saveAs": "captchaToken"
+    },
+    {
+      "action": "get",
+      "url": "https://{host}/api/videos/{code}/playback",
+      "headers": {
+        "X-Captcha-Token": "{captchaToken}",
+        "Origin": "https://{host}",
+        "Referer": "https://{host}/d/{code}"
+      },
+      "saveAs": "playback"
+    },
+    {
+      "action": "regex",
+      "input": "playback",
+      "pattern": "\"(?:file|src)\"\\s*:\\s*\"(https:[^\"]+)\"",
+      "group": 1,
       "saveAs": "file"
     }
   ],
-  "last_check": "2026-11-18T07:00:02Z",
+  "last_check": "2026-11-18T07:37:12Z",
   "check": {
     "status": "step_failed",
-    "reason": "SPA: HTML ohne Stream-URL, JS/API erforderlich"
+    "reason": "PoW live geloest und per /captcha/verify bestaetigt (status ok); /api/videos/{code}/playback liefert ohne Browser-Kontext HTTP 405",
+    "checked": [
+      "captcha nonce/difficulty/token",
+      "pow filemoon-v1",
+      "captcha/verify status ok",
+      "playback HTTP 405"
+    ],
+    "misses": [
+      "playback.sources"
+    ],
+    "http_status": 405
   }
 }

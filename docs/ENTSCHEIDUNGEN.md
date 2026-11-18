@@ -118,6 +118,20 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Release-Installation wird per `adb install -r` aus dem Release-Asset
   belegt; der Updater-Pfad bis zum System-Installer ist live.
 
+## 2026-11-18 — Block 13: Code vor Statusetikett
+
+- `js`, `pow` und `idFromTitle` sind echte Engine-Faehigkeiten mit Unit-Tests
+  und Live-Vektoren, keine Doku-Versprechen.
+- Filemoons PoW ist deterministisch nachgebaut: nonce/difficulty/token einer
+  echten Challenge, Loesung `3643`, vom Server mit `status: ok` bestaetigt.
+- Ein sichtbarer WebView-Frame liefert Token, Cookies und ggf. die Stream-URL;
+  der Resolver uebernimmt sie und laeuft die Kette zu Ende (20 s).
+- Kinokiste und MegaKino nutzen denselben Pfad auf Quellenebene, bevor ein
+  Pack als blockiert markiert wird.
+- Weitere Ziele kommen aus filmpalast, filmo und s.to/serienstream; fuer
+  Hoster ohne Ziel im Katalog bleibt `check.reason` mit echtem Befund.
+
+
 
 
 

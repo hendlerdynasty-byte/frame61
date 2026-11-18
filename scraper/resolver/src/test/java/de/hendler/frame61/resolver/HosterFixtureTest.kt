@@ -57,6 +57,7 @@ class HosterFixtureTest {
             val meta = HosterPackValidator.json.parseToJsonElement(metaFile.readText()).jsonObject
             val packId = requireNotNull(meta["id"]) { "meta.id fehlt" }.jsonPrimitive.content
             val sourceUrl = requireNotNull(meta["sourceUrl"]) { "meta.sourceUrl fehlt" }.jsonPrimitive.content
+            val inputUrl = meta["inputUrl"]?.jsonPrimitive?.content ?: sourceUrl
             val expected = requireNotNull(
                 HosterPackValidator.json
                     .parseToJsonElement(File(dir, "result.expected.json").readText())
@@ -78,7 +79,7 @@ class HosterFixtureTest {
             assertEquals("$packId: Fixture weicht vom Hash ab", recordedHash, actualHash)
 
             val outcome = HosterResolver(listOf(pack), FixtureFetcher(bodies))
-                .resolve(sourceUrl, cookies = "fixture=1")
+                .resolve(inputUrl, cookies = "fixture=1")
             assertTrue("$packId: $outcome", outcome is HosterOutcome.Resolved)
             assertEquals("$packId: falsche Ergebnis-URL", expected, (outcome as HosterOutcome.Resolved).url)
             reports += "$packId -> ${outcome.url}"
