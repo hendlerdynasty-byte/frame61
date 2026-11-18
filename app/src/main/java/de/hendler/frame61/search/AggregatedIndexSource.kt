@@ -75,7 +75,8 @@ class AggregatedIndexSource @Inject constructor(
                     type = match.type,
                     poster = match.poster,
                     overview = match.overview,
-                    lang = "de"
+                    lang = "de",
+                    runtime = match.runtime
                 )
             }.distinctBy { it.externalId }.take(limit)
         }

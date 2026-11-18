@@ -31,7 +31,9 @@ data class SearchHit(
     val poster: String? = null,
     val overview: String? = null,
     /** "de" for German index hits; null when unknown. */
-    val lang: String? = null
+    val lang: String? = null,
+    /** Runtime in minutes, used for dedupe/sorting. */
+    val runtime: Int? = null
 )
 
 /**

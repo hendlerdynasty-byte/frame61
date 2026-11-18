@@ -64,13 +64,17 @@ class SearchViewModel @Inject constructor(
                 for (hit in hits) {
                     // getOrPut statt HashMap.putIfAbsent: putIfAbsent ist API 24,
                     // die App läuft ab minSdk 23 (Lint NewApi).
-                    merged.getOrPut("${hit.title}|${hit.year}") { hit }
+                    merged.getOrPut("${hit.title}|${hit.year}|${hit.runtime ?: 0}") { hit }
                 }
             }
+            val ordered = merged.values.sortedWith(
+                compareByDescending<SearchHit> { it.lang == "de" }
+                    .thenBy { it.title.lowercase() }
+            ).take(20)
             _state.update {
                 it.copy(
                     isLoading = false,
-                    hits = merged.values.take(20).toList(),
+                    hits = ordered,
                     error = if (needle.isBlank()) "Bitte Suchbegriff eingeben" else null
                 )
             }
