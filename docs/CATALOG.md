@@ -56,6 +56,19 @@ Poster und Duplikatfreiheit.
   (z. B. `Comedy` → `Komödie`, `Crime` → `Krimi`).
 - Jahrzehnt: `1950er` bis `2020er`, absteigend; „Alle Jahre“ setzt zurueck.
 
+## Geraetenachweis (A52)
+
+| Bild | Inhalt |
+|---|---|
+| `docs/design/block10/series/06.png` | Serien: 584 Titel, Genre-/Jahrzehnt-Pillen, lokale Poster |
+| `docs/design/block10/filters/05.png` | Filme: 16 Seed-Titel, gleiche Filter |
+| `docs/design/block10/filters2/07.png` | Genre Action: 162 Titel |
+| `docs/design/block10/filters2/10.png` | Action + 2020er: 7 Titel |
+| `docs/design/block10/progress/12.png` | Start mit sichtbarer Fortschrittsspur (Breaking Bad) |
+
+Die Bilder stammen aus dem QUICK_SMOKE-Lauf `job-114ada04f6c44d8b`
+(PASS, APK `1945345c…`) und interaktiven Bruecken-Sitzungen am A52.
+
 ## Offen
 
 - Neue Titel haben leere `episodes`-Listen im Snapshot; die Detailansicht
