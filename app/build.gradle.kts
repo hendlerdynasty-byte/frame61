@@ -56,6 +56,17 @@ android {
             isDebuggable = true
             signingConfig = signingConfigs.getByName("debug")
         }
+        // Messvariante: R8 wie Release, aber mit Debug-Key und eigener ID.
+        // Nicht fuer Store/Release; nur fuer lokale Performance-Messungen.
+        create("perf") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            applicationIdSuffix = ".perf"
+            versionNameSuffix = "-perf"
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
+            isProfileable = true
+        }
     }
 
     compileOptions {
@@ -141,6 +152,7 @@ dependencies {
 
     // Lifecycle
     implementation(libs.androidx.core.ktx)
+    implementation("androidx.profileinstaller:profileinstaller:1.4.1")
 
     // Material Components
     implementation(libs.androidx.material)

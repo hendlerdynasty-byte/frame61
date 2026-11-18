@@ -13,6 +13,9 @@ import de.hendler.frame61.player.PlayerUiState
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -206,13 +209,18 @@ class PlayerViewModel @Inject constructor(
 
     override fun onCleared() {
         tickJob?.cancel()
-        viewModelScope.launch {
+        // viewModelScope is already cancelled here; a one-shot IO scope keeps the
+        // final position. Measured: the old save never ran, so the last seconds
+        // were lost on every exit.
+        val position = mediaPlayer.state.value.positionMs
+        val duration = mediaPlayer.state.value.durationMs
+        CoroutineScope(SupervisorJob() + Dispatchers.IO).launch {
             resumeRepository.save(
                 profileId = profileId,
                 titleId = CatalogPlayback.stableId(titleId),
                 episodeId = episodeId,
-                positionMs = mediaPlayer.state.value.positionMs,
-                durationMs = mediaPlayer.state.value.durationMs
+                positionMs = position,
+                durationMs = duration
             )
         }
         mediaPlayer.release()

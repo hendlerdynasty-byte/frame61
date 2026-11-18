@@ -71,6 +71,7 @@ class CatalogRepository private constructor(
     fun shuffled(seed: Int): List<CatalogItem> =
         load().items.shuffled(kotlin.random.Random(seed.toLong()))
 
+    @Synchronized
     private fun load(): Catalog {
         cache?.let { return it }
         // The bundled catalog carries TVmaze-style markup ("<b>Breaking Bad</b>

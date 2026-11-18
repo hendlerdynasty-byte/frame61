@@ -6,11 +6,13 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogRepository
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 data class HomeUiState(
@@ -49,7 +51,9 @@ class HomeViewModel @Inject constructor(
 
     fun load(seed: Int = 0) {
         viewModelScope.launch {
-            val items = runCatching { catalog.all() }.getOrDefault(emptyList())
+            val items = withContext(Dispatchers.IO) {
+                runCatching { catalog.all() }.getOrDefault(emptyList())
+            }
             if (items.isEmpty()) {
                 _state.update { it.copy(isLoading = false, error = "Katalog leer") }
                 return@launch
@@ -58,8 +62,10 @@ class HomeViewModel @Inject constructor(
         }
     }
 
-    private fun rebuild(seed: Int) {
-        val items = runCatching { catalog.all() }.getOrDefault(emptyList())
+    private suspend fun rebuild(seed: Int) {
+        val items = withContext(Dispatchers.IO) {
+            runCatching { catalog.all() }.getOrDefault(emptyList())
+        }
         if (items.isEmpty()) {
             _state.update { it.copy(isLoading = false, error = "Katalog leer") }
             return
@@ -82,12 +88,13 @@ class HomeViewModel @Inject constructor(
     fun applyLayout(layout: Set<RailKind>) {
         val seed = _state.value.content.rails.size
         _state.update { it.copy(layout = layout) }
-        rebuild(seed)
+        viewModelScope.launch { rebuild(seed) }
     }
 
     fun openRandom() {
         viewModelScope.launch {
-            catalog.all().randomOrNull()?.let { _state.update { s -> s.copy(error = null) } }
+            val random = withContext(Dispatchers.IO) { catalog.all().randomOrNull() }
+            random?.let { _state.update { s -> s.copy(error = null) } }
         }
     }
 }
