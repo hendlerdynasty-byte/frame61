@@ -180,7 +180,14 @@ def validate_source_pack(
             non_empty(rule.get("endpoint")) or non_empty(rule.get("path"))
         ):
             addressable += 1
-        validate_rule(where, name, rule, kind, report)
+        effective_kind = kind
+        if isinstance(rule, dict):
+            fmt = rule.get("format")
+            if fmt is not None and fmt not in ("html", "api"):
+                report.error(where, f"Regel '{name}': format={fmt!r}")
+            elif fmt is not None:
+                effective_kind = fmt
+        validate_rule(where, name, rule, effective_kind, report)
     if addressable == 0:
         report.error(where, "keine Regel mit endpoint/path")
 

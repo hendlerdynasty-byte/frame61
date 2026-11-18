@@ -2,6 +2,34 @@
 
 ## [Unreleased]
 
+### Block 9 — Indexseiten-Nachweise (2026-11-18)
+
+#### Hinzugefügt
+- `format` pro Pack-Regel (`html`/`api`): gemischte Packs mit JSON-Suche und
+  HTML-Detail/Folgen.
+- `PackInterpreter` entfernt HTML aus API-Titeln (AniWorld `<em>…</em>`) und
+  wählt den Parser pro Regel.
+- `pack_worker.py`: POST-Ziele, detail-URLs mit `{titleId}`, Fixture-Aufzeichnung
+  mit getrimmter Antwort, `search.expected.json`, `responseSha256` und
+  `fullResponseSha256`.
+- Sechs verifizierte Pack-Ziele mit Fixtures: `aniworld`, `filmpalast`,
+  `filmstarts`, `filmo`, `s-to`, `serienstream`.
+- `docs/INDEX.md`: Status aller 14 Seiten, Selektoren, Hashes und Blockaden.
+- Test `api search strips html and mixed rules use their format`.
+
+#### Geändert
+- `aniworld.json`: POST `/ajax/search`, HTML-Detail und Folgenliste.
+- `filmpalast.json`: echte HTML-Suche `/search/title/{query}`, Detail und VOE-
+  Stream-Link.
+- `s-to.json`/`serienstream.json`: JSON-Suggest `shows[]`, HTML-Detail.
+- `filmo.json`: JSON-Suggest `movies[]`, HTML-Detail.
+- `filmstarts.json`: JSON-Autocomplete `results[]`.
+- `bs-to.json`: erreichbare Domain `burningseries.ac`, Status mit Grund.
+
+#### Ergebnis
+- 6/14 verifiziert, 5 erreichbar ohne auswertbaren Suchpfad, 3 Domains tot.
+  Keine erfundenen Selektoren, keine Attrappen-Packs für tote Domains.
+
 ### Block 8 — Hoster-Nachweise (2026-11-18)
 
 #### Hinzugefügt

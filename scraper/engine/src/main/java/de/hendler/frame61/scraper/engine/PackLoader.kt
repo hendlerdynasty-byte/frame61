@@ -55,6 +55,8 @@ data class PackRule(
     val body: String? = null,
     val queryParam: String? = null,
     val pageLimit: Int = 20,
+    /** Optional per-rule dialect: `html` or `api`; overrides the pack's `kind`. */
+    val format: String? = null,
     // html: search
     val resultSelector: String? = null,
     val titleSelector: String? = null,
@@ -185,6 +187,7 @@ object PackLoaderValidator {
         if (pack.kind !in setOf("html", "api")) return false
         val rules = listOfNotNull(pack.search, pack.detail, pack.episodes, pack.streams)
         if (rules.isEmpty()) return false
+        if (rules.any { it.format != null && it.format !in setOf("html", "api") }) return false
         // A rule may be parse-only (e.g. streams scraped from the detail page);
         // the pack as a whole needs at least one addressable target.
         return rules.any { it.endpoint.orEmpty().isNotBlank() || it.path.orEmpty().isNotBlank() }
@@ -200,6 +203,9 @@ object PackLoaderValidator {
         if (pack.kind !in setOf("html", "api")) return "kind='${pack.kind}'"
         val rules = listOfNotNull(pack.search, pack.detail, pack.episodes, pack.streams)
         if (rules.isEmpty()) return "keine Regel"
+        rules.firstOrNull { it.format != null && it.format !in setOf("html", "api") }?.let {
+            return "format='${it.format}'"
+        }
         val addressable = rules.count {
             it.endpoint.orEmpty().isNotBlank() || it.path.orEmpty().isNotBlank()
         }

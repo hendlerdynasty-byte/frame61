@@ -38,6 +38,10 @@ Ein Source Pack ist die JSON-Datei `assets/sources/<id>.json`. Sie beschreibt
 | `body` | string | Request-Body bei `POST` |
 | `queryParam` | string | Name des Query-Parameters für den Suchbegriff |
 | `pageLimit` | int | Seitenlimit der Quelle |
+| `format` | string | optional `html` oder `api`; überschreibt `kind` für diese Regel |
+
+`format` erlaubt gemischte Packs: Suche über eine JSON-API, Detailseite und
+Folgen weiter als HTML. Ohne `format` gilt das Pack-weite `kind`.
 
 Platzhalter in `endpoint`/`path`/`body`: `{{query}}`, `{{q}}`, `{{page}}`,
 `{{titleId}}`, `{{id}}`, `{{episodeId}}`. Nicht ersetzte Platzhalter bleiben

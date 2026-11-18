@@ -1,60 +1,53 @@
 {
   "id": "aniworld",
   "name": "aniworld.to",
-  "version": 1,
+  "version": 2,
   "minEngine": "1.0.0",
   "tier": "A",
   "legalFree": false,
   "baseUrl": "https://aniworld.to",
+  "kind": "html",
   "search": {
-    "endpoint": "/suche/{query}",
-    "queryParam": null,
-    "resultSelector": ".anime-item",
-    "titleSelector": "h3 a",
-    "yearSelector": ".jahr",
-    "typeSelector": ".type",
+    "endpoint": "/ajax/search",
+    "method": "POST",
+    "body": "keyword={{query}}",
+    "format": "api",
+    "jsonPath": ".",
+    "idPath": "link",
+    "titlePath": "title",
     "pageLimit": 20
   },
   "detail": {
-    "endpoint": "/anime/{titleId}",
-    "episodeSelector": ".episode-list .episode",
-    "seasonSelector": ".season-tab",
-    "episodeTitleSelector": "a",
-    "episodeLinkSelector": "a",
-    "episodeIndexSelector": "data-episode"
+    "endpoint": "/anime/stream/{titleId}",
+    "format": "html",
+    "resultSelector": "body",
+    "titleSelector": "h1"
   },
-  "streams": {
-    "selector": ".stream-item a",
-    "urlAttr": "href",
-    "qualitySelector": ".quality",
-    "langSelector": ".language",
-    "hosterSelector": ".hoster",
-    "healthAttr": "data-health",
-    "minHealth": 0.6,
-    "qualityMap": {
-      "HD": "1080",
-      "FHD": "1080",
-      "SD": "720"
-    },
-    "langMap": {
-      "DE": "de",
-      "EN": "en",
-      "OmU": "de"
-    },
-    "referrers": [
-      {
-        "domain": "aniworld.to",
-        "accept": true
-      }
-    ]
+  "episodes": {
+    "endpoint": "/anime/stream/{titleId}",
+    "format": "html",
+    "episodeSelector": "table.seasonEpisodesList tbody tr",
+    "episodeTitleSelector": "td.seasonEpisodeTitle",
+    "episodeLinkSelector": "td.seasonEpisodeTitle a",
+    "episodeIndexSelector": "td.season1EpisodeID"
   },
-  "verified": false,
-  "last_check": "2026-11-17T17:35:14Z",
+  "verified": true,
+  "last_check": "2026-11-18T07:37:11Z",
   "check": {
-    "status": "no_target",
-    "reason": "kein Ziel in tools/fetch/targets.json",
-    "checked": [],
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "detail.resultSelector",
+      "detail.titleSelector",
+      "episodes.episodeSelector",
+      "episodes.episodeTitleSelector",
+      "episodes.episodeLinkSelector",
+      "episodes.episodeIndexSelector"
+    ],
     "misses": [],
-    "http_status": null
+    "http_status": 200
   }
 }

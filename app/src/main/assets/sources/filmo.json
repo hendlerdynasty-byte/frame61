@@ -1,0 +1,40 @@
+{
+  "id": "filmo",
+  "name": "Filmo",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "A",
+  "legalFree": false,
+  "baseUrl": "https://filmo.to",
+  "kind": "html",
+  "search": {
+    "endpoint": "/search/suggest",
+    "queryParam": "q",
+    "format": "api",
+    "jsonPath": "movies",
+    "idPath": "url",
+    "titlePath": "title",
+    "pageLimit": 20
+  },
+  "detail": {
+    "endpoint": "/movies/{titleId}",
+    "format": "html",
+    "resultSelector": "body",
+    "titleSelector": "h1"
+  },
+  "verified": true,
+  "last_check": "2026-11-18T07:37:14Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "detail.resultSelector",
+      "detail.titleSelector"
+    ],
+    "misses": [],
+    "http_status": 200
+  }
+}

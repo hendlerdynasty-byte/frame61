@@ -1,0 +1,33 @@
+{
+  "id": "filmstarts",
+  "name": "FILMSTARTS",
+  "version": 1,
+  "minEngine": "1.0.0",
+  "tier": "B",
+  "legalFree": true,
+  "baseUrl": "https://www.filmstarts.de",
+  "kind": "api",
+  "search": {
+    "endpoint": "/_/autocomplete/{query}",
+    "format": "api",
+    "jsonPath": "results",
+    "idPath": "entity_id",
+    "titlePath": "label",
+    "typePath": "facet",
+    "pageLimit": 20
+  },
+  "verified": true,
+  "last_check": "2026-11-18T07:37:14Z",
+  "check": {
+    "status": "verified",
+    "reason": "",
+    "checked": [
+      "search.jsonPath",
+      "search.idPath",
+      "search.titlePath",
+      "search.typePath"
+    ],
+    "misses": [],
+    "http_status": 200
+  }
+}

@@ -118,7 +118,9 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         val items = rule.jsonPath.arrayIn(body) ?: return emptyList()
         return items.mapNotNull { item ->
             val id = rule.idPath.stringOn(item).orEmpty().toTitleId()
-            val title = rule.titlePath.stringOn(item).orEmpty()
+            val rawTitle = rule.titlePath.stringOn(item).orEmpty()
+            // APIs such as AniWorld highlight matches with <em>; show plain text.
+            val title = if (rawTitle.contains('<')) Jsoup.parse(rawTitle).text() else rawTitle
             if (id.isBlank() && title.isBlank()) return@mapNotNull null
             SearchResult(
                 id = id,
@@ -186,19 +188,25 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
     }
 
     fun parseSearch(pack: SourcePack, body: String): List<SearchResult> =
-        if (pack.isApi()) parseSearchApi(pack, body) else parseSearchHtml(pack, body)
+        if (pack.isApi(pack.search)) parseSearchApi(pack, body) else parseSearchHtml(pack, body)
 
     fun parseDetail(pack: SourcePack, body: String): DetailResult? =
-        if (pack.isApi()) parseDetailApi(pack, body) else parseDetailHtml(pack, body)
+        if (pack.isApi(pack.detail)) parseDetailApi(pack, body) else parseDetailHtml(pack, body)
 
     fun parseEpisodes(pack: SourcePack, body: String): List<EpisodeResult> =
-        if (pack.isApi()) parseEpisodesApi(pack, body) else parseEpisodesHtml(pack, body)
+        if (pack.isApi(pack.episodes ?: pack.detail)) {
+            parseEpisodesApi(pack, body)
+        } else {
+            parseEpisodesHtml(pack, body)
+        }
 
     fun parseStreams(pack: SourcePack, body: String, params: Map<String, String> = emptyMap()): List<StreamResult> =
-        if (pack.isApi()) parseStreamsApi(pack, body, params) else parseStreamsHtml(pack, body)
+        if (pack.isApi(pack.streams)) parseStreamsApi(pack, body, params) else parseStreamsHtml(pack, body)
 }
 
-private fun SourcePack.isApi(): Boolean = kind.equals("api", ignoreCase = true)
+/** Per-rule `format` wins over the pack-wide `kind` so one pack can mix API and HTML. */
+private fun SourcePack.isApi(rule: PackRule?): Boolean =
+    rule?.format?.equals("api", ignoreCase = true) ?: kind.equals("api", ignoreCase = true)
 
 // --------------------------------------------------------------- Jsoup -----
 

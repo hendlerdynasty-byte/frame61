@@ -5,10 +5,10 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 ## Übersicht
 
-- Source-Packs: **26**
-- legal-frei: **12**, Grauzone Tier A/B: **14**
-- live verifiziert: **2** (archive-org, ard-mediathek)
-- Fixtures: 2 recorded, 8 synthetic, 16 ohne
+- Source-Packs: **29**
+- legal-frei: **13**, Grauzone Tier A/B: **17**
+- live verifiziert: **8** (aniworld, archive-org, ard-mediathek, filmo, filmpalast, filmstarts, s-to, serienstream)
+- Fixtures: 8 recorded, 8 synthetic, 13 ohne
 - Hoster-Packs: **11** (live verifiziert: 1)
 
 ## Source-Packs
@@ -17,27 +17,30 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 |---|---|---|---|---|---|---|---|
 | `3sat` | C | ja | html | nein | 2026-11-17T17:35:14Z | synthetic | kein belegtes Ziel (Worker) |
 | `anime-loads` | B | nein | html | nein | 2026-11-17T17:35:14Z | – | kein belegtes Ziel (Worker) |
-| `aniworld` | A | nein | html | nein | 2026-11-17T17:35:14Z | – | kein belegtes Ziel (Worker) |
+| `aniworld` | A | nein | html | ja | 2026-11-18T07:37:11Z | recorded | — |
 | `archive-org` | C | ja | api | ja | 2026-11-17T17:35:14Z | recorded | — |
 | `ard-mediathek` | C | ja | api | ja | 2026-11-17T17:35:16Z | recorded | — |
 | `ard` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `arte` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `bs-to` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `cine` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `bs-to` | B | nein | html | nein | 2026-11-18T07:37:12Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `cine` | A | nein | html | nein | 2026-11-18T07:37:13Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `dokujunkies` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmfans` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `filmpalast` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `filmo` | A | nein | html | ja | 2026-11-18T07:37:14Z | recorded | — |
+| `filmpalast` | A | nein | html | ja | 2026-11-18T07:37:14Z | recorded | — |
+| `filmstarts` | B | ja | api | ja | 2026-11-18T07:37:14Z | recorded | — |
 | `hdfilme` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `kika` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `kinokiste` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `kinox` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `megakino` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `kinokiste` | A | nein | html | nein | 2026-11-18T07:37:15Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `kinox` | B | nein | html | nein | 2026-11-18T07:37:15Z | – | Selektoren ohne Treffer: search.resultSelector |
+| `megakino` | A | nein | html | nein | 2026-11-18T07:37:16Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `movie4k` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `netzkino` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `plex-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `pluto-tv` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `rakuten-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `s-to` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `s-to` | A | nein | html | ja | 2026-11-18T07:37:16Z | recorded | — |
+| `serienstream` | A | nein | html | ja | 2026-11-18T07:37:25Z | recorded | — |
 | `streamkiste` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `youtube` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `zdf` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
