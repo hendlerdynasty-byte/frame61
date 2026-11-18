@@ -29,7 +29,9 @@ sealed interface HosterOutcome {
  */
 class HosterResolver(
     private val packs: List<HosterPack>,
-    private val fetcher: BodyFetcher
+    private val fetcher: BodyFetcher,
+    private val jsEvaluator: JsEvaluator? = null,
+    private val powSolver: PowSolver = PowSolver()
 ) {
 
     private val json = Json {
@@ -54,20 +56,56 @@ class HosterResolver(
 
         val vars = linkedMapOf<String, String>()
         var used = 0
+        val requestHeaders = if (cookies.isNullOrBlank()) {
+            emptyMap()
+        } else {
+            mapOf("Cookie" to cookies)
+        }
         for (step in pack.steps) {
             used++
             when (step.action) {
                 "sleep" -> { /* no delay in the pure step machine */ }
                 "get" -> {
                     val target = expand(step.url ?: return HosterOutcome.Failed(url, "get ohne url", used), url, vars)
-                    vars[step.saveAs ?: "body"] = runCatching { fetcher.get(target, step.headers) }
-                        .getOrElse { return HosterOutcome.Failed(url, "get fehlgeschlagen: ${it.message}", used) }
+                    val headers = step.headers.mapValues { (_, value) -> expand(value, url, vars) }
+                    vars[step.saveAs ?: "body"] = runCatching {
+                        fetcher.get(target, requestHeaders + headers)
+                    }.getOrElse { return HosterOutcome.Failed(url, "get fehlgeschlagen: ${it.message}", used) }
                 }
                 "post" -> {
                     val target = expand(step.url ?: return HosterOutcome.Failed(url, "post ohne url", used), url, vars)
                     val body = expand(step.body.orEmpty(), url, vars)
-                    vars[step.saveAs ?: "body"] = runCatching { fetcher.post(target, body, step.headers) }
-                        .getOrElse { return HosterOutcome.Failed(url, "post fehlgeschlagen: ${it.message}", used) }
+                    val headers = step.headers.mapValues { (_, value) -> expand(value, url, vars) }
+                    vars[step.saveAs ?: "body"] = runCatching {
+                        fetcher.post(target, body, requestHeaders + headers)
+                    }.getOrElse { return HosterOutcome.Failed(url, "post fehlgeschlagen: ${it.message}", used) }
+                }
+                "js" -> {
+                    val script = step.script
+                        ?: return HosterOutcome.Failed(url, "js ohne script", used)
+                    val evaluator = jsEvaluator
+                        ?: return HosterOutcome.Failed(url, "js: kein WebView verfügbar", used)
+                    val target = expand(step.url ?: url, url, vars)
+                    val value = runCatching { evaluator.evaluate(target, script) }.getOrNull()
+                    if (value.isNullOrBlank()) {
+                        return HosterOutcome.Failed(url, "js: kein Rückgabewert", used)
+                    }
+                    vars[step.saveAs ?: "js"] = value
+                }
+                "pow" -> {
+                    val inputKey = step.input.orEmpty()
+                    val input = vars[inputKey]
+                        ?: return HosterOutcome.Failed(url, "pow: input '$inputKey' unbekannt", used)
+                    val difficulty = step.difficultyInput
+                        ?.let { vars[it]?.toIntOrNull() }
+                        ?: step.difficulty
+                    val solution = powSolver.solve(step, input, difficulty)
+                        ?: return HosterOutcome.Failed(
+                            url,
+                            "pow: keine Lösung für ${step.algorithm}",
+                            used
+                        )
+                    vars[step.saveAs ?: "solution"] = solution
                 }
                 "regex" -> {
                     val input = vars[step.input.orEmpty()]

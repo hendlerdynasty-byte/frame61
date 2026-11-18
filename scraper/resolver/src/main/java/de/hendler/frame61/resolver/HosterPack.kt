@@ -39,13 +39,27 @@ data class HosterStep(
     val group: Int = 1,
     val path: String? = null,
     val ms: Long = 0L,
-    val saveAs: String? = null
+    val saveAs: String? = null,
+    // js: script executed in the visible WebView (8 s timeout).
+    val script: String? = null,
+    // pow: deterministic proof-of-work, configurable algorithm.
+    val algorithm: String? = null,
+    val difficulty: Int? = null,
+    val difficultyInput: String? = null,
+    val targetPrefix: String? = null,
+    val separator: String = ":",
+    val maxIterations: Int = 1_000_000
 )
+
+/** Executes a small script inside the app WebView; null means no result. */
+interface JsEvaluator {
+    suspend fun evaluate(url: String, script: String, timeoutMs: Long = 8_000L): String?
+}
 
 /** Validation and file loading without an Android Context. */
 object HosterPackValidator {
 
-    val ACTIONS = setOf("get", "regex", "json", "post", "sleep", "copy")
+    val ACTIONS = setOf("get", "regex", "json", "post", "sleep", "copy", "js", "pow")
 
     val json = Json {
         ignoreUnknownKeys = true
@@ -80,6 +94,22 @@ object HosterPackValidator {
                 }
                 "sleep" -> if (step.ms < 0) return "step $index: negative sleep"
                 "copy" -> if (step.url.isNullOrBlank()) return "step $index: url fehlt"
+                "js" -> if (step.script.isNullOrBlank()) return "step $index: script fehlt"
+                "pow" -> {
+                    if (step.input.isNullOrBlank()) return "step $index: input fehlt"
+                    when (step.algorithm) {
+                        "filemoon-v1" -> {
+                            if (step.difficulty == null && step.difficultyInput.isNullOrBlank()) {
+                                return "step $index: difficulty/difficultyInput fehlt"
+                            }
+                        }
+                        "sha256" -> if (step.targetPrefix.isNullOrBlank()) {
+                            return "step $index: targetPrefix fehlt"
+                        }
+                        else -> return "step $index: algorithm='${step.algorithm}'"
+                    }
+                    if (step.maxIterations <= 0) return "step $index: maxIterations <= 0"
+                }
             }
         }
         if (!pack.result.isNullOrBlank() && pack.result !in pack.steps.mapNotNull { it.saveAs }) {

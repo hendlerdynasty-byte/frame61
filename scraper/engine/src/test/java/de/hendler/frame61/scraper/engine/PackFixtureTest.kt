@@ -153,6 +153,21 @@ class PackFixtureTest {
     }
 
     @Test
+    fun `idFromTitle derives the id from the hit text`() {
+        val pack = PackLoaderValidator.parse(
+            """
+            {"id":"bs","name":"BS","baseUrl":"https://x.invalid",
+             "search":{"endpoint":"/search","resultSelector":"option[value]",
+                       "idFromTitle":true,"idRegex":"^(.+)$"}}
+            """.trimIndent()
+        ) ?: error("idFromTitle pack must parse")
+        val results = interpreter.parseSearchHtml(pack, """<option value="134">Naruto</option>""")
+        assertEquals(1, results.size)
+        assertEquals("Naruto", results.first().id)
+        assertEquals("Naruto", results.first().title)
+    }
+
+    @Test
     fun `api search strips html and mixed rules use their format`() {
         val pack = PackLoaderValidator.parse(
             """

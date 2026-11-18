@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.ui.CaptchaWebViewFrame
 
 /**
  * Connects [PlayerScreen] to [PlayerViewModel].
@@ -30,6 +31,7 @@ fun PlayerRoute(
     val viewModel: PlayerViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
     val subtitleScale by viewModel.subtitleScale.collectAsStateWithLifecycle()
+    val captcha by viewModel.captchaRequest.collectAsStateWithLifecycle()
 
     LaunchedEffect(item.id, episodeId, episodeNumber) {
         viewModel.start(
@@ -42,21 +44,32 @@ fun PlayerRoute(
         )
     }
 
-    PlayerScreen(
-        state = state.ui,
-        player = viewModel.player,
-        countdownSeconds = state.countdownSeconds,
-        sourceNote = state.sourceNote,
-        subtitleScale = subtitleScale,
-        onTogglePlay = viewModel::togglePlay,
-        onSeekBack = { viewModel.seekBy(-10_000L) },
-        onSeekForward = { viewModel.seekBy(10_000L) },
-        onCancelCountdown = viewModel::cancelCountdown,
-        onRetry = viewModel::retry,
-        onSelectAudio = viewModel::selectAudio,
-        onSelectText = viewModel::selectText,
-        onCycleSpeed = viewModel::cycleSpeed
-    )
+    Box(modifier = Modifier.fillMaxSize()) {
+        PlayerScreen(
+            state = state.ui,
+            player = viewModel.player,
+            countdownSeconds = state.countdownSeconds,
+            sourceNote = state.sourceNote,
+            subtitleScale = subtitleScale,
+            onTogglePlay = viewModel::togglePlay,
+            onSeekBack = { viewModel.seekBy(-10_000L) },
+            onSeekForward = { viewModel.seekBy(10_000L) },
+            onCancelCountdown = viewModel::cancelCountdown,
+            onRetry = viewModel::retry,
+            onSelectAudio = viewModel::selectAudio,
+            onSelectText = viewModel::selectText,
+            onCycleSpeed = viewModel::cycleSpeed
+        )
+
+        captcha?.let { request ->
+            CaptchaWebViewFrame(
+                url = request.url,
+                hoster = request.hoster,
+                onResult = viewModel::submitCaptcha,
+                onCancel = viewModel::cancelCaptcha
+            )
+        }
+    }
 
     state.fatal?.let { message ->
         Surface {

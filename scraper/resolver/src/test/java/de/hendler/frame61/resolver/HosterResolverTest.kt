@@ -179,4 +179,61 @@ class HosterResolverTest {
         assertTrue(out is HosterOutcome.Failed)
         assertEquals("regex ohne Treffer", (out as HosterOutcome.Failed).reason)
     }
+
+    @Test
+    fun `js step stores the WebView result`() = runTest {        val p = pack(
+            id = "js",
+            domains = listOf("host.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "js", script = "return window.token", saveAs = "token"),
+                HosterStep(action = "copy", url = "https://cdn/x/{token}.m3u8", saveAs = "file")
+            )
+        )
+        val evaluator = object : JsEvaluator {
+            override suspend fun evaluate(url: String, script: String, timeoutMs: Long): String = "abc123"
+        }
+        val out = HosterResolver(listOf(p), FakeFetcher(), evaluator)
+            .resolve("https://host.example/e/1")
+        assertEquals(HosterOutcome.Resolved("https://cdn/x/abc123.m3u8", 2), out)
+    }
+
+    @Test
+    fun `pow step solves a sha256 prefix`() = runTest {
+        val p = pack(
+            id = "pow",
+            domains = listOf("host.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "copy", url = "frame61", saveAs = "challenge"),
+                HosterStep(action = "pow", algorithm = "sha256", input = "challenge", targetPrefix = "0", saveAs = "solution"),
+                HosterStep(action = "copy", url = "https://cdn/x/{solution}.m3u8", saveAs = "file")
+            )
+        )
+        val out = HosterResolver(listOf(p), FakeFetcher()).resolve("https://host.example/e/1")
+        assertTrue(out is HosterOutcome.Resolved)
+        assertTrue((out as HosterOutcome.Resolved).url.startsWith("https://cdn/x/"))
+    }
+
+    @Test
+    fun `cookie jar is forwarded as Cookie header`() = runTest {
+        val fetcher = object : BodyFetcher {
+            var cookie: String? = null
+            override suspend fun get(url: String, headers: Map<String, String>): String {
+                cookie = headers["Cookie"]
+                return "<html></html>"
+            }
+            override suspend fun post(url: String, body: String, headers: Map<String, String>): String =
+                get(url, headers)
+        }
+        val p = pack(
+            id = "cookie",
+            domains = listOf("host.example"),
+            result = "file",
+            steps = listOf(HosterStep(action = "get", url = "https://{host}{path}", saveAs = "file"))
+        )
+        val out = HosterResolver(listOf(p), fetcher).resolve("https://host.example/e/1", "cf_clearance=1")
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals("cf_clearance=1", fetcher.cookie)
+    }
 }

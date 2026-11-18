@@ -25,27 +25,47 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
 
     // ------------------------------------------------------------ network --
 
-    fun search(pack: SourcePack, query: String, page: Int = 1): List<SearchResult> {
+    fun search(
+        pack: SourcePack,
+        query: String,
+        page: Int = 1,
+        cookies: String? = null
+    ): List<SearchResult> {
         val rule = pack.search ?: return emptyList()
-        val body = http.get(pack, rule, mapOf("query" to query, "q" to query, "page" to page.toString()))
+        val body = http.get(
+            pack,
+            rule,
+            mapOf("query" to query, "q" to query, "page" to page.toString()),
+            cookies
+        )
         return parseSearch(pack, body)
     }
 
-    fun detail(pack: SourcePack, id: String): DetailResult? {
+    fun detail(pack: SourcePack, id: String, cookies: String? = null): DetailResult? {
         val rule = pack.detail ?: return null
-        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id))
+        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id), cookies)
         return parseDetail(pack, body)
     }
 
-    fun episodes(pack: SourcePack, id: String): List<EpisodeResult> {
+    fun episodes(pack: SourcePack, id: String, cookies: String? = null): List<EpisodeResult> {
         val rule = pack.episodes ?: pack.detail ?: return emptyList()
-        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id))
+        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id), cookies)
         return parseEpisodes(pack, body)
     }
 
-    fun streams(pack: SourcePack, id: String, episodeId: String? = null): List<StreamResult> {
+    fun streams(
+        pack: SourcePack,
+        id: String,
+        episodeId: String? = null,
+        cookies: String? = null
+    ): List<StreamResult> {
         val rule = pack.streams ?: return emptyList()
-        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id, "episodeId" to (episodeId ?: "")))
+        val body = http.get(
+            pack,
+            rule,
+            mapOf("titleId" to id, "id" to id, "episodeId" to (episodeId ?: "")),
+            cookies
+        )
         return parseStreams(pack, body)
     }
 
@@ -57,9 +77,22 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         return rule.resultSelector.selectNodes(doc).map { node ->
             val link = rule.linkSelector.selectFirstIn(node) ?: node.selectFirstOrNull("a") ?: node
             val href = link.attrOr(rule.idAttr ?: "href")
+            val title = rule.titleSelector.textOf(node).ifBlank { link.text() }.trim()
+            val derivedId = if (rule.idFromTitle) {
+                rule.idRegex
+                    ?.let { regex ->
+                        runCatching { Regex(regex).find(title) }.getOrNull()
+                            ?.groupValues
+                            ?.getOrNull(rule.idGroup)
+                    }
+                    ?.takeIf { it.isNotBlank() }
+                    ?: title.takeIf { it.isNotBlank() }
+            } else {
+                null
+            }
             SearchResult(
-                id = href.toTitleId(),
-                title = rule.titleSelector.textOf(node).ifBlank { link.text() },
+                id = derivedId ?: href.toTitleId(),
+                title = title,
                 year = rule.yearSelector.intOf(node),
                 type = rule.typeSelector.textOf(node).ifBlank { null },
                 url = link.absHref(rule.idAttr ?: "href")

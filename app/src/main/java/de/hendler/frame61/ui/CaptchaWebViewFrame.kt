@@ -1,60 +1,170 @@
 package de.hendler.frame61.ui
 
 import android.annotation.SuppressLint
+import android.graphics.Bitmap
+import android.webkit.CookieManager
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import de.hendler.frame61.playback.CaptchaResult
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.suspendCancellableCoroutine
+import org.json.JSONTokener
+import kotlin.coroutines.resume
 
 /**
- * Visible WebView frame for hosters that require a captcha (`captcha: "webview"`).
+ * Visible WebView for hosters with `captcha: webview`.
  *
- * This is the *only* place in the app with an `addJavascriptInterface` call —
- * the bridge named in the hardening rules. It exposes exactly one method, which
- * reports the token the hoster page writes into `window.__frame61Captcha`.
+ * It is the only place with `addJavascriptInterface`. The page gets a single
+ * bridge method for a token; additionally a read-only JS probe extracts a
+ * direct stream URL (`video/source`, `window.sources`, jwplayer, performance
+ * entries) and the cookies of the final URL. The resolver receives that result
+ * and continues its HTTP chain with the cookie jar.
  *
- * A captcha is never a hard failure: the resolver returns `CaptchaRequired`, the
- * UI shows this frame, and once the token arrives playback continues with it.
+ * The frame closes after 20 s without a result; the resolver then tries the
+ * next mirror.
  */
 @Composable
 fun CaptchaWebViewFrame(
     url: String,
+    hoster: String?,
     modifier: Modifier = Modifier,
-    onToken: (token: String) -> Unit,
-    onDismiss: () -> Unit = {}
+    onResult: (CaptchaResult) -> Unit,
+    onCancel: () -> Unit
 ) {
-    val bridge = remember(url, onToken) { Frame61Bridge(url, onToken) }
+    var webView by remember(url) { mutableStateOf<WebView?>(null) }
+    var finalUrl by remember(url) { mutableStateOf(url) }
+    var finished by remember(url) { mutableStateOf(false) }
+    val bridge = remember(url) { Frame61Bridge(url) }
 
     DisposableEffect(bridge) {
         onDispose { bridge.dispose() }
     }
 
-    AndroidView(
-        modifier = modifier.fillMaxSize(),
-        factory = { context ->
-            WebView(context).apply {
-                settings.javaScriptEnabled = true
-                settings.domStorageEnabled = true
-                settings.mediaPlaybackRequiresUserGesture = false
-                webViewClient = Frame61WebViewClient()
-                installCaptchaBridge(bridge, url)
+    LaunchedEffect(webView, url) {
+        val view = webView ?: return@LaunchedEffect
+        repeat(20) { second ->
+            delay(1_000)
+            if (finished) return@LaunchedEffect
+            val state = readState(view, finalUrl) ?: return@repeat
+            val cookies = CookieManager.getInstance().getCookie(finalUrl)
+                ?.takeIf { it.isNotBlank() }
+            if (state.streamUrl != null || (cookies != null && second >= 3)) {
+                finished = true
+                onResult(
+                    CaptchaResult(
+                        token = state.token,
+                        cookies = cookies,
+                        streamUrl = state.streamUrl
+                    )
+                )
+                return@LaunchedEffect
             }
-        },
-        update = { webView ->
-            if (webView.url != url) webView.loadUrl(url)
         }
-    )
+        if (!finished) {
+            finished = true
+            onCancel()
+        }
+    }
+
+    Box(modifier = modifier.fillMaxSize()) {
+        AndroidView(
+            modifier = Modifier.fillMaxSize(),
+            factory = { context ->
+                WebView(context).apply {
+                    settings.javaScriptEnabled = true
+                    settings.domStorageEnabled = true
+                    settings.databaseEnabled = true
+                    settings.mediaPlaybackRequiresUserGesture = false
+                    CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
+                    webViewClient = object : WebViewClient() {
+                        override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
+                            if (!url.isNullOrBlank()) finalUrl = url
+                        }
+
+                        override fun onPageFinished(view: WebView?, loaded: String?) {
+                            if (!loaded.isNullOrBlank()) finalUrl = loaded
+                            view?.evaluateJavascript(PROBE_SCRIPT) { raw ->
+                                val value = unquote(raw)
+                                if (value.isNotBlank()) bridge.submit(value)
+                            }
+                        }
+                    }
+                    installCaptchaBridge(bridge, url)
+                    webView = this
+                }
+            },
+            update = { view ->
+                if (view.url != url) view.loadUrl(url)
+            }
+        )
+        Button(
+            onClick = {
+                if (!finished) {
+                    finished = true
+                    onCancel()
+                }
+            },
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(16.dp)
+        ) {
+            Text("Abbrechen")
+        }
+    }
+}
+
+private data class WebState(
+    val token: String? = null,
+    val streamUrl: String? = null
+)
+
+private suspend fun readState(view: WebView, url: String): WebState? =
+    suspendCancellableCoroutine { continuation ->
+        view.evaluateJavascript(PROBE_SCRIPT) { raw ->
+            val text = unquote(raw)
+            continuation.resume(parseState(text))
+        }
+    }
+
+private fun parseState(text: String): WebState? {
+    if (text.isBlank()) return null
+    return runCatching {
+        val json = org.json.JSONObject(text)
+        WebState(
+            token = json.optString("token").takeIf { it.isNotBlank() },
+            streamUrl = json.optString("stream").takeIf { it.startsWith("https://") }
+        )
+    }.getOrNull()
+}
+
+private fun unquote(raw: String?): String {
+    if (raw.isNullOrBlank() || raw == "null") return ""
+    return runCatching {
+        (JSONTokener(raw).nextValue() as? String).orEmpty()
+    }.getOrDefault("")
 }
 
 /**
- * Installs the one and only JS bridge. Lint cannot see the `@JavascriptInterface`
- * annotation through the `apply` block, so the call lives in a named function
- * where the annotation stays verifiable.
+ * Installs the one and only JS bridge. Lint cannot see the
+ * `@JavascriptInterface` annotation through the `apply` block, so the call
+ * lives in a named function.
  */
 @SuppressLint("JavascriptInterface")
 private fun WebView.installCaptchaBridge(bridge: Frame61Bridge, url: String) {
@@ -62,10 +172,10 @@ private fun WebView.installCaptchaBridge(bridge: Frame61Bridge, url: String) {
     loadUrl(url)
 }
 
-/** The single allowed JS bridge: reports the captcha token, nothing else. */
+/** The single allowed JS bridge: reports a token, nothing else. */
 class Frame61Bridge(
     private val url: String,
-    private val onToken: (String) -> Unit
+    private val onToken: (String) -> Unit = {}
 ) {
     @JavascriptInterface
     fun submit(token: String?) {
@@ -76,14 +186,34 @@ class Frame61Bridge(
     fun dispose() { /* no resources to release yet */ }
 }
 
-private class Frame61WebViewClient : WebViewClient() {
-    @SuppressLint("SetJavaScriptEnabled")
-    override fun onPageFinished(view: WebView?, finishedUrl: String?) {
-        super.onPageFinished(view, finishedUrl)
-        // Hosters publish the token at different places; ask the page for it.
-        view?.evaluateJavascript(
-            "(function(){try{return (window.__frame61Captcha||'') + ''}catch(e){return ''}})()",
-            null
-        )
+private const val PROBE_SCRIPT = """
+(function(){
+  var r = {};
+  try { r.token = (window.__frame61Captcha || '') + ''; } catch (e) {}
+  try {
+    var v = document.querySelector('video source, video');
+    if (v && v.src) r.stream = v.src;
+  } catch (e) {}
+  try {
+    var s = window.sources;
+    if (s && s[0] && s[0].file) r.stream = s[0].file;
+  } catch (e) {}
+  try {
+    if (window.jwplayer) {
+      var p = window.jwplayer().getPlaylistItem();
+      if (p && p.file) r.stream = p.file;
     }
-}
+  } catch (e) {}
+  try {
+    var entries = performance.getEntriesByType('resource');
+    for (var i = entries.length - 1; i >= 0; i--) {
+      if (/\.(m3u8|mp4)(\?|$)/.test(entries[i].name)) {
+        r.stream = entries[i].name;
+        break;
+      }
+    }
+  } catch (e) {}
+  r.href = location.href;
+  return JSON.stringify(r);
+})()
+"""

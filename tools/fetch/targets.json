@@ -117,7 +117,21 @@
     },
     "bs-to": {
       "url": "https://burningseries.ac/search",
-      "note": "Suche liefert nur eine <option>-Liste (Serien-ID, kein Slug); ohne idFromTitle/Slug-Aufloesung nicht als Trefferliste abbildbar."
+      "method": "POST",
+      "headers": {
+        "Referer": "https://burningseries.ac/search"
+      },
+      "body": "search[text]=naruto",
+      "detail_url": "https://burningseries.ac/serie/{titleId}",
+      "fixture": {
+        "html_regex": "(?s)<option value=\"[0-9]+\">Naruto</option>",
+        "expected": [
+          {
+            "id": "Naruto",
+            "title": "Naruto"
+          }
+        ]
+      }
     },
     "cine": {
       "url": "https://cine.to/",
