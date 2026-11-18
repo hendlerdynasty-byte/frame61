@@ -119,7 +119,7 @@ fun WatchlistScreen(onOpenTitle: (String) -> Unit) {
 
     Column(modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp)) {
         Text(text = "Meine Liste", style = MaterialTheme.typography.headlineSmall)
-        if (items.isEmpty()) {
+        if (titles.isEmpty()) {
             Text(
                 text = "Meine Liste ist leer. Auf einer Detailseite „In Meine Liste“ wählen.",
                 style = MaterialTheme.typography.bodyLarge,
