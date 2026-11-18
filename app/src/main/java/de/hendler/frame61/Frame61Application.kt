@@ -6,7 +6,9 @@ import coil3.PlatformContext
 import coil3.SingletonImageLoader
 import coil3.disk.DiskCache
 import coil3.memory.MemoryCache
+import coil3.network.okhttp.OkHttpNetworkFetcherFactory
 import dagger.hilt.android.HiltAndroidApp
+import okhttp3.OkHttpClient
 import okio.Path.Companion.toOkioPath
 
 /**
@@ -25,6 +27,22 @@ import okio.Path.Companion.toOkioPath
 @HiltAndroidApp
 class Frame61Application : Application(), SingletonImageLoader.Factory {
 
+    /**
+     * Wikimedia (movie posters) answers 403 for OkHttp/empty User-Agents.
+     * Measured: UA "" → 403, "okhttp/4.12.0" → 403, "Frame61/1.0" → 200.
+     */
+    private val httpClient: OkHttpClient by lazy {
+        OkHttpClient.Builder()
+            .addInterceptor { chain ->
+                chain.proceed(
+                    chain.request().newBuilder()
+                        .header("User-Agent", USER_AGENT)
+                        .build()
+                )
+            }
+            .build()
+    }
+
     override fun newImageLoader(context: PlatformContext): ImageLoader =
         ImageLoader.Builder(context)
             .memoryCache {
@@ -38,9 +56,13 @@ class Frame61Application : Application(), SingletonImageLoader.Factory {
                     .maxSizeBytes(DISK_CACHE_BYTES)
                     .build()
             }
+            .components {
+                add(OkHttpNetworkFetcherFactory(callFactory = { httpClient }))
+            }
             .build()
 
     companion object {
         const val DISK_CACHE_BYTES = 512L * 1024 * 1024
+        const val USER_AGENT = "Frame61/1.0 (Android; poster cache)"
     }
 }
