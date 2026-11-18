@@ -75,3 +75,15 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
 - `filmo` liefert Suche und Detail; die Provider-Chips haben nur ein
   `data-p`-Token, keinen Stream-Link im HTML.
 - `filmstarts` ist eine Metadaten-Suche ohne Streams (kein Hoster).
+
+## Gate-Nachweis (18.11.2026)
+
+- Remote-Gate `frame61-0c7da0c0539d-1794987598`, Quellstand `0c7da0c`, Exit 0.
+- Debug-APK `f8a9ac79d2a439aa8216ba3c91913252e8ab785230871ab0c71c556c6e5013f7`,
+  24.434.378 Bytes (unter 45 MiB).
+- `PackFixtureTest` 7 Tests, 0 Fehler; darin die Fixture-Kette fuer alle sechs
+  verifizierten Suchantworten. `validatePacks`, `packsReport --check`,
+  `testFetchTools` und `checkApkSize` liefen im Gate mit.
+- Der Gate belegt Parser und Aufzeichnungen, nicht die Wiedergabe der
+  blockierten Seiten.
+
