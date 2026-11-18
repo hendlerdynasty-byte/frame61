@@ -45,14 +45,12 @@ Fehlermeldung, stürzt nicht.
 
 - Basis-URL (Pages, aktiv): `https://hendlerdynasty-byte.github.io/frame61/`
   → Manifest: `https://hendlerdynasty-byte.github.io/frame61/update.json`
-- Die Datei wird in Block 12 mit echtem `versionCode`, APK-URL und SHA-256
-  veröffentlicht; APK und Manifest liegen dann unter derselben Basis.
-- Manifest und APK müssen über HTTPS erreichbar sein; `sha256` aus
-  `shasum -a 256` eintragen.
-- Fallback, falls Pages ausfällt: Release-Asset
-  `https://github.com/hendlerdynasty-byte/frame61/releases/latest/download/update.json`
-  mit der signierten APK daneben.
-- Ein echtes Manifest ist noch **nicht** ausgeliefert → Livepfad **NOT_RUN**.
-  Parser und Fehlerbehandlung sind durch `UpdateManifestTest` belegt.
+- Die Datei ist seit 18.11.2026 mit echtem `versionCode`, APK-URL und
+  SHA-256 veröffentlicht (HTTP 200, Pages-Lauf `44308280114`).
+- Livepfad: 1.0.0 erkannte „Version 2 verfuegbar“, lud die Release-APK,
+  pruefte den SHA-256 und oeffnete den System-Installer. Die letzte
+  Bestaetigung blockierte Google Play Protect; die APK 1.1.0 wurde aus dem
+  Release-Asset per `adb install -r` installiert (`versionCode=2`,
+  `versionName=1.1.0`). Details in `docs/RELEASE.md`.
 - Signatur: Sideload-Updates brauchen denselben Signaturschlüssel wie die
   installierte App; siehe `docs/SIGNING.md`.
