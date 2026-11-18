@@ -26,7 +26,7 @@ daher `NOT_RUN` mit konkreter Ursache, kein erfundener Messwert.
 | Overscan 720p | `wm size 1280x720`, `docs/design/block16/720p.png`, Nav weiter sichtbar | PASS |
 | Filme / Serien / Suche / Meine Liste / Einstellungen | `filme.png`, `serien.png`, `suche.png`, `liste.png`, `einstellungen.png` | PASS |
 | Startzeit Emulator | `am start -W`: 2426, 3390, 6239, 9107, 10127 ms (Median 6239 ms) | INFO — Software-Rendering, kein Fire-TV-Hardwarewert |
-| Play Protect | auf Fire TV/Android TV nicht im Play-Sideload-Pfad | siehe Block 17 |
+| Play Protect | Kein Play-Protect-Dialog; nur „Install unknown apps" ( einmalig). Update-Pfad live bestätigt: `versionCode=1` → `2`, `InstallSuccess`. Siehe `docs/PLAYPROTECT.md`. | PASS |
 
 ## Screenshots
 
