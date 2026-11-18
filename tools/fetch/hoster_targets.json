@@ -1,0 +1,45 @@
+{
+  "targets": {
+    "direct": {
+      "reason": "Direktstream-Pack (ARD/MP4/HLS), kein Hoster-Ziel"
+    },
+    "vidmoly": {
+      "url": "https://vidmoly.net/embed-8irnzzsknabi.html",
+      "referer": "https://aniworld.to/anime/stream/naruto/staffel-1/episode-1",
+      "origin": "aniworld.to/redirect/3049671 (301)"
+    },
+    "voe": {
+      "url": "https://arianathankspecial.com/e/cvrluqyituus",
+      "referer": "https://voe.sx/",
+      "origin": "aniworld.to/redirect/3523796 -> voe.sx/e/cvrluqyituus -> JS-Redirect"
+    },
+    "doodstream": {
+      "url": "https://do7go.com/e/5hyj5kblvy1n",
+      "referer": "https://aniworld.to/anime/stream/naruto/staffel-1/episode-1",
+      "origin": "aniworld.to/redirect/4059006 -> do7go.com -> playmogo.com"
+    },
+    "filemoon": {
+      "url": "https://filemoon.to/d/89crzins1ufc",
+      "referer": "https://aniworld.to/anime/stream/naruto/staffel-1/episode-1",
+      "origin": "aniworld.to/redirect/2922355 (301)"
+    },
+    "streamtape": {
+      "reason": "kein Dateiziel ermittelbar: Homepage ohne oeffentliche Dateiliste, API nur mit Konto"
+    },
+    "vidoza": {
+      "reason": "kein Dateiziel ermittelbar: Landingpage ohne oeffentliche Dateiliste"
+    },
+    "mixdrop": {
+      "reason": "kein Dateiziel ermittelbar: mixdrop.co TLS-Verbindung fehlgeschlagen (18.11.2026)"
+    },
+    "luluvdo": {
+      "reason": "kein Dateiziel ermittelbar: luluvdo.com/.net nicht aufloesbar (18.11.2026)"
+    },
+    "loadx": {
+      "reason": "kein Dateiziel ermittelbar: loadx.ws Timeout (18.11.2026)"
+    },
+    "streamhide": {
+      "reason": "kein Dateiziel ermittelbar: streamhide.com liefert nur JS-Redirect ohne Dateilink"
+    }
+  }
+}

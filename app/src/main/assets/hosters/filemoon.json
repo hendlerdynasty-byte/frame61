@@ -5,7 +5,8 @@
   "verified": false,
   "domains": [
     "filemoon.to",
-    "filemoon.sx"
+    "filemoon.sx",
+    "bysezejataos.com"
   ],
   "result": "file",
   "steps": [
@@ -32,5 +33,10 @@
       "path": "sources.0.file",
       "saveAs": "file"
     }
-  ]
+  ],
+  "last_check": "2026-11-18T07:00:02Z",
+  "check": {
+    "status": "step_failed",
+    "reason": "SPA: HTML ohne Stream-URL, JS/API erforderlich"
+  }
 }

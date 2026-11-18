@@ -1,0 +1,33 @@
+{
+  "id": "doodstream",
+  "name": "Doodstream",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "doodstream.com",
+    "dood.watch",
+    "dood.re",
+    "do7go.com",
+    "playmogo.com"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "get",
+      "url": "https://{host}{path}",
+      "saveAs": "page"
+    },
+    {
+      "action": "regex",
+      "input": "page",
+      "pattern": "https?://[^'\"\\s]+\\.(?:m3u8|mp4)[^'\"\\s]*",
+      "group": 0,
+      "saveAs": "file"
+    }
+  ],
+  "last_check": "2026-11-18T07:00:02Z",
+  "check": {
+    "status": "step_failed",
+    "reason": "Cloudflare-Challenge liefert kein Player-HTML"
+  }
+}

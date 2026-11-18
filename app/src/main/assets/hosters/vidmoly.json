@@ -1,11 +1,12 @@
 {
   "id": "vidmoly",
   "name": "Vidmoly",
-  "version": 1,
-  "verified": false,
+  "version": 2,
+  "verified": true,
   "domains": [
     "vidmoly.to",
-    "vidmoly.me"
+    "vidmoly.me",
+    "vidmoly.net"
   ],
   "result": "file",
   "steps": [
@@ -17,9 +18,14 @@
     {
       "action": "regex",
       "input": "page",
-      "pattern": "file:\\s*\"([^\"]+)\"",
+      "pattern": "sources:\\s*\\[\\s*\\{\\s*file:\\s*['\"]([^'\"]+)['\"]",
       "group": 1,
       "saveAs": "file"
     }
-  ]
+  ],
+  "last_check": "2026-11-18T07:00:03Z",
+  "check": {
+    "status": "verified",
+    "reason": ""
+  }
 }
