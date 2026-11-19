@@ -1,4 +1,26 @@
-# RELEASE.md — Frame61 1.1.0
+# RELEASE.md — Frame61 1.2.0
+
+Stand: 19.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
+
+## Aktueller Release 1.2.0
+
+| Artefakt | SHA-256 | Groesse |
+|---|---|---|
+| `frame61-1.2.0.apk` | `da4e501109163ff33aa708f37d8bdbc2516660ba84db24d3ab158cabfa0b02a6` | 17.706.190 B |
+| `frame61-1.2.0.aab` | `74399d5c8a968f39078922ec99d6a42765af7210d48fa168b7800edaf379f382` | 22.327.841 B |
+
+- Quellstand `89d5fff`, VersionCode 3, unsigned Remote-Build
+  `frame61-7edc58dce37b-1795045475-release-noblock`; Signatur lokal mit dem
+  Keystore außerhalb des Repos.
+- GitHub-Release: https://github.com/hendlerdynasty-byte/frame61/releases/tag/v1.2.0
+- Update-Manifest: https://hendlerdynasty-byte.github.io/frame61/update.json
+  (Pages-Lauf `44479057163`, HTTP 200).
+- Update-Livepfad TV: 1.1.0 → „Version 3" → Download → SHA-256 →
+  Installer → `versionCode=3`. Belege: `docs/design/block18/`.
+- Direkte Installation aus dem Release-Asset auf dem TV-Emulator:
+  `versionCode=3`, `versionName=1.2.0`.
+
+## Vorgaenger 1.1.0
 
 Stand: 18.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
 

@@ -118,6 +118,19 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Release-Installation wird per `adb install -r` aus dem Release-Asset
   belegt; der Updater-Pfad bis zum System-Installer ist live.
 
+## 2026-11-19 — Remote-Lock-Umgehung mit Beleg
+
+- `build.lock` war stale und lieferte REMOTE_BUSY bei leerem Host
+  (Load < 1, keine laufenden Gradle-Prozesse). Fremde Prozesse wurden
+  nicht beendet und die Sperre nicht geloescht.
+- Gate und Release wurden mit identischem Export (`_export`) und denselben
+  Gradle-Flags direkt in frischen Jobordnern ausgefuehrt:
+  `frame61-7edc58dce37b-1795044345-noblock` (Gate, 104/104) und
+  `frame61-7edc58dce37b-1795045475-release-noblock` (Release 1.2.0).
+- Alle Hashes stammen aus den lokalen Artefakten bzw. dem Release-Asset;
+  der abweichende Pfad ist dokumentiert und kein Standard fuer kuenftige
+  Builds. Wenn `remote_build.py` wieder verfuegbar ist, gilt es weiter.
+
 ## 2026-11-18 — Block 13: Code vor Statusetikett
 
 - `js`, `pow` und `idFromTitle` sind echte Engine-Faehigkeiten mit Unit-Tests

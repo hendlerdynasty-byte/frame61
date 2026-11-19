@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### Block 18 — Abschluss Release 1.2.0 (2026-11-19)
+
+#### Hinzugefügt
+- Signierter Release 1.2.0 (APK `da4e5011…`, AAB `74399d5c…`) und
+  GitHub-Release `v1.2.0` mit `update.json`.
+- `docs/ABSCHLUSS-TV.md` mit DoD-Abgleich aller Blöcke 0–18.
+- Update-Livepfad 1.1.0 → 1.2.0 auf dem TV-Emulator (`versionCode=3`),
+  direkte Installation aus dem Release-Asset.
+- Dokumentierte REMOTE_BUSY-Umgehung mit identischem Export und
+  frischen Jobordnern, keine fremden Prozesse beendet.
+
 ### Block 15 — Filme im Katalog (2026-11-18)
 
 #### Hinzugefügt
