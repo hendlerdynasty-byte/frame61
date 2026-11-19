@@ -1,22 +1,1382 @@
 {
-  "schema": 1,
-  "id": "tvmaze-116",
-  "source": "tvmaze",
-  "sourceId": "116",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Mentalist",
-  "year": 2008,
-  "type": "series",
-  "overview": "Patrick Jane, an independent consultant with the California Bureau of Investigation (CBI), has a remarkable track record for solving serious crimes by using his razor sharp skills of observation. Within the Bureau, Jane is notorious for his blatant lack of protocol and his semi-celebrity past as a psychic medium, whose paranormal abilities he now admits he feigned. No-nonsense Senior Agent Teresa Lisbon openly resists having Jane in her unit and alternates between reluctantly acknowledging Jane's usefulness and blasting him for his theatrics, narcissism, and dangerous lack of boundaries. Lisbon's team includes agents Kimball Cho, Wayne Rigsby and rookie member Grace Van Pelt, who all think Jane's a loose cannon but admire his charm and knack for clearing cases.",
-  "poster": "file:///android_asset/posters/tvmaze-116.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-09-23",
+      "id": 8878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455203.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-30",
+      "id": 8879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455224.jpg",
+      "name": "Red Hair and Silver Tape",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-14",
+      "id": 8880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455241.jpg",
+      "name": "Red Tide",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-21",
+      "id": 8881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455255.jpg",
+      "name": "Ladies in Red",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-28",
+      "id": 8882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455266.jpg",
+      "name": "Redwood",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-11",
+      "id": 8883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455488.jpg",
+      "name": "Red Handed",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-18",
+      "id": 8884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455512.jpg",
+      "name": "Seeing Red",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-25",
+      "id": 8885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455540.jpg",
+      "name": "The Thin Red Line",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-02",
+      "id": 8886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455784.jpg",
+      "name": "Flame Red",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-16",
+      "id": 8887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455832.jpg",
+      "name": "Red Brick and Ivy",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-06",
+      "id": 8888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455835.jpg",
+      "name": "Red John's Friends",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-13",
+      "id": 8889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455892.jpg",
+      "name": "Red Rum",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-18",
+      "id": 8890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455920.jpg",
+      "name": "Paint It Red",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 8891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455936.jpg",
+      "name": "Crimson Casanova",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 8892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455956.jpg",
+      "name": "Scarlett Fever",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-17",
+      "id": 8893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456174.jpg",
+      "name": "Bloodshot",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-24",
+      "id": 8894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456227.jpg",
+      "name": "Carnelian Inc.",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-31",
+      "id": 8895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456250.jpg",
+      "name": "Russet Potatoes",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-07",
+      "id": 8896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456264.jpg",
+      "name": "A Dozen Red Roses",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-28",
+      "id": 8897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456279.jpg",
+      "name": "Red Sauce",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-05",
+      "id": 8898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456307.jpg",
+      "name": "Miss Red",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-12",
+      "id": 8899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456332.jpg",
+      "name": "Blood Brothers",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-19",
+      "id": 8900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456350.jpg",
+      "name": "Red John's Footsteps",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-09-24",
+      "id": 8901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456446.jpg",
+      "name": "Redemption",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-01",
+      "id": 8902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456488.jpg",
+      "name": "The Scarlet Letter",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-08",
+      "id": 8903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456503.jpg",
+      "name": "Red Badge",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-15",
+      "id": 8904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456510.jpg",
+      "name": "Red Menace",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-29",
+      "id": 8905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456513.jpg",
+      "name": "Red Scare",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-05",
+      "id": 8906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456720.jpg",
+      "name": "Black Gold and Red Blood",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-12",
+      "id": 8907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456721.jpg",
+      "name": "Red Bulls",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-19",
+      "id": 8908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456730.jpg",
+      "name": "His Red Right Hand",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-10",
+      "id": 8909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456739.jpg",
+      "name": "A Price Above Rubies",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-17",
+      "id": 8910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456908.jpg",
+      "name": "Throwing Fire",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-14",
+      "id": 8911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456932.jpg",
+      "name": "Rose-Colored Glasses",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-21",
+      "id": 8912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456940.jpg",
+      "name": "Bleeding Heart",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-04",
+      "id": 8913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456953.jpg",
+      "name": "Redline",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-11",
+      "id": 8914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456965.jpg",
+      "name": "Blood In, Blood Out",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-04",
+      "id": 8915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/457193.jpg",
+      "name": "Red Herring",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-11",
+      "id": 8916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/457214.jpg",
+      "name": "Code Red",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-01",
+      "id": 8917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/457224.jpg",
+      "name": "The Red Box",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-08",
+      "id": 8918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/457269.jpg",
+      "name": "Aingavite Baa",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-22",
+      "id": 8919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457583.jpg",
+      "name": "Blood Money",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-29",
+      "id": 8920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457597.jpg",
+      "name": "Red All Over",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-06",
+      "id": 8921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457618.jpg",
+      "name": "18-5-4",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-13",
+      "id": 8922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457633.jpg",
+      "name": "Red Letter",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-20",
+      "id": 8923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457661.jpg",
+      "name": "Red Sky in the Morning",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-23",
+      "id": 8924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457685.jpg",
+      "name": "Red Sky at Night",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-30",
+      "id": 8925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457699.jpg",
+      "name": "Cackle-Bladder Blood",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-07",
+      "id": 8926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457835.jpg",
+      "name": "The Blood on His Hands",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-14",
+      "id": 8927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457899.jpg",
+      "name": "Red Carpet Treatment",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-21",
+      "id": 8928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457958.jpg",
+      "name": "The Red Ponies",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-28",
+      "id": 8929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457992.jpg",
+      "name": "Pink Chanel Suit",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-04",
+      "id": 8930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458013.jpg",
+      "name": "Red Hot",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-11",
+      "id": 8931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458055.jpg",
+      "name": "Ball of Fire",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-18",
+      "id": 8932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458075.jpg",
+      "name": "Red Moon",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-12-09",
+      "id": 8933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458112.jpg",
+      "name": "Jolly Red Elf",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-06",
+      "id": 8934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458138.jpg",
+      "name": "Bloodsport",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-20",
+      "id": 8935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458358.jpg",
+      "name": "Bloodhounds",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-03",
+      "id": 8936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458637.jpg",
+      "name": "Red Alert",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-10",
+      "id": 8937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458670.jpg",
+      "name": "Blood for Blood",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-17",
+      "id": 8938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458696.jpg",
+      "name": "Red Gold",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-24",
+      "id": 8939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458726.jpg",
+      "name": "Red Queen",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-10",
+      "id": 8940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459022.jpg",
+      "name": "Bloodstream",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-31",
+      "id": 8941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459072.jpg",
+      "name": "The Red Mile",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-07",
+      "id": 8942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459110.jpg",
+      "name": "Every Rose Has Its Thorn",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-28",
+      "id": 8943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459138.jpg",
+      "name": "Redacted",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-05",
+      "id": 8944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459166.jpg",
+      "name": "Like a Redheaded Stepchild",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-12",
+      "id": 8945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459396.jpg",
+      "name": "Rhapsody in Red",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-19",
+      "id": 8946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459436.jpg",
+      "name": "Strawberries and Cream, Part I",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-19",
+      "id": 8947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459437.jpg",
+      "name": "Strawberries and Cream, Part II",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-09-22",
+      "id": 8948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459458.jpg",
+      "name": "Scarlet Ribbons",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-29",
+      "id": 8949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459688.jpg",
+      "name": "Little Red Book",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-06",
+      "id": 8950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459721.jpg",
+      "name": "Pretty Red Balloon",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-13",
+      "id": 8951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459745.jpg",
+      "name": "Ring Around the Rosie",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-20",
+      "id": 8952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459759.jpg",
+      "name": "Blood and Sand",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-27",
+      "id": 8953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459779.jpg",
+      "name": "Where in the World is Carmine O'Brien?",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-03",
+      "id": 8954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459804.jpg",
+      "name": "Blinking Red Light",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-17",
+      "id": 8955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459817.jpg",
+      "name": "Pink Tops",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-08",
+      "id": 8956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460185.jpg",
+      "name": "The Redshirt",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-15",
+      "id": 8957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460186.jpg",
+      "name": "Fugue in Red",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-12",
+      "id": 8958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460212.jpg",
+      "name": "Always Bet on Red",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-19",
+      "id": 8959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460225.jpg",
+      "name": "My Bloody Valentine",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-02",
+      "id": 8960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460380.jpg",
+      "name": "Red Is the New Black",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-09",
+      "id": 8961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460394.jpg",
+      "name": "At First Blush",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-16",
+      "id": 8962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460405.jpg",
+      "name": "War of the Roses",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-23",
+      "id": 8963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460665.jpg",
+      "name": "His Thoughts Were Red Thoughts",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-08",
+      "id": 8964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460686.jpg",
+      "name": "Cheap Burgundy",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-09",
+      "id": 8965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460698.jpg",
+      "name": "Ruddy Cheeks",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-29",
+      "id": 8966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460709.jpg",
+      "name": "Pink Champagne on Ice",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-05",
+      "id": 8967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460758.jpg",
+      "name": "Something's Rotten in Redmund",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-26",
+      "id": 8968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460941.jpg",
+      "name": "Ruby Slippers",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-03",
+      "id": 8969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460997.jpg",
+      "name": "So Long, and Thanks for All the Red Snapper",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-10",
+      "id": 8970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461031.jpg",
+      "name": "Red Rover, Red Rover",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-17",
+      "id": 8971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461316.jpg",
+      "name": "The Crimson Hat",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 8972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462089.jpg",
+      "name": "The Crimson Ticket",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 8973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462121.jpg",
+      "name": "Devil's Cherry",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 8974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462132.jpg",
+      "name": "Not One Red Cent",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 8975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462144.jpg",
+      "name": "Blood Feud",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 8976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/472808.jpg",
+      "name": "Red Dawn",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 8977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/472813.jpg",
+      "name": "Cherry Picked",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 8978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473754.jpg",
+      "name": "If It Bleeds, It Leads",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-18",
+      "id": 8979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473767.jpg",
+      "name": "Red Sails in the Sunset",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 8980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31315.jpg",
+      "name": "Black Cherry",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-09",
+      "id": 8981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473808.jpg",
+      "name": "Panama Red",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-06",
+      "id": 8982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473939.jpg",
+      "name": "Days of Wine and Roses",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-13",
+      "id": 8983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473940.jpg",
+      "name": "Little Red Corvette",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-27",
+      "id": 8984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473946.jpg",
+      "name": "The Red Barn",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-17",
+      "id": 8985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473955.jpg",
+      "name": "Red in Tooth and Claw",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-03",
+      "id": 8986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473972.jpg",
+      "name": "Red Lacquer Nail Polish",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 8987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474531.jpg",
+      "name": "There Will Be Blood",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 8988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474544.jpg",
+      "name": "Red, White and Blue",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 8989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474567.jpg",
+      "name": "Behind the Red Curtain",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 8990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474592.jpg",
+      "name": "Red Letter Day",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 8991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474606.jpg",
+      "name": "Red Velvet Cupcakes",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 8992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474631.jpg",
+      "name": "Red and Itchy",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 8993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474784.jpg",
+      "name": "Red John's Rules",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 8994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474800.jpg",
+      "name": "The Desert Rose",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 8995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474823.jpg",
+      "name": "Black-Winged Redbird",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 8996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475126.jpg",
+      "name": "Wedding in Red",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 8997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475156.jpg",
+      "name": "Red Listed",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 8998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475168.jpg",
+      "name": "The Red Tattoo",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 8999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475184.jpg",
+      "name": "Fire and Brimstone",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 9000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475188.jpg",
+      "name": "The Great Red Dragon",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-24",
+      "id": 9001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475194.jpg",
+      "name": "Red John",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-12-01",
+      "id": 9002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475972.jpg",
+      "name": "My Blue Heaven",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-12-08",
+      "id": 9003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475999.jpg",
+      "name": "Green Thumb",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-01-05",
+      "id": 9004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476151.jpg",
+      "name": "White Lines",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-01-12",
+      "id": 9005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476157.jpg",
+      "name": "The Golden Hammer",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-09",
+      "id": 9006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476927.jpg",
+      "name": "Black Helicopters",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-16",
+      "id": 9007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476966.jpg",
+      "name": "Grey Water",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-23",
+      "id": 9008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476970.jpg",
+      "name": "White As the Driven Snow",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-30",
+      "id": 9009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/477234.jpg",
+      "name": "Violets",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 9010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/477245.jpg",
+      "name": "Silver Wings of Time",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 9011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/477261.jpg",
+      "name": "Forest Green",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 9012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/477267.jpg",
+      "name": "Brown Eyed Girls",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 9013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/477291.jpg",
+      "name": "Il Tavolo Bianco",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 9014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/478691.jpg",
+      "name": "Black Hearts",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 9015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/478777.jpg",
+      "name": "Blue Bird",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-30",
+      "id": 40931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479287.jpg",
+      "name": "Nothing But Blue Skies",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 40932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479288.jpg",
+      "name": "The Greybar Hotel",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-14",
+      "id": 40933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479311.jpg",
+      "name": "Orange Blossom Ice Cream",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-21",
+      "id": 40934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479326.jpg",
+      "name": "Black Market",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-28",
+      "id": 40935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479358.jpg",
+      "name": "The Silver Briefcase",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-01-07",
+      "id": 40936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479383.jpg",
+      "name": "Green Light",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-01-14",
+      "id": 40937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481009.jpg",
+      "name": "Little Yellow House",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-01-21",
+      "id": 40938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481028.jpg",
+      "name": "The Whites of His Eyes",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 40939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481049.jpg",
+      "name": "Copper Bullet",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 40940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481063.jpg",
+      "name": "Nothing Gold Can Stay",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 40941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481075.jpg",
+      "name": "Byzantium",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 40942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481432.jpg",
+      "name": "Brown Shag Carpet",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 40943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481505.jpg",
+      "name": "White Orchids",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-116",
+  "live": true,
+  "overview": "Patrick Jane, an independent consultant with the California Bureau of Investigation (CBI), has a remarkable track record for solving serious crimes by using his razor sharp skills of observation. Within the Bureau, Jane is notorious for his blatant lack of protocol and his semi-celebrity past as a psychic medium, whose paranormal abilities he now admits he feigned. No-nonsense Senior Agent Teresa Lisbon openly resists having Jane in her unit and alternates between reluctantly acknowledging Jane's usefulness and blasting him for his theatrics, narcissism, and dangerous lack of boundaries. Lisbon's team includes agents Kimball Cho, Wayne Rigsby and rookie member Grace Van Pelt, who all think Jane's a loose cannon but admire his charm and knack for clearing cases.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/1239.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "116",
+  "title": "The Mentalist",
+  "type": "series",
+  "year": 2008
 }

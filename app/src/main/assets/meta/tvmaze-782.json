@@ -1,22 +1,5738 @@
 {
-  "schema": 1,
-  "id": "tvmaze-782",
-  "source": "tvmaze",
-  "sourceId": "782",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Gunsmoke",
-  "year": 1955,
-  "type": "series",
-  "overview": "Marshall Matt Dillon is responsible for keeping the law and respectability in Dodge City in this western action-drama. Gunsmoke captured the courage, character and spirit of the Western Frontier.",
-  "poster": "file:///android_asset/posters/tvmaze-782.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1955-09-10",
+      "id": 69194,
+      "image": null,
+      "name": "Matt Gets It",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1955-09-17",
+      "id": 69195,
+      "image": null,
+      "name": "Hot Spell",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1955-10-01",
+      "id": 69196,
+      "image": null,
+      "name": "Word of Honor",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1955-10-08",
+      "id": 69197,
+      "image": null,
+      "name": "Home Surgery",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-10-15",
+      "id": 69198,
+      "image": null,
+      "name": "Obie Tater",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-10-29",
+      "id": 69199,
+      "image": null,
+      "name": "Night Incident",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1955-11-05",
+      "id": 69200,
+      "image": null,
+      "name": "Smoking Out the Nolans",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-11-12",
+      "id": 69201,
+      "image": null,
+      "name": "Kite's Reward",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-11-26",
+      "id": 69202,
+      "image": null,
+      "name": "The Hunter",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-12-03",
+      "id": 69203,
+      "image": null,
+      "name": "The Queue",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-12-10",
+      "id": 69204,
+      "image": null,
+      "name": "General Parsley Smith",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-12-24",
+      "id": 69205,
+      "image": null,
+      "name": "Magnus",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1955-12-31",
+      "id": 69206,
+      "image": null,
+      "name": "Reed Survives",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-01-07",
+      "id": 69207,
+      "image": null,
+      "name": "Professor Lute Bone",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-01-21",
+      "id": 69208,
+      "image": null,
+      "name": "No Handcuffs",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-01-28",
+      "id": 69209,
+      "image": null,
+      "name": "Reward for Matt",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-02-04",
+      "id": 69210,
+      "image": null,
+      "name": "Robin Hood",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-02-18",
+      "id": 69211,
+      "image": null,
+      "name": "Yorky",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-02-25",
+      "id": 69212,
+      "image": null,
+      "name": "20-20",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-03-03",
+      "id": 69213,
+      "image": null,
+      "name": "Reunion '78",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-03-17",
+      "id": 69214,
+      "image": null,
+      "name": "Helping Hand",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-03-24",
+      "id": 69215,
+      "image": null,
+      "name": "Tap Day for Kitty",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-03-31",
+      "id": 69216,
+      "image": null,
+      "name": "Indian Scout",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-04-14",
+      "id": 69217,
+      "image": null,
+      "name": "The Pest Hole",
+      "number": 24,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-04-28",
+      "id": 69218,
+      "image": null,
+      "name": "The Big Broad",
+      "number": 25,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-05-12",
+      "id": 69219,
+      "image": null,
+      "name": "Hack Prine",
+      "number": 26,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-05-19",
+      "id": 69220,
+      "image": null,
+      "name": "Cooter",
+      "number": 27,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-05-26",
+      "id": 69221,
+      "image": null,
+      "name": "The Killer",
+      "number": 28,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-06-09",
+      "id": 69222,
+      "image": null,
+      "name": "Doc's Revenge",
+      "number": 29,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-06-16",
+      "id": 69223,
+      "image": null,
+      "name": "The Preacher",
+      "number": 30,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-06-23",
+      "id": 69224,
+      "image": null,
+      "name": "How to Die for Nothing",
+      "number": 31,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-06-30",
+      "id": 69225,
+      "image": null,
+      "name": "Dutch George",
+      "number": 32,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-07-07",
+      "id": 69226,
+      "image": null,
+      "name": "Prairie Happy",
+      "number": 33,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-07-14",
+      "id": 69227,
+      "image": null,
+      "name": "Chester's Mail Order Bride",
+      "number": 34,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-07-21",
+      "id": 69228,
+      "image": null,
+      "name": "The Guitar",
+      "number": 35,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-07-28",
+      "id": 69229,
+      "image": null,
+      "name": "Cara",
+      "number": 36,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-08-04",
+      "id": 69230,
+      "image": null,
+      "name": "Mr. and Mrs. Amber",
+      "number": 37,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-08-18",
+      "id": 69231,
+      "image": null,
+      "name": "Unmarked Grave",
+      "number": 38,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-08-25",
+      "id": 69232,
+      "image": null,
+      "name": "Alarm at Pleasant Valley",
+      "number": 39,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1956-09-08",
+      "id": 69233,
+      "image": null,
+      "name": "Cow Doctor",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-09-15",
+      "id": 69234,
+      "image": null,
+      "name": "Brush at Elkader",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-09-22",
+      "id": 69235,
+      "image": null,
+      "name": "Custer",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-09-29",
+      "id": 69236,
+      "image": null,
+      "name": "The Round Up",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-10-20",
+      "id": 69237,
+      "image": null,
+      "name": "Young Man with a Gun",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-10-27",
+      "id": 69238,
+      "image": null,
+      "name": "Indian White",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-11-10",
+      "id": 69239,
+      "image": null,
+      "name": "How to Cure a Friend",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-11-17",
+      "id": 69240,
+      "image": null,
+      "name": "Legal Revenge",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1956-11-24",
+      "id": 69241,
+      "image": null,
+      "name": "The Mistake",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-12-01",
+      "id": 69242,
+      "image": null,
+      "name": "Greater Love",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-12-08",
+      "id": 69243,
+      "image": null,
+      "name": "No Indians",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-12-15",
+      "id": 69244,
+      "image": null,
+      "name": "Spring Term",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-12-22",
+      "id": 69245,
+      "image": null,
+      "name": "Poor Pearl",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1956-12-29",
+      "id": 69246,
+      "image": null,
+      "name": "Cholera",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-01-05",
+      "id": 69247,
+      "image": null,
+      "name": "Pucket's New Year",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-01-12",
+      "id": 69248,
+      "image": null,
+      "name": "The Cover Up",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-01-19",
+      "id": 69249,
+      "image": null,
+      "name": "Sins of the Father",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-01-26",
+      "id": 69250,
+      "image": null,
+      "name": "Kick Me",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-02-02",
+      "id": 69251,
+      "image": null,
+      "name": "Executioner",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-02-09",
+      "id": 69252,
+      "image": null,
+      "name": "Gone Straight",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-02-16",
+      "id": 69253,
+      "image": null,
+      "name": "Bloody Hands",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-02-23",
+      "id": 69254,
+      "image": null,
+      "name": "Skid Row",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-03-02",
+      "id": 69255,
+      "image": null,
+      "name": "Sweet and Sour",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-03-09",
+      "id": 69256,
+      "image": null,
+      "name": "Cain",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-03-16",
+      "id": 69257,
+      "image": null,
+      "name": "Bureaucrat",
+      "number": 25,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-03-23",
+      "id": 69258,
+      "image": null,
+      "name": "Last Fling",
+      "number": 26,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-03-30",
+      "id": 69259,
+      "image": null,
+      "name": "Chester's Murder",
+      "number": 27,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-04-06",
+      "id": 69260,
+      "image": null,
+      "name": "The Photographer",
+      "number": 28,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-04-13",
+      "id": 69261,
+      "image": null,
+      "name": "Wrong Man",
+      "number": 29,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-04-20",
+      "id": 69262,
+      "image": null,
+      "name": "Big Girl Lost",
+      "number": 30,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-04-27",
+      "id": 69263,
+      "image": null,
+      "name": "What the Whiskey Drummer Heard",
+      "number": 31,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-05-04",
+      "id": 69264,
+      "image": null,
+      "name": "Cheap Labor",
+      "number": 32,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1957-05-11",
+      "id": 69265,
+      "image": null,
+      "name": "Moon",
+      "number": 33,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-05-18",
+      "id": 69266,
+      "image": null,
+      "name": "Who Lives by the Sword",
+      "number": 34,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-05-25",
+      "id": 69267,
+      "image": null,
+      "name": "Uncle Oliver",
+      "number": 35,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-06-01",
+      "id": 69268,
+      "image": null,
+      "name": "Daddy-O",
+      "number": 36,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-06-15",
+      "id": 69269,
+      "image": null,
+      "name": "The Man Who Would Be Marshal",
+      "number": 37,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-06-22",
+      "id": 69270,
+      "image": null,
+      "name": "Liar from Blackhawk",
+      "number": 38,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-07-06",
+      "id": 69271,
+      "image": null,
+      "name": "Jealousy",
+      "number": 39,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1957-09-14",
+      "id": 69272,
+      "image": null,
+      "name": "Crack-Up",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1957-09-21",
+      "id": 69273,
+      "image": null,
+      "name": "Gun for Chester",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1957-09-28",
+      "id": 69274,
+      "image": null,
+      "name": "Blood Money",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1957-10-05",
+      "id": 69275,
+      "image": null,
+      "name": "Kitty's Outlaw",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1957-10-12",
+      "id": 69276,
+      "image": null,
+      "name": "Potato Road",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1957-10-19",
+      "id": 69277,
+      "image": null,
+      "name": "Jesse",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-10-26",
+      "id": 69278,
+      "image": null,
+      "name": "Mavis McCloud",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-11-02",
+      "id": 69279,
+      "image": null,
+      "name": "Born to Hang",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-11-09",
+      "id": 69280,
+      "image": null,
+      "name": "Romeo",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-11-16",
+      "id": 69281,
+      "image": null,
+      "name": "Never Pester Chester",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-11-23",
+      "id": 69282,
+      "image": null,
+      "name": "Fingered",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-11-30",
+      "id": 69283,
+      "image": null,
+      "name": "How to Kill a Woman",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-12-07",
+      "id": 69284,
+      "image": null,
+      "name": "Cows and Cribs",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-12-14",
+      "id": 69285,
+      "image": null,
+      "name": "Doc's Reward",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-12-21",
+      "id": 69286,
+      "image": null,
+      "name": "Kitty Lost",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1957-12-28",
+      "id": 69287,
+      "image": null,
+      "name": "Twelfth Night",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-01-04",
+      "id": 69288,
+      "image": null,
+      "name": "Joe Phy",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-01-11",
+      "id": 69289,
+      "image": null,
+      "name": "Buffalo Man",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-01-18",
+      "id": 69290,
+      "image": null,
+      "name": "Kitty Caught",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-01-25",
+      "id": 69291,
+      "image": null,
+      "name": "Claustrophobia",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-02-01",
+      "id": 69292,
+      "image": null,
+      "name": "Ma Tennis",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-02-08",
+      "id": 69293,
+      "image": null,
+      "name": "Sunday Supplement",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-02-15",
+      "id": 69294,
+      "image": null,
+      "name": "Wild West",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1958-02-22",
+      "id": 69295,
+      "image": null,
+      "name": "The Cabin",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-03-01",
+      "id": 69296,
+      "image": null,
+      "name": "Dirt",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-03-08",
+      "id": 69297,
+      "image": null,
+      "name": "Dooley Surrenders",
+      "number": 26,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-03-15",
+      "id": 69298,
+      "image": null,
+      "name": "Joke's on Us",
+      "number": 27,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-03-22",
+      "id": 69299,
+      "image": null,
+      "name": "Bottleman",
+      "number": 28,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-03-29",
+      "id": 69300,
+      "image": null,
+      "name": "Laughing Gas",
+      "number": 29,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-04-05",
+      "id": 69301,
+      "image": null,
+      "name": "Texas Cowboys",
+      "number": 30,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-04-12",
+      "id": 69302,
+      "image": null,
+      "name": "Amy's Good Deed",
+      "number": 31,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-04-19",
+      "id": 69303,
+      "image": null,
+      "name": "Hanging Man",
+      "number": 32,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-04-26",
+      "id": 69304,
+      "image": null,
+      "name": "Innocent Broad",
+      "number": 33,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-05-03",
+      "id": 69305,
+      "image": null,
+      "name": "The Big Con",
+      "number": 34,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-05-10",
+      "id": 69306,
+      "image": null,
+      "name": "Widow's Mite",
+      "number": 35,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-05-17",
+      "id": 69307,
+      "image": null,
+      "name": "Chester's Hanging",
+      "number": 36,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-05-24",
+      "id": 69308,
+      "image": null,
+      "name": "Carmen",
+      "number": 37,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-05-31",
+      "id": 69309,
+      "image": null,
+      "name": "Overland Express",
+      "number": 38,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-06-07",
+      "id": 69310,
+      "image": null,
+      "name": "The Gentleman",
+      "number": 39,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1958-09-13",
+      "id": 69311,
+      "image": null,
+      "name": "Matt for Murder",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-09-20",
+      "id": 69312,
+      "image": null,
+      "name": "The Patsy",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-09-27",
+      "id": 69313,
+      "image": null,
+      "name": "Gunsmuggler",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-10-04",
+      "id": 69314,
+      "image": null,
+      "name": "Monopoly",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-10-11",
+      "id": 69315,
+      "image": null,
+      "name": "Letter of the Law",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-10-18",
+      "id": 69316,
+      "image": null,
+      "name": "Thoroughbreds",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1958-10-25",
+      "id": 69317,
+      "image": null,
+      "name": "Stage Hold-Up",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-11-01",
+      "id": 69318,
+      "image": null,
+      "name": "Lost Rifle",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-11-08",
+      "id": 69319,
+      "image": null,
+      "name": "Land Deal",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-11-15",
+      "id": 69320,
+      "image": null,
+      "name": "Lynching Man",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-11-22",
+      "id": 69321,
+      "image": null,
+      "name": "How to Kill a Friend",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-11-29",
+      "id": 69322,
+      "image": null,
+      "name": "Grass",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-12-06",
+      "id": 69323,
+      "image": null,
+      "name": "The Cast",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-12-13",
+      "id": 69324,
+      "image": null,
+      "name": "Robber Bridegroom",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-12-20",
+      "id": 69325,
+      "image": null,
+      "name": "Snakebite",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1958-12-27",
+      "id": 69326,
+      "image": null,
+      "name": "Gypsum Hills Feud",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-01-03",
+      "id": 69327,
+      "image": null,
+      "name": "Young Love",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-01-10",
+      "id": 69328,
+      "image": null,
+      "name": "Marshal Proudfoot",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-01-17",
+      "id": 69329,
+      "image": null,
+      "name": "Passive Resistance",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-01-24",
+      "id": 69330,
+      "image": null,
+      "name": "Love of a Good Woman",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-01-31",
+      "id": 69331,
+      "image": null,
+      "name": "Jayhawkers",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-02-07",
+      "id": 69332,
+      "image": null,
+      "name": "Kitty's Rebellion",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-02-14",
+      "id": 69333,
+      "image": null,
+      "name": "Sky",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-02-21",
+      "id": 69334,
+      "image": null,
+      "name": "Doc Quits",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-02-28",
+      "id": 69335,
+      "image": null,
+      "name": "The Bear",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-03-07",
+      "id": 69336,
+      "image": null,
+      "name": "The Coward",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-03-14",
+      "id": 69337,
+      "image": null,
+      "name": "The F.U.",
+      "number": 27,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-03-21",
+      "id": 69338,
+      "image": null,
+      "name": "Wind",
+      "number": 28,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-04-04",
+      "id": 69339,
+      "image": null,
+      "name": "Fawn",
+      "number": 29,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-04-11",
+      "id": 69340,
+      "image": null,
+      "name": "Renegade White",
+      "number": 30,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-04-18",
+      "id": 69341,
+      "image": null,
+      "name": "Murder Warrant",
+      "number": 31,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-04-25",
+      "id": 69342,
+      "image": null,
+      "name": "Change of Heart",
+      "number": 32,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-05-02",
+      "id": 69343,
+      "image": null,
+      "name": "Buffalo Hunter",
+      "number": 33,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-05-09",
+      "id": 69344,
+      "image": null,
+      "name": "The Choice",
+      "number": 34,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-05-16",
+      "id": 69345,
+      "image": null,
+      "name": "There Never Was a Horse",
+      "number": 35,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-05-23",
+      "id": 69346,
+      "image": null,
+      "name": "Print Asper",
+      "number": 36,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-05-30",
+      "id": 69347,
+      "image": null,
+      "name": "The Constable",
+      "number": 37,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1959-06-06",
+      "id": 69348,
+      "image": null,
+      "name": "Blue Horse",
+      "number": 38,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-06-13",
+      "id": 69349,
+      "image": null,
+      "name": "Cheyennes",
+      "number": 39,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1959-09-05",
+      "id": 69350,
+      "image": null,
+      "name": "Target",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-09-19",
+      "id": 69351,
+      "image": null,
+      "name": "Kitty's Injury",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-09-26",
+      "id": 69352,
+      "image": null,
+      "name": "Horse Deal",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-10-03",
+      "id": 69353,
+      "image": null,
+      "name": "Johnny Red",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-10-10",
+      "id": 69355,
+      "image": null,
+      "name": "Tail to the Wind",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-10-17",
+      "id": 69356,
+      "image": null,
+      "name": "Annie Oakley",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-10-24",
+      "id": 69354,
+      "image": null,
+      "name": "Kangaroo",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-10-31",
+      "id": 69357,
+      "image": null,
+      "name": "Saludos",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-11-07",
+      "id": 69358,
+      "image": null,
+      "name": "Brother Whelp",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-11-14",
+      "id": 69359,
+      "image": null,
+      "name": "The Boots",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-11-21",
+      "id": 69360,
+      "image": null,
+      "name": "Odd Man Out",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-11-28",
+      "id": 69361,
+      "image": null,
+      "name": "Miguel's Daughter",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-12-05",
+      "id": 69362,
+      "image": null,
+      "name": "Box o' Rocks",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1959-12-12",
+      "id": 69363,
+      "image": null,
+      "name": "False Witness",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1959-12-19",
+      "id": 69364,
+      "image": null,
+      "name": "Tag, You're It",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1959-12-26",
+      "id": 69365,
+      "image": null,
+      "name": "Thick 'n' Thin",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-01-02",
+      "id": 69366,
+      "image": null,
+      "name": "Groat's Grudge",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-01-09",
+      "id": 69367,
+      "image": null,
+      "name": "Big Tom",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-01-16",
+      "id": 69368,
+      "image": null,
+      "name": "Till Death Do Us",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-01-23",
+      "id": 69369,
+      "image": null,
+      "name": "The Tragedian",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-01-30",
+      "id": 69370,
+      "image": null,
+      "name": "Hinka Do",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-02-06",
+      "id": 69371,
+      "image": null,
+      "name": "Doc Judge",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1960-02-13",
+      "id": 69372,
+      "image": null,
+      "name": "Moo Moo Raid",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-02-20",
+      "id": 69373,
+      "image": null,
+      "name": "Kitty's Killing",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-02-27",
+      "id": 69374,
+      "image": null,
+      "name": "Jailbait Janet",
+      "number": 25,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-03-05",
+      "id": 69375,
+      "image": null,
+      "name": "Unwanted Deputy",
+      "number": 26,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-03-12",
+      "id": 69376,
+      "image": null,
+      "name": "Where'd They Go",
+      "number": 27,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-03-26",
+      "id": 69377,
+      "image": null,
+      "name": "Crowbait Bob",
+      "number": 28,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-04-02",
+      "id": 69378,
+      "image": null,
+      "name": "Colleen So Green",
+      "number": 29,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-04-09",
+      "id": 69379,
+      "image": null,
+      "name": "The Ex-Urbanites",
+      "number": 30,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-04-16",
+      "id": 69380,
+      "image": null,
+      "name": "I Thee Wed",
+      "number": 31,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-04-23",
+      "id": 69381,
+      "image": null,
+      "name": "The Lady Killer",
+      "number": 32,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-04-30",
+      "id": 69382,
+      "image": null,
+      "name": "Gentleman's Disagreement",
+      "number": 33,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-05-07",
+      "id": 69383,
+      "image": null,
+      "name": "Speak Me Fair",
+      "number": 34,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-05-14",
+      "id": 69384,
+      "image": null,
+      "name": "Belle's Back",
+      "number": 35,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-05-21",
+      "id": 69385,
+      "image": null,
+      "name": "The Bobsy Twins",
+      "number": 36,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-05-28",
+      "id": 69386,
+      "image": null,
+      "name": "Old Flame",
+      "number": 37,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-06-04",
+      "id": 69387,
+      "image": null,
+      "name": "The Deserter",
+      "number": 38,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-06-11",
+      "id": 69388,
+      "image": null,
+      "name": "Cherry Red",
+      "number": 39,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1960-09-03",
+      "id": 69389,
+      "image": null,
+      "name": "Friend's Pay-Off",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-09-17",
+      "id": 69390,
+      "image": null,
+      "name": "The Blacksmith",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-09-24",
+      "id": 69391,
+      "image": null,
+      "name": "Small Water",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-10-01",
+      "id": 69392,
+      "image": null,
+      "name": "Say Uncle",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-10-08",
+      "id": 69393,
+      "image": null,
+      "name": "Shooting Stopover",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-10-15",
+      "id": 69394,
+      "image": null,
+      "name": "The Peace Officer",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-10-22",
+      "id": 69395,
+      "image": null,
+      "name": "Don Matteo",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-10-29",
+      "id": 69396,
+      "image": null,
+      "name": "The Worm",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-11-12",
+      "id": 69397,
+      "image": null,
+      "name": "The Badge",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-11-19",
+      "id": 69398,
+      "image": null,
+      "name": "Distant Drummer",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-11-26",
+      "id": 69399,
+      "image": null,
+      "name": "Ben Tolliver's Stud",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-12-03",
+      "id": 69400,
+      "image": null,
+      "name": "No Chip",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-12-10",
+      "id": 69401,
+      "image": null,
+      "name": "The Wake",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-12-17",
+      "id": 69402,
+      "image": null,
+      "name": "The Cook",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-12-24",
+      "id": 69403,
+      "image": null,
+      "name": "Old Fool",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1960-12-31",
+      "id": 69404,
+      "image": null,
+      "name": "Brother Love",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-01-07",
+      "id": 69405,
+      "image": null,
+      "name": "Bad Sheriff",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-01-14",
+      "id": 69406,
+      "image": null,
+      "name": "Unloaded Gun",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-01-21",
+      "id": 69407,
+      "image": null,
+      "name": "Tall Trapper",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1961-01-28",
+      "id": 69408,
+      "image": null,
+      "name": "Love Thy Neighbor",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1961-02-04",
+      "id": 69409,
+      "image": null,
+      "name": "Bad Seed",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1961-02-11",
+      "id": 69410,
+      "image": null,
+      "name": "Kitty Shot",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-02-25",
+      "id": 69411,
+      "image": null,
+      "name": "About Chester",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-03-04",
+      "id": 69412,
+      "image": null,
+      "name": "Harriet",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-03-11",
+      "id": 69413,
+      "image": null,
+      "name": "Potshot",
+      "number": 25,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-03-18",
+      "id": 69414,
+      "image": null,
+      "name": "Old Faces",
+      "number": 26,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-03-25",
+      "id": 69415,
+      "image": null,
+      "name": "Big Man",
+      "number": 27,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-04-01",
+      "id": 69416,
+      "image": null,
+      "name": "Little Girl",
+      "number": 28,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-04-08",
+      "id": 69417,
+      "image": null,
+      "name": "Stolen Horses",
+      "number": 29,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-04-15",
+      "id": 69418,
+      "image": null,
+      "name": "Minnie",
+      "number": 30,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-04-22",
+      "id": 69419,
+      "image": null,
+      "name": "Bless Me Till I Die",
+      "number": 31,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-04-29",
+      "id": 69420,
+      "image": null,
+      "name": "Long Hours, Short Pay",
+      "number": 32,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-05-06",
+      "id": 69421,
+      "image": null,
+      "name": "Hard Virtue",
+      "number": 33,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-05-13",
+      "id": 69422,
+      "image": null,
+      "name": "The Imposter",
+      "number": 34,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-05-20",
+      "id": 69423,
+      "image": null,
+      "name": "Chester's Dilemma",
+      "number": 35,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-05-27",
+      "id": 69424,
+      "image": null,
+      "name": "The Love of Money",
+      "number": 36,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-06-03",
+      "id": 69425,
+      "image": null,
+      "name": "Melinda Miles",
+      "number": 37,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-06-17",
+      "id": 69426,
+      "image": null,
+      "name": "Colorado Sheriff",
+      "number": 38,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1961-09-30",
+      "id": 69427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235856.jpg",
+      "name": "Perce",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-10-07",
+      "id": 69428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235857.jpg",
+      "name": "Old Yellow Boots",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-10-14",
+      "id": 69429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235858.jpg",
+      "name": "Miss Kitty",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-10-21",
+      "id": 69430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235859.jpg",
+      "name": "Harper's Blood",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-10-28",
+      "id": 69431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235860.jpg",
+      "name": "All That",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-11-04",
+      "id": 69432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235861.jpg",
+      "name": "Long, Long Trail",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-11-11",
+      "id": 69433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235862.jpg",
+      "name": "The Squaw",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-11-18",
+      "id": 69434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235863.jpg",
+      "name": "Chesterland",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-11-25",
+      "id": 69435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235864.jpg",
+      "name": "Milly",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-12-02",
+      "id": 69436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235865.jpg",
+      "name": "Indian Ford",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-12-09",
+      "id": 69437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235866.jpg",
+      "name": "Apprentice Doc",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-12-16",
+      "id": 69438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235867.jpg",
+      "name": "Nina's Revenge",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-12-23",
+      "id": 69439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235868.jpg",
+      "name": "Marry Me",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1961-12-30",
+      "id": 69440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235869.jpg",
+      "name": "A Man a Day",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-01-06",
+      "id": 69441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235870.jpg",
+      "name": "The Do-Badder",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-01-13",
+      "id": 69442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235871.jpg",
+      "name": "Lacey",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-01-20",
+      "id": 69443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235872.jpg",
+      "name": "Cody's Code",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-01-27",
+      "id": 69444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235873.jpg",
+      "name": "Old Dan",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-02-10",
+      "id": 417705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235874.jpg",
+      "name": "Catawomper",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-02-17",
+      "id": 417706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235875.jpg",
+      "name": "Half Straight",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-02-24",
+      "id": 417707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235876.jpg",
+      "name": "He Learned About Women",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-03-03",
+      "id": 417708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235877.jpg",
+      "name": "The Gallows",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-03-10",
+      "id": 417709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235878.jpg",
+      "name": "Reprisal",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-03-17",
+      "id": 417710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235879.jpg",
+      "name": "Coventry",
+      "number": 24,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-03-24",
+      "id": 417711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235880.jpg",
+      "name": "The Widow",
+      "number": 25,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-03-31",
+      "id": 417712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235881.jpg",
+      "name": "Durham Bull",
+      "number": 26,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-04-07",
+      "id": 417713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235882.jpg",
+      "name": "Wagon Girls",
+      "number": 27,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-04-14",
+      "id": 417714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235883.jpg",
+      "name": "The Dealer",
+      "number": 28,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-04-21",
+      "id": 417715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235884.jpg",
+      "name": "The Summons",
+      "number": 29,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-04-28",
+      "id": 417716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235885.jpg",
+      "name": "The Dreamers",
+      "number": 30,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-05-05",
+      "id": 417717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235886.jpg",
+      "name": "Cale",
+      "number": 31,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-05-12",
+      "id": 417718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235887.jpg",
+      "name": "Chester's Indian",
+      "number": 32,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-05-19",
+      "id": 417719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235888.jpg",
+      "name": "The Prisoner",
+      "number": 33,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-05-26",
+      "id": 417720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235889.jpg",
+      "name": "The Boys",
+      "number": 34,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1962-09-15",
+      "id": 417721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236649.jpg",
+      "name": "The Search",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-09-22",
+      "id": 417722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236650.jpg",
+      "name": "Call Me Dodie",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-09-29",
+      "id": 417723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236651.jpg",
+      "name": "Quint Asper Comes Home",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-10-06",
+      "id": 417724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236652.jpg",
+      "name": "Root Down",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-10-13",
+      "id": 417725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236653.jpg",
+      "name": "Jenny",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-10-20",
+      "id": 417726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236654.jpg",
+      "name": "Collie's Free",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-10-27",
+      "id": 417727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236655.jpg",
+      "name": "The Ditch",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-11-03",
+      "id": 417728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236656.jpg",
+      "name": "The Trappers",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-11-10",
+      "id": 417729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236657.jpg",
+      "name": "Phoebe Strunk",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-11-17",
+      "id": 417730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236658.jpg",
+      "name": "The Hunger",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-11-24",
+      "id": 417731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236659.jpg",
+      "name": "Abe Blocker",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-12-01",
+      "id": 417732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236660.jpg",
+      "name": "The Way It Is",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-12-08",
+      "id": 417733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236661.jpg",
+      "name": "Us Haggens",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-12-15",
+      "id": 417734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236662.jpg",
+      "name": "Uncle Sunday",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-12-22",
+      "id": 417735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236663.jpg",
+      "name": "False Front",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1962-12-29",
+      "id": 417736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236664.jpg",
+      "name": "Old Comrade",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-01-05",
+      "id": 417737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236665.jpg",
+      "name": "Louie Pheeters",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-01-12",
+      "id": 417738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236666.jpg",
+      "name": "The Renegades",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-01-19",
+      "id": 417739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236667.jpg",
+      "name": "Cotter's Girl",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-01-26",
+      "id": 417740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236668.jpg",
+      "name": "The Bad One",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-02-02",
+      "id": 417741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236669.jpg",
+      "name": "The Cousin",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-02-09",
+      "id": 417742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236670.jpg",
+      "name": "Shona",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-02-16",
+      "id": 417743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236671.jpg",
+      "name": "Ash",
+      "number": 23,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-02-23",
+      "id": 417744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236672.jpg",
+      "name": "Blind Man's Bluff",
+      "number": 24,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-03-01",
+      "id": 417745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236673.jpg",
+      "name": "Quint's Indian",
+      "number": 25,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-03-08",
+      "id": 417746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236674.jpg",
+      "name": "Anybody Can Kill a Marshal",
+      "number": 26,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-03-16",
+      "id": 417747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236675.jpg",
+      "name": "Two of a Kind",
+      "number": 27,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-03-23",
+      "id": 417748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236676.jpg",
+      "name": "I Call Him Wonder",
+      "number": 28,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-03-30",
+      "id": 417749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236677.jpg",
+      "name": "With a Smile",
+      "number": 29,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-04-06",
+      "id": 417750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236678.jpg",
+      "name": "The Far Places",
+      "number": 30,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-04-13",
+      "id": 417751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236679.jpg",
+      "name": "Panacea Sykes",
+      "number": 31,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-04-20",
+      "id": 417752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236680.jpg",
+      "name": "Tell Chester",
+      "number": 32,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-04-27",
+      "id": 417753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236681.jpg",
+      "name": "Quint-Cident",
+      "number": 33,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-05-04",
+      "id": 417754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236682.jpg",
+      "name": "Old York",
+      "number": 34,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-05-11",
+      "id": 417755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236683.jpg",
+      "name": "Daddy Went Away",
+      "number": 35,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-05-18",
+      "id": 417756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236684.jpg",
+      "name": "The Odyssey of Jubal Tanner",
+      "number": 36,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-05-25",
+      "id": 417757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236685.jpg",
+      "name": "JEB",
+      "number": 37,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-06-01",
+      "id": 417758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236686.jpg",
+      "name": "The Quest for Asa Janin",
+      "number": 38,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1963-09-28",
+      "id": 417759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236689.jpg",
+      "name": "Kate Heller",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-10-05",
+      "id": 417760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236690.jpg",
+      "name": "Lover Boy",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-10-12",
+      "id": 417761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236691.jpg",
+      "name": "Legends Don't Sleep",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-10-19",
+      "id": 417762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236692.jpg",
+      "name": "Tobe",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-10-26",
+      "id": 417763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236693.jpg",
+      "name": "Easy Come",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-11-02",
+      "id": 417764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236694.jpg",
+      "name": "My Sister's Keeper",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-11-09",
+      "id": 417765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236695.jpg",
+      "name": "Quint's Trail",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-11-16",
+      "id": 417766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236696.jpg",
+      "name": "Carter Caper",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-11-30",
+      "id": 417767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236697.jpg",
+      "name": "Ex-Con",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-12-07",
+      "id": 417768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236698.jpg",
+      "name": "Extradition (1)",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-12-14",
+      "id": 417769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236699.jpg",
+      "name": "Extradition (2)",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-12-21",
+      "id": 417770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236700.jpg",
+      "name": "The Magician",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1963-12-28",
+      "id": 417771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236701.jpg",
+      "name": "Pa Hack's Brood",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-01-04",
+      "id": 417772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236702.jpg",
+      "name": "The Glory and the Mud",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-01-11",
+      "id": 417773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236703.jpg",
+      "name": "Dry Well",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-01-18",
+      "id": 417774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236704.jpg",
+      "name": "Prairie Wolfer",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-01-25",
+      "id": 417775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236705.jpg",
+      "name": "Friend",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-02-01",
+      "id": 417776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236706.jpg",
+      "name": "Once a Haggen",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-02-08",
+      "id": 417777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236707.jpg",
+      "name": "No Hands",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-02-15",
+      "id": 417778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236708.jpg",
+      "name": "May Blossom",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-02-22",
+      "id": 417779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236709.jpg",
+      "name": "The Bassops",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-02-29",
+      "id": 417780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236710.jpg",
+      "name": "The Kite",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-03-07",
+      "id": 417781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236711.jpg",
+      "name": "Comanches Is Soft",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-03-14",
+      "id": 417782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236712.jpg",
+      "name": "Father's Love",
+      "number": 24,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-03-21",
+      "id": 417783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236713.jpg",
+      "name": "Now That April's Here",
+      "number": 25,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-03-28",
+      "id": 417784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236714.jpg",
+      "name": "Caleb",
+      "number": 26,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-04-04",
+      "id": 417785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236715.jpg",
+      "name": "Owney Tupper Had a Daughter",
+      "number": 27,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-04-11",
+      "id": 417786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236716.jpg",
+      "name": "Bently",
+      "number": 28,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-04-18",
+      "id": 417787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236717.jpg",
+      "name": "Kitty Cornered",
+      "number": 29,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-04-25",
+      "id": 417788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236718.jpg",
+      "name": "The Promoter",
+      "number": 30,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-05-02",
+      "id": 417789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236719.jpg",
+      "name": "Trip West",
+      "number": 31,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-05-09",
+      "id": 417790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236720.jpg",
+      "name": "Scot Free",
+      "number": 32,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-05-16",
+      "id": 417791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236721.jpg",
+      "name": "The Warden",
+      "number": 33,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-05-23",
+      "id": 417792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236722.jpg",
+      "name": "Homecoming",
+      "number": 34,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-05-30",
+      "id": 417793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236723.jpg",
+      "name": "The Other Half",
+      "number": 35,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-06-06",
+      "id": 417794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236724.jpg",
+      "name": "Journey for Three",
+      "number": 36,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1964-09-26",
+      "id": 417795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236732.jpg",
+      "name": "Blue Heaven",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-10-03",
+      "id": 417796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236733.jpg",
+      "name": "Crooked Mile",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-10-10",
+      "id": 417797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236734.jpg",
+      "name": "Old Man",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-10-17",
+      "id": 417798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236735.jpg",
+      "name": "The Violators",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-10-24",
+      "id": 417799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236736.jpg",
+      "name": "Doctor's Wife",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-10-31",
+      "id": 417800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236737.jpg",
+      "name": "Take Her, She's Cheap",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-11-07",
+      "id": 417801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236738.jpg",
+      "name": "Help Me Kitty",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-11-14",
+      "id": 417802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236739.jpg",
+      "name": "Hung High",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-11-21",
+      "id": 417803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236740.jpg",
+      "name": "Jonah Hutchinson",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-11-28",
+      "id": 417804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236741.jpg",
+      "name": "Big Man, Big Target",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-12-05",
+      "id": 417805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236742.jpg",
+      "name": "Chicken",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-12-12",
+      "id": 417806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236743.jpg",
+      "name": "Innocence",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-12-19",
+      "id": 417807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236744.jpg",
+      "name": "Aunt Thede",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1964-12-26",
+      "id": 417808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236745.jpg",
+      "name": "Hammerhead",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-01-02",
+      "id": 417809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236746.jpg",
+      "name": "Double Entry",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-01-09",
+      "id": 417810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236747.jpg",
+      "name": "Run, Sheep, Run",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-01-16",
+      "id": 417811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236748.jpg",
+      "name": "Deputy Festus",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-01-23",
+      "id": 417812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236749.jpg",
+      "name": "One Killer on Ice",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-01-30",
+      "id": 417813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236750.jpg",
+      "name": "Chief Joseph",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-02-06",
+      "id": 417814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236751.jpg",
+      "name": "Circus Trick",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-02-13",
+      "id": 417815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236752.jpg",
+      "name": "Song for Dying",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-02-20",
+      "id": 417816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236753.jpg",
+      "name": "Winner Take All",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-02-27",
+      "id": 417817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236754.jpg",
+      "name": "Eliab's Aim",
+      "number": 23,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-03-06",
+      "id": 417818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236755.jpg",
+      "name": "Thursday's Child",
+      "number": 24,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-03-13",
+      "id": 417819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236756.jpg",
+      "name": "Breckinridge",
+      "number": 25,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-03-20",
+      "id": 417820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236757.jpg",
+      "name": "Bank Baby",
+      "number": 26,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-03-27",
+      "id": 417821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236758.jpg",
+      "name": "The Lady",
+      "number": 27,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-04-03",
+      "id": 417822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236759.jpg",
+      "name": "Dry Road to Nowhere",
+      "number": 28,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-04-10",
+      "id": 417823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236760.jpg",
+      "name": "Twenty Miles from Dodge",
+      "number": 29,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-04-17",
+      "id": 417824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236761.jpg",
+      "name": "The Pariah",
+      "number": 30,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-04-24",
+      "id": 417825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236762.jpg",
+      "name": "Gilt Guilt",
+      "number": 31,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-05-01",
+      "id": 417826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236763.jpg",
+      "name": "Bad Lady from Brookline",
+      "number": 32,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-05-08",
+      "id": 417827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236764.jpg",
+      "name": "Two Tall Men",
+      "number": 33,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-05-15",
+      "id": 417828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236765.jpg",
+      "name": "Honey Pot",
+      "number": 34,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-05-22",
+      "id": 417829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236766.jpg",
+      "name": "The New Society",
+      "number": 35,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-05-29",
+      "id": 417830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236767.jpg",
+      "name": "He Who Steals",
+      "number": 36,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1965-09-18",
+      "id": 417831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236768.jpg",
+      "name": "Seven Hours to Dawn",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-09-25",
+      "id": 417832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236770.jpg",
+      "name": "The Storm",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-10-02",
+      "id": 417833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236771.jpg",
+      "name": "Clayton Thaddeus Greenwood",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-10-09",
+      "id": 417834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236772.jpg",
+      "name": "Ten Little Indians",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-10-16",
+      "id": 417835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236773.jpg",
+      "name": "Taps for Old Jeb",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-10-23",
+      "id": 417836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236774.jpg",
+      "name": "Kioga",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-10-30",
+      "id": 417837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236775.jpg",
+      "name": "The Bounty Hunter",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-11-06",
+      "id": 417838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236776.jpg",
+      "name": "The Reward",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-11-13",
+      "id": 417839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236777.jpg",
+      "name": "Malachi",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-11-20",
+      "id": 417840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236778.jpg",
+      "name": "The Pretender",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-11-27",
+      "id": 417841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236779.jpg",
+      "name": "South Wind",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-12-04",
+      "id": 417842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236780.jpg",
+      "name": "The Hostage",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-12-11",
+      "id": 417843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236781.jpg",
+      "name": "Outlaw's Woman",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-12-18",
+      "id": 417844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236782.jpg",
+      "name": "The Avengers",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1965-12-25",
+      "id": 417845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236783.jpg",
+      "name": "Gold Mine",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-01-08",
+      "id": 417846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236784.jpg",
+      "name": "Death Watch",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-01-15",
+      "id": 417847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236785.jpg",
+      "name": "Sweet Billy, Singer of Songs",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-01-22",
+      "id": 417848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236786.jpg",
+      "name": "The Raid (1)",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-01-29",
+      "id": 417849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236787.jpg",
+      "name": "The Raid (2)",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-02-05",
+      "id": 417850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236788.jpg",
+      "name": "Killer at Large",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-02-12",
+      "id": 417851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236789.jpg",
+      "name": "My Father's Guitar",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-02-19",
+      "id": 417852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236790.jpg",
+      "name": "Wishbone",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-02-26",
+      "id": 417853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236791.jpg",
+      "name": "Sanctuary",
+      "number": 23,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-03-05",
+      "id": 417854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236792.jpg",
+      "name": "Honor Before Justice",
+      "number": 24,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-03-12",
+      "id": 417855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236793.jpg",
+      "name": "The Brothers",
+      "number": 25,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-03-19",
+      "id": 417856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236794.jpg",
+      "name": "Which Dr.",
+      "number": 26,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-03-26",
+      "id": 417857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236795.jpg",
+      "name": "Harvest",
+      "number": 27,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-04-09",
+      "id": 417858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236796.jpg",
+      "name": "By Line",
+      "number": 28,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-04-16",
+      "id": 417859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236797.jpg",
+      "name": "Treasure of John Walking Fox",
+      "number": 29,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-04-23",
+      "id": 417860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236798.jpg",
+      "name": "My Father, My Son",
+      "number": 30,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-04-30",
+      "id": 417861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236799.jpg",
+      "name": "Parson Comes to Town",
+      "number": 31,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-05-07",
+      "id": 417862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236800.jpg",
+      "name": "Prime of Life",
+      "number": 32,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1966-09-17",
+      "id": 417863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236801.jpg",
+      "name": "Snap Decision",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-09-24",
+      "id": 417864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236802.jpg",
+      "name": "The Goldtakers",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-10-01",
+      "id": 417865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236803.jpg",
+      "name": "The Jailer",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-10-08",
+      "id": 417866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236804.jpg",
+      "name": "The Mission",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-10-15",
+      "id": 417867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236805.jpg",
+      "name": "The Good People",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-10-22",
+      "id": 417868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236806.jpg",
+      "name": "Gunfighter, R.I.P.",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-10-29",
+      "id": 417869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236807.jpg",
+      "name": "The Wrong Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-11-12",
+      "id": 417870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236808.jpg",
+      "name": "The Whispering Tree",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-11-19",
+      "id": 417871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236809.jpg",
+      "name": "The Well",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-11-26",
+      "id": 417872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236810.jpg",
+      "name": "Stage Stop",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-12-03",
+      "id": 417873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236811.jpg",
+      "name": "The Newcomers",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-12-10",
+      "id": 417874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236812.jpg",
+      "name": "Quaker Girl",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-12-17",
+      "id": 417875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236813.jpg",
+      "name": "The Moonstone",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-12-24",
+      "id": 417876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236814.jpg",
+      "name": "Champion of the World",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1966-12-31",
+      "id": 417877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236815.jpg",
+      "name": "The Hanging",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-01-07",
+      "id": 417878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236816.jpg",
+      "name": "Saturday Night",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-01-14",
+      "id": 417879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236817.jpg",
+      "name": "Mad Dog",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-01-21",
+      "id": 417880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236818.jpg",
+      "name": "Muley",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-01-28",
+      "id": 417881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236819.jpg",
+      "name": "Mail Drop",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-02-04",
+      "id": 417882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236820.jpg",
+      "name": "Old Friend",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-02-11",
+      "id": 417883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236821.jpg",
+      "name": "Fandango",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-02-18",
+      "id": 417884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236822.jpg",
+      "name": "The Returning",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-02-25",
+      "id": 417885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236823.jpg",
+      "name": "The Lure",
+      "number": 23,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-03-04",
+      "id": 417886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236824.jpg",
+      "name": "Noose of Gold",
+      "number": 24,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-03-11",
+      "id": 417887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236825.jpg",
+      "name": "The Favor",
+      "number": 25,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-03-18",
+      "id": 417888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236826.jpg",
+      "name": "Mistaken Identity",
+      "number": 26,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-03-25",
+      "id": 417889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236827.jpg",
+      "name": "Ladies from St. Louis",
+      "number": 27,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-04-08",
+      "id": 417890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236828.jpg",
+      "name": "Nitro! (1) (Tiger by the Tail)",
+      "number": 28,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-04-15",
+      "id": 417891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236829.jpg",
+      "name": "Nitro! (2) (Tiger by the Tail)",
+      "number": 29,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1967-09-11",
+      "id": 417892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236830.jpg",
+      "name": "The Wreckers",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-09-18",
+      "id": 417893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236831.jpg",
+      "name": "Cattle Barons",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-09-25",
+      "id": 417894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236832.jpg",
+      "name": "The Prodigal",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-10-02",
+      "id": 417895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236833.jpg",
+      "name": "Vengeance (1)",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-10-09",
+      "id": 417896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236834.jpg",
+      "name": "Vengeance (2)",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-10-16",
+      "id": 417897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236835.jpg",
+      "name": "A Hat",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-10-23",
+      "id": 417898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236836.jpg",
+      "name": "Hard Luck Henry",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-10-30",
+      "id": 417899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236837.jpg",
+      "name": "Major Glory",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-11-06",
+      "id": 417900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236838.jpg",
+      "name": "The Pillagers",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-11-13",
+      "id": 417901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236839.jpg",
+      "name": "Prairie Wolfer",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-11-20",
+      "id": 417902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236840.jpg",
+      "name": "Stranger in Town",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-11-27",
+      "id": 417903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236841.jpg",
+      "name": "Death Train",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-12-04",
+      "id": 417904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236842.jpg",
+      "name": "Rope Fever",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-12-18",
+      "id": 417905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236843.jpg",
+      "name": "Wonder",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1967-12-25",
+      "id": 417906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236844.jpg",
+      "name": "Baker's Dozen",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-01-01",
+      "id": 417907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236845.jpg",
+      "name": "The Victim",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-01-08",
+      "id": 417908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236846.jpg",
+      "name": "Deadman's Law",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-01-15",
+      "id": 417909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236847.jpg",
+      "name": "Nowhere to Run",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-01-22",
+      "id": 417910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236848.jpg",
+      "name": "Blood Money",
+      "number": 19,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-01-29",
+      "id": 417911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236849.jpg",
+      "name": "Hill Girl",
+      "number": 20,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-02-05",
+      "id": 417912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236850.jpg",
+      "name": "The Gunrunners",
+      "number": 21,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-02-12",
+      "id": 417913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236851.jpg",
+      "name": "The Jackals",
+      "number": 22,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-02-19",
+      "id": 417914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236852.jpg",
+      "name": "The First People",
+      "number": 23,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-02-26",
+      "id": 417915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236853.jpg",
+      "name": "Mr. Sam'l",
+      "number": 24,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-03-04",
+      "id": 417916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236854.jpg",
+      "name": "A Noose for Dobie Price",
+      "number": 25,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1968-09-23",
+      "id": 417917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236856.jpg",
+      "name": "Lyle's Kid",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-09-30",
+      "id": 417918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236857.jpg",
+      "name": "The Hide Cutters",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-10-07",
+      "id": 417919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236858.jpg",
+      "name": "Zavala",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-10-14",
+      "id": 417920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236859.jpg",
+      "name": "Uncle Finney",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-10-21",
+      "id": 417921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236860.jpg",
+      "name": "Slocum",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-10-28",
+      "id": 417922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236861.jpg",
+      "name": "O'Quillian",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-11-11",
+      "id": 417923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236862.jpg",
+      "name": "9:12 to Dodge",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-11-18",
+      "id": 417924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236863.jpg",
+      "name": "Abelia",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-11-25",
+      "id": 417925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236864.jpg",
+      "name": "Railroad!",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-12-02",
+      "id": 417926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236865.jpg",
+      "name": "The Miracle Man",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-12-09",
+      "id": 417927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236866.jpg",
+      "name": "Waco",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-12-16",
+      "id": 417928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236867.jpg",
+      "name": "Lobo",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-12-23",
+      "id": 417929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236868.jpg",
+      "name": "Johnny Cross",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-12-30",
+      "id": 417930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236869.jpg",
+      "name": "The Money Store",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1968-01-06",
+      "id": 417931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236870.jpg",
+      "name": "The Twisted Heritage",
+      "number": 15,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-01-13",
+      "id": 417932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236871.jpg",
+      "name": "Time of the Jackals",
+      "number": 16,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-01-20",
+      "id": 417933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236872.jpg",
+      "name": "Mannon",
+      "number": 17,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-01-27",
+      "id": 417934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236873.jpg",
+      "name": "Gold Town",
+      "number": 18,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-02-03",
+      "id": 417935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236874.jpg",
+      "name": "The Mark of Cain",
+      "number": 19,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-02-10",
+      "id": 417936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236875.jpg",
+      "name": "Reprisal",
+      "number": 20,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-02-17",
+      "id": 417937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236876.jpg",
+      "name": "The Long Night",
+      "number": 21,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-02-24",
+      "id": 417938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236877.jpg",
+      "name": "The Night Riders",
+      "number": 22,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-03-03",
+      "id": 417939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236878.jpg",
+      "name": "The Intruder",
+      "number": 23,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-03-10",
+      "id": 417940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236879.jpg",
+      "name": "The Good Samaritans",
+      "number": 24,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-03-17",
+      "id": 417941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236880.jpg",
+      "name": "The Prisoner",
+      "number": 25,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-03-24",
+      "id": 417942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236881.jpg",
+      "name": "Exodus 21.22",
+      "number": 26,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1969-09-22",
+      "id": 417943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236882.jpg",
+      "name": "The Devil's Outpost",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-09-29",
+      "id": 417944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236883.jpg",
+      "name": "Stryker",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-10-06",
+      "id": 417945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236884.jpg",
+      "name": "Coreyville",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-10-13",
+      "id": 417946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236885.jpg",
+      "name": "Danny",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-10-20",
+      "id": 417947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236886.jpg",
+      "name": "Hawk",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-10-27",
+      "id": 417948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236887.jpg",
+      "name": "A Man Called Smith",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-11-03",
+      "id": 417949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236888.jpg",
+      "name": "Charlie Noon",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-11-10",
+      "id": 417950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236889.jpg",
+      "name": "The Still",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-11-17",
+      "id": 417951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236890.jpg",
+      "name": "A Matter of Honor",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-11-24",
+      "id": 417952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236891.jpg",
+      "name": "The Innocent",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-12-01",
+      "id": 417953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236892.jpg",
+      "name": "Ring of Darkness",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-12-08",
+      "id": 417954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236893.jpg",
+      "name": "MacGraw",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-12-15",
+      "id": 417955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236894.jpg",
+      "name": "Roots of Fear",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1969-12-29",
+      "id": 417956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236895.jpg",
+      "name": "The Sisters",
+      "number": 14,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-01-05",
+      "id": 417957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236896.jpg",
+      "name": "The War Priest",
+      "number": 15,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-01-12",
+      "id": 417958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236897.jpg",
+      "name": "The Pack Rat",
+      "number": 16,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-01-19",
+      "id": 417959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236898.jpg",
+      "name": "The Judas Gun",
+      "number": 17,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-01-26",
+      "id": 417960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236899.jpg",
+      "name": "Doctor Herman Schultz, M.D.",
+      "number": 18,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-02-02",
+      "id": 417961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236900.jpg",
+      "name": "The Badge",
+      "number": 19,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-02-09",
+      "id": 417962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236901.jpg",
+      "name": "Albert",
+      "number": 20,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-02-16",
+      "id": 417963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236902.jpg",
+      "name": "Kiowa",
+      "number": 21,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-02-23",
+      "id": 417964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236903.jpg",
+      "name": "Celia",
+      "number": 22,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-03-02",
+      "id": 417965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236904.jpg",
+      "name": "Morgan",
+      "number": 23,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-03-09",
+      "id": 417966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236905.jpg",
+      "name": "The Thieves",
+      "number": 24,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-03-16",
+      "id": 417967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236906.jpg",
+      "name": "Hackett",
+      "number": 25,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-03-23",
+      "id": 417968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236907.jpg",
+      "name": "The Cage",
+      "number": 26,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1970-09-14",
+      "id": 417969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236908.jpg",
+      "name": "Chato",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-09-21",
+      "id": 417970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236909.jpg",
+      "name": "The Noose",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-09-28",
+      "id": 417971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236910.jpg",
+      "name": "Stark",
+      "number": 3,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-10-05",
+      "id": 417972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236911.jpg",
+      "name": "Sam McTavish, M.D.",
+      "number": 4,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-10-12",
+      "id": 417973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236912.jpg",
+      "name": "Gentry's Law",
+      "number": 5,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-10-19",
+      "id": 417974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236913.jpg",
+      "name": "Snow Train (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-10-26",
+      "id": 417975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236914.jpg",
+      "name": "Snow Train (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-11-02",
+      "id": 417976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236915.jpg",
+      "name": "Luke",
+      "number": 8,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-11-09",
+      "id": 417977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236916.jpg",
+      "name": "The Gun",
+      "number": 9,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-11-16",
+      "id": 417978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236917.jpg",
+      "name": "The Scavengers",
+      "number": 10,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-11-23",
+      "id": 417979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236918.jpg",
+      "name": "The Witness",
+      "number": 11,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-11-30",
+      "id": 417980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236919.jpg",
+      "name": "McCabe",
+      "number": 12,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-12-07",
+      "id": 417981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236920.jpg",
+      "name": "The Noon Day Devil",
+      "number": 13,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-12-14",
+      "id": 417982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236921.jpg",
+      "name": "Sergeant Holly",
+      "number": 14,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1970-12-28",
+      "id": 417983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236922.jpg",
+      "name": "Jenny",
+      "number": 15,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-01-04",
+      "id": 417984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236923.jpg",
+      "name": "Captain Sligo",
+      "number": 16,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-01-11",
+      "id": 417985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236924.jpg",
+      "name": "Mirage",
+      "number": 17,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-01-25",
+      "id": 417986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236925.jpg",
+      "name": "The Tycoon",
+      "number": 18,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-02-01",
+      "id": 417987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236926.jpg",
+      "name": "Jaekel",
+      "number": 19,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-02-08",
+      "id": 417988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236927.jpg",
+      "name": "Murdoch",
+      "number": 20,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-02-15",
+      "id": 417989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236928.jpg",
+      "name": "Cleavus",
+      "number": 21,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-02-22",
+      "id": 417990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236929.jpg",
+      "name": "Lavery",
+      "number": 22,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-03-01",
+      "id": 417991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236930.jpg",
+      "name": "Pike (1) (aka: Dirty Sally (1))",
+      "number": 23,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-03-08",
+      "id": 417992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236931.jpg",
+      "name": "Pike (2) (aka: Dirty Sally (2))",
+      "number": 24,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1971-09-13",
+      "id": 417993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236933.jpg",
+      "name": "The Lost",
+      "number": 1,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-09-20",
+      "id": 417994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236934.jpg",
+      "name": "Phoenix",
+      "number": 2,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-09-27",
+      "id": 417995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236935.jpg",
+      "name": "Waste (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-10-04",
+      "id": 417996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236936.jpg",
+      "name": "Waste (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-10-11",
+      "id": 417997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236937.jpg",
+      "name": "New Doctor in Town",
+      "number": 5,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-10-18",
+      "id": 417998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236938.jpg",
+      "name": "The Legend",
+      "number": 6,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-10-25",
+      "id": 417999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236939.jpg",
+      "name": "Trafton",
+      "number": 7,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-11-01",
+      "id": 418000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236940.jpg",
+      "name": "Lynott",
+      "number": 8,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-11-08",
+      "id": 418001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236941.jpg",
+      "name": "Lijah",
+      "number": 9,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-11-15",
+      "id": 418002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236942.jpg",
+      "name": "My Brother's Keeper",
+      "number": 10,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-11-22",
+      "id": 418003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236943.jpg",
+      "name": "Drago",
+      "number": 11,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-11-29",
+      "id": 418004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236944.jpg",
+      "name": "Gold Train: The Bullet (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-12-06",
+      "id": 418005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236945.jpg",
+      "name": "Gold Train: The Bullet (2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-12-13",
+      "id": 418006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236946.jpg",
+      "name": "Gold Train: The Bullet (3)",
+      "number": 14,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1971-12-27",
+      "id": 418007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236947.jpg",
+      "name": "P.S. Murry Christmas",
+      "number": 15,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-01-03",
+      "id": 418008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236948.jpg",
+      "name": "No Tomorrow",
+      "number": 16,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-01-10",
+      "id": 418009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236949.jpg",
+      "name": "Hidalgo",
+      "number": 17,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-01-17",
+      "id": 418010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236950.jpg",
+      "name": "Tara",
+      "number": 18,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-01-24",
+      "id": 418011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236951.jpg",
+      "name": "One for the Road",
+      "number": 19,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-01-31",
+      "id": 418012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236952.jpg",
+      "name": "The Predators",
+      "number": 20,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-02-07",
+      "id": 418013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236953.jpg",
+      "name": "Yankton",
+      "number": 21,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-02-21",
+      "id": 418014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236954.jpg",
+      "name": "Blind Man's Buff",
+      "number": 22,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-03-06",
+      "id": 418015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236955.jpg",
+      "name": "Alias Festus Haggen",
+      "number": 23,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-03-13",
+      "id": 418016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236956.jpg",
+      "name": "The Wedding",
+      "number": 24,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1972-09-11",
+      "id": 418017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236957.jpg",
+      "name": "The River (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-09-18",
+      "id": 418018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236958.jpg",
+      "name": "The River (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-09-25",
+      "id": 418019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236959.jpg",
+      "name": "Bohannan",
+      "number": 3,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-10-02",
+      "id": 418020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236960.jpg",
+      "name": "The Judgement",
+      "number": 4,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-10-09",
+      "id": 418021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236961.jpg",
+      "name": "The Drummer",
+      "number": 5,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-10-16",
+      "id": 418022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236962.jpg",
+      "name": "Sarah",
+      "number": 6,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-10-23",
+      "id": 418023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236963.jpg",
+      "name": "The Fugitives",
+      "number": 7,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-10-30",
+      "id": 418024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236964.jpg",
+      "name": "Eleven Dollars",
+      "number": 8,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-11-06",
+      "id": 418025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236965.jpg",
+      "name": "Milligan",
+      "number": 9,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-11-13",
+      "id": 418026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236966.jpg",
+      "name": "Tatum",
+      "number": 10,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-11-20",
+      "id": 418027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236967.jpg",
+      "name": "The Sodbusters",
+      "number": 11,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-11-27",
+      "id": 418028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236968.jpg",
+      "name": "The Brothers",
+      "number": 12,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-12-11",
+      "id": 418029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236969.jpg",
+      "name": "Hostage!",
+      "number": 13,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1972-12-18",
+      "id": 418030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236970.jpg",
+      "name": "Jubilee",
+      "number": 14,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-01-01",
+      "id": 418031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236971.jpg",
+      "name": "Arizona Midnight",
+      "number": 15,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-01-08",
+      "id": 418032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236972.jpg",
+      "name": "Homecoming",
+      "number": 16,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-01-15",
+      "id": 418033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236973.jpg",
+      "name": "Shadler",
+      "number": 17,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-01-22",
+      "id": 418034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236974.jpg",
+      "name": "Patricia",
+      "number": 18,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-01-29",
+      "id": 418035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236975.jpg",
+      "name": "A Quiet Day in Dodge",
+      "number": 19,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-02-05",
+      "id": 418036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236976.jpg",
+      "name": "Whelan's Men",
+      "number": 20,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-02-12",
+      "id": 418037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236977.jpg",
+      "name": "Kimbro",
+      "number": 21,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-02-19",
+      "id": 418038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236978.jpg",
+      "name": "Jesse",
+      "number": 22,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-02-26",
+      "id": 418039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236979.jpg",
+      "name": "Talbot",
+      "number": 23,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-03-05",
+      "id": 418040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236980.jpg",
+      "name": "This Golden Land",
+      "number": 24,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1973-09-10",
+      "id": 418041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236981.jpg",
+      "name": "Women for Sale (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-09-17",
+      "id": 418042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236982.jpg",
+      "name": "Women for Sale (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-09-24",
+      "id": 418043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236983.jpg",
+      "name": "Matt's Love Story",
+      "number": 3,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-10-01",
+      "id": 418044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236984.jpg",
+      "name": "The Boy and the Sinner",
+      "number": 4,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-10-08",
+      "id": 418045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236985.jpg",
+      "name": "The Widow-Maker",
+      "number": 5,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-10-22",
+      "id": 418046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236986.jpg",
+      "name": "Kitty's Love Affair",
+      "number": 6,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-10-29",
+      "id": 418047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236987.jpg",
+      "name": "The Widow and the Rogue",
+      "number": 7,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-11-05",
+      "id": 418048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236988.jpg",
+      "name": "A Game of Death...An Act of Love (1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-11-12",
+      "id": 418049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236989.jpg",
+      "name": "A Game of Death...An Act of Love (2)",
+      "number": 9,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-11-19",
+      "id": 418050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236990.jpg",
+      "name": "Lynch Town",
+      "number": 10,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-11-26",
+      "id": 418051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236991.jpg",
+      "name": "The Hanging of Newly O'Brien",
+      "number": 11,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-12-03",
+      "id": 418052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236992.jpg",
+      "name": "Susan Was Evil",
+      "number": 12,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-12-17",
+      "id": 418053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236993.jpg",
+      "name": "The Deadly Innocent",
+      "number": 13,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1973-12-24",
+      "id": 418054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236994.jpg",
+      "name": "The Child Between",
+      "number": 14,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-01-14",
+      "id": 418055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236995.jpg",
+      "name": "A Family of Killers",
+      "number": 15,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-01-21",
+      "id": 418056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236996.jpg",
+      "name": "Like Old Times",
+      "number": 16,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-01-28",
+      "id": 418057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236997.jpg",
+      "name": "The Town Tamers",
+      "number": 17,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-02-11",
+      "id": 418058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236998.jpg",
+      "name": "The Foundling",
+      "number": 18,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-02-18",
+      "id": 418059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1236999.jpg",
+      "name": "The Iron Blood of Courage",
+      "number": 19,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-02-25",
+      "id": 418060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237000.jpg",
+      "name": "The Schoolmarm",
+      "number": 20,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-03-01",
+      "id": 418061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237001.jpg",
+      "name": "Trail of Bloodshed",
+      "number": 21,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-03-11",
+      "id": 418062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237002.jpg",
+      "name": "Cowtown Hustler",
+      "number": 22,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-03-18",
+      "id": 418063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237003.jpg",
+      "name": "To Ride a Yeller Horse",
+      "number": 23,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-04-01",
+      "id": 418064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237004.jpg",
+      "name": "The Disciple",
+      "number": 24,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "1974-09-09",
+      "id": 418065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237008.jpg",
+      "name": "Matt Dillon Must Die",
+      "number": 1,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-09-16",
+      "id": 418066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237009.jpg",
+      "name": "A Town in Chains",
+      "number": 2,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-09-23",
+      "id": 418067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237010.jpg",
+      "name": "The Guns of Cibola Blanca (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-09-30",
+      "id": 418068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237011.jpg",
+      "name": "The Guns of Cibola Blanca (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-10-07",
+      "id": 418069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237012.jpg",
+      "name": "Thirty a Month and Found",
+      "number": 5,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-10-14",
+      "id": 418070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237013.jpg",
+      "name": "The Wiving",
+      "number": 6,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-10-21",
+      "id": 418071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237014.jpg",
+      "name": "The Iron Men",
+      "number": 7,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-11-04",
+      "id": 418072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237015.jpg",
+      "name": "The Fourth Victim",
+      "number": 8,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-11-11",
+      "id": 418073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237016.jpg",
+      "name": "The Tarnished Badge",
+      "number": 9,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-11-18",
+      "id": 418074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237017.jpg",
+      "name": "In Performance of Duty",
+      "number": 10,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-12-02",
+      "id": 418075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237018.jpg",
+      "name": "Island in the Desert (1)",
+      "number": 11,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-12-09",
+      "id": 418076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237019.jpg",
+      "name": "Island in the Desert (2)",
+      "number": 12,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1974-12-16",
+      "id": 418077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237020.jpg",
+      "name": "The Colonel",
+      "number": 13,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-01-06",
+      "id": 418078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237021.jpg",
+      "name": "The Squaw",
+      "number": 14,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-01-13",
+      "id": 418079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237022.jpg",
+      "name": "The Hiders",
+      "number": 15,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-01-20",
+      "id": 418080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237023.jpg",
+      "name": "Larkin",
+      "number": 16,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-01-27",
+      "id": 418081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237024.jpg",
+      "name": "The Fires of Ignorance",
+      "number": 17,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-02-03",
+      "id": 418082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237025.jpg",
+      "name": "The Angry Land",
+      "number": 18,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-02-10",
+      "id": 418083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237026.jpg",
+      "name": "Brides and Grooms",
+      "number": 19,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-02-24",
+      "id": 418084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237027.jpg",
+      "name": "Hard Labor",
+      "number": 20,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-03-03",
+      "id": 418085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237028.jpg",
+      "name": "I Have Promises to Keep",
+      "number": 21,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-03-10",
+      "id": 418086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237029.jpg",
+      "name": "The Busters",
+      "number": 22,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-03-17",
+      "id": 418087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237030.jpg",
+      "name": "Manolo",
+      "number": 23,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "1975-03-31",
+      "id": 418088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1237031.jpg",
+      "name": "The Sharecroppers",
+      "number": 24,
+      "runtime": 60,
+      "season": 20
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Western"
   ],
+  "id": "tvmaze-782",
+  "live": true,
+  "overview": "Marshall Matt Dillon is responsible for keeping the law and respectability in Dodge City in this western action-drama. Gunsmoke captured the courage, character and spirit of the Western Frontier.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/494/1237032.jpg",
   "rating": 7.8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 57,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "782",
+  "title": "Gunsmoke",
+  "type": "series",
+  "year": 1955
 }

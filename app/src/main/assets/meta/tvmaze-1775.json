@@ -1,20 +1,732 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1775",
-  "source": "tvmaze",
-  "sourceId": "1775",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Schitt's Creek",
-  "year": 2015,
-  "type": "series",
-  "overview": "Schitt's Creek centers on a formerly filthy rich video store magnate Johnny Rose, his soap star wife Moira, and their two kids, über-hipster son David and socialite daughter Alexis, who suddenly find themselves broke. They are forced to live in Schitt's Creek, a small depressing town they once bought as a joke.",
-  "poster": "file:///android_asset/posters/tvmaze-1775.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-01-13",
+      "id": 153107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410335.jpg",
+      "name": "Our Cup Runneth Over",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-13",
+      "id": 153108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410338.jpg",
+      "name": "The Drip",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-20",
+      "id": 153109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410340.jpg",
+      "name": "Don't Worry, It's His Sister",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-27",
+      "id": 153110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410358.jpg",
+      "name": "Bad Parents",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 153111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410364.jpg",
+      "name": "The Cabin",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 153112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410368.jpg",
+      "name": "Wine and Roses",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 153113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410369.jpg",
+      "name": "Turkey Shoot",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 153114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410370.jpg",
+      "name": "Allez-Vous",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-03",
+      "id": 153115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410371.jpg",
+      "name": "Carl's Funeral",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-10",
+      "id": 153116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410372.jpg",
+      "name": "Honeymoon",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-17",
+      "id": 153117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410373.jpg",
+      "name": "Little Sister",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 153118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410374.jpg",
+      "name": "Surprise Party",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-31",
+      "id": 153119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410375.jpg",
+      "name": "Town for Sale",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 536724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410414.jpg",
+      "name": "Finding David",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 556373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410415.jpg",
+      "name": "Family Dinner",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 556375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410416.jpg",
+      "name": "Jazzagals",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 560290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410417.jpg",
+      "name": "Estate Sale",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 560291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410418.jpg",
+      "name": "Bob's Bagels",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 589337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410419.jpg",
+      "name": "Moira vs. Town Council",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 589338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410420.jpg",
+      "name": "The Candidate",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 589339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410421.jpg",
+      "name": "Milk Money",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 619485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410422.jpg",
+      "name": "Moira's Nudes",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-08",
+      "id": 619536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410424.jpg",
+      "name": "Ronnie's Party",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 619538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410425.jpg",
+      "name": "The Motel Guest",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 619540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410426.jpg",
+      "name": "Lawn Signs",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 668674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410427.jpg",
+      "name": "Happy Anniversary",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-10",
+      "id": 989369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410594.jpg",
+      "name": "Opening Night",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-17",
+      "id": 1032814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410595.jpg",
+      "name": "The Throuple",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-24",
+      "id": 1032816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410596.jpg",
+      "name": "New Car",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-31",
+      "id": 1032817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410598.jpg",
+      "name": "Driving Test",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-07",
+      "id": 1032818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410599.jpg",
+      "name": "Rooms by the Hour",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-14",
+      "id": 1032819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410600.jpg",
+      "name": "Murder Mystery",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 1032820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410601.jpg",
+      "name": "General Store",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-28",
+      "id": 1032821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410603.jpg",
+      "name": "Motel Review",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-07",
+      "id": 1032822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410604.jpg",
+      "name": "The Affair",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1032823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410605.jpg",
+      "name": "Sebastien Raine",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1032824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410606.jpg",
+      "name": "Stop Saying Lice!",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1032825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410607.jpg",
+      "name": "Friends and Family",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1032826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410608.jpg",
+      "name": "Grad Night",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-09",
+      "id": 1355590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358002.jpg",
+      "name": "Dead Guy in Room 4",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-16",
+      "id": 1385778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358003.jpg",
+      "name": "Pregnancy Test",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-23",
+      "id": 1385779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410635.jpg",
+      "name": "Asbestos Fest",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-30",
+      "id": 1385780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410636.jpg",
+      "name": "Girls' Night",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-06",
+      "id": 1401392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410638.jpg",
+      "name": "RIP Moira Rose",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-27",
+      "id": 1401393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410639.jpg",
+      "name": "Open Mic",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-06",
+      "id": 1401394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410640.jpg",
+      "name": "The Barbecue",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1401395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410642.jpg",
+      "name": "The Jazzaguy",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-20",
+      "id": 1401396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410643.jpg",
+      "name": "The Olive Branch",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-27",
+      "id": 1401397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410644.jpg",
+      "name": "Baby Sprinkle",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-03",
+      "id": 1401398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410645.jpg",
+      "name": "The Rollout",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-10",
+      "id": 1401399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410646.jpg",
+      "name": "Singles Week",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-01-08",
+      "id": 1557028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/448802.jpg",
+      "name": "The Crowening",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-15",
+      "id": 1577763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450561.jpg",
+      "name": "Love Letters",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-22",
+      "id": 1586322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/452990.jpg",
+      "name": "The Plant",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-29",
+      "id": 1586323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/454844.jpg",
+      "name": "The Dress",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-05",
+      "id": 1586324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456891.jpg",
+      "name": "Housewarming",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-12",
+      "id": 1600327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459352.jpg",
+      "name": "Rock On!",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-19",
+      "id": 1600328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462054.jpg",
+      "name": "A Whisper of Desire",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-26",
+      "id": 1600329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464374.jpg",
+      "name": "The Hospies",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-05",
+      "id": 1600330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466966.jpg",
+      "name": "The M.V.P.",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-12",
+      "id": 1612418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469052.jpg",
+      "name": "Roadkill",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-19",
+      "id": 1612419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470690.jpg",
+      "name": "Meet the Parents",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-26",
+      "id": 1617469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474374.jpg",
+      "name": "The Roast",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-02",
+      "id": 1619543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476131.jpg",
+      "name": "The Hike",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-09",
+      "id": 1620060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/478122.jpg",
+      "name": "Life Is a Cabaret",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-01-07",
+      "id": 1717547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/587605.jpg",
+      "name": "Smoke Signals",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-14",
+      "id": 1783459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/590176.jpg",
+      "name": "The Incident",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-21",
+      "id": 1783460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/592984.jpg",
+      "name": "The Job Interview",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-28",
+      "id": 1783461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596724.jpg",
+      "name": "Maid of Honour",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-04",
+      "id": 1783462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599313.jpg",
+      "name": "The Premiere",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-11",
+      "id": 1783463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/602607.jpg",
+      "name": "The Wingman",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-18",
+      "id": 1800956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/605797.jpg",
+      "name": "Moira Rosé",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-25",
+      "id": 1800957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/608626.jpg",
+      "name": "The Presidential Suite",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-03",
+      "id": 1805635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610894.jpg",
+      "name": "Rebound",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-10",
+      "id": 1810289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/614009.jpg",
+      "name": "Sunrise, Sunset",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-17",
+      "id": 1813833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/616971.jpg",
+      "name": "The Bachelor Party",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-24",
+      "id": 1816395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/248/620241.jpg",
+      "name": "The Pitch",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-31",
+      "id": 1816396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623452.jpg",
+      "name": "Start Spreading the News",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-07",
+      "id": 1816397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/626183.jpg",
+      "name": "Happy Ending",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-1775",
+  "live": true,
+  "overview": "Schitt's Creek centers on a formerly filthy rich video store magnate Johnny Rose, his soap star wife Moira, and their two kids, über-hipster son David and socialite daughter Alexis, who suddenly find themselves broke. They are forced to live in Schitt's Creek, a small depressing town they once bought as a joke.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/279/697623.jpg",
   "rating": 7.6,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1775",
+  "title": "Schitt's Creek",
+  "type": "series",
+  "year": 2015
 }

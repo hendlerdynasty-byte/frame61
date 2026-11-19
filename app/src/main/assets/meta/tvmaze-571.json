@@ -1,22 +1,464 @@
 {
-  "schema": 1,
-  "id": "tvmaze-571",
-  "source": "tvmaze",
-  "sourceId": "571",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Glades",
-  "year": 2010,
-  "type": "series",
-  "overview": "In The Glades, Jim Longworth, is a brilliant homicide detective from Chicago who moves to South Florida after being shot by his captain. He assumes it will afford him a more relaxing lifestyle, but he finds things are more complicated than he had imagined when he finds himself solving unlikely crimes in the town of Palm Glade, Florida.",
-  "poster": "file:///android_asset/posters/tvmaze-571.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-07-11",
+      "id": 53817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597566.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-18",
+      "id": 53818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1024238.jpg",
+      "name": "Bird in the Hand",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-25",
+      "id": 53819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597568.jpg",
+      "name": "A Perfect Storm",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-01",
+      "id": 53820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026827.jpg",
+      "name": "Mucked Up",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-08",
+      "id": 53821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1027196.jpg",
+      "name": "The Girlfriend Experience",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-15",
+      "id": 53822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/411/1027550.jpg",
+      "name": "Doppelganger",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-22",
+      "id": 53823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/411/1027616.jpg",
+      "name": "Cassadaga",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-29",
+      "id": 53824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/411/1028469.jpg",
+      "name": "Marriage Is Murder",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-05",
+      "id": 53825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/412/1030248.jpg",
+      "name": "Honey",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-12",
+      "id": 53826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/415/1038928.jpg",
+      "name": "Second Chance",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-19",
+      "id": 53827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/415/1039750.jpg",
+      "name": "Booty",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 53828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/417/1043353.jpg",
+      "name": "Exposed",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 53829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/417/1043364.jpg",
+      "name": "Breaking 80",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 53830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/488/1220744.jpg",
+      "name": "Family Matters",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 53831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597581.jpg",
+      "name": "Old Ghosts",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 53832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597582.jpg",
+      "name": "Lost and Found",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 53833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597583.jpg",
+      "name": "Moonlighting",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-10",
+      "id": 53834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597584.jpg",
+      "name": "Dirty Little Secrets",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-17",
+      "id": 53835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597585.jpg",
+      "name": "Gibtown",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 53836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597586.jpg",
+      "name": "Addicted to Love",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-31",
+      "id": 53837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597587.jpg",
+      "name": "Second Skin",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-07",
+      "id": 53838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597588.jpg",
+      "name": "Iron Pipeline",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-14",
+      "id": 53839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597589.jpg",
+      "name": "Swamp Thing",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-21",
+      "id": 53840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597590.jpg",
+      "name": "Beached",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-28",
+      "id": 53841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597591.jpg",
+      "name": "Shine",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-05",
+      "id": 53842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597592.jpg",
+      "name": "Breakout",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 53843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597593.jpg",
+      "name": "Close Encounters",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 53844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597594.jpg",
+      "name": "Poseidon Adventure",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-17",
+      "id": 53845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597595.jpg",
+      "name": "Longworth's Anatomy",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-24",
+      "id": 53846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597596.jpg",
+      "name": "The Naked Truth",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-01",
+      "id": 53847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597597.jpg",
+      "name": "Food Fight",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-08",
+      "id": 53848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597599.jpg",
+      "name": "Old Times",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 53849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597600.jpg",
+      "name": "Public Enemy",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 53850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597601.jpg",
+      "name": "Fountain of Youth",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 53851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597602.jpg",
+      "name": "Islandia",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 53852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597603.jpg",
+      "name": "Endless Summer",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-27",
+      "id": 53853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597604.jpg",
+      "name": "Yankee Dan",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-06-03",
+      "id": 53854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597605.jpg",
+      "name": "Shot Girls",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 53855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597606.jpg",
+      "name": "Killer Barbecue",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 53856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597607.jpg",
+      "name": "Magic Longworth",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 53857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597608.jpg",
+      "name": "Apocalypse Now",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 53858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597609.jpg",
+      "name": "Glade-iators!",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 53859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106709.jpg",
+      "name": "Gypsies, Tramps and Thieves",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 53860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106721.jpg",
+      "name": "Three's Company",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 53861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107629.jpg",
+      "name": "Fast Ball",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 53862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597610.jpg",
+      "name": "Gallerinas",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-12",
+      "id": 53863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597611.jpg",
+      "name": "Civil War",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-19",
+      "id": 53864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597612.jpg",
+      "name": "Happy Trails",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-26",
+      "id": 53865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597613.jpg",
+      "name": "Tin Cup",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-571",
+  "live": true,
+  "overview": "In The Glades, Jim Longworth, is a brilliant homicide detective from Chicago who moves to South Florida after being shot by his captain. He assumes it will afford him a more relaxing lifestyle, but he finds things are more complicated than he had imagined when he finds himself solving unlikely crimes in the town of Palm Glade, Florida.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11802.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "571",
+  "title": "The Glades",
+  "type": "series",
+  "year": 2010
 }

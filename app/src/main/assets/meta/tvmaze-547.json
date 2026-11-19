@@ -1,21 +1,3001 @@
 {
-  "schema": 1,
-  "id": "tvmaze-547",
-  "source": "tvmaze",
-  "sourceId": "547",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "ER",
-  "year": 1994,
-  "type": "series",
-  "overview": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room. The highly acclaimed drama series holds the distinction of being recognized as the most Emmy-nominated series in the history of television.",
-  "poster": "file:///android_asset/posters/tvmaze-547.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1994-09-19",
+      "id": 50329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/294/736380.jpg",
+      "name": "24 Hours",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1994-09-22",
+      "id": 50330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/294/736390.jpg",
+      "name": "Day One",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-09-29",
+      "id": 50331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/589/1473258.jpg",
+      "name": "Going Home",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-10-06",
+      "id": 50332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475013.jpg",
+      "name": "Hit and Run",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-10-13",
+      "id": 50333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475028.jpg",
+      "name": "Into That Good Night",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-10-20",
+      "id": 50334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475031.jpg",
+      "name": "Chicago Heat",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-11-03",
+      "id": 50335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475162.jpg",
+      "name": "Another Perfect Day",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-11-10",
+      "id": 50336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475169.jpg",
+      "name": "9 1/2 Hours",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-11-17",
+      "id": 50337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475181.jpg",
+      "name": "ER Confidential",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-12-08",
+      "id": 50338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475185.jpg",
+      "name": "Blizzard",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-12-15",
+      "id": 50339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475198.jpg",
+      "name": "The Gift",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-01-05",
+      "id": 50340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475208.jpg",
+      "name": "Happy New Year",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-01-12",
+      "id": 50341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475219.jpg",
+      "name": "Luck of the Draw",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-01-19",
+      "id": 50342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475223.jpg",
+      "name": "Long Day's Journey",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-02",
+      "id": 50343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475235.jpg",
+      "name": "Feb 5, '95",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-09",
+      "id": 50344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476080.jpg",
+      "name": "Make of Two Hearts",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-16",
+      "id": 50345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476100.jpg",
+      "name": "The Birthday Party",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-23",
+      "id": 50346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476111.jpg",
+      "name": "Sleepless in Chicago",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-03-09",
+      "id": 50347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476122.jpg",
+      "name": "Love's Labor Lost",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-03-30",
+      "id": 50348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476157.jpg",
+      "name": "Full Moon, Saturday Night",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-06",
+      "id": 50349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476187.jpg",
+      "name": "House of Cards",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-27",
+      "id": 50350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476190.jpg",
+      "name": "Men Plan, God Laughs",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-04",
+      "id": 50351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476196.jpg",
+      "name": "Love Among the Ruins",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-11",
+      "id": 50352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476250.jpg",
+      "name": "Motherhood",
+      "number": 24,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-18",
+      "id": 50353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476286.jpg",
+      "name": "Everything Old Is New Again",
+      "number": 25,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-09-21",
+      "id": 50354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476896.jpg",
+      "name": "Welcome Back, Carter!",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-28",
+      "id": 50355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476909.jpg",
+      "name": "Summer Run",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-05",
+      "id": 50356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476921.jpg",
+      "name": "Do One, Teach One, Kill One",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-12",
+      "id": 50357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476927.jpg",
+      "name": "What Life?",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-19",
+      "id": 50358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476931.jpg",
+      "name": "And Baby Makes Two",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-02",
+      "id": 50359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476932.jpg",
+      "name": "Days Like This",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-09",
+      "id": 50360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476939.jpg",
+      "name": "Hell and High Water",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-16",
+      "id": 50361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476944.jpg",
+      "name": "The Secret Sharer",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-12-07",
+      "id": 50362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476954.jpg",
+      "name": "Home",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-12-14",
+      "id": 50363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476972.jpg",
+      "name": "A Miracle Happens Here",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-01-04",
+      "id": 50364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1476999.jpg",
+      "name": "Dead of Winter",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-01-25",
+      "id": 50365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477070.jpg",
+      "name": "True Lies",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-01",
+      "id": 50366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477075.jpg",
+      "name": "It's Not Easy Being Greene",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-08",
+      "id": 50367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477079.jpg",
+      "name": "The Right Thing",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-15",
+      "id": 50368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477090.jpg",
+      "name": "Baby Shower",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-22",
+      "id": 50369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477095.jpg",
+      "name": "The Healers",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-03-28",
+      "id": 50370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477190.jpg",
+      "name": "The Match Game",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-04",
+      "id": 50371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477289.jpg",
+      "name": "A Shift in the Night",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-25",
+      "id": 50372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477293.jpg",
+      "name": "Fire in the Belly",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-02",
+      "id": 50373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477297.jpg",
+      "name": "Fevers of Unknown Origin",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-09",
+      "id": 50374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477310.jpg",
+      "name": "Take These Broken Wings",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-16",
+      "id": 50375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1477314.jpg",
+      "name": "John Carter, M.D.",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-09-26",
+      "id": 50376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/591/1478424.jpg",
+      "name": "Dr. Carter, I Presume",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-03",
+      "id": 50377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/591/1478455.jpg",
+      "name": "Let the Games Begin",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-10",
+      "id": 50378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486469.jpg",
+      "name": "Don't Ask, Don't Tell",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-17",
+      "id": 50379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486483.jpg",
+      "name": "Last Call",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-31",
+      "id": 50380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486487.jpg",
+      "name": "Ghosts",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-07",
+      "id": 50381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486490.jpg",
+      "name": "Fear of Flying",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-14",
+      "id": 50382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486504.jpg",
+      "name": "No Brain, No Gain",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-21",
+      "id": 50383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486523.jpg",
+      "name": "Union Station",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-12-12",
+      "id": 50384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486528.jpg",
+      "name": "Ask Me No Questions, I'll Tell You No Lies",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-12-19",
+      "id": 50385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486539.jpg",
+      "name": "Homeless for the Holidays",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-16",
+      "id": 50386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486731.jpg",
+      "name": "Night Shift",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-23",
+      "id": 50387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486740.jpg",
+      "name": "Post Mortem",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-30",
+      "id": 50388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486745.jpg",
+      "name": "Fortune's Fools",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-06",
+      "id": 50389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486784.jpg",
+      "name": "Whose Appy Now?",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-13",
+      "id": 50390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486795.jpg",
+      "name": "The Long Way Around",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-20",
+      "id": 50391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486827.jpg",
+      "name": "Faith",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-10",
+      "id": 50392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490469.jpg",
+      "name": "Tribes",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-17",
+      "id": 50393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490742.jpg",
+      "name": "You Bet Your Life",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-24",
+      "id": 50394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490747.jpg",
+      "name": "Calling Dr. Hathaway",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-01",
+      "id": 50395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490782.jpg",
+      "name": "Random Acts",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-08",
+      "id": 50396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490792.jpg",
+      "name": "Make a Wish",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-15",
+      "id": 50397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490802.jpg",
+      "name": "One More for the Road",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-09-25",
+      "id": 50398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498121.jpg",
+      "name": "Ambush",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-10-02",
+      "id": 50399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498125.jpg",
+      "name": "Something New",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-10-09",
+      "id": 50400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498133.jpg",
+      "name": "Friendly Fire",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-10-16",
+      "id": 50401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498146.jpg",
+      "name": "When the Bough Breaks",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-10-30",
+      "id": 50402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498172.jpg",
+      "name": "Good Touch, Bad Touch",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-11-06",
+      "id": 50403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498181.jpg",
+      "name": "Ground Zero",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-11-13",
+      "id": 50404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498205.jpg",
+      "name": "Fathers and Sons",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-11-20",
+      "id": 50405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498216.jpg",
+      "name": "Freak Show",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-12-11",
+      "id": 50406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498260.jpg",
+      "name": "Obstruction of Justice",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-12-18",
+      "id": 50407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498265.jpg",
+      "name": "Do You See What I See?",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-01-08",
+      "id": 50408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506012.jpg",
+      "name": "Think Warm Thoughts",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-01-15",
+      "id": 50409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506017.jpg",
+      "name": "Sharp Relief",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-01-29",
+      "id": 50410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506038.jpg",
+      "name": "Carter's Choice",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-02-05",
+      "id": 50411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506051.jpg",
+      "name": "Family Practice",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-02-26",
+      "id": 50412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506109.jpg",
+      "name": "Exodus",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-03-05",
+      "id": 50413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506117.jpg",
+      "name": "My Brother's Keeper",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-04-09",
+      "id": 50414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506444.jpg",
+      "name": "A Bloody Mess",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-04-16",
+      "id": 50415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506448.jpg",
+      "name": "Gut Reaction",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-04-23",
+      "id": 50416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506466.jpg",
+      "name": "Shades of Gray",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-04-30",
+      "id": 50417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506469.jpg",
+      "name": "Of Past Regret and Future Fear",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-05-07",
+      "id": 50418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506473.jpg",
+      "name": "Suffer the Little Children",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-05-14",
+      "id": 50419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/602/1506485.jpg",
+      "name": "A Hole in the Heart",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-09-24",
+      "id": 50420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513453.jpg",
+      "name": "Day for Knight",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-10-01",
+      "id": 50421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513662.jpg",
+      "name": "Split Second",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-10-08",
+      "id": 50422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513676.jpg",
+      "name": "They Treat Horses, Don't They?",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-10-15",
+      "id": 50423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513682.jpg",
+      "name": "Vanishing Act",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-10-29",
+      "id": 50424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513686.jpg",
+      "name": "Masquerade",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-11-05",
+      "id": 50425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513699.jpg",
+      "name": "Stuck on You",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-11-12",
+      "id": 50426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514278.jpg",
+      "name": "Hazed and Confused",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-11-19",
+      "id": 50427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514282.jpg",
+      "name": "The Good Fight",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-12-10",
+      "id": 50428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514296.jpg",
+      "name": "Good Luck, Ruth Johnson",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-12-17",
+      "id": 50429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514306.jpg",
+      "name": "The Miracle Worker",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-01-07",
+      "id": 50430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514314.jpg",
+      "name": "Nobody Doesn't Like Amanda Lee",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-01-21",
+      "id": 50431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514341.jpg",
+      "name": "Double Blind",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-02-04",
+      "id": 50432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514723.jpg",
+      "name": "Choosing Joi",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-02-11",
+      "id": 50433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514752.jpg",
+      "name": "The Storm (1)",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-02-18",
+      "id": 50434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514764.jpg",
+      "name": "The Storm (2)",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-02-25",
+      "id": 50435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514791.jpg",
+      "name": "Middle of Nowhere",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-03-25",
+      "id": 50436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514809.jpg",
+      "name": "Sticks and Stones",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-04-08",
+      "id": 50437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514816.jpg",
+      "name": "Point of Origin",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-04-29",
+      "id": 50438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514837.jpg",
+      "name": "Rites of Spring",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-05-06",
+      "id": 50439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514849.jpg",
+      "name": "Power",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-05-13",
+      "id": 50440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514887.jpg",
+      "name": "Responsible Parties",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-05-20",
+      "id": 50441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514889.jpg",
+      "name": "Getting to Know You",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-09-30",
+      "id": 50442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518343.jpg",
+      "name": "Leave It to Weaver",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-07",
+      "id": 50443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518378.jpg",
+      "name": "Last Rites",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-14",
+      "id": 50444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518391.jpg",
+      "name": "Greene with Envy",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-21",
+      "id": 50445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518405.jpg",
+      "name": "Sins of the Fathers",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-04",
+      "id": 50446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518415.jpg",
+      "name": "Truth & Consequences",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-11",
+      "id": 50447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518919.jpg",
+      "name": "The Peace of Wild Things",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-18",
+      "id": 50448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518921.jpg",
+      "name": "Humpty Dumpty",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-25",
+      "id": 50449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518929.jpg",
+      "name": "Great Expectations",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-12-16",
+      "id": 50450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518937.jpg",
+      "name": "How the Finch Stole Christmas",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-01-06",
+      "id": 50451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1518963.jpg",
+      "name": "Family Matters",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-01-13",
+      "id": 50452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519399.jpg",
+      "name": "The Domino Heart",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-02-03",
+      "id": 50453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519402.jpg",
+      "name": "Abby Road",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-02-10",
+      "id": 50454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519406.jpg",
+      "name": "Be Still My Heart (1)",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-02-17",
+      "id": 50455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519425.jpg",
+      "name": "All in the Family (2)",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-02-24",
+      "id": 50456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519439.jpg",
+      "name": "Be Patient",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-03-23",
+      "id": 50457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519859.jpg",
+      "name": "Under Control",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-04-06",
+      "id": 50458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519881.jpg",
+      "name": "Viable Options",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-04-13",
+      "id": 50459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519886.jpg",
+      "name": "Match Made in Heaven",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-04-27",
+      "id": 50460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519908.jpg",
+      "name": "The Fastest Year",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-05-04",
+      "id": 50461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519935.jpg",
+      "name": "Loose Ends",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-05-11",
+      "id": 50462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519946.jpg",
+      "name": "Such Sweet Sorrow",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-05-18",
+      "id": 50463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1519982.jpg",
+      "name": "May Day",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-10-12",
+      "id": 50464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521338.jpg",
+      "name": "Homecoming",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-19",
+      "id": 50465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521340.jpg",
+      "name": "Sand and Water",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-26",
+      "id": 50466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521444.jpg",
+      "name": "Mars Attacks",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-02",
+      "id": 50467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521456.jpg",
+      "name": "Benton Backwards",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-09",
+      "id": 50468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521468.jpg",
+      "name": "Flight of Fancy",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-16",
+      "id": 50469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521786.jpg",
+      "name": "The Visit",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-23",
+      "id": 50470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521803.jpg",
+      "name": "Rescue Me",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-07",
+      "id": 50471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521813.jpg",
+      "name": "The Dance We Do",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-14",
+      "id": 50472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521910.jpg",
+      "name": "The Greatest of Gifts",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-01-04",
+      "id": 50473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1521921.jpg",
+      "name": "Piece of Mind",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-01-11",
+      "id": 50474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/610/1527225.jpg",
+      "name": "Rock, Paper, Scissors",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-02-01",
+      "id": 50475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/610/1527236.jpg",
+      "name": "Surrender",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-02-08",
+      "id": 50476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/610/1527243.jpg",
+      "name": "Thy Will Be Done",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-02-15",
+      "id": 50477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1527654.jpg",
+      "name": "A Walk in the Woods",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-02-22",
+      "id": 50478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1527676.jpg",
+      "name": "The Crossing",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-03-01",
+      "id": 50479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1527717.jpg",
+      "name": "Witch Hunt",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-03-29",
+      "id": 50480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528198.jpg",
+      "name": "Survival of the Fittest",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-04-19",
+      "id": 50481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528205.jpg",
+      "name": "April Showers",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-04-26",
+      "id": 50482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528678.jpg",
+      "name": "Sailing Away",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-05-03",
+      "id": 50483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528714.jpg",
+      "name": "Fear of Commitment",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-05-10",
+      "id": 50484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528727.jpg",
+      "name": "Where the Heart Is",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-05-17",
+      "id": 50485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1528737.jpg",
+      "name": "Rampage",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-09-27",
+      "id": 50486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530167.jpg",
+      "name": "Four Corners",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-04",
+      "id": 50487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530188.jpg",
+      "name": "The Longer You Stay",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-11",
+      "id": 50488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530200.jpg",
+      "name": "Blood, Sugar, Sex, Magic",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-18",
+      "id": 50489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530304.jpg",
+      "name": "Never Say Never",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-25",
+      "id": 50490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530307.jpg",
+      "name": "Start All Over Again",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-01",
+      "id": 50491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530730.jpg",
+      "name": "Supplies and Demands",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-08",
+      "id": 50492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530737.jpg",
+      "name": "If I Should Fall from Grace",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-15",
+      "id": 50493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530780.jpg",
+      "name": "Partly Cloudy, Chance of Rain",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-22",
+      "id": 50494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530822.jpg",
+      "name": "Quo Vadis?",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-12-13",
+      "id": 50495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530859.jpg",
+      "name": "I'll Be Home for Christmas",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-01-10",
+      "id": 50496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530869.jpg",
+      "name": "Beyond Repair",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-01-17",
+      "id": 50497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530873.jpg",
+      "name": "A River in Egypt",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-01-31",
+      "id": 50498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530882.jpg",
+      "name": "Damage Is Done",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-02-07",
+      "id": 50499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1531949.jpg",
+      "name": "A Simple Twist of Fate",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-02-28",
+      "id": 50500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1531961.jpg",
+      "name": "It's All In Your Head",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-03-07",
+      "id": 50501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1531979.jpg",
+      "name": "Secrets and Lies",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-03-28",
+      "id": 50502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1531988.jpg",
+      "name": "Bygones",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-04-04",
+      "id": 50503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1532247.jpg",
+      "name": "Orion in the Sky",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-04-25",
+      "id": 50504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1532266.jpg",
+      "name": "Brothers & Sisters",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-05-02",
+      "id": 50505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1532308.jpg",
+      "name": "The Letter",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-05-09",
+      "id": 50506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1532332.jpg",
+      "name": "On the Beach",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-05-16",
+      "id": 50507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1532375.jpg",
+      "name": "Lockdown",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-09-26",
+      "id": 50508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/613/1533889.jpg",
+      "name": "Chaos Theory",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-03",
+      "id": 50509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/613/1533907.jpg",
+      "name": "Dead Again",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-10",
+      "id": 50510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/613/1533987.jpg",
+      "name": "Insurrection",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-17",
+      "id": 50511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1535089.jpg",
+      "name": "Walk Like a Man",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-31",
+      "id": 50512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1535093.jpg",
+      "name": "A Hopeless Wound",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-07",
+      "id": 50513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1535121.jpg",
+      "name": "One Can Only Hope",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-14",
+      "id": 50514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1535155.jpg",
+      "name": "Tell Me Where It Hurts",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-21",
+      "id": 50515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1535180.jpg",
+      "name": "First Snowfall",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-05",
+      "id": 50516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536227.jpg",
+      "name": "Next of Kin",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-12",
+      "id": 50517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536253.jpg",
+      "name": "Hindsight",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-01-09",
+      "id": 50518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536586.jpg",
+      "name": "A Little Help from My Friends",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-01-16",
+      "id": 50519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536602.jpg",
+      "name": "A Saint in the City",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-01-30",
+      "id": 50520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536817.jpg",
+      "name": "No Good Deed Goes Unpunished",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-02-06",
+      "id": 50521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536822.jpg",
+      "name": "No Strings Attached",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-02-13",
+      "id": 50522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536856.jpg",
+      "name": "A Boy Falling Out of the Sky",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-02-20",
+      "id": 50523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536881.jpg",
+      "name": "A Thousand Cranes",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-03-13",
+      "id": 50524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1537399.jpg",
+      "name": "The Advocate",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-04-03",
+      "id": 50525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1537416.jpg",
+      "name": "Finders Keepers",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-04-24",
+      "id": 50526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1537429.jpg",
+      "name": "Things Change",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-05-01",
+      "id": 50527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1537435.jpg",
+      "name": "Foreign Affairs",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-05-08",
+      "id": 50528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537669.jpg",
+      "name": "When Night Meets Day",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-05-15",
+      "id": 50529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537679.jpg",
+      "name": "Kisangani",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-09-25",
+      "id": 50530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1539966.jpg",
+      "name": "Now What?",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-02",
+      "id": 50531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1539981.jpg",
+      "name": "The Lost",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-09",
+      "id": 50532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1539998.jpg",
+      "name": "Dear Abby",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-23",
+      "id": 50533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540223.jpg",
+      "name": "Shifts Happen",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-30",
+      "id": 50534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540285.jpg",
+      "name": "Out of Africa",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-06",
+      "id": 50535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540376.jpg",
+      "name": "The Greater Good",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-13",
+      "id": 50536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540381.jpg",
+      "name": "Death and Taxes",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-20",
+      "id": 50537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540534.jpg",
+      "name": "Freefall",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-04",
+      "id": 50538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540693.jpg",
+      "name": "Missing",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-11",
+      "id": 50539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540697.jpg",
+      "name": "Makemba",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-01-08",
+      "id": 50540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540938.jpg",
+      "name": "Touch and Go",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-01-15",
+      "id": 50541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540947.jpg",
+      "name": "NICU",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-02-05",
+      "id": 50542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540973.jpg",
+      "name": "Get Carter",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-02-12",
+      "id": 50543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1542345.jpg",
+      "name": "Impulse Control",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-02-19",
+      "id": 50544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1542372.jpg",
+      "name": "Blood Relations",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-02-26",
+      "id": 50545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1542403.jpg",
+      "name": "Forgive and Forget",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-04-01",
+      "id": 50546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1542414.jpg",
+      "name": "The Student",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-04-08",
+      "id": 50547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1542422.jpg",
+      "name": "Where There's Smoke",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-04-22",
+      "id": 50548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1542678.jpg",
+      "name": "Just a Touch",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-04-29",
+      "id": 50549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1542743.jpg",
+      "name": "Abby Normal",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-05-06",
+      "id": 50550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1542752.jpg",
+      "name": "Midnight",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-05-13",
+      "id": 50551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1542763.jpg",
+      "name": "Drive",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-09-23",
+      "id": 50552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1542766.jpg",
+      "name": "One for the Road",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-07",
+      "id": 50553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544640.jpg",
+      "name": "Damaged",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-14",
+      "id": 50554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544647.jpg",
+      "name": "Try Carter",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-21",
+      "id": 50555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544655.jpg",
+      "name": "Fear",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-04",
+      "id": 50556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544662.jpg",
+      "name": "An Intern's Guide to the Galaxy",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-11",
+      "id": 50557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544753.jpg",
+      "name": "Time of Death",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-18",
+      "id": 50558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544757.jpg",
+      "name": "White Guy, Dark Hair",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-02",
+      "id": 50559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544760.jpg",
+      "name": "A Shot in the Dark",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-09",
+      "id": 50560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544772.jpg",
+      "name": "'Twas the Night",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-01-13",
+      "id": 50561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/617/1544774.jpg",
+      "name": "Skin",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-01-20",
+      "id": 50562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545559.jpg",
+      "name": "Only Connect",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-01-27",
+      "id": 50563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545565.jpg",
+      "name": "The Providers",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-02-03",
+      "id": 50564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545585.jpg",
+      "name": "Middleman",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-02-10",
+      "id": 50565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545588.jpg",
+      "name": "Just As I Am",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-02-17",
+      "id": 50566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545592.jpg",
+      "name": "Alone in a Crowd",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-02-24",
+      "id": 50567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545600.jpg",
+      "name": "Here and There",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-03-24",
+      "id": 50568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545914.jpg",
+      "name": "Back in the World",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-04-21",
+      "id": 50569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545923.jpg",
+      "name": "Refusal of Care",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-04-28",
+      "id": 50570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545921.jpg",
+      "name": "Ruby Redux",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-05-05",
+      "id": 50571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545938.jpg",
+      "name": "You Are Here",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-05-12",
+      "id": 50572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545941.jpg",
+      "name": "Carter est Amoureux",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-05-19",
+      "id": 50573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545946.jpg",
+      "name": "The Show Must Go On",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-09-22",
+      "id": 50574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546606.jpg",
+      "name": "Cañon City",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-29",
+      "id": 50575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546815.jpg",
+      "name": "Nobody's Baby",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-10-06",
+      "id": 50576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546833.jpg",
+      "name": "Man with No Name",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-10-13",
+      "id": 50577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546856.jpg",
+      "name": "Blame It on the Rain",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-10-20",
+      "id": 50578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546872.jpg",
+      "name": "Wake Up",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-03",
+      "id": 50579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546897.jpg",
+      "name": "Dream House",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-10",
+      "id": 50580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546926.jpg",
+      "name": "The Human Shield",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-17",
+      "id": 50581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1546941.jpg",
+      "name": "Two Ships",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-01",
+      "id": 50582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1547966.jpg",
+      "name": "I Do",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-08",
+      "id": 50583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1547970.jpg",
+      "name": "All About Christmas Eve",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-01-05",
+      "id": 50584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549131.jpg",
+      "name": "If Not Now",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-01-12",
+      "id": 50585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549140.jpg",
+      "name": "Split Decisions",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-02-02",
+      "id": 50586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549147.jpg",
+      "name": "Body & Soul",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-02-09",
+      "id": 50587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549174.jpg",
+      "name": "Quintessence of Dust",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-03-02",
+      "id": 50588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549185.jpg",
+      "name": "Darfur",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-03-16",
+      "id": 50589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549192.jpg",
+      "name": "Out on a Limb",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-03-23",
+      "id": 50590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549196.jpg",
+      "name": "Lost in America",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-03-30",
+      "id": 50591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549669.jpg",
+      "name": "Strange Bedfellows",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-04-27",
+      "id": 50592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549679.jpg",
+      "name": "No Place to Hide",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-05-04",
+      "id": 50593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549709.jpg",
+      "name": "There Are No Angels Here",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-05-11",
+      "id": 50594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549722.jpg",
+      "name": "The Gallant Hero & the Tragic Victor",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-05-18",
+      "id": 50595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549742.jpg",
+      "name": "Twenty-One Guns",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-09-21",
+      "id": 50596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1550946.jpg",
+      "name": "Bloodline",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-28",
+      "id": 50597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1550963.jpg",
+      "name": "Graduation Day",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-05",
+      "id": 50598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1550988.jpg",
+      "name": "Somebody to Love",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-12",
+      "id": 50599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1550996.jpg",
+      "name": "Parenthood",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-19",
+      "id": 50600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1551008.jpg",
+      "name": "Ames v. Kovac",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-02",
+      "id": 50601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1552958.jpg",
+      "name": "Heart of the Matter",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-09",
+      "id": 50602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1552961.jpg",
+      "name": "Jigsaw",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-16",
+      "id": 50603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1552963.jpg",
+      "name": "Reason to Believe",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-23",
+      "id": 50604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1552972.jpg",
+      "name": "Scoop and Run",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-30",
+      "id": 50605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554506.jpg",
+      "name": "Tell Me No Secrets...",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-12-07",
+      "id": 50606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554510.jpg",
+      "name": "City of Mercy",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-01-04",
+      "id": 50607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554521.jpg",
+      "name": "Breach of Trust",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-01-11",
+      "id": 50608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554525.jpg",
+      "name": "A House Divided",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-02-01",
+      "id": 50609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554851.jpg",
+      "name": "Murmurs of the Heart",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-02-08",
+      "id": 50610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554854.jpg",
+      "name": "Dying Is Easy...",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-02-15",
+      "id": 50611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554860.jpg",
+      "name": "Crisis of Conscience",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-02-22",
+      "id": 50612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1554911.jpg",
+      "name": "From Here to Paternity",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-04-12",
+      "id": 50613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555551.jpg",
+      "name": "Photographs and Memories",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-04-19",
+      "id": 50614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555565.jpg",
+      "name": "Family Business",
+      "number": 19,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-04-26",
+      "id": 50615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555569.jpg",
+      "name": "Lights Out",
+      "number": 20,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-05-03",
+      "id": 50616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555705.jpg",
+      "name": "I Don't",
+      "number": 21,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-05-10",
+      "id": 50617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555712.jpg",
+      "name": "Sea Change",
+      "number": 22,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-05-17",
+      "id": 50618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555726.jpg",
+      "name": "The Honeymoon Is Over",
+      "number": 23,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-09-27",
+      "id": 50619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555732.jpg",
+      "name": "The War Comes Home",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-04",
+      "id": 50620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557729.jpg",
+      "name": "In a Different Light",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-11",
+      "id": 50621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557735.jpg",
+      "name": "Officer Down",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-18",
+      "id": 50622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557740.jpg",
+      "name": "Gravity",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-25",
+      "id": 50623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557755.jpg",
+      "name": "Under the Influence",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-01",
+      "id": 50624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557761.jpg",
+      "name": "The Test",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-08",
+      "id": 50625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557974.jpg",
+      "name": "Blackout",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-15",
+      "id": 50626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557979.jpg",
+      "name": "Coming Home",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-29",
+      "id": 50627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1557989.jpg",
+      "name": "Skye's the Limit",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-12-06",
+      "id": 50628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558005.jpg",
+      "name": "300 Patients",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-01-03",
+      "id": 50629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558479.jpg",
+      "name": "Status Quo",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-01-10",
+      "id": 50630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558483.jpg",
+      "name": "Believe the Unseen",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-01-17",
+      "id": 50631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558488.jpg",
+      "name": "Atonement",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-04-10",
+      "id": 50632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558492.jpg",
+      "name": "Owner of a Broken Heart",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-04-17",
+      "id": 50633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558741.jpg",
+      "name": "...As the Day She Was Born",
+      "number": 15,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-04-24",
+      "id": 50634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558743.jpg",
+      "name": "Truth Will Out",
+      "number": 16,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-05-01",
+      "id": 50635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558762.jpg",
+      "name": "Under Pressure",
+      "number": 17,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-05-08",
+      "id": 50636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558773.jpg",
+      "name": "Tandem Repeats",
+      "number": 18,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-05-15",
+      "id": 50637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1558783.jpg",
+      "name": "The Chicago Way",
+      "number": 19,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-09-25",
+      "id": 50638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559593.jpg",
+      "name": "Life After Death",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-09",
+      "id": 50639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559597.jpg",
+      "name": "Another Thursday at County",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-16",
+      "id": 50640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559615.jpg",
+      "name": "The Book of Abby",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-23",
+      "id": 50641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559616.jpg",
+      "name": "Parental Guidance",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-30",
+      "id": 50642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559624.jpg",
+      "name": "Haunted",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-11-06",
+      "id": 50643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559885.jpg",
+      "name": "Oh, Brother",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-11-13",
+      "id": 50644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559899.jpg",
+      "name": "Heal Thyself",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-11-20",
+      "id": 50645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559904.jpg",
+      "name": "Age of Innocence",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-04",
+      "id": 50646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559914.jpg",
+      "name": "Let It Snow",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-11",
+      "id": 50647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/623/1559922.jpg",
+      "name": "The High Holiday",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-01-08",
+      "id": 50648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560147.jpg",
+      "name": "Separation Anxiety",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-01-15",
+      "id": 50649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560156.jpg",
+      "name": "Dream Runner",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-01-22",
+      "id": 50650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560164.jpg",
+      "name": "Love Is a Battlefield",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-02-05",
+      "id": 50651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560171.jpg",
+      "name": "A Long, Strange Trip",
+      "number": 14,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-02-12",
+      "id": 50652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560190.jpg",
+      "name": "The Family Man",
+      "number": 15,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-02-19",
+      "id": 50653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560203.jpg",
+      "name": "The Beginning of the End",
+      "number": 16,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-02-26",
+      "id": 50654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560217.jpg",
+      "name": "T-minus-6",
+      "number": 17,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-03-05",
+      "id": 50655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560257.jpg",
+      "name": "What We Do",
+      "number": 18,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-03-12",
+      "id": 50656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560263.jpg",
+      "name": "Old Times",
+      "number": 19,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-03-19",
+      "id": 50657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560390.jpg",
+      "name": "Shifting Equilibrium",
+      "number": 20,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-03-26",
+      "id": 50658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560398.jpg",
+      "name": "I Feel Good",
+      "number": 21,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2009-04-02",
+      "id": 50659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/624/1560429.jpg",
+      "name": "And in the End...",
+      "number": 22,
+      "runtime": 120,
+      "season": 15
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Medical"
   ],
+  "id": "tvmaze-547",
+  "live": true,
+  "overview": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room. The highly acclaimed drama series holds the distinction of being recognized as the most Emmy-nominated series in the history of television.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11490.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "547",
+  "title": "ER",
+  "type": "series",
+  "year": 1994
 }

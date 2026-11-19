@@ -1,22 +1,1265 @@
 {
-  "schema": 1,
-  "id": "tvmaze-746",
-  "source": "tvmaze",
-  "sourceId": "746",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Shameless",
-  "year": 2004,
-  "type": "series",
-  "overview": "Paul Abbott's critically acclaimed, offbeat drama about the rollercoaster lives and loves of the dysfunctional Gallagher clan.",
-  "poster": "file:///android_asset/posters/tvmaze-746.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-01-13",
+      "id": 65791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804466.jpg",
+      "name": "Meet the Gallaghers",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-20",
+      "id": 65792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804471.jpg",
+      "name": "We're Going to the Moon",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-27",
+      "id": 65793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804473.jpg",
+      "name": "We're Getting Married",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-03",
+      "id": 65794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804475.jpg",
+      "name": "Abduction",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-10",
+      "id": 65795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804476.jpg",
+      "name": "Affairs",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-17",
+      "id": 65796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804477.jpg",
+      "name": "Monica Comes Home (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-24",
+      "id": 65797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/804479.jpg",
+      "name": "Dead (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-04",
+      "id": 65798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808683.jpg",
+      "name": "Grandad",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-11",
+      "id": 65799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808685.jpg",
+      "name": "Eric",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-18",
+      "id": 65800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808688.jpg",
+      "name": "The Garden Competition",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-25",
+      "id": 65801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808690.jpg",
+      "name": "The Big Day",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-01",
+      "id": 65802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808691.jpg",
+      "name": "Crooks and Robbers",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-08",
+      "id": 65803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808693.jpg",
+      "name": "Welcome to the Family",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-15",
+      "id": 65804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808695.jpg",
+      "name": "Joey Dawson",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-22",
+      "id": 65805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808701.jpg",
+      "name": "Against the Odds",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-01",
+      "id": 65806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808705.jpg",
+      "name": "Sister, Sister",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-08",
+      "id": 65807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808708.jpg",
+      "name": "True Love",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-03",
+      "id": 65808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808718.jpg",
+      "name": "Liamday",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-10",
+      "id": 65809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808742.jpg",
+      "name": "Dark Friends",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-17",
+      "id": 65810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808744.jpg",
+      "name": "Baby",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-24",
+      "id": 65811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808745.jpg",
+      "name": "Benefit Fraud",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-31",
+      "id": 65812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808746.jpg",
+      "name": "Old Flame",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-07",
+      "id": 65813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808747.jpg",
+      "name": "In with the Maguire's",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-14",
+      "id": 65814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808748.jpg",
+      "name": "Act Your Age",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-21",
+      "id": 65815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808772.jpg",
+      "name": "The Wedding",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-09",
+      "id": 65816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808779.jpg",
+      "name": "New Beginnings",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-16",
+      "id": 65817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808780.jpg",
+      "name": "New Romances",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-23",
+      "id": 65818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808784.jpg",
+      "name": "You Decide",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-30",
+      "id": 65819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808785.jpg",
+      "name": "The Runaway",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 65820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808787.jpg",
+      "name": "Boys, Boys, Boys",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 65821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808788.jpg",
+      "name": "Dangerous Situation",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-20",
+      "id": 65822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808789.jpg",
+      "name": "Terrorist Target",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-27",
+      "id": 65823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/323/808790.jpg",
+      "name": "Revelations",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-01",
+      "id": 65824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817221.jpg",
+      "name": "The Countdown",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-01",
+      "id": 65825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817222.jpg",
+      "name": "Other Paddy",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-15",
+      "id": 65826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817223.jpg",
+      "name": "Happy Birthday, Ma Maguire",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-22",
+      "id": 65827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817225.jpg",
+      "name": "Frank's Big Win",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-29",
+      "id": 65828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817227.jpg",
+      "name": "Beach Party",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-05",
+      "id": 65829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817228.jpg",
+      "name": "Nowhere to Go",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-12",
+      "id": 65830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817229.jpg",
+      "name": "Brothers and Boyfriends",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-19",
+      "id": 65831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817230.jpg",
+      "name": "I Love Frank",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-26",
+      "id": 65832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817231.jpg",
+      "name": "Absent Parents",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-04",
+      "id": 65833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817232.jpg",
+      "name": "Old Friends, New Enemies",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-11",
+      "id": 65834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817233.jpg",
+      "name": "Twin",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-18",
+      "id": 65835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817234.jpg",
+      "name": "Family at War",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-25",
+      "id": 65836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817235.jpg",
+      "name": "Date a Death",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-01",
+      "id": 65837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817236.jpg",
+      "name": "The Ties That Blind Us",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-08",
+      "id": 65838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817237.jpg",
+      "name": "Assault",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-15",
+      "id": 65839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817238.jpg",
+      "name": "The Ninth Time Around",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 65840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817431.jpg",
+      "name": "Remember Me",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 65841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817432.jpg",
+      "name": "Trouble in Paradise",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-03",
+      "id": 65842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817433.jpg",
+      "name": "All Rise",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 65843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817434.jpg",
+      "name": "Loving Wife",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 65844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817436.jpg",
+      "name": "Miscarriage of Marriage",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-27",
+      "id": 65845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817437.jpg",
+      "name": "Breaking Point",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-03",
+      "id": 65846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817438.jpg",
+      "name": "Always Leave Them Wanting More",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-10",
+      "id": 65847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817439.jpg",
+      "name": "Damaged",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-17",
+      "id": 65848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817440.jpg",
+      "name": "The Darkest Hour",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-24",
+      "id": 65849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817441.jpg",
+      "name": "To the Future",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-31",
+      "id": 65850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817442.jpg",
+      "name": "Powerless",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-07",
+      "id": 65851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817443.jpg",
+      "name": "Cold Turkey",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-14",
+      "id": 65852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817444.jpg",
+      "name": "What About Me?",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-21",
+      "id": 65853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817445.jpg",
+      "name": "Haunted by the Past",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-28",
+      "id": 65854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817446.jpg",
+      "name": "Confession",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-05-05",
+      "id": 65855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/817447.jpg",
+      "name": "It's Over",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-26",
+      "id": 65856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817930.jpg",
+      "name": "Perfectly Frank",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-01-26",
+      "id": 65857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817931.jpg",
+      "name": "Gunshot",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-02",
+      "id": 65858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817932.jpg",
+      "name": "Out of Control",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-09",
+      "id": 65859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817934.jpg",
+      "name": "Toyboy",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-16",
+      "id": 65860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817935.jpg",
+      "name": "The Things You Do for Love",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-23",
+      "id": 65861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817936.jpg",
+      "name": "From Chatsworth to Cuba",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-02",
+      "id": 65862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817937.jpg",
+      "name": "Reunited",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-09",
+      "id": 65863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817938.jpg",
+      "name": "Marry Me (1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-16",
+      "id": 65864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817939.jpg",
+      "name": "The Wild Wales (2)",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-23",
+      "id": 65865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817940.jpg",
+      "name": "Great Dangers (3)",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-30",
+      "id": 65866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817941.jpg",
+      "name": "Fallen Heroes",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-06",
+      "id": 65867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817942.jpg",
+      "name": "Boxer",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-13",
+      "id": 65868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817943.jpg",
+      "name": "Keep It in the Family",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-20",
+      "id": 65869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817944.jpg",
+      "name": "Secret Relations",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-27",
+      "id": 65870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817945.jpg",
+      "name": "The End of the Affair",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-05-04",
+      "id": 65871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817946.jpg",
+      "name": "Gang Wars",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-10",
+      "id": 65872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818365.jpg",
+      "name": "The Night Before",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-11",
+      "id": 65873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818366.jpg",
+      "name": "Missing",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-12",
+      "id": 65874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819073.jpg",
+      "name": "Where's Frank?",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-13",
+      "id": 65875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818379.jpg",
+      "name": "Back Home",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 65876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818380.jpg",
+      "name": "Wedding of Disaster",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-18",
+      "id": 65877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818381.jpg",
+      "name": "Gangster Gallagher",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-25",
+      "id": 65878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818382.jpg",
+      "name": "Kidnap and Ransom",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-01",
+      "id": 65879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818383.jpg",
+      "name": "Together in Heaven",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-08",
+      "id": 65880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818384.jpg",
+      "name": "Maguire Meltdown",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-15",
+      "id": 65881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818385.jpg",
+      "name": "Sickness and Health",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-22",
+      "id": 65882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818386.jpg",
+      "name": "Takeover",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-03-01",
+      "id": 65883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818387.jpg",
+      "name": "Sibling Rivalry",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-03-08",
+      "id": 65884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818388.jpg",
+      "name": "Beginnings and Ends",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-08-30",
+      "id": 65885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819064.jpg",
+      "name": "The Not-So Deceased",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-06",
+      "id": 65886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819065.jpg",
+      "name": "My Name is Avril",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-13",
+      "id": 65887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819066.jpg",
+      "name": "Frank Gallagher: Sent by God",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-20",
+      "id": 65888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819067.jpg",
+      "name": "Comebacks",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 65889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819068.jpg",
+      "name": "Frank in the Frame",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-04",
+      "id": 65890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819069.jpg",
+      "name": "Moving Back",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-11",
+      "id": 65891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819070.jpg",
+      "name": "Career Criminal",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-18",
+      "id": 65892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819071.jpg",
+      "name": "The Maguire Motto",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-25",
+      "id": 65893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819072.jpg",
+      "name": "PC Gallagher",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-09",
+      "id": 65894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819591.jpg",
+      "name": "The End of an Era (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-10",
+      "id": 65895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819592.jpg",
+      "name": "Save Chatsworth (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-17",
+      "id": 65896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819593.jpg",
+      "name": "Open to All",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-24",
+      "id": 65897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819594.jpg",
+      "name": "Vendetta",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-31",
+      "id": 65898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819595.jpg",
+      "name": "Cop Killer",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 65899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819597.jpg",
+      "name": "Last Man Standing",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 65900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819598.jpg",
+      "name": "All Fall Down",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 65901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819599.jpg",
+      "name": "Blackout",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-28",
+      "id": 65902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819600.jpg",
+      "name": "Decision Time",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 65903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819601.jpg",
+      "name": "Million Dollar Maguire (1)",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 65904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819602.jpg",
+      "name": "Rescue Me (2)",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2012-09-12",
+      "id": 65905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835268.jpg",
+      "name": "The Working Man (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-13",
+      "id": 65906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835269.jpg",
+      "name": "The World of Burger (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-19",
+      "id": 65907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835270.jpg",
+      "name": "The Brazilian Effect",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-26",
+      "id": 65908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835271.jpg",
+      "name": "Who's the Mummy?",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-03",
+      "id": 65909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835272.jpg",
+      "name": "The Truth Will Out",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-10",
+      "id": 65910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835273.jpg",
+      "name": "Secrets and Wives",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-17",
+      "id": 65911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835715.jpg",
+      "name": "Business as Usual",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-24",
+      "id": 65912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835716.jpg",
+      "name": "What Are Friends For?",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-31",
+      "id": 65913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835717.jpg",
+      "name": "Great Rivalry",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 65914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835718.jpg",
+      "name": "One Year On",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2013-02-26",
+      "id": 65915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836156.jpg",
+      "name": "The Golden Empire",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-03-05",
+      "id": 65916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836155.jpg",
+      "name": "An Inspector Calls",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-03-12",
+      "id": 65917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836159.jpg",
+      "name": "Money in Mind",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-03-19",
+      "id": 65918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836154.jpg",
+      "name": "No-One's Perfect",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-03-26",
+      "id": 65919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836153.jpg",
+      "name": "Risky Business",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-04-02",
+      "id": 65920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836152.jpg",
+      "name": "Death and Erasures",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-04-09",
+      "id": 65921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836161.jpg",
+      "name": "Crime and Punishment",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-04-16",
+      "id": 65922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836151.jpg",
+      "name": "Grandaddy Gallagher",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-04-23",
+      "id": 65923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836150.jpg",
+      "name": "Domesticated Specialist",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-04-30",
+      "id": 65924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836149.jpg",
+      "name": "Crossing the Line",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-05-07",
+      "id": 65925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836148.jpg",
+      "name": "The P Factor",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-05-14",
+      "id": 65926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836162.jpg",
+      "name": "Early Retirement",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-05-21",
+      "id": 65927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836147.jpg",
+      "name": "Kiss Kiss, Bang Bang",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2013-05-28",
+      "id": 65928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836146.jpg",
+      "name": "End of the Line",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Familie"
+    "Comedy",
+    "Family"
   ],
+  "id": "tvmaze-746",
+  "live": true,
+  "overview": "Paul Abbott's critically acclaimed, offbeat drama about the rollercoaster lives and loves of the dysfunctional Gallagher clan.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15159.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "746",
+  "title": "Shameless",
+  "type": "series",
+  "year": 2004
 }

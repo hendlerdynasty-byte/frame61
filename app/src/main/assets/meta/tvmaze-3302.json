@@ -1,22 +1,518 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3302",
-  "source": "tvmaze",
-  "sourceId": "3302",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Vera",
-  "year": 2011,
-  "type": "series",
-  "overview": "Set around Newcastle and the stunning Northumberland countryside, Vera features complex and intriguing cases, atmospherically-shot landscapes and captivating performances, led by Brenda Blethyn who plays the unorthodox but brilliant DCI Vera Stanhope.",
-  "poster": "file:///android_asset/posters/tvmaze-3302.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-05-01",
+      "id": 220987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114031.jpg",
+      "name": "Hidden Depths",
+      "number": 1,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 220988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114030.jpg",
+      "name": "Telling Tales",
+      "number": 2,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 220989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114029.jpg",
+      "name": "The Crow Trap",
+      "number": 3,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 220990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114028.jpg",
+      "name": "Little Lazarus",
+      "number": 4,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 220991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114027.jpg",
+      "name": "The Ghost Position",
+      "number": 1,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 220992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114026.jpg",
+      "name": "Silent Voices",
+      "number": 2,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 220994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114024.jpg",
+      "name": "A Certain Samaritan",
+      "number": 3,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 220993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114025.jpg",
+      "name": "Sandancers",
+      "number": 4,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-25",
+      "id": 220995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114023.jpg",
+      "name": "Castles in the Air",
+      "number": 1,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-01",
+      "id": 220996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114022.jpg",
+      "name": "Poster Child",
+      "number": 2,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-08",
+      "id": 220997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114021.jpg",
+      "name": "Young Gods",
+      "number": 3,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-15",
+      "id": 220998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114020.jpg",
+      "name": "Prodigal Son",
+      "number": 4,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 220999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114019.jpg",
+      "name": "On Harbour Street",
+      "number": 1,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 221000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114018.jpg",
+      "name": "Protected",
+      "number": 2,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 221001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114017.jpg",
+      "name": "The Deer Hunters",
+      "number": 3,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 221002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114016.jpg",
+      "name": "Death of a Family Man",
+      "number": 4,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-05",
+      "id": 221003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114015.jpg",
+      "name": "Changing Tides",
+      "number": 1,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 221004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114014.jpg",
+      "name": "Old Wounds",
+      "number": 2,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 221005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114013.jpg",
+      "name": "Muddy Waters",
+      "number": 3,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 221006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114012.jpg",
+      "name": "Shadows in the Sky",
+      "number": 4,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-31",
+      "id": 579686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/109436.jpg",
+      "name": "Dark Road",
+      "number": 1,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-07",
+      "id": 584020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/109435.jpg",
+      "name": "Tuesday's Child",
+      "number": 2,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-14",
+      "id": 584021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114011.jpg",
+      "name": "The Moth Catcher",
+      "number": 3,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-21",
+      "id": 584022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114010.jpg",
+      "name": "The Sea Glass",
+      "number": 4,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-19",
+      "id": 1095494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/257327.jpg",
+      "name": "Natural Selection",
+      "number": 1,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2017-03-26",
+      "id": 1098845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360129.jpg",
+      "name": "Dark Angel",
+      "number": 2,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2017-04-02",
+      "id": 1102199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360147.jpg",
+      "name": "Broken Promise",
+      "number": 3,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2017-04-09",
+      "id": 1102200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360202.jpg",
+      "name": "The Blanket Mire",
+      "number": 4,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2018-01-07",
+      "id": 1369138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360203.jpg",
+      "name": "Blood and Bone",
+      "number": 1,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2018-01-14",
+      "id": 1369139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360204.jpg",
+      "name": "Black Ice",
+      "number": 2,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2018-01-21",
+      "id": 1377310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/357964.jpg",
+      "name": "Home",
+      "number": 3,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2018-01-28",
+      "id": 1377311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363559.jpg",
+      "name": "Darkwater",
+      "number": 4,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2019-01-13",
+      "id": 1586758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450121.jpg",
+      "name": "Blind Spot",
+      "number": 1,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2019-01-20",
+      "id": 1586759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461368.jpg",
+      "name": "Cuckoo",
+      "number": 2,
+      "runtime": 115,
+      "season": 9
+    },
+    {
+      "airdate": "2019-01-27",
+      "id": 1586760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461370.jpg",
+      "name": "Cold River",
+      "number": 3,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2019-02-03",
+      "id": 1586761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461371.jpg",
+      "name": "The Seagull",
+      "number": 4,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2020-01-12",
+      "id": 1777339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/589245.jpg",
+      "name": "Blood Will Tell",
+      "number": 1,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2020-01-19",
+      "id": 1787687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/592288.jpg",
+      "name": "Parent Not Expected",
+      "number": 2,
+      "runtime": 115,
+      "season": 10
+    },
+    {
+      "airdate": "2020-01-26",
+      "id": 1791486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/595602.jpg",
+      "name": "Dirty",
+      "number": 3,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2020-02-02",
+      "id": 1792976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598585.jpg",
+      "name": "The Escape Turn",
+      "number": 4,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2021-08-29",
+      "id": 2150191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/352/882094.jpg",
+      "name": "Witness",
+      "number": 1,
+      "runtime": 89,
+      "season": 11
+    },
+    {
+      "airdate": "2021-09-05",
+      "id": 2155838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/354/887188.jpg",
+      "name": "Recovery",
+      "number": 2,
+      "runtime": 89,
+      "season": 11
+    },
+    {
+      "airdate": "2022-01-09",
+      "id": 2240298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/985393.jpg",
+      "name": "Tyger Tyger",
+      "number": 3,
+      "runtime": 90,
+      "season": 11
+    },
+    {
+      "airdate": "2022-01-16",
+      "id": 2248241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/985392.jpg",
+      "name": "As the Crow Flies",
+      "number": 4,
+      "runtime": 89,
+      "season": 11
+    },
+    {
+      "airdate": "2022-01-23",
+      "id": 2267090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/985390.jpg",
+      "name": "Vital Signs",
+      "number": 5,
+      "runtime": 89,
+      "season": 11
+    },
+    {
+      "airdate": "2022-01-30",
+      "id": 2269076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/985391.jpg",
+      "name": "The Way the Wind Blows",
+      "number": 6,
+      "runtime": 90,
+      "season": 11
+    },
+    {
+      "airdate": "2023-01-29",
+      "id": 2472289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/444/1111111.jpg",
+      "name": "Against the Tide",
+      "number": 1,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2023-02-05",
+      "id": 2472290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/445/1114184.jpg",
+      "name": "For the Grace of God",
+      "number": 2,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2023-02-12",
+      "id": 2472291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/446/1117480.jpg",
+      "name": "Blue",
+      "number": 3,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2023-02-19",
+      "id": 2472292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1120658.jpg",
+      "name": "The Darkest Evening",
+      "number": 4,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2024-01-07",
+      "id": 2717757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1247350.jpg",
+      "name": "Fast Love",
+      "number": 1,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2024-01-14",
+      "id": 2733518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/499/1249105.jpg",
+      "name": "Tender",
+      "number": 2,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2024-01-21",
+      "id": 2740349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1252056.jpg",
+      "name": "Salt & Vinegar",
+      "number": 3,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2025-01-01",
+      "id": 3035120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1374810.jpg",
+      "name": "Inside",
+      "number": 1,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2025-01-02",
+      "id": 3035121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1375963.jpg",
+      "name": "The Dark Wives",
+      "number": 2,
+      "runtime": 120,
+      "season": 14
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-3302",
+  "live": true,
+  "overview": "Set around Newcastle and the stunning Northumberland countryside, Vera features complex and intriguing cases, atmospherically-shot landscapes and captivating performances, led by Brenda Blethyn who plays the unorthodox but brilliant DCI Vera Stanhope.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/550/1376455.jpg",
   "rating": 8,
-  "runtime": 120,
-  "episodes": []
+  "runtime": 106,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3302",
+  "title": "Vera",
+  "type": "series",
+  "year": 2011
 }

@@ -1,22 +1,536 @@
 {
-  "schema": 1,
-  "id": "tvmaze-74",
-  "source": "tvmaze",
-  "sourceId": "74",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Hell on Wheels",
-  "year": 2011,
-  "type": "series",
-  "overview": "Hell on Wheels is an American Western television series about the construction of the First Transcontinental Railroad across the United States. The series follows the Union Pacific Railroad and its surveyors, laborers, prostitutes, mercenaries, and others who lived, worked and died in the mobile encampment called \"Hell on Wheels\" that followed the railhead west across the Great Plains. In particular, the story focuses on Cullen Bohannon, a former Confederate soldier who, while working as foreman and chief engineer on the railroad, initially attempts to track down the Union soldiers who murdered his wife and young son during the American Civil War.",
-  "poster": "file:///android_asset/posters/tvmaze-74.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-11-06",
+      "id": 4155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22633.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-13",
+      "id": 4156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22634.jpg",
+      "name": "Immoral Mathematics",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-20",
+      "id": 4157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22635.jpg",
+      "name": "A New Birth of Freedom",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-27",
+      "id": 4158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22636.jpg",
+      "name": "Jamais je ne t'oublierai",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 4159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22637.jpg",
+      "name": "Bread and Circuses",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 4160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22638.jpg",
+      "name": "Pride, Pomp and Circumstance",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-18",
+      "id": 4161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22639.jpg",
+      "name": "Revelations",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-01",
+      "id": 4162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22640.jpg",
+      "name": "Derailed",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-08",
+      "id": 4163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22641.jpg",
+      "name": "Timshel",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-15",
+      "id": 4164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22642.jpg",
+      "name": "God of Chaos",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 4165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22643.jpg",
+      "name": "Viva La Mexico",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-19",
+      "id": 4166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22644.jpg",
+      "name": "Durant, Nebraska",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-26",
+      "id": 4167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22645.jpg",
+      "name": "Slaughterhouse",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-02",
+      "id": 4168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22646.jpg",
+      "name": "Scabs",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-09",
+      "id": 4169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22647.jpg",
+      "name": "The Railroad Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 4170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22648.jpg",
+      "name": "Purged Away with Blood",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-23",
+      "id": 4171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22649.jpg",
+      "name": "The White Spirit",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 4172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22650.jpg",
+      "name": "The Lord's Day",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 4173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22651.jpg",
+      "name": "Blood Moon",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 4174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22652.jpg",
+      "name": "Blood Moon Rising",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-10",
+      "id": 4175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22631.jpg",
+      "name": "Big Bad Wolf",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-10",
+      "id": 4176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22632.jpg",
+      "name": "Eminent Domain",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-17",
+      "id": 4177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22653.jpg",
+      "name": "Range War",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-24",
+      "id": 4178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22654.jpg",
+      "name": "The Game",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-31",
+      "id": 4179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22655.jpg",
+      "name": "Searchers",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-07",
+      "id": 4180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22656.jpg",
+      "name": "One Less Mule",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-14",
+      "id": 4181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22657.jpg",
+      "name": "Cholera",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-21",
+      "id": 4182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22658.jpg",
+      "name": "It Happened in Boston",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-28",
+      "id": 4183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22659.jpg",
+      "name": "Fathers and Sins",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-05",
+      "id": 4184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22660.jpg",
+      "name": "Get Behind the Mule",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-02",
+      "id": 4185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22661.jpg",
+      "name": "The Elusive Eden",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-09",
+      "id": 4186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22662.jpg",
+      "name": "Escape from the Garden",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-16",
+      "id": 4187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22663.jpg",
+      "name": "Chicken Hill",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-23",
+      "id": 4188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22664.jpg",
+      "name": "Reckoning",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-30",
+      "id": 4189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22665.jpg",
+      "name": "Life's a Mystery",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-06",
+      "id": 4190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22666.jpg",
+      "name": "Bear Man",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-13",
+      "id": 4191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22667.jpg",
+      "name": "Elam Ferguson",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-20",
+      "id": 4192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22668.jpg",
+      "name": "Under Color of Law",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-27",
+      "id": 4193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22669.jpg",
+      "name": "Two Trains",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-04",
+      "id": 4194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22670.jpg",
+      "name": "Return to Hell",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-08",
+      "id": 13828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22671.jpg",
+      "name": "Bleeding Kansas",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-15",
+      "id": 15837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22672.jpg",
+      "name": "Thirteen Steps",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-22",
+      "id": 15838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22673.jpg",
+      "name": "Further West",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-18",
+      "id": 162185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33954.jpg",
+      "name": "Chinatown",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-25",
+      "id": 162884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34644.jpg",
+      "name": "Mei Mei",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-01",
+      "id": 162885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35330.jpg",
+      "name": "White Justice",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-08",
+      "id": 162886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36224.jpg",
+      "name": "Struck",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-15",
+      "id": 162887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37728.jpg",
+      "name": "Elixir of Life",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-22",
+      "id": 162888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39283.jpg",
+      "name": "Hungry Ghosts",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-29",
+      "id": 162889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40714.jpg",
+      "name": "False Prophets",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-11",
+      "id": 755343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154682.jpg",
+      "name": "Two Soldiers",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-18",
+      "id": 797477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/157238.jpg",
+      "name": "Return to the Garden",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-25",
+      "id": 797478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160762.jpg",
+      "name": "61 Degrees",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-02",
+      "id": 819652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163665.jpg",
+      "name": "Gambit",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-09",
+      "id": 852178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166734.jpg",
+      "name": "Any Sum Within Reason",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-16",
+      "id": 855575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169393.jpg",
+      "name": "Railroad Men",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-23",
+      "id": 862325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171372.jpg",
+      "name": "Done",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Western"
   ],
+  "id": "tvmaze-74",
+  "live": true,
+  "overview": "Hell on Wheels is an American Western television series about the construction of the First Transcontinental Railroad across the United States. The series follows the Union Pacific Railroad and its surveyors, laborers, prostitutes, mercenaries, and others who lived, worked and died in the mobile encampment called \"Hell on Wheels\" that followed the railhead west across the Great Plains. In particular, the story focuses on Cullen Bohannon, a former Confederate soldier who, while working as foreman and chief engineer on the railroad, initially attempts to track down the Union soldiers who murdered his wife and young son during the American Civil War.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/526.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "74",
+  "title": "Hell on Wheels",
+  "type": "series",
+  "year": 2011
 }

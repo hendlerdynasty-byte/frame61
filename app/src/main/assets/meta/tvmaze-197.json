@@ -1,21 +1,274 @@
 {
-  "schema": 1,
-  "id": "tvmaze-197",
-  "source": "tvmaze",
-  "sourceId": "197",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Da Vinci's Demons",
-  "year": 2013,
-  "type": "series",
-  "overview": "In a world where thought and faith are controlled, one man fights to set knowledge free. Leonardo da Vinci is tortured by a gift of superhuman genius. He finds himself in a conflict between truth and lies, religion and reason, past and future. His aspirations are used against him by opposing forces – luring him into a game of seduction where those who despise his intellect need him most.His quest for knowledge nearly becomes his undoing, but da Vinci's genius prevails and he emerges as an unstoppable force that lifts an entire era out of darkness and propels it into light. His story becomes a mirror into our own world, calling us all to join his fight to free the future.",
-  "poster": "file:///android_asset/posters/tvmaze-197.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-04-12",
+      "id": 13261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35790.jpg",
+      "name": "The Hanged Man",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-19",
+      "id": 13262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35791.jpg",
+      "name": "The Serpent",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-26",
+      "id": 13263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35792.jpg",
+      "name": "The Prisoner",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-03",
+      "id": 13264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35793.jpg",
+      "name": "The Magician",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-10",
+      "id": 13265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35794.jpg",
+      "name": "The Tower",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-17",
+      "id": 13266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35795.jpg",
+      "name": "The Devil",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-31",
+      "id": 13267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35796.jpg",
+      "name": "The Hierophant",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-07",
+      "id": 13268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35797.jpg",
+      "name": "The Lovers",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-22",
+      "id": 13269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35780.jpg",
+      "name": "The Blood of Man",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-29",
+      "id": 13270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35781.jpg",
+      "name": "The Blood of Brothers",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-05",
+      "id": 13271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35782.jpg",
+      "name": "The Voyage of the Damned",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-12",
+      "id": 13272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35783.jpg",
+      "name": "The Ends of the Earth",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-19",
+      "id": 13273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35784.jpg",
+      "name": "The Sun and the Moon",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-26",
+      "id": 13274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35785.jpg",
+      "name": "The Rope of the Dead",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-03",
+      "id": 13275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35786.jpg",
+      "name": "The Vault of Heaven",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-10",
+      "id": 13276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35787.jpg",
+      "name": "The Fall From Heaven",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-17",
+      "id": 13277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35788.jpg",
+      "name": "The Enemies of Man",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-31",
+      "id": 13278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35789.jpg",
+      "name": "The Sins of Daedalus",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 215199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66053.jpg",
+      "name": "Semper Infidelis",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 215200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66060.jpg",
+      "name": "Abbadon",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 252293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66061.jpg",
+      "name": "Modus Operandi",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 252294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66062.jpg",
+      "name": "The Labrys",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 252295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66063.jpg",
+      "name": "Anima Venator",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 335861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66064.jpg",
+      "name": "Liberum Arbitrium",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 371860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/82315.jpg",
+      "name": "Alis Volat Proplis",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 371861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85904.jpg",
+      "name": "La Confessione Della Machina",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 371862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/88383.jpg",
+      "name": "Angelus Iratissimus",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 371864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/88384.jpg",
+      "name": "Ira Deorum",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Horror"
   ],
+  "id": "tvmaze-197",
+  "live": true,
+  "overview": "In a world where thought and faith are controlled, one man fights to set knowledge free. Leonardo da Vinci is tortured by a gift of superhuman genius. He finds himself in a conflict between truth and lies, religion and reason, past and future. His aspirations are used against him by opposing forces – luring him into a game of seduction where those who despise his intellect need him most.His quest for knowledge nearly becomes his undoing, but da Vinci's genius prevails and he emerges as an unstoppable force that lifts an entire era out of darkness and propels it into light. His story becomes a mirror into our own world, calling us all to join his fight to free the future.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/2892.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "197",
+  "title": "Da Vinci's Demons",
+  "type": "series",
+  "year": 2013
 }

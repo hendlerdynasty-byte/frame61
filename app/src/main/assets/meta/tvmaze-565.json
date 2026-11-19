@@ -1,22 +1,347 @@
 {
-  "schema": 1,
-  "id": "tvmaze-565",
-  "source": "tvmaze",
-  "sourceId": "565",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Deadwood",
-  "year": 2004,
-  "type": "series",
-  "overview": "The outlaw camp of Deadwood marches slowly towards civilization, facing its first elections. But the power struggles continue over everything in Deadwood—influence, money, and whores—as the founding camp members form strategic alliances to face down the threat of a powerful newcomer, seeking to remake Deadwood in his image.",
-  "poster": "file:///android_asset/posters/tvmaze-565.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-03-21",
+      "id": 53014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021463.jpg",
+      "name": "Deadwood",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-28",
+      "id": 53015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021464.jpg",
+      "name": "Deep Water",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-04",
+      "id": 53016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021465.jpg",
+      "name": "Reconnoitering the Rim",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-11",
+      "id": 53017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021466.jpg",
+      "name": "Here Was a Man",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-18",
+      "id": 53018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021467.jpg",
+      "name": "The Trial of Jack McCall",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-25",
+      "id": 53019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021468.jpg",
+      "name": "Plague",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-02",
+      "id": 53020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021469.jpg",
+      "name": "Bullock Returns to the Camp",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-09",
+      "id": 53021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021470.jpg",
+      "name": "Suffer the Little Children",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-16",
+      "id": 53022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021471.jpg",
+      "name": "No Other Sons Or Daughters",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-23",
+      "id": 53023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021472.jpg",
+      "name": "Mister Wu",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-06-06",
+      "id": 53024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021473.jpg",
+      "name": "Jewel's Boot Is Made For Walking",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-06-13",
+      "id": 53025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021474.jpg",
+      "name": "Sold Under Sin",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-06",
+      "id": 53026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021476.jpg",
+      "name": "A Lie Agreed Upon (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-13",
+      "id": 53027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021477.jpg",
+      "name": "A Lie Agreed Upon (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-20",
+      "id": 53028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021478.jpg",
+      "name": "New Money",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-27",
+      "id": 53029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021479.jpg",
+      "name": "Requiem for a Gleet",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 53030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021480.jpg",
+      "name": "Complications",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-10",
+      "id": 53031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021481.jpg",
+      "name": "Something Very Expensive",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-17",
+      "id": 53032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021482.jpg",
+      "name": "E.B. Was Left Out",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-24",
+      "id": 53033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021483.jpg",
+      "name": "Childish Things",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-01",
+      "id": 53034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021484.jpg",
+      "name": "Amalgamation and Capital",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-08",
+      "id": 53035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021485.jpg",
+      "name": "Advances, None Miraculous",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-15",
+      "id": 53036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021486.jpg",
+      "name": "The Whores Can Come",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-22",
+      "id": 53037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021487.jpg",
+      "name": "Boy the Earth Talks To",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-11",
+      "id": 53038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021489.jpg",
+      "name": "Tell Your God to Ready for Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-18",
+      "id": 53039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021490.jpg",
+      "name": "I Am Not the Fine Man You Take Me For",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-25",
+      "id": 53040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021491.jpg",
+      "name": "True Colors",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-02",
+      "id": 53041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021492.jpg",
+      "name": "Full Faith And Credit",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-09",
+      "id": 53042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021493.jpg",
+      "name": "A Two-Headed Beast",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-16",
+      "id": 53043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021494.jpg",
+      "name": "A Rich Find",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-23",
+      "id": 53044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021495.jpg",
+      "name": "Unauthorized Cinnamon",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-30",
+      "id": 53045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021496.jpg",
+      "name": "Leviathan Smiles",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-06",
+      "id": 53046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021497.jpg",
+      "name": "Amateur Night",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-13",
+      "id": 53047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021498.jpg",
+      "name": "A Constant Throb",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-20",
+      "id": 53048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021499.jpg",
+      "name": "The Cat Bird Seat",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-27",
+      "id": 53049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021500.jpg",
+      "name": "Tell Him Something Pretty",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Western"
   ],
+  "id": "tvmaze-565",
+  "live": true,
+  "overview": "The outlaw camp of Deadwood marches slowly towards civilization, facing its first elections. But the power struggles continue over everything in Deadwood—influence, money, and whores—as the founding camp members form strategic alliances to face down the threat of a powerful newcomer, seeking to remake Deadwood in his image.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11724.jpg",
   "rating": 8.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "565",
+  "title": "Deadwood",
+  "type": "series",
+  "year": 2004
 }

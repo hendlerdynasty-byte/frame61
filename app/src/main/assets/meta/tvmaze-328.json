@@ -1,22 +1,1328 @@
 {
-  "schema": 1,
-  "id": "tvmaze-328",
-  "source": "tvmaze",
-  "sourceId": "328",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Midsomer Murders",
-  "year": 1998,
-  "type": "series",
-  "overview": "Based originally on the books by Caroline Graham, each self-contained episode of two hours is a classic whodunit revolving around Detective Chief Inspector Barnaby and his partner, and their efforts to solve the numerous gruesome murders which take place in the picturesque countryside of Midsomer County.",
-  "poster": "file:///android_asset/posters/tvmaze-328.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1998-03-22",
+      "id": 31758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396467.jpg",
+      "name": "Written in Blood",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1998-03-29",
+      "id": 31759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42318.jpg",
+      "name": "Death of a Hollow Man",
+      "number": 2,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1998-04-22",
+      "id": 31760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42319.jpg",
+      "name": "Faithful Unto Death",
+      "number": 3,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1998-05-06",
+      "id": 31761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396469.jpg",
+      "name": "Death in Disguise",
+      "number": 4,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1999-01-20",
+      "id": 31762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42321.jpg",
+      "name": "Death's Shadow",
+      "number": 1,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1999-02-03",
+      "id": 31763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42322.jpg",
+      "name": "Strangler's Wood",
+      "number": 2,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1999-02-10",
+      "id": 31764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42323.jpg",
+      "name": "Dead Man's Eleven",
+      "number": 3,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1999-09-19",
+      "id": 31765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42324.jpg",
+      "name": "Blood Will Out",
+      "number": 4,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1999-12-31",
+      "id": 31766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42325.jpg",
+      "name": "Death of a Stranger",
+      "number": 1,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "2000-01-22",
+      "id": 31767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42326.jpg",
+      "name": "Blue Herrings",
+      "number": 2,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "2000-01-29",
+      "id": 31768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42327.jpg",
+      "name": "Judgement Day",
+      "number": 3,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "2000-02-05",
+      "id": 31769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42328.jpg",
+      "name": "Beyond the Grave",
+      "number": 4,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "2000-09-10",
+      "id": 31770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42329.jpg",
+      "name": "Garden of Death",
+      "number": 1,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2001-08-26",
+      "id": 31771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42330.jpg",
+      "name": "Destroying Angel",
+      "number": 2,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2001-09-02",
+      "id": 31772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42331.jpg",
+      "name": "The Electric Vendetta",
+      "number": 3,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2001-09-09",
+      "id": 31773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42332.jpg",
+      "name": "Who Killed Cock Robin?",
+      "number": 4,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2001-09-16",
+      "id": 31774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42333.jpg",
+      "name": "Dark Autumn",
+      "number": 5,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2001-09-23",
+      "id": 31775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42334.jpg",
+      "name": "Tainted Fruit",
+      "number": 6,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "2002-06-16",
+      "id": 31776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42335.jpg",
+      "name": "Market for Murder",
+      "number": 1,
+      "runtime": 120,
+      "season": 5
+    },
+    {
+      "airdate": "2002-06-23",
+      "id": 31777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42336.jpg",
+      "name": "A Worm in the Bud",
+      "number": 2,
+      "runtime": 120,
+      "season": 5
+    },
+    {
+      "airdate": "2002-09-15",
+      "id": 31778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42337.jpg",
+      "name": "Ring Out Your Dead",
+      "number": 3,
+      "runtime": 120,
+      "season": 5
+    },
+    {
+      "airdate": "2002-09-22",
+      "id": 31779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42338.jpg",
+      "name": "Murder on St. Malley's Day",
+      "number": 4,
+      "runtime": 120,
+      "season": 5
+    },
+    {
+      "airdate": "2003-01-03",
+      "id": 31780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42357.jpg",
+      "name": "A Talent for Life",
+      "number": 1,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2003-01-10",
+      "id": 31781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42358.jpg",
+      "name": "Death and Dreams",
+      "number": 2,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2003-01-17",
+      "id": 31782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42359.jpg",
+      "name": "Painted in Blood",
+      "number": 3,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2003-01-24",
+      "id": 31783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42360.jpg",
+      "name": "A Tale of Two Hamlets",
+      "number": 4,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2003-01-31",
+      "id": 31784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42361.jpg",
+      "name": "Birds of Prey",
+      "number": 5,
+      "runtime": 120,
+      "season": 6
+    },
+    {
+      "airdate": "2003-11-02",
+      "id": 31785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42384.jpg",
+      "name": "The Green Man",
+      "number": 1,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-01-04",
+      "id": 31786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42385.jpg",
+      "name": "Bad Tidings",
+      "number": 2,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-01-11",
+      "id": 31787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42386.jpg",
+      "name": "The Fisher King",
+      "number": 3,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-01-18",
+      "id": 31788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42387.jpg",
+      "name": "Sins of Commission",
+      "number": 4,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-01-25",
+      "id": 31789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42388.jpg",
+      "name": "The Maid in Splendour",
+      "number": 5,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-02-29",
+      "id": 31790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42389.jpg",
+      "name": "The Straw Woman",
+      "number": 6,
+      "runtime": 120,
+      "season": 7
+    },
+    {
+      "airdate": "2004-10-10",
+      "id": 31791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42401.jpg",
+      "name": "Things That Go Bump in the Night",
+      "number": 1,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2004-10-17",
+      "id": 31792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42402.jpg",
+      "name": "Dead in the Water",
+      "number": 2,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-01-09",
+      "id": 31793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42403.jpg",
+      "name": "Orchis Fatalis",
+      "number": 3,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-01-16",
+      "id": 31794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42404.jpg",
+      "name": "Bantling Boy",
+      "number": 4,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-01-23",
+      "id": 31795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42405.jpg",
+      "name": "Second Sight",
+      "number": 5,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-03-14",
+      "id": 31796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42406.jpg",
+      "name": "Hidden Depths",
+      "number": 6,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 31797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42407.jpg",
+      "name": "Sauce for the Goose",
+      "number": 7,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-10-02",
+      "id": 31798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42408.jpg",
+      "name": "Midsomer Rhapsody",
+      "number": 8,
+      "runtime": 120,
+      "season": 8
+    },
+    {
+      "airdate": "2005-10-09",
+      "id": 31799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449245.jpg",
+      "name": "The House in the Woods",
+      "number": 1,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-02-26",
+      "id": 31800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42418.jpg",
+      "name": "Dead Letters",
+      "number": 2,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-03-05",
+      "id": 31801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42419.jpg",
+      "name": "Vixen's Run",
+      "number": 3,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-03-12",
+      "id": 31802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42420.jpg",
+      "name": "Down Among the Dead Men",
+      "number": 4,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-09-03",
+      "id": 31803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42421.jpg",
+      "name": "Death in Chorus",
+      "number": 5,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-09-10",
+      "id": 31804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42422.jpg",
+      "name": "Country Matters",
+      "number": 6,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-09-17",
+      "id": 31805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42423.jpg",
+      "name": "Last Year's Model",
+      "number": 7,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-09-24",
+      "id": 31806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42424.jpg",
+      "name": "Four Funerals and a Wedding",
+      "number": 8,
+      "runtime": 120,
+      "season": 9
+    },
+    {
+      "airdate": "2006-11-12",
+      "id": 31807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/452734.jpg",
+      "name": "Dance with the Dead",
+      "number": 1,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-01-19",
+      "id": 31808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42430.jpg",
+      "name": "The Animal Within",
+      "number": 2,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-01-26",
+      "id": 31809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42431.jpg",
+      "name": "King's Crystal",
+      "number": 3,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-02-02",
+      "id": 31810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42432.jpg",
+      "name": "The Axeman Cometh",
+      "number": 4,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-05-08",
+      "id": 31811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42433.jpg",
+      "name": "Death and Dust",
+      "number": 5,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-06-03",
+      "id": 31812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42434.jpg",
+      "name": "Picture of Innocence",
+      "number": 6,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-10-07",
+      "id": 31813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42435.jpg",
+      "name": "They Seek Him Here",
+      "number": 7,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2007-10-14",
+      "id": 31814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42436.jpg",
+      "name": "Death in a Chocolate Box",
+      "number": 8,
+      "runtime": 120,
+      "season": 10
+    },
+    {
+      "airdate": "2008-01-01",
+      "id": 31815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42439.jpg",
+      "name": "Shot at Dawn",
+      "number": 1,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2008-05-10",
+      "id": 31816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42440.jpg",
+      "name": "Blood Wedding",
+      "number": 2,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2008-05-24",
+      "id": 31817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42441.jpg",
+      "name": "Left for Dead",
+      "number": 3,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2008-05-31",
+      "id": 31818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42442.jpg",
+      "name": "Midsomer Life",
+      "number": 4,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2008-06-14",
+      "id": 31819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42443.jpg",
+      "name": "The Magician's Nephew",
+      "number": 5,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2010-05-05",
+      "id": 31820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42444.jpg",
+      "name": "Talking to the Dead",
+      "number": 6,
+      "runtime": 120,
+      "season": 11
+    },
+    {
+      "airdate": "2009-03-19",
+      "id": 31821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42446.jpg",
+      "name": "The Dogleg Murders",
+      "number": 1,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-03-26",
+      "id": 31822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42447.jpg",
+      "name": "The Black Book",
+      "number": 2,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-07-07",
+      "id": 31823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42448.jpg",
+      "name": "Secrets and Spies",
+      "number": 3,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-07-21",
+      "id": 31824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42449.jpg",
+      "name": "The Glitch",
+      "number": 4,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-09-20",
+      "id": 31825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42450.jpg",
+      "name": "Small Mercies",
+      "number": 5,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 31826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42451.jpg",
+      "name": "The Creeper",
+      "number": 6,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 31827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42452.jpg",
+      "name": "The Great and the Good",
+      "number": 7,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2010-02-10",
+      "id": 31828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42453.jpg",
+      "name": "The Sword of Guillaume",
+      "number": 1,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2010-05-12",
+      "id": 31829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42454.jpg",
+      "name": "The Made-to-Measure Murders",
+      "number": 2,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2010-09-08",
+      "id": 31830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42455.jpg",
+      "name": "Blood on the Saddle",
+      "number": 3,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2010-09-22",
+      "id": 31831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42456.jpg",
+      "name": "The Silent Land",
+      "number": 4,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2010-10-06",
+      "id": 31832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42457.jpg",
+      "name": "Master Class",
+      "number": 5,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2010-10-13",
+      "id": 31833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42458.jpg",
+      "name": "The Noble Art",
+      "number": 6,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2011-01-12",
+      "id": 31834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42459.jpg",
+      "name": "Not in My Back Yard",
+      "number": 7,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2011-02-02",
+      "id": 31835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42460.jpg",
+      "name": "Fit for Murder",
+      "number": 8,
+      "runtime": 120,
+      "season": 13
+    },
+    {
+      "airdate": "2011-03-23",
+      "id": 31836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42461.jpg",
+      "name": "Death in the Slow Lane",
+      "number": 1,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-03-30",
+      "id": 31837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42462.jpg",
+      "name": "Dark Secrets",
+      "number": 2,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-04-20",
+      "id": 31838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42463.jpg",
+      "name": "Echoes of the Dead",
+      "number": 3,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-05-25",
+      "id": 31839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42464.jpg",
+      "name": "The Oblong Murders",
+      "number": 4,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-09-21",
+      "id": 31840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42465.jpg",
+      "name": "The Sleeper Under the Hill",
+      "number": 5,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-10-12",
+      "id": 31841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42466.jpg",
+      "name": "The Night of the Stag",
+      "number": 6,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2011-10-26",
+      "id": 31842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42467.jpg",
+      "name": "A Sacred Trust",
+      "number": 7,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2012-01-11",
+      "id": 31843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42468.jpg",
+      "name": "A Rare Bird",
+      "number": 8,
+      "runtime": 120,
+      "season": 14
+    },
+    {
+      "airdate": "2012-02-01",
+      "id": 31844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466845.jpg",
+      "name": "The Dark Rider",
+      "number": 1,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2012-03-21",
+      "id": 31845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466848.jpg",
+      "name": "Murder of Innocence",
+      "number": 2,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2012-09-25",
+      "id": 31846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466849.jpg",
+      "name": "Written in the Stars",
+      "number": 3,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2013-01-02",
+      "id": 31847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466853.jpg",
+      "name": "Death and the Divas",
+      "number": 4,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2013-01-09",
+      "id": 31848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466855.jpg",
+      "name": "The Sicilian Defence",
+      "number": 5,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2013-01-30",
+      "id": 31849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466856.jpg",
+      "name": "Schooled in Murder",
+      "number": 6,
+      "runtime": 120,
+      "season": 15
+    },
+    {
+      "airdate": "2013-12-24",
+      "id": 31850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467220.jpg",
+      "name": "The Christmas Haunting",
+      "number": 1,
+      "runtime": 120,
+      "season": 16
+    },
+    {
+      "airdate": "2014-01-08",
+      "id": 31851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467226.jpg",
+      "name": "Let Us Prey",
+      "number": 2,
+      "runtime": 120,
+      "season": 16
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 31852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467258.jpg",
+      "name": "Wild Harvest",
+      "number": 3,
+      "runtime": 120,
+      "season": 16
+    },
+    {
+      "airdate": "2014-02-05",
+      "id": 31853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467299.jpg",
+      "name": "The Flying Club",
+      "number": 4,
+      "runtime": 120,
+      "season": 16
+    },
+    {
+      "airdate": "2014-02-12",
+      "id": 31854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467338.jpg",
+      "name": "The Killings of Copenhagen",
+      "number": 5,
+      "runtime": 120,
+      "season": 16
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 118441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467358.jpg",
+      "name": "The Dagger Club",
+      "number": 1,
+      "runtime": 120,
+      "season": 17
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 118442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/467654.jpg",
+      "name": "Murder by Magic",
+      "number": 2,
+      "runtime": 120,
+      "season": 17
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 118443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/467657.jpg",
+      "name": "The Ballad of Midsomer County",
+      "number": 3,
+      "runtime": 120,
+      "season": 17
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 118444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/467675.jpg",
+      "name": "A Vintage Murder",
+      "number": 4,
+      "runtime": 120,
+      "season": 17
+    },
+    {
+      "airdate": "2016-01-06",
+      "id": 532335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/467687.jpg",
+      "name": "Habeas Corpus",
+      "number": 1,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-01-13",
+      "id": 537579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/98191.jpg",
+      "name": "The Incident at Cooper Hill",
+      "number": 2,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-01-27",
+      "id": 555899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110628.jpg",
+      "name": "Breaking the Chain",
+      "number": 3,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-02-03",
+      "id": 555900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110629.jpg",
+      "name": "A Dying Art",
+      "number": 4,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-02-10",
+      "id": 555901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110630.jpg",
+      "name": "Saints and Sinners",
+      "number": 5,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-02-17",
+      "id": 555902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/225458.jpg",
+      "name": "Harvest of Souls",
+      "number": 6,
+      "runtime": 120,
+      "season": 18
+    },
+    {
+      "airdate": "2016-12-18",
+      "id": 999847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224398.jpg",
+      "name": "The Village That Rose from the Dead",
+      "number": 1,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2017-01-04",
+      "id": 1009617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230469.jpg",
+      "name": "Crime and Punishment",
+      "number": 2,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2017-01-11",
+      "id": 1014738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/226802.jpg",
+      "name": "Last Man Out",
+      "number": 3,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2017-01-18",
+      "id": 1021486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/226811.jpg",
+      "name": "Red in Tooth & Claw",
+      "number": 4,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2018-05-13",
+      "id": 1277730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1611257.jpg",
+      "name": "Death by Persuasion",
+      "number": 5,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2018-05-20",
+      "id": 1277731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/468555.jpg",
+      "name": "The Curse of the Ninth",
+      "number": 6,
+      "runtime": 120,
+      "season": 19
+    },
+    {
+      "airdate": "2019-03-10",
+      "id": 1464800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407454.jpg",
+      "name": "The Ghost of Causton Abbey",
+      "number": 1,
+      "runtime": 120,
+      "season": 20
+    },
+    {
+      "airdate": "2019-03-17",
+      "id": 1464801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407453.jpg",
+      "name": "Death of the Small Coppers",
+      "number": 2,
+      "runtime": 120,
+      "season": 20
+    },
+    {
+      "airdate": "2019-05-19",
+      "id": 1464802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407455.jpg",
+      "name": "Drawing Dead",
+      "number": 3,
+      "runtime": 120,
+      "season": 20
+    },
+    {
+      "airdate": "2019-08-26",
+      "id": 1464803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407450.jpg",
+      "name": "The Lions of Causton",
+      "number": 4,
+      "runtime": 115,
+      "season": 20
+    },
+    {
+      "airdate": "",
+      "id": 1464804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407451.jpg",
+      "name": "Till Death Do Us Part",
+      "number": 5,
+      "runtime": 115,
+      "season": 20
+    },
+    {
+      "airdate": "",
+      "id": 1464805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407452.jpg",
+      "name": "Send in the Clowns",
+      "number": 6,
+      "runtime": 120,
+      "season": 20
+    },
+    {
+      "airdate": "2019-12-01",
+      "id": 1696314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/591398.jpg",
+      "name": "The Point of Balance",
+      "number": 1,
+      "runtime": null,
+      "season": 21
+    },
+    {
+      "airdate": "2019-12-08",
+      "id": 1764915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1611258.jpg",
+      "name": "The Miniature Murders",
+      "number": 2,
+      "runtime": 120,
+      "season": 21
+    },
+    {
+      "airdate": "2019-12-15",
+      "id": 1764916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634592.jpg",
+      "name": "The Sting of Death",
+      "number": 3,
+      "runtime": 120,
+      "season": 21
+    },
+    {
+      "airdate": "2019-12-22",
+      "id": 1764917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1611259.jpg",
+      "name": "With Baited Breath",
+      "number": 4,
+      "runtime": 120,
+      "season": 21
+    },
+    {
+      "airdate": "2021-04-19",
+      "id": 2051539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756864.jpg",
+      "name": "The Wolf Hunter of Little Worthy",
+      "number": 1,
+      "runtime": 89,
+      "season": 22
+    },
+    {
+      "airdate": "2021-04-19",
+      "id": 2051540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767332.jpg",
+      "name": "The Stitcher Society",
+      "number": 2,
+      "runtime": null,
+      "season": 22
+    },
+    {
+      "airdate": "2021-09-27",
+      "id": 2138357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/376/941493.jpg",
+      "name": "Happy Families",
+      "number": 3,
+      "runtime": null,
+      "season": 22
+    },
+    {
+      "airdate": "2021-10-04",
+      "id": 2142051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026755.jpg",
+      "name": "Scarecrow Murders",
+      "number": 4,
+      "runtime": null,
+      "season": 22
+    },
+    {
+      "airdate": "2021-10-11",
+      "id": 2181427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026775.jpg",
+      "name": "For Death Prepare",
+      "number": 5,
+      "runtime": null,
+      "season": 22
+    },
+    {
+      "airdate": "2021-10-18",
+      "id": 2181428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026968.jpg",
+      "name": "The Witches of Angel's Rise",
+      "number": 6,
+      "runtime": null,
+      "season": 22
+    },
+    {
+      "airdate": "2022-12-12",
+      "id": 2448014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/435/1087688.jpg",
+      "name": "The Blacktrees Prophecy",
+      "number": 1,
+      "runtime": 88,
+      "season": 23
+    },
+    {
+      "airdate": "2022-12-19",
+      "id": 2448015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/436/1090217.jpg",
+      "name": "The Debt of Lies",
+      "number": 2,
+      "runtime": 89,
+      "season": 23
+    },
+    {
+      "airdate": "2022-12-26",
+      "id": 2448016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/437/1092780.jpg",
+      "name": "A Grain of Truth",
+      "number": 3,
+      "runtime": 89,
+      "season": 23
+    },
+    {
+      "airdate": "2023-01-02",
+      "id": 2448017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/439/1097733.jpg",
+      "name": "Dressed to Kill",
+      "number": 4,
+      "runtime": 89,
+      "season": 23
+    },
+    {
+      "airdate": "2023-12-04",
+      "id": 2691418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/490/1226899.jpg",
+      "name": "The Devil's Work",
+      "number": 1,
+      "runtime": 89,
+      "season": 24
+    },
+    {
+      "airdate": "2023-12-11",
+      "id": 2691419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/492/1230200.jpg",
+      "name": "Book of the Dead",
+      "number": 2,
+      "runtime": 89,
+      "season": 24
+    },
+    {
+      "airdate": "2023-12-18",
+      "id": 2691420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235710.jpg",
+      "name": "Claws Out",
+      "number": 3,
+      "runtime": 89,
+      "season": 24
+    },
+    {
+      "airdate": "2023-12-25",
+      "id": 2691421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1240619.jpg",
+      "name": "A Climate of Death",
+      "number": 4,
+      "runtime": 89,
+      "season": 24
+    },
+    {
+      "airdate": "2025-12-08",
+      "id": 3444199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/601/1504227.jpg",
+      "name": "Treasures of Darkness",
+      "number": 1,
+      "runtime": 89,
+      "season": 25
+    },
+    {
+      "airdate": "2025-12-15",
+      "id": 3447855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/603/1508964.jpg",
+      "name": "Lawn of the Dead",
+      "number": 2,
+      "runtime": 83,
+      "season": 25
+    },
+    {
+      "airdate": "2025-12-22",
+      "id": 3447856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/604/1511083.jpg",
+      "name": "Death Strikes Three",
+      "number": 3,
+      "runtime": 89,
+      "season": 25
+    },
+    {
+      "airdate": "2025-12-29",
+      "id": 3447857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/603/1508962.jpg",
+      "name": "Top of the Class",
+      "number": 4,
+      "runtime": 89,
+      "season": 25
+    },
+    {
+      "airdate": "2026-11-08",
+      "id": 3808016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626226.jpg",
+      "name": "Mindful To Murder",
+      "number": 1,
+      "runtime": 90,
+      "season": 26
+    },
+    {
+      "airdate": "2026-11-08",
+      "id": 3808017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626227.jpg",
+      "name": "The Sons Of Annerby",
+      "number": 2,
+      "runtime": 90,
+      "season": 26
+    },
+    {
+      "airdate": "2026-11-08",
+      "id": 3808018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626228.jpg",
+      "name": "A Menu For Murder",
+      "number": 3,
+      "runtime": 90,
+      "season": 26
+    },
+    {
+      "airdate": "2026-11-08",
+      "id": 3808019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626229.jpg",
+      "name": "Like And Subscribe",
+      "number": 4,
+      "runtime": 90,
+      "season": 26
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-328",
+  "live": true,
+  "overview": "Based originally on the books by Caroline Graham, each self-contained episode of two hours is a classic whodunit revolving around Detective Chief Inspector Barnaby and his partner, and their efforts to solve the numerous gruesome murders which take place in the picturesque countryside of Midsomer County.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/603/1508988.jpg",
   "rating": 7.9,
-  "runtime": null,
-  "episodes": []
+  "runtime": 116,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "328",
+  "title": "Midsomer Murders",
+  "type": "series",
+  "year": 1998
 }

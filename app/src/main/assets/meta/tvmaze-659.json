@@ -1,21 +1,391 @@
 {
-  "schema": 1,
-  "id": "tvmaze-659",
-  "source": "tvmaze",
-  "sourceId": "659",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Torchwood",
-  "year": 2006,
-  "type": "series",
-  "overview": "Captain Jack Harkness is a man from the 51st century trapped in the past who leads the last remnants of the Torchwood Institute, a top secret British agency outside the government whose job it is to investigate alien goings on in the world, act in mankind's best interest, and, if needed, be the Earth's last line of defense.",
-  "poster": "file:///android_asset/posters/tvmaze-659.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-10-22",
+      "id": 58045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404488.jpg",
+      "name": "Everything Changes",
+      "number": 1,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-22",
+      "id": 58046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404545.jpg",
+      "name": "Day One",
+      "number": 2,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-29",
+      "id": 58047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404592.jpg",
+      "name": "Ghost Machine",
+      "number": 3,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-05",
+      "id": 58048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404667.jpg",
+      "name": "Cyberwoman",
+      "number": 4,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-12",
+      "id": 58049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404927.jpg",
+      "name": "Small Worlds",
+      "number": 5,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-19",
+      "id": 58050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404968.jpg",
+      "name": "Countrycide",
+      "number": 6,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-26",
+      "id": 58051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405026.jpg",
+      "name": "Greeks Bearing Gifts",
+      "number": 7,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-03",
+      "id": 58052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405414.jpg",
+      "name": "They Keep Killing Suzie",
+      "number": 8,
+      "runtime": 55,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-10",
+      "id": 58053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405453.jpg",
+      "name": "Random Shoes",
+      "number": 9,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-17",
+      "id": 58054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405500.jpg",
+      "name": "Out of Time",
+      "number": 10,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-24",
+      "id": 58055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405633.jpg",
+      "name": "Combat",
+      "number": 11,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-01",
+      "id": 58056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405677.jpg",
+      "name": "Captain Jack Harkness",
+      "number": 12,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-05",
+      "id": 58057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405718.jpg",
+      "name": "End of Days",
+      "number": 13,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2008-01-16",
+      "id": 58058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429572.jpg",
+      "name": "Kiss Kiss, Bang Bang",
+      "number": 1,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-23",
+      "id": 58059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429621.jpg",
+      "name": "Sleeper",
+      "number": 2,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-30",
+      "id": 58060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429672.jpg",
+      "name": "To the Last Man",
+      "number": 3,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-06",
+      "id": 58061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430194.jpg",
+      "name": "Meat",
+      "number": 4,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-13",
+      "id": 58062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430236.jpg",
+      "name": "Adam",
+      "number": 5,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-13",
+      "id": 58063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430286.jpg",
+      "name": "Reset",
+      "number": 6,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-20",
+      "id": 58064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430338.jpg",
+      "name": "Dead Man Walking",
+      "number": 7,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-27",
+      "id": 58065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430402.jpg",
+      "name": "A Day in the Death",
+      "number": 8,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-05",
+      "id": 58066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177442.jpg",
+      "name": "Something Borrowed",
+      "number": 9,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-12",
+      "id": 58067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177443.jpg",
+      "name": "From Out of the Rain",
+      "number": 10,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-19",
+      "id": 58068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177444.jpg",
+      "name": "Adrift",
+      "number": 11,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-21",
+      "id": 58069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177445.jpg",
+      "name": "Fragments",
+      "number": 12,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-04",
+      "id": 58070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177446.jpg",
+      "name": "Exit Wounds",
+      "number": 13,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-06",
+      "id": 58071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579401.jpg",
+      "name": "Day One",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-07",
+      "id": 58072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579400.jpg",
+      "name": "Day Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-08",
+      "id": 58073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579399.jpg",
+      "name": "Day Three",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-09",
+      "id": 58074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579397.jpg",
+      "name": "Day Four",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-10",
+      "id": 58075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579396.jpg",
+      "name": "Day Five",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-07-08",
+      "id": 58076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579395.jpg",
+      "name": "The New World",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-15",
+      "id": 58077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579394.jpg",
+      "name": "Rendition",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-22",
+      "id": 58078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579393.jpg",
+      "name": "Dead of Night",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-29",
+      "id": 58079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579392.jpg",
+      "name": "Escape to L.A.",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-05",
+      "id": 58080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579391.jpg",
+      "name": "The Categories of Life",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-12",
+      "id": 58081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579390.jpg",
+      "name": "The Middle Men",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-19",
+      "id": 58082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579389.jpg",
+      "name": "Immortal Sins",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-26",
+      "id": 58083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579388.jpg",
+      "name": "End of the Road",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-02",
+      "id": 58084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579386.jpg",
+      "name": "The Gathering",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-09",
+      "id": 58085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579385.jpg",
+      "name": "The Blood Line",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction"
   ],
+  "id": "tvmaze-659",
+  "live": true,
+  "overview": "Captain Jack Harkness is a man from the 51st century trapped in the past who leads the last remnants of the Torchwood Institute, a top secret British agency outside the government whose job it is to investigate alien goings on in the world, act in mankind's best interest, and, if needed, be the Earth's last line of defense.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/356/890285.jpg",
   "rating": 8,
-  "runtime": null,
-  "episodes": []
+  "runtime": 53,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "659",
+  "title": "Torchwood",
+  "type": "series",
+  "year": 2006
 }

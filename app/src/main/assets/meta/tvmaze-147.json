@@ -1,21 +1,742 @@
 {
-  "schema": 1,
-  "id": "tvmaze-147",
-  "source": "tvmaze",
-  "sourceId": "147",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Nurse Jackie",
-  "year": 2009,
-  "type": "series",
-  "overview": "Every day is a matter of life and death in a hectic New York City hospital, but for Nurse Jackie that's the easiest part. Between chronic back pain that won't quit, and a personal life on the constant edge of collapse, it's going to take a white lie here, a bent rule there, and a handful of secret strategies to relieve the pain, and stay one step ahead of total disaster.",
-  "poster": "file:///android_asset/posters/tvmaze-147.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-06-08",
+      "id": 10983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/254/635680.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-06-15",
+      "id": 10984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758761.jpg",
+      "name": "Sweet 'n All",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-06-22",
+      "id": 10985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758762.jpg",
+      "name": "Chicken Soup",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-06-29",
+      "id": 10986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758763.jpg",
+      "name": "School Nurse",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-07-06",
+      "id": 10987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758764.jpg",
+      "name": "Daffodil",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-07-13",
+      "id": 10988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758765.jpg",
+      "name": "Tiny Bubbles",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-07-20",
+      "id": 10989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758766.jpg",
+      "name": "Steak Knife",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-07-27",
+      "id": 10990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758767.jpg",
+      "name": "Pupil",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-08-03",
+      "id": 10991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758768.jpg",
+      "name": "Nose Bleed",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-08-10",
+      "id": 10992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758769.jpg",
+      "name": "Ring Finger",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-08-17",
+      "id": 10993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758770.jpg",
+      "name": "Pill-O-Matix",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-08-24",
+      "id": 10994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758771.jpg",
+      "name": "Health Care And Cinema",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-22",
+      "id": 10995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758772.jpg",
+      "name": "Comfort Food",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-29",
+      "id": 10996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758773.jpg",
+      "name": "Twitter",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-05",
+      "id": 10997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758774.jpg",
+      "name": "Candyland",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-12",
+      "id": 10998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758775.jpg",
+      "name": "Apple Bong",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-19",
+      "id": 10999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758776.jpg",
+      "name": "Caregiver",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-26",
+      "id": 11000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758777.jpg",
+      "name": "Bleeding",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-03",
+      "id": 11001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758778.jpg",
+      "name": "Silly String",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-10",
+      "id": 11002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758779.jpg",
+      "name": "Monkey Bits",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-17",
+      "id": 11003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758780.jpg",
+      "name": "P. O. Box",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-24",
+      "id": 11004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758781.jpg",
+      "name": "Sleeping Dogs",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-31",
+      "id": 11005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758782.jpg",
+      "name": "What The Day Brings",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-07",
+      "id": 11006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758783.jpg",
+      "name": "Years of Service",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-28",
+      "id": 11007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758784.jpg",
+      "name": "Game On",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-04",
+      "id": 11008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758785.jpg",
+      "name": "Enough Rope",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-11",
+      "id": 11009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758786.jpg",
+      "name": "Play Me",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-18",
+      "id": 11010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758787.jpg",
+      "name": "Mitten",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-25",
+      "id": 11011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758788.jpg",
+      "name": "Rat Falls",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-02",
+      "id": 11012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758789.jpg",
+      "name": "When The Saints Go",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-09",
+      "id": 11013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758790.jpg",
+      "name": "Orchids and Salami",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-16",
+      "id": 11014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758791.jpg",
+      "name": "The Astonishing",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-23",
+      "id": 11015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758792.jpg",
+      "name": "Have You Met Ms. Jones?",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-06-06",
+      "id": 11016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758793.jpg",
+      "name": "Fuck The Lemurs",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-06-13",
+      "id": 11017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758794.jpg",
+      "name": "Batting Practice",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-06-20",
+      "id": 11018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758795.jpg",
+      "name": "…Deaf Blind Tumor Pee-Test",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-08",
+      "id": 11019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758796.jpg",
+      "name": "Kettle-Kettle-Black-Black",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 11020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758797.jpg",
+      "name": "Disneyland Sucks",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 11021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758798.jpg",
+      "name": "The Wall",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 11022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758799.jpg",
+      "name": "Slow Growing Monsters",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 11023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758800.jpg",
+      "name": "One-Armed Jacks",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 11024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758801.jpg",
+      "name": "No-Kimono-Zone",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 11025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758802.jpg",
+      "name": "Day Of The Iguana",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 11026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758803.jpg",
+      "name": "Chaud & Froid",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 11027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758804.jpg",
+      "name": "Are Those Feathers?",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-06-17",
+      "id": 11028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758805.jpg",
+      "name": "Handle Your Scandal",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 11029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758806.jpg",
+      "name": "Happy F**king Birthday",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 11030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758807.jpg",
+      "name": "Luck of the Drawing",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 11031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758808.jpg",
+      "name": "Smile",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 11032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758809.jpg",
+      "name": "Lost Girls",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 11033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758810.jpg",
+      "name": "Good Thing",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-05-19",
+      "id": 11034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758811.jpg",
+      "name": "Walk of Shame",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 11035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758812.jpg",
+      "name": "Teachable Moments",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 11036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758813.jpg",
+      "name": "Forget It",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-06-09",
+      "id": 11037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758814.jpg",
+      "name": "Heart",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-06-16",
+      "id": 11038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758815.jpg",
+      "name": "Soul",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 11039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758816.jpg",
+      "name": "Sink or Swim",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 11040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758817.jpg",
+      "name": "Pillgrimage",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 11041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758818.jpg",
+      "name": "Super Greens",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 11042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758819.jpg",
+      "name": "Jungle Love",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 11043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758820.jpg",
+      "name": "Rag and Bone",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 11044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758821.jpg",
+      "name": "Nancy Wood",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-05-25",
+      "id": 11045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758822.jpg",
+      "name": "Rat on a Cheeto",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 11046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758823.jpg",
+      "name": "The Lady with the Lamp",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 11047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758824.jpg",
+      "name": "Candyman",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 11048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758825.jpg",
+      "name": "Sidecars and Spermicide",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 11049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758826.jpg",
+      "name": "Sisterhood",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 11050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758827.jpg",
+      "name": "Flight",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 117662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26435.jpg",
+      "name": "Clean",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 145080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26436.jpg",
+      "name": "Deal",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 145081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758828.jpg",
+      "name": "Godfathering",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 145082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26848.jpg",
+      "name": "Nice Ladies",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 145083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27304.jpg",
+      "name": "Coop Out",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-17",
+      "id": 153226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27670.jpg",
+      "name": "High Noon",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-24",
+      "id": 153227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28178.jpg",
+      "name": "Are You With Me, Doctor Wu?",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-31",
+      "id": 153228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28740.jpg",
+      "name": "Managed Care",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-06-07",
+      "id": 153229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29339.jpg",
+      "name": "Serviam in Caritate",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-06-14",
+      "id": 155558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30081.jpg",
+      "name": "Jackie and the Wolf",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-06-21",
+      "id": 155559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30903.jpg",
+      "name": "Vigilante Jones",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-06-28",
+      "id": 155560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31730.jpg",
+      "name": "I Say a Little Prayer",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-147",
+  "live": true,
+  "overview": "Every day is a matter of life and death in a hectic New York City hospital, but for Nurse Jackie that's the easiest part. Between chronic back pain that won't quit, and a personal life on the constant edge of collapse, it's going to take a white lie here, a bent rule there, and a handful of secret strategies to relieve the pain, and stay one step ahead of total disaster.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/2021.jpg",
   "rating": 7.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "147",
+  "title": "Nurse Jackie",
+  "type": "series",
+  "year": 2009
 }

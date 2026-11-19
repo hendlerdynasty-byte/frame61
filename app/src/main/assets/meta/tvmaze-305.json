@@ -1,22 +1,311 @@
 {
-  "schema": 1,
-  "id": "tvmaze-305",
-  "source": "tvmaze",
-  "sourceId": "305",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Black Mirror",
-  "year": 2011,
-  "type": "series",
-  "overview": "Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a monitor; a smartphone--a black mirror of our 21st Century existence. Black Mirror is a contemporary British re-working of The Twilight Zone with stories that tap into the collective unease about our modern world.",
-  "poster": "file:///android_asset/posters/tvmaze-305.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-12-04",
+      "id": 30902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008339.jpg",
+      "name": "The National Anthem",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 30903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008340.jpg",
+      "name": "Fifteen Million Merits",
+      "number": 2,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-18",
+      "id": 30904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008341.jpg",
+      "name": "The Entire History of You",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-11",
+      "id": 30905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008342.jpg",
+      "name": "Be Right Back",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-18",
+      "id": 30906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008343.jpg",
+      "name": "White Bear",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-25",
+      "id": 30907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008344.jpg",
+      "name": "The Waldo Moment",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008347.jpg",
+      "name": "Nosedive",
+      "number": 1,
+      "runtime": 63,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008348.jpg",
+      "name": "Playtest",
+      "number": 2,
+      "runtime": 57,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008349.jpg",
+      "name": "Shut Up and Dance",
+      "number": 3,
+      "runtime": 52,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008350.jpg",
+      "name": "San Junipero",
+      "number": 4,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008351.jpg",
+      "name": "Men Against Fire",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 878473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008352.jpg",
+      "name": "Hated in the Nation",
+      "number": 6,
+      "runtime": 89,
+      "season": 3
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008353.jpg",
+      "name": "USS Callister",
+      "number": 1,
+      "runtime": 76,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008354.jpg",
+      "name": "Arkangel",
+      "number": 2,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008355.jpg",
+      "name": "Crocodile",
+      "number": 3,
+      "runtime": 59,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008356.jpg",
+      "name": "Hang the DJ",
+      "number": 4,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008357.jpg",
+      "name": "Metalhead",
+      "number": 5,
+      "runtime": 41,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-29",
+      "id": 1281044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008358.jpg",
+      "name": "Black Museum",
+      "number": 6,
+      "runtime": 69,
+      "season": 4
+    },
+    {
+      "airdate": "2019-06-05",
+      "id": 1656203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502032.jpg",
+      "name": "Striking Vipers",
+      "number": 1,
+      "runtime": 61,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-05",
+      "id": 1656204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008360.jpg",
+      "name": "Smithereens",
+      "number": 2,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-05",
+      "id": 1659382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008361.jpg",
+      "name": "Rachel, Jack and Ashley, Too",
+      "number": 3,
+      "runtime": 67,
+      "season": 5
+    },
+    {
+      "airdate": "2023-06-15",
+      "id": 2506146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1163016.jpg",
+      "name": "Joan Is Awful",
+      "number": 1,
+      "runtime": 56,
+      "season": 6
+    },
+    {
+      "airdate": "2023-06-15",
+      "id": 2506147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1163017.jpg",
+      "name": "Loch Henry",
+      "number": 2,
+      "runtime": 56,
+      "season": 6
+    },
+    {
+      "airdate": "2023-06-15",
+      "id": 2506148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1163018.jpg",
+      "name": "Beyond the Sea",
+      "number": 3,
+      "runtime": 80,
+      "season": 6
+    },
+    {
+      "airdate": "2023-06-15",
+      "id": 2506149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1163019.jpg",
+      "name": "Mazey Day",
+      "number": 4,
+      "runtime": 42,
+      "season": 6
+    },
+    {
+      "airdate": "2023-06-15",
+      "id": 2506150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1163020.jpg",
+      "name": "Demon 79",
+      "number": 5,
+      "runtime": 75,
+      "season": 6
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408177.jpg",
+      "name": "Common People",
+      "number": 1,
+      "runtime": 57,
+      "season": 7
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408178.jpg",
+      "name": "Bête Noire",
+      "number": 2,
+      "runtime": 50,
+      "season": 7
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408179.jpg",
+      "name": "Hotel Reverie",
+      "number": 3,
+      "runtime": 77,
+      "season": 7
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408180.jpg",
+      "name": "Plaything",
+      "number": 4,
+      "runtime": 46,
+      "season": 7
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408181.jpg",
+      "name": "Eulogy",
+      "number": 5,
+      "runtime": 47,
+      "season": 7
+    },
+    {
+      "airdate": "2025-04-10",
+      "id": 3172697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408182.jpg",
+      "name": "USS Callister: Into Infinity",
+      "number": 6,
+      "runtime": 90,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-305",
+  "live": true,
+  "overview": "Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a monitor; a smartphone--a black mirror of our 21st Century existence. Black Mirror is a contemporary British re-working of The Twilight Zone with stories that tap into the collective unease about our modern world.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/564/1411764.jpg",
   "rating": 8.4,
-  "runtime": null,
-  "episodes": []
+  "runtime": 62,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "305",
+  "title": "Black Mirror",
+  "type": "series",
+  "year": 2011
 }

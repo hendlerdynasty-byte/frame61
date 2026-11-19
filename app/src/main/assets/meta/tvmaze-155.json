@@ -1,22 +1,653 @@
 {
-  "schema": 1,
-  "id": "tvmaze-155",
-  "source": "tvmaze",
-  "sourceId": "155",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Beauty & the Beast",
-  "year": 2012,
-  "type": "series",
-  "overview": "Detective Catherine Chandler is a smart, no-nonsense homicide detective. When she was a teenager, she witnessed the murder of her mother at the hands of two gunmen and herself was saved by someone – or something. Years have passed and while investigating a murder, Catherine discovers a clue that leads her to Vincent Keller, who was reportedly killed in 2002. Catherine learns that Vincent is actually still alive and that it was he who saved her many years before. For mysterious reasons that have forced him to live outside of traditional society, Vincent has been in hiding for the past 10 years to guard his secret – when he is enraged, he becomes a terrifying beast, unable to control his super-strength and heightened senses.",
-  "poster": "file:///android_asset/posters/tvmaze-155.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-10-11",
+      "id": 11289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33303.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-18",
+      "id": 11290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33302.jpg",
+      "name": "Proceed with Caution",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-25",
+      "id": 11291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33301.jpg",
+      "name": "All In",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 11292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33300.jpg",
+      "name": "Basic Instinct",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-08",
+      "id": 11293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33299.jpg",
+      "name": "Saturn Returns",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-15",
+      "id": 11294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33298.jpg",
+      "name": "Worth",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-29",
+      "id": 11295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33297.jpg",
+      "name": "Out of Control",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-06",
+      "id": 11296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33296.jpg",
+      "name": "Trapped",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-13",
+      "id": 11297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33295.jpg",
+      "name": "Bridesmaid Up!",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-01-24",
+      "id": 11298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33294.jpg",
+      "name": "Seeing Red",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-01-31",
+      "id": 11299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33293.jpg",
+      "name": "On Thin Ice",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-07",
+      "id": 11300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33292.jpg",
+      "name": "Cold Turkey",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-14",
+      "id": 11301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33291.jpg",
+      "name": "Trust No One",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-21",
+      "id": 11302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33290.jpg",
+      "name": "Tough Love",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-14",
+      "id": 11303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33289.jpg",
+      "name": "Any Means Possible",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-21",
+      "id": 11304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33288.jpg",
+      "name": "Insatiable",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-28",
+      "id": 11305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33287.jpg",
+      "name": "Partners in Crime",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-18",
+      "id": 11306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33286.jpg",
+      "name": "Heart of Darkness",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-25",
+      "id": 11307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33285.jpg",
+      "name": "Playing with Fire",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-02",
+      "id": 11308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33284.jpg",
+      "name": "Anniversary",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-09",
+      "id": 11309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33283.jpg",
+      "name": "Date Night",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-16",
+      "id": 11310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33282.jpg",
+      "name": "Never Turn Back",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-07",
+      "id": 11311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214421.jpg",
+      "name": "Who Am I?",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 11312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214430.jpg",
+      "name": "Kidnapped",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-21",
+      "id": 11313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214428.jpg",
+      "name": "Liar, Liar",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-28",
+      "id": 11314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214432.jpg",
+      "name": "Hothead",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-04",
+      "id": 11315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216830.jpg",
+      "name": "Reunion",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-11",
+      "id": 11316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216831.jpg",
+      "name": "Father Knows Best",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-18",
+      "id": 11317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219995.jpg",
+      "name": "Guess Who's Coming to Dinner?",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-25",
+      "id": 11318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219996.jpg",
+      "name": "Man or Beast?",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 11319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222109.jpg",
+      "name": "Don't Die on Me",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 11320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222111.jpg",
+      "name": "Ancestors",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 11321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224414.jpg",
+      "name": "Held Hostage",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-03",
+      "id": 11322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224415.jpg",
+      "name": "Recipe for Disaster",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-10",
+      "id": 11323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/91/229048.jpg",
+      "name": "Till Death",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-17",
+      "id": 11324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/91/229049.jpg",
+      "name": "Redemption",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 11325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231628.jpg",
+      "name": "Catch Me If You Can",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 11326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231629.jpg",
+      "name": "About Last Night",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-02",
+      "id": 11327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235509.jpg",
+      "name": "Beast is the New Black",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-09",
+      "id": 11328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237020.jpg",
+      "name": "Cat and Mouse",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 11329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237021.jpg",
+      "name": "Cold Case",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 11330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237022.jpg",
+      "name": "Ever After",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 11331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237023.jpg",
+      "name": "Operation Fake Date",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 11332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237024.jpg",
+      "name": "Déjà Vu",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-11",
+      "id": 140340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29415.jpg",
+      "name": "The Beast of Wall Street",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-18",
+      "id": 157308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30034.jpg",
+      "name": "Primal Fear",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-25",
+      "id": 157309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30844.jpg",
+      "name": "Bob & Carol & Vincent & Cat",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-02",
+      "id": 157310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31660.jpg",
+      "name": "Heart of the Matter",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-09",
+      "id": 157311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32177.jpg",
+      "name": "The Most Dangerous Beast",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-16",
+      "id": 157312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32910.jpg",
+      "name": "Chasing Ghosts",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-23",
+      "id": 157313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34012.jpg",
+      "name": "Both Sides Now",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-30",
+      "id": 157314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34817.jpg",
+      "name": "Shotgun Wedding",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-06",
+      "id": 157315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35411.jpg",
+      "name": "Cat's Out of the Bag",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-13",
+      "id": 157316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36394.jpg",
+      "name": "Patient X",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-20",
+      "id": 157317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38137.jpg",
+      "name": "Unbreakable",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-27",
+      "id": 157318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39684.jpg",
+      "name": "Sins of the Fathers",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 206008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41308.jpg",
+      "name": "Destined",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-02",
+      "id": 611629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/151881.jpg",
+      "name": "Monsieur et Madame Bête",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-09",
+      "id": 783035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155846.jpg",
+      "name": "Beast Interrupted",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-16",
+      "id": 819846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156937.jpg",
+      "name": "Down for the Count",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-23",
+      "id": 831142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160757.jpg",
+      "name": "Something's Gotta Give",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-30",
+      "id": 820122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163383.jpg",
+      "name": "It's a Wonderful Beast",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-07",
+      "id": 820124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166300.jpg",
+      "name": "Beast of Times, Worst of Times",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-14",
+      "id": 783036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168883.jpg",
+      "name": "Point of No Return",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-21",
+      "id": 820125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170518.jpg",
+      "name": "Love is a Battlefield",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-28",
+      "id": 820126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/172746.jpg",
+      "name": "The Getaway",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-11",
+      "id": 783037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176177.jpg",
+      "name": "Means to an End",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-25",
+      "id": 820127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180301.jpg",
+      "name": "Meet the New Beast",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-09-08",
+      "id": 820129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184881.jpg",
+      "name": "No Way Out",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-09-15",
+      "id": 905489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/187333.jpg",
+      "name": "Au Revoir",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Romanze",
+    "Romance",
     "Science-Fiction"
   ],
+  "id": "tvmaze-155",
+  "live": true,
+  "overview": "Detective Catherine Chandler is a smart, no-nonsense homicide detective. When she was a teenager, she witnessed the murder of her mother at the hands of two gunmen and herself was saved by someone – or something. Years have passed and while investigating a murder, Catherine discovers a clue that leads her to Vincent Keller, who was reportedly killed in 2002. Catherine learns that Vincent is actually still alive and that it was he who saved her many years before. For mysterious reasons that have forced him to live outside of traditional society, Vincent has been in hiding for the past 10 years to guard his secret – when he is enraged, he becomes a terrifying beast, unable to control his super-strength and heightened senses.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/2128.jpg",
   "rating": 7.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "155",
+  "title": "Beauty & the Beast",
+  "type": "series",
+  "year": 2012
 }

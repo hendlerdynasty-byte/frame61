@@ -1,22 +1,680 @@
 {
-  "schema": 1,
-  "id": "tvmaze-122",
-  "source": "tvmaze",
-  "sourceId": "122",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Nikita",
-  "year": 2010,
-  "type": "series",
-  "overview": "When she was a deeply troubled teenager, Nikita was rescued from death row by a secret U.S. agency known only as Division, who trained her as a spy and assassin. Nikita was eventually betrayed by the only people she thought she could trust. Now, after three years in hiding, Nikita is seeking retribution and making it clear to her former boss, Percy and her former friends Michael and Birkhoff that she will stop at nothing to expose and destroy their covert operation.",
-  "poster": "file:///android_asset/posters/tvmaze-122.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-09",
+      "id": 10067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58122.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-16",
+      "id": 10068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58125.jpg",
+      "name": "2.0",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-23",
+      "id": 10069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58344.jpg",
+      "name": "Kill Jill",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-30",
+      "id": 10070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58345.jpg",
+      "name": "Rough Trade",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-07",
+      "id": 10071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58346.jpg",
+      "name": "The Guardian",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-21",
+      "id": 10072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58349.jpg",
+      "name": "Resistance",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-28",
+      "id": 10073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58350.jpg",
+      "name": "The Recruit",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-04",
+      "id": 10074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58351.jpg",
+      "name": "Phoenix",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-11",
+      "id": 10075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58352.jpg",
+      "name": "One Way",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-02",
+      "id": 10076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58353.jpg",
+      "name": "Dark Matter",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-09",
+      "id": 10077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58354.jpg",
+      "name": "All the Way",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-01-27",
+      "id": 10078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58356.jpg",
+      "name": "Free",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-03",
+      "id": 10079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58357.jpg",
+      "name": "Coup De Grace",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-10",
+      "id": 10080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58358.jpg",
+      "name": "The Next Seduction",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-17",
+      "id": 10081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58360.jpg",
+      "name": "Alexandra",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-24",
+      "id": 10082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58361.jpg",
+      "name": "Echoes",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-07",
+      "id": 10083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58362.jpg",
+      "name": "Covenant",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-14",
+      "id": 10084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58363.jpg",
+      "name": "Into the Dark",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-21",
+      "id": 10085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58364.jpg",
+      "name": "Girl's Best Friend",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-28",
+      "id": 10086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58365.jpg",
+      "name": "Glass Houses",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-05",
+      "id": 10087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58366.jpg",
+      "name": "Betrayals",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-12",
+      "id": 10088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58367.jpg",
+      "name": "Pandora",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 10089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58368.jpg",
+      "name": "Game Change",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 10090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58369.jpg",
+      "name": "Falling Ash",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-07",
+      "id": 10091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58370.jpg",
+      "name": "Knightfall",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-14",
+      "id": 10092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58398.jpg",
+      "name": "Partners",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-21",
+      "id": 10093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58399.jpg",
+      "name": "Looking Glass",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-28",
+      "id": 10094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58401.jpg",
+      "name": "343 Walnut Lane",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-04",
+      "id": 10095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58403.jpg",
+      "name": "Clawback",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-11",
+      "id": 10096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58405.jpg",
+      "name": "London Calling",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-18",
+      "id": 10097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58407.jpg",
+      "name": "Fair Trade",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-02",
+      "id": 10098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58409.jpg",
+      "name": "Guardians",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-06",
+      "id": 10099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58411.jpg",
+      "name": "Pale Fire",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-13",
+      "id": 10100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58412.jpg",
+      "name": "Sanctuary",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-03",
+      "id": 10101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58413.jpg",
+      "name": "Clean Sweep",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-10",
+      "id": 10102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58414.jpg",
+      "name": "Rogue",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-17",
+      "id": 10103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58415.jpg",
+      "name": "Origins",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-16",
+      "id": 10104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58416.jpg",
+      "name": "Doublecross",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-23",
+      "id": 10105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58417.jpg",
+      "name": "Arising",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-30",
+      "id": 10106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58418.jpg",
+      "name": "Power",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-20",
+      "id": 10107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58419.jpg",
+      "name": "Wrath",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-27",
+      "id": 10108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58420.jpg",
+      "name": "Shadow Walker",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-04",
+      "id": 10109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58421.jpg",
+      "name": "Dead Drop",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-11",
+      "id": 10110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58423.jpg",
+      "name": "Crossbow",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-18",
+      "id": 10111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58424.jpg",
+      "name": "Homecoming",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-19",
+      "id": 10112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58425.jpg",
+      "name": "3.0",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-26",
+      "id": 10113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58426.jpg",
+      "name": "Innocence",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-02",
+      "id": 10114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58427.jpg",
+      "name": "True Believer",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-09",
+      "id": 10115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58429.jpg",
+      "name": "Consequences",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-30",
+      "id": 10116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58430.jpg",
+      "name": "The Sword's Edge",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-07",
+      "id": 10117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58431.jpg",
+      "name": "Sideswipe",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-18",
+      "id": 10118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58432.jpg",
+      "name": "Intersection",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-25",
+      "id": 10119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58434.jpg",
+      "name": "Aftermath",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 10120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58437.jpg",
+      "name": "Survival Instincts",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-08",
+      "id": 10121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58438.jpg",
+      "name": "Brave New World",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-22",
+      "id": 10122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58439.jpg",
+      "name": "Black Badge",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 10123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58442.jpg",
+      "name": "With Fire",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-08",
+      "id": 10124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58449.jpg",
+      "name": "Reunion",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-15",
+      "id": 10125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58451.jpg",
+      "name": "The Life We've Chosen",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-29",
+      "id": 10126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58464.jpg",
+      "name": "Inevitability",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 10127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58478.jpg",
+      "name": "Tipping Point",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-12",
+      "id": 10128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58479.jpg",
+      "name": "Masks",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-19",
+      "id": 10129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58480.jpg",
+      "name": "Broken Home",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-26",
+      "id": 10130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58481.jpg",
+      "name": "Self-Destruct",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-03",
+      "id": 10131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58482.jpg",
+      "name": "High-Value Target",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-10",
+      "id": 10132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58483.jpg",
+      "name": "Invisible Hand",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-17",
+      "id": 10133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58484.jpg",
+      "name": "Til Death Do Us Part",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-22",
+      "id": 10134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58486.jpg",
+      "name": "Wanted",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-29",
+      "id": 10135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58487.jpg",
+      "name": "Dead or Alive",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-06",
+      "id": 10136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58488.jpg",
+      "name": "Set-Up",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-13",
+      "id": 10137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58489.jpg",
+      "name": "Pay-Off",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-20",
+      "id": 10138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58490.jpg",
+      "name": "Bubble",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-27",
+      "id": 10139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58491.jpg",
+      "name": "Canceled",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-122",
+  "live": true,
+  "overview": "When she was a deeply troubled teenager, Nikita was rescued from death row by a secret U.S. agency known only as Division, who trained her as a spy and assassin. Nikita was eventually betrayed by the only people she thought she could trust. Now, after three years in hiding, Nikita is seeking retribution and making it clear to her former boss, Percy and her former friends Michael and Birkhoff that she will stop at nothing to expose and destroy their covert operation.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/545/1362913.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "122",
+  "title": "Nikita",
+  "type": "series",
+  "year": 2010
 }

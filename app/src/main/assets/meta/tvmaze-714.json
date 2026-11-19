@@ -1,22 +1,905 @@
 {
-  "schema": 1,
-  "id": "tvmaze-714",
-  "source": "tvmaze",
-  "sourceId": "714",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Star Trek: Enterprise",
-  "year": 2001,
-  "type": "series",
-  "overview": "Star Trek: Enterprise (ENT) focuses on the 22nd century adventures of Captain Jonathan Archer aboard the Enterprise NX-01 during the early days of interstellar travel. The NX designation indicates that this Enterprise is an experimental prototype; Unlike the starships of the four other Star Trek series, this Enterprise doesn't have deflector shields or phasers, but it does come equipped with a phase cannon and a rudimentary transporter that functions efficiently most of the time.",
-  "poster": "file:///android_asset/posters/tvmaze-714.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-09-26",
+      "id": 63259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157501.jpg",
+      "name": "Broken Bow",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-09-26",
+      "id": 63260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157502.jpg",
+      "name": "Broken Bow",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-03",
+      "id": 63261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157503.jpg",
+      "name": "Fight or Flight",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-10",
+      "id": 63262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157504.jpg",
+      "name": "Strange New World",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-17",
+      "id": 63263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157505.jpg",
+      "name": "Unexpected",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-24",
+      "id": 63264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157506.jpg",
+      "name": "Terra Nova",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-31",
+      "id": 63265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157507.jpg",
+      "name": "The Andorian Incident",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-07",
+      "id": 63266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157508.jpg",
+      "name": "Breaking the Ice",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-14",
+      "id": 63267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157509.jpg",
+      "name": "Civilization",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-21",
+      "id": 63268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157510.jpg",
+      "name": "Fortunate Son",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-28",
+      "id": 63269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157511.jpg",
+      "name": "Cold Front",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-16",
+      "id": 63270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157512.jpg",
+      "name": "Silent Enemy",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-23",
+      "id": 63271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157513.jpg",
+      "name": "Dear Doctor",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-30",
+      "id": 63272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157514.jpg",
+      "name": "Sleeping Dogs",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-06",
+      "id": 63273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157515.jpg",
+      "name": "Shadows of P'Jem",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-13",
+      "id": 63274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157516.jpg",
+      "name": "Shuttlepod One",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-27",
+      "id": 63275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157517.jpg",
+      "name": "Fusion",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-20",
+      "id": 63276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157518.jpg",
+      "name": "Rogue Planet",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-27",
+      "id": 63277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/688740.jpg",
+      "name": "Acquisition",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-03",
+      "id": 63278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157520.jpg",
+      "name": "Oasis",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-24",
+      "id": 63279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157522.jpg",
+      "name": "Detained",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-01",
+      "id": 63280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157523.jpg",
+      "name": "Vox Sola",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-08",
+      "id": 63281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157524.jpg",
+      "name": "Fallen Hero",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-08",
+      "id": 63282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157525.jpg",
+      "name": "Desert Crossing",
+      "number": 24,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-15",
+      "id": 63283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157526.jpg",
+      "name": "Two Days and Two Nights",
+      "number": 25,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-22",
+      "id": 63284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157527.jpg",
+      "name": "Shockwave (1)",
+      "number": 26,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-18",
+      "id": 63285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157542.jpg",
+      "name": "Shockwave (2)",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-09-25",
+      "id": 63286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157544.jpg",
+      "name": "Carbon Creek",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-02",
+      "id": 63287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157545.jpg",
+      "name": "Minefield",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-09",
+      "id": 63288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157546.jpg",
+      "name": "Dead Stop",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-16",
+      "id": 63289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157547.jpg",
+      "name": "A Night in Sickbay",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-30",
+      "id": 63290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157548.jpg",
+      "name": "Marauders",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-06",
+      "id": 63291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157550.jpg",
+      "name": "The Seventh",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-13",
+      "id": 63292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157551.jpg",
+      "name": "The Communicator",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-20",
+      "id": 63293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157552.jpg",
+      "name": "Singularity",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-27",
+      "id": 63294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157553.jpg",
+      "name": "Vanishing Point",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-11",
+      "id": 63295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157554.jpg",
+      "name": "Precious Cargo",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-18",
+      "id": 63296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157555.jpg",
+      "name": "The Catwalk",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-08",
+      "id": 63297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157556.jpg",
+      "name": "Dawn",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-05",
+      "id": 63298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157557.jpg",
+      "name": "Stigma",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-12",
+      "id": 63299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157558.jpg",
+      "name": "Cease Fire",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-19",
+      "id": 63300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157559.jpg",
+      "name": "Future Tense",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-26",
+      "id": 63301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157560.jpg",
+      "name": "Canamar",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-02",
+      "id": 63302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157561.jpg",
+      "name": "The Crossing",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-09",
+      "id": 63303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157563.jpg",
+      "name": "Judgment",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-16",
+      "id": 63304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157564.jpg",
+      "name": "Horizon",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-23",
+      "id": 63305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157566.jpg",
+      "name": "The Breach",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-30",
+      "id": 63306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157568.jpg",
+      "name": "Cogenitor",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-07",
+      "id": 63307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157570.jpg",
+      "name": "Regeneration",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-14",
+      "id": 63308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157571.jpg",
+      "name": "First Flight",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-14",
+      "id": 63309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157573.jpg",
+      "name": "Bounty",
+      "number": 25,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-21",
+      "id": 63310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157574.jpg",
+      "name": "The Expanse",
+      "number": 26,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-09-10",
+      "id": 63311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157604.jpg",
+      "name": "The Xindi",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-09-17",
+      "id": 63312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157605.jpg",
+      "name": "Anomaly",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-09-24",
+      "id": 63313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157606.jpg",
+      "name": "Extinction",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-01",
+      "id": 63314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157607.jpg",
+      "name": "Rajiin",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-08",
+      "id": 63315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157608.jpg",
+      "name": "Impulse",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-15",
+      "id": 63316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157609.jpg",
+      "name": "Exile",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-29",
+      "id": 63317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157610.jpg",
+      "name": "The Shipment",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-05",
+      "id": 63318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157611.jpg",
+      "name": "Twilight",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-12",
+      "id": 63319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157612.jpg",
+      "name": "North Star",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-19",
+      "id": 63320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157613.jpg",
+      "name": "Similitude",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-26",
+      "id": 63321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157614.jpg",
+      "name": "Carpenter Street",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-14",
+      "id": 63322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157615.jpg",
+      "name": "Chosen Realm",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-21",
+      "id": 63323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157616.jpg",
+      "name": "Proving Ground",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-04",
+      "id": 63324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157617.jpg",
+      "name": "Stratagem",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-11",
+      "id": 63325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157618.jpg",
+      "name": "Harbinger",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-18",
+      "id": 63326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157619.jpg",
+      "name": "Doctor's Orders",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-25",
+      "id": 63327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157620.jpg",
+      "name": "Hatchery",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-03",
+      "id": 63328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157621.jpg",
+      "name": "Azati Prime",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-21",
+      "id": 63329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157622.jpg",
+      "name": "Damage",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-28",
+      "id": 63330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157623.jpg",
+      "name": "The Forgotten",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-05",
+      "id": 63331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157624.jpg",
+      "name": "E²",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-12",
+      "id": 63332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157625.jpg",
+      "name": "The Council",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-19",
+      "id": 63333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157626.jpg",
+      "name": "Countdown",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-26",
+      "id": 63334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157627.jpg",
+      "name": "Zero Hour",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-10-08",
+      "id": 63335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157659.jpg",
+      "name": "Storm Front (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-15",
+      "id": 63336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157661.jpg",
+      "name": "Storm Front (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-22",
+      "id": 63337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157663.jpg",
+      "name": "Home",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-29",
+      "id": 63338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157665.jpg",
+      "name": "Borderland (1)",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-05",
+      "id": 63339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157667.jpg",
+      "name": "Cold Station 12 (2)",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-12",
+      "id": 63340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157669.jpg",
+      "name": "The Augments (3)",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-19",
+      "id": 63341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157670.jpg",
+      "name": "The Forge (1)",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-26",
+      "id": 63342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157671.jpg",
+      "name": "Awakening (2)",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-12-03",
+      "id": 63343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157673.jpg",
+      "name": "Kir'Shara (3)",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-14",
+      "id": 63344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157674.jpg",
+      "name": "Daedalus",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-21",
+      "id": 63345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157676.jpg",
+      "name": "Observer Effect",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-28",
+      "id": 63346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157678.jpg",
+      "name": "Babel One (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-04",
+      "id": 63347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157680.jpg",
+      "name": "United (2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-11",
+      "id": 63348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157681.jpg",
+      "name": "The Aenar (3)",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-18",
+      "id": 63349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157683.jpg",
+      "name": "Affliction (1)",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-25",
+      "id": 63350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157684.jpg",
+      "name": "Divergence (2)",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-15",
+      "id": 63351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157685.jpg",
+      "name": "Bound",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-22",
+      "id": 63352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1251015.jpg",
+      "name": "In a Mirror, Darkly (1)",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-29",
+      "id": 63353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1251061.jpg",
+      "name": "In a Mirror, Darkly (2)",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-06",
+      "id": 63354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157688.jpg",
+      "name": "Demons (1)",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-13",
+      "id": 63355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157695.jpg",
+      "name": "Terra Prime (2)",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-13",
+      "id": 63356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157696.jpg",
+      "name": "These Are the Voyages...",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-714",
+  "live": true,
+  "overview": "Star Trek: Enterprise (ENT) focuses on the 22nd century adventures of Captain Jonathan Archer aboard the Enterprise NX-01 during the early days of interstellar travel. The NX designation indicates that this Enterprise is an experimental prototype; Unlike the starships of the four other Star Trek series, this Enterprise doesn't have deflector shields or phasers, but it does come equipped with a phase cannon and a rudimentary transporter that functions efficiently most of the time.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/458/1145937.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "714",
+  "title": "Star Trek: Enterprise",
+  "type": "series",
+  "year": 2001
 }

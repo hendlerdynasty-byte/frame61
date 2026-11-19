@@ -1,21 +1,886 @@
 {
-  "schema": 1,
-  "id": "tvmaze-559",
-  "source": "tvmaze",
-  "sourceId": "559",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Entourage",
-  "year": 2004,
-  "type": "series",
-  "overview": "The hit comedy series that takes a look at the day-to-day life of Vincent (Vince) Chase, a hot young actor in Hollywood, and his inner circle. He's brought with him from their hometown in Queens, NY: manager Eric, half-brother Drama, and friend Turtle. The series draws on the experiences of industry insiders to illustrate both the heady excesses of today's celebrity lifestyle, as well as the highs and lows of love and success in show biz. Eric, along with super-agent Ari, keep Vince's star rising while making sound decisions for a long-lasting career in a world of fleeting fame.",
-  "poster": "file:///android_asset/posters/tvmaze-559.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-07-18",
+      "id": 51950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767406.jpg",
+      "name": "Entourage",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-07-25",
+      "id": 51951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767407.jpg",
+      "name": "The Review",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-01",
+      "id": 51952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767408.jpg",
+      "name": "Talk Show",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-08",
+      "id": 51953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767409.jpg",
+      "name": "Date Night",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-15",
+      "id": 51954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767410.jpg",
+      "name": "The Script and the Sherpa",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-22",
+      "id": 51955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767411.jpg",
+      "name": "Busey and the Beach",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-29",
+      "id": 51956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767412.jpg",
+      "name": "The Scene",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-12",
+      "id": 51957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767413.jpg",
+      "name": "New York",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-05",
+      "id": 51958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767414.jpg",
+      "name": "The Boys Are Back in Town",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-06-12",
+      "id": 51959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767415.jpg",
+      "name": "My Maserati Does 185",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-06-19",
+      "id": 51960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767416.jpg",
+      "name": "Aquamansion",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-06-26",
+      "id": 51961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767417.jpg",
+      "name": "An Offer Refused",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-03",
+      "id": 51962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767418.jpg",
+      "name": "Neighbors",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-10",
+      "id": 51963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767419.jpg",
+      "name": "Chinatown",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-17",
+      "id": 51964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767420.jpg",
+      "name": "The Sundance Kids",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-24",
+      "id": 51965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767421.jpg",
+      "name": "Oh, Mandy",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-31",
+      "id": 51966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767422.jpg",
+      "name": "I Love You Too",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-07",
+      "id": 51967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767423.jpg",
+      "name": "The Bat Mitzvah",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-14",
+      "id": 51968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767424.jpg",
+      "name": "Blue Balls Lagoon",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-21",
+      "id": 51969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767425.jpg",
+      "name": "Good Morning Saigon",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-28",
+      "id": 51970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767426.jpg",
+      "name": "Exodus",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-04",
+      "id": 51971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767427.jpg",
+      "name": "The Abyss",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-11",
+      "id": 51972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767428.jpg",
+      "name": "Aquamom",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-18",
+      "id": 51973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767429.jpg",
+      "name": "One Day in the Valley",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-25",
+      "id": 51974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767430.jpg",
+      "name": "Dominated",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-02",
+      "id": 51975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767431.jpg",
+      "name": "Guys and Doll",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-09",
+      "id": 51976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767432.jpg",
+      "name": "Crash and Burn",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-16",
+      "id": 51977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767433.jpg",
+      "name": "Three's Company",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-23",
+      "id": 51978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767435.jpg",
+      "name": "Strange Days",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-30",
+      "id": 51979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767436.jpg",
+      "name": "The Release",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-06",
+      "id": 51980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767437.jpg",
+      "name": "Vegas Baby, Vegas!",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-13",
+      "id": 51981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767438.jpg",
+      "name": "I Wanna Be Sedated",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-20",
+      "id": 51982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767439.jpg",
+      "name": "What About Bob?",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-27",
+      "id": 51983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767440.jpg",
+      "name": "Sorry, Ari",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-08",
+      "id": 51984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767441.jpg",
+      "name": "Less Than 30",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-15",
+      "id": 51985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767442.jpg",
+      "name": "Dog Day Afternoon",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-22",
+      "id": 51986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767443.jpg",
+      "name": "Manic Monday",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-29",
+      "id": 51987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767444.jpg",
+      "name": "Gotcha!",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-06",
+      "id": 51988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767445.jpg",
+      "name": "Return of the King",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-13",
+      "id": 51989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767446.jpg",
+      "name": "The Resurrection",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-20",
+      "id": 51990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767447.jpg",
+      "name": "The Prince's Bride",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-03",
+      "id": 51991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767448.jpg",
+      "name": "Adios Amigos",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-17",
+      "id": 51992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767489.jpg",
+      "name": "Welcome to the Jungle",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-06-24",
+      "id": 51993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767490.jpg",
+      "name": "The First Cut is the Deepest",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-01",
+      "id": 51994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767491.jpg",
+      "name": "Malibooty",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-08",
+      "id": 51995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767492.jpg",
+      "name": "Sorry, Harvey",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-15",
+      "id": 51996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767493.jpg",
+      "name": "The Dream Team",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-22",
+      "id": 51997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767494.jpg",
+      "name": "The Weho Ho",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-29",
+      "id": 51998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767495.jpg",
+      "name": "The Day Fuckers",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-05",
+      "id": 51999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767496.jpg",
+      "name": "Gary's Desk",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-12",
+      "id": 52000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767497.jpg",
+      "name": "The Young and the Stoned",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-19",
+      "id": 52001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767498.jpg",
+      "name": "Snow Job",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-26",
+      "id": 52002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767499.jpg",
+      "name": "No Cannes Do",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-09-02",
+      "id": 52003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767500.jpg",
+      "name": "The Cannes Kids",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-07",
+      "id": 52004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767501.jpg",
+      "name": "Fantasy Island",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-14",
+      "id": 52005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767502.jpg",
+      "name": "Unlike a Virgin",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-21",
+      "id": 52006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767503.jpg",
+      "name": "The All Out Fall Out",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 52007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767504.jpg",
+      "name": "Fire Sale",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 52008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767505.jpg",
+      "name": "Tree Trippers",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 52009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767506.jpg",
+      "name": "ReDOMption",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 52010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767507.jpg",
+      "name": "Gotta Look Up to Get Down",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 52011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767508.jpg",
+      "name": "First Class Jerk",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-02",
+      "id": 52012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767509.jpg",
+      "name": "Pie",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 52013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767510.jpg",
+      "name": "Seth Green Day",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 52014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767511.jpg",
+      "name": "Play'n with Fire",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 52015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767512.jpg",
+      "name": "Return to Queens Boulevard",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-12",
+      "id": 52016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767513.jpg",
+      "name": "Drive",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 52017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767514.jpg",
+      "name": "Amongst Friends",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-07-26",
+      "id": 52018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767515.jpg",
+      "name": "One Car, Two Car, Red Car, Blue Car",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-08-02",
+      "id": 52019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767516.jpg",
+      "name": "Runnin' On E",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-08-09",
+      "id": 52020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767517.jpg",
+      "name": "Fore!",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-08-16",
+      "id": 52021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767518.jpg",
+      "name": "Murphy's Lie",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-08-23",
+      "id": 52022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767519.jpg",
+      "name": "No More Drama",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-08-30",
+      "id": 52023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767520.jpg",
+      "name": "The Sorkin Notes",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-09-13",
+      "id": 52024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767521.jpg",
+      "name": "Security Briefs",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-09-20",
+      "id": 52025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767522.jpg",
+      "name": "Berried Alive",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 52026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767523.jpg",
+      "name": "Scared Straight",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 52027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767524.jpg",
+      "name": "Give a Little Bit",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-06-27",
+      "id": 52028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767525.jpg",
+      "name": "Stunted",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-11",
+      "id": 52029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767526.jpg",
+      "name": "Buzzed",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-18",
+      "id": 52030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767527.jpg",
+      "name": "Dramedy",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-25",
+      "id": 52031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767528.jpg",
+      "name": "Tequila Sunrise",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-08-01",
+      "id": 52032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767529.jpg",
+      "name": "Bottoms Up",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-08-08",
+      "id": 52033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767530.jpg",
+      "name": "Hair",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-08-15",
+      "id": 52034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767531.jpg",
+      "name": "Tequila and Coke",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-08-22",
+      "id": 52035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767532.jpg",
+      "name": "Sniff Sniff Gang Bang",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-08-29",
+      "id": 52036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767533.jpg",
+      "name": "Porn Scenes from an Italian Restaurant",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-09-12",
+      "id": 52037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767534.jpg",
+      "name": "Lose Yourself",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 52038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767535.jpg",
+      "name": "Home Sweet Home",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-07-31",
+      "id": 52039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767536.jpg",
+      "name": "Out with a Bang",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-08-07",
+      "id": 52040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767537.jpg",
+      "name": "One Last Shot",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-08-14",
+      "id": 52041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767538.jpg",
+      "name": "Whiz Kid",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-08-21",
+      "id": 52042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767539.jpg",
+      "name": "Motherf*cker",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-08-28",
+      "id": 52043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767540.jpg",
+      "name": "The Big Bang",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-04",
+      "id": 52044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767541.jpg",
+      "name": "Second to Last",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-11",
+      "id": 52045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767542.jpg",
+      "name": "The End",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-559",
+  "live": true,
+  "overview": "The hit comedy series that takes a look at the day-to-day life of Vincent (Vince) Chase, a hot young actor in Hollywood, and his inner circle. He's brought with him from their hometown in Queens, NY: manager Eric, half-brother Drama, and friend Turtle. The series draws on the experiences of industry insiders to illustrate both the heady excesses of today's celebrity lifestyle, as well as the highs and lows of love and success in show biz. Eric, along with super-agent Ari, keep Vince's star rising while making sound decisions for a long-lasting career in a world of fleeting fame.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11656.jpg",
   "rating": 7.7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "559",
+  "title": "Entourage",
+  "type": "series",
+  "year": 2004
 }

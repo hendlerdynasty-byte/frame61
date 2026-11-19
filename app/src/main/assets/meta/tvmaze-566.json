@@ -1,22 +1,986 @@
 {
-  "schema": 1,
-  "id": "tvmaze-566",
-  "source": "tvmaze",
-  "sourceId": "566",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Ghost Whisperer",
-  "year": 2005,
-  "type": "series",
-  "overview": "Ever since she was a young girl, Melinda Gordon has been able to see and talk to dead people--earth bound spirits who have yet to cross over to the other side and who seek her help in communicating and resolving unfinished business with the living. Melinda sometimes has a hard time accepting her \"gift,\" especially now that she's a newlywed and looking forward to starting her new life with her husband, Jim Clancy, a paramedic. Her friend and business partner in the antique store, Andrea Moreno, is fascinated by Melinda's talent. Although Melinda embraces her unique \"abilities\" as a blessing and sometimes a curse, she always helps her clients--alive or dead--find emotional closure.",
-  "poster": "file:///android_asset/posters/tvmaze-566.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-09-23",
+      "id": 53054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767675.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-30",
+      "id": 53055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767676.jpg",
+      "name": "The Crossing",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-07",
+      "id": 53056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767677.jpg",
+      "name": "Ghost, Interrupted",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-14",
+      "id": 53057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767678.jpg",
+      "name": "Mended Hearts",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-21",
+      "id": 53058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767679.jpg",
+      "name": "Lost Boys",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-28",
+      "id": 53059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767680.jpg",
+      "name": "Homecoming",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-04",
+      "id": 53060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767681.jpg",
+      "name": "Hope and Mercy",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-11",
+      "id": 53061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767682.jpg",
+      "name": "On the Wings of a Dove",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-18",
+      "id": 53062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767683.jpg",
+      "name": "Voices",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-25",
+      "id": 53063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767684.jpg",
+      "name": "Ghost Bride",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-12-09",
+      "id": 53064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767685.jpg",
+      "name": "Shadow Boxer",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-12-16",
+      "id": 53065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767686.jpg",
+      "name": "Undead Comic",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-06",
+      "id": 53066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767687.jpg",
+      "name": "Friendly Neighborhood Ghost",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-13",
+      "id": 53067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767688.jpg",
+      "name": "Last Execution",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-27",
+      "id": 53068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767689.jpg",
+      "name": "Melinda's First Ghost",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-02-03",
+      "id": 53069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767690.jpg",
+      "name": "Dead Man's Ridge",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-03",
+      "id": 53070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767691.jpg",
+      "name": "Demon Child",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-10",
+      "id": 53071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767692.jpg",
+      "name": "Miss Fortune",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-31",
+      "id": 53072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767693.jpg",
+      "name": "Fury",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-07",
+      "id": 53073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767694.jpg",
+      "name": "The Vanishing",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-28",
+      "id": 53074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767695.jpg",
+      "name": "Free Fall",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-05",
+      "id": 53075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767696.jpg",
+      "name": "The One",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-22",
+      "id": 53076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767697.jpg",
+      "name": "Love Never Dies",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-29",
+      "id": 53077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767698.jpg",
+      "name": "Love Still Won't Die",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-06",
+      "id": 53078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767699.jpg",
+      "name": "Drowned Lives",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-13",
+      "id": 53079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767700.jpg",
+      "name": "The Ghost Within",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-20",
+      "id": 53080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767701.jpg",
+      "name": "A Grave Matter",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-27",
+      "id": 53081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767702.jpg",
+      "name": "The Woman of His Dreams",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-03",
+      "id": 53082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767703.jpg",
+      "name": "A Vicious Cycle",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-10",
+      "id": 53083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767704.jpg",
+      "name": "The Night We Met",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-17",
+      "id": 53084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767705.jpg",
+      "name": "The Curse of the Ninth",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-24",
+      "id": 53085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767706.jpg",
+      "name": "Giving Up the Ghost",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-15",
+      "id": 53086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767707.jpg",
+      "name": "Cat's Claw",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-05",
+      "id": 53087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767708.jpg",
+      "name": "Dead to Rights",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-12",
+      "id": 53088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767709.jpg",
+      "name": "Deja Boo",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-02",
+      "id": 53089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767710.jpg",
+      "name": "Speed Demon",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-09",
+      "id": 53090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767711.jpg",
+      "name": "Mean Ghost",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-16",
+      "id": 53091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767712.jpg",
+      "name": "The Cradle Will Rock",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-23",
+      "id": 53092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767713.jpg",
+      "name": "The Walk-In",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-30",
+      "id": 53093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767714.jpg",
+      "name": "Children of Ghosts",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-06",
+      "id": 53094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767715.jpg",
+      "name": "Delia's First Ghost",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-27",
+      "id": 53095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767716.jpg",
+      "name": "The Collector",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-04",
+      "id": 53096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767717.jpg",
+      "name": "The Prophet",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-11",
+      "id": 53097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767718.jpg",
+      "name": "The Gathering",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-28",
+      "id": 53098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767719.jpg",
+      "name": "The Underneath",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-05",
+      "id": 53099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767720.jpg",
+      "name": "Don't Try This at Home",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-12",
+      "id": 53100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767721.jpg",
+      "name": "Haunted Hero",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 53101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767722.jpg",
+      "name": "No Safe Place",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 53102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767723.jpg",
+      "name": "Weight of What Was",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 53103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767724.jpg",
+      "name": "Double Exposure",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 53104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767725.jpg",
+      "name": "Unhappy Medium",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 53105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767726.jpg",
+      "name": "Bad Blood",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 53106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767727.jpg",
+      "name": "All Ghosts Lead to Grandview",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-12-14",
+      "id": 53107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767728.jpg",
+      "name": "Holiday Spirit",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-01-11",
+      "id": 53108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767729.jpg",
+      "name": "Slam",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-01-18",
+      "id": 53109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767730.jpg",
+      "name": "First Do No Harm",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-04",
+      "id": 53110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767731.jpg",
+      "name": "Home But Not Alone",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-11",
+      "id": 53111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767732.jpg",
+      "name": "The Gravesitter",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-25",
+      "id": 53112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767733.jpg",
+      "name": "Horror Show",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-02",
+      "id": 53113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767734.jpg",
+      "name": "Deadbeat Dads",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-09",
+      "id": 53114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767735.jpg",
+      "name": "Stranglehold",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-16",
+      "id": 53115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767736.jpg",
+      "name": "Pater Familias",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-03",
+      "id": 53116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767737.jpg",
+      "name": "Firestarter",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-10",
+      "id": 53117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767738.jpg",
+      "name": "Big Chills",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-17",
+      "id": 53118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767739.jpg",
+      "name": "Ghost in the Machine",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-24",
+      "id": 53119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767740.jpg",
+      "name": "Save Our Souls",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-31",
+      "id": 53120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767741.jpg",
+      "name": "Bloodline",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-07",
+      "id": 53121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767742.jpg",
+      "name": "Imaginary Friends and Enemies",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-14",
+      "id": 53122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767743.jpg",
+      "name": "Threshold",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-21",
+      "id": 53123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767744.jpg",
+      "name": "Heart & Soul",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-05",
+      "id": 53124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767745.jpg",
+      "name": "Pieces of You",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-19",
+      "id": 53125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767746.jpg",
+      "name": "Ball & Chain",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-09",
+      "id": 53126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767747.jpg",
+      "name": "Life on the Line",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-16",
+      "id": 53127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767748.jpg",
+      "name": "This Joint's Haunted",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-23",
+      "id": 53128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767749.jpg",
+      "name": "Body of Water",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-06",
+      "id": 53129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767750.jpg",
+      "name": "Slow Burn",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-13",
+      "id": 53130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767751.jpg",
+      "name": "Greek Tragedy",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-27",
+      "id": 53131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767752.jpg",
+      "name": "Ghost Busted",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-06",
+      "id": 53132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767753.jpg",
+      "name": "Delusion of Grandview",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-13",
+      "id": 53133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767754.jpg",
+      "name": "Leap of Faith",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-10",
+      "id": 53134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767755.jpg",
+      "name": "Thrilled to Death",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-24",
+      "id": 53135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767756.jpg",
+      "name": "Stage Fright",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-01",
+      "id": 53136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767757.jpg",
+      "name": "Cursed",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-08",
+      "id": 53137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767758.jpg",
+      "name": "Endless Love",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-15",
+      "id": 53138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767759.jpg",
+      "name": "The Book of Changes",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-09-25",
+      "id": 53139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767760.jpg",
+      "name": "Birthday Presence",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-02",
+      "id": 53140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767761.jpg",
+      "name": "See No Evil",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-09",
+      "id": 53141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767762.jpg",
+      "name": "Till Death Do Us Start",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-16",
+      "id": 53142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767763.jpg",
+      "name": "Do Over",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-23",
+      "id": 53143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767764.jpg",
+      "name": "Cause for Alarm",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-30",
+      "id": 53144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767765.jpg",
+      "name": "Head Over Heels",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-11-06",
+      "id": 53145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767766.jpg",
+      "name": "Devil's Bargain",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-11-13",
+      "id": 53146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767767.jpg",
+      "name": "Dead Listing",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-11-20",
+      "id": 53147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767768.jpg",
+      "name": "Lost in the Shadows",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-12-04",
+      "id": 53148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767769.jpg",
+      "name": "Excessive Forces",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-01-08",
+      "id": 53149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767770.jpg",
+      "name": "Dead Air",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-01-15",
+      "id": 53150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767771.jpg",
+      "name": "Blessings in Disguise",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-01-29",
+      "id": 53151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767772.jpg",
+      "name": "Living Nightmare",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-02-05",
+      "id": 53152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767773.jpg",
+      "name": "Dead to Me",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-03-05",
+      "id": 53153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767774.jpg",
+      "name": "Implosion",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-03-12",
+      "id": 53154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767775.jpg",
+      "name": "Old Sins Cast Long Shadows",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-02",
+      "id": 53155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767776.jpg",
+      "name": "On Thin Ice",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-09",
+      "id": 53156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767777.jpg",
+      "name": "Dead Eye",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 53157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767778.jpg",
+      "name": "Lethal Combination",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-07",
+      "id": 53158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767779.jpg",
+      "name": "Blood Money",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-14",
+      "id": 53159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767780.jpg",
+      "name": "Dead Ringer",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-21",
+      "id": 53160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767781.jpg",
+      "name": "The Children's Parade",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Fantasy",
-    "Übernatürlich"
+    "Supernatural"
   ],
+  "id": "tvmaze-566",
+  "live": true,
+  "overview": "Ever since she was a young girl, Melinda Gordon has been able to see and talk to dead people--earth bound spirits who have yet to cross over to the other side and who seek her help in communicating and resolving unfinished business with the living. Melinda sometimes has a hard time accepting her \"gift,\" especially now that she's a newlywed and looking forward to starting her new life with her husband, Jim Clancy, a paramedic. Her friend and business partner in the antique store, Andrea Moreno, is fascinated by Melinda's talent. Although Melinda embraces her unique \"abilities\" as a blessing and sometimes a curse, she always helps her clients--alive or dead--find emotional closure.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11745.jpg",
   "rating": 7.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "566",
+  "title": "Ghost Whisperer",
+  "type": "series",
+  "year": 2005
 }

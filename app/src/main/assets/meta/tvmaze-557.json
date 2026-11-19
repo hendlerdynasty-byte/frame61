@@ -1,22 +1,968 @@
 {
-  "schema": 1,
-  "id": "tvmaze-557",
-  "source": "tvmaze",
-  "sourceId": "557",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Alias",
-  "year": 2001,
-  "type": "series",
-  "overview": "Sydney Bristow is not exactly your average grad student. Her life might appear normal, but she's hiding a secret life working as a spy for the CIA.Sydney's world is turned upside down when she learns she may work for the very enemy she thought she was fighting. Now she's entangled in a covert lifestyle where she is forced to question the allegiances of everyone, including those closest to her.",
-  "poster": "file:///android_asset/posters/tvmaze-557.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-09-30",
+      "id": 51832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67284.jpg",
+      "name": "Truth Be Told",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-07",
+      "id": 51833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175414.jpg",
+      "name": "So It Begins",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-14",
+      "id": 51834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175415.jpg",
+      "name": "Parity",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-21",
+      "id": 51835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175416.jpg",
+      "name": "A Broken Heart",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-28",
+      "id": 51836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175417.jpg",
+      "name": "Doppelgänger",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-18",
+      "id": 51837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175419.jpg",
+      "name": "Reckoning",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-25",
+      "id": 51838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175420.jpg",
+      "name": "Color-Blind",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-12-02",
+      "id": 51839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175421.jpg",
+      "name": "Time Will Tell",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-12-09",
+      "id": 51840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175425.jpg",
+      "name": "Mea Culpa",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-12-16",
+      "id": 51841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175427.jpg",
+      "name": "Spirit",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-06",
+      "id": 51842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175428.jpg",
+      "name": "The Confession",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-20",
+      "id": 51843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175430.jpg",
+      "name": "The Box (Part 1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-10",
+      "id": 51844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175432.jpg",
+      "name": "The Box (Part 2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-24",
+      "id": 51845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175434.jpg",
+      "name": "The Coup",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-03",
+      "id": 51846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175435.jpg",
+      "name": "Page 47",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-10",
+      "id": 51847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175436.jpg",
+      "name": "The Prophecy",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-17",
+      "id": 51848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175437.jpg",
+      "name": "Q&A",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-07",
+      "id": 51849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175439.jpg",
+      "name": "Masquerade",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-14",
+      "id": 51850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175441.jpg",
+      "name": "Snowman",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-21",
+      "id": 51851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175442.jpg",
+      "name": "The Solution",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-05",
+      "id": 51852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175444.jpg",
+      "name": "Rendezvous",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-12",
+      "id": 51853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175446.jpg",
+      "name": "Almost Thirty Years",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-29",
+      "id": 51854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175556.jpg",
+      "name": "The Enemy Walks In",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-06",
+      "id": 51855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175557.jpg",
+      "name": "Trust Me",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-13",
+      "id": 51856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175558.jpg",
+      "name": "Cipher",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-20",
+      "id": 51857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175560.jpg",
+      "name": "Dead Drop",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-03",
+      "id": 51858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175561.jpg",
+      "name": "The Indicator",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-10",
+      "id": 51859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175562.jpg",
+      "name": "Salvation",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-17",
+      "id": 51860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175563.jpg",
+      "name": "The Counteragent",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-01",
+      "id": 51861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175564.jpg",
+      "name": "Passage (Part 1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-08",
+      "id": 51862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175565.jpg",
+      "name": "Passage (Part 2)",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-15",
+      "id": 51863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175566.jpg",
+      "name": "The Abduction",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-05",
+      "id": 51864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175567.jpg",
+      "name": "A Higher Echelon",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-12",
+      "id": 51865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175568.jpg",
+      "name": "The Getaway",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-26",
+      "id": 51866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175569.jpg",
+      "name": "Phase One",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-02",
+      "id": 51867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175570.jpg",
+      "name": "Double Agent",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-09",
+      "id": 51868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175571.jpg",
+      "name": "A Free Agent",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-23",
+      "id": 51869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175572.jpg",
+      "name": "Firebomb",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-02",
+      "id": 51870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175573.jpg",
+      "name": "A Dark Turn",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-16",
+      "id": 51871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175574.jpg",
+      "name": "Truth Takes Time",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-30",
+      "id": 51872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175575.jpg",
+      "name": "Endgame",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-27",
+      "id": 51873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175576.jpg",
+      "name": "Countdown",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-04",
+      "id": 51874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175577.jpg",
+      "name": "Second Double",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-05-04",
+      "id": 51875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175578.jpg",
+      "name": "The Telling",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-09-28",
+      "id": 51876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303865.jpg",
+      "name": "The Two",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-05",
+      "id": 51877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303866.jpg",
+      "name": "Succession",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-12",
+      "id": 51878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303867.jpg",
+      "name": "Reunion",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-19",
+      "id": 51879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303868.jpg",
+      "name": "A Missing Link",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-26",
+      "id": 51880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303869.jpg",
+      "name": "Repercussions",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-02",
+      "id": 51881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303870.jpg",
+      "name": "The Nemesis",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-09",
+      "id": 51882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303871.jpg",
+      "name": "Prelude",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-23",
+      "id": 51883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303872.jpg",
+      "name": "Breaking Point",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-30",
+      "id": 51884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303873.jpg",
+      "name": "Conscious",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-12-07",
+      "id": 51885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303874.jpg",
+      "name": "Remnants",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-11",
+      "id": 51886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303875.jpg",
+      "name": "Full Disclosure",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-18",
+      "id": 51887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303876.jpg",
+      "name": "Crossings",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-15",
+      "id": 51888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303877.jpg",
+      "name": "After Six",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-07",
+      "id": 51889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303878.jpg",
+      "name": "Blowback",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-14",
+      "id": 51890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303879.jpg",
+      "name": "Facade",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-21",
+      "id": 51891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303880.jpg",
+      "name": "Taken",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-28",
+      "id": 51892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303881.jpg",
+      "name": "The Frame",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-11",
+      "id": 51893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303882.jpg",
+      "name": "Unveiled",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-18",
+      "id": 51894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303883.jpg",
+      "name": "Hourglass",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-25",
+      "id": 51895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303884.jpg",
+      "name": "Blood Ties",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-02",
+      "id": 51896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303885.jpg",
+      "name": "Legacy",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-23",
+      "id": 51897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303886.jpg",
+      "name": "Resurrection",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-01-05",
+      "id": 51898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314516.jpg",
+      "name": "Authorized Personnel Only (Part 1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-05",
+      "id": 51899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303889.jpg",
+      "name": "Authorized Personnel Only (Part 2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-12",
+      "id": 51900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303890.jpg",
+      "name": "The Awful Truth",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-19",
+      "id": 51901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303891.jpg",
+      "name": "Ice",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-26",
+      "id": 51902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303892.jpg",
+      "name": "Welcome to Liberty Village",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-09",
+      "id": 51903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303893.jpg",
+      "name": "Nocturne",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-16",
+      "id": 51904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303894.jpg",
+      "name": "Détente",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-23",
+      "id": 51905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303895.jpg",
+      "name": "Echoes",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-02",
+      "id": 51906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303896.jpg",
+      "name": "A Man of His Word",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-09",
+      "id": 51907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303897.jpg",
+      "name": "The Index",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-16",
+      "id": 51908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303898.jpg",
+      "name": "The Road Home",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-23",
+      "id": 51909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303899.jpg",
+      "name": "The Orphan",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-30",
+      "id": 51910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303900.jpg",
+      "name": "Tuesday",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-06",
+      "id": 51911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303901.jpg",
+      "name": "Nightingale",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-13",
+      "id": 51912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303902.jpg",
+      "name": "Pandora",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-20",
+      "id": 51913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303903.jpg",
+      "name": "Another Mister Sloane",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-27",
+      "id": 51914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303904.jpg",
+      "name": "A Clean Conscience",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-04",
+      "id": 51915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303905.jpg",
+      "name": "Mirage",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-11",
+      "id": 51916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303906.jpg",
+      "name": "In Dreams...",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-18",
+      "id": 51917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303907.jpg",
+      "name": "The Descent",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-18",
+      "id": 51918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303908.jpg",
+      "name": "Search and Rescue",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-25",
+      "id": 51919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303909.jpg",
+      "name": "Before the Flood",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-29",
+      "id": 51920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303911.jpg",
+      "name": "Prophet Five",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-10-06",
+      "id": 51921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303912.jpg",
+      "name": "...1...",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-10-13",
+      "id": 51922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303913.jpg",
+      "name": "The Shed",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-10-20",
+      "id": 51923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303914.jpg",
+      "name": "Mockingbird",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-10-27",
+      "id": 51924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303915.jpg",
+      "name": "Out of the Box",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-11-10",
+      "id": 51925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303916.jpg",
+      "name": "Solo",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-11-17",
+      "id": 51926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303917.jpg",
+      "name": "Fait Accompli",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-12-07",
+      "id": 51927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303918.jpg",
+      "name": "Bob",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-12-14",
+      "id": 51928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303919.jpg",
+      "name": "The Horizon",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-19",
+      "id": 51929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303920.jpg",
+      "name": "S.O.S.",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-19",
+      "id": 51930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303921.jpg",
+      "name": "Maternal Instinct",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-26",
+      "id": 51931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303922.jpg",
+      "name": "There's Only One Sydney Bristow",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-03",
+      "id": 51932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303923.jpg",
+      "name": "30 Seconds",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-10",
+      "id": 51933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303924.jpg",
+      "name": "I See Dead People",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-17",
+      "id": 51934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303925.jpg",
+      "name": "No Hard Feelings",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-22",
+      "id": 51935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303926.jpg",
+      "name": "Reprisal",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-22",
+      "id": 51936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303927.jpg",
+      "name": "All the Time in the World",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Spionage"
+    "Espionage"
   ],
+  "id": "tvmaze-557",
+  "live": true,
+  "overview": "Sydney Bristow is not exactly your average grad student. Her life might appear normal, but she's hiding a secret life working as a spy for the CIA.Sydney's world is turned upside down when she learns she may work for the very enemy she thought she was fighting. Now she's entangled in a covert lifestyle where she is forced to question the allegiances of everyone, including those closest to her.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11627.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "557",
+  "title": "Alias",
+  "type": "series",
+  "year": 2001
 }

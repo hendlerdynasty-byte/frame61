@@ -1,22 +1,203 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1179",
-  "source": "tvmaze",
-  "sourceId": "1179",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Wayward Pines",
-  "year": 2015,
-  "type": "series",
-  "overview": "Imagine the perfect American town... beautiful homes, manicured lawns, children playing safely in the streets. Now imagine never being able to leave. You have no communication with the outside world. You think you're going insane. You must be in Wayward Pines.",
-  "poster": "file:///android_asset/posters/tvmaze-1179.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-05-14",
+      "id": 106883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27456.jpg",
+      "name": "Where Paradise Is Home",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-21",
+      "id": 144357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27455.jpg",
+      "name": "Don't Discuss Your Life Before",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-28",
+      "id": 144358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27935.jpg",
+      "name": "Our Town, Our Law",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-04",
+      "id": 144359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28981.jpg",
+      "name": "One of Our Senior Realtors Has Chosen to Retire",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-11",
+      "id": 144360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28980.jpg",
+      "name": "The Truth",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-25",
+      "id": 144361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32050.jpg",
+      "name": "Choices",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-02",
+      "id": 144362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32049.jpg",
+      "name": "Betrayal",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-09",
+      "id": 157391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32051.jpg",
+      "name": "The Friendliest Place on Earth",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-16",
+      "id": 157392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33493.jpg",
+      "name": "A Reckoning",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-23",
+      "id": 157393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34378.jpg",
+      "name": "Cycle",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-25",
+      "id": 636297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156415.jpg",
+      "name": "Enemy Lines",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-01",
+      "id": 774188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156416.jpg",
+      "name": "Blood Harvest",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-08",
+      "id": 790868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156417.jpg",
+      "name": "Once Upon a Time in Wayward Pines",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-15",
+      "id": 807348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156418.jpg",
+      "name": "Exit Strategy",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-22",
+      "id": 820116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/159696.jpg",
+      "name": "Sound the Alarm",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-29",
+      "id": 829457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168760.jpg",
+      "name": "City Upon a Hill",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-06",
+      "id": 834952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162586.jpg",
+      "name": "Time Will Tell",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 845026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168761.jpg",
+      "name": "Pass Judgment",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-20",
+      "id": 850958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170481.jpg",
+      "name": "Walcott Prep",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-27",
+      "id": 854653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/174619.jpg",
+      "name": "Bedtime Story",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Mystery"
   ],
+  "id": "tvmaze-1179",
+  "live": true,
+  "overview": "Imagine the perfect American town... beautiful homes, manicured lawns, children playing safely in the streets. Now imagine never being able to leave. You have no communication with the outside world. You think you're going insane. You must be in Wayward Pines.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/54/135773.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1179",
+  "title": "Wayward Pines",
+  "type": "series",
+  "year": 2015
 }

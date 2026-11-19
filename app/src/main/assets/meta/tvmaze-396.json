@@ -1,22 +1,383 @@
 {
-  "schema": 1,
-  "id": "tvmaze-396",
-  "source": "tvmaze",
-  "sourceId": "396",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Gravity Falls",
-  "year": 2012,
-  "type": "series",
-  "overview": "Twin brother and sister Dipper and Mabel Pines are in for an unexpected adventure when they spend the summer with their great Uncle in the mysterious town of Gravity Falls, Oregon.",
-  "poster": "file:///android_asset/posters/tvmaze-396.jpg",
-  "genres": [
-    "Abenteuer",
-    "Mystery",
-    "Übernatürlich"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-06-15",
+      "id": 39048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37873.jpg",
+      "name": "Tourist Trapped",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-29",
+      "id": 39049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379086.jpg",
+      "name": "The Legend of the Gobblewonker",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-30",
+      "id": 39050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379087.jpg",
+      "name": "Headhunters",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-06",
+      "id": 39051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379088.jpg",
+      "name": "The Hand That Rocks the Mabel",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-13",
+      "id": 39052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379090.jpg",
+      "name": "The Inconveniencing",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-20",
+      "id": 39053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379091.jpg",
+      "name": "Dipper vs. Manliness",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-10",
+      "id": 39054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379092.jpg",
+      "name": "Double Dipper",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-17",
+      "id": 39055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379093.jpg",
+      "name": "Irrational Treasure",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-24",
+      "id": 39056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37881.jpg",
+      "name": "The Time Traveler's Pig",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-14",
+      "id": 39057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379094.jpg",
+      "name": "Fight Fighters",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-28",
+      "id": 39058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379095.jpg",
+      "name": "Little Dipper",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-05",
+      "id": 39059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379096.jpg",
+      "name": "Summerween",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-15",
+      "id": 39060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379097.jpg",
+      "name": "Boss Mabel",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 39061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379098.jpg",
+      "name": "Bottomless Pit!",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-15",
+      "id": 39062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379100.jpg",
+      "name": "The Deep End",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 39063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379101.jpg",
+      "name": "Carpet Diem",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-19",
+      "id": 39064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379102.jpg",
+      "name": "Boyz Crazy",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-28",
+      "id": 39065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379103.jpg",
+      "name": "Land Before Swine",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-12",
+      "id": 39066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379104.jpg",
+      "name": "Dreamscaperers",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-02",
+      "id": 39067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379105.jpg",
+      "name": "Gideon Rises",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 39068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379107.jpg",
+      "name": "Scary-Oke",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 39069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379108.jpg",
+      "name": "Into the Bunker",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 39070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379109.jpg",
+      "name": "The Golf War",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-08",
+      "id": 39071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379111.jpg",
+      "name": "Sock Opera",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-22",
+      "id": 39072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379112.jpg",
+      "name": "Soos and the Real Girl",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-04",
+      "id": 39073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379113.jpg",
+      "name": "Little Gift Shop of Horrors",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-27",
+      "id": 39074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379106.jpg",
+      "name": "Society of the Blind Eye",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-10",
+      "id": 44366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379114.jpg",
+      "name": "Blendin's Game",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-26",
+      "id": 44370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379124.jpg",
+      "name": "The Love God",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-16",
+      "id": 120572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379115.jpg",
+      "name": "Northwest Mansion Noir",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-09",
+      "id": 140722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379116.jpg",
+      "name": "Not What He Seems",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-13",
+      "id": 171252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379117.jpg",
+      "name": "A Tale of Two Stans",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-03",
+      "id": 185074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379118.jpg",
+      "name": "Dungeons, Dungeons, & More Dungeons",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-24",
+      "id": 185075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379119.jpg",
+      "name": "The Stanchurian Candidate",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-07",
+      "id": 206152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379120.jpg",
+      "name": "The Last Mabelcorn",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-21",
+      "id": 206153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379125.jpg",
+      "name": "Roadside Attraction",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-12",
+      "id": 246467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379126.jpg",
+      "name": "Dipper and Mabel vs. the Future",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-26",
+      "id": 373257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379121.jpg",
+      "name": "Weirdmageddon (1)",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-23",
+      "id": 390549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379122.jpg",
+      "name": "Weirdmageddon (2): Escape from Reality",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 483406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379123.jpg",
+      "name": "Weirdmageddon (3): Take Back the Falls",
+      "number": 20,
+      "runtime": 44,
+      "season": 2
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Adventure",
+    "Mystery",
+    "Supernatural"
+  ],
+  "id": "tvmaze-396",
+  "live": true,
+  "overview": "Twin brother and sister Dipper and Mabel Pines are in for an unexpected adventure when they spend the summer with their great Uncle in the mysterious town of Gravity Falls, Oregon.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/6140.jpg",
   "rating": 8.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "396",
+  "title": "Gravity Falls",
+  "type": "series",
+  "year": 2012
 }

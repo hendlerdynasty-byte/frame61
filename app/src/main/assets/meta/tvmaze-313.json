@@ -1,20 +1,363 @@
 {
-  "schema": 1,
-  "id": "tvmaze-313",
-  "source": "tvmaze",
-  "sourceId": "313",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Plebs",
-  "year": 2013,
-  "type": "series",
-  "overview": "Rome is traditionally imagined as the home of emperors and senators, generals and gladiators, a dignified theatre of pomp and ceremony. But what about the little guys, the wasters - new to the big city, stuck in office jobs, unable to get the girls? Plebs follows three desperate young men from the suburbs as they try to get laid, hold down jobs and climb the social ladder in the big city - a city that happens to be Ancient Rome.",
-  "poster": "file:///android_asset/posters/tvmaze-313.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-25",
+      "id": 30997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380456.jpg",
+      "name": "The Orgy",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 30998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380457.jpg",
+      "name": "The Gladiator",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-01",
+      "id": 30999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380458.jpg",
+      "name": "The Erotic Vase",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 31000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380459.jpg",
+      "name": "The Herpes Cat",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 31001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380460.jpg",
+      "name": "Bananae",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-22",
+      "id": 31002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380461.jpg",
+      "name": "Saturnalia",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-22",
+      "id": 31003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380462.jpg",
+      "name": "The Chariot",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-22",
+      "id": 31004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380463.jpg",
+      "name": "The Best Men",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-29",
+      "id": 31005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380464.jpg",
+      "name": "The Baby",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-06",
+      "id": 31006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380465.jpg",
+      "name": "The Patron",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-13",
+      "id": 31007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380466.jpg",
+      "name": "The New Slave",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-20",
+      "id": 31008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380467.jpg",
+      "name": "The Candidate",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-27",
+      "id": 31009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380468.jpg",
+      "name": "The Statue",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-03",
+      "id": 31010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380469.jpg",
+      "name": "The Race",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-04",
+      "id": 662568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380472.jpg",
+      "name": "The Beasts",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-04",
+      "id": 662569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380473.jpg",
+      "name": "Justin Junior",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-11",
+      "id": 662570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380474.jpg",
+      "name": "The Vestal",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-18",
+      "id": 694267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380475.jpg",
+      "name": "The Cupid",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-25",
+      "id": 721217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380476.jpg",
+      "name": "The Crimewave",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-02",
+      "id": 729068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380477.jpg",
+      "name": "Jugball",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-09",
+      "id": 764819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380479.jpg",
+      "name": "The New Master",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-16",
+      "id": 770604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145881.jpg",
+      "name": "The Weatherist",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-09",
+      "id": 1437650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570476.jpg",
+      "name": "The Accident",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-09",
+      "id": 1437651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570477.jpg",
+      "name": "The Critic",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-16",
+      "id": 1437652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570478.jpg",
+      "name": "The Marathon",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-23",
+      "id": 1437653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570479.jpg",
+      "name": "The Satirist",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-30",
+      "id": 1437654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570480.jpg",
+      "name": "Lupercalia",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-07",
+      "id": 1437655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570481.jpg",
+      "name": "The Bath House",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-14",
+      "id": 1437656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570482.jpg",
+      "name": "The Accountant",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-21",
+      "id": 1437657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570483.jpg",
+      "name": "Beer",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-30",
+      "id": 1718194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/533528.jpg",
+      "name": "The Vineyard",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-30",
+      "id": 1718195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/533529.jpg",
+      "name": "The Paedos",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-07",
+      "id": 1723286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/536197.jpg",
+      "name": "The Banquet",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-14",
+      "id": 1729564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/539198.jpg",
+      "name": "The Grumbrella",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-21",
+      "id": 1735775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542531.jpg",
+      "name": "The Hooligans",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-28",
+      "id": 1743552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/544802.jpg",
+      "name": "The Dig",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-11-04",
+      "id": 1744513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/546974.jpg",
+      "name": "The New Flat",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-11-11",
+      "id": 1750351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/546976.jpg",
+      "name": "The Wedding",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-313",
+  "live": true,
+  "overview": "Rome is traditionally imagined as the home of emperors and senators, generals and gladiators, a dignified theatre of pomp and ceremony. But what about the little guys, the wasters - new to the big city, stuck in office jobs, unable to get the girls? Plebs follows three desperate young men from the suburbs as they try to get laid, hold down jobs and climb the social ladder in the big city - a city that happens to be Ancient Rome.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/153/382980.jpg",
   "rating": 7.2,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "313",
+  "title": "Plebs",
+  "type": "series",
+  "year": 2013
 }

@@ -1,22 +1,293 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1844",
-  "source": "tvmaze",
-  "sourceId": "1844",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Stitchers",
-  "year": 2015,
-  "type": "series",
-  "overview": "ABC Family's first procedural drama, Stitchers, follows Kirsten a young woman recruited into a covert government agency to be 'stitched' into the minds of the recently deceased, using their memories to investigate murders and decipher mysteries that otherwise would have gone to the grave. Working alongside Kirsten is Cameron, a brilliant neuroscientist whose passion for the program is evident in his work. The secret program is headed by Maggie, a skilled veteran of covert operations, and includes Linus, a socially immature bioelectrical engineer and communications technician. Kirsten's roommate, Camille, a gifted computer science grad student, is also recruited to use her skills to assist Kirsten in her new role as a \"stitcher\".",
-  "poster": "file:///android_asset/posters/tvmaze-1844.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-06-02",
+      "id": 156772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28413.jpg",
+      "name": "A Stitch in Time",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-09",
+      "id": 156896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29464.jpg",
+      "name": "Friends in Low Places",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-16",
+      "id": 157125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30284.jpg",
+      "name": "Connections",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-23",
+      "id": 157126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31055.jpg",
+      "name": "I See You",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-30",
+      "id": 157127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154078.jpg",
+      "name": "Stitcher in the Rye",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-07",
+      "id": 157128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153632.jpg",
+      "name": "Finally",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-14",
+      "id": 157129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33393.jpg",
+      "name": "The Root of All Evil",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-21",
+      "id": 157130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153641.jpg",
+      "name": "Fire in the Hole",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-28",
+      "id": 157131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153645.jpg",
+      "name": "Future Tense",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-04",
+      "id": 157132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/64510.jpg",
+      "name": "Full Stop",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 395753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124535.jpg",
+      "name": "2.0",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 378748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153738.jpg",
+      "name": "Hack Me If You Can",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-05",
+      "id": 617953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153905.jpg",
+      "name": "The One That Got Away",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-12",
+      "id": 666120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153906.jpg",
+      "name": "The Two Deaths of Jamie B.",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 666121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153916.jpg",
+      "name": "Midnight Stitcher",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-26",
+      "id": 666122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153922.jpg",
+      "name": "The Dying Shame",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 701289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153972.jpg",
+      "name": "Pretty Little Lawyers",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 701290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143143.jpg",
+      "name": "Red Eye",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 701291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146109.jpg",
+      "name": "The Guest",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 701292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148302.jpg",
+      "name": "All In",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-05",
+      "id": 1092414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288723.jpg",
+      "name": "Out of the Shadows",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-12",
+      "id": 1171612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/291324.jpg",
+      "name": "For Love and Money",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-19",
+      "id": 1131451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/293690.jpg",
+      "name": "Perfect",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-26",
+      "id": 1131452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295931.jpg",
+      "name": "Mind Palace",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-10",
+      "id": 1131453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299966.jpg",
+      "name": "Paternis",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-17",
+      "id": 1215065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302456.jpg",
+      "name": "The Gremlin and the Fixer",
+      "number": 6,
+      "runtime": 43,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-24",
+      "id": 1215067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305025.jpg",
+      "name": "Just the Two of Us",
+      "number": 7,
+      "runtime": 43,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-31",
+      "id": 1161385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307044.jpg",
+      "name": "Dreamland",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-07",
+      "id": 1173469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308970.jpg",
+      "name": "Kill It Forward",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-14",
+      "id": 1231265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310937.jpg",
+      "name": "Maternis",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Science-Fiction"
   ],
+  "id": "tvmaze-1844",
+  "live": true,
+  "overview": "ABC Family's first procedural drama, Stitchers, follows Kirsten a young woman recruited into a covert government agency to be 'stitched' into the minds of the recently deceased, using their memories to investigate murders and decipher mysteries that otherwise would have gone to the grave. Working alongside Kirsten is Cameron, a brilliant neuroscientist whose passion for the program is evident in his work. The secret program is headed by Maggie, a skilled veteran of covert operations, and includes Linus, a socially immature bioelectrical engineer and communications technician. Kirsten's roommate, Camille, a gifted computer science grad student, is also recruited to use her skills to assist Kirsten in her new role as a \"stitcher\".",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/10/26950.jpg",
   "rating": 7.2,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 59,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1844",
+  "title": "Stitchers",
+  "type": "series",
+  "year": 2015
 }

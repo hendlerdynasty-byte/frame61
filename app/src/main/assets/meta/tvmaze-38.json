@@ -1,22 +1,635 @@
 {
-  "schema": 1,
-  "id": "tvmaze-38",
-  "source": "tvmaze",
-  "sourceId": "38",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Z Nation",
-  "year": 2014,
-  "type": "series",
-  "overview": "Z Nation starts three years after the zombie virus has gutted the country, a team of everyday heroes must transport the only known survivor of the plague from New York to California, where the last functioning viral lab waits for his blood. Although the antibodies he carries are the world's last, best hope for a vaccine, he hides a dark secret that threatens them all. With humankind's survival at stake, the ragtag band embarks on a journey of survival across three thousand miles of rusted-out post-apocalyptic America.",
-  "poster": "file:///android_asset/posters/tvmaze-38.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-09-12",
+      "id": 1809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4490.jpg",
+      "name": "Puppies and Kittens",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-19",
+      "id": 1810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4491.jpg",
+      "name": "Fracking Zombies",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-26",
+      "id": 1811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4492.jpg",
+      "name": "Philly Feast",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-03",
+      "id": 1812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4493.jpg",
+      "name": "Full Metal Zombie",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-10",
+      "id": 1813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4494.jpg",
+      "name": "Home Sweet Zombie",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-17",
+      "id": 1814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4495.jpg",
+      "name": "Resurrection Z",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-24",
+      "id": 1815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5620.jpg",
+      "name": "Welcome to FU-Bar",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-31",
+      "id": 1816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10523.jpg",
+      "name": "Zunami",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-07",
+      "id": 15846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/8995.jpg",
+      "name": "Die Zombie Die ... Again",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-14",
+      "id": 15847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10820.jpg",
+      "name": "Going Nuclear",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-21",
+      "id": 15848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/12099.jpg",
+      "name": "Sisters of Mercy",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-28",
+      "id": 15849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/13117.jpg",
+      "name": "Murphy's Law",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-05",
+      "id": 38891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14261.jpg",
+      "name": "Doctor of the Dead",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-09-11",
+      "id": 189614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/43865.jpg",
+      "name": "The Murphy",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-18",
+      "id": 206503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/48691.jpg",
+      "name": "White Light",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-25",
+      "id": 206504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/20/51610.jpg",
+      "name": "Zombie Road",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-02",
+      "id": 212843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56170.jpg",
+      "name": "Batch 47",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-09",
+      "id": 212844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59586.jpg",
+      "name": "Zombaby",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-16",
+      "id": 212845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/62441.jpg",
+      "name": "Zombie Baby Daddy",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-23",
+      "id": 212846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/65688.jpg",
+      "name": "Down the Mississippi",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-30",
+      "id": 212847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/68132.jpg",
+      "name": "The Collector",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-06",
+      "id": 340299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/71923.jpg",
+      "name": "Rozwell",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-13",
+      "id": 340300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89130.jpg",
+      "name": "We Were Nowhere Near the Grand Canyon",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 340305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89127.jpg",
+      "name": "Corporate Retreat",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-27",
+      "id": 340308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/80909.jpg",
+      "name": "Party with the Zeros",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-04",
+      "id": 442593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83637.jpg",
+      "name": "Adiós, Muchachos",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-11",
+      "id": 442594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89124.jpg",
+      "name": "Day One",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-18",
+      "id": 442595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89126.jpg",
+      "name": "All Good Things Must Come to an End",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-16",
+      "id": 927179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/187587.jpg",
+      "name": "No Mercy",
+      "number": 1,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 932875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190446.jpg",
+      "name": "A New Mission",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-30",
+      "id": 897539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/194011.jpg",
+      "name": "Murphy's Miracle",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-07",
+      "id": 936158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200305.jpg",
+      "name": "Escorpion and the Red Hand",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-14",
+      "id": 936159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200303.jpg",
+      "name": "Little Red and the Wolfz",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 938270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203635.jpg",
+      "name": "Doc Flew Over the Cuckoo's Nest",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-28",
+      "id": 938271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203655.jpg",
+      "name": "Welcome to Murphytown",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-04",
+      "id": 953605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208547.jpg",
+      "name": "Election Day",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-11",
+      "id": 953606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208548.jpg",
+      "name": "Heart of Darkness",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-18",
+      "id": 953607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224108.jpg",
+      "name": "They Grow Up So Quickly",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-25",
+      "id": 954933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224111.jpg",
+      "name": "Doc's Angels",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-02",
+      "id": 986337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215780.jpg",
+      "name": "The Siege of Murphytown",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 989872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221194.jpg",
+      "name": "Duel",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-16",
+      "id": 989873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224041.jpg",
+      "name": "Everybody Dies in the End",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-29",
+      "id": 1280557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323771.jpg",
+      "name": "Warren's Dream",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-06",
+      "id": 1290781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/326242.jpg",
+      "name": "Escape from Zona",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-13",
+      "id": 1293018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/328114.jpg",
+      "name": "The Vanishing",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-20",
+      "id": 1300458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/330022.jpg",
+      "name": "A New Mission: Keep Moving",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-27",
+      "id": 1300459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/332950.jpg",
+      "name": "The Unknowns",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-03",
+      "id": 1331067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/334507.jpg",
+      "name": "Back from the Undead",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-10",
+      "id": 1331670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/336485.jpg",
+      "name": "A Nice Day for Warren's Wedding",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1331671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338765.jpg",
+      "name": "Crisis of Faith",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-24",
+      "id": 1331672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340915.jpg",
+      "name": "We Interrupt This Program",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-01",
+      "id": 1354449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/342743.jpg",
+      "name": "Frenemies",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-08",
+      "id": 1356749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344972.jpg",
+      "name": "Return to Mercy Labs",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-15",
+      "id": 1356753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/347014.jpg",
+      "name": "Mt. Weather",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-15",
+      "id": 1356759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346720.jpg",
+      "name": "The Black Rainbow",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1525485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/170/425406.jpg",
+      "name": "Welcome to the Newpocalypse",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-12",
+      "id": 1533782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/428372.jpg",
+      "name": "A New Life",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1545268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/430672.jpg",
+      "name": "Escape from Altura",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-26",
+      "id": 1549473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/432176.jpg",
+      "name": "Pacifica",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1549474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433972.jpg",
+      "name": "Killing All the Books",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-09",
+      "id": 1549475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435720.jpg",
+      "name": "Limbo",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-16",
+      "id": 1558544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/437325.jpg",
+      "name": "Doc's Stoned History",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-23",
+      "id": 1563061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438822.jpg",
+      "name": "Heartland",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-30",
+      "id": 1569734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/440433.jpg",
+      "name": "Water Keepers",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-07",
+      "id": 1570593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441919.jpg",
+      "name": "State of Mine",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-14",
+      "id": 1573877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/443349.jpg",
+      "name": "Hackerville",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-21",
+      "id": 1576033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/178/445052.jpg",
+      "name": "At All Cost",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-28",
+      "id": 1578229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/178/446474.jpg",
+      "name": "The End of Everything",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
     "Horror",
     "Science-Fiction"
   ],
+  "id": "tvmaze-38",
+  "live": true,
+  "overview": "Z Nation starts three years after the zombie virus has gutted the country, a team of everyday heroes must transport the only known survivor of the plague from New York to California, where the last functioning viral lab waits for his blood. Although the antibodies he carries are the world's last, best hope for a vaccine, he hides a dark secret that threatens them all. With humankind's survival at stake, the ragtag band embarks on a journey of survival across three thousand miles of rusted-out post-apocalyptic America.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/170/426759.jpg",
   "rating": 7.2,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "38",
+  "title": "Z Nation",
+  "type": "series",
+  "year": 2014
 }

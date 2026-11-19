@@ -1,22 +1,455 @@
 {
-  "schema": 1,
-  "id": "tvmaze-25245",
-  "source": "catalog",
-  "sourceId": null,
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": false,
-  "attribution": "Wikipedia",
-  "title": "Babylon Berlin",
-  "year": 2017,
-  "type": "series",
-  "overview": "A metropolis in turmoil. From economy to culture, politics to the underworld – everything is in the grip of radical change.Speculation and inflation are already tearing away at the foundations of the still young Weimar Republic. Growing poverty and unemployment stand in stark contrast to the excesse",
-  "poster": "file:///android_asset/posters/tvmaze-25245.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2017-10-13",
+      "id": 1071852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004893.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-13",
+      "id": 1328482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004894.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-20",
+      "id": 1328483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434168.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-20",
+      "id": 1332108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004895.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-27",
+      "id": 1332109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434169.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-27",
+      "id": 1332110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004896.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-03",
+      "id": 1332111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004897.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-03",
+      "id": 1332112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004898.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-10",
+      "id": 1332105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434173.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-10",
+      "id": 1332106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004901.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1332107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434175.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1338831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434176.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-24",
+      "id": 1338832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004902.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-24",
+      "id": 1338833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004903.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-12-01",
+      "id": 1338834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434179.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-12-01",
+      "id": 1338835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434180.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2020-01-24",
+      "id": 1731229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004905.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-01-24",
+      "id": 1731231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004906.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-01-31",
+      "id": 1782005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004907.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-01-31",
+      "id": 1782006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004908.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-07",
+      "id": 1782007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004909.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-07",
+      "id": 1782008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004910.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-14",
+      "id": 1782009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004911.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-14",
+      "id": 1782010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004912.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-21",
+      "id": 1787503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004913.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-21",
+      "id": 1787504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004914.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-28",
+      "id": 1789506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004915.jpg",
+      "name": "Episode 11",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-02-28",
+      "id": 1789507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004916.jpg",
+      "name": "Episode 12",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2022-10-08",
+      "id": 2380666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/424/1061489.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-08",
+      "id": 2408252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/424/1061490.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-15",
+      "id": 2408253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/425/1063815.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-15",
+      "id": 2408254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/426/1066234.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-22",
+      "id": 2408255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1068818.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-22",
+      "id": 2408256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1068819.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-29",
+      "id": 2408257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1071075.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-10-29",
+      "id": 2408258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1071076.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-11-05",
+      "id": 2413574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1072003.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-11-05",
+      "id": 2413582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1072004.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-11-12",
+      "id": 2413584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1076202.jpg",
+      "name": "Episode 11",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-11-12",
+      "id": 2413585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1076203.jpg",
+      "name": "Episode 12",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602363.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 39,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602364.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 41,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602365.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602366.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 44,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602367.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 43,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602368.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 39,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602369.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 47,
+      "season": 5
+    },
+    {
+      "airdate": "2026-09-10",
+      "id": 3709563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/640/1602370.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 42,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-25245",
+  "live": true,
+  "overview": "A metropolis in turmoil. From economy to culture, politics to the underworld – everything is in the grip of radical change.Speculation and inflation are already tearing away at the foundations of the still young Weimar Republic. Growing poverty and unemployment stand in stark contrast to the excesses and indulgence of the city's night life and its overflowing creative energy.Gereon Rath, a young police inspector from Cologne, is transferred to Berlin in order to solve a criminal case – a porno ring run by the Berlin Mafia. What at first glance appears to be simply a matter of extortion soon reveals itself to be a scandal that will forever change the lives of both Gereon and his closest associates.Together with stenotypist Charlotte Ritter and his partner Bruno Wolter, Rath is confronted with a tangled web of corruption, drug dealing, and weapons trafficking, forcing him into an existential conflict as he is torn between loyalty and uncovering the truth. And we are left wondering: in this story, who is friend and who is foe?With the political unrest spurred by May Day demonstrations and rising National Socialism, even an institution like the \"Rote Burg,\" Berlin's police headquarters and the centre of democracy and the constitutional state, is increasingly becoming the melting pot of a democracy whose days are numbered.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/579/1448426.jpg",
   "rating": 7.8,
-  "runtime": null,
-  "episodes": []
+  "runtime": 57,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "25245",
+  "title": "Babylon Berlin",
+  "type": "series",
+  "year": 2017
 }

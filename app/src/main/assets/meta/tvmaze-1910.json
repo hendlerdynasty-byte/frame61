@@ -1,22 +1,365 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1910",
-  "source": "tvmaze",
-  "sourceId": "1910",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Bron / Broen",
-  "year": 2011,
-  "type": "series",
-  "overview": "When a body is found on the bridge between Denmark and Sweden, right on the border, Danish inspector Martin Rohde and Swedish Saga Norén have to share jurisdiction and work together to find the killer.",
-  "poster": "file:///android_asset/posters/tvmaze-1910.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-09-28",
+      "id": 158903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34612.jpg",
+      "name": "Avsnitt 1 / Afsnit 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-05",
+      "id": 158904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014398.jpg",
+      "name": "Avsnitt 2 / Afsnit 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-12",
+      "id": 158905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014400.jpg",
+      "name": "Avsnitt 3 / Afsnit 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-19",
+      "id": 158906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34605.jpg",
+      "name": "Avsnitt 4 / Afsnit 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-26",
+      "id": 158907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34606.jpg",
+      "name": "Avsnitt 5 / Afsnit 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-02",
+      "id": 158908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014403.jpg",
+      "name": "Avsnitt 6 / Afsnit 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-09",
+      "id": 158909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34608.jpg",
+      "name": "Avsnitt 7 / Afsnit 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-16",
+      "id": 158910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34609.jpg",
+      "name": "Avsnitt 8 / Afsnit 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-23",
+      "id": 158911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014404.jpg",
+      "name": "Avsnitt 9 / Afsnit 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-23",
+      "id": 158912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34611.jpg",
+      "name": "Avsnitt 10 / Afsnit 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-22",
+      "id": 158913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34613.jpg",
+      "name": "Avsnitt 1 / Afsnit 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 158914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34614.jpg",
+      "name": "Avsnitt 2 / Afsnit 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 158915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34615.jpg",
+      "name": "Avsnitt 3 / Afsnit 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 158916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34616.jpg",
+      "name": "Avsnitt 4 / Afsnit 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 158917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34617.jpg",
+      "name": "Avsnitt 5 / Afsnit 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 158918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34618.jpg",
+      "name": "Avsnitt 6 / Afsnit 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-03",
+      "id": 158919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34619.jpg",
+      "name": "Avsnitt 7 / Afsnit 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 158920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34623.jpg",
+      "name": "Avsnitt 8 / Afsnit 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 158921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34621.jpg",
+      "name": "Avsnitt 9 / Afsnit 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-24",
+      "id": 158922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34622.jpg",
+      "name": "Avsnitt 10 / Afsnit 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 210782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014407.jpg",
+      "name": "Avsnitt 1 / Afsnit 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 308041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014408.jpg",
+      "name": "Avsnitt 2 / Afsnit 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 316720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014409.jpg",
+      "name": "Avsnitt 3 / Afsnit 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 316805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014410.jpg",
+      "name": "Avsnitt 4 / Afsnit 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 345967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014411.jpg",
+      "name": "Avsnitt 5 / Afsnit 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 372033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014413.jpg",
+      "name": "Avsnitt 6 / Afsnit 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 393782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014414.jpg",
+      "name": "Avsnitt 7 / Afsnit 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 395754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014415.jpg",
+      "name": "Avsnitt 8 / Afsnit 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-22",
+      "id": 395755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014416.jpg",
+      "name": "Avsnitt 9 / Afsnit 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 395756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014417.jpg",
+      "name": "Avsnitt 10 / Afsnit 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-01",
+      "id": 1115678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014418.jpg",
+      "name": "Avsnitt 1 / Afsnit 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-07",
+      "id": 1378780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014420.jpg",
+      "name": "Avsnitt 2 / Afsnit 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-14",
+      "id": 1378781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014421.jpg",
+      "name": "Avsnitt 3 / Afsnit 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-21",
+      "id": 1378782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014423.jpg",
+      "name": "Avsnitt 4 / Afsnit 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-28",
+      "id": 1378783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014425.jpg",
+      "name": "Avsnitt 5 / Afsnit 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-04",
+      "id": 1378784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014427.jpg",
+      "name": "Avsnitt 6 / Afsnit 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-11",
+      "id": 1378785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014428.jpg",
+      "name": "Avsnitt 7 / Afsnit 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-18",
+      "id": 1378786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1014429.jpg",
+      "name": "Avsnitt 8 / Afsnit 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-1910",
+  "live": true,
+  "overview": "When a body is found on the bridge between Denmark and Sweden, right on the border, Danish inspector Martin Rohde and Swedish Saga Norén have to share jurisdiction and work together to find the killer.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/11/27700.jpg",
   "rating": 8.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1910",
+  "title": "Bron / Broen",
+  "type": "series",
+  "year": 2011
 }

@@ -1,22 +1,950 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2",
-  "source": "tvmaze",
-  "sourceId": "2",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Person of Interest",
-  "year": 2011,
-  "type": "series",
-  "overview": "You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.",
-  "poster": "file:///android_asset/posters/tvmaze-2.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-09-22",
+      "id": 28,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89344.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-29",
+      "id": 29,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89355.jpg",
+      "name": "Ghosts",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-06",
+      "id": 30,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89358.jpg",
+      "name": "Mission Creep",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-13",
+      "id": 31,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89367.jpg",
+      "name": "Cura Te Ipsum",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-20",
+      "id": 32,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89368.jpg",
+      "name": "Judgement",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-27",
+      "id": 33,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89331.jpg",
+      "name": "The Fix",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-03",
+      "id": 34,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89370.jpg",
+      "name": "Witness",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-17",
+      "id": 35,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91594.jpg",
+      "name": "Foe",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-08",
+      "id": 36,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89389.jpg",
+      "name": "Get Carter",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-15",
+      "id": 37,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89390.jpg",
+      "name": "Number Crunch",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-12",
+      "id": 38,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91596.jpg",
+      "name": "Super",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-19",
+      "id": 39,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91597.jpg",
+      "name": "Legacy",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-02",
+      "id": 40,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91599.jpg",
+      "name": "Root Cause",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-09",
+      "id": 41,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94246.jpg",
+      "name": "Wolf and Cub",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-16",
+      "id": 42,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96296.jpg",
+      "name": "Blue Code",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-23",
+      "id": 43,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97002.jpg",
+      "name": "Risk",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-08",
+      "id": 44,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97005.jpg",
+      "name": "Baby Blue",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-29",
+      "id": 45,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97006.jpg",
+      "name": "Identity Crisis",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-05",
+      "id": 46,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100401.jpg",
+      "name": "Flesh and Blood",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-26",
+      "id": 47,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100402.jpg",
+      "name": "Matsya Nyaya",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-03",
+      "id": 48,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100403.jpg",
+      "name": "Many Happy Returns",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-10",
+      "id": 49,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/625/1563960.jpg",
+      "name": "No Good Deed",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-17",
+      "id": 50,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/105142.jpg",
+      "name": "Firewall",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-27",
+      "id": 51,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/105144.jpg",
+      "name": "The Contingency",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-04",
+      "id": 52,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106892.jpg",
+      "name": "Bad Code",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-18",
+      "id": 53,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106911.jpg",
+      "name": "Masquerade",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-25",
+      "id": 54,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106913.jpg",
+      "name": "Triggerman",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 55,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110121.jpg",
+      "name": "Bury the Lede",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-08",
+      "id": 56,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110122.jpg",
+      "name": "The High Road",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-15",
+      "id": 57,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110124.jpg",
+      "name": "Critical",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-29",
+      "id": 58,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111961.jpg",
+      "name": "'Til Death",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-06",
+      "id": 59,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111962.jpg",
+      "name": "C.O.D.",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-13",
+      "id": 60,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111963.jpg",
+      "name": "Shadow Box",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-03",
+      "id": 61,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114623.jpg",
+      "name": "2πR",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-10",
+      "id": 62,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114624.jpg",
+      "name": "Prisoner's Dilemma",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-31",
+      "id": 63,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119581.jpg",
+      "name": "Dead Reckoning",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-07",
+      "id": 64,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/117114.jpg",
+      "name": "One Percent",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-14",
+      "id": 65,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/117113.jpg",
+      "name": "Booked Solid",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-21",
+      "id": 66,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119520.jpg",
+      "name": "Relevance",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-07",
+      "id": 67,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119521.jpg",
+      "name": "Proteus",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-14",
+      "id": 68,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119522.jpg",
+      "name": "All In",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-04",
+      "id": 69,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121555.jpg",
+      "name": "Trojan Horse",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-25",
+      "id": 70,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121558.jpg",
+      "name": "In Extremis",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-02",
+      "id": 71,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121565.jpg",
+      "name": "Zero Day",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-09",
+      "id": 72,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123955.jpg",
+      "name": "God Mode",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-24",
+      "id": 73,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123956.jpg",
+      "name": "Liberty",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-01",
+      "id": 74,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123957.jpg",
+      "name": "Nothing to Hide",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-08",
+      "id": 75,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127779.jpg",
+      "name": "Lady Killer",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-15",
+      "id": 76,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127780.jpg",
+      "name": "Reasonable Doubt",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-22",
+      "id": 77,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127781.jpg",
+      "name": "Razgovor",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-29",
+      "id": 78,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129477.jpg",
+      "name": "Mors Praematura",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-05",
+      "id": 79,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129478.jpg",
+      "name": "The Perfect Mark",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-12",
+      "id": 80,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129481.jpg",
+      "name": "Endgame",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-19",
+      "id": 81,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131515.jpg",
+      "name": "The Crossing",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-26",
+      "id": 82,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131517.jpg",
+      "name": "The Devil's Share",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-17",
+      "id": 83,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131521.jpg",
+      "name": "Lethe",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-07",
+      "id": 84,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133776.jpg",
+      "name": "Aletheia",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-14",
+      "id": 85,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133779.jpg",
+      "name": "4C",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-04",
+      "id": 86,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133783.jpg",
+      "name": "Provenance",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-25",
+      "id": 87,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136683.jpg",
+      "name": "Last Call",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-04",
+      "id": 88,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136687.jpg",
+      "name": "RAM",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-18",
+      "id": 89,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136688.jpg",
+      "name": "/",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-25",
+      "id": 90,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142458.jpg",
+      "name": "Allegiance",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-01",
+      "id": 91,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142466.jpg",
+      "name": "Most Likely To...",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-15",
+      "id": 92,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145553.jpg",
+      "name": "Death Benefit",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-29",
+      "id": 93,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145564.jpg",
+      "name": "Beta",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-06",
+      "id": 94,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148446.jpg",
+      "name": "A House Divided",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-13",
+      "id": 95,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148444.jpg",
+      "name": "Deus Ex Machina",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-23",
+      "id": 96,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180135.jpg",
+      "name": "Panopticon",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-30",
+      "id": 97,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180134.jpg",
+      "name": "Nautilus",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-07",
+      "id": 98,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180160.jpg",
+      "name": "Wingman",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 99,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180162.jpg",
+      "name": "Brotherhood",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-21",
+      "id": 12548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182878.jpg",
+      "name": "Prophets",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-28",
+      "id": 13367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182879.jpg",
+      "name": "Pretenders",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 13368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183577.jpg",
+      "name": "Honor Among Thieves",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 39442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183576.jpg",
+      "name": "Point of Origin",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-25",
+      "id": 40627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/185856.jpg",
+      "name": "The Devil You Know",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-16",
+      "id": 57516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/185858.jpg",
+      "name": "The Cold War",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-06",
+      "id": 91998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189475.jpg",
+      "name": "If-Then-Else",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-13",
+      "id": 101863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189476.jpg",
+      "name": "Control-Alt-Delete",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 117701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191898.jpg",
+      "name": "M.I.A.",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 118415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191899.jpg",
+      "name": "Guilty",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 118416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195485.jpg",
+      "name": "Q&A",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 118417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195486.jpg",
+      "name": "Blunt",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-10",
+      "id": 139548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198243.jpg",
+      "name": "Karma",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 139723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198244.jpg",
+      "name": "Skip",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 151348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/201486.jpg",
+      "name": "Search and Destroy",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 151458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/201488.jpg",
+      "name": "Terra Incognita",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 151459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204264.jpg",
+      "name": "Asylum",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 151460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204263.jpg",
+      "name": "YHWH",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 659336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208048.jpg",
+      "name": "B.S.O.D.",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-09",
+      "id": 659337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208050.jpg",
+      "name": "SNAFU",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 659338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/134361.jpg",
+      "name": "Truth Be Told",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-16",
+      "id": 659366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/142995.jpg",
+      "name": "6,741",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 659364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213835.jpg",
+      "name": "ShotSeeker",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-23",
+      "id": 659365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213836.jpg",
+      "name": "A More Perfect Union",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 741338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213837.jpg",
+      "name": "QSO",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 663413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213838.jpg",
+      "name": "Reassortment",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-30",
+      "id": 663414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213839.jpg",
+      "name": "Sotto Voce",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-31",
+      "id": 663415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213840.jpg",
+      "name": "The Day the World Went Away",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-07",
+      "id": 659370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213841.jpg",
+      "name": "Synecdoche",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-14",
+      "id": 659371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213842.jpg",
+      "name": ".exe",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-21",
+      "id": 659372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213843.jpg",
+      "name": "return 0",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Krimi",
+    "Crime",
     "Science-Fiction"
   ],
+  "id": "tvmaze-2",
+  "live": true,
+  "overview": "You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/163/407679.jpg",
   "rating": 8.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2",
+  "title": "Person of Interest",
+  "type": "series",
+  "year": 2011
 }

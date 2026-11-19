@@ -1,22 +1,644 @@
 {
-  "schema": 1,
-  "id": "tvmaze-117",
-  "source": "tvmaze",
-  "sourceId": "117",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Star Wars: Rebels",
-  "year": 2014,
-  "type": "series",
-  "overview": "Star Wars Rebels, set five years before the events of Star Wars: Episode IV - A New Hope, tells the story of the Rebellion's beginnings while the Empire spreads tyranny through the galaxy.",
-  "poster": "file:///android_asset/posters/tvmaze-117.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-10-13",
+      "id": 9030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196237.jpg",
+      "name": "Droids in Distress",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-20",
+      "id": 9022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/758683.jpg",
+      "name": "Fighter Flight",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-27",
+      "id": 9023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196239.jpg",
+      "name": "Rise of the Old Masters",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-03",
+      "id": 14893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196240.jpg",
+      "name": "Breaking Ranks",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-10",
+      "id": 31867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196241.jpg",
+      "name": "Out of Darkness",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-17",
+      "id": 31868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196242.jpg",
+      "name": "Empire Day",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-24",
+      "id": 31869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196243.jpg",
+      "name": "Gathering Forces",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-05",
+      "id": 58141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196244.jpg",
+      "name": "Path of the Jedi",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-19",
+      "id": 96520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196245.jpg",
+      "name": "Idiot's Array",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-02",
+      "id": 122983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196252.jpg",
+      "name": "Vision of Hope",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-09",
+      "id": 124032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196253.jpg",
+      "name": "Call to Action",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-23",
+      "id": 124033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196254.jpg",
+      "name": "Rebel Resolve",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-02",
+      "id": 140336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196255.jpg",
+      "name": "Fire Across the Galaxy",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-20",
+      "id": 162883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63953.jpg",
+      "name": "The Siege of Lothal",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 215193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63955.jpg",
+      "name": "The Lost Commanders",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 321623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/64300.jpg",
+      "name": "Relics of the Old Republic",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-28",
+      "id": 321624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66733.jpg",
+      "name": "Always Two There Are",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-04",
+      "id": 9024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70466.jpg",
+      "name": "Brothers of the Broken Horn",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 155592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74396.jpg",
+      "name": "Wings of the Master",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-18",
+      "id": 391808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/77145.jpg",
+      "name": "Blood Sisters",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-25",
+      "id": 391809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/80775.jpg",
+      "name": "Stealth Strike",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-02",
+      "id": 448752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196270.jpg",
+      "name": "The Future of the Force",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-09",
+      "id": 448753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85414.jpg",
+      "name": "Legacy",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-20",
+      "id": 448754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101129.jpg",
+      "name": "A Princess on Lothal",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-27",
+      "id": 574472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/105453.jpg",
+      "name": "The Protector of Concord Dawn",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-03",
+      "id": 574473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108095.jpg",
+      "name": "Legends of the Lasat",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-10",
+      "id": 574474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110699.jpg",
+      "name": "The Call",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-17",
+      "id": 574475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113301.jpg",
+      "name": "Homecoming",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-24",
+      "id": 574476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115896.jpg",
+      "name": "The Honorable Ones",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-02",
+      "id": 609581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118526.jpg",
+      "name": "Shroud of Darkness",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-16",
+      "id": 609582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122661.jpg",
+      "name": "The Forgotten Droid",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-23",
+      "id": 609583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127562.jpg",
+      "name": "The Mystery of Chopper Base",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-30",
+      "id": 609585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131859.jpg",
+      "name": "Twilight of the Apprentice",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-24",
+      "id": 889382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196323.jpg",
+      "name": "Steps Into Shadow",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-01",
+      "id": 924199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/197173.jpg",
+      "name": "The Holocrons of Fate",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-08",
+      "id": 929381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/197192.jpg",
+      "name": "The Antilles Extraction",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-15",
+      "id": 929385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200149.jpg",
+      "name": "Hera's Heroes",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-22",
+      "id": 929387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205174.jpg",
+      "name": "The Last Battle",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-05",
+      "id": 929389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/217548.jpg",
+      "name": "Imperial Supercommandos",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-19",
+      "id": 961965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/217590.jpg",
+      "name": "Iron Squadron",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-26",
+      "id": 961966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/217641.jpg",
+      "name": "The Wynkahthu Job",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-03",
+      "id": 981501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220343.jpg",
+      "name": "An Inside Man",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-10",
+      "id": 981503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222157.jpg",
+      "name": "Visions and Voices",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-07",
+      "id": 1004325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/232374.jpg",
+      "name": "Ghosts of Geonosis: Part 1",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-07",
+      "id": 1004327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/232375.jpg",
+      "name": "Ghosts of Geonosis: Part 2",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-14",
+      "id": 1022826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235278.jpg",
+      "name": "Warhead",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-21",
+      "id": 1022827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/237565.jpg",
+      "name": "Trials of the Darksaber",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-18",
+      "id": 1035759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249230.jpg",
+      "name": "Legacy of Mandalore",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-25",
+      "id": 1035760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268621.jpg",
+      "name": "Through Imperial Eyes",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-04",
+      "id": 1082149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269101.jpg",
+      "name": "Secret Cargo",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-11",
+      "id": 1082150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269143.jpg",
+      "name": "Double Agent Droid",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-18",
+      "id": 1082151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269157.jpg",
+      "name": "Twin Suns",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-25",
+      "id": 1084001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269843.jpg",
+      "name": "Zero Hour: Part 1",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-25",
+      "id": 1102806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269844.jpg",
+      "name": "Zero Hour: Part 2",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1154277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331743.jpg",
+      "name": "Heroes of Mandalore: Part 1",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1315102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331744.jpg",
+      "name": "Heroes of Mandalore: Part 2",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-22",
+      "id": 1315103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335487.jpg",
+      "name": "In the Name of the Rebellion: Part 1",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-22",
+      "id": 1315105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335504.jpg",
+      "name": "In the Name of the Rebellion: Part 2",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-29",
+      "id": 1315106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335510.jpg",
+      "name": "The Occupation",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-29",
+      "id": 1315107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335515.jpg",
+      "name": "Flight of the Defender",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-06",
+      "id": 1315108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335538.jpg",
+      "name": "Kindred",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-06",
+      "id": 1333669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335550.jpg",
+      "name": "Crawler Commandeers",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-13",
+      "id": 1333670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/357590.jpg",
+      "name": "Rebel Assault",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-19",
+      "id": 1349017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/372201.jpg",
+      "name": "Jedi Night",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-19",
+      "id": 1349018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/372222.jpg",
+      "name": "DUME",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-26",
+      "id": 1351956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/374268.jpg",
+      "name": "Wolves and a Door",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-26",
+      "id": 1392974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/374275.jpg",
+      "name": "A World Between Worlds",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-05",
+      "id": 1392975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/374302.jpg",
+      "name": "A Fool's Hope",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-05",
+      "id": 1392976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/374625.jpg",
+      "name": "Family Reunion – and Farewell",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-117",
+  "live": true,
+  "overview": "Star Wars Rebels, set five years before the events of Star Wars: Episode IV - A New Hope, tells the story of the Rebellion's beginnings while the Empire spreads tyranny through the galaxy.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/353/884619.jpg",
   "rating": 7.9,
-  "runtime": 30,
-  "episodes": []
+  "runtime": 32,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "117",
+  "title": "Star Wars: Rebels",
+  "type": "series",
+  "year": 2014
 }

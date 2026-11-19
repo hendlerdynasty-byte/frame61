@@ -1,22 +1,833 @@
 {
-  "schema": 1,
-  "id": "tvmaze-52",
-  "source": "tvmaze",
-  "sourceId": "52",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "How to Get Away with Murder",
-  "year": 2014,
-  "type": "series",
-  "overview": "The brilliant, charismatic and seductive Professor Annalise Keating gets entangled with four law students from her class, How to Get Away with Murder. Little do they know that they will have to apply what they learned to real life, in this masterful, sexy, suspense-driven legal thriller.",
-  "poster": "file:///android_asset/posters/tvmaze-52.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-09-25",
+      "id": 2056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379476.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-02",
+      "id": 2057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379477.jpg",
+      "name": "It's All Her Fault",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-09",
+      "id": 2058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379478.jpg",
+      "name": "Smile, or Go to Jail",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-16",
+      "id": 2059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379479.jpg",
+      "name": "Let's Get to Scooping",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-23",
+      "id": 7918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379480.jpg",
+      "name": "We're Not Friends",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-30",
+      "id": 14049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379481.jpg",
+      "name": "Freakin' Whack-a-Mole",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-06",
+      "id": 14050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379482.jpg",
+      "name": "He Deserved to Die",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-13",
+      "id": 39408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379483.jpg",
+      "name": "He Has a Wife",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-20",
+      "id": 39409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379484.jpg",
+      "name": "Kill Me, Kill Me, Kill Me",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-29",
+      "id": 118521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379485.jpg",
+      "name": "Hello Raskolnikov",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-05",
+      "id": 118522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379486.jpg",
+      "name": "Best Christmas Ever",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-12",
+      "id": 123086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379487.jpg",
+      "name": "She's a Murderer",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 123087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379488.jpg",
+      "name": "Mama's Here Now",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-26",
+      "id": 123088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379489.jpg",
+      "name": "The Night Lila Died",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-26",
+      "id": 123089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379490.jpg",
+      "name": "It's All My Fault",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-09-24",
+      "id": 201211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379495.jpg",
+      "name": "It's Time to Move On",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-01",
+      "id": 231896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379496.jpg",
+      "name": "She's Dying",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-08",
+      "id": 250018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379497.jpg",
+      "name": "It's Called the Octopus",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-15",
+      "id": 279825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379498.jpg",
+      "name": "Skanks Get Shanked",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-22",
+      "id": 279826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379499.jpg",
+      "name": "Meet Bonnie",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-29",
+      "id": 279827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379500.jpg",
+      "name": "Two Birds, One Millstone",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-05",
+      "id": 379122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379501.jpg",
+      "name": "I Want You to Die",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-12",
+      "id": 401002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379502.jpg",
+      "name": "Hi, I'm Philip",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-19",
+      "id": 419774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379503.jpg",
+      "name": "What Did We Do?",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-11",
+      "id": 471068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379504.jpg",
+      "name": "What Happened to You, Annalise?",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-18",
+      "id": 509827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379505.jpg",
+      "name": "She Hates Us",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-25",
+      "id": 604756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379506.jpg",
+      "name": "It's a Trap",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-03",
+      "id": 616245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379507.jpg",
+      "name": "Something Bad Happened",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-10",
+      "id": 622467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379508.jpg",
+      "name": "There's My Baby",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-17",
+      "id": 622468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379509.jpg",
+      "name": "Anna Mae",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-22",
+      "id": 809535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379511.jpg",
+      "name": "We're Good People Now",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-29",
+      "id": 924337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379512.jpg",
+      "name": "There Are Worse Things Than Murder",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-06",
+      "id": 931752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379513.jpg",
+      "name": "Always Bet Black",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-13",
+      "id": 939361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379514.jpg",
+      "name": "Don't Tell Annalise",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-20",
+      "id": 945964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379515.jpg",
+      "name": "It's About Frank",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-27",
+      "id": 952775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379516.jpg",
+      "name": "Is Someone Really Dead?",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-03",
+      "id": 962477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379517.jpg",
+      "name": "Call It Mother's Intuition",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-10",
+      "id": 971903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379518.jpg",
+      "name": "No More Blood",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-17",
+      "id": 975398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379519.jpg",
+      "name": "Who's Dead?",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 979355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379520.jpg",
+      "name": "We're Bad People",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-02",
+      "id": 1023456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379521.jpg",
+      "name": "Not Everything's About Annalise",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-09",
+      "id": 1047342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379522.jpg",
+      "name": "Go Cry Somewhere Else",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-16",
+      "id": 1047343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379523.jpg",
+      "name": "It's War",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-23",
+      "id": 1048223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379524.jpg",
+      "name": "He Made a Terrible Mistake",
+      "number": 14,
+      "runtime": 59,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-23",
+      "id": 1048224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379510.jpg",
+      "name": "Wes",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-28",
+      "id": 1258609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379525.jpg",
+      "name": "I'm Going Away",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-05",
+      "id": 1302986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379526.jpg",
+      "name": "I'm Not Her",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-12",
+      "id": 1315096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379527.jpg",
+      "name": "It's for the Greater Good",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-19",
+      "id": 1319086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379528.jpg",
+      "name": "Was She Ever Good at Her Job?",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-26",
+      "id": 1326900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379529.jpg",
+      "name": "I Love Her",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-02",
+      "id": 1332150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379530.jpg",
+      "name": "Stay Strong, Mama",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-09",
+      "id": 1339544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379531.jpg",
+      "name": "Nobody Roots for Goliath",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-16",
+      "id": 1343031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379532.jpg",
+      "name": "Live. Live. Live.",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-18",
+      "id": 1356476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379533.jpg",
+      "name": "He's Dead",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-25",
+      "id": 1384838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379534.jpg",
+      "name": "Everything We Did Was for Nothing",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-01",
+      "id": 1387077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379535.jpg",
+      "name": "He's a Bad Father",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-08",
+      "id": 1387078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379536.jpg",
+      "name": "Ask Him About Stella",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-01",
+      "id": 1387079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379537.jpg",
+      "name": "Lahey v. Commonwealth of Pennsylvania",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-08",
+      "id": 1387080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379538.jpg",
+      "name": "The Day Before He Died",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-15",
+      "id": 1387081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379539.jpg",
+      "name": "Nobody Else Is Dying",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-09-27",
+      "id": 1498077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379540.jpg",
+      "name": "Your Funeral",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-04",
+      "id": 1529849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379541.jpg",
+      "name": "Whose Blood Is That?",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-11",
+      "id": 1533962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379542.jpg",
+      "name": "The Baby Was Never Dead",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-18",
+      "id": 1537484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379543.jpg",
+      "name": "It's Her Kid",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-25",
+      "id": 1540248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379544.jpg",
+      "name": "It Was the Worst Day of My Life",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-01",
+      "id": 1544988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379545.jpg",
+      "name": "We Can Find Him",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-08",
+      "id": 1548384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379546.jpg",
+      "name": "I Got Played",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-15",
+      "id": 1553243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379547.jpg",
+      "name": "I Want to Love You Until the Day I Die",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-17",
+      "id": 1577692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379548.jpg",
+      "name": "He Betrayed Us Both",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-24",
+      "id": 1580781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379549.jpg",
+      "name": "Don't Go Dark on Me",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-31",
+      "id": 1580782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379550.jpg",
+      "name": "Be the Martyr",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-07",
+      "id": 1580783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379551.jpg",
+      "name": "We Know Everything",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-14",
+      "id": 1580784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379552.jpg",
+      "name": "Where Are Your Parents?",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-21",
+      "id": 1580785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379553.jpg",
+      "name": "Make Me the Enemy",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-28",
+      "id": 1580786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379554.jpg",
+      "name": "Please Say No One Else Is Dead",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-26",
+      "id": 1677395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379555.jpg",
+      "name": "Say Goodbye",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-03",
+      "id": 1691071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379563.jpg",
+      "name": "Vivian's Here",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-10",
+      "id": 1691072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379564.jpg",
+      "name": "Do You Think I'm a Bad Man?",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-17",
+      "id": 1691073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379565.jpg",
+      "name": "I Hate the World",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-24",
+      "id": 1726646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379566.jpg",
+      "name": "We're All Gonna Die",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-31",
+      "id": 1731238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379567.jpg",
+      "name": "Family Sucks",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-07",
+      "id": 1737526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379568.jpg",
+      "name": "I'm the Murderer",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-14",
+      "id": 1744390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379569.jpg",
+      "name": "I Want To Be Free",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-21",
+      "id": 1749375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379570.jpg",
+      "name": "Are You the Mole?",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-02",
+      "id": 1760272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379571.jpg",
+      "name": "We're Not Getting Away with It",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-09",
+      "id": 1816619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379572.jpg",
+      "name": "The Reckoning",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-16",
+      "id": 1816620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379573.jpg",
+      "name": "Let's Hurt Him",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-30",
+      "id": 1816621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379574.jpg",
+      "name": "What If Sam Wasn't the Bad Guy This Whole Time?",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-05-07",
+      "id": 1816622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379575.jpg",
+      "name": "Annalise Keating is Dead",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-05-14",
+      "id": 1816623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379576.jpg",
+      "name": "Stay",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Thriller",
-    "Justiz"
+    "Legal"
   ],
+  "id": "tvmaze-52",
+  "live": true,
+  "overview": "The brilliant, charismatic and seductive Professor Annalise Keating gets entangled with four law students from her class, How to Get Away with Murder. Little do they know that they will have to apply what they learned to real life, in this masterful, sexy, suspense-driven legal thriller.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/212/531512.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "52",
+  "title": "How to Get Away with Murder",
+  "type": "series",
+  "year": 2014
 }

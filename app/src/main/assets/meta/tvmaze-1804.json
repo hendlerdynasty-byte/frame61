@@ -1,22 +1,383 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1804",
-  "source": "tvmaze",
-  "sourceId": "1804",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Man in the High Castle",
-  "year": 2015,
-  "type": "series",
-  "overview": "The Man in the High Castle is a startling depiction of an alternate history as imagined by author Philip K. Dick in his best-selling novel; a world in which Nazi Germany and Japan were victorious in World War II. The year is 1962 and the Axis Powers occupy the United States, where fascism rules and the few surviving Jews hide under assumed names.",
-  "poster": "file:///android_asset/posters/tvmaze-1804.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-01-15",
+      "id": 154607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/414/1036665.jpg",
+      "name": "The New World",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-23",
+      "id": 189555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/456/1140326.jpg",
+      "name": "Sunrise",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83051.jpg",
+      "name": "The Illustrated Woman",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83053.jpg",
+      "name": "Revelations",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83091.jpg",
+      "name": "The New Normal",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83098.jpg",
+      "name": "Three Monkeys",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83156.jpg",
+      "name": "Truth",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83183.jpg",
+      "name": "End of the World",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83184.jpg",
+      "name": "Kindness",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 249956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83187.jpg",
+      "name": "A Way Out",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223797.jpg",
+      "name": "The Tiger's Cave",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/225754.jpg",
+      "name": "The Road Less Traveled",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223799.jpg",
+      "name": "Travelers",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223800.jpg",
+      "name": "Escalation",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223801.jpg",
+      "name": "Duck and Cover",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223802.jpg",
+      "name": "Kintsugi",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223803.jpg",
+      "name": "Land O' Smiles",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223804.jpg",
+      "name": "Loose Lips",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223805.jpg",
+      "name": "Detonation",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-15",
+      "id": 867791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223806.jpg",
+      "name": "Fallout",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424947.jpg",
+      "name": "Now More Than Ever, We Care About You",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424949.jpg",
+      "name": "Imagine Manchuria",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424950.jpg",
+      "name": "Sensô Kôi",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424951.jpg",
+      "name": "Sabra",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424952.jpg",
+      "name": "The New Colossus",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424953.jpg",
+      "name": "History Ends",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424954.jpg",
+      "name": "Excess Animus",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424955.jpg",
+      "name": "Kasumi (Through the Mists)",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424956.jpg",
+      "name": "Baku",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-05",
+      "id": 1499787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424986.jpg",
+      "name": "Jahr Null",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1685822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/223/559993.jpg",
+      "name": "Hexagram 64",
+      "number": 1,
+      "runtime": 58,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/560791.jpg",
+      "name": "Every Door Out…",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/561350.jpg",
+      "name": "The Box",
+      "number": 3,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/561349.jpg",
+      "name": "Happy Trails",
+      "number": 4,
+      "runtime": 47,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568287.jpg",
+      "name": "Mauvaise Foi",
+      "number": 5,
+      "runtime": 50,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/223/559998.jpg",
+      "name": "All Serious Daring",
+      "number": 6,
+      "runtime": 46,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/223/559999.jpg",
+      "name": "No Masters But Ourselves",
+      "number": 7,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/560000.jpg",
+      "name": "Hitler Has Only Got One Ball",
+      "number": 8,
+      "runtime": 50,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/560001.jpg",
+      "name": "For Want of a Nail",
+      "number": 9,
+      "runtime": 50,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-15",
+      "id": 1688506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/560002.jpg",
+      "name": "Fire from the Gods",
+      "number": 10,
+      "runtime": 58,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-1804",
+  "live": true,
+  "overview": "The Man in the High Castle is a startling depiction of an alternate history as imagined by author Philip K. Dick in his best-selling novel; a world in which Nazi Germany and Japan were victorious in World War II. The year is 1962 and the Axis Powers occupy the United States, where fascism rules and the few surviving Jews hide under assumed names.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/216/541957.jpg",
   "rating": 8.1,
-  "runtime": null,
-  "episodes": []
+  "runtime": 58,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1804",
+  "title": "The Man in the High Castle",
+  "type": "series",
+  "year": 2015
 }

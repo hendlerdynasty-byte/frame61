@@ -1,21 +1,526 @@
 {
-  "schema": 1,
-  "id": "tvmaze-102",
-  "source": "tvmaze",
-  "sourceId": "102",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Boardwalk Empire",
-  "year": 2010,
-  "type": "series",
-  "overview": "As the country struggles to cope with the Great Depression and the end of Prohibition looms, Nucky Thompson looks to legitimize himself through alliances with liquor producers, while rivals Lucky Luciano and Meyer Lansky seek to consolidate their power in the wake of Arnold Rothstein's death and eliminate all competition - by any means necessary on Boardwalk Empire.",
-  "poster": "file:///android_asset/posters/tvmaze-102.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-19",
+      "id": 6922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012524.jpg",
+      "name": "Boardwalk Empire",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 6923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012525.jpg",
+      "name": "The Ivory Tower",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 6924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012526.jpg",
+      "name": "Broadway Limited",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-10",
+      "id": 6925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012527.jpg",
+      "name": "Anastasia",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 6926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012528.jpg",
+      "name": "Nights in Ballygran",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-24",
+      "id": 6927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012529.jpg",
+      "name": "Family Limitation",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-31",
+      "id": 6928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012530.jpg",
+      "name": "Home",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-07",
+      "id": 6929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012531.jpg",
+      "name": "Hold Me in Paradise",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-14",
+      "id": 6930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012532.jpg",
+      "name": "Belle Femme",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-21",
+      "id": 6931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012533.jpg",
+      "name": "The Emerald City",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-28",
+      "id": 6932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012534.jpg",
+      "name": "Paris Green",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-05",
+      "id": 6933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012535.jpg",
+      "name": "A Return to Normalcy",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 6934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012537.jpg",
+      "name": "21",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 6935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012538.jpg",
+      "name": "Ourselves Alone",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-09",
+      "id": 6936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012539.jpg",
+      "name": "A Dangerous Maid",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-16",
+      "id": 6937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012540.jpg",
+      "name": "What Does the Bee Do?",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-23",
+      "id": 6938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012541.jpg",
+      "name": "Gimcrack & Bunkum",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-30",
+      "id": 6939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012542.jpg",
+      "name": "The Age of Reason",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-06",
+      "id": 6940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012543.jpg",
+      "name": "Peg of Old",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-13",
+      "id": 6941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012544.jpg",
+      "name": "Two Boats and a Lifeguard",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-20",
+      "id": 6942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012545.jpg",
+      "name": "Battle of the Century",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-27",
+      "id": 6943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012546.jpg",
+      "name": "Georgia Peaches",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 6944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012547.jpg",
+      "name": "Under God's Power She Flourishes",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 6945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012548.jpg",
+      "name": "To the Lost",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 6946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012550.jpg",
+      "name": "Resolution",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-23",
+      "id": 6947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012551.jpg",
+      "name": "Spaghetti and Coffee",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 6948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012552.jpg",
+      "name": "Bone for Tuna",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 6949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012554.jpg",
+      "name": "Blue Bell Boy",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 6950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012555.jpg",
+      "name": "You'd Be Surprised",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 6951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012556.jpg",
+      "name": "Ging Gang Goolie",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 6952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012557.jpg",
+      "name": "Sunday Best",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 6953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012558.jpg",
+      "name": "The Pony",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 6954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012559.jpg",
+      "name": "The Milkmaid's Lot",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-18",
+      "id": 6955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012560.jpg",
+      "name": "A Man, A Plan...",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 6956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012561.jpg",
+      "name": "Two Imposters",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-02",
+      "id": 6957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012562.jpg",
+      "name": "Margate Sands",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-08",
+      "id": 6958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012563.jpg",
+      "name": "New York Sour",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-15",
+      "id": 6959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012564.jpg",
+      "name": "Resignation",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-22",
+      "id": 6960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012565.jpg",
+      "name": "Acres of Diamonds",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 6961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012566.jpg",
+      "name": "All In",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 6962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012567.jpg",
+      "name": "Erlkönig",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 6963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012568.jpg",
+      "name": "The North Star",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 6964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012569.jpg",
+      "name": "William Wilson",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 6965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012570.jpg",
+      "name": "The Old Ship of Zion",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-03",
+      "id": 6966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012571.jpg",
+      "name": "Marriage and Hunting",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 6967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012572.jpg",
+      "name": "White Horse Pike",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 6968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012573.jpg",
+      "name": "Havre De Grace",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-24",
+      "id": 6969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012574.jpg",
+      "name": "Farewell Daddy Blues",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-07",
+      "id": 6970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012575.jpg",
+      "name": "Golden Days for Boys and Girls",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-14",
+      "id": 6971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012576.jpg",
+      "name": "The Good Listener",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-21",
+      "id": 6972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012577.jpg",
+      "name": "What Jesus Said",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 6973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012578.jpg",
+      "name": "Cuanto",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-05",
+      "id": 6974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012579.jpg",
+      "name": "King of Norway",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-12",
+      "id": 6975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012580.jpg",
+      "name": "Devil You Know",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 6976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012581.jpg",
+      "name": "Friendless Child",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-26",
+      "id": 6977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1012582.jpg",
+      "name": "Eldorado",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-102",
+  "live": true,
+  "overview": "As the country struggles to cope with the Great Depression and the end of Prohibition looms, Nucky Thompson looks to legitimize himself through alliances with liquor producers, while rivals Lucky Luciano and Meyer Lansky seek to consolidate their power in the wake of Arnold Rothstein's death and eliminate all competition - by any means necessary on Boardwalk Empire.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/405/1012589.jpg",
   "rating": 8.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "102",
+  "title": "Boardwalk Empire",
+  "type": "series",
+  "year": 2010
 }

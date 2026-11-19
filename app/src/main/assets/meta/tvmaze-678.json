@@ -1,20 +1,885 @@
 {
-  "schema": 1,
-  "id": "tvmaze-678",
-  "source": "tvmaze",
-  "sourceId": "678",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "My Name Is Earl",
-  "year": 2005,
-  "type": "series",
-  "overview": "Karma is a funny thing. Just ask Earl who's learning the hard way that when you do something bad, it has a way of coming back and biting you in the ass! Hoping to turn his life around, Earl's got a lengthy list of detestable deeds to make up for.",
-  "poster": "file:///android_asset/posters/tvmaze-678.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-09-20",
+      "id": 59609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483191.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-27",
+      "id": 59610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298706.jpg",
+      "name": "Quit Smoking",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-04",
+      "id": 59611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299019.jpg",
+      "name": "Randy's Touchdown",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-11",
+      "id": 59612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483193.jpg",
+      "name": "Faked My Own Death",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-18",
+      "id": 59613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298708.jpg",
+      "name": "Teacher Earl",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-01",
+      "id": 59614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483194.jpg",
+      "name": "Broke Joy's Fancy Figurine",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-08",
+      "id": 59615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483195.jpg",
+      "name": "Stole Beer from a Golfer",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-15",
+      "id": 59616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298712.jpg",
+      "name": "Joy's Wedding",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-22",
+      "id": 59617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483196.jpg",
+      "name": "Cost Dad the Election",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-12-06",
+      "id": 59618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483197.jpg",
+      "name": "White Lie Christmas",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-05",
+      "id": 59619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483199.jpg",
+      "name": "Barn Burner",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-12",
+      "id": 59620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299021.jpg",
+      "name": "O Karma, Where Art Thou?",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-19",
+      "id": 59621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483200.jpg",
+      "name": "Stole P's HD Cart",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-01-26",
+      "id": 59622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483202.jpg",
+      "name": "Monkeys in Space",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-02-02",
+      "id": 59623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483203.jpg",
+      "name": "Something to Live For",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-02-09",
+      "id": 59624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483204.jpg",
+      "name": "The Professor",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-02",
+      "id": 59625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299023.jpg",
+      "name": "Didn't Pay Taxes",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-16",
+      "id": 59626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483205.jpg",
+      "name": "Dad's Car",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-23",
+      "id": 59627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483206.jpg",
+      "name": "Y2K",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-30",
+      "id": 59628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483207.jpg",
+      "name": "Boogeyman",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-06",
+      "id": 59629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299015.jpg",
+      "name": "The Bounty Hunter",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-27",
+      "id": 59630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483208.jpg",
+      "name": "Stole a Badge",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-04",
+      "id": 59631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483209.jpg",
+      "name": "BB",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-11",
+      "id": 59632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483210.jpg",
+      "name": "Number One",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-21",
+      "id": 59633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483211.jpg",
+      "name": "Very Bad Things",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-28",
+      "id": 59634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298831.jpg",
+      "name": "Jump for Joy",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-05",
+      "id": 59635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483213.jpg",
+      "name": "Sticks & Stones",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-12",
+      "id": 59636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298825.jpg",
+      "name": "Larceny of a Kitty Cat",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-19",
+      "id": 59637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483215.jpg",
+      "name": "Van Hickey",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-02",
+      "id": 59638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483216.jpg",
+      "name": "Made a Lady Think I Was God",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-09",
+      "id": 59639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298752.jpg",
+      "name": "Mailbox",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-16",
+      "id": 59640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298738.jpg",
+      "name": "Robbed a Stoner Blind",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-30",
+      "id": 59641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298750.jpg",
+      "name": "Born a Gamblin' Man",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-07",
+      "id": 59642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483218.jpg",
+      "name": "South of the Border: Part Uno",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-07",
+      "id": 59643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483220.jpg",
+      "name": "South of the Border: Part Dos",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-04",
+      "id": 59644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299032.jpg",
+      "name": "Our 'Cops' is On",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-11",
+      "id": 59645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483221.jpg",
+      "name": "Buried Treasure",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-18",
+      "id": 59646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483223.jpg",
+      "name": "Kept a Guy Locked in a Truck",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-01",
+      "id": 59647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298807.jpg",
+      "name": "Foreign Exchange Student",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-08",
+      "id": 59648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483224.jpg",
+      "name": "B.L.O.W.",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-15",
+      "id": 59649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483225.jpg",
+      "name": "The Birthday Party",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-22",
+      "id": 59650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483226.jpg",
+      "name": "Guess Who's Coming Out of Joy",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-12",
+      "id": 59651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483227.jpg",
+      "name": "Harassed a Reporter",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-19",
+      "id": 59652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298541.jpg",
+      "name": "Two Balls, Two Strikes",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-26",
+      "id": 59653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483229.jpg",
+      "name": "G.E.D.",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-03",
+      "id": 59654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483230.jpg",
+      "name": "Get a Real Job",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-10",
+      "id": 59655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483231.jpg",
+      "name": "The Trial",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-27",
+      "id": 59656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483232.jpg",
+      "name": "My Name is Inmate 28301-016 (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-27",
+      "id": 59657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483233.jpg",
+      "name": "My Name is Inmate 28301-016 (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-04",
+      "id": 59658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483234.jpg",
+      "name": "The Gangs of Camden County",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-11",
+      "id": 59659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483235.jpg",
+      "name": "The Frank Factor",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-18",
+      "id": 59660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483236.jpg",
+      "name": "Creative Writing",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-25",
+      "id": 59661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483237.jpg",
+      "name": "Frank's Girl",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-01",
+      "id": 59662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298837.jpg",
+      "name": "Our Other 'Cops' is On! (1)",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-01",
+      "id": 59663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298849.jpg",
+      "name": "Our Other 'Cops' is On! (2)",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-08",
+      "id": 59664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483238.jpg",
+      "name": "Randy in Charge (...of Our Days and Our Nights)",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-15",
+      "id": 59665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483241.jpg",
+      "name": "Midnight Bun",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-29",
+      "id": 59666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483243.jpg",
+      "name": "Burn Victim",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-12-06",
+      "id": 59667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483244.jpg",
+      "name": "Early Release",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-01-10",
+      "id": 59668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483246.jpg",
+      "name": "Bad Earl",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-03",
+      "id": 59669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483247.jpg",
+      "name": "I Won't Die with a Little Help from My Friends (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-03",
+      "id": 59670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483248.jpg",
+      "name": "I Won't Die with a Little Help from My Friends (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-10",
+      "id": 59671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483249.jpg",
+      "name": "Stole a Motorcycle",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-17",
+      "id": 59672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483250.jpg",
+      "name": "No Heads and a Duffel Bag",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-24",
+      "id": 59673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483251.jpg",
+      "name": "Killerball",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-01",
+      "id": 59674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483252.jpg",
+      "name": "Love Octagon",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-08",
+      "id": 59675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483253.jpg",
+      "name": "Girl Earl",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-15",
+      "id": 59676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483254.jpg",
+      "name": "Camdenites (1)",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-05-15",
+      "id": 59677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483255.jpg",
+      "name": "Camdenites (2)",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-25",
+      "id": 59678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483256.jpg",
+      "name": "The Magic Hour",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-25",
+      "id": 59679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483257.jpg",
+      "name": "Monkeys Take a Bath",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-02",
+      "id": 59680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483258.jpg",
+      "name": "Joy in a Bubble",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-02",
+      "id": 59681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483259.jpg",
+      "name": "Stole an RV",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-09",
+      "id": 59682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483260.jpg",
+      "name": "Sweet Johnny",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-16",
+      "id": 59683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483261.jpg",
+      "name": "We've Got Spirit",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-23",
+      "id": 59684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483262.jpg",
+      "name": "Quit Your Snitchin'",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-30",
+      "id": 59685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483263.jpg",
+      "name": "Little Bad Voodoo Brother",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-06",
+      "id": 59686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483264.jpg",
+      "name": "Sold a Guy a Lemon Car",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-13",
+      "id": 59687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483265.jpg",
+      "name": "Earl and Joy's Anniversary",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-20",
+      "id": 59688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298508.jpg",
+      "name": "Nature's Game Show",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-04",
+      "id": 59689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483266.jpg",
+      "name": "Reading is a Fundamental Case",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-11",
+      "id": 59690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483267.jpg",
+      "name": "Orphan Earl",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-08",
+      "id": 59691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483268.jpg",
+      "name": "Got the Babysitter Pregnant",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-15",
+      "id": 59692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483269.jpg",
+      "name": "Darnell Outed (1)",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-22",
+      "id": 59693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483270.jpg",
+      "name": "Darnell Outed (2)",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-05",
+      "id": 59694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483271.jpg",
+      "name": "Randy's List Item",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-12",
+      "id": 59695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483272.jpg",
+      "name": "Friends with Benefits",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-19",
+      "id": 59696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483273.jpg",
+      "name": "My Name is Alias",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-05",
+      "id": 59697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483274.jpg",
+      "name": "Chaz Dalton's Space Academy",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-19",
+      "id": 59698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483275.jpg",
+      "name": "Witch Lady",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-26",
+      "id": 59699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483276.jpg",
+      "name": "Pinky",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-16",
+      "id": 59700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483277.jpg",
+      "name": "Bullies",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-23",
+      "id": 59701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483278.jpg",
+      "name": "Gospel",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-30",
+      "id": 59702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483280.jpg",
+      "name": "Inside Probe (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-07",
+      "id": 59703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483282.jpg",
+      "name": "Inside Probe (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-14",
+      "id": 59704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483283.jpg",
+      "name": "Dodge's Dad",
+      "number": 27,
+      "runtime": 30,
+      "season": 4
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-678",
+  "live": true,
+  "overview": "Karma is a funny thing. Just ask Earl who's learning the hard way that when you do something bad, it has a way of coming back and biting you in the ass! Hoping to turn his life around, Earl's got a lengthy list of detestable deeds to make up for.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/5/14824.jpg",
   "rating": 7.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "678",
+  "title": "My Name Is Earl",
+  "type": "series",
+  "year": 2005
 }

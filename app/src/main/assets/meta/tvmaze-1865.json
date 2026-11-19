@@ -1,22 +1,419 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1865",
-  "source": "tvmaze",
-  "sourceId": "1865",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Dr. Ken",
-  "year": 2015,
-  "type": "series",
-  "overview": "Doctor turned actor/comedian Ken Jeong plays Dr. Ken, a brilliant physician with no bedside manner. He is always trying to be a good doctor, as well as a good husband and dad to his two kids. However, these good intentions have a way of driving everyone crazy at both work and at home. Luckily, his therapist wife Allison is just the right partner to keep things sane.",
-  "poster": "file:///android_asset/posters/tvmaze-1865.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-10-02",
+      "id": 182384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31311.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-09",
+      "id": 250034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60635.jpg",
+      "name": "The Seminar",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-16",
+      "id": 295403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/64326.jpg",
+      "name": "Ken Helps Pat",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-23",
+      "id": 295404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/68063.jpg",
+      "name": "Kevin O'Connell",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-30",
+      "id": 295405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69634.jpg",
+      "name": "Halloween-Aversary",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-06",
+      "id": 394066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/225677.jpg",
+      "name": "Ken Teaches Molly a Lesson",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-13",
+      "id": 401012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/75659.jpg",
+      "name": "Dr. Wendi: Coming to LA!",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 406832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79421.jpg",
+      "name": "Thanksgiving Culture Clash",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-04",
+      "id": 406833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83640.jpg",
+      "name": "Ken Cries Foul",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-11",
+      "id": 409136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86427.jpg",
+      "name": "The Master Scheduler",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-08",
+      "id": 531140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96478.jpg",
+      "name": "Delayed in Honolulu",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-15",
+      "id": 550719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99687.jpg",
+      "name": "Ken's Physical",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-29",
+      "id": 567695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/109250.jpg",
+      "name": "D.K. and the Dishwasher",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-05",
+      "id": 571844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107619.jpg",
+      "name": "Dave's Valentine",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-19",
+      "id": 597691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113987.jpg",
+      "name": "The Wedding Sitter",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-26",
+      "id": 609061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116664.jpg",
+      "name": "Meeting Molly's Boyfriend",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 614068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119313.jpg",
+      "name": "Ken at the Concert",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-11",
+      "id": 620315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121170.jpg",
+      "name": "Dicky Wexler's Last Show",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-18",
+      "id": 620317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123605.jpg",
+      "name": "Ken's An Expert Witness",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-08",
+      "id": 663473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131180.jpg",
+      "name": "Dave's Sex Talk",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-15",
+      "id": 677837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133472.jpg",
+      "name": "Korean Men's Club",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-22",
+      "id": 694246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136275.jpg",
+      "name": "Ken Tries Stand Up",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 848232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190611.jpg",
+      "name": "Allison's Career Move",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-30",
+      "id": 911070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/194356.jpg",
+      "name": "Ken and Allison Share a Patient",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-07",
+      "id": 934910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/197176.jpg",
+      "name": "Ken's Banquet Snub",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-14",
+      "id": 911071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200428.jpg",
+      "name": "Dr. Ken: Child of Divorce",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-21",
+      "id": 945980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203625.jpg",
+      "name": "D.K.'s Korean Ghost Story",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-04",
+      "id": 928508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208705.jpg",
+      "name": "Ken Learns Korean",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-11",
+      "id": 971905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211042.jpg",
+      "name": "Dave Goes on Shark Tank",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-18",
+      "id": 974896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213330.jpg",
+      "name": "Allison's Thanksgiving Meltdown",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-02",
+      "id": 987570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218748.jpg",
+      "name": "D.K.'s New Girlfriend",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 993507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221078.jpg",
+      "name": "Ken's Apology",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-16",
+      "id": 974917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223543.jpg",
+      "name": "A Park Family Christmas",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-06",
+      "id": 1018670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230792.jpg",
+      "name": "Ken's New Intern",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-13",
+      "id": 1022261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233316.jpg",
+      "name": "Jae Meets the Parks",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-20",
+      "id": 1018672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235525.jpg",
+      "name": "A Day in the Life",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-27",
+      "id": 1035966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/237888.jpg",
+      "name": "Ken and the Basketball Star",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-03",
+      "id": 1040833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241324.jpg",
+      "name": "A Dr. Ken Valentine's Day",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-17",
+      "id": 1048799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247442.jpg",
+      "name": "Pat's Rash",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-24",
+      "id": 1062196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249765.jpg",
+      "name": "Allison Finds a Lump",
+      "number": 18,
+      "runtime": 29,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-10",
+      "id": 1064165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254089.jpg",
+      "name": "Ken's Professor",
+      "number": 19,
+      "runtime": 29,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-17",
+      "id": 1066929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256545.jpg",
+      "name": "Ken And The Ceo",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-24",
+      "id": 1066930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259350.jpg",
+      "name": "Clark's Big Surprise",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-31",
+      "id": 1066931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262291.jpg",
+      "name": "Ken's Big Audition",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
-    "Familie",
+    "Comedy",
+    "Family",
     "Medical"
   ],
+  "id": "tvmaze-1865",
+  "live": true,
+  "overview": "Doctor turned actor/comedian Ken Jeong plays Dr. Ken, a brilliant physician with no bedside manner. He is always trying to be a good doctor, as well as a good husband and dad to his two kids. However, these good intentions have a way of driving everyone crazy at both work and at home. Luckily, his therapist wife Allison is just the right partner to keep things sane.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/20/52350.jpg",
   "rating": 5.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1865",
+  "title": "Dr. Ken",
+  "type": "series",
+  "year": 2015
 }

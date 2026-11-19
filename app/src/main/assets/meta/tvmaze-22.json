@@ -1,22 +1,743 @@
 {
-  "schema": 1,
-  "id": "tvmaze-22",
-  "source": "tvmaze",
-  "sourceId": "22",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "True Blood",
-  "year": 2008,
-  "type": "series",
-  "overview": "True Blood is a horror/drama based on a series of novels called The Southern American Vampires Mysteries. It focuses on Sookie Stackhouse and her various encounters with vampires and other supernatural beings. The show is centred in the small town of Bon Temps in Louisiana. The show focuses heavily on the co-existence of humans with vampires. The show also touches on several other controversial issues involving equal rights, violence, discrimination and religion.",
-  "poster": "file:///android_asset/posters/tvmaze-22.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-09-07",
+      "id": 1213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385184.jpg",
+      "name": "Strange Love",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-14",
+      "id": 1214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385185.jpg",
+      "name": "The First Taste",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-21",
+      "id": 1215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385186.jpg",
+      "name": "Mine",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 1216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385187.jpg",
+      "name": "Escape from Dragon House",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 1217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385188.jpg",
+      "name": "Sparks Fly Out",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 1218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458758.jpg",
+      "name": "Cold Ground",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 1219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458759.jpg",
+      "name": "Burning House of Love",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 1220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458906.jpg",
+      "name": "The Fourth Man in the Fire",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-02",
+      "id": 1221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458905.jpg",
+      "name": "Plaisir D'Amour",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 1222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458903.jpg",
+      "name": "I Don't Wanna Know",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 1223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458902.jpg",
+      "name": "To Love Is to Bury",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 1224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458901.jpg",
+      "name": "You'll Be the Death of Me",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-06-14",
+      "id": 1225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458908.jpg",
+      "name": "Nothing But the Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-21",
+      "id": 1226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458909.jpg",
+      "name": "Keep This Party Going",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-28",
+      "id": 1227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458910.jpg",
+      "name": "Scratches",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-12",
+      "id": 1228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458911.jpg",
+      "name": "Shake and Fingerpop",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 1229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458912.jpg",
+      "name": "Never Let Me Go",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-26",
+      "id": 1230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458913.jpg",
+      "name": "Hard-Hearted Hannah",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-02",
+      "id": 1231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458927.jpg",
+      "name": "Release Me",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-09",
+      "id": 1232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458929.jpg",
+      "name": "Timebomb",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-16",
+      "id": 1233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458931.jpg",
+      "name": "I Will Rise Up",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-23",
+      "id": 1234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458932.jpg",
+      "name": "New World in My View",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-30",
+      "id": 1235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458939.jpg",
+      "name": "Frenzy",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-13",
+      "id": 1236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458942.jpg",
+      "name": "Beyond Here Lies Nothin'",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-13",
+      "id": 1237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458943.jpg",
+      "name": "Bad Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-20",
+      "id": 1238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458946.jpg",
+      "name": "Beautifully Broken",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-27",
+      "id": 1239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458949.jpg",
+      "name": "It Hurts Me Too",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-11",
+      "id": 1240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458952.jpg",
+      "name": "9 Crimes",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-18",
+      "id": 1241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458953.jpg",
+      "name": "Trouble",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-25",
+      "id": 1242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458954.jpg",
+      "name": "I Got a Right to Sing the Blues",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-01",
+      "id": 1243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458956.jpg",
+      "name": "Hitting the Ground",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-08",
+      "id": 1244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458957.jpg",
+      "name": "Night on the Sun",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-15",
+      "id": 1245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458959.jpg",
+      "name": "Everything is Broken",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-22",
+      "id": 1246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458960.jpg",
+      "name": "I Smell a Rat",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-29",
+      "id": 1247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458961.jpg",
+      "name": "Fresh Blood",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-12",
+      "id": 1248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458962.jpg",
+      "name": "Evil is Going On",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 1249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458972.jpg",
+      "name": "She's Not There",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-03",
+      "id": 1250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458973.jpg",
+      "name": "You Smell Like Dinner",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-10",
+      "id": 1251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458974.jpg",
+      "name": "If You Love Me, Why Am I Dyin'?",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-17",
+      "id": 1252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458975.jpg",
+      "name": "I'm Alive and On Fire",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 1253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458976.jpg",
+      "name": "Me and the Devil",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-31",
+      "id": 1254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458977.jpg",
+      "name": "I Wish I Was the Moon",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-07",
+      "id": 1255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458978.jpg",
+      "name": "Cold Grey Light of Dawn",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-14",
+      "id": 1256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458979.jpg",
+      "name": "Spellbound",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-21",
+      "id": 1257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458980.jpg",
+      "name": "Let's Get Out of Here",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-28",
+      "id": 1258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458981.jpg",
+      "name": "Burning Down the House",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-04",
+      "id": 1259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458982.jpg",
+      "name": "Soul of Fire",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-11",
+      "id": 1260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458983.jpg",
+      "name": "And When I Die",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 1261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458984.jpg",
+      "name": "Turn! Turn! Turn!",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-17",
+      "id": 1262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458985.jpg",
+      "name": "Authority Always Wins",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-24",
+      "id": 1263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458986.jpg",
+      "name": "Whatever I Am, You Made Me",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-01",
+      "id": 1264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458987.jpg",
+      "name": "We'll Meet Again",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-08",
+      "id": 1265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458989.jpg",
+      "name": "Let's Boot and Rally",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 1266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458990.jpg",
+      "name": "Hopeless",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 1267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458991.jpg",
+      "name": "In the Beginning",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-29",
+      "id": 1268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458992.jpg",
+      "name": "Somebody That I Used to Know",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 1269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458993.jpg",
+      "name": "Everybody Wants to Rule the World",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 1270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458994.jpg",
+      "name": "Gone, Gone, Gone",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-19",
+      "id": 1271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458995.jpg",
+      "name": "Sunset",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-26",
+      "id": 1272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459005.jpg",
+      "name": "Save Yourself",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-06-16",
+      "id": 1273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459006.jpg",
+      "name": "Who Are You, Really?",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-23",
+      "id": 1274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459007.jpg",
+      "name": "The Sun",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-30",
+      "id": 1275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459008.jpg",
+      "name": "You're No Good",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-07-07",
+      "id": 1276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459009.jpg",
+      "name": "At Last",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-07-14",
+      "id": 1277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459010.jpg",
+      "name": "Fuck the Pain Away",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-07-21",
+      "id": 1278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459011.jpg",
+      "name": "Don't You Feel Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-07-28",
+      "id": 1279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459012.jpg",
+      "name": "In the Evening",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-08-04",
+      "id": 1280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459013.jpg",
+      "name": "Dead Meat",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-08-11",
+      "id": 1281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459014.jpg",
+      "name": "Life Matters",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-08-18",
+      "id": 1282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459015.jpg",
+      "name": "Radioactive",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 1283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459024.jpg",
+      "name": "Jesus Gonna Be Here",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 1284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459025.jpg",
+      "name": "I Found You",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-07-06",
+      "id": 1285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459026.jpg",
+      "name": "Fire in the Hole",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-07-13",
+      "id": 1286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459032.jpg",
+      "name": "Death is Not the End",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-07-20",
+      "id": 1287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63984.jpg",
+      "name": "Lost Cause",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-07-27",
+      "id": 1288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459027.jpg",
+      "name": "Karma",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-08-03",
+      "id": 1289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459028.jpg",
+      "name": "May Be the Last Time",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-08-10",
+      "id": 1290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459029.jpg",
+      "name": "Almost Home",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-08-17",
+      "id": 1291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459030.jpg",
+      "name": "Love is to Die",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-08-24",
+      "id": 1292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459031.jpg",
+      "name": "Thank You",
+      "number": 10,
+      "runtime": 65,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Romanze",
-    "Übernatürlich"
+    "Romance",
+    "Supernatural"
   ],
+  "id": "tvmaze-22",
+  "live": true,
+  "overview": "True Blood is a horror/drama based on a series of novels called The Southern American Vampires Mysteries. It focuses on Sookie Stackhouse and her various encounters with vampires and other supernatural beings. The show is centred in the small town of Bon Temps in Louisiana. The show focuses heavily on the co-existence of humans with vampires. The show also touches on several other controversial issues involving equal rights, violence, discrimination and religion.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/410/1026956.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "22",
+  "title": "True Blood",
+  "type": "series",
+  "year": 2008
 }

@@ -1,22 +1,608 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3083",
-  "source": "tvmaze",
-  "sourceId": "3083",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Magicians",
-  "year": 2015,
-  "type": "series",
-  "overview": "Based upon Lev Grossman's best-selling books, The Magicians centers around Brakebills University, a secret institution specializing in magic. There, amidst an unorthdox education of spellcasting, a group of twenty-something friends soon discover that a magical fantasy world they read about as children is all too real - and poses grave danger to humanity.",
-  "poster": "file:///android_asset/posters/tvmaze-3083.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-12-16",
+      "id": 415090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239668.jpg",
+      "name": "Unauthorized Magic",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-25",
+      "id": 522271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102958.jpg",
+      "name": "The Source of Magic",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-01",
+      "id": 544316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/107372.jpg",
+      "name": "Consequences of Advanced Spellcasting",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-08",
+      "id": 544317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239670.jpg",
+      "name": "The World in the Walls",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 544318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112465.jpg",
+      "name": "Mendings, Major and Minor",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-22",
+      "id": 544319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239671.jpg",
+      "name": "Impractical Applications",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-29",
+      "id": 544320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115334.jpg",
+      "name": "The Mayakovsky Circumstances",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-07",
+      "id": 587107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239673.jpg",
+      "name": "The Strangled Heart",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-14",
+      "id": 587108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120204.jpg",
+      "name": "The Writing Room",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-21",
+      "id": 601015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124485.jpg",
+      "name": "Homecoming",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-28",
+      "id": 601016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131099.jpg",
+      "name": "Remedial Battle Magic",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-04",
+      "id": 631873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131096.jpg",
+      "name": "Thirty-Nine Graves",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-11",
+      "id": 631874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239674.jpg",
+      "name": "Have You Brought Me Little Cakes",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-01-25",
+      "id": 985399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237427.jpg",
+      "name": "Knight of Crowns",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-01",
+      "id": 1025445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240428.jpg",
+      "name": "Hotel Spa Potions",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-08",
+      "id": 1025446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243631.jpg",
+      "name": "Divine Elimination",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-15",
+      "id": 1025447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246578.jpg",
+      "name": "The Flying Forest",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-22",
+      "id": 1025448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249195.jpg",
+      "name": "Cheat Day",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-01",
+      "id": 1043023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251154.jpg",
+      "name": "The Cock Barrens",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-08",
+      "id": 1043024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253466.jpg",
+      "name": "Plan B",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-15",
+      "id": 1048419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255822.jpg",
+      "name": "Word As Bond",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-22",
+      "id": 1048421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258589.jpg",
+      "name": "Lesser Evils",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-29",
+      "id": 1074089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261692.jpg",
+      "name": "The Girl Who Told Time",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-05",
+      "id": 1075031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/264070.jpg",
+      "name": "The Rattening",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-12",
+      "id": 1075032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267243.jpg",
+      "name": "Ramifications",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-19",
+      "id": 1075034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269750.jpg",
+      "name": "We Have Brought You Little Cakes",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-01-10",
+      "id": 1258214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354880.jpg",
+      "name": "The Tale of the Seven Keys",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-17",
+      "id": 1258215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356961.jpg",
+      "name": "Heroes and Morons",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-24",
+      "id": 1258216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358913.jpg",
+      "name": "The Losses of Magic",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-31",
+      "id": 1258217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/361301.jpg",
+      "name": "Be the Penny",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-07",
+      "id": 1264159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363567.jpg",
+      "name": "A Life in the Day",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-14",
+      "id": 1314514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365575.jpg",
+      "name": "Do You Like Teeth?",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-21",
+      "id": 1392646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/367055.jpg",
+      "name": "Poached Eggs",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-28",
+      "id": 1314516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368461.jpg",
+      "name": "Six Short Stories about Magic",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-07",
+      "id": 1396720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370596.jpg",
+      "name": "All That Josh",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-14",
+      "id": 1392647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/372594.jpg",
+      "name": "The Art of the Deal",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-21",
+      "id": 1396721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/150/375390.jpg",
+      "name": "Twenty-Three",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-28",
+      "id": 1396722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/377786.jpg",
+      "name": "The Fillorian Candidate",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-04",
+      "id": 1396723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/379351.jpg",
+      "name": "Will You Play with Me?",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-23",
+      "id": 1519305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/453199.jpg",
+      "name": "A Flock of Lost Birds",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-01-30",
+      "id": 1519306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455392.jpg",
+      "name": "Lost, Found, F...ed",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-02-06",
+      "id": 1519307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/457321.jpg",
+      "name": "The Bad News Bear",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-02-13",
+      "id": 1519308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459618.jpg",
+      "name": "Marry, Fuck, Kill",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-02-20",
+      "id": 1519309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462104.jpg",
+      "name": "Escape from the Happy Place",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-02-27",
+      "id": 1519310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464738.jpg",
+      "name": "A Timeline and Place",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-06",
+      "id": 1519312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464724.jpg",
+      "name": "The Side Effect",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-13",
+      "id": 1519314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467480.jpg",
+      "name": "Home Improvement",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-20",
+      "id": 1544374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/472244.jpg",
+      "name": "The Serpent",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-27",
+      "id": 1544375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474668.jpg",
+      "name": "All That Hard, Glossy Armor",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-03",
+      "id": 1544376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475625.jpg",
+      "name": "The 4-1-1",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-10",
+      "id": 1544377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/478428.jpg",
+      "name": "The Secret Sea",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-17",
+      "id": 1623279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480494.jpg",
+      "name": "No Better to Be Safe Than Sorry",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2020-01-15",
+      "id": 1665013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/590408.jpg",
+      "name": "Do Something Crazy",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-01-22",
+      "id": 1665019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594327.jpg",
+      "name": "The Wrath of the Time Bees",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-01-29",
+      "id": 1683087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/597143.jpg",
+      "name": "The Mountain of Ghosts",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-05",
+      "id": 1683088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600132.jpg",
+      "name": "Magicians Anonymous",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-12",
+      "id": 1720787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603766.jpg",
+      "name": "Apocalypse? Now?!",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-12",
+      "id": 1683089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603741.jpg",
+      "name": "Oops!... I Did It Again",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-19",
+      "id": 1789171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/606434.jpg",
+      "name": "Acting Dean",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-26",
+      "id": 1789170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/609658.jpg",
+      "name": "Garden Variety Homicide",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-04",
+      "id": 1715201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/611704.jpg",
+      "name": "Cello Squirrel Daffodil",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-11",
+      "id": 1719987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/614987.jpg",
+      "name": "Purgatory",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-18",
+      "id": 1789088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/617975.jpg",
+      "name": "Be the Hyman",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-25",
+      "id": 1789089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624781.jpg",
+      "name": "The Balls",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-04-01",
+      "id": 1789090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624837.jpg",
+      "name": "Fillory and Further",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-3083",
+  "live": true,
+  "overview": "Based upon Lev Grossman's best-selling books, The Magicians centers around Brakebills University, a secret institution specializing in magic. There, amidst an unorthdox education of spellcasting, a group of twenty-something friends soon discover that a magical fantasy world they read about as children is all too real - and poses grave danger to humanity.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/229/573329.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3083",
+  "title": "The Magicians",
+  "type": "series",
+  "year": 2015
 }

@@ -1,21 +1,778 @@
 {
-  "schema": 1,
-  "id": "tvmaze-270",
-  "source": "tvmaze",
-  "sourceId": "270",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The League",
-  "year": 2009,
-  "type": "series",
-  "overview": "The League follows Kevin, a happily married father and commissioner of the fantasy football league; Jenny, Kevin's wife and his better half - especially when it comes to fantasy football; Pete, the perennial league champ who is struggling to become an adult; Taco, Kevin's little brother, a part-time musician and full-time stoner with little interest in fantasy other than hanging with his buddies; Ruxin, who believes he is the smartest of the group but can't figure out how exactly the other guys are screwing him over; and Andre, the punching bag of the group since their high school days - a fact that hasn't changed despite the fact he is now a successful plastic surgeon.",
-  "poster": "file:///android_asset/posters/tvmaze-270.jpg",
-  "genres": [
-    "Komödie",
-    "Sport"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-10-29",
+      "id": 28162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491073.jpg",
+      "name": "The Draft",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-05",
+      "id": 28163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491074.jpg",
+      "name": "The Bounce Test",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-12",
+      "id": 28164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491075.jpg",
+      "name": "Sunday at Ruxin's",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-19",
+      "id": 28165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491076.jpg",
+      "name": "Mr. McGibblets",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-12-03",
+      "id": 28166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491077.jpg",
+      "name": "The Usual Bet",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-12-10",
+      "id": 28167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491078.jpg",
+      "name": "The Shiva Bowl",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-16",
+      "id": 28168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/392057.jpg",
+      "name": "Vegas Draft",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-23",
+      "id": 28169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/392058.jpg",
+      "name": "Bro-Lo El Cuñado",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-30",
+      "id": 28170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491079.jpg",
+      "name": "The White Knuckler",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-07",
+      "id": 28171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491080.jpg",
+      "name": "The Kluneberg",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-14",
+      "id": 28172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491081.jpg",
+      "name": "The Marathon",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-21",
+      "id": 28173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491082.jpg",
+      "name": "The Anniversary Party",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-28",
+      "id": 28174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491083.jpg",
+      "name": "Ghost Monkey",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-04",
+      "id": 28175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491084.jpg",
+      "name": "The Tie",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-11",
+      "id": 28176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491085.jpg",
+      "name": "The Expert Witness",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-18",
+      "id": 28177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491086.jpg",
+      "name": "High School Reunion",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-02",
+      "id": 28178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491087.jpg",
+      "name": "Ramona Neopolitano",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-09",
+      "id": 28179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491088.jpg",
+      "name": "Kegel the Elf",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-09",
+      "id": 28180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491089.jpg",
+      "name": "The Sacko Bowl",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-06",
+      "id": 28181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491090.jpg",
+      "name": "The Lockout",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-13",
+      "id": 28182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491091.jpg",
+      "name": "The Sukkah",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-20",
+      "id": 28183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491092.jpg",
+      "name": "The Au Pair",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-27",
+      "id": 28184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491093.jpg",
+      "name": "Ol' Smoke Crotch",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-03",
+      "id": 28185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491094.jpg",
+      "name": "Bobbum Man",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-10",
+      "id": 28186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491095.jpg",
+      "name": "Yobogoya!",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-10",
+      "id": 28187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491096.jpg",
+      "name": "Carmenjello",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-17",
+      "id": 28188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491097.jpg",
+      "name": "Thanksgiving",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-01",
+      "id": 28189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491098.jpg",
+      "name": "The Out of Towner",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-08",
+      "id": 28190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491099.jpg",
+      "name": "The Light of Genesis",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-15",
+      "id": 28191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491100.jpg",
+      "name": "The Guest Bong",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-22",
+      "id": 28192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491101.jpg",
+      "name": "St. Pete",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-22",
+      "id": 28193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491102.jpg",
+      "name": "The Funeral",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-11",
+      "id": 28194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491103.jpg",
+      "name": "Training Camp",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-18",
+      "id": 28195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491104.jpg",
+      "name": "The Hoodie",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-25",
+      "id": 28196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491105.jpg",
+      "name": "The Freeze Out",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 28197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491106.jpg",
+      "name": "The Breastalyzer",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-08",
+      "id": 28198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491107.jpg",
+      "name": "Judge MacArthur",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-15",
+      "id": 28199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491108.jpg",
+      "name": "The Tailgate",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-29",
+      "id": 28200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491109.jpg",
+      "name": "The Vapora Sport",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-06",
+      "id": 28201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491110.jpg",
+      "name": "The Anchor Baby",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-06",
+      "id": 28202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491111.jpg",
+      "name": "Bro-lo El Cordero",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-13",
+      "id": 28203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491112.jpg",
+      "name": "Our Dinner with Andre",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-13",
+      "id": 28204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491113.jpg",
+      "name": "12.12.12",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-20",
+      "id": 28205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491114.jpg",
+      "name": "A Krampus Carol",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-20",
+      "id": 28206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491115.jpg",
+      "name": "The Curse of Shiva",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-04",
+      "id": 28207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491116.jpg",
+      "name": "The Bachelor Draft",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-11",
+      "id": 28208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491117.jpg",
+      "name": "The Von Nowzick Wedding",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-18",
+      "id": 28209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491118.jpg",
+      "name": "Chalupa vs. The Cutlet",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-25",
+      "id": 28210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491119.jpg",
+      "name": "Rafi and Dirty Randy",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-02",
+      "id": 28211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491120.jpg",
+      "name": "The Bye Week",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-09",
+      "id": 28212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491121.jpg",
+      "name": "Heavy Petting",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 28213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491122.jpg",
+      "name": "The Bringer Show",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-23",
+      "id": 28214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491123.jpg",
+      "name": "Flowers for Taco",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-30",
+      "id": 28215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491124.jpg",
+      "name": "The Automatic Faucet",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 28216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491125.jpg",
+      "name": "The Near Death Flex-perience",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 28217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491126.jpg",
+      "name": "The Credit Card Alert",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 28218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491127.jpg",
+      "name": "Baby Geoffrey Jesus",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 28219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491128.jpg",
+      "name": "The 8 Defensive Points of Hanukkah",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-03",
+      "id": 28220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491129.jpg",
+      "name": "Sitting Shiva",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-09-10",
+      "id": 28221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491130.jpg",
+      "name": "Tefl-Andre",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-09-17",
+      "id": 28222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491131.jpg",
+      "name": "The Height Supremacist",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-09-24",
+      "id": 28223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491132.jpg",
+      "name": "When Rafi Met Randy",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-01",
+      "id": 28224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491133.jpg",
+      "name": "The Hot Tub",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-08",
+      "id": 28225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491134.jpg",
+      "name": "Breast Awareness Month",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-15",
+      "id": 28226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491135.jpg",
+      "name": "The Heavenly Fowler",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-22",
+      "id": 28227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5271.jpg",
+      "name": "Man Land",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-29",
+      "id": 28228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6396.jpg",
+      "name": "Taco Standard Time",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-05",
+      "id": 28229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/8075.jpg",
+      "name": "Epi-Sexy",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-12",
+      "id": 28230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491136.jpg",
+      "name": "EBDBBnB",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 45263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11488.jpg",
+      "name": "Ménage à Cinq",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 45264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491137.jpg",
+      "name": "The Beach House",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2015-09-09",
+      "id": 203258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/47780.jpg",
+      "name": "That Other Draft",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-16",
+      "id": 203259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/48146.jpg",
+      "name": "The Draft of Innocence",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-23",
+      "id": 203260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/21/52756.jpg",
+      "name": "The Blind Spot",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-30",
+      "id": 203261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/55516.jpg",
+      "name": "Deflategate",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-07",
+      "id": 203262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58822.jpg",
+      "name": "The Bully",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 203263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61448.jpg",
+      "name": "The Beer Mile",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 203264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/65005.jpg",
+      "name": "Trophy Kevin",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-28",
+      "id": 203265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/67837.jpg",
+      "name": "The Last Temptation of Andre",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-04",
+      "id": 203266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70903.jpg",
+      "name": "The Yank Banker",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 203267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74740.jpg",
+      "name": "The Block",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-18",
+      "id": 203268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/77588.jpg",
+      "name": "Adios y Bienvenidos",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-12-02",
+      "id": 203269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/82939.jpg",
+      "name": "The 13 Stages of Grief",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2015-12-09",
+      "id": 203270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85292.jpg",
+      "name": "The Great Night of Shiva",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Sports"
+  ],
+  "id": "tvmaze-270",
+  "live": true,
+  "overview": "The League follows Kevin, a happily married father and commissioner of the fantasy football league; Jenny, Kevin's wife and his better half - especially when it comes to fantasy football; Pete, the perennial league champ who is struggling to become an adult; Taco, Kevin's little brother, a part-time musician and full-time stoner with little interest in fantasy other than hanging with his buddies; Ruxin, who believes he is the smartest of the group but can't figure out how exactly the other guys are screwing him over; and Andre, the punching bag of the group since their high school days - a fact that hasn't changed despite the fact he is now a successful plastic surgeon.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/4720.jpg",
   "rating": 7.6,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "270",
+  "title": "The League",
+  "type": "series",
+  "year": 2009
 }

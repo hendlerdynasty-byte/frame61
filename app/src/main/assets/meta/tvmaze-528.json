@@ -1,22 +1,221 @@
 {
-  "schema": 1,
-  "id": "tvmaze-528",
-  "source": "tvmaze",
-  "sourceId": "528",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Flash",
-  "year": 1990,
-  "type": "series",
-  "overview": "The Flash is Barry Allen, a police scientist, who was working one night during a terrible thunder storm when a bolt of lightning crashes through the lab window, electrocuting him. Barry survives and soon learns that he is now able to move at almost incomprehensible speed.",
-  "poster": "file:///android_asset/posters/tvmaze-528.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1990-09-20",
+      "id": 47926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139946.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 94,
+      "season": 1
+    },
+    {
+      "airdate": "1990-09-27",
+      "id": 47927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139947.jpg",
+      "name": "Out of Control",
+      "number": 2,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1990-10-18",
+      "id": 47928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139948.jpg",
+      "name": "Watching the Detectives",
+      "number": 3,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1990-10-25",
+      "id": 47929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139949.jpg",
+      "name": "Honor Among Thieves",
+      "number": 4,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1990-11-01",
+      "id": 47930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139950.jpg",
+      "name": "Double Vision",
+      "number": 5,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1990-11-08",
+      "id": 47931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139951.jpg",
+      "name": "Sins of the Father",
+      "number": 6,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1990-11-15",
+      "id": 47932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139952.jpg",
+      "name": "Child's Play",
+      "number": 7,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1990-11-29",
+      "id": 47933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139953.jpg",
+      "name": "Shroud of Death",
+      "number": 8,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1990-12-13",
+      "id": 47934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139954.jpg",
+      "name": "Ghost in the Machine",
+      "number": 9,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-01-10",
+      "id": 47935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139955.jpg",
+      "name": "Sight Unseen",
+      "number": 10,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1991-01-31",
+      "id": 47936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139956.jpg",
+      "name": "Beat the Clock",
+      "number": 11,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-02-07",
+      "id": 47937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139957.jpg",
+      "name": "The Trickster",
+      "number": 12,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-02-14",
+      "id": 47938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139958.jpg",
+      "name": "Tina, Is That You?",
+      "number": 13,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1991-02-21",
+      "id": 47939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139959.jpg",
+      "name": "Be My Baby",
+      "number": 14,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-02-27",
+      "id": 47940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139960.jpg",
+      "name": "Fast Forward",
+      "number": 15,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-03-30",
+      "id": 47941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139961.jpg",
+      "name": "Deadly Nightshade",
+      "number": 16,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-04-06",
+      "id": 47942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139962.jpg",
+      "name": "Captain Cold",
+      "number": 17,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1991-04-13",
+      "id": 47943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139963.jpg",
+      "name": "Twin Streaks",
+      "number": 18,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1991-04-27",
+      "id": 47944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139964.jpg",
+      "name": "Done With Mirrors",
+      "number": 19,
+      "runtime": 48,
+      "season": 1
+    },
+    {
+      "airdate": "1991-05-04",
+      "id": 47945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139965.jpg",
+      "name": "Good Night, Central City",
+      "number": 20,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-05-11",
+      "id": 47946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139966.jpg",
+      "name": "Alpha",
+      "number": 21,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "1991-05-18",
+      "id": 47947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139967.jpg",
+      "name": "The Trial of the Trickster",
+      "number": 22,
+      "runtime": 47,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-528",
+  "live": true,
+  "overview": "The Flash is Barry Allen, a police scientist, who was working one night during a terrible thunder storm when a bolt of lightning crashes through the lab window, electrocuting him. Barry survives and soon learns that he is now able to move at almost incomprehensible speed.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11360.jpg",
   "rating": 7.7,
-  "runtime": null,
-  "episodes": []
+  "runtime": 50,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "528",
+  "title": "The Flash",
+  "type": "series",
+  "year": 1990
 }

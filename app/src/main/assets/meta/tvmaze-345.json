@@ -1,22 +1,698 @@
 {
-  "schema": 1,
-  "id": "tvmaze-345",
-  "source": "tvmaze",
-  "sourceId": "345",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Covert Affairs",
-  "year": 2010,
-  "type": "series",
-  "overview": "New jobs are tough—especially when your new employer is the CIA. Annie Walker is fluent in six languages, has traveled the world and is besting her fellow CIA trainees in every test. But that doesn't explain why she's suddenly summoned by CIA headquarters to report for active duty as a field operative one month before her training is over. She doesn't know there may be something—or someone—from her past that her CIA bosses are really after. Annie's unofficial guide to the CIA is Auggie Anderson, a tech ops expert who was blinded while on assignment. As Annie navigates this new world of intrigue, danger and bureaucratic red tape, Auggie is there to make sure this quick study won't be kept in the dark for long. Also starring Peter Gallagher, Kari Matchett, Sendhil Ramamurthy and Anne Dudek.",
-  "poster": "file:///android_asset/posters/tvmaze-345.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-07-13",
+      "id": 32352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/639143.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-20",
+      "id": 32353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/639138.jpg",
+      "name": "Walter's Walk",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-27",
+      "id": 32354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84445.jpg",
+      "name": "South Bound Suarez",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-03",
+      "id": 32355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84446.jpg",
+      "name": "No Quarter",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-10",
+      "id": 32356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/642914.jpg",
+      "name": "In the Light",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-17",
+      "id": 32357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84448.jpg",
+      "name": "Houses of the Holy",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-24",
+      "id": 32358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/642912.jpg",
+      "name": "Communication Breakdown",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-31",
+      "id": 32359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/642913.jpg",
+      "name": "What Is and What Should Never Be",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-07",
+      "id": 32360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/642915.jpg",
+      "name": "Fool in the Rain",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-14",
+      "id": 32361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/642904.jpg",
+      "name": "I Can't Quit You Baby",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-14",
+      "id": 32362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84455.jpg",
+      "name": "When the Levee Breaks",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-07",
+      "id": 32363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84456.jpg",
+      "name": "Begin the Begin",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-14",
+      "id": 32364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665497.jpg",
+      "name": "Good Advices",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-21",
+      "id": 32365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84458.jpg",
+      "name": "Bang and Blame",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-28",
+      "id": 32366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84460.jpg",
+      "name": "All the Right Friends",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-05",
+      "id": 32367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241654.jpg",
+      "name": "Around the Sun",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-12",
+      "id": 32368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84511.jpg",
+      "name": "The Outsiders",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-19",
+      "id": 32369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84512.jpg",
+      "name": "Half a World Away",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-26",
+      "id": 32370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84514.jpg",
+      "name": "Welcome to the Occupation",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-02",
+      "id": 32371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84515.jpg",
+      "name": "Sad Professor",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-09",
+      "id": 32372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84516.jpg",
+      "name": "World Leader Pretend",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-01",
+      "id": 32373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84517.jpg",
+      "name": "The Wake-Up Bomb",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 32374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84518.jpg",
+      "name": "Uberlin",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-15",
+      "id": 32375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84519.jpg",
+      "name": "A Girl Like You",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-22",
+      "id": 32376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84520.jpg",
+      "name": "Horse to Water",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-29",
+      "id": 32377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84521.jpg",
+      "name": "What's the Frequency, Kenneth?",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-06",
+      "id": 32378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84522.jpg",
+      "name": "Letter Never Sent",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-10",
+      "id": 32379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84524.jpg",
+      "name": "Hang On to Yourself",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-17",
+      "id": 32380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84526.jpg",
+      "name": "Sound and Vision",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-24",
+      "id": 32381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84527.jpg",
+      "name": "The Last Thing You Should Do",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-31",
+      "id": 32382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84528.jpg",
+      "name": "Speed of Life",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-14",
+      "id": 32383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84529.jpg",
+      "name": "This Is Not America",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-21",
+      "id": 32384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84530.jpg",
+      "name": "Hello Stranger",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-28",
+      "id": 32385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84531.jpg",
+      "name": "Loving the Alien",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-04",
+      "id": 32386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84532.jpg",
+      "name": "Glass Spider",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-11",
+      "id": 32387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84533.jpg",
+      "name": "Suffragette City",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-18",
+      "id": 32388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84534.jpg",
+      "name": "Let's Dance",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-16",
+      "id": 32389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665498.jpg",
+      "name": "Rock 'n' Roll Suicide",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-23",
+      "id": 32390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84536.jpg",
+      "name": "Wishful Beginnings",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-30",
+      "id": 32391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84541.jpg",
+      "name": "Man in the Middle",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-06",
+      "id": 32392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84542.jpg",
+      "name": "Scary Monsters (and Super Creeps)",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-13",
+      "id": 32393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665499.jpg",
+      "name": "Quicksand",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-20",
+      "id": 32394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665500.jpg",
+      "name": "Lady Stardust",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-16",
+      "id": 32395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84545.jpg",
+      "name": "Vamos",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-23",
+      "id": 32396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84546.jpg",
+      "name": "Dig for Fire",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-30",
+      "id": 32397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84547.jpg",
+      "name": "Into the White",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-06",
+      "id": 32398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84548.jpg",
+      "name": "Rock A My Soul",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-13",
+      "id": 32399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84550.jpg",
+      "name": "Here Comes Your Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-20",
+      "id": 32400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665501.jpg",
+      "name": "Space (I Believe In)",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-27",
+      "id": 32401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84554.jpg",
+      "name": "Crackity Jones",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-03",
+      "id": 32402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84558.jpg",
+      "name": "I've Been Waiting for You",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-10",
+      "id": 32403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84559.jpg",
+      "name": "Hang Wire",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-17",
+      "id": 32404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84575.jpg",
+      "name": "Levitate Me",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-17",
+      "id": 32405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84577.jpg",
+      "name": "Dead",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-24",
+      "id": 32406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84579.jpg",
+      "name": "Something Against You",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-31",
+      "id": 32407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84582.jpg",
+      "name": "No. 13 Baby",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-07",
+      "id": 32408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84584.jpg",
+      "name": "River Euphrates",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-14",
+      "id": 32409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84585.jpg",
+      "name": "There Goes My Gun",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-21",
+      "id": 32410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84588.jpg",
+      "name": "Trompe le Monde",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-24",
+      "id": 32411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84589.jpg",
+      "name": "Shady Lane",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-01",
+      "id": 32412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84592.jpg",
+      "name": "False Skorpion",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-08",
+      "id": 32413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84598.jpg",
+      "name": "Unseen Power of the Picket Fence",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-15",
+      "id": 32414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84599.jpg",
+      "name": "Silence Kit",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-22",
+      "id": 32415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84601.jpg",
+      "name": "Elevate Me Later",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-29",
+      "id": 32416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84603.jpg",
+      "name": "Embassy Row",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-05",
+      "id": 32417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84605.jpg",
+      "name": "Brink of the Clouds",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-12",
+      "id": 32418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84607.jpg",
+      "name": "Grounded",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-19",
+      "id": 32419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84608.jpg",
+      "name": "Spit on a Stranger",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-26",
+      "id": 32420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84611.jpg",
+      "name": "Sensitive Euro Man",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-06",
+      "id": 32421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/8624.jpg",
+      "name": "Trigger Cut",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-13",
+      "id": 40915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10595.jpg",
+      "name": "Starlings of the Slipstream",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-20",
+      "id": 45268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11976.jpg",
+      "name": "She Believes",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-04",
+      "id": 57137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14064.jpg",
+      "name": "Transport Is Arranged",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-11",
+      "id": 57138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14967.jpg",
+      "name": "Frontwards",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-18",
+      "id": 57139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/6/16500.jpg",
+      "name": "Gold Soundz",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Spionage"
+    "Espionage"
   ],
+  "id": "tvmaze-345",
+  "live": true,
+  "overview": "New jobs are tough—especially when your new employer is the CIA. Annie Walker is fluent in six languages, has traveled the world and is besting her fellow CIA trainees in every test. But that doesn't explain why she's suddenly summoned by CIA headquarters to report for active duty as a field operative one month before her training is over. She doesn't know there may be something—or someone—from her past that her CIA bosses are really after. Annie's unofficial guide to the CIA is Auggie Anderson, a tech ops expert who was blinded while on assignment. As Annie navigates this new world of intrigue, danger and bureaucratic red tape, Auggie is there to make sure this quick study won't be kept in the dark for long. Also starring Peter Gallagher, Kari Matchett, Sendhil Ramamurthy and Anne Dudek.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/545/1362912.jpg",
   "rating": 7.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "345",
+  "title": "Covert Affairs",
+  "type": "series",
+  "year": 2010
 }

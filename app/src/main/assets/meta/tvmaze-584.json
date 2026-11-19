@@ -1,21 +1,976 @@
 {
-  "schema": 1,
-  "id": "tvmaze-584",
-  "source": "tvmaze",
-  "sourceId": "584",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Las Vegas",
-  "year": 2003,
-  "type": "series",
-  "overview": "Take a spin on the wheel of TV's most electrifying series ever, Las Vegas. The slots are hot and the girls are even hotter starring some of today's biggest guest stars. Follow the fast-paced exploits and action-packed escapades at the Montecito Hotel and Casino with an elite Las Vegas surveillance team, led by commanding Big Ed Deline and his slick, good-looking right hand man, Danny McCoy. Along with the sexiest support team to hit the Strip, they're out to catch card-counting cheaters, costly streaks of random luck and the schemes of rival casinos. It's Sin City like you've never seen it before in the series Variety declares is \"Bottom line: Jackpot\".",
-  "poster": "file:///android_asset/posters/tvmaze-584.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2003-09-22",
+      "id": 55355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1377843.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-29",
+      "id": 55356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1377860.jpg",
+      "name": "What Happens in Vegas, Stays in Vegas",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-06",
+      "id": 55357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1378954.jpg",
+      "name": "Donny, We Hardly Knew Ye",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-13",
+      "id": 55358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1378983.jpg",
+      "name": "Jokers and Fools",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-20",
+      "id": 55359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1378994.jpg",
+      "name": "Groundhog Summer",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-03",
+      "id": 55360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1378999.jpg",
+      "name": "Semper Spy",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-10",
+      "id": 55361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379020.jpg",
+      "name": "Pros and Cons",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-17",
+      "id": 55362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379053.jpg",
+      "name": "Luck Be a Lady",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-01",
+      "id": 55363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379071.jpg",
+      "name": "Year of the Tiger",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-15",
+      "id": 55364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379078.jpg",
+      "name": "Decks and Violence",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-05",
+      "id": 55365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380050.jpg",
+      "name": "Blood and Sand",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-12",
+      "id": 55366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380054.jpg",
+      "name": "Hellraisers and Heartbreakers",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-26",
+      "id": 55367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380062.jpg",
+      "name": "The Night the Lights Went Out in Vegas",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-02",
+      "id": 55368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380066.jpg",
+      "name": "Things That Go Jump in the Night",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-09",
+      "id": 55369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380076.jpg",
+      "name": "Die Fast, Die Furious",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-16",
+      "id": 55370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380084.jpg",
+      "name": "New Orleans",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-01",
+      "id": 55371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380426.jpg",
+      "name": "You Can't Take It with You",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-15",
+      "id": 55372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380744.jpg",
+      "name": "Nevada State",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-22",
+      "id": 55373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380795.jpg",
+      "name": "Sons and Lovers",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-19",
+      "id": 55374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380796.jpg",
+      "name": "The Strange Life of Bob",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-26",
+      "id": 55375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380846.jpg",
+      "name": "Family Jewels",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-10",
+      "id": 55376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380924.jpg",
+      "name": "The Big Bang",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-17",
+      "id": 55377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380935.jpg",
+      "name": "Always Faithful",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-13",
+      "id": 55378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381139.jpg",
+      "name": "Have You Ever Seen the Rain?",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-20",
+      "id": 55379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381695.jpg",
+      "name": "The Count of Montecito",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-27",
+      "id": 55380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381698.jpg",
+      "name": "Blood Is Thicker",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-04",
+      "id": 55381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381705.jpg",
+      "name": "Catch of the Day",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 55382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381710.jpg",
+      "name": "Good Run of Bad Luck",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-18",
+      "id": 55383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1381722.jpg",
+      "name": "Games People Play",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-01",
+      "id": 55384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382373.jpg",
+      "name": "Montecito Lancers",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-08",
+      "id": 55385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382375.jpg",
+      "name": "Two of a Kind",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-15",
+      "id": 55386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382378.jpg",
+      "name": "Degas Away with It",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-29",
+      "id": 55387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382379.jpg",
+      "name": "Silver Star",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-12-06",
+      "id": 55388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382381.jpg",
+      "name": "My Beautiful Launderette",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-03",
+      "id": 55389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382398.jpg",
+      "name": "When You Got to Go, You Got to Go",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-10",
+      "id": 55390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382571.jpg",
+      "name": "Sperm Whales and Spearmint Rhinos",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-17",
+      "id": 55391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382580.jpg",
+      "name": "The Lie Is Cast",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-24",
+      "id": 55392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382598.jpg",
+      "name": "Whale of a Time",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-07",
+      "id": 55393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382609.jpg",
+      "name": "Can You See What I See?",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-14",
+      "id": 55394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382619.jpg",
+      "name": "Tainted Love",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-21",
+      "id": 55395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382653.jpg",
+      "name": "To Protect and Serve Manicotti",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-14",
+      "id": 55396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382655.jpg",
+      "name": "One Nation, Under Surveillance",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-28",
+      "id": 55397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382680.jpg",
+      "name": "Hit Me!",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-25",
+      "id": 55398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382781.jpg",
+      "name": "Hide and Sneak",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-02",
+      "id": 55399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382793.jpg",
+      "name": "Letters, Lawyers and Loose Women",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-09",
+      "id": 55400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382808.jpg",
+      "name": "Magic Carpet Fred",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-23",
+      "id": 55401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382821.jpg",
+      "name": "Centennial",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-19",
+      "id": 55402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1382885.jpg",
+      "name": "Viva Las Vegas",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-09-26",
+      "id": 55403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383180.jpg",
+      "name": "Fake the Money and Run",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-03",
+      "id": 55404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383213.jpg",
+      "name": "Double Down, Triple Threat",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-10",
+      "id": 55405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383219.jpg",
+      "name": "Whatever Happened to Seymour Magoon?",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-17",
+      "id": 55406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383225.jpg",
+      "name": "Big Ed De-cline",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-24",
+      "id": 55407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383758.jpg",
+      "name": "The Real McCoy",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-07",
+      "id": 55408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383762.jpg",
+      "name": "Everything Old Is You Again",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-14",
+      "id": 55409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383777.jpg",
+      "name": "Bold, Beautiful, Blue",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-21",
+      "id": 55410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383784.jpg",
+      "name": "Mothwoman (1)",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-28",
+      "id": 55411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383791.jpg",
+      "name": "For Sail by Owner (2)",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-05",
+      "id": 55412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383976.jpg",
+      "name": "Down and Dirty",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-02",
+      "id": 55413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383979.jpg",
+      "name": "Bait and Switch",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-09",
+      "id": 55414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383983.jpg",
+      "name": "The Bitch Is Back",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-23",
+      "id": 55415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383986.jpg",
+      "name": "And Here's Mike with the Weather",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-06",
+      "id": 55416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383991.jpg",
+      "name": "Urban Legends",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-03",
+      "id": 55417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383995.jpg",
+      "name": "Coyote Ugly",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-10",
+      "id": 55418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383997.jpg",
+      "name": "Lyle & Substance",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-17",
+      "id": 55419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384157.jpg",
+      "name": "Like a Virgin",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-31",
+      "id": 55420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384166.jpg",
+      "name": "Cash Springs Eternal",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-07",
+      "id": 55421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384174.jpg",
+      "name": "All Quiet on the Montecito Front",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-28",
+      "id": 55422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384180.jpg",
+      "name": "Chaos Theory",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-05",
+      "id": 55423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384182.jpg",
+      "name": "Fidelity, Security, Delivery",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-12",
+      "id": 55424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384190.jpg",
+      "name": "Father of the Bride",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-27",
+      "id": 55425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385493.jpg",
+      "name": "Father of the Bride Redux (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-03",
+      "id": 55426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385546.jpg",
+      "name": "Died in Plain Sight (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-10",
+      "id": 55427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385550.jpg",
+      "name": "The Story of Owe",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-17",
+      "id": 55428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385568.jpg",
+      "name": "A History of Violins",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-01",
+      "id": 55429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385586.jpg",
+      "name": "Delinda's Box (1)",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-01",
+      "id": 55430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385592.jpg",
+      "name": "Delinda's Box (2)",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-08",
+      "id": 55431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385817.jpg",
+      "name": "Meatball Montecito",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-15",
+      "id": 55432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385824.jpg",
+      "name": "White Christmas",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-05",
+      "id": 55433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385827.jpg",
+      "name": "Wines and Misdemeanors",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-12",
+      "id": 55434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385830.jpg",
+      "name": "Fleeting Cheating Meeting",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-19",
+      "id": 55435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385831.jpg",
+      "name": "Wagers of Sin",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-02",
+      "id": 55436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386129.jpg",
+      "name": "The Chicken Is Making My Back Hurt",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-09",
+      "id": 55437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386137.jpg",
+      "name": "Pharaoh 'Nuff",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-16",
+      "id": 55438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386148.jpg",
+      "name": "The Burning Bedouin",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-23",
+      "id": 55439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386162.jpg",
+      "name": "Bare Chested in the Park",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-02",
+      "id": 55440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386171.jpg",
+      "name": "Junk in the Trunk",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-09",
+      "id": 55441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386184.jpg",
+      "name": "Heroes",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-09-28",
+      "id": 55442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386467.jpg",
+      "name": "A Hero Ain't Nothing But a Sandwich",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-09-28",
+      "id": 55443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386484.jpg",
+      "name": "Shrink Rap",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-05",
+      "id": 55444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386702.jpg",
+      "name": "The Glass Is Always Cleaner",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-12",
+      "id": 55445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386706.jpg",
+      "name": "Head Games",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 55446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386713.jpg",
+      "name": "Run, Cooper, Run",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 55447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386715.jpg",
+      "name": "When Life Gives You Lemon Bars",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 55448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386720.jpg",
+      "name": "Adventures in the Skin Trade",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 55449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386933.jpg",
+      "name": "It's Not Easy Being Green",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 55450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386941.jpg",
+      "name": "My Uncle's a Gas (1)",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 55451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386945.jpg",
+      "name": "The High Price of Gas (2)",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-12-07",
+      "id": 55452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387018.jpg",
+      "name": "A Cannon Carol",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-04",
+      "id": 55453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387022.jpg",
+      "name": "I Could Eat a Horse",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-11",
+      "id": 55454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387028.jpg",
+      "name": "3 Babes, 100 Guns and a Fat Chick",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-18",
+      "id": 55455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387058.jpg",
+      "name": "Secrets, Lies and Lamaze",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-25",
+      "id": 55456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387073.jpg",
+      "name": "Guess Who's Coming to Breakfast",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-01",
+      "id": 55457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387091.jpg",
+      "name": "2 on 2",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-08",
+      "id": 55458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387093.jpg",
+      "name": "Win, Place, Bingo",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-15",
+      "id": 55459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387107.jpg",
+      "name": "Three Weddings and a Funeral (1)",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-15",
+      "id": 55460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1387112.jpg",
+      "name": "Three Weddings and a Funeral (2)",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-584",
+  "live": true,
+  "overview": "Take a spin on the wheel of TV's most electrifying series ever, Las Vegas. The slots are hot and the girls are even hotter starring some of today's biggest guest stars. Follow the fast-paced exploits and action-packed escapades at the Montecito Hotel and Casino with an elite Las Vegas surveillance team, led by commanding Big Ed Deline and his slick, good-looking right hand man, Danny McCoy. Along with the sexiest support team to hit the Strip, they're out to catch card-counting cheaters, costly streaks of random luck and the schemes of rival casinos. It's Sin City like you've never seen it before in the series Variety declares is \"Bottom line: Jackpot\".",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11905.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "584",
+  "title": "Las Vegas",
+  "type": "series",
+  "year": 2003
 }

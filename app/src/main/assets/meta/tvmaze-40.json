@@ -1,22 +1,356 @@
 {
-  "schema": 1,
-  "id": "tvmaze-40",
-  "source": "tvmaze",
-  "sourceId": "40",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Death Note",
-  "year": 2006,
-  "type": "series",
-  "overview": "Death Note is an anime series based around a manga of the same name whereby a human finds a death god's notebook. Any person's name written in this notebook will die. The main character who finds this noteboook is Light Yagami who faces off against an unfaced character named L who tries to challenge him.",
-  "poster": "file:///android_asset/posters/tvmaze-40.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-10-03",
+      "id": 1829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338363.jpg",
+      "name": "Rebirth",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 1830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338373.jpg",
+      "name": "Confrontation",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 1831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338602.jpg",
+      "name": "Dealings",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 1832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338608.jpg",
+      "name": "Pursuit",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-31",
+      "id": 1833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338616.jpg",
+      "name": "Tactics",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-07",
+      "id": 1834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338643.jpg",
+      "name": "Unraveling",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-14",
+      "id": 1835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338649.jpg",
+      "name": "Overcast",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-21",
+      "id": 1836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338659.jpg",
+      "name": "Glare",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 1837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338689.jpg",
+      "name": "Encounter",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-05",
+      "id": 1838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339058.jpg",
+      "name": "Doubt",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-12",
+      "id": 1839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339063.jpg",
+      "name": "Assault",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-26",
+      "id": 1840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339271.jpg",
+      "name": "Love",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-09",
+      "id": 1841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339301.jpg",
+      "name": "Confession",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-16",
+      "id": 1842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339308.jpg",
+      "name": "Friend",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-23",
+      "id": 1843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339317.jpg",
+      "name": "Wager",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-30",
+      "id": 1844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339549.jpg",
+      "name": "Decision",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 1845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339555.jpg",
+      "name": "Execution",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 1846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339613.jpg",
+      "name": "Ally",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-20",
+      "id": 1847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339627.jpg",
+      "name": "Matsuda",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-27",
+      "id": 1848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339887.jpg",
+      "name": "Makeshift",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-06",
+      "id": 1849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/536/1341932.jpg",
+      "name": "Performance",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-13",
+      "id": 1850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/536/1341934.jpg",
+      "name": "Guidance",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-20",
+      "id": 1851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342652.jpg",
+      "name": "Frenzy",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-27",
+      "id": 1852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342661.jpg",
+      "name": "Revival",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-03",
+      "id": 1853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342664.jpg",
+      "name": "Silence",
+      "number": 25,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-10",
+      "id": 1854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342667.jpg",
+      "name": "Renewal",
+      "number": 26,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-17",
+      "id": 1855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342681.jpg",
+      "name": "Abduction",
+      "number": 27,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-24",
+      "id": 1856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342916.jpg",
+      "name": "Impatience",
+      "number": 28,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-01",
+      "id": 1857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342920.jpg",
+      "name": "Father",
+      "number": 29,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-08",
+      "id": 1858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342938.jpg",
+      "name": "Justice",
+      "number": 30,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-15",
+      "id": 1859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342939.jpg",
+      "name": "Transfer",
+      "number": 31,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-22",
+      "id": 1860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342957.jpg",
+      "name": "Selection",
+      "number": 32,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-29",
+      "id": 1861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342979.jpg",
+      "name": "Scorn",
+      "number": 33,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-05",
+      "id": 1862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1342995.jpg",
+      "name": "Vigilance",
+      "number": 34,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-12",
+      "id": 1863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1343132.jpg",
+      "name": "Malice",
+      "number": 35,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-19",
+      "id": 1864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1343139.jpg",
+      "name": "1.28",
+      "number": 36,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-26",
+      "id": 1865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1343153.jpg",
+      "name": "New World",
+      "number": 37,
+      "runtime": 30,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Anime",
     "Fantasy",
     "Thriller"
   ],
+  "id": "tvmaze-40",
+  "live": true,
+  "overview": "Death Note is an anime series based around a manga of the same name whereby a human finds a death god's notebook. Any person's name written in this notebook will die. The main character who finds this noteboook is Light Yagami who faces off against an unfaced character named L who tries to challenge him.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/499/1249019.jpg",
   "rating": 8.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "40",
+  "title": "Death Note",
+  "type": "series",
+  "year": 2006
 }

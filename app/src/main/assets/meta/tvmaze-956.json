@@ -1,22 +1,1481 @@
 {
-  "schema": 1,
-  "id": "tvmaze-956",
-  "source": "tvmaze",
-  "sourceId": "956",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Magnum, P.I.",
-  "year": 1980,
-  "type": "series",
-  "overview": "Pursued by thugs and lovely ladies alike, Thomas Magnum is a witty but tough private investigator in Hawaii who works for a mysterious novelist.",
-  "poster": "file:///android_asset/posters/tvmaze-956.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1980-12-11",
+      "id": 92849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69836.jpg",
+      "name": "Don't Eat the Snow in Hawaii",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-11",
+      "id": 92850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69837.jpg",
+      "name": "Don't Eat the Snow in Hawaii",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-18",
+      "id": 92851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69838.jpg",
+      "name": "China Doll",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-25",
+      "id": 92852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69839.jpg",
+      "name": "Thank Heaven for Little Girls, and Big Ones Too",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-01-08",
+      "id": 92853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69840.jpg",
+      "name": "No Need to Know",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-01-15",
+      "id": 92854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69841.jpg",
+      "name": "Skin Deep",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-01-22",
+      "id": 92855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69842.jpg",
+      "name": "Never Again, Never Again",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-01-29",
+      "id": 92856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69843.jpg",
+      "name": "The Ugliest Dog in Hawaii",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-02-05",
+      "id": 92857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69844.jpg",
+      "name": "Missing in Action",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-02-12",
+      "id": 92858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69845.jpg",
+      "name": "Lest We Forget",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-02-19",
+      "id": 92859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69846.jpg",
+      "name": "The Curse of the King Kamehameha Club",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-02-26",
+      "id": 92860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69847.jpg",
+      "name": "Thicker Than Blood",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-03-12",
+      "id": 92861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69848.jpg",
+      "name": "All Roads Lead to Floyd",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-03-19",
+      "id": 92862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69849.jpg",
+      "name": "Adelaide",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-03-26",
+      "id": 92863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69850.jpg",
+      "name": "Don't Say Goodbye",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-04-02",
+      "id": 92864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69851.jpg",
+      "name": "The Black Orchid",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-04-09",
+      "id": 92865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69852.jpg",
+      "name": "J. \"Digger\" Doyle",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-04-16",
+      "id": 92866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69853.jpg",
+      "name": "Beauty Knows No Pain",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1981-10-08",
+      "id": 92867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69854.jpg",
+      "name": "Billy Joe Bob",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-10-15",
+      "id": 92868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69855.jpg",
+      "name": "Dead Man's Channel",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-10-22",
+      "id": 92869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69856.jpg",
+      "name": "The Woman on the Beach",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-10-29",
+      "id": 92870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69857.jpg",
+      "name": "From Moscow to Maui",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-11-05",
+      "id": 92871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69858.jpg",
+      "name": "Memories Are Forever (1)",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-11-05",
+      "id": 92872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69859.jpg",
+      "name": "Memories Are Forever (2)",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-11-12",
+      "id": 92873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69860.jpg",
+      "name": "Tropical Madness",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-11-19",
+      "id": 92874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69861.jpg",
+      "name": "Wave Goodbye",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-11-26",
+      "id": 92875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69862.jpg",
+      "name": "Mad Buck Gibson",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-12-03",
+      "id": 92876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69863.jpg",
+      "name": "The Taking of Dick McWilliams",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-12-17",
+      "id": 92877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69864.jpg",
+      "name": "The Sixth Position",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1981-12-24",
+      "id": 92878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69865.jpg",
+      "name": "Ghost Writer",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-01-07",
+      "id": 92879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69866.jpg",
+      "name": "The Jororo Kill",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-01-14",
+      "id": 92880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69867.jpg",
+      "name": "Computer Date",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-01-28",
+      "id": 92881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69868.jpg",
+      "name": "Try to Remember",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-02-04",
+      "id": 92882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69869.jpg",
+      "name": "Italian Ice",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-02-11",
+      "id": 92883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69870.jpg",
+      "name": "One More Summer",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-02-18",
+      "id": 92884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69871.jpg",
+      "name": "Texas Lightning",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-02-25",
+      "id": 92885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69872.jpg",
+      "name": "Double Jeopardy",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-03-04",
+      "id": 92886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69873.jpg",
+      "name": "The Last Page",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-03-18",
+      "id": 92887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69874.jpg",
+      "name": "The Elmo Ziller Story",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-04-01",
+      "id": 92888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69875.jpg",
+      "name": "Three Minus Two",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1982-09-30",
+      "id": 92889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69876.jpg",
+      "name": "Did You See the Sunrise? (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-09-30",
+      "id": 92890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69877.jpg",
+      "name": "Did You See the Sunrise? (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-10-07",
+      "id": 92891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69878.jpg",
+      "name": "Ki'i's Don't Lie (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-10-14",
+      "id": 92892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69880.jpg",
+      "name": "The Eighth Part of the Village",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-10-21",
+      "id": 92893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69881.jpg",
+      "name": "Past Tense",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-10-28",
+      "id": 92894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69882.jpg",
+      "name": "Black on White",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-11-04",
+      "id": 92895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69883.jpg",
+      "name": "Flashback",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-11-11",
+      "id": 92896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69884.jpg",
+      "name": "Foiled Again",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-11-18",
+      "id": 92897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69885.jpg",
+      "name": "Mr. White Death",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-12-02",
+      "id": 92898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69886.jpg",
+      "name": "Mixed Doubles",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-12-09",
+      "id": 92899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69887.jpg",
+      "name": "Almost Home",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1982-12-16",
+      "id": 92900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69888.jpg",
+      "name": "Heal Thyself",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-01-06",
+      "id": 92901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69889.jpg",
+      "name": "Of Sound Mind",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-01-27",
+      "id": 92902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69890.jpg",
+      "name": "The Arrow That is Not Aimed",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-02-03",
+      "id": 92903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69891.jpg",
+      "name": "Basket Case",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-02-10",
+      "id": 92904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69892.jpg",
+      "name": "Birdman of Budapest",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-02-17",
+      "id": 92905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69893.jpg",
+      "name": "I Do?",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-02-24",
+      "id": 92906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69894.jpg",
+      "name": "Forty Years from Sand Island",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-03-10",
+      "id": 92907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69895.jpg",
+      "name": "Legacy from a Friend",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-03-17",
+      "id": 92908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69896.jpg",
+      "name": "Two Birds of a Feather",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-03-31",
+      "id": 92909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69897.jpg",
+      "name": "...By Its Cover",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-04-07",
+      "id": 92910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69898.jpg",
+      "name": "The Big Blow",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-04-28",
+      "id": 92911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69899.jpg",
+      "name": "Faith and Begorrah",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1983-09-29",
+      "id": 92912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69901.jpg",
+      "name": "Home from the Sea",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-10-06",
+      "id": 92913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69902.jpg",
+      "name": "Luther Gillis: File #521",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-10-13",
+      "id": 92914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69903.jpg",
+      "name": "Smaller Than Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-10-20",
+      "id": 92915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69904.jpg",
+      "name": "Distant Relative",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-11-03",
+      "id": 92916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69905.jpg",
+      "name": "Limited Engagement",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-11-10",
+      "id": 92917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69920.jpg",
+      "name": "Letter to a Duchess",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-11-17",
+      "id": 92918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69907.jpg",
+      "name": "Squeeze Play",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-12-01",
+      "id": 92919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69908.jpg",
+      "name": "A Sense of Debt",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-12-08",
+      "id": 92920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69909.jpg",
+      "name": "The Look",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1983-12-15",
+      "id": 92921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69929.jpg",
+      "name": "Operation: Silent Night",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-01-05",
+      "id": 92922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69931.jpg",
+      "name": "Jororo Farewell",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-01-19",
+      "id": 92923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69933.jpg",
+      "name": "The Case of the Red Faced Thespian",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-01-26",
+      "id": 92924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69917.jpg",
+      "name": "No More Mr. Nice Guy",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-02-02",
+      "id": 92925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69919.jpg",
+      "name": "Rembrandt's Girl",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-02-09",
+      "id": 92926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69921.jpg",
+      "name": "Paradise Blues",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-02-16",
+      "id": 92927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69922.jpg",
+      "name": "The Return of Luther Gillis",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-02-23",
+      "id": 92928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69924.jpg",
+      "name": "Let the Punishment Fit the Crime",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-03-08",
+      "id": 92929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69926.jpg",
+      "name": "Holmes is Where the Heart Is",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-03-15",
+      "id": 92930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69928.jpg",
+      "name": "On Face Value",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-03-29",
+      "id": 92931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69930.jpg",
+      "name": "Dream a Little Dream",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-05-03",
+      "id": 92932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69932.jpg",
+      "name": "I Witness",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1984-09-27",
+      "id": 92933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69945.jpg",
+      "name": "Echoes of the Mind (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-10-04",
+      "id": 92934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69946.jpg",
+      "name": "Echoes of the Mind (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-10-11",
+      "id": 92935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69947.jpg",
+      "name": "Mac's Back",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-10-18",
+      "id": 92936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69948.jpg",
+      "name": "The Legacy of Garwood Huddle",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-10-25",
+      "id": 92937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69949.jpg",
+      "name": "Under World",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-11-01",
+      "id": 92938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69950.jpg",
+      "name": "Fragments",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-11-08",
+      "id": 92939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69951.jpg",
+      "name": "Blind Justice",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-11-15",
+      "id": 92940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69952.jpg",
+      "name": "Murder 101",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-11-29",
+      "id": 92941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69953.jpg",
+      "name": "Tran Quoc Jones",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-12-06",
+      "id": 92942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69954.jpg",
+      "name": "Luther Gillis: File #001",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1984-12-13",
+      "id": 92943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69955.jpg",
+      "name": "Kiss of the Sabre",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-01-03",
+      "id": 92944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69956.jpg",
+      "name": "Little Games",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-01-10",
+      "id": 92945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69957.jpg",
+      "name": "Professor Jonathan Higgins",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-01-24",
+      "id": 92946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69958.jpg",
+      "name": "Compulsion",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-01-31",
+      "id": 92947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69959.jpg",
+      "name": "All for One (1)",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-02-07",
+      "id": 92948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69960.jpg",
+      "name": "All for One (2)",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-02-14",
+      "id": 92949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69961.jpg",
+      "name": "The Love-for-Sale Boat",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-02-21",
+      "id": 92950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69962.jpg",
+      "name": "Let Me Hear the Music",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-03-07",
+      "id": 92951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69963.jpg",
+      "name": "Ms. Jones",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-03-14",
+      "id": 92952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69964.jpg",
+      "name": "The Man from Marseilles",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-03-28",
+      "id": 92953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69965.jpg",
+      "name": "Torah, Torah, Torah",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-04-04",
+      "id": 92954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69966.jpg",
+      "name": "A Pretty Good Dancing Chicken",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1985-09-26",
+      "id": 92955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69968.jpg",
+      "name": "Deja Vu (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-09-26",
+      "id": 92956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69969.jpg",
+      "name": "Deja Vu (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-10-03",
+      "id": 92957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69970.jpg",
+      "name": "Old Acquaintance",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-10-10",
+      "id": 92958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69971.jpg",
+      "name": "The Kona Winds",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-10-17",
+      "id": 92959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69972.jpg",
+      "name": "The Hotel Dick",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-10-24",
+      "id": 92960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69973.jpg",
+      "name": "Round and Around",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-10-31",
+      "id": 92961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69974.jpg",
+      "name": "Going Home",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-11-07",
+      "id": 92962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69975.jpg",
+      "name": "Paniolo",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-11-14",
+      "id": 92963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69976.jpg",
+      "name": "The Treasure of Kalaniopu'u",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-11-21",
+      "id": 92964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69977.jpg",
+      "name": "Blood and Honor",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1985-11-28",
+      "id": 92965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69978.jpg",
+      "name": "Rapture",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-01-02",
+      "id": 92966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69979.jpg",
+      "name": "I Never Wanted to Go to France, Anyway",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-01-09",
+      "id": 92967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69980.jpg",
+      "name": "Summer School",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-01-23",
+      "id": 92968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69981.jpg",
+      "name": "Mad Dogs and Englishmen",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-01-30",
+      "id": 92969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69982.jpg",
+      "name": "All Thieves on Deck",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-02-13",
+      "id": 92970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69983.jpg",
+      "name": "This Island Isn't Big Enough",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-02-20",
+      "id": 92971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69984.jpg",
+      "name": "Way of the Stalking Horse",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-03-13",
+      "id": 92972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69985.jpg",
+      "name": "Find Me a Rainbow",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-03-20",
+      "id": 92973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69986.jpg",
+      "name": "Who is Don Luis Higgins, and Why is He Doing These Terrible Things to Me?",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-04-03",
+      "id": 92974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69987.jpg",
+      "name": "A Little Bit of Luck, a Little Bit of Grief",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-04-10",
+      "id": 92975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69988.jpg",
+      "name": "Photo Play",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1986-10-01",
+      "id": 92976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69990.jpg",
+      "name": "L.A. (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-10-01",
+      "id": 92977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69991.jpg",
+      "name": "L.A. (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-10-08",
+      "id": 92978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69992.jpg",
+      "name": "One Picture is Worth",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-10-15",
+      "id": 92979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69993.jpg",
+      "name": "Straight and Narrow",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-10-22",
+      "id": 92980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69994.jpg",
+      "name": "A.A.P.I.",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-10-29",
+      "id": 92981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69995.jpg",
+      "name": "Death and Taxes",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-11-05",
+      "id": 92982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69996.jpg",
+      "name": "Little Girl Who",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-11-12",
+      "id": 92983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69997.jpg",
+      "name": "Paper War",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-11-19",
+      "id": 92984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69998.jpg",
+      "name": "Novel Connection",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-11-26",
+      "id": 92985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69999.jpg",
+      "name": "Kapu",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-12-03",
+      "id": 92986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70000.jpg",
+      "name": "Missing Melody",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-12-10",
+      "id": 92987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70001.jpg",
+      "name": "Death of the Flowers",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1986-12-17",
+      "id": 92988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70002.jpg",
+      "name": "Autumn Warrior",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-01-14",
+      "id": 92989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70003.jpg",
+      "name": "Murder by Night",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-01-21",
+      "id": 92990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70004.jpg",
+      "name": "On the Fly",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-02-04",
+      "id": 92991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70005.jpg",
+      "name": "Solo Flight",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-02-11",
+      "id": 92992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70006.jpg",
+      "name": "Forty",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-02-25",
+      "id": 92993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70007.jpg",
+      "name": "Laura",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-03-11",
+      "id": 92994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70008.jpg",
+      "name": "Out of Sync",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-03-18",
+      "id": 92995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70009.jpg",
+      "name": "The Aunt Who Came to Dinner",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-04-01",
+      "id": 92996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70010.jpg",
+      "name": "The People vs. Orville Wright",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-04-15",
+      "id": 92997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70011.jpg",
+      "name": "Limbo",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1987-10-07",
+      "id": 92998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70012.jpg",
+      "name": "Infinity and Jelly Doughnuts",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1987-10-14",
+      "id": 92999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70013.jpg",
+      "name": "Pleasure Principle",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1987-10-28",
+      "id": 93000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70014.jpg",
+      "name": "Innocence, a Broad",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1987-11-04",
+      "id": 93001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70015.jpg",
+      "name": "Tigers Fan",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1987-11-11",
+      "id": 93002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70016.jpg",
+      "name": "Forever in Time",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1987-11-18",
+      "id": 93003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70017.jpg",
+      "name": "The Love That Lies",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-01-13",
+      "id": 93004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70018.jpg",
+      "name": "A Girl Named Sue",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-01-20",
+      "id": 93005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70019.jpg",
+      "name": "Unfinished Business",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-01-27",
+      "id": 93006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70020.jpg",
+      "name": "The Great Hawaiian Adventure Company",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-02-10",
+      "id": 93007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70021.jpg",
+      "name": "Legend of the Lost Art",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-02-17",
+      "id": 93008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70022.jpg",
+      "name": "Transitions",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-05-01",
+      "id": 93009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70023.jpg",
+      "name": "Resolutions (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1988-05-01",
+      "id": 93010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70024.jpg",
+      "name": "Resolutions (2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Mystery"
   ],
+  "id": "tvmaze-956",
+  "live": true,
+  "overview": "Pursued by thugs and lovely ladies alike, Thomas Magnum is a witty but tough private investigator in Hawaii who works for a mysterious novelist.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/16309.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "956",
+  "title": "Magnum, P.I.",
+  "type": "series",
+  "year": 1980
 }

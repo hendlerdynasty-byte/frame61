@@ -1,21 +1,571 @@
 {
-  "schema": 1,
-  "id": "tvmaze-548",
-  "source": "tvmaze",
-  "sourceId": "548",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Skins",
-  "year": 2007,
-  "type": "series",
-  "overview": "Irreverent comedy drama from the makers of Shameless, which follows the messy lives, loves, delirious highs and inevitable lows of a group of raucous teenage friends in Bristol.",
-  "poster": "file:///android_asset/posters/tvmaze-548.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-01-25",
+      "id": 50661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486962.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-01",
+      "id": 50662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486963.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-08",
+      "id": 50663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486964.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-15",
+      "id": 50664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486965.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-22",
+      "id": 50665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486966.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-01",
+      "id": 50666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486967.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-08",
+      "id": 50667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486968.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-15",
+      "id": 50668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486969.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-22",
+      "id": 50669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486970.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-11",
+      "id": 50670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486971.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-18",
+      "id": 50671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486972.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-25",
+      "id": 50672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486973.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-03",
+      "id": 50673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486974.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-10",
+      "id": 50674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486975.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-17",
+      "id": 50675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486976.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-24",
+      "id": 50676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486977.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-31",
+      "id": 50677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486978.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-07",
+      "id": 50678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486979.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-14",
+      "id": 50679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486980.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-22",
+      "id": 50680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486981.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-01-29",
+      "id": 50681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486982.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-05",
+      "id": 50682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486983.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-12",
+      "id": 50683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486984.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-19",
+      "id": 50684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486985.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-26",
+      "id": 50685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486986.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-05",
+      "id": 50686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486987.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-12",
+      "id": 50687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486988.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-19",
+      "id": 50688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486989.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-26",
+      "id": 50689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486990.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-28",
+      "id": 50690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486991.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-04",
+      "id": 50691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486992.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-11",
+      "id": 50692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486993.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-18",
+      "id": 50693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486994.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-25",
+      "id": 50694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486995.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-03-04",
+      "id": 50695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486996.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-03-11",
+      "id": 50696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486997.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-03-18",
+      "id": 50697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486998.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-27",
+      "id": 50698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/486999.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-03",
+      "id": 50699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487000.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-10",
+      "id": 50700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487001.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-17",
+      "id": 50701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487002.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-24",
+      "id": 50702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487003.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-03-03",
+      "id": 50703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487005.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-03-10",
+      "id": 50704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487009.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-03-17",
+      "id": 50705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487011.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-23",
+      "id": 50706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487016.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-01-30",
+      "id": 50707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487019.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-02-06",
+      "id": 50708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487021.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-02-13",
+      "id": 50709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487022.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-02-20",
+      "id": 50710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487023.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-02-27",
+      "id": 50711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487024.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-03-05",
+      "id": 50712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487025.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-03-12",
+      "id": 50713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487026.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-03-19",
+      "id": 50714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487027.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-03-26",
+      "id": 50715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487028.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 50716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487029.jpg",
+      "name": "Skins: Fire Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 50717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487030.jpg",
+      "name": "Skins: Fire Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 50718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487031.jpg",
+      "name": "Skins: Pure Part One",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-07-22",
+      "id": 50719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487032.jpg",
+      "name": "Skins: Pure Part Two",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 50720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487033.jpg",
+      "name": "Skins: Rise Part One",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 50721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487034.jpg",
+      "name": "Skins: Rise Part Two",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-548",
+  "live": true,
+  "overview": "Irreverent comedy drama from the makers of Shameless, which follows the messy lives, loves, delirious highs and inevitable lows of a group of raucous teenage friends in Bristol.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11516.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "548",
+  "title": "Skins",
+  "type": "series",
+  "year": 2007
 }

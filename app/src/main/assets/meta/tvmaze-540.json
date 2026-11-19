@@ -1,20 +1,2397 @@
 {
-  "schema": 1,
-  "id": "tvmaze-540",
-  "source": "tvmaze",
-  "sourceId": "540",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Frasier",
-  "year": 1993,
-  "type": "series",
-  "overview": "Frasier is a half-hour comedy series set in Seattle, which chronicles the lives of an eloquently pompous radio show host Dr. Frasier Crane, his brazen radio producer Roz and his competitive, high-brow brother Niles.",
-  "poster": "file:///android_asset/posters/tvmaze-540.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-09-16",
+      "id": 49441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239042.jpg",
+      "name": "The Good Son",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-23",
+      "id": 49442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239043.jpg",
+      "name": "Space Quest",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-30",
+      "id": 49443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239044.jpg",
+      "name": "Dinner at Eight",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-07",
+      "id": 49444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239045.jpg",
+      "name": "I Hate Frasier Crane",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-14",
+      "id": 49445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239046.jpg",
+      "name": "Here's Looking at You",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-21",
+      "id": 49446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239047.jpg",
+      "name": "The Crucible",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-28",
+      "id": 49447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239048.jpg",
+      "name": "Call Me Irresponsible",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-04",
+      "id": 49448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239049.jpg",
+      "name": "Beloved Infidel",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-11",
+      "id": 49449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239050.jpg",
+      "name": "Selling Out",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-18",
+      "id": 49450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239051.jpg",
+      "name": "Oops",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-12-02",
+      "id": 49451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239052.jpg",
+      "name": "Death Becomes Him",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-12-16",
+      "id": 49452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239053.jpg",
+      "name": "Miracle on Third or Fourth Street",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-06",
+      "id": 49453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239054.jpg",
+      "name": "Guess Who's Coming to Breakfast",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-20",
+      "id": 49454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239055.jpg",
+      "name": "Can't Buy Me Love",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-27",
+      "id": 49455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239056.jpg",
+      "name": "You Can't Tell a Crook by His Cover",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-03",
+      "id": 49456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239057.jpg",
+      "name": "The Show Where Lilith Comes Back",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-10",
+      "id": 49457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239058.jpg",
+      "name": "A Midwinter Night's Dream",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-17",
+      "id": 49458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239059.jpg",
+      "name": "And the Whimper is...",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-17",
+      "id": 49459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239060.jpg",
+      "name": "Give Him the Chair!",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-31",
+      "id": 49460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239061.jpg",
+      "name": "Fortysomething",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-04-14",
+      "id": 49461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239062.jpg",
+      "name": "Travels with Martin",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-05",
+      "id": 49462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239063.jpg",
+      "name": "Author, Author",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-12",
+      "id": 49463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239064.jpg",
+      "name": "Frasier Crane's Day Off",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-19",
+      "id": 49464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239065.jpg",
+      "name": "My Coffee with Niles",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1994-09-20",
+      "id": 49465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239066.jpg",
+      "name": "Slow Tango in South Seattle",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-09-27",
+      "id": 49466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239067.jpg",
+      "name": "The Unkindest Cut of All",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-04",
+      "id": 49467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239068.jpg",
+      "name": "The Matchmaker",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-11",
+      "id": 49468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239069.jpg",
+      "name": "Flour Child",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-18",
+      "id": 49469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239070.jpg",
+      "name": "Duke's, We Hardly Knew Ye",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-01",
+      "id": 49470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239071.jpg",
+      "name": "The Botched Language of Cranes",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-08",
+      "id": 49471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239072.jpg",
+      "name": "The Candidate",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-15",
+      "id": 49472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239073.jpg",
+      "name": "Adventures in Paradise (1)",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-22",
+      "id": 49473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239074.jpg",
+      "name": "Adventures in Paradise (2)",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-29",
+      "id": 49474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239075.jpg",
+      "name": "Burying a Grudge",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-12-13",
+      "id": 49475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239076.jpg",
+      "name": "Seat of Power",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-03",
+      "id": 49476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239077.jpg",
+      "name": "Roz in the Doghouse",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-10",
+      "id": 49477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239078.jpg",
+      "name": "Retirement is Murder",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-07",
+      "id": 49478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239079.jpg",
+      "name": "Fool Me Once, Shame on You, Fool Me Twice...",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-14",
+      "id": 49479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239080.jpg",
+      "name": "You Scratch My Book...",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-21",
+      "id": 49480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239081.jpg",
+      "name": "The Show Where Sam Shows Up",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-28",
+      "id": 49481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239082.jpg",
+      "name": "Daphne's Room",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-21",
+      "id": 49482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239083.jpg",
+      "name": "The Club",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-28",
+      "id": 49483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239084.jpg",
+      "name": "Someone to Watch Over Me",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-04-18",
+      "id": 49484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239085.jpg",
+      "name": "Breaking the Ice",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-02",
+      "id": 49485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239086.jpg",
+      "name": "An Affair to Forget",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-09",
+      "id": 49486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239087.jpg",
+      "name": "Agents in America, Part III",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-16",
+      "id": 49487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239088.jpg",
+      "name": "The Innkeepers",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-23",
+      "id": 49488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239089.jpg",
+      "name": "Dark Victory",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-19",
+      "id": 49489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239090.jpg",
+      "name": "She's the Boss",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-09-26",
+      "id": 49490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239091.jpg",
+      "name": "Shrink Rap",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-10",
+      "id": 49491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239092.jpg",
+      "name": "Martin Does It His Way",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-31",
+      "id": 49492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239093.jpg",
+      "name": "Leapin' Lizards",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-07",
+      "id": 49493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239094.jpg",
+      "name": "Kisses Sweeter Than Wine",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-14",
+      "id": 49494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239095.jpg",
+      "name": "Sleeping with the Enemy (1)",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-21",
+      "id": 49495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239096.jpg",
+      "name": "The Adventures of Bad Boy and Dirty Girl (2)",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-28",
+      "id": 49496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239097.jpg",
+      "name": "The Last Time I Saw Maris",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-12-19",
+      "id": 49497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239098.jpg",
+      "name": "Frasier Grinch",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-09",
+      "id": 49498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239099.jpg",
+      "name": "It's Hard to Say Goodbye If You Won't Leave",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-16",
+      "id": 49499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239100.jpg",
+      "name": "The Friend",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-30",
+      "id": 49500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239101.jpg",
+      "name": "Come Lie with Me",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-06",
+      "id": 49501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239102.jpg",
+      "name": "Moon Dance",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-13",
+      "id": 49502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239103.jpg",
+      "name": "The Show Where Diane Comes Back",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-20",
+      "id": 49503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239104.jpg",
+      "name": "A Word to the Wiseguy",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-27",
+      "id": 49504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239105.jpg",
+      "name": "Look Before You Leap",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-12",
+      "id": 49505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239106.jpg",
+      "name": "High Crane Drifter",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-26",
+      "id": 49506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239107.jpg",
+      "name": "Chess Pains",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-09",
+      "id": 49507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239108.jpg",
+      "name": "Crane vs. Crane",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-23",
+      "id": 49508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239109.jpg",
+      "name": "Police Story",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-30",
+      "id": 49509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239110.jpg",
+      "name": "Where There's Smoke There's Fired",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-07",
+      "id": 49510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239111.jpg",
+      "name": "Frasier Loves Roz",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-14",
+      "id": 49511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239112.jpg",
+      "name": "The Focus Group",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-21",
+      "id": 49512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239113.jpg",
+      "name": "You Can Go Home Again",
+      "number": 24,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-17",
+      "id": 49513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239114.jpg",
+      "name": "The Two Mrs. Cranes",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-09-24",
+      "id": 49514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239115.jpg",
+      "name": "Love Bites Dog",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-15",
+      "id": 49515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239116.jpg",
+      "name": "The Impossible Dream",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-22",
+      "id": 49516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239117.jpg",
+      "name": "A Crane's Critique",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-12",
+      "id": 49517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239118.jpg",
+      "name": "Head Game",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-19",
+      "id": 49518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239119.jpg",
+      "name": "Mixed Doubles",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-26",
+      "id": 49519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239120.jpg",
+      "name": "A Lilith Thanksgiving",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-10",
+      "id": 49520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239121.jpg",
+      "name": "Our Father Whose Art Ain't Heaven",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-07",
+      "id": 49521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239122.jpg",
+      "name": "Dad Loves Sherry, the Boys Just Whine",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-14",
+      "id": 49522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239123.jpg",
+      "name": "Liar! Liar!",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-21",
+      "id": 49523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239124.jpg",
+      "name": "Three Days of the Condo",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-11",
+      "id": 49524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239125.jpg",
+      "name": "Death and the Dog",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-18",
+      "id": 49525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239126.jpg",
+      "name": "Four for the Seesaw",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-25",
+      "id": 49526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239127.jpg",
+      "name": "To Kill a Talking Bird",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-03-11",
+      "id": 49527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239128.jpg",
+      "name": "Roz's Krantz & Gouldenstein Are Dead",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-01",
+      "id": 49528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239129.jpg",
+      "name": "The Unnatural",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-15",
+      "id": 49529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239130.jpg",
+      "name": "Roz's Turn",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-22",
+      "id": 49530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239131.jpg",
+      "name": "Ham Radio",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-29",
+      "id": 49531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239132.jpg",
+      "name": "Three Dates and a Breakup (1)",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-29",
+      "id": 49532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239133.jpg",
+      "name": "Three Dates and a Breakup (2)",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-06",
+      "id": 49533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239134.jpg",
+      "name": "Daphne Hates Sherry",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-13",
+      "id": 49534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239135.jpg",
+      "name": "Are You Being Served?",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-20",
+      "id": 49535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239136.jpg",
+      "name": "Ask Me No Questions",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-20",
+      "id": 49536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239137.jpg",
+      "name": "Odd Man Out",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-09-23",
+      "id": 49537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239138.jpg",
+      "name": "Frasier's Imaginary Friend",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-30",
+      "id": 49538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239139.jpg",
+      "name": "The Gift Horse",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-28",
+      "id": 49539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239140.jpg",
+      "name": "Halloween",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-04",
+      "id": 49540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239141.jpg",
+      "name": "The Kid",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-11",
+      "id": 49541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239142.jpg",
+      "name": "The 1000th Show",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-18",
+      "id": 49542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239143.jpg",
+      "name": "Voyage of the Damned",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-25",
+      "id": 49543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239144.jpg",
+      "name": "My Fair Frasier",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-12-09",
+      "id": 49544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239145.jpg",
+      "name": "Desperately Seeking Closure",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-12-16",
+      "id": 49545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239146.jpg",
+      "name": "Perspectives on Christmas",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-06",
+      "id": 49546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239147.jpg",
+      "name": "Where Every Bloke Knows Your Name",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-13",
+      "id": 49547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239148.jpg",
+      "name": "Ain't Nobody's Business If I Do",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-20",
+      "id": 49548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239149.jpg",
+      "name": "The Zoo Story",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-02-03",
+      "id": 49549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239150.jpg",
+      "name": "The Maris Counselor",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-02-24",
+      "id": 49550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239151.jpg",
+      "name": "The Ski Lodge",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-03",
+      "id": 49551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239152.jpg",
+      "name": "Room Service",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-17",
+      "id": 49552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239153.jpg",
+      "name": "Beware of Greeks",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-24",
+      "id": 49553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239154.jpg",
+      "name": "The Perfect Guy",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-04-07",
+      "id": 49554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239155.jpg",
+      "name": "Bad Dog",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-04-21",
+      "id": 49555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239156.jpg",
+      "name": "Frasier Gotta Have It",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-04-28",
+      "id": 49556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239157.jpg",
+      "name": "First Date",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-05",
+      "id": 49557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239158.jpg",
+      "name": "Roz and the Schnoz",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-12",
+      "id": 49558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239159.jpg",
+      "name": "The Life of the Party",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-19",
+      "id": 49559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239160.jpg",
+      "name": "Party, Party",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-19",
+      "id": 49560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239161.jpg",
+      "name": "Sweet Dreams",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-09-24",
+      "id": 49561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239162.jpg",
+      "name": "Good Grief",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-01",
+      "id": 49562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239163.jpg",
+      "name": "Frasier's Curse",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-08",
+      "id": 49563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239164.jpg",
+      "name": "Dial M for Martin",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-15",
+      "id": 49564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239165.jpg",
+      "name": "Hot Ticket",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-29",
+      "id": 49565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239166.jpg",
+      "name": "First, Do No Harm",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-05",
+      "id": 49566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239167.jpg",
+      "name": "Secret Admirer",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-12",
+      "id": 49567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239168.jpg",
+      "name": "How to Bury a Millionaire",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-19",
+      "id": 49568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239169.jpg",
+      "name": "The Seal Who Came to Dinner",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-10",
+      "id": 49569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239170.jpg",
+      "name": "Roz, a Loan",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-17",
+      "id": 49570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239171.jpg",
+      "name": "Merry Christmas, Mrs. Moskowitz",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-07",
+      "id": 49571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239172.jpg",
+      "name": "Good Samaritan",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-21",
+      "id": 49572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239173.jpg",
+      "name": "Our Parents, Ourselves",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-04",
+      "id": 49573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239174.jpg",
+      "name": "The Show Where Woody Shows Up",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-11",
+      "id": 49574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239175.jpg",
+      "name": "Three Valentines",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-18",
+      "id": 49575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239176.jpg",
+      "name": "To Tell the Truth",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-25",
+      "id": 49576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239177.jpg",
+      "name": "Decoys",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-11",
+      "id": 49577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239178.jpg",
+      "name": "Dinner Party",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-25",
+      "id": 49578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239179.jpg",
+      "name": "Taps at the Montana",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-08",
+      "id": 49579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239180.jpg",
+      "name": "IQ",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-29",
+      "id": 49580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239181.jpg",
+      "name": "Dr. Nora",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-06",
+      "id": 49581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239182.jpg",
+      "name": "When a Man Loves Two Women",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-13",
+      "id": 49582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239183.jpg",
+      "name": "Visions of Daphne",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-20",
+      "id": 49583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239184.jpg",
+      "name": "Shutout in Seattle (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-20",
+      "id": 49584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239185.jpg",
+      "name": "Shutout in Seattle (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1999-09-23",
+      "id": 49585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239186.jpg",
+      "name": "Momma Mia",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-09-30",
+      "id": 49586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239187.jpg",
+      "name": "Father of the Bride",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-10-07",
+      "id": 49587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239188.jpg",
+      "name": "Radio Wars",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-10-14",
+      "id": 49588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239189.jpg",
+      "name": "Everyone's a Critic",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-10-21",
+      "id": 49589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239190.jpg",
+      "name": "The Dog That Rocks the Cradle",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-11-04",
+      "id": 49590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239191.jpg",
+      "name": "Rivals",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-11-11",
+      "id": 49591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239192.jpg",
+      "name": "A Tsar is Born",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-11-18",
+      "id": 49592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239193.jpg",
+      "name": "The Late Dr. Crane",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-11-25",
+      "id": 49593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239194.jpg",
+      "name": "The Apparent Trap",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-12-09",
+      "id": 49594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239195.jpg",
+      "name": "Back Talk",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-12-16",
+      "id": 49595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239196.jpg",
+      "name": "The Fight Before Christmas",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-06",
+      "id": 49596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239197.jpg",
+      "name": "RDWRER",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-13",
+      "id": 49597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239198.jpg",
+      "name": "They're Playing Our Song",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-03",
+      "id": 49598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239199.jpg",
+      "name": "Big Crane on Campus",
+      "number": 14,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-10",
+      "id": 49599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239200.jpg",
+      "name": "Out With Dad",
+      "number": 15,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-17",
+      "id": 49600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239201.jpg",
+      "name": "Something About Dr. Mary",
+      "number": 16,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-24",
+      "id": 49601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239202.jpg",
+      "name": "Whine Club",
+      "number": 17,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-23",
+      "id": 49602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239203.jpg",
+      "name": "Hot Pursuit",
+      "number": 18,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-06",
+      "id": 49603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239204.jpg",
+      "name": "Morning Becomes Entertainment",
+      "number": 19,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-27",
+      "id": 49604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239205.jpg",
+      "name": "To Thine Old Self Be True",
+      "number": 20,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-04",
+      "id": 49605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239206.jpg",
+      "name": "Three Faces of Frasier",
+      "number": 21,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-11",
+      "id": 49606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239207.jpg",
+      "name": "Dark Side of the Moon",
+      "number": 22,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-18",
+      "id": 49607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239208.jpg",
+      "name": "Something Borrowed, Someone Blue (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-18",
+      "id": 49608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239209.jpg",
+      "name": "Something Borrowed, Someone Blue (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-24",
+      "id": 49609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239210.jpg",
+      "name": "And the Dish Ran Away with the Spoon (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-10-24",
+      "id": 49610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239211.jpg",
+      "name": "And the Dish Ran Away with the Spoon (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-10-31",
+      "id": 49611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239212.jpg",
+      "name": "The Bad Son",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-11-14",
+      "id": 49612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239213.jpg",
+      "name": "The Great Crane Robbery",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-11-21",
+      "id": 49613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239214.jpg",
+      "name": "Taking Liberties",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-11-28",
+      "id": 49614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239215.jpg",
+      "name": "Legal Tender Love and Care",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-12-05",
+      "id": 49615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239216.jpg",
+      "name": "The New Friend",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2000-12-12",
+      "id": 49616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239217.jpg",
+      "name": "Mary Christmas",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-09",
+      "id": 49617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239218.jpg",
+      "name": "Frasier's Edge",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-16",
+      "id": 49618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239219.jpg",
+      "name": "Cranes Unplugged",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-30",
+      "id": 49619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239220.jpg",
+      "name": "Motor Skills",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-06",
+      "id": 49620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239221.jpg",
+      "name": "The Show Must Go Off",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-13",
+      "id": 49621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239222.jpg",
+      "name": "Sliding Frasiers",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-20",
+      "id": 49622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239223.jpg",
+      "name": "Hungry Heart",
+      "number": 14,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-27",
+      "id": 49623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239224.jpg",
+      "name": "Hooping Cranes",
+      "number": 15,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-06",
+      "id": 49624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239225.jpg",
+      "name": "Docu.Drama",
+      "number": 16,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-27",
+      "id": 49625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239226.jpg",
+      "name": "It Takes Two to Tangle",
+      "number": 17,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-17",
+      "id": 49626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239227.jpg",
+      "name": "Forgotten But Not Gone",
+      "number": 18,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-01",
+      "id": 49627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239228.jpg",
+      "name": "Daphne Returns",
+      "number": 19,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-08",
+      "id": 49628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239229.jpg",
+      "name": "The Wizard and Roz",
+      "number": 20,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-15",
+      "id": 49629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239230.jpg",
+      "name": "Semi-Decent Proposal",
+      "number": 21,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-15",
+      "id": 49630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239231.jpg",
+      "name": "A Passing Fancy",
+      "number": 22,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-22",
+      "id": 49631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239232.jpg",
+      "name": "A Day in May",
+      "number": 23,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-22",
+      "id": 49632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239233.jpg",
+      "name": "Cranes Go Caribbean",
+      "number": 24,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2001-09-25",
+      "id": 49633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239234.jpg",
+      "name": "Don Juan in Hell (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-09-25",
+      "id": 49634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239235.jpg",
+      "name": "Don Juan in Hell (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-10-02",
+      "id": 49635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239236.jpg",
+      "name": "The First Temptation of Daphne",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-10-09",
+      "id": 49636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239237.jpg",
+      "name": "The Return of Martin Crane",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-10-16",
+      "id": 49637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239238.jpg",
+      "name": "Love Stinks",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-10-30",
+      "id": 49638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239239.jpg",
+      "name": "Room Full of Heroes",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-06",
+      "id": 49639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239240.jpg",
+      "name": "Bla-Z-Boy",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-13",
+      "id": 49640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239241.jpg",
+      "name": "The Two Hundredth",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-20",
+      "id": 49641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239242.jpg",
+      "name": "Sharing Kirby",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-27",
+      "id": 49642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239243.jpg",
+      "name": "Junior Agent",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2001-12-11",
+      "id": 49643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239244.jpg",
+      "name": "Bully for Martin",
+      "number": 11,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-08",
+      "id": 49644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239245.jpg",
+      "name": "Mother Load (1)",
+      "number": 12,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-15",
+      "id": 49645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239246.jpg",
+      "name": "Mother Load (2)",
+      "number": 13,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-22",
+      "id": 49646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239247.jpg",
+      "name": "Juvenilia",
+      "number": 14,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-05",
+      "id": 49647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239248.jpg",
+      "name": "The Proposal",
+      "number": 15,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-26",
+      "id": 49648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239249.jpg",
+      "name": "Wheels of Fortune",
+      "number": 16,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-05",
+      "id": 49649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239250.jpg",
+      "name": "Three Blind Dates",
+      "number": 17,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-12",
+      "id": 49650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239251.jpg",
+      "name": "War of the Words",
+      "number": 18,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-02",
+      "id": 49651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239252.jpg",
+      "name": "Deathtrap",
+      "number": 19,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-09",
+      "id": 49652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239253.jpg",
+      "name": "The Love You Fake",
+      "number": 20,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-30",
+      "id": 49653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239254.jpg",
+      "name": "Cheerful Goodbyes",
+      "number": 21,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-07",
+      "id": 49654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239255.jpg",
+      "name": "Frasier Has Spokane",
+      "number": 22,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-14",
+      "id": 49655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239256.jpg",
+      "name": "The Guilt Trippers",
+      "number": 23,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-21",
+      "id": 49656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239257.jpg",
+      "name": "Moons Over Seattle",
+      "number": 24,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-24",
+      "id": 49657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239258.jpg",
+      "name": "The Ring Cycle",
+      "number": 1,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-01",
+      "id": 49658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239259.jpg",
+      "name": "Enemy at the Gate",
+      "number": 2,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-08",
+      "id": 49659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239260.jpg",
+      "name": "Proxy Prexy",
+      "number": 3,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-15",
+      "id": 49660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239261.jpg",
+      "name": "Kissing Cousin",
+      "number": 4,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-29",
+      "id": 49661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239262.jpg",
+      "name": "Tales from the Crypt",
+      "number": 5,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-05",
+      "id": 49662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239263.jpg",
+      "name": "Star Mitzvah",
+      "number": 6,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-12",
+      "id": 49663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239264.jpg",
+      "name": "Bristle While You Work",
+      "number": 7,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-19",
+      "id": 49664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239265.jpg",
+      "name": "Rooms with a View",
+      "number": 8,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-26",
+      "id": 49665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239266.jpg",
+      "name": "Don't Go Breaking My Heart",
+      "number": 9,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2002-12-10",
+      "id": 49666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239267.jpg",
+      "name": "We Two Kings",
+      "number": 10,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-07",
+      "id": 49667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239268.jpg",
+      "name": "Door Jam",
+      "number": 11,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-14",
+      "id": 49668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239269.jpg",
+      "name": "The Harassed",
+      "number": 12,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-04",
+      "id": 49669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239270.jpg",
+      "name": "Lilith Needs a Favor",
+      "number": 13,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-11",
+      "id": 49670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239271.jpg",
+      "name": "Daphne Does Dinner",
+      "number": 14,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-18",
+      "id": 49671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239272.jpg",
+      "name": "Trophy Girlfriend",
+      "number": 15,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-25",
+      "id": 49672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239273.jpg",
+      "name": "Fraternal Schwinns",
+      "number": 16,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-04",
+      "id": 49673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239274.jpg",
+      "name": "Kenny on the Couch",
+      "number": 17,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-18",
+      "id": 49674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239275.jpg",
+      "name": "Roe to Perdition",
+      "number": 18,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-01",
+      "id": 49675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239276.jpg",
+      "name": "Some Assembly Required",
+      "number": 19,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-22",
+      "id": 49676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239277.jpg",
+      "name": "Farewell, Nervosa",
+      "number": 20,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-29",
+      "id": 49677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239278.jpg",
+      "name": "The Devil and Dr. Phil",
+      "number": 21,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-06",
+      "id": 49678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239279.jpg",
+      "name": "Fathers and Sons",
+      "number": 22,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-13",
+      "id": 49679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239280.jpg",
+      "name": "Analyzed Kiss",
+      "number": 23,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-20",
+      "id": 49680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239281.jpg",
+      "name": "A New Position for Roz",
+      "number": 24,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-23",
+      "id": 49681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239282.jpg",
+      "name": "No Sex Please, We're Skittish",
+      "number": 1,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-09-23",
+      "id": 49682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239283.jpg",
+      "name": "A Man, a Plan and a Gal: Julia",
+      "number": 2,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-09-30",
+      "id": 49683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239284.jpg",
+      "name": "The Doctor is Out",
+      "number": 3,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-07",
+      "id": 49684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239285.jpg",
+      "name": "The Babysitter",
+      "number": 4,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-14",
+      "id": 49685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239286.jpg",
+      "name": "The Placeholder",
+      "number": 5,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-28",
+      "id": 49686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239287.jpg",
+      "name": "I'm Listening",
+      "number": 6,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-04",
+      "id": 49687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239288.jpg",
+      "name": "Maris Returns",
+      "number": 7,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-11",
+      "id": 49688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239289.jpg",
+      "name": "Murder Most Maris",
+      "number": 8,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-18",
+      "id": 49689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239290.jpg",
+      "name": "Guns N' Neuroses",
+      "number": 9,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-12-02",
+      "id": 49690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239291.jpg",
+      "name": "Seabee Jeebies",
+      "number": 10,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2003-12-09",
+      "id": 49691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239292.jpg",
+      "name": "High Holidays",
+      "number": 11,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-01-06",
+      "id": 421501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239293.jpg",
+      "name": "Frasier-Lite",
+      "number": 12,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-01-13",
+      "id": 421502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239294.jpg",
+      "name": "The Ann Who Came to Dinner",
+      "number": 13,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-03",
+      "id": 421503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239295.jpg",
+      "name": "Freudian Sleep",
+      "number": 14,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-24",
+      "id": 421505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239296.jpg",
+      "name": "Caught in the Act",
+      "number": 15,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-02",
+      "id": 421506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239297.jpg",
+      "name": "Boo!",
+      "number": 16,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-16",
+      "id": 426257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239298.jpg",
+      "name": "Coots and Ladders",
+      "number": 17,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-30",
+      "id": 426258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239299.jpg",
+      "name": "Match Game",
+      "number": 18,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-06",
+      "id": 426259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239300.jpg",
+      "name": "Miss Right Now",
+      "number": 19,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-20",
+      "id": 426260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239301.jpg",
+      "name": "And Frasier Makes Three",
+      "number": 20,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-27",
+      "id": 426261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239302.jpg",
+      "name": "Detour",
+      "number": 21,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-04",
+      "id": 426262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239303.jpg",
+      "name": "Crock Tales",
+      "number": 22,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-13",
+      "id": 426263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239304.jpg",
+      "name": "Goodnight, Seattle (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-13",
+      "id": 426264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1239305.jpg",
+      "name": "Goodnight, Seattle (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 11
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-540",
+  "live": true,
+  "overview": "Frasier is a half-hour comedy series set in Seattle, which chronicles the lives of an eloquently pompous radio show host Dr. Frasier Crane, his brazen radio producer Roz and his competitive, high-brow brother Niles.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/611/1528088.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "540",
+  "title": "Frasier",
+  "type": "series",
+  "year": 1993
 }

@@ -1,22 +1,572 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1852",
-  "source": "tvmaze",
-  "sourceId": "1852",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Shetland",
-  "year": 2013,
-  "type": "series",
-  "overview": "The dark side of one of the most beautiful places on earth. Uncovering secrets and lies from the past.",
-  "poster": "file:///android_asset/posters/tvmaze-1852.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-10",
+      "id": 185311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373030.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-11",
+      "id": 185312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373031.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-11",
+      "id": 185313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373032.jpg",
+      "name": "Raven Black - Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-18",
+      "id": 185314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373033.jpg",
+      "name": "Raven Black - Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-25",
+      "id": 185315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373034.jpg",
+      "name": "Dead Water - Part 1",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-01",
+      "id": 185316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373035.jpg",
+      "name": "Dead Water - Part 2",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-08",
+      "id": 185317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373036.jpg",
+      "name": "Blue Lightning - Part 1",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-15",
+      "id": 185318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373037.jpg",
+      "name": "Blue Lightning - Part 2",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-15",
+      "id": 550315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373041.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 556488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373042.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-05",
+      "id": 556489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373043.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-12",
+      "id": 556490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373044.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-19",
+      "id": 556491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373045.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 556492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111006.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-13",
+      "id": 1398741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365782.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-20",
+      "id": 1405597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365454.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-27",
+      "id": 1406044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/367049.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-06",
+      "id": 1406045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368420.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1406046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370663.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-20",
+      "id": 1406047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/150/376587.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-02-12",
+      "id": 1596490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459175.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-19",
+      "id": 1602767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459394.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-26",
+      "id": 1602768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464394.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-05",
+      "id": 1602769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464393.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-12",
+      "id": 1602770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/467063.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-19",
+      "id": 1602771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469168.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-10-20",
+      "id": 2188252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/366/915620.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-10-27",
+      "id": 2193588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/368/920229.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-11-03",
+      "id": 2198235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/370/926681.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-11-10",
+      "id": 2203044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/373/932957.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-11-17",
+      "id": 2207989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/373/934995.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-11-24",
+      "id": 2210903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/377/942676.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-08-10",
+      "id": 2365578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/417/1044803.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2022-08-17",
+      "id": 2368308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/418/1046048.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2022-08-24",
+      "id": 2371040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/418/1047477.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2022-08-31",
+      "id": 2374207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/419/1049462.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2022-09-07",
+      "id": 2379565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/420/1052227.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2022-09-14",
+      "id": 2383402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053894.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2023-11-01",
+      "id": 2664664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/483/1208605.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-11-08",
+      "id": 2668466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/484/1211340.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-11-15",
+      "id": 2676616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/486/1215206.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-11-22",
+      "id": 2679472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/487/1218270.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-11-29",
+      "id": 2684399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/488/1220784.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-12-06",
+      "id": 2689718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/489/1223900.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2024-11-06",
+      "id": 3034676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355438.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2024-11-13",
+      "id": 3043746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1356383.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2024-11-20",
+      "id": 3046065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358856.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2024-11-27",
+      "id": 3047026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364207.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2024-12-04",
+      "id": 3050519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/546/1366115.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2024-12-11",
+      "id": 3058717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/547/1368625.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2025-11-05",
+      "id": 3406829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/595/1487882.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2025-11-12",
+      "id": 3425032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1491271.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2025-11-19",
+      "id": 3431192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/598/1496149.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2025-11-26",
+      "id": 3438290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498988.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2025-12-03",
+      "id": 3441606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/601/1504212.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2025-12-10",
+      "id": 3448730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/601/1504218.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2026-11-12",
+      "id": 3797314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624219.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 58,
+      "season": 11
+    },
+    {
+      "airdate": "2026-11-19",
+      "id": 3803401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1627911.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 58,
+      "season": 11
+    },
+    {
+      "airdate": "2026-11-26",
+      "id": 3805834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/652/1630789.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 58,
+      "season": 11
+    },
+    {
+      "airdate": "2026-12-03",
+      "id": 3822961,
+      "image": null,
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 57,
+      "season": 11
+    },
+    {
+      "airdate": "2026-12-10",
+      "id": 3824004,
+      "image": null,
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 58,
+      "season": 11
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-1852",
+  "live": true,
+  "overview": "The dark side of one of the most beautiful places on earth. Uncovering secrets and lies from the past.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/651/1627908.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1852",
+  "title": "Shetland",
+  "type": "series",
+  "year": 2013
 }

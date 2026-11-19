@@ -1,22 +1,293 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1365",
-  "source": "tvmaze",
-  "sourceId": "1365",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Man Seeking Woman",
-  "year": 2015,
-  "type": "series",
-  "overview": "Man Seeking Woman follows naïve twenty-something \"Josh Greenberg\" on his unrelenting quest for love. Josh soldiers through one-night stands, painful break-ups, a blind date with a troll, time travel, sex aliens, many deaths and a Japanese penis monster named Tanaka on his fantastical journey to find love.",
-  "poster": "file:///android_asset/posters/tvmaze-1365.jpg",
-  "genres": [
-    "Komödie",
-    "Fantasy",
-    "Romanze"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-01-14",
+      "id": 117659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/93063.jpg",
+      "name": "Lizard",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-21",
+      "id": 117660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42024.jpg",
+      "name": "Traib",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 117788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42025.jpg",
+      "name": "Pitbull",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 117789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42026.jpg",
+      "name": "Dram",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 117790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42027.jpg",
+      "name": "Sizzurp",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 122766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42028.jpg",
+      "name": "Gavel",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-25",
+      "id": 124034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42029.jpg",
+      "name": "Stain",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-04",
+      "id": 128954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42030.jpg",
+      "name": "Branzino",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-11",
+      "id": 134758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42031.jpg",
+      "name": "Teacup",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-18",
+      "id": 140757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42032.jpg",
+      "name": "Scepter",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-06",
+      "id": 454366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112437.jpg",
+      "name": "Wings",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-13",
+      "id": 529210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112439.jpg",
+      "name": "Feather",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-20",
+      "id": 529211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112444.jpg",
+      "name": "Scythe",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-27",
+      "id": 529212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112446.jpg",
+      "name": "Tinsel",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-03",
+      "id": 529213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112447.jpg",
+      "name": "Card",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-10",
+      "id": 529214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112448.jpg",
+      "name": "Honey",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-17",
+      "id": 529215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114692.jpg",
+      "name": "Cactus",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-24",
+      "id": 529216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115718.jpg",
+      "name": "Fuse",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-02",
+      "id": 529217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118520.jpg",
+      "name": "Eel",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-09",
+      "id": 529218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120318.jpg",
+      "name": "Balloon",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-04",
+      "id": 983102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231544.jpg",
+      "name": "Futon",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-11",
+      "id": 1014588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/232814.jpg",
+      "name": "Ranch",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-18",
+      "id": 1019152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235051.jpg",
+      "name": "Horse",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-25",
+      "id": 1019153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237369.jpg",
+      "name": "Popcorn",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-01",
+      "id": 1019154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240654.jpg",
+      "name": "Shrimp",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-08",
+      "id": 1019155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243629.jpg",
+      "name": "Pad Thai",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-15",
+      "id": 1019156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246790.jpg",
+      "name": "Bagel",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-22",
+      "id": 1019157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249265.jpg",
+      "name": "Dolphin",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-01",
+      "id": 1019158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251315.jpg",
+      "name": "Cake",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-08",
+      "id": 1019159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253584.jpg",
+      "name": "Blood",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Fantasy",
+    "Romance"
+  ],
+  "id": "tvmaze-1365",
+  "live": true,
+  "overview": "Man Seeking Woman follows naïve twenty-something \"Josh Greenberg\" on his unrelenting quest for love. Josh soldiers through one-night stands, painful break-ups, a blind date with a troll, time travel, sex aliens, many deaths and a Japanese penis monster named Tanaka on his fantastical journey to find love.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/46/116897.jpg",
   "rating": 6.7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1365",
+  "title": "Man Seeking Woman",
+  "type": "series",
+  "year": 2015
 }

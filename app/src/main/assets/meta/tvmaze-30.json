@@ -1,22 +1,1328 @@
 {
-  "schema": 1,
-  "id": "tvmaze-30",
-  "source": "tvmaze",
-  "sourceId": "30",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "American Horror Story",
-  "year": 2011,
-  "type": "series",
-  "overview": "American Horror Story is an horror television anthology series. Each season is conceived as a self-contained miniseries, following a disparate set of characters and settings, and a storyline with its own beginning, middle, and end. While some actors appear for more than one year, they play completely different roles in each season.",
-  "poster": "file:///android_asset/posters/tvmaze-30.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-10-05",
+      "id": 1567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999273.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-12",
+      "id": 1568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999274.jpg",
+      "name": "Home Invasion",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-19",
+      "id": 1569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999275.jpg",
+      "name": "Murder House",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-26",
+      "id": 1570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999277.jpg",
+      "name": "Halloween Part 1",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-02",
+      "id": 1571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999278.jpg",
+      "name": "Halloween Part 2",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-09",
+      "id": 1572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999279.jpg",
+      "name": "Piggy, Piggy",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-16",
+      "id": 1573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999280.jpg",
+      "name": "Open House",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-23",
+      "id": 1574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999281.jpg",
+      "name": "Rubber Man",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-30",
+      "id": 1575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999283.jpg",
+      "name": "Spooky Little Girl",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-07",
+      "id": 1576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999284.jpg",
+      "name": "Smoldering Children",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-14",
+      "id": 1577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999285.jpg",
+      "name": "Birth",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-21",
+      "id": 1578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999286.jpg",
+      "name": "Afterbirth",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-17",
+      "id": 1579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999287.jpg",
+      "name": "Welcome to Briarcliff",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-24",
+      "id": 1580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999288.jpg",
+      "name": "Tricks and Treats",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-31",
+      "id": 1581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999289.jpg",
+      "name": "Nor'easter",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-07",
+      "id": 1582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999290.jpg",
+      "name": "I Am Anne Frank Part 1",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-14",
+      "id": 1583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999291.jpg",
+      "name": "I Am Anne Frank Part 2",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-21",
+      "id": 1584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999292.jpg",
+      "name": "The Origins of Monstrosity",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-28",
+      "id": 1585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999293.jpg",
+      "name": "Dark Cousin",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-05",
+      "id": 1586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999294.jpg",
+      "name": "Unholy Night",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-12",
+      "id": 1587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999295.jpg",
+      "name": "The Coat Hanger",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-02",
+      "id": 1588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999296.jpg",
+      "name": "The Name Game",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-09",
+      "id": 1589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999297.jpg",
+      "name": "Spilt Milk",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-16",
+      "id": 1590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999298.jpg",
+      "name": "Continuum",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-23",
+      "id": 1591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999299.jpg",
+      "name": "Madness Ends",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-09",
+      "id": 1592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999300.jpg",
+      "name": "Bitchcraft",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 1593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999301.jpg",
+      "name": "Boy Parts",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-23",
+      "id": 1594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999302.jpg",
+      "name": "The Replacements",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-30",
+      "id": 1595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999303.jpg",
+      "name": "Fearful Pranks Ensue",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 1596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999304.jpg",
+      "name": "Burn, Witch. Burn!",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 1597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999305.jpg",
+      "name": "The Axeman Cometh",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 1598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999306.jpg",
+      "name": "The Dead",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-04",
+      "id": 1599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999307.jpg",
+      "name": "The Sacred Taking",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-11",
+      "id": 1600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999308.jpg",
+      "name": "Head",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-08",
+      "id": 1601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999309.jpg",
+      "name": "The Magical Delights of Stevie Nicks",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-15",
+      "id": 1602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999310.jpg",
+      "name": "Protect the Coven",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 1603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999311.jpg",
+      "name": "Go to Hell",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 1604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999312.jpg",
+      "name": "The Seven Wonders",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-10-08",
+      "id": 1605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999314.jpg",
+      "name": "Monsters Among Us",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-15",
+      "id": 1606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999315.jpg",
+      "name": "Massacres and Matinees",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-22",
+      "id": 1607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999316.jpg",
+      "name": "Edward Mordrake: Part 1",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-29",
+      "id": 1608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999317.jpg",
+      "name": "Edward Mordrake: Part 2",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-05",
+      "id": 1609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999318.jpg",
+      "name": "Pink Cupcakes",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-12",
+      "id": 11226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999319.jpg",
+      "name": "Bullseye",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 14881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999320.jpg",
+      "name": "Test of Strength",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-03",
+      "id": 14882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999321.jpg",
+      "name": "Blood Bath",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-10",
+      "id": 45257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999322.jpg",
+      "name": "Tupperware Party Massacre",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-17",
+      "id": 14883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999323.jpg",
+      "name": "Orphans",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-07",
+      "id": 14885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999324.jpg",
+      "name": "Magical Thinking",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-14",
+      "id": 14886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999325.jpg",
+      "name": "Show Stoppers",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-21",
+      "id": 14887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999326.jpg",
+      "name": "Curtain Call",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-10-07",
+      "id": 202975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999328.jpg",
+      "name": "Checking In",
+      "number": 1,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 202976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999329.jpg",
+      "name": "Chutes and Ladders",
+      "number": 2,
+      "runtime": 105,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 202977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999330.jpg",
+      "name": "Mommy",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-28",
+      "id": 203248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999331.jpg",
+      "name": "Devil's Night",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-04",
+      "id": 203249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999332.jpg",
+      "name": "Room Service",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 203250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999333.jpg",
+      "name": "Room 33",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-18",
+      "id": 203251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999334.jpg",
+      "name": "Flicker",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-02",
+      "id": 203252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999335.jpg",
+      "name": "The Ten Commandments Killer",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-09",
+      "id": 203253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999336.jpg",
+      "name": "She Wants Revenge",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-16",
+      "id": 203254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999337.jpg",
+      "name": "She Gets Revenge",
+      "number": 10,
+      "runtime": 73,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-06",
+      "id": 203255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999338.jpg",
+      "name": "Battle Royale",
+      "number": 11,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-13",
+      "id": 203256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999339.jpg",
+      "name": "Be Our Guest",
+      "number": 12,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-14",
+      "id": 858583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999344.jpg",
+      "name": "Chapter 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-09-21",
+      "id": 878021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999342.jpg",
+      "name": "Chapter 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-09-28",
+      "id": 878022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999345.jpg",
+      "name": "Chapter 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-05",
+      "id": 878023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198618.jpg",
+      "name": "Chapter 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-12",
+      "id": 878024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999346.jpg",
+      "name": "Chapter 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-19",
+      "id": 878025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999347.jpg",
+      "name": "Chapter 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-26",
+      "id": 878026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999348.jpg",
+      "name": "Chapter 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-02",
+      "id": 878027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999349.jpg",
+      "name": "Chapter 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-09",
+      "id": 878028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999350.jpg",
+      "name": "Chapter 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-16",
+      "id": 878029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999351.jpg",
+      "name": "Chapter 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-05",
+      "id": 1255009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003611.jpg",
+      "name": "Election Night",
+      "number": 1,
+      "runtime": 70,
+      "season": 7
+    },
+    {
+      "airdate": "2017-09-12",
+      "id": 1260245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003612.jpg",
+      "name": "Don't Be Afraid of the Dark",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-09-19",
+      "id": 1260246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003613.jpg",
+      "name": "Neighbors from Hell",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-09-26",
+      "id": 1260247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003614.jpg",
+      "name": "11/9",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-10-03",
+      "id": 1272037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003615.jpg",
+      "name": "Holes",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-10-10",
+      "id": 1272038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003616.jpg",
+      "name": "Mid-Western Assassin",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-10-17",
+      "id": 1272039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003617.jpg",
+      "name": "Valerie Solanas Died for Your Sins: Scumbag",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-10-24",
+      "id": 1272040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003618.jpg",
+      "name": "Winter of Our Discontent",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-10-31",
+      "id": 1272041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003619.jpg",
+      "name": "Drink the Kool-Aid",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1272042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003620.jpg",
+      "name": "Charles (Manson) in Charge",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1277290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003621.jpg",
+      "name": "Great Again",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2018-09-12",
+      "id": 1486732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003623.jpg",
+      "name": "The End",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-09-19",
+      "id": 1516010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003624.jpg",
+      "name": "The Morning After",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-09-26",
+      "id": 1519873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003625.jpg",
+      "name": "Forbidden Fruit",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-10-03",
+      "id": 1523713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003626.jpg",
+      "name": "Could It Be ... Satan?",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-10-10",
+      "id": 1528933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003627.jpg",
+      "name": "Boy Wonder",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-10-17",
+      "id": 1540373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003628.jpg",
+      "name": "Return to Murder House",
+      "number": 6,
+      "runtime": 80,
+      "season": 8
+    },
+    {
+      "airdate": "2018-10-24",
+      "id": 1540374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003629.jpg",
+      "name": "Traitor",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-10-31",
+      "id": 1540375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003630.jpg",
+      "name": "Sojourn",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-11-07",
+      "id": 1548305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003631.jpg",
+      "name": "Fire and Reign",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2018-11-14",
+      "id": 1548306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003632.jpg",
+      "name": "Apocalypse Then",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2019-09-18",
+      "id": 1674506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003633.jpg",
+      "name": "Camp Redwood",
+      "number": 1,
+      "runtime": 67,
+      "season": 9
+    },
+    {
+      "airdate": "2019-09-25",
+      "id": 1692737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003634.jpg",
+      "name": "Mr. Jingles",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-02",
+      "id": 1692738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003635.jpg",
+      "name": "Slashdance",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-09",
+      "id": 1696370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003636.jpg",
+      "name": "True Killers",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-16",
+      "id": 1696371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003637.jpg",
+      "name": "Red Dawn",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-23",
+      "id": 1696372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003639.jpg",
+      "name": "Episode 100",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-30",
+      "id": 1696373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003638.jpg",
+      "name": "The Lady in White",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-11-06",
+      "id": 1696374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003640.jpg",
+      "name": "Rest in Pieces",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-11-13",
+      "id": 1696375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003641.jpg",
+      "name": "Final Girl",
+      "number": 9,
+      "runtime": 65,
+      "season": 9
+    },
+    {
+      "airdate": "2021-08-25",
+      "id": 2105714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003642.jpg",
+      "name": "Cape Fear",
+      "number": 1,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2021-08-25",
+      "id": 2144969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003643.jpg",
+      "name": "Pale",
+      "number": 2,
+      "runtime": 52,
+      "season": 10
+    },
+    {
+      "airdate": "2021-09-01",
+      "id": 2137516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003644.jpg",
+      "name": "Thirst",
+      "number": 3,
+      "runtime": 69,
+      "season": 10
+    },
+    {
+      "airdate": "2021-09-08",
+      "id": 2137520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003650.jpg",
+      "name": "Blood Buffet",
+      "number": 4,
+      "runtime": 62,
+      "season": 10
+    },
+    {
+      "airdate": "2021-09-15",
+      "id": 2137523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003651.jpg",
+      "name": "Gaslight",
+      "number": 5,
+      "runtime": 62,
+      "season": 10
+    },
+    {
+      "airdate": "2021-09-22",
+      "id": 2149195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003645.jpg",
+      "name": "Winter Kills",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2021-09-29",
+      "id": 2149198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003646.jpg",
+      "name": "Take Me to Your Leader",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2021-10-06",
+      "id": 2149199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003647.jpg",
+      "name": "Inside",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2021-10-13",
+      "id": 2182798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003648.jpg",
+      "name": "Blue Moon",
+      "number": 9,
+      "runtime": 61,
+      "season": 10
+    },
+    {
+      "airdate": "2021-10-20",
+      "id": 2182799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003649.jpg",
+      "name": "The Future Perfect",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-10-19",
+      "id": 2351159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143902.jpg",
+      "name": "Something's Coming",
+      "number": 1,
+      "runtime": 61,
+      "season": 11
+    },
+    {
+      "airdate": "2022-10-19",
+      "id": 2351160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143904.jpg",
+      "name": "Thank You for Your Service",
+      "number": 2,
+      "runtime": 61,
+      "season": 11
+    },
+    {
+      "airdate": "2022-10-26",
+      "id": 2351161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1070410.jpg",
+      "name": "Smoke Signals",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2022-10-26",
+      "id": 2402169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1070412.jpg",
+      "name": "Black Out",
+      "number": 4,
+      "runtime": 63,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-02",
+      "id": 2402170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1075513.jpg",
+      "name": "Bad Fortune",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-02",
+      "id": 2402171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1075510.jpg",
+      "name": "The Body",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-09",
+      "id": 2402172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143906.jpg",
+      "name": "The Sentinel",
+      "number": 7,
+      "runtime": 53,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-09",
+      "id": 2402173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143907.jpg",
+      "name": "Fire Island",
+      "number": 8,
+      "runtime": 57,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-16",
+      "id": 2402174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/431/1077695.jpg",
+      "name": "Requiem 1981/1987 Part One",
+      "number": 9,
+      "runtime": 61,
+      "season": 11
+    },
+    {
+      "airdate": "2022-11-16",
+      "id": 2402175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/431/1077715.jpg",
+      "name": "Requiem 1981/1987 Part Two",
+      "number": 10,
+      "runtime": 51,
+      "season": 11
+    },
+    {
+      "airdate": "2023-09-20",
+      "id": 2623683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/477/1194369.jpg",
+      "name": "Multiply Thy Pain",
+      "number": 1,
+      "runtime": 62,
+      "season": 12
+    },
+    {
+      "airdate": "2023-09-27",
+      "id": 2625177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1196636.jpg",
+      "name": "Rockabye",
+      "number": 2,
+      "runtime": 61,
+      "season": 12
+    },
+    {
+      "airdate": "2023-10-04",
+      "id": 2643427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/479/1199214.jpg",
+      "name": "When the Bough Breaks",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2023-10-11",
+      "id": 2648254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/480/1201921.jpg",
+      "name": "Vanishing Twin",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2023-10-18",
+      "id": 2653472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/481/1204466.jpg",
+      "name": "Preech",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2024-04-03",
+      "id": 2662187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/511/1279727.jpg",
+      "name": "Opening Night",
+      "number": 6,
+      "runtime": 63,
+      "season": 12
+    },
+    {
+      "airdate": "2024-04-10",
+      "id": 2662189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/512/1281518.jpg",
+      "name": "Ave Hestia",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2024-04-17",
+      "id": 2766866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/514/1285960.jpg",
+      "name": "Little Gold Man",
+      "number": 8,
+      "runtime": 53,
+      "season": 12
+    },
+    {
+      "airdate": "2024-04-24",
+      "id": 2766867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/515/1288255.jpg",
+      "name": "The Auteur",
+      "number": 9,
+      "runtime": 51,
+      "season": 12
+    },
+    {
+      "airdate": "2026-09-24",
+      "id": 3667317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/642/1606578.jpg",
+      "name": "13",
+      "number": 1,
+      "runtime": 43,
+      "season": 13
+    },
+    {
+      "airdate": "2026-09-24",
+      "id": 3667318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/642/1606579.jpg",
+      "name": "1:13 AM",
+      "number": 2,
+      "runtime": 44,
+      "season": 13
+    },
+    {
+      "airdate": "2026-09-24",
+      "id": 3667319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/642/1606580.jpg",
+      "name": "Rauhnacht",
+      "number": 3,
+      "runtime": 32,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-01",
+      "id": 3667320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/642/1606581.jpg",
+      "name": "Is That All There Is?",
+      "number": 4,
+      "runtime": 29,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-01",
+      "id": 3667321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/643/1609455.jpg",
+      "name": "Date Night",
+      "number": 5,
+      "runtime": 26,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-01",
+      "id": 3667322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/643/1609456.jpg",
+      "name": "The Return of Devil's Night",
+      "number": 6,
+      "runtime": 24,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-08",
+      "id": 3667323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1612423.jpg",
+      "name": "The Baddest Witch of Them All",
+      "number": 7,
+      "runtime": 33,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-08",
+      "id": 3667324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1612426.jpg",
+      "name": "Hell No",
+      "number": 8,
+      "runtime": 43,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-15",
+      "id": 3667325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/646/1615446.jpg",
+      "name": "The Devil Is in the Details",
+      "number": 9,
+      "runtime": 45,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-15",
+      "id": 3667326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/646/1615447.jpg",
+      "name": "The Prodigal Son",
+      "number": 10,
+      "runtime": 35,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-22",
+      "id": 3686782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/647/1617588.jpg",
+      "name": "Madison's Happy Ending",
+      "number": 11,
+      "runtime": 44,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-22",
+      "id": 3686783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/647/1617589.jpg",
+      "name": "Sisters in Arms",
+      "number": 12,
+      "runtime": 44,
+      "season": 13
+    },
+    {
+      "airdate": "2026-10-29",
+      "id": 3686784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/647/1618150.jpg",
+      "name": "Devil of a Good Time",
+      "number": 13,
+      "runtime": 38,
+      "season": 13
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Horror",
     "Thriller"
   ],
+  "id": "tvmaze-30",
+  "live": true,
+  "overview": "American Horror Story is an horror television anthology series. Each season is conceived as a self-contained miniseries, following a disparate set of characters and settings, and a storyline with its own beginning, middle, and end. While some actors appear for more than one year, they play completely different roles in each season.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/642/1607475.jpg",
   "rating": 7.4,
-  "runtime": 30,
-  "episodes": []
+  "runtime": 59,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "30",
+  "title": "American Horror Story",
+  "type": "series",
+  "year": 2011
 }

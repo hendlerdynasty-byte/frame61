@@ -1,22 +1,239 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1363",
-  "source": "tvmaze",
-  "sourceId": "1363",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Humans",
-  "year": 2015,
-  "type": "series",
-  "overview": "Humans is set in a parallel present where the latest must-have gadget for any busy family is a Synth – a highly-developed robotic servant eerily similar to its live counterpart. In the hope of transforming the way they live, one strained suburban family purchases a refurbished synth only to discover that sharing life with a machine has far-reaching and chilling consequences.",
-  "poster": "file:///android_asset/posters/tvmaze-1363.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-06-14",
+      "id": 166058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30013.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-21",
+      "id": 167620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30657.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-28",
+      "id": 177861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31659.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-05",
+      "id": 182173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32171.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-12",
+      "id": 182412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32899.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-19",
+      "id": 182413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32905.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-26",
+      "id": 182415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34016.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-02",
+      "id": 182417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34786.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-30",
+      "id": 952857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204842.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-06",
+      "id": 960260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/209237.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-13",
+      "id": 960261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/210066.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 960262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213677.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 960263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215526.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 960264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220224.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-11",
+      "id": 960265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222090.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-18",
+      "id": 960266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222092.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-17",
+      "id": 1454035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389932.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-24",
+      "id": 1114732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/390279.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-31",
+      "id": 1114733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391620.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-07",
+      "id": 1114734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391745.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-14",
+      "id": 1114735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396341.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-21",
+      "id": 1114736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/397556.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-28",
+      "id": 1114737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/398289.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-05",
+      "id": 1114738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400345.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-1363",
+  "live": true,
+  "overview": "Humans is set in a parallel present where the latest must-have gadget for any busy family is a Synth – a highly-developed robotic servant eerily similar to its live counterpart. In the hope of transforming the way they live, one strained suburban family purchases a refurbished synth only to discover that sharing life with a machine has far-reaching and chilling consequences.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/182/457420.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1363",
+  "title": "Humans",
+  "type": "series",
+  "year": 2015
 }

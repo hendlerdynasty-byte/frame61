@@ -1,20 +1,1407 @@
 {
-  "schema": 1,
-  "id": "tvmaze-523",
-  "source": "tvmaze",
-  "sourceId": "523",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The West Wing",
-  "year": 1999,
-  "type": "series",
-  "overview": "The entire White House staff bristles with activity when it's learned that the President injured himself during a bicycle accident, and his absence becomes a factor as chief of staff Leo McGarry must juggle a host of impending crises, including a mass boatlift of Cuban refugees approaching the Florida coast and the reaction of conservative Christians to a controversial televised comment by deputy chief of staff Josh Lyman.",
-  "poster": "file:///android_asset/posters/tvmaze-523.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1999-09-22",
+      "id": 47282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358399.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-29",
+      "id": 47283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358418.jpg",
+      "name": "Post Hoc, Ergo Propter Hoc",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-06",
+      "id": 47284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358430.jpg",
+      "name": "A Proportional Response",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-13",
+      "id": 47285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358439.jpg",
+      "name": "Five Votes Down",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-20",
+      "id": 47286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358790.jpg",
+      "name": "The Crackpots and These Women",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-03",
+      "id": 47287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359133.jpg",
+      "name": "Mr. Willis of Ohio",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-10",
+      "id": 47288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359453.jpg",
+      "name": "The State Dinner",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-17",
+      "id": 47289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359470.jpg",
+      "name": "Enemies",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-24",
+      "id": 47290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359500.jpg",
+      "name": "The Short List",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-12-15",
+      "id": 47291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359754.jpg",
+      "name": "In Excelsis Deo",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-05",
+      "id": 47292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359803.jpg",
+      "name": "Lord John Marbury",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-12",
+      "id": 47293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359845.jpg",
+      "name": "He Shall, from Time to Time",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-26",
+      "id": 47294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359847.jpg",
+      "name": "Take Out the Trash Day",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-09",
+      "id": 47295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360004.jpg",
+      "name": "Take This Sabbath Day",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-16",
+      "id": 47296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360018.jpg",
+      "name": "Celestial Navigation",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-23",
+      "id": 47297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360107.jpg",
+      "name": "20 Hours in L.A.",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-22",
+      "id": 47298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360134.jpg",
+      "name": "The White House Pro-Am",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-05",
+      "id": 47299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360228.jpg",
+      "name": "Six Meetings Before Lunch",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-26",
+      "id": 47300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360409.jpg",
+      "name": "Let Bartlet Be Bartlet",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-03",
+      "id": 47301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360430.jpg",
+      "name": "Mandatory Minimums",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-10",
+      "id": 47302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360452.jpg",
+      "name": "Lies, Damn Lies and Statistics",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-17",
+      "id": 47303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360489.jpg",
+      "name": "What Kind of Day Has It Been?",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-04",
+      "id": 47304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360546.jpg",
+      "name": "In the Shadow of Two Gunmen: Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-04",
+      "id": 47305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360555.jpg",
+      "name": "In the Shadow of Two Gunmen: Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-18",
+      "id": 47306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360813.jpg",
+      "name": "The Midterms",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-25",
+      "id": 47307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/361387.jpg",
+      "name": "In This White House",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-01",
+      "id": 47308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362325.jpg",
+      "name": "And It's Surely to Their Credit",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-08",
+      "id": 47309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362486.jpg",
+      "name": "The Lame Duck Congress",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-15",
+      "id": 47310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/362726.jpg",
+      "name": "The Portland Trip",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-22",
+      "id": 47311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/364010.jpg",
+      "name": "Shibboleth",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-29",
+      "id": 47312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385925.jpg",
+      "name": "Galileo",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-12-20",
+      "id": 47313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410903.jpg",
+      "name": "Noël",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-10",
+      "id": 47314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410906.jpg",
+      "name": "The Leadership Breakfast",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-24",
+      "id": 47315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765783.jpg",
+      "name": "The Drop-In",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-07",
+      "id": 47316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765784.jpg",
+      "name": "Bartlet's Third State of the Union",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-14",
+      "id": 47317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765785.jpg",
+      "name": "The War at Home",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-21",
+      "id": 47318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765786.jpg",
+      "name": "Ellie",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-28",
+      "id": 47319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765787.jpg",
+      "name": "Somebody's Going to Emergency, Somebody's Going to Jail",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-14",
+      "id": 47320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765788.jpg",
+      "name": "The Stackhouse Filibuster",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-04-04",
+      "id": 47321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765789.jpg",
+      "name": "17 People",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-04-25",
+      "id": 47322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765790.jpg",
+      "name": "Bad Moon Rising",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-02",
+      "id": 47323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765791.jpg",
+      "name": "The Fall's Gonna Kill You",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-09",
+      "id": 47324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765792.jpg",
+      "name": "18th and Potomac",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-16",
+      "id": 47325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765793.jpg",
+      "name": "Two Cathedrals",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-10",
+      "id": 47326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765799.jpg",
+      "name": "Manchester: Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-17",
+      "id": 47327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765800.jpg",
+      "name": "Manchester: Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-24",
+      "id": 47328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765801.jpg",
+      "name": "Ways and Means",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-31",
+      "id": 47329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765802.jpg",
+      "name": "On the Day Before",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-07",
+      "id": 47330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765803.jpg",
+      "name": "War Crimes",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-14",
+      "id": 47331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765804.jpg",
+      "name": "Gone Quiet",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-21",
+      "id": 47332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765805.jpg",
+      "name": "The Indians in the Lobby",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-28",
+      "id": 47333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765806.jpg",
+      "name": "The Women of Qumar",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-12-12",
+      "id": 47334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765807.jpg",
+      "name": "Bartlet for America",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-09",
+      "id": 47335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765808.jpg",
+      "name": "H. Con-172",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-16",
+      "id": 47336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765809.jpg",
+      "name": "100,000 Airplanes",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-30",
+      "id": 47337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765810.jpg",
+      "name": "The Two Bartlets",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-06",
+      "id": 47338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765811.jpg",
+      "name": "Night Five",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-27",
+      "id": 47339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765812.jpg",
+      "name": "Hartsfield's Landing",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-06",
+      "id": 47340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765813.jpg",
+      "name": "Dead Irish Writers",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-27",
+      "id": 47341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765814.jpg",
+      "name": "The U.S. Poet Laureate",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-03",
+      "id": 47342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765815.jpg",
+      "name": "Stirred",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-01",
+      "id": 47343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765816.jpg",
+      "name": "Enemies Foreign and Domestic",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-08",
+      "id": 47344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765817.jpg",
+      "name": "The Black Vera Wang",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-15",
+      "id": 47345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765818.jpg",
+      "name": "We Killed Yamamoto",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-22",
+      "id": 47346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765819.jpg",
+      "name": "Posse Comitatus",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-25",
+      "id": 47347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765821.jpg",
+      "name": "20 Hours in America (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-09-25",
+      "id": 47348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765822.jpg",
+      "name": "20 Hours in America (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-10-02",
+      "id": 47349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765823.jpg",
+      "name": "College Kids",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-10-09",
+      "id": 47350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765824.jpg",
+      "name": "The Red Mass",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-10-16",
+      "id": 47351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765825.jpg",
+      "name": "Debate Camp",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-10-30",
+      "id": 47352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765826.jpg",
+      "name": "Game On",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-11-06",
+      "id": 47353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765827.jpg",
+      "name": "Election Night",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-11-13",
+      "id": 47354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765828.jpg",
+      "name": "Process Stories",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-11-20",
+      "id": 47355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765829.jpg",
+      "name": "Swiss Diplomacy",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-11-27",
+      "id": 47356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765830.jpg",
+      "name": "Arctic Radar",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-12-11",
+      "id": 47357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765831.jpg",
+      "name": "Holy Night",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-08",
+      "id": 47358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765832.jpg",
+      "name": "Guns Not Butter",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-15",
+      "id": 47359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765833.jpg",
+      "name": "The Long Goodbye",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-05",
+      "id": 47360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765834.jpg",
+      "name": "Inauguration: (Part 1)",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-12",
+      "id": 47361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765835.jpg",
+      "name": "Inauguration: Over There (Part 2)",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-19",
+      "id": 47362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765836.jpg",
+      "name": "The California 47th",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-26",
+      "id": 47363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765837.jpg",
+      "name": "Red Haven's on Fire",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-03-26",
+      "id": 47364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765838.jpg",
+      "name": "Privateers",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-04-02",
+      "id": 47365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765839.jpg",
+      "name": "Angel Maintenance",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-04-23",
+      "id": 47366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765840.jpg",
+      "name": "Evidence of Things Not Seen",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-04-30",
+      "id": 47367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765841.jpg",
+      "name": "Life On Mars",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-05-07",
+      "id": 47368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765842.jpg",
+      "name": "Commencement",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-05-14",
+      "id": 47369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765843.jpg",
+      "name": "Twenty Five",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-09-24",
+      "id": 47370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765844.jpg",
+      "name": "7A WF 83429",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-10-01",
+      "id": 47371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765845.jpg",
+      "name": "The Dogs of War",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-10-08",
+      "id": 47372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765846.jpg",
+      "name": "Jefferson Lives",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-10-22",
+      "id": 47373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765847.jpg",
+      "name": "Han",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-10-29",
+      "id": 47374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765848.jpg",
+      "name": "Constituency of One",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-11-05",
+      "id": 47375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765849.jpg",
+      "name": "Disaster Relief",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-11-12",
+      "id": 47376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765850.jpg",
+      "name": "Separation of Powers",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-11-19",
+      "id": 47377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765851.jpg",
+      "name": "Shutdown",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2003-12-03",
+      "id": 47378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765852.jpg",
+      "name": "Abu el Banat",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-01-07",
+      "id": 47379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765853.jpg",
+      "name": "The Stormy Present",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-01-14",
+      "id": 47380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765854.jpg",
+      "name": "The Benign Prerogative",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-02-04",
+      "id": 47381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765855.jpg",
+      "name": "Slow News Day",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-02-11",
+      "id": 47382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765856.jpg",
+      "name": "The Warfare of Genghis Khan",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-02-18",
+      "id": 47383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765857.jpg",
+      "name": "An Khe",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-02-25",
+      "id": 47384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765858.jpg",
+      "name": "Full Disclosure",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-03-03",
+      "id": 47385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765859.jpg",
+      "name": "Eppur Si Muove",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-03-24",
+      "id": 47386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765860.jpg",
+      "name": "The Supremes",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-03-31",
+      "id": 47387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765861.jpg",
+      "name": "Access",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-04-21",
+      "id": 47388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765862.jpg",
+      "name": "Talking Points",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-04-28",
+      "id": 47389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765863.jpg",
+      "name": "No Exit",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-05-12",
+      "id": 47390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765864.jpg",
+      "name": "Gaza",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-05-19",
+      "id": 47391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765865.jpg",
+      "name": "Memorial Day",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-20",
+      "id": 47392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765867.jpg",
+      "name": "NSF Thurmont",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-10-27",
+      "id": 47393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765868.jpg",
+      "name": "The Birnam Wood",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-11-03",
+      "id": 47394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765869.jpg",
+      "name": "Third-Day Story",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-11-10",
+      "id": 47395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765870.jpg",
+      "name": "Liftoff",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-11-17",
+      "id": 47396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765871.jpg",
+      "name": "The Hubbert Peak",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-11-24",
+      "id": 47397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765872.jpg",
+      "name": "The Dover Test",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-12-01",
+      "id": 47398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765873.jpg",
+      "name": "A Change Is Gonna Come",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-12-08",
+      "id": 47399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765874.jpg",
+      "name": "In the Room",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2004-12-15",
+      "id": 47400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765875.jpg",
+      "name": "Impact Winter",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-01-05",
+      "id": 47401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765876.jpg",
+      "name": "Faith Based Initiative",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-01-12",
+      "id": 47402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765877.jpg",
+      "name": "Opposition Research",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-01-19",
+      "id": 47403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765878.jpg",
+      "name": "365 Days",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-01-26",
+      "id": 47404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765879.jpg",
+      "name": "King Corn",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-02-09",
+      "id": 47405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765880.jpg",
+      "name": "The Wake Up Call",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-02-16",
+      "id": 47406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765881.jpg",
+      "name": "Freedonia",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-02-23",
+      "id": 47407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765882.jpg",
+      "name": "Drought Conditions",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-03-02",
+      "id": 47408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765883.jpg",
+      "name": "A Good Day",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-03-09",
+      "id": 47409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765884.jpg",
+      "name": "La Palabra",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-03-16",
+      "id": 47410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765885.jpg",
+      "name": "Ninety Miles Away",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-03-23",
+      "id": 47411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765886.jpg",
+      "name": "In God We Trust",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-03-30",
+      "id": 47412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765887.jpg",
+      "name": "Things Fall Apart",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-04-06",
+      "id": 47413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765888.jpg",
+      "name": "2162 Votes",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-09-25",
+      "id": 47414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765889.jpg",
+      "name": "The Ticket",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-10-02",
+      "id": 47415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765890.jpg",
+      "name": "The Mommy Problem",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-10-09",
+      "id": 47416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765891.jpg",
+      "name": "Message of the Week",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-10-16",
+      "id": 47417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765892.jpg",
+      "name": "Mr. Frost",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-10-23",
+      "id": 47418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765893.jpg",
+      "name": "Here Today",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-10-30",
+      "id": 47419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765894.jpg",
+      "name": "The Al Smith Dinner",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-11-06",
+      "id": 47420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765895.jpg",
+      "name": "The Debate",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-12-04",
+      "id": 47421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765896.jpg",
+      "name": "Undecideds",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2005-12-11",
+      "id": 47422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765897.jpg",
+      "name": "The Wedding",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-01-08",
+      "id": 47423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765898.jpg",
+      "name": "Running Mates",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-01-15",
+      "id": 47424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765899.jpg",
+      "name": "Internal Displacement",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-01-22",
+      "id": 47425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765900.jpg",
+      "name": "Duck And Cover",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-03-12",
+      "id": 47426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765901.jpg",
+      "name": "The Cold",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-03-19",
+      "id": 47427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765902.jpg",
+      "name": "Two Weeks Out",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-03-26",
+      "id": 47428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765903.jpg",
+      "name": "Welcome to Wherever You Are",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-04-02",
+      "id": 47429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765904.jpg",
+      "name": "Election Day, Part 1",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-04-09",
+      "id": 47430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765905.jpg",
+      "name": "Election Day, Part 2",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-04-16",
+      "id": 47431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765906.jpg",
+      "name": "Requiem",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-04-23",
+      "id": 47432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765907.jpg",
+      "name": "Transition",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-04-30",
+      "id": 47433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765908.jpg",
+      "name": "The Last Hurrah",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-05-07",
+      "id": 47434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765909.jpg",
+      "name": "Institutional Memory",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-05-14",
+      "id": 47435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/765910.jpg",
+      "name": "Tomorrow",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama"
   ],
+  "id": "tvmaze-523",
+  "live": true,
+  "overview": "The entire White House staff bristles with activity when it's learned that the President injured himself during a bicycle accident, and his absence becomes a factor as chief of staff Leo McGarry must juggle a host of impending crises, including a mass boatlift of Cuban refugees approaching the Florida coast and the reaction of conservative Christians to a controversial televised comment by deputy chief of staff Josh Lyman.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11284.jpg",
   "rating": 8.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "523",
+  "title": "The West Wing",
+  "type": "series",
+  "year": 1999
 }

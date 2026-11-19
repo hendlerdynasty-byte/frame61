@@ -1,22 +1,248 @@
 {
-  "schema": 1,
-  "id": "tvmaze-163",
-  "source": "tvmaze",
-  "sourceId": "163",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Human Target",
-  "year": 2010,
-  "type": "series",
-  "overview": "Christopher Chance is a unique private contractor/security expert/bodyguard hired when an unusual or imminent threat cannot be solved through normal means of protection. Chance works with his business partner and trusted friend, Winston, and hired gun, Guerrero, to integrate himself completely into his clients' lives and eliminate the threat by becoming the Human Target.",
-  "poster": "file:///android_asset/posters/tvmaze-163.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-01-17",
+      "id": 11716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/578/1445784.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-01-20",
+      "id": 11717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497622.jpg",
+      "name": "Rewind",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-01-26",
+      "id": 11718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497623.jpg",
+      "name": "Embassy Row",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-03",
+      "id": 11719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497624.jpg",
+      "name": "Sanctuary",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-10",
+      "id": 11720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497625.jpg",
+      "name": "Run",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-17",
+      "id": 11721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497626.jpg",
+      "name": "Lockdown",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-10",
+      "id": 11722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497627.jpg",
+      "name": "Salvage & Reclamation",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-17",
+      "id": 11723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497628.jpg",
+      "name": "Baptiste",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-24",
+      "id": 11724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497629.jpg",
+      "name": "Corner Man",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-31",
+      "id": 11725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497630.jpg",
+      "name": "Tanarak",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-07",
+      "id": 11726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497631.jpg",
+      "name": "Victoria",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-14",
+      "id": 11727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/497632.jpg",
+      "name": "Christopher Chance",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-17",
+      "id": 11728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144725.jpg",
+      "name": "Ilsa Pucci",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-24",
+      "id": 11729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144726.jpg",
+      "name": "The Wife's Tale",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-01",
+      "id": 11730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144727.jpg",
+      "name": "Taking Ames",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-08",
+      "id": 11731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144729.jpg",
+      "name": "The Return of Baptiste",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-15",
+      "id": 11732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144730.jpg",
+      "name": "Dead Head",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-22",
+      "id": 11733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144731.jpg",
+      "name": "The Other Side of the Mall",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-05",
+      "id": 11734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144732.jpg",
+      "name": "A Problem Like Maria",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-05",
+      "id": 11735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144733.jpg",
+      "name": "Communication Breakdown",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 11736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144734.jpg",
+      "name": "Imbroglio",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 11737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144735.jpg",
+      "name": "Cool Hand Guerrero",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-31",
+      "id": 11738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144736.jpg",
+      "name": "Kill Bob",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-02",
+      "id": 11739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144737.jpg",
+      "name": "The Trouble with Harry",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-09",
+      "id": 11740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144738.jpg",
+      "name": "Marshall Pucci",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
-    "Krimi"
+    "Adventure",
+    "Crime"
   ],
+  "id": "tvmaze-163",
+  "live": true,
+  "overview": "Christopher Chance is a unique private contractor/security expert/bodyguard hired when an unusual or imminent threat cannot be solved through normal means of protection. Chance works with his business partner and trusted friend, Winston, and hired gun, Guerrero, to integrate himself completely into his clients' lives and eliminate the threat by becoming the Human Target.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/42/106702.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "163",
+  "title": "Human Target",
+  "type": "series",
+  "year": 2010
 }

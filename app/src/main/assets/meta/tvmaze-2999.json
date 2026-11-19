@@ -1,22 +1,203 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2999",
-  "source": "tvmaze",
-  "sourceId": "2999",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Shannara Chronicles",
-  "year": 2016,
-  "type": "series",
-  "overview": "The Shannara Chronicles is a new TV series based on the best-selling fantasy novels by Terry Brooks. Set thousands of years after the destruction of our civilization, the story follows an Elven Princess, Amberle, a half-human half-elf, Wil, and a human, Eretria, as they embark on a quest to stop a Demon army from destroying the Four Lands.",
-  "poster": "file:///android_asset/posters/tvmaze-2999.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-01-05",
+      "id": 365661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183539.jpg",
+      "name": "Chosen Pt. 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-05",
+      "id": 521584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1020221.jpg",
+      "name": "Chosen Pt. 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 538715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183540.jpg",
+      "name": "Fury",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 538716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183567.jpg",
+      "name": "Changeling",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 538717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110637.jpg",
+      "name": "Reaper",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 538718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110635.jpg",
+      "name": "Pykon",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 538719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110636.jpg",
+      "name": "Breakline",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 538720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112733.jpg",
+      "name": "Utopia",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 571889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189770.jpg",
+      "name": "Safehold",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 571890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189771.jpg",
+      "name": "Ellcrys",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-11",
+      "id": 1280438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329083.jpg",
+      "name": "Druid",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-18",
+      "id": 1312565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329831.jpg",
+      "name": "Wraith",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-25",
+      "id": 1321256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331603.jpg",
+      "name": "Graymark",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-01",
+      "id": 1321257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/334032.jpg",
+      "name": "Dweller",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1329160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/336053.jpg",
+      "name": "Paranor",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1329161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/336084.jpg",
+      "name": "Crimson",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-15",
+      "id": 1340607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339079.jpg",
+      "name": "Warlock",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-15",
+      "id": 1340608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339119.jpg",
+      "name": "Amberle",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-22",
+      "id": 1347980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340985.jpg",
+      "name": "Wilderun",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-22",
+      "id": 1347981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/341005.jpg",
+      "name": "Blood",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-2999",
+  "live": true,
+  "overview": "The Shannara Chronicles is a new TV series based on the best-selling fantasy novels by Terry Brooks. Set thousands of years after the destruction of our civilization, the story follows an Elven Princess, Amberle, a half-human half-elf, Wil, and a human, Eretria, as they embark on a quest to stop a Demon army from destroying the Four Lands.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/609/1524710.jpg",
   "rating": 7.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2999",
+  "title": "The Shannara Chronicles",
+  "type": "series",
+  "year": 2016
 }

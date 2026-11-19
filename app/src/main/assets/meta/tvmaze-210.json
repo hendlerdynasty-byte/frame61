@@ -1,22 +1,1400 @@
 {
-  "schema": 1,
-  "id": "tvmaze-210",
-  "source": "tvmaze",
-  "sourceId": "210",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Doctor Who",
-  "year": 2005,
-  "type": "series",
-  "overview": "Adventures across time and space with the time travelling alien and companions.",
-  "poster": "file:///android_asset/posters/tvmaze-210.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-03-26",
+      "id": 13857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302096.jpg",
+      "name": "Rose",
+      "number": 1,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-02",
+      "id": 13858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36862.jpg",
+      "name": "The End of the World",
+      "number": 2,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-09",
+      "id": 13859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36861.jpg",
+      "name": "The Unquiet Dead",
+      "number": 3,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-16",
+      "id": 13860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36860.jpg",
+      "name": "Aliens of London",
+      "number": 4,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-23",
+      "id": 13861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302496.jpg",
+      "name": "World War Three",
+      "number": 5,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-30",
+      "id": 13862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36858.jpg",
+      "name": "Dalek",
+      "number": 6,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-07",
+      "id": 13863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36857.jpg",
+      "name": "The Long Game",
+      "number": 7,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-14",
+      "id": 13864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36856.jpg",
+      "name": "Father's Day",
+      "number": 8,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-21",
+      "id": 13865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36855.jpg",
+      "name": "The Empty Child",
+      "number": 9,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-28",
+      "id": 13866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36854.jpg",
+      "name": "The Doctor Dances",
+      "number": 10,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-04",
+      "id": 13867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36853.jpg",
+      "name": "Boom Town",
+      "number": 11,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-11",
+      "id": 13868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302084.jpg",
+      "name": "Bad Wolf",
+      "number": 12,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-18",
+      "id": 13869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36851.jpg",
+      "name": "The Parting of the Ways",
+      "number": 13,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-15",
+      "id": 13870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36850.jpg",
+      "name": "New Earth",
+      "number": 1,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-22",
+      "id": 13871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36849.jpg",
+      "name": "Tooth and Claw",
+      "number": 2,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-29",
+      "id": 13872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36848.jpg",
+      "name": "School Reunion",
+      "number": 3,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-06",
+      "id": 13873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36847.jpg",
+      "name": "The Girl in the Fireplace",
+      "number": 4,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-13",
+      "id": 13874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304660.jpg",
+      "name": "Rise of the Cybermen",
+      "number": 5,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-20",
+      "id": 13875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304669.jpg",
+      "name": "The Age of Steel",
+      "number": 6,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-27",
+      "id": 13876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36844.jpg",
+      "name": "The Idiot's Lantern",
+      "number": 7,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-03",
+      "id": 13877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36843.jpg",
+      "name": "The Impossible Planet",
+      "number": 8,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-10",
+      "id": 13878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36842.jpg",
+      "name": "The Satan Pit",
+      "number": 9,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-17",
+      "id": 13879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36841.jpg",
+      "name": "Love & Monsters",
+      "number": 10,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-24",
+      "id": 13880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304773.jpg",
+      "name": "Fear Her",
+      "number": 11,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-07-01",
+      "id": 13881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36839.jpg",
+      "name": "Army of Ghosts",
+      "number": 12,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2006-07-08",
+      "id": 13882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36838.jpg",
+      "name": "Doomsday",
+      "number": 13,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-31",
+      "id": 13883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305103.jpg",
+      "name": "Smith and Jones",
+      "number": 1,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-07",
+      "id": 13884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305382.jpg",
+      "name": "The Shakespeare Code",
+      "number": 2,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-14",
+      "id": 13885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36835.jpg",
+      "name": "Gridlock",
+      "number": 3,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-21",
+      "id": 13886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306192.jpg",
+      "name": "Daleks in Manhattan",
+      "number": 4,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-28",
+      "id": 13887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36833.jpg",
+      "name": "Evolution of the Daleks",
+      "number": 5,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-05",
+      "id": 13888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306267.jpg",
+      "name": "The Lazarus Experiment",
+      "number": 6,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-19",
+      "id": 13889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306810.jpg",
+      "name": "42",
+      "number": 7,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-26",
+      "id": 13890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36830.jpg",
+      "name": "Human Nature",
+      "number": 8,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-02",
+      "id": 13891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36829.jpg",
+      "name": "The Family of Blood",
+      "number": 9,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-09",
+      "id": 13892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36828.jpg",
+      "name": "Blink",
+      "number": 10,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-16",
+      "id": 13893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36827.jpg",
+      "name": "Utopia",
+      "number": 11,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-23",
+      "id": 13894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36826.jpg",
+      "name": "The Sound of Drums",
+      "number": 12,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-30",
+      "id": 13895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308736.jpg",
+      "name": "Last of the Time Lords",
+      "number": 13,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2008-04-05",
+      "id": 13896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308810.jpg",
+      "name": "Partners in Crime",
+      "number": 1,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-12",
+      "id": 13897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309239.jpg",
+      "name": "The Fires of Pompeii",
+      "number": 2,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-19",
+      "id": 13898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36822.jpg",
+      "name": "Planet of the Ood",
+      "number": 3,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-26",
+      "id": 13899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36821.jpg",
+      "name": "The Sontaran Stratagem",
+      "number": 4,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-03",
+      "id": 13900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36820.jpg",
+      "name": "The Poison Sky",
+      "number": 5,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-10",
+      "id": 13901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310770.jpg",
+      "name": "The Doctor's Daughter",
+      "number": 6,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-17",
+      "id": 13902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310972.jpg",
+      "name": "The Unicorn and the Wasp",
+      "number": 7,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-31",
+      "id": 13903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311004.jpg",
+      "name": "Silence in the Library",
+      "number": 8,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-07",
+      "id": 13904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311017.jpg",
+      "name": "Forest of the Dead",
+      "number": 9,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-14",
+      "id": 13905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36815.jpg",
+      "name": "Midnight",
+      "number": 10,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-21",
+      "id": 13906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36814.jpg",
+      "name": "Turn Left",
+      "number": 11,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-28",
+      "id": 13907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36813.jpg",
+      "name": "The Stolen Earth",
+      "number": 12,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-05",
+      "id": 13908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36812.jpg",
+      "name": "Journey's End",
+      "number": 13,
+      "runtime": 45,
+      "season": 4
+    },
+    {
+      "airdate": "2010-04-03",
+      "id": 13909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/348041.jpg",
+      "name": "The Eleventh Hour",
+      "number": 1,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-10",
+      "id": 13910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349743.jpg",
+      "name": "The Beast Below",
+      "number": 2,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-17",
+      "id": 13911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349795.jpg",
+      "name": "Victory of the Daleks",
+      "number": 3,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-04-24",
+      "id": 13912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349856.jpg",
+      "name": "The Time of Angels",
+      "number": 4,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-01",
+      "id": 13913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349902.jpg",
+      "name": "Flesh and Stone",
+      "number": 5,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-08",
+      "id": 13914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350206.jpg",
+      "name": "The Vampires of Venice",
+      "number": 6,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-15",
+      "id": 13915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350607.jpg",
+      "name": "Amy's Choice",
+      "number": 7,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-22",
+      "id": 13916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350668.jpg",
+      "name": "The Hungry Earth",
+      "number": 8,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-05-29",
+      "id": 13917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350971.jpg",
+      "name": "Cold Blood",
+      "number": 9,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-06-05",
+      "id": 13918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351040.jpg",
+      "name": "Vincent and the Doctor",
+      "number": 10,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-06-12",
+      "id": 13919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352624.jpg",
+      "name": "The Lodger",
+      "number": 11,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-06-19",
+      "id": 13920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352663.jpg",
+      "name": "The Pandorica Opens",
+      "number": 12,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2010-06-26",
+      "id": 13921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352685.jpg",
+      "name": "The Big Bang",
+      "number": 13,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2011-04-23",
+      "id": 13922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352944.jpg",
+      "name": "The Impossible Astronaut",
+      "number": 1,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-04-30",
+      "id": 13923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353022.jpg",
+      "name": "Day of the Moon",
+      "number": 2,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-05-07",
+      "id": 13924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354391.jpg",
+      "name": "The Curse of the Black Spot",
+      "number": 3,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-05-14",
+      "id": 13925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354415.jpg",
+      "name": "The Doctor's Wife",
+      "number": 4,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-05-21",
+      "id": 13926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354633.jpg",
+      "name": "The Rebel Flesh",
+      "number": 5,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-05-28",
+      "id": 13927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354650.jpg",
+      "name": "The Almost People",
+      "number": 6,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-06-04",
+      "id": 13928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359025.jpg",
+      "name": "A Good Man Goes to War",
+      "number": 7,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-08-27",
+      "id": 13929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370129.jpg",
+      "name": "Let's Kill Hitler",
+      "number": 8,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-09-03",
+      "id": 13930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404005.jpg",
+      "name": "Night Terrors",
+      "number": 9,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-09-10",
+      "id": 13931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405202.jpg",
+      "name": "The Girl Who Waited",
+      "number": 10,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-09-17",
+      "id": 13932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405237.jpg",
+      "name": "The God Complex",
+      "number": 11,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-09-24",
+      "id": 13933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405273.jpg",
+      "name": "Closing Time",
+      "number": 12,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2011-10-01",
+      "id": 13934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405300.jpg",
+      "name": "The Wedding of River Song",
+      "number": 13,
+      "runtime": 45,
+      "season": 6
+    },
+    {
+      "airdate": "2012-09-01",
+      "id": 13935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408031.jpg",
+      "name": "Asylum of the Daleks",
+      "number": 1,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2012-09-08",
+      "id": 13936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408091.jpg",
+      "name": "Dinosaurs on a Spaceship",
+      "number": 2,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2012-09-15",
+      "id": 13937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408319.jpg",
+      "name": "A Town Called Mercy",
+      "number": 3,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2012-09-22",
+      "id": 13938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/436349.jpg",
+      "name": "The Power of Three",
+      "number": 4,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2012-09-29",
+      "id": 13939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36753.jpg",
+      "name": "The Angels Take Manhattan",
+      "number": 5,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-03-30",
+      "id": 13940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36752.jpg",
+      "name": "The Bells of Saint John",
+      "number": 6,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-04-06",
+      "id": 13941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36751.jpg",
+      "name": "The Rings of Akhaten",
+      "number": 7,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-04-13",
+      "id": 13942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36750.jpg",
+      "name": "Cold War",
+      "number": 8,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-04-20",
+      "id": 13943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36746.jpg",
+      "name": "Hide",
+      "number": 9,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-04-27",
+      "id": 13944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36745.jpg",
+      "name": "Journey to the Centre of the TARDIS",
+      "number": 10,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-05-04",
+      "id": 13945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36743.jpg",
+      "name": "The Crimson Horror",
+      "number": 11,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-05-11",
+      "id": 13946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36742.jpg",
+      "name": "Nightmare in Silver",
+      "number": 12,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2013-05-18",
+      "id": 13947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36741.jpg",
+      "name": "The Name of the Doctor",
+      "number": 13,
+      "runtime": 45,
+      "season": 7
+    },
+    {
+      "airdate": "2014-08-23",
+      "id": 13948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36739.jpg",
+      "name": "Deep Breath",
+      "number": 1,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-08-30",
+      "id": 13949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36738.jpg",
+      "name": "Into the Dalek",
+      "number": 2,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-09-06",
+      "id": 13950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36737.jpg",
+      "name": "Robot of Sherwood",
+      "number": 3,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-09-13",
+      "id": 13951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36736.jpg",
+      "name": "Listen",
+      "number": 4,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-09-20",
+      "id": 13952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36735.jpg",
+      "name": "Time Heist",
+      "number": 5,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-09-27",
+      "id": 13953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36734.jpg",
+      "name": "The Caretaker",
+      "number": 6,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-04",
+      "id": 13954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36733.jpg",
+      "name": "Kill the Moon",
+      "number": 7,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-11",
+      "id": 13955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3193.jpg",
+      "name": "Mummy on the Orient Express",
+      "number": 8,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-18",
+      "id": 13956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36731.jpg",
+      "name": "Flatline",
+      "number": 9,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-25",
+      "id": 13957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36730.jpg",
+      "name": "In the Forest of the Night",
+      "number": 10,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-01",
+      "id": 13958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36729.jpg",
+      "name": "Dark Water",
+      "number": 11,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-08",
+      "id": 13959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36728.jpg",
+      "name": "Death in Heaven",
+      "number": 12,
+      "runtime": 45,
+      "season": 8
+    },
+    {
+      "airdate": "2015-09-19",
+      "id": 185062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/44283.jpg",
+      "name": "The Magician's Apprentice",
+      "number": 1,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-09-26",
+      "id": 185063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/20/52299.jpg",
+      "name": "The Witch's Familiar",
+      "number": 2,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-03",
+      "id": 204463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56412.jpg",
+      "name": "Under the Lake",
+      "number": 3,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-10",
+      "id": 204464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59463.jpg",
+      "name": "Before the Flood",
+      "number": 4,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-17",
+      "id": 204465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62570.jpg",
+      "name": "The Girl Who Died",
+      "number": 5,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 204466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46673.jpg",
+      "name": "The Woman Who Lived",
+      "number": 6,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-31",
+      "id": 224840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62544.jpg",
+      "name": "The Zygon Invasion",
+      "number": 7,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-07",
+      "id": 224841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62545.jpg",
+      "name": "The Zygon Inversion",
+      "number": 8,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-14",
+      "id": 228569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/75497.jpg",
+      "name": "Sleep No More",
+      "number": 9,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-21",
+      "id": 228570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62547.jpg",
+      "name": "Face The Raven",
+      "number": 10,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-28",
+      "id": 228571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81164.jpg",
+      "name": "Heaven Sent",
+      "number": 11,
+      "runtime": 45,
+      "season": 9
+    },
+    {
+      "airdate": "2015-12-05",
+      "id": 228572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83542.jpg",
+      "name": "Hell Bent",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2017-04-15",
+      "id": 1001711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266867.jpg",
+      "name": "The Pilot",
+      "number": 1,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2017-04-22",
+      "id": 1060429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/270590.jpg",
+      "name": "Smile",
+      "number": 2,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2017-04-29",
+      "id": 1060430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/273543.jpg",
+      "name": "Thin Ice",
+      "number": 3,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2017-05-06",
+      "id": 1060431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276666.jpg",
+      "name": "Knock Knock",
+      "number": 4,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-05-13",
+      "id": 1060432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276889.jpg",
+      "name": "Oxygen",
+      "number": 5,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-05-20",
+      "id": 1060433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279409.jpg",
+      "name": "Extremis",
+      "number": 6,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2017-05-27",
+      "id": 1060434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285038.jpg",
+      "name": "The Pyramid at the End of the World",
+      "number": 7,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-03",
+      "id": 1060435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285141.jpg",
+      "name": "The Lie of the Land",
+      "number": 8,
+      "runtime": 50,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-10",
+      "id": 1060436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290534.jpg",
+      "name": "Empress of Mars",
+      "number": 9,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-17",
+      "id": 1060437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292590.jpg",
+      "name": "The Eaters of Light",
+      "number": 10,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-24",
+      "id": 1060438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292594.jpg",
+      "name": "World Enough and Time",
+      "number": 11,
+      "runtime": 45,
+      "season": 10
+    },
+    {
+      "airdate": "2017-07-01",
+      "id": 1060439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/297407.jpg",
+      "name": "The Doctor Falls",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2018-10-07",
+      "id": 1525072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/170/426085.jpg",
+      "name": "The Woman Who Fell to Earth",
+      "number": 1,
+      "runtime": 90,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-14",
+      "id": 1532831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/170/427186.jpg",
+      "name": "The Ghost Monument",
+      "number": 2,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-21",
+      "id": 1544517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429225.jpg",
+      "name": "Rosa",
+      "number": 3,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-28",
+      "id": 1547303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/432743.jpg",
+      "name": "Arachnids in the UK",
+      "number": 4,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-04",
+      "id": 1547318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433930.jpg",
+      "name": "The Tsuranga Conundrum",
+      "number": 5,
+      "runtime": 75,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-11",
+      "id": 1547392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435087.jpg",
+      "name": "Demons of the Punjab",
+      "number": 6,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-18",
+      "id": 1561475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435078.jpg",
+      "name": "Kerblam!",
+      "number": 7,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-25",
+      "id": 1561477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438569.jpg",
+      "name": "The Witchfinders",
+      "number": 8,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-12-02",
+      "id": 1561479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/437071.jpg",
+      "name": "It Takes You Away",
+      "number": 9,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2018-12-09",
+      "id": 1561480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/437070.jpg",
+      "name": "The Battle of Ranskoor Av Kolos",
+      "number": 10,
+      "runtime": 70,
+      "season": 11
+    },
+    {
+      "airdate": "2020-01-01",
+      "id": 1759730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/584748.jpg",
+      "name": "Spyfall, Part 1",
+      "number": 1,
+      "runtime": 65,
+      "season": 12
+    },
+    {
+      "airdate": "2020-01-05",
+      "id": 1759732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/234/586504.jpg",
+      "name": "Spyfall, Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2020-01-12",
+      "id": 1779267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/592265.jpg",
+      "name": "Orphan 55",
+      "number": 3,
+      "runtime": 45,
+      "season": 12
+    },
+    {
+      "airdate": "2020-01-19",
+      "id": 1787833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/592806.jpg",
+      "name": "Nikola Tesla's Night of Terror",
+      "number": 4,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-01-26",
+      "id": 1787834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596670.jpg",
+      "name": "Fugitive of the Judoon",
+      "number": 5,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-02",
+      "id": 1787835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599087.jpg",
+      "name": "Praxeus",
+      "number": 6,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-09",
+      "id": 1795919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/602116.jpg",
+      "name": "Can You Hear Me?",
+      "number": 7,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-16",
+      "id": 1798451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599508.jpg",
+      "name": "The Haunting of Villa Diodati",
+      "number": 8,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-23",
+      "id": 1798869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/605386.jpg",
+      "name": "Ascension of the Cybermen",
+      "number": 9,
+      "runtime": 50,
+      "season": 12
+    },
+    {
+      "airdate": "2020-03-01",
+      "id": 1798870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610380.jpg",
+      "name": "The Timeless Children",
+      "number": 10,
+      "runtime": 65,
+      "season": 12
+    },
+    {
+      "airdate": "2021-10-31",
+      "id": 2190801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/371/928467.jpg",
+      "name": "Chapter One: The Halloween Apocalypse",
+      "number": 1,
+      "runtime": 50,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-07",
+      "id": 2203053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/373/933791.jpg",
+      "name": "Chapter Two: War of the Sontarans",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-14",
+      "id": 2207952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/375/939183.jpg",
+      "name": "Chapter Three: Once, Upon Time",
+      "number": 3,
+      "runtime": 50,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-21",
+      "id": 2211069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/377/942628.jpg",
+      "name": "Chapter Four: Village of the Angels",
+      "number": 4,
+      "runtime": 55,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-28",
+      "id": 2215107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/379/947567.jpg",
+      "name": "Chapter Five: Survivors of the Flux",
+      "number": 5,
+      "runtime": 55,
+      "season": 13
+    },
+    {
+      "airdate": "2021-12-05",
+      "id": 2217064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/380/952129.jpg",
+      "name": "Chapter Six: The Vanquishers",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-210",
+  "live": true,
+  "overview": "Adventures across time and space with the time travelling alien and companions.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/488/1220400.jpg",
   "rating": 8.3,
-  "runtime": null,
-  "episodes": []
+  "runtime": 48,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "210",
+  "title": "Doctor Who",
+  "type": "series",
+  "year": 2005
 }

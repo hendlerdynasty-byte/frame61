@@ -1,22 +1,806 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1323",
-  "source": "tvmaze",
-  "sourceId": "1323",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Lois & Clark: The New Adventures of Superman",
-  "year": 1993,
-  "type": "series",
-  "overview": "A sleek, sexy, Emmy-nominated 1990s take on the enduring superhero, culled from DC Comics, which has spawned numerous successful film and TV versions of him as boy and man. All of which further demonstrated that while Kryptonite can kill the Man of Steel, changing times can't. Here, leads Dean Cain and Teri Hatcher have the looks and the chemistry, and the timeless question (seriously, how can Lois NOT know Clark is Superman?) plays itself out until they find true love.",
-  "poster": "file:///android_asset/posters/tvmaze-1323.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-09-12",
+      "id": 111279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321649.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-26",
+      "id": 111281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321650.jpg",
+      "name": "Strange Visitor (from Another Planet)",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-03",
+      "id": 111282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321656.jpg",
+      "name": "Neverending Battle",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-10",
+      "id": 111283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321657.jpg",
+      "name": "I'm Looking Through You",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-17",
+      "id": 111284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321658.jpg",
+      "name": "Requiem for a Superhero",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-24",
+      "id": 111285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321651.jpg",
+      "name": "I've Got a Crush on You",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-31",
+      "id": 111286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321659.jpg",
+      "name": "Smart Kids",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-14",
+      "id": 111287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321652.jpg",
+      "name": "The Green, Green Glow of Home",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-21",
+      "id": 111288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321660.jpg",
+      "name": "The Man of Steel Bars",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-28",
+      "id": 111289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321653.jpg",
+      "name": "Pheromone, My Lovely",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-12-12",
+      "id": 111290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321654.jpg",
+      "name": "Honeymoon in Metropolis",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-02",
+      "id": 111291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321661.jpg",
+      "name": "All Shook Up",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-09",
+      "id": 111292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321648.jpg",
+      "name": "Witness",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-23",
+      "id": 111293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321655.jpg",
+      "name": "Illusions of Grandeur",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-06",
+      "id": 111294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321662.jpg",
+      "name": "The Ides of Metropolis",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-20",
+      "id": 111295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321663.jpg",
+      "name": "Foundling",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-27",
+      "id": 111296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321664.jpg",
+      "name": "The Rival",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-13",
+      "id": 111297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321665.jpg",
+      "name": "Vatman",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-27",
+      "id": 111298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321666.jpg",
+      "name": "Fly Hard",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-01",
+      "id": 111299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321667.jpg",
+      "name": "Barbarians at the Planet",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-08",
+      "id": 111300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321668.jpg",
+      "name": "The House of Luthor",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-09-18",
+      "id": 111301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321736.jpg",
+      "name": "Madame Ex",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-09-25",
+      "id": 111302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321737.jpg",
+      "name": "Wall of Sound",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-02",
+      "id": 111303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321738.jpg",
+      "name": "The Source",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-09",
+      "id": 111304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321739.jpg",
+      "name": "The Prankster",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-23",
+      "id": 111305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321740.jpg",
+      "name": "Church of Metropolis",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-30",
+      "id": 111306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321741.jpg",
+      "name": "Operation Blackout",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-13",
+      "id": 111307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321742.jpg",
+      "name": "That Old Gang of Mine",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-20",
+      "id": 111308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321743.jpg",
+      "name": "A Bolt from the Blue",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-12-04",
+      "id": 111309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321744.jpg",
+      "name": "Season's Greedings",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-01",
+      "id": 111310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321745.jpg",
+      "name": "Metallo",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-08",
+      "id": 111311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321746.jpg",
+      "name": "Chi of Steel",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-22",
+      "id": 111312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321747.jpg",
+      "name": "The Eyes Have It",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-12",
+      "id": 111313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321748.jpg",
+      "name": "The Phoenix",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-19",
+      "id": 111314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321749.jpg",
+      "name": "Top Copy",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-26",
+      "id": 111315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321750.jpg",
+      "name": "Return of the Prankster",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-12",
+      "id": 111316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321751.jpg",
+      "name": "Lucky Leon",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-19",
+      "id": 111317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321752.jpg",
+      "name": "Resurrection",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-26",
+      "id": 111318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321753.jpg",
+      "name": "Tempus Fugitive",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-04-02",
+      "id": 111319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321754.jpg",
+      "name": "Target: Jimmy Olsen!",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-04-16",
+      "id": 111320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321755.jpg",
+      "name": "Individual Responsibility",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-14",
+      "id": 111321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321756.jpg",
+      "name": "Whine, Whine, Whine",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-21",
+      "id": 111322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321757.jpg",
+      "name": "And the Answer Is...",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-17",
+      "id": 111323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321760.jpg",
+      "name": "... We Have a Lot to Talk About",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-09-24",
+      "id": 111324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321761.jpg",
+      "name": "Ordinary People",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-01",
+      "id": 111325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321762.jpg",
+      "name": "Contact",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-15",
+      "id": 111326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321763.jpg",
+      "name": "When Irish Eyes Are Killing",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-22",
+      "id": 111327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321764.jpg",
+      "name": "Just Say Noah",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-05",
+      "id": 111328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321765.jpg",
+      "name": "Don't Tug on Superman's Cape",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-12",
+      "id": 111329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321766.jpg",
+      "name": "Ultra Woman",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-19",
+      "id": 111330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321767.jpg",
+      "name": "Chip Off the Old Clark",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-26",
+      "id": 111331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321768.jpg",
+      "name": "Super Mann",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-12-10",
+      "id": 111332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321769.jpg",
+      "name": "Virtually Destroyed",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-12-17",
+      "id": 111333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321770.jpg",
+      "name": "Home Is Where the Hurt Is",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-07",
+      "id": 111334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321771.jpg",
+      "name": "Never on Sunday",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-14",
+      "id": 111335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321772.jpg",
+      "name": "The Dad Who Came in from the Cold",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-21",
+      "id": 111336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321773.jpg",
+      "name": "Tempus Anyone?",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-11",
+      "id": 111337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321774.jpg",
+      "name": "I Now Pronounce You...",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-18",
+      "id": 111338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321775.jpg",
+      "name": "Double Jeopardy",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-25",
+      "id": 111339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321776.jpg",
+      "name": "Seconds",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-10",
+      "id": 111340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321777.jpg",
+      "name": "Forget Me Not",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-24",
+      "id": 111341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321778.jpg",
+      "name": "Oedipus Wrecks",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-28",
+      "id": 111342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321779.jpg",
+      "name": "It's a Small World After All",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-05",
+      "id": 111343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321780.jpg",
+      "name": "Through a Glass, Darkly",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-12",
+      "id": 111344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321781.jpg",
+      "name": "Big Girls Don't Fly",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-22",
+      "id": 111345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321786.jpg",
+      "name": "Lord of the Flys",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-09-29",
+      "id": 111346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321787.jpg",
+      "name": "Battleground Earth",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-06",
+      "id": 111347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321788.jpg",
+      "name": "Swear to God, This Time We're Not Kidding",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-13",
+      "id": 111348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321789.jpg",
+      "name": "Soul Mates",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-20",
+      "id": 111349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321790.jpg",
+      "name": "Brutal Youth",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-27",
+      "id": 111350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321791.jpg",
+      "name": "The People vs. Lois Lane",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-10",
+      "id": 111351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321792.jpg",
+      "name": "Dead Lois Walking",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-17",
+      "id": 111352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321793.jpg",
+      "name": "Bob and Carol and Lois and Clark",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-24",
+      "id": 111353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321794.jpg",
+      "name": "Ghosts",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-08",
+      "id": 111354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321795.jpg",
+      "name": "Stop the Presses",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-15",
+      "id": 111355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321796.jpg",
+      "name": "'Twas the Night Before Mxymas",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-05",
+      "id": 111356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321797.jpg",
+      "name": "Lethal Weapon",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-19",
+      "id": 111357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321798.jpg",
+      "name": "Sex, Lies and Videotape",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-03-02",
+      "id": 111358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321799.jpg",
+      "name": "Meet John Doe",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-03-09",
+      "id": 111359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321800.jpg",
+      "name": "Lois and Clarks",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-03-16",
+      "id": 111360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321801.jpg",
+      "name": "AKA Superman",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-12",
+      "id": 111361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321802.jpg",
+      "name": "Faster Than a Speeding Vixen",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-19",
+      "id": 111362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321803.jpg",
+      "name": "Shadow of a Doubt",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-26",
+      "id": 111363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321804.jpg",
+      "name": "Voice from the Past",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-31",
+      "id": 111364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321805.jpg",
+      "name": "I've Got You Under My Skin",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-06-07",
+      "id": 111365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321806.jpg",
+      "name": "Toy Story",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-06-14",
+      "id": 111366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/528/1321807.jpg",
+      "name": "The Family Hour",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-1323",
+  "live": true,
+  "overview": "A sleek, sexy, Emmy-nominated 1990s take on the enduring superhero, culled from DC Comics, which has spawned numerous successful film and TV versions of him as boy and man. All of which further demonstrated that while Kryptonite can kill the Man of Steel, changing times can't. Here, leads Dean Cain and Teri Hatcher have the looks and the chemistry, and the timeless question (seriously, how can Lois NOT know Clark is Superman?) plays itself out until they find true love.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/7/18569.jpg",
   "rating": 7.4,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1323",
+  "title": "Lois & Clark: The New Adventures of Superman",
+  "type": "series",
+  "year": 1993
 }

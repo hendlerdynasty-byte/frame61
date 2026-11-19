@@ -1,21 +1,3226 @@
 {
-  "schema": 1,
-  "id": "tvmaze-863",
-  "source": "tvmaze",
-  "sourceId": "863",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Dallas",
-  "year": 1978,
-  "type": "series",
-  "overview": "The world's first mega-soap, and one of the most popular ever produced, Dallas had it all. Beautiful women, expensive cars, and men playing Monopoly with real buildings. Famous for one of the best cliffhangers in TV history, as the world asked \"Who shot J.R.?\" A slow-burner to begin with, Dallas hit its stride in the 2nd season, with long storylines and expert character development. Dallas ruled the airwaves in the 1980's.",
-  "poster": "file:///android_asset/posters/tvmaze-863.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1978-04-02",
+      "id": 80245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772978.jpg",
+      "name": "Digger's Daughter",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1978-04-09",
+      "id": 80246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772979.jpg",
+      "name": "Lessons",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1978-04-16",
+      "id": 80247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772980.jpg",
+      "name": "Spy in the House",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1978-04-23",
+      "id": 80248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772982.jpg",
+      "name": "Winds of Vengeance",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1978-04-30",
+      "id": 80249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772983.jpg",
+      "name": "Barbecue",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1978-09-23",
+      "id": 80250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772995.jpg",
+      "name": "Reunion (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-09-30",
+      "id": 80251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772996.jpg",
+      "name": "Reunion (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-10-07",
+      "id": 80252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772998.jpg",
+      "name": "Old Acquaintance",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-10-14",
+      "id": 80253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/772999.jpg",
+      "name": "Bypass",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-10-15",
+      "id": 80254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773000.jpg",
+      "name": "Black Market Baby",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-10-21",
+      "id": 80255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773001.jpg",
+      "name": "Double Wedding",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-10-28",
+      "id": 80256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773002.jpg",
+      "name": "Runaway",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-11-05",
+      "id": 80257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773003.jpg",
+      "name": "Election",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-11-12",
+      "id": 80258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773004.jpg",
+      "name": "Survival",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-11-19",
+      "id": 80259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773005.jpg",
+      "name": "Act of Love",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-11-26",
+      "id": 80260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773006.jpg",
+      "name": "Triangle",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-12-03",
+      "id": 80261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773007.jpg",
+      "name": "Fallen Idol",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1978-12-17",
+      "id": 80262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773008.jpg",
+      "name": "Kidnapped",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-01-07",
+      "id": 80263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773009.jpg",
+      "name": "Home Again",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-01-14",
+      "id": 80264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773010.jpg",
+      "name": "For Love or Money",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-01-26",
+      "id": 80265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773011.jpg",
+      "name": "Julie's Return",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-02-02",
+      "id": 80266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773012.jpg",
+      "name": "The Red File (1)",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-02-09",
+      "id": 80267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773013.jpg",
+      "name": "The Red File (2)",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-02-16",
+      "id": 80268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773014.jpg",
+      "name": "Sue Ellen's Sister",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-02-23",
+      "id": 80269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773016.jpg",
+      "name": "Call Girl",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-03-09",
+      "id": 80270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773017.jpg",
+      "name": "Royal Marriage",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-03-16",
+      "id": 80271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773018.jpg",
+      "name": "The Outsiders",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-03-23",
+      "id": 80272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773019.jpg",
+      "name": "John Ewing III (1)",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-04-06",
+      "id": 80273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773020.jpg",
+      "name": "John Ewing III (2)",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1979-09-21",
+      "id": 80274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773035.jpg",
+      "name": "Whatever Happened to Baby John? (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-09-28",
+      "id": 80275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773036.jpg",
+      "name": "Whatever Happened to Baby John? (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-10-05",
+      "id": 80276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773037.jpg",
+      "name": "The Silent Killer",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-10-12",
+      "id": 80277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773038.jpg",
+      "name": "Secrets",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-10-19",
+      "id": 80278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773039.jpg",
+      "name": "The Kristin Affair",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-10-26",
+      "id": 80279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773040.jpg",
+      "name": "The Dove Hunt",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-02",
+      "id": 80280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773041.jpg",
+      "name": "The Lost Child",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-09",
+      "id": 80281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773042.jpg",
+      "name": "Rodeo",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-16",
+      "id": 80282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773043.jpg",
+      "name": "Mastectomy (1)",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-16",
+      "id": 80283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773044.jpg",
+      "name": "Mastectomy (2)",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-23",
+      "id": 80284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773045.jpg",
+      "name": "The Heiress",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-11-30",
+      "id": 80285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773046.jpg",
+      "name": "Ellie Saves the Day",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-12-14",
+      "id": 80286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773047.jpg",
+      "name": "Mother of the Year",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-12-20",
+      "id": 80287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773048.jpg",
+      "name": "Return Engagement",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1979-12-21",
+      "id": 80288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773049.jpg",
+      "name": "Love and Marriage",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-01-04",
+      "id": 80289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773050.jpg",
+      "name": "Power Play",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-01-11",
+      "id": 80290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773051.jpg",
+      "name": "Paternity Suit",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-01-18",
+      "id": 80291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773052.jpg",
+      "name": "Jenna's Return",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-02-01",
+      "id": 80292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773053.jpg",
+      "name": "Sue Ellen's Choice",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-02-08",
+      "id": 80293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773054.jpg",
+      "name": "Second Thoughts",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-02-15",
+      "id": 80294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773055.jpg",
+      "name": "Divorce, Ewing Style",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-02-22",
+      "id": 80295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773056.jpg",
+      "name": "Jock's Trial (1)",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-02-29",
+      "id": 80296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773057.jpg",
+      "name": "Jock's Trial (2)",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-03-14",
+      "id": 80297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773058.jpg",
+      "name": "The Wheeler Dealer",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-03-21",
+      "id": 80298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773059.jpg",
+      "name": "A House Divided",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1980-11-07",
+      "id": 80299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773063.jpg",
+      "name": "No More Mister Nice Guy (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-11-09",
+      "id": 80300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773064.jpg",
+      "name": "No More Mister Nice Guy (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-11-14",
+      "id": 80301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773065.jpg",
+      "name": "Nightmare",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-11-21",
+      "id": 80302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773066.jpg",
+      "name": "Who Done It?",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-11-28",
+      "id": 80303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773067.jpg",
+      "name": "Taste of Success",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-12-05",
+      "id": 80304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773068.jpg",
+      "name": "The Venezuelan Connection",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-12-12",
+      "id": 80305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773069.jpg",
+      "name": "The Fourth Son",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1980-12-19",
+      "id": 80306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773070.jpg",
+      "name": "Trouble at Ewing 23",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-01-02",
+      "id": 80307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773071.jpg",
+      "name": "The Prodigal Mother",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-01-09",
+      "id": 80308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773072.jpg",
+      "name": "Executive Wife",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-01-16",
+      "id": 80309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773073.jpg",
+      "name": "End of the Road (1)",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-01-23",
+      "id": 80310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773074.jpg",
+      "name": "End of the Road (2)",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-01-30",
+      "id": 80311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773075.jpg",
+      "name": "Making of a President",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-02-06",
+      "id": 80312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773076.jpg",
+      "name": "Start the Revolution with Me",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-02-13",
+      "id": 80313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773077.jpg",
+      "name": "The Quest",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-02-20",
+      "id": 80314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773078.jpg",
+      "name": "Lover, Come Back",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-02-27",
+      "id": 80315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773079.jpg",
+      "name": "The New Mrs. Ewing",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-03-13",
+      "id": 80316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773080.jpg",
+      "name": "Mark of Cain",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-03-27",
+      "id": 80317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773081.jpg",
+      "name": "The Gathering Storm",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-04-03",
+      "id": 80318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773082.jpg",
+      "name": "Ewing vs. Ewing",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-04-10",
+      "id": 80319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773083.jpg",
+      "name": "New Beginnings",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-04-17",
+      "id": 80320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773084.jpg",
+      "name": "Full Circle",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-05-01",
+      "id": 80321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773085.jpg",
+      "name": "Ewing-Gate",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1981-10-09",
+      "id": 80322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773087.jpg",
+      "name": "Missing Heir",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-10-16",
+      "id": 80323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773088.jpg",
+      "name": "Gone, But Not Forgotten",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-10-23",
+      "id": 80324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773089.jpg",
+      "name": "Showdown at San Angelo",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-10-30",
+      "id": 80325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773090.jpg",
+      "name": "Little Boy Lost",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-11-06",
+      "id": 80326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773091.jpg",
+      "name": "The Sweet Smell of Revenge",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-11-13",
+      "id": 80327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773092.jpg",
+      "name": "The Big Shut Down",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-11-20",
+      "id": 80328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773093.jpg",
+      "name": "Blocked",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-11-27",
+      "id": 80329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773094.jpg",
+      "name": "The Split",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-12-04",
+      "id": 80330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773095.jpg",
+      "name": "Five Dollars a Barrel",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-12-11",
+      "id": 80331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773096.jpg",
+      "name": "Starting Over",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1981-12-18",
+      "id": 80332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773097.jpg",
+      "name": "Waterloo at Southfork",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-01-01",
+      "id": 80333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773098.jpg",
+      "name": "Barbecue Two",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-01-08",
+      "id": 80334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773099.jpg",
+      "name": "The Search",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-01-15",
+      "id": 80335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773100.jpg",
+      "name": "Denial",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-01-22",
+      "id": 80336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773101.jpg",
+      "name": "Head of the Family",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-01-29",
+      "id": 80337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773102.jpg",
+      "name": "The Phoenix",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-02-05",
+      "id": 80338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773103.jpg",
+      "name": "My Father, My Son",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-02-12",
+      "id": 80339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773104.jpg",
+      "name": "Anniversary",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-02-19",
+      "id": 80340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773105.jpg",
+      "name": "Adoption",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-02-26",
+      "id": 80341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773106.jpg",
+      "name": "The Maelstrom",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-03-05",
+      "id": 80342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773107.jpg",
+      "name": "The Prodigal",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-03-12",
+      "id": 80343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773108.jpg",
+      "name": "Vengeance",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-03-19",
+      "id": 80344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773109.jpg",
+      "name": "Blackmail",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-03-26",
+      "id": 80345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773110.jpg",
+      "name": "The Investigation",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-04-02",
+      "id": 80346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773111.jpg",
+      "name": "Acceptance",
+      "number": 25,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-04-09",
+      "id": 80347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773112.jpg",
+      "name": "Goodbye, Cliff Barnes",
+      "number": 26,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1982-10-01",
+      "id": 80348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773119.jpg",
+      "name": "Changing of the Guard",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-10-08",
+      "id": 80349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773120.jpg",
+      "name": "Where There's a Will",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-10-15",
+      "id": 80350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773121.jpg",
+      "name": "Billion Dollar Question",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-10-22",
+      "id": 80351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773122.jpg",
+      "name": "The Big Ball",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-10-29",
+      "id": 80352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773123.jpg",
+      "name": "Jock's Will",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-11-05",
+      "id": 80353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773124.jpg",
+      "name": "Aftermath",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-11-12",
+      "id": 80354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773125.jpg",
+      "name": "Hit and Run",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-11-19",
+      "id": 80355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773126.jpg",
+      "name": "The Ewing Touch",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-11-26",
+      "id": 80356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773127.jpg",
+      "name": "Fringe Benefits",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-12-03",
+      "id": 80357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773128.jpg",
+      "name": "The Wedding",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-12-10",
+      "id": 80358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773129.jpg",
+      "name": "Post Nuptial",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-12-17",
+      "id": 80359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773130.jpg",
+      "name": "Barbecue Three",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1982-12-31",
+      "id": 80360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773131.jpg",
+      "name": "Mama Dearest",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-01-07",
+      "id": 80361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773132.jpg",
+      "name": "The Ewing Blues",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-01-14",
+      "id": 80362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773133.jpg",
+      "name": "The Reckoning",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-01-28",
+      "id": 80363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773134.jpg",
+      "name": "A Ewing Is a Ewing",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-02-04",
+      "id": 80364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773135.jpg",
+      "name": "Crash of '83",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-02-11",
+      "id": 80365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773136.jpg",
+      "name": "Requiem",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-02-18",
+      "id": 80366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773137.jpg",
+      "name": "Legacy",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-02-25",
+      "id": 80367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773138.jpg",
+      "name": "Brothers and Sisters",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-03-04",
+      "id": 80368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773139.jpg",
+      "name": "Caribbean Connection",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-03-11",
+      "id": 80369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773140.jpg",
+      "name": "The Sting",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-03-18",
+      "id": 80370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773141.jpg",
+      "name": "Hell Hath No Fury",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-03-25",
+      "id": 80371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773142.jpg",
+      "name": "Cuba Libre",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-04-01",
+      "id": 80372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773143.jpg",
+      "name": "Tangled Web",
+      "number": 25,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-04-15",
+      "id": 80373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773144.jpg",
+      "name": "Things Ain't Goin' Too Good at Southfork",
+      "number": 26,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-04-29",
+      "id": 80374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773145.jpg",
+      "name": "Penultimate",
+      "number": 27,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-05-06",
+      "id": 80375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773146.jpg",
+      "name": "Ewing Inferno",
+      "number": 28,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1983-09-30",
+      "id": 80376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773151.jpg",
+      "name": "The Road Back",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-10-07",
+      "id": 80377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773152.jpg",
+      "name": "The Long Goodbye",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-10-14",
+      "id": 80378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773153.jpg",
+      "name": "The Letter",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-10-21",
+      "id": 80379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773154.jpg",
+      "name": "My Brother's Keeper",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-10-28",
+      "id": 80380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773155.jpg",
+      "name": "The Quality of Mercy",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-11-04",
+      "id": 80381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773156.jpg",
+      "name": "Check and Mate",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-11-11",
+      "id": 80382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773157.jpg",
+      "name": "Ray's Trial",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-11-18",
+      "id": 80383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773158.jpg",
+      "name": "The Oil Baron's Ball",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-11-25",
+      "id": 80384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773159.jpg",
+      "name": "Morning After",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-12-02",
+      "id": 80385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773160.jpg",
+      "name": "The Buck Stops Here",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-12-09",
+      "id": 80386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773161.jpg",
+      "name": "To Catch a Sly",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-12-16",
+      "id": 80387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773162.jpg",
+      "name": "Barbecue Four",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1983-12-23",
+      "id": 80388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773163.jpg",
+      "name": "Past Imperfect",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-01-06",
+      "id": 80389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773164.jpg",
+      "name": "Peter's Principles",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-01-13",
+      "id": 80390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773165.jpg",
+      "name": "Offshore Crude",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-01-20",
+      "id": 80391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773166.jpg",
+      "name": "Some Do... Some Don't",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-01-27",
+      "id": 80392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773167.jpg",
+      "name": "Eye of the Beholder",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-02-03",
+      "id": 80393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773168.jpg",
+      "name": "Twelve Mile Limit",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-02-10",
+      "id": 80394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773169.jpg",
+      "name": "Where Is Poppa?",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-02-17",
+      "id": 80395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773170.jpg",
+      "name": "When the Bough Breaks",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-02-24",
+      "id": 80396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773171.jpg",
+      "name": "True Confessions",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-03-02",
+      "id": 80397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773172.jpg",
+      "name": "And the Winner Is...",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-03-09",
+      "id": 80398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773173.jpg",
+      "name": "Fools Rush In",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-03-16",
+      "id": 80399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773174.jpg",
+      "name": "The Unexpected",
+      "number": 24,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-03-23",
+      "id": 80400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773175.jpg",
+      "name": "Strange Alliance",
+      "number": 25,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-04-06",
+      "id": 80401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773176.jpg",
+      "name": "Blow Up",
+      "number": 26,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-04-13",
+      "id": 80402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773177.jpg",
+      "name": "Turning Point",
+      "number": 27,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-05-04",
+      "id": 80403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773178.jpg",
+      "name": "Love Stories",
+      "number": 28,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-05-11",
+      "id": 80404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773179.jpg",
+      "name": "Hush, Hush, Sweet Jessie",
+      "number": 29,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-05-18",
+      "id": 80405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773180.jpg",
+      "name": "End Game",
+      "number": 30,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1984-09-28",
+      "id": 80406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773181.jpg",
+      "name": "Killer at Large",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-10-05",
+      "id": 80407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773182.jpg",
+      "name": "Battle Lines",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-10-12",
+      "id": 80408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773183.jpg",
+      "name": "If at First You Don't Succeed",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-10-19",
+      "id": 80409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773184.jpg",
+      "name": "Jamie",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-10-26",
+      "id": 80410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773185.jpg",
+      "name": "Family",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-11-02",
+      "id": 80411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773186.jpg",
+      "name": "Shadow of a Doubt",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-11-09",
+      "id": 80412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773187.jpg",
+      "name": "Homecoming",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-11-16",
+      "id": 80413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773188.jpg",
+      "name": "Oil Baron's Ball III",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-11-23",
+      "id": 80414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773189.jpg",
+      "name": "Shadows",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-11-30",
+      "id": 80415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773190.jpg",
+      "name": "Charlie",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-12-07",
+      "id": 80416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773191.jpg",
+      "name": "Barbecue Five",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-12-14",
+      "id": 80417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773192.jpg",
+      "name": "Do You Take This Woman ...",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-12-21",
+      "id": 80418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773193.jpg",
+      "name": "Deja Vu",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1984-12-28",
+      "id": 80419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773194.jpg",
+      "name": "Odd Man Out",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-01-04",
+      "id": 80420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773195.jpg",
+      "name": "Lockup in Laredo",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-01-11",
+      "id": 80421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773196.jpg",
+      "name": "Winds of War",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-01-25",
+      "id": 80422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773197.jpg",
+      "name": "Bail Out",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-02-01",
+      "id": 80423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773198.jpg",
+      "name": "Legacy of Hate",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-02-08",
+      "id": 80424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773199.jpg",
+      "name": "Sins of the Fathers",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-02-15",
+      "id": 80425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773200.jpg",
+      "name": "The Brothers Ewing",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-02-22",
+      "id": 80426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773201.jpg",
+      "name": "Shattered Dreams",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-03-01",
+      "id": 80427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773202.jpg",
+      "name": "Dead Ends",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-03-08",
+      "id": 80428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773203.jpg",
+      "name": "Trial and Error",
+      "number": 23,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-03-15",
+      "id": 80429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773204.jpg",
+      "name": "The Verdict",
+      "number": 24,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-03-29",
+      "id": 80430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773205.jpg",
+      "name": "Sentences",
+      "number": 25,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-04-12",
+      "id": 80431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773206.jpg",
+      "name": "Terms of Estrangement",
+      "number": 26,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-04-19",
+      "id": 80432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773207.jpg",
+      "name": "The Ewing Connection",
+      "number": 27,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-05-03",
+      "id": 80433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773208.jpg",
+      "name": "Deeds and Misdeeds",
+      "number": 28,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-05-10",
+      "id": 80434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773209.jpg",
+      "name": "Deliverance",
+      "number": 29,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1985-05-17",
+      "id": 80435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773210.jpg",
+      "name": "Swan Song",
+      "number": 30,
+      "runtime": 90,
+      "season": 8
+    },
+    {
+      "airdate": "1985-09-27",
+      "id": 80436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773213.jpg",
+      "name": "The Family Ewing",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-09-27",
+      "id": 80437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773214.jpg",
+      "name": "Rock Bottom",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-10-04",
+      "id": 80438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773215.jpg",
+      "name": "Those Eyes",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-10-11",
+      "id": 80439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773216.jpg",
+      "name": "Resurrection",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-10-18",
+      "id": 80440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773217.jpg",
+      "name": "Saving Grace",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-10-25",
+      "id": 80441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773218.jpg",
+      "name": "Mothers",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-11-01",
+      "id": 80442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773219.jpg",
+      "name": "The Wind of Change",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-11-08",
+      "id": 80443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773220.jpg",
+      "name": "Quandary",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-11-15",
+      "id": 80444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773221.jpg",
+      "name": "Close Encounters",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-11-22",
+      "id": 80445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773222.jpg",
+      "name": "Suffer the Little Children",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-11-29",
+      "id": 80446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773223.jpg",
+      "name": "The Prize",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-12-06",
+      "id": 80447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773224.jpg",
+      "name": "En Passant",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-12-13",
+      "id": 80448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773225.jpg",
+      "name": "Goodbye, Farewell, and Amen",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1985-12-20",
+      "id": 80449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773226.jpg",
+      "name": "Curiosity Killed the Cat",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-01-03",
+      "id": 80450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773227.jpg",
+      "name": "The Missing Link",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-01-10",
+      "id": 80451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773228.jpg",
+      "name": "Twenty-Four Hours",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-01-17",
+      "id": 80452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773229.jpg",
+      "name": "The Deadly Game",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-01-24",
+      "id": 80453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773230.jpg",
+      "name": "Blame It on Bogota",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-01-31",
+      "id": 80454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773231.jpg",
+      "name": "Shadow Games",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-02-07",
+      "id": 80455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773232.jpg",
+      "name": "Missing",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-02-14",
+      "id": 80456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773233.jpg",
+      "name": "Dire Straits",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-02-21",
+      "id": 80457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773234.jpg",
+      "name": "Overture",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-02-28",
+      "id": 80458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773235.jpg",
+      "name": "Sitting Ducks",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-03-07",
+      "id": 80459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773236.jpg",
+      "name": "Masquerade",
+      "number": 24,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-03-14",
+      "id": 80460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773237.jpg",
+      "name": "Just Desserts",
+      "number": 25,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-03-21",
+      "id": 80461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773238.jpg",
+      "name": "Nothing's Ever Perfect",
+      "number": 26,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-04-04",
+      "id": 80462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773239.jpg",
+      "name": "J.R. Rising",
+      "number": 27,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-04-11",
+      "id": 80463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773240.jpg",
+      "name": "Serendipity",
+      "number": 28,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-05-02",
+      "id": 80464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773241.jpg",
+      "name": "Thrice in a Lifetime",
+      "number": 29,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-05-09",
+      "id": 80465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773242.jpg",
+      "name": "Hello, Goodbye, Hello",
+      "number": 30,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-05-16",
+      "id": 80466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773243.jpg",
+      "name": "Blast from the Past",
+      "number": 31,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1986-09-26",
+      "id": 80467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773245.jpg",
+      "name": "Return to Camelot (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-09-26",
+      "id": 80468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773246.jpg",
+      "name": "Return to Camelot (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-10-03",
+      "id": 80469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773247.jpg",
+      "name": "Pari Per Sue",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-10-10",
+      "id": 80470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773248.jpg",
+      "name": "Once and Future King",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-10-17",
+      "id": 80471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773249.jpg",
+      "name": "Enigma",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-10-24",
+      "id": 80472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773250.jpg",
+      "name": "Trompe L'Oeil",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-10-31",
+      "id": 80473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773251.jpg",
+      "name": "Territorial Imperative",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-11-07",
+      "id": 80474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773252.jpg",
+      "name": "The Second Time Around",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-11-14",
+      "id": 80475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773253.jpg",
+      "name": "Bells Are Ringing",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-11-21",
+      "id": 80476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773254.jpg",
+      "name": "Who's Who at the Oil Baron's Ball?",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-11-28",
+      "id": 80477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773255.jpg",
+      "name": "Proof Positive",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-12-05",
+      "id": 80478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773256.jpg",
+      "name": "Something Old, Something New",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-12-12",
+      "id": 80479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773257.jpg",
+      "name": "Bar-B-Cued",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1986-12-19",
+      "id": 80480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773258.jpg",
+      "name": "The Fire Next Time",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-01-02",
+      "id": 80481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773259.jpg",
+      "name": "So Shall Ye Reap",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-01-09",
+      "id": 80482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773260.jpg",
+      "name": "Tick, Tock",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-01-23",
+      "id": 80483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773261.jpg",
+      "name": "Night Visitor",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-01-30",
+      "id": 80484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773262.jpg",
+      "name": "Cat and Mouse",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-02-06",
+      "id": 80485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773263.jpg",
+      "name": "High Noon for Calhoun",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-02-13",
+      "id": 80486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773264.jpg",
+      "name": "Olio",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-02-20",
+      "id": 80487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773265.jpg",
+      "name": "A Death in the Family",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-02-27",
+      "id": 80488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773266.jpg",
+      "name": "Revenge of the Nerd",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-03-13",
+      "id": 80489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773267.jpg",
+      "name": "The Ten Percent Solution",
+      "number": 23,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-03-20",
+      "id": 80490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773268.jpg",
+      "name": "Some Good, Some Bad",
+      "number": 24,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-04-03",
+      "id": 80491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773269.jpg",
+      "name": "War and Peace",
+      "number": 25,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-04-10",
+      "id": 80492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773270.jpg",
+      "name": "Ruthless People",
+      "number": 26,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-05-01",
+      "id": 80493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773271.jpg",
+      "name": "The Dark at the End of the Tunnel",
+      "number": 27,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-05-08",
+      "id": 80494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773272.jpg",
+      "name": "Two-Fifty",
+      "number": 28,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-05-15",
+      "id": 80495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773273.jpg",
+      "name": "Fall of the House of Ewing",
+      "number": 29,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1987-09-25",
+      "id": 325747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773281.jpg",
+      "name": "After the Fall: Ewing Rise",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-09-25",
+      "id": 325748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773282.jpg",
+      "name": "After the Fall: Digger Redux",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-10-02",
+      "id": 325749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773283.jpg",
+      "name": "The Son Also Rises",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-10-09",
+      "id": 325750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773284.jpg",
+      "name": "Gone with the Wind",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-10-16",
+      "id": 325751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773285.jpg",
+      "name": "The Lady Vanishes",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-10-23",
+      "id": 325752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773286.jpg",
+      "name": "Tough Love",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-10-30",
+      "id": 325753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773287.jpg",
+      "name": "Last Tango in Dallas",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-11-06",
+      "id": 325754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773288.jpg",
+      "name": "Mummy's Revenge",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-11-13",
+      "id": 325755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773289.jpg",
+      "name": "Hustling",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-11-20",
+      "id": 325756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773290.jpg",
+      "name": "Bedtime Stories",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-11-27",
+      "id": 325757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773291.jpg",
+      "name": "Lovers and Other Liars",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-12-04",
+      "id": 325758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773292.jpg",
+      "name": "Brothers and Sons",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-12-11",
+      "id": 325759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773293.jpg",
+      "name": "Brother, Can You Spare a Child?",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1987-12-18",
+      "id": 325760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773294.jpg",
+      "name": "Daddy's Little Darlin'",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-01-08",
+      "id": 325761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773295.jpg",
+      "name": "It's Me Again",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-01-15",
+      "id": 325762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773296.jpg",
+      "name": "Marriage on the Rocks",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-01-22",
+      "id": 325763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773297.jpg",
+      "name": "Anniversary Waltz",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-02-05",
+      "id": 325764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773298.jpg",
+      "name": "Brotherly Love",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-02-12",
+      "id": 325765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773299.jpg",
+      "name": "The Best Laid Plans",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-02-19",
+      "id": 325766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773300.jpg",
+      "name": "Farlow's Follies",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-02-26",
+      "id": 325767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773301.jpg",
+      "name": "Malice in Dallas",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-03-04",
+      "id": 325768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773302.jpg",
+      "name": "Crime Story",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-03-11",
+      "id": 325769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773303.jpg",
+      "name": "To Have and to Hold",
+      "number": 23,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-03-18",
+      "id": 325770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773304.jpg",
+      "name": "Dead Reckoning",
+      "number": 24,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-04-01",
+      "id": 325771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773305.jpg",
+      "name": "Never Say Never",
+      "number": 25,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-04-08",
+      "id": 325772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773306.jpg",
+      "name": "Last of the Good Guys",
+      "number": 26,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-04-15",
+      "id": 325773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773307.jpg",
+      "name": "Top Gun",
+      "number": 27,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-04-29",
+      "id": 325774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773308.jpg",
+      "name": "Pillow Talk",
+      "number": 28,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-05-06",
+      "id": 325775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773309.jpg",
+      "name": "Things Ain't Goin' So Good at Southfork, Again",
+      "number": 29,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-05-13",
+      "id": 325776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773310.jpg",
+      "name": "The Fat Lady Singeth",
+      "number": 30,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1988-10-28",
+      "id": 325777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773326.jpg",
+      "name": "Carousel",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-11-04",
+      "id": 325778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773327.jpg",
+      "name": "No Greater Love",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-11-11",
+      "id": 325779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773328.jpg",
+      "name": "The Call of the Wild",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-11-18",
+      "id": 325780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773329.jpg",
+      "name": "Out of the Frying Pan",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-12-02",
+      "id": 325781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773330.jpg",
+      "name": "Road Work",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-12-09",
+      "id": 325782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773331.jpg",
+      "name": "War and Love and the Whole Damned Thing",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1988-12-16",
+      "id": 325783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773332.jpg",
+      "name": "Showdown at the Ewing Corral",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-01-06",
+      "id": 325784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773333.jpg",
+      "name": "Deception",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-01-13",
+      "id": 325785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773334.jpg",
+      "name": "Counter Attack",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-01-20",
+      "id": 325786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773335.jpg",
+      "name": "The Sting",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-01-27",
+      "id": 325787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773336.jpg",
+      "name": "The Two Mrs. Ewings",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-02-03",
+      "id": 325788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773337.jpg",
+      "name": "The Switch",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-02-10",
+      "id": 325789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773338.jpg",
+      "name": "He-e-ere's Papa!",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-02-17",
+      "id": 325790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773339.jpg",
+      "name": "Comings and Goings",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-02-24",
+      "id": 325791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773340.jpg",
+      "name": "Country Girl",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-02-24",
+      "id": 325792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773341.jpg",
+      "name": "Wedding Bell Blues",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-03-03",
+      "id": 325793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773342.jpg",
+      "name": "The Way We Were",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-03-10",
+      "id": 325794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773343.jpg",
+      "name": "The Serpent's Tooth",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-03-17",
+      "id": 325796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773344.jpg",
+      "name": "Three Hundred",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-03-31",
+      "id": 325797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773345.jpg",
+      "name": "April Showers",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-04-07",
+      "id": 325798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773346.jpg",
+      "name": "And Away We Go!",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-04-14",
+      "id": 325799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773347.jpg",
+      "name": "Yellow Brick Road",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-04-28",
+      "id": 325800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773348.jpg",
+      "name": "The Sound of Money",
+      "number": 23,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-05-05",
+      "id": 325801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773349.jpg",
+      "name": "The Great Texas Waltz",
+      "number": 24,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-05-12",
+      "id": 325802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773350.jpg",
+      "name": "Mission to Moscow",
+      "number": 25,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-05-19",
+      "id": 325803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773351.jpg",
+      "name": "Reel Life",
+      "number": 26,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1989-09-22",
+      "id": 325804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773352.jpg",
+      "name": "Phantom of the Oil Rig",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-09-22",
+      "id": 325805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773353.jpg",
+      "name": "The Leopard's Spots",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-09-29",
+      "id": 325806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773354.jpg",
+      "name": "Cry Me a River of Oil",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-10-06",
+      "id": 325807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773355.jpg",
+      "name": "Ka-Booooom!",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-10-13",
+      "id": 325808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773356.jpg",
+      "name": "Sunrise, Sunset",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-10-20",
+      "id": 325809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773357.jpg",
+      "name": "Pride and Prejudice",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-11-03",
+      "id": 325810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773358.jpg",
+      "name": "Fathers and Other Strangers",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-11-10",
+      "id": 325811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773359.jpg",
+      "name": "Black Tide",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-11-17",
+      "id": 325812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773360.jpg",
+      "name": "Daddy Dearest",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-12-01",
+      "id": 325813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773361.jpg",
+      "name": "Hell's Fury",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-12-08",
+      "id": 325814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773362.jpg",
+      "name": "Cally on a Hot Tin Roof",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1989-12-15",
+      "id": 325815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773363.jpg",
+      "name": "Sex, Lies and Videotape",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-01-05",
+      "id": 325816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773364.jpg",
+      "name": "Tale of Two Cities",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-01-12",
+      "id": 325817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773365.jpg",
+      "name": "Judgment Day",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-01-19",
+      "id": 325818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773366.jpg",
+      "name": "Unchain My Heart",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-02-02",
+      "id": 325819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773367.jpg",
+      "name": "I Dream of Jeannie",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-02-09",
+      "id": 325820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773368.jpg",
+      "name": "After Midnight",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-02-16",
+      "id": 325821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773369.jpg",
+      "name": "The Crucible",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-02-23",
+      "id": 325822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773370.jpg",
+      "name": "Dear Hearts and Gentle People",
+      "number": 19,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-03-09",
+      "id": 325823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773371.jpg",
+      "name": "Paradise Lost",
+      "number": 20,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-03-16",
+      "id": 325824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773372.jpg",
+      "name": "Will Power",
+      "number": 21,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-03-30",
+      "id": 325825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773373.jpg",
+      "name": "The Smiling Cobra",
+      "number": 22,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-04-06",
+      "id": 325826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773374.jpg",
+      "name": "Jessica Redux",
+      "number": 23,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-04-13",
+      "id": 325827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773375.jpg",
+      "name": "Family Plot",
+      "number": 24,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-04-27",
+      "id": 325828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773376.jpg",
+      "name": "The Southfork Wedding Jinx",
+      "number": 25,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-05-04",
+      "id": 325829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773377.jpg",
+      "name": "Three, Three, Three (1)",
+      "number": 26,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-05-11",
+      "id": 325830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773378.jpg",
+      "name": "Three, Three, Three (2)",
+      "number": 27,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1990-11-02",
+      "id": 325831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773385.jpg",
+      "name": "April in Paris",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-11-09",
+      "id": 325832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773386.jpg",
+      "name": "Charade",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-11-16",
+      "id": 325833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773387.jpg",
+      "name": "One Last Kiss",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-11-23",
+      "id": 325834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773388.jpg",
+      "name": "Terminus",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-11-30",
+      "id": 325835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773389.jpg",
+      "name": "Tunnel of Love",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-12-07",
+      "id": 325836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773390.jpg",
+      "name": "Heart and Soul",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-12-14",
+      "id": 325837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773391.jpg",
+      "name": "The Fabulous Ewing Boys",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1990-12-21",
+      "id": 325838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773392.jpg",
+      "name": "The Odessa File",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-01-04",
+      "id": 325839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773393.jpg",
+      "name": "Sail On",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-01-11",
+      "id": 325840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773394.jpg",
+      "name": "Lock, Stock and Jock",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-01-18",
+      "id": 325841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773395.jpg",
+      "name": "S is for Seduction",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-02-01",
+      "id": 325842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773396.jpg",
+      "name": "Designing Women",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-02-08",
+      "id": 325843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773397.jpg",
+      "name": "90265",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-02-15",
+      "id": 325844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773398.jpg",
+      "name": "Smooth Operator",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-03-01",
+      "id": 325845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773399.jpg",
+      "name": "Win Some, Lose Some",
+      "number": 15,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-03-08",
+      "id": 325846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773400.jpg",
+      "name": "Fathers and Sons and Fathers and Sons",
+      "number": 16,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-03-29",
+      "id": 325847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773401.jpg",
+      "name": "When the Wind Blows",
+      "number": 17,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-04-05",
+      "id": 325848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773402.jpg",
+      "name": "Those Darned Ewings",
+      "number": 18,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-04-12",
+      "id": 325849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773403.jpg",
+      "name": "Farewell, My Lovely",
+      "number": 19,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-04-19",
+      "id": 325850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773404.jpg",
+      "name": "Some Leave, Some Get Carried Out",
+      "number": 20,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-04-26",
+      "id": 325851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773405.jpg",
+      "name": "The Decline and Fall of the Ewing Empire",
+      "number": 21,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1991-05-03",
+      "id": 325852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/309/773406.jpg",
+      "name": "Conundrum",
+      "number": 22,
+      "runtime": 120,
+      "season": 14
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Familie"
+    "Family"
   ],
+  "id": "tvmaze-863",
+  "live": true,
+  "overview": "The world's first mega-soap, and one of the most popular ever produced, Dallas had it all. Beautiful women, expensive cars, and men playing Monopoly with real buildings. Famous for one of the best cliffhangers in TV history, as the world asked \"Who shot J.R.?\" A slow-burner to begin with, Dallas hit its stride in the 2nd season, with long storylines and expert character development. Dallas ruled the airwaves in the 1980's.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15927.jpg",
   "rating": 7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "863",
+  "title": "Dallas",
+  "type": "series",
+  "year": 1978
 }

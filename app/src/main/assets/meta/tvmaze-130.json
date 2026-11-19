@@ -1,21 +1,2380 @@
 {
-  "schema": 1,
-  "id": "tvmaze-130",
-  "source": "tvmaze",
-  "sourceId": "130",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Two and a Half Men",
-  "year": 2003,
-  "type": "series",
-  "overview": "Charlie is a well-to-do bachelor with a house at the beach, a Jaguar in the front, and an easy way with women. His casual Malibu lifestyle is interrupted when his tightly wound brother Alan, who's facing a divorce, and his son Jake, come to live with him. Together, these two and a half men confront the challenges of growing up; finally. Complicating matters are the brothers' self-obsessed, controlling mother, Evelyn, Alan's estranged wife, Judith and Charlie's crazy neighbor Rose, who wants to be a part of his life and is willing to do anything to be around. After the death of his brother, Alan Harper meets and befriends a lonely young man named Walden Schmidt who turns out to be a billionaire. Unable to afford his brother's home, Alan sells Walden the house, and as a way of showing his gratitude, Walden allows Alan and his son Jake to move in with him.",
-  "poster": "file:///android_asset/posters/tvmaze-130.jpg",
-  "genres": [
-    "Komödie",
-    "Familie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2003-09-22",
+      "id": 10392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510473.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-29",
+      "id": 10393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510474.jpg",
+      "name": "Big Flappy Bastards",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-06",
+      "id": 10394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510475.jpg",
+      "name": "Go East on Sunset Until You Reach the Gates of Hell",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-13",
+      "id": 10395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510476.jpg",
+      "name": "If I Can't Write My Chocolate Song I'm Going to Take a Nap",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-20",
+      "id": 10396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510479.jpg",
+      "name": "The Last Thing You Want Is to Wind Up with a Hump",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-27",
+      "id": 10397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510480.jpg",
+      "name": "Did You Check with the Captain of the Flying Monkeys?",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-03",
+      "id": 10398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510481.jpg",
+      "name": "If They Do Go Either Way, They're Usually Fake",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-10",
+      "id": 10399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510482.jpg",
+      "name": "Twenty-Five Little Pre-pubers Without a Snoot-ful",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-17",
+      "id": 10400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510484.jpg",
+      "name": "Phase One, Complete",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-24",
+      "id": 10401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510485.jpg",
+      "name": "Merry Thanksgiving",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-15",
+      "id": 10402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510486.jpg",
+      "name": "Alan Harper, Frontier Chiropractor",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-05",
+      "id": 10403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510487.jpg",
+      "name": "Camel Filters + Pheromones",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-12",
+      "id": 10404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510488.jpg",
+      "name": "Sarah Like Puny Alan",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-02",
+      "id": 10405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510489.jpg",
+      "name": "I Can't Afford Hyenas",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-09",
+      "id": 10406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510490.jpg",
+      "name": "Round One to the Hot Crazy Chick (1)",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-16",
+      "id": 10407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510491.jpg",
+      "name": "That Was Saliva, Alan (2)",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-23",
+      "id": 10408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510492.jpg",
+      "name": "Ate the Hamburgers, Wearing the Hats",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-01",
+      "id": 10409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510493.jpg",
+      "name": "An Old Flame with a New Wick",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-22",
+      "id": 10410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510495.jpg",
+      "name": "I Remember the Coatroom, I Just Don't Remember You",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-19",
+      "id": 10411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510496.jpg",
+      "name": "Hey, I Can Pee Outside in the Dark",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-03",
+      "id": 10412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510498.jpg",
+      "name": "No Sniffing, No Wowing",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-10",
+      "id": 10413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510499.jpg",
+      "name": "My Doctor Has a Cow Puppet",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-17",
+      "id": 10414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510500.jpg",
+      "name": "Just Like Buffalo",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-05-24",
+      "id": 10415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510501.jpg",
+      "name": "Can You Feel My Finger?",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-20",
+      "id": 10416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510733.jpg",
+      "name": "Back Off, Mary Poppins",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-27",
+      "id": 10417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510734.jpg",
+      "name": "Enjoy Those Garlic Balls",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-04",
+      "id": 10418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510735.jpg",
+      "name": "A Bag Full of Jawea",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 10419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510736.jpg",
+      "name": "Go Get Mommy's Bra",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-18",
+      "id": 10420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510737.jpg",
+      "name": "Bad News from the Clinic?",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-25",
+      "id": 10421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510738.jpg",
+      "name": "The Price of Healthy Gums Is Eternal Vigilance",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-08",
+      "id": 10422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510739.jpg",
+      "name": "A Kosher Slaughterhouse Out in Fontana",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-15",
+      "id": 10423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510740.jpg",
+      "name": "Frankenstein and the Horny Villagers",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-22",
+      "id": 10424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510741.jpg",
+      "name": "Yes, Monsignor",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-29",
+      "id": 10425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510742.jpg",
+      "name": "The Salmon Under My Sweater",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-12-13",
+      "id": 10426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510743.jpg",
+      "name": "Last Chance to See Those Tattoos",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-03",
+      "id": 10427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510744.jpg",
+      "name": "A Lung Full of Alan",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-17",
+      "id": 10428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510745.jpg",
+      "name": "Zejdz Zmoich Wlosow",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-31",
+      "id": 10429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510746.jpg",
+      "name": "Those Big Pink Things with Coconuts",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-07",
+      "id": 10430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510747.jpg",
+      "name": "Smell the Umbrella Stand",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-14",
+      "id": 10431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510748.jpg",
+      "name": "Can You Eat Human Flesh with Wooden Teeth?",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-21",
+      "id": 10432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510749.jpg",
+      "name": "Woo-Hoo, a Hernia Exam!",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-07",
+      "id": 10433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510750.jpg",
+      "name": "It was 'Mame,' Mom",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-21",
+      "id": 10434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510751.jpg",
+      "name": "A Low, Guttural Tongue-Flapping Noise",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-18",
+      "id": 10435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510752.jpg",
+      "name": "I Always Wanted a Shaved Monkey",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-02",
+      "id": 10436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510753.jpg",
+      "name": "A Sympathetic Crotch to Cry On",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-09",
+      "id": 10437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510754.jpg",
+      "name": "That Old Hose Bag Is My Mother",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-16",
+      "id": 10438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510755.jpg",
+      "name": "Squab, Squab, Squab, Squab, Squab",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-23",
+      "id": 10439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510756.jpg",
+      "name": "Does This Smell Funny to You?",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-19",
+      "id": 10440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510771.jpg",
+      "name": "Weekend in Bangkok with Two Olympic Gymnasts",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-09-26",
+      "id": 10441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510778.jpg",
+      "name": "Principal Gallagher's Lesbian Lover",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-03",
+      "id": 10442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510781.jpg",
+      "name": "Carpet Burns and a Bite Mark",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-10",
+      "id": 10443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510783.jpg",
+      "name": "Your Dismissive Attitude Toward Boobs",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-17",
+      "id": 10444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510785.jpg",
+      "name": "We Called It Mr. Pinky",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-24",
+      "id": 10445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510787.jpg",
+      "name": "Hi, Mr. Horned One",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-07",
+      "id": 10446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510790.jpg",
+      "name": "Sleep Tight, Puddin' Pop",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-14",
+      "id": 10447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510791.jpg",
+      "name": "That Voodoo That I Do Do",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-21",
+      "id": 10448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510792.jpg",
+      "name": "Madame and Her Special Friend",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-28",
+      "id": 10449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510795.jpg",
+      "name": "Something Salted and Twisted",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-19",
+      "id": 10450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510799.jpg",
+      "name": "Santa's Village of the Damned",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-09",
+      "id": 10451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510801.jpg",
+      "name": "That Special Tug",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-23",
+      "id": 10452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510802.jpg",
+      "name": "Humiliation Is a Visual Medium",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-06",
+      "id": 10453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510803.jpg",
+      "name": "Love Isn't Blind, It's Retarded",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-27",
+      "id": 10454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510804.jpg",
+      "name": "My Tongue Is Meat",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-06",
+      "id": 10455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510806.jpg",
+      "name": "Ergo, the Booty Call",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-13",
+      "id": 10456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510807.jpg",
+      "name": "The Unfortunate Little Schnauser",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-20",
+      "id": 10457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510808.jpg",
+      "name": "The Spit-Covered Cobbler",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-10",
+      "id": 10458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510809.jpg",
+      "name": "Golly Moses, She's a Muffin",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-24",
+      "id": 10459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510810.jpg",
+      "name": "Always a Bridesmaid, Never a Burro",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-01",
+      "id": 10460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510811.jpg",
+      "name": "And the Plot Moistens",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-08",
+      "id": 10461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510812.jpg",
+      "name": "Just Once with Aunt Sophie",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-15",
+      "id": 10462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510813.jpg",
+      "name": "Arguments for the Quickie",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-05-22",
+      "id": 10463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510814.jpg",
+      "name": "That Pistol-Packin' Hermaphrodite",
+      "number": 24,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-18",
+      "id": 10464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510815.jpg",
+      "name": "Working for Caligula",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-25",
+      "id": 10465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510816.jpg",
+      "name": "Who's Vod Kanockers?",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-02",
+      "id": 10466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510817.jpg",
+      "name": "The Sea Is a Harsh Mistress",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-09",
+      "id": 10467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510818.jpg",
+      "name": "A Pot Smoking Monkey",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-16",
+      "id": 10468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510819.jpg",
+      "name": "A Live Woman of Proven Fertility",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-23",
+      "id": 10469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510820.jpg",
+      "name": "Apologies for the Frivolity",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-06",
+      "id": 10470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510821.jpg",
+      "name": "Repeated Blows to His Unformed Head",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-13",
+      "id": 10471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510822.jpg",
+      "name": "Release the Dogs",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-20",
+      "id": 10472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510823.jpg",
+      "name": "Corey's Been Dead for an Hour",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-27",
+      "id": 10473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510824.jpg",
+      "name": "Kissing Abraham Lincoln",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-11",
+      "id": 10474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510825.jpg",
+      "name": "Walnuts and Demerol",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-08",
+      "id": 10475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510826.jpg",
+      "name": "Castrating Sheep in Montana",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-22",
+      "id": 10476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510832.jpg",
+      "name": "Don't Worry, Speed Racer",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-05",
+      "id": 10477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510833.jpg",
+      "name": "That's Summer Sausage, Not Salami",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-12",
+      "id": 10478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510834.jpg",
+      "name": "My Damn Stalker",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 10479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510835.jpg",
+      "name": "Young People Have Phlegm Too",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-26",
+      "id": 10480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510836.jpg",
+      "name": "I Merely Slept with a Commie",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-19",
+      "id": 10481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510838.jpg",
+      "name": "It Never Rains in Hooterville",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-04-09",
+      "id": 10482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510839.jpg",
+      "name": "Smooth As a Ken Doll",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-04-16",
+      "id": 10483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510840.jpg",
+      "name": "Aunt Myra Doesn't Pee a Lot",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-04-23",
+      "id": 10484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510841.jpg",
+      "name": "Tucked, Taped and Gorgeous",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-04-30",
+      "id": 10485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510842.jpg",
+      "name": "Mr. McGlue's Feedbag",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-07",
+      "id": 10486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510843.jpg",
+      "name": "Anteaters. They're Just Crazy-lookin",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-14",
+      "id": 10487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510844.jpg",
+      "name": "Prostitutes and Gelato",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 10488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510845.jpg",
+      "name": "Large Birds, Spiders and Mom",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 10489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510846.jpg",
+      "name": "Media Room Slash Dungeon",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 10490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510847.jpg",
+      "name": "Dum Diddy Dum Diddy Doo",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 10491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510848.jpg",
+      "name": "City of Great Racks",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 10492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510849.jpg",
+      "name": "Putting Swim Fins on a Cat",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-29",
+      "id": 10493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510850.jpg",
+      "name": "Help Daddy Find His Toenail",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 10494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510851.jpg",
+      "name": "Our Leather Gear Is in the Guest Room",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 10495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510852.jpg",
+      "name": "Is There a Mrs. Waffles?",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-19",
+      "id": 10496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510854.jpg",
+      "name": "Tight's Good",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-26",
+      "id": 10497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510855.jpg",
+      "name": "Kinda Like Necrophilia",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-17",
+      "id": 10498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510857.jpg",
+      "name": "Meander to Your Dander",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-24",
+      "id": 10499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510859.jpg",
+      "name": "A Little Clammy and None Too Fresh",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-31",
+      "id": 10500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510860.jpg",
+      "name": "The Soil Is Moist",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-14",
+      "id": 10501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510861.jpg",
+      "name": "Winky-Dink Time",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-21",
+      "id": 10502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510862.jpg",
+      "name": "Rough Night in Hump Junction",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-04-28",
+      "id": 10503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510863.jpg",
+      "name": "Look at Me, Mommy, I'm Pretty",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-05-05",
+      "id": 10504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510864.jpg",
+      "name": "Fish in a Drawer",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-05-12",
+      "id": 10505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510865.jpg",
+      "name": "If My Hole Could Talk",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-05-19",
+      "id": 10506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510866.jpg",
+      "name": "Waiting for the Right Snapper",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-22",
+      "id": 10507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510867.jpg",
+      "name": "Taterhead Is Our Love Child",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 10508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510868.jpg",
+      "name": "Pie Hole, Herb",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-10-06",
+      "id": 10509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510869.jpg",
+      "name": "Damn You, Eggs Benedict",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-10-13",
+      "id": 10510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510870.jpg",
+      "name": "The Flavin' and the Mavin'",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 10511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510871.jpg",
+      "name": "A Jock Strap in Hell",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-03",
+      "id": 10512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510872.jpg",
+      "name": "It's Always Nazi Week",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 10513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510873.jpg",
+      "name": "Best H.O. Money Can Buy",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 10514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510874.jpg",
+      "name": "Pinocchio's Mouth",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 10515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510875.jpg",
+      "name": "The Mooch at the Boo",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 10516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510876.jpg",
+      "name": "He Smelled the Ham, He Got Excited",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2008-12-15",
+      "id": 10517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510877.jpg",
+      "name": "The Devil's Lube",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-01-12",
+      "id": 10518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510878.jpg",
+      "name": "Thank God for Scoliosis",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-01-19",
+      "id": 10519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510879.jpg",
+      "name": "I Think You Offended Don",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-02",
+      "id": 10520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510880.jpg",
+      "name": "David Copperfield Slipped Me a Roofie",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-09",
+      "id": 10521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510881.jpg",
+      "name": "I'd Like to Start with the Cat",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-02",
+      "id": 10522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510882.jpg",
+      "name": "She'll Still Be Dead at Halftime",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-09",
+      "id": 10523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510883.jpg",
+      "name": "The 'Ocu' or the 'Pado'?",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-16",
+      "id": 10524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510884.jpg",
+      "name": "My Son's Enormous Head",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-30",
+      "id": 10525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510885.jpg",
+      "name": "The Two Finger Rule",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-13",
+      "id": 10526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510886.jpg",
+      "name": "Hello, I Am Alan Cousteau",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-04-27",
+      "id": 10527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510887.jpg",
+      "name": "Above Exalted Cyclops",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-05-04",
+      "id": 10528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510888.jpg",
+      "name": "Sir Lancelot's Litter Box",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-05-11",
+      "id": 10529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510889.jpg",
+      "name": "Good Morning, Mrs. Butterworth",
+      "number": 23,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-05-18",
+      "id": 10530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510890.jpg",
+      "name": "Baseball with Better Steroids",
+      "number": 24,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2009-09-21",
+      "id": 10531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510892.jpg",
+      "name": "818-jklpuzo",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-09-28",
+      "id": 10532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510893.jpg",
+      "name": "Whipped Unto the Third Generation",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-10-05",
+      "id": 10533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510894.jpg",
+      "name": "Mmm, Fish. Yum.",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-10-12",
+      "id": 10534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510895.jpg",
+      "name": "Laxative Tester, Horse Inseminator",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-10-19",
+      "id": 10535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510896.jpg",
+      "name": "For the Sake of the Child",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-02",
+      "id": 10536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510897.jpg",
+      "name": "Give Me Your Thumb",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-09",
+      "id": 10537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510898.jpg",
+      "name": "Untainted by Filth",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-16",
+      "id": 10538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510899.jpg",
+      "name": "Gorp. Fnark. Schmegle.",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-23",
+      "id": 10539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510901.jpg",
+      "name": "Captain Terry's Spray-On Hair",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-12-07",
+      "id": 10540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510904.jpg",
+      "name": "That's Why They Call It Ball Room",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-12-14",
+      "id": 10541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510905.jpg",
+      "name": "Warning, It's Dirty",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-01-11",
+      "id": 10542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510906.jpg",
+      "name": "Fart Jokes, Pie and Celeste",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-01-18",
+      "id": 10543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510907.jpg",
+      "name": "Yay, No Polyps!",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-01",
+      "id": 10544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510908.jpg",
+      "name": "Crude and Uncalled For",
+      "number": 14,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-08",
+      "id": 10545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510910.jpg",
+      "name": "Aye, Aye, Captain",
+      "number": 15,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-01",
+      "id": 10546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510911.jpg",
+      "name": "Tinkle Like a Princess",
+      "number": 16,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-08",
+      "id": 10547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510912.jpg",
+      "name": "I Found Your Moustache",
+      "number": 17,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-22",
+      "id": 10548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510913.jpg",
+      "name": "Ixnay on the Oggie Day",
+      "number": 18,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-12",
+      "id": 10549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510914.jpg",
+      "name": "Keith Moon Is Vomiting in His Grave",
+      "number": 19,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-05-10",
+      "id": 10550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510915.jpg",
+      "name": "I Called Him Magoo",
+      "number": 20,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-05-17",
+      "id": 10551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510917.jpg",
+      "name": "Gumby with a Pokey",
+      "number": 21,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-05-24",
+      "id": 10552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/510918.jpg",
+      "name": "This Is Not Gonna End Well",
+      "number": 22,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2010-09-20",
+      "id": 10553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518013.jpg",
+      "name": "Three Girls and a Guy Named Bud",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-27",
+      "id": 10554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518014.jpg",
+      "name": "A Bottle of Wine and a Jackhammer",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 10555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518015.jpg",
+      "name": "A Pudding-Filled Cactus",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 10556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518016.jpg",
+      "name": "Hookers, Hookers, Hookers",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 10557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518017.jpg",
+      "name": "The Immortal Mr. Billy Joel",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 10558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518018.jpg",
+      "name": "Twanging Your Magic Clanger",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-01",
+      "id": 10559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518019.jpg",
+      "name": "The Crazy Bitch Gazette",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-08",
+      "id": 10560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518020.jpg",
+      "name": "Springtime on a Stick",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-15",
+      "id": 10561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518021.jpg",
+      "name": "A Good Time in Central Africa",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-22",
+      "id": 10562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518022.jpg",
+      "name": "Ow, Ow, Don't Stop",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-12-06",
+      "id": 10563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518023.jpg",
+      "name": "Dead from the Waist Down",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2010-12-13",
+      "id": 10564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518024.jpg",
+      "name": "Chocolate Diddlers or My Puppy's Dead",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-03",
+      "id": 10565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518025.jpg",
+      "name": "Skunk, Dog, Crap and Ketchup",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-17",
+      "id": 10566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518026.jpg",
+      "name": "Lookin' for Japanese Subs",
+      "number": 14,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-07",
+      "id": 10567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518027.jpg",
+      "name": "Three Hookers and a Philly Cheesesteak",
+      "number": 15,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-14",
+      "id": 10568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518028.jpg",
+      "name": "That Darn Priest",
+      "number": 16,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2011-09-19",
+      "id": 10569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518029.jpg",
+      "name": "Nice to Meet You, Walden Schmidt",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-26",
+      "id": 10570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518030.jpg",
+      "name": "People Who Love Peepholes",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-03",
+      "id": 10571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518031.jpg",
+      "name": "Big Girls Don't Throw Food",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-10",
+      "id": 10572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518032.jpg",
+      "name": "Nine Magic Fingers",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-17",
+      "id": 10573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518033.jpg",
+      "name": "A Giant Cat Holding a Churro",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-24",
+      "id": 10574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518034.jpg",
+      "name": "The Squat and the Hover",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-31",
+      "id": 10575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518035.jpg",
+      "name": "Those Fancy Japanese Toilets",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-07",
+      "id": 10576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518036.jpg",
+      "name": "Thank You for the Intercourse",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-14",
+      "id": 10577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518037.jpg",
+      "name": "Frodo's Headshots",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-21",
+      "id": 10578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518038.jpg",
+      "name": "A Fishbowl Full of Glass Eyes",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-12-05",
+      "id": 10579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518039.jpg",
+      "name": "What a Lovely Landing Strip",
+      "number": 11,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2011-12-12",
+      "id": 10580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518040.jpg",
+      "name": "One False Move, Zimbabwe!",
+      "number": 12,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-02",
+      "id": 10581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518041.jpg",
+      "name": "Slowly and in a Circular Fashion",
+      "number": 13,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-01-16",
+      "id": 10582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518042.jpg",
+      "name": "A Possum on Chemo",
+      "number": 14,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-06",
+      "id": 10583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518043.jpg",
+      "name": "The Duchess of Dull-in-Sack",
+      "number": 15,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-13",
+      "id": 10584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518044.jpg",
+      "name": "Sips, Sonnets and Sodomy",
+      "number": 16,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-20",
+      "id": 10585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518045.jpg",
+      "name": "Not in My Mouth!",
+      "number": 17,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-02-27",
+      "id": 10586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518046.jpg",
+      "name": "The War Against Gingivitis",
+      "number": 18,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-03-19",
+      "id": 10587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518047.jpg",
+      "name": "Palmdale, Ech",
+      "number": 19,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-09",
+      "id": 10588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518048.jpg",
+      "name": "Grandma's Pie",
+      "number": 20,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-16",
+      "id": 10589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518049.jpg",
+      "name": "Mr. Hose Says 'Yes'",
+      "number": 21,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-30",
+      "id": 10590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518050.jpg",
+      "name": "Why We Gave Up Women",
+      "number": 22,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-05-07",
+      "id": 10591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518051.jpg",
+      "name": "The Straw in My Donut Hole",
+      "number": 23,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-05-14",
+      "id": 10592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518052.jpg",
+      "name": "Oh Look! Al-Qaeda!",
+      "number": 24,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-09-27",
+      "id": 10593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518268.jpg",
+      "name": "I Changed My Mind About the Milk",
+      "number": 1,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-04",
+      "id": 10594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518269.jpg",
+      "name": "A Big Bag of Dog",
+      "number": 2,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-11",
+      "id": 10595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518270.jpg",
+      "name": "Four Balls, Two Bats and One Mitt",
+      "number": 3,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-18",
+      "id": 10596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518271.jpg",
+      "name": "You Do Know What the Lollipop's For",
+      "number": 4,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-25",
+      "id": 10597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518272.jpg",
+      "name": "That's Not What They Call It in Amsterdam",
+      "number": 5,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 10598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518273.jpg",
+      "name": "Ferrets, Attack!",
+      "number": 6,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-08",
+      "id": 10599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518275.jpg",
+      "name": "Avoid the Chinese Mustard",
+      "number": 7,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-15",
+      "id": 10600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518278.jpg",
+      "name": "Something My Gynecologist Said",
+      "number": 8,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-29",
+      "id": 10601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518281.jpg",
+      "name": "I Scream When I Pee",
+      "number": 9,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-12-06",
+      "id": 10602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518284.jpg",
+      "name": "One Nut Johnson",
+      "number": 10,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-12-13",
+      "id": 10603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518287.jpg",
+      "name": "Give Santa a Tail-Hole",
+      "number": 11,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-01-03",
+      "id": 10604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518289.jpg",
+      "name": "Welcome to Alancrest",
+      "number": 12,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-01-10",
+      "id": 10605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518290.jpg",
+      "name": "Grab a Feather and Get in Line",
+      "number": 13,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-01-31",
+      "id": 10606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518291.jpg",
+      "name": "Run, Steven Staven! Run!",
+      "number": 14,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-02-07",
+      "id": 10607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518292.jpg",
+      "name": "Paint It, Pierce It or Plug It",
+      "number": 15,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-02-14",
+      "id": 10608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518293.jpg",
+      "name": "Advantage: Fat, Flying Baby",
+      "number": 16,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-02-21",
+      "id": 10609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518294.jpg",
+      "name": "Throgwarten Middle School Mysteries",
+      "number": 17,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-03-07",
+      "id": 10610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518295.jpg",
+      "name": "The 9:04 from Pemberton",
+      "number": 18,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-03-14",
+      "id": 10611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518296.jpg",
+      "name": "Big Episode. Someone Stole a Spoon",
+      "number": 19,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-04-04",
+      "id": 10612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518297.jpg",
+      "name": "Bazinga! That's from a TV Show",
+      "number": 20,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-04-25",
+      "id": 10613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518298.jpg",
+      "name": "Another Night with Neil Diamond",
+      "number": 21,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-05-02",
+      "id": 10614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518299.jpg",
+      "name": "My Bodacious Vidalia",
+      "number": 22,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-05-09",
+      "id": 10615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518300.jpg",
+      "name": "Cows, Prepare to Be Tipped",
+      "number": 23,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2013-09-26",
+      "id": 10616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518337.jpg",
+      "name": "Nangnangnangnang",
+      "number": 1,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-10-03",
+      "id": 10617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518338.jpg",
+      "name": "I Think I Banged Lucille Ball",
+      "number": 2,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-10-10",
+      "id": 10618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518339.jpg",
+      "name": "This Unblessed Biscuit",
+      "number": 3,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-10-17",
+      "id": 10619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518340.jpg",
+      "name": "Clank, Clank, Drunken Skank",
+      "number": 4,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-10-24",
+      "id": 10620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518341.jpg",
+      "name": "Alan Harper, Pleasing Women Since 2003",
+      "number": 5,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-11-07",
+      "id": 10621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518342.jpg",
+      "name": "Justice in Star-Spangled Hot Pants",
+      "number": 6,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-11-14",
+      "id": 10622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518343.jpg",
+      "name": "Some Kind of Lesbian Zombie",
+      "number": 7,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-11-21",
+      "id": 10623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518344.jpg",
+      "name": "Mr. Walden, He Die. I Clean Room.",
+      "number": 8,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-12-05",
+      "id": 10624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518345.jpg",
+      "name": "Numero Uno Accidente Lawyer",
+      "number": 9,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2013-12-12",
+      "id": 10625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518346.jpg",
+      "name": "On Vodka, on Soda, on Blender, on Mixer!",
+      "number": 10,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-01-02",
+      "id": 10626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518347.jpg",
+      "name": "Tazed in the Lady Nuts",
+      "number": 11,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-01-09",
+      "id": 10627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518348.jpg",
+      "name": "Baseball. Boobs. Boobs. Baseball.",
+      "number": 12,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-01-30",
+      "id": 10628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518350.jpg",
+      "name": "Bite Me, Supreme Court",
+      "number": 13,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-02-06",
+      "id": 10629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518351.jpg",
+      "name": "Three Fingers of Crème de Menthe",
+      "number": 14,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-02-27",
+      "id": 10630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518352.jpg",
+      "name": "Cab Fare and a Bottle of Penicillin",
+      "number": 15,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-03-06",
+      "id": 10631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518353.jpg",
+      "name": "How to Get Rid of Alan Harper",
+      "number": 16,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-03-13",
+      "id": 10632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518354.jpg",
+      "name": "Welcome Home, Jake",
+      "number": 17,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-04-03",
+      "id": 10633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518355.jpg",
+      "name": "West Side Story",
+      "number": 18,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-04-10",
+      "id": 10634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518356.jpg",
+      "name": "Lan Mao Shi Zai Wuding Shang",
+      "number": 19,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-04-24",
+      "id": 10635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518357.jpg",
+      "name": "Lotta Delis in Little Armenia",
+      "number": 20,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-05-01",
+      "id": 10636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518358.jpg",
+      "name": "Dial 1-900-Mix-a-Lot",
+      "number": 21,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-05-08",
+      "id": 10637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518360.jpg",
+      "name": "Oh WALD-E, Good Times Ahead",
+      "number": 22,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2014-10-30",
+      "id": 10638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6684.jpg",
+      "name": "The Ol' Mexican Spinach",
+      "number": 1,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-11-06",
+      "id": 14069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/8633.jpg",
+      "name": "A Chic Bar in Ibiza",
+      "number": 2,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-11-13",
+      "id": 14070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10589.jpg",
+      "name": "Glamping in a Yurt",
+      "number": 3,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-11-20",
+      "id": 14071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11971.jpg",
+      "name": "Thirty-Eight, Sixty-Two, Thirty-Eight",
+      "number": 4,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-11-27",
+      "id": 45782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518361.jpg",
+      "name": "Oontz. Oontz. Oontz.",
+      "number": 5,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-12-04",
+      "id": 45783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14057.jpg",
+      "name": "Alan Shot a Little Girl",
+      "number": 6,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-12-11",
+      "id": 50187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14959.jpg",
+      "name": "Sex with an Animated Ed Asner",
+      "number": 7,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2014-12-18",
+      "id": 57111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/6/16495.jpg",
+      "name": "Family, Bublé, Deep-fried Turkey",
+      "number": 8,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-01-08",
+      "id": 58232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18903.jpg",
+      "name": "Bouncy, Bouncy, Bouncy, Lyndsey",
+      "number": 9,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-01-15",
+      "id": 58233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19238.jpg",
+      "name": "Here I Come, Pants!",
+      "number": 10,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-01-22",
+      "id": 58234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19699.jpg",
+      "name": "For Whom the Booty Calls",
+      "number": 11,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-01-29",
+      "id": 58235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20056.jpg",
+      "name": "A Beer-Battered Rip-Off",
+      "number": 12,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-02-05",
+      "id": 58236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20816.jpg",
+      "name": "Boompa Loved His Hookers",
+      "number": 13,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-02-12",
+      "id": 58237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21661.jpg",
+      "name": "Don't Give a Monkey a Gun",
+      "number": 14,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 58238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22004.jpg",
+      "name": "Of Course He's Dead - Part One",
+      "number": 15,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 58239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22005.jpg",
+      "name": "Of Course He's Dead - Part Two",
+      "number": 16,
+      "runtime": 30,
+      "season": 12
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "id": "tvmaze-130",
+  "live": true,
+  "overview": "Charlie is a well-to-do bachelor with a house at the beach, a Jaguar in the front, and an easy way with women. His casual Malibu lifestyle is interrupted when his tightly wound brother Alan, who's facing a divorce, and his son Jake, come to live with him. Together, these two and a half men confront the challenges of growing up; finally. Complicating matters are the brothers' self-obsessed, controlling mother, Evelyn, Alan's estranged wife, Judith and Charlie's crazy neighbor Rose, who wants to be a part of his life and is willing to do anything to be around. After the death of his brother, Alan Harper meets and befriends a lonely young man named Walden Schmidt who turns out to be a billionaire. Unable to afford his brother's home, Alan sells Walden the house, and as a way of showing his gratitude, Walden allows Alan and his son Jake to move in with him.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/118/296850.jpg",
   "rating": 6.7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "130",
+  "title": "Two and a Half Men",
+  "type": "series",
+  "year": 2003
 }

@@ -1,22 +1,842 @@
 {
-  "schema": 1,
-  "id": "tvmaze-170",
-  "source": "tvmaze",
-  "sourceId": "170",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Orange Is the New Black",
-  "year": 2013,
-  "type": "series",
-  "overview": "Orange Is the New Black is the story of Piper Chapman, a woman in her thirties who is sentenced to fifteen months in prison after being convicted of a decade-old crime of transporting money for her drug-dealing girlfriend.",
-  "poster": "file:///android_asset/posters/tvmaze-170.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-07-11",
+      "id": 12259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385284.jpg",
+      "name": "I Wasn't Ready",
+      "number": 1,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385285.jpg",
+      "name": "Tit Punch",
+      "number": 2,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385286.jpg",
+      "name": "Lesbian Request Denied",
+      "number": 3,
+      "runtime": 58,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385287.jpg",
+      "name": "Imaginary Enemies",
+      "number": 4,
+      "runtime": 56,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385288.jpg",
+      "name": "The Chickening",
+      "number": 5,
+      "runtime": 56,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385289.jpg",
+      "name": "WAC Pack",
+      "number": 6,
+      "runtime": 58,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385290.jpg",
+      "name": "Blood Donut",
+      "number": 7,
+      "runtime": 58,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385291.jpg",
+      "name": "Moscow Mule",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385292.jpg",
+      "name": "Fucksgiving",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385293.jpg",
+      "name": "Bora Bora Bora",
+      "number": 10,
+      "runtime": 55,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385294.jpg",
+      "name": "Tall Men with Feelings",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385295.jpg",
+      "name": "Fool Me Once",
+      "number": 12,
+      "runtime": 61,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 12271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385296.jpg",
+      "name": "Can't Fix Crazy",
+      "number": 13,
+      "runtime": 62,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385297.jpg",
+      "name": "Thirsty Bird",
+      "number": 1,
+      "runtime": 57,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385298.jpg",
+      "name": "Looks Blue, Tastes Red",
+      "number": 2,
+      "runtime": 57,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385299.jpg",
+      "name": "Hugs Can Be Deceiving",
+      "number": 3,
+      "runtime": 61,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385300.jpg",
+      "name": "A Whole Other Hole",
+      "number": 4,
+      "runtime": 61,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385301.jpg",
+      "name": "Low Self Esteem City",
+      "number": 5,
+      "runtime": 53,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385302.jpg",
+      "name": "You Also Have a Pizza",
+      "number": 6,
+      "runtime": 61,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385303.jpg",
+      "name": "Comic Sans",
+      "number": 7,
+      "runtime": 54,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385304.jpg",
+      "name": "Appropriately Sized Pots",
+      "number": 8,
+      "runtime": 59,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385305.jpg",
+      "name": "40 Oz. of Furlough",
+      "number": 9,
+      "runtime": 61,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385306.jpg",
+      "name": "Little Mustachioed Shit",
+      "number": 10,
+      "runtime": 62,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385307.jpg",
+      "name": "Take a Break from Your Values",
+      "number": 11,
+      "runtime": 59,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385308.jpg",
+      "name": "It Was the Change",
+      "number": 12,
+      "runtime": 61,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-06",
+      "id": 12284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385309.jpg",
+      "name": "We Have Manners. We're Polite.",
+      "number": 13,
+      "runtime": 94,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 142995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385310.jpg",
+      "name": "Mother's Day",
+      "number": 1,
+      "runtime": 54,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 142996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385311.jpg",
+      "name": "Bed Bugs and Beyond",
+      "number": 2,
+      "runtime": 56,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 142997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385312.jpg",
+      "name": "Empathy is a Boner Killer",
+      "number": 3,
+      "runtime": 57,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 142998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385313.jpg",
+      "name": "Finger in the Dyke",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 142999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385314.jpg",
+      "name": "Fake It Till You Fake It Some More",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385315.jpg",
+      "name": "Ching Chong Chang",
+      "number": 6,
+      "runtime": 55,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385316.jpg",
+      "name": "Tongue-Tied",
+      "number": 7,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385317.jpg",
+      "name": "Fear, and Other Smells",
+      "number": 8,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385318.jpg",
+      "name": "Where My Dreidel At",
+      "number": 9,
+      "runtime": 55,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385319.jpg",
+      "name": "A Tittin' and a Hairin'",
+      "number": 10,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385320.jpg",
+      "name": "We Can Be Heroes",
+      "number": 11,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385321.jpg",
+      "name": "Don't Make Me Come Back There",
+      "number": 12,
+      "runtime": 61,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 143007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385322.jpg",
+      "name": "Trust No Bitch",
+      "number": 13,
+      "runtime": 91,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 574624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385323.jpg",
+      "name": "Work That Body for Me",
+      "number": 1,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385324.jpg",
+      "name": "Power Suit",
+      "number": 2,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385325.jpg",
+      "name": "(Don't) Say Anything",
+      "number": 3,
+      "runtime": 58,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385326.jpg",
+      "name": "Doctor Psycho",
+      "number": 4,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385327.jpg",
+      "name": "We'll Always Have Baltimore",
+      "number": 5,
+      "runtime": 59,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385328.jpg",
+      "name": "Piece of Shit",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385329.jpg",
+      "name": "It Sounded Nicer in My Head",
+      "number": 7,
+      "runtime": 59,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385330.jpg",
+      "name": "Friends in Low Places",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385331.jpg",
+      "name": "Turn Table Turn",
+      "number": 9,
+      "runtime": 58,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385332.jpg",
+      "name": "Bunny, Skull, Bunny, Skull",
+      "number": 10,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385333.jpg",
+      "name": "People Persons",
+      "number": 11,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385334.jpg",
+      "name": "The Animals",
+      "number": 12,
+      "runtime": 62,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-17",
+      "id": 665288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385335.jpg",
+      "name": "Toast Can't Never Be Bread Again",
+      "number": 13,
+      "runtime": 78,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1066679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385338.jpg",
+      "name": "Riot FOMO",
+      "number": 1,
+      "runtime": 53,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385339.jpg",
+      "name": "Fuck, Marry, Frieda",
+      "number": 2,
+      "runtime": 52,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385348.jpg",
+      "name": "Pissters!",
+      "number": 3,
+      "runtime": 58,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385340.jpg",
+      "name": "Litchfield's Got Talent",
+      "number": 4,
+      "runtime": 61,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385341.jpg",
+      "name": "Sing It, White Effie",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385342.jpg",
+      "name": "Flaming Hot Cheetos, Literally",
+      "number": 6,
+      "runtime": 57,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385337.jpg",
+      "name": "Full Bush, Half Snickers",
+      "number": 7,
+      "runtime": 58,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385336.jpg",
+      "name": "Tied to the Tracks",
+      "number": 8,
+      "runtime": 57,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385343.jpg",
+      "name": "The Tightening",
+      "number": 9,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385344.jpg",
+      "name": "The Reverse Midas Touch",
+      "number": 10,
+      "runtime": 58,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385345.jpg",
+      "name": "Breaking the Fiberboard Ceiling",
+      "number": 11,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385346.jpg",
+      "name": "Tattoo You",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1067319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385347.jpg",
+      "name": "Storm-y Weather",
+      "number": 13,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1476626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385349.jpg",
+      "name": "Who Knows Better Than I",
+      "number": 1,
+      "runtime": 55,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385350.jpg",
+      "name": "Shitstorm Coming",
+      "number": 2,
+      "runtime": 57,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385351.jpg",
+      "name": "Look Out for Number One",
+      "number": 3,
+      "runtime": 51,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385352.jpg",
+      "name": "I'm the Talking Ass",
+      "number": 4,
+      "runtime": 57,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385353.jpg",
+      "name": "Mischief Mischief",
+      "number": 5,
+      "runtime": 61,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385354.jpg",
+      "name": "State of the Uterus",
+      "number": 6,
+      "runtime": 59,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385355.jpg",
+      "name": "Changing Winds",
+      "number": 7,
+      "runtime": 58,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385356.jpg",
+      "name": "Gordons",
+      "number": 8,
+      "runtime": 59,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385357.jpg",
+      "name": "Break the String",
+      "number": 9,
+      "runtime": 61,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385358.jpg",
+      "name": "Chocolate Chip Nookie",
+      "number": 10,
+      "runtime": 61,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385359.jpg",
+      "name": "Well This Took a Dark Turn",
+      "number": 11,
+      "runtime": 61,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385360.jpg",
+      "name": "Double Trouble",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1502019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1385361.jpg",
+      "name": "Be Free",
+      "number": 13,
+      "runtime": 85,
+      "season": 6
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1659932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515728.jpg",
+      "name": "Beginning of the End",
+      "number": 1,
+      "runtime": 56,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515729.jpg",
+      "name": "Just Desserts",
+      "number": 2,
+      "runtime": 57,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515730.jpg",
+      "name": "And Brown is the New Orange",
+      "number": 3,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515731.jpg",
+      "name": "How to Do Life",
+      "number": 4,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515732.jpg",
+      "name": "Minority Deport",
+      "number": 5,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515733.jpg",
+      "name": "Trapped in an Elevator",
+      "number": 6,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515734.jpg",
+      "name": "Me as Well",
+      "number": 7,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515735.jpg",
+      "name": "Baker's Dozen",
+      "number": 8,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515736.jpg",
+      "name": "The Hidey Hole",
+      "number": 9,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515737.jpg",
+      "name": "The Thirteenth",
+      "number": 10,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515738.jpg",
+      "name": "God Bless America",
+      "number": 11,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515739.jpg",
+      "name": "The Big House",
+      "number": 12,
+      "runtime": 76,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1661796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515740.jpg",
+      "name": "Here's Where We Get Off",
+      "number": 13,
+      "runtime": 90,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Krimi"
+    "Comedy",
+    "Crime"
   ],
+  "id": "tvmaze-170",
+  "live": true,
+  "overview": "Orange Is the New Black is the story of Piper Chapman, a woman in her thirties who is sentenced to fifteen months in prison after being convicted of a decade-old crime of transporting money for her drug-dealing girlfriend.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/203/508250.jpg",
   "rating": 7.9,
-  "runtime": null,
-  "episodes": []
+  "runtime": 60,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "170",
+  "title": "Orange Is the New Black",
+  "type": "series",
+  "year": 2013
 }

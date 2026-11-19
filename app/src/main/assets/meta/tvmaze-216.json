@@ -1,22 +1,842 @@
 {
-  "schema": 1,
-  "id": "tvmaze-216",
-  "source": "tvmaze",
-  "sourceId": "216",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Rick and Morty",
-  "year": 2013,
-  "type": "series",
-  "overview": "Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.",
-  "poster": "file:///android_asset/posters/tvmaze-216.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-12-02",
+      "id": 14308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/730352.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-09",
+      "id": 14309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/730780.jpg",
+      "name": "Lawnmower Dog",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-16",
+      "id": 14310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37914.jpg",
+      "name": "Anatomy Park",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 14311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37915.jpg",
+      "name": "M. Night Shaym-Aliens!",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 14312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37916.jpg",
+      "name": "Meeseeks and Destroy",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 14313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37917.jpg",
+      "name": "Rick Potion #9",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 14314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/579/1448989.jpg",
+      "name": "Raising Gazorpazorp",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 14315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/579/1448990.jpg",
+      "name": "Rixty Minutes",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 14316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37920.jpg",
+      "name": "Something Ricked This Way Comes",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-07",
+      "id": 14317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37921.jpg",
+      "name": "Close Rick-Counters of the Rick Kind",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-14",
+      "id": 14318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37922.jpg",
+      "name": "Ricksy Business",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-26",
+      "id": 157166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37923.jpg",
+      "name": "A Rickle in Time",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-02",
+      "id": 183053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37924.jpg",
+      "name": "Mortynight Run",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-09",
+      "id": 201178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37925.jpg",
+      "name": "Auto Erotic Assimilation",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-16",
+      "id": 201179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38412.jpg",
+      "name": "Total Rickall",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-23",
+      "id": 201180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39536.jpg",
+      "name": "Get Schwifty",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-30",
+      "id": 201181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171025.jpg",
+      "name": "The Ricks Must Be Crazy",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-13",
+      "id": 211831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46223.jpg",
+      "name": "Big Trouble in Little Sanchez",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-20",
+      "id": 211832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171026.jpg",
+      "name": "Interdimensional Cable 2: Tempting Fate",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 211833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751727.jpg",
+      "name": "Look Who's Purging Now",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 211834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/769086.jpg",
+      "name": "The Wedding Squanchers",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-01",
+      "id": 1119144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/262759.jpg",
+      "name": "The Rickshank Rickdemption",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-30",
+      "id": 1144079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306764.jpg",
+      "name": "Rickmancing the Stone",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-06",
+      "id": 1247370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308859.jpg",
+      "name": "Pickle Rick",
+      "number": 3,
+      "runtime": 24,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-13",
+      "id": 1247371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309507.jpg",
+      "name": "Vindicators 3: The Return of Worldender",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1264543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310725.jpg",
+      "name": "The Whirly Dirly Conspiracy",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-27",
+      "id": 1264544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314281.jpg",
+      "name": "Rest and Ricklaxation",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-10",
+      "id": 1269493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318431.jpg",
+      "name": "The Ricklantis Mixup",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-17",
+      "id": 1269494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320259.jpg",
+      "name": "Morty's Mind Blowers",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-24",
+      "id": 1285112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/322458.jpg",
+      "name": "The ABC's of Beth",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-10-01",
+      "id": 1285113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/324378.jpg",
+      "name": "The Rickchurian Mortydate",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2019-11-10",
+      "id": 1729610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/221/553800.jpg",
+      "name": "Edge of Tomorty: Rick, Die, Rickpeat",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-17",
+      "id": 1751878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/561992.jpg",
+      "name": "The Old Man and the Seat",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-24",
+      "id": 1751879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568855.jpg",
+      "name": "One Crew Over the Crewcoo's Morty",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-08",
+      "id": 1751880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/576337.jpg",
+      "name": "Claw and Hoarder: Special Ricktim's Morty",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-15",
+      "id": 1751881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579127.jpg",
+      "name": "Rattlestar Ricklactica",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-03",
+      "id": 1827600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/638365.jpg",
+      "name": "Never Ricking Morty",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-10",
+      "id": 1830517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640513.jpg",
+      "name": "Promortyus",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-17",
+      "id": 1839342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640514.jpg",
+      "name": "The Vat of Acid Episode",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-24",
+      "id": 1839343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/258/645881.jpg",
+      "name": "Childrick of Mort",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-31",
+      "id": 1839344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/259/649320.jpg",
+      "name": "Star Mort Rickturn of the Jerri",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2021-06-20",
+      "id": 2055782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/331/829108.jpg",
+      "name": "Mort Dinner Rick Andre",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-06-27",
+      "id": 2111926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/835723.jpg",
+      "name": "Mortyplicity",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-07-04",
+      "id": 2115503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/336/841515.jpg",
+      "name": "A Rickconvenient Mort",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-07-11",
+      "id": 2121946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/339/848455.jpg",
+      "name": "Rickdependence Spray",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-07-18",
+      "id": 2125581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/341/854180.jpg",
+      "name": "Amortycan Grickfitti",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-07-25",
+      "id": 2127407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/343/859276.jpg",
+      "name": "Rick & Morty's Thanksploitation Spectacular",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-08-01",
+      "id": 2127409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/339/848929.jpg",
+      "name": "Gotron Jerrysis Rickvangelion",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-08-08",
+      "id": 2130798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/868292.jpg",
+      "name": "Rickternal Friendshine of the Spotless Mort",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-05",
+      "id": 2130799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/354/887285.jpg",
+      "name": "Forgetting Sarick Mortshall",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-05",
+      "id": 2130800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/354/887286.jpg",
+      "name": "Rickmurai Jack",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2022-09-04",
+      "id": 2367135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1052645.jpg",
+      "name": "Solaricks",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-09-11",
+      "id": 2383531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1054704.jpg",
+      "name": "Rick: A Mort Well Lived",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-09-18",
+      "id": 2388198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/422/1056844.jpg",
+      "name": "Bethic Twinstinct",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-09-25",
+      "id": 2392927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/423/1058641.jpg",
+      "name": "Night Family",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-10-02",
+      "id": 2399914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/424/1061150.jpg",
+      "name": "Final DeSmithation",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-10-09",
+      "id": 2401619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/425/1064415.jpg",
+      "name": "JuRicksic Mort",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-11-20",
+      "id": 2424848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/431/1078899.jpg",
+      "name": "Full Meta Jackrick",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-11-27",
+      "id": 2433276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/432/1080841.jpg",
+      "name": "Analyze Piss",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-12-04",
+      "id": 2436430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/432/1081799.jpg",
+      "name": "A Rick in King Mortur's Mort",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-12-11",
+      "id": 2439172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/434/1086572.jpg",
+      "name": "Ricktional Mortpoon's Rickmas Mortcation",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2023-10-15",
+      "id": 2629188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/481/1203461.jpg",
+      "name": "How Poopy Got His Poop Back",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-22",
+      "id": 2639834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/482/1206935.jpg",
+      "name": "The Jerrick Trap",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-29",
+      "id": 2664562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/484/1210292.jpg",
+      "name": "Air Force Wong",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-11-05",
+      "id": 2667017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/484/1211100.jpg",
+      "name": "That's Amorte",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-11-12",
+      "id": 2667018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/486/1216454.jpg",
+      "name": "Unmortricken",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-11-19",
+      "id": 2667019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/487/1219807.jpg",
+      "name": "Rickfending Your Mort",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-11-26",
+      "id": 2667020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/489/1222952.jpg",
+      "name": "Wet Kuat Amortican Summer",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-12-03",
+      "id": 2667021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/490/1226789.jpg",
+      "name": "Rise of the Numbericons: The Movie",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-12-10",
+      "id": 2667022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/492/1230379.jpg",
+      "name": "Mort: Ragnarick",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2023-12-17",
+      "id": 2667023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235600.jpg",
+      "name": "Fear No Mort",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2025-05-25",
+      "id": 3193105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422040.jpg",
+      "name": "Summer of All Fears",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-06-01",
+      "id": 3203315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422042.jpg",
+      "name": "Valkyrick",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-06-08",
+      "id": 3203316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432498.jpg",
+      "name": "The Rick, The Mort & The Ugly",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-06-15",
+      "id": 3203317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1432697.jpg",
+      "name": "The Last Temptation of Jerry",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-06-22",
+      "id": 3203318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1436797.jpg",
+      "name": "Cryo Mort a Rickver",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-06-29",
+      "id": 3203319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/576/1441651.jpg",
+      "name": "The Curicksous Case of Bethjamin Button",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-07-06",
+      "id": 3203320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443501.jpg",
+      "name": "Ricker than Fiction",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-07-13",
+      "id": 3203321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/578/1445979.jpg",
+      "name": "Nomortland",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-07-20",
+      "id": 3203322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/579/1448128.jpg",
+      "name": "Morty Daddy",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2025-07-27",
+      "id": 3203323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/580/1450399.jpg",
+      "name": "Hot Rick",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2026-05-24",
+      "id": 3570414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/626/1566166.jpg",
+      "name": "There's Something About Morty",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-05-31",
+      "id": 3596676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/627/1568324.jpg",
+      "name": "Ricks Days, Seven Nights",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-06-07",
+      "id": 3596677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/629/1574271.jpg",
+      "name": "Rick Fu Hustle",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-06-14",
+      "id": 3596678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/628/1572327.jpg",
+      "name": "A Ricker Runs Through It",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-06-21",
+      "id": 3596679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/629/1574270.jpg",
+      "name": "Jer Bud",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-06-28",
+      "id": 3596680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/630/1576147.jpg",
+      "name": "Erickerhead",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-07-05",
+      "id": 3596681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/631/1578426.jpg",
+      "name": "Mortgully: The Last Rickforest",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-07-12",
+      "id": 3596682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/632/1580753.jpg",
+      "name": "Rickuiem Mort a Dream",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-07-19",
+      "id": 3596683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/633/1583089.jpg",
+      "name": "Salute Your Morts",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2026-07-26",
+      "id": 3596684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/635/1588131.jpg",
+      "name": "Field of Dreams",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
-    "Abenteuer",
+    "Comedy",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-216",
+  "live": true,
+  "overview": "Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566363.jpg",
   "rating": 8.7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "216",
+  "title": "Rick and Morty",
+  "type": "series",
+  "year": 2013
 }

@@ -1,21 +1,922 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1828",
-  "source": "tvmaze",
-  "sourceId": "1828",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Wentworth",
-  "year": 2013,
-  "type": "series",
-  "overview": "Fans of the iconic Prisoner series which pushed boundaries over three decades ago and still today boasts a loyal following worldwide, will remember Bea Smith as gutsy and fearless, ruling Wentworth Correctional Center with an iron fist. But who was Bea Smith before prison? How did a wife and mother from the suburbs become a top dog without rival? Wentworth is a dynamic, often confronting, drama series that begins with Bea's early days in prison. Set in the present day, it is a modern adaptation of Prisoner contemporising legendary characters and their stories for today's audience. This ten-part series takes the viewer inside to an uncompromising environment exploring the politics of women in a world without men, and how such a threatening experience both challenges and often changes those confined and working behind the razor wire.",
-  "poster": "file:///android_asset/posters/tvmaze-1828.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-05-01",
+      "id": 184967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400951.jpg",
+      "name": "No Place Like Home",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-08",
+      "id": 184968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400950.jpg",
+      "name": "Fly Me Away",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-15",
+      "id": 184969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400952.jpg",
+      "name": "The Girl Who Waited",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-22",
+      "id": 184970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400953.jpg",
+      "name": "The Things We Do",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-29",
+      "id": 184971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400954.jpg",
+      "name": "The Velvet Curtain",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-05",
+      "id": 184972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400956.jpg",
+      "name": "Captive",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-12",
+      "id": 184973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400957.jpg",
+      "name": "Something Dies",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-19",
+      "id": 184974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400958.jpg",
+      "name": "Mind Games",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-26",
+      "id": 184975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400959.jpg",
+      "name": "To the Moon",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-03",
+      "id": 184976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400960.jpg",
+      "name": "Checkmate",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-20",
+      "id": 184977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400962.jpg",
+      "name": "Born Again",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-27",
+      "id": 184978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400963.jpg",
+      "name": "Whatever It Takes",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-03",
+      "id": 184979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400964.jpg",
+      "name": "Boys in the Yard",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-10",
+      "id": 184980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400965.jpg",
+      "name": "The Danger Within",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-17",
+      "id": 184981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400966.jpg",
+      "name": "Twist the Knife",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-24",
+      "id": 184982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504444.jpg",
+      "name": "The Pink Dragon",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-01",
+      "id": 184983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504445.jpg",
+      "name": "Metamorphosis",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-08",
+      "id": 184984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504451.jpg",
+      "name": "Sins of the Mother",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-15",
+      "id": 184985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504453.jpg",
+      "name": "The Fixer",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-22",
+      "id": 184986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400971.jpg",
+      "name": "Jail Birds",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-29",
+      "id": 184987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400972.jpg",
+      "name": "Into the Night",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-05",
+      "id": 184988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400973.jpg",
+      "name": "Fear Her",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 184989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400992.jpg",
+      "name": "The Governor's Pleasure",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 184990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400993.jpg",
+      "name": "Failing Upwards",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-21",
+      "id": 184991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400994.jpg",
+      "name": "Knives Out",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 184992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400995.jpg",
+      "name": "Righteous Acts",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 184993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400996.jpg",
+      "name": "Mercy",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-12",
+      "id": 184994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400997.jpg",
+      "name": "Evidence",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-19",
+      "id": 184995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400998.jpg",
+      "name": "The Long Game",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-26",
+      "id": 184996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400999.jpg",
+      "name": "Goldfish",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-02",
+      "id": 184997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401000.jpg",
+      "name": "Freak Show",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-09",
+      "id": 184998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401001.jpg",
+      "name": "A Higher Court",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-16",
+      "id": 184999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401002.jpg",
+      "name": "The Living and the Dead",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-23",
+      "id": 185000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401003.jpg",
+      "name": "Blood and Fire",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 676976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400980.jpg",
+      "name": "First Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 783042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400981.jpg",
+      "name": "Poking Spiders",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 786166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400982.jpg",
+      "name": "Prisoner",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-31",
+      "id": 786167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400983.jpg",
+      "name": "Screw Lover",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-07",
+      "id": 786168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400984.jpg",
+      "name": "Love and Hate",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-14",
+      "id": 786169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400985.jpg",
+      "name": "Divide and Conquer",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-21",
+      "id": 786170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400986.jpg",
+      "name": "Panic Button",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-28",
+      "id": 786171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400987.jpg",
+      "name": "Plan Bea",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-05",
+      "id": 786172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400988.jpg",
+      "name": "Afterlife",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-12",
+      "id": 786173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400989.jpg",
+      "name": "Smitten",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-19",
+      "id": 786178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400990.jpg",
+      "name": "Eleventh Hour",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-26",
+      "id": 786179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400991.jpg",
+      "name": "Seeing Red",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1085281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401004.jpg",
+      "name": "Scars",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-11",
+      "id": 1121911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401005.jpg",
+      "name": "The Bitch is Back",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-18",
+      "id": 1124719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401006.jpg",
+      "name": "Nothing But the Truth",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-25",
+      "id": 1146175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401007.jpg",
+      "name": "Loose Ends",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1146176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401008.jpg",
+      "name": "Belly of the Beast",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1146177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401009.jpg",
+      "name": "Happy Birthday, Vera",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1146178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401010.jpg",
+      "name": "The Pact",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-23",
+      "id": 1146179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401011.jpg",
+      "name": "Think Inside the Box",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1146180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401012.jpg",
+      "name": "Snakehead",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-06",
+      "id": 1146181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401013.jpg",
+      "name": "Mere Anarchy",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-13",
+      "id": 1146182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401014.jpg",
+      "name": "Coup De Grace",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-20",
+      "id": 1146183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401015.jpg",
+      "name": "Hell Bent",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-19",
+      "id": 1440151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400977.jpg",
+      "name": "Clean Slate",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-06-26",
+      "id": 1481687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400978.jpg",
+      "name": "The Boxer",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-03",
+      "id": 1485508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400979.jpg",
+      "name": "Bleed Out",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-10",
+      "id": 1485509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405580.jpg",
+      "name": "Winter is Here",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-17",
+      "id": 1490717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405581.jpg",
+      "name": "Bitter Pill",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-24",
+      "id": 1495058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405582.jpg",
+      "name": "Angel of Wentworth",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-07-31",
+      "id": 1498937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409053.jpg",
+      "name": "The Edge",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-08-07",
+      "id": 1502407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409304.jpg",
+      "name": "Lovers and Fighters",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-08-14",
+      "id": 1507433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411564.jpg",
+      "name": "Shallow Grave",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-08-21",
+      "id": 1510492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/413824.jpg",
+      "name": "Fractured",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-08-28",
+      "id": 1513809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/414353.jpg",
+      "name": "Indelible Ink",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-09-04",
+      "id": 1518380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/416349.jpg",
+      "name": "Showdown",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-05-28",
+      "id": 1644021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/500951.jpg",
+      "name": "Blood Wedding",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-06-04",
+      "id": 1644022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508040.jpg",
+      "name": "Payback",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-06-11",
+      "id": 1644023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508041.jpg",
+      "name": "Atonement",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-06-18",
+      "id": 1644024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508039.jpg",
+      "name": "Karen",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-06-25",
+      "id": 1644025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508188.jpg",
+      "name": "Ascension",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-02",
+      "id": 1644026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/511962.jpg",
+      "name": "Mother",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-09",
+      "id": 1644027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/511949.jpg",
+      "name": "Bad Blood",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-16",
+      "id": 1644028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513545.jpg",
+      "name": "Protection",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-23",
+      "id": 1644029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/524593.jpg",
+      "name": "Under Siege (1)",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-07-30",
+      "id": 1644030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/517389.jpg",
+      "name": "Under Siege (2)",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-07-28",
+      "id": 1848850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665956.jpg",
+      "name": "Resurrection",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-08-04",
+      "id": 1872545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668371.jpg",
+      "name": "Ends and Means",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-08-11",
+      "id": 1872546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/268/670045.jpg",
+      "name": "Enemy of the State",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-08-18",
+      "id": 1872547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/268/672107.jpg",
+      "name": "Revenant",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-08-25",
+      "id": 1872548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/269/674581.jpg",
+      "name": "Fallout",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-09-01",
+      "id": 1872549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/271/677723.jpg",
+      "name": "Fugitive",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-09-08",
+      "id": 1872552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/272/681130.jpg",
+      "name": "Battle Lines",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-09-15",
+      "id": 1872553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/273/683968.jpg",
+      "name": "Goldfish, Part 2",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-09-22",
+      "id": 1872554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/274/686940.jpg",
+      "name": "Monster",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-09-29",
+      "id": 1872555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/689745.jpg",
+      "name": "The Enemy Within",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2021-08-24",
+      "id": 2117722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879806.jpg",
+      "name": "Rogue",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-08-31",
+      "id": 2150290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/353/882854.jpg",
+      "name": "Requiem",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-09-07",
+      "id": 2150291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/888573.jpg",
+      "name": "The Ties That Bind",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-09-14",
+      "id": 2150292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893425.jpg",
+      "name": "Judas Kiss",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-09-21",
+      "id": 2150293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/359/898199.jpg",
+      "name": "The Unknown Terrorist",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-09-28",
+      "id": 2150294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/361/903375.jpg",
+      "name": "One Eye Open",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-10-05",
+      "id": 2150295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/908292.jpg",
+      "name": "Collateral",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-10-12",
+      "id": 2150296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/365/914728.jpg",
+      "name": "The Abyss",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-10-19",
+      "id": 2150297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/367/919301.jpg",
+      "name": "The Reckoning",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2021-10-26",
+      "id": 2150298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/369/924941.jpg",
+      "name": "Legacy",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-1828",
+  "live": true,
+  "overview": "Fans of the iconic Prisoner series which pushed boundaries over three decades ago and still today boasts a loyal following worldwide, will remember Bea Smith as gutsy and fearless, ruling Wentworth Correctional Center with an iron fist. But who was Bea Smith before prison? How did a wife and mother from the suburbs become a top dog without rival? Wentworth is a dynamic, often confronting, drama series that begins with Bea's early days in prison. Set in the present day, it is a modern adaptation of Prisoner contemporising legendary characters and their stories for today's audience. This ten-part series takes the viewer inside to an uncompromising environment exploring the politics of women in a world without men, and how such a threatening experience both challenges and often changes those confined and working behind the razor wire.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/158/396176.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1828",
+  "title": "Wentworth",
+  "type": "series",
+  "year": 2013
 }

@@ -1,22 +1,725 @@
 {
-  "schema": 1,
-  "id": "tvmaze-106",
-  "source": "tvmaze",
-  "sourceId": "106",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Justified",
-  "year": 2010,
-  "type": "series",
-  "overview": "Deputy U.S. Marshal Raylan Givens is something of a 19th century-style officer in modern times, whose unconventional enforcement of justice makes him a target with criminals and a problem for his superiors in the U.S. Marshals Service. As a result of an eager but \"justified\" shooting of a Miami fugitive while on assignment in Florida, Givens is reassigned to Lexington, Kentucky, in a district that includes his hometown of Harlan, a rural mining town in the east of the state.",
-  "poster": "file:///android_asset/posters/tvmaze-106.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-03-16",
+      "id": 7350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420707.jpg",
+      "name": "Fire in the Hole",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-23",
+      "id": 7351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420708.jpg",
+      "name": "Riverbrook",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-30",
+      "id": 7352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420710.jpg",
+      "name": "Fixer",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-06",
+      "id": 7353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420712.jpg",
+      "name": "Long in the Tooth",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-13",
+      "id": 7354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420714.jpg",
+      "name": "The Lord of War and Thunder",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-20",
+      "id": 7355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420721.jpg",
+      "name": "The Collection",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-27",
+      "id": 7356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757475.jpg",
+      "name": "Blind Spot",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-04",
+      "id": 7357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757476.jpg",
+      "name": "Blowback",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-11",
+      "id": 7358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757477.jpg",
+      "name": "Hatless",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-18",
+      "id": 7359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757478.jpg",
+      "name": "The Hammer",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-25",
+      "id": 7360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757479.jpg",
+      "name": "Veterans",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-01",
+      "id": 7361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757480.jpg",
+      "name": "Fathers and Sons",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-08",
+      "id": 7362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757481.jpg",
+      "name": "Bulletville",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-09",
+      "id": 7363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/577563.jpg",
+      "name": "The Moonshine War",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-16",
+      "id": 7364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/580918.jpg",
+      "name": "The Life Inside",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-23",
+      "id": 7365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/583171.jpg",
+      "name": "The I of the Storm",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-02",
+      "id": 7366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/584605.jpg",
+      "name": "For Blood or Money",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-09",
+      "id": 7367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/590356.jpg",
+      "name": "Cottonmouth",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-16",
+      "id": 7368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/590357.jpg",
+      "name": "Blaze of Glory",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-23",
+      "id": 7369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593589.jpg",
+      "name": "Save My Love",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-30",
+      "id": 7370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/606582.jpg",
+      "name": "The Spoil",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-06",
+      "id": 7371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/606641.jpg",
+      "name": "Brother's Keeper",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-13",
+      "id": 7372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/609219.jpg",
+      "name": "Debts and Accounts",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-20",
+      "id": 7373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610421.jpg",
+      "name": "Full Commitment",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-27",
+      "id": 7374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610422.jpg",
+      "name": "Reckoning",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-04",
+      "id": 7375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/615702.jpg",
+      "name": "Bloody Harlan",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-17",
+      "id": 7376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/616215.jpg",
+      "name": "The Gunfighter",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-24",
+      "id": 7377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/287/719442.jpg",
+      "name": "Cut Ties",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-31",
+      "id": 7378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481294.jpg",
+      "name": "Harlan Roulette",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 7379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481331.jpg",
+      "name": "The Devil You Know",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 7380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481338.jpg",
+      "name": "Thick as Mud",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 7381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/290/727058.jpg",
+      "name": "When the Guns Come Out",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-02-28",
+      "id": 7382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/290/727060.jpg",
+      "name": "The Man Behind the Curtain",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 7383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/730337.jpg",
+      "name": "Watching the Detectives",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 7384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/730348.jpg",
+      "name": "Loose Ends",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 7385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/732215.jpg",
+      "name": "Guy Walks Into a Bar",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-27",
+      "id": 7386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/293/732908.jpg",
+      "name": "Measures",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-03",
+      "id": 7387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/294/736782.jpg",
+      "name": "Coalition",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 7388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/295/738893.jpg",
+      "name": "Slaughterhouse",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-08",
+      "id": 7389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/296/740825.jpg",
+      "name": "Hole in the Wall",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-15",
+      "id": 7390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751648.jpg",
+      "name": "Where's Waldo?",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-22",
+      "id": 7391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751659.jpg",
+      "name": "Truth and Consequences",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-29",
+      "id": 7392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751708.jpg",
+      "name": "The Bird Has Flown",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-05",
+      "id": 7393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751710.jpg",
+      "name": "Kin",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-12",
+      "id": 7394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/752083.jpg",
+      "name": "Foot Chase",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-19",
+      "id": 7395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757483.jpg",
+      "name": "Money Trap",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-26",
+      "id": 7396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757484.jpg",
+      "name": "Outlaw",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-05",
+      "id": 7397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480867.jpg",
+      "name": "The Hatchet Tour",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-12",
+      "id": 7398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757485.jpg",
+      "name": "Get Drew",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-19",
+      "id": 7399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757486.jpg",
+      "name": "Decoy",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-26",
+      "id": 7400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757487.jpg",
+      "name": "Peace of Mind",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-04-02",
+      "id": 7401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757488.jpg",
+      "name": "Ghosts",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-07",
+      "id": 7402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/414493.jpg",
+      "name": "A Murder of Crowes",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-01-14",
+      "id": 7403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409741.jpg",
+      "name": "The Kids Aren't All Right",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-01-21",
+      "id": 7404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/415526.jpg",
+      "name": "Good Intentions",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-01-28",
+      "id": 7405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757489.jpg",
+      "name": "Over the Mountain",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-02-04",
+      "id": 7406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/415525.jpg",
+      "name": "Shot All to Hell",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-02-11",
+      "id": 7407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757490.jpg",
+      "name": "Kill the Messenger",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-02-25",
+      "id": 7408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757491.jpg",
+      "name": "Raw Deal",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-04",
+      "id": 7409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757492.jpg",
+      "name": "Whistle Past the Graveyard",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-11",
+      "id": 7410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481351.jpg",
+      "name": "Wrong Roads",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-18",
+      "id": 7411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481382.jpg",
+      "name": "Weight",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-25",
+      "id": 7412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481401.jpg",
+      "name": "The Toll",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-01",
+      "id": 7413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481410.jpg",
+      "name": "Starvation",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-08",
+      "id": 7414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/481414.jpg",
+      "name": "Restitution",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-20",
+      "id": 57110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19625.jpg",
+      "name": "Fate's Right Hand",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-01-27",
+      "id": 58220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19916.jpg",
+      "name": "Cash Game",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 58221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20615.jpg",
+      "name": "Noblesse Oblige",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 58222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21503.jpg",
+      "name": "The Trash and the Snake",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 58223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21825.jpg",
+      "name": "Sounding",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 58224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22266.jpg",
+      "name": "Alive Day",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-03",
+      "id": 58225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22865.jpg",
+      "name": "The Hunt",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-10",
+      "id": 58226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/757493.jpg",
+      "name": "Dark as a Dungeon",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-17",
+      "id": 58227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24064.jpg",
+      "name": "Burned",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 58228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24361.jpg",
+      "name": "Trust",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-31",
+      "id": 58229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24812.jpg",
+      "name": "Fugitive Number One",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 58230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25213.jpg",
+      "name": "Collateral",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 58231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25777.jpg",
+      "name": "The Promise",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Western"
   ],
+  "id": "tvmaze-106",
+  "live": true,
+  "overview": "Deputy U.S. Marshal Raylan Givens is something of a 19th century-style officer in modern times, whose unconventional enforcement of justice makes him a target with criminals and a problem for his superiors in the U.S. Marshals Service. As a result of an eager but \"justified\" shooting of a Miami fugitive while on assignment in Florida, Givens is reassigned to Lexington, Kentucky, in a district that includes his hometown of Harlan, a rural mining town in the east of the state.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/808.jpg",
   "rating": 8.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "106",
+  "title": "Justified",
+  "type": "series",
+  "year": 2010
 }

@@ -1,20 +1,984 @@
 {
-  "schema": 1,
-  "id": "tvmaze-891",
-  "source": "tvmaze",
-  "sourceId": "891",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Hard Knocks",
-  "year": 2001,
-  "type": "series",
-  "overview": "HBO Sports, NFL Films and the Seattle Seahawks team up for an all-access look at what it takes to make it in the National Football League when the first sports-based reality series - and one of the fastest-turnaround programs on TV.",
-  "poster": "file:///android_asset/posters/tvmaze-891.jpg",
-  "genres": [
-    "Sport"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-08-01",
+      "id": 82643,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-08",
+      "id": 82644,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-15",
+      "id": 82645,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-22",
+      "id": 82646,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-29",
+      "id": 82647,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-09-05",
+      "id": 82648,
+      "image": null,
+      "name": "Training Camp with the Baltimore Ravens (6)",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-08-07",
+      "id": 82649,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-08-14",
+      "id": 82650,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-08-21",
+      "id": 82651,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-08-28",
+      "id": 82652,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-09-04",
+      "id": 82653,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-09-11",
+      "id": 82654,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (6)",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-08",
+      "id": 82655,
+      "image": null,
+      "name": "Training Camp with the Kansas City Chiefs (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-08-15",
+      "id": 82656,
+      "image": null,
+      "name": "Training Camp with the Kansas City Chiefs (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-08-22",
+      "id": 82657,
+      "image": null,
+      "name": "Training Camp with the Kansas City Chiefs (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-08-29",
+      "id": 82658,
+      "image": null,
+      "name": "Training Camp with the Kansas City Chiefs (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-05",
+      "id": 82659,
+      "image": null,
+      "name": "Training Camp with the Kansas City Chiefs (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-08-06",
+      "id": 82660,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-13",
+      "id": 82661,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-20",
+      "id": 82662,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-27",
+      "id": 82663,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-03",
+      "id": 82664,
+      "image": null,
+      "name": "Training Camp with the Dallas Cowboys (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-08-12",
+      "id": 82665,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-19",
+      "id": 82666,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-26",
+      "id": 82667,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-09-02",
+      "id": 82668,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-09-09",
+      "id": 82669,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-08-11",
+      "id": 82670,
+      "image": null,
+      "name": "Training Camp with the New York Jets (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-18",
+      "id": 82671,
+      "image": null,
+      "name": "Training Camp with the New York Jets (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-25",
+      "id": 82672,
+      "image": null,
+      "name": "Training Camp with the New York Jets (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-01",
+      "id": 82673,
+      "image": null,
+      "name": "Training Camp with the New York Jets (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-08",
+      "id": 82674,
+      "image": null,
+      "name": "Training Camp with the New York Jets (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2012-08-07",
+      "id": 82675,
+      "image": null,
+      "name": "Training Camp with the Miami Dolphins #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2012-08-14",
+      "id": 82676,
+      "image": null,
+      "name": "Training Camp with the Miami Dolphins #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2012-08-21",
+      "id": 82677,
+      "image": null,
+      "name": "Training Camp with the Miami Dolphins #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2012-08-28",
+      "id": 82678,
+      "image": null,
+      "name": "Training Camp with the Miami Dolphins #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2012-09-04",
+      "id": 82679,
+      "image": null,
+      "name": "Training Camp with the Miami Dolphins #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-08-06",
+      "id": 82680,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2013-08-13",
+      "id": 82681,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2013-08-20",
+      "id": 82682,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2013-08-27",
+      "id": 82683,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2013-09-03",
+      "id": 82684,
+      "image": null,
+      "name": "Training Camp with the Cincinnati Bengals #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-08-05",
+      "id": 82685,
+      "image": null,
+      "name": "Training Camp with the Atlanta Falcons #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2014-08-12",
+      "id": 82686,
+      "image": null,
+      "name": "Training Camp with the Atlanta Falcons #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2014-08-19",
+      "id": 82687,
+      "image": null,
+      "name": "Training Camp with the Atlanta Falcons #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2014-08-26",
+      "id": 82688,
+      "image": null,
+      "name": "Training Camp with the Atlanta Falcons #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2014-09-02",
+      "id": 82689,
+      "image": null,
+      "name": "Training Camp with the Atlanta Falcons #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-08-11",
+      "id": 203371,
+      "image": null,
+      "name": "Training Camp with the Houston Texans #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2015-08-18",
+      "id": 203548,
+      "image": null,
+      "name": "Training Camp with the Houston Texans #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2015-08-25",
+      "id": 203549,
+      "image": null,
+      "name": "Training Camp with the Houston Texans #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-01",
+      "id": 203550,
+      "image": null,
+      "name": "Training Camp with the Houston Texans #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-08",
+      "id": 203551,
+      "image": null,
+      "name": "Training Camp with the Houston Texans #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-08-09",
+      "id": 684616,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2016-08-16",
+      "id": 684617,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2016-08-23",
+      "id": 684618,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2016-08-30",
+      "id": 684619,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2016-09-06",
+      "id": 684620,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-08-08",
+      "id": 1150669,
+      "image": null,
+      "name": "Training Camp with the Tampa Bay Buccaneers #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2017-08-15",
+      "id": 1150670,
+      "image": null,
+      "name": "Training Camp with the Tampa Bay Buccaneers #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2017-08-22",
+      "id": 1150671,
+      "image": null,
+      "name": "Training Camp with the Tampa Bay Buccaneers #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2017-08-29",
+      "id": 1150672,
+      "image": null,
+      "name": "Training Camp with the Tampa Bay Buccaneers #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2017-09-05",
+      "id": 1150673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316627.jpg",
+      "name": "Training Camp with the Tampa Bay Buccaneers #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-08-07",
+      "id": 1468688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409473.jpg",
+      "name": "Training Camp with the Cleveland Browns - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2018-08-14",
+      "id": 1468689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411274.jpg",
+      "name": "Training Camp with the Cleveland Browns - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2018-08-21",
+      "id": 1468690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/412794.jpg",
+      "name": "Training Camp with the Cleveland Browns - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2018-08-28",
+      "id": 1468691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/414649.jpg",
+      "name": "Training Camp with the Cleveland Browns - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2018-09-04",
+      "id": 1468692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/416452.jpg",
+      "name": "Training Camp with the Cleveland Browns - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-08-06",
+      "id": 1669310,
+      "image": null,
+      "name": "Training Camp with the Oakland Raiders - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2019-08-13",
+      "id": 1669311,
+      "image": null,
+      "name": "Training Camp with the Oakland Raiders - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2019-08-20",
+      "id": 1669312,
+      "image": null,
+      "name": "Training Camp with the Oakland Raiders - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2019-08-27",
+      "id": 1669313,
+      "image": null,
+      "name": "Training Camp with the Oakland Raiders - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2019-09-03",
+      "id": 1669314,
+      "image": null,
+      "name": "Training Camp with the Oakland Raiders - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2020-08-11",
+      "id": 1888521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669621.jpg",
+      "name": "Training Camp with the Los Angeles Rams - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2020-08-18",
+      "id": 1888522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/269/674207.jpg",
+      "name": "Training Camp with the Los Angeles Rams - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2020-08-25",
+      "id": 1888523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/269/674208.jpg",
+      "name": "Training Camp with the Los Angeles Rams - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2020-09-01",
+      "id": 1888524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/269/674209.jpg",
+      "name": "Training Camp with the Los Angeles Rams - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2020-09-08",
+      "id": 1888525,
+      "image": null,
+      "name": "Training Camp with the Los Angeles Rams - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-08-10",
+      "id": 2123841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/378/945709.jpg",
+      "name": "Training Camp with the Dallas Cowboys - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2021-08-17",
+      "id": 2123842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/378/945710.jpg",
+      "name": "Training Camp with the Dallas Cowboys - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2021-08-24",
+      "id": 2123843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/378/945711.jpg",
+      "name": "Training Camp with the Dallas Cowboys - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2021-08-31",
+      "id": 2123844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/378/945712.jpg",
+      "name": "Training Camp with the Dallas Cowboys - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2021-09-07",
+      "id": 2123845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/378/945713.jpg",
+      "name": "Training Camp with the Dallas Cowboys - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-08-09",
+      "id": 2303455,
+      "image": null,
+      "name": "Training Camp with the Detroit Lions - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2022-08-16",
+      "id": 2321776,
+      "image": null,
+      "name": "Training Camp with the Detroit Lions - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2022-08-23",
+      "id": 2321777,
+      "image": null,
+      "name": "Training Camp with the Detroit Lions - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2022-08-30",
+      "id": 2321779,
+      "image": null,
+      "name": "Training Camp with the Detroit Lions - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2022-09-06",
+      "id": 2321780,
+      "image": null,
+      "name": "Training Camp with the Detroit Lions - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-08-08",
+      "id": 2598482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/472/1180249.jpg",
+      "name": "Hard Knocks: Training Camp with the New York Jets - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2023-08-15",
+      "id": 2598483,
+      "image": null,
+      "name": "Hard Knocks: Training Camp with the New York Jets - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2023-08-22",
+      "id": 2598484,
+      "image": null,
+      "name": "Hard Knocks: Training Camp with the New York Jets - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2023-08-29",
+      "id": 2598485,
+      "image": null,
+      "name": "Hard Knocks: Training Camp with the New York Jets - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2023-09-05",
+      "id": 2598486,
+      "image": null,
+      "name": "Hard Knocks: Training Camp with the New York Jets - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-08-06",
+      "id": 2896926,
+      "image": null,
+      "name": "Training Camp with the Chicago Bears - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2024-08-13",
+      "id": 2896927,
+      "image": null,
+      "name": "Training Camp with the Chicago Bears - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2024-08-20",
+      "id": 2896928,
+      "image": null,
+      "name": "Training Camp with the Chicago Bears - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2024-08-27",
+      "id": 2896929,
+      "image": null,
+      "name": "Training Camp with the Chicago Bears - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2024-09-03",
+      "id": 2896930,
+      "image": null,
+      "name": "Training Camp with the Chicago Bears - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-08-05",
+      "id": 3246467,
+      "image": null,
+      "name": "Training Camp with the Buffalo Bills - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2025-08-12",
+      "id": 3324128,
+      "image": null,
+      "name": "Training Camp with the Buffalo Bills - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2025-08-19",
+      "id": 3324129,
+      "image": null,
+      "name": "Training Camp with the Buffalo Bills - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2025-08-26",
+      "id": 3324130,
+      "image": null,
+      "name": "Training Camp with the Buffalo Bills - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2025-09-02",
+      "id": 3324131,
+      "image": null,
+      "name": "Training Camp with the Buffalo Bills - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-08-04",
+      "id": 3583373,
+      "image": null,
+      "name": "Training Camp with the Seattle Seahawks - #1",
+      "number": 1,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2026-08-11",
+      "id": 3681285,
+      "image": null,
+      "name": "Training Camp with the Seattle Seahawks - #2",
+      "number": 2,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2026-08-18",
+      "id": 3681286,
+      "image": null,
+      "name": "Training Camp with the Seattle Seahawks - #3",
+      "number": 3,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2026-08-25",
+      "id": 3681287,
+      "image": null,
+      "name": "Training Camp with the Seattle Seahawks - #4",
+      "number": 4,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2026-09-01",
+      "id": 3681288,
+      "image": null,
+      "name": "Training Camp with the Seattle Seahawks - #5",
+      "number": 5,
+      "runtime": 60,
+      "season": 21
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Sports"
+  ],
+  "id": "tvmaze-891",
+  "live": true,
+  "overview": "HBO Sports, NFL Films and the Seattle Seahawks team up for an all-access look at what it takes to make it in the National Football League when the first sports-based reality series - and one of the fastest-turnaround programs on TV.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596064.jpg",
   "rating": 6.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "891",
+  "title": "Hard Knocks",
+  "type": "series",
+  "year": 2001
 }

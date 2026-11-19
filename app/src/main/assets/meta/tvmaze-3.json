@@ -1,22 +1,320 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3",
-  "source": "tvmaze",
-  "sourceId": "3",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Bitten",
-  "year": 2014,
-  "type": "series",
-  "overview": "Based on the critically acclaimed series of novels from Kelley Armstrong. Set in Toronto and upper New York State, Bitten follows the adventures of 28-year-old Elena Michaels, the world's only female werewolf. An orphan, Elena thought she finally found her \"happily ever after\" with her new love Clayton, until her life changed forever. With one small bite, the normal life she craved was taken away and she was left to survive life with the Pack.",
-  "poster": "file:///android_asset/posters/tvmaze-3.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-01-11",
+      "id": 100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276371.jpg",
+      "name": "Summons",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-18",
+      "id": 101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276392.jpg",
+      "name": "Prodigal",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-25",
+      "id": 102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/277992.jpg",
+      "name": "Trespass",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-01",
+      "id": 103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278552.jpg",
+      "name": "Grief",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-08",
+      "id": 104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278869.jpg",
+      "name": "Bitten",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-15",
+      "id": 105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280710.jpg",
+      "name": "Committed",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-22",
+      "id": 106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284649.jpg",
+      "name": "Stalking",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-01",
+      "id": 107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284749.jpg",
+      "name": "Prisoner",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-08",
+      "id": 108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292808.jpg",
+      "name": "Vengeance",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-15",
+      "id": 109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292819.jpg",
+      "name": "Descent",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-22",
+      "id": 110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/293813.jpg",
+      "name": "Settling",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-29",
+      "id": 111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/23.jpg",
+      "name": "Caged",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-05",
+      "id": 112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/293852.jpg",
+      "name": "Ready",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-07",
+      "id": 96500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20985.jpg",
+      "name": "Bad Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-14",
+      "id": 131180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21681.jpg",
+      "name": "Scare Tactics",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-21",
+      "id": 133974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22147.jpg",
+      "name": "Hell's Teeth",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-28",
+      "id": 141850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22585.jpg",
+      "name": "Dead Meat",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-07",
+      "id": 141851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23098.jpg",
+      "name": "Rabbit Hole",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-14",
+      "id": 142513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23912.jpg",
+      "name": "Nine Circles",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-21",
+      "id": 142514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24144.jpg",
+      "name": "Bad Dreams",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-28",
+      "id": 151509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24145.jpg",
+      "name": "Dark Arts",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-04",
+      "id": 151582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24505.jpg",
+      "name": "Scavenger's Daughter",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-11",
+      "id": 151583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24952.jpg",
+      "name": "Fine Temporum",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-12",
+      "id": 525554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111395.jpg",
+      "name": "Family, of Sorts",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-19",
+      "id": 599310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113657.jpg",
+      "name": "Our Own Blood",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-26",
+      "id": 599311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116496.jpg",
+      "name": "Right Behind You",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 604749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118892.jpg",
+      "name": "A Quiet Dog",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-11",
+      "id": 604750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120952.jpg",
+      "name": "Of Sonders Weight",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-18",
+      "id": 604751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123305.jpg",
+      "name": "Rule of Anger",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-25",
+      "id": 604752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125772.jpg",
+      "name": "On the Brink",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-01",
+      "id": 631860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128487.jpg",
+      "name": "Tili Tili Bom",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-08",
+      "id": 631861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131024.jpg",
+      "name": "Shock the System",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-15",
+      "id": 631862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133101.jpg",
+      "name": "Truth, Changes, Everything",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Horror",
-    "Romanze"
+    "Romance"
   ],
+  "id": "tvmaze-3",
+  "live": true,
+  "overview": "Based on the critically acclaimed series of novels from Kelley Armstrong. Set in Toronto and upper New York State, Bitten follows the adventures of 28-year-old Elena Michaels, the world's only female werewolf. An orphan, Elena thought she finally found her \"happily ever after\" with her new love Clayton, until her life changed forever. With one small bite, the normal life she craved was taken away and she was left to survive life with the Pack.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/15.jpg",
   "rating": 7.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3",
+  "title": "Bitten",
+  "type": "series",
+  "year": 2014
 }

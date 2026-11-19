@@ -1,22 +1,473 @@
 {
-  "schema": 1,
-  "id": "tvmaze-195",
-  "source": "tvmaze",
-  "sourceId": "195",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Bates Motel",
-  "year": 2013,
-  "type": "series",
-  "overview": "Bates Motel is a contemporary prequel to the genre-defining film Psycho, and gives viewers an intimate portrayal of how Norman Bates' psyche unravels through his teenage years.Following the tragic death of her husband, Norma Bates buys a motel on the outskirts of the idyllic coastal town of White Pine Bay, seeking a fresh start. As Norma and Norman get ensconced in their new home, they discover this town isn't quite what it seems, and the locals aren't so quick to let them in on their secrets. But the Bates' are done being pushed around and will do whatever it takes to survive - and will do whatever it takes to protect their own secrets.",
-  "poster": "file:///android_asset/posters/tvmaze-195.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-18",
+      "id": 13205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005163.jpg",
+      "name": "First You Dream, Then You Die",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 13206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005154.jpg",
+      "name": "Nice Town You Picked, Norma...",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-01",
+      "id": 13207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005164.jpg",
+      "name": "What's Wrong with Norman",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 13208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005165.jpg",
+      "name": "Trust Me",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 13209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005157.jpg",
+      "name": "Ocean View",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-22",
+      "id": 13210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005158.jpg",
+      "name": "The Truth",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-29",
+      "id": 13211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005159.jpg",
+      "name": "The Man in Number 9",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-06",
+      "id": 13212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005160.jpg",
+      "name": "A Boy and His Dog",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-13",
+      "id": 13213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005161.jpg",
+      "name": "Underwater",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-20",
+      "id": 13214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005162.jpg",
+      "name": "Midnight",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 13215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005166.jpg",
+      "name": "Gone But Not Forgotten",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 13216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005167.jpg",
+      "name": "Shadow of a Doubt",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 13217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005168.jpg",
+      "name": "Caleb",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 13218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005169.jpg",
+      "name": "Check-Out",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-31",
+      "id": 13219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005170.jpg",
+      "name": "The Escape Artist",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-07",
+      "id": 13220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005171.jpg",
+      "name": "Plunge",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-14",
+      "id": 13221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005172.jpg",
+      "name": "Presumed Innocent",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-21",
+      "id": 13222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005173.jpg",
+      "name": "Meltdown",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-28",
+      "id": 13223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005174.jpg",
+      "name": "The Box",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-05",
+      "id": 13224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005175.jpg",
+      "name": "The Immutable Truth",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-09",
+      "id": 117543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140632.jpg",
+      "name": "A Death in the Family",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-16",
+      "id": 139659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140636.jpg",
+      "name": "The Arcanum Club",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 139660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140645.jpg",
+      "name": "Persuasion",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-30",
+      "id": 139661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140646.jpg",
+      "name": "Unbreak-Able",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-06",
+      "id": 141978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140647.jpg",
+      "name": "The Deal",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-13",
+      "id": 143010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140648.jpg",
+      "name": "Norma Louise",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-20",
+      "id": 144006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140649.jpg",
+      "name": "The Last Supper",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-27",
+      "id": 144007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140650.jpg",
+      "name": "The Pit",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-04",
+      "id": 141979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140651.jpg",
+      "name": "Crazy",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-11",
+      "id": 144008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140652.jpg",
+      "name": "Unconscious",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-07",
+      "id": 560014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005176.jpg",
+      "name": "A Danger to Himself and Others",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-14",
+      "id": 614002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005177.jpg",
+      "name": "Goodnight, Mother",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-21",
+      "id": 614003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005178.jpg",
+      "name": "'Til Death Do You Part",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-28",
+      "id": 614004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005179.jpg",
+      "name": "Lights of Winter",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-11",
+      "id": 639708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005180.jpg",
+      "name": "Refraction",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-18",
+      "id": 639709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005181.jpg",
+      "name": "The Vault",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-25",
+      "id": 639710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005182.jpg",
+      "name": "There's No Place Like Home",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-02",
+      "id": 644659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005183.jpg",
+      "name": "Unfaithful",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-09",
+      "id": 698520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005184.jpg",
+      "name": "Forever",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-16",
+      "id": 698521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005185.jpg",
+      "name": "Norman",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-20",
+      "id": 1030350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005186.jpg",
+      "name": "Dark Paradise",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-02-27",
+      "id": 1039942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005187.jpg",
+      "name": "The Convergence of the Twain",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-06",
+      "id": 1048211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005188.jpg",
+      "name": "Bad Blood",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-13",
+      "id": 1048212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005189.jpg",
+      "name": "Hidden",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-20",
+      "id": 1048213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258117.jpg",
+      "name": "Dreams Die First",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-27",
+      "id": 1052459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005190.jpg",
+      "name": "Marion",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-03",
+      "id": 1052458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005191.jpg",
+      "name": "Inseparable",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-10",
+      "id": 1048214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005192.jpg",
+      "name": "The Body",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-17",
+      "id": 1048215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269392.jpg",
+      "name": "Visiting Hours",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-24",
+      "id": 1048216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292877.jpg",
+      "name": "The Cord",
+      "number": 10,
+      "runtime": 70,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Horror",
     "Thriller"
   ],
+  "id": "tvmaze-195",
+  "live": true,
+  "overview": "Bates Motel is a contemporary prequel to the genre-defining film Psycho, and gives viewers an intimate portrayal of how Norman Bates' psyche unravels through his teenage years.Following the tragic death of her husband, Norma Bates buys a motel on the outskirts of the idyllic coastal town of White Pine Bay, seeking a fresh start. As Norma and Norman get ensconced in their new home, they discover this town isn't quite what it seems, and the locals aren't so quick to let them in on their secrets. But the Bates' are done being pushed around and will do whatever it takes to survive - and will do whatever it takes to protect their own secrets.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/542/1356518.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "195",
+  "title": "Bates Motel",
+  "type": "series",
+  "year": 2013
 }

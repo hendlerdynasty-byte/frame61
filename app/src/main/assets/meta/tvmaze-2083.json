@@ -1,22 +1,2399 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2083",
-  "source": "tvmaze",
-  "sourceId": "2083",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Murder, She Wrote",
-  "year": 1984,
-  "type": "series",
-  "overview": "Jessica Fletcher is a famous mystery writer who has a knack for solving murders on and off the page.",
-  "poster": "file:///android_asset/posters/tvmaze-2083.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1984-09-30",
+      "id": 164914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040526.jpg",
+      "name": "The Murder of Sherlock Holmes",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1984-10-07",
+      "id": 164915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040527.jpg",
+      "name": "Deadly Lady",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-10-14",
+      "id": 164916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040528.jpg",
+      "name": "Birds Of A Feather",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-10-28",
+      "id": 164917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040529.jpg",
+      "name": "Hooray For Homicide",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-11-04",
+      "id": 164918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040530.jpg",
+      "name": "It's A Dog's Life",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-11-18",
+      "id": 164919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711949.jpg",
+      "name": "Lovers And Other Killers",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-11-25",
+      "id": 164920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711960.jpg",
+      "name": "Hit, Run And Homicide",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-12-09",
+      "id": 164921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/874237.jpg",
+      "name": "We're Off To Kill The Wizard",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-12-16",
+      "id": 164922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711957.jpg",
+      "name": "Death Takes A Curtain Call",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-12-30",
+      "id": 164923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711961.jpg",
+      "name": "Death Casts A Spell",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-01-06",
+      "id": 164924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711962.jpg",
+      "name": "Capitol Offense",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-01-13",
+      "id": 164925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711963.jpg",
+      "name": "Broadway Malady",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-02-03",
+      "id": 164926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711964.jpg",
+      "name": "Murder To A Jazz Beat",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-02-10",
+      "id": 164927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1000331.jpg",
+      "name": "My Johnny Lies Over The Ocean",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-02-17",
+      "id": 164928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711967.jpg",
+      "name": "Paint Me A Murder",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-02-24",
+      "id": 164929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711968.jpg",
+      "name": "Tough Guys Don't Die",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-03-03",
+      "id": 164930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711969.jpg",
+      "name": "Sudden Death",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-03-10",
+      "id": 164931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711970.jpg",
+      "name": "Footnote To Murder",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-03-17",
+      "id": 164932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711971.jpg",
+      "name": "Murder Takes The Bus",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-03-31",
+      "id": 164933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711973.jpg",
+      "name": "Armed Response",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-04-07",
+      "id": 164934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711974.jpg",
+      "name": "Murder At The Oasis",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-04-21",
+      "id": 164935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711975.jpg",
+      "name": "Funeral At Fifty-Mile",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-29",
+      "id": 164936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711976.jpg",
+      "name": "Widow, Weep For Me",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-10-06",
+      "id": 164937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711977.jpg",
+      "name": "Joshua Peabody Died Here ... Possibly",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-10-13",
+      "id": 164938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711978.jpg",
+      "name": "Murder In The Afternoon",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-10-20",
+      "id": 164939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711979.jpg",
+      "name": "School For Scandal",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-10-27",
+      "id": 164940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711980.jpg",
+      "name": "Sing A Song Of Murder",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-11-03",
+      "id": 164941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711981.jpg",
+      "name": "Reflections Of The Mind",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-11-10",
+      "id": 164942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711982.jpg",
+      "name": "A Lady In The Lake",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-11-24",
+      "id": 164943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711983.jpg",
+      "name": "Dead Heat",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-12-01",
+      "id": 164944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711984.jpg",
+      "name": "Jessica Behind Bars",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-12-15",
+      "id": 164945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/711986.jpg",
+      "name": "Sticks And Stones",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1985-12-29",
+      "id": 164946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712183.jpg",
+      "name": "Murder Digs Deep",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-01-05",
+      "id": 164947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712184.jpg",
+      "name": "Murder By Appointment Only",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-01-12",
+      "id": 164948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712186.jpg",
+      "name": "Trial By Error",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-01-19",
+      "id": 164949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712188.jpg",
+      "name": "Keep The Home Fries Burning",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-02-09",
+      "id": 164950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712189.jpg",
+      "name": "Powder Keg",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-02-16",
+      "id": 164951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712190.jpg",
+      "name": "Murder in the Electric Cathedral",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-02-23",
+      "id": 164952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712191.jpg",
+      "name": "One Good Bid Deserves A Murder",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-03-09",
+      "id": 164953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712192.jpg",
+      "name": "If A Body Meet A Body",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-03-30",
+      "id": 164954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712193.jpg",
+      "name": "Christopher Bundy -- Died On Sunday",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-04-06",
+      "id": 164955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712194.jpg",
+      "name": "Menace, Anyone?",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-04-13",
+      "id": 164956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712195.jpg",
+      "name": "The Perfect Foil",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-05-18",
+      "id": 164957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/494/1235501.jpg",
+      "name": "If The Frame Fits",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-09-28",
+      "id": 164958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1241032.jpg",
+      "name": "Death Stalks The Big Top",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-10-05",
+      "id": 164959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712197.jpg",
+      "name": "Death Stalks The Big Top",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-10-12",
+      "id": 164960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712443.jpg",
+      "name": "Unfinished Business",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-10-19",
+      "id": 164961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712444.jpg",
+      "name": "One White Rose For Death",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-11-02",
+      "id": 164962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712445.jpg",
+      "name": "Corned Beef and Carnage",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-11-09",
+      "id": 164963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712446.jpg",
+      "name": "Dead Man's Gold",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-11-16",
+      "id": 164964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712447.jpg",
+      "name": "Deadline For Murder",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-11-23",
+      "id": 164965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70252.jpg",
+      "name": "Magnum On Ice",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-12-07",
+      "id": 164966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/713193.jpg",
+      "name": "Obituary For A Dead Anchor",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1986-12-14",
+      "id": 164967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/713195.jpg",
+      "name": "Stage Struck",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-01-04",
+      "id": 164968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/713196.jpg",
+      "name": "Night Of The Headless Horseman",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-01-18",
+      "id": 164969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/713198.jpg",
+      "name": "The Corpse Flew First Class",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-02-01",
+      "id": 164970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/713204.jpg",
+      "name": "Crossed Up",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-02-08",
+      "id": 164971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714424.jpg",
+      "name": "Murder In A Minor Key",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-02-15",
+      "id": 164972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714425.jpg",
+      "name": "The Bottom Line Is Murder",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-02-22",
+      "id": 164973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714426.jpg",
+      "name": "Death Takes A Dive",
+      "number": 16,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "1987-03-01",
+      "id": 164974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714428.jpg",
+      "name": "Simon Says, Color Me Dead",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-03-15",
+      "id": 164975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714429.jpg",
+      "name": "No Laughing Murder",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-03-22",
+      "id": 164976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714430.jpg",
+      "name": "No Accounting For Murder",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-04-05",
+      "id": 164977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714431.jpg",
+      "name": "The Cemetery Vote",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-04-19",
+      "id": 164978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714432.jpg",
+      "name": "The Days Dwindle Down",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-05-10",
+      "id": 164979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714433.jpg",
+      "name": "Murder, She Spoke",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1987-09-20",
+      "id": 164980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714434.jpg",
+      "name": "A Fashionable Way To Die",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-09-27",
+      "id": 164981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714435.jpg",
+      "name": "When Thieves Fall Out",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-10-04",
+      "id": 164982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714439.jpg",
+      "name": "Witness For The Defense",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-10-11",
+      "id": 164983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714440.jpg",
+      "name": "Old Habits Die Hard",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-10-25",
+      "id": 164984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714441.jpg",
+      "name": "The Way To Dusty Death",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-11-01",
+      "id": 164985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714442.jpg",
+      "name": "It Runs In The Family",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-11-08",
+      "id": 164986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714443.jpg",
+      "name": "If It's Thursday, It Must Be Beverly",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-11-15",
+      "id": 164987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714444.jpg",
+      "name": "Steal Me A Story",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-11-22",
+      "id": 164988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714445.jpg",
+      "name": "Trouble In Eden",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-11-29",
+      "id": 164989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714462.jpg",
+      "name": "Indian Giver",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1987-12-13",
+      "id": 164990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714464.jpg",
+      "name": "Doom With A View",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-01-03",
+      "id": 164991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714469.jpg",
+      "name": "Who Threw The Barbitals In Mrs. Fletcher's Chowder?",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-01-24",
+      "id": 164992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714474.jpg",
+      "name": "Harbinger Of Death",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-02-07",
+      "id": 164993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714477.jpg",
+      "name": "Curse Of The Daanau",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-02-14",
+      "id": 164994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714482.jpg",
+      "name": "Mourning Among The Wisterias",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-02-21",
+      "id": 164995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714490.jpg",
+      "name": "Murder Through The Looking Glass",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-02-28",
+      "id": 164996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714491.jpg",
+      "name": "A Very Good Year For Murder",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-03-13",
+      "id": 164997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714499.jpg",
+      "name": "Benedict Arnold Slipped Here",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-03-27",
+      "id": 164998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714501.jpg",
+      "name": "Just Another Fish Story",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-04-10",
+      "id": 164999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714502.jpg",
+      "name": "Showdown In Saskatchewan",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-05-01",
+      "id": 165000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714503.jpg",
+      "name": "Deadpan",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-05-08",
+      "id": 165001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/285/714504.jpg",
+      "name": "The Body Politic",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1988-10-23",
+      "id": 165002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715093.jpg",
+      "name": "J.B.. As In Jailbird",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-10-30",
+      "id": 165003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715095.jpg",
+      "name": "A Little Night Work",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-11-06",
+      "id": 165004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715096.jpg",
+      "name": "Mr. Penroy's Vacation",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-11-13",
+      "id": 165005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1357515.jpg",
+      "name": "Snow White, Blood Red",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-11-20",
+      "id": 165006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715103.jpg",
+      "name": "Coal Miner's Slaughter",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-11-27",
+      "id": 165007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715104.jpg",
+      "name": "Wearing Of The Green",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1988-12-18",
+      "id": 165008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715107.jpg",
+      "name": "The Last Flight Of The Dixie Damsel",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-01-01",
+      "id": 165009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715111.jpg",
+      "name": "Prediction: Murder",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-01-08",
+      "id": 165010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715117.jpg",
+      "name": "Something Borrowed, Someone Blue",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-01-15",
+      "id": 165011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715121.jpg",
+      "name": "Weave A Tangled Web",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-02-05",
+      "id": 165012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715123.jpg",
+      "name": "The Search For Peter Kerry",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-02-12",
+      "id": 165013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715127.jpg",
+      "name": "Smooth Operators",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-02-19",
+      "id": 165014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715128.jpg",
+      "name": "Fire Burn, Cauldron Bubble",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-02-26",
+      "id": 165015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715129.jpg",
+      "name": "From Russia... With Blood",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-03-12",
+      "id": 165016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715130.jpg",
+      "name": "Alma Murder",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-04-02",
+      "id": 165017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715132.jpg",
+      "name": "Truck Stop",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-04-09",
+      "id": 165018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715135.jpg",
+      "name": "The Sins Of Castle Cove",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-04-16",
+      "id": 165019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715137.jpg",
+      "name": "Trevor Hudson's Legacy",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-04-30",
+      "id": 165020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715139.jpg",
+      "name": "Double Exposure",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-05-07",
+      "id": 165021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715140.jpg",
+      "name": "Three Strikes, You're Out",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-05-14",
+      "id": 165022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715141.jpg",
+      "name": "Mirror, Mirror, On The Wall",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-05-21",
+      "id": 165023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715142.jpg",
+      "name": "Mirror, Mirror, On The Wall",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1989-09-24",
+      "id": 165024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040525.jpg",
+      "name": "Appointment In Athens",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-10-01",
+      "id": 165025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/289/723138.jpg",
+      "name": "Seal of the Confessional",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-10-08",
+      "id": 165026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782559.jpg",
+      "name": "The Grand Old Lady",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-10-15",
+      "id": 165027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782560.jpg",
+      "name": "The Error Of Her Ways",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-10-29",
+      "id": 165028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/289/723139.jpg",
+      "name": "Jack And Bill",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-11-05",
+      "id": 165029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782561.jpg",
+      "name": "Dead Letter",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-11-12",
+      "id": 165030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782562.jpg",
+      "name": "Night of the Tarantula",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-11-19",
+      "id": 165031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782563.jpg",
+      "name": "When the Fat Lady Sings",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-11-26",
+      "id": 165032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782564.jpg",
+      "name": "Test of Wills",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-12-03",
+      "id": 165033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782565.jpg",
+      "name": "Class Act",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1989-12-17",
+      "id": 165034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1428182.jpg",
+      "name": "Town Father",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-01-07",
+      "id": 165035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782567.jpg",
+      "name": "Good-Bye Charlie",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-01-21",
+      "id": 165036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782568.jpg",
+      "name": "If the Shoe Fits",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-02-04",
+      "id": 165037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782569.jpg",
+      "name": "How to Make a Killing Without Really Trying",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-02-11",
+      "id": 165038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782570.jpg",
+      "name": "The Fixer-Upper",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-02-25",
+      "id": 165039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782571.jpg",
+      "name": "The Big Show of 1965",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-03-04",
+      "id": 165040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782572.jpg",
+      "name": "Murder-- According to Maggie",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-03-25",
+      "id": 165041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782573.jpg",
+      "name": "O'Malley's Luck",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-04-08",
+      "id": 165042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782574.jpg",
+      "name": "Always a Thief",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-04-29",
+      "id": 165043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/580/1452094.jpg",
+      "name": "Shear Madness",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-05-09",
+      "id": 165044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527257.jpg",
+      "name": "The Szechuan Dragon",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-05-20",
+      "id": 165045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782575.jpg",
+      "name": "The Sicilian Encounter",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1990-09-16",
+      "id": 165046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782577.jpg",
+      "name": "Trials and Tribulations",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-09-23",
+      "id": 165047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782578.jpg",
+      "name": "Deadly Misunderstanding",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-09-30",
+      "id": 165048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782579.jpg",
+      "name": "See You in Court, Baby",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-10-28",
+      "id": 165049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782580.jpg",
+      "name": "Hannigan's Wake",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-11-04",
+      "id": 165050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782581.jpg",
+      "name": "The Family Jewels",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-11-11",
+      "id": 165051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782582.jpg",
+      "name": "A Body to Die For",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-11-18",
+      "id": 165052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782583.jpg",
+      "name": "The Return of Preston Giles",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-11-25",
+      "id": 165053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782584.jpg",
+      "name": "The Great Twain Robbery",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-12-02",
+      "id": 165054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782585.jpg",
+      "name": "Ballad for a Blue Lady",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1990-12-16",
+      "id": 165055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782586.jpg",
+      "name": "Murder in F Sharp",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-01-06",
+      "id": 165056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782587.jpg",
+      "name": "Family Doctor",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-01-20",
+      "id": 165057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782588.jpg",
+      "name": "Suspicion of Murder",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-02-03",
+      "id": 165058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782589.jpg",
+      "name": "Moving Violation",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-02-10",
+      "id": 165059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782590.jpg",
+      "name": "Who Killed J.B. Fletcher?",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-02-17",
+      "id": 165060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782591.jpg",
+      "name": "The Taxman Cometh",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-02-24",
+      "id": 165061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782592.jpg",
+      "name": "From the Horse's Mouth",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-03-10",
+      "id": 165062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782593.jpg",
+      "name": "The Prodigal Father",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-03-17",
+      "id": 165063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782594.jpg",
+      "name": "Where Have You Gone, Billy Boy?",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-04-07",
+      "id": 165064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782595.jpg",
+      "name": "Thursday's Child",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-04-28",
+      "id": 165065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782596.jpg",
+      "name": "Murder, Plain and Simple",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-05-05",
+      "id": 165066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527228.jpg",
+      "name": "Tainted Lady",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-05-12",
+      "id": 165067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527260.jpg",
+      "name": "The Skinny According to Nick Cullhane",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1991-09-15",
+      "id": 165068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1040531.jpg",
+      "name": "Bite the Big Apple",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-09-22",
+      "id": 165069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782597.jpg",
+      "name": "Night Fears",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-09-29",
+      "id": 165070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782598.jpg",
+      "name": "Unauthorized Obituary",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-10-06",
+      "id": 165071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782599.jpg",
+      "name": "Thicker Than Water",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-11-03",
+      "id": 165072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782600.jpg",
+      "name": "Lines of Excellence",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-11-10",
+      "id": 165073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782601.jpg",
+      "name": "Judge Not",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-11-17",
+      "id": 165074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782602.jpg",
+      "name": "Terminal Connection",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-11-24",
+      "id": 165075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782603.jpg",
+      "name": "A Killing in Vegas",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-12-01",
+      "id": 165076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782604.jpg",
+      "name": "The Committee",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1991-12-15",
+      "id": 165077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782605.jpg",
+      "name": "The List of Yuri Lermentov",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-01-05",
+      "id": 165078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782606.jpg",
+      "name": "Danse Diabolique",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-01-12",
+      "id": 165079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1553091.jpg",
+      "name": "The Witch's Curse",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-01-19",
+      "id": 165080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782607.jpg",
+      "name": "Incident in Lot 7",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-02-02",
+      "id": 165081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782608.jpg",
+      "name": "The Monte Carlo Murders",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-03-01",
+      "id": 165082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782609.jpg",
+      "name": "Tinker, Tailor, Liar, Thief",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-03-08",
+      "id": 165083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782610.jpg",
+      "name": "Ever After",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-03-15",
+      "id": 165084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782611.jpg",
+      "name": "To the End Will I Grapple with Thee",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-04-05",
+      "id": 165085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782612.jpg",
+      "name": "Programmed for Murder",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-04-26",
+      "id": 165086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782613.jpg",
+      "name": "Day of the Dead",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-05-03",
+      "id": 165087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782614.jpg",
+      "name": "Angel of Death",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-05-10",
+      "id": 165088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782615.jpg",
+      "name": "Badge of Honor",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-05-17",
+      "id": 165089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782616.jpg",
+      "name": "Murder on Madison Avenue",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1992-09-20",
+      "id": 165090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782617.jpg",
+      "name": "Murder in Milan",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-09-27",
+      "id": 165091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782618.jpg",
+      "name": "Family Secrets",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-10-04",
+      "id": 165092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/525781.jpg",
+      "name": "The Mole",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-11-01",
+      "id": 165093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782619.jpg",
+      "name": "The Wind Around the Tower",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-11-15",
+      "id": 165094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782620.jpg",
+      "name": "The Dead File",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-11-22",
+      "id": 165095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782621.jpg",
+      "name": "Night of the Coyote",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-11-29",
+      "id": 165096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782622.jpg",
+      "name": "Sugar & Spice, Malice & Vice",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-12-06",
+      "id": 165097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782623.jpg",
+      "name": "The Classic Murder",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1992-12-13",
+      "id": 165098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782624.jpg",
+      "name": "A Christmas Secret",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-01-03",
+      "id": 165099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782625.jpg",
+      "name": "The Sound of Murder",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-01-10",
+      "id": 165100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782626.jpg",
+      "name": "Final Curtain",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-01-17",
+      "id": 165101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782627.jpg",
+      "name": "Double Jeopardy",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-02-07",
+      "id": 165102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782628.jpg",
+      "name": "Dead Eye",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-02-14",
+      "id": 165103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782629.jpg",
+      "name": "Killer Radio",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-02-21",
+      "id": 165104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782630.jpg",
+      "name": "The Petrified Florist",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-02-28",
+      "id": 165105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782631.jpg",
+      "name": "Threshold of Fear",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-03-07",
+      "id": 165106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782632.jpg",
+      "name": "The Big Kill",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-03-21",
+      "id": 165107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782633.jpg",
+      "name": "Dead to Rights",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-04-04",
+      "id": 165108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782634.jpg",
+      "name": "Lone Witness",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-05-02",
+      "id": 165109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/648/1622173.jpg",
+      "name": "Ship of Thieves",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-05-09",
+      "id": 165110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782637.jpg",
+      "name": "The Survivor",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-05-16",
+      "id": 165111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782638.jpg",
+      "name": "Love's Deadly Desire",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1993-09-12",
+      "id": 165112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782731.jpg",
+      "name": "A Death in Hong Kong",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-09-26",
+      "id": 165113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782732.jpg",
+      "name": "For Whom the Ball Tolls",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-10-03",
+      "id": 165114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782733.jpg",
+      "name": "The Legacy of Borbey House",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-10-24",
+      "id": 165115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782734.jpg",
+      "name": "The Phantom Killer",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-10-31",
+      "id": 165116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782735.jpg",
+      "name": "A Virtual Murder",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-11-07",
+      "id": 165117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782736.jpg",
+      "name": "Bloodlines",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-11-21",
+      "id": 165118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782737.jpg",
+      "name": "A Killing in Cork",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-11-28",
+      "id": 165119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782738.jpg",
+      "name": "Love and Hate in Cabot Cove",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-12-05",
+      "id": 165120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782739.jpg",
+      "name": "Murder at a Discount",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1993-12-19",
+      "id": 165121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782740.jpg",
+      "name": "Murder in White",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-01-02",
+      "id": 165122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782741.jpg",
+      "name": "Northern Explosion",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-01-09",
+      "id": 165123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782742.jpg",
+      "name": "Proof in the Pudding",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-01-16",
+      "id": 165124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782743.jpg",
+      "name": "Portrait of Death",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-01-23",
+      "id": 165125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782744.jpg",
+      "name": "Deadly Assets",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-02-06",
+      "id": 165126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782745.jpg",
+      "name": "Murder on the Thirtieth Floor",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-03-06",
+      "id": 165127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782746.jpg",
+      "name": "Time to Die",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-03-13",
+      "id": 165128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782747.jpg",
+      "name": "The Dying Game",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-03-27",
+      "id": 165129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782748.jpg",
+      "name": "The Trouble with Seth",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-05-01",
+      "id": 165130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782749.jpg",
+      "name": "Roadkill",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-05-15",
+      "id": 165131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782750.jpg",
+      "name": "A Murderous Muse",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-05-22",
+      "id": 165132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782751.jpg",
+      "name": "Wheel of Death",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1994-09-25",
+      "id": 165133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782755.jpg",
+      "name": "A Nest of Vipers",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-10-02",
+      "id": 165134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782756.jpg",
+      "name": "Amsterdam Kill",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-10-09",
+      "id": 165135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782757.jpg",
+      "name": "To Kill a Legend",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-10-16",
+      "id": 165136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782758.jpg",
+      "name": "Death in Hawaii",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-10-23",
+      "id": 165137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782759.jpg",
+      "name": "Dear Deadly",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-11-06",
+      "id": 165138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782760.jpg",
+      "name": "The Murder Channel",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-11-13",
+      "id": 165139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782761.jpg",
+      "name": "Fatal Paradise",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-11-20",
+      "id": 165140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782762.jpg",
+      "name": "Crimson Harvest",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-11-27",
+      "id": 165141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782763.jpg",
+      "name": "Murder by Twos",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-12-04",
+      "id": 165142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782764.jpg",
+      "name": "Murder of the Month Club",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1994-12-11",
+      "id": 165143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782765.jpg",
+      "name": "An Egg to Die For",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-01-08",
+      "id": 165144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782766.jpg",
+      "name": "The Scent of Murder",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-01-22",
+      "id": 165145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782767.jpg",
+      "name": "Death 'n Denial",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-02-05",
+      "id": 165146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782768.jpg",
+      "name": "Murder in High-C",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-02-12",
+      "id": 165147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782769.jpg",
+      "name": "Twice Dead",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-02-19",
+      "id": 165148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782770.jpg",
+      "name": "Film Flam",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-02-26",
+      "id": 165149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782771.jpg",
+      "name": "Murder a la Mode",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-03-19",
+      "id": 165150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782752.jpg",
+      "name": "The Dream Team",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-04-30",
+      "id": 165151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782753.jpg",
+      "name": "School for Murder",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-05-07",
+      "id": 165152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782772.jpg",
+      "name": "Another Killing in Cork",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-05-14",
+      "id": 165153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782754.jpg",
+      "name": "Game, Set, Murder",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1995-09-21",
+      "id": 165154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782773.jpg",
+      "name": "Nailed",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-09-28",
+      "id": 165155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782774.jpg",
+      "name": "A Quaking in Aspen",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-10-05",
+      "id": 165156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527256.jpg",
+      "name": "The Secret of Gila Junction",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-10-12",
+      "id": 165157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527225.jpg",
+      "name": "Big Easy Murder",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-10-19",
+      "id": 165158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527259.jpg",
+      "name": "Home Care",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-11-02",
+      "id": 165159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/525517.jpg",
+      "name": "Nan's Ghost (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-11-09",
+      "id": 165160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/525516.jpg",
+      "name": "Nan's Ghost (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-11-16",
+      "id": 165161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782775.jpg",
+      "name": "Shooting in Rome",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-11-23",
+      "id": 165162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527241.jpg",
+      "name": "Deadly Bidding",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-11-30",
+      "id": 165163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782776.jpg",
+      "name": "Frozen Stiff",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1995-12-14",
+      "id": 165164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782777.jpg",
+      "name": "Unwilling Witness",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-01-04",
+      "id": 165165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782778.jpg",
+      "name": "Kendo Kill",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-01-07",
+      "id": 165166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782779.jpg",
+      "name": "Death Goes Double Platinum",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-01-11",
+      "id": 165167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782780.jpg",
+      "name": "Murder in Tempo",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-02-01",
+      "id": 165168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782781.jpg",
+      "name": "The Dark Side of the Door",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-02-08",
+      "id": 165169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782782.jpg",
+      "name": "Murder Among Friends",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-02-15",
+      "id": 165170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782783.jpg",
+      "name": "Something Foul in Flappieville",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-02-25",
+      "id": 165171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782784.jpg",
+      "name": "Track of a Soldier",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-03-28",
+      "id": 165172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782785.jpg",
+      "name": "Evidence of Malice",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-04-04",
+      "id": 165173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782786.jpg",
+      "name": "Southern Double-Cross",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-04-28",
+      "id": 165174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782787.jpg",
+      "name": "Race to Death",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-05-05",
+      "id": 165175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782788.jpg",
+      "name": "What You Don't Know Can Kill You",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-05-12",
+      "id": 165176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/527252.jpg",
+      "name": "Mrs. Parker's Revenge",
+      "number": 23,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1996-05-19",
+      "id": 165177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782789.jpg",
+      "name": "Death by Demographics",
+      "number": 24,
+      "runtime": 60,
+      "season": 12
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-2083",
+  "live": true,
+  "overview": "Jessica Fletcher is a famous mystery writer who has a knack for solving murders on and off the page.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/11/28859.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2083",
+  "title": "Murder, She Wrote",
+  "type": "series",
+  "year": 1984
 }

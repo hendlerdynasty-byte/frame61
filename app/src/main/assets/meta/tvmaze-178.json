@@ -1,22 +1,491 @@
 {
-  "schema": 1,
-  "id": "tvmaze-178",
-  "source": "tvmaze",
-  "sourceId": "178",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Legend of Korra",
-  "year": 2012,
-  "type": "series",
-  "overview": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
-  "poster": "file:///android_asset/posters/tvmaze-178.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-04-14",
+      "id": 12891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4038.jpg",
+      "name": "Welcome to Republic City",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-14",
+      "id": 12892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4039.jpg",
+      "name": "A Leaf in the Wind",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-21",
+      "id": 12889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4040.jpg",
+      "name": "The Revelation",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-28",
+      "id": 12888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4041.jpg",
+      "name": "The Voice in the Night",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-05",
+      "id": 12890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4042.jpg",
+      "name": "The Spirit of Competition",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-12",
+      "id": 12893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4043.jpg",
+      "name": "And the Winner is...",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-19",
+      "id": 12894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4044.jpg",
+      "name": "The Aftermath",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-02",
+      "id": 12895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4045.jpg",
+      "name": "When Extremes Meet",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-09",
+      "id": 12896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4046.jpg",
+      "name": "Out of the Past",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-16",
+      "id": 12897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4047.jpg",
+      "name": "Turning the Tides",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-23",
+      "id": 12898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4048.jpg",
+      "name": "Skeletons in the Closet",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-23",
+      "id": 12899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4049.jpg",
+      "name": "Endgame",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-13",
+      "id": 12900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4018.jpg",
+      "name": "Rebel Spirit",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-13",
+      "id": 12901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4019.jpg",
+      "name": "The Southern Lights",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-20",
+      "id": 12902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4020.jpg",
+      "name": "Civil Wars, Part 1",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-27",
+      "id": 12903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4021.jpg",
+      "name": "Civil Wars, Part 2",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-04",
+      "id": 12904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4022.jpg",
+      "name": "Peacekeepers",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-11",
+      "id": 12905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4023.jpg",
+      "name": "The Sting",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-18",
+      "id": 12906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4024.jpg",
+      "name": "Beginnings, Part 1",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-18",
+      "id": 12916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4025.jpg",
+      "name": "Beginnings, Part 2",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-01",
+      "id": 12950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4026.jpg",
+      "name": "The Guide",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-08",
+      "id": 12964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4027.jpg",
+      "name": "A New Spiritual Age",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 12970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4028.jpg",
+      "name": "Night of a Thousand Stars",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 12971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4029.jpg",
+      "name": "Harmonic Convergence",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 12972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4030.jpg",
+      "name": "Darkness Falls",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 12973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4031.jpg",
+      "name": "Light in the Dark",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-27",
+      "id": 12974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715215.jpg",
+      "name": "A Breath of Fresh Air",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-27",
+      "id": 12975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715216.jpg",
+      "name": "Rebirth",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-27",
+      "id": 12976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715217.jpg",
+      "name": "The Earth Queen",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-11",
+      "id": 12977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715218.jpg",
+      "name": "In Harm's Way",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-11",
+      "id": 12978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715219.jpg",
+      "name": "The Metal Clan",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-18",
+      "id": 12979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715220.jpg",
+      "name": "Old Wounds",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-18",
+      "id": 12980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715221.jpg",
+      "name": "Original Airbenders",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-25",
+      "id": 12981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/286/715222.jpg",
+      "name": "The Terror Within",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 12982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4006.jpg",
+      "name": "The Stakeout",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-08",
+      "id": 12983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4005.jpg",
+      "name": "Long Live the Queen",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-15",
+      "id": 12984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4015.jpg",
+      "name": "The Ultimatum",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-22",
+      "id": 12985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4016.jpg",
+      "name": "Enter the Void",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-22",
+      "id": 12986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4017.jpg",
+      "name": "Venom of the Red Lotus",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-10-03",
+      "id": 12988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3122.jpg",
+      "name": "After All These Years",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-10",
+      "id": 12989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3121.jpg",
+      "name": "Korra Alone",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-17",
+      "id": 14074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3552.jpg",
+      "name": "The Coronation",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-24",
+      "id": 14891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5272.jpg",
+      "name": "The Calling",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-31",
+      "id": 39560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6565.jpg",
+      "name": "Enemy at the Gates",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-07",
+      "id": 40388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12950.jpg",
+      "name": "The Battle of Zaofu",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-14",
+      "id": 40389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12951.jpg",
+      "name": "Reunion",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-21",
+      "id": 45770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12949.jpg",
+      "name": "Remembrances",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-28",
+      "id": 45771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411453.jpg",
+      "name": "Beyond the Wilds",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-05",
+      "id": 46323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411452.jpg",
+      "name": "Operation Beifong",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-12",
+      "id": 46324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411451.jpg",
+      "name": "Kuvira's Gambit",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-19",
+      "id": 58139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411450.jpg",
+      "name": "Day of the Colossus",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-19",
+      "id": 58140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411449.jpg",
+      "name": "The Last Stand",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-178",
+  "live": true,
+  "overview": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/260/650489.jpg",
   "rating": 7.9,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "178",
+  "title": "The Legend of Korra",
+  "type": "series",
+  "year": 2012
 }

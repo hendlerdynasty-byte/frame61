@@ -1,21 +1,238 @@
 {
-  "schema": 1,
-  "id": "tvmaze-285",
-  "source": "tvmaze",
-  "sourceId": "285",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Signed, Sealed, Delivered",
-  "year": 2013,
-  "type": "series",
-  "overview": "Signed, Sealed, Delivered is a wonderful combination of romance, comedy and drama that follows the lives of four postal detectives who transform themselves into a team of detectives to track down intended recipients of undeliverable mail. Their missions take them out of the office and into an unpredictable world where redirected letters and packages can save lives, solve crimes, reunite old loves and change futures by arriving late but somehow always on time.The team includes charming Oliver O'Toole, a genius postal detective and the group's leader; new team member Shane McInerney, a technophile who brings 21st century sensibility to the group; free-spirited, \"girl next door\" Rita Haywith who has a photographic memory; and lovable Norman Dorman, a master in conventional research methods.",
-  "poster": "file:///android_asset/posters/tvmaze-285.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-04-20",
+      "id": 29228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760681.jpg",
+      "name": "Time to Start Livin'",
+      "number": 1,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 29229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760682.jpg",
+      "name": "To Whom It May Concern",
+      "number": 2,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 29230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760683.jpg",
+      "name": "Soulmates",
+      "number": 3,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 29231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760684.jpg",
+      "name": "The Masterpiece",
+      "number": 4,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 29232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760685.jpg",
+      "name": "The Edge of Forever",
+      "number": 5,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-05-25",
+      "id": 29233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760686.jpg",
+      "name": "The Future Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 29234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760687.jpg",
+      "name": "Something Good",
+      "number": 7,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 29235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760688.jpg",
+      "name": "Dark of Night",
+      "number": 8,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 29236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760689.jpg",
+      "name": "The Treasure Box",
+      "number": 9,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 29237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/413/1033653.jpg",
+      "name": "A Hope and a Future",
+      "number": 10,
+      "runtime": 60,
+      "season": 2014
+    },
+    {
+      "airdate": "2014-11-23",
+      "id": 180515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1269388.jpg",
+      "name": "For Christmas",
+      "number": 11,
+      "runtime": 120,
+      "season": 2014
+    },
+    {
+      "airdate": "2015-06-06",
+      "id": 140769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1269392.jpg",
+      "name": "From Paris, with Love",
+      "number": 1,
+      "runtime": 120,
+      "season": 2015
+    },
+    {
+      "airdate": "2015-09-13",
+      "id": 203247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1269393.jpg",
+      "name": "Truth Be Told",
+      "number": 2,
+      "runtime": 120,
+      "season": 2015
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 211717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49333.jpg",
+      "name": "The Impossible Dream",
+      "number": 3,
+      "runtime": 120,
+      "season": 2015
+    },
+    {
+      "airdate": "2016-02-21",
+      "id": 598978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/109337.jpg",
+      "name": "From the Heart",
+      "number": 1,
+      "runtime": 120,
+      "season": 2016
+    },
+    {
+      "airdate": "2016-07-24",
+      "id": 849469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/162239.jpg",
+      "name": "One in a Million",
+      "number": 2,
+      "runtime": 120,
+      "season": 2016
+    },
+    {
+      "airdate": "2016-09-25",
+      "id": 867940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191705.jpg",
+      "name": "Lost Without You",
+      "number": 3,
+      "runtime": 120,
+      "season": 2016
+    },
+    {
+      "airdate": "2017-02-19",
+      "id": 1071418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248415.jpg",
+      "name": "Higher Ground",
+      "number": 1,
+      "runtime": 120,
+      "season": 2017
+    },
+    {
+      "airdate": "2017-09-24",
+      "id": 1265302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/322307.jpg",
+      "name": "Home Again",
+      "number": 2,
+      "runtime": 120,
+      "season": 2017
+    },
+    {
+      "airdate": "2018-02-11",
+      "id": 1390745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363360.jpg",
+      "name": "The Road Less Traveled",
+      "number": 1,
+      "runtime": 120,
+      "season": 2018
+    },
+    {
+      "airdate": "2018-07-15",
+      "id": 1474008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/304/760690.jpg",
+      "name": "To the Altar",
+      "number": 2,
+      "runtime": 120,
+      "season": 2018
+    },
+    {
+      "airdate": "2021-10-17",
+      "id": 2145876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1269395.jpg",
+      "name": "The Vows We Have Made",
+      "number": 1,
+      "runtime": 120,
+      "season": 2021
+    },
+    {
+      "airdate": "2024-07-12",
+      "id": 2900139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/524/1311105.jpg",
+      "name": "A Tale of Three Letters",
+      "number": 1,
+      "runtime": 120,
+      "season": 2024
+    },
+    {
+      "airdate": "2025-04-26",
+      "id": 3208031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438795.jpg",
+      "name": "To the Moon and Back",
+      "number": 1,
+      "runtime": 120,
+      "season": 2025
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Romanze",
+    "Romance",
     "Mystery"
   ],
+  "id": "tvmaze-285",
+  "live": true,
+  "overview": "Signed, Sealed, Delivered is a wonderful combination of romance, comedy and drama that follows the lives of four postal detectives who transform themselves into a team of detectives to track down intended recipients of undeliverable mail. Their missions take them out of the office and into an unpredictable world where redirected letters and packages can save lives, solve crimes, reunite old loves and change futures by arriving late but somehow always on time.The team includes charming Oliver O'Toole, a genius postal detective and the group's leader; new team member Shane McInerney, a technophile who brings 21st century sensibility to the group; free-spirited, \"girl next door\" Rita Haywith who has a photographic memory; and lovable Norman Dorman, a master in conventional research methods.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/179/448532.jpg",
   "rating": 7.9,
-  "runtime": 120,
-  "episodes": []
+  "runtime": 95,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "285",
+  "title": "Signed, Sealed, Delivered",
+  "type": "series",
+  "year": 2013
 }

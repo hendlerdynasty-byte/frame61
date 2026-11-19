@@ -1,22 +1,707 @@
 {
-  "schema": 1,
-  "id": "tvmaze-542",
-  "source": "tvmaze",
-  "sourceId": "542",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Eureka",
-  "year": 2006,
-  "type": "series",
-  "overview": "With the help of Albert Einstein and other trusted advisors, President Harry S. Truman commissioned a top-secret residential development in a remote area of the Pacific Northwest, one that would serve to protect and nurture America's most valuable intellectual resources. There our nation's greatest thinkers, the über-geniuses working on the next era of scientific achievement, would be able to live and work in a supportive environment.The best architects and planners were commissioned to design a welcoming place for these superlative geniuses to reside, an area that would offer the best education for their children, the best healthcare, the best amenities and quality of life. A community was created to rival the most idyllic of America's small towns— with one major difference: this town would never appear on any maps. At least, none that haven't been classified \"eyes only\" by the Pentagon.Thus, the town of Eureka was born. But for all its familiar, small-town trappings, things in this secret hamlet are anything but ordinary. The stereotype of the absent-minded professor exists for a reason, and most of the quantum leaps in science and technology during the past 50 years were produced by Eureka's elite researchers. Unfortunately, scientific exploration is rarely what one expects, and years of experiments gone awry have yielded some peculiar by-products.With the population's unique talents, troubled psyches and limitless resources, these small-town concerns have a way of becoming big-time problems. It is at that intersection, where human frailty and super-science collide, that Eureka began…",
-  "poster": "file:///android_asset/posters/tvmaze-542.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-07-18",
+      "id": 49775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458625.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-25",
+      "id": 49776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458659.jpg",
+      "name": "Many Happy Returns",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-01",
+      "id": 49777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458693.jpg",
+      "name": "Before I Forget",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-08",
+      "id": 49778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459154.jpg",
+      "name": "Alienated",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-15",
+      "id": 49779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459159.jpg",
+      "name": "Invincible",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-22",
+      "id": 49780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459174.jpg",
+      "name": "Dr. Nobel",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-29",
+      "id": 49781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459200.jpg",
+      "name": "Blink",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-05",
+      "id": 49782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459214.jpg",
+      "name": "Right as Raynes",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-12",
+      "id": 49783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459228.jpg",
+      "name": "Primal",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-19",
+      "id": 49784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459251.jpg",
+      "name": "Purple Haze",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-26",
+      "id": 49785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459277.jpg",
+      "name": "H.O.U.S.E. Rules",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-03",
+      "id": 49786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1459297.jpg",
+      "name": "Once in a Lifetime",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-07-10",
+      "id": 49787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460364.jpg",
+      "name": "Phoenix Rising",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-17",
+      "id": 49788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460393.jpg",
+      "name": "Try Try Again",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-24",
+      "id": 49789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460394.jpg",
+      "name": "Unpredictable",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-31",
+      "id": 49790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460412.jpg",
+      "name": "Games People Play",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-07",
+      "id": 49791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460524.jpg",
+      "name": "Duck, Duck Goose",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-14",
+      "id": 49792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460525.jpg",
+      "name": "Noche de Suenos",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-21",
+      "id": 49793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460526.jpg",
+      "name": "Family Reunion",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-28",
+      "id": 49794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460528.jpg",
+      "name": "E=MC...?",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-04",
+      "id": 49795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460531.jpg",
+      "name": "Sight Unseen",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-11",
+      "id": 49796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460534.jpg",
+      "name": "God Is in the Details",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-18",
+      "id": 49797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460540.jpg",
+      "name": "Maneater",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-25",
+      "id": 49798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460545.jpg",
+      "name": "All That Glitters",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-02",
+      "id": 49799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1460548.jpg",
+      "name": "A Night at Global Dynamics",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-07-29",
+      "id": 49800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461534.jpg",
+      "name": "Bad to the Drone",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-08-05",
+      "id": 49801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461603.jpg",
+      "name": "What About Bob?",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-08-12",
+      "id": 49802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461606.jpg",
+      "name": "Best in Faux",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-08-19",
+      "id": 49803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461623.jpg",
+      "name": "I Do Over",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-08-26",
+      "id": 49804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461875.jpg",
+      "name": "Show Me the Mummy",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-09",
+      "id": 49805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461899.jpg",
+      "name": "Phased and Confused",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-16",
+      "id": 49806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461902.jpg",
+      "name": "Here Come the Suns",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-23",
+      "id": 49807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461919.jpg",
+      "name": "From Fear to Eternity",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-10",
+      "id": 49808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461934.jpg",
+      "name": "Welcome Back Carter",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-17",
+      "id": 49809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1461962.jpg",
+      "name": "Your Face or Mine",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-24",
+      "id": 49810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462006.jpg",
+      "name": "Insane in the P-Brane",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-07-31",
+      "id": 49811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462038.jpg",
+      "name": "It's Not Easy Being Green",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-07",
+      "id": 49812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462047.jpg",
+      "name": "If You Build It...",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-14",
+      "id": 49813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462068.jpg",
+      "name": "Ship Happens",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-21",
+      "id": 49814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462092.jpg",
+      "name": "Shower the People",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-28",
+      "id": 49815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462096.jpg",
+      "name": "You Don't Know Jack",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-11",
+      "id": 49816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462103.jpg",
+      "name": "Have an Ice Day",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-18",
+      "id": 49817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/584/1462117.jpg",
+      "name": "What Goes Around, Comes Around",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-09",
+      "id": 49818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463111.jpg",
+      "name": "Founder's Day",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-07-16",
+      "id": 49819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463484.jpg",
+      "name": "A New World",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-07-23",
+      "id": 49820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463633.jpg",
+      "name": "All the Rage",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-07-30",
+      "id": 49821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463639.jpg",
+      "name": "The Story of O2",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-06",
+      "id": 49822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463646.jpg",
+      "name": "Crossing Over",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-13",
+      "id": 49823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463654.jpg",
+      "name": "Momstrosity",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-20",
+      "id": 49824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463662.jpg",
+      "name": "Stoned",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-27",
+      "id": 49825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463665.jpg",
+      "name": "The Ex-files",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-10",
+      "id": 49826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463667.jpg",
+      "name": "I'll Be Seeing You",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-12-07",
+      "id": 49827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463672.jpg",
+      "name": "O' Little Town...",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-11",
+      "id": 49828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463683.jpg",
+      "name": "Liftoff",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-18",
+      "id": 49829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463691.jpg",
+      "name": "Reprise",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-25",
+      "id": 49830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463698.jpg",
+      "name": "Glimpse",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-01",
+      "id": 49831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463700.jpg",
+      "name": "Up in the Air",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-08",
+      "id": 49832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463705.jpg",
+      "name": "Omega Girls",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-15",
+      "id": 49833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463709.jpg",
+      "name": "Of Mites and Men",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-22",
+      "id": 49834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463710.jpg",
+      "name": "Clash of the Titans",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-29",
+      "id": 49835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463738.jpg",
+      "name": "This One Time at Space Camp…",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-12",
+      "id": 49836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463739.jpg",
+      "name": "One Small Step",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-19",
+      "id": 49837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1463742.jpg",
+      "name": "One Giant Leap",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-04-16",
+      "id": 49838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464486.jpg",
+      "name": "Lost",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-23",
+      "id": 49839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464497.jpg",
+      "name": "The Real Thing",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-30",
+      "id": 49840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464500.jpg",
+      "name": "Force Quit",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-07",
+      "id": 49841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464502.jpg",
+      "name": "Friendly Fire",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-14",
+      "id": 49842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464505.jpg",
+      "name": "Jack of All Trades",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-21",
+      "id": 49843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464507.jpg",
+      "name": "Worst Case Scenario",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-04",
+      "id": 49844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464508.jpg",
+      "name": "Ex-Machina",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-11",
+      "id": 49845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464509.jpg",
+      "name": "In Too Deep",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-18",
+      "id": 49846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464514.jpg",
+      "name": "Smarter Carter",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-25",
+      "id": 49847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464516.jpg",
+      "name": "The Honeymooners",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-02",
+      "id": 49848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464523.jpg",
+      "name": "Mirror, Mirror",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-09",
+      "id": 49849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464567.jpg",
+      "name": "Double Take",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-16",
+      "id": 49850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464582.jpg",
+      "name": "Just Another Day",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Science-Fiction"
   ],
+  "id": "tvmaze-542",
+  "live": true,
+  "overview": "With the help of Albert Einstein and other trusted advisors, President Harry S. Truman commissioned a top-secret residential development in a remote area of the Pacific Northwest, one that would serve to protect and nurture America's most valuable intellectual resources. There our nation's greatest thinkers, the über-geniuses working on the next era of scientific achievement, would be able to live and work in a supportive environment.The best architects and planners were commissioned to design a welcoming place for these superlative geniuses to reside, an area that would offer the best education for their children, the best healthcare, the best amenities and quality of life. A community was created to rival the most idyllic of America's small towns— with one major difference: this town would never appear on any maps. At least, none that haven't been classified \"eyes only\" by the Pentagon.Thus, the town of Eureka was born. But for all its familiar, small-town trappings, things in this secret hamlet are anything but ordinary. The stereotype of the absent-minded professor exists for a reason, and most of the quantum leaps in science and technology during the past 50 years were produced by Eureka's elite researchers. Unfortunately, scientific exploration is rarely what one expects, and years of experiments gone awry have yielded some peculiar by-products.With the population's unique talents, troubled psyches and limitless resources, these small-town concerns have a way of becoming big-time problems. It is at that intersection, where human frailty and super-science collide, that Eureka began…",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/183/459344.jpg",
   "rating": 8.5,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "542",
+  "title": "Eureka",
+  "type": "series",
+  "year": 2006
 }

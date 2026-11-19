@@ -1,22 +1,410 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3144",
-  "source": "tvmaze",
-  "sourceId": "3144",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Preacher",
-  "year": 2016,
-  "type": "series",
-  "overview": "Based on the popular cult comic book franchise of the same name, Preacher is a supernatural, twisted and darkly comedic drama that follows a West Texas preacher named Jesse Custer, who is inhabited by a mysterious entity that causes him to develop a highly unusual power. Jesse, his badass ex-girlfriend Tulip and an Irish vagabond named Cassidy come together, and when they do, they are thrust into a crazy world populated by a cast of characters from Heaven, Hell and everywhere in between.",
-  "poster": "file:///android_asset/posters/tvmaze-3144.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-05-22",
+      "id": 655001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/164114.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2016-06-05",
+      "id": 771310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/150224.jpg",
+      "name": "See",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-06-12",
+      "id": 771311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153188.jpg",
+      "name": "The Possibilities",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-06-19",
+      "id": 771312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155013.jpg",
+      "name": "Monster Swamp",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-06-26",
+      "id": 831519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/161289.jpg",
+      "name": "South Will Rise Again",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-03",
+      "id": 831520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/164358.jpg",
+      "name": "Sundowner",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-10",
+      "id": 854856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167240.jpg",
+      "name": "He Gone",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-17",
+      "id": 854857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169558.jpg",
+      "name": "El Valero",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-24",
+      "id": 861720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171860.jpg",
+      "name": "Finish the Song",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-31",
+      "id": 861721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173779.jpg",
+      "name": "Call and Response",
+      "number": 10,
+      "runtime": 80,
+      "season": 1
+    },
+    {
+      "airdate": "2017-06-25",
+      "id": 1021915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295806.jpg",
+      "name": "On the Road",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-26",
+      "id": 1121512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295908.jpg",
+      "name": "Mumbai Sky Tower",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-03",
+      "id": 1210004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298042.jpg",
+      "name": "Damsels",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-10",
+      "id": 1210005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299953.jpg",
+      "name": "Viktor",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-17",
+      "id": 1210006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302466.jpg",
+      "name": "Dallas",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-24",
+      "id": 1210007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305037.jpg",
+      "name": "Sokosha",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-31",
+      "id": 1210008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307069.jpg",
+      "name": "Pig",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-07",
+      "id": 1237953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308949.jpg",
+      "name": "Holes",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-14",
+      "id": 1237954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310923.jpg",
+      "name": "Puzzle Piece",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-21",
+      "id": 1237955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312748.jpg",
+      "name": "Dirty Little Secret",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-28",
+      "id": 1237956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314588.jpg",
+      "name": "Backdoors",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-09-04",
+      "id": 1273739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316329.jpg",
+      "name": "On Your Knees",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-09-11",
+      "id": 1273740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318544.jpg",
+      "name": "The End of the Road",
+      "number": 13,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2018-06-24",
+      "id": 1443022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/398330.jpg",
+      "name": "Angelville",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-01",
+      "id": 1468941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399557.jpg",
+      "name": "Sonsabitches",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-08",
+      "id": 1468942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400937.jpg",
+      "name": "Gonna Hurt",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-15",
+      "id": 1479159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403065.jpg",
+      "name": "The Tombs",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-22",
+      "id": 1479160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405174.jpg",
+      "name": "The Coffin",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-29",
+      "id": 1479161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407128.jpg",
+      "name": "Les Enfants du Sang",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-05",
+      "id": 1479162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408846.jpg",
+      "name": "Hilter",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-12",
+      "id": 1479163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410550.jpg",
+      "name": "The Tom / Brady",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-19",
+      "id": 1479164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/412135.jpg",
+      "name": "Schwanzkopf",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-26",
+      "id": 1479165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/413787.jpg",
+      "name": "The Light Above",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-08-04",
+      "id": 1637320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/517767.jpg",
+      "name": "Masada",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-08-04",
+      "id": 1686405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/517792.jpg",
+      "name": "Last Supper",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-08-11",
+      "id": 1686406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/519443.jpg",
+      "name": "Deviant",
+      "number": 3,
+      "runtime": 43,
+      "season": 4
+    },
+    {
+      "airdate": "2019-08-18",
+      "id": 1686407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/520848.jpg",
+      "name": "Search and Rescue",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-08-25",
+      "id": 1686408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/520864.jpg",
+      "name": "Bleak City",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-01",
+      "id": 1686409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/523893.jpg",
+      "name": "The Lost Apostle",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-08",
+      "id": 1686410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/523896.jpg",
+      "name": "Messiahs",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-15",
+      "id": 1686411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/527949.jpg",
+      "name": "Fear of the Lord",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-22",
+      "id": 1686412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/530210.jpg",
+      "name": "Overture",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-09-29",
+      "id": 1686695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/532486.jpg",
+      "name": "End of the World",
+      "number": 10,
+      "runtime": 78,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Western",
-    "Übernatürlich"
+    "Supernatural"
   ],
+  "id": "tvmaze-3144",
+  "live": true,
+  "overview": "Based on the popular cult comic book franchise of the same name, Preacher is a supernatural, twisted and darkly comedic drama that follows a West Texas preacher named Jesse Custer, who is inhabited by a mysterious entity that causes him to develop a highly unusual power. Jesse, his badass ex-girlfriend Tulip and an Irish vagabond named Cassidy come together, and when they do, they are thrust into a crazy world populated by a cast of characters from Heaven, Hell and everywhere in between.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/205/514552.jpg",
   "rating": 8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 62,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3144",
+  "title": "Preacher",
+  "type": "series",
+  "year": 2016
 }

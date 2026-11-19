@@ -1,22 +1,644 @@
 {
-  "schema": 1,
-  "id": "tvmaze-466",
-  "source": "tvmaze",
-  "sourceId": "466",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Columbo",
-  "year": 1968,
-  "type": "series",
-  "overview": "This is the detective series that inspired them all. Legendary actor Peter Falk is back in his 4-time Emmy® Award winning role, as the ruffled, cigar-chomping, trenchcoat-wearing police lieutenant who is asking all the right questions.",
-  "poster": "file:///android_asset/posters/tvmaze-466.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1968-02-20",
+      "id": 42867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/342/857435.jpg",
+      "name": "Prescription: Murder",
+      "number": 1,
+      "runtime": 120,
+      "season": 1968
+    },
+    {
+      "airdate": "1971-03-01",
+      "id": 42868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/342/857467.jpg",
+      "name": "Ransom for a Dead Man",
+      "number": 1,
+      "runtime": 120,
+      "season": 1971
+    },
+    {
+      "airdate": "1971-09-15",
+      "id": 42800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/343/859207.jpg",
+      "name": "Murder by the Book",
+      "number": 2,
+      "runtime": 90,
+      "season": 1971
+    },
+    {
+      "airdate": "1971-10-06",
+      "id": 42801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/343/859912.jpg",
+      "name": "Death Lends a Hand",
+      "number": 3,
+      "runtime": 90,
+      "season": 1971
+    },
+    {
+      "airdate": "1971-10-27",
+      "id": 42802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/344/860833.jpg",
+      "name": "Dead Weight",
+      "number": 4,
+      "runtime": 90,
+      "season": 1971
+    },
+    {
+      "airdate": "1971-11-17",
+      "id": 42803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/344/861516.jpg",
+      "name": "Suitable for Framing",
+      "number": 5,
+      "runtime": 90,
+      "season": 1971
+    },
+    {
+      "airdate": "1971-12-15",
+      "id": 42804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/344/861536.jpg",
+      "name": "Lady in Waiting",
+      "number": 6,
+      "runtime": 90,
+      "season": 1971
+    },
+    {
+      "airdate": "1972-01-19",
+      "id": 42805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/344/862217.jpg",
+      "name": "Short Fuse",
+      "number": 1,
+      "runtime": 90,
+      "season": 1972
+    },
+    {
+      "airdate": "1972-02-09",
+      "id": 42806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/344/862249.jpg",
+      "name": "Blueprint for Murder",
+      "number": 2,
+      "runtime": 90,
+      "season": 1972
+    },
+    {
+      "airdate": "1972-09-17",
+      "id": 42807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/345/864195.jpg",
+      "name": "Étude in Black",
+      "number": 3,
+      "runtime": 120,
+      "season": 1972
+    },
+    {
+      "airdate": "1972-10-15",
+      "id": 42808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/345/864207.jpg",
+      "name": "The Greenhouse Jungle",
+      "number": 4,
+      "runtime": 90,
+      "season": 1972
+    },
+    {
+      "airdate": "1972-11-05",
+      "id": 42809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/345/864593.jpg",
+      "name": "The Most Crucial Game",
+      "number": 5,
+      "runtime": 90,
+      "season": 1972
+    },
+    {
+      "airdate": "1972-11-26",
+      "id": 42810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/345/864605.jpg",
+      "name": "Dagger of the Mind",
+      "number": 6,
+      "runtime": 120,
+      "season": 1972
+    },
+    {
+      "airdate": "1973-01-21",
+      "id": 42811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/345/864871.jpg",
+      "name": "Requiem for a Falling Star",
+      "number": 1,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-02-11",
+      "id": 42812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/865614.jpg",
+      "name": "A Stitch in Crime",
+      "number": 2,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-03-04",
+      "id": 42813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/866007.jpg",
+      "name": "The Most Dangerous Match",
+      "number": 3,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-03-25",
+      "id": 42814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/866022.jpg",
+      "name": "Double Shock",
+      "number": 4,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-09-23",
+      "id": 42815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/866848.jpg",
+      "name": "Lovely But Lethal",
+      "number": 5,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-10-07",
+      "id": 42816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/868979.jpg",
+      "name": "Any Old Port in a Storm",
+      "number": 6,
+      "runtime": 120,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-11-04",
+      "id": 42817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/868989.jpg",
+      "name": "Candidate for Crime",
+      "number": 7,
+      "runtime": 120,
+      "season": 1973
+    },
+    {
+      "airdate": "1973-12-16",
+      "id": 42818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869960.jpg",
+      "name": "Double Exposure",
+      "number": 8,
+      "runtime": 90,
+      "season": 1973
+    },
+    {
+      "airdate": "1974-01-18",
+      "id": 42819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870813.jpg",
+      "name": "Publish or Perish",
+      "number": 1,
+      "runtime": 90,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-02-18",
+      "id": 42820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870830.jpg",
+      "name": "Mind Over Mayhem",
+      "number": 2,
+      "runtime": 90,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-03-03",
+      "id": 42821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870841.jpg",
+      "name": "Swan Song",
+      "number": 3,
+      "runtime": 120,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-05-05",
+      "id": 42822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871294.jpg",
+      "name": "A Friend in Deed",
+      "number": 4,
+      "runtime": 120,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-09-15",
+      "id": 42823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282999.jpg",
+      "name": "An Exercise in Fatality",
+      "number": 5,
+      "runtime": 120,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-10-15",
+      "id": 42824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282998.jpg",
+      "name": "Negative Reaction",
+      "number": 6,
+      "runtime": 120,
+      "season": 1974
+    },
+    {
+      "airdate": "1974-10-27",
+      "id": 42825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282984.jpg",
+      "name": "By Dawn's Early Light",
+      "number": 7,
+      "runtime": 120,
+      "season": 1974
+    },
+    {
+      "airdate": "1975-02-09",
+      "id": 42826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282985.jpg",
+      "name": "Troubled Waters",
+      "number": 1,
+      "runtime": 120,
+      "season": 1975
+    },
+    {
+      "airdate": "1975-03-02",
+      "id": 42827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282986.jpg",
+      "name": "Playback",
+      "number": 2,
+      "runtime": 90,
+      "season": 1975
+    },
+    {
+      "airdate": "1975-04-27",
+      "id": 42828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282997.jpg",
+      "name": "A Deadly State of Mind",
+      "number": 3,
+      "runtime": 90,
+      "season": 1975
+    },
+    {
+      "airdate": "1975-09-14",
+      "id": 42829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/873551.jpg",
+      "name": "Forgotten Lady",
+      "number": 4,
+      "runtime": 120,
+      "season": 1975
+    },
+    {
+      "airdate": "1975-10-12",
+      "id": 42830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/873565.jpg",
+      "name": "A Case of Immunity",
+      "number": 5,
+      "runtime": 90,
+      "season": 1975
+    },
+    {
+      "airdate": "1975-11-02",
+      "id": 42831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/873577.jpg",
+      "name": "Identity Crisis",
+      "number": 6,
+      "runtime": 120,
+      "season": 1975
+    },
+    {
+      "airdate": "1976-02-01",
+      "id": 42832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/873594.jpg",
+      "name": "A Matter of Honor",
+      "number": 1,
+      "runtime": 90,
+      "season": 1976
+    },
+    {
+      "airdate": "1976-02-29",
+      "id": 42833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/874192.jpg",
+      "name": "Now You See Him",
+      "number": 2,
+      "runtime": 90,
+      "season": 1976
+    },
+    {
+      "airdate": "1976-03-02",
+      "id": 42834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/875007.jpg",
+      "name": "Last Salute to the Commodore",
+      "number": 3,
+      "runtime": 120,
+      "season": 1976
+    },
+    {
+      "airdate": "1976-10-10",
+      "id": 42835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/875035.jpg",
+      "name": "Fade in to Murder",
+      "number": 4,
+      "runtime": 90,
+      "season": 1976
+    },
+    {
+      "airdate": "1976-11-28",
+      "id": 42836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/875510.jpg",
+      "name": "Old Fashioned Murder",
+      "number": 5,
+      "runtime": 90,
+      "season": 1976
+    },
+    {
+      "airdate": "1977-05-22",
+      "id": 42837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/876181.jpg",
+      "name": "The Bye-bye Sky High I.Q. Murder Case",
+      "number": 1,
+      "runtime": 90,
+      "season": 1977
+    },
+    {
+      "airdate": "1977-11-21",
+      "id": 42838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/876196.jpg",
+      "name": "Try and Catch Me",
+      "number": 2,
+      "runtime": 90,
+      "season": 1977
+    },
+    {
+      "airdate": "1978-01-30",
+      "id": 42839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/876734.jpg",
+      "name": "Murder Under Glass",
+      "number": 1,
+      "runtime": 90,
+      "season": 1978
+    },
+    {
+      "airdate": "1978-02-25",
+      "id": 42840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/877161.jpg",
+      "name": "Make Me a Perfect Murder",
+      "number": 2,
+      "runtime": 120,
+      "season": 1978
+    },
+    {
+      "airdate": "1978-04-15",
+      "id": 42841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/877186.jpg",
+      "name": "How to Dial a Murder",
+      "number": 3,
+      "runtime": 90,
+      "season": 1978
+    },
+    {
+      "airdate": "1978-05-13",
+      "id": 42842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879163.jpg",
+      "name": "The Conspirators",
+      "number": 4,
+      "runtime": 120,
+      "season": 1978
+    },
+    {
+      "airdate": "1989-02-06",
+      "id": 42843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879322.jpg",
+      "name": "Columbo Goes to the Guillotine",
+      "number": 1,
+      "runtime": 120,
+      "season": 1989
+    },
+    {
+      "airdate": "1989-02-27",
+      "id": 42844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879344.jpg",
+      "name": "Murder, Smoke and Shadows",
+      "number": 2,
+      "runtime": 120,
+      "season": 1989
+    },
+    {
+      "airdate": "1989-04-03",
+      "id": 42845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879351.jpg",
+      "name": "Sex and the Married Detective",
+      "number": 3,
+      "runtime": 120,
+      "season": 1989
+    },
+    {
+      "airdate": "1989-05-01",
+      "id": 42846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/879795.jpg",
+      "name": "Grand Deceptions",
+      "number": 4,
+      "runtime": 120,
+      "season": 1989
+    },
+    {
+      "airdate": "1989-11-25",
+      "id": 42847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/352/882024.jpg",
+      "name": "Murder, a Self Portrait",
+      "number": 5,
+      "runtime": 120,
+      "season": 1989
+    },
+    {
+      "airdate": "1990-01-20",
+      "id": 42848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/352/882099.jpg",
+      "name": "Columbo Cries Wolf",
+      "number": 1,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1990-02-10",
+      "id": 42849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/353/882656.jpg",
+      "name": "Agenda for Murder",
+      "number": 2,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1990-03-31",
+      "id": 42850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/353/883145.jpg",
+      "name": "Rest in Peace, Mrs. Columbo",
+      "number": 3,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1990-04-28",
+      "id": 42851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/353/884710.jpg",
+      "name": "Uneasy Lies the Crown",
+      "number": 4,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1990-05-14",
+      "id": 42852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/354/887179.jpg",
+      "name": "Murder in Malibu",
+      "number": 5,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1990-12-09",
+      "id": 42853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/354/887192.jpg",
+      "name": "Columbo Goes to College",
+      "number": 6,
+      "runtime": 120,
+      "season": 1990
+    },
+    {
+      "airdate": "1991-02-20",
+      "id": 42854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/888597.jpg",
+      "name": "Caution: Murder Can Be Hazardous to Your Health",
+      "number": 1,
+      "runtime": 120,
+      "season": 1991
+    },
+    {
+      "airdate": "1991-04-29",
+      "id": 42855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/889287.jpg",
+      "name": "Columbo and the Murder of a Rock Star",
+      "number": 2,
+      "runtime": 120,
+      "season": 1991
+    },
+    {
+      "airdate": "1991-12-15",
+      "id": 42856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/889370.jpg",
+      "name": "Death Hits the Jackpot",
+      "number": 3,
+      "runtime": 120,
+      "season": 1991
+    },
+    {
+      "airdate": "1992-03-15",
+      "id": 42857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893857.jpg",
+      "name": "No Time to Die",
+      "number": 1,
+      "runtime": 120,
+      "season": 1992
+    },
+    {
+      "airdate": "1992-11-22",
+      "id": 42858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/894771.jpg",
+      "name": "A Bird in the Hand...",
+      "number": 2,
+      "runtime": 120,
+      "season": 1992
+    },
+    {
+      "airdate": "1993-10-31",
+      "id": 42859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/358/896543.jpg",
+      "name": "It's All in the Game",
+      "number": 1,
+      "runtime": 120,
+      "season": 1993
+    },
+    {
+      "airdate": "1994-01-10",
+      "id": 42860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/358/896979.jpg",
+      "name": "Butterfly in Shades of Grey",
+      "number": 1,
+      "runtime": 120,
+      "season": 1994
+    },
+    {
+      "airdate": "1994-05-02",
+      "id": 42861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/359/897767.jpg",
+      "name": "Undercover",
+      "number": 2,
+      "runtime": 120,
+      "season": 1994
+    },
+    {
+      "airdate": "1995-05-08",
+      "id": 42862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/359/898639.jpg",
+      "name": "Strange Bedfellows",
+      "number": 1,
+      "runtime": 120,
+      "season": 1995
+    },
+    {
+      "airdate": "1997-05-15",
+      "id": 42863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/360/902150.jpg",
+      "name": "A Trace of Murder",
+      "number": 1,
+      "runtime": 120,
+      "season": 1997
+    },
+    {
+      "airdate": "1998-10-08",
+      "id": 42864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/361/903053.jpg",
+      "name": "Ashes to Ashes",
+      "number": 1,
+      "runtime": 120,
+      "season": 1998
+    },
+    {
+      "airdate": "2001-03-12",
+      "id": 42865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/361/903600.jpg",
+      "name": "Murder with Too Many Notes",
+      "number": 1,
+      "runtime": 120,
+      "season": 2001
+    },
+    {
+      "airdate": "2003-01-30",
+      "id": 42866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/361/903712.jpg",
+      "name": "Columbo Likes the Nightlife",
+      "number": 1,
+      "runtime": 120,
+      "season": 2003
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-466",
+  "live": true,
+  "overview": "This is the detective series that inspired them all. Legendary actor Peter Falk is back in his 4-time Emmy® Award winning role, as the ruffled, cigar-chomping, trenchcoat-wearing police lieutenant who is asking all the right questions.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/3/9270.jpg",
   "rating": 8,
-  "runtime": 120,
-  "episodes": []
+  "runtime": 108,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "466",
+  "title": "Columbo",
+  "type": "series",
+  "year": 1968
 }

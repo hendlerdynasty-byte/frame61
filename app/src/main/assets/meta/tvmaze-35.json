@@ -1,22 +1,419 @@
 {
-  "schema": 1,
-  "id": "tvmaze-35",
-  "source": "tvmaze",
-  "sourceId": "35",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Killing",
-  "year": 2011,
-  "type": "series",
-  "overview": "The Killing follows Seattle homicide detectives Stephen Holder and Sarah Linden and their work as detectives investigating murders. Sarah Linden takes cases very seriously and has issues keeping her work and family separate, as she pairs up with recovering addict Stephen Holder to solve dark murders.",
-  "poster": "file:///android_asset/posters/tvmaze-35.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-04-03",
+      "id": 1683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/287717.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-03",
+      "id": 1684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288017.jpg",
+      "name": "The Cage",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-10",
+      "id": 1685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288903.jpg",
+      "name": "El Diablo",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-17",
+      "id": 1686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290393.jpg",
+      "name": "A Soundless Echo",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-24",
+      "id": 1687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/291110.jpg",
+      "name": "Super 8",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 1688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/292968.jpg",
+      "name": "What You Have Left",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 1689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/584132.jpg",
+      "name": "Vengeance",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 1690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295348.jpg",
+      "name": "Stonewalled",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 1691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297571.jpg",
+      "name": "Undertow",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-29",
+      "id": 1692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301403.jpg",
+      "name": "I'll Let You Know When I Get There",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 1693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301651.jpg",
+      "name": "Missing",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 1694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301703.jpg",
+      "name": "Beau Soleil",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 1695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301719.jpg",
+      "name": "Orpheus Descending",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 1696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/584118.jpg",
+      "name": "Reflections",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 1697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301791.jpg",
+      "name": "My Lucky Day",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-08",
+      "id": 1698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301793.jpg",
+      "name": "Numb",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 1699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304085.jpg",
+      "name": "Ogi Jun",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 1700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304462.jpg",
+      "name": "Ghosts of the Past",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 1701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308228.jpg",
+      "name": "Openings",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 1702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308570.jpg",
+      "name": "Keylala",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 1703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309350.jpg",
+      "name": "Off the Reservation",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 1704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309671.jpg",
+      "name": "Sayonara Hiawatha",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-27",
+      "id": 1705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309990.jpg",
+      "name": "72 Hours",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 1706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310155.jpg",
+      "name": "Bulldog",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 1707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310277.jpg",
+      "name": "Donnie or Marie",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-17",
+      "id": 1708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310307.jpg",
+      "name": "What I Know",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 1709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311878.jpg",
+      "name": "The Jungle",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 1710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312115.jpg",
+      "name": "That You Fear the Most",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-09",
+      "id": 1711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312205.jpg",
+      "name": "Seventeen",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-16",
+      "id": 1712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312221.jpg",
+      "name": "Head Shots",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-23",
+      "id": 1713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/543861.jpg",
+      "name": "Scared and Running",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-30",
+      "id": 1714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313288.jpg",
+      "name": "Eminent Domain",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-07",
+      "id": 1715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313370.jpg",
+      "name": "Hope Kills",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-14",
+      "id": 1716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313704.jpg",
+      "name": "Try",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-21",
+      "id": 1717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313709.jpg",
+      "name": "Reckoning",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-28",
+      "id": 1718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313892.jpg",
+      "name": "Six Minutes",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-04",
+      "id": 1719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313984.jpg",
+      "name": "From Up Here",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-04",
+      "id": 1720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314008.jpg",
+      "name": "The Road to Hamelin",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314086.jpg",
+      "name": "Blood in the Water",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314370.jpg",
+      "name": "Unraveling",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314744.jpg",
+      "name": "The Good Soldier",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314891.jpg",
+      "name": "Dream Baby Dream",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/315065.jpg",
+      "name": "Truth Asunder",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-01",
+      "id": 1726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/315134.jpg",
+      "name": "Eden",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-35",
+  "live": true,
+  "overview": "The Killing follows Seattle homicide detectives Stephen Holder and Sarah Linden and their work as detectives investigating murders. Sarah Linden takes cases very seriously and has issues keeping her work and family separate, as she pairs up with recovering addict Stephen Holder to solve dark murders.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/216/540157.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "35",
+  "title": "The Killing",
+  "type": "series",
+  "year": 2011
 }

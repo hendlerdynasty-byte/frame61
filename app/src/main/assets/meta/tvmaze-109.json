@@ -1,22 +1,3056 @@
 {
-  "schema": 1,
-  "id": "tvmaze-109",
-  "source": "tvmaze",
-  "sourceId": "109",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "CSI: Crime Scene Investigation",
-  "year": 2000,
-  "type": "series",
-  "overview": "CSI: Crime Scene Investigation is a drama about a team of forensic investigators trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the mystery.",
-  "poster": "file:///android_asset/posters/tvmaze-109.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2000-10-06",
+      "id": 7487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97382.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-13",
+      "id": 7488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97405.jpg",
+      "name": "Cool Change",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-20",
+      "id": 7489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97432.jpg",
+      "name": "Crate 'n Burial",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-27",
+      "id": 7490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97437.jpg",
+      "name": "Pledging Mr. Johnson",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-03",
+      "id": 7491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97480.jpg",
+      "name": "Friends & Lovers",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-10",
+      "id": 7492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97486.jpg",
+      "name": "Who Are You?",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-17",
+      "id": 7493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97542.jpg",
+      "name": "Blood Drops",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-24",
+      "id": 7494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97543.jpg",
+      "name": "Anonymous",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-12-08",
+      "id": 7495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97707.jpg",
+      "name": "Unfriendly Skies",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-12-22",
+      "id": 7496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97706.jpg",
+      "name": "Sex, Lies and Larvae",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-12",
+      "id": 7497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97708.jpg",
+      "name": "I-15 Murders",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-01",
+      "id": 7498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97942.jpg",
+      "name": "Fahrenheit 932",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-08",
+      "id": 7499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99383.jpg",
+      "name": "Boom",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-15",
+      "id": 7500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99384.jpg",
+      "name": "To Halve and to Hold",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-22",
+      "id": 7501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99385.jpg",
+      "name": "Table Stakes",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-03-01",
+      "id": 7502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99386.jpg",
+      "name": "Too Tough to Die",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-03-08",
+      "id": 7503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99382.jpg",
+      "name": "Face Lift",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-03-29",
+      "id": 7504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99381.jpg",
+      "name": "$35K O.B.O.",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-12",
+      "id": 7505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99378.jpg",
+      "name": "Gentle, Gentle",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-19",
+      "id": 7506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99377.jpg",
+      "name": "Sounds of Silence",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-26",
+      "id": 7507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99389.jpg",
+      "name": "Justice Is Served",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-10",
+      "id": 7508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99391.jpg",
+      "name": "Evaluation Day",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-17",
+      "id": 7509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99416.jpg",
+      "name": "The Strip Strangler",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-09-27",
+      "id": 7510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757503.jpg",
+      "name": "Burked",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-04",
+      "id": 7511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99785.jpg",
+      "name": "Chaos Theory",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-11",
+      "id": 7512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99786.jpg",
+      "name": "Overload",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-18",
+      "id": 7513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99787.jpg",
+      "name": "Bully for You",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-25",
+      "id": 7514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99788.jpg",
+      "name": "Scuba Doobie-Doo",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-01",
+      "id": 7515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99815.jpg",
+      "name": "Alter Boys",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-08",
+      "id": 7516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99832.jpg",
+      "name": "Caged",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-15",
+      "id": 7517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99939.jpg",
+      "name": "Slaves of Las Vegas",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-22",
+      "id": 7518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99942.jpg",
+      "name": "And Then There Were None",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-06",
+      "id": 7519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99943.jpg",
+      "name": "Ellie",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-13",
+      "id": 7520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99944.jpg",
+      "name": "Organ Grinder",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-20",
+      "id": 7521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99933.jpg",
+      "name": "You've Got Male",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-17",
+      "id": 7522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99929.jpg",
+      "name": "Identity Crisis",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-31",
+      "id": 7523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100007.jpg",
+      "name": "The Finger",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-07",
+      "id": 7524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100020.jpg",
+      "name": "Burden of Proof",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-28",
+      "id": 7525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100041.jpg",
+      "name": "Primum Non Nocere",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-07",
+      "id": 7526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100048.jpg",
+      "name": "Felonius Monk",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-28",
+      "id": 7527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100058.jpg",
+      "name": "Chasing the Bus",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-04",
+      "id": 7528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100067.jpg",
+      "name": "Stalker",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-25",
+      "id": 7529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100075.jpg",
+      "name": "Cats in the Cradle",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-02",
+      "id": 7530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100085.jpg",
+      "name": "Anatomy of a Lye",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-09",
+      "id": 7531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100094.jpg",
+      "name": "Cross-Jurisdictions",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-16",
+      "id": 7532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100111.jpg",
+      "name": "The Hunger Artist",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-09-26",
+      "id": 7533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100212.jpg",
+      "name": "Revenge Is Best Served Cold",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-10-03",
+      "id": 7534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100211.jpg",
+      "name": "The Accused Is Entitled",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-10-10",
+      "id": 7535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100210.jpg",
+      "name": "Let the Seller Beware",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-10-17",
+      "id": 7536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100209.jpg",
+      "name": "A Little Murder",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-10-31",
+      "id": 7537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100293.jpg",
+      "name": "Abra Cadaver",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-11-07",
+      "id": 7538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100292.jpg",
+      "name": "The Execution of Catherine Willows",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-11-14",
+      "id": 7539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100291.jpg",
+      "name": "Fight Night",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-11-21",
+      "id": 7540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100319.jpg",
+      "name": "Snuff",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-12-05",
+      "id": 7541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100317.jpg",
+      "name": "Blood Lust",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-12-12",
+      "id": 7542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100325.jpg",
+      "name": "High and Low",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-01-09",
+      "id": 7543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100328.jpg",
+      "name": "Recipe for Murder",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-01-16",
+      "id": 7544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100330.jpg",
+      "name": "Got Murder?",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-01-30",
+      "id": 7545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100340.jpg",
+      "name": "Random Acts of Violence",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-02-06",
+      "id": 7546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100352.jpg",
+      "name": "One Hit Wonder",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-02-13",
+      "id": 7547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100752.jpg",
+      "name": "Lady Heather's Box",
+      "number": 15,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2003-02-20",
+      "id": 7548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100751.jpg",
+      "name": "Lucky Strike",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-13",
+      "id": 7549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101085.jpg",
+      "name": "Crash and Burn",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-03",
+      "id": 7550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101147.jpg",
+      "name": "Precious Metal",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-10",
+      "id": 7551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101146.jpg",
+      "name": "A Night at the Movies",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-24",
+      "id": 7552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101145.jpg",
+      "name": "Last Laugh",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-01",
+      "id": 7553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101144.jpg",
+      "name": "Forever",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-08",
+      "id": 7554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101282.jpg",
+      "name": "Play with Fire",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-15",
+      "id": 7555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101281.jpg",
+      "name": "Inside the Box",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-09-25",
+      "id": 7556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102579.jpg",
+      "name": "Assume Nothing",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-02",
+      "id": 7557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053324.jpg",
+      "name": "All for Our Country",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-09",
+      "id": 7558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053346.jpg",
+      "name": "Homebodies",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-23",
+      "id": 7559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053345.jpg",
+      "name": "Feeling the Heat",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-30",
+      "id": 7560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053344.jpg",
+      "name": "Fur and Loathing",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-06",
+      "id": 7561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1053353.jpg",
+      "name": "Jackpot",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-13",
+      "id": 7562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102802.jpg",
+      "name": "Invisible Evidence",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-20",
+      "id": 7563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102803.jpg",
+      "name": "After the Show",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-12-11",
+      "id": 7564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102804.jpg",
+      "name": "Grissom Versus the Volcano",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-12-18",
+      "id": 7565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102805.jpg",
+      "name": "Coming of Rage",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-08",
+      "id": 7566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757505.jpg",
+      "name": "Eleven Angry Jurors",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-15",
+      "id": 7567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757506.jpg",
+      "name": "Butterflied",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-05",
+      "id": 7568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102909.jpg",
+      "name": "Suckers",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-12",
+      "id": 7569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102927.jpg",
+      "name": "Paper or Plastic?",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-19",
+      "id": 7570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103069.jpg",
+      "name": "Early Rollout",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-26",
+      "id": 7571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103068.jpg",
+      "name": "Getting Off",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-03-11",
+      "id": 7572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103067.jpg",
+      "name": "XX",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-01",
+      "id": 7573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103455.jpg",
+      "name": "Bad to the Bone",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-15",
+      "id": 7574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103453.jpg",
+      "name": "Bad Words",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-29",
+      "id": 7575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103452.jpg",
+      "name": "Dead Ringer",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-05-06",
+      "id": 7576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103451.jpg",
+      "name": "Turn of the Screws",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-05-13",
+      "id": 7577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103449.jpg",
+      "name": "No More Bets",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-05-20",
+      "id": 7578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103448.jpg",
+      "name": "Bloodlines",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-23",
+      "id": 7579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103475.jpg",
+      "name": "Viva Las Vegas",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-07",
+      "id": 7580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103476.jpg",
+      "name": "Down the Drain",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-14",
+      "id": 7581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103477.jpg",
+      "name": "Harvest",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-21",
+      "id": 7582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103478.jpg",
+      "name": "Crow's Feet",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-28",
+      "id": 7583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103479.jpg",
+      "name": "Swap Meet",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-04",
+      "id": 7584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103480.jpg",
+      "name": "What's Eating Gilbert Grissom",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-11",
+      "id": 7585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103481.jpg",
+      "name": "Formalities",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-18",
+      "id": 7586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103482.jpg",
+      "name": "Ch-Ch-Changes",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-25",
+      "id": 7587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103483.jpg",
+      "name": "Mea Culpa",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2004-12-09",
+      "id": 7588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103484.jpg",
+      "name": "No Humans Involved",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-06",
+      "id": 7589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103485.jpg",
+      "name": "Who Shot Sherlock?",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-13",
+      "id": 7590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103486.jpg",
+      "name": "Snakes",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-02-03",
+      "id": 7591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103487.jpg",
+      "name": "Nesting Dolls",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-02-10",
+      "id": 7592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103488.jpg",
+      "name": "Unbearable",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-02-17",
+      "id": 7593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103489.jpg",
+      "name": "King Baby",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-02-24",
+      "id": 7594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103490.jpg",
+      "name": "Big Middle",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-03-10",
+      "id": 7595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103491.jpg",
+      "name": "Compulsion",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-03-31",
+      "id": 7596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103492.jpg",
+      "name": "Spark of Life",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-04-14",
+      "id": 7597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103493.jpg",
+      "name": "4x4",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-04-21",
+      "id": 7598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103494.jpg",
+      "name": "Hollywood Brass",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-04-28",
+      "id": 7599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103495.jpg",
+      "name": "Committed",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-05-05",
+      "id": 7600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103496.jpg",
+      "name": "Weeping Willows",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-05-12",
+      "id": 7601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103497.jpg",
+      "name": "Iced",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-05-19",
+      "id": 7602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103498.jpg",
+      "name": "Grave Danger (1)",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-05-19",
+      "id": 7603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103499.jpg",
+      "name": "Grave Danger (2)",
+      "number": 25,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-09-22",
+      "id": 7604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103502.jpg",
+      "name": "Bodies in Motion",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-09-29",
+      "id": 7605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103503.jpg",
+      "name": "Room Service",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-10-06",
+      "id": 7606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103504.jpg",
+      "name": "Bite Me",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-10-13",
+      "id": 7607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103505.jpg",
+      "name": "Shooting Stars",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-10-20",
+      "id": 7608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103506.jpg",
+      "name": "Gum Drops",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-11-03",
+      "id": 7609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103507.jpg",
+      "name": "Secrets and Flies",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-11-10",
+      "id": 7610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103508.jpg",
+      "name": "A Bullet Runs Through It (1)",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-11-17",
+      "id": 7611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103509.jpg",
+      "name": "A Bullet Runs Through It (2)",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-11-24",
+      "id": 7612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103510.jpg",
+      "name": "Dog Eat Dog",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2005-12-08",
+      "id": 7613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103511.jpg",
+      "name": "Still Life",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-01-05",
+      "id": 7614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103512.jpg",
+      "name": "Werewolves",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-01-19",
+      "id": 7615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103513.jpg",
+      "name": "Daddy's Little Girl",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-01-26",
+      "id": 7616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103514.jpg",
+      "name": "Kiss Kiss Bye Bye",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-02-02",
+      "id": 7617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103515.jpg",
+      "name": "Killer",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-02-09",
+      "id": 7618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103516.jpg",
+      "name": "Pirates of the Third Reich",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-03-02",
+      "id": 7619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103517.jpg",
+      "name": "Up in Smoke",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-03-09",
+      "id": 7620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103518.jpg",
+      "name": "I Like to Watch",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-03-30",
+      "id": 7621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103519.jpg",
+      "name": "The Unusual Suspect",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-04-06",
+      "id": 7622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103520.jpg",
+      "name": "Spellbound",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-04-13",
+      "id": 7623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103521.jpg",
+      "name": "Poppin' Tags",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-04-27",
+      "id": 7624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103522.jpg",
+      "name": "Rashomama",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-05-04",
+      "id": 7625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103523.jpg",
+      "name": "Time of Your Death",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-05-11",
+      "id": 7626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103524.jpg",
+      "name": "Bang Bang",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-05-18",
+      "id": 7627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103525.jpg",
+      "name": "Way to Go",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2006-09-21",
+      "id": 7628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103526.jpg",
+      "name": "Built to Kill (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-09-28",
+      "id": 7629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103527.jpg",
+      "name": "Built to Kill (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-10-05",
+      "id": 7630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103528.jpg",
+      "name": "Toe Tags",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-10-12",
+      "id": 7631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103529.jpg",
+      "name": "Fannysmackin'",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-10-19",
+      "id": 7632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103530.jpg",
+      "name": "Double-Cross",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-11-02",
+      "id": 7633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103531.jpg",
+      "name": "Burn Out",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-11-09",
+      "id": 7634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103532.jpg",
+      "name": "Post Mortem",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-11-16",
+      "id": 7635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103533.jpg",
+      "name": "Happenstance",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-11-23",
+      "id": 7636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103534.jpg",
+      "name": "Living Legend",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2006-12-07",
+      "id": 7637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103535.jpg",
+      "name": "Loco Motives",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-01-04",
+      "id": 7638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103536.jpg",
+      "name": "Leaving Las Vegas",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-01-18",
+      "id": 7639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103537.jpg",
+      "name": "Sweet Jane",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-01-25",
+      "id": 7640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103538.jpg",
+      "name": "Redrum",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-02-01",
+      "id": 7641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103539.jpg",
+      "name": "Meet Market",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-02-08",
+      "id": 7642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103540.jpg",
+      "name": "Law of Gravity",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-02-15",
+      "id": 7643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103541.jpg",
+      "name": "Monster in the Box",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-02-22",
+      "id": 7644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103542.jpg",
+      "name": "Fallen Idols",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-03-29",
+      "id": 7645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103543.jpg",
+      "name": "Empty Eyes",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-04-05",
+      "id": 7646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103544.jpg",
+      "name": "Big Shots",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-04-12",
+      "id": 7647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103545.jpg",
+      "name": "Lab Rats",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-04-26",
+      "id": 7648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103546.jpg",
+      "name": "Ending Happy",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-05-03",
+      "id": 7649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103547.jpg",
+      "name": "Leapin' Lizards",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-05-10",
+      "id": 7650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103548.jpg",
+      "name": "The Good, the Bad & the Dominatrix",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-05-17",
+      "id": 7651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103549.jpg",
+      "name": "Living Doll",
+      "number": 24,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2007-09-27",
+      "id": 7652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757507.jpg",
+      "name": "Dead Doll",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-10-04",
+      "id": 7653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757508.jpg",
+      "name": "A La Cart",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-10-11",
+      "id": 7654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757509.jpg",
+      "name": "Go To Hell",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-10-18",
+      "id": 7655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757510.jpg",
+      "name": "The Case of the Cross-Dressing Carp",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-11-01",
+      "id": 7656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757511.jpg",
+      "name": "The Chick Chop Flick Shop",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-11-08",
+      "id": 7657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757512.jpg",
+      "name": "Who & What",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-11-15",
+      "id": 7658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757513.jpg",
+      "name": "Goodbye & Good Luck",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-11-22",
+      "id": 7659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757514.jpg",
+      "name": "You Kill Me",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-12-06",
+      "id": 7660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757515.jpg",
+      "name": "Cockroaches",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2007-12-13",
+      "id": 7661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757516.jpg",
+      "name": "Lying Down with Dogs",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-01-10",
+      "id": 7662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757518.jpg",
+      "name": "Bull",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-04-03",
+      "id": 7663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757519.jpg",
+      "name": "Grissom's Divine Comedy",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-04-10",
+      "id": 7664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757520.jpg",
+      "name": "A Thousand Days on Earth",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-04-24",
+      "id": 7665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757522.jpg",
+      "name": "Drops' Out",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-05-01",
+      "id": 7666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757523.jpg",
+      "name": "The Theory of Everything",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-05-08",
+      "id": 7667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757524.jpg",
+      "name": "Two and a Half Deaths",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-05-15",
+      "id": 7668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757526.jpg",
+      "name": "For Gedda",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2008-10-09",
+      "id": 7669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103576.jpg",
+      "name": "For Warrick",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-10-16",
+      "id": 7670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103577.jpg",
+      "name": "The Happy Place",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-10-23",
+      "id": 7671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103578.jpg",
+      "name": "Art Imitates Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-10-30",
+      "id": 7672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103579.jpg",
+      "name": "Let It Bleed",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-11-06",
+      "id": 7673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103580.jpg",
+      "name": "Leave Out All the Rest",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-11-13",
+      "id": 7674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103581.jpg",
+      "name": "Say Uncle",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-11-20",
+      "id": 7675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103582.jpg",
+      "name": "Woulda, Coulda, Shoulda",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-12-04",
+      "id": 7676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103583.jpg",
+      "name": "Young Man with a Horn",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2008-12-11",
+      "id": 7677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103584.jpg",
+      "name": "19 Down…",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-01-15",
+      "id": 7678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103585.jpg",
+      "name": "One to Go",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-01-22",
+      "id": 7679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103586.jpg",
+      "name": "The Grave Shift",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-01-29",
+      "id": 7680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103587.jpg",
+      "name": "Disarmed & Dangerous",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-02-12",
+      "id": 7681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103588.jpg",
+      "name": "Deep Fried and Minty Fresh",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-02-19",
+      "id": 7682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103589.jpg",
+      "name": "Miscarriage of Justice",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-02-26",
+      "id": 7683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103590.jpg",
+      "name": "Kill Me If You Can",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-03-05",
+      "id": 7684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103591.jpg",
+      "name": "Turn, Turn, Turn",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-03-12",
+      "id": 7685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103592.jpg",
+      "name": "No Way Out",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-02",
+      "id": 7686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/757533.jpg",
+      "name": "Mascara",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-09",
+      "id": 7687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103594.jpg",
+      "name": "The Descent of Man",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-16",
+      "id": 7688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103595.jpg",
+      "name": "A Space Oddity",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-23",
+      "id": 7689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103596.jpg",
+      "name": "If I Had a Hammer…",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-30",
+      "id": 7690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103597.jpg",
+      "name": "The Gone Dead Train",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-05-07",
+      "id": 7691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103598.jpg",
+      "name": "Hog Heaven",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-05-14",
+      "id": 7692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103599.jpg",
+      "name": "All In",
+      "number": 24,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2009-09-24",
+      "id": 7693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103601.jpg",
+      "name": "Family Affair",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-10-01",
+      "id": 7694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103602.jpg",
+      "name": "Ghost Town",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-10-08",
+      "id": 7695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103603.jpg",
+      "name": "Working Stiffs",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-10-15",
+      "id": 7696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103604.jpg",
+      "name": "Coup de Grace",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-10-29",
+      "id": 7697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103605.jpg",
+      "name": "Bloodsport",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-11-05",
+      "id": 7698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103606.jpg",
+      "name": "Death and the Maiden",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-11-12",
+      "id": 7699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103607.jpg",
+      "name": "The Lost Girls",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-11-19",
+      "id": 7700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103608.jpg",
+      "name": "Lover's Lanes",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-12-10",
+      "id": 7701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103609.jpg",
+      "name": "Appendicitement",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2009-12-17",
+      "id": 7702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103610.jpg",
+      "name": "Better Off Dead",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-01-14",
+      "id": 7703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103611.jpg",
+      "name": "Sin City Blue",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-01-21",
+      "id": 7704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103612.jpg",
+      "name": "Long Ball",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-02-04",
+      "id": 7705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103613.jpg",
+      "name": "Internal Combustion",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-03-04",
+      "id": 7706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103614.jpg",
+      "name": "Unshockable",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-03-11",
+      "id": 7707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103615.jpg",
+      "name": "Neverland",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-04-01",
+      "id": 7708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103616.jpg",
+      "name": "The Panty Sniffer",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-04-08",
+      "id": 7709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103617.jpg",
+      "name": "Irradiator",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-04-15",
+      "id": 7710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103618.jpg",
+      "name": "Field Mice",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-04-22",
+      "id": 7711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103619.jpg",
+      "name": "World's End",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-04-29",
+      "id": 7712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103620.jpg",
+      "name": "Take My Life, Please!",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-05-06",
+      "id": 7713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103621.jpg",
+      "name": "Lost & Found",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-05-13",
+      "id": 7714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103622.jpg",
+      "name": "Doctor Who",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-05-20",
+      "id": 7715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103623.jpg",
+      "name": "Meat Jekyll",
+      "number": 23,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2010-09-23",
+      "id": 7716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103632.jpg",
+      "name": "Shock Waves",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-09-30",
+      "id": 7717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103633.jpg",
+      "name": "Pool Shark",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-10-07",
+      "id": 7718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103634.jpg",
+      "name": "Blood Moon",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-10-14",
+      "id": 7719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103635.jpg",
+      "name": "Sqweegel",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-10-21",
+      "id": 7720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103636.jpg",
+      "name": "House of Hoarders",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-10-28",
+      "id": 7721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103637.jpg",
+      "name": "Cold Blooded",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-11-04",
+      "id": 7722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103638.jpg",
+      "name": "Bump and Grind",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-11-11",
+      "id": 7723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103639.jpg",
+      "name": "Fracked",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-11-18",
+      "id": 7724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103640.jpg",
+      "name": "Wild Life",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2010-12-09",
+      "id": 7725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103641.jpg",
+      "name": "418/427",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-01-06",
+      "id": 7726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103642.jpg",
+      "name": "Man Up",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-01-20",
+      "id": 7727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103643.jpg",
+      "name": "A Kiss Before Frying",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-02-03",
+      "id": 7728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103644.jpg",
+      "name": "The Two Mrs. Grissoms",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-02-10",
+      "id": 7729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103645.jpg",
+      "name": "All That Cremains",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-02-17",
+      "id": 7730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103646.jpg",
+      "name": "Targets of Obsession",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-02-24",
+      "id": 7731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103647.jpg",
+      "name": "Turn On, Tune In, Drop Dead",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-03-10",
+      "id": 7732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103648.jpg",
+      "name": "The List",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-03-31",
+      "id": 7733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103649.jpg",
+      "name": "Hitting for the Cycle",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-04-07",
+      "id": 7734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103650.jpg",
+      "name": "Unleashed",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-04-28",
+      "id": 7735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103651.jpg",
+      "name": "Father of the Bride",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-05-05",
+      "id": 7736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103652.jpg",
+      "name": "Cello and Goodbye",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-05-12",
+      "id": 7737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103653.jpg",
+      "name": "In a Dark, Dark House",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2011-09-21",
+      "id": 7738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103661.jpg",
+      "name": "73 Seconds",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-09-28",
+      "id": 7739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103662.jpg",
+      "name": "Tell Tale Hearts",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-10-05",
+      "id": 7740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103663.jpg",
+      "name": "Bittersweet",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-10-12",
+      "id": 7741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103664.jpg",
+      "name": "Maid Man",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-10-19",
+      "id": 7742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103665.jpg",
+      "name": "CSI Down",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-11-02",
+      "id": 7743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103666.jpg",
+      "name": "Freaks & Geeks",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-11-09",
+      "id": 7744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103667.jpg",
+      "name": "Brain Doe",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-11-16",
+      "id": 7745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103668.jpg",
+      "name": "Crime After Crime",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-12-07",
+      "id": 7746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103669.jpg",
+      "name": "Zippered",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2011-12-14",
+      "id": 7747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103670.jpg",
+      "name": "Genetic Disorder",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-01-18",
+      "id": 7748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103671.jpg",
+      "name": "Ms. Willows Regrets…",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-01-25",
+      "id": 7749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103672.jpg",
+      "name": "Willows in the Wind",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-02-08",
+      "id": 7750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103673.jpg",
+      "name": "Tressed to Kill",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-02-15",
+      "id": 7751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103674.jpg",
+      "name": "Seeing Red",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-02-22",
+      "id": 7752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103675.jpg",
+      "name": "Stealing Home",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-02-29",
+      "id": 7753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103676.jpg",
+      "name": "CSI Unplugged",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-03-14",
+      "id": 7754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103677.jpg",
+      "name": "Trends with Benefits",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-03-21",
+      "id": 7755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103678.jpg",
+      "name": "Malice in Wonderland",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-04-04",
+      "id": 7756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103679.jpg",
+      "name": "Split Decisions",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-04-11",
+      "id": 7757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103680.jpg",
+      "name": "Altered Stakes",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-05-02",
+      "id": 7758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103681.jpg",
+      "name": "Dune and Gloom",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-05-09",
+      "id": 7759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103682.jpg",
+      "name": "Homecoming",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-09-26",
+      "id": 7760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103687.jpg",
+      "name": "Karma to Burn",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-10-10",
+      "id": 7761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103688.jpg",
+      "name": "Code Blue Plate Special",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-10-17",
+      "id": 7762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103689.jpg",
+      "name": "Wild Flowers",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-10-24",
+      "id": 7763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103690.jpg",
+      "name": "It Was a Very Good Year",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-10-31",
+      "id": 7764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103691.jpg",
+      "name": "Play Dead",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-11-07",
+      "id": 7765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103692.jpg",
+      "name": "Pick and Roll",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-11-14",
+      "id": 7766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103693.jpg",
+      "name": "Fallen Angels",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-11-21",
+      "id": 7767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103694.jpg",
+      "name": "CSI on Fire",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-11-28",
+      "id": 7768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103695.jpg",
+      "name": "Strip Maul",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2012-12-12",
+      "id": 7769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103696.jpg",
+      "name": "Risky Business Class",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-01-16",
+      "id": 7770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103697.jpg",
+      "name": "Dead Air",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-01-23",
+      "id": 7771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103698.jpg",
+      "name": "Double Fault",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-02-06",
+      "id": 7772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103699.jpg",
+      "name": "In Vino Veritas",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-02-13",
+      "id": 7773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103700.jpg",
+      "name": "Exile",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-02-20",
+      "id": 7774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103701.jpg",
+      "name": "Forget Me Not",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-02-27",
+      "id": 7775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103702.jpg",
+      "name": "Last Woman Standing",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-03-20",
+      "id": 7776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103703.jpg",
+      "name": "Dead of the Class",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-04-03",
+      "id": 7777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103704.jpg",
+      "name": "Sheltered",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-04-10",
+      "id": 7778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103705.jpg",
+      "name": "Backfire",
+      "number": 19,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-05-01",
+      "id": 7779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103706.jpg",
+      "name": "Fearless",
+      "number": 20,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-05-08",
+      "id": 7780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103707.jpg",
+      "name": "Ghosts of the Past",
+      "number": 21,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-05-15",
+      "id": 7781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103708.jpg",
+      "name": "Skin in the Game",
+      "number": 22,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2013-09-25",
+      "id": 7782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103735.jpg",
+      "name": "The Devil and D.B. Russell",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-10-02",
+      "id": 7783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103736.jpg",
+      "name": "Take the Money and Run",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-10-09",
+      "id": 7784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103737.jpg",
+      "name": "Torch Song",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 7785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103738.jpg",
+      "name": "Last Supper",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-10-23",
+      "id": 7786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103739.jpg",
+      "name": "Frame by Frame",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-10-30",
+      "id": 7787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103740.jpg",
+      "name": "Passed Pawns",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 7788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103741.jpg",
+      "name": "Under a Cloud",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 7789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103742.jpg",
+      "name": "Helpless",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 7790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103743.jpg",
+      "name": "Check In and Check Out",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-11-27",
+      "id": 7791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103744.jpg",
+      "name": "Girls Gone Wild",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2013-12-11",
+      "id": 7792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103745.jpg",
+      "name": "The Lost Reindeer",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-01-15",
+      "id": 7793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103746.jpg",
+      "name": "Keep Calm and Carry On",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 7794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103747.jpg",
+      "name": "Boston Brakes",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-02-05",
+      "id": 7795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103748.jpg",
+      "name": "De Los Muertos",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-02-19",
+      "id": 7796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103757.jpg",
+      "name": "Love for Sale",
+      "number": 15,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 7797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103749.jpg",
+      "name": "Killer Moves",
+      "number": 16,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-03-12",
+      "id": 7798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103750.jpg",
+      "name": "Long Road Home",
+      "number": 17,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-03-19",
+      "id": 7799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103751.jpg",
+      "name": "Uninvited",
+      "number": 18,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-04-02",
+      "id": 7800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103752.jpg",
+      "name": "The Fallen",
+      "number": 19,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-04-09",
+      "id": 7801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103753.jpg",
+      "name": "Consumed",
+      "number": 20,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-04-30",
+      "id": 7802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103754.jpg",
+      "name": "Kitty",
+      "number": 21,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-05-07",
+      "id": 7803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/103755.jpg",
+      "name": "Dead in His Tracks",
+      "number": 22,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 7804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4348.jpg",
+      "name": "The CSI Effect",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-10-05",
+      "id": 7805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4349.jpg",
+      "name": "Buzz Kill",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-10-12",
+      "id": 7806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4350.jpg",
+      "name": "Bad Blood",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 8873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4764.jpg",
+      "name": "The Book of Shadows",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-11-09",
+      "id": 14549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5859.jpg",
+      "name": "Girls Gone Wilder",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-11-16",
+      "id": 28352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11025.jpg",
+      "name": "The Twin Paradox",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-11-23",
+      "id": 40386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/12450.jpg",
+      "name": "Road to Recovery",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-11-30",
+      "id": 41128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/13526.jpg",
+      "name": "Rubbery Homicide",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 45778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14559.jpg",
+      "name": "Let's Make a Deal",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-12-14",
+      "id": 57790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/6/16142.jpg",
+      "name": "Dead Rails",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-12-21",
+      "id": 58168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/6/17257.jpg",
+      "name": "Angle of Attack",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2014-12-28",
+      "id": 92008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/17752.jpg",
+      "name": "Dead Woods",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-01-04",
+      "id": 93284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18642.jpg",
+      "name": "The Greater Good",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-01-25",
+      "id": 101859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19841.jpg",
+      "name": "Merchants of Menace",
+      "number": 14,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-01-25",
+      "id": 117710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19842.jpg",
+      "name": "Hero to Zero",
+      "number": 15,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-01-27",
+      "id": 118525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19911.jpg",
+      "name": "The Last Ride",
+      "number": 16,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-02-15",
+      "id": 124009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21755.jpg",
+      "name": "Under My Skin",
+      "number": 17,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-02-15",
+      "id": 124010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21756.jpg",
+      "name": "The End Game",
+      "number": 18,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 236497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/47556.jpg",
+      "name": "Immortality (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 270033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/21/53162.jpg",
+      "name": "Immortality (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-109",
+  "live": true,
+  "overview": "CSI: Crime Scene Investigation is a drama about a team of forensic investigators trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the mystery.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/501/1254955.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "109",
+  "title": "CSI: Crime Scene Investigation",
+  "type": "series",
+  "year": 2000
 }

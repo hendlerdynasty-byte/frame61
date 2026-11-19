@@ -1,22 +1,815 @@
 {
-  "schema": 1,
-  "id": "tvmaze-541",
-  "source": "tvmaze",
-  "sourceId": "541",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Prison Break",
-  "year": 2005,
-  "type": "series",
-  "overview": "Lincoln Burrows is currently on death row and scheduled to die in a few months for an assassination his younger brother Michael is convinced he did not commit. With no other options and time winding down, Michael takes drastic measures to get himself incarcerated alongside his brother in Fox River State Penitentiary. Once he's inside, Michael - a structural engineer with the blueprints for the prison - begins to execute an elaborate plan to break Lincoln out and prove him innocent. When Michael arrives at Fox River State Penitentiary, he meets the prison denizens who will, unknowingly, help in his escape plans - his cellmate, the lovelorn Sucre; beautiful prison doctor Dr. Sara Tancredi, who happens to be the governor's daughter; former mob boss John Abruzzi; and Warden Henry Pope. Meanwhile, outside the prison walls, the brothers' childhood friend and Lincoln's lost love, attorney Veronica Donovan, works within the law to free them; Lincoln's teenage son LJ may be going down a path similar to his convicted father's; and Secret Service Agent Paul Kellerman's investigation into Lincoln's case proves that there may be a national conspiracy.",
-  "poster": "file:///android_asset/posters/tvmaze-541.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-08-29",
+      "id": 49692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129052.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-08-29",
+      "id": 49693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129053.jpg",
+      "name": "Allen",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-05",
+      "id": 49694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129054.jpg",
+      "name": "Cell Test",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-12",
+      "id": 49695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129055.jpg",
+      "name": "Cute Poison",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-19",
+      "id": 49696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129056.jpg",
+      "name": "English, Fitz or Percy",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-26",
+      "id": 49697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129057.jpg",
+      "name": "Riots, Drills and the Devil (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-03",
+      "id": 49698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129058.jpg",
+      "name": "Riots, Drills and the Devil (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-24",
+      "id": 49699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129059.jpg",
+      "name": "The Old Head",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-31",
+      "id": 49700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129060.jpg",
+      "name": "Tweener",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-07",
+      "id": 49701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129061.jpg",
+      "name": "Sleight of Hand",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-14",
+      "id": 49702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129062.jpg",
+      "name": "And Then There Were 7",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-21",
+      "id": 49703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129063.jpg",
+      "name": "Odd Man Out",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-28",
+      "id": 49704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129064.jpg",
+      "name": "End of the Tunnel",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-20",
+      "id": 49705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129065.jpg",
+      "name": "The Rat",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-27",
+      "id": 49706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129066.jpg",
+      "name": "By the Skin and the Teeth",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-03",
+      "id": 49707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129067.jpg",
+      "name": "Brother's Keeper",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-10",
+      "id": 49708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129068.jpg",
+      "name": "J-Cat",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-17",
+      "id": 49709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129069.jpg",
+      "name": "Bluff",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-24",
+      "id": 49710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129070.jpg",
+      "name": "The Key",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-01",
+      "id": 49711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129071.jpg",
+      "name": "Tonight",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-08",
+      "id": 49712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129072.jpg",
+      "name": "Go",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-15",
+      "id": 49713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129073.jpg",
+      "name": "Flight",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-21",
+      "id": 49714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129076.jpg",
+      "name": "Manhunt",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-08-28",
+      "id": 49715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129077.jpg",
+      "name": "Otis",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-04",
+      "id": 49716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129078.jpg",
+      "name": "Scan",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-11",
+      "id": 49717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129079.jpg",
+      "name": "First Down",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-18",
+      "id": 49718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129080.jpg",
+      "name": "Map 1213",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-25",
+      "id": 49719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129081.jpg",
+      "name": "Subdivision",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-02",
+      "id": 49720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129082.jpg",
+      "name": "Buried",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-23",
+      "id": 49721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129083.jpg",
+      "name": "Dead Fall",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-30",
+      "id": 49722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129084.jpg",
+      "name": "Unearthed",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-06",
+      "id": 49723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129085.jpg",
+      "name": "Rendezvous",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-13",
+      "id": 49724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129086.jpg",
+      "name": "Bolshoi Booze",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-20",
+      "id": 49725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129087.jpg",
+      "name": "Disconnect",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-27",
+      "id": 49726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129088.jpg",
+      "name": "The Killing Box",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-22",
+      "id": 49727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129089.jpg",
+      "name": "John Doe",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-29",
+      "id": 49728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129090.jpg",
+      "name": "The Message",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-05",
+      "id": 49729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129091.jpg",
+      "name": "Chicago",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 49730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129092.jpg",
+      "name": "Bad Blood",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-26",
+      "id": 49731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129093.jpg",
+      "name": "Wash",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-05",
+      "id": 49732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129094.jpg",
+      "name": "Sweet Caroline",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-19",
+      "id": 49733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129095.jpg",
+      "name": "Panama",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-26",
+      "id": 49734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129096.jpg",
+      "name": "Fin Del Camino",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-02",
+      "id": 49735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129097.jpg",
+      "name": "Sona",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-17",
+      "id": 49736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129100.jpg",
+      "name": "Orientación",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 49737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129101.jpg",
+      "name": "Fire/Water",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 49738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129102.jpg",
+      "name": "Call Waiting",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 49739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129103.jpg",
+      "name": "Good Fences",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 49740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129104.jpg",
+      "name": "Interference",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 49741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129105.jpg",
+      "name": "Photo Finish",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 49742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129106.jpg",
+      "name": "Vamonos",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 49743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129107.jpg",
+      "name": "Bang and Burn",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-01-14",
+      "id": 49744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129108.jpg",
+      "name": "Boxed In",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-01-21",
+      "id": 49745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129109.jpg",
+      "name": "Dirt Nap",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-02-04",
+      "id": 49746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129110.jpg",
+      "name": "Under and Out",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-02-11",
+      "id": 49747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129111.jpg",
+      "name": "Hell or High Water",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-02-18",
+      "id": 49748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129112.jpg",
+      "name": "The Art of the Deal",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-01",
+      "id": 49749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129118.jpg",
+      "name": "Scylla",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-01",
+      "id": 49750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129119.jpg",
+      "name": "Breaking and Entering",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-08",
+      "id": 49751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129120.jpg",
+      "name": "Shut Down",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-15",
+      "id": 49752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129121.jpg",
+      "name": "Eagles and Angels",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-22",
+      "id": 49753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129122.jpg",
+      "name": "Safe and Sound",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 49754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129123.jpg",
+      "name": "Blow Out",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-06",
+      "id": 49755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129124.jpg",
+      "name": "Five the Hard Way",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 49756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129125.jpg",
+      "name": "The Price",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-03",
+      "id": 49757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129126.jpg",
+      "name": "Greatness Achieved",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 49758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129127.jpg",
+      "name": "The Legend",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 49759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129128.jpg",
+      "name": "Quiet Riot",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 49760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129129.jpg",
+      "name": "Selfless",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-01",
+      "id": 49761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129130.jpg",
+      "name": "Deal or No Deal",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 49762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129131.jpg",
+      "name": "Just Business",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-15",
+      "id": 49763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129132.jpg",
+      "name": "Going Under",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-22",
+      "id": 49764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129133.jpg",
+      "name": "The Sunshine State",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-17",
+      "id": 49765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129134.jpg",
+      "name": "The Mother Lode",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-24",
+      "id": 49766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129135.jpg",
+      "name": "VS.",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-01",
+      "id": 49767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129136.jpg",
+      "name": "S.O.B.",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-08",
+      "id": 49768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129137.jpg",
+      "name": "Cowboys and Indians",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-15",
+      "id": 49769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129138.jpg",
+      "name": "Rate of Exchange",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-15",
+      "id": 49770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129139.jpg",
+      "name": "Killing Your Number",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 854583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417280.jpg",
+      "name": "Ogygia",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-11",
+      "id": 854588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417284.jpg",
+      "name": "Kaniel Outis",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-18",
+      "id": 1039317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417283.jpg",
+      "name": "The Liar",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-25",
+      "id": 854594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417285.jpg",
+      "name": "The Prisoner's Dilemma",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1039316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417286.jpg",
+      "name": "Contingency",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1107652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417287.jpg",
+      "name": "Phaecia",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1107653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417288.jpg",
+      "name": "Wine-Dark Sea",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-23",
+      "id": 1107654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417289.jpg",
+      "name": "Progeny",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1107655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417290.jpg",
+      "name": "Behind the Eyes",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-541",
+  "live": true,
+  "overview": "Lincoln Burrows is currently on death row and scheduled to die in a few months for an assassination his younger brother Michael is convinced he did not commit. With no other options and time winding down, Michael takes drastic measures to get himself incarcerated alongside his brother in Fox River State Penitentiary. Once he's inside, Michael - a structural engineer with the blueprints for the prison - begins to execute an elaborate plan to break Lincoln out and prove him innocent. When Michael arrives at Fox River State Penitentiary, he meets the prison denizens who will, unknowingly, help in his escape plans - his cellmate, the lovelorn Sucre; beautiful prison doctor Dr. Sara Tancredi, who happens to be the governor's daughter; former mob boss John Abruzzi; and Warden Henry Pope. Meanwhile, outside the prison walls, the brothers' childhood friend and Lincoln's lost love, attorney Veronica Donovan, works within the law to free them; Lincoln's teenage son LJ may be going down a path similar to his convicted father's; and Secret Service Agent Paul Kellerman's investigation into Lincoln's case proves that there may be a national conspiracy.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/104/261034.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "541",
+  "title": "Prison Break",
+  "type": "series",
+  "year": 2005
 }

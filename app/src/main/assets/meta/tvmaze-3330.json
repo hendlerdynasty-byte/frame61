@@ -1,20 +1,6276 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3330",
-  "source": "tvmaze",
-  "sourceId": "3330",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Nature",
-  "year": 1982,
-  "type": "series",
-  "overview": "For more than a quarter-century, Nature has brought the beauty and wonder of the natural world into American homes, becoming in the process the benchmark of natural history programs on American television. The series has won more than 600 honors from the television industry, the international wildlife film community, parent groups, and environmental organizations – including 10 Emmy Awards, three Peabody Awards, and the first honor ever given to a program by the Sierra Club.",
-  "poster": "file:///android_asset/posters/tvmaze-3330.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1982-10-10",
+      "id": 223603,
+      "image": null,
+      "name": "The Flight of the Condor: Ice, Wind, and Fire (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-17",
+      "id": 223604,
+      "image": null,
+      "name": "The Flight of the Condor: Ocean, Desert, and Thin Air (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-24",
+      "id": 223605,
+      "image": null,
+      "name": "The Flight of the Condor: Down the Amazon (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-31",
+      "id": 223606,
+      "image": null,
+      "name": "Amate: The Great Fig Tree",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-07",
+      "id": 223607,
+      "image": null,
+      "name": "Kopje: A Rock For All Seasons",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-14",
+      "id": 223608,
+      "image": null,
+      "name": "On The Edge Of Paradise",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-21",
+      "id": 223609,
+      "image": null,
+      "name": "Forest In The Clouds",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-28",
+      "id": 223610,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: Natural Mysteries (1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-05",
+      "id": 223611,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: In Praise of God (2)",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-12",
+      "id": 223612,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: Search for the Mind (3)",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-19",
+      "id": 223613,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: A Question of Learning (4)",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-26",
+      "id": 223614,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: Signs and Signals (5)",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-02",
+      "id": 223615,
+      "image": null,
+      "name": "The Discovery of Animal Behavior: Living Together (6)",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-10-09",
+      "id": 223616,
+      "image": null,
+      "name": "Forest in the Sea",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-16",
+      "id": 223617,
+      "image": null,
+      "name": "Fungi: The Rotten World About Us",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-23",
+      "id": 223618,
+      "image": null,
+      "name": "Acacia: Tree of Thorns",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-06",
+      "id": 223619,
+      "image": null,
+      "name": "On the Tracks of the Wild Otter",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-13",
+      "id": 223620,
+      "image": null,
+      "name": "Secret Weapons",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-18",
+      "id": 223621,
+      "image": null,
+      "name": "Voices in the Forest",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-05",
+      "id": 223622,
+      "image": null,
+      "name": "Osprey",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-12",
+      "id": 223623,
+      "image": null,
+      "name": "Big Business in Bees",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-19",
+      "id": 223624,
+      "image": null,
+      "name": "Jet Set Wildlife",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-26",
+      "id": 223625,
+      "image": null,
+      "name": "The Masterbuilders",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-03-04",
+      "id": 223626,
+      "image": null,
+      "name": "Plight of the Bumblebee",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-03-11",
+      "id": 223627,
+      "image": null,
+      "name": "The Missing Monsoon",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-03-25",
+      "id": 223628,
+      "image": null,
+      "name": "Resurrection at Truk Lagoon",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-09-30",
+      "id": 223629,
+      "image": null,
+      "name": "Krakatoa: The Day that Shook the World",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-07",
+      "id": 223630,
+      "image": null,
+      "name": "Treasures of the Gulf",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-14",
+      "id": 223631,
+      "image": null,
+      "name": "Sexual Encounters of the Floral Kind",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-21",
+      "id": 223632,
+      "image": null,
+      "name": "Fragments of Eden",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-28",
+      "id": 223633,
+      "image": null,
+      "name": "The Face of the Deep",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-11",
+      "id": 223634,
+      "image": null,
+      "name": "Yellowstone in Winter",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-02",
+      "id": 223635,
+      "image": null,
+      "name": "Winter Days",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-09",
+      "id": 223636,
+      "image": null,
+      "name": "Kilimanjaro",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-16",
+      "id": 223637,
+      "image": null,
+      "name": "Danube Delta",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-13",
+      "id": 223638,
+      "image": null,
+      "name": "Tumbler in the Sky",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-20",
+      "id": 223639,
+      "image": null,
+      "name": "Kinabalu: Summit of Borneo",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-03",
+      "id": 223640,
+      "image": null,
+      "name": "Birds of Paradox",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-17",
+      "id": 223641,
+      "image": null,
+      "name": "Lost World of the Medusa",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-10",
+      "id": 223642,
+      "image": null,
+      "name": "Kitum - The Elephant Cave",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-17",
+      "id": 223643,
+      "image": null,
+      "name": "Rhino on the Run",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-31",
+      "id": 223644,
+      "image": null,
+      "name": "Through Animal Eyes",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-04-28",
+      "id": 223645,
+      "image": null,
+      "name": "Man's Best Friend",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-05-26",
+      "id": 223646,
+      "image": null,
+      "name": "Namaqualand: Diary of a Desert Garden",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-10-20",
+      "id": 223647,
+      "image": null,
+      "name": "And Then the Rains Came",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-27",
+      "id": 223648,
+      "image": null,
+      "name": "Battle of the Leaves",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-03",
+      "id": 223649,
+      "image": null,
+      "name": "The Ganges Gharial",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-10",
+      "id": 223650,
+      "image": null,
+      "name": "One Man's Island",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-17",
+      "id": 223651,
+      "image": null,
+      "name": "Selva Verde: The Green Jungle",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-24",
+      "id": 223652,
+      "image": null,
+      "name": "The Plant Hunters",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-15",
+      "id": 223653,
+      "image": null,
+      "name": "Kalahari: Wilderness Without Water",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-05",
+      "id": 223654,
+      "image": null,
+      "name": "Emas: High Plains of Brazil",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-26",
+      "id": 223655,
+      "image": null,
+      "name": "The Feathered Swarm",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-16",
+      "id": 223656,
+      "image": null,
+      "name": "Kingdom of the Ice Bear: The Frozen Ocean (1)",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-23",
+      "id": 223657,
+      "image": null,
+      "name": "Kingdom of the Ice Bear: Land of Beyond (2)",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-02",
+      "id": 223658,
+      "image": null,
+      "name": "Kingdom of the Ice Bear: The Final Challenge (3)",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-09",
+      "id": 223659,
+      "image": null,
+      "name": "Saguaro: Sentinel of the Desert",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-23",
+      "id": 223660,
+      "image": null,
+      "name": "Death Trap",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-04-06",
+      "id": 223661,
+      "image": null,
+      "name": "Aspen: Dancer on the Wind",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-04-27",
+      "id": 223662,
+      "image": null,
+      "name": "Secrets of an African Jungle",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-04",
+      "id": 223663,
+      "image": null,
+      "name": "Birdwatch From Florida",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-11",
+      "id": 223664,
+      "image": null,
+      "name": "The Gooneys of Midway",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-18",
+      "id": 223665,
+      "image": null,
+      "name": "Where Eagles Fly",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-25",
+      "id": 223666,
+      "image": null,
+      "name": "The Skyhunters",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-10-19",
+      "id": 223667,
+      "image": null,
+      "name": "Alyeska: The Great Land",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-10-26",
+      "id": 223668,
+      "image": null,
+      "name": "Baja Lagoon",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-02",
+      "id": 223669,
+      "image": null,
+      "name": "Galapagos: How They Got There (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-09",
+      "id": 223670,
+      "image": null,
+      "name": "Galapagos: Cold on the Equator (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-16",
+      "id": 223671,
+      "image": null,
+      "name": "Galapagos: The Ocean Travelers (3)",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-23",
+      "id": 223672,
+      "image": null,
+      "name": "Pantanal: Prairie of the Great Waters",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-12-07",
+      "id": 223673,
+      "image": null,
+      "name": "Cats",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1986-12-14",
+      "id": 223674,
+      "image": null,
+      "name": "Leopard: A Darkness in the Grass",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-01-18",
+      "id": 223675,
+      "image": null,
+      "name": "The Elephant Challenge",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-08",
+      "id": 223676,
+      "image": null,
+      "name": "Ichkeul: Between the Desert and the Deep Blue Sea",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-22",
+      "id": 223677,
+      "image": null,
+      "name": "In the Shadow of Fujisan: See No Evil (1)",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-01",
+      "id": 223678,
+      "image": null,
+      "name": "In the Shadow of Fujisan: Bird of Happiness (2)",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-08",
+      "id": 223679,
+      "image": null,
+      "name": "In the Shadow of Fujisan: Long Live the Turtle (3)",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-15",
+      "id": 223680,
+      "image": null,
+      "name": "America's Wild Horses",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-04-12",
+      "id": 223681,
+      "image": null,
+      "name": "Holy Land: A Wilderness Like Eden (1)",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-04-19",
+      "id": 223682,
+      "image": null,
+      "name": "Holy Land: Sweet Water, Bitter Sea (2)",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-04-26",
+      "id": 223683,
+      "image": null,
+      "name": "The Forgotten Garden",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-05-10",
+      "id": 223684,
+      "image": null,
+      "name": "Lords of Hokkaido",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-05-17",
+      "id": 223685,
+      "image": null,
+      "name": "Designed for Living",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1987-09-20",
+      "id": 223686,
+      "image": null,
+      "name": "The Flowing Oasis",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-09-27",
+      "id": 223687,
+      "image": null,
+      "name": "Amazonia: A Burning Question",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-04",
+      "id": 223688,
+      "image": null,
+      "name": "Spirits of the Forest",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-18",
+      "id": 223689,
+      "image": null,
+      "name": "Perspectives of Paradise",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-15",
+      "id": 223690,
+      "image": null,
+      "name": "A Season in the Sun",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-22",
+      "id": 223691,
+      "image": null,
+      "name": "The Legend of the Lightning Bird",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-29",
+      "id": 223692,
+      "image": null,
+      "name": "The Volcano Watchers",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1987-12-06",
+      "id": 223693,
+      "image": null,
+      "name": "Tiger!",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-03",
+      "id": 223694,
+      "image": null,
+      "name": "Land of the Kiwi",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-10",
+      "id": 223695,
+      "image": null,
+      "name": "Costa Rica: Paradise Reclaimed",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-17",
+      "id": 223696,
+      "image": null,
+      "name": "Masked Monkeys",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-24",
+      "id": 223697,
+      "image": null,
+      "name": "In-Flight Movie; Birds of the Sun God",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-14",
+      "id": 223698,
+      "image": null,
+      "name": "Hawaii: Islands of the Fire Goddess",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-21",
+      "id": 223699,
+      "image": null,
+      "name": "Okavango: Jewel of the Kalahari: The Search for the Jewel (1)",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-28",
+      "id": 223700,
+      "image": null,
+      "name": "Okavango: Jewel of the Kalahari: The Living Jewel (2)",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-06",
+      "id": 223701,
+      "image": null,
+      "name": "Okavango: Jewel of the Kalahari (3)",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-13",
+      "id": 223702,
+      "image": null,
+      "name": "Great Moments with Nature's Filmmakers",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-20",
+      "id": 223703,
+      "image": null,
+      "name": "Elephant: Lord of the Jungle",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-27",
+      "id": 223704,
+      "image": null,
+      "name": "Miracle of the Scarlet Salmon",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-04-24",
+      "id": 223705,
+      "image": null,
+      "name": "Cowboys, Caimans and Capybaras",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-05-01",
+      "id": 223706,
+      "image": null,
+      "name": "Tom's River: Reflections of a River Keeper",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-05-08",
+      "id": 223707,
+      "image": null,
+      "name": "The Elephant Challenge",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-06-12",
+      "id": 223708,
+      "image": null,
+      "name": "The Coral Triangle",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1988-10-09",
+      "id": 223709,
+      "image": null,
+      "name": "Bonebreakers' Mountain",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-10-16",
+      "id": 223710,
+      "image": null,
+      "name": "Extremadura: Spain's Forgotten Forest",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-10-30",
+      "id": 223711,
+      "image": null,
+      "name": "Peacock's War",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-13",
+      "id": 223712,
+      "image": null,
+      "name": "Nature of Australia - A Separate Creation",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-20",
+      "id": 223713,
+      "image": null,
+      "name": "Nature of Australia - Seas Under Capricorn",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-27",
+      "id": 223714,
+      "image": null,
+      "name": "Nature of Australia - The Making of the Bush",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-04",
+      "id": 223715,
+      "image": null,
+      "name": "Nature of Australia - The Sunburnt Country",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-11",
+      "id": 223716,
+      "image": null,
+      "name": "Nature of Australia - Land of Flood and Fire",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-18",
+      "id": 223717,
+      "image": null,
+      "name": "Nature of Australia - End of Isolation",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-01-08",
+      "id": 223718,
+      "image": null,
+      "name": "Night Hunters",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-05",
+      "id": 223719,
+      "image": null,
+      "name": "Beyond Timbuktu",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-19",
+      "id": 223720,
+      "image": null,
+      "name": "Under the Emerald Sea",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-26",
+      "id": 223721,
+      "image": null,
+      "name": "Wild Waterfalls",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-05",
+      "id": 223722,
+      "image": null,
+      "name": "Meerkats United / The Bee-Team",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-12",
+      "id": 223723,
+      "image": null,
+      "name": "Icebird",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-19",
+      "id": 223724,
+      "image": null,
+      "name": "Mozu the Snow Monkey",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-26",
+      "id": 223725,
+      "image": null,
+      "name": "The Everglades: Rain Machine",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-04-16",
+      "id": 223726,
+      "image": null,
+      "name": "Islands in the Sky",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-04-30",
+      "id": 223727,
+      "image": null,
+      "name": "Rulers of the Wind",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-05-14",
+      "id": 223728,
+      "image": null,
+      "name": "Kariba: The Lake that Made a Dent",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1989-10-08",
+      "id": 223729,
+      "image": null,
+      "name": "The Great Rift: Footprints in the Valley (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-15",
+      "id": 223730,
+      "image": null,
+      "name": "The Great Rift: Out of the Ashes (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-22",
+      "id": 223731,
+      "image": null,
+      "name": "The Great Rift: Breaking the Continent (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-29",
+      "id": 223732,
+      "image": null,
+      "name": "Under the Ice",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-12",
+      "id": 223733,
+      "image": null,
+      "name": "Land of Dragons",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-19",
+      "id": 223734,
+      "image": null,
+      "name": "The Great Wood of Caledon",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-12-10",
+      "id": 223735,
+      "image": null,
+      "name": "Gorillas",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1989-12-17",
+      "id": 223736,
+      "image": null,
+      "name": "Forest of Fear",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-01-07",
+      "id": 223737,
+      "image": null,
+      "name": "Gran Paradiso",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-01-21",
+      "id": 223738,
+      "image": null,
+      "name": "Cranes of the Grey Wind",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-04",
+      "id": 223739,
+      "image": null,
+      "name": "King Solomon's Mountains",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-11",
+      "id": 223740,
+      "image": null,
+      "name": "Hunters of the Sky",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-18",
+      "id": 223741,
+      "image": null,
+      "name": "A Wolf in the Fold",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-04",
+      "id": 223742,
+      "image": null,
+      "name": "The Colorado",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-11",
+      "id": 223743,
+      "image": null,
+      "name": "The Emerald Isle",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-18",
+      "id": 223744,
+      "image": null,
+      "name": "Giant Otters",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-25",
+      "id": 223745,
+      "image": null,
+      "name": "The Haida Gwai: Islands of the People",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-01",
+      "id": 223746,
+      "image": null,
+      "name": "Presque Isle: Land in Motion",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-08",
+      "id": 223747,
+      "image": null,
+      "name": "The Great Yellowstone Fire",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-15",
+      "id": 223748,
+      "image": null,
+      "name": "Serpents",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1990-09-30",
+      "id": 223749,
+      "image": null,
+      "name": "Seasons in the Sea",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-07",
+      "id": 223750,
+      "image": null,
+      "name": "Monkeys on the Edge",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-14",
+      "id": 223751,
+      "image": null,
+      "name": "Scandinavia: Land of the Midnight Sun (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-21",
+      "id": 223752,
+      "image": null,
+      "name": "Scandinavia: Fresh Waters, Salt Seas (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-11",
+      "id": 223753,
+      "image": null,
+      "name": "The Sisterhood",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-18",
+      "id": 223754,
+      "image": null,
+      "name": "Supersense: Sight and Sound (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-25",
+      "id": 223755,
+      "image": null,
+      "name": "Supersense: Super Scents and Beyond (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-12-02",
+      "id": 223756,
+      "image": null,
+      "name": "Supersense: Making Sense (3)",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-12-09",
+      "id": 223757,
+      "image": null,
+      "name": "Monkey Island",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1990-12-16",
+      "id": 223758,
+      "image": null,
+      "name": "Grizzly Country",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-01-13",
+      "id": 223759,
+      "image": null,
+      "name": "The Wild Shores of Patagonia",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-17",
+      "id": 223760,
+      "image": null,
+      "name": "The Gulf: Portrait of the War Zone",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-24",
+      "id": 223761,
+      "image": null,
+      "name": "One Man's Kenya",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-03",
+      "id": 223762,
+      "image": null,
+      "name": "The Elephants of Tsavo: Love and Betrayal",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-10",
+      "id": 223763,
+      "image": null,
+      "name": "Grand Teton Wilderness",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-17",
+      "id": 223764,
+      "image": null,
+      "name": "Year of the Jackal",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-24",
+      "id": 223765,
+      "image": null,
+      "name": "Black Bear of the North",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-04-07",
+      "id": 223766,
+      "image": null,
+      "name": "Wild Dogs of Africa",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-04-14",
+      "id": 223767,
+      "image": null,
+      "name": "Marathon Bird",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-04-28",
+      "id": 223768,
+      "image": null,
+      "name": "The Cat That Came In From the Cold",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-05-12",
+      "id": 223769,
+      "image": null,
+      "name": "Crown of the Continent: Waterton/Glacier National Park",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "1991-09-28",
+      "id": 223770,
+      "image": null,
+      "name": "From the Heart of the World: The Elder Brothers' Warning",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-13",
+      "id": 223771,
+      "image": null,
+      "name": "Vietnam: A Country, Not a War",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-03",
+      "id": 223772,
+      "image": null,
+      "name": "Kali the Lion",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-17",
+      "id": 223773,
+      "image": null,
+      "name": "Madagascar: Island of Ghosts",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-24",
+      "id": 223774,
+      "image": null,
+      "name": "Land of the Eagle: The Great Encounter (1)",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-24",
+      "id": 223775,
+      "image": null,
+      "name": "Land of the Eagle: Confronting the Wilderness (2)",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-25",
+      "id": 223776,
+      "image": null,
+      "name": "Land of the Eagle: Conquering Swamps (3)",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-25",
+      "id": 223777,
+      "image": null,
+      "name": "Land of the Eagle: Across the Seas of Grass (4)",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-26",
+      "id": 223778,
+      "image": null,
+      "name": "Land of the Eagle: Into the Shining Mountains (5)",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-26",
+      "id": 223779,
+      "image": null,
+      "name": "Land of the Eagle: Living on the Edge (6)",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-27",
+      "id": 223780,
+      "image": null,
+      "name": "Land of the Eagle: The First and Last Frontier (7)",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-27",
+      "id": 223781,
+      "image": null,
+      "name": "Land of the Eagle: Searching for Paradise (8)",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1991-12-08",
+      "id": 223782,
+      "image": null,
+      "name": "Great Moments with Nature's Filmmakers",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-05",
+      "id": 223783,
+      "image": null,
+      "name": "Horse Tigers",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-12",
+      "id": 223784,
+      "image": null,
+      "name": "Arctic Wanderers",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-19",
+      "id": 223785,
+      "image": null,
+      "name": "Ladakh: Kingdom in the Clouds",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-09",
+      "id": 223786,
+      "image": null,
+      "name": "Tiwai: Island of the Apes",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-16",
+      "id": 223787,
+      "image": null,
+      "name": "A Celebration of Birds with Roger Tory Peterson",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-03-01",
+      "id": 223788,
+      "image": null,
+      "name": "Elephant Seals: Those Magnificent Diving Machines",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-03-08",
+      "id": 223789,
+      "image": null,
+      "name": "Dolphins: Close Encounters",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-05-31",
+      "id": 223790,
+      "image": null,
+      "name": "Last Stand of the Giants",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "1992-10-05",
+      "id": 223791,
+      "image": null,
+      "name": "Realms of the Russian Bear: Green Jewel of the Caspian (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-05",
+      "id": 223792,
+      "image": null,
+      "name": "Realms of the Russian Bear: The Arctic Frontier (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-06",
+      "id": 223793,
+      "image": null,
+      "name": "Realms of the Russian Bear: The Red Deserts (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-06",
+      "id": 223794,
+      "image": null,
+      "name": "Realms of the Russian Bear: The Celestial Mountains (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-07",
+      "id": 223795,
+      "image": null,
+      "name": "Realms of the Russian Bear: Siberia, the Frozen Forest (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-07",
+      "id": 223796,
+      "image": null,
+      "name": "Realms of the Russian Bear: Born of Fire (6)",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-18",
+      "id": 223797,
+      "image": null,
+      "name": "Shadows in a Desert Sea",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-25",
+      "id": 223798,
+      "image": null,
+      "name": "The Tree of Music",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1992-11-29",
+      "id": 223799,
+      "image": null,
+      "name": "Slaves to the Queen",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-01-10",
+      "id": 223800,
+      "image": null,
+      "name": "Ice Fox: Struggle for Survival",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-01-24",
+      "id": 223801,
+      "image": null,
+      "name": "Cheetahs in the Land of Lions",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-14",
+      "id": 223802,
+      "image": null,
+      "name": "Gorilla: King of the Congo",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-21",
+      "id": 223803,
+      "image": null,
+      "name": "American Trickster",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-28",
+      "id": 223804,
+      "image": null,
+      "name": "Hebrides: The Secret Islands",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-03-14",
+      "id": 223805,
+      "image": null,
+      "name": "Echo of the Elephants",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-09",
+      "id": 223806,
+      "image": null,
+      "name": "The Ghosts of Ruby",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-16",
+      "id": 223807,
+      "image": null,
+      "name": "The Bandit and the Builder",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-23",
+      "id": 223808,
+      "image": null,
+      "name": "Spirit of the Sound",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "1993-10-03",
+      "id": 223809,
+      "image": null,
+      "name": "In the Company of Wolves with Timothy Dalton",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-10-10",
+      "id": 223810,
+      "image": null,
+      "name": "Treasure of the Andes",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-07",
+      "id": 223811,
+      "image": null,
+      "name": "Echoes from the Ice",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-22",
+      "id": 223812,
+      "image": null,
+      "name": "The Nature of Sex: The Primal Instinct (1)",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-22",
+      "id": 223813,
+      "image": null,
+      "name": "The Nature of Sex: A Time and a Place (2)",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-23",
+      "id": 223814,
+      "image": null,
+      "name": "The Nature of Sex: The Sex Contract (3)",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-23",
+      "id": 223815,
+      "image": null,
+      "name": "The Nature of Sex: Sex and the Human Animal (4)",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-24",
+      "id": 223816,
+      "image": null,
+      "name": "The Nature of Sex: A Miracle in the Making (5)",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-11-24",
+      "id": 223817,
+      "image": null,
+      "name": "The Nature of Sex: Young Ones (6)",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1993-12-05",
+      "id": 223818,
+      "image": null,
+      "name": "Nature's Great African Moments",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1994-01-23",
+      "id": 223819,
+      "image": null,
+      "name": "Anima Mundi: Before It's Too Late",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1994-02-20",
+      "id": 223820,
+      "image": null,
+      "name": "Phantom of the Forest",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1994-03-13",
+      "id": 223821,
+      "image": null,
+      "name": "Sea Otter Story: Warm Hearts & Cold Water",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1994-05-15",
+      "id": 223822,
+      "image": null,
+      "name": "Toadskin Spell",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "1994-10-02",
+      "id": 223823,
+      "image": null,
+      "name": "In the Lion's Den with Anthony Hopkins",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-10-09",
+      "id": 223824,
+      "image": null,
+      "name": "Pandas of the Sleeping Dragon",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-06",
+      "id": 223825,
+      "image": null,
+      "name": "Warts and All",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-20",
+      "id": 223826,
+      "image": null,
+      "name": "Nomads of the Wind: The Faraway Heaven (1)",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-20",
+      "id": 223827,
+      "image": null,
+      "name": "Nomads of the Wind: Crossroads of the Pacific (2)",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-21",
+      "id": 223828,
+      "image": null,
+      "name": "Nomads of the Wind: Burning Their Boats (3)",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-21",
+      "id": 223829,
+      "image": null,
+      "name": "Nomads of the Wind: Distant Horizons (4)",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1994-11-22",
+      "id": 223830,
+      "image": null,
+      "name": "Nomads of the Wind: The Pierced Sky (5)",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-01-08",
+      "id": 223831,
+      "image": null,
+      "name": "Fire Bird",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-02-05",
+      "id": 223832,
+      "image": null,
+      "name": "Creatures in Crime",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-02-26",
+      "id": 223833,
+      "image": null,
+      "name": "Tigers with Bob Hoskins",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-03-05",
+      "id": 223834,
+      "image": null,
+      "name": "Ghost Bear",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-05-21",
+      "id": 223835,
+      "image": null,
+      "name": "Born to Run",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-07-23",
+      "id": 223836,
+      "image": null,
+      "name": "New Guinea: Island Invaders",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-07-30",
+      "id": 223837,
+      "image": null,
+      "name": "New Guinea: Other Worlds",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "1995-10-08",
+      "id": 223838,
+      "image": null,
+      "name": "Jaguar: Year of the Cat",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1995-10-15",
+      "id": 223839,
+      "image": null,
+      "name": "Incredible Suckers",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1995-11-05",
+      "id": 223840,
+      "image": null,
+      "name": "Monkey in the Mirror",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1995-12-03",
+      "id": 223841,
+      "image": null,
+      "name": "The World of Penguins",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1995-12-17",
+      "id": 223842,
+      "image": null,
+      "name": "Castaways of Sulawesi",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-01-14",
+      "id": 223843,
+      "image": null,
+      "name": "Hunters of the Sea Wind",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-02-04",
+      "id": 223844,
+      "image": null,
+      "name": "Parrots: Look Who's Talking",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-02-11",
+      "id": 223845,
+      "image": null,
+      "name": "Alien Empire: Hardware Replicators",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-02-12",
+      "id": 223846,
+      "image": null,
+      "name": "Alien Empire: Battlezone Metropolis",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-02-13",
+      "id": 223847,
+      "image": null,
+      "name": "Alien Empire: Voyagers and War of the Worlds",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-03-03",
+      "id": 223848,
+      "image": null,
+      "name": "Jane Goodall's Wild Chimpanzees",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-03-31",
+      "id": 223849,
+      "image": null,
+      "name": "Victims of Venom",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-05-05",
+      "id": 223850,
+      "image": null,
+      "name": "Call of Kakadu",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-05-12",
+      "id": 223851,
+      "image": null,
+      "name": "Monsoon",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "1996-10-13",
+      "id": 223852,
+      "image": null,
+      "name": "Sperm Whales: The Real Moby Dick",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1996-10-20",
+      "id": 223853,
+      "image": null,
+      "name": "The Crater Lions",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1996-11-10",
+      "id": 223854,
+      "image": null,
+      "name": "Mask of the Mandrill",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1996-11-17",
+      "id": 223855,
+      "image": null,
+      "name": "The Joy of Pigs",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1996-12-08",
+      "id": 223856,
+      "image": null,
+      "name": "Echo of the Elephants: The Next Generation",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-01-12",
+      "id": 223857,
+      "image": null,
+      "name": "Wolves and Buffalo: The Last Frontier",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-02-16",
+      "id": 223858,
+      "image": null,
+      "name": "The Elephant Men",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-02-23",
+      "id": 223859,
+      "image": null,
+      "name": "A Lemur's Tale",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-03-09",
+      "id": 223860,
+      "image": null,
+      "name": "Extraordinary Dogs",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-04-13",
+      "id": 223861,
+      "image": null,
+      "name": "Bowerbird Blues",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-05-11",
+      "id": 223862,
+      "image": null,
+      "name": "Spirits of the Jaguar: The Forging of a New World",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-05-12",
+      "id": 223863,
+      "image": null,
+      "name": "Spirits of the Jaguar: The Forests of Maya",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-05-13",
+      "id": 223864,
+      "image": null,
+      "name": "Spirits of the Jaguar: Hunters of the Caribbean Sea",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-05-14",
+      "id": 223865,
+      "image": null,
+      "name": "Spirits of the Jaguar: The World of Aztecs",
+      "number": 14,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "1997-10-12",
+      "id": 223866,
+      "image": null,
+      "name": "Toothwalkers: Giants of the Arctic Ice",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1997-10-19",
+      "id": 223867,
+      "image": null,
+      "name": "Grand Canyon",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1997-11-09",
+      "id": 223868,
+      "image": null,
+      "name": "Animal Attractions: Amazing Tales from the San Diego Zoo",
+      "number": 3,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1997-11-16",
+      "id": 223869,
+      "image": null,
+      "name": "The Elephants of Africa",
+      "number": 4,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1997-12-07",
+      "id": 223870,
+      "image": null,
+      "name": "Orangutans: Just Hangin' On",
+      "number": 5,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-01-18",
+      "id": 223871,
+      "image": null,
+      "name": "Yellowstone Otters",
+      "number": 6,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-02-01",
+      "id": 223872,
+      "image": null,
+      "name": "Gremlins: Faces in the Forest",
+      "number": 7,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-03-01",
+      "id": 223873,
+      "image": null,
+      "name": "Life at the Edge of the Sea",
+      "number": 8,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-03-29",
+      "id": 223874,
+      "image": null,
+      "name": "Secret Garden",
+      "number": 9,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-04-26",
+      "id": 223875,
+      "image": null,
+      "name": "Forces of the Wild: In the Beginning",
+      "number": 10,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-04-27",
+      "id": 223876,
+      "image": null,
+      "name": "Forces of the Wild: Perpetual Motion",
+      "number": 11,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-04-27",
+      "id": 223877,
+      "image": null,
+      "name": "Forces of the Wild: Heavenly Partners",
+      "number": 12,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-04-27",
+      "id": 223878,
+      "image": null,
+      "name": "Forces of the Wild: Living Dangerously",
+      "number": 13,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-05-03",
+      "id": 223879,
+      "image": null,
+      "name": "Forces of the Wild: Playing with Fire",
+      "number": 14,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-05-17",
+      "id": 223880,
+      "image": null,
+      "name": "Eagles",
+      "number": 15,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-06-14",
+      "id": 223881,
+      "image": null,
+      "name": "The Wild Side of New York",
+      "number": 16,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "1998-10-11",
+      "id": 223882,
+      "image": null,
+      "name": "Great White Bear",
+      "number": 1,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-10-18",
+      "id": 223883,
+      "image": null,
+      "name": "The Secret World of Sharks and Rays",
+      "number": 2,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-01",
+      "id": 223884,
+      "image": null,
+      "name": "American Buffalo: Spirit of a Nation",
+      "number": 3,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-15",
+      "id": 223885,
+      "image": null,
+      "name": "India, Land of the Tiger: Tiger's Domain",
+      "number": 4,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-15",
+      "id": 223886,
+      "image": null,
+      "name": "India, Land of the Tiger: Sacred Waters",
+      "number": 5,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-16",
+      "id": 223887,
+      "image": null,
+      "name": "India, Land of the Tiger: Unknown Seas",
+      "number": 6,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-16",
+      "id": 223888,
+      "image": null,
+      "name": "India, Land of the Tiger: Desert Kingdom",
+      "number": 7,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-18",
+      "id": 223889,
+      "image": null,
+      "name": "India, Land of the Tiger: Mountains of Gods",
+      "number": 8,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-11-18",
+      "id": 223890,
+      "image": null,
+      "name": "India, Land of the Tiger: Monsoon Forests",
+      "number": 9,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1998-12-06",
+      "id": 223891,
+      "image": null,
+      "name": "John Denver: Let This Be a Voice",
+      "number": 10,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-01-10",
+      "id": 223892,
+      "image": null,
+      "name": "Serengeti Stories",
+      "number": 11,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-02-07",
+      "id": 223893,
+      "image": null,
+      "name": "Iceland: Fire and Ice",
+      "number": 12,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-02-14",
+      "id": 223894,
+      "image": null,
+      "name": "Walking with Giants: The Grizzlies of Siberia",
+      "number": 13,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-02-21",
+      "id": 223895,
+      "image": null,
+      "name": "Extraordinary Cats",
+      "number": 14,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-05-23",
+      "id": 223896,
+      "image": null,
+      "name": "The Seedy Side of Plants",
+      "number": 15,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-08-08",
+      "id": 223897,
+      "image": null,
+      "name": "A Conversation with Koko",
+      "number": 16,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "1999-10-24",
+      "id": 223898,
+      "image": null,
+      "name": "Antarctica: The End of the Earth: Katabatic (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1999-10-31",
+      "id": 223899,
+      "image": null,
+      "name": "Antarctica: The End of the Earth: Iceberg (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1999-11-14",
+      "id": 223900,
+      "image": null,
+      "name": "Horses",
+      "number": 3,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1999-11-21",
+      "id": 223901,
+      "image": null,
+      "name": "Sled Dogs: An Alaskan Epic",
+      "number": 4,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "1999-12-05",
+      "id": 223902,
+      "image": null,
+      "name": "Wisdom of the Wild",
+      "number": 5,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-01-04",
+      "id": 223903,
+      "image": null,
+      "name": "Inside the Animal Mind Part One: Are Animals Intelligent?",
+      "number": 6,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-01-11",
+      "id": 223904,
+      "image": null,
+      "name": "Inside the Animal Mind Part Two: Do Animals Have Emotions?",
+      "number": 7,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-01-18",
+      "id": 223905,
+      "image": null,
+      "name": "Inside the Animal Mind Part Three: Animal Consciousness",
+      "number": 8,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-02-06",
+      "id": 223906,
+      "image": null,
+      "name": "Cheetahs in a Hot Spot",
+      "number": 9,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-02-13",
+      "id": 223907,
+      "image": null,
+      "name": "Showdown at Grizzly River",
+      "number": 10,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-02-27",
+      "id": 223908,
+      "image": null,
+      "name": "Animal Attractions: Amazing Tales from the San Diego Zoo",
+      "number": 11,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-04-16",
+      "id": 223909,
+      "image": null,
+      "name": "Obsession with Orchids",
+      "number": 12,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-04-23",
+      "id": 223910,
+      "image": null,
+      "name": "Earth Navigators",
+      "number": 13,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-05-07",
+      "id": 223911,
+      "image": null,
+      "name": "The Body Changers",
+      "number": 14,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-05-14",
+      "id": 223912,
+      "image": null,
+      "name": "Springs Eternal: Florida's Fountain of Youth",
+      "number": 15,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-06-11",
+      "id": 223913,
+      "image": null,
+      "name": "The Nature of Sex",
+      "number": 16,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2000-10-22",
+      "id": 223914,
+      "image": null,
+      "name": "Wild Horses of Mongolia with Julia Roberts",
+      "number": 1,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2000-10-29",
+      "id": 223915,
+      "image": null,
+      "name": "The Octopus Show",
+      "number": 2,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2000-11-12",
+      "id": 223916,
+      "image": null,
+      "name": "Extraordinary Birds",
+      "number": 3,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2000-11-19",
+      "id": 223917,
+      "image": null,
+      "name": "The Urban Elephant",
+      "number": 4,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2000-12-17",
+      "id": 223918,
+      "image": null,
+      "name": "Intimate Enemies: Lions and Buffalo",
+      "number": 5,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-01-07",
+      "id": 223919,
+      "image": null,
+      "name": "Polar Bear Invasion",
+      "number": 6,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-01-15",
+      "id": 223920,
+      "image": null,
+      "name": "Triumph of Life: The Four Billion Year War",
+      "number": 7,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-01-21",
+      "id": 223921,
+      "image": null,
+      "name": "Triumph of Life: The Mating Game",
+      "number": 8,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-01-28",
+      "id": 223922,
+      "image": null,
+      "name": "Triumph of Life: The Eternal Arms Race",
+      "number": 9,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-02-04",
+      "id": 223923,
+      "image": null,
+      "name": "Triumph of Life: Winning Teams",
+      "number": 10,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-02-11",
+      "id": 223924,
+      "image": null,
+      "name": "Triumph of Life: Brain Power",
+      "number": 11,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-02-18",
+      "id": 223925,
+      "image": null,
+      "name": "Triumph of Life: The Survivors",
+      "number": 12,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-03-04",
+      "id": 223926,
+      "image": null,
+      "name": "Baby Tales",
+      "number": 13,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-04-01",
+      "id": 223927,
+      "image": null,
+      "name": "The Panda Baby",
+      "number": 14,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-05-06",
+      "id": 223928,
+      "image": null,
+      "name": "Golden Seals of the Skeleton Coast",
+      "number": 15,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-05-20",
+      "id": 223929,
+      "image": null,
+      "name": "Australia's Little Assassins",
+      "number": 16,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2001-09-09",
+      "id": 223930,
+      "image": null,
+      "name": "Africa: Savanna Homecoming (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-09-16",
+      "id": 223931,
+      "image": null,
+      "name": "Africa: Desert Odyssey (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-09-23",
+      "id": 223932,
+      "image": null,
+      "name": "Africa: Voices of the Forest (3)",
+      "number": 3,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-09-30",
+      "id": 223933,
+      "image": null,
+      "name": "Africa: Mountains of Faith (4)",
+      "number": 4,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-10-07",
+      "id": 223934,
+      "image": null,
+      "name": "Africa: Love in the Sahel (5)",
+      "number": 5,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-10-14",
+      "id": 223935,
+      "image": null,
+      "name": "Africa: Restless Waters (6)",
+      "number": 6,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-10-21",
+      "id": 223936,
+      "image": null,
+      "name": "Africa: Leopards of Zanzibar (7)",
+      "number": 7,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-10-28",
+      "id": 223937,
+      "image": null,
+      "name": "Africa: Southern Treasures (8)",
+      "number": 8,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-11-04",
+      "id": 223938,
+      "image": null,
+      "name": "Cloud: Wild Stallion of the Rockies",
+      "number": 9,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-11-11",
+      "id": 223939,
+      "image": null,
+      "name": "Dogs: The Early Years",
+      "number": 10,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-11-18",
+      "id": 223940,
+      "image": null,
+      "name": "Animals Behaving Badly",
+      "number": 11,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2001-12-16",
+      "id": 223941,
+      "image": null,
+      "name": "Ravens",
+      "number": 12,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-01-13",
+      "id": 223942,
+      "image": null,
+      "name": "Condition Black",
+      "number": 13,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-02-10",
+      "id": 223943,
+      "image": null,
+      "name": "The White Elephants of Thailand with Meg Ryan",
+      "number": 14,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-04-07",
+      "id": 223944,
+      "image": null,
+      "name": "Song of the Earth with David Attenborough",
+      "number": 15,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-04-14",
+      "id": 223945,
+      "image": null,
+      "name": "Big Red Roos",
+      "number": 16,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-05-19",
+      "id": 223946,
+      "image": null,
+      "name": "The Polar Bears of Churchill with Ewan McGregor",
+      "number": 17,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2002-10-13",
+      "id": 223947,
+      "image": null,
+      "name": "Tall Blondes",
+      "number": 1,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2002-10-20",
+      "id": 223948,
+      "image": null,
+      "name": "Horse and Rider",
+      "number": 2,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2002-10-27",
+      "id": 223949,
+      "image": null,
+      "name": "Dive To the Abyss",
+      "number": 3,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2002-11-17",
+      "id": 223950,
+      "image": null,
+      "name": "Bloody Suckers",
+      "number": 4,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2002-12-15",
+      "id": 223951,
+      "image": null,
+      "name": "Trail of the Cougar",
+      "number": 5,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-01-12",
+      "id": 223952,
+      "image": null,
+      "name": "Under Antarctic Ice",
+      "number": 6,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-02-02",
+      "id": 223953,
+      "image": null,
+      "name": "The Reptiles: Alligators and Crocodiles",
+      "number": 7,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-02-09",
+      "id": 223954,
+      "image": null,
+      "name": "The Reptiles: Snakes",
+      "number": 8,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-02-16",
+      "id": 223955,
+      "image": null,
+      "name": "The Reptiles: Turtles and Tortoises",
+      "number": 9,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-02-23",
+      "id": 223956,
+      "image": null,
+      "name": "The Reptiles: Lizards",
+      "number": 10,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-04-13",
+      "id": 223957,
+      "image": null,
+      "name": "Lost World of the Holy Land",
+      "number": 11,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-04-20",
+      "id": 223958,
+      "image": null,
+      "name": "Leopards of Yala",
+      "number": 12,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-05-11",
+      "id": 223959,
+      "image": null,
+      "name": "A Mystery in Alaska",
+      "number": 13,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-05-18",
+      "id": 223960,
+      "image": null,
+      "name": "War Wrecks in the Coral Seas",
+      "number": 14,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2003-10-19",
+      "id": 223961,
+      "image": null,
+      "name": "Hippo Beach",
+      "number": 1,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2003-11-02",
+      "id": 223962,
+      "image": null,
+      "name": "Kalahari: The Great Thirstland",
+      "number": 2,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2003-11-03",
+      "id": 223963,
+      "image": null,
+      "name": "Kalahari: The Flooded Desert",
+      "number": 3,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2003-11-16",
+      "id": 223964,
+      "image": null,
+      "name": "White Shark/Red Triangle",
+      "number": 4,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2003-11-23",
+      "id": 223965,
+      "image": null,
+      "name": "Cloud's Legacy: The Wild Stallion Returns",
+      "number": 5,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-01-18",
+      "id": 223966,
+      "image": null,
+      "name": "Shadow Over the Sun: A Story of Eagles",
+      "number": 6,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-02-08",
+      "id": 223967,
+      "image": null,
+      "name": "Diamonds",
+      "number": 7,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-02-15",
+      "id": 223968,
+      "image": null,
+      "name": "The Real Macaw",
+      "number": 8,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-02-22",
+      "id": 223969,
+      "image": null,
+      "name": "Holy Cow",
+      "number": 9,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-03-28",
+      "id": 223970,
+      "image": null,
+      "name": "Ireland",
+      "number": 10,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-04-11",
+      "id": 223971,
+      "image": null,
+      "name": "Flight School",
+      "number": 11,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-04-18",
+      "id": 223972,
+      "image": null,
+      "name": "Land of the Falling Lakes",
+      "number": 12,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-05-16",
+      "id": 223973,
+      "image": null,
+      "name": "Pale Male",
+      "number": 13,
+      "runtime": 60,
+      "season": 22
+    },
+    {
+      "airdate": "2004-11-07",
+      "id": 223974,
+      "image": null,
+      "name": "Chasing Big Cats",
+      "number": 1,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2004-11-14",
+      "id": 223975,
+      "image": null,
+      "name": "Shark Mountain",
+      "number": 2,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2004-11-21",
+      "id": 223976,
+      "image": null,
+      "name": "The Good, the Bad and the Grizzly",
+      "number": 3,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-01-09",
+      "id": 223977,
+      "image": null,
+      "name": "Violent Hawaii",
+      "number": 4,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-01-16",
+      "id": 223978,
+      "image": null,
+      "name": "Silent Roar: Searching for the Snow Leopard",
+      "number": 5,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-01-30",
+      "id": 223979,
+      "image": null,
+      "name": "Cuba: Wild Island of the Caribbean",
+      "number": 6,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-02-13",
+      "id": 223980,
+      "image": null,
+      "name": "From Orphan to King",
+      "number": 7,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-02-20",
+      "id": 223981,
+      "image": null,
+      "name": "Snowflake: The White Gorilla",
+      "number": 8,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 223982,
+      "image": null,
+      "name": "The Venom Cure",
+      "number": 9,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-04-17",
+      "id": 223983,
+      "image": null,
+      "name": "Deep Jungle: New Frontiers",
+      "number": 10,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-04-24",
+      "id": 223984,
+      "image": null,
+      "name": "Deep Jungle: Monsters of the Forrest",
+      "number": 11,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-05-01",
+      "id": 223985,
+      "image": null,
+      "name": "Deep Jungle: The Beast Within",
+      "number": 12,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-05-15",
+      "id": 223986,
+      "image": null,
+      "name": "The Dolphin Defender",
+      "number": 13,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2005-11-06",
+      "id": 223987,
+      "image": null,
+      "name": "Killers in Eden",
+      "number": 1,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2005-11-13",
+      "id": 223988,
+      "image": null,
+      "name": "Can Animals Predict Disaster?",
+      "number": 2,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2005-11-20",
+      "id": 223989,
+      "image": null,
+      "name": "Katrina's Animal Rescue",
+      "number": 3,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2005-12-18",
+      "id": 223990,
+      "image": null,
+      "name": "Encountering Sea Monsters",
+      "number": 4,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-01-08",
+      "id": 223991,
+      "image": null,
+      "name": "Life in Death Valley",
+      "number": 5,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-01-22",
+      "id": 223992,
+      "image": null,
+      "name": "Oceans in Glass: Behind the Scenes of the Monterey Bay Aquarium",
+      "number": 6,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-01-29",
+      "id": 223993,
+      "image": null,
+      "name": "Underdogs",
+      "number": 7,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-02-12",
+      "id": 223994,
+      "image": null,
+      "name": "True Adventures of the Ultimate Spider Hunter",
+      "number": 8,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-02-19",
+      "id": 223995,
+      "image": null,
+      "name": "Animals Behaving Worse",
+      "number": 9,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-04-02",
+      "id": 223996,
+      "image": null,
+      "name": "Murder in the Troop",
+      "number": 10,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-04-09",
+      "id": 223997,
+      "image": null,
+      "name": "The Queen of Trees",
+      "number": 11,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-04-30",
+      "id": 223998,
+      "image": null,
+      "name": "The Vanishing Lions",
+      "number": 12,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-05-07",
+      "id": 223999,
+      "image": null,
+      "name": "Crime Scene Creatures",
+      "number": 13,
+      "runtime": 60,
+      "season": 24
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 224000,
+      "image": null,
+      "name": "Chimpanzees: An Unnatural History",
+      "number": 1,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2006-11-12",
+      "id": 224001,
+      "image": null,
+      "name": "Penguins of the Antarctic",
+      "number": 2,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2006-11-19",
+      "id": 224002,
+      "image": null,
+      "name": "Christmas in Yellowstone",
+      "number": 3,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-01-14",
+      "id": 224003,
+      "image": null,
+      "name": "The Best of 'Nature': 25 Years",
+      "number": 4,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-01-28",
+      "id": 224004,
+      "image": null,
+      "name": "Rhinoceros",
+      "number": 5,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-02-03",
+      "id": 224005,
+      "image": null,
+      "name": "Unforgettable Elephants",
+      "number": 6,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-02-11",
+      "id": 224006,
+      "image": null,
+      "name": "Supersize Crocs",
+      "number": 7,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-02-18",
+      "id": 224007,
+      "image": null,
+      "name": "Raptor Force",
+      "number": 8,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-02-25",
+      "id": 224008,
+      "image": null,
+      "name": "Andes: The Dragon's Back",
+      "number": 9,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-04-15",
+      "id": 224009,
+      "image": null,
+      "name": "Voyage of the Lonely Turtle",
+      "number": 10,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-04-22",
+      "id": 224010,
+      "image": null,
+      "name": "Dogs That Changed The World: The Rise of the Dog",
+      "number": 11,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-04-29",
+      "id": 224011,
+      "image": null,
+      "name": "Dogs That Changed The World: Dogs by Design",
+      "number": 12,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-05-06",
+      "id": 224012,
+      "image": null,
+      "name": "Sharkland",
+      "number": 13,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-05-13",
+      "id": 224013,
+      "image": null,
+      "name": "Superpride",
+      "number": 14,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-07-15",
+      "id": 224014,
+      "image": null,
+      "name": "Ferrets: The Pursuit of Excellence",
+      "number": 15,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-07-19",
+      "id": 224015,
+      "image": null,
+      "name": "Mighty Moose",
+      "number": 16,
+      "runtime": 60,
+      "season": 25
+    },
+    {
+      "airdate": "2007-10-28",
+      "id": 224016,
+      "image": null,
+      "name": "Silence of the Bees",
+      "number": 1,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2007-11-04",
+      "id": 224017,
+      "image": null,
+      "name": "In the Valley of the Wolves",
+      "number": 2,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2007-11-11",
+      "id": 224018,
+      "image": null,
+      "name": "The Cheetah Orphans",
+      "number": 3,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2007-11-18",
+      "id": 224019,
+      "image": null,
+      "name": "The Beauty of Ugly",
+      "number": 4,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-01-06",
+      "id": 224020,
+      "image": null,
+      "name": "The Desert Lions",
+      "number": 5,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-01-27",
+      "id": 224021,
+      "image": null,
+      "name": "Parrots in the Land of Oz",
+      "number": 6,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-02-10",
+      "id": 224022,
+      "image": null,
+      "name": "Crash: A Tale of Two Species",
+      "number": 7,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-02-17",
+      "id": 224023,
+      "image": null,
+      "name": "Arctic Bears",
+      "number": 8,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-04-06",
+      "id": 224024,
+      "image": null,
+      "name": "Part One - What Females Want and Males Will Do",
+      "number": 9,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-04-13",
+      "id": 224025,
+      "image": null,
+      "name": "Part Two - What Females Want and Males Will Do",
+      "number": 10,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-04-20",
+      "id": 224026,
+      "image": null,
+      "name": "The Gorilla King",
+      "number": 11,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-05-04",
+      "id": 224027,
+      "image": null,
+      "name": "Superfish",
+      "number": 12,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-05-11",
+      "id": 224028,
+      "image": null,
+      "name": "Prince of the Alps",
+      "number": 13,
+      "runtime": 60,
+      "season": 26
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 224029,
+      "image": null,
+      "name": "White Falcon, White Wolf",
+      "number": 1,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 224030,
+      "image": null,
+      "name": "Clever Monkeys",
+      "number": 2,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 224031,
+      "image": null,
+      "name": "American Eagle",
+      "number": 3,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 224032,
+      "image": null,
+      "name": "The Wolf That Changed America",
+      "number": 4,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-01-11",
+      "id": 224033,
+      "image": null,
+      "name": "The Dragon Chronicles",
+      "number": 5,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-01-25",
+      "id": 224034,
+      "image": null,
+      "name": "Is That Skunk?",
+      "number": 6,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-02-08",
+      "id": 224035,
+      "image": null,
+      "name": "Drakensberg: Barrier of Spears",
+      "number": 7,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-02-15",
+      "id": 224036,
+      "image": null,
+      "name": "Why We Love Cats and Dogs",
+      "number": 8,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-03-29",
+      "id": 224037,
+      "image": null,
+      "name": "Kilauea: Mountain of Fire",
+      "number": 9,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-04-05",
+      "id": 224038,
+      "image": null,
+      "name": "Frogs: The Thin Green Line",
+      "number": 10,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-04-19",
+      "id": 224039,
+      "image": null,
+      "name": "The Loneliest Animals",
+      "number": 11,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-05-03",
+      "id": 224040,
+      "image": null,
+      "name": "Eagles of Mull",
+      "number": 12,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-05-17",
+      "id": 224041,
+      "image": null,
+      "name": "Victoria Falls",
+      "number": 13,
+      "runtime": 60,
+      "season": 27
+    },
+    {
+      "airdate": "2009-10-25",
+      "id": 224042,
+      "image": null,
+      "name": "Cloud: Challenge of the Stallions",
+      "number": 1,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2009-11-01",
+      "id": 224043,
+      "image": null,
+      "name": "Born Wild: The First Days of Life",
+      "number": 2,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2009-11-08",
+      "id": 224044,
+      "image": null,
+      "name": "Black Mamba",
+      "number": 3,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2009-11-15",
+      "id": 224045,
+      "image": null,
+      "name": "Fellowship of the Whales",
+      "number": 4,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-01-10",
+      "id": 224046,
+      "image": null,
+      "name": "Hummingbirds: Magic in the Air",
+      "number": 5,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-01-17",
+      "id": 224047,
+      "image": null,
+      "name": "Clash: Encounters of Bears and Wolves",
+      "number": 6,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-01-31",
+      "id": 224048,
+      "image": null,
+      "name": "Wild Balkans",
+      "number": 7,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-01-19",
+      "id": 691716,
+      "image": null,
+      "name": "Invasion of the Giant Pythons",
+      "number": 8,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-04-04",
+      "id": 224050,
+      "image": null,
+      "name": "Moment of Impact: Part One - Hunters & Herds",
+      "number": 9,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-04-11",
+      "id": 224051,
+      "image": null,
+      "name": "Moment of Impact: Part Two - Jungle",
+      "number": 10,
+      "runtime": 60,
+      "season": 28
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 224053,
+      "image": null,
+      "name": "Cuba: The Accidental Eden",
+      "number": 1,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 224054,
+      "image": null,
+      "name": "Echo: An Elephant to Remember",
+      "number": 2,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2010-10-24",
+      "id": 224055,
+      "image": null,
+      "name": "A Murder of Crows",
+      "number": 3,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2010-11-07",
+      "id": 224056,
+      "image": null,
+      "name": "Braving Iraq",
+      "number": 4,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2010-11-14",
+      "id": 224057,
+      "image": null,
+      "name": "Wolverine: Chasing the Phantom",
+      "number": 5,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2010-11-21",
+      "id": 224058,
+      "image": null,
+      "name": "Revealing the Leopard",
+      "number": 6,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-01-09",
+      "id": 224059,
+      "image": null,
+      "name": "Elsa's Legacy: The Born Free Story",
+      "number": 7,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-01-23",
+      "id": 224060,
+      "image": null,
+      "name": "Birds of the Gods",
+      "number": 8,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-02-13",
+      "id": 224061,
+      "image": null,
+      "name": "The Himalayas",
+      "number": 9,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-02-20",
+      "id": 224062,
+      "image": null,
+      "name": "Broken Tail: A Tiger's Last Journey",
+      "number": 10,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-03-27",
+      "id": 224063,
+      "image": null,
+      "name": "Outback Pelicans",
+      "number": 11,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-04-17",
+      "id": 224064,
+      "image": null,
+      "name": "Survivors of the Firestorm",
+      "number": 12,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 224065,
+      "image": null,
+      "name": "Salmon: Running the Gauntlet",
+      "number": 13,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 224066,
+      "image": null,
+      "name": "Bears of the Last Frontier: City of Bears",
+      "number": 14,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 224067,
+      "image": null,
+      "name": "Bears of the Last Frontier: The Road North",
+      "number": 15,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 224068,
+      "image": null,
+      "name": "Bears of the Last Frontier: Arctic Wanderers",
+      "number": 16,
+      "runtime": 60,
+      "season": 29
+    },
+    {
+      "airdate": "2011-10-19",
+      "id": 224069,
+      "image": null,
+      "name": "Radioactive Wolves",
+      "number": 1,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2011-11-02",
+      "id": 224070,
+      "image": null,
+      "name": "The Animal House",
+      "number": 2,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2011-11-09",
+      "id": 224071,
+      "image": null,
+      "name": "Jungle Eagle",
+      "number": 3,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2011-11-16",
+      "id": 224072,
+      "image": null,
+      "name": "My Life as a Turkey",
+      "number": 4,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-01-11",
+      "id": 224073,
+      "image": null,
+      "name": "Kangaroo Mob",
+      "number": 5,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-01-25",
+      "id": 224074,
+      "image": null,
+      "name": "Fortress of the Bears",
+      "number": 6,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-02-08",
+      "id": 224075,
+      "image": null,
+      "name": "Raccoon Nation",
+      "number": 7,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-02-22",
+      "id": 224076,
+      "image": null,
+      "name": "Ocean Giants: Part One - Giant Lives",
+      "number": 8,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-02-22",
+      "id": 224077,
+      "image": null,
+      "name": "Ocean Giants: Part Two - Deep Thinkers",
+      "number": 9,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-02-22",
+      "id": 224078,
+      "image": null,
+      "name": "Ocean Giants: Part Three - Voices of the Sea",
+      "number": 10,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-04-18",
+      "id": 224079,
+      "image": null,
+      "name": "River of No Return",
+      "number": 11,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-05-09",
+      "id": 224080,
+      "image": null,
+      "name": "The White Lions",
+      "number": 12,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-05-16",
+      "id": 224081,
+      "image": null,
+      "name": "Cracking the Koala Code",
+      "number": 13,
+      "runtime": 60,
+      "season": 30
+    },
+    {
+      "airdate": "2012-10-10",
+      "id": 224082,
+      "image": null,
+      "name": "Siberian Tiger Quest",
+      "number": 1,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2012-10-24",
+      "id": 224083,
+      "image": null,
+      "name": "Magic of the Snowy Owl",
+      "number": 2,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2012-11-07",
+      "id": 224084,
+      "image": null,
+      "name": "Animal Odd Couples",
+      "number": 3,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2012-11-14",
+      "id": 224085,
+      "image": null,
+      "name": "An Original DUCKumentary",
+      "number": 4,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-01-23",
+      "id": 224086,
+      "image": null,
+      "name": "Attenborough's Life Stories: Part One - Life on Camera",
+      "number": 5,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-01-30",
+      "id": 224088,
+      "image": null,
+      "name": "Attenborough's Life Stories: Part Two - Understanding the Natural World",
+      "number": 6,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-02-06",
+      "id": 224089,
+      "image": null,
+      "name": "Attenborough's Life Stories: Part Three - Our Fragile Planet",
+      "number": 7,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-02-13",
+      "id": 224090,
+      "image": null,
+      "name": "Cold Warriors: Wolves and Buffalo",
+      "number": 8,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-04-03",
+      "id": 224091,
+      "image": null,
+      "name": "What Plants Talk About",
+      "number": 9,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-04-17",
+      "id": 224092,
+      "image": null,
+      "name": "The Mystery of Eels",
+      "number": 10,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-05-01",
+      "id": 224093,
+      "image": null,
+      "name": "Legendary White Stallions",
+      "number": 11,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-05-08",
+      "id": 224094,
+      "image": null,
+      "name": "The Private Life of Deer",
+      "number": 12,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-05-15",
+      "id": 224095,
+      "image": null,
+      "name": "Great Zebra Exodus",
+      "number": 13,
+      "runtime": 60,
+      "season": 31
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 224096,
+      "image": null,
+      "name": "Saving Otter 501",
+      "number": 1,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 224097,
+      "image": null,
+      "name": "Love in the Animal Kingdom",
+      "number": 2,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 224098,
+      "image": null,
+      "name": "Parrot Confidential",
+      "number": 3,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 224099,
+      "image": null,
+      "name": "Meet the Coywolf",
+      "number": 4,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 224100,
+      "image": null,
+      "name": "The Funkiest Monkeys",
+      "number": 5,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-02-19",
+      "id": 224101,
+      "image": null,
+      "name": "Honey Badgers: Masters of Mayhem",
+      "number": 6,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 224102,
+      "image": null,
+      "name": "Ireland's Wild River",
+      "number": 7,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-04-09",
+      "id": 224103,
+      "image": null,
+      "name": "My Bionic Pet",
+      "number": 8,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-04-16",
+      "id": 224104,
+      "image": null,
+      "name": "Touching the Wild",
+      "number": 9,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-04-23",
+      "id": 224105,
+      "image": null,
+      "name": "Snow Monkeys",
+      "number": 10,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-05-14",
+      "id": 224106,
+      "image": null,
+      "name": "Leave It to Beavers",
+      "number": 11,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-05-21",
+      "id": 224107,
+      "image": null,
+      "name": "The Gathering Swarms",
+      "number": 12,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-06-25",
+      "id": 224108,
+      "image": null,
+      "name": "Fabulous Frogs",
+      "number": 13,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-09-04",
+      "id": 2679528,
+      "image": null,
+      "name": "Earthflight part 1",
+      "number": 14,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-09-11",
+      "id": 2679529,
+      "image": null,
+      "name": "Earthflight part 2",
+      "number": 15,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-09-18",
+      "id": 2679530,
+      "image": null,
+      "name": "Earthflight part 3",
+      "number": 16,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-09-25",
+      "id": 2679531,
+      "image": null,
+      "name": "Earthflight part 4",
+      "number": 17,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-10-02",
+      "id": 2679532,
+      "image": null,
+      "name": "Earthflight Part 5",
+      "number": 18,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2013-10-09",
+      "id": 2679533,
+      "image": null,
+      "name": "Earthflight Part 6",
+      "number": 19,
+      "runtime": 60,
+      "season": 32
+    },
+    {
+      "airdate": "2014-10-15",
+      "id": 224109,
+      "image": null,
+      "name": "Animal Misfits",
+      "number": 1,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2014-11-05",
+      "id": 224110,
+      "image": null,
+      "name": "A Sloth Named Velcro",
+      "number": 2,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 224111,
+      "image": null,
+      "name": "Invasion of the Killer Whales",
+      "number": 3,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-01-07",
+      "id": 224112,
+      "image": null,
+      "name": "Wild France",
+      "number": 4,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 224113,
+      "image": null,
+      "name": "Penguin Post Office",
+      "number": 5,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 224114,
+      "image": null,
+      "name": "Owl Power",
+      "number": 6,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-02-25",
+      "id": 224115,
+      "image": null,
+      "name": "The Last Orangutan Eden",
+      "number": 7,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-04-08",
+      "id": 224116,
+      "image": null,
+      "name": "Animal Homes: The Nest",
+      "number": 8,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-04-15",
+      "id": 224117,
+      "image": null,
+      "name": "Animal Homes: Location, Location, Location",
+      "number": 9,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-04-22",
+      "id": 224118,
+      "image": null,
+      "name": "Animal Homes: Animal Cities",
+      "number": 10,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-04-29",
+      "id": 224119,
+      "image": null,
+      "name": "Mystery Monkeys of Shangri-La",
+      "number": 11,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-05-13",
+      "id": 224120,
+      "image": null,
+      "name": "Animal Childhood",
+      "number": 12,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-05-20",
+      "id": 224121,
+      "image": null,
+      "name": "The Sagebrush Sea",
+      "number": 13,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2014-09-24",
+      "id": 2679525,
+      "image": null,
+      "name": "Penguins Spy In The Huddle Part 1",
+      "number": 14,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2014-10-01",
+      "id": 2679526,
+      "image": null,
+      "name": "Penguins Spy in the Huddle Part 2",
+      "number": 15,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2014-10-08",
+      "id": 2679527,
+      "image": null,
+      "name": "Growing Up",
+      "number": 16,
+      "runtime": 60,
+      "season": 33
+    },
+    {
+      "airdate": "2015-09-23",
+      "id": 224122,
+      "image": null,
+      "name": "Nature's Miracle Orphans: Second Chances",
+      "number": 1,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2015-09-30",
+      "id": 224123,
+      "image": null,
+      "name": "Nature's Miracle Orphans: Wild Lessons",
+      "number": 2,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2015-10-07",
+      "id": 224124,
+      "image": null,
+      "name": "Big Birds Can't Fly",
+      "number": 3,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 224125,
+      "image": null,
+      "name": "Soul of the Elephant",
+      "number": 4,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 224126,
+      "image": null,
+      "name": "Pets: Wild At Heart: Playful Creatures",
+      "number": 5,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2015-10-28",
+      "id": 224127,
+      "image": null,
+      "name": "Pets: Wild At Heart: Secretive Creatures",
+      "number": 6,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-01-13",
+      "id": 568442,
+      "image": null,
+      "name": "Natural Born Hustlers: Staying Alive",
+      "number": 7,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-01-20",
+      "id": 476908,
+      "image": null,
+      "name": "Natural Born Hustlers: The Hunger Hustle",
+      "number": 8,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-01-27",
+      "id": 476909,
+      "image": null,
+      "name": "Natural Born Hustlers: Sex, Lies & Dirty Tricks",
+      "number": 9,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-02-10",
+      "id": 542536,
+      "image": null,
+      "name": "Moose: Life of a Twig Eater",
+      "number": 10,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-02-17",
+      "id": 542540,
+      "image": null,
+      "name": "Raising the Dinosaur Giant",
+      "number": 11,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-02-24",
+      "id": 542548,
+      "image": null,
+      "name": "Snow Chick",
+      "number": 12,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-03-30",
+      "id": 610495,
+      "image": null,
+      "name": "Animal Reunions",
+      "number": 13,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-04-13",
+      "id": 659959,
+      "image": null,
+      "name": "India's Wandering Lions",
+      "number": 14,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-05-11",
+      "id": 659960,
+      "image": null,
+      "name": "Nature's Perfect Partners",
+      "number": 15,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-05-18",
+      "id": 659961,
+      "image": null,
+      "name": "Jungle Animal Hospital",
+      "number": 16,
+      "runtime": 60,
+      "season": 34
+    },
+    {
+      "airdate": "2016-10-12",
+      "id": 847173,
+      "image": null,
+      "name": "Super Hummingbirds",
+      "number": 1,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2016-10-19",
+      "id": 847174,
+      "image": null,
+      "name": "My Congo",
+      "number": 2,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2016-10-26",
+      "id": 847175,
+      "image": null,
+      "name": "Giraffes: Africa's Gentle Giants",
+      "number": 3,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2016-11-02",
+      "id": 847176,
+      "image": null,
+      "name": "The Story Of Cats: Asia To Africa",
+      "number": 4,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2016-11-09",
+      "id": 847177,
+      "image": null,
+      "name": "The Story Of Cats: Into The Americas",
+      "number": 5,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-01-11",
+      "id": 993062,
+      "image": null,
+      "name": "Snowbound: Animals of Winter",
+      "number": 6,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-02-01",
+      "id": 1004179,
+      "image": null,
+      "name": "Spy In The Wild - Love",
+      "number": 7,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-02-08",
+      "id": 1028292,
+      "image": null,
+      "name": "Spy In The Wild - Intelligence",
+      "number": 8,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-02-15",
+      "id": 1028293,
+      "image": null,
+      "name": "Spy In The Wild - Friendship",
+      "number": 9,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-02-22",
+      "id": 1052483,
+      "image": null,
+      "name": "Spy In The Wild - Bad Behavior",
+      "number": 10,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-03-01",
+      "id": 1052484,
+      "image": null,
+      "name": "Spy In The Wild - Meet the Spies",
+      "number": 11,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-03-29",
+      "id": 1004180,
+      "image": null,
+      "name": "Yosemite",
+      "number": 12,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-04-12",
+      "id": 1004181,
+      "image": null,
+      "name": "Puerto Rico: The Island That Rains Frogs",
+      "number": 13,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-04-19",
+      "id": 1004182,
+      "image": null,
+      "name": "Hotel Armadillo",
+      "number": 14,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-04-26",
+      "id": 1004183,
+      "image": null,
+      "name": "Forest Of The Lynx",
+      "number": 15,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-05-03",
+      "id": 1004184,
+      "image": null,
+      "name": "Dolphins: Spy In The Pod",
+      "number": 16,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-05-10",
+      "id": 1004185,
+      "image": null,
+      "name": "Dolphins: Spy In The Pod (2)",
+      "number": 17,
+      "runtime": 60,
+      "season": 35
+    },
+    {
+      "airdate": "2017-10-04",
+      "id": 1248845,
+      "image": null,
+      "name": "Naledi: One Little Elephant",
+      "number": 1,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2017-10-11",
+      "id": 1286033,
+      "image": null,
+      "name": "Fox Tales",
+      "number": 2,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2017-10-25",
+      "id": 1308994,
+      "image": null,
+      "name": "Charlie And The Curious Otters",
+      "number": 3,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2017-11-01",
+      "id": 1348647,
+      "image": null,
+      "name": "H Is for Hawk: A New Chapter",
+      "number": 4,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1333970,
+      "image": null,
+      "name": "The Cheetah Children",
+      "number": 5,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2017-11-22",
+      "id": 1333971,
+      "image": null,
+      "name": "Nature's Miniature Miracles",
+      "number": 6,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-01-17",
+      "id": 1371224,
+      "image": null,
+      "name": "Arctic Wolf Pack",
+      "number": 7,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-01-31",
+      "id": 1384849,
+      "image": null,
+      "name": "Animals with Cameras: Part 1",
+      "number": 8,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-02-07",
+      "id": 1398669,
+      "image": null,
+      "name": "Animals with Cameras: Part 2",
+      "number": 9,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-02-14",
+      "id": 1398668,
+      "image": null,
+      "name": "Animals with Cameras: Part 3",
+      "number": 10,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-02-21",
+      "id": 1398629,
+      "image": null,
+      "name": "The Last Rhino",
+      "number": 11,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-04-04",
+      "id": 1422276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/379630.jpg",
+      "name": "Sex, Lies And Butterflies",
+      "number": 12,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-04-25",
+      "id": 1432525,
+      "image": null,
+      "name": "Natural Born Rebels: Hunger Wars",
+      "number": 13,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-05-02",
+      "id": 1437662,
+      "image": null,
+      "name": "Natural Born Rebels: Survival",
+      "number": 14,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-05-09",
+      "id": 1446150,
+      "image": null,
+      "name": "Natural Born Rebels: The Mating Game",
+      "number": 15,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-05-23",
+      "id": 1458276,
+      "image": null,
+      "name": "World's Most Wanted Animals",
+      "number": 16,
+      "runtime": 60,
+      "season": 36
+    },
+    {
+      "airdate": "2018-10-24",
+      "id": 1515545,
+      "image": null,
+      "name": "Super Cats - Extreme Lives",
+      "number": 1,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2018-10-31",
+      "id": 1515546,
+      "image": null,
+      "name": "Super Cats - Cats in Every Corner",
+      "number": 2,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2018-11-07",
+      "id": 1515547,
+      "image": null,
+      "name": "Super Cats - Science and Secrets",
+      "number": 3,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2018-11-14",
+      "id": 1546177,
+      "image": null,
+      "name": "A Squirrel's Guide To Success",
+      "number": 4,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2018-11-21",
+      "id": 1552744,
+      "image": null,
+      "name": "Dogs In The Land Of Lions",
+      "number": 5,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2018-11-28",
+      "id": 1553933,
+      "image": null,
+      "name": "Snow Bears",
+      "number": 6,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-01-09",
+      "id": 1566213,
+      "image": null,
+      "name": "Attenborough And The Sea Dragon",
+      "number": 7,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-01-16",
+      "id": 1566214,
+      "image": null,
+      "name": "Nature's Equus: Story Of The Horse - Origins",
+      "number": 8,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-01-23",
+      "id": 1566215,
+      "image": null,
+      "name": "Nature's Equus: Story Of The Horse - Chasing The Wind",
+      "number": 9,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-02-13",
+      "id": 1566216,
+      "image": null,
+      "name": "Wild Way Of The Vikings",
+      "number": 10,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-02-20",
+      "id": 1566217,
+      "image": null,
+      "name": "Living Volcanoes",
+      "number": 11,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-04-10",
+      "id": 1566218,
+      "image": null,
+      "name": "The Incredible Egg With David Attenborough",
+      "number": 12,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-04-29",
+      "id": 1566219,
+      "image": null,
+      "name": "American Spring Live: Birth And Rebirth",
+      "number": 13,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-04-30",
+      "id": 1588730,
+      "image": null,
+      "name": "American Spring Live: Migration",
+      "number": 14,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-05-01",
+      "id": 1588731,
+      "image": null,
+      "name": "American Spring Live: Connections",
+      "number": 15,
+      "runtime": 60,
+      "season": 37
+    },
+    {
+      "airdate": "2019-10-02",
+      "id": 1726669,
+      "image": null,
+      "name": "Octopus: Making Contact",
+      "number": 1,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-10-09",
+      "id": 1726670,
+      "image": null,
+      "name": "The Serengeti Rules",
+      "number": 2,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-10-16",
+      "id": 1726671,
+      "image": null,
+      "name": "Undercover In The Jungle",
+      "number": 3,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-10-23",
+      "id": 1726672,
+      "image": null,
+      "name": "Okavango: River of Dreams - Episode 1: Paradise",
+      "number": 4,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-10-30",
+      "id": 1726673,
+      "image": null,
+      "name": "Okavango: River of Dreams - Episode 2: Limbo",
+      "number": 5,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-11-06",
+      "id": 1726674,
+      "image": null,
+      "name": "Okavango: River of Dreams - Episode 3: Inferno",
+      "number": 6,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-11-13",
+      "id": 1746654,
+      "image": null,
+      "name": "Nature's Biggest Beasts",
+      "number": 7,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2019-11-20",
+      "id": 1746655,
+      "image": null,
+      "name": "Bears",
+      "number": 8,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-01-08",
+      "id": 1777764,
+      "image": null,
+      "name": "The Whale Detective",
+      "number": 9,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-01-15",
+      "id": 1777765,
+      "image": null,
+      "name": "Hippos: Africa's River Giants",
+      "number": 10,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-02-12",
+      "id": 1797729,
+      "image": null,
+      "name": "Wild Florida",
+      "number": 11,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-02-19",
+      "id": 1768971,
+      "image": null,
+      "name": "The Mighty Weasel",
+      "number": 12,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-04-01",
+      "id": 1816917,
+      "image": null,
+      "name": "Cuba's Wild Revolution",
+      "number": 13,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-04-08",
+      "id": 1816918,
+      "image": null,
+      "name": "Remarkable Rabbits",
+      "number": 14,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-04-29",
+      "id": 1832331,
+      "image": null,
+      "name": "Spy In The Wild, A Nature Miniseries \"The Tropics\"",
+      "number": 15,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-05-06",
+      "id": 1837792,
+      "image": null,
+      "name": "Spy In The Wild, A Nature Miniseries \"The North\"",
+      "number": 16,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-05-13",
+      "id": 1837793,
+      "image": null,
+      "name": "Spy In The Wild, A Nature Miniseries \"The Islands\"",
+      "number": 17,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-05-20",
+      "id": 1841133,
+      "image": null,
+      "name": "Spy In The Wild, A Nature Miniseries \"The Poles\"",
+      "number": 18,
+      "runtime": 60,
+      "season": 38
+    },
+    {
+      "airdate": "2020-10-21",
+      "id": 1931429,
+      "image": null,
+      "name": "Pandas: Born to Be Wild",
+      "number": 1,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2020-10-28",
+      "id": 1938119,
+      "image": null,
+      "name": "Australian Bushfire Rescue",
+      "number": 2,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2020-11-04",
+      "id": 1943081,
+      "image": null,
+      "name": "Secrets of Survival | Primates",
+      "number": 3,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2020-11-11",
+      "id": 1946647,
+      "image": null,
+      "name": "Family Matters | Primates",
+      "number": 4,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2020-11-18",
+      "id": 1953740,
+      "image": null,
+      "name": "Protecting Primates | Primates",
+      "number": 5,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2020-11-25",
+      "id": 1956239,
+      "image": null,
+      "name": "Santa's Wild Home",
+      "number": 6,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-01-13",
+      "id": 2006610,
+      "image": null,
+      "name": "The High Life | The Alps",
+      "number": 7,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-01-20",
+      "id": 1988516,
+      "image": null,
+      "name": "Winter's Fortress | The Alps",
+      "number": 8,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-02-03",
+      "id": 1979414,
+      "image": null,
+      "name": "Pumas: Legends of the Ice Mountains",
+      "number": 9,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-02-10",
+      "id": 1979415,
+      "image": null,
+      "name": "Big Bend: The Wild Frontier Of Texas",
+      "number": 10,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-04-14",
+      "id": 2026446,
+      "image": null,
+      "name": "The Leopard Legacy",
+      "number": 11,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-04-21",
+      "id": 2065030,
+      "image": null,
+      "name": "Sharks of Hawaii",
+      "number": 12,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-06-30",
+      "id": 2112792,
+      "image": null,
+      "name": "The Bat Man of Mexico",
+      "number": 13,
+      "runtime": 60,
+      "season": 39
+    },
+    {
+      "airdate": "2021-10-20",
+      "id": 2145019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982708.jpg",
+      "name": "My Garden of a Thousand Bees",
+      "number": 1,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2021-10-27",
+      "id": 2145018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982709.jpg",
+      "name": "Season of the Osprey",
+      "number": 2,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2021-11-03",
+      "id": 2145982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982710.jpg",
+      "name": "The Elephant and the Termite",
+      "number": 3,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2021-11-10",
+      "id": 2145983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982712.jpg",
+      "name": "First Steps | Born in the Rockies",
+      "number": 4,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2021-11-17",
+      "id": 2145984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982713.jpg",
+      "name": "Growing Up | Born in the Rockies",
+      "number": 5,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-01-19",
+      "id": 2233428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982714.jpg",
+      "name": "Oceans | Animals with Cameras",
+      "number": 6,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-01-26",
+      "id": 2233429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982715.jpg",
+      "name": "Australia | Animals with Cameras",
+      "number": 7,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-02-09",
+      "id": 2233430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982717.jpg",
+      "name": "Penguins: Meet the Family",
+      "number": 8,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-02-16",
+      "id": 2233431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982718.jpg",
+      "name": "The Ocean's Greatest Feast",
+      "number": 9,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-02-23",
+      "id": 2233432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/982719.jpg",
+      "name": "American Horses",
+      "number": 10,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-04-06",
+      "id": 2298071,
+      "image": null,
+      "name": "Hippo King",
+      "number": 11,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-04-13",
+      "id": 2298072,
+      "image": null,
+      "name": "American Arctic",
+      "number": 12,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-04-27",
+      "id": 2305475,
+      "image": null,
+      "name": "Portugal: Wild Land on the Edge",
+      "number": 13,
+      "runtime": 60,
+      "season": 40
+    },
+    {
+      "airdate": "2022-10-19",
+      "id": 2382538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106777.jpg",
+      "name": "Running with the Beest",
+      "number": 1,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2022-10-26",
+      "id": 2416477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106778.jpg",
+      "name": "Canada: Surviving the Wild North",
+      "number": 2,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2022-11-02",
+      "id": 2416478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106779.jpg",
+      "name": "Woodpeckers: The Hole Story",
+      "number": 3,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2022-11-09",
+      "id": 2422103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106780.jpg",
+      "name": "American Ocelot",
+      "number": 4,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-01-18",
+      "id": 2454088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106782.jpg",
+      "name": "Wildheart",
+      "number": 5,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-01-25",
+      "id": 2454090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1109605.jpg",
+      "name": "Soul of the Ocean",
+      "number": 6,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-02-08",
+      "id": 2479154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1109852.jpg",
+      "name": "Dogs in the Wild : Meet the Family",
+      "number": 7,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-02-15",
+      "id": 2479155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1109853.jpg",
+      "name": "Dogs in the Wild : Secrets of Success",
+      "number": 8,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-02-22",
+      "id": 2479156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/445/1114165.jpg",
+      "name": "Dogs in the Wild : Defending Wild Dogs",
+      "number": 9,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-04-12",
+      "id": 2484796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/452/1131347.jpg",
+      "name": "The Hummingbird Effect",
+      "number": 10,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-04-19",
+      "id": 2484797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/452/1131349.jpg",
+      "name": "Niagara Falls",
+      "number": 11,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-04-26",
+      "id": 2484798,
+      "image": null,
+      "name": "Treasure of the Caribbean",
+      "number": 12,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-05-03",
+      "id": 2531167,
+      "image": null,
+      "name": "Attenborough's Wonder of Song",
+      "number": 13,
+      "runtime": 60,
+      "season": 41
+    },
+    {
+      "airdate": "2023-10-18",
+      "id": 2633098,
+      "image": null,
+      "name": "The Platypus Guardian",
+      "number": 1,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2023-10-25",
+      "id": 2634951,
+      "image": null,
+      "name": "Spy in the Ocean : Deep Thinkers",
+      "number": 2,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2023-11-01",
+      "id": 2634952,
+      "image": null,
+      "name": "Spy in the Ocean : Deep Feelings",
+      "number": 3,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2023-11-08",
+      "id": 2634953,
+      "image": null,
+      "name": "Spy in the Ocean : Deep Relationships",
+      "number": 4,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2023-11-15",
+      "id": 2634954,
+      "image": null,
+      "name": "Spy in the Ocean : Deep Trouble",
+      "number": 5,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-01-10",
+      "id": 2691772,
+      "image": null,
+      "name": "Big Little Journeys: Home",
+      "number": 6,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-01-17",
+      "id": 2691773,
+      "image": null,
+      "name": "Big Little Journeys : Survival",
+      "number": 7,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-01-24",
+      "id": 2691774,
+      "image": null,
+      "name": "Big Little Journeys : Bloodlines",
+      "number": 8,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-01-31",
+      "id": 2691775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/503/1258047.jpg",
+      "name": "Gorilla",
+      "number": 9,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-02-07",
+      "id": 2691776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/503/1258046.jpg",
+      "name": "Flyways",
+      "number": 10,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-02-14",
+      "id": 2691777,
+      "image": null,
+      "name": "Attenborough and the Jurassic Sea Monster",
+      "number": 11,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-02-21",
+      "id": 2691778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/519/1298926.jpg",
+      "name": "Patrick and the Whale",
+      "number": 12,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-04-10",
+      "id": 2691779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1283809.jpg",
+      "name": "Raptors: A Fistful of Daggers: Meet the Raptors",
+      "number": 13,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-04-17",
+      "id": 2691780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/514/1286695.jpg",
+      "name": "Raptors: A Fistful of Daggers: Extreme Lives",
+      "number": 14,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-05-08",
+      "id": 2802175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/519/1298913.jpg",
+      "name": "Grizzly 399: Queen of the Tetons",
+      "number": 15,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-05-15",
+      "id": 2833778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/519/1298912.jpg",
+      "name": "Saving the Animals of Ukraine",
+      "number": 16,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-05-22",
+      "id": 2802176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/520/1300941.jpg",
+      "name": "Wild Ireland: Kingdom of Stone",
+      "number": 17,
+      "runtime": 60,
+      "season": 42
+    },
+    {
+      "airdate": "2024-10-23",
+      "id": 2983904,
+      "image": null,
+      "name": "Silverback",
+      "number": 1,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2024-10-30",
+      "id": 3025103,
+      "image": null,
+      "name": "Dracula's Hidden Kingdom",
+      "number": 2,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2024-11-06",
+      "id": 2983905,
+      "image": null,
+      "name": "San Diego: America's Wildest City",
+      "number": 3,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2024-11-13",
+      "id": 3040311,
+      "image": null,
+      "name": "Lions of the Skeleton Coast",
+      "number": 4,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2024-11-20",
+      "id": 3040312,
+      "image": null,
+      "name": "Attenborough's Life Journey",
+      "number": 5,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-01-22",
+      "id": 3046776,
+      "image": null,
+      "name": "Big Cats, Small World: Landlords",
+      "number": 6,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-01-29",
+      "id": 3046777,
+      "image": null,
+      "name": "Big Cats, Small World: Outlanders",
+      "number": 7,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-02-12",
+      "id": 3110553,
+      "image": null,
+      "name": "Expedition Killer Whale",
+      "number": 8,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-02-19",
+      "id": 3110554,
+      "image": null,
+      "name": "Museum Alive With David Attenborough",
+      "number": 9,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-04-02",
+      "id": 3155165,
+      "image": null,
+      "name": "Katavi: Africa's Fallen Paradise, Sanctuary",
+      "number": 10,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-04-09",
+      "id": 3155166,
+      "image": null,
+      "name": "Katavi: Africa's Fallen Paradise, Purgatory",
+      "number": 11,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-04-16",
+      "id": 3155167,
+      "image": null,
+      "name": "Katavi: Africa's Fallen Paradise, Salvation",
+      "number": 12,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-05-07",
+      "id": 3165554,
+      "image": null,
+      "name": "Hummingbirds of Hollywood",
+      "number": 13,
+      "runtime": 60,
+      "season": 43
+    },
+    {
+      "airdate": "2025-10-22",
+      "id": 3406157,
+      "image": null,
+      "name": "Walrus: Life on Thin Ice",
+      "number": 1,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2025-10-29",
+      "id": 3406158,
+      "image": null,
+      "name": "Willow: Diary of a Mountain Lion",
+      "number": 2,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2025-11-05",
+      "id": 3406159,
+      "image": null,
+      "name": "The Pigeon Hustle",
+      "number": 3,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2025-11-12",
+      "id": 3406160,
+      "image": null,
+      "name": "Jaguar Beach",
+      "number": 4,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-01-14",
+      "id": 3470463,
+      "image": null,
+      "name": "Tusker: Brotherhood of Elephants",
+      "number": 5,
+      "runtime": 57,
+      "season": 44
+    },
+    {
+      "airdate": "2026-02-04",
+      "id": 3482918,
+      "image": null,
+      "name": "Parenthood: Grasslands",
+      "number": 6,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-02-11",
+      "id": 3482920,
+      "image": null,
+      "name": "Parenthood: Freshwater",
+      "number": 7,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-02-18",
+      "id": 3482921,
+      "image": null,
+      "name": "Parenthood: Oceans",
+      "number": 8,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-02-25",
+      "id": 3482923,
+      "image": null,
+      "name": "Parenthood: Jungles",
+      "number": 9,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-03-04",
+      "id": 3482924,
+      "image": null,
+      "name": "Parenthood: The Greatest Adventure",
+      "number": 10,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-04-08",
+      "id": 3565534,
+      "image": null,
+      "name": "Becoming Elephant: The Orphans of Reteti, Baby Steps",
+      "number": 11,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-04-15",
+      "id": 3565535,
+      "image": null,
+      "name": "Becoming Elephant: The Orphans of Reteti, Graduation Day",
+      "number": 12,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-04-22",
+      "id": 3565536,
+      "image": null,
+      "name": "Legendary Tigers of India",
+      "number": 13,
+      "runtime": 60,
+      "season": 44
+    },
+    {
+      "airdate": "2026-10-14",
+      "id": 3647149,
+      "image": null,
+      "name": "Sesame Street and the Great Elephant Adventure",
+      "number": 1,
+      "runtime": 60,
+      "season": 45
+    },
+    {
+      "airdate": "2026-10-21",
+      "id": 3647150,
+      "image": null,
+      "name": "Tiger Island, Part I",
+      "number": 2,
+      "runtime": 60,
+      "season": 45
+    },
+    {
+      "airdate": "2026-10-28",
+      "id": 3647151,
+      "image": null,
+      "name": "Tiger Island, Part II",
+      "number": 3,
+      "runtime": 60,
+      "season": 45
+    },
+    {
+      "airdate": "2026-11-11",
+      "id": 3757278,
+      "image": null,
+      "name": "HumanLike: The Chimps of Fongoli",
+      "number": 4,
+      "runtime": 60,
+      "season": 45
+    },
+    {
+      "airdate": "2026-11-25",
+      "id": 3757279,
+      "image": null,
+      "name": "Christmas in the Alps",
+      "number": 5,
+      "runtime": 60,
+      "season": 45
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Nature"
   ],
+  "id": "tvmaze-3330",
+  "live": true,
+  "overview": "For more than a quarter-century, Nature has brought the beauty and wonder of the natural world into American homes, becoming in the process the benchmark of natural history programs on American television. The series has won more than 600 honors from the television industry, the international wildlife film community, parent groups, and environmental organizations – including 10 Emmy Awards, three Peabody Awards, and the first honor ever given to a program by the Sierra Club.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537388.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3330",
+  "title": "Nature",
+  "type": "series",
+  "year": 1982
 }

@@ -1,22 +1,203 @@
 {
-  "schema": 1,
-  "id": "tvmaze-54",
-  "source": "tvmaze",
-  "sourceId": "54",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Legends",
-  "year": 2014,
-  "type": "series",
-  "overview": "Sean Bean stars in Legends, a suspense-filled drama based on the award-winning book by master spy novelist Robert Littell. Bean plays Martin Odum, an undercover agent working for the FBI's Deep Cover Operations (DCO) division. Martin has the uncanny ability to transform himself into a completely different person for each job. But he begins to question his own identity when a mysterious stranger suggests that Martin isn't the man he believes himself to be.",
-  "poster": "file:///android_asset/posters/tvmaze-54.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-08-13",
+      "id": 2108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90093.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-20",
+      "id": 2109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90094.jpg",
+      "name": "Chemistry",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-27",
+      "id": 2110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90095.jpg",
+      "name": "Lords of War",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-03",
+      "id": 2111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90096.jpg",
+      "name": "Betrayal",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-10",
+      "id": 2112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90097.jpg",
+      "name": "Rogue",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-17",
+      "id": 2113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90098.jpg",
+      "name": "Gauntlet",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-24",
+      "id": 2114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90099.jpg",
+      "name": "Quicksand",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-01",
+      "id": 2115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90100.jpg",
+      "name": "Iconoclast",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-08",
+      "id": 2116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90101.jpg",
+      "name": "Wilderness of Mirrors",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-08",
+      "id": 2117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90092.jpg",
+      "name": "Identity",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-02",
+      "id": 211774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90090.jpg",
+      "name": "The Legend of Dmitry Petrovich",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-09",
+      "id": 305067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73178.jpg",
+      "name": "The Legend of Kate Crawford",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-23",
+      "id": 305068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90088.jpg",
+      "name": "The Legend of Curtis Ballard",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-30",
+      "id": 311619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90087.jpg",
+      "name": "The Legend of Iiyana Zakayeva",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-07",
+      "id": 305070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90086.jpg",
+      "name": "The Legend of Terrence Graves",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-14",
+      "id": 305071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90084.jpg",
+      "name": "The Legend of Tamir Zakayev",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-21",
+      "id": 305072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/90081.jpg",
+      "name": "The Second Legend of Dmitry Petrovich",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-28",
+      "id": 471122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/92357.jpg",
+      "name": "The Legend of Doku Zakayev",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-28",
+      "id": 494693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94908.jpg",
+      "name": "The Legend of Gabi Miskova",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-28",
+      "id": 500560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94909.jpg",
+      "name": "The Legend of Alexei Volkov",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-54",
+  "live": true,
+  "overview": "Sean Bean stars in Legends, a suspense-filled drama based on the award-winning book by master spy novelist Robert Littell. Bean plays Martin Odum, an undercover agent working for the FBI's Deep Cover Operations (DCO) division. Martin has the uncanny ability to transform himself into a completely different person for each job. But he begins to question his own identity when a mysterious stranger suggests that Martin isn't the man he believes himself to be.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/36/92018.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "54",
+  "title": "Legends",
+  "type": "series",
+  "year": 2014
 }

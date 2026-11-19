@@ -1,22 +1,320 @@
 {
-  "schema": 1,
-  "id": "tvmaze-716",
-  "source": "tvmaze",
-  "sourceId": "716",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Spartacus",
-  "year": 2010,
-  "type": "series",
-  "overview": "Betrayed by his country. Beaten into slavery. Reborn as a warrior. Spartacus is a graphic and visceral account of Rome's most famous gladiator. When he is separated from the love of his life, Spartacus is forced into the gruesome and bloodthirsty arena, where a grisly death is primetime entertainment. Spartacus must fight for survival, befriend his enemies and play politics in this new world of corruption, violence, sex and fame. He will be seduced by power and tormented by vengeance. But his passion will give him the strength to prevail over every obstacle, in this modern and uninhibited tale of death, honour and endurance.",
-  "poster": "file:///android_asset/posters/tvmaze-716.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-01-22",
+      "id": 63357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383451.jpg",
+      "name": "The Red Serpent",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-01-29",
+      "id": 63358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383511.jpg",
+      "name": "Sacramentum Gladiatorum",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-05",
+      "id": 63359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383530.jpg",
+      "name": "Legends",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-12",
+      "id": 63360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383554.jpg",
+      "name": "The Thing In the Pit",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-19",
+      "id": 63361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383803.jpg",
+      "name": "Shadow Games",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-26",
+      "id": 63362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383835.jpg",
+      "name": "Delicate Things",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-05",
+      "id": 63363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383870.jpg",
+      "name": "Great and Unfortunate Things",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-12",
+      "id": 63364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383903.jpg",
+      "name": "Mark of the Brotherhood",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-19",
+      "id": 63365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383916.jpg",
+      "name": "Whore",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-26",
+      "id": 63366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383941.jpg",
+      "name": "Party Favors",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-02",
+      "id": 63367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/384157.jpg",
+      "name": "Old Wounds",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-09",
+      "id": 63368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/384202.jpg",
+      "name": "Revelations",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-16",
+      "id": 63369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/384219.jpg",
+      "name": "Kill Them All",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 63370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443889.jpg",
+      "name": "Fugitivus",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-03",
+      "id": 63371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443892.jpg",
+      "name": "A Place in This World",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-10",
+      "id": 63372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443893.jpg",
+      "name": "The Greater Good",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-17",
+      "id": 63373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443894.jpg",
+      "name": "Empty Hands",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-24",
+      "id": 63374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443895.jpg",
+      "name": "Libertus",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-02",
+      "id": 63375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443906.jpg",
+      "name": "Chosen Path",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-09",
+      "id": 63376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443910.jpg",
+      "name": "Sacramentum",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-16",
+      "id": 63377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443911.jpg",
+      "name": "Balance",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-23",
+      "id": 63378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443921.jpg",
+      "name": "Monsters",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-30",
+      "id": 63379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443929.jpg",
+      "name": "Wrath of the Gods",
+      "number": 10,
+      "runtime": 62,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-25",
+      "id": 63380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444160.jpg",
+      "name": "Enemies of Rome",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 63381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444162.jpg",
+      "name": "Wolves at the Gate",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-08",
+      "id": 63382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444163.jpg",
+      "name": "Men of Honor",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-22",
+      "id": 63383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444164.jpg",
+      "name": "Decimation",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 63384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444165.jpg",
+      "name": "Blood Brothers",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-08",
+      "id": 63385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444171.jpg",
+      "name": "Spoils of War",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-15",
+      "id": 63386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444175.jpg",
+      "name": "Mors Indecepta",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-22",
+      "id": 63387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444176.jpg",
+      "name": "Separate Paths",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 63388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444177.jpg",
+      "name": "The Dead and the Dying",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-12",
+      "id": 63389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1444182.jpg",
+      "name": "Victory",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-716",
+  "live": true,
+  "overview": "Betrayed by his country. Beaten into slavery. Reborn as a warrior. Spartacus is a graphic and visceral account of Rome's most famous gladiator. When he is separated from the love of his life, Spartacus is forced into the gruesome and bloodthirsty arena, where a grisly death is primetime entertainment. Spartacus must fight for survival, befriend his enemies and play politics in this new world of corruption, violence, sex and fame. He will be seduced by power and tormented by vengeance. But his passion will give him the strength to prevail over every obstacle, in this modern and uninhibited tale of death, honour and endurance.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/354/886339.jpg",
   "rating": 8.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "716",
+  "title": "Spartacus",
+  "type": "series",
+  "year": 2010
 }

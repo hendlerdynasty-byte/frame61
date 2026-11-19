@@ -1,22 +1,5774 @@
 {
-  "schema": 1,
-  "id": "tvmaze-713",
-  "source": "tvmaze",
-  "sourceId": "713",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "SpongeBob SquarePants",
-  "year": 1999,
-  "type": "series",
-  "overview": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick! Though they have the best intentions, SpongeBob and Patrick are always causing trouble… and plenty of laughs!When he's not at the Krusty Krab grilling up some epic Krabby Patties, SpongeBob can be found jellyfishing with Patrick, blowing bubbles, or annoying his favorite neighbor, Squidward!Bikini Bottom is home to the coolest creatures under the sea, and you CAN'T miss out on any of their adventures. Is mayonnaise an instrument? Watch SpongeBob SquarePants to find out!Are you ready, kids? AYE AYE CAPTAIN!",
-  "poster": "file:///android_asset/posters/tvmaze-713.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1999-05-01",
+      "id": 62895,
+      "image": null,
+      "name": "Help Wanted",
+      "number": 1,
+      "runtime": 8,
+      "season": 1
+    },
+    {
+      "airdate": "1999-05-01",
+      "id": 62896,
+      "image": null,
+      "name": "Reef Blower",
+      "number": 2,
+      "runtime": 3,
+      "season": 1
+    },
+    {
+      "airdate": "1999-05-01",
+      "id": 62897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/578/1445844.jpg",
+      "name": "Tea at the Treedome",
+      "number": 3,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-17",
+      "id": 62898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1437162.jpg",
+      "name": "Bubblestand",
+      "number": 4,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-17",
+      "id": 62899,
+      "image": null,
+      "name": "Ripped Pants",
+      "number": 5,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-31",
+      "id": 62900,
+      "image": null,
+      "name": "Jellyfishing",
+      "number": 6,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-31",
+      "id": 62901,
+      "image": null,
+      "name": "Plankton!",
+      "number": 7,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-07",
+      "id": 62902,
+      "image": null,
+      "name": "Naughty Nautical Neighbors",
+      "number": 8,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-07",
+      "id": 62903,
+      "image": null,
+      "name": "Boating School",
+      "number": 9,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-14",
+      "id": 62904,
+      "image": null,
+      "name": "Pizza Delivery",
+      "number": 10,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-14",
+      "id": 62905,
+      "image": null,
+      "name": "Home Sweet Pineapple",
+      "number": 11,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-21",
+      "id": 62906,
+      "image": null,
+      "name": "Mermaid Man and Barnacle Boy",
+      "number": 12,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-21",
+      "id": 255248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324062.jpg",
+      "name": "Pickles",
+      "number": 13,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-28",
+      "id": 62908,
+      "image": null,
+      "name": "Hall Monitor",
+      "number": 14,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-28",
+      "id": 62909,
+      "image": null,
+      "name": "Jellyfish Jam",
+      "number": 15,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-04",
+      "id": 62910,
+      "image": null,
+      "name": "Sandy's Rocket",
+      "number": 16,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-04",
+      "id": 62911,
+      "image": null,
+      "name": "Squeaky Boots",
+      "number": 17,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-11",
+      "id": 62912,
+      "image": null,
+      "name": "Nature Pants",
+      "number": 18,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-11",
+      "id": 62913,
+      "image": null,
+      "name": "Opposite Day",
+      "number": 19,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-18",
+      "id": 62914,
+      "image": null,
+      "name": "Culture Shock",
+      "number": 20,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-18",
+      "id": 62915,
+      "image": null,
+      "name": "F.U.N.",
+      "number": 21,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-25",
+      "id": 62916,
+      "image": null,
+      "name": "MuscleBob BuffPants",
+      "number": 22,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-25",
+      "id": 62917,
+      "image": null,
+      "name": "Squidward the Unfriendly Ghost",
+      "number": 23,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-02",
+      "id": 62918,
+      "image": null,
+      "name": "The Chaperone",
+      "number": 24,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-02",
+      "id": 62919,
+      "image": null,
+      "name": "Employee of the Month",
+      "number": 25,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-28",
+      "id": 62920,
+      "image": null,
+      "name": "Scaredy Pants",
+      "number": 26,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-28",
+      "id": 62921,
+      "image": null,
+      "name": "I Was a Teenage Gary",
+      "number": 27,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-12-31",
+      "id": 62922,
+      "image": null,
+      "name": "SB-129",
+      "number": 28,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "1999-12-31",
+      "id": 62923,
+      "image": null,
+      "name": "Karate Choppers",
+      "number": 29,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-17",
+      "id": 62924,
+      "image": null,
+      "name": "Sleepy Time",
+      "number": 30,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-17",
+      "id": 62925,
+      "image": null,
+      "name": "Suds",
+      "number": 31,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-14",
+      "id": 62926,
+      "image": null,
+      "name": "Valentine's Day",
+      "number": 32,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-14",
+      "id": 62927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/557/1394424.jpg",
+      "name": "The Paper",
+      "number": 33,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-15",
+      "id": 62928,
+      "image": null,
+      "name": "Arrgh!",
+      "number": 34,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-15",
+      "id": 62929,
+      "image": null,
+      "name": "Rock Bottom",
+      "number": 35,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-22",
+      "id": 62930,
+      "image": null,
+      "name": "Texas",
+      "number": 36,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-22",
+      "id": 62931,
+      "image": null,
+      "name": "Walking Small",
+      "number": 37,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-01",
+      "id": 62932,
+      "image": null,
+      "name": "Fools in April",
+      "number": 38,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-01",
+      "id": 62933,
+      "image": null,
+      "name": "Neptune's Spatula",
+      "number": 39,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-08",
+      "id": 62934,
+      "image": null,
+      "name": "Hooky",
+      "number": 40,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-08",
+      "id": 62935,
+      "image": null,
+      "name": "Mermaid Man and Barnacle Boy II",
+      "number": 41,
+      "runtime": 11,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-26",
+      "id": 62936,
+      "image": null,
+      "name": "Something Smells",
+      "number": 1,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-26",
+      "id": 62937,
+      "image": null,
+      "name": "Bossy Boots",
+      "number": 2,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-02",
+      "id": 62938,
+      "image": null,
+      "name": "Your Shoe's Untied",
+      "number": 3,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-02",
+      "id": 255048,
+      "image": null,
+      "name": "Squid's Day Off",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-16",
+      "id": 62940,
+      "image": null,
+      "name": "Big Pink Loser",
+      "number": 5,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-16",
+      "id": 255049,
+      "image": null,
+      "name": "Bubble Buddy",
+      "number": 6,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-27",
+      "id": 62942,
+      "image": null,
+      "name": "Mermaid Man and Barnacle Boy III",
+      "number": 7,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-27",
+      "id": 62943,
+      "image": null,
+      "name": "Squirrel Jokes",
+      "number": 8,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-12-28",
+      "id": 62945,
+      "image": null,
+      "name": "Dying for Pie",
+      "number": 9,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2000-12-28",
+      "id": 62946,
+      "image": null,
+      "name": "Imitation Krabs",
+      "number": 10,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-17",
+      "id": 62947,
+      "image": null,
+      "name": "Wormy",
+      "number": 11,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-17",
+      "id": 62948,
+      "image": null,
+      "name": "Patty Hype",
+      "number": 12,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-05",
+      "id": 62949,
+      "image": null,
+      "name": "Survival of the Idiots",
+      "number": 13,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-05",
+      "id": 255050,
+      "image": null,
+      "name": "Dumped",
+      "number": 14,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-06",
+      "id": 62951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1333274.jpg",
+      "name": "Grandma's Kisses",
+      "number": 15,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-06",
+      "id": 1216023,
+      "image": null,
+      "name": "Squidville",
+      "number": 16,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-07",
+      "id": 62953,
+      "image": null,
+      "name": "No Free Rides",
+      "number": 17,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-07",
+      "id": 62954,
+      "image": null,
+      "name": "I'm Your Biggest Fanatic",
+      "number": 18,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-07",
+      "id": 62957,
+      "image": null,
+      "name": "Shanghaied",
+      "number": 19,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-07",
+      "id": 255052,
+      "image": null,
+      "name": "Gary Takes a Bath",
+      "number": 20,
+      "runtime": 7,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-08",
+      "id": 62955,
+      "image": null,
+      "name": "Pressure",
+      "number": 21,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-08",
+      "id": 62956,
+      "image": null,
+      "name": "The Smoking Peanut",
+      "number": 22,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-05",
+      "id": 62958,
+      "image": null,
+      "name": "Pre-Hibernation Week",
+      "number": 23,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-05",
+      "id": 62959,
+      "image": null,
+      "name": "Life of Crime",
+      "number": 24,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-07",
+      "id": 62960,
+      "image": null,
+      "name": "The Secret Box",
+      "number": 25,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-07",
+      "id": 62961,
+      "image": null,
+      "name": "Band Geeks",
+      "number": 26,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-21",
+      "id": 62962,
+      "image": null,
+      "name": "Sailor Mouth",
+      "number": 27,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-21",
+      "id": 62963,
+      "image": null,
+      "name": "Artist Unknown",
+      "number": 28,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-28",
+      "id": 62964,
+      "image": null,
+      "name": "Jellyfish Hunter",
+      "number": 29,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-28",
+      "id": 62965,
+      "image": null,
+      "name": "The Fry Cook Games",
+      "number": 30,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-05",
+      "id": 62976,
+      "image": null,
+      "name": "Just One Bite",
+      "number": 31,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-05",
+      "id": 62975,
+      "image": null,
+      "name": "The Bully",
+      "number": 32,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-12",
+      "id": 62966,
+      "image": null,
+      "name": "Sandy, SpongeBob, & the Worm",
+      "number": 33,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-12",
+      "id": 62967,
+      "image": null,
+      "name": "Squid on Strike",
+      "number": 34,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-30",
+      "id": 62968,
+      "image": null,
+      "name": "Procrastination",
+      "number": 35,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-30",
+      "id": 62969,
+      "image": null,
+      "name": "I'm with Stupid",
+      "number": 36,
+      "runtime": 11,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-21",
+      "id": 62977,
+      "image": null,
+      "name": "Mermaid Man and Barnacle Boy IV",
+      "number": 1,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-21",
+      "id": 62978,
+      "image": null,
+      "name": "Doing Time",
+      "number": 2,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-21",
+      "id": 255678,
+      "image": null,
+      "name": "Welcome to the Chum Bucket",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-21",
+      "id": 255676,
+      "image": null,
+      "name": "Frankendoodle",
+      "number": 4,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-22",
+      "id": 62979,
+      "image": null,
+      "name": "The Snowball Effect",
+      "number": 5,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-22",
+      "id": 62980,
+      "image": null,
+      "name": "One Krab's Trash",
+      "number": 6,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-01",
+      "id": 62981,
+      "image": null,
+      "name": "Nasty Patty",
+      "number": 7,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-01",
+      "id": 62982,
+      "image": null,
+      "name": "The Idiot Box",
+      "number": 8,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-08",
+      "id": 62983,
+      "image": null,
+      "name": "As Seen on TV",
+      "number": 9,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-08",
+      "id": 62984,
+      "image": null,
+      "name": "Can You Spare a Dime?",
+      "number": 10,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-15",
+      "id": 62985,
+      "image": null,
+      "name": "No Weenies Allowed",
+      "number": 11,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-15",
+      "id": 62986,
+      "image": null,
+      "name": "Squilliam Returns",
+      "number": 12,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-22",
+      "id": 62987,
+      "image": null,
+      "name": "The Algae's Always Greener",
+      "number": 13,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-22",
+      "id": 62988,
+      "image": null,
+      "name": "SpongeGuard on Duty",
+      "number": 14,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-29",
+      "id": 62989,
+      "image": null,
+      "name": "Krab Borg",
+      "number": 15,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-03-29",
+      "id": 62990,
+      "image": null,
+      "name": "Rock-a-Bye Bivalve",
+      "number": 16,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-10",
+      "id": 62991,
+      "image": null,
+      "name": "Wet Painters",
+      "number": 17,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-10",
+      "id": 62992,
+      "image": null,
+      "name": "Krusty Krab Training Video",
+      "number": 18,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-06-01",
+      "id": 62994,
+      "image": null,
+      "name": "Chocolate with Nuts",
+      "number": 19,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-06-01",
+      "id": 62995,
+      "image": null,
+      "name": "Mermaid Man and Barnacle Boy V",
+      "number": 20,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-07-12",
+      "id": 62996,
+      "image": null,
+      "name": "Club SpongeBob",
+      "number": 21,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-07-12",
+      "id": 62997,
+      "image": null,
+      "name": "My Pretty Seahorse",
+      "number": 22,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-06",
+      "id": 62972,
+      "image": null,
+      "name": "Graveyard Shift",
+      "number": 23,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-06",
+      "id": 62973,
+      "image": null,
+      "name": "Krusty Love",
+      "number": 24,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-20",
+      "id": 62998,
+      "image": null,
+      "name": "New Student Starfish",
+      "number": 25,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-20",
+      "id": 62999,
+      "image": null,
+      "name": "Clams",
+      "number": 26,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2003-01-24",
+      "id": 63000,
+      "image": null,
+      "name": "The Great Snail Race",
+      "number": 27,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2003-01-24",
+      "id": 63001,
+      "image": null,
+      "name": "Mid-Life Crustacean",
+      "number": 28,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-21",
+      "id": 1469533,
+      "image": null,
+      "name": "The Sponge Who Could Fly (AKA The Lost Episode)",
+      "number": 29,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-04",
+      "id": 63003,
+      "image": null,
+      "name": "Born Again Krabs",
+      "number": 30,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-04",
+      "id": 63004,
+      "image": null,
+      "name": "I Had an Accident",
+      "number": 31,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-19",
+      "id": 63005,
+      "image": null,
+      "name": "Plankton's Army",
+      "number": 32,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-19",
+      "id": 63006,
+      "image": null,
+      "name": "Missing Identity",
+      "number": 33,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-03",
+      "id": 63008,
+      "image": null,
+      "name": "Krabby Land",
+      "number": 34,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-03",
+      "id": 63009,
+      "image": null,
+      "name": "The Camping Episode",
+      "number": 35,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 63010,
+      "image": null,
+      "name": "SpongeBob Meets the Strangler",
+      "number": 36,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 63011,
+      "image": null,
+      "name": "Pranks a Lot",
+      "number": 37,
+      "runtime": 11,
+      "season": 3
+    },
+    {
+      "airdate": "2005-05-06",
+      "id": 63012,
+      "image": null,
+      "name": "Fear of a Krabby Patty",
+      "number": 1,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-06",
+      "id": 63013,
+      "image": null,
+      "name": "Shell of a Man",
+      "number": 2,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-13",
+      "id": 63014,
+      "image": null,
+      "name": "The Lost Mattress",
+      "number": 3,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-13",
+      "id": 63015,
+      "image": null,
+      "name": "Krabs vs. Plankton",
+      "number": 4,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-20",
+      "id": 63017,
+      "image": null,
+      "name": "Skill Crane",
+      "number": 5,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-20",
+      "id": 63018,
+      "image": null,
+      "name": "Good Neighbors",
+      "number": 6,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-23",
+      "id": 63019,
+      "image": null,
+      "name": "Selling Out",
+      "number": 7,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-23",
+      "id": 63020,
+      "image": null,
+      "name": "Funny Pants",
+      "number": 8,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-07",
+      "id": 63023,
+      "image": null,
+      "name": "Mermaid Man & Barnacle Boy VI - The Motion Picture",
+      "number": 9,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-14",
+      "id": 63022,
+      "image": null,
+      "name": "Enemy In-Law",
+      "number": 10,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-21",
+      "id": 63024,
+      "image": null,
+      "name": "Patrick SmartPants",
+      "number": 11,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2005-11-04",
+      "id": 63025,
+      "image": null,
+      "name": "SquidBob TentaclePants",
+      "number": 12,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-04-01",
+      "id": 63026,
+      "image": null,
+      "name": "Krusty Towers",
+      "number": 13,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-04-01",
+      "id": 63027,
+      "image": null,
+      "name": "Mrs. Puff, You're Fired",
+      "number": 14,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-05-05",
+      "id": 63028,
+      "image": null,
+      "name": "Ghost Host",
+      "number": 15,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-05-05",
+      "id": 63029,
+      "image": null,
+      "name": "Chimps Ahoy!",
+      "number": 16,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-05-12",
+      "id": 63030,
+      "image": null,
+      "name": "Whale of a Birthday",
+      "number": 17,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-05-12",
+      "id": 63031,
+      "image": null,
+      "name": "Karate Island",
+      "number": 18,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-06-02",
+      "id": 63032,
+      "image": null,
+      "name": "All That Glitters",
+      "number": 19,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-06-02",
+      "id": 63033,
+      "image": null,
+      "name": "Wishing You Well",
+      "number": 20,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-22",
+      "id": 255677,
+      "image": null,
+      "name": "New Leaf",
+      "number": 21,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-29",
+      "id": 63055,
+      "image": null,
+      "name": "Once Bitten",
+      "number": 22,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-06",
+      "id": 63038,
+      "image": null,
+      "name": "Squidtastic Voyage",
+      "number": 23,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-13",
+      "id": 63036,
+      "image": null,
+      "name": "Bummer Vacation",
+      "number": 24,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-10",
+      "id": 63048,
+      "image": null,
+      "name": "Best Day Ever",
+      "number": 25,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-17",
+      "id": 63037,
+      "image": null,
+      "name": "Wigstruck",
+      "number": 26,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-25",
+      "id": 63039,
+      "image": null,
+      "name": "That's No Lady",
+      "number": 27,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-15",
+      "id": 63040,
+      "image": null,
+      "name": "The Thing",
+      "number": 28,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-15",
+      "id": 63041,
+      "image": null,
+      "name": "Hocus Pocus",
+      "number": 29,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63042,
+      "image": null,
+      "name": "Driven to Tears",
+      "number": 30,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63043,
+      "image": null,
+      "name": "Rule of Dumb",
+      "number": 31,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63046,
+      "image": null,
+      "name": "The Pink Purloiner",
+      "number": 32,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63049,
+      "image": null,
+      "name": "The Gift of Gum",
+      "number": 33,
+      "runtime": 11,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63053,
+      "image": null,
+      "name": "Rise and Shine",
+      "number": 1,
+      "runtime": 4,
+      "season": 5
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 63054,
+      "image": null,
+      "name": "Waiting",
+      "number": 2,
+      "runtime": 7,
+      "season": 5
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 1102926,
+      "image": null,
+      "name": "Sing a Song of Patrick",
+      "number": 3,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-03-31",
+      "id": 63044,
+      "image": null,
+      "name": "Born to Be Wild",
+      "number": 4,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-03-31",
+      "id": 63045,
+      "image": null,
+      "name": "Best Frenemies",
+      "number": 5,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-23",
+      "id": 63056,
+      "image": null,
+      "name": "Spy Buddies",
+      "number": 6,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-23",
+      "id": 63057,
+      "image": null,
+      "name": "Boat Smarts",
+      "number": 7,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-23",
+      "id": 63058,
+      "image": null,
+      "name": "Good Ol' Whatshisname",
+      "number": 8,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-24",
+      "id": 63068,
+      "image": null,
+      "name": "The Krusty Sponge",
+      "number": 9,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-24",
+      "id": 63047,
+      "image": null,
+      "name": "Squid Wood",
+      "number": 10,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-25",
+      "id": 63059,
+      "image": null,
+      "name": "New Digs",
+      "number": 11,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-25",
+      "id": 63060,
+      "image": null,
+      "name": "Krabs à La Mode",
+      "number": 12,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-26",
+      "id": 63063,
+      "image": null,
+      "name": "To Love a Patty",
+      "number": 13,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-26",
+      "id": 63064,
+      "image": null,
+      "name": "Breath of Fresh Squidward",
+      "number": 14,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-27",
+      "id": 63061,
+      "image": null,
+      "name": "Roller Cowards",
+      "number": 15,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-27",
+      "id": 63062,
+      "image": null,
+      "name": "Bucket Sweet Bucket",
+      "number": 16,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-30",
+      "id": 63051,
+      "image": null,
+      "name": "The Original Fry Cook",
+      "number": 17,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-30",
+      "id": 63052,
+      "image": null,
+      "name": "Night Light",
+      "number": 18,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-31",
+      "id": 63065,
+      "image": null,
+      "name": "Money Talks",
+      "number": 19,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-31",
+      "id": 63066,
+      "image": null,
+      "name": "SpongeBob vs. The Patty Gadget",
+      "number": 20,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-07-31",
+      "id": 63067,
+      "image": null,
+      "name": "Slimy Dancing",
+      "number": 21,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-01",
+      "id": 63069,
+      "image": null,
+      "name": "A Flea in Her Dome",
+      "number": 22,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-01",
+      "id": 63070,
+      "image": null,
+      "name": "The Donut of Shame",
+      "number": 23,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-01",
+      "id": 63071,
+      "image": null,
+      "name": "The Krusty Plate",
+      "number": 24,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-02",
+      "id": 63074,
+      "image": null,
+      "name": "Picture Day",
+      "number": 25,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-02",
+      "id": 63075,
+      "image": null,
+      "name": "Pat No Pay",
+      "number": 26,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-02",
+      "id": 63076,
+      "image": null,
+      "name": "BlackJack",
+      "number": 27,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-03",
+      "id": 63077,
+      "image": null,
+      "name": "Blackened Sponge",
+      "number": 28,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-08-03",
+      "id": 63078,
+      "image": null,
+      "name": "Mermaid Man vs. SpongeBob",
+      "number": 29,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-09-29",
+      "id": 63073,
+      "image": null,
+      "name": "Fungus Among Us",
+      "number": 30,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-09-29",
+      "id": 255460,
+      "image": null,
+      "name": "Le Big Switch",
+      "number": 31,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63079,
+      "image": null,
+      "name": "The Inmates of Summer",
+      "number": 32,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63080,
+      "image": null,
+      "name": "The Two Faces of Squidward",
+      "number": 33,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63083,
+      "image": null,
+      "name": "The Battle of Bikini Bottom",
+      "number": 34,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63086,
+      "image": null,
+      "name": "Banned in Bikini Bottom",
+      "number": 35,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63085,
+      "image": null,
+      "name": "SpongeHenge",
+      "number": 36,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63082,
+      "image": null,
+      "name": "20,000 Patties Under the Sea",
+      "number": 37,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 63087,
+      "image": null,
+      "name": "Stanley S. SquarePants",
+      "number": 38,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-23",
+      "id": 255620,
+      "image": null,
+      "name": "To Save a Squirrel",
+      "number": 39,
+      "runtime": 11,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-03",
+      "id": 63088,
+      "image": null,
+      "name": "Krabby Road",
+      "number": 1,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-04",
+      "id": 63089,
+      "image": null,
+      "name": "Not Normal",
+      "number": 2,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-05",
+      "id": 63090,
+      "image": null,
+      "name": "Gone",
+      "number": 3,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-06",
+      "id": 63091,
+      "image": null,
+      "name": "Suction Cup Symphony",
+      "number": 4,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-07",
+      "id": 63092,
+      "image": null,
+      "name": "Penny Foolish",
+      "number": 5,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-29",
+      "id": 63093,
+      "image": null,
+      "name": "Nautical Novice",
+      "number": 6,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-03-29",
+      "id": 63094,
+      "image": null,
+      "name": "Spongicus",
+      "number": 7,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-06-02",
+      "id": 63095,
+      "image": null,
+      "name": "The Splinter",
+      "number": 8,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-06-03",
+      "id": 63096,
+      "image": null,
+      "name": "Giant Squidward",
+      "number": 9,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-06-04",
+      "id": 63097,
+      "image": null,
+      "name": "A Life in a Day",
+      "number": 10,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-06-05",
+      "id": 63098,
+      "image": null,
+      "name": "Sun Bleached",
+      "number": 11,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-06-06",
+      "id": 63099,
+      "image": null,
+      "name": "House Fancy",
+      "number": 12,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-08-04",
+      "id": 63100,
+      "image": null,
+      "name": "No Nose Knows",
+      "number": 13,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-08-05",
+      "id": 63101,
+      "image": null,
+      "name": "Patty Caper",
+      "number": 14,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-08-06",
+      "id": 63102,
+      "image": null,
+      "name": "Plankton's Regular",
+      "number": 15,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-08-07",
+      "id": 63103,
+      "image": null,
+      "name": "Boating Buddies",
+      "number": 16,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-08-08",
+      "id": 63104,
+      "image": null,
+      "name": "The Krabby Kronicle",
+      "number": 17,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63105,
+      "image": null,
+      "name": "The Slumber Party",
+      "number": 18,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63106,
+      "image": null,
+      "name": "Grooming Gary",
+      "number": 19,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63107,
+      "image": null,
+      "name": "Porous Pockets",
+      "number": 20,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63108,
+      "image": null,
+      "name": "Krusty Krushers",
+      "number": 21,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63109,
+      "image": null,
+      "name": "The Card",
+      "number": 22,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 63110,
+      "image": null,
+      "name": "Ditchin'",
+      "number": 23,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2008-11-28",
+      "id": 255461,
+      "image": null,
+      "name": "Dear Vikings",
+      "number": 24,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 63113,
+      "image": null,
+      "name": "Shuffleboarding",
+      "number": 25,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 63114,
+      "image": null,
+      "name": "Slide Whistle Stooges",
+      "number": 26,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 63115,
+      "image": null,
+      "name": "Cephalopod Lodge",
+      "number": 27,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-18",
+      "id": 63116,
+      "image": null,
+      "name": "Grandpappy the Pirate",
+      "number": 28,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-19",
+      "id": 63117,
+      "image": null,
+      "name": "Professor Squidward",
+      "number": 29,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-16",
+      "id": 63118,
+      "image": null,
+      "name": "Sand Castles in the Sand",
+      "number": 30,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-17",
+      "id": 63119,
+      "image": null,
+      "name": "Toy Store of Doom",
+      "number": 31,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-18",
+      "id": 63120,
+      "image": null,
+      "name": "Pets or Pests",
+      "number": 32,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-19",
+      "id": 63121,
+      "image": null,
+      "name": "Komputer Overload",
+      "number": 33,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-20",
+      "id": 63122,
+      "image": null,
+      "name": "Choir Boys",
+      "number": 34,
+      "runtime": 11,
+      "season": 6
+    },
+    {
+      "airdate": "2009-06-01",
+      "id": 63124,
+      "image": null,
+      "name": "Shell Shocked",
+      "number": 1,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-06-02",
+      "id": 63125,
+      "image": null,
+      "name": "Pineapple Fever",
+      "number": 2,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-06-03",
+      "id": 63126,
+      "image": null,
+      "name": "Single Cell Anniversary",
+      "number": 3,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-06-04",
+      "id": 63127,
+      "image": null,
+      "name": "Squid's Visit",
+      "number": 4,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-06-05",
+      "id": 63128,
+      "image": null,
+      "name": "Gullible Pants",
+      "number": 5,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-17",
+      "id": 63129,
+      "image": null,
+      "name": "To SquarePants or Not to SquarePants",
+      "number": 6,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-18",
+      "id": 63130,
+      "image": null,
+      "name": "Chum Caverns",
+      "number": 7,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63136,
+      "image": null,
+      "name": "I Heart Dancing",
+      "number": 8,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63072,
+      "image": null,
+      "name": "Goo Goo Gas",
+      "number": 9,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63132,
+      "image": null,
+      "name": "No Hat for Pat",
+      "number": 10,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63133,
+      "image": null,
+      "name": "Chum Bucket Supreme",
+      "number": 11,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63139,
+      "image": null,
+      "name": "Someone's in the Kitchen with Sandy",
+      "number": 12,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63137,
+      "image": null,
+      "name": "Growth Spout",
+      "number": 13,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63131,
+      "image": null,
+      "name": "Tentacle-Vision",
+      "number": 14,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63140,
+      "image": null,
+      "name": "The Inside Job",
+      "number": 15,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63138,
+      "image": null,
+      "name": "Stuck in the Wringer",
+      "number": 16,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 63135,
+      "image": null,
+      "name": "Overbooked",
+      "number": 17,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-10-24",
+      "id": 63147,
+      "image": null,
+      "name": "The Curse of Bikini Bottom",
+      "number": 18,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-27",
+      "id": 63141,
+      "image": null,
+      "name": "Greasy Buffoons",
+      "number": 19,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-27",
+      "id": 63142,
+      "image": null,
+      "name": "Model Sponge",
+      "number": 20,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-01-02",
+      "id": 63143,
+      "image": null,
+      "name": "Keep Bikini Bottom Beautiful",
+      "number": 21,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-01-02",
+      "id": 63144,
+      "image": null,
+      "name": "A Pal for Gary",
+      "number": 22,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-06",
+      "id": 63155,
+      "image": null,
+      "name": "Gary in Love",
+      "number": 23,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-06",
+      "id": 63157,
+      "image": null,
+      "name": "Rodeo Daze",
+      "number": 24,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-15",
+      "id": 63150,
+      "image": null,
+      "name": "Back to the Past",
+      "number": 25,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-02-15",
+      "id": 63151,
+      "image": null,
+      "name": "The Bad Guy Club for Villains",
+      "number": 26,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-22",
+      "id": 63152,
+      "image": null,
+      "name": "A Day Without Tears",
+      "number": 27,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-23",
+      "id": 63153,
+      "image": null,
+      "name": "Summer Job",
+      "number": 28,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-24",
+      "id": 63148,
+      "image": null,
+      "name": "Squidward in Clarinetland",
+      "number": 29,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-25",
+      "id": 63154,
+      "image": null,
+      "name": "One Coarse Meal",
+      "number": 30,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-03-26",
+      "id": 63156,
+      "image": null,
+      "name": "The Play's the Thing",
+      "number": 31,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-04-22",
+      "id": 63149,
+      "image": null,
+      "name": "SpongeBob's Last Stand",
+      "number": 32,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-06-19",
+      "id": 63170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/538200.jpg",
+      "name": "Enchanted Tiki Dreams",
+      "number": 33,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-06",
+      "id": 63158,
+      "image": null,
+      "name": "Gramma's Secret Recipe",
+      "number": 34,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-07",
+      "id": 63159,
+      "image": null,
+      "name": "The Cent of Money",
+      "number": 35,
+      "runtime": 11,
+      "season": 7
+    },
+    {
+      "airdate": "2010-07-08",
+      "id": 63167,
+      "image": null,
+      "name": "That Sinking Feeling",
+      "number": 1,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-07-09",
+      "id": 63168,
+      "image": null,
+      "name": "Karate Star",
+      "number": 2,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-08-09",
+      "id": 63173,
+      "image": null,
+      "name": "Hide and Then What Happens?",
+      "number": 3,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-08-09",
+      "id": 63177,
+      "image": null,
+      "name": "You Don't Know Sponge",
+      "number": 4,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-11",
+      "id": 63145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/506/1265275.jpg",
+      "name": "Yours, Mine and Mine",
+      "number": 5,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-11",
+      "id": 63146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/506/1265276.jpg",
+      "name": "Kracked Krabs",
+      "number": 6,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-18",
+      "id": 63169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/506/1267345.jpg",
+      "name": "Buried in Time",
+      "number": 7,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-18",
+      "id": 63174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/506/1267346.jpg",
+      "name": "Shellback Shenanigans",
+      "number": 8,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-02",
+      "id": 63175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1269916.jpg",
+      "name": "The Masterpiece",
+      "number": 9,
+      "runtime": 15,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-02",
+      "id": 63176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1268581.jpg",
+      "name": "Whelk Attack",
+      "number": 10,
+      "runtime": 15,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-09",
+      "id": 63179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/510/1277273.jpg",
+      "name": "Krusty Dogs",
+      "number": 11,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-10-09",
+      "id": 63180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/510/1277274.jpg",
+      "name": "The Wreck of the Mauna Loa",
+      "number": 12,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-11",
+      "id": 63166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/512/1281315.jpg",
+      "name": "The Great Patty Caper",
+      "number": 13,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-27",
+      "id": 63171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1284481.jpg",
+      "name": "The Abrasive Side",
+      "number": 14,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2010-11-27",
+      "id": 63172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1284583.jpg",
+      "name": "Earworm",
+      "number": 15,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-15",
+      "id": 63181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/514/1285820.jpg",
+      "name": "New Fish in Town",
+      "number": 16,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-15",
+      "id": 63183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/514/1287357.jpg",
+      "name": "Big Sister Sam",
+      "number": 17,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 63160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/518/1295963.jpg",
+      "name": "Legends of Bikini Bottom: Sponge-Cano",
+      "number": 18,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 63161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/518/1297165.jpg",
+      "name": "Legends of Bikini Bottom: The Main Drain",
+      "number": 19,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 63163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/519/1299902.jpg",
+      "name": "Legends of Bikini Bottom: The Monster Who Came to Bikini Bottom",
+      "number": 20,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 63165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/521/1302805.jpg",
+      "name": "Legends of Bikini Bottom: Welcome to the Bikini Bottom Triangle",
+      "number": 21,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-29",
+      "id": 63164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/522/1305185.jpg",
+      "name": "Legends of Bikini Bottom: Trenchbillies",
+      "number": 22,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-01-30",
+      "id": 254994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/530/1325132.jpg",
+      "name": "Legends of Bikini Bottom: The Curse of the Hex",
+      "number": 23,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-12",
+      "id": 63182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/522/1306310.jpg",
+      "name": "Love That Squid",
+      "number": 24,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-12",
+      "id": 63178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/522/1306921.jpg",
+      "name": "Tunnel of Glove",
+      "number": 25,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-02-26",
+      "id": 63184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/523/1307615.jpg",
+      "name": "Perfect Chemistry",
+      "number": 26,
+      "runtime": 11,
+      "season": 8
+    },
+    {
+      "airdate": "2011-04-03",
+      "id": 63189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323952.jpg",
+      "name": "A Friendly Game",
+      "number": 1,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-04-03",
+      "id": 63190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323953.jpg",
+      "name": "Sentimental Sponge",
+      "number": 2,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-06-04",
+      "id": 63192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/530/1325130.jpg",
+      "name": "Squidward's School for Grown-Ups",
+      "number": 3,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-06-04",
+      "id": 255661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/530/1325131.jpg",
+      "name": "Oral Report",
+      "number": 4,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-06-18",
+      "id": 63188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/531/1327868.jpg",
+      "name": "The Hot Shot",
+      "number": 5,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-06-25",
+      "id": 63186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/531/1327867.jpg",
+      "name": "The Other Patty",
+      "number": 6,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-07-15",
+      "id": 63191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/531/1328320.jpg",
+      "name": "Frozen Face-Off",
+      "number": 7,
+      "runtime": 22,
+      "season": 9
+    },
+    {
+      "airdate": "2011-07-18",
+      "id": 63185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/531/1328585.jpg",
+      "name": "Accidents Will Happen",
+      "number": 8,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-07-19",
+      "id": 63187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/531/1328587.jpg",
+      "name": "Drive Thru",
+      "number": 9,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-07-20",
+      "id": 63194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/532/1330979.jpg",
+      "name": "Sweet and Sour Squid",
+      "number": 10,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-07-21",
+      "id": 63195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/532/1330980.jpg",
+      "name": "The Googly Artiste",
+      "number": 11,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 63204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/532/1330981.jpg",
+      "name": "Barnacle Face",
+      "number": 12,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 63205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/532/1330982.jpg",
+      "name": "Pet Sitter Pat",
+      "number": 13,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 63202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/536/1341709.jpg",
+      "name": "Mermaid Man Begins",
+      "number": 14,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 63203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/536/1341710.jpg",
+      "name": "Plankton's Good Eye",
+      "number": 15,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 63206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/538/1347251.jpg",
+      "name": "House Sittin' for Sandy",
+      "number": 16,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 63207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/538/1347252.jpg",
+      "name": "Smoothe Jazz at Bikini Bottom",
+      "number": 17,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-10-21",
+      "id": 63201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/538/1347253.jpg",
+      "name": "Ghoul Fools",
+      "number": 18,
+      "runtime": 24,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-07",
+      "id": 63198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383926.jpg",
+      "name": "Walking the Plankton",
+      "number": 19,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 63197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1383925.jpg",
+      "name": "Patrick's Staycation",
+      "number": 20,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-09",
+      "id": 63200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1439279.jpg",
+      "name": "Mr. Krabs Takes a Vacation",
+      "number": 21,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-10",
+      "id": 63199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/578/1445011.jpg",
+      "name": "Mooncation",
+      "number": 22,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-11",
+      "id": 63196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/589/1474477.jpg",
+      "name": "A SquarePants Family Vacation",
+      "number": 23,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-25",
+      "id": 63210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486735.jpg",
+      "name": "The Krabby Patty That Ate Bikini Bottom",
+      "number": 24,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-25",
+      "id": 63211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486737.jpg",
+      "name": "Bubble Buddy Returns",
+      "number": 25,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-26",
+      "id": 254913,
+      "image": null,
+      "name": "Bubble Troubles",
+      "number": 26,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2011-11-26",
+      "id": 63209,
+      "image": null,
+      "name": "Way of the Sponge",
+      "number": 27,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-03-31",
+      "id": 63215,
+      "image": null,
+      "name": "Planet of the Jellyfish",
+      "number": 28,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-03-31",
+      "id": 63214,
+      "image": null,
+      "name": "Are You Happy Now?",
+      "number": 29,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-02",
+      "id": 63212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/589/1474479.jpg",
+      "name": "Restraining SpongeBob",
+      "number": 30,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-03",
+      "id": 63221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486732.jpg",
+      "name": "Glove World R.I.P.",
+      "number": 31,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-04",
+      "id": 63217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1486734.jpg",
+      "name": "Home Sweet Rubble",
+      "number": 32,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-05",
+      "id": 63213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1499683.jpg",
+      "name": "Fiasco!",
+      "number": 33,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-06",
+      "id": 63216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1514432.jpg",
+      "name": "Free Samples",
+      "number": 34,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-09",
+      "id": 63219,
+      "image": null,
+      "name": "inSPONGEiac",
+      "number": 35,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 63224,
+      "image": null,
+      "name": "Treats!",
+      "number": 36,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-11",
+      "id": 63222,
+      "image": null,
+      "name": "Squiditis",
+      "number": 37,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-12",
+      "id": 63225,
+      "image": null,
+      "name": "For Here or to Go?",
+      "number": 38,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-11-23",
+      "id": 254914,
+      "image": null,
+      "name": "It's a SpongeBob Christmas!",
+      "number": 39,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-04-13",
+      "id": 63218,
+      "image": null,
+      "name": "Karen 2.0",
+      "number": 40,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-07-21",
+      "id": 63223,
+      "image": null,
+      "name": "Demolition Doofus",
+      "number": 41,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-07-21",
+      "id": 63231,
+      "image": null,
+      "name": "Face Freeze!",
+      "number": 42,
+      "runtime": 11,
+      "season": 9
+    },
+    {
+      "airdate": "2012-07-21",
+      "id": 63232,
+      "image": null,
+      "name": "Extreme Spots",
+      "number": 1,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-07-21",
+      "id": 63220,
+      "image": null,
+      "name": "Squirrel Record",
+      "number": 2,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-03",
+      "id": 63228,
+      "image": null,
+      "name": "Squid Baby",
+      "number": 3,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-03",
+      "id": 255622,
+      "image": null,
+      "name": "The Good Krabby Name",
+      "number": 4,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-09-07",
+      "id": 63234,
+      "image": null,
+      "name": "License to Milkshake",
+      "number": 5,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-08",
+      "id": 63230,
+      "image": null,
+      "name": "Hello Bikini Bottom!",
+      "number": 6,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 63235,
+      "image": null,
+      "name": "Gary's New Toy",
+      "number": 7,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 63226,
+      "image": null,
+      "name": "Super Evil Villain Aquatic Team Up is Go",
+      "number": 8,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 63227,
+      "image": null,
+      "name": "Chum Fricassee",
+      "number": 9,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 63229,
+      "image": null,
+      "name": "Move It or Lose It",
+      "number": 10,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-27",
+      "id": 63236,
+      "image": null,
+      "name": "Eek! An Urchin",
+      "number": 11,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-27",
+      "id": 63237,
+      "image": null,
+      "name": "Patrick-Man!",
+      "number": 12,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-17",
+      "id": 63238,
+      "image": null,
+      "name": "Bumper to Bumper",
+      "number": 13,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-01-01",
+      "id": 63239,
+      "image": null,
+      "name": "Squid's Defense",
+      "number": 14,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-01-19",
+      "id": 63240,
+      "image": null,
+      "name": "Plankton's Pet",
+      "number": 15,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-03-02",
+      "id": 63241,
+      "image": null,
+      "name": "Little Yellow Book",
+      "number": 16,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-03-09",
+      "id": 63242,
+      "image": null,
+      "name": "Evil Spatula",
+      "number": 17,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2013-03-16",
+      "id": 63243,
+      "image": null,
+      "name": "Jailbreak!",
+      "number": 18,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2013-05-25",
+      "id": 63245,
+      "image": null,
+      "name": "Safe Depo­sit Krabs",
+      "number": 19,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 63247,
+      "image": null,
+      "name": "Don't Look Now",
+      "number": 20,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 254981,
+      "image": null,
+      "name": "Séance Shméance",
+      "number": 21,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2013-11-11",
+      "id": 63248,
+      "image": null,
+      "name": "SpongeBob, You're Fired!",
+      "number": 22,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2014-02-17",
+      "id": 63249,
+      "image": null,
+      "name": "It Came from Goo Lagoon",
+      "number": 23,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2014-03-29",
+      "id": 63251,
+      "image": null,
+      "name": "Kenny the Cat",
+      "number": 24,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-03-29",
+      "id": 152618,
+      "image": null,
+      "name": "Yeti Krabs",
+      "number": 25,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-07-16",
+      "id": 331875,
+      "image": null,
+      "name": "Lost in Bikini Bottom",
+      "number": 26,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-07-16",
+      "id": 331874,
+      "image": null,
+      "name": "Tutor Sauce",
+      "number": 27,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-07",
+      "id": 331877,
+      "image": null,
+      "name": "Squid Plus One",
+      "number": 28,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-07",
+      "id": 331876,
+      "image": null,
+      "name": "The Executive Treatment",
+      "number": 29,
+      "runtime": 11,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-18",
+      "id": 245382,
+      "image": null,
+      "name": "Company Picnic",
+      "number": 30,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2015-09-18",
+      "id": 331878,
+      "image": null,
+      "name": "Pull Up a Barrel",
+      "number": 31,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2015-10-02",
+      "id": 331880,
+      "image": null,
+      "name": "What's Eating Patrick?",
+      "number": 32,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2015-10-02",
+      "id": 1216024,
+      "image": null,
+      "name": "Sanctuary",
+      "number": 33,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 452003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458008.jpg",
+      "name": "Patrick! the Game",
+      "number": 34,
+      "runtime": 14,
+      "season": 10
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 452004,
+      "image": null,
+      "name": "The Sewers of Bikini Bottom",
+      "number": 35,
+      "runtime": 14,
+      "season": 10
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 617530,
+      "image": null,
+      "name": "SpongeBob LongPants",
+      "number": 36,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 772874,
+      "image": null,
+      "name": "Larry's Gym",
+      "number": 37,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-03-12",
+      "id": 772875,
+      "image": null,
+      "name": "Mall Girl Pearl",
+      "number": 38,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-03-12",
+      "id": 627259,
+      "image": null,
+      "name": "Two Thumbs Down",
+      "number": 39,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-05-02",
+      "id": 738599,
+      "image": null,
+      "name": "The Fish Bowl",
+      "number": 40,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 738600,
+      "image": null,
+      "name": "Married to Money",
+      "number": 41,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-05-04",
+      "id": 738601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1457921.jpg",
+      "name": "Sharks vs. Pods",
+      "number": 42,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-05-05",
+      "id": 772871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518638.jpg",
+      "name": "CopyBob DittoPants",
+      "number": 43,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-05-06",
+      "id": 772872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518664.jpg",
+      "name": "Sold!",
+      "number": 44,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-07-11",
+      "id": 849736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518662.jpg",
+      "name": "Lame and Fortune",
+      "number": 45,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-07-12",
+      "id": 849737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518740.jpg",
+      "name": "Sandy's Nutmare",
+      "number": 46,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 849738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518737.jpg",
+      "name": "Food Con Castaways",
+      "number": 47,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-07-14",
+      "id": 849739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518670.jpg",
+      "name": "Pineapple Invasion",
+      "number": 48,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-07-15",
+      "id": 849740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518671.jpg",
+      "name": "Salsa Imbecilicus",
+      "number": 49,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-01",
+      "id": 936861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518741.jpg",
+      "name": "Bulletin Board",
+      "number": 50,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-08",
+      "id": 936862,
+      "image": null,
+      "name": "Mutiny on the Krusty",
+      "number": 51,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-15",
+      "id": 936863,
+      "image": null,
+      "name": "Whirlybrains",
+      "number": 52,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-22",
+      "id": 936864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518738.jpg",
+      "name": "Snail Mail",
+      "number": 53,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-29",
+      "id": 936865,
+      "image": null,
+      "name": "MermaidPants",
+      "number": 54,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-12-03",
+      "id": 1004452,
+      "image": null,
+      "name": "The Whole Tooth",
+      "number": 55,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-25",
+      "id": 1060395,
+      "image": null,
+      "name": "Mimic Madness",
+      "number": 56,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-25",
+      "id": 1060396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518661.jpg",
+      "name": "House Worming",
+      "number": 57,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-04",
+      "id": 1084888,
+      "image": null,
+      "name": "Snooze You Lose",
+      "number": 58,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-04",
+      "id": 1084892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518660.jpg",
+      "name": "Krusty Katering",
+      "number": 59,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-11",
+      "id": 1084893,
+      "image": null,
+      "name": "Spongebob's Place",
+      "number": 60,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-11",
+      "id": 1084896,
+      "image": null,
+      "name": "Plankton Gets the Boot",
+      "number": 61,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-18",
+      "id": 1084897,
+      "image": null,
+      "name": "Life Insurance",
+      "number": 62,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-18",
+      "id": 1084898,
+      "image": null,
+      "name": "Burst Your Bubble",
+      "number": 63,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-25",
+      "id": 1084903,
+      "image": null,
+      "name": "Plankton Retires",
+      "number": 64,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-25",
+      "id": 1084908,
+      "image": null,
+      "name": "Trident Trouble",
+      "number": 65,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-03",
+      "id": 1178538,
+      "image": null,
+      "name": "Unreal Estate",
+      "number": 66,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-03",
+      "id": 1178539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518668.jpg",
+      "name": "Code Yellow",
+      "number": 67,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-10",
+      "id": 1178540,
+      "image": null,
+      "name": "The Getaway",
+      "number": 68,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-10",
+      "id": 1178541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518657.jpg",
+      "name": "Lost and Found",
+      "number": 69,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-17",
+      "id": 1178542,
+      "image": null,
+      "name": "Patrick's Coupon",
+      "number": 70,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-17",
+      "id": 1178543,
+      "image": null,
+      "name": "Out of the Picture",
+      "number": 71,
+      "runtime": 15,
+      "season": 10
+    },
+    {
+      "airdate": "2017-06-24",
+      "id": 1178544,
+      "image": null,
+      "name": "Spot Returns",
+      "number": 1,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-06-24",
+      "id": 1178545,
+      "image": null,
+      "name": "The Checkup",
+      "number": 2,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-07-16",
+      "id": 1221298,
+      "image": null,
+      "name": "Spin The Bottle",
+      "number": 3,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "2017-07-16",
+      "id": 1221299,
+      "image": null,
+      "name": "Sportz?",
+      "number": 4,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-09-23",
+      "id": 1313888,
+      "image": null,
+      "name": "Cave Dwelling Sponge",
+      "number": 5,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-09-23",
+      "id": 1313889,
+      "image": null,
+      "name": "The Clam Whisperer",
+      "number": 6,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-09-30",
+      "id": 1313890,
+      "image": null,
+      "name": "Man Ray Returns",
+      "number": 7,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-09-30",
+      "id": 1313891,
+      "image": null,
+      "name": "Larry The Floor Manager",
+      "number": 8,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-07",
+      "id": 1321731,
+      "image": null,
+      "name": "Feral Friends",
+      "number": 9,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-07",
+      "id": 1321732,
+      "image": null,
+      "name": "Don't Wake Patrick",
+      "number": 10,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-13",
+      "id": 1321735,
+      "image": null,
+      "name": "The Legend Of Boo-kini Bottom",
+      "number": 11,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-21",
+      "id": 1321733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518651.jpg",
+      "name": "Krabby Patty Creature Feature",
+      "number": 12,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-21",
+      "id": 1321734,
+      "image": null,
+      "name": "Teacher's Pests",
+      "number": 13,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-06",
+      "id": 1341889,
+      "image": null,
+      "name": "No Pictures, Please",
+      "number": 14,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-06",
+      "id": 1341890,
+      "image": null,
+      "name": "Stuck on the Roof",
+      "number": 15,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1341891,
+      "image": null,
+      "name": "There's A Sponge In My Soup",
+      "number": 16,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1341892,
+      "image": null,
+      "name": "Cuddle E. Hugs",
+      "number": 17,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-09",
+      "id": 1341893,
+      "image": null,
+      "name": "Scavengerpants",
+      "number": 18,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-10",
+      "id": 1351576,
+      "image": null,
+      "name": "Squid Noir",
+      "number": 19,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-12-02",
+      "id": 1359653,
+      "image": null,
+      "name": "The Incredible Shrinking Sponge",
+      "number": 20,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2017-12-02",
+      "id": 1363202,
+      "image": null,
+      "name": "Pat the Horse",
+      "number": 21,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-12",
+      "id": 1383648,
+      "image": null,
+      "name": "Chatterbox Gary",
+      "number": 22,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-12",
+      "id": 1401303,
+      "image": null,
+      "name": "Don't Feed the Clowns",
+      "number": 23,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-13",
+      "id": 1383654,
+      "image": null,
+      "name": "Drive Happy",
+      "number": 24,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-14",
+      "id": 1383652,
+      "image": null,
+      "name": "Old Man Patrick",
+      "number": 25,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-15",
+      "id": 1383655,
+      "image": null,
+      "name": "Fun-Sized Friends",
+      "number": 26,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1383653,
+      "image": null,
+      "name": "Grandmum's the Word",
+      "number": 27,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-09",
+      "id": 1421950,
+      "image": null,
+      "name": "Doodle Dimension",
+      "number": 28,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-16",
+      "id": 1421951,
+      "image": null,
+      "name": "Moving Bubble Bass",
+      "number": 29,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-30",
+      "id": 1421952,
+      "image": null,
+      "name": "Bunny Hunt",
+      "number": 30,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-04-06",
+      "id": 1434677,
+      "image": null,
+      "name": "High Sea Diving",
+      "number": 31,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-04-13",
+      "id": 1434678,
+      "image": null,
+      "name": "Bottle Burglars",
+      "number": 32,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-05-07",
+      "id": 1434680,
+      "image": null,
+      "name": "Sanitation Insanity",
+      "number": 33,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1434679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518641.jpg",
+      "name": "My Leg!",
+      "number": 34,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-05-09",
+      "id": 1461610,
+      "image": null,
+      "name": "Ink Lemonade",
+      "number": 35,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-05-10",
+      "id": 1461611,
+      "image": null,
+      "name": "Mustard O' Mine",
+      "number": 36,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-08-06",
+      "id": 1508245,
+      "image": null,
+      "name": "Whale Watching",
+      "number": 37,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-08-07",
+      "id": 1508246,
+      "image": null,
+      "name": "Krusty Kleaners",
+      "number": 38,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-08-08",
+      "id": 1508247,
+      "image": null,
+      "name": "Patnocchio",
+      "number": 39,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-08-09",
+      "id": 1508248,
+      "image": null,
+      "name": "ChefBob",
+      "number": 40,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-09-24",
+      "id": 1526436,
+      "image": null,
+      "name": "Shopping List",
+      "number": 41,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-09-25",
+      "id": 1526437,
+      "image": null,
+      "name": "Library Cards",
+      "number": 42,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-09-26",
+      "id": 1526438,
+      "image": null,
+      "name": "Plankton Paranoia",
+      "number": 43,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-09-27",
+      "id": 1526439,
+      "image": null,
+      "name": "Call The Cops",
+      "number": 44,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-21",
+      "id": 1540284,
+      "image": null,
+      "name": "The Grill Is Gone",
+      "number": 45,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-21",
+      "id": 1537491,
+      "image": null,
+      "name": "The Night Patty",
+      "number": 46,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-28",
+      "id": 1540283,
+      "image": null,
+      "name": "Bubble Town",
+      "number": 47,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-10-28",
+      "id": 1540282,
+      "image": null,
+      "name": "Appointment TV",
+      "number": 48,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-04",
+      "id": 1549914,
+      "image": null,
+      "name": "Girls' Night Out",
+      "number": 49,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-04",
+      "id": 1540281,
+      "image": null,
+      "name": "Karen's Virus",
+      "number": 50,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-11",
+      "id": 1555230,
+      "image": null,
+      "name": "Surf N' Turf",
+      "number": 51,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-11",
+      "id": 1556061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518563.jpg",
+      "name": "FarmerBob",
+      "number": 52,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-18",
+      "id": 1566002,
+      "image": null,
+      "name": "The String",
+      "number": 53,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-18",
+      "id": 1556072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518617.jpg",
+      "name": "Squirrel Jelly",
+      "number": 54,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2018-11-25",
+      "id": 1570696,
+      "image": null,
+      "name": "Goons on the Moon",
+      "number": 55,
+      "runtime": 15,
+      "season": 11
+    },
+    {
+      "airdate": "2019-01-13",
+      "id": 1586349,
+      "image": null,
+      "name": "The Nitwitting",
+      "number": 1,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-20",
+      "id": 1586350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518644.jpg",
+      "name": "The Ballad Of Filthy Muck",
+      "number": 2,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-27",
+      "id": 1586351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/265/663329.jpg",
+      "name": "The Krusty Slammer",
+      "number": 3,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-06-22",
+      "id": 1662483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518609.jpg",
+      "name": "King Plankton",
+      "number": 4,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-06-22",
+      "id": 1662484,
+      "image": null,
+      "name": "Stormy Weather",
+      "number": 5,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-06-29",
+      "id": 1662485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/519761.jpg",
+      "name": "Sandy's Nutty Nieces",
+      "number": 6,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-06-29",
+      "id": 1662486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518615.jpg",
+      "name": "Insecurity Guards",
+      "number": 7,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-07-06",
+      "id": 1675672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/519760.jpg",
+      "name": "Broken Alarm",
+      "number": 8,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-07-06",
+      "id": 1675679,
+      "image": null,
+      "name": "Senior Discount",
+      "number": 9,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-07-27",
+      "id": 1675683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518562.jpg",
+      "name": "Gary's Got Legs",
+      "number": 10,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-07-27",
+      "id": 1675680,
+      "image": null,
+      "name": "Gary & Spot",
+      "number": 11,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-08-10",
+      "id": 1689702,
+      "image": null,
+      "name": "The Krusty Bucket",
+      "number": 12,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-08-10",
+      "id": 1689742,
+      "image": null,
+      "name": "Karen's Baby",
+      "number": 13,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-14",
+      "id": 1702490,
+      "image": null,
+      "name": "Mind the Gap",
+      "number": 14,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-14",
+      "id": 1702460,
+      "image": null,
+      "name": "Breakin'",
+      "number": 15,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-21",
+      "id": 1702461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/530649.jpg",
+      "name": "SpongeBob in RandomLand",
+      "number": 16,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-21",
+      "id": 1702462,
+      "image": null,
+      "name": "SpongeBob's Bad Habit",
+      "number": 17,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-28",
+      "id": 1702464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/265/663330.jpg",
+      "name": "The Goofy Newbie",
+      "number": 18,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-28",
+      "id": 1702463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/533025.jpg",
+      "name": "Squid's on a Bus",
+      "number": 19,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-10-12",
+      "id": 1726082,
+      "image": null,
+      "name": "The Ghost of Plankton",
+      "number": 20,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-10-12",
+      "id": 1726954,
+      "image": null,
+      "name": "A Cabin in the Kelp",
+      "number": 21,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-11-23",
+      "id": 1749802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568121.jpg",
+      "name": "Dirty Bubble Returns",
+      "number": 22,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-11-23",
+      "id": 1749803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568122.jpg",
+      "name": "Handemonium",
+      "number": 23,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-11-30",
+      "id": 1756722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/573326.jpg",
+      "name": "Plankton's Old Chum",
+      "number": 24,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2019-11-30",
+      "id": 1756723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/573327.jpg",
+      "name": "The Hankering",
+      "number": 25,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-01-18",
+      "id": 1782550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594968.jpg",
+      "name": "Escape from Beneath Glove World",
+      "number": 26,
+      "runtime": 30,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-08",
+      "id": 1793814,
+      "image": null,
+      "name": "Who R Zoo?",
+      "number": 27,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-02-08",
+      "id": 1793815,
+      "image": null,
+      "name": "Biddy Sitting",
+      "number": 28,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-03-07",
+      "id": 1808212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/612565.jpg",
+      "name": "Shell Games",
+      "number": 29,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-03-07",
+      "id": 1808211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/612566.jpg",
+      "name": "Jolly Lodgers",
+      "number": 30,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-04-11",
+      "id": 1822673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/628809.jpg",
+      "name": "Swamp Mates",
+      "number": 31,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-04-11",
+      "id": 1826789,
+      "image": null,
+      "name": "One Trick Sponge",
+      "number": 32,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-07-17",
+      "id": 1896291,
+      "image": null,
+      "name": "Boss for a Day",
+      "number": 33,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-07-17",
+      "id": 1896290,
+      "image": null,
+      "name": "Pineapple RV",
+      "number": 34,
+      "runtime": 15,
+      "season": 12
+    },
+    {
+      "airdate": "2020-10-22",
+      "id": 1940958,
+      "image": null,
+      "name": "A Place for Pets",
+      "number": 1,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2020-10-22",
+      "id": 1940959,
+      "image": null,
+      "name": "Lockdown for Love",
+      "number": 2,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2020-11-07",
+      "id": 2053587,
+      "image": null,
+      "name": "Krusty Koncessionaires",
+      "number": 3,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2020-11-07",
+      "id": 2053589,
+      "image": null,
+      "name": "Dream Hoppers",
+      "number": 4,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-01-18",
+      "id": 2117759,
+      "image": null,
+      "name": "My Two Krabses",
+      "number": 5,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-01-18",
+      "id": 2200726,
+      "image": null,
+      "name": "Lighthouse Louie",
+      "number": 6,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-09",
+      "id": 2200727,
+      "image": null,
+      "name": "Bubble Bass's Tab",
+      "number": 7,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-09",
+      "id": 2268475,
+      "image": null,
+      "name": "Kooky Cooks",
+      "number": 8,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-16",
+      "id": 2268474,
+      "image": null,
+      "name": "Under the Small Top",
+      "number": 9,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-16",
+      "id": 2310001,
+      "image": null,
+      "name": "Squidward's Sick Daze",
+      "number": 10,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-23",
+      "id": 2309989,
+      "image": null,
+      "name": "Knock Knock, Who's There?",
+      "number": 11,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-04-30",
+      "id": 2310003,
+      "image": null,
+      "name": "Plankton's Intern",
+      "number": 12,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-07-09",
+      "id": 2310002,
+      "image": null,
+      "name": "Pat Hearts Squid",
+      "number": 13,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-07-09",
+      "id": 2315482,
+      "image": null,
+      "name": "Pat the Dog",
+      "number": 14,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-19",
+      "id": 2315483,
+      "image": null,
+      "name": "Something Narwhal This Way Comes",
+      "number": 15,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-11-19",
+      "id": 2315484,
+      "image": null,
+      "name": "C.H.U.M.S",
+      "number": 16,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2021-12-10",
+      "id": 2315485,
+      "image": null,
+      "name": "SpongeBob's Road to Christmas",
+      "number": 17,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-02-25",
+      "id": 2318195,
+      "image": null,
+      "name": "Patrick's Tantrum",
+      "number": 18,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-02-25",
+      "id": 2318194,
+      "image": null,
+      "name": "Goofy Scoopers",
+      "number": 19,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-04-22",
+      "id": 2331272,
+      "image": null,
+      "name": "Hiccup Plague",
+      "number": 20,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-04-22",
+      "id": 2352959,
+      "image": null,
+      "name": "Potato Puff",
+      "number": 21,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-04-29",
+      "id": 2408945,
+      "image": null,
+      "name": "Kwarantined Krab",
+      "number": 22,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-04-29",
+      "id": 2408946,
+      "image": null,
+      "name": "There Will Be Grease",
+      "number": 23,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-06",
+      "id": 2412313,
+      "image": null,
+      "name": "The Big Bad Bubble Bass",
+      "number": 24,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-06",
+      "id": 2419840,
+      "image": null,
+      "name": "Sea-Man Sponge Haters Club",
+      "number": 25,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-13",
+      "id": 2419842,
+      "image": null,
+      "name": "Food PBFFT! Truck",
+      "number": 26,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-13",
+      "id": 2041880,
+      "image": null,
+      "name": "Upturn Girls",
+      "number": 27,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-20",
+      "id": 2458988,
+      "image": null,
+      "name": "Say Awww!",
+      "number": 28,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-05-20",
+      "id": 2458989,
+      "image": null,
+      "name": "Patrick the Mailman",
+      "number": 29,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-07-22",
+      "id": 2458990,
+      "image": null,
+      "name": "Captain Pipsqueak",
+      "number": 30,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-07-22",
+      "id": 2458991,
+      "image": null,
+      "name": "Plane to Sea",
+      "number": 31,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-10-14",
+      "id": 2458992,
+      "image": null,
+      "name": "Squidferatu",
+      "number": 32,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2022-10-14",
+      "id": 2458998,
+      "image": null,
+      "name": "Slappy Daze",
+      "number": 33,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-01-20",
+      "id": 2472604,
+      "image": null,
+      "name": "Abandon Twits",
+      "number": 34,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-01-20",
+      "id": 2472605,
+      "image": null,
+      "name": "Wallhalla",
+      "number": 35,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-01-27",
+      "id": 2473447,
+      "image": null,
+      "name": "The Salty Sponge",
+      "number": 36,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-02-03",
+      "id": 2476493,
+      "image": null,
+      "name": "Karen for Spot",
+      "number": 37,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-03-10",
+      "id": 2496975,
+      "image": null,
+      "name": "Ma and Pa's Big Hurrah",
+      "number": 38,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-03-17",
+      "id": 2496976,
+      "image": null,
+      "name": "Yellow Pavement",
+      "number": 39,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-03-24",
+      "id": 2496977,
+      "image": null,
+      "name": "The Flower Plot",
+      "number": 40,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-03-31",
+      "id": 2499997,
+      "image": null,
+      "name": "SpongeBob's on Parade",
+      "number": 41,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-04-07",
+      "id": 2503198,
+      "image": null,
+      "name": "Delivery to Monster Island",
+      "number": 42,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-19",
+      "id": 2567349,
+      "image": null,
+      "name": "Ride Patrick Ride",
+      "number": 43,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-20",
+      "id": 2567350,
+      "image": null,
+      "name": "Hot Crossed Nuts",
+      "number": 44,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-21",
+      "id": 2567351,
+      "image": null,
+      "name": "Sir Urchin and Snail Fail",
+      "number": 45,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-22",
+      "id": 2567352,
+      "image": null,
+      "name": "Friendiversary",
+      "number": 46,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-26",
+      "id": 2567353,
+      "image": null,
+      "name": "Mandatory Music",
+      "number": 47,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-27",
+      "id": 2567354,
+      "image": null,
+      "name": "Arbor Day Disarray",
+      "number": 48,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-28",
+      "id": 2567355,
+      "image": null,
+      "name": "Ain't That the Tooth",
+      "number": 49,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-06-29",
+      "id": 2567356,
+      "image": null,
+      "name": "Dopey Dick",
+      "number": 50,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-07-17",
+      "id": 2572451,
+      "image": null,
+      "name": "Plankton and the Beanstalk",
+      "number": 51,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-07-18",
+      "id": 2572452,
+      "image": null,
+      "name": "My Friend Patty",
+      "number": 52,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-07-19",
+      "id": 2572453,
+      "image": null,
+      "name": "FUN-Believable",
+      "number": 53,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-07-20",
+      "id": 2572454,
+      "image": null,
+      "name": "Spatula of the Heavens",
+      "number": 54,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-08-07",
+      "id": 2598897,
+      "image": null,
+      "name": "Gary's Playhouse",
+      "number": 55,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-08-08",
+      "id": 2598898,
+      "image": null,
+      "name": "Swimming Fools",
+      "number": 56,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-08-09",
+      "id": 2598899,
+      "image": null,
+      "name": "The Goobfather",
+      "number": 57,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-08-10",
+      "id": 2598900,
+      "image": null,
+      "name": "SquidBird",
+      "number": 58,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-10-30",
+      "id": 2659695,
+      "image": null,
+      "name": "Allergy Attack",
+      "number": 59,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-10-31",
+      "id": 2659694,
+      "image": null,
+      "name": "Big Top Flop",
+      "number": 60,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-11-01",
+      "id": 2667457,
+      "image": null,
+      "name": "Sandy, Help Us!",
+      "number": 61,
+      "runtime": 15,
+      "season": 13
+    },
+    {
+      "airdate": "2023-11-02",
+      "id": 2669423,
+      "image": null,
+      "name": "Single-Celled Defense",
+      "number": 1,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2023-11-20",
+      "id": 2676056,
+      "image": null,
+      "name": "Buff for Puff",
+      "number": 2,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2023-11-21",
+      "id": 2680842,
+      "image": null,
+      "name": "We Heart Hoops",
+      "number": 3,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2023-11-22",
+      "id": 2680843,
+      "image": null,
+      "name": "SpongeChovy",
+      "number": 4,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2023-11-23",
+      "id": 2680844,
+      "image": null,
+      "name": "BassWard",
+      "number": 5,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-12",
+      "id": 2761245,
+      "image": null,
+      "name": "Squidiot Box",
+      "number": 6,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-12",
+      "id": 2879937,
+      "image": null,
+      "name": "Blood Is Thicker Than Grease",
+      "number": 7,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-12",
+      "id": 2768731,
+      "image": null,
+      "name": "Don't Make Me Laugh",
+      "number": 8,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-14",
+      "id": 2761663,
+      "image": null,
+      "name": "Momageddon",
+      "number": 9,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-14",
+      "id": 2768232,
+      "image": null,
+      "name": "Pet the Rock",
+      "number": 10,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-20",
+      "id": 2767798,
+      "image": null,
+      "name": "Tango Tangle",
+      "number": 11,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-02-26",
+      "id": 2770118,
+      "image": null,
+      "name": "Necro-Nom-Nom-Nom-I-Con",
+      "number": 12,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-15",
+      "id": 2943552,
+      "image": null,
+      "name": "PL-1413",
+      "number": 13,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-16",
+      "id": 2932179,
+      "image": null,
+      "name": "In the Mood to Feud",
+      "number": 14,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-17",
+      "id": 2937596,
+      "image": null,
+      "name": "Mooned!",
+      "number": 15,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-18",
+      "id": 2937600,
+      "image": null,
+      "name": "Hysterical History",
+      "number": 16,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-22",
+      "id": 2937958,
+      "image": null,
+      "name": "The Dirty Bubble Bass",
+      "number": 17,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-23",
+      "id": 2937961,
+      "image": null,
+      "name": "Sheldon SquarePants",
+      "number": 18,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-24",
+      "id": 2937990,
+      "image": null,
+      "name": "Sammy Suckerfish",
+      "number": 19,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-07-25",
+      "id": 2937991,
+      "image": null,
+      "name": "Big League Bob",
+      "number": 20,
+      "runtime": 15,
+      "season": 14
+    },
+    {
+      "airdate": "2024-10-10",
+      "id": 3008011,
+      "image": null,
+      "name": "Kreepaway Kamp",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2024-11-11",
+      "id": 3041355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1359140.jpg",
+      "name": "Snow Yellow",
+      "number": 2,
+      "runtime": 30,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-02",
+      "id": 3063859,
+      "image": null,
+      "name": "Sandy's Country Christmas",
+      "number": 3,
+      "runtime": 30,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-03",
+      "id": 3064488,
+      "image": null,
+      "name": "UpWard",
+      "number": 4,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-05",
+      "id": 3066683,
+      "image": null,
+      "name": "Unidentified Flailing Octopus",
+      "number": 5,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-09",
+      "id": 3069050,
+      "image": null,
+      "name": "Bad Luck Bob",
+      "number": 6,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-11",
+      "id": 3074810,
+      "image": null,
+      "name": "The Sandman Cometh",
+      "number": 7,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-13",
+      "id": 3074811,
+      "image": null,
+      "name": "Biscuit Ballyhoo",
+      "number": 8,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-17",
+      "id": 3076263,
+      "image": null,
+      "name": "Student Driver Survivor",
+      "number": 9,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-19",
+      "id": 3080820,
+      "image": null,
+      "name": "Wiener Takes All",
+      "number": 10,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2024-12-24",
+      "id": 3088546,
+      "image": null,
+      "name": "Stuck in an Elevator",
+      "number": 11,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-14",
+      "id": 3138011,
+      "image": null,
+      "name": "Squidness Protection",
+      "number": 12,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-14",
+      "id": 3138012,
+      "image": null,
+      "name": "Dome Alone",
+      "number": 13,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-21",
+      "id": 3145332,
+      "image": null,
+      "name": "Wary Gary",
+      "number": 14,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-21",
+      "id": 3147862,
+      "image": null,
+      "name": "Pinned",
+      "number": 15,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-28",
+      "id": 3151589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/587/1468122.jpg",
+      "name": "Jeffy T's Prankwell Emporium",
+      "number": 16,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-02-28",
+      "id": 3151590,
+      "image": null,
+      "name": "A Taste of Plankton",
+      "number": 17,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-03-07",
+      "id": 3157486,
+      "image": null,
+      "name": "Smartificial Intelligence",
+      "number": 18,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-03-07",
+      "id": 3157487,
+      "image": null,
+      "name": "Firehouse Bob",
+      "number": 19,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-03-14",
+      "id": 3164377,
+      "image": null,
+      "name": "Pablum Plankton",
+      "number": 20,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-03-14",
+      "id": 3164380,
+      "image": null,
+      "name": "MuseBob ModelPants",
+      "number": 21,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-06",
+      "id": 3170772,
+      "image": null,
+      "name": "Delivery of DOOM!",
+      "number": 22,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-06",
+      "id": 3170773,
+      "image": null,
+      "name": "My Father, the Boat",
+      "number": 23,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-13",
+      "id": 3261692,
+      "image": null,
+      "name": "Who's Afraid of Mr. Snippers?",
+      "number": 24,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-13",
+      "id": 3261693,
+      "image": null,
+      "name": "A Fish Called Sandy",
+      "number": 25,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-20",
+      "id": 3272548,
+      "image": null,
+      "name": "Making Waves",
+      "number": 26,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-06-20",
+      "id": 3272549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438049.jpg",
+      "name": "Captain Quasar: The Next Iteration",
+      "number": 27,
+      "runtime": 15,
+      "season": 15
+    },
+    {
+      "airdate": "2025-09-12",
+      "id": 3347157,
+      "image": null,
+      "name": "Bizarro Bottom",
+      "number": 1,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-09-12",
+      "id": 3347158,
+      "image": null,
+      "name": "Squidward's Tough Break",
+      "number": 2,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-09-19",
+      "id": 3353077,
+      "image": null,
+      "name": "Curse of the WereDoodle",
+      "number": 3,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-09-19",
+      "id": 3353078,
+      "image": null,
+      "name": "Gorilla Suit Day",
+      "number": 4,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-09-26",
+      "id": 3360609,
+      "image": null,
+      "name": "Exchange Student Driver",
+      "number": 5,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-09-26",
+      "id": 3360610,
+      "image": null,
+      "name": "The Kreepy Krab",
+      "number": 6,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-03",
+      "id": 3368426,
+      "image": null,
+      "name": "The Haunted Bucket",
+      "number": 7,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-03",
+      "id": 3368427,
+      "image": null,
+      "name": "Go Fetch",
+      "number": 8,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-10",
+      "id": 3375201,
+      "image": null,
+      "name": "Laundro-Madness",
+      "number": 9,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-17",
+      "id": 3375202,
+      "image": null,
+      "name": "Hog Huntin'",
+      "number": 10,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-24",
+      "id": 3386984,
+      "image": null,
+      "name": "SpongeBob TrashPants",
+      "number": 11,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-10-24",
+      "id": 3386987,
+      "image": null,
+      "name": "Krusty Kafeteria",
+      "number": 12,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-11-07",
+      "id": 3416338,
+      "image": null,
+      "name": "Heart of Garbage",
+      "number": 13,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-11-07",
+      "id": 3416339,
+      "image": null,
+      "name": "Near-Mint Plankton",
+      "number": 14,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-11-14",
+      "id": 3416341,
+      "image": null,
+      "name": "Pardon My Wand",
+      "number": 15,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-11-14",
+      "id": 3416342,
+      "image": null,
+      "name": "Stupor-stition",
+      "number": 16,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2025-11-28",
+      "id": 3416343,
+      "image": null,
+      "name": "Pigskin Pearl",
+      "number": 17,
+      "runtime": 30,
+      "season": 16
+    },
+    {
+      "airdate": "2026-05-15",
+      "id": 3416344,
+      "image": null,
+      "name": "The Green Tentacle",
+      "number": 18,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2026-05-22",
+      "id": 3416345,
+      "image": null,
+      "name": "Happy Krabby Birthday",
+      "number": 19,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2026-05-29",
+      "id": 3416346,
+      "image": null,
+      "name": "Karate Pals",
+      "number": 20,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2026-06-05",
+      "id": 3416349,
+      "image": null,
+      "name": "Karen's Klatch",
+      "number": 21,
+      "runtime": 15,
+      "season": 16
+    },
+    {
+      "airdate": "2026-06-12",
+      "id": 3623367,
+      "image": null,
+      "name": "Kiss of the Nematode",
+      "number": 1,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-06-12",
+      "id": 3623368,
+      "image": null,
+      "name": "Brainless Brawn",
+      "number": 2,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-06-19",
+      "id": 3623369,
+      "image": null,
+      "name": "Home Away from Home",
+      "number": 3,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-06-19",
+      "id": 3623370,
+      "image": null,
+      "name": "SpongeBob SpareParts",
+      "number": 4,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-06-26",
+      "id": 3623371,
+      "image": null,
+      "name": "Lady in the Lighthouse",
+      "number": 5,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-06-26",
+      "id": 3623372,
+      "image": null,
+      "name": "Bitter Groans and Gardens",
+      "number": 6,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-10",
+      "id": 3659836,
+      "image": null,
+      "name": "Plankton's Squeeze Play",
+      "number": 7,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-10",
+      "id": 3659837,
+      "image": null,
+      "name": "How the West Was Dumb",
+      "number": 8,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-17",
+      "id": 3659838,
+      "image": null,
+      "name": "The Nerds",
+      "number": 9,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-17",
+      "id": 3665891,
+      "image": null,
+      "name": "The SquarePants Method",
+      "number": 10,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-24",
+      "id": 3672429,
+      "image": null,
+      "name": "The Fry Cook and the Elves",
+      "number": 11,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-24",
+      "id": 3672430,
+      "image": null,
+      "name": "It's About Mime",
+      "number": 12,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-31",
+      "id": 3680478,
+      "image": null,
+      "name": "My Tighty Whiteys",
+      "number": 13,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-07-31",
+      "id": 3680479,
+      "image": null,
+      "name": "What Ever Happened to Baby Prunes?",
+      "number": 14,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-07",
+      "id": 3686143,
+      "image": null,
+      "name": "Night School Knuckleheads",
+      "number": 15,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-07",
+      "id": 3686144,
+      "image": null,
+      "name": "Painfully Employed",
+      "number": 16,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-21",
+      "id": 3689314,
+      "image": null,
+      "name": "Duct Tape Dystopia",
+      "number": 17,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-21",
+      "id": 3689315,
+      "image": null,
+      "name": "Farmers Market Feud",
+      "number": 18,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-28",
+      "id": 3689317,
+      "image": null,
+      "name": "Rock Bottom Games",
+      "number": 19,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-08-28",
+      "id": 3689316,
+      "image": null,
+      "name": "Clicking with a Clique",
+      "number": 20,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-06",
+      "id": 3800058,
+      "image": null,
+      "name": "Backyard Bickering",
+      "number": 21,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-06",
+      "id": 3800059,
+      "image": null,
+      "name": "A Hair Grows on Patrick",
+      "number": 22,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-13",
+      "id": 3800069,
+      "image": null,
+      "name": "Yoga Yahoos",
+      "number": 23,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-13",
+      "id": 3800070,
+      "image": null,
+      "name": "Sounds Like Trouble",
+      "number": 24,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-20",
+      "id": 3800071,
+      "image": null,
+      "name": "Upturn's Bunch",
+      "number": 25,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-20",
+      "id": 3800072,
+      "image": null,
+      "name": "Free with Every Meal",
+      "number": 26,
+      "runtime": 15,
+      "season": 17
+    },
+    {
+      "airdate": "2026-11-27",
+      "id": 3795762,
+      "image": null,
+      "name": "Merry Christmas Mr. Plankton",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
-    "Abenteuer",
+    "Comedy",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-713",
+  "live": true,
+  "overview": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick! Though they have the best intentions, SpongeBob and Patrick are always causing trouble… and plenty of laughs!When he's not at the Krusty Krab grilling up some epic Krabby Patties, SpongeBob can be found jellyfishing with Patrick, blowing bubbles, or annoying his favorite neighbor, Squidward!Bikini Bottom is home to the coolest creatures under the sea, and you CAN'T miss out on any of their adventures. Is mayonnaise an instrument? Watch SpongeBob SquarePants to find out!Are you ready, kids? AYE AYE CAPTAIN!",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486607.jpg",
   "rating": 8,
-  "runtime": 15,
-  "episodes": []
+  "runtime": 14,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "713",
+  "title": "SpongeBob SquarePants",
+  "type": "series",
+  "year": 1999
 }

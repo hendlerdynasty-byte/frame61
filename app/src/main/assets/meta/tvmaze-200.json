@@ -1,21 +1,220 @@
 {
-  "schema": 1,
-  "id": "tvmaze-200",
-  "source": "tvmaze",
-  "sourceId": "200",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Tomorrow People",
-  "year": 2013,
-  "type": "series",
-  "overview": "They are the next evolutionary leap of mankind, a generation of humans born with paranormal abilities - The Tomorrow People. Stephen Jameson stands at the crossroads between the world we know and the shifting world of the future. Up until a year ago, Stephen was a \"normal\" teenager - until he began hearing voices and teleporting in his sleep, never knowing where he might wake up. Now, Stephen's issues have gone far beyond the usual teenage angst, and he is beginning to question his sanity. In desperation, Stephen decides to listen to one of the voices in his head, and it leads him to his first encounter with the Tomorrow People - John, Cara and Russell - a genetically advanced race with the abilities of telekinesis, teleportation and telepathic communication. The Tomorrow People are being hunted down by a paramilitary group of scientists known as Ultra. Led by Dr. Jedikiah Price, Ultra sees the Tomorrow People as a very real existential threat from a rival species, and the outcast group has been forced to hide out in an abandoned subway station just beneath the surface of the human world. Trading in secrets, Jedikiah offers Stephen the chance for a normal life with his family and best friend, Astrid, if he will help in the struggle to isolate and eradicate the Tomorrow People. On the other hand, Cara, John and Russell offer Stephen a different type of family and a home where he truly belongs. Unwilling to turn his back on humanity or the world of the Tomorrow People, Stephen sets out on his own path - a journey that could take him into the shadowy past to uncover the truth about his father's mysterious disappearance, or into an unknown future with The Tomorrow People.",
-  "poster": "file:///android_asset/posters/tvmaze-200.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-10-09",
+      "id": 13337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278454.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 13338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278459.jpg",
+      "name": "In Too Deep",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-23",
+      "id": 13339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278512.jpg",
+      "name": "Girl, Interrupted",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-30",
+      "id": 13340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280166.jpg",
+      "name": "Kill or Be Killed",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 13341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280203.jpg",
+      "name": "All Tomorrow's Parties",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 13342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280235.jpg",
+      "name": "Sorry For Your Loss",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 13343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280249.jpg",
+      "name": "Limbo",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-04",
+      "id": 13344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280610.jpg",
+      "name": "Thanatos",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-11",
+      "id": 13345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280618.jpg",
+      "name": "Death's Door",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-15",
+      "id": 13346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280633.jpg",
+      "name": "The Citadel",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 13347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280658.jpg",
+      "name": "Rumble",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 13348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280671.jpg",
+      "name": "Sitting Ducks",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-05",
+      "id": 13349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280923.jpg",
+      "name": "Things Fall Apart",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 13350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280942.jpg",
+      "name": "Brother's Keeper",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 13351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280967.jpg",
+      "name": "Enemy of My Enemy",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 13352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280988.jpg",
+      "name": "Superhero",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 13353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281327.jpg",
+      "name": "Endgame",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-31",
+      "id": 13354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281344.jpg",
+      "name": "Smoke and Mirrors",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-14",
+      "id": 13355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/282907.jpg",
+      "name": "Modus Vivendi",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-21",
+      "id": 13356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/282933.jpg",
+      "name": "A Sort of Homecoming",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-28",
+      "id": 13357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/282944.jpg",
+      "name": "Kill Switch",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-05",
+      "id": 13358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/282953.jpg",
+      "name": "Son of Man",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
     "Science-Fiction"
   ],
+  "id": "tvmaze-200",
+  "live": true,
+  "overview": "They are the next evolutionary leap of mankind, a generation of humans born with paranormal abilities - The Tomorrow People. Stephen Jameson stands at the crossroads between the world we know and the shifting world of the future. Up until a year ago, Stephen was a \"normal\" teenager - until he began hearing voices and teleporting in his sleep, never knowing where he might wake up. Now, Stephen's issues have gone far beyond the usual teenage angst, and he is beginning to question his sanity. In desperation, Stephen decides to listen to one of the voices in his head, and it leads him to his first encounter with the Tomorrow People - John, Cara and Russell - a genetically advanced race with the abilities of telekinesis, teleportation and telepathic communication. The Tomorrow People are being hunted down by a paramilitary group of scientists known as Ultra. Led by Dr. Jedikiah Price, Ultra sees the Tomorrow People as a very real existential threat from a rival species, and the outcast group has been forced to hide out in an abandoned subway station just beneath the surface of the human world. Trading in secrets, Jedikiah offers Stephen the chance for a normal life with his family and best friend, Astrid, if he will help in the struggle to isolate and eradicate the Tomorrow People. On the other hand, Cara, John and Russell offer Stephen a different type of family and a home where he truly belongs. Unwilling to turn his back on humanity or the world of the Tomorrow People, Stephen sets out on his own path - a journey that could take him into the shadowy past to uncover the truth about his father's mysterious disappearance, or into an unknown future with The Tomorrow People.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/55/138044.jpg",
   "rating": 7.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "200",
+  "title": "The Tomorrow People",
+  "type": "series",
+  "year": 2013
 }

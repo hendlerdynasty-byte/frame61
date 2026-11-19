@@ -1,21 +1,346 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3371",
-  "source": "tvmaze",
-  "sourceId": "3371",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Unforgotten",
-  "year": 2015,
-  "type": "series",
-  "overview": "Unforgotten focuses on ‘cold' murder cases. Each series deals with a new case, introducing seemingly unconnected characters who are gradually revealed to have some relationship with the victim. As the murder mystery unfolds, the emotional ramifications of the crime on the lives of those affected are also explored.",
-  "poster": "file:///android_asset/posters/tvmaze-3371.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-10-08",
+      "id": 299174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61457.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-15",
+      "id": 367982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61581.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-22",
+      "id": 367984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67060.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-29",
+      "id": 368069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67056.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-05",
+      "id": 368070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231218.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-12",
+      "id": 368071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231219.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2017-01-05",
+      "id": 1009615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231224.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-12",
+      "id": 1014739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233966.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-19",
+      "id": 1027057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403106.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1036063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403116.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-02",
+      "id": 1036065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410687.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-09",
+      "id": 1036067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403127.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-07-15",
+      "id": 1491156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403035.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-22",
+      "id": 1494764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405322.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-29",
+      "id": 1495367,
+      "image": null,
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-05",
+      "id": 1495368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408259.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-12",
+      "id": 1495369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409823.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 65,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-19",
+      "id": 1495370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/412041.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2021-02-22",
+      "id": 2026949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/746203.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2021-03-01",
+      "id": 2033465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/746202.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2021-03-09",
+      "id": 2037712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/299/748438.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2021-03-15",
+      "id": 2041330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/299/749993.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2021-03-22",
+      "id": 2042936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751600.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2021-03-29",
+      "id": 2042937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/301/753543.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2491181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124229.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2497215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124593.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2497310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124838.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2497866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124676.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2497867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124766.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2497868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124816.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 47,
+      "season": 5
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388261.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 46,
+      "season": 6
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388262.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 47,
+      "season": 6
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388263.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 46,
+      "season": 6
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388264.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 46,
+      "season": 6
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388265.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 47,
+      "season": 6
+    },
+    {
+      "airdate": "2025-02-09",
+      "id": 3117586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388266.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 49,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-3371",
+  "live": true,
+  "overview": "Unforgotten focuses on ‘cold' murder cases. Each series deals with a new case, introducing seemingly unconnected characters who are gradually revealed to have some relationship with the victim. As the murder mystery unfolds, the emotional ramifications of the crime on the lives of those affected are also explored.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/555/1388259.jpg",
   "rating": 8,
-  "runtime": null,
-  "episodes": []
+  "runtime": 54,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3371",
+  "title": "Unforgotten",
+  "type": "series",
+  "year": 2015
 }

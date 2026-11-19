@@ -1,21 +1,706 @@
 {
-  "schema": 1,
-  "id": "tvmaze-781",
-  "source": "tvmaze",
-  "sourceId": "781",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Friday Night Lights",
-  "year": 2006,
-  "type": "series",
-  "overview": "In the town of Dillon, Texas, football is life, and no one knows that better than new head Coach Eric Taylor. Pressure mounts as the Dillon Panthers led by star quarterback Jason Street, enter pre-season surrounded by a swirl of press, recruiters and State Championship sized expectations. Backup quarterback Matt Saracen prepares to ride the bench in the shadow of Jason Street, as running back Tim Riggins struggles with a serious vice. As the season opener grows near, the town of Dillon is focused on what they believe to be most important, winning.",
-  "poster": "file:///android_asset/posters/tvmaze-781.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-10-03",
+      "id": 69076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402312.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 69077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402311.jpg",
+      "name": "Eyes Wide Open",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 69078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402328.jpg",
+      "name": "Wind Sprints",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 69079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402329.jpg",
+      "name": "Who's Your Daddy",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-30",
+      "id": 69080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402331.jpg",
+      "name": "Git 'Er Done",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-07",
+      "id": 69081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402332.jpg",
+      "name": "El Accidente",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-14",
+      "id": 69082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402333.jpg",
+      "name": "Homecoming",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 69083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402334.jpg",
+      "name": "Crossing the Line",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-05",
+      "id": 69084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402335.jpg",
+      "name": "Full Hearts",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-12",
+      "id": 69085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402336.jpg",
+      "name": "It's Different for Girls",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-03",
+      "id": 69086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402337.jpg",
+      "name": "Nevermind",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-10",
+      "id": 69087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402338.jpg",
+      "name": "What to Do While You're Waiting",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-24",
+      "id": 69088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402339.jpg",
+      "name": "Little Girl I Wanna Marry You",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-31",
+      "id": 69089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402340.jpg",
+      "name": "Upping the Ante",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-07",
+      "id": 69090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402341.jpg",
+      "name": "Blinders",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-14",
+      "id": 69091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402342.jpg",
+      "name": "Black Eyes and Broken Hearts",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-21",
+      "id": 69092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402343.jpg",
+      "name": "I Think We Should Have Sex",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-28",
+      "id": 69093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402344.jpg",
+      "name": "Extended Families",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-21",
+      "id": 69094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402345.jpg",
+      "name": "Ch-Ch-Ch-Ch-Changes",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-28",
+      "id": 69095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402347.jpg",
+      "name": "Mud Bowl",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-04",
+      "id": 69096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402348.jpg",
+      "name": "Best Laid Plans",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-11",
+      "id": 69097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/402349.jpg",
+      "name": "State",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-05",
+      "id": 69098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94065.jpg",
+      "name": "Last Days of Summer",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-12",
+      "id": 69099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94066.jpg",
+      "name": "Bad Ideas",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 69100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94067.jpg",
+      "name": "Are You Ready for Friday Night?",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 69101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94068.jpg",
+      "name": "Backfire",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 69102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94069.jpg",
+      "name": "Let's Get It On",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 69103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94070.jpg",
+      "name": "How Did I Get Here?",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 69104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94071.jpg",
+      "name": "Pantherama!",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 69105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94072.jpg",
+      "name": "Seeing Other People",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-12-07",
+      "id": 69106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94073.jpg",
+      "name": "The Confession",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-04",
+      "id": 69107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94074.jpg",
+      "name": "There Goes the Neighborhood",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-11",
+      "id": 69108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94075.jpg",
+      "name": "Jumping the Gun",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-18",
+      "id": 69109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94076.jpg",
+      "name": "Who Do You Think You Are?",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-25",
+      "id": 69110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94077.jpg",
+      "name": "Humble Pie",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-01",
+      "id": 69111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94078.jpg",
+      "name": "Leave No One Behind",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-08",
+      "id": 69112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94079.jpg",
+      "name": "May the Best Man Win",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-01",
+      "id": 69113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94080.jpg",
+      "name": "I Knew You When",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-08",
+      "id": 69114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94081.jpg",
+      "name": "Tami Knows Best",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-15",
+      "id": 69115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94082.jpg",
+      "name": "How the Other Half Lives",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-22",
+      "id": 69116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94083.jpg",
+      "name": "Hello, Goodbye",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-29",
+      "id": 69117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94084.jpg",
+      "name": "Every Rose Has Its Thorn",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-05",
+      "id": 69118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94085.jpg",
+      "name": "It Ain't Easy Being J.D. McCoy",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-12",
+      "id": 69119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94086.jpg",
+      "name": "Keeping Up Appearances",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-19",
+      "id": 69120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94087.jpg",
+      "name": "New York, New York",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-03",
+      "id": 69121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94088.jpg",
+      "name": "Game of the Week",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-10",
+      "id": 69122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94089.jpg",
+      "name": "The Giving Tree",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-17",
+      "id": 69123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94090.jpg",
+      "name": "A Hard Rain's Gonna Fall",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-01-07",
+      "id": 69124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94091.jpg",
+      "name": "Underdogs",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-01-14",
+      "id": 69125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94092.jpg",
+      "name": "Tomorrow Blues",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-28",
+      "id": 69126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94479.jpg",
+      "name": "East of Dillon",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-04",
+      "id": 69127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94480.jpg",
+      "name": "After the Fall",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-11",
+      "id": 69128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94481.jpg",
+      "name": "In the Skin of a Lion",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-18",
+      "id": 69129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94482.jpg",
+      "name": "A Sort of Homecoming",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-12-02",
+      "id": 69130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94483.jpg",
+      "name": "The Son",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-12-09",
+      "id": 69131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94484.jpg",
+      "name": "Stay",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-12-16",
+      "id": 69132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94485.jpg",
+      "name": "In the Bag",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-06",
+      "id": 69133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94486.jpg",
+      "name": "The Toilet Bowl",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-13",
+      "id": 69134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94487.jpg",
+      "name": "The Lights of Carrol Park",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-20",
+      "id": 69135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94488.jpg",
+      "name": "I Can't",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-27",
+      "id": 69136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94489.jpg",
+      "name": "Injury List",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-03",
+      "id": 69137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94491.jpg",
+      "name": "Laboring",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-10",
+      "id": 69138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94492.jpg",
+      "name": "Thanksgiving",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-27",
+      "id": 69139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92934.jpg",
+      "name": "Expectations",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-11-03",
+      "id": 69140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92933.jpg",
+      "name": "On the Outside Looking In",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-11-10",
+      "id": 69141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92932.jpg",
+      "name": "The Right Hand of the Father",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-11-17",
+      "id": 69142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92931.jpg",
+      "name": "Keep Looking",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-12-01",
+      "id": 69143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92930.jpg",
+      "name": "Kingdom",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-12-08",
+      "id": 69144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92929.jpg",
+      "name": "Swerve",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-12-15",
+      "id": 69145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92928.jpg",
+      "name": "Perfect Record",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-01-05",
+      "id": 69146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92927.jpg",
+      "name": "Fracture",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-01-12",
+      "id": 69147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92926.jpg",
+      "name": "Gut Check",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-01-19",
+      "id": 69148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92925.jpg",
+      "name": "Don't Go",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-01-26",
+      "id": 69149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92924.jpg",
+      "name": "The March",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-02",
+      "id": 69150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92923.jpg",
+      "name": "Texas Whatever (aka Small Town)",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-02-09",
+      "id": 69151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/92922.jpg",
+      "name": "Always",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Sport"
+    "Sports"
   ],
+  "id": "tvmaze-781",
+  "live": true,
+  "overview": "In the town of Dillon, Texas, football is life, and no one knows that better than new head Coach Eric Taylor. Pressure mounts as the Dillon Panthers led by star quarterback Jason Street, enter pre-season surrounded by a swirl of press, recruiters and State Championship sized expectations. Backup quarterback Matt Saracen prepares to ride the bench in the shadow of Jason Street, as running back Tim Riggins struggles with a serious vice. As the season opener grows near, the town of Dillon is focused on what they believe to be most important, winning.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15436.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "781",
+  "title": "Friday Night Lights",
+  "type": "series",
+  "year": 2006
 }

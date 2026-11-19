@@ -1,22 +1,941 @@
 {
-  "schema": 1,
-  "id": "tvmaze-160",
-  "source": "tvmaze",
-  "sourceId": "160",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Weeds",
-  "year": 2005,
-  "type": "series",
-  "overview": "Weeds is based around an american widow (Nancy Botwin) with 2 children who begins selling cannabis for financial gain after the death of her husband. Her family become involved in more and more illegal activities as the show progresses.",
-  "poster": "file:///android_asset/posters/tvmaze-160.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-08-07",
+      "id": 11494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353264.jpg",
+      "name": "You Can't Miss the Bear",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-08-15",
+      "id": 11495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353276.jpg",
+      "name": "Free Goat",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-08-22",
+      "id": 11496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353284.jpg",
+      "name": "Good Shit Lollipop",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-08-29",
+      "id": 11497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353288.jpg",
+      "name": "Fashion of the Christ",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-05",
+      "id": 11498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353331.jpg",
+      "name": "Lude Awakening",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-12",
+      "id": 11499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353333.jpg",
+      "name": "Dead in the Nethers",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-19",
+      "id": 11500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353658.jpg",
+      "name": "Higher Education",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-26",
+      "id": 11501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353661.jpg",
+      "name": "The Punishment Light",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-03",
+      "id": 11502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353669.jpg",
+      "name": "The Punishment Lighter",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-10",
+      "id": 11503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353675.jpg",
+      "name": "The Godmother",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-14",
+      "id": 11504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353678.jpg",
+      "name": "Corn Snake",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-08-21",
+      "id": 11505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353684.jpg",
+      "name": "Cooking with Jesus",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-08-28",
+      "id": 11506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353687.jpg",
+      "name": "Last Tango in Agrestic",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-04",
+      "id": 11507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353691.jpg",
+      "name": "A.K.A. The Plant",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-11",
+      "id": 11508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353890.jpg",
+      "name": "Mrs. Botwin's Neighborhood",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-18",
+      "id": 11509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353892.jpg",
+      "name": "Crush Girl Love Panic",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-25",
+      "id": 11510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353905.jpg",
+      "name": "Must Find Toes",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-02",
+      "id": 11511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353914.jpg",
+      "name": "MILF Money",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-09",
+      "id": 11512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354051.jpg",
+      "name": "Bash",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-16",
+      "id": 11513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354056.jpg",
+      "name": "Mile Deep and a Foot Wide",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-23",
+      "id": 11514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354060.jpg",
+      "name": "Yeah, Like Tomatoes",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-30",
+      "id": 11515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354067.jpg",
+      "name": "Pittsburgh",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-13",
+      "id": 11516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354072.jpg",
+      "name": "Doing the Backstroke (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-08-20",
+      "id": 11517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354075.jpg",
+      "name": "A Pool and His Money (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-08-27",
+      "id": 11518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354245.jpg",
+      "name": "The Brick Dance",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-03",
+      "id": 11519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354247.jpg",
+      "name": "Shit Highway",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-10",
+      "id": 11520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354489.jpg",
+      "name": "Bill Sussman",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-17",
+      "id": 11521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354494.jpg",
+      "name": "Grasshopper",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 11522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354730.jpg",
+      "name": "He Taught Me How to Drive By",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 11523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354732.jpg",
+      "name": "The Two Mrs. Scottsons",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 11524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354742.jpg",
+      "name": "Release the Hounds",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 11525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354744.jpg",
+      "name": "Roy Till Called",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 11526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354961.jpg",
+      "name": "Cankles",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-29",
+      "id": 11527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354963.jpg",
+      "name": "The Dark Time",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 11528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354966.jpg",
+      "name": "Risk",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 11529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354968.jpg",
+      "name": "Protection",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-19",
+      "id": 11530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354971.jpg",
+      "name": "Go",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-06-16",
+      "id": 11531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355219.jpg",
+      "name": "Mother Thinks the Birds Are After Her",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-23",
+      "id": 11532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355228.jpg",
+      "name": "Lady's a Charm",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-06-30",
+      "id": 11533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355931.jpg",
+      "name": "The Whole Blah Damn Thing",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-07",
+      "id": 11534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355937.jpg",
+      "name": "The Three Coolers",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-14",
+      "id": 11535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355952.jpg",
+      "name": "No Man is Pudding",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-21",
+      "id": 11536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355973.jpg",
+      "name": "Excellent Treasures",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-28",
+      "id": 11537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356004.jpg",
+      "name": "Yes I Can",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-04",
+      "id": 11538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356011.jpg",
+      "name": "I Am the Table",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-11",
+      "id": 11539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370584.jpg",
+      "name": "Little Boats",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-18",
+      "id": 11540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370588.jpg",
+      "name": "The Love Circle Overlap",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-08-25",
+      "id": 11541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370589.jpg",
+      "name": "Head Cheese",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-08",
+      "id": 11542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370590.jpg",
+      "name": "Till We Meet Again",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-15",
+      "id": 11543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370591.jpg",
+      "name": "If You Work for a Living, Then Why Do You Kill Yourself Working?",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2009-06-08",
+      "id": 11544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334685.jpg",
+      "name": "Wonderful Wonderful",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-15",
+      "id": 11545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413919.jpg",
+      "name": "Machetes Up Top",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-22",
+      "id": 11546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413920.jpg",
+      "name": "Su-Su-Sucio",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-29",
+      "id": 11547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413921.jpg",
+      "name": "Super Lucky Happy",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-06",
+      "id": 11548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334851.jpg",
+      "name": "Van Nuys",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-13",
+      "id": 11549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413922.jpg",
+      "name": "A Modest Proposal",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-20",
+      "id": 11550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334862.jpg",
+      "name": "Where the Sidewalk Ends",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-27",
+      "id": 11551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334873.jpg",
+      "name": "A Distinctive Horn",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-03",
+      "id": 11552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413923.jpg",
+      "name": "Suck 'n' Spit",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-10",
+      "id": 11553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413924.jpg",
+      "name": "Perro Insano",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-17",
+      "id": 11554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334921.jpg",
+      "name": "Ducks and Tigers",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-24",
+      "id": 11555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413925.jpg",
+      "name": "Glue",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-31",
+      "id": 11556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/533/1334928.jpg",
+      "name": "All About My Mom",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2010-08-16",
+      "id": 11557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/534/1335063.jpg",
+      "name": "Thwack",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-23",
+      "id": 11558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413926.jpg",
+      "name": "Felling and Swamping",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-30",
+      "id": 11559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/534/1335088.jpg",
+      "name": "A Yippity Sippity",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-13",
+      "id": 11560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/534/1335089.jpg",
+      "name": "Bliss",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-20",
+      "id": 11561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413927.jpg",
+      "name": "Boomerang",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-27",
+      "id": 11562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/534/1335105.jpg",
+      "name": "A Shoe for a Shoe",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 11563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/534/1335180.jpg",
+      "name": "Pinwheels and Whirligigs",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 11564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413928.jpg",
+      "name": "Gentle Puppies",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 11565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413933.jpg",
+      "name": "To Moscow, and Quickly",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 11566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413929.jpg",
+      "name": "Dearborn-Again",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-11-01",
+      "id": 11567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413930.jpg",
+      "name": "Viking Pride",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-11-08",
+      "id": 11568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413931.jpg",
+      "name": "Fran Tarkenton",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2010-11-15",
+      "id": 11569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413932.jpg",
+      "name": "Theoretical Love is Not Dead",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2011-06-27",
+      "id": 11570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413938.jpg",
+      "name": "Bags",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-04",
+      "id": 11571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413939.jpg",
+      "name": "From Trauma Cometh Something",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-11",
+      "id": 11572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413943.jpg",
+      "name": "Game-Played",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-18",
+      "id": 11573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413936.jpg",
+      "name": "A Hole in Her Niqab",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-25",
+      "id": 11574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413950.jpg",
+      "name": "Fingers Only Meat Banquet",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-01",
+      "id": 11575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413940.jpg",
+      "name": "Object Impermanence",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-08",
+      "id": 11576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413957.jpg",
+      "name": "Vehement vs. Vigorous",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-15",
+      "id": 11577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413958.jpg",
+      "name": "Synthetics",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-22",
+      "id": 11578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413959.jpg",
+      "name": "Cats! Cats! Cats!",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-29",
+      "id": 11579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413946.jpg",
+      "name": "System Overhead",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-09-12",
+      "id": 11580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413960.jpg",
+      "name": "Une Mère Que J'aimerais Baiser",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-09-19",
+      "id": 11581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413963.jpg",
+      "name": "Qualitative Spatial Reasoning",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2011-09-26",
+      "id": 11582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413964.jpg",
+      "name": "Do Her / Don't Do Her",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2012-07-01",
+      "id": 11583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413944.jpg",
+      "name": "Messy",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-07-08",
+      "id": 11584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413945.jpg",
+      "name": "A Beam of Sunshine",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 11585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413956.jpg",
+      "name": "See Blue and Smell Cheese and Die",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 11586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413951.jpg",
+      "name": "Only Judy Can Judge",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-07-29",
+      "id": 11587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413952.jpg",
+      "name": "Red in Tooth and Claw",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 11588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413954.jpg",
+      "name": "Allosaurus Crush Castle",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 11589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413955.jpg",
+      "name": "Unfreeze",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-08-19",
+      "id": 11590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413962.jpg",
+      "name": "Five Miles from Yetzer Hara",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-08-26",
+      "id": 11591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413973.jpg",
+      "name": "Saplings",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-09-02",
+      "id": 11592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413966.jpg",
+      "name": "Threshold",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-09-09",
+      "id": 11593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413968.jpg",
+      "name": "God Willing and the Creek Don't Rise",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 11594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413971.jpg",
+      "name": "It's Time (1)",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 11595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413974.jpg",
+      "name": "It's Time (2)",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Krimi"
+    "Comedy",
+    "Crime"
   ],
+  "id": "tvmaze-160",
+  "live": true,
+  "overview": "Weeds is based around an american widow (Nancy Botwin) with 2 children who begins selling cannabis for financial gain after the death of her husband. Her family become involved in more and more illegal activities as the show progresses.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/545/1362942.jpg",
   "rating": 7.9,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "160",
+  "title": "Weeds",
+  "type": "series",
+  "year": 2005
 }

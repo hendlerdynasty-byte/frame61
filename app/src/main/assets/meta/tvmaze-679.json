@@ -1,21 +1,553 @@
 {
-  "schema": 1,
-  "id": "tvmaze-679",
-  "source": "tvmaze",
-  "sourceId": "679",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Damages",
-  "year": 2007,
-  "type": "series",
-  "overview": "Set in New York's world of high stakes litigation, Damages follows the lives of Patty Hewes, the nation's most revered and most reviled litigator, and her bright, ambitious protégée Ellen Parsons as they become embroiled in a class action lawsuit targeting Arthur Frobisher, one of the country's wealthiest CEOs. As Patty battles Frobisher and his attorney, Ellen learns what it takes to win at all costs -- and that lives, not just fortunes, are at stake.The series premiered on July 24, 2007 on FX and aired for three seasons before moving to the DirecTV channel Audience Network in 2010, airing for two further seasons, and concluding in 2012.",
-  "poster": "file:///android_asset/posters/tvmaze-679.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-07-24",
+      "id": 59705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770206.jpg",
+      "name": "Get Me a Lawyer",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-07-31",
+      "id": 59706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770207.jpg",
+      "name": "Jesus, Mary and Joe Cocker",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-07",
+      "id": 59707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770208.jpg",
+      "name": "And My Paralyzing Fear of Death",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-14",
+      "id": 59708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770209.jpg",
+      "name": "Tastes Like a Ho-Ho",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-21",
+      "id": 59709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770210.jpg",
+      "name": "A Regular Earl Anthony",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-04",
+      "id": 59710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770211.jpg",
+      "name": "She Spat at Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-11",
+      "id": 59711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770212.jpg",
+      "name": "We Are Not Animals",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-18",
+      "id": 59712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770213.jpg",
+      "name": "Blame the Victim",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-25",
+      "id": 59713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770214.jpg",
+      "name": "Do You Regret What We Did?",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-02",
+      "id": 59714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770215.jpg",
+      "name": "Sort of Like a Family",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-09",
+      "id": 59715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770216.jpg",
+      "name": "I Hate These People",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-16",
+      "id": 59716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770217.jpg",
+      "name": "There's No 'We' Anymore",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-23",
+      "id": 59717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770218.jpg",
+      "name": "Because I Know Patty",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-07",
+      "id": 59718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770219.jpg",
+      "name": "I Lied, Too.",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-14",
+      "id": 59719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770220.jpg",
+      "name": "Burn It, Shred It, I Don't Care",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-21",
+      "id": 59720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770221.jpg",
+      "name": "I Knew You Were a Pig",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-28",
+      "id": 59721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770222.jpg",
+      "name": "Hey! Mr. Pibb!",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-04",
+      "id": 59722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770223.jpg",
+      "name": "I Agree, It Wasn't Funny",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-11",
+      "id": 59723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770224.jpg",
+      "name": "A Pretty Girl in a Leotard",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-18",
+      "id": 59724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770225.jpg",
+      "name": "New York Sucks",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-25",
+      "id": 59725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770226.jpg",
+      "name": "They Had to Tweeze That Out of My Kidney",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-04",
+      "id": 59726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770227.jpg",
+      "name": "You Got Your Prom Date Pregnant",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-11",
+      "id": 59727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770228.jpg",
+      "name": "Uh Oh, Out Come the Skeletons",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-18",
+      "id": 59728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770229.jpg",
+      "name": "London, Of Course",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-25",
+      "id": 59729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770230.jpg",
+      "name": "Look What He Dug Up This Time",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-01",
+      "id": 59730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770231.jpg",
+      "name": "Trust Me",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-25",
+      "id": 59731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770233.jpg",
+      "name": "Your Secrets Are Safe",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-01",
+      "id": 59732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770234.jpg",
+      "name": "The Dog Is Happier Without Her",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-08",
+      "id": 59733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770235.jpg",
+      "name": "Flight's at 11:08",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-15",
+      "id": 59734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770236.jpg",
+      "name": "Don't Throw That at the Chicken",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-22",
+      "id": 59735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770237.jpg",
+      "name": "It's Not My Birthday",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-01",
+      "id": 59736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770238.jpg",
+      "name": "Don't Forget to Thank Mr. Zedeck",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-08",
+      "id": 59737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770239.jpg",
+      "name": "You Haven't Replaced Me",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-15",
+      "id": 59738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770240.jpg",
+      "name": "I Look Like Frankenstein",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-22",
+      "id": 59739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770241.jpg",
+      "name": "Drive It Through Hardcore",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-29",
+      "id": 59740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770242.jpg",
+      "name": "Tell Me I'm Not Racist",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-05",
+      "id": 59741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770243.jpg",
+      "name": "All That Crap About Your Family",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-12",
+      "id": 59742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770244.jpg",
+      "name": "You Were His Little Monkey",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-19",
+      "id": 59743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770245.jpg",
+      "name": "The Next One's Gonna Go in Your Throat",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-07-13",
+      "id": 59744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770246.jpg",
+      "name": "There's Only One Way to Try a Case",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-20",
+      "id": 59745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770247.jpg",
+      "name": "I've Done Way Too Much for This Girl",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-27",
+      "id": 59746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770248.jpg",
+      "name": "I'd Prefer My Old Office",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-03",
+      "id": 59747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770249.jpg",
+      "name": "Next One's on Me, Blondie",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-10",
+      "id": 59748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770250.jpg",
+      "name": "We'll Just Have to Find Another Way to Cut the Balls Off of This Thing",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-17",
+      "id": 59749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770251.jpg",
+      "name": "Add That Little Hopper to Your Stew",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-24",
+      "id": 59750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770252.jpg",
+      "name": "I'm Worried About My Dog",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-31",
+      "id": 59751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770253.jpg",
+      "name": "The War Will Go On Forever",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-07",
+      "id": 59752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770254.jpg",
+      "name": "There's a Whole Slew of Ladies with Bad Things to Say About the Taliban",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-14",
+      "id": 59753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770255.jpg",
+      "name": "Failure Is Lonely",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-07-11",
+      "id": 59754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770256.jpg",
+      "name": "You Want to End This Once and For All?",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-18",
+      "id": 59755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770257.jpg",
+      "name": "Have You Met the Eel Yet?",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-25",
+      "id": 59756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770258.jpg",
+      "name": "Failure Is Failure",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-01",
+      "id": 59757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770259.jpg",
+      "name": "I Love You, Mommy",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-08",
+      "id": 59758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770260.jpg",
+      "name": "There's Something Wrong with Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-15",
+      "id": 59759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770261.jpg",
+      "name": "I Need to Win",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-22",
+      "id": 59760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770262.jpg",
+      "name": "The Storm's Moving In",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-29",
+      "id": 59761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770263.jpg",
+      "name": "I'm Afraid of What I'll Find",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-05",
+      "id": 59762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770264.jpg",
+      "name": "I Like Your Chair",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-12",
+      "id": 59763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770265.jpg",
+      "name": "But You Don't Do That Anymore",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Justiz"
+    "Legal"
   ],
+  "id": "tvmaze-679",
+  "live": true,
+  "overview": "Set in New York's world of high stakes litigation, Damages follows the lives of Patty Hewes, the nation's most revered and most reviled litigator, and her bright, ambitious protégée Ellen Parsons as they become embroiled in a class action lawsuit targeting Arthur Frobisher, one of the country's wealthiest CEOs. As Patty battles Frobisher and his attorney, Ellen learns what it takes to win at all costs -- and that lives, not just fortunes, are at stake.The series premiered on July 24, 2007 on FX and aired for three seasons before moving to the DirecTV channel Audience Network in 2010, airing for two further seasons, and concluding in 2012.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/5/14830.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "679",
+  "title": "Damages",
+  "type": "series",
+  "year": 2007
 }

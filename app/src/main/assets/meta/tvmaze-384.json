@@ -1,22 +1,968 @@
 {
-  "schema": 1,
-  "id": "tvmaze-384",
-  "source": "tvmaze",
-  "sourceId": "384",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Major Crimes",
-  "year": 2012,
-  "type": "series",
-  "overview": "Captain Sharon Raydor faces the challenge of earning the trust and loyalty of her officers in Major Crimes, who are still in shock over their former Deputy Chief's exit, while trying to close the department's highest-profile cases. Raydor decides to house Rusty Beck, the key witness for a murder case, in her own home, paying for him to attend the Catholic high school her children attended.",
-  "poster": "file:///android_asset/posters/tvmaze-384.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-08-13",
+      "id": 35146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26822.jpg",
+      "name": "Reloaded",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-20",
+      "id": 35147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27268.jpg",
+      "name": "Before and After",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-27",
+      "id": 35148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27562.jpg",
+      "name": "Medical Causes",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-03",
+      "id": 35149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27563.jpg",
+      "name": "The Ecstasy and the Agony",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-10",
+      "id": 35150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27564.jpg",
+      "name": "Citizens Arrest",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-17",
+      "id": 35151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27565.jpg",
+      "name": "Out of Bounds",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-24",
+      "id": 35152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27566.jpg",
+      "name": "The Shame Game",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-01",
+      "id": 35153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27567.jpg",
+      "name": "Dismissed with Prejudice",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-08",
+      "id": 35154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27568.jpg",
+      "name": "Cheaters Never Prosper",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-15",
+      "id": 35155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27569.jpg",
+      "name": "Long Shot",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 200235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34394.jpg",
+      "name": "Final Cut",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 200236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34395.jpg",
+      "name": "False Pretenses",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 200237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34396.jpg",
+      "name": "Under the Influence",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 200238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34397.jpg",
+      "name": "I, Witness",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 200239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34398.jpg",
+      "name": "D.O.A.",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 200240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34399.jpg",
+      "name": "Boys Will Be Boys",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-22",
+      "id": 200241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34400.jpg",
+      "name": "Rules of Engagement",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 200242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34401.jpg",
+      "name": "The Deep End",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 200243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34403.jpg",
+      "name": "There's No Place Like Home",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-12",
+      "id": 200244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34405.jpg",
+      "name": "Backfire",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-19",
+      "id": 200245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34406.jpg",
+      "name": "Poster Boy",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-25",
+      "id": 200246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34408.jpg",
+      "name": "Pick Your Poison",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-02",
+      "id": 200247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34409.jpg",
+      "name": "Jailbait",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-09",
+      "id": 200248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34410.jpg",
+      "name": "All In",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-16",
+      "id": 200249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34411.jpg",
+      "name": "Curve Ball",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-23",
+      "id": 200250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34412.jpg",
+      "name": "Risk Assessment",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-30",
+      "id": 200251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34413.jpg",
+      "name": "Year-End Blowout",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-06",
+      "id": 200341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34477.jpg",
+      "name": "Return to Sender: Part 1",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 200252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34414.jpg",
+      "name": "Return to Sender: Part 2",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-09",
+      "id": 200253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34415.jpg",
+      "name": "Flight Risk",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 200254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34416.jpg",
+      "name": "Personal Day",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 200255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34417.jpg",
+      "name": "Frozen Assets",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 200256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34418.jpg",
+      "name": "Letting It Go",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 200257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34419.jpg",
+      "name": "Do Not Disturb",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 200258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34420.jpg",
+      "name": "Jane Doe #38",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 200259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34421.jpg",
+      "name": "Two Options",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 200260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34422.jpg",
+      "name": "Cutting Loose",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 200261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34423.jpg",
+      "name": "Sweet Revenge",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 200262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34424.jpg",
+      "name": "Zoo Story",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-11-24",
+      "id": 200263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34425.jpg",
+      "name": "Down the Drain",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-12-01",
+      "id": 200264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34426.jpg",
+      "name": "Party Foul",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-12-08",
+      "id": 200265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34427.jpg",
+      "name": "Acting Out",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-12-15",
+      "id": 200266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34428.jpg",
+      "name": "Trial by Fire",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-12-22",
+      "id": 200267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34432.jpg",
+      "name": "Chain Reaction",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-12-29",
+      "id": 200268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34433.jpg",
+      "name": "Leap of Faith",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-05",
+      "id": 200269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34434.jpg",
+      "name": "Internal Affairs",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-12",
+      "id": 200270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34435.jpg",
+      "name": "Special Master: Part 1",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-12",
+      "id": 200271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34436.jpg",
+      "name": "Special Master: Part 2",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-08",
+      "id": 153080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30936.jpg",
+      "name": "A Rose Is a Rose",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-15",
+      "id": 153153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30937.jpg",
+      "name": "Sorry I Missed You",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-22",
+      "id": 153154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30938.jpg",
+      "name": "Open Line",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-29",
+      "id": 153155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30939.jpg",
+      "name": "Turn Down",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-06",
+      "id": 153156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30940.jpg",
+      "name": "Snitch",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-13",
+      "id": 153157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32111.jpg",
+      "name": "Personal Effects",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-20",
+      "id": 153158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32112.jpg",
+      "name": "Targets of Opportunity",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-27",
+      "id": 153159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34787.jpg",
+      "name": "Hostage of Fortune",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-08-03",
+      "id": 153160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35594.jpg",
+      "name": "Wish You Were Here",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-08-10",
+      "id": 153161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78114.jpg",
+      "name": "Fifth Dynasty",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-02",
+      "id": 266989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78110.jpg",
+      "name": "Four of a Kind",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-09",
+      "id": 266990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78111.jpg",
+      "name": "Blackout",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-16",
+      "id": 353013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78113.jpg",
+      "name": "Reality Check",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-23",
+      "id": 353014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78116.jpg",
+      "name": "Taking the Fall",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-30",
+      "id": 353015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/82612.jpg",
+      "name": "The Jumping Off Point",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-07",
+      "id": 421525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/82613.jpg",
+      "name": "Thick as Thieves",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-14",
+      "id": 473851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84818.jpg",
+      "name": "#FindKaylaWeber",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-21",
+      "id": 473853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/87315.jpg",
+      "name": "Penalty Phase",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 541911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/117524.jpg",
+      "name": "Hindsight: Part 1",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-22",
+      "id": 582456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/117525.jpg",
+      "name": "Hindsight: Part 2",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-29",
+      "id": 597705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/117523.jpg",
+      "name": "Hindsight: Part 3",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-07",
+      "id": 597706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/117537.jpg",
+      "name": "Hindsight: Part 4",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-14",
+      "id": 609068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/122481.jpg",
+      "name": "Hindsight: Part 5",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-13",
+      "id": 680604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166206.jpg",
+      "name": "Present Tense",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-20",
+      "id": 763317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166225.jpg",
+      "name": "N.S.F.W.",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-27",
+      "id": 763318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166227.jpg",
+      "name": "Foreign Affairs",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-11",
+      "id": 803992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166228.jpg",
+      "name": "Skin Deep",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-18",
+      "id": 819658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169875.jpg",
+      "name": "Cashed Out",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-25",
+      "id": 819659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172449.jpg",
+      "name": "Tourist Trap",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-08-01",
+      "id": 837348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/174624.jpg",
+      "name": "Moral Hazard",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-08-15",
+      "id": 852276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/174621.jpg",
+      "name": "Off the Wagon",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-08-22",
+      "id": 852277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/174620.jpg",
+      "name": "Family Law",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-08-29",
+      "id": 871403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178986.jpg",
+      "name": "Dead Zone",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-05",
+      "id": 868256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178987.jpg",
+      "name": "White Lies: Part 1",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-12",
+      "id": 868257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178989.jpg",
+      "name": "White Lies: Part 2",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-19",
+      "id": 868258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178988.jpg",
+      "name": "White Lies: Part 3",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-02-22",
+      "id": 1019663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/242375.jpg",
+      "name": "Heart Failure",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-01",
+      "id": 1046388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/242377.jpg",
+      "name": "Cleared History",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-08",
+      "id": 1046389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/242378.jpg",
+      "name": "Quid Pro Quo",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-15",
+      "id": 1046390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/242379.jpg",
+      "name": "Dead Drop",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-22",
+      "id": 1046391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258735.jpg",
+      "name": "Bad Blood",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-29",
+      "id": 1046392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261865.jpg",
+      "name": "Intersection",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-05",
+      "id": 1049932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/264142.jpg",
+      "name": "Shockwave: Part 1",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-12",
+      "id": 1049933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267386.jpg",
+      "name": "Shockwave: Part 2",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-31",
+      "id": 1270071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/333843.jpg",
+      "name": "Sanctuary City: Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1319084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/336019.jpg",
+      "name": "Sanctuary City: Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1319085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338403.jpg",
+      "name": "Sanctuary City: Part 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-21",
+      "id": 1271673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340514.jpg",
+      "name": "Sanctuary City: Part 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-28",
+      "id": 1271674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/342452.jpg",
+      "name": "Sanctuary City: Part 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-05",
+      "id": 1271675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344378.jpg",
+      "name": "Conspiracy Theory: Part 1",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-12",
+      "id": 1271676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346395.jpg",
+      "name": "Conspiracy Theory: Part 2",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-19",
+      "id": 1271677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/348413.jpg",
+      "name": "Conspiracy Theory: Part 3",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-19",
+      "id": 1271678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/348414.jpg",
+      "name": "Conspiracy Theory: Part 4",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-26",
+      "id": 1271679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350759.jpg",
+      "name": "By Any Means: Part 1",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-12-26",
+      "id": 1271680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350760.jpg",
+      "name": "By Any Means: Part 2",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-01-02",
+      "id": 1271681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352953.jpg",
+      "name": "By Any Means: Part 3",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-01-09",
+      "id": 1271682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355001.jpg",
+      "name": "By Any Means: Part 4",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-384",
+  "live": true,
+  "overview": "Captain Sharon Raydor faces the challenge of earning the trust and loyalty of her officers in Major Crimes, who are still in shock over their former Deputy Chief's exit, while trying to close the department's highest-profile cases. Raydor decides to house Rusty Beck, the key witness for a murder case, in her own home, paying for him to attend the Catholic high school her children attended.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/136/340671.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "384",
+  "title": "Major Crimes",
+  "type": "series",
+  "year": 2012
 }

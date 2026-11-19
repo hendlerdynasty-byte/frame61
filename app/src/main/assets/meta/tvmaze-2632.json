@@ -1,22 +1,284 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2632",
-  "source": "tvmaze",
-  "sourceId": "2632",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Berlin Station",
-  "year": 2016,
-  "type": "series",
-  "overview": "Berlin Station is a contemporary spy series that follows Daniel Miller, an undercover agent who has just arrived at the CIA station in Berlin, Germany. Miller has a clandestine mission: to determine the identity of a now-famous whistleblower masquerading as \"Thomas Shaw\". Guided by jaded veteran Hector DeJean, Daniel learns to contend with the rough-and-tumble world of the field officer - agent-running, deception, danger and moral compromises. As he dives deeper into the German capital's hall of mirrors and uncovers the threads of a conspiracy that leads back to Washington, Daniel wonders: Can anyone ever be the same after a posting to Berlin?",
-  "poster": "file:///android_asset/posters/tvmaze-2632.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-10-16",
+      "id": 881132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189948.jpg",
+      "name": "Station to Station",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-23",
+      "id": 929539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189949.jpg",
+      "name": "Lights Don't Run on Loyalty",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-30",
+      "id": 939382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/207282.jpg",
+      "name": "Riverrun Dry",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-06",
+      "id": 939383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/209361.jpg",
+      "name": "By Way of Deception",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-13",
+      "id": 939384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211929.jpg",
+      "name": "Unter Druck",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 939385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214149.jpg",
+      "name": "Just Decisions",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 939386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216660.jpg",
+      "name": "Proof of Life",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 939387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219746.jpg",
+      "name": "False Negative",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-12-11",
+      "id": 939388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222055.jpg",
+      "name": "Thomas Shaw",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-12-18",
+      "id": 939389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/224463.jpg",
+      "name": "Oratorio Berlin",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1259770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323495.jpg",
+      "name": "Everything's Gonna Be Alt-Right",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1319630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323496.jpg",
+      "name": "Right Here, Right Now",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-22",
+      "id": 1321219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/330907.jpg",
+      "name": "Right to the Heart",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-29",
+      "id": 1321220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/332996.jpg",
+      "name": "Do the Right Thing",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-05",
+      "id": 1321221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335189.jpg",
+      "name": "Right of Way",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-12",
+      "id": 1321222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337634.jpg",
+      "name": "Hoeyre Hook (The Right Hook)",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-19",
+      "id": 1321223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337635.jpg",
+      "name": "Right and Wrong",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-11-26",
+      "id": 1321224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/341576.jpg",
+      "name": "The Righteous One",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-12-03",
+      "id": 1321225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/343353.jpg",
+      "name": "Winners Right the History Books",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-12-02",
+      "id": 1551734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441111.jpg",
+      "name": "Aut Concilio Aut Ense",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-09",
+      "id": 1569412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441112.jpg",
+      "name": "Fire Knows Nothing of Mercy",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-16",
+      "id": 1569413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/444185.jpg",
+      "name": "The Old Lie",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-23",
+      "id": 1569414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/178/445633.jpg",
+      "name": "If You Swear, You'll Catch No Fish",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-06",
+      "id": 1569415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/448453.jpg",
+      "name": "The Dream of the Four Policemen",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-13",
+      "id": 1569416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450230.jpg",
+      "name": "In Cold Hell",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-20",
+      "id": 1569417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/452637.jpg",
+      "name": "The Eye Fears When It Is Done to See",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-27",
+      "id": 1569419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/454474.jpg",
+      "name": "The Green Dacha",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-10",
+      "id": 1572711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458323.jpg",
+      "name": "End of War",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-17",
+      "id": 1572712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/458671.jpg",
+      "name": "Book of the Fallen",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Mystery",
-    "Spionage"
+    "Espionage"
   ],
+  "id": "tvmaze-2632",
+  "live": true,
+  "overview": "Berlin Station is a contemporary spy series that follows Daniel Miller, an undercover agent who has just arrived at the CIA station in Berlin, Germany. Miller has a clandestine mission: to determine the identity of a now-famous whistleblower masquerading as \"Thomas Shaw\". Guided by jaded veteran Hector DeJean, Daniel learns to contend with the rough-and-tumble world of the field officer - agent-running, deception, danger and moral compromises. As he dives deeper into the German capital's hall of mirrors and uncovers the threads of a conspiracy that leads back to Washington, Daniel wonders: Can anyone ever be the same after a posting to Berlin?",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/176/440242.jpg",
   "rating": 7.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2632",
+  "title": "Berlin Station",
+  "type": "series",
+  "year": 2016
 }

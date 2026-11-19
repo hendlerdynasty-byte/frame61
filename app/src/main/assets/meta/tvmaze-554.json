@@ -1,21 +1,400 @@
 {
-  "schema": 1,
-  "id": "tvmaze-554",
-  "source": "tvmaze",
-  "sourceId": "554",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Dark Angel",
-  "year": 2000,
-  "type": "series",
-  "overview": "In the year 2019 the U.S. has become a third world country in the wake of the Pulse - an electromagnetic shockwave unleashed by nuclear terrorists in 2009. This is Max's world, an unforgiving place even for a genetically engineered soldier like her. On the run from her creators and constantly in search of her past, Max joins forces with the idealistic cyberjournalist \"Eyes Only\". She's a revved-up girl trying to make a run-down world a better place.",
-  "poster": "file:///android_asset/posters/tvmaze-554.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2000-10-03",
+      "id": 51673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/384035.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-10",
+      "id": 51674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405374.jpg",
+      "name": "Heat",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-17",
+      "id": 51675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767262.jpg",
+      "name": "Flushed",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-10-31",
+      "id": 51676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767263.jpg",
+      "name": "C.R.E.A.M.",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-14",
+      "id": 51677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767264.jpg",
+      "name": "411 on the DL",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-21",
+      "id": 51678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767265.jpg",
+      "name": "Prodigy",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-11-28",
+      "id": 51679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767266.jpg",
+      "name": "Cold Comfort",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-12-12",
+      "id": 51680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767267.jpg",
+      "name": "Blah Blah Woof Woof",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-09",
+      "id": 51681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767268.jpg",
+      "name": "Out",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-16",
+      "id": 51682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767269.jpg",
+      "name": "Red",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-06",
+      "id": 51683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767270.jpg",
+      "name": "Art Attack",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-13",
+      "id": 51684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767271.jpg",
+      "name": "Rising",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-20",
+      "id": 51685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767272.jpg",
+      "name": "The Kidz Are Aiight",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-27",
+      "id": 51686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767273.jpg",
+      "name": "Female Trouble",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-03-27",
+      "id": 51687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767274.jpg",
+      "name": "Haven",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-17",
+      "id": 51688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767275.jpg",
+      "name": "Shorties in Love",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-24",
+      "id": 51689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767276.jpg",
+      "name": "Pollo Loco",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-01",
+      "id": 51690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767277.jpg",
+      "name": "I and I Am a Camera",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-08",
+      "id": 51691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767278.jpg",
+      "name": "Hit a Sista Back",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-15",
+      "id": 51692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767279.jpg",
+      "name": "Meow",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-22",
+      "id": 51693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767280.jpg",
+      "name": "...And Jesus Brought a Casserole",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-09-28",
+      "id": 51694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767281.jpg",
+      "name": "Designate This",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-05",
+      "id": 51695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767282.jpg",
+      "name": "Bag 'Em",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-12",
+      "id": 51696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767283.jpg",
+      "name": "Proof of Purchase",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-26",
+      "id": 51697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767284.jpg",
+      "name": "Radar Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-02",
+      "id": 51698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767285.jpg",
+      "name": "Boo",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-09",
+      "id": 51699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767286.jpg",
+      "name": "Two",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-16",
+      "id": 51700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767287.jpg",
+      "name": "Some Assembly Required",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-07",
+      "id": 51701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767288.jpg",
+      "name": "Gill Girl",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-14",
+      "id": 51702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767289.jpg",
+      "name": "Medium is the Message",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-11",
+      "id": 51703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767290.jpg",
+      "name": "Brainiac",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-18",
+      "id": 51704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767291.jpg",
+      "name": "The Berrisford Agenda",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-01",
+      "id": 51705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767292.jpg",
+      "name": "Borrowed Time",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-08",
+      "id": 51706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767293.jpg",
+      "name": "Harbor Lights",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-08",
+      "id": 51707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767294.jpg",
+      "name": "Love in Vein",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-15",
+      "id": 51708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767295.jpg",
+      "name": "Fuhgeddaboudit",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-22",
+      "id": 51709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767296.jpg",
+      "name": "Exposure",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-05",
+      "id": 51710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767297.jpg",
+      "name": "Hello, Goodbye",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-12",
+      "id": 51711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767298.jpg",
+      "name": "Dawg Day Afternoon",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-19",
+      "id": 51712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767299.jpg",
+      "name": "She Ain't Heavy",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-26",
+      "id": 51713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767300.jpg",
+      "name": "Love Among the Runes",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-03",
+      "id": 51714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/306/767301.jpg",
+      "name": "Freak Nation",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
     "Science-Fiction"
   ],
+  "id": "tvmaze-554",
+  "live": true,
+  "overview": "In the year 2019 the U.S. has become a third world country in the wake of the Pulse - an electromagnetic shockwave unleashed by nuclear terrorists in 2009. This is Max's world, an unforgiving place even for a genetically engineered soldier like her. On the run from her creators and constantly in search of her past, Max joins forces with the idealistic cyberjournalist \"Eyes Only\". She's a revved-up girl trying to make a run-down world a better place.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11610.jpg",
   "rating": 8.6,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "554",
+  "title": "Dark Angel",
+  "type": "series",
+  "year": 2000
 }

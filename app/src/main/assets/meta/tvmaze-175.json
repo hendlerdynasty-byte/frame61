@@ -1,21 +1,679 @@
 {
-  "schema": 1,
-  "id": "tvmaze-175",
-  "source": "tvmaze",
-  "sourceId": "175",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "House of Cards",
-  "year": 2013,
-  "type": "series",
-  "overview": "Based on the BBC miniseries of the same name, House of Cards follows Francis Underwood, the politician's politician – masterful, beguiling, charismatic and ruthless. He and his equally ambitious wife Claire will stop at nothing to ensure their ascendancy. This wicked political drama slithers beneath the curtain and through the back halls of greed, sex, love and corruption in modern Washington D.C.",
-  "poster": "file:///android_asset/posters/tvmaze-175.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-02-01",
+      "id": 12664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40318.jpg",
+      "name": "Chapter 1",
+      "number": 1,
+      "runtime": 57,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40319.jpg",
+      "name": "Chapter 2",
+      "number": 2,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40320.jpg",
+      "name": "Chapter 3",
+      "number": 3,
+      "runtime": 51,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40321.jpg",
+      "name": "Chapter 4",
+      "number": 4,
+      "runtime": 49,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40322.jpg",
+      "name": "Chapter 5",
+      "number": 5,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40323.jpg",
+      "name": "Chapter 6",
+      "number": 6,
+      "runtime": 51,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40324.jpg",
+      "name": "Chapter 7",
+      "number": 7,
+      "runtime": 54,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40325.jpg",
+      "name": "Chapter 8",
+      "number": 8,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40326.jpg",
+      "name": "Chapter 9",
+      "number": 9,
+      "runtime": 52,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40327.jpg",
+      "name": "Chapter 10",
+      "number": 10,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40328.jpg",
+      "name": "Chapter 11",
+      "number": 11,
+      "runtime": 54,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40329.jpg",
+      "name": "Chapter 12",
+      "number": 12,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 12676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40330.jpg",
+      "name": "Chapter 13",
+      "number": 13,
+      "runtime": 50,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40331.jpg",
+      "name": "Chapter 14",
+      "number": 1,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40332.jpg",
+      "name": "Chapter 15",
+      "number": 2,
+      "runtime": 49,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40333.jpg",
+      "name": "Chapter 16",
+      "number": 3,
+      "runtime": 52,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40336.jpg",
+      "name": "Chapter 17",
+      "number": 4,
+      "runtime": 49,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40337.jpg",
+      "name": "Chapter 18",
+      "number": 5,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40338.jpg",
+      "name": "Chapter 19",
+      "number": 6,
+      "runtime": 52,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40339.jpg",
+      "name": "Chapter 20",
+      "number": 7,
+      "runtime": 49,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40340.jpg",
+      "name": "Chapter 21",
+      "number": 8,
+      "runtime": 48,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40341.jpg",
+      "name": "Chapter 22",
+      "number": 9,
+      "runtime": 50,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40342.jpg",
+      "name": "Chapter 23",
+      "number": 10,
+      "runtime": 51,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40343.jpg",
+      "name": "Chapter 24",
+      "number": 11,
+      "runtime": 54,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40344.jpg",
+      "name": "Chapter 25",
+      "number": 12,
+      "runtime": 48,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 12689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40345.jpg",
+      "name": "Chapter 26",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40305.jpg",
+      "name": "Chapter 27",
+      "number": 1,
+      "runtime": 59,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40306.jpg",
+      "name": "Chapter 28",
+      "number": 2,
+      "runtime": 55,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40307.jpg",
+      "name": "Chapter 29",
+      "number": 3,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40308.jpg",
+      "name": "Chapter 30",
+      "number": 4,
+      "runtime": 48,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40309.jpg",
+      "name": "Chapter 31",
+      "number": 5,
+      "runtime": 52,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40310.jpg",
+      "name": "Chapter 32",
+      "number": 6,
+      "runtime": 54,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40311.jpg",
+      "name": "Chapter 33",
+      "number": 7,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40312.jpg",
+      "name": "Chapter 34",
+      "number": 8,
+      "runtime": 44,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40313.jpg",
+      "name": "Chapter 35",
+      "number": 9,
+      "runtime": 52,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40314.jpg",
+      "name": "Chapter 36",
+      "number": 10,
+      "runtime": 57,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40315.jpg",
+      "name": "Chapter 37",
+      "number": 11,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40317.jpg",
+      "name": "Chapter 38",
+      "number": 12,
+      "runtime": 50,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 57773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40316.jpg",
+      "name": "Chapter 39",
+      "number": 13,
+      "runtime": 58,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 436756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118670.jpg",
+      "name": "Chapter 40",
+      "number": 1,
+      "runtime": 49,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118671.jpg",
+      "name": "Chapter 41",
+      "number": 2,
+      "runtime": 42,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118672.jpg",
+      "name": "Chapter 42",
+      "number": 3,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118673.jpg",
+      "name": "Chapter 43",
+      "number": 4,
+      "runtime": 43,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118674.jpg",
+      "name": "Chapter 44",
+      "number": 5,
+      "runtime": 48,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118785.jpg",
+      "name": "Chapter 45",
+      "number": 6,
+      "runtime": 48,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118786.jpg",
+      "name": "Chapter 46",
+      "number": 7,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118787.jpg",
+      "name": "Chapter 47",
+      "number": 8,
+      "runtime": 47,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118788.jpg",
+      "name": "Chapter 48",
+      "number": 9,
+      "runtime": 46,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118789.jpg",
+      "name": "Chapter 49",
+      "number": 10,
+      "runtime": 57,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118818.jpg",
+      "name": "Chapter 50",
+      "number": 11,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118819.jpg",
+      "name": "Chapter 51",
+      "number": 12,
+      "runtime": 47,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 535325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118820.jpg",
+      "name": "Chapter 52",
+      "number": 13,
+      "runtime": 56,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1001769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286131.jpg",
+      "name": "Chapter 53",
+      "number": 1,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1183456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286136.jpg",
+      "name": "Chapter 54",
+      "number": 2,
+      "runtime": 52,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1183457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286157.jpg",
+      "name": "Chapter 55",
+      "number": 3,
+      "runtime": 53,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1183458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286167.jpg",
+      "name": "Chapter 56",
+      "number": 4,
+      "runtime": 45,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286417.jpg",
+      "name": "Chapter 57",
+      "number": 5,
+      "runtime": 52,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286455.jpg",
+      "name": "Chapter 58",
+      "number": 6,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286433.jpg",
+      "name": "Chapter 59",
+      "number": 7,
+      "runtime": 49,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286547.jpg",
+      "name": "Chapter 60",
+      "number": 8,
+      "runtime": 46,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286550.jpg",
+      "name": "Chapter 61",
+      "number": 9,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286553.jpg",
+      "name": "Chapter 62",
+      "number": 10,
+      "runtime": 57,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286567.jpg",
+      "name": "Chapter 63",
+      "number": 11,
+      "runtime": 51,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/287205.jpg",
+      "name": "Chapter 64",
+      "number": 12,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1185039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/287212.jpg",
+      "name": "Chapter 65",
+      "number": 13,
+      "runtime": 56,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1421350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433904.jpg",
+      "name": "Chapter 66",
+      "number": 1,
+      "runtime": 53,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434320.jpg",
+      "name": "Chapter 67",
+      "number": 2,
+      "runtime": 53,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434319.jpg",
+      "name": "Chapter 68",
+      "number": 3,
+      "runtime": 53,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434328.jpg",
+      "name": "Chapter 69",
+      "number": 4,
+      "runtime": 53,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435491.jpg",
+      "name": "Chapter 70",
+      "number": 5,
+      "runtime": 59,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435550.jpg",
+      "name": "Chapter 71",
+      "number": 6,
+      "runtime": 57,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435558.jpg",
+      "name": "Chapter 72",
+      "number": 7,
+      "runtime": 57,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-02",
+      "id": 1510286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/435559.jpg",
+      "name": "Chapter 73",
+      "number": 8,
+      "runtime": 55,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Thriller"
   ],
+  "id": "tvmaze-175",
+  "live": true,
+  "overview": "Based on the BBC miniseries of the same name, House of Cards follows Francis Underwood, the politician's politician – masterful, beguiling, charismatic and ruthless. He and his equally ambitious wife Claire will stop at nothing to ensure their ascendancy. This wicked political drama slithers beneath the curtain and through the back halls of greed, sex, love and corruption in modern Washington D.C.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/169/424482.jpg",
   "rating": 8.2,
-  "runtime": null,
-  "episodes": []
+  "runtime": 52,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "175",
+  "title": "House of Cards",
+  "type": "series",
+  "year": 2013
 }

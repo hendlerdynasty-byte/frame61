@@ -1,21 +1,589 @@
 {
-  "schema": 1,
-  "id": "tvmaze-299",
-  "source": "tvmaze",
-  "sourceId": "299",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Power",
-  "year": 2014,
-  "type": "series",
-  "overview": "Power tells the story of James \"Ghost\" St. Patrick, a wealthy New York City nightclub owner who caters to the city's elite. He wants to build an empire, turn the club into a Fortune 500 business, but there's just one problem: Ghost is living a double life. When he is not in the club, he is the kingpin of the most lucrative drug network in New York for a very high-level clientele. His marriage, family and business all become unknowingly threatened as he is tempted to leave his criminal life behind and become the rags-to-riches businessman he wants to be most of all.",
-  "poster": "file:///android_asset/posters/tvmaze-299.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-06-07",
+      "id": 30669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176941.jpg",
+      "name": "Not Exactly How We Planned",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-14",
+      "id": 30670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176942.jpg",
+      "name": "Whoever He Is",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-21",
+      "id": 30671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176943.jpg",
+      "name": "This Is Real",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-28",
+      "id": 30672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176947.jpg",
+      "name": "Who Are You?",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-12",
+      "id": 30673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176948.jpg",
+      "name": "I Gotta Go",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-19",
+      "id": 30674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176949.jpg",
+      "name": "Who You With?",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-26",
+      "id": 30675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177010.jpg",
+      "name": "Loyalty",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-02",
+      "id": 30676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/177011.jpg",
+      "name": "Best Laid Plans",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-06",
+      "id": 151196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29238.jpg",
+      "name": "Consequences",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-13",
+      "id": 166062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29895.jpg",
+      "name": "No Friends on the Street",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-20",
+      "id": 166063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30839.jpg",
+      "name": "Like We're Any Other Couple",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-27",
+      "id": 166064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31396.jpg",
+      "name": "You're the Only Person I Can Trust",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-11",
+      "id": 182486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32709.jpg",
+      "name": "Who You Are and Who You Want to Be",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-18",
+      "id": 182487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33955.jpg",
+      "name": "Why Her?",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-25",
+      "id": 182488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34645.jpg",
+      "name": "You're Not the Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-01",
+      "id": 182489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35329.jpg",
+      "name": "Three Moves Ahead",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-08",
+      "id": 182490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36223.jpg",
+      "name": "Time's Up",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-15",
+      "id": 182491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37727.jpg",
+      "name": "Ghost Is Dead",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-17",
+      "id": 805128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169758.jpg",
+      "name": "Call Me James",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-24",
+      "id": 853642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171957.jpg",
+      "name": "It's Never Over",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-31",
+      "id": 809763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173861.jpg",
+      "name": "I Got This on Lock",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-07",
+      "id": 853643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173901.jpg",
+      "name": "Don't Worry, Baby",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-14",
+      "id": 853644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178211.jpg",
+      "name": "Help Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-21",
+      "id": 809762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180019.jpg",
+      "name": "The Right Decision",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-28",
+      "id": 809764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181883.jpg",
+      "name": "Don't Go",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-04",
+      "id": 809765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184046.jpg",
+      "name": "Trust Me",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-18",
+      "id": 809766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188959.jpg",
+      "name": "I Call the Shots",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-25",
+      "id": 809767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191957.jpg",
+      "name": "In My Best Interest",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-25",
+      "id": 1155703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295827.jpg",
+      "name": "When I Get Out",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-02",
+      "id": 1207589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298000.jpg",
+      "name": "Things Are Going to Get Worse",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-09",
+      "id": 1207590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299546.jpg",
+      "name": "The Kind of Man You Are",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-16",
+      "id": 1207591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302369.jpg",
+      "name": "We're in This Together",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-23",
+      "id": 1207592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304465.jpg",
+      "name": "Don't Thank Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-30",
+      "id": 1207593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306512.jpg",
+      "name": "New Man",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-06",
+      "id": 1215850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308525.jpg",
+      "name": "You Lied to My Face",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-13",
+      "id": 1215851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310554.jpg",
+      "name": "It's Done",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1215852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312316.jpg",
+      "name": "That Ain't Me",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-03",
+      "id": 1233665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/315963.jpg",
+      "name": "You Can't Fix This",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-01",
+      "id": 1425344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399994.jpg",
+      "name": "Everyone Is Implicated",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-08",
+      "id": 1471593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401343.jpg",
+      "name": "Damage Control",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-15",
+      "id": 1471594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403332.jpg",
+      "name": "Are We on the Same Team?",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-22",
+      "id": 1471596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405269.jpg",
+      "name": "Second Chances",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-29",
+      "id": 1471598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/407763.jpg",
+      "name": "Happy Birthday",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-08-05",
+      "id": 1471599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409140.jpg",
+      "name": "A Changed Man?",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-08-12",
+      "id": 1471600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410948.jpg",
+      "name": "The Devil Inside",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-08-26",
+      "id": 1498083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/414085.jpg",
+      "name": "A Friend of the Family",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-09-02",
+      "id": 1498084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/415841.jpg",
+      "name": "There's a Snitch Among Us",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-09-09",
+      "id": 1498085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/417769.jpg",
+      "name": "When This Is Over",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-25",
+      "id": 1653963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/516148.jpg",
+      "name": "Murderers",
+      "number": 1,
+      "runtime": 57,
+      "season": 6
+    },
+    {
+      "airdate": "2019-09-01",
+      "id": 1678925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/522430.jpg",
+      "name": "Whose Side Are You On",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-09-08",
+      "id": 1681849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/524142.jpg",
+      "name": "Forgot About Dre",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-09-15",
+      "id": 1685136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/528340.jpg",
+      "name": "Why Is Tommy Still Alive?",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-09-22",
+      "id": 1688607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/528342.jpg",
+      "name": "King's Gambit",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-09-29",
+      "id": 1691228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/532850.jpg",
+      "name": "Inside Man",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-06",
+      "id": 1693369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/532852.jpg",
+      "name": "Like Father, Like Son",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-13",
+      "id": 1706113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/535346.jpg",
+      "name": "Deal with the Devil",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-27",
+      "id": 1707138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/538072.jpg",
+      "name": "Scorched Earth",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-03",
+      "id": 1711432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/544200.jpg",
+      "name": "No One Can Stop Me",
+      "number": 10,
+      "runtime": 65,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-05",
+      "id": 1751207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/234/586112.jpg",
+      "name": "Still DRE",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-12",
+      "id": 1768056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/588941.jpg",
+      "name": "He Always Wins",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-19",
+      "id": 1768057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/591415.jpg",
+      "name": "It's All Your Fault",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-26",
+      "id": 1768058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/595376.jpg",
+      "name": "Reversal of Fortune",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-09",
+      "id": 1786391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/601197.jpg",
+      "name": "Exactly How We Planned",
+      "number": 15,
+      "runtime": 83,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-299",
+  "live": true,
+  "overview": "Power tells the story of James \"Ghost\" St. Patrick, a wealthy New York City nightclub owner who caters to the city's elite. He wants to build an empire, turn the club into a Fortune 500 business, but there's just one problem: Ghost is living a double life. When he is not in the club, he is the kingpin of the most lucrative drug network in New York for a very high-level clientele. His marriage, family and business all become unknowingly threatened as he is tempted to leave his criminal life behind and become the rags-to-riches businessman he wants to be most of all.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/48/122426.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "299",
+  "title": "Power",
+  "type": "series",
+  "year": 2014
 }

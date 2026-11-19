@@ -1,22 +1,1841 @@
 {
-  "schema": 1,
-  "id": "tvmaze-468",
-  "source": "tvmaze",
-  "sourceId": "468",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Walker, Texas Ranger",
-  "year": 1993,
-  "type": "series",
-  "overview": "Texas Ranger Cordell Walker, one of the last old-fashioned heroes in the West, is a protective friend but a relentless foe who will stop at nothing to bring a criminal to justice.",
-  "poster": "file:///android_asset/posters/tvmaze-468.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-04-21",
+      "id": 42891,
+      "image": null,
+      "name": "One Riot, One Ranger",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-04-24",
+      "id": 42892,
+      "image": null,
+      "name": "Borderline",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-01",
+      "id": 42893,
+      "image": null,
+      "name": "A Shadow in the Night",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-25",
+      "id": 42894,
+      "image": null,
+      "name": "Bounty",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-02",
+      "id": 42895,
+      "image": null,
+      "name": "Storm Warning",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-30",
+      "id": 42896,
+      "image": null,
+      "name": "In the Name of God",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-06",
+      "id": 42897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459644.jpg",
+      "name": "Crime Wave Dave",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-13",
+      "id": 42898,
+      "image": null,
+      "name": "End Run",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-20",
+      "id": 42899,
+      "image": null,
+      "name": "Family Matters",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-24",
+      "id": 42900,
+      "image": null,
+      "name": "She'll Do to Ride with the River",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-27",
+      "id": 42901,
+      "image": null,
+      "name": "Unfinished Business",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-12-04",
+      "id": 42902,
+      "image": null,
+      "name": "An Innocent Man",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-12-11",
+      "id": 42903,
+      "image": null,
+      "name": "Night of the Gladiator",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-08",
+      "id": 42904,
+      "image": null,
+      "name": "Legend of the Running Bear",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-15",
+      "id": 42905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459649.jpg",
+      "name": "Something in the Shadows (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-22",
+      "id": 42906,
+      "image": null,
+      "name": "Something in the Shadows (2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-29",
+      "id": 42907,
+      "image": null,
+      "name": "On Deadly Ground",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-02-05",
+      "id": 42908,
+      "image": null,
+      "name": "Right Man, Wrong Time",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-03-05",
+      "id": 42909,
+      "image": null,
+      "name": "The Prodigal Son",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-03-12",
+      "id": 42910,
+      "image": null,
+      "name": "The Committee",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-03-26",
+      "id": 42911,
+      "image": null,
+      "name": "Deadly Vision",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-04-02",
+      "id": 42912,
+      "image": null,
+      "name": "Skyjacked",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-04-09",
+      "id": 42913,
+      "image": null,
+      "name": "The Long Haul",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-04-30",
+      "id": 42914,
+      "image": null,
+      "name": "Rampage",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-14",
+      "id": 42915,
+      "image": null,
+      "name": "Deadly Reunion (1)",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-14",
+      "id": 42916,
+      "image": null,
+      "name": "Deadly Reunion (2)",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-21",
+      "id": 42917,
+      "image": null,
+      "name": "Stolen Lullaby",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-09-24",
+      "id": 42918,
+      "image": null,
+      "name": "Badge of Honor",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-01",
+      "id": 42919,
+      "image": null,
+      "name": "Branded",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-08",
+      "id": 42920,
+      "image": null,
+      "name": "Silk Dreams",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-15",
+      "id": 42921,
+      "image": null,
+      "name": "Mustangs",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-22",
+      "id": 42922,
+      "image": null,
+      "name": "Till Death Do Us Part",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-05",
+      "id": 42923,
+      "image": null,
+      "name": "Rainbow Warrior",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-19",
+      "id": 42924,
+      "image": null,
+      "name": "The Road to Black Bayou (1)",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-19",
+      "id": 42925,
+      "image": null,
+      "name": "The Road to Black Bayou (2)",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-26",
+      "id": 42926,
+      "image": null,
+      "name": "Line of Fire",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-12-10",
+      "id": 42927,
+      "image": null,
+      "name": "Payback",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-12-17",
+      "id": 42928,
+      "image": null,
+      "name": "Tiger's Eye",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-01-05",
+      "id": 42929,
+      "image": null,
+      "name": "The Big Bingo Bamboozle",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-01-14",
+      "id": 42930,
+      "image": null,
+      "name": "Money Train",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-01-28",
+      "id": 42931,
+      "image": null,
+      "name": "Mean Streets",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-04",
+      "id": 42932,
+      "image": null,
+      "name": "Cowboy",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-11",
+      "id": 42933,
+      "image": null,
+      "name": "War Zone (1)",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-11",
+      "id": 42934,
+      "image": null,
+      "name": "War Zone (2)",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-18",
+      "id": 42935,
+      "image": null,
+      "name": "Trust No One",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-25",
+      "id": 42936,
+      "image": null,
+      "name": "Blue Movies",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-03-11",
+      "id": 42937,
+      "image": null,
+      "name": "On Sacred Ground",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-04-29",
+      "id": 42938,
+      "image": null,
+      "name": "Case Closed",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-06",
+      "id": 42939,
+      "image": null,
+      "name": "Flashback (1)",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-06",
+      "id": 42940,
+      "image": null,
+      "name": "Flashback (2)",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-13",
+      "id": 42941,
+      "image": null,
+      "name": "Stand Off (1)",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-13",
+      "id": 42942,
+      "image": null,
+      "name": "Stand Off (2)",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-09-23",
+      "id": 42943,
+      "image": null,
+      "name": "Blown Apart",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-09-30",
+      "id": 42944,
+      "image": null,
+      "name": "Deep Cover",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-07",
+      "id": 42945,
+      "image": null,
+      "name": "The Guardians",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-14",
+      "id": 42946,
+      "image": null,
+      "name": "Collision Course",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-21",
+      "id": 42947,
+      "image": null,
+      "name": "Point After",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-04",
+      "id": 42948,
+      "image": null,
+      "name": "Evil in the Night",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-11",
+      "id": 42949,
+      "image": null,
+      "name": "Final Justice",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-18",
+      "id": 42950,
+      "image": null,
+      "name": "The Lynching",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-25",
+      "id": 42951,
+      "image": null,
+      "name": "Whitewater (1)",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-12-02",
+      "id": 42952,
+      "image": null,
+      "name": "Whitewater (2)",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-12-09",
+      "id": 42953,
+      "image": null,
+      "name": "The Covenant",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-06",
+      "id": 42954,
+      "image": null,
+      "name": "Rodeo",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-13",
+      "id": 42955,
+      "image": null,
+      "name": "Flashpoint",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-20",
+      "id": 42956,
+      "image": null,
+      "name": "Break In",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-03",
+      "id": 42957,
+      "image": null,
+      "name": "The Return of LaRue",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-10",
+      "id": 42958,
+      "image": null,
+      "name": "The Juggernaut",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-17",
+      "id": 42959,
+      "image": null,
+      "name": "El Coyote (1)",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-24",
+      "id": 42960,
+      "image": null,
+      "name": "El Coyote (2)",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-03-02",
+      "id": 42961,
+      "image": null,
+      "name": "The Avenger",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-03-23",
+      "id": 42962,
+      "image": null,
+      "name": "Behind the Badge",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-06",
+      "id": 42963,
+      "image": null,
+      "name": "Blackout",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-13",
+      "id": 42964,
+      "image": null,
+      "name": "Deadline",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-27",
+      "id": 42965,
+      "image": null,
+      "name": "The Siege",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-04",
+      "id": 42966,
+      "image": null,
+      "name": "The Moscow Connection",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-11",
+      "id": 42967,
+      "image": null,
+      "name": "Miracle at Middle Creek",
+      "number": 25,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-18",
+      "id": 42968,
+      "image": null,
+      "name": "Hall of Fame",
+      "number": 26,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-09-21",
+      "id": 42969,
+      "image": null,
+      "name": "Higher Power",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-09-28",
+      "id": 42970,
+      "image": null,
+      "name": "Patriot",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-05",
+      "id": 42971,
+      "image": null,
+      "name": "Ghost Rider",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-12",
+      "id": 42972,
+      "image": null,
+      "name": "The Brotherhood",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-19",
+      "id": 42973,
+      "image": null,
+      "name": "Plague",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-26",
+      "id": 42974,
+      "image": null,
+      "name": "Redemption",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-02",
+      "id": 42975,
+      "image": null,
+      "name": "Codename: Dragonfly",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-09",
+      "id": 42976,
+      "image": null,
+      "name": "A Silent Cry",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-16",
+      "id": 42977,
+      "image": null,
+      "name": "Swan Song",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-23",
+      "id": 42978,
+      "image": null,
+      "name": "Cyclone",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-30",
+      "id": 42979,
+      "image": null,
+      "name": "Lucky",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-12-14",
+      "id": 42980,
+      "image": null,
+      "name": "The Deadliest Man Alive",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-12-21",
+      "id": 42981,
+      "image": null,
+      "name": "A Ranger's Christmas",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-01-11",
+      "id": 42982,
+      "image": null,
+      "name": "Mayday",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-01-18",
+      "id": 42983,
+      "image": null,
+      "name": "Last Hope",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-01",
+      "id": 42984,
+      "image": null,
+      "name": "Full Contact",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-08",
+      "id": 42985,
+      "image": null,
+      "name": "99th Ranger",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-15",
+      "id": 42986,
+      "image": null,
+      "name": "Devil's Turf",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-22",
+      "id": 42987,
+      "image": null,
+      "name": "Days Past",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-03-08",
+      "id": 42988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/422/1057486.jpg",
+      "name": "Trial of LaRue",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-05",
+      "id": 42989,
+      "image": null,
+      "name": "Heart of the Dragon",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-26",
+      "id": 42990,
+      "image": null,
+      "name": "The Neighborhood",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-03",
+      "id": 42991,
+      "image": null,
+      "name": "A Father's Image",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-04",
+      "id": 42992,
+      "image": null,
+      "name": "Sons of Thunder (1)",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-04",
+      "id": 42993,
+      "image": null,
+      "name": "Sons of Thunder (2)",
+      "number": 25,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-10",
+      "id": 42994,
+      "image": null,
+      "name": "Texas vs. Cahill",
+      "number": 26,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-17",
+      "id": 42995,
+      "image": null,
+      "name": "Rookie",
+      "number": 27,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-27",
+      "id": 42996,
+      "image": null,
+      "name": "The Fighting McLains",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-04",
+      "id": 42997,
+      "image": null,
+      "name": "Iceman",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-11",
+      "id": 42998,
+      "image": null,
+      "name": "Lucas (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-18",
+      "id": 42999,
+      "image": null,
+      "name": "Lucas (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-25",
+      "id": 43000,
+      "image": null,
+      "name": "Forgotten People",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-01",
+      "id": 43001,
+      "image": null,
+      "name": "Last of a Breed (1)",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-08",
+      "id": 43002,
+      "image": null,
+      "name": "Last of a Breed (2)",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-15",
+      "id": 43003,
+      "image": null,
+      "name": "Brainchild",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-22",
+      "id": 43004,
+      "image": null,
+      "name": "Mr. Justice",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-12-06",
+      "id": 43005,
+      "image": null,
+      "name": "Rainbow's End",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-12-13",
+      "id": 43006,
+      "image": null,
+      "name": "A Woman's Place",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-12-20",
+      "id": 43007,
+      "image": null,
+      "name": "Small Blessings",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-03",
+      "id": 43008,
+      "image": null,
+      "name": "Tribe",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-10",
+      "id": 43009,
+      "image": null,
+      "name": "Saving Grace",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-17",
+      "id": 43010,
+      "image": null,
+      "name": "Money Talks",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-31",
+      "id": 43011,
+      "image": null,
+      "name": "Crusader",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-02-28",
+      "id": 43012,
+      "image": null,
+      "name": "In God's Hands",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-03-07",
+      "id": 43013,
+      "image": null,
+      "name": "Undercover",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-03-21",
+      "id": 43014,
+      "image": null,
+      "name": "Everyday Heroes",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-04",
+      "id": 43015,
+      "image": null,
+      "name": "Warriors",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-18",
+      "id": 43016,
+      "image": null,
+      "name": "Angel",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-25",
+      "id": 43017,
+      "image": null,
+      "name": "The Soul of Winter",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-02",
+      "id": 43018,
+      "image": null,
+      "name": "Circle of Life",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-09",
+      "id": 43019,
+      "image": null,
+      "name": "Test of Faith",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-16",
+      "id": 43020,
+      "image": null,
+      "name": "The Wedding (1)",
+      "number": 25,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-09-26",
+      "id": 43021,
+      "image": null,
+      "name": "The Wedding (2)",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-03",
+      "id": 43022,
+      "image": null,
+      "name": "Trackdown",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-10",
+      "id": 43023,
+      "image": null,
+      "name": "Royal Heist",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-17",
+      "id": 43024,
+      "image": null,
+      "name": "War Cry",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-24",
+      "id": 43025,
+      "image": null,
+      "name": "Code of the West",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-31",
+      "id": 43026,
+      "image": null,
+      "name": "The Children of Halloween",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-07",
+      "id": 43027,
+      "image": null,
+      "name": "Survival",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-14",
+      "id": 43028,
+      "image": null,
+      "name": "Second Chance",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-21",
+      "id": 43029,
+      "image": null,
+      "name": "Paradise Trail",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-12-05",
+      "id": 43030,
+      "image": null,
+      "name": "Eyes of a Ranger",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-12-12",
+      "id": 43031,
+      "image": null,
+      "name": "On the Border",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-01-09",
+      "id": 43032,
+      "image": null,
+      "name": "Lost Boys",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-01-16",
+      "id": 43033,
+      "image": null,
+      "name": "Special Witness",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-06",
+      "id": 43034,
+      "image": null,
+      "name": "The Principal",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-13",
+      "id": 43035,
+      "image": null,
+      "name": "Team Cherokee (1)",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-20",
+      "id": 43036,
+      "image": null,
+      "name": "Team Cherokee (2)",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-27",
+      "id": 43037,
+      "image": null,
+      "name": "live-girls.now",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-04-24",
+      "id": 43038,
+      "image": null,
+      "name": "No Way Out",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-01",
+      "id": 43039,
+      "image": null,
+      "name": "Brothers in Arms",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-08",
+      "id": 43040,
+      "image": null,
+      "name": "Mind Games",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-15",
+      "id": 43041,
+      "image": null,
+      "name": "Power Angels",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-15",
+      "id": 43042,
+      "image": null,
+      "name": "Jacob's Ladder",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-22",
+      "id": 43043,
+      "image": null,
+      "name": "In Harm's Way (1)",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-09-25",
+      "id": 43044,
+      "image": null,
+      "name": "In Harm's Way (2)",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-10-02",
+      "id": 43045,
+      "image": null,
+      "name": "Countdown",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-10-09",
+      "id": 43046,
+      "image": null,
+      "name": "Safe House",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-10-16",
+      "id": 43047,
+      "image": null,
+      "name": "Way of the Warrior",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-10-23",
+      "id": 43048,
+      "image": null,
+      "name": "Tall Cotton",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-10-30",
+      "id": 43049,
+      "image": null,
+      "name": "The Lynn Sisters",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-11-06",
+      "id": 43050,
+      "image": null,
+      "name": "Suspicious Minds",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-11-13",
+      "id": 43051,
+      "image": null,
+      "name": "Widow Maker",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-11-20",
+      "id": 43052,
+      "image": null,
+      "name": "Fight or Die",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-11-27",
+      "id": 43053,
+      "image": null,
+      "name": "Rise to the Occasion",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-12-11",
+      "id": 43054,
+      "image": null,
+      "name": "Full Recovery",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "1999-12-18",
+      "id": 43055,
+      "image": null,
+      "name": "A Matter of Faith",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-01-08",
+      "id": 43056,
+      "image": null,
+      "name": "Vision Quest",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-01-15",
+      "id": 43057,
+      "image": null,
+      "name": "A Matter of Principle",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-02-05",
+      "id": 43058,
+      "image": null,
+      "name": "Thunderhawk",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-02-12",
+      "id": 43059,
+      "image": null,
+      "name": "Justice Delayed",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-02-19",
+      "id": 43060,
+      "image": null,
+      "name": "The Day of Cleansing (2)",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-02-26",
+      "id": 43061,
+      "image": null,
+      "name": "Black Dragons",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-03-18",
+      "id": 43062,
+      "image": null,
+      "name": "Soldiers of Hate",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-04-08",
+      "id": 43063,
+      "image": null,
+      "name": "The General's Return",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-04-29",
+      "id": 43064,
+      "image": null,
+      "name": "Showdown at Casa Diablo (1)",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-05-06",
+      "id": 43065,
+      "image": null,
+      "name": "Showdown at Casa Diablo (2)",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-05-13",
+      "id": 43066,
+      "image": null,
+      "name": "The Bachelor Party",
+      "number": 23,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-05-20",
+      "id": 43067,
+      "image": null,
+      "name": "Wedding Bells (1)",
+      "number": 24,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-05-20",
+      "id": 43068,
+      "image": null,
+      "name": "Wedding Bells (2)",
+      "number": 25,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2000-10-07",
+      "id": 43069,
+      "image": null,
+      "name": "Home of the Brave",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-10-14",
+      "id": 43070,
+      "image": null,
+      "name": "Deadly Situation",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-10-21",
+      "id": 43071,
+      "image": null,
+      "name": "White Buffalo",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-10-28",
+      "id": 43072,
+      "image": null,
+      "name": "The Avenging Angel",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-11-04",
+      "id": 43073,
+      "image": null,
+      "name": "The Winds of Change (1)",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-11-11",
+      "id": 43074,
+      "image": null,
+      "name": "Lazarus (2)",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-11-18",
+      "id": 43075,
+      "image": null,
+      "name": "Turning Point",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-11-25",
+      "id": 43076,
+      "image": null,
+      "name": "Retribution",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-12-09",
+      "id": 43077,
+      "image": null,
+      "name": "Child of Hope",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2000-12-16",
+      "id": 43078,
+      "image": null,
+      "name": "Faith",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-01-06",
+      "id": 43079,
+      "image": null,
+      "name": "Golden Boy",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-01-20",
+      "id": 43080,
+      "image": null,
+      "name": "Desperate Measures",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-02-03",
+      "id": 43081,
+      "image": null,
+      "name": "Division Street",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-02-10",
+      "id": 43082,
+      "image": null,
+      "name": "Saturday Night",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-02-17",
+      "id": 43083,
+      "image": null,
+      "name": "Justice for All",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-04-14",
+      "id": 43084,
+      "image": null,
+      "name": "6 Hours",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-04-21",
+      "id": 43085,
+      "image": null,
+      "name": "Medieval Crimes",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-04-21",
+      "id": 43086,
+      "image": null,
+      "name": "Legends",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-04-28",
+      "id": 43087,
+      "image": null,
+      "name": "Unsafe Speed",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-04-28",
+      "id": 43088,
+      "image": null,
+      "name": "Without a Sound",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-05-05",
+      "id": 43089,
+      "image": null,
+      "name": "Blood Diamonds",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-05-05",
+      "id": 43090,
+      "image": null,
+      "name": "Reel Rangers",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-05-19",
+      "id": 43091,
+      "image": null,
+      "name": "The Final Show/Down (1)",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-05-19",
+      "id": 43092,
+      "image": null,
+      "name": "The Final Show/Down (2)",
+      "number": 24,
+      "runtime": 60,
+      "season": 9
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-468",
+  "live": true,
+  "overview": "Texas Ranger Cordell Walker, one of the last old-fashioned heroes in the West, is a protective friend but a relentless foe who will stop at nothing to bring a criminal to justice.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/70/176011.jpg",
   "rating": 7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "468",
+  "title": "Walker, Texas Ranger",
+  "type": "series",
+  "year": 1993
 }

@@ -1,21 +1,2371 @@
 {
-  "schema": 1,
-  "id": "tvmaze-570",
-  "source": "tvmaze",
-  "sourceId": "570",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "NYPD Blue",
-  "year": 1993,
-  "type": "series",
-  "overview": "The gritty details of life as a member of a New York City police unit.",
-  "poster": "file:///android_asset/posters/tvmaze-570.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-09-21",
+      "id": 53554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123068.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-28",
+      "id": 53555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123069.jpg",
+      "name": "4B or Not 4B",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-05",
+      "id": 53556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123070.jpg",
+      "name": "Brown Appetit",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-12",
+      "id": 53557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123071.jpg",
+      "name": "True Confessions",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-19",
+      "id": 53558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123073.jpg",
+      "name": "Emission Accomplished",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-10-26",
+      "id": 53559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123075.jpg",
+      "name": "Personal Foul",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-02",
+      "id": 53560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123076.jpg",
+      "name": "NYPD Lou",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-16",
+      "id": 53561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123079.jpg",
+      "name": "Tempest in a C-Cup",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-11-30",
+      "id": 53562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123080.jpg",
+      "name": "Ice Follies",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-12-07",
+      "id": 53563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123081.jpg",
+      "name": "Oscar, Meyer, Weiner",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-12-14",
+      "id": 53564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123082.jpg",
+      "name": "From Hare to Eternity",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-04",
+      "id": 53565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123083.jpg",
+      "name": "Up on the Roof",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-11",
+      "id": 53566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123084.jpg",
+      "name": "Abandando Abandoned",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-18",
+      "id": 53567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123085.jpg",
+      "name": "Jumpin' Jack Fleishman",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-08",
+      "id": 53568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123086.jpg",
+      "name": "Steroid Roy",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-02-15",
+      "id": 53569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123087.jpg",
+      "name": "A Sudden Fish",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-01",
+      "id": 53570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123088.jpg",
+      "name": "Black Men Can Jump",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-22",
+      "id": 53571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123090.jpg",
+      "name": "Zeppo Marks Brothers",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-03-29",
+      "id": 53572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123091.jpg",
+      "name": "Serge the Concierge",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-03",
+      "id": 53573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123092.jpg",
+      "name": "Good Time Charlie",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-10",
+      "id": 53574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123093.jpg",
+      "name": "Guns 'n Rosaries",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-05-17",
+      "id": 53575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123094.jpg",
+      "name": "Rockin' Robin",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-10-11",
+      "id": 53576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159011.jpg",
+      "name": "Trials & Tribulations",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-18",
+      "id": 53577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159012.jpg",
+      "name": "From Whom the Skell Rolls",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-10-25",
+      "id": 53578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159013.jpg",
+      "name": "Cop Suey",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-01",
+      "id": 53579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159014.jpg",
+      "name": "Dead and Gone",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-15",
+      "id": 53580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159015.jpg",
+      "name": "Simone Says",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-22",
+      "id": 53581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159016.jpg",
+      "name": "The Final Adjustment",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-11-29",
+      "id": 53582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159017.jpg",
+      "name": "Double Abandando",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-12-06",
+      "id": 53583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159018.jpg",
+      "name": "You Bet Your Life",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-03",
+      "id": 53584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159020.jpg",
+      "name": "Don We Now Our Gay Apparel",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-10",
+      "id": 53585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159021.jpg",
+      "name": "In the Butt, Bob",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-17",
+      "id": 53586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159022.jpg",
+      "name": "Vishy-Vashy-Vinny",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-07",
+      "id": 53587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159023.jpg",
+      "name": "Large Mouth Bass",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-14",
+      "id": 53588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159024.jpg",
+      "name": "Travels With Andy",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-21",
+      "id": 53589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159025.jpg",
+      "name": "A Murder With Teeth in It",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-02-28",
+      "id": 53590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159026.jpg",
+      "name": "Bombs Away",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-14",
+      "id": 53591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159027.jpg",
+      "name": "UnAmerican Grafitti",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-21",
+      "id": 53592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159028.jpg",
+      "name": "Dirty Socks",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-04-04",
+      "id": 53593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159029.jpg",
+      "name": "Innuendo",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-02",
+      "id": 53594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159030.jpg",
+      "name": "Boxer Rebellion",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-09",
+      "id": 53595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159031.jpg",
+      "name": "The Bookie and Kooky Cookie",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-16",
+      "id": 53596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159032.jpg",
+      "name": "The Bank Dick",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-23",
+      "id": 53597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/463/1159033.jpg",
+      "name": "A.D.A. Sipowicz",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-24",
+      "id": 53598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172254.jpg",
+      "name": "E.R.",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-31",
+      "id": 53599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172255.jpg",
+      "name": "Torah! Torah! Torah!",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-07",
+      "id": 53600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172256.jpg",
+      "name": "One Big Happy Family",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-14",
+      "id": 53601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172257.jpg",
+      "name": "Heavin' Can Wait",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-21",
+      "id": 53602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172258.jpg",
+      "name": "Dirty Laundry",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-28",
+      "id": 53603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172260.jpg",
+      "name": "Curt Russell",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-12-12",
+      "id": 53604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172261.jpg",
+      "name": "Aging Bull",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-12-19",
+      "id": 53605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172262.jpg",
+      "name": "Cold Heaters",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-09",
+      "id": 53606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172263.jpg",
+      "name": "Sorry, Wong Suspect",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-16",
+      "id": 53607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172264.jpg",
+      "name": "The Backboard Jungle",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-30",
+      "id": 53608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172266.jpg",
+      "name": "Burnin' Love",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-06",
+      "id": 53609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172267.jpg",
+      "name": "These Old Bones",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-13",
+      "id": 53610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172268.jpg",
+      "name": "A Tushful of Dollars",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-20",
+      "id": 53611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172269.jpg",
+      "name": "The Nutty Confessor",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-27",
+      "id": 53612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172270.jpg",
+      "name": "Head Case",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-19",
+      "id": 53613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172271.jpg",
+      "name": "Girl Talk",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-26",
+      "id": 53614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172272.jpg",
+      "name": "Hollie and the Blowfish",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-02",
+      "id": 53615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172273.jpg",
+      "name": "We Was Robbed",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-30",
+      "id": 53616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172274.jpg",
+      "name": "Auntie Maimed",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-07",
+      "id": 53617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172275.jpg",
+      "name": "A Death in the Family",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-14",
+      "id": 53618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172276.jpg",
+      "name": "Closing Time",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-21",
+      "id": 53619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/468/1172277.jpg",
+      "name": "He's Not Guilty, He's My Brother",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-15",
+      "id": 53620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768396.jpg",
+      "name": "Moby Greg",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-22",
+      "id": 53621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768397.jpg",
+      "name": "Thick Stu",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-29",
+      "id": 53622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768398.jpg",
+      "name": "Yes, We Have No Cannolis",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-12",
+      "id": 53623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768399.jpg",
+      "name": "Where's 'Swaldo?",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-19",
+      "id": 53624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768400.jpg",
+      "name": "Where'd the Van Gogh?",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-26",
+      "id": 53625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768401.jpg",
+      "name": "Yes Sir, That's My Baby",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-03",
+      "id": 53626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768402.jpg",
+      "name": "Ted and Carey's Bogus Adventure",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-10",
+      "id": 53627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768403.jpg",
+      "name": "Unembraceable You",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-17",
+      "id": 53628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768404.jpg",
+      "name": "Caulksmanship",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-07",
+      "id": 53629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768405.jpg",
+      "name": "My Wild Irish Nose",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-14",
+      "id": 53630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768406.jpg",
+      "name": "Alice Doesn't Fit Here Anymore",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-21",
+      "id": 53631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768407.jpg",
+      "name": "Upstairs, Downstairs",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-28",
+      "id": 53632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768408.jpg",
+      "name": "Tom and Geri",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-11",
+      "id": 53633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768409.jpg",
+      "name": "A Remington Original",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-18",
+      "id": 53634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768410.jpg",
+      "name": "Taillight's Last Gleaming",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-25",
+      "id": 53635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768411.jpg",
+      "name": "What a Dump!",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-15",
+      "id": 53636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768412.jpg",
+      "name": "A Wrenching Experience",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-22",
+      "id": 53637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768413.jpg",
+      "name": "I Love Lucy",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-29",
+      "id": 53638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768414.jpg",
+      "name": "Bad Rap",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-06",
+      "id": 53639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768415.jpg",
+      "name": "Emission Impossible",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-13",
+      "id": 53640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768416.jpg",
+      "name": "Is Paris Burning?",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-20",
+      "id": 53641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768417.jpg",
+      "name": "A Draining Experience",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-09-30",
+      "id": 53642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768418.jpg",
+      "name": "As Flies to Careless Boys Are We to the Gods / This Bud's for You",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-07",
+      "id": 53643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768419.jpg",
+      "name": "All's Wells That Ends Well",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-14",
+      "id": 53644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768420.jpg",
+      "name": "Three Girls and a Baby",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-28",
+      "id": 53645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768421.jpg",
+      "name": "The Truth is Out There",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-04",
+      "id": 53646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768422.jpg",
+      "name": "It Takes a Village",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-11",
+      "id": 53647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768423.jpg",
+      "name": "Dead Man Talking",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-18",
+      "id": 53648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768424.jpg",
+      "name": "Sheedy Dealings",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-25",
+      "id": 53649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768425.jpg",
+      "name": "Lost Israel (1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-12-09",
+      "id": 53650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768426.jpg",
+      "name": "Lost Israel (2)",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-12-16",
+      "id": 53651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768427.jpg",
+      "name": "Remembrance of Humps Past",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-06",
+      "id": 53652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768428.jpg",
+      "name": "You're Under a Rasta",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-13",
+      "id": 53653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768429.jpg",
+      "name": "A Box of Wendy",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-02-10",
+      "id": 53654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768430.jpg",
+      "name": "Twin Petes",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-02-17",
+      "id": 53655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768431.jpg",
+      "name": "Weaver of Hate",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-02-24",
+      "id": 53656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768432.jpg",
+      "name": "Don't Kill the Messenger",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-03",
+      "id": 53657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768433.jpg",
+      "name": "The One That Got Away",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-24",
+      "id": 53658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768434.jpg",
+      "name": "Speak For Yourself, Bruce Clayton",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-03-31",
+      "id": 53659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768435.jpg",
+      "name": "I Don't Wanna Dye",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-04-28",
+      "id": 53660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768436.jpg",
+      "name": "Prostrate Before the Law",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-05",
+      "id": 53661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768437.jpg",
+      "name": "Hammer Time",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-12",
+      "id": 53662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768438.jpg",
+      "name": "Seminal Thinking",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-05-19",
+      "id": 53663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768439.jpg",
+      "name": "Honeymoon at Viagra Falls",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-10-20",
+      "id": 53664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768440.jpg",
+      "name": "Top Gum",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-27",
+      "id": 53665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768441.jpg",
+      "name": "Cop in a Bottle",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-10",
+      "id": 53666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768442.jpg",
+      "name": "Numb & Number",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-17",
+      "id": 53667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768443.jpg",
+      "name": "Brother's Keeper",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-24",
+      "id": 53668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768444.jpg",
+      "name": "Hearts and Souls",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-01",
+      "id": 53669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768445.jpg",
+      "name": "Danny Boy",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-08",
+      "id": 53670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768446.jpg",
+      "name": "Czech Bouncer",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-15",
+      "id": 53671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768447.jpg",
+      "name": "Raging Bulls",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-05",
+      "id": 53672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768448.jpg",
+      "name": "Grime Scene",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-12",
+      "id": 53673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768449.jpg",
+      "name": "Show and Tell",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-09",
+      "id": 53674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768450.jpg",
+      "name": "Big Bang Theory",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-16",
+      "id": 53675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768451.jpg",
+      "name": "What's Up, Chuck?",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-23",
+      "id": 53676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768452.jpg",
+      "name": "Dead Girl Walking",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-02",
+      "id": 53677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768453.jpg",
+      "name": "Raphael's Inferno",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-06",
+      "id": 53678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768454.jpg",
+      "name": "I Have a Dream",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-13",
+      "id": 53679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768455.jpg",
+      "name": "Tain't Misbehavin",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-20",
+      "id": 53680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768456.jpg",
+      "name": "Don't Meth With Me",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-27",
+      "id": 53681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768457.jpg",
+      "name": "Mister Roberts",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-04",
+      "id": 53682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768458.jpg",
+      "name": "Judas Priest",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-11",
+      "id": 53683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768459.jpg",
+      "name": "I'll Draw You a Mapp",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-18",
+      "id": 53684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768460.jpg",
+      "name": "Voir Dire This",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-25",
+      "id": 53685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768461.jpg",
+      "name": "Safe Home",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-01-11",
+      "id": 53686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768462.jpg",
+      "name": "Loogie Nights",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-18",
+      "id": 53687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768463.jpg",
+      "name": "A Hole in Juan",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-25",
+      "id": 53688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768464.jpg",
+      "name": "The Man with Two Right Shoes",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-01",
+      "id": 53689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768465.jpg",
+      "name": "The Naked are the Dead",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-08",
+      "id": 53690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768466.jpg",
+      "name": "These Shoots are Made for Joaquin",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-15",
+      "id": 53691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768467.jpg",
+      "name": "Brothers Under Arms",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-22",
+      "id": 53692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768468.jpg",
+      "name": "Along Came Jones",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-23",
+      "id": 53693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768469.jpg",
+      "name": "Everybody Plays the Mule",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-29",
+      "id": 53694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768470.jpg",
+      "name": "Jackass",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-07",
+      "id": 53695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768471.jpg",
+      "name": "Who Murders Sleep",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-14",
+      "id": 53696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768472.jpg",
+      "name": "Little Abner",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-21",
+      "id": 53697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768473.jpg",
+      "name": "Welcome to New York",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-28",
+      "id": 53698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768474.jpg",
+      "name": "The Irvin Files",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-04",
+      "id": 53699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768475.jpg",
+      "name": "Sleep Over",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-11",
+      "id": 53700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768476.jpg",
+      "name": "Stressed For Success",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-18",
+      "id": 53701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768477.jpg",
+      "name": "Goodbye Charlie",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-25",
+      "id": 53702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768478.jpg",
+      "name": "Roll Out the Barrel",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-02",
+      "id": 53703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768479.jpg",
+      "name": "Lucky Luciano",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-09",
+      "id": 53704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768480.jpg",
+      "name": "Tea and Sympathy",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-16",
+      "id": 53705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768481.jpg",
+      "name": "This Old Spouse",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-23",
+      "id": 53706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768482.jpg",
+      "name": "Bats Off to Larry",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-23",
+      "id": 53707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768483.jpg",
+      "name": "The Last Round Up",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-01-09",
+      "id": 53708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768484.jpg",
+      "name": "Daveless in New York",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-16",
+      "id": 53709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768485.jpg",
+      "name": "Waking Up is Hard to Do",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-23",
+      "id": 53710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768486.jpg",
+      "name": "Franco, My Dear, I Don't Give a Damn",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-30",
+      "id": 53711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768487.jpg",
+      "name": "Family Ties",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-06",
+      "id": 53712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768488.jpg",
+      "name": "Fools Russian",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-13",
+      "id": 53713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768489.jpg",
+      "name": "Writing Wrongs",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-20",
+      "id": 53714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768490.jpg",
+      "name": "In-Laws, Outlaws",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-27",
+      "id": 53715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768491.jpg",
+      "name": "Russellmania",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-06",
+      "id": 53716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768492.jpg",
+      "name": "Oh Golly Goth",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-13",
+      "id": 53717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768493.jpg",
+      "name": "In the Still of the Night",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-20",
+      "id": 53718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768494.jpg",
+      "name": "Peeping Tommy",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-27",
+      "id": 53719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768495.jpg",
+      "name": "Thumb Enchanted Evening",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-03",
+      "id": 53720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768496.jpg",
+      "name": "Flight of Fancy",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-10",
+      "id": 53721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768497.jpg",
+      "name": "Nariz a Nariz",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-17",
+      "id": 53722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768498.jpg",
+      "name": "Love Hurts",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-24",
+      "id": 53723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768499.jpg",
+      "name": "Everyone Into the Poole",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-01",
+      "id": 53724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768500.jpg",
+      "name": "Dying to Testify",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-08",
+      "id": 53725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768501.jpg",
+      "name": "Lost Time",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-15",
+      "id": 53726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768502.jpg",
+      "name": "Under Covers",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-22",
+      "id": 53727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768503.jpg",
+      "name": "In the Wind",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-06",
+      "id": 53728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768505.jpg",
+      "name": "Lie Like a Rug (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-06",
+      "id": 53729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768506.jpg",
+      "name": "Johnny Got His Gold (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-13",
+      "id": 53730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768507.jpg",
+      "name": "Two Clarks in a Bar",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-20",
+      "id": 53731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768508.jpg",
+      "name": "Hit the Road, Clark",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-11-27",
+      "id": 53732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768509.jpg",
+      "name": "Cops and Robber",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-12-04",
+      "id": 53733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768510.jpg",
+      "name": "Baby Love",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-12-11",
+      "id": 53734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768511.jpg",
+      "name": "Mom's Away",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-12-18",
+      "id": 53735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768512.jpg",
+      "name": "Puppy Love",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-08",
+      "id": 53736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768513.jpg",
+      "name": "Here Comes the Son",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-15",
+      "id": 53737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768514.jpg",
+      "name": "Jealous Hearts",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-05",
+      "id": 53738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768515.jpg",
+      "name": "Humpty Dumped",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-19",
+      "id": 53739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768516.jpg",
+      "name": "Oh, Mama",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-26",
+      "id": 53740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768517.jpg",
+      "name": "Safari, So Good",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-05",
+      "id": 53741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768518.jpg",
+      "name": "Hand Job",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-12",
+      "id": 53742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768519.jpg",
+      "name": "Guns & Hoses",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-19",
+      "id": 53743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768520.jpg",
+      "name": "A Little Dad'll Do Ya",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-26",
+      "id": 53744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768521.jpg",
+      "name": "Gypsy Woe's Me",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-16",
+      "id": 53745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768522.jpg",
+      "name": "Less is Morte",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-30",
+      "id": 53746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768523.jpg",
+      "name": "Low Blow",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-07",
+      "id": 53747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768524.jpg",
+      "name": "Oedipus Wrecked",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-14",
+      "id": 53748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768525.jpg",
+      "name": "Dead Meat in New Deli",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-21",
+      "id": 53749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768526.jpg",
+      "name": "Better Laid Than Never (1)",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-21",
+      "id": 53750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768527.jpg",
+      "name": "Better Laid Than Never (2)",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-24",
+      "id": 53751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768531.jpg",
+      "name": "Ho Down",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-01",
+      "id": 53752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768532.jpg",
+      "name": "You've Got Mail",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-08",
+      "id": 53753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768533.jpg",
+      "name": "One in the Nuts",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-15",
+      "id": 53754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768534.jpg",
+      "name": "Meat Me in the Park",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-22",
+      "id": 53755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768535.jpg",
+      "name": "Death by Cycle",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-10-29",
+      "id": 53756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768536.jpg",
+      "name": "Maya Con Dios",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-12",
+      "id": 53757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768537.jpg",
+      "name": "Das Boots",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-19",
+      "id": 53758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768538.jpg",
+      "name": "Below the Belt",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-11-26",
+      "id": 53759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768539.jpg",
+      "name": "Half-Ashed",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2002-12-10",
+      "id": 53760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768540.jpg",
+      "name": "Healthy McDowell Movement",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-07",
+      "id": 53761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768541.jpg",
+      "name": "I Kid You Not",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-14",
+      "id": 53762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768542.jpg",
+      "name": "Arrested Development",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-04",
+      "id": 53763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768543.jpg",
+      "name": "Bottoms Up",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-11",
+      "id": 53764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768544.jpg",
+      "name": "Laughlin All the Way to the Clink",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-18",
+      "id": 53765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768545.jpg",
+      "name": "Tranny Get Your Gun",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-25",
+      "id": 53766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768546.jpg",
+      "name": "Nude Awakening",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-08",
+      "id": 53767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768547.jpg",
+      "name": "Off the Wall",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-15",
+      "id": 53768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768548.jpg",
+      "name": "Marine Life",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-29",
+      "id": 53769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768549.jpg",
+      "name": "Meet the Grandparents",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-06",
+      "id": 53770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768550.jpg",
+      "name": "Maybe Baby",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-13",
+      "id": 53771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768551.jpg",
+      "name": "Yo, Adrian",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-20",
+      "id": 53772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768552.jpg",
+      "name": "22 Skidoo",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-23",
+      "id": 53773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768553.jpg",
+      "name": "Frickin' Fraker",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-09-30",
+      "id": 53774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768554.jpg",
+      "name": "Your Bus, Ted",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-07",
+      "id": 53775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768555.jpg",
+      "name": "Shear Stupidity",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-14",
+      "id": 53776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768556.jpg",
+      "name": "Porn Free",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-21",
+      "id": 53777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768557.jpg",
+      "name": "Keeping Abreast",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-10-28",
+      "id": 53778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768558.jpg",
+      "name": "Andy Appleseed",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-04",
+      "id": 53779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768559.jpg",
+      "name": "It's to Die For",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-18",
+      "id": 53780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768560.jpg",
+      "name": "And the Wenner Is...",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2003-11-25",
+      "id": 53781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768561.jpg",
+      "name": "Only Schmucks Pay Income Tax",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-10",
+      "id": 53782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768562.jpg",
+      "name": "You Da Bomb",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-17",
+      "id": 53783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768563.jpg",
+      "name": "Passing the Stone",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-02",
+      "id": 53784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768564.jpg",
+      "name": "Chatty Chatty Bang Bang",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-09",
+      "id": 53785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768565.jpg",
+      "name": "Take My Wife, Please",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-16",
+      "id": 53786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768566.jpg",
+      "name": "Colonel Knowledge",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-23",
+      "id": 53787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768567.jpg",
+      "name": "Old Yeller",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-30",
+      "id": 53788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768568.jpg",
+      "name": "On the Fence",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-06",
+      "id": 53789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768569.jpg",
+      "name": "In Goddess We Trussed",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-13",
+      "id": 53790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768570.jpg",
+      "name": "The Brothers Grim",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-20",
+      "id": 53791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768571.jpg",
+      "name": "Peeler? I Hardly Knew Her",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-27",
+      "id": 53792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768572.jpg",
+      "name": "Traylor Trash",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-04",
+      "id": 53793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768573.jpg",
+      "name": "What's Your Poison?",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-11",
+      "id": 53794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768574.jpg",
+      "name": "Who's Your Daddy?",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-21",
+      "id": 53795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768577.jpg",
+      "name": "Dress for Success",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-09-28",
+      "id": 53796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768578.jpg",
+      "name": "Fish Out of Water",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-10-12",
+      "id": 53797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768579.jpg",
+      "name": "Great Balls of Ire",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-10-19",
+      "id": 53798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768580.jpg",
+      "name": "Divorce Detective Style",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-10-26",
+      "id": 53799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768581.jpg",
+      "name": "You're Buggin' Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-11-09",
+      "id": 53800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768582.jpg",
+      "name": "The Vision Thing",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-11-16",
+      "id": 53801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768583.jpg",
+      "name": "My Dinner With Andy",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-11-23",
+      "id": 53802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768584.jpg",
+      "name": "I Like Ike",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-11-30",
+      "id": 53803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768585.jpg",
+      "name": "The 3-H Club",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-12-07",
+      "id": 53804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768586.jpg",
+      "name": "The Dead Donald",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-12-14",
+      "id": 53805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768587.jpg",
+      "name": "Bale Out",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2004-12-21",
+      "id": 53806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768588.jpg",
+      "name": "I Love My Wives, But Oh You Kid",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-11",
+      "id": 53807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768589.jpg",
+      "name": "Stoli with a Twist",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-18",
+      "id": 53808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768590.jpg",
+      "name": "Stratis Fear",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-25",
+      "id": 53809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768591.jpg",
+      "name": "La Bomba",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-01",
+      "id": 53810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768592.jpg",
+      "name": "Old Man Quiver",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-08",
+      "id": 53811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768593.jpg",
+      "name": "Sergeant Sipowicz' Lonely Hearts Club Band",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-15",
+      "id": 53812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768594.jpg",
+      "name": "Lenny Scissorhands",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-22",
+      "id": 53813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768595.jpg",
+      "name": "Bale to the Chief",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-03-01",
+      "id": 53814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768596.jpg",
+      "name": "Moving Day",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-570",
+  "live": true,
+  "overview": "The gritty details of life as a member of a New York City police unit.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11779.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "570",
+  "title": "NYPD Blue",
+  "type": "series",
+  "year": 1993
 }

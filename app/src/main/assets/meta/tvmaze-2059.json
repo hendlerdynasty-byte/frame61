@@ -1,23 +1,888 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2059",
-  "source": "tvmaze",
-  "sourceId": "2059",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Sword Art Online",
-  "year": 2012,
-  "type": "series",
-  "overview": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called: Nerve Gear. One day, players discover they cannot log out, as the game creator is holding them captive unless they reach the 100th floor of the game's tower and defeat the final boss. However, if they die in the game, they die in real life. Their struggle for survival starts now...",
-  "poster": "file:///android_asset/posters/tvmaze-2059.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-07-07",
+      "id": 163535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/632/1581417.jpg",
+      "name": "The World of Swords",
+      "number": 1,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-14",
+      "id": 163536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/632/1581423.jpg",
+      "name": "Beater",
+      "number": 2,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-21",
+      "id": 163537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/632/1581451.jpg",
+      "name": "The Red-Nosed Reindeer",
+      "number": 3,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-28",
+      "id": 163538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/632/1581463.jpg",
+      "name": "The Black Swordsman",
+      "number": 4,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-04",
+      "id": 163539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/633/1584483.jpg",
+      "name": "A Crime Within the Walls",
+      "number": 5,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-11",
+      "id": 163540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160844.jpg",
+      "name": "Illusionary Avenger",
+      "number": 6,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-18",
+      "id": 163541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160845.jpg",
+      "name": "Warmth of the Heart",
+      "number": 7,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-25",
+      "id": 163542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160846.jpg",
+      "name": "Black & White Sword Dance",
+      "number": 8,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-01",
+      "id": 163543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160847.jpg",
+      "name": "Blue-Eyed Demon",
+      "number": 9,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-08",
+      "id": 163544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160848.jpg",
+      "name": "Crimson Killing Intent",
+      "number": 10,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-15",
+      "id": 163545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160849.jpg",
+      "name": "The Morning Dew Girl",
+      "number": 11,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-22",
+      "id": 163546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160850.jpg",
+      "name": "Yui's Heart",
+      "number": 12,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-29",
+      "id": 163547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160851.jpg",
+      "name": "The Depths of Hell",
+      "number": 13,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-06",
+      "id": 163548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160852.jpg",
+      "name": "The End of the World",
+      "number": 14,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-13",
+      "id": 163549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160853.jpg",
+      "name": "Return",
+      "number": 15,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-20",
+      "id": 163550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160854.jpg",
+      "name": "The Country of Fairies",
+      "number": 16,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-27",
+      "id": 163551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160855.jpg",
+      "name": "The Captive Queen",
+      "number": 17,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-03",
+      "id": 163552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160856.jpg",
+      "name": "To the World Tree",
+      "number": 18,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-10",
+      "id": 163553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160857.jpg",
+      "name": "The Lugru Corridor",
+      "number": 19,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-17",
+      "id": 163554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160858.jpg",
+      "name": "General of the Blazing Flames",
+      "number": 20,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-24",
+      "id": 163555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160859.jpg",
+      "name": "The Truth About ALfheim",
+      "number": 21,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-01",
+      "id": 163556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160860.jpg",
+      "name": "Grand Quest",
+      "number": 22,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-08",
+      "id": 163557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160861.jpg",
+      "name": "Bonds",
+      "number": 23,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-15",
+      "id": 163558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160862.jpg",
+      "name": "Gilded Hero",
+      "number": 24,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2012-12-22",
+      "id": 163559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160863.jpg",
+      "name": "The World Seed",
+      "number": 25,
+      "runtime": 25,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-05",
+      "id": 163560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160866.jpg",
+      "name": "Gun World",
+      "number": 1,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-12",
+      "id": 163561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160867.jpg",
+      "name": "Ice Sniper",
+      "number": 2,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-19",
+      "id": 163562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160868.jpg",
+      "name": "Memories in Fresh Blood",
+      "number": 3,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-26",
+      "id": 163563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160869.jpg",
+      "name": "Gun Gale Online",
+      "number": 4,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-02",
+      "id": 163564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160870.jpg",
+      "name": "Gun and Sword",
+      "number": 5,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-09",
+      "id": 163565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160871.jpg",
+      "name": "Duel in the Wasteland",
+      "number": 6,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-16",
+      "id": 163566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160872.jpg",
+      "name": "Crimson Memories",
+      "number": 7,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-23",
+      "id": 163567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160873.jpg",
+      "name": "Bullet of Bullets",
+      "number": 8,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-30",
+      "id": 163568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160874.jpg",
+      "name": "Death Gun",
+      "number": 9,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-06",
+      "id": 163569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160875.jpg",
+      "name": "Pursuer of Death",
+      "number": 10,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-13",
+      "id": 163570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160876.jpg",
+      "name": "The Meaning of Strength",
+      "number": 11,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-20",
+      "id": 163571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160877.jpg",
+      "name": "Bullet of a Phantom",
+      "number": 12,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-27",
+      "id": 163572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160878.jpg",
+      "name": "Phantom Bullet",
+      "number": 13,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-04",
+      "id": 163573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160879.jpg",
+      "name": "One Little Step",
+      "number": 14,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-18",
+      "id": 163574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160891.jpg",
+      "name": "The Queen of the Lake",
+      "number": 15,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-25",
+      "id": 163575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160892.jpg",
+      "name": "King of the Giants",
+      "number": 16,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-01",
+      "id": 163576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160893.jpg",
+      "name": "Excalibur",
+      "number": 17,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-08",
+      "id": 163577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160894.jpg",
+      "name": "The Forest House",
+      "number": 18,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-15",
+      "id": 163578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160895.jpg",
+      "name": "Absolute Sword",
+      "number": 19,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-22",
+      "id": 163579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160896.jpg",
+      "name": "Sleeping Knights",
+      "number": 20,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-29",
+      "id": 163580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160898.jpg",
+      "name": "The Monument of Swordsmen",
+      "number": 21,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-06",
+      "id": 163581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160899.jpg",
+      "name": "Journey's End",
+      "number": 22,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-13",
+      "id": 163582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160900.jpg",
+      "name": "Beginning of a Dream",
+      "number": 23,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-20",
+      "id": 163583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160901.jpg",
+      "name": "Mother's Rosario",
+      "number": 24,
+      "runtime": 25,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-06",
+      "id": 1445768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429355.jpg",
+      "name": "Underworld",
+      "number": 1,
+      "runtime": 50,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-13",
+      "id": 1530338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429442.jpg",
+      "name": "The Demon Tree",
+      "number": 2,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-20",
+      "id": 1530339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/431635.jpg",
+      "name": "The End Mountains",
+      "number": 3,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-10-27",
+      "id": 1530340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459844.jpg",
+      "name": "Departure",
+      "number": 4,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-03",
+      "id": 1530341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459845.jpg",
+      "name": "Ocean Turtle",
+      "number": 5,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-10",
+      "id": 1530342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459846.jpg",
+      "name": "Project Alicization",
+      "number": 6,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-17",
+      "id": 1530343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459848.jpg",
+      "name": "Swordcraft Academy",
+      "number": 7,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-24",
+      "id": 1530344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459849.jpg",
+      "name": "Swordsman's Pride",
+      "number": 8,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-01",
+      "id": 1530345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459851.jpg",
+      "name": "Nobleman's Responsibilities",
+      "number": 9,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-08",
+      "id": 1530346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459854.jpg",
+      "name": "Taboo Index",
+      "number": 10,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-15",
+      "id": 1530347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459855.jpg",
+      "name": "Central Cathedral",
+      "number": 11,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-22",
+      "id": 1530348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459857.jpg",
+      "name": "The Sage of the Library",
+      "number": 12,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-05",
+      "id": 1581015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459859.jpg",
+      "name": "Ruler and Mediator",
+      "number": 13,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-12",
+      "id": 1581016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459860.jpg",
+      "name": "The Crimson Knight",
+      "number": 14,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-19",
+      "id": 1581017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459861.jpg",
+      "name": "The Relentless Knight",
+      "number": 15,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-01-26",
+      "id": 1581018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459863.jpg",
+      "name": "The Osmanthus Knight",
+      "number": 16,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-02",
+      "id": 1581019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459864.jpg",
+      "name": "Truce",
+      "number": 17,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-09",
+      "id": 1581020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459865.jpg",
+      "name": "The Legendary Hero",
+      "number": 18,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-23",
+      "id": 1581022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484323.jpg",
+      "name": "The Seal of the Right Eye",
+      "number": 19,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-02",
+      "id": 1581023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484324.jpg",
+      "name": "Synthesis",
+      "number": 20,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-09",
+      "id": 1581024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484325.jpg",
+      "name": "The 32nd Knight",
+      "number": 21,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-16",
+      "id": 1581025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484326.jpg",
+      "name": "Titan of the Sword",
+      "number": 22,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-23",
+      "id": 1581026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484327.jpg",
+      "name": "Administrator",
+      "number": 23,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-30",
+      "id": 1611886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484328.jpg",
+      "name": "My Hero",
+      "number": 24,
+      "runtime": 25,
+      "season": 3
+    },
+    {
+      "airdate": "2019-10-12",
+      "id": 1713839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541938.jpg",
+      "name": "In the Far North",
+      "number": 1,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-10-19",
+      "id": 1714490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541939.jpg",
+      "name": "Raids",
+      "number": 2,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-10-26",
+      "id": 1714491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/546501.jpg",
+      "name": "The Final Load Test",
+      "number": 3,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-02",
+      "id": 1714492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/546502.jpg",
+      "name": "Dark Territory",
+      "number": 4,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-09",
+      "id": 1714493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/222/555510.jpg",
+      "name": "The Night Before Battle",
+      "number": 5,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-16",
+      "id": 1714494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/567827.jpg",
+      "name": "Battle of the Knights",
+      "number": 6,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-23",
+      "id": 1714495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568446.jpg",
+      "name": "Stigma of the Disqualified",
+      "number": 7,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-30",
+      "id": 1714496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/572825.jpg",
+      "name": "Blood and Life",
+      "number": 8,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-07",
+      "id": 1714497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/576233.jpg",
+      "name": "Sword and Fist",
+      "number": 9,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-14",
+      "id": 1714498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579877.jpg",
+      "name": "Stacia, the Goddess of Creation",
+      "number": 10,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-21",
+      "id": 1714499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/582433.jpg",
+      "name": "Heartless Choice",
+      "number": 11,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-28",
+      "id": 1714500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/234/585348.jpg",
+      "name": "Ray of Light",
+      "number": 12,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-07-11",
+      "id": 1782457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/265/663962.jpg",
+      "name": "The War of Underworld",
+      "number": 13,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-07-18",
+      "id": 1898060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665869.jpg",
+      "name": "End to Eternity",
+      "number": 14,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-07-25",
+      "id": 1898061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665871.jpg",
+      "name": "Instigation",
+      "number": 15,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-08-01",
+      "id": 1907379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668040.jpg",
+      "name": "Code 871",
+      "number": 16,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-08-08",
+      "id": 1910395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/269/673178.jpg",
+      "name": "Prince of Hell",
+      "number": 17,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-08-15",
+      "id": 1912250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/272/680053.jpg",
+      "name": "Memories",
+      "number": 18,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-08-22",
+      "id": 1915273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/272/680054.jpg",
+      "name": "Awakening",
+      "number": 19,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-08-29",
+      "id": 1918065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/272/680055.jpg",
+      "name": "The Night-Sky Blade",
+      "number": 20,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-09-05",
+      "id": 1921745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/273/684977.jpg",
+      "name": "Beyond Time",
+      "number": 21,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-09-12",
+      "id": 1925797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/273/684978.jpg",
+      "name": "Alice",
+      "number": 22,
+      "runtime": 25,
+      "season": 4
+    },
+    {
+      "airdate": "2020-09-19",
+      "id": 1929005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/274/686794.jpg",
+      "name": "New World",
+      "number": 23,
+      "runtime": 25,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Anime",
     "Fantasy"
   ],
+  "id": "tvmaze-2059",
+  "live": true,
+  "overview": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called: Nerve Gear. One day, players discover they cannot log out, as the game creator is holding them captive unless they reach the 100th floor of the game's tower and defeat the final boss. However, if they die in the game, they die in real life. Their struggle for survival starts now...",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/573/1434479.jpg",
   "rating": 7.6,
   "runtime": 25,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2059",
+  "title": "Sword Art Online",
+  "type": "series",
+  "year": 2012
 }

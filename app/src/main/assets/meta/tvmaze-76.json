@@ -1,22 +1,851 @@
 {
-  "schema": 1,
-  "id": "tvmaze-76",
-  "source": "tvmaze",
-  "sourceId": "76",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Sons of Anarchy",
-  "year": 2008,
-  "type": "series",
-  "overview": "Sons of Anarchy is an American television drama series created by Kurt Sutter, about the lives of a close-knit outlaw motorcycle club operating in Charming, a fictional town in California's Central Valley. The show centers on protagonist Jackson \"Jax\" Teller (Charlie Hunnam), initially the vice president of the club, who begins questioning the club and himself.",
-  "poster": "file:///android_asset/posters/tvmaze-76.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-09-03",
+      "id": 4245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25834.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-10",
+      "id": 4246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25835.jpg",
+      "name": "Seeds",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-17",
+      "id": 4247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25874.jpg",
+      "name": "Fun Town",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-24",
+      "id": 4248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25875.jpg",
+      "name": "Patch Over",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-01",
+      "id": 4249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25884.jpg",
+      "name": "Giving Back",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-08",
+      "id": 4250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25885.jpg",
+      "name": "AK-51",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-15",
+      "id": 4251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25888.jpg",
+      "name": "Old Bones",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-22",
+      "id": 4252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25897.jpg",
+      "name": "The Pull",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-29",
+      "id": 4253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25914.jpg",
+      "name": "Hell Followed",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-05",
+      "id": 4254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25915.jpg",
+      "name": "Better Half",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-12",
+      "id": 4255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25916.jpg",
+      "name": "Capybara",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-19",
+      "id": 4256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25918.jpg",
+      "name": "The Sleep of Babies",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-26",
+      "id": 4257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25919.jpg",
+      "name": "The Revelator",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-09-08",
+      "id": 4258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25921.jpg",
+      "name": "Albification",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-15",
+      "id": 4259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25923.jpg",
+      "name": "Small Tears",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-22",
+      "id": 4260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25924.jpg",
+      "name": "Fix",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-29",
+      "id": 4261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25925.jpg",
+      "name": "Eureka",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-06",
+      "id": 4262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25926.jpg",
+      "name": "Smite",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-13",
+      "id": 4263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25927.jpg",
+      "name": "Falx Cerebri",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-20",
+      "id": 4264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25928.jpg",
+      "name": "Gilead",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-27",
+      "id": 4265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25929.jpg",
+      "name": "Potlatch",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-03",
+      "id": 4266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25930.jpg",
+      "name": "Fa Guan",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-10",
+      "id": 4267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25931.jpg",
+      "name": "Balm",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-17",
+      "id": 4268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25932.jpg",
+      "name": "Service",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-24",
+      "id": 4269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25933.jpg",
+      "name": "The Culling",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-01",
+      "id": 4270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25934.jpg",
+      "name": "Na Trioblóidi",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-07",
+      "id": 4271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26427.jpg",
+      "name": "SO",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-14",
+      "id": 4272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26428.jpg",
+      "name": "Oiled",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-21",
+      "id": 4273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26440.jpg",
+      "name": "Caregiver",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-28",
+      "id": 4274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26441.jpg",
+      "name": "Home",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-05",
+      "id": 4275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26446.jpg",
+      "name": "Turning and Turning",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-12",
+      "id": 4276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26447.jpg",
+      "name": "The Push",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-19",
+      "id": 4277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26448.jpg",
+      "name": "Widening Gyre",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-26",
+      "id": 4278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26449.jpg",
+      "name": "Lochan Mor",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-02",
+      "id": 4279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26451.jpg",
+      "name": "Turas",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-09",
+      "id": 4280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26452.jpg",
+      "name": "Firinne",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-16",
+      "id": 4281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26479.jpg",
+      "name": "Bainne",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-23",
+      "id": 4282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26498.jpg",
+      "name": "June Wedding",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-30",
+      "id": 4283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26499.jpg",
+      "name": "NS",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-09-06",
+      "id": 4284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26500.jpg",
+      "name": "Out",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-13",
+      "id": 4285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26647.jpg",
+      "name": "Booster",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-20",
+      "id": 4286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26756.jpg",
+      "name": "Dorylus",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 4287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26757.jpg",
+      "name": "Una Venta",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-04",
+      "id": 4288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27031.jpg",
+      "name": "Brick",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-11",
+      "id": 4289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27032.jpg",
+      "name": "With an X",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-18",
+      "id": 4290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27061.jpg",
+      "name": "Fruit for the Crows",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-25",
+      "id": 4291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27062.jpg",
+      "name": "Family Recipe",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-01",
+      "id": 4292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27063.jpg",
+      "name": "Kiss",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 4293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27064.jpg",
+      "name": "Hands",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-15",
+      "id": 4294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27065.jpg",
+      "name": "Call of Duty",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-22",
+      "id": 4295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27066.jpg",
+      "name": "Burnt and Purged Away",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-29",
+      "id": 4296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27067.jpg",
+      "name": "To Be, Act 1",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-06",
+      "id": 4297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27068.jpg",
+      "name": "To Be, Act 2",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-09-11",
+      "id": 4298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311690.jpg",
+      "name": "Sovereign",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-18",
+      "id": 4299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311705.jpg",
+      "name": "Authority Vested",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-25",
+      "id": 4300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311961.jpg",
+      "name": "Laying Pipe",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-02",
+      "id": 4301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311966.jpg",
+      "name": "Stolen Huffy",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-09",
+      "id": 4302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312262.jpg",
+      "name": "Orca Shrugged",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-16",
+      "id": 4303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312275.jpg",
+      "name": "Small World",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-23",
+      "id": 4304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312286.jpg",
+      "name": "Toad's Wild Ride",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-30",
+      "id": 4305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312297.jpg",
+      "name": "Ablation",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-06",
+      "id": 4306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312325.jpg",
+      "name": "Andare Pescare",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-13",
+      "id": 4307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312338.jpg",
+      "name": "Crucifixed",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-20",
+      "id": 4308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312610.jpg",
+      "name": "To Thine Own Self",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-27",
+      "id": 4309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312620.jpg",
+      "name": "Darthy",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-04",
+      "id": 4310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312637.jpg",
+      "name": "J'ai Obtenu Cette",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-10",
+      "id": 4311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/342687.jpg",
+      "name": "Straw",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-17",
+      "id": 4312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/342688.jpg",
+      "name": "One One Six",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-24",
+      "id": 4313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344523.jpg",
+      "name": "Poenitentia",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-01",
+      "id": 4314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344525.jpg",
+      "name": "Wolfsangel",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-08",
+      "id": 4315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344526.jpg",
+      "name": "The Mad King",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-15",
+      "id": 4316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344527.jpg",
+      "name": "Salvage",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-22",
+      "id": 4317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344528.jpg",
+      "name": "Sweet and Vaded",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-29",
+      "id": 4318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344533.jpg",
+      "name": "Los Fantasmas",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-05",
+      "id": 4319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344534.jpg",
+      "name": "John 8:32",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-12",
+      "id": 4320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344535.jpg",
+      "name": "Huang Wu",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-11-19",
+      "id": 4321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344536.jpg",
+      "name": "Aon Rud Persanta",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-12-03",
+      "id": 4322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344537.jpg",
+      "name": "You Are My Sunshine",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-12-10",
+      "id": 4323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344538.jpg",
+      "name": "A Mother's Work",
+      "number": 13,
+      "runtime": 82,
+      "season": 6
+    },
+    {
+      "airdate": "2014-09-09",
+      "id": 4324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4367.jpg",
+      "name": "Black Widower",
+      "number": 1,
+      "runtime": 71,
+      "season": 7
+    },
+    {
+      "airdate": "2014-09-16",
+      "id": 4325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4368.jpg",
+      "name": "Toil and Till",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-09-23",
+      "id": 4326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4369.jpg",
+      "name": "Playing with Monsters",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-09-30",
+      "id": 4327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4370.jpg",
+      "name": "Poor Little Lambs",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-10-07",
+      "id": 4328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4371.jpg",
+      "name": "Some Strange Eruption",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 4329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4372.jpg",
+      "name": "Smoke 'em If You Got 'em",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-10-21",
+      "id": 4330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5125.jpg",
+      "name": "Greensleeves",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-10-28",
+      "id": 4331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6236.jpg",
+      "name": "The Separation of Crows",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-11-04",
+      "id": 4332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/7887.jpg",
+      "name": "What a Piece of Work is Man",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 4333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10357.jpg",
+      "name": "Faith and Despondency",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 4334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11303.jpg",
+      "name": "Suits of Woe",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-02",
+      "id": 14417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/13827.jpg",
+      "name": "Red Rose",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-12-09",
+      "id": 15832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14692.jpg",
+      "name": "Papa's Goods",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-76",
+  "live": true,
+  "overview": "Sons of Anarchy is an American television drama series created by Kurt Sutter, about the lives of a close-knit outlaw motorcycle club operating in Charming, a fictional town in California's Central Valley. The show centers on protagonist Jackson \"Jax\" Teller (Charlie Hunnam), initially the vice president of the club, who begins questioning the club and himself.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/495/1239905.jpg",
   "rating": 8.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "76",
+  "title": "Sons of Anarchy",
+  "type": "series",
+  "year": 2008
 }

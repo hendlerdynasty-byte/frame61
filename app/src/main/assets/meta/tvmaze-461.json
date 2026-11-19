@@ -1,22 +1,419 @@
 {
-  "schema": 1,
-  "id": "tvmaze-461",
-  "source": "tvmaze",
-  "sourceId": "461",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Legend of the Seeker",
-  "year": 2008,
-  "type": "series",
-  "overview": "In a mythical land, one man, Richard Cypher, discovers his true destiny as he, a mysterious young woman, a wise old wizard and a magical sword are all that stand between the evil tyrant Darken Rahl and his quest for total domination.Based on The Sword of Truth series of books by Terry Goodkind.",
-  "poster": "file:///android_asset/posters/tvmaze-461.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-11-01",
+      "id": 42684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339706.jpg",
+      "name": "Prophecy",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-01",
+      "id": 42685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339708.jpg",
+      "name": "Destiny",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-08",
+      "id": 42686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339709.jpg",
+      "name": "Bounty",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-15",
+      "id": 42687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339710.jpg",
+      "name": "Brennidon",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-22",
+      "id": 42688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339711.jpg",
+      "name": "Listener",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-29",
+      "id": 42689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339714.jpg",
+      "name": "Elixir",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-06",
+      "id": 42690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339715.jpg",
+      "name": "Identity",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-10",
+      "id": 42691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339716.jpg",
+      "name": "Denna",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-17",
+      "id": 42692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339754.jpg",
+      "name": "Puppeteer",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-24",
+      "id": 42693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339751.jpg",
+      "name": "Sacrifice",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-31",
+      "id": 42694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339749.jpg",
+      "name": "Confession",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-21",
+      "id": 42695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339745.jpg",
+      "name": "Home",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-28",
+      "id": 42696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339743.jpg",
+      "name": "Revenant",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-07",
+      "id": 42697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339742.jpg",
+      "name": "Hartland",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-14",
+      "id": 42698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339741.jpg",
+      "name": "Conversion",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-21",
+      "id": 42699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339737.jpg",
+      "name": "Bloodline",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-28",
+      "id": 42700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339755.jpg",
+      "name": "Deception",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-25",
+      "id": 42701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339760.jpg",
+      "name": "Mirror",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-02",
+      "id": 42702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339763.jpg",
+      "name": "Cursed",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-09",
+      "id": 42703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339772.jpg",
+      "name": "Sanctuary",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-16",
+      "id": 42704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339779.jpg",
+      "name": "Fever",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-23",
+      "id": 42705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339781.jpg",
+      "name": "Reckoning",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-07",
+      "id": 42706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339787.jpg",
+      "name": "Marked",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-14",
+      "id": 42707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339791.jpg",
+      "name": "Baneling",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-21",
+      "id": 42708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339794.jpg",
+      "name": "Broken",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-28",
+      "id": 42709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339798.jpg",
+      "name": "Touched",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-05",
+      "id": 42710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339809.jpg",
+      "name": "Wizard",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-12",
+      "id": 42711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339816.jpg",
+      "name": "Fury",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-09",
+      "id": 42712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339819.jpg",
+      "name": "Resurrection",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-16",
+      "id": 42713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339820.jpg",
+      "name": "Light",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-23",
+      "id": 42714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339830.jpg",
+      "name": "Dark",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-30",
+      "id": 42715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339844.jpg",
+      "name": "Perdition",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-13",
+      "id": 42716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339855.jpg",
+      "name": "Torn",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-20",
+      "id": 42717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339857.jpg",
+      "name": "Hunger",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-27",
+      "id": 42718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339874.jpg",
+      "name": "Princess",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-20",
+      "id": 42719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339875.jpg",
+      "name": "Bound",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-27",
+      "id": 42720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339887.jpg",
+      "name": "Creator",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-10",
+      "id": 42721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339890.jpg",
+      "name": "Desecrated",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-17",
+      "id": 42722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339896.jpg",
+      "name": "Vengeance",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-24",
+      "id": 42723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339897.jpg",
+      "name": "Walter",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-01",
+      "id": 42724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339921.jpg",
+      "name": "Extinction",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-08",
+      "id": 42725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339922.jpg",
+      "name": "Eternity",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-15",
+      "id": 42726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339924.jpg",
+      "name": "Unbroken",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-05-22",
+      "id": 42727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/339925.jpg",
+      "name": "Tears",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-461",
+  "live": true,
+  "overview": "In a mythical land, one man, Richard Cypher, discovers his true destiny as he, a mysterious young woman, a wise old wizard and a magical sword are all that stand between the evil tyrant Darken Rahl and his quest for total domination.Based on The Sword of Truth series of books by Terry Goodkind.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/3/9195.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "461",
+  "title": "Legend of the Seeker",
+  "type": "series",
+  "year": 2008
 }

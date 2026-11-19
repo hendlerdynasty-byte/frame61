@@ -1,22 +1,374 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1128",
-  "source": "tvmaze",
-  "sourceId": "1128",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Cosmos",
-  "year": 1980,
-  "type": "series",
-  "overview": "Hosted by renowned astrophysicist Neil deGrasse Tyson, Cosmos will explore how we discovered the laws of nature and found our coordinates in space and time. It will bring to life never-before-told stories of the heroic quest for knowledge and transport viewers to new worlds and across the universe for a vision of the cosmos on the grandest scale. Cosmos will invent new modes of scientific storytelling to reveal the grandeur of the universe and re-invent celebrated elements of the legendary original series, including the Cosmic Calendar and the Ship of the Imagination. The most profound scientific concepts will be presented with stunning clarity, uniting skepticism and wonder, and weaving rigorous science with the emotional and spiritual into a transcendent experience.",
-  "poster": "file:///android_asset/posters/tvmaze-1128.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1980-09-28",
+      "id": 1843198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632003.jpg",
+      "name": "The Shores of the Cosmic Ocean",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-10-05",
+      "id": 1843197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632002.jpg",
+      "name": "One Voice in the Cosmic Fugue",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-10-12",
+      "id": 1843196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632001.jpg",
+      "name": "Harmony of the Worlds",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-10-19",
+      "id": 1843195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632000.jpg",
+      "name": "Heaven and Hell",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-10-26",
+      "id": 1843194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631999.jpg",
+      "name": "Blues for a Red Planet",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-11-02",
+      "id": 1843193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631998.jpg",
+      "name": "Travelers' Tales",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-11-09",
+      "id": 1843192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631997.jpg",
+      "name": "The Backbone of Night",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-11-16",
+      "id": 1843191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631996.jpg",
+      "name": "Journeys in Space and Time",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-11-23",
+      "id": 1843190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631993.jpg",
+      "name": "The Lives of the Stars",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-11-30",
+      "id": 1843178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631992.jpg",
+      "name": "The Edge of Forever",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-07",
+      "id": 1843177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631991.jpg",
+      "name": "The Persistence of Memory",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-14",
+      "id": 1843176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631990.jpg",
+      "name": "Encyclopedia Galactica",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1980-12-21",
+      "id": 1843175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631989.jpg",
+      "name": "Who Speaks for Earth?",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-09",
+      "id": 103867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113516.jpg",
+      "name": "Standing Up in the Milky Way",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-16",
+      "id": 103868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113518.jpg",
+      "name": "Some of the Things That Molecules Do",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-23",
+      "id": 103869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113554.jpg",
+      "name": "When Knowledge Conquered Fear",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-30",
+      "id": 103870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113557.jpg",
+      "name": "A Sky Full of Ghosts",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-06",
+      "id": 103871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113560.jpg",
+      "name": "Hiding in the Light",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 103872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113565.jpg",
+      "name": "Deeper, Deeper, Deeper Still",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 103873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113576.jpg",
+      "name": "The Clean Room",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 103874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113935.jpg",
+      "name": "Sisters of the Sun",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 103875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113962.jpg",
+      "name": "The Lost Worlds of Planet Earth",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 103876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113983.jpg",
+      "name": "The Electric Boy",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 103877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114002.jpg",
+      "name": "The Immortals",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 103878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114034.jpg",
+      "name": "The World Set Free",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 103879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114042.jpg",
+      "name": "Unafraid of the Dark",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2020-03-09",
+      "id": 1555631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625829.jpg",
+      "name": "Ladders to the Stars",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-09",
+      "id": 1791783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623211.jpg",
+      "name": "The Fleeting Grace of the Habitable Zone",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-16",
+      "id": 1791784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623212.jpg",
+      "name": "Lost City of Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-16",
+      "id": 1791785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623214.jpg",
+      "name": "Vavilov",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-23",
+      "id": 1791786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623216.jpg",
+      "name": "The Cosmic Connectome",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-23",
+      "id": 1791787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623215.jpg",
+      "name": "The Man of a Trillion Worlds",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-30",
+      "id": 1791788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625827.jpg",
+      "name": "The Search for Intelligent Life on Earth",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-30",
+      "id": 1791789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625828.jpg",
+      "name": "The Sacrifice of Cassini",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-06",
+      "id": 1791790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/633629.jpg",
+      "name": "Magic Without Lies",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-06",
+      "id": 1791791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/633624.jpg",
+      "name": "A Tale of Two Atoms",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-13",
+      "id": 1791792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/629556.jpg",
+      "name": "Shadows of Forgotten Ancestors",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-13",
+      "id": 1791793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/629557.jpg",
+      "name": "Coming of Age in the Anthropocene",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-20",
+      "id": 1791794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/688322.jpg",
+      "name": "Seven Wonders of the New World",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Mystery",
     "Nature",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-1128",
+  "live": true,
+  "overview": "Hosted by renowned astrophysicist Neil deGrasse Tyson, Cosmos will explore how we discovered the laws of nature and found our coordinates in space and time. It will bring to life never-before-told stories of the heroic quest for knowledge and transport viewers to new worlds and across the universe for a vision of the cosmos on the grandest scale. Cosmos will invent new modes of scientific storytelling to reveal the grandeur of the universe and re-invent celebrated elements of the legendary original series, including the Cosmic Calendar and the Ship of the Imagination. The most profound scientific concepts will be presented with stunning clarity, uniting skepticism and wonder, and weaving rigorous science with the emotional and spiritual into a transcendent experience.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/402/1006408.jpg",
   "rating": 8.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1128",
+  "title": "Cosmos",
+  "type": "series",
+  "year": 1980
 }

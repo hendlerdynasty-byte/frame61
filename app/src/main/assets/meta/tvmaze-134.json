@@ -1,22 +1,725 @@
 {
-  "schema": 1,
-  "id": "tvmaze-134",
-  "source": "tvmaze",
-  "sourceId": "134",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Heroes",
-  "year": 2006,
-  "type": "series",
-  "overview": "This epic chronicles the lives of ordinary people who discover they possess extraordinary abilities. As a total eclipse casts a shadow across the globe, viewers follow a genetics professor in India whose father's disappearance leads him to uncover a secret theory—there are people with super powers living among us. A young dreamer tries to convince his politician brother that he can fly. A high school cheerleader learns that she is totally indestructible. A Las Vegas stripper, struggling to make ends meet to support her young son, uncovers that her mirror image has a secret. A prison inmate mysteriously finds himself waking up outside of his cell. A gifted artist, whose drug addiction is destroying his life and the relationship with his girlfriend, can paint the future. A down-on-his-luck beat cop can hear people's thoughts, including the secrets of a captured terrorist. In Japan, a young man develops a way to stop time through sheer will power. Their ultimate destiny is nothing less than saving the world.",
-  "poster": "file:///android_asset/posters/tvmaze-134.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-09-25",
+      "id": 10740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236051.jpg",
+      "name": "Genesis",
+      "number": 1,
+      "runtime": 53,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-02",
+      "id": 10741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238138.jpg",
+      "name": "Don't Look Back",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-09",
+      "id": 10742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238888.jpg",
+      "name": "One Giant Leap",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-16",
+      "id": 10743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238894.jpg",
+      "name": "Collision",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-23",
+      "id": 10744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238908.jpg",
+      "name": "Hiros",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-10-30",
+      "id": 10745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238923.jpg",
+      "name": "Better Halves",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-06",
+      "id": 10746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238943.jpg",
+      "name": "Nothing to Hide",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-13",
+      "id": 10747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238964.jpg",
+      "name": "Seven Minutes to Midnight",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-20",
+      "id": 10748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238996.jpg",
+      "name": "Homecoming",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-11-27",
+      "id": 10749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239840.jpg",
+      "name": "Six Months Ago",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-04",
+      "id": 10750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239857.jpg",
+      "name": "Fallout",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-22",
+      "id": 10751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239870.jpg",
+      "name": "Godsend",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-01-29",
+      "id": 10752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239878.jpg",
+      "name": "The Fix",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-05",
+      "id": 10753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239899.jpg",
+      "name": "Distractions",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-12",
+      "id": 10754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239922.jpg",
+      "name": "Run!",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-19",
+      "id": 10755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239942.jpg",
+      "name": "Unexpected",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-02-26",
+      "id": 10756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239956.jpg",
+      "name": "Company Man",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-03-05",
+      "id": 10757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239973.jpg",
+      "name": "Parasite",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-23",
+      "id": 10758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240048.jpg",
+      "name": ".07%",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-30",
+      "id": 10759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240344.jpg",
+      "name": "Five Years Gone",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-07",
+      "id": 10760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240352.jpg",
+      "name": "The Hard Part",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-14",
+      "id": 10761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240360.jpg",
+      "name": "Landslide",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-21",
+      "id": 10762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240366.jpg",
+      "name": "How to Stop an Exploding Man",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 10763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240383.jpg",
+      "name": "Four Months Later...",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 10764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240398.jpg",
+      "name": "Lizards",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 10765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240910.jpg",
+      "name": "Kindred",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 10766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242566.jpg",
+      "name": "The Kindness of Strangers",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 10767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242584.jpg",
+      "name": "Fight or Flight",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-10-29",
+      "id": 10768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242609.jpg",
+      "name": "The Line",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 10769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242620.jpg",
+      "name": "Out of Time",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 10770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242624.jpg",
+      "name": "Four Months Ago...",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-19",
+      "id": 10771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242679.jpg",
+      "name": "Cautionary Tales",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-11-26",
+      "id": 10772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243106.jpg",
+      "name": "Truth & Consequences",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-12-03",
+      "id": 10773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243109.jpg",
+      "name": "Powerless",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-09-22",
+      "id": 10774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243747.jpg",
+      "name": "The Second Coming",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-22",
+      "id": 10775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243759.jpg",
+      "name": "The Butterfly Effect",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 10776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243783.jpg",
+      "name": "One of Us, One of Them",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-06",
+      "id": 10777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243790.jpg",
+      "name": "I Am Become Death",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-13",
+      "id": 10778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243802.jpg",
+      "name": "Angels and Monsters",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 10779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243808.jpg",
+      "name": "Dying of the Light",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 10780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245251.jpg",
+      "name": "Eris Quod Sum",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 10781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245260.jpg",
+      "name": "Villains",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 10782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245262.jpg",
+      "name": "It's Coming",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 10783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245268.jpg",
+      "name": "The Eclipse, Part 1",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-01",
+      "id": 10784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245278.jpg",
+      "name": "The Eclipse, Part 2",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 10785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245294.jpg",
+      "name": "Our Father",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-12-15",
+      "id": 10786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245308.jpg",
+      "name": "Dual",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-02",
+      "id": 10787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245314.jpg",
+      "name": "A Clear and Present Danger",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-09",
+      "id": 10788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245567.jpg",
+      "name": "Trust and Blood",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 10789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245581.jpg",
+      "name": "Building 26",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-23",
+      "id": 10790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245602.jpg",
+      "name": "Cold Wars",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-02",
+      "id": 10791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245588.jpg",
+      "name": "Exposed",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-09",
+      "id": 10792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245598.jpg",
+      "name": "Shades of Gray",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-23",
+      "id": 10793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245608.jpg",
+      "name": "Cold Snap",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-30",
+      "id": 10794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245614.jpg",
+      "name": "Into Asylum",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-06",
+      "id": 10795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245621.jpg",
+      "name": "Turn and Face the Strange",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-13",
+      "id": 10796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245647.jpg",
+      "name": "1961",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-20",
+      "id": 10797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245653.jpg",
+      "name": "I Am Sylar",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-27",
+      "id": 10798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245662.jpg",
+      "name": "An Invisible Thread",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-21",
+      "id": 10799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246168.jpg",
+      "name": "Orientation",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-09-21",
+      "id": 10800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246170.jpg",
+      "name": "Jump, Push, Fall",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-09-28",
+      "id": 10801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246185.jpg",
+      "name": "Ink",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-05",
+      "id": 10802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246203.jpg",
+      "name": "Acceptance",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-12",
+      "id": 10803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246612.jpg",
+      "name": "Hysterical Blindness",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-19",
+      "id": 10804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246624.jpg",
+      "name": "Tabula Rasa",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-26",
+      "id": 10805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246679.jpg",
+      "name": "Strange Attractors",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-02",
+      "id": 10806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246686.jpg",
+      "name": "Once Upon a Time in Texas",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-09",
+      "id": 10807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246693.jpg",
+      "name": "Shadowboxing",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-16",
+      "id": 10808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246906.jpg",
+      "name": "Brother's Keeper",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-23",
+      "id": 10809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246916.jpg",
+      "name": "Thanksgiving",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-30",
+      "id": 10810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246998.jpg",
+      "name": "The Fifth Stage",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-04",
+      "id": 10811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248061.jpg",
+      "name": "Upon This Rock",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-04",
+      "id": 10812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248085.jpg",
+      "name": "Let It Bleed",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-11",
+      "id": 10813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248103.jpg",
+      "name": "Close to You",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-18",
+      "id": 10814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248116.jpg",
+      "name": "Pass/Fail",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-01-25",
+      "id": 10815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248118.jpg",
+      "name": "The Art of Deception",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-01",
+      "id": 10816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248133.jpg",
+      "name": "The Wall",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-02-08",
+      "id": 10817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248149.jpg",
+      "name": "Brave New World",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Science-Fiction"
   ],
+  "id": "tvmaze-134",
+  "live": true,
+  "overview": "This epic chronicles the lives of ordinary people who discover they possess extraordinary abilities. As a total eclipse casts a shadow across the globe, viewers follow a genetics professor in India whose father's disappearance leads him to uncover a secret theory—there are people with super powers living among us. A young dreamer tries to convince his politician brother that he can fly. A high school cheerleader learns that she is totally indestructible. A Las Vegas stripper, struggling to make ends meet to support her young son, uncovers that her mirror image has a secret. A prison inmate mysteriously finds himself waking up outside of his cell. A gifted artist, whose drug addiction is destroying his life and the relationship with his girlfriend, can paint the future. A down-on-his-luck beat cop can hear people's thoughts, including the secrets of a captured terrorist. In Japan, a young man develops a way to stop time through sheer will power. Their ultimate destiny is nothing less than saving the world.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/1904.jpg",
   "rating": 7.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "134",
+  "title": "Heroes",
+  "type": "series",
+  "year": 2006
 }

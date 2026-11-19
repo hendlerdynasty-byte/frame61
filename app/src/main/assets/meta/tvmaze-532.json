@@ -1,22 +1,1661 @@
 {
-  "schema": 1,
-  "id": "tvmaze-532",
-  "source": "tvmaze",
-  "sourceId": "532",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Scrubs",
-  "year": 2001,
-  "type": "series",
-  "overview": "Fresh out of medical school, new doctors John \"J.D.\" Dorian, his best friend Christopher Turk, and Elliot Reid start their internship at Sacred Heart Hospital. There, they meet the harsh Chief of Medicine Dr. Bob Kelso, J.D.'s reluctant mentor Dr. Perry Cox, nurse Carla Espinosa, and the deceitful and prankish Janitor. Also at the hospital are the wide range of personalities of Sacred Heart's staff, including the religious nurse Laverne Roberts, incompetent lawyer Ted Buckland, and spiteful board member Jordan Sullivan who also happens to be Cox's ex-wife. Other interns make the cut, such as the high-fiving Todd Quinlan and nervous Doug Murphy. Over the next 9 years they face personal and professional highs and lows, realizing that they can't make it through life - much less a hectic job as a doctor - on their own.",
-  "poster": "file:///android_asset/posters/tvmaze-532.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-10-02",
+      "id": 48282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483595.jpg",
+      "name": "My First Day",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-04",
+      "id": 48283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483596.jpg",
+      "name": "My Mentor",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-09",
+      "id": 48284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483597.jpg",
+      "name": "My Best Friend's Mistake",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-16",
+      "id": 48285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483598.jpg",
+      "name": "My Old Lady",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-23",
+      "id": 48286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483599.jpg",
+      "name": "My Two Dads",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-10-30",
+      "id": 48287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483600.jpg",
+      "name": "My Bad",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-06",
+      "id": 48288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483601.jpg",
+      "name": "My Super Ego",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-15",
+      "id": 48289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483602.jpg",
+      "name": "My Fifteen Minutes",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-20",
+      "id": 48290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483607.jpg",
+      "name": "My Day Off",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-11-27",
+      "id": 48291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483609.jpg",
+      "name": "My Nickname",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-12-11",
+      "id": 48292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483610.jpg",
+      "name": "My Own Personal Jesus",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-08",
+      "id": 48293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483612.jpg",
+      "name": "My Blind Date",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-15",
+      "id": 48294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483627.jpg",
+      "name": "My Balancing Act",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-01-22",
+      "id": 48295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483629.jpg",
+      "name": "My Drug Buddy",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-05",
+      "id": 48296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483630.jpg",
+      "name": "My Bed Banter & Beyond",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-02-26",
+      "id": 48297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483631.jpg",
+      "name": "My Heavy Meddle",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-05",
+      "id": 48298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483632.jpg",
+      "name": "My Student",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-12",
+      "id": 48299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483633.jpg",
+      "name": "My Tuscaloosa Heart",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-09",
+      "id": 48300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483634.jpg",
+      "name": "My Old Man",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-16",
+      "id": 48301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483635.jpg",
+      "name": "My Way or the Highway",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-04-30",
+      "id": 48302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483636.jpg",
+      "name": "My Sacrificial Clam",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-07",
+      "id": 48303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/418799.jpg",
+      "name": "My Occurrence",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-14",
+      "id": 48304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/418823.jpg",
+      "name": "My Hero",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-21",
+      "id": 48305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483637.jpg",
+      "name": "My Last Day",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-26",
+      "id": 48306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483898.jpg",
+      "name": "My Overkill",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-03",
+      "id": 48307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483899.jpg",
+      "name": "My Nightingale",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-10",
+      "id": 48308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483900.jpg",
+      "name": "My Case Study",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-17",
+      "id": 48309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483901.jpg",
+      "name": "My Big Mouth",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-24",
+      "id": 48310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483902.jpg",
+      "name": "My New Coat",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-10-31",
+      "id": 48311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483903.jpg",
+      "name": "My Big Brother",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-07",
+      "id": 48312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483906.jpg",
+      "name": "My First Step",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-11-14",
+      "id": 48313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483908.jpg",
+      "name": "My Fruit Cups",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-05",
+      "id": 48314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483910.jpg",
+      "name": "My Lucky Day",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-12-12",
+      "id": 48315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483913.jpg",
+      "name": "My Monster",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-02",
+      "id": 48316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483915.jpg",
+      "name": "My Sex Buddy",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-09",
+      "id": 48317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483916.jpg",
+      "name": "My New Old Friend",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-16",
+      "id": 48318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483917.jpg",
+      "name": "My Philosophy",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-23",
+      "id": 48319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483918.jpg",
+      "name": "My Brother, My Keeper",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-30",
+      "id": 48320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483919.jpg",
+      "name": "His Story",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-20",
+      "id": 48321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483920.jpg",
+      "name": "My Karma",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-13",
+      "id": 48322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483921.jpg",
+      "name": "My Own Private Practice Guy",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-20",
+      "id": 48323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483922.jpg",
+      "name": "My T.C.W.",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-27",
+      "id": 48324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483923.jpg",
+      "name": "My Kingdom",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-03",
+      "id": 48325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483924.jpg",
+      "name": "My Interpretation",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-10",
+      "id": 48326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483925.jpg",
+      "name": "My Drama Queen",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-17",
+      "id": 48327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483926.jpg",
+      "name": "My Dream Job",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2003-10-02",
+      "id": 48328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484284.jpg",
+      "name": "My Own American Girl",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-09",
+      "id": 48329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484285.jpg",
+      "name": "My Journey",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-23",
+      "id": 48330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484286.jpg",
+      "name": "My White Whale",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-10-30",
+      "id": 48331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484287.jpg",
+      "name": "My Lucky Night",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-06",
+      "id": 48332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484288.jpg",
+      "name": "My Brother, Where Art Thou?",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-13",
+      "id": 48333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484289.jpg",
+      "name": "My Advice to You",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-11-20",
+      "id": 48334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484290.jpg",
+      "name": "My Fifteen Seconds",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-12-04",
+      "id": 48335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484291.jpg",
+      "name": "My Friend the Doctor",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-12-11",
+      "id": 48336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484292.jpg",
+      "name": "My Dirty Secret",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-01-22",
+      "id": 48337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484293.jpg",
+      "name": "My Rule of Thumb",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-03",
+      "id": 48338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/160384.jpg",
+      "name": "My Clean Break",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-10",
+      "id": 48339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484294.jpg",
+      "name": "My Catalyst",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-17",
+      "id": 48340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484295.jpg",
+      "name": "My Porcelain God",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-02-24",
+      "id": 48341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484296.jpg",
+      "name": "My Screw Up",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-02",
+      "id": 48342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484297.jpg",
+      "name": "My Tormented Mentor",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-16",
+      "id": 48343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484298.jpg",
+      "name": "My Butterfly",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-03-30",
+      "id": 48344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484299.jpg",
+      "name": "My Moment of Un-Truth",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-06",
+      "id": 48345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484300.jpg",
+      "name": "His Story II",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-20",
+      "id": 48346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484301.jpg",
+      "name": "My Choosiest Choice of All",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-22",
+      "id": 48347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484302.jpg",
+      "name": "My Fault",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-04-27",
+      "id": 48348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484303.jpg",
+      "name": "My Self-Examination",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-05-04",
+      "id": 48349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484304.jpg",
+      "name": "My Best Friend's Wedding",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-31",
+      "id": 48350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484850.jpg",
+      "name": "My Old Friend's New Friend",
+      "number": 1,
+      "runtime": 35,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-07",
+      "id": 48351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484851.jpg",
+      "name": "My Office",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-14",
+      "id": 48352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484852.jpg",
+      "name": "My New Game",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-21",
+      "id": 48353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484853.jpg",
+      "name": "My First Kill",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-28",
+      "id": 48354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484854.jpg",
+      "name": "Her Story",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-12",
+      "id": 48355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484855.jpg",
+      "name": "My Cake",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-19",
+      "id": 48356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484856.jpg",
+      "name": "My Common Enemy",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-10-26",
+      "id": 48357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484857.jpg",
+      "name": "My Last Chance",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-09",
+      "id": 48358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484858.jpg",
+      "name": "My Malpractical Decision (1)",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-16",
+      "id": 48359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484859.jpg",
+      "name": "My Female Trouble (2)",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-11-23",
+      "id": 48360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484860.jpg",
+      "name": "My Unicorn",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-12-07",
+      "id": 48361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484861.jpg",
+      "name": "My Best Moment",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-18",
+      "id": 48362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484862.jpg",
+      "name": "My Ocardial Infarction",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-01-25",
+      "id": 48363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484863.jpg",
+      "name": "My Lucky Charm",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-01",
+      "id": 48364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484864.jpg",
+      "name": "My Hypocritical Oath",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-08",
+      "id": 48365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484865.jpg",
+      "name": "My Quarantine",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-15",
+      "id": 48366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484866.jpg",
+      "name": "My Life in Four Cameras",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-02-22",
+      "id": 48367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484867.jpg",
+      "name": "My Roommates",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-01",
+      "id": 48368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484869.jpg",
+      "name": "My Best Laid Plans",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-03-29",
+      "id": 48369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484870.jpg",
+      "name": "My Boss's Free Haircut",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-05",
+      "id": 48370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484871.jpg",
+      "name": "My Lips Are Sealed",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-12",
+      "id": 48371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484872.jpg",
+      "name": "My Big Move",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-19",
+      "id": 48372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484873.jpg",
+      "name": "My Faith in Humanity",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-04-26",
+      "id": 48373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484874.jpg",
+      "name": "My Drive-By",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2005-05-10",
+      "id": 48374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484875.jpg",
+      "name": "My Changing Ways",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2006-01-03",
+      "id": 48375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484876.jpg",
+      "name": "My Intern's Eyes",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-03",
+      "id": 48376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484878.jpg",
+      "name": "My Rite of Passage",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-10",
+      "id": 48377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484879.jpg",
+      "name": "My Day at the Races",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-10",
+      "id": 48378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484880.jpg",
+      "name": "My Jiggly Ball",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-17",
+      "id": 48379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484881.jpg",
+      "name": "My New God",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-17",
+      "id": 48380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484882.jpg",
+      "name": "My Missed Perception",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-24",
+      "id": 48381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484883.jpg",
+      "name": "My Way Home",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-01-24",
+      "id": 48382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484884.jpg",
+      "name": "My Big Bird",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-02-07",
+      "id": 48383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484885.jpg",
+      "name": "My Half-Acre",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-02-07",
+      "id": 48384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484886.jpg",
+      "name": "Her Story II",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-02-28",
+      "id": 48385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484887.jpg",
+      "name": "My Buddy's Booty",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-02-28",
+      "id": 48386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484888.jpg",
+      "name": "My Cabbage (1)",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-03-07",
+      "id": 48387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484890.jpg",
+      "name": "My Five Stages (2)",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-03-14",
+      "id": 48388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484892.jpg",
+      "name": "My Own Personal Hell",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-03-21",
+      "id": 48389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484893.jpg",
+      "name": "My Extra Mile",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-03-28",
+      "id": 48390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484896.jpg",
+      "name": "My Bright Idea",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-04",
+      "id": 48391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484897.jpg",
+      "name": "My Chopped Liver",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-11",
+      "id": 48392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484898.jpg",
+      "name": "My New Suit",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-18",
+      "id": 48393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484899.jpg",
+      "name": "His Story III",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-04-25",
+      "id": 48394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484900.jpg",
+      "name": "My Lunch",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-02",
+      "id": 48395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484901.jpg",
+      "name": "My Fallen Idol",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-09",
+      "id": 48396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484902.jpg",
+      "name": "My Déjà Vu, My Déjà Vu",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 48397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484903.jpg",
+      "name": "My Urologist",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 48398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484904.jpg",
+      "name": "My Transition (1)",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2006-11-30",
+      "id": 48399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484905.jpg",
+      "name": "My Mirror Image (2)",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2006-12-07",
+      "id": 48400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484906.jpg",
+      "name": "My Best Friend's Baby's Baby and My Baby's Baby",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2006-12-14",
+      "id": 48401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484909.jpg",
+      "name": "My Coffee",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-01-04",
+      "id": 48402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484912.jpg",
+      "name": "My House",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-01-11",
+      "id": 48403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484913.jpg",
+      "name": "My Friend with Money",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-01-18",
+      "id": 48404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484914.jpg",
+      "name": "My Musical",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-02-01",
+      "id": 48405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484915.jpg",
+      "name": "His Story IV",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-02-08",
+      "id": 48406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484916.jpg",
+      "name": "My Road to Nowhere",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-02-15",
+      "id": 48407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484917.jpg",
+      "name": "My Perspective",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-02-22",
+      "id": 48408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484918.jpg",
+      "name": "My Therapeutic Month",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-03-01",
+      "id": 48409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484919.jpg",
+      "name": "My Night to Remember",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-03-08",
+      "id": 48410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484920.jpg",
+      "name": "My Fishbowl",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-03-15",
+      "id": 48411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484921.jpg",
+      "name": "My Scrubs",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-03-22",
+      "id": 48412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484922.jpg",
+      "name": "My No Good Reason (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-04-05",
+      "id": 48413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484923.jpg",
+      "name": "My Long Goodbye (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-04-12",
+      "id": 48414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484924.jpg",
+      "name": "My Words of Wisdom",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-04-19",
+      "id": 48415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484925.jpg",
+      "name": "Their Story",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-04-26",
+      "id": 48416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484926.jpg",
+      "name": "My Turf War",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-05-03",
+      "id": 48417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484927.jpg",
+      "name": "My Cold Shower",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-05-10",
+      "id": 48418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484928.jpg",
+      "name": "My Conventional Wisdom",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-05-17",
+      "id": 48419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484929.jpg",
+      "name": "My Rabbit (1)",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-05-17",
+      "id": 48420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484930.jpg",
+      "name": "My Point of No Return (2)",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2007-10-25",
+      "id": 48421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485143.jpg",
+      "name": "My Own Worst Enemy",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2007-11-01",
+      "id": 48422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485144.jpg",
+      "name": "My Hard Labor",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2007-11-08",
+      "id": 48423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485145.jpg",
+      "name": "My Inconvenient Truth",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2007-11-15",
+      "id": 48424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485146.jpg",
+      "name": "My Identity Crisis",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2007-11-29",
+      "id": 48425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485147.jpg",
+      "name": "My Growing Pains",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2007-12-06",
+      "id": 48426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485148.jpg",
+      "name": "My Number One Doctor",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2008-04-10",
+      "id": 48427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485149.jpg",
+      "name": "My Bad Too",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2008-04-17",
+      "id": 48428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485150.jpg",
+      "name": "My Manhood",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2008-04-24",
+      "id": 48429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485151.jpg",
+      "name": "My Dumb Luck",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2008-05-01",
+      "id": 48430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485152.jpg",
+      "name": "My Waste of Time",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2008-05-08",
+      "id": 48431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386108.jpg",
+      "name": "My Princess",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2009-01-06",
+      "id": 48432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485153.jpg",
+      "name": "My Jerks",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-01-06",
+      "id": 48433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485154.jpg",
+      "name": "My Last Words",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-01-13",
+      "id": 48434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485155.jpg",
+      "name": "My Saving Grace",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-01-13",
+      "id": 48435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485156.jpg",
+      "name": "My Happy Place",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 48436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485157.jpg",
+      "name": "My ABC's",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 48437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485158.jpg",
+      "name": "My Cookie Pants",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-02-03",
+      "id": 48438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485159.jpg",
+      "name": "My New Role",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-02-03",
+      "id": 48439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485160.jpg",
+      "name": "My Lawyer's in Love",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 48440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485161.jpg",
+      "name": "My Absence",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 48441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485162.jpg",
+      "name": "My Comedy Show",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-03-18",
+      "id": 48442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485163.jpg",
+      "name": "My Nah Nah Nah",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-03-25",
+      "id": 48443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485164.jpg",
+      "name": "Their Story II",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-04-01",
+      "id": 48444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485165.jpg",
+      "name": "My Full Moon",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-04-08",
+      "id": 48445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485166.jpg",
+      "name": "My Soul on Fire (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-04-15",
+      "id": 48446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485167.jpg",
+      "name": "My Soul on Fire (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-04-22",
+      "id": 48447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485168.jpg",
+      "name": "My Cuz",
+      "number": 16,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-05-05",
+      "id": 48448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485169.jpg",
+      "name": "My Chief Concern",
+      "number": 17,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-05-06",
+      "id": 48449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485170.jpg",
+      "name": "My Finale (1)",
+      "number": 18,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-05-06",
+      "id": 48450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485172.jpg",
+      "name": "My Finale (2)",
+      "number": 19,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-12-01",
+      "id": 48451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86242.jpg",
+      "name": "Our First Day of School",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-12-01",
+      "id": 48452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485173.jpg",
+      "name": "Our Drunk Friend",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-12-08",
+      "id": 48453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485174.jpg",
+      "name": "Our Role Models",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-12-15",
+      "id": 48454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485175.jpg",
+      "name": "Our Histories",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-12-22",
+      "id": 48455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485177.jpg",
+      "name": "Our Mysteries",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-01",
+      "id": 48456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485178.jpg",
+      "name": "Our New Girl-Bro",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-05",
+      "id": 48457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485179.jpg",
+      "name": "Our White Coats",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-05",
+      "id": 48458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485180.jpg",
+      "name": "Our Couples",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-12",
+      "id": 48459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485181.jpg",
+      "name": "Our Stuff Gets Real",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-19",
+      "id": 48460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485182.jpg",
+      "name": "Our True Lies",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-01-26",
+      "id": 48461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485183.jpg",
+      "name": "Our Dear Leaders",
+      "number": 11,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-03-10",
+      "id": 48462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485184.jpg",
+      "name": "Our Driving Issues",
+      "number": 12,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2010-03-17",
+      "id": 48463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485185.jpg",
+      "name": "Our Thanks",
+      "number": 13,
+      "runtime": 30,
+      "season": 9
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Medical"
   ],
+  "id": "tvmaze-532",
+  "live": true,
+  "overview": "Fresh out of medical school, new doctors John \"J.D.\" Dorian, his best friend Christopher Turk, and Elliot Reid start their internship at Sacred Heart Hospital. There, they meet the harsh Chief of Medicine Dr. Bob Kelso, J.D.'s reluctant mentor Dr. Perry Cox, nurse Carla Espinosa, and the deceitful and prankish Janitor. Also at the hospital are the wide range of personalities of Sacred Heart's staff, including the religious nurse Laverne Roberts, incompetent lawyer Ted Buckland, and spiteful board member Jordan Sullivan who also happens to be Cox's ex-wife. Other interns make the cut, such as the high-fiving Todd Quinlan and nervous Doug Murphy. Over the next 9 years they face personal and professional highs and lows, realizing that they can't make it through life - much less a hectic job as a doctor - on their own.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11371.jpg",
   "rating": 8.4,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "532",
+  "title": "Scrubs",
+  "type": "series",
+  "year": 2001
 }

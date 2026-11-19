@@ -1,22 +1,716 @@
 {
-  "schema": 1,
-  "id": "tvmaze-990",
-  "source": "tvmaze",
-  "sourceId": "990",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Doc Martin",
-  "year": 2004,
-  "type": "series",
-  "overview": "Successful surgeon Dr Martin Ellingham relocates to the seaside village of Portwenn in Cornwall; but his gruff demeanour and poor bedside manner bring him into conflict with the locals as he begins his new life as a GP.",
-  "poster": "file:///android_asset/posters/tvmaze-990.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-09-02",
+      "id": 97534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909854.jpg",
+      "name": "Going Bodmin",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-09",
+      "id": 97535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909855.jpg",
+      "name": "Gentlemen Prefer",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-16",
+      "id": 97536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909856.jpg",
+      "name": "Sh*t Happens",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-23",
+      "id": 97537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909857.jpg",
+      "name": "The Portwenn Effect",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-30",
+      "id": 97538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909858.jpg",
+      "name": "Of All the Harbours in All the Towns",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-07",
+      "id": 97539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909859.jpg",
+      "name": "Haemophobia",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-10",
+      "id": 97540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909844.jpg",
+      "name": "Old Dogs",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-17",
+      "id": 97541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909845.jpg",
+      "name": "In Loco",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-24",
+      "id": 97542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909846.jpg",
+      "name": "Blood Is Thicker",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-01",
+      "id": 97543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909847.jpg",
+      "name": "Aromatherapy",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-08",
+      "id": 97544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909848.jpg",
+      "name": "Always on My Mind",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-15",
+      "id": 97545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909849.jpg",
+      "name": "The Family Way",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-22",
+      "id": 97546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909850.jpg",
+      "name": "Out of the Woods",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-05",
+      "id": 97547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909851.jpg",
+      "name": "Erotomania",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 97548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909837.jpg",
+      "name": "The Apple Doesn't Fall",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 97549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909838.jpg",
+      "name": "Movement",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 97550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909839.jpg",
+      "name": "City Slickers",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 97551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909840.jpg",
+      "name": "The Admirer",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 97552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909841.jpg",
+      "name": "The Holly Bears a Prickle",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 97553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909842.jpg",
+      "name": "Nowt So Queer",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 97554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909843.jpg",
+      "name": "Happily Ever After",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-20",
+      "id": 97555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909829.jpg",
+      "name": "Better the Devil",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 97556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909830.jpg",
+      "name": "Uneasy Lies the Head",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 97557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909831.jpg",
+      "name": "Perish Together as Fools",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-11",
+      "id": 97558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909832.jpg",
+      "name": "Driving Mr. McLynn",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-18",
+      "id": 97559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909833.jpg",
+      "name": "The Departed",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-10-25",
+      "id": 97560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909834.jpg",
+      "name": "Midwife Crisis",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-01",
+      "id": 97561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909835.jpg",
+      "name": "Do Not Disturb",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-11-08",
+      "id": 97562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909836.jpg",
+      "name": "The Wrong Goodbye",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-12",
+      "id": 97563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909821.jpg",
+      "name": "Preserve the Romance",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-09-19",
+      "id": 97564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909822.jpg",
+      "name": "Dry Your Tears",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-09-26",
+      "id": 97565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909823.jpg",
+      "name": "Born with a Shotgun",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-10-03",
+      "id": 97566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909824.jpg",
+      "name": "Mother Knows Best",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-10-10",
+      "id": 97567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909825.jpg",
+      "name": "Remember Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-10-17",
+      "id": 97568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909826.jpg",
+      "name": "Don't Let Go",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-10-24",
+      "id": 97569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909827.jpg",
+      "name": "Cats & Sharks",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-10-31",
+      "id": 97570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909828.jpg",
+      "name": "Ever After",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-09-02",
+      "id": 97571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909813.jpg",
+      "name": "Sickness and Health",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-09",
+      "id": 97572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909814.jpg",
+      "name": "Guess Who's Coming to Dinner?",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-16",
+      "id": 97573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909815.jpg",
+      "name": "The Tameness of a Wolf",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-23",
+      "id": 97574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909816.jpg",
+      "name": "Nobody Likes Me",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-30",
+      "id": 97575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909817.jpg",
+      "name": "The Practice Around the Corner",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-07",
+      "id": 97576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909818.jpg",
+      "name": "Hazardous Exposure",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 97577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909819.jpg",
+      "name": "Listen with Mother",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-10-21",
+      "id": 97578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909820.jpg",
+      "name": "Departure",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-09-07",
+      "id": 208304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909804.jpg",
+      "name": "Rescue Me",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-14",
+      "id": 211468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909805.jpg",
+      "name": "The Shock of the New",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-21",
+      "id": 232839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909806.jpg",
+      "name": "It's Good to Talk",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-09-28",
+      "id": 233115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909807.jpg",
+      "name": "Education, Education, Education",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-05",
+      "id": 311750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909808.jpg",
+      "name": "Control-Alt-Delete",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-19",
+      "id": 311751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909809.jpg",
+      "name": "Other People's Children",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-26",
+      "id": 311752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909810.jpg",
+      "name": "Facta Non Verba",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-02",
+      "id": 311753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909811.jpg",
+      "name": "The Doctor Is Out",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-09-20",
+      "id": 1289456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909803.jpg",
+      "name": "Mysterious Ways",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-09-27",
+      "id": 1290771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909802.jpg",
+      "name": "Sons and Lovers",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-10-04",
+      "id": 1290772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909801.jpg",
+      "name": "Farewell My Lovely",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-10-11",
+      "id": 1290773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909800.jpg",
+      "name": "Faith",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-10-18",
+      "id": 1290774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909799.jpg",
+      "name": "From the Mouths of Babes",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-10-25",
+      "id": 1290775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909798.jpg",
+      "name": "Accidental Hero",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-11-01",
+      "id": 1290776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909795.jpg",
+      "name": "Blade on the Feather",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1290777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909796.jpg",
+      "name": "All My Trials",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2019-09-25",
+      "id": 1714487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909782.jpg",
+      "name": "To the Lighthouse",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-02",
+      "id": 1718187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909783.jpg",
+      "name": "The Shock of the New",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-09",
+      "id": 1722886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909784.jpg",
+      "name": "S.W.A.L.K",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-16",
+      "id": 1729647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909785.jpg",
+      "name": "Paint it Black",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-23",
+      "id": 1734684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909786.jpg",
+      "name": "Wild West Country",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-10-30",
+      "id": 1738372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909787.jpg",
+      "name": "Equilibrium",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-11-06",
+      "id": 1744638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909788.jpg",
+      "name": "Single White Bevy",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2019-11-13",
+      "id": 1750702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909789.jpg",
+      "name": "Licence to Practice",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2022-09-07",
+      "id": 2378997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1054707.jpg",
+      "name": "I Will Survive",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-09-14",
+      "id": 2391518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1054708.jpg",
+      "name": "One Night Only",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-09-21",
+      "id": 2391523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/421/1054711.jpg",
+      "name": "How Long Has This Been Going On?",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-09-28",
+      "id": 2396558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/422/1057328.jpg",
+      "name": "Everlasting Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-10-05",
+      "id": 2397455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/424/1062218.jpg",
+      "name": "Fly Me To The Moon",
+      "number": 5,
+      "runtime": 65,
+      "season": 10
+    },
+    {
+      "airdate": "2022-10-12",
+      "id": 2413359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1068092.jpg",
+      "name": "Return to Sender",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-10-19",
+      "id": 2413360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1068088.jpg",
+      "name": "Love Will Set You Free",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2022-10-26",
+      "id": 2416250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1068090.jpg",
+      "name": "Our Last Summer",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Medical"
   ],
+  "id": "tvmaze-990",
+  "live": true,
+  "overview": "Successful surgeon Dr Martin Ellingham relocates to the seaside village of Portwenn in Cornwall; but his gruff demeanour and poor bedside manner bring him into conflict with the locals as he begins his new life as a GP.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/423/1058629.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "990",
+  "title": "Doc Martin",
+  "type": "series",
+  "year": 2004
 }

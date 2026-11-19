@@ -1,22 +1,788 @@
 {
-  "schema": 1,
-  "id": "tvmaze-757",
-  "source": "tvmaze",
-  "sourceId": "757",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Batman: The Animated Series",
-  "year": 1992,
-  "type": "series",
-  "overview": "Experience the thrills of vigilante justice as millionaire playboy Bruce Wayne and alter-ego Batman protect the streets of Gotham City from a host of villains including archnemesis The Joker, deadly-beautiful Poison Ivy and primitive Killer Croc in a fresh take on super hero storytelling. Intelligent, dramatic stories, unique characters and sharp dialog shaped this edgy TV series into an Emmy®-winning powerhouse that brought the Caped Crusader out of the dark alleys of TV history and into the present for fans of all ages.",
-  "poster": "file:///android_asset/posters/tvmaze-757.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1992-09-05",
+      "id": 66782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480568.jpg",
+      "name": "The Cat and the Claw",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-06",
+      "id": 66783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480569.jpg",
+      "name": "On Leather Wings",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-07",
+      "id": 66784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480570.jpg",
+      "name": "Heart of Ice",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-08",
+      "id": 66785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480571.jpg",
+      "name": "Feat of Clay",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-09",
+      "id": 66786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480572.jpg",
+      "name": "Feat of Clay Part II",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-10",
+      "id": 66787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480573.jpg",
+      "name": "It's Never Too Late",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-11",
+      "id": 66788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480574.jpg",
+      "name": "Joker's Favor",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-12",
+      "id": 66789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480575.jpg",
+      "name": "The Cat and the Claw Part II",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-14",
+      "id": 66790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480576.jpg",
+      "name": "Pretty Poison",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-15",
+      "id": 66791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480577.jpg",
+      "name": "Nothing to Fear",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-16",
+      "id": 66792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480579.jpg",
+      "name": "Be a Clown",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-17",
+      "id": 66793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480580.jpg",
+      "name": "Appointment in Crime Alley",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-18",
+      "id": 66794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480581.jpg",
+      "name": "P.O.V.",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-21",
+      "id": 66795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480582.jpg",
+      "name": "The Clock King",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-22",
+      "id": 66796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480583.jpg",
+      "name": "The Last Laugh",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-23",
+      "id": 66797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480584.jpg",
+      "name": "Eternal Youth",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-25",
+      "id": 66798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480585.jpg",
+      "name": "Two-Face",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-28",
+      "id": 66799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480586.jpg",
+      "name": "Two-Face Part II",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-29",
+      "id": 66800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480587.jpg",
+      "name": "Fear of Victory",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-09-30",
+      "id": 66801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/480588.jpg",
+      "name": "I've Got Batman in My Basement",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-05",
+      "id": 66802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483820.jpg",
+      "name": "Vendetta",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-06",
+      "id": 66803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483821.jpg",
+      "name": "Prophecy of Doom",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-08",
+      "id": 66804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483822.jpg",
+      "name": "The Forgotten",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-12",
+      "id": 66805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483823.jpg",
+      "name": "Mad as a Hatter",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-14",
+      "id": 66806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483824.jpg",
+      "name": "The Cape and Cowl Conspiracy",
+      "number": 25,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-19",
+      "id": 66807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483825.jpg",
+      "name": "Perchance to Dream",
+      "number": 26,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-21",
+      "id": 66808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483826.jpg",
+      "name": "The Underdwellers",
+      "number": 27,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-26",
+      "id": 66809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483827.jpg",
+      "name": "Night of the Ninja",
+      "number": 28,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-29",
+      "id": 66810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483828.jpg",
+      "name": "The Strange Secret of Bruce Wayne",
+      "number": 29,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-10-30",
+      "id": 66811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483829.jpg",
+      "name": "Tyger Tyger",
+      "number": 30,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-03",
+      "id": 66812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483830.jpg",
+      "name": "Dreams in Darkness",
+      "number": 31,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-04",
+      "id": 66813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483831.jpg",
+      "name": "Beware the Gray Ghost",
+      "number": 32,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-05",
+      "id": 66814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483832.jpg",
+      "name": "Cat Scratch Fever",
+      "number": 33,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-09",
+      "id": 66815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483833.jpg",
+      "name": "I Am the Night",
+      "number": 34,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-10",
+      "id": 66816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407289.jpg",
+      "name": "Almost Got 'Im",
+      "number": 35,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-11",
+      "id": 66817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483834.jpg",
+      "name": "Moon of the Wolf",
+      "number": 36,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-12",
+      "id": 66818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483835.jpg",
+      "name": "Terror in the Sky",
+      "number": 37,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-13",
+      "id": 66819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483836.jpg",
+      "name": "Christmas with the Joker",
+      "number": 38,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-16",
+      "id": 66820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483837.jpg",
+      "name": "Heart of Steel",
+      "number": 39,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-17",
+      "id": 66821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483838.jpg",
+      "name": "Heart of Steel Part II",
+      "number": 40,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-18",
+      "id": 66822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483839.jpg",
+      "name": "If You're So Smart, Why Aren't You Rich?",
+      "number": 41,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-19",
+      "id": 66823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483840.jpg",
+      "name": "Joker's Wild",
+      "number": 42,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-20",
+      "id": 66824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483841.jpg",
+      "name": "His Silicon Soul",
+      "number": 43,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-23",
+      "id": 66825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483842.jpg",
+      "name": "Off Balance",
+      "number": 44,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1992-11-24",
+      "id": 66826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483843.jpg",
+      "name": "What is Reality?",
+      "number": 45,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-10",
+      "id": 66827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483844.jpg",
+      "name": "The Laughing Fish",
+      "number": 46,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-18",
+      "id": 66828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483845.jpg",
+      "name": "Harley and Ivy",
+      "number": 47,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-24",
+      "id": 66829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483846.jpg",
+      "name": "The Mechanic",
+      "number": 48,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-01",
+      "id": 66830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483847.jpg",
+      "name": "The Man Who Killed Batman",
+      "number": 49,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-02",
+      "id": 66831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483848.jpg",
+      "name": "Zatanna",
+      "number": 50,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-07",
+      "id": 66832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483849.jpg",
+      "name": "Robin's Reckoning",
+      "number": 51,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-08",
+      "id": 66833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483850.jpg",
+      "name": "Birds of a Feather",
+      "number": 52,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-14",
+      "id": 66834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483851.jpg",
+      "name": "Robin's Reckoning Part II",
+      "number": 53,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-22",
+      "id": 66835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483852.jpg",
+      "name": "Blind as a Bat",
+      "number": 54,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-23",
+      "id": 66836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483853.jpg",
+      "name": "Day of the Samurai",
+      "number": 55,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-24",
+      "id": 66837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483854.jpg",
+      "name": "See No Evil",
+      "number": 56,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-03",
+      "id": 66838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483855.jpg",
+      "name": "The Demon's Quest",
+      "number": 57,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-04",
+      "id": 66839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483856.jpg",
+      "name": "The Demon's Quest Part II",
+      "number": 58,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-10",
+      "id": 66840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483857.jpg",
+      "name": "Read My Lips",
+      "number": 59,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-24",
+      "id": 66841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483858.jpg",
+      "name": "Fire from Olympus",
+      "number": 60,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-13",
+      "id": 66842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483859.jpg",
+      "name": "Shadow of the Bat",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1993-09-14",
+      "id": 66843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483861.jpg",
+      "name": "Shadow of the Bat Part II",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1993-09-15",
+      "id": 66844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483863.jpg",
+      "name": "Mudslide",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1993-09-16",
+      "id": 66845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483865.jpg",
+      "name": "The Worry Men",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1993-09-17",
+      "id": 66846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483867.jpg",
+      "name": "Paging the Crime Doctor",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-02",
+      "id": 66847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483868.jpg",
+      "name": "House & Garden",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-03",
+      "id": 66848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483869.jpg",
+      "name": "Sideshow",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-09",
+      "id": 66849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483870.jpg",
+      "name": "Avatar",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-16",
+      "id": 66850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483871.jpg",
+      "name": "Trial",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-23",
+      "id": 66851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483872.jpg",
+      "name": "Harlequinade",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1994-09-10",
+      "id": 66852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483873.jpg",
+      "name": "Bane",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-09-17",
+      "id": 66853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483874.jpg",
+      "name": "Second Chance",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-09-24",
+      "id": 66854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483875.jpg",
+      "name": "Riddler's Reform",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-01",
+      "id": 66855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483876.jpg",
+      "name": "Baby-Doll",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-08",
+      "id": 66856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483877.jpg",
+      "name": "Time Out of Joint",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-15",
+      "id": 66857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483878.jpg",
+      "name": "Harley's Holiday",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-05",
+      "id": 66858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483879.jpg",
+      "name": "Make 'Em Laugh",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-12",
+      "id": 66859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483880.jpg",
+      "name": "Batgirl Returns",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-19",
+      "id": 66860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483881.jpg",
+      "name": "Lock-Up",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-26",
+      "id": 66861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483882.jpg",
+      "name": "Deep Freeze",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1995-09-11",
+      "id": 66862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483883.jpg",
+      "name": "The Terrible Trio",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1995-09-12",
+      "id": 66863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483884.jpg",
+      "name": "Showdown",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1995-09-13",
+      "id": 66864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483886.jpg",
+      "name": "Catwalk",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1995-09-14",
+      "id": 66865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483888.jpg",
+      "name": "A Bullet for Bullock",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1995-09-15",
+      "id": 66866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483889.jpg",
+      "name": "The Lion and the Unicorn",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-757",
+  "live": true,
+  "overview": "Experience the thrills of vigilante justice as millionaire playboy Bruce Wayne and alter-ego Batman protect the streets of Gotham City from a host of villains including archnemesis The Joker, deadly-beautiful Poison Ivy and primitive Killer Croc in a fresh take on super hero storytelling. Intelligent, dramatic stories, unique characters and sharp dialog shaped this edgy TV series into an Emmy®-winning powerhouse that brought the Caped Crusader out of the dark alleys of TV history and into the present for fans of all ages.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/80/202273.jpg",
   "rating": 8.5,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "757",
+  "title": "Batman: The Animated Series",
+  "type": "series",
+  "year": 1992
 }

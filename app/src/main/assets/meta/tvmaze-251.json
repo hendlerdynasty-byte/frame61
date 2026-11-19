@@ -1,22 +1,446 @@
 {
-  "schema": 1,
-  "id": "tvmaze-251",
-  "source": "tvmaze",
-  "sourceId": "251",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Downton Abbey",
-  "year": 2010,
-  "type": "series",
-  "overview": "The Downton Abbey estate stands a splendid example of confidence and mettle, its family enduring for generations and its staff a well-oiled machine of propriety. But change is afoot at Downton--change far surpassing the new electric lights and telephone. A crisis of inheritance threatens to displace the resident Crawley family, in spite of the best efforts of the noble and compassionate Earl, Robert Crawley; his American heiress wife, Cora his comically implacable, opinionated mother, Violet and his beautiful, eldest daughter, Mary, intent on charting her own course. Reluctantly, the family is forced to welcome its heir apparent, the self-made and proudly modern Matthew Crawley himself none too happy about the new arrangements. As Matthew's bristly relationship with Mary begins to crackle with electricity, hope for the future of Downton's dynasty takes shape. But when petty jealousies and ambitions grow among the family and the staff, scheming and secrets--both delicious and dangerous--threaten to derail the scramble to preserve Downton Abbey. Downton Abbey offers a spot-on portrait of a vanishing way of life.",
-  "poster": "file:///android_asset/posters/tvmaze-251.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-26",
+      "id": 20851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36969.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 20852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36970.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-10",
+      "id": 20853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36971.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 20854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36972.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-24",
+      "id": 20855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36973.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-31",
+      "id": 20856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36974.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-07",
+      "id": 20857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36975.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-18",
+      "id": 20858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36976.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 20859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36977.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 20860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36978.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-09",
+      "id": 20861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36979.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-16",
+      "id": 20862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36980.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-23",
+      "id": 20863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36981.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-30",
+      "id": 20864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36982.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 75,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-06",
+      "id": 20865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36983.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 20866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/37000.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-23",
+      "id": 20867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36998.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 20868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36999.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 20869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36996.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 20870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36994.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 20871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/37001.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 20872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36997.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 20873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36993.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 90,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-22",
+      "id": 20874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36992.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 20875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36991.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 20876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36990.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 20877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36989.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 20878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36988.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 20879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36987.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-03",
+      "id": 20880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36986.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 1170961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309220.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-21",
+      "id": 20882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36968.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 20883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36967.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-05",
+      "id": 20884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36966.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-12",
+      "id": 20885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36965.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 20886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36964.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-26",
+      "id": 20887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36963.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-02",
+      "id": 31122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36962.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-09",
+      "id": 38901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36961.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-20",
+      "id": 210868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49664.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 90,
+      "season": 6
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 215201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61474.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 215202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61473.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 215203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61472.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 215204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/482/1206482.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 215205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/482/1206483.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 379154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1162695.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 215207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/465/1162693.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 90,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Familie",
-    "Romanze"
+    "Family",
+    "Romance"
   ],
+  "id": "tvmaze-251",
+  "live": true,
+  "overview": "The Downton Abbey estate stands a splendid example of confidence and mettle, its family enduring for generations and its staff a well-oiled machine of propriety. But change is afoot at Downton--change far surpassing the new electric lights and telephone. A crisis of inheritance threatens to displace the resident Crawley family, in spite of the best efforts of the noble and compassionate Earl, Robert Crawley; his American heiress wife, Cora his comically implacable, opinionated mother, Violet and his beautiful, eldest daughter, Mary, intent on charting her own course. Reluctantly, the family is forced to welcome its heir apparent, the self-made and proudly modern Matthew Crawley himself none too happy about the new arrangements. As Matthew's bristly relationship with Mary begins to crackle with electricity, hope for the future of Downton's dynasty takes shape. But when petty jealousies and ambitions grow among the family and the staff, scheming and secrets--both delicious and dangerous--threaten to derail the scramble to preserve Downton Abbey. Downton Abbey offers a spot-on portrait of a vanishing way of life.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/4601.jpg",
   "rating": 8.7,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 71,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "251",
+  "title": "Downton Abbey",
+  "type": "series",
+  "year": 2010
 }

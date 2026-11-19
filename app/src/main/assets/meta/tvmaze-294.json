@@ -1,22 +1,428 @@
 {
-  "schema": 1,
-  "id": "tvmaze-294",
-  "source": "tvmaze",
-  "sourceId": "294",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Night Shift",
-  "year": 2014,
-  "type": "series",
-  "overview": "Welcome to The Night Shift, where the toughest and craziest cases always seem to come through the door. Every shift is a fight between the heroic efforts of saving lives and the hard truths of running an underfunded hospital.At San Antonio Memorial, the men and women who work the night shift are an irreverent and special breed, particularly adrenaline junkie TC Callahan. After three grueling tours of duty in Afghanistan, TC is about to learn that his toughest battles will be fought right here at home.",
-  "poster": "file:///android_asset/posters/tvmaze-294.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-05-27",
+      "id": 30400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182987.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-03",
+      "id": 30401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182988.jpg",
+      "name": "Second Chances",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-10",
+      "id": 30402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182989.jpg",
+      "name": "Hog Wild",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-17",
+      "id": 30403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182990.jpg",
+      "name": "Grace Under Fire",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-24",
+      "id": 30404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182991.jpg",
+      "name": "Storm Watch",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-01",
+      "id": 30405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182993.jpg",
+      "name": "Coming Home",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-08",
+      "id": 30406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182994.jpg",
+      "name": "Blood Brothers",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-15",
+      "id": 30407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182995.jpg",
+      "name": "Save Me",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-23",
+      "id": 67093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22215.jpg",
+      "name": "Recovery",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-02",
+      "id": 140345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22814.jpg",
+      "name": "Back at the Ranch",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-09",
+      "id": 140770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23497.jpg",
+      "name": "Eyes Look Your Last",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-16",
+      "id": 142343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24118.jpg",
+      "name": "Shock to the Heart",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 143014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183004.jpg",
+      "name": "Ghosts",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 144063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183005.jpg",
+      "name": "Fog of War",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-30",
+      "id": 144062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24799.jpg",
+      "name": "Need to Know",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-06",
+      "id": 144064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25145.jpg",
+      "name": "Best Laid Plans",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-13",
+      "id": 144065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25721.jpg",
+      "name": "Parenthood",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-20",
+      "id": 144066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26067.jpg",
+      "name": "Aftermath",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-27",
+      "id": 144067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26514.jpg",
+      "name": "Hold On",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-04",
+      "id": 144068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26890.jpg",
+      "name": "Moving On",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-11",
+      "id": 144069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183009.jpg",
+      "name": "Sunrise, Sunset",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-18",
+      "id": 151209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183008.jpg",
+      "name": "Darkest Before Dawn",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-01",
+      "id": 685206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/151594.jpg",
+      "name": "The Times They are A-Changin'",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-08",
+      "id": 788406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154097.jpg",
+      "name": "The Thing with Feathers",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-15",
+      "id": 801595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156505.jpg",
+      "name": "The Way Back",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-22",
+      "id": 820511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/159472.jpg",
+      "name": "Three-Two-One",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-29",
+      "id": 828075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163049.jpg",
+      "name": "Get Busy Livin'",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-29",
+      "id": 828076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163050.jpg",
+      "name": "Hot in the City",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-06",
+      "id": 832962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/165401.jpg",
+      "name": "By Dawn's Early Light",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 834030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168549.jpg",
+      "name": "All In",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-27",
+      "id": 834031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172258.jpg",
+      "name": "Unexpected",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-03",
+      "id": 834032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183011.jpg",
+      "name": "Between a Rock and a Hard Place",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-03",
+      "id": 866433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183010.jpg",
+      "name": "Trust Issues",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-24",
+      "id": 881985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180721.jpg",
+      "name": "Emergent",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-31",
+      "id": 834035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/182642.jpg",
+      "name": "Burned",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-22",
+      "id": 1100709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/294752.jpg",
+      "name": "Recoil",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-29",
+      "id": 1163466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/297042.jpg",
+      "name": "Off the Rails",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-06",
+      "id": 1163467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298888.jpg",
+      "name": "Do No Harm",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-13",
+      "id": 1163468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301187.jpg",
+      "name": "Control",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-20",
+      "id": 1163469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303585.jpg",
+      "name": "Turbulence",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1163470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305969.jpg",
+      "name": "Family Matters",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-10",
+      "id": 1163471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309900.jpg",
+      "name": "Keep the Faith",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-17",
+      "id": 1163472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/311738.jpg",
+      "name": "R3B0ot",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-24",
+      "id": 1163473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/313494.jpg",
+      "name": "Land of the Free",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-31",
+      "id": 1163474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/315277.jpg",
+      "name": "Resurgence",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Medical"
   ],
+  "id": "tvmaze-294",
+  "live": true,
+  "overview": "Welcome to The Night Shift, where the toughest and craziest cases always seem to come through the door. Every shift is a fight between the heroic efforts of saving lives and the hard truths of running an underfunded hospital.At San Antonio Memorial, the men and women who work the night shift are an irreverent and special breed, particularly adrenaline junkie TC Callahan. After three grueling tours of duty in Afghanistan, TC is about to learn that his toughest battles will be fought right here at home.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/126/315025.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "294",
+  "title": "The Night Shift",
+  "type": "series",
+  "year": 2014
 }

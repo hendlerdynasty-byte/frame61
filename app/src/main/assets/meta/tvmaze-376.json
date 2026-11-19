@@ -1,20 +1,714 @@
 {
-  "schema": 1,
-  "id": "tvmaze-376",
-  "source": "tvmaze",
-  "sourceId": "376",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Portlandia",
-  "year": 2011,
-  "type": "series",
-  "overview": "Portlandia is a follow up to the Fred Armisen (SNL)/Carrie Brownstein comedy collaboration, Thunderant. In the new IFC series (executive- produced by Lorne Michaels), the pair lovingly skewer the people and values of Portland, Ore. by introducing us to Portland archetypes like a militant bike messenger, feminist bookstore owners and an arts &amp; crafts couple who \"put birds on things.\"",
-  "poster": "file:///android_asset/posters/tvmaze-376.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-01-21",
+      "id": 34495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/762971.jpg",
+      "name": "Farm",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 34496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/762972.jpg",
+      "name": "A Song for Portland",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-04",
+      "id": 34497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/762973.jpg",
+      "name": "Aimee",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-11",
+      "id": 34498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/762974.jpg",
+      "name": "Mayor is Missing",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-18",
+      "id": 34500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/643/1609786.jpg",
+      "name": "Blunderbuss",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-25",
+      "id": 34499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/643/1609789.jpg",
+      "name": "Baseball",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-06",
+      "id": 34501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624028.jpg",
+      "name": "Mixologist",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-13",
+      "id": 34502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624045.jpg",
+      "name": "One Moore Episode",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-20",
+      "id": 34503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624048.jpg",
+      "name": "Cool Wedding",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 34504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624113.jpg",
+      "name": "Grover",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-03",
+      "id": 34505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624131.jpg",
+      "name": "Cops Redesign",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-10",
+      "id": 34506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624133.jpg",
+      "name": "Cat Nap",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-17",
+      "id": 34507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624147.jpg",
+      "name": "Motorcycle",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-24",
+      "id": 34508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624151.jpg",
+      "name": "Feminist Bookstore's 10th Anniversary",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-02",
+      "id": 34509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624213.jpg",
+      "name": "No Olympics",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-09",
+      "id": 34510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624239.jpg",
+      "name": "Brunch Village",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-14",
+      "id": 34511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624503.jpg",
+      "name": "Winter in Portlandia",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-04",
+      "id": 34512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624507.jpg",
+      "name": "Take Back MTV",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-04",
+      "id": 34513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624512.jpg",
+      "name": "Missionaries",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-11",
+      "id": 34514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624517.jpg",
+      "name": "Nina's Birthday",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-18",
+      "id": 34515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624535.jpg",
+      "name": "Squiggleman",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-25",
+      "id": 34516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624547.jpg",
+      "name": "Off the Grid",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 34517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624555.jpg",
+      "name": "The Temp",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-08",
+      "id": 34518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624851.jpg",
+      "name": "Soft Opening",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-15",
+      "id": 34519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624853.jpg",
+      "name": "Alexandra",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-22",
+      "id": 34520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624855.jpg",
+      "name": "No-Fo-O-Fo-Bridge",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 34521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1624856.jpg",
+      "name": "Blackout",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-27",
+      "id": 34522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625195.jpg",
+      "name": "Sharing Finances",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-06",
+      "id": 34523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625198.jpg",
+      "name": "Ecoterrorists",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-13",
+      "id": 34524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625200.jpg",
+      "name": "Celery Guy",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-20",
+      "id": 34525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625201.jpg",
+      "name": "Pull-Out King",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-27",
+      "id": 34526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625204.jpg",
+      "name": "Spyke Drives",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-03",
+      "id": 34527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625213.jpg",
+      "name": "Bahama Knights",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-10",
+      "id": 34528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625217.jpg",
+      "name": "Trail Blazers",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-17",
+      "id": 34529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625223.jpg",
+      "name": "Late in Life Drug Use",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-24",
+      "id": 34530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625235.jpg",
+      "name": "3D Printer",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-01",
+      "id": 34531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1625245.jpg",
+      "name": "Getting Away",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-08",
+      "id": 116531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626248.jpg",
+      "name": "The Story of Toni & Candace",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-15",
+      "id": 116532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626259.jpg",
+      "name": "The Fiancée",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-22",
+      "id": 116533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626261.jpg",
+      "name": "Healthcare",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-29",
+      "id": 116534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626264.jpg",
+      "name": "Seaworld",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-05",
+      "id": 129501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626268.jpg",
+      "name": "4th of July",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-12",
+      "id": 129502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626273.jpg",
+      "name": "Fashion",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 129503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626274.jpg",
+      "name": "Doug Becomes a Feminist",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-26",
+      "id": 129504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626275.jpg",
+      "name": "House for Sale",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-05",
+      "id": 129505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626277.jpg",
+      "name": "You Can Call Me Al",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-12",
+      "id": 129506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626289.jpg",
+      "name": "Dead Pets",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-21",
+      "id": 483073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628249.jpg",
+      "name": "Pickathon",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-01-28",
+      "id": 561041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111637.jpg",
+      "name": "Going Gray",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-04",
+      "id": 561042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628254.jpg",
+      "name": "Shville",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-11",
+      "id": 591621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111638.jpg",
+      "name": "Weirdo Beach",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-18",
+      "id": 591624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628258.jpg",
+      "name": "Breaking Up",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-25",
+      "id": 591625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628319.jpg",
+      "name": "TADA",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-03",
+      "id": 591626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628321.jpg",
+      "name": "Family Emergency",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-10",
+      "id": 591627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628331.jpg",
+      "name": "First Feminist City",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-17",
+      "id": 591628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628332.jpg",
+      "name": "Lance is Smart",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-24",
+      "id": 591629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628333.jpg",
+      "name": "Noodle Monster",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-05",
+      "id": 979048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230332.jpg",
+      "name": "The Storytellers",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-01-12",
+      "id": 1029541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/232985.jpg",
+      "name": "Carrie Dates a Hunk",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-01-19",
+      "id": 1030184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235216.jpg",
+      "name": "Fred's Cell Phone Company",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1030185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237495.jpg",
+      "name": "Separation Anxiety",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-02-02",
+      "id": 1034449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628663.jpg",
+      "name": "Amore",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-02-09",
+      "id": 1034450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243970.jpg",
+      "name": "Friend Replacement",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-02-16",
+      "id": 1034451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247033.jpg",
+      "name": "Portland Secedes",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-02-23",
+      "id": 1076325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251512.jpg",
+      "name": "Ants",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-03-02",
+      "id": 1076326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251513.jpg",
+      "name": "Passenger Rating",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2017-03-09",
+      "id": 1076327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253897.jpg",
+      "name": "Misunderstood Miracles",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-01-18",
+      "id": 1290229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628689.jpg",
+      "name": "Riot Spray",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-01-25",
+      "id": 1367902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359798.jpg",
+      "name": "Shared Workspace",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-02-01",
+      "id": 1367903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/361915.jpg",
+      "name": "No Thank You",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-02-08",
+      "id": 1367904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/364229.jpg",
+      "name": "Abracadabra",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-02-15",
+      "id": 1389479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365999.jpg",
+      "name": "Open Relationship",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-02-22",
+      "id": 1389480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628693.jpg",
+      "name": "You Do You",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-03-01",
+      "id": 1389481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/369086.jpg",
+      "name": "Most Pro City",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-03-08",
+      "id": 1389482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628697.jpg",
+      "name": "Peter Follows P!nk",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-03-15",
+      "id": 1415870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373373.jpg",
+      "name": "Long Way Back",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2018-03-22",
+      "id": 1415871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/651/1628720.jpg",
+      "name": "Rose Route",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-376",
+  "live": true,
+  "overview": "Portlandia is a follow up to the Fred Armisen (SNL)/Carrie Brownstein comedy collaboration, Thunderant. In the new IFC series (executive- produced by Lorne Michaels), the pair lovingly skewer the people and values of Portland, Ore. by introducing us to Portland archetypes like a militant bike messenger, feminist bookstore owners and an arts &amp; crafts couple who \"put birds on things.\"",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/150/375346.jpg",
   "rating": 6.7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "376",
+  "title": "Portlandia",
+  "type": "series",
+  "year": 2011
 }

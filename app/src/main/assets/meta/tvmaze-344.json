@@ -1,21 +1,967 @@
 {
-  "schema": 1,
-  "id": "tvmaze-344",
-  "source": "tvmaze",
-  "sourceId": "344",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Rizzoli & Isles",
-  "year": 2010,
-  "type": "series",
-  "overview": "On Rizzoli &amp; Isles, Boston detective Jane Rizzoli and medical examiner Maura Isles are complete opposites and good friends who solve crimes and bust some of Boston's most notorious criminals. Jane, the only female detective in Boston's homicide division, is a tough and gutsy cop who doesn't let her guard down (except with Maura), dodges her overprotective mother, and is better at basketball than her brother. Maura, meanwhile, is usually more comfortable among the dead than the living. She is always impeccably dressed in designer duds with a steady, sometimes icy temperament. Jane and Maura often find themselves working together as both use their brilliant minds and expertise to figure out the \"who done it\" as well as the \"how done it\" of Boston's most complex cases.",
-  "poster": "file:///android_asset/posters/tvmaze-344.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-07-12",
+      "id": 32284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/93410.jpg",
+      "name": "See One. Do One. Teach One.",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-19",
+      "id": 32285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96302.jpg",
+      "name": "Boston Strangler Redux",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-26",
+      "id": 32286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96304.jpg",
+      "name": "Sympathy for the Devil",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-02",
+      "id": 32287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99337.jpg",
+      "name": "She Works Hard for the Money",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-09",
+      "id": 32288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99338.jpg",
+      "name": "Money for Nothing",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-16",
+      "id": 32289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99341.jpg",
+      "name": "I Kissed a Girl",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-23",
+      "id": 32290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99343.jpg",
+      "name": "Born to Run",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-30",
+      "id": 32291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99344.jpg",
+      "name": "I'm Your Boogie Man",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-06",
+      "id": 32292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99346.jpg",
+      "name": "The Beast in Me",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-13",
+      "id": 32293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99347.jpg",
+      "name": "When the Gun Goes Bang, Bang, Bang",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-11",
+      "id": 32294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118925.jpg",
+      "name": "We Don't Need Another Hero",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-18",
+      "id": 32295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179094.jpg",
+      "name": "Living Proof",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-25",
+      "id": 32296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179095.jpg",
+      "name": "Sailor Man",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-01",
+      "id": 32297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179096.jpg",
+      "name": "Brown Eyed Girl",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-08",
+      "id": 32298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/585/1464948.jpg",
+      "name": "Don't Hate the Player",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-15",
+      "id": 32299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179099.jpg",
+      "name": "Rebel Without a Pause",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-22",
+      "id": 32300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179101.jpg",
+      "name": "Bloodlines",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-29",
+      "id": 32301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179103.jpg",
+      "name": "My Own Worst Enemy",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-05",
+      "id": 32302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179105.jpg",
+      "name": "Gone Daddy Gone",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-12",
+      "id": 32303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179106.jpg",
+      "name": "Remember Me",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-28",
+      "id": 32304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179107.jpg",
+      "name": "Can I Get a Witness?",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-05",
+      "id": 32305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179108.jpg",
+      "name": "He Ain't Heavy, He's My Brother",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-12",
+      "id": 32306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179112.jpg",
+      "name": "Seventeen Ain't So Sweet",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-19",
+      "id": 32307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179113.jpg",
+      "name": "Don't Stop Dancing, Girl",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-26",
+      "id": 32308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179114.jpg",
+      "name": "Burning Down the House",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-05",
+      "id": 32309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26821.jpg",
+      "name": "What Doesn't Kill You",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-12",
+      "id": 32310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27267.jpg",
+      "name": "Dirty Little Secret",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-19",
+      "id": 32311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27560.jpg",
+      "name": "This is How the Heart Breaks",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-26",
+      "id": 32312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27561.jpg",
+      "name": "Welcome to the Dollhouse",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-03",
+      "id": 32313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28153.jpg",
+      "name": "Throwing Down the Gauntlet",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-10",
+      "id": 32314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28948.jpg",
+      "name": "Money Maker",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-17",
+      "id": 32315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29265.jpg",
+      "name": "Crazy for You",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-24",
+      "id": 32316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30036.jpg",
+      "name": "Cuts Like a Knife",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-31",
+      "id": 32317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30720.jpg",
+      "name": "Home Town Glory",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-14",
+      "id": 32318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30842.jpg",
+      "name": "Melt My Heart to Stone",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-27",
+      "id": 32319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30843.jpg",
+      "name": "Class Action Satisfaction",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-04",
+      "id": 32320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34010.jpg",
+      "name": "Love the Way You Lie",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-11",
+      "id": 32321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31842.jpg",
+      "name": "Virtual Love",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-18",
+      "id": 32322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32712.jpg",
+      "name": "Over/Under",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-25",
+      "id": 32323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32714.jpg",
+      "name": "No More Drama in My Life",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-25",
+      "id": 32324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32911.jpg",
+      "name": "We Are Family",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-02",
+      "id": 32325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32912.jpg",
+      "name": "In Over Your Head",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-09",
+      "id": 32326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34007.jpg",
+      "name": "But I Am a Good Girl",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-16",
+      "id": 32327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34008.jpg",
+      "name": "Killer in High Heels",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-23",
+      "id": 32328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34675.jpg",
+      "name": "Dance with the Devil",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-30",
+      "id": 32329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34676.jpg",
+      "name": "Somebody's Watching Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-06",
+      "id": 32330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35406.jpg",
+      "name": "All for One",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-13",
+      "id": 32331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35407.jpg",
+      "name": "Cold as Ice",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-20",
+      "id": 32332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36386.jpg",
+      "name": "No One Mourns the Wicked",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-27",
+      "id": 32333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36387.jpg",
+      "name": "Built for Speed",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-03",
+      "id": 32334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38102.jpg",
+      "name": "Judge, Jury & Executioner",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-10",
+      "id": 32335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38103.jpg",
+      "name": "Partners in Crime",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-02-25",
+      "id": 32336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39670.jpg",
+      "name": "Tears of a Clown",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-04",
+      "id": 32337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39672.jpg",
+      "name": "Just Push Play",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-11",
+      "id": 32338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42062.jpg",
+      "name": "Food for Thought",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-18",
+      "id": 32339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/42063.jpg",
+      "name": "You're Gonna Miss Me When I'm Gone",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-17",
+      "id": 32340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/43247.jpg",
+      "name": "A New Day",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-06-24",
+      "id": 32341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46434.jpg",
+      "name": "...Goodbye",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-01",
+      "id": 32342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49724.jpg",
+      "name": "Too Good to Be True",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-08",
+      "id": 32343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/21/53462.jpg",
+      "name": "Doomsday",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-15",
+      "id": 32344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/57120.jpg",
+      "name": "The Best Laid Plans",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-22",
+      "id": 32345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60083.jpg",
+      "name": "Knockout",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-29",
+      "id": 32346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63508.jpg",
+      "name": "Boston Keltic",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-05",
+      "id": 32347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/65741.jpg",
+      "name": "Lost & Found",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-12",
+      "id": 32348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/68699.jpg",
+      "name": "It Takes a Village",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-19",
+      "id": 32349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/72528.jpg",
+      "name": "Phoenix Rising",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-26",
+      "id": 32350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26480.jpg",
+      "name": "If You Can't Stand the Heat",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-02",
+      "id": 32351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26481.jpg",
+      "name": "Burden of Proof",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 44362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26820.jpg",
+      "name": "Bridge to Tomorrow",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 129046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27555.jpg",
+      "name": "Foot Loose",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-03",
+      "id": 129679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27556.jpg",
+      "name": "Gumshoe",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-10",
+      "id": 140771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27557.jpg",
+      "name": "In Plain View",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-17",
+      "id": 140772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27558.jpg",
+      "name": "Bite Out of Crime",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-03-17",
+      "id": 140773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27559.jpg",
+      "name": "Family Matters",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-16",
+      "id": 153077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30035.jpg",
+      "name": "The Platform",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-23",
+      "id": 153162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46421.jpg",
+      "name": "Bassholes",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-30",
+      "id": 153163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49688.jpg",
+      "name": "Deadly Harvest",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-07",
+      "id": 153164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49689.jpg",
+      "name": "Imitation Game",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-14",
+      "id": 182492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49690.jpg",
+      "name": "Misconduct Game",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-21",
+      "id": 153166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49691.jpg",
+      "name": "Face Value",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-28",
+      "id": 153167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49692.jpg",
+      "name": "A Bad Seed Grows",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-08-04",
+      "id": 153168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49693.jpg",
+      "name": "Nice to Meet You, Dr. Isles",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-08-11",
+      "id": 153169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49694.jpg",
+      "name": "Love Taps",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-08-18",
+      "id": 153170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38762.jpg",
+      "name": "Sister Sister",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-08-25",
+      "id": 181906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49695.jpg",
+      "name": "Fake It 'Til You Make It",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-09-01",
+      "id": 202857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49696.jpg",
+      "name": "5:26",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 507139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112933.jpg",
+      "name": "Hide & Seek",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 507143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112934.jpg",
+      "name": "Murderjuana",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 576389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203909.jpg",
+      "name": "Scared to Death",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 576390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203910.jpg",
+      "name": "East Meets West",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-08",
+      "id": 576391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203911.jpg",
+      "name": "Bomb Voyage",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 576392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203912.jpg",
+      "name": "A Shot in the Dark",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-06-06",
+      "id": 679085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153265.jpg",
+      "name": "Two Shots: Move Forward",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-06-06",
+      "id": 763288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153266.jpg",
+      "name": "Dangerous Curve Ahead",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-06-13",
+      "id": 763289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153267.jpg",
+      "name": "Cops vs. Zombies",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-06-20",
+      "id": 763290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153268.jpg",
+      "name": "Post Mortem",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-06-27",
+      "id": 763291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/161914.jpg",
+      "name": "Shadow of Doubt",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-07-11",
+      "id": 770605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216027.jpg",
+      "name": "There Be Ghosts",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-07-18",
+      "id": 819655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/167833.jpg",
+      "name": "Dead Weight",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-07-25",
+      "id": 819656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/167834.jpg",
+      "name": "2M7258-100",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-08-01",
+      "id": 837344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221165.jpg",
+      "name": "65 Hours",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-08-15",
+      "id": 837345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221166.jpg",
+      "name": "For Richer or Poorer",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-08-22",
+      "id": 837346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180296.jpg",
+      "name": "Stiffed",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-08-29",
+      "id": 837347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/182109.jpg",
+      "name": "Yesterday, Today, Tomorrow",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-09-05",
+      "id": 867952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184004.jpg",
+      "name": "Ocean Frank",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-344",
+  "live": true,
+  "overview": "On Rizzoli &amp; Isles, Boston detective Jane Rizzoli and medical examiner Maura Isles are complete opposites and good friends who solve crimes and bust some of Boston's most notorious criminals. Jane, the only female detective in Boston's homicide division, is a tough and gutsy cop who doesn't let her guard down (except with Maura), dodges her overprotective mother, and is better at basketball than her brother. Maura, meanwhile, is usually more comfortable among the dead than the living. She is always impeccably dressed in designer duds with a steady, sometimes icy temperament. Jane and Maura often find themselves working together as both use their brilliant minds and expertise to figure out the \"who done it\" as well as the \"how done it\" of Boston's most complex cases.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5342.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "344",
+  "title": "Rizzoli & Isles",
+  "type": "series",
+  "year": 2010
 }

@@ -1,22 +1,932 @@
 {
-  "schema": 1,
-  "id": "tvmaze-598",
-  "source": "tvmaze",
-  "sourceId": "598",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Boston Legal",
-  "year": 2004,
-  "type": "series",
-  "overview": "Sometimes irreverent and funny, sometimes intense and moving, Boston Legal prides itself on being at the forefront of issue-oriented television, often addressing issues that are underreported by the media. Fast-paced and wildly comedic, the series confronts social and moral issues, while its characters continually stretch the boundaries of the law.",
-  "poster": "file:///android_asset/posters/tvmaze-598.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-10-03",
+      "id": 57140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416641.jpg",
+      "name": "Head Cases",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-10",
+      "id": 57141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417268.jpg",
+      "name": "Still Crazy After All These Years",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-17",
+      "id": 57142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417293.jpg",
+      "name": "Catch and Release",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-24",
+      "id": 57143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417347.jpg",
+      "name": "Change of Course",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-31",
+      "id": 57144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1417385.jpg",
+      "name": "An Eye for an Eye",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-07",
+      "id": 57145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1418762.jpg",
+      "name": "Truth Be Told",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-21",
+      "id": 57146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1418768.jpg",
+      "name": "Questionable Characters",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-28",
+      "id": 57147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1418776.jpg",
+      "name": "Loose Lips",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-12",
+      "id": 57148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1418836.jpg",
+      "name": "A Greater Good",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-19",
+      "id": 57149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1419953.jpg",
+      "name": "Hired Guns",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-09",
+      "id": 57150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1419957.jpg",
+      "name": "Schmidt Happens",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-16",
+      "id": 57151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1419963.jpg",
+      "name": "From Whence We Came",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-23",
+      "id": 57152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1419973.jpg",
+      "name": "It Girls and Beyond",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-13",
+      "id": 57153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/567/1419983.jpg",
+      "name": "Til We Meat Again",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-20",
+      "id": 57154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420245.jpg",
+      "name": "Tortured Souls",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-13",
+      "id": 57155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420260.jpg",
+      "name": "Let Sales Ring",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-20",
+      "id": 57156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420294.jpg",
+      "name": "Death Be Not Proud",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-27",
+      "id": 57157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420300.jpg",
+      "name": "The Black Widow",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-04",
+      "id": 57158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420325.jpg",
+      "name": "Schadenfreude",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-11",
+      "id": 57159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420502.jpg",
+      "name": "Finding Nimmo",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-18",
+      "id": 57160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420508.jpg",
+      "name": "A Whiff and a Prayer",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-25",
+      "id": 57161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420510.jpg",
+      "name": "Men to Boys",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-01",
+      "id": 57162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420513.jpg",
+      "name": "Witches of Mass Destruction",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-08",
+      "id": 57163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420659.jpg",
+      "name": "Truly, Madly, Deeply",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-15",
+      "id": 57164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420665.jpg",
+      "name": "The Ass Fat Jungle",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-06",
+      "id": 57165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420671.jpg",
+      "name": "Gone",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-13",
+      "id": 57166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1420674.jpg",
+      "name": "Legal Deficits",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-10",
+      "id": 57167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421405.jpg",
+      "name": "The Cancer Man Can",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-17",
+      "id": 57168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421429.jpg",
+      "name": "Helping Hands",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-24",
+      "id": 57169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421460.jpg",
+      "name": "Too Much Information",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-07",
+      "id": 57170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421464.jpg",
+      "name": "Breast in Show",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-14",
+      "id": 57171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421493.jpg",
+      "name": "Smile",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-21",
+      "id": 57172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421559.jpg",
+      "name": "Live Big",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-28",
+      "id": 57173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421562.jpg",
+      "name": "...There's Fire!",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-07",
+      "id": 57174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1421570.jpg",
+      "name": "Shock and Oww!",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-14",
+      "id": 57175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422023.jpg",
+      "name": "Stick It",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-21",
+      "id": 57176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422036.jpg",
+      "name": "Chitty Chitty Bang Bang",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-28",
+      "id": 57177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422268.jpg",
+      "name": "Word Salad Days",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-18",
+      "id": 57178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422269.jpg",
+      "name": "Ivan the Incorrigible",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-25",
+      "id": 57179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422274.jpg",
+      "name": "Race Ipsa",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-02",
+      "id": 57180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422278.jpg",
+      "name": "Deep End of the Poole",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-09",
+      "id": 57181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422282.jpg",
+      "name": "Squid Pro Quo",
+      "number": 25,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 57182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422293.jpg",
+      "name": "Spring Fever",
+      "number": 26,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 57183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422302.jpg",
+      "name": "BL: Los Angeles",
+      "number": 27,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-19",
+      "id": 57184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/568/1422308.jpg",
+      "name": "Can't We All Get a Lung?",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-26",
+      "id": 57185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1422788.jpg",
+      "name": "New Kids on the Block",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-03",
+      "id": 57186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1422792.jpg",
+      "name": "Desperately Seeking Shirley",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 57187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1422794.jpg",
+      "name": "Fine Young Cannibal",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 57188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1422802.jpg",
+      "name": "Whose God Is It Anyway?",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 57189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423188.jpg",
+      "name": "The Verdict",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-31",
+      "id": 57190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423191.jpg",
+      "name": "Trick or Treat",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-26",
+      "id": 57191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423221.jpg",
+      "name": "Lincoln",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 57192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423234.jpg",
+      "name": "On the Ledge",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-12-05",
+      "id": 57193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423237.jpg",
+      "name": "The Nutcrackers",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-09",
+      "id": 57194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423438.jpg",
+      "name": "Angel of Death",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-16",
+      "id": 57195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423459.jpg",
+      "name": "Nuts",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-30",
+      "id": 57196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423472.jpg",
+      "name": "Dumping Bella",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 57197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423478.jpg",
+      "name": "Selling Sickness",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 57198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423489.jpg",
+      "name": "Fat Burner",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-20",
+      "id": 57199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423658.jpg",
+      "name": "The Good Lawyer",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-03-20",
+      "id": 57200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423671.jpg",
+      "name": "The Bride Wore Blood",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-03",
+      "id": 57201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423680.jpg",
+      "name": "Son of the Defender",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-10",
+      "id": 57202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1423724.jpg",
+      "name": "Brotherly Love",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-24",
+      "id": 57203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424551.jpg",
+      "name": "Guise 'n Dolls",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-01",
+      "id": 57204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424554.jpg",
+      "name": "Tea and Sympathy",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-08",
+      "id": 57205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424557.jpg",
+      "name": "Guantanamo by the Bay",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-15",
+      "id": 57206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424559.jpg",
+      "name": "Duck and Cover",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-29",
+      "id": 57207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424562.jpg",
+      "name": "Trial of the Century",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-25",
+      "id": 57208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424574.jpg",
+      "name": "Beauty and the Beast",
+      "number": 1,
+      "runtime": 90,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-02",
+      "id": 57209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424757.jpg",
+      "name": "The Innocent Man",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-09",
+      "id": 57210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424773.jpg",
+      "name": "The Chicken and the Leg",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-16",
+      "id": 57211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424781.jpg",
+      "name": "Do Tell",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-30",
+      "id": 57212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425214.jpg",
+      "name": "Hope and Gory",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-06",
+      "id": 57213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425229.jpg",
+      "name": "The Object of My Affection",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-13",
+      "id": 57214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425233.jpg",
+      "name": "Attack of the Xenophobes",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-12-04",
+      "id": 57215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425236.jpg",
+      "name": "Oral Contracts",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-12-11",
+      "id": 57216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425241.jpg",
+      "name": "No Brains Left Behind",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-12-18",
+      "id": 57217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425274.jpg",
+      "name": "Green Christmas",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-15",
+      "id": 57218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425490.jpg",
+      "name": "Mad About You",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-22",
+      "id": 57219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425491.jpg",
+      "name": "Roe v. Wade: The Musical",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-12",
+      "id": 57220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425492.jpg",
+      "name": "Glow in the Dark",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-19",
+      "id": 57221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425509.jpg",
+      "name": "Rescue Me",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-08",
+      "id": 57222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425751.jpg",
+      "name": "Tabloid Nation",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-15",
+      "id": 57223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425816.jpg",
+      "name": "The Mighty Rogues",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-22",
+      "id": 57224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425875.jpg",
+      "name": "The Court Supreme",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-30",
+      "id": 57225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425894.jpg",
+      "name": "Indecent Proposals",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-14",
+      "id": 57226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425932.jpg",
+      "name": "The Gods Must Be Crazy",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-21",
+      "id": 57227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425949.jpg",
+      "name": "Patriot Acts",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-22",
+      "id": 57228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425963.jpg",
+      "name": "Smoke Signals",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 57229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426521.jpg",
+      "name": "Guardians and Gatekeepers",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-06",
+      "id": 57230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426543.jpg",
+      "name": "Dances with Wolves",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-13",
+      "id": 57231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426549.jpg",
+      "name": "True Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 57232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426554.jpg",
+      "name": "The Bad Seed",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 57233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426648.jpg",
+      "name": "Happy Trails",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-03",
+      "id": 57234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426656.jpg",
+      "name": "Mad Cows",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 57235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426685.jpg",
+      "name": "Roe",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 57236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426686.jpg",
+      "name": "Kill, Baby, Kill!",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 57237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426688.jpg",
+      "name": "Thanksgiving",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-01",
+      "id": 57238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426689.jpg",
+      "name": "Juiced",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 57239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426690.jpg",
+      "name": "Made in China",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 57240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/158119.jpg",
+      "name": "Last Call",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Justiz"
+    "Comedy",
+    "Legal"
   ],
+  "id": "tvmaze-598",
+  "live": true,
+  "overview": "Sometimes irreverent and funny, sometimes intense and moving, Boston Legal prides itself on being at the forefront of issue-oriented television, often addressing issues that are underreported by the media. Fast-paced and wildly comedic, the series confronts social and moral issues, while its characters continually stretch the boundaries of the law.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/12026.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "598",
+  "title": "Boston Legal",
+  "type": "series",
+  "year": 2004
 }

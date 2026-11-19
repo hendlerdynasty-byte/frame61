@@ -1,22 +1,716 @@
 {
-  "schema": 1,
-  "id": "tvmaze-12",
-  "source": "tvmaze",
-  "sourceId": "12",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Lost Girl",
-  "year": 2010,
-  "type": "series",
-  "overview": "Lost Girl follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she drained her boyfriend to death in their first sexual encounter. Now she has hit the road alone and afraid. She discovers she is one of the Fae, creatures of legend and folklore, who pass as humans while feeding off them secretly and in different ways, as they have for millennia. Relieved yet horrified to find out that she is not alone, Bo decides to take the middle path between the humans and the Fae while embarking on a personal mission to unlock the secrets of her origin.With the help of her human sidekick, Kenzi, and Dyson, a sexy police detective, Bo takes on a challenge every week helping a Fae or human client who comes to her to solve a mystery, or to right a wrong.",
-  "poster": "file:///android_asset/posters/tvmaze-12.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-12",
+      "id": 490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/746791.jpg",
+      "name": "It's a Fae, Fae, Fae, Fae World",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-19",
+      "id": 491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41912.jpg",
+      "name": "Where There's a Will, There's a Fae",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1002195.jpg",
+      "name": "Oh Kappa, My Kappa",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41910.jpg",
+      "name": "Faetal Attraction",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41909.jpg",
+      "name": "Dead Lucky",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-24",
+      "id": 495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41908.jpg",
+      "name": "Food for Thought",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-31",
+      "id": 496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41907.jpg",
+      "name": "ArachnoFaebia",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-07",
+      "id": 497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41906.jpg",
+      "name": "Vexed",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-14",
+      "id": 498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41905.jpg",
+      "name": "Fae Day",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-21",
+      "id": 499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41904.jpg",
+      "name": "The Mourning After",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-28",
+      "id": 500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41903.jpg",
+      "name": "Faetal Justice",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-05",
+      "id": 501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41902.jpg",
+      "name": "(Dis)Members Only",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-12",
+      "id": 502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41901.jpg",
+      "name": "Bloodlines",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-04",
+      "id": 503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41900.jpg",
+      "name": "Something Wicked This Fae Comes",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-11",
+      "id": 504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41899.jpg",
+      "name": "I Fought the Fae (and the Fae Won)",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-18",
+      "id": 505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41898.jpg",
+      "name": "Scream a Little Dream",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41897.jpg",
+      "name": "Mirror, Mirror",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41896.jpg",
+      "name": "BrotherFae of the Wolves",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-30",
+      "id": 508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41895.jpg",
+      "name": "It's Better to Burn Out Than Fae Away",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-06",
+      "id": 509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41894.jpg",
+      "name": "Fae Gone Wild",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-13",
+      "id": 510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41893.jpg",
+      "name": "Death Didn't Become Him",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-20",
+      "id": 511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41892.jpg",
+      "name": "Original Skin",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-27",
+      "id": 512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41891.jpg",
+      "name": "Raging Fae",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41890.jpg",
+      "name": "Can't See the Fae-rest",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41889.jpg",
+      "name": "Masks",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-18",
+      "id": 515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41888.jpg",
+      "name": "Barometz. Trick. Pressure",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-22",
+      "id": 516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41887.jpg",
+      "name": "Midnight Lamp",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-29",
+      "id": 517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41886.jpg",
+      "name": "Table for Fae",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-12",
+      "id": 518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41885.jpg",
+      "name": "School's Out",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-19",
+      "id": 519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41884.jpg",
+      "name": "The Girl Who Fae'd with Fire",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-04",
+      "id": 520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41883.jpg",
+      "name": "Fae-nted Love",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-11",
+      "id": 521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41882.jpg",
+      "name": "Truth and Consequences",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-18",
+      "id": 522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41881.jpg",
+      "name": "Lachlan's Gambit",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41880.jpg",
+      "name": "Into the Dark",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41879.jpg",
+      "name": "Flesh and Blood",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-06",
+      "id": 525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41878.jpg",
+      "name": "Caged Fae",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-13",
+      "id": 526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41877.jpg",
+      "name": "SubterrFaenean",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-20",
+      "id": 527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41876.jpg",
+      "name": "ConFaegion",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-27",
+      "id": 528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41875.jpg",
+      "name": "Fae-de to Black",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-10",
+      "id": 529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41874.jpg",
+      "name": "Faes Wide Shut",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-17",
+      "id": 530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41873.jpg",
+      "name": "The Kenzi Scale",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-03",
+      "id": 531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41872.jpg",
+      "name": "There's Bo Place Like Home",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41871.jpg",
+      "name": "Fae-ge Against the Machine",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41870.jpg",
+      "name": "Ceremony",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41869.jpg",
+      "name": "Delinquents",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41868.jpg",
+      "name": "Adventures in Fae-bysitting",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41867.jpg",
+      "name": "Hail, Hale",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41866.jpg",
+      "name": "Those Who Wander",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41865.jpg",
+      "name": "In Memoriam",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41864.jpg",
+      "name": "Sleeping Beauty School",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-24",
+      "id": 540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41863.jpg",
+      "name": "Lovers. Apart.",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-01",
+      "id": 541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41862.jpg",
+      "name": "Turn to Stone",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-08",
+      "id": 542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41861.jpg",
+      "name": "Let the Dark Times Roll",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-15",
+      "id": 543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41860.jpg",
+      "name": "Of All the Gin Joints",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-22",
+      "id": 544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41859.jpg",
+      "name": "La Fae Époque",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-29",
+      "id": 545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41858.jpg",
+      "name": "Groundhog Fae",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-12",
+      "id": 546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41857.jpg",
+      "name": "Destiny's Child",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-19",
+      "id": 547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41856.jpg",
+      "name": "Waves",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-26",
+      "id": 548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41855.jpg",
+      "name": "End of a Line",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-02-09",
+      "id": 549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41854.jpg",
+      "name": "Origin",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-02-16",
+      "id": 550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41853.jpg",
+      "name": "Dark Horse",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168879.jpg",
+      "name": "Like Hell - Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-14",
+      "id": 58244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168881.jpg",
+      "name": "Like Hell - Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-21",
+      "id": 87176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168882.jpg",
+      "name": "Big in Japan",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-28",
+      "id": 101836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168885.jpg",
+      "name": "When God Opens a Window",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-04",
+      "id": 101837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169049.jpg",
+      "name": "It's Your Lucky Fae",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-11",
+      "id": 101838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169632.jpg",
+      "name": "Clear Eyes, Fae Hearts",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-18",
+      "id": 101839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169818.jpg",
+      "name": "Here Comes the Night",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-01-25",
+      "id": 120563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170443.jpg",
+      "name": "End of Faes",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-06",
+      "id": 206087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170315.jpg",
+      "name": "44 Minutes to Save the World",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-13",
+      "id": 212020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170316.jpg",
+      "name": "Like Father, Like Daughter",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-20",
+      "id": 212837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170320.jpg",
+      "name": "Sweet Valkyrie High",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 232812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170323.jpg",
+      "name": "Judgement Fae",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 278537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170325.jpg",
+      "name": "Family Portrait",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 278538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170367.jpg",
+      "name": "Follow the Yellow Trick Road",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 278540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170330.jpg",
+      "name": "Let Them Burn",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 316120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170329.jpg",
+      "name": "Rise",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Fantasy",
     "Horror"
   ],
+  "id": "tvmaze-12",
+  "live": true,
+  "overview": "Lost Girl follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she drained her boyfriend to death in their first sexual encounter. Now she has hit the road alone and afraid. She discovers she is one of the Fae, creatures of legend and folklore, who pass as humans while feeding off them secretly and in different ways, as they have for millennia. Relieved yet horrified to find out that she is not alone, Bo decides to take the middle path between the humans and the Fae while embarking on a personal mission to unlock the secrets of her origin.With the help of her human sidekick, Kenzi, and Dyson, a sexy police detective, Bo takes on a challenge every week helping a Fae or human client who comes to her to solve a mystery, or to right a wrong.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/137.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "12",
+  "title": "Lost Girl",
+  "type": "series",
+  "year": 2010
 }

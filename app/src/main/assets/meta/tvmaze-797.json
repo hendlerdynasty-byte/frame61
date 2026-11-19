@@ -1,21 +1,859 @@
 {
-  "schema": 1,
-  "id": "tvmaze-797",
-  "source": "tvmaze",
-  "sourceId": "797",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Rescue Me",
-  "year": 2004,
-  "type": "series",
-  "overview": "Tommy Gavin is a lifesaver. Whether he is pulling survivors from fiery high-rise infernos or the twisted steel of a subway collision, Gavin takes great pride in leading the heroic but often overwhelmed firefighters of New York City's Truck Company 62. Gavin is also a man drifting between sorrow and anger over a recent separation from his wife and three kids, and recurring memories of comrades and other New-Yorkers who fell victim to the tragedy of 9/11.",
-  "poster": "file:///android_asset/posters/tvmaze-797.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-07-21",
+      "id": 71125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772351.jpg",
+      "name": "Guts",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-07-28",
+      "id": 71126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772352.jpg",
+      "name": "Gay",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-04",
+      "id": 71127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772353.jpg",
+      "name": "Kansas",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-11",
+      "id": 71128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772354.jpg",
+      "name": "DNA",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-18",
+      "id": 71129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772355.jpg",
+      "name": "Orphans",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-25",
+      "id": 71130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772356.jpg",
+      "name": "Revenge",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-01",
+      "id": 71131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772357.jpg",
+      "name": "Butterfly",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-08",
+      "id": 71132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772358.jpg",
+      "name": "Inches",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-15",
+      "id": 71133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772359.jpg",
+      "name": "Alarm",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-22",
+      "id": 71134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772360.jpg",
+      "name": "Immortal",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-29",
+      "id": 71135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772361.jpg",
+      "name": "Mom",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-06",
+      "id": 71136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772362.jpg",
+      "name": "Leaving",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-13",
+      "id": 71137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772363.jpg",
+      "name": "Sanctuary",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-21",
+      "id": 71138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772364.jpg",
+      "name": "Voicemail",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-06-28",
+      "id": 71139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772365.jpg",
+      "name": "Harmony",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-05",
+      "id": 71140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772366.jpg",
+      "name": "Balls",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-12",
+      "id": 71141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772367.jpg",
+      "name": "Twat",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-19",
+      "id": 71142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772368.jpg",
+      "name": "Sensitivity",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-26",
+      "id": 71143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772369.jpg",
+      "name": "Reunion",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-02",
+      "id": 71144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772370.jpg",
+      "name": "Shame",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-09",
+      "id": 71145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772371.jpg",
+      "name": "Believe",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-16",
+      "id": 71146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772372.jpg",
+      "name": "Rebirth",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-23",
+      "id": 71147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772373.jpg",
+      "name": "Brains",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-30",
+      "id": 71148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772374.jpg",
+      "name": "Bitch",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-06",
+      "id": 71149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772375.jpg",
+      "name": "Happy",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-13",
+      "id": 71150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772376.jpg",
+      "name": "Justice",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-30",
+      "id": 71151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772377.jpg",
+      "name": "Devil",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-06",
+      "id": 71152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772378.jpg",
+      "name": "Discovery",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-13",
+      "id": 71153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772379.jpg",
+      "name": "Torture",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-20",
+      "id": 71154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772380.jpg",
+      "name": "Sparks",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-06-27",
+      "id": 71155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772381.jpg",
+      "name": "Chlamydia",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-11",
+      "id": 71156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772382.jpg",
+      "name": "Zombies",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-18",
+      "id": 71157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772383.jpg",
+      "name": "Satisfaction",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-25",
+      "id": 71158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772384.jpg",
+      "name": "Karate",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-01",
+      "id": 71159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772385.jpg",
+      "name": "Pieces",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-08",
+      "id": 71160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772386.jpg",
+      "name": "Retards",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-15",
+      "id": 71161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772387.jpg",
+      "name": "Twilight",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-22",
+      "id": 71162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772388.jpg",
+      "name": "Hell",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-29",
+      "id": 71163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772389.jpg",
+      "name": "Beached",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-13",
+      "id": 71164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772391.jpg",
+      "name": "Babyface",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-06-20",
+      "id": 71165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772392.jpg",
+      "name": "Tuesday",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-06-27",
+      "id": 71166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772393.jpg",
+      "name": "Commitment",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-11",
+      "id": 71167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772394.jpg",
+      "name": "Pussified",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-18",
+      "id": 71168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772395.jpg",
+      "name": "Black",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-07-25",
+      "id": 71169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772396.jpg",
+      "name": "Balance",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-01",
+      "id": 71170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772397.jpg",
+      "name": "Seven",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-08",
+      "id": 71171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772398.jpg",
+      "name": "Solo",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-15",
+      "id": 71172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772399.jpg",
+      "name": "Animal",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-22",
+      "id": 71173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772400.jpg",
+      "name": "High",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-08-29",
+      "id": 71174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772401.jpg",
+      "name": "Cycle",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-09-05",
+      "id": 71175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772402.jpg",
+      "name": "Keefe",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-09-12",
+      "id": 71176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772403.jpg",
+      "name": "Yaz",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-07",
+      "id": 71177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772404.jpg",
+      "name": "Baptism",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-04-14",
+      "id": 71178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772405.jpg",
+      "name": "French",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-04-21",
+      "id": 71179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772406.jpg",
+      "name": "Wine",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-04-28",
+      "id": 71180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772407.jpg",
+      "name": "Jimmy",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-05",
+      "id": 71181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772408.jpg",
+      "name": "Sheila",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-12",
+      "id": 71182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772409.jpg",
+      "name": "Perspective",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-19",
+      "id": 71183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772410.jpg",
+      "name": "Play",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-26",
+      "id": 71184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772411.jpg",
+      "name": "Iceman",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-02",
+      "id": 71185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772412.jpg",
+      "name": "Thaw",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-09",
+      "id": 71186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772413.jpg",
+      "name": "Control",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-16",
+      "id": 71187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772414.jpg",
+      "name": "Mickey",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-23",
+      "id": 71188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772415.jpg",
+      "name": "Disease",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-06-30",
+      "id": 71189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772416.jpg",
+      "name": "Torch",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-07",
+      "id": 71190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772417.jpg",
+      "name": "Wheels",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-14",
+      "id": 71191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772418.jpg",
+      "name": "Initiation",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-21",
+      "id": 71192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772419.jpg",
+      "name": "Clean",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-07-28",
+      "id": 71193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772420.jpg",
+      "name": "Lesbos",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-04",
+      "id": 71194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772421.jpg",
+      "name": "Carrot",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-11",
+      "id": 71195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772422.jpg",
+      "name": "David",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-18",
+      "id": 71196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772423.jpg",
+      "name": "Zippo",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-08-25",
+      "id": 71197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772424.jpg",
+      "name": "Jump",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-09-01",
+      "id": 71198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772425.jpg",
+      "name": "Drink",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-06-29",
+      "id": 71199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772426.jpg",
+      "name": "Legacy",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-07-06",
+      "id": 71200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772427.jpg",
+      "name": "Change",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-07-13",
+      "id": 71201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772428.jpg",
+      "name": "Comeback",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-07-20",
+      "id": 71202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772429.jpg",
+      "name": "Breakout",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-07-27",
+      "id": 71203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772430.jpg",
+      "name": "Blackout",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-03",
+      "id": 71204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772431.jpg",
+      "name": "Sanctuary",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-10",
+      "id": 71205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772432.jpg",
+      "name": "Forgiven",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-17",
+      "id": 71206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772433.jpg",
+      "name": "Cowboy",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-24",
+      "id": 71207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772434.jpg",
+      "name": "Goodbye",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-08-31",
+      "id": 71208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772435.jpg",
+      "name": "A.D.D.",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2011-07-13",
+      "id": 71209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772436.jpg",
+      "name": "Mutha",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-20",
+      "id": 71210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772437.jpg",
+      "name": "Menses",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-07-27",
+      "id": 71211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772438.jpg",
+      "name": "Press",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-03",
+      "id": 71212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772439.jpg",
+      "name": "Brownies",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-10",
+      "id": 71213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772440.jpg",
+      "name": "Head",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-17",
+      "id": 71214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772441.jpg",
+      "name": "344",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-24",
+      "id": 71215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772442.jpg",
+      "name": "Jeter",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-08-31",
+      "id": 71216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772443.jpg",
+      "name": "Vows",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-09-07",
+      "id": 71217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772444.jpg",
+      "name": "Ashes",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-797",
+  "live": true,
+  "overview": "Tommy Gavin is a lifesaver. Whether he is pulling survivors from fiery high-rise infernos or the twisted steel of a subway collision, Gavin takes great pride in leading the heroic but often overwhelmed firefighters of New York City's Truck Company 62. Gavin is also a man drifting between sorrow and anger over a recent separation from his wife and three kids, and recurring memories of comrades and other New-Yorkers who fell victim to the tragedy of 9/11.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15588.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "797",
+  "title": "Rescue Me",
+  "type": "series",
+  "year": 2004
 }

@@ -1,22 +1,644 @@
 {
-  "schema": 1,
-  "id": "tvmaze-790",
-  "source": "tvmaze",
-  "sourceId": "790",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Unit",
-  "year": 2006,
-  "type": "series",
-  "overview": "The Unit is a covert Special Forces team that does not exist. Their cover is the 303rd logistical studies group. They are assigned covert military operations by the President and never get credit for their actions. Their wives are also a tight group protecting their husbands. They protect their husband's secrets and maintain their cover.",
-  "poster": "file:///android_asset/posters/tvmaze-790.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-03-07",
+      "id": 69935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/413/1034021.jpg",
+      "name": "First Responders",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-14",
+      "id": 69936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26688.jpg",
+      "name": "Stress",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-21",
+      "id": 69937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26694.jpg",
+      "name": "200th Hour",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-28",
+      "id": 69938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26951.jpg",
+      "name": "True Believers",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-04",
+      "id": 69939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26957.jpg",
+      "name": "Non Permissive Environment",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-11",
+      "id": 69940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27197.jpg",
+      "name": "Security",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-18",
+      "id": 69941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27387.jpg",
+      "name": "Dedication",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-04-25",
+      "id": 69942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30879.jpg",
+      "name": "SERE",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-02",
+      "id": 69943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30880.jpg",
+      "name": "Eating the Young",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-09",
+      "id": 69944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31075.jpg",
+      "name": "Unannounced",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-09",
+      "id": 69945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31076.jpg",
+      "name": "Exposure",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 69946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31077.jpg",
+      "name": "Morale, Welfare and Recreation",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-05-16",
+      "id": 69947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31078.jpg",
+      "name": "The Wall",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-09-19",
+      "id": 69948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772160.jpg",
+      "name": "Change of Station",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-26",
+      "id": 69949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772161.jpg",
+      "name": "Extreme Rendition",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-03",
+      "id": 69950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772162.jpg",
+      "name": "The Kill Zone",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 69951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772163.jpg",
+      "name": "Manhunt",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 69952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772164.jpg",
+      "name": "Force Majeure",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-31",
+      "id": 69953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772165.jpg",
+      "name": "Old Home Week",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-07",
+      "id": 69954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772166.jpg",
+      "name": "Off the Meter",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-14",
+      "id": 69955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772167.jpg",
+      "name": "Natural Selection",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-21",
+      "id": 69956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772168.jpg",
+      "name": "Report by Exception",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 69957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772169.jpg",
+      "name": "Bait",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-12",
+      "id": 69958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772170.jpg",
+      "name": "Silver Star",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-01-16",
+      "id": 69959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772171.jpg",
+      "name": "The Broom Cupboard",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 69960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772172.jpg",
+      "name": "Sub-Conscious",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 69961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772173.jpg",
+      "name": "Johnny B. Good",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 69962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772174.jpg",
+      "name": "The Water is Wide",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-20",
+      "id": 69963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772175.jpg",
+      "name": "Games of Chance",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-02-27",
+      "id": 69964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772176.jpg",
+      "name": "Dark of the Moon",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-03-20",
+      "id": 69965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772177.jpg",
+      "name": "Two Coins",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-03",
+      "id": 69966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772178.jpg",
+      "name": "Outsiders",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-10",
+      "id": 69967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772179.jpg",
+      "name": "In Loco Parentis",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-04-24",
+      "id": 69968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772180.jpg",
+      "name": "Bedfellows",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-01",
+      "id": 69969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772181.jpg",
+      "name": "Freefall",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-05-08",
+      "id": 69970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772182.jpg",
+      "name": "Paradise Lost",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-25",
+      "id": 69971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772183.jpg",
+      "name": "Pandemonium, Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-02",
+      "id": 69972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772184.jpg",
+      "name": "Pandemonium, Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-09",
+      "id": 69973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772185.jpg",
+      "name": "Always Kiss Them Goodbye",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-16",
+      "id": 69974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772186.jpg",
+      "name": "Every Step You Take",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-23",
+      "id": 69975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772187.jpg",
+      "name": "Inside Out",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-30",
+      "id": 69976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772188.jpg",
+      "name": "M.Ps",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-06",
+      "id": 69977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772189.jpg",
+      "name": "Five Brothers",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-13",
+      "id": 69978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772190.jpg",
+      "name": "Play 16",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-20",
+      "id": 69979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772191.jpg",
+      "name": "Binary Explosion",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-27",
+      "id": 69980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772192.jpg",
+      "name": "Gone Missing",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-12-18",
+      "id": 69981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772193.jpg",
+      "name": "Side Angle Slide",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 69982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772194.jpg",
+      "name": "Sacrifice",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 69983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772195.jpg",
+      "name": "Sudden Flight",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 69984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772196.jpg",
+      "name": "Sex Trade",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 69985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772197.jpg",
+      "name": "The Conduit",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 69986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772198.jpg",
+      "name": "Dancing Lessons",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-02",
+      "id": 69987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772199.jpg",
+      "name": "Inquisition",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 69988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772200.jpg",
+      "name": "Into Hell, Part 1",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 69989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772201.jpg",
+      "name": "Into Hell, Part 2",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 69990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772202.jpg",
+      "name": "Shadow Riders",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-11-30",
+      "id": 69991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772203.jpg",
+      "name": "Mislead and Misguided",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-12-21",
+      "id": 69992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772204.jpg",
+      "name": "Switchblade",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-04",
+      "id": 69993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772205.jpg",
+      "name": "Bad Beat",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-11",
+      "id": 69994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772206.jpg",
+      "name": "The Spear of Destiny",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-02-15",
+      "id": 69995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772207.jpg",
+      "name": "The Last Nazi",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-08",
+      "id": 69996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772208.jpg",
+      "name": "Hero",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-15",
+      "id": 69997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772209.jpg",
+      "name": "Hill 60",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-22",
+      "id": 69998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772210.jpg",
+      "name": "Flesh & Blood",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-03-29",
+      "id": 69999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772211.jpg",
+      "name": "Best Laid Plans",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-12",
+      "id": 70000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772212.jpg",
+      "name": "Whiplash",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-04-26",
+      "id": 70001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772213.jpg",
+      "name": "Chaos Theory",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-03",
+      "id": 70002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772214.jpg",
+      "name": "Endgame",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-05-10",
+      "id": 70003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772215.jpg",
+      "name": "Unknown Soldier",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-790",
+  "live": true,
+  "overview": "The Unit is a covert Special Forces team that does not exist. Their cover is the 303rd logistical studies group. They are assigned covert military operations by the President and never get credit for their actions. Their wives are also a tight group protecting their husbands. They protect their husband's secrets and maintain their cover.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/87/219977.jpg",
   "rating": 8.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "790",
+  "title": "The Unit",
+  "type": "series",
+  "year": 2006
 }

@@ -1,22 +1,3065 @@
 {
-  "schema": 1,
-  "id": "tvmaze-593",
-  "source": "tvmaze",
-  "sourceId": "593",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Murdoch Mysteries",
-  "year": 2008,
-  "type": "series",
-  "overview": "Set in Toronto at the dawn of the 20th century, Murdoch Mysteries is a one-hour drama series that explores the intriguing world of William Murdoch, a methodical and dashing detective who pioneers innovative forensic techniques to solve some of the city's most gruesome murders. Murdoch's colleagues include the love of his life, coroner and psychiatrist Dr. Julia Ogden, a staunch ally who shares the detective's fascination for science; Constable George Crabtree, Murdoch's eager but sometimes naïve right-hand man; Inspector Brackenreid, Murdoch's skeptical yet reluctantly supportive boss; and coroner Dr. Emily Grace, Dr. Ogden's protégé.",
-  "poster": "file:///android_asset/posters/tvmaze-593.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-01-24",
+      "id": 56829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120171.jpg",
+      "name": "Power",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-01-31",
+      "id": 56830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120172.jpg",
+      "name": "Glass Ceiling",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-07",
+      "id": 56831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245818.jpg",
+      "name": "The Knockdown",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-14",
+      "id": 56832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120174.jpg",
+      "name": "Elementary, My Dear Murdoch",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-21",
+      "id": 56833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120175.jpg",
+      "name": "Til Death Us Do Part",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-28",
+      "id": 56834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/263/658311.jpg",
+      "name": "Let Loose the Dogs",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-06",
+      "id": 56835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120177.jpg",
+      "name": "Body Double",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-13",
+      "id": 56836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120178.jpg",
+      "name": "Still Waters",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-20",
+      "id": 56837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120179.jpg",
+      "name": "Belly Speaker",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-27",
+      "id": 56838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259550.jpg",
+      "name": "Child's Play",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-04-03",
+      "id": 56839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120181.jpg",
+      "name": "Bad Medicine",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-04-10",
+      "id": 56840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120182.jpg",
+      "name": "The Prince and the Rebel",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-04-17",
+      "id": 56841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120183.jpg",
+      "name": "The Annoying Red Planet",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 56842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120157.jpg",
+      "name": "Mild, Mild West",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 56843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120158.jpg",
+      "name": "Snakes and Ladders",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 56844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120159.jpg",
+      "name": "Dinosaur Fever",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-24",
+      "id": 56845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/262848.jpg",
+      "name": "Houdini Whodunnit?",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-03",
+      "id": 56846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120161.jpg",
+      "name": "The Green Muse",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-10",
+      "id": 56847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120162.jpg",
+      "name": "Shades of Grey",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-17",
+      "id": 56848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120163.jpg",
+      "name": "Big Murderer on Campus",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-24",
+      "id": 56849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120164.jpg",
+      "name": "I, Murdoch",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-31",
+      "id": 56850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120165.jpg",
+      "name": "Convalescence",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-07",
+      "id": 56851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120166.jpg",
+      "name": "Murdoch.com",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-14",
+      "id": 56852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120167.jpg",
+      "name": "Let Us Ask the Maiden",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-21",
+      "id": 56853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120168.jpg",
+      "name": "Werewolves",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-28",
+      "id": 56854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120169.jpg",
+      "name": "Anything You Can Do",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-16",
+      "id": 56855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206298.jpg",
+      "name": "The Murdoch Identity",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-23",
+      "id": 56856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206299.jpg",
+      "name": "The Great Wall",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-02",
+      "id": 56857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206300.jpg",
+      "name": "Victor, Victorian",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-09",
+      "id": 56858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206301.jpg",
+      "name": "Rich Boy, Poor Boy",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-16",
+      "id": 56859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206302.jpg",
+      "name": "Me, Myself and Murdoch",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-23",
+      "id": 56860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206303.jpg",
+      "name": "This One Goes to Eleven",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-30",
+      "id": 56861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206304.jpg",
+      "name": "Blood and Circuses",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-06",
+      "id": 56862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206305.jpg",
+      "name": "Future Imperfect",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-13",
+      "id": 56863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206306.jpg",
+      "name": "Love and Human Remains",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-20",
+      "id": 56864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206307.jpg",
+      "name": "The Curse of Beaton Manor",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-27",
+      "id": 56865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206308.jpg",
+      "name": "Hangman",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-04",
+      "id": 56866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206309.jpg",
+      "name": "In the Altogether",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-11",
+      "id": 56867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206310.jpg",
+      "name": "The Tesla Effect",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-15",
+      "id": 56868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138360.jpg",
+      "name": "Tattered and Torn",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-22",
+      "id": 56869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138356.jpg",
+      "name": "Kommando",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-01",
+      "id": 56870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138354.jpg",
+      "name": "Buffalo Shuffle",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-08",
+      "id": 56871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138351.jpg",
+      "name": "Downstairs, Upstairs",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-15",
+      "id": 56872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138350.jpg",
+      "name": "Monsieur Murdoch",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-22",
+      "id": 56873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138348.jpg",
+      "name": "Dead End Street",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-29",
+      "id": 56874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221899.jpg",
+      "name": "Confederate Treasure",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-05",
+      "id": 56875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138382.jpg",
+      "name": "Dial M for Murdoch",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-12",
+      "id": 56876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138659.jpg",
+      "name": "The Black Hand",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-19",
+      "id": 56877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138660.jpg",
+      "name": "Voices",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-26",
+      "id": 56878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138674.jpg",
+      "name": "Bloodlust",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-03",
+      "id": 56879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139041.jpg",
+      "name": "The Kissing Bandit",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-10",
+      "id": 56880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139115.jpg",
+      "name": "Murdoch in Wonderland",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-28",
+      "id": 56881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120144.jpg",
+      "name": "Murdoch of the Klondike",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 56882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120145.jpg",
+      "name": "Back and to the Left",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 56883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120146.jpg",
+      "name": "Evil Eye of Egypt",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 56884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120147.jpg",
+      "name": "War on Terror",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-27",
+      "id": 56885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120148.jpg",
+      "name": "Murdoch at the Opera",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-03",
+      "id": 56886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120149.jpg",
+      "name": "Who Killed the Electric Carriage?",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 56887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120150.jpg",
+      "name": "Stroll on the Wild Side - Part One",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-17",
+      "id": 56888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120151.jpg",
+      "name": "Stroll on the Wild Side - Part Two",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-24",
+      "id": 56889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120152.jpg",
+      "name": "Invention Convention",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-01",
+      "id": 56890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120153.jpg",
+      "name": "Staircase to Heaven",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-08",
+      "id": 56891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120154.jpg",
+      "name": "Murdoch in Toyland",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-15",
+      "id": 56892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120155.jpg",
+      "name": "Murdoch Night in Canada",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-22",
+      "id": 56893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120156.jpg",
+      "name": "Twentieth Century Murdoch",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-07",
+      "id": 56894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141087.jpg",
+      "name": "Murdoch Air",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-01-14",
+      "id": 56895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120132.jpg",
+      "name": "Winston's Lost Night",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-01-21",
+      "id": 56897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141806.jpg",
+      "name": "Murdoch on the Corner",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-01-21",
+      "id": 56896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141805.jpg",
+      "name": "A Study in Sherlock",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-04",
+      "id": 56898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120135.jpg",
+      "name": "Murdoch au Naturel",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-11",
+      "id": 56899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120136.jpg",
+      "name": "Murdoch and the Cloud of Doom",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-25",
+      "id": 56900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120137.jpg",
+      "name": "The Ghost of Queen's Park",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-04",
+      "id": 56901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120138.jpg",
+      "name": "Murdoch in Ladies Wear",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-11",
+      "id": 56902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120139.jpg",
+      "name": "Victoria Cross",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-18",
+      "id": 56903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120140.jpg",
+      "name": "Twisted Sisters",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 56904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120141.jpg",
+      "name": "Lovers in a Murderous Time",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 56905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120142.jpg",
+      "name": "Crime and Punishment",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 56906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120143.jpg",
+      "name": "The Murdoch Trap",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-09-30",
+      "id": 56907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120112.jpg",
+      "name": "Murdoch Ahoy",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-10-07",
+      "id": 56908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120113.jpg",
+      "name": "Tour de Murdoch",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 56909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120114.jpg",
+      "name": "The Filmed Adventures of Detective William Murdoch",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-10-21",
+      "id": 56910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120115.jpg",
+      "name": "The Return of Sherlock",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-10-28",
+      "id": 56911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120116.jpg",
+      "name": "Murdoch of the Living Dead",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-11-04",
+      "id": 56912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120117.jpg",
+      "name": "Murdochophobia",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-11-18",
+      "id": 56913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120118.jpg",
+      "name": "Loch Ness Murdoch",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-11-25",
+      "id": 56914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120119.jpg",
+      "name": "Republic of Murdoch",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2013-12-02",
+      "id": 56915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120120.jpg",
+      "name": "A Midnight Train to Kingston",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-01-06",
+      "id": 56916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120121.jpg",
+      "name": "Murdoch in Ragtime",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 56917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120122.jpg",
+      "name": "Journey to the Centre of Toronto",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 56918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120123.jpg",
+      "name": "Unfinished Business",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 56919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120124.jpg",
+      "name": "The Murdoch Sting",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 56920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120125.jpg",
+      "name": "Friday the 13th, 1901",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 56921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120126.jpg",
+      "name": "The Spy Who Came Up to the Cold",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 56922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120127.jpg",
+      "name": "Kung Fu Crabtree",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-03-31",
+      "id": 56923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145249.jpg",
+      "name": "Blast of Silence",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-04-07",
+      "id": 56924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120129.jpg",
+      "name": "The Death of Dr. Ogden",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-10-06",
+      "id": 56925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145694.jpg",
+      "name": "On the Waterfront - Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-13",
+      "id": 56926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120093.jpg",
+      "name": "On the Waterfront - Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-10-20",
+      "id": 56927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120094.jpg",
+      "name": "Glory Days",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-03",
+      "id": 56928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120095.jpg",
+      "name": "Holy Matrimony, Murdoch",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-10",
+      "id": 56929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120096.jpg",
+      "name": "Murdoch Takes Manhattan",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-17",
+      "id": 56930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120097.jpg",
+      "name": "The Murdoch Appreciation Society",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-11-24",
+      "id": 56931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120098.jpg",
+      "name": "What Lies Buried",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-12-01",
+      "id": 56932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120099.jpg",
+      "name": "High Voltage",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2014-12-08",
+      "id": 56933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120100.jpg",
+      "name": "The Keystone Constables",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-01-12",
+      "id": 57623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120101.jpg",
+      "name": "Murdoch and the Temple of Death",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-01-19",
+      "id": 122738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120102.jpg",
+      "name": "All That Glitters",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-01-26",
+      "id": 122739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120103.jpg",
+      "name": "The Devil Wears Whalebone",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-02-09",
+      "id": 128830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120104.jpg",
+      "name": "The Incurables",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-02-16",
+      "id": 139243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/147121.jpg",
+      "name": "Toronto's Girl Problem",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-02-23",
+      "id": 139244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120106.jpg",
+      "name": "Shipwreck",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-03-16",
+      "id": 143017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/147146.jpg",
+      "name": "CrabtreeMania",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 184070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120108.jpg",
+      "name": "Election Day",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-03-30",
+      "id": 184071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120109.jpg",
+      "name": "Artful Detective",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2015-10-05",
+      "id": 184072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119963.jpg",
+      "name": "Nolo Contendere",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-12",
+      "id": 314684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119964.jpg",
+      "name": "Marked Twain",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-10-26",
+      "id": 355675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119965.jpg",
+      "name": "Double Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-02",
+      "id": 355676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119966.jpg",
+      "name": "Barenaked Ladies",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-09",
+      "id": 422990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119967.jpg",
+      "name": "24 Hours Til Doomsday",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-16",
+      "id": 426529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119968.jpg",
+      "name": "The Local Option",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-23",
+      "id": 439081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119969.jpg",
+      "name": "Summer of '75",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2015-11-30",
+      "id": 472403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119970.jpg",
+      "name": "Pipe Dreamzzz",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-01-11",
+      "id": 557354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119971.jpg",
+      "name": "Raised on Robbery",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-01-18",
+      "id": 567311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119972.jpg",
+      "name": "The Big Chill",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-01-25",
+      "id": 568511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119960.jpg",
+      "name": "A Case of the Yips",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-02-01",
+      "id": 578233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119961.jpg",
+      "name": "Unlucky in Love",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-02-08",
+      "id": 589327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119958.jpg",
+      "name": "Colour Blinded",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-02-22",
+      "id": 608870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119957.jpg",
+      "name": "Wild Child",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-02-29",
+      "id": 617835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119956.jpg",
+      "name": "House of Industry",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-03-07",
+      "id": 617836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119955.jpg",
+      "name": "Bl**dy H*ll",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-03-14",
+      "id": 617837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/149203.jpg",
+      "name": "From Buffalo with Love",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-03-21",
+      "id": 620320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/149561.jpg",
+      "name": "Cometh the Archer",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2016-10-10",
+      "id": 905522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200693.jpg",
+      "name": "Great Balls of Fire - Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-17",
+      "id": 936162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203665.jpg",
+      "name": "Great Balls of Fire - Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-24",
+      "id": 942323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204769.jpg",
+      "name": "A Study in Pink",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-10-31",
+      "id": 942324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/207883.jpg",
+      "name": "Concocting a Killer",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-11-07",
+      "id": 958661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/209858.jpg",
+      "name": "Jagged Little Pill",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-11-14",
+      "id": 962489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/212228.jpg",
+      "name": "Bend It Like Brackenreid",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-11-21",
+      "id": 970286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214815.jpg",
+      "name": "Painted Ladies",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-11-28",
+      "id": 976093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216929.jpg",
+      "name": "Weekend at Murdoch's",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2016-12-05",
+      "id": 981371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220049.jpg",
+      "name": "Excitable Chap",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-01-09",
+      "id": 1015071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/264/660462.jpg",
+      "name": "The Devil Inside",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-01-16",
+      "id": 1018646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/234587.jpg",
+      "name": "A Murdog Mystery",
+      "number": 11,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-01-23",
+      "id": 1022207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236779.jpg",
+      "name": "The Missing",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-06",
+      "id": 1035971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242725.jpg",
+      "name": "Mr. Murdoch's Neighbourhood",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-13",
+      "id": 1040832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246097.jpg",
+      "name": "From Murdoch to Eternity",
+      "number": 14,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-20",
+      "id": 1046841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248620.jpg",
+      "name": "Hades Hath No Fury",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-02-27",
+      "id": 1051438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250753.jpg",
+      "name": "Master Lovecraft",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-13",
+      "id": 1071687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255355.jpg",
+      "name": "Hot Wheels of Thunder",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-03-20",
+      "id": 1077793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258068.jpg",
+      "name": "Hell to Pay",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2017-09-25",
+      "id": 1275989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/322767.jpg",
+      "name": "Up from Ashes",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-02",
+      "id": 1298969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/324824.jpg",
+      "name": "Merlot Mysteries",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-09",
+      "id": 1298970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/327163.jpg",
+      "name": "8 Footsteps",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-16",
+      "id": 1304416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329322.jpg",
+      "name": "The Canadian Patient",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-23",
+      "id": 1315159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331217.jpg",
+      "name": "Dr. Osler Regrets",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-06",
+      "id": 1334498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335517.jpg",
+      "name": "21 Murdoch Street",
+      "number": 6,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-11-13",
+      "id": 1327533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337685.jpg",
+      "name": "The Accident",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-12-04",
+      "id": 1351705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/343721.jpg",
+      "name": "Brackenreid Boudoir",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2017-12-11",
+      "id": 1353822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/345897.jpg",
+      "name": "The Talking Dead",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-01-08",
+      "id": 1372311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354441.jpg",
+      "name": "F.L.A.S.H.!",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-01-15",
+      "id": 1375173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356502.jpg",
+      "name": "Biffers and Blockers",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-01-22",
+      "id": 1376245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358360.jpg",
+      "name": "Mary Wept",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-01-29",
+      "id": 1379983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360730.jpg",
+      "name": "Crabtree à la Carte",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-05",
+      "id": 1402342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363109.jpg",
+      "name": "The Great White Moose",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-02-26",
+      "id": 1404964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368049.jpg",
+      "name": "Murdoch Schmurdoch",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-05",
+      "id": 1413026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370088.jpg",
+      "name": "Game of Kings",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-12",
+      "id": 1413027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/372171.jpg",
+      "name": "Shadows Are Falling",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-03-19",
+      "id": 1413028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/374564.jpg",
+      "name": "Free Falling",
+      "number": 18,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2018-09-24",
+      "id": 1485609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433082.jpg",
+      "name": "Murdoch Mystery Mansion",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-10-01",
+      "id": 1529389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433079.jpg",
+      "name": "Operation: Murder",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-10-08",
+      "id": 1533538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433077.jpg",
+      "name": "My Big Fat Mimico Wedding",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-10-15",
+      "id": 1537476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433075.jpg",
+      "name": "Murdoch Without Borders",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-10-22",
+      "id": 1540574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433073.jpg",
+      "name": "The Spy Who Loved Murdoch",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-10-29",
+      "id": 1544598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433071.jpg",
+      "name": "Sir. Sir? Sir!!!",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-11-05",
+      "id": 1549167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434897.jpg",
+      "name": "Brother's Keeper",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-11-12",
+      "id": 1551631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/439495.jpg",
+      "name": "Drowning in Money",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2018-11-26",
+      "id": 1562742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/439645.jpg",
+      "name": "Secrets and Lies",
+      "number": 9,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-07",
+      "id": 1581010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/448913.jpg",
+      "name": "Pirates of the Great Lakes",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-14",
+      "id": 1583940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450587.jpg",
+      "name": "Annabella Cinderella",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-21",
+      "id": 1584915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/453224.jpg",
+      "name": "Six of the Best",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-01-28",
+      "id": 1589500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/454656.jpg",
+      "name": "Murdoch and the Undetectable Man",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-02-04",
+      "id": 1593878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456901.jpg",
+      "name": "Sins of the Father",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-02-11",
+      "id": 1596962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459077.jpg",
+      "name": "One Minute to Murder",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-02-18",
+      "id": 1601418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/462122.jpg",
+      "name": "The Manual for Murder",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-02-25",
+      "id": 1606360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/731208.jpg",
+      "name": "Darkness Before Dawn - Part One",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-03-04",
+      "id": 1610107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466781.jpg",
+      "name": "Darkness Before Dawn - Part Two",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2019-09-16",
+      "id": 1684182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/528892.jpg",
+      "name": "Troublemakers",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-09-23",
+      "id": 1716748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531140.jpg",
+      "name": "Bad Pennies",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-09-30",
+      "id": 1716749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/533492.jpg",
+      "name": "Forever Young",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-10-14",
+      "id": 1720557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/423/1058444.jpg",
+      "name": "Prodigal Father",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-10-28",
+      "id": 1721072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/423/1058977.jpg",
+      "name": "Murdoch and the Cursed Caves",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-11-04",
+      "id": 1721073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/546799.jpg",
+      "name": "The Philately Fatality",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-11-11",
+      "id": 1721074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/222/555403.jpg",
+      "name": "Toronto the Bad",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-11-18",
+      "id": 1721075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/225/562590.jpg",
+      "name": "The Final Curtain",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2019-11-25",
+      "id": 1753324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/569298.jpg",
+      "name": "The Killing Dose",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-01-06",
+      "id": 1781970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/234/586974.jpg",
+      "name": "Parker in the Rye",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-01-13",
+      "id": 1781984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/589606.jpg",
+      "name": "Staring Blindly into the Future",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-01-20",
+      "id": 1785621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/592367.jpg",
+      "name": "Fox Hunt",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-01-27",
+      "id": 1787305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596143.jpg",
+      "name": "Kill Thy Neighbour",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-02-03",
+      "id": 1792262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599004.jpg",
+      "name": "Rigid Silence",
+      "number": 14,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-02-10",
+      "id": 1792798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/601981.jpg",
+      "name": "The Trial of Terrance Meyers",
+      "number": 15,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-02-17",
+      "id": 1792799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/605350.jpg",
+      "name": "In the Company of Women",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-02-24",
+      "id": 1792800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/608155.jpg",
+      "name": "Things Left Behind",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2020-03-02",
+      "id": 1792801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610714.jpg",
+      "name": "The Future Is Unwritten",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2021-01-04",
+      "id": 1987068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893829.jpg",
+      "name": "Murdoch and the Tramp",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-01-11",
+      "id": 1989500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893828.jpg",
+      "name": "Rough and Rowdy Ways",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-01-18",
+      "id": 1994153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893827.jpg",
+      "name": "Code M for Murdoch",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-01-25",
+      "id": 1994154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893826.jpg",
+      "name": "Shock Value",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-02-01",
+      "id": 2012472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893825.jpg",
+      "name": "Murder Checks In",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-02-08",
+      "id": 2012473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893824.jpg",
+      "name": "The Ministry of Virtue",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-02-15",
+      "id": 2017832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893823.jpg",
+      "name": "Murdoch Escape Room",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-02-22",
+      "id": 2029397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893822.jpg",
+      "name": "The Dominion of New South Mimico",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-03-01",
+      "id": 2032595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893821.jpg",
+      "name": "The .38 Murdoch Special",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-03-08",
+      "id": 2040044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893820.jpg",
+      "name": "Everything Is Broken - Part One",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-03-15",
+      "id": 2040045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893819.jpg",
+      "name": "Everything Is Broken - Part Two",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2021-09-13",
+      "id": 2168370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/357/893818.jpg",
+      "name": "The Things We Do for Love - Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-09-27",
+      "id": 2170293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/908553.jpg",
+      "name": "The Things We Do for Love - Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-10-04",
+      "id": 2184263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/908552.jpg",
+      "name": "Manhunt",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-10-11",
+      "id": 2184264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/367/919572.jpg",
+      "name": "Blood on the Tracks",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-10-18",
+      "id": 2184265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/367/919573.jpg",
+      "name": "Love or Money",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-10-25",
+      "id": 2197527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/369/923762.jpg",
+      "name": "I Know What You Did Last Autumn",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-11-01",
+      "id": 2197528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/371/929940.jpg",
+      "name": "The Incorrigible Dr. Ogden",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-11-08",
+      "id": 2203850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/374/935696.jpg",
+      "name": "Murdoch Knows Best",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-11-15",
+      "id": 2208285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/375/939796.jpg",
+      "name": "The Lady Vanishes",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-11-22",
+      "id": 2213222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/377/943929.jpg",
+      "name": "Drawn in Blood",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2021-11-29",
+      "id": 2213223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/379/948679.jpg",
+      "name": "The Night Before Christmas",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-01-03",
+      "id": 2241314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/388/970240.jpg",
+      "name": "There's Something About Mary",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-01-10",
+      "id": 2244262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/388/972473.jpg",
+      "name": "Murdoch on the Couch",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-01-17",
+      "id": 2248095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/390/976913.jpg",
+      "name": "The Witches of East York",
+      "number": 14,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-01-24",
+      "id": 2248096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/392/981288.jpg",
+      "name": "Rawhide Ralph",
+      "number": 15,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-01-31",
+      "id": 2261917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/985700.jpg",
+      "name": "It's a Wonderful Game",
+      "number": 16,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-02-21",
+      "id": 2269649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/397/992866.jpg",
+      "name": "Bloodlines",
+      "number": 17,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-02-28",
+      "id": 2269650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/398/995095.jpg",
+      "name": "Patriot Games",
+      "number": 18,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-03-07",
+      "id": 2282626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/398/997383.jpg",
+      "name": "Brother Can You Spare a Crime",
+      "number": 19,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-03-14",
+      "id": 2285319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/999657.jpg",
+      "name": "Pendrick's Planetary Parlour",
+      "number": 20,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-03-21",
+      "id": 2285320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1002356.jpg",
+      "name": "Devil Music",
+      "number": 21,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-03-28",
+      "id": 2285321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005242.jpg",
+      "name": "Sweet Amelia",
+      "number": 22,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-04-04",
+      "id": 2297991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1007657.jpg",
+      "name": "Pay the Piper",
+      "number": 23,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-04-11",
+      "id": 2297992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/404/1010132.jpg",
+      "name": "Close Encounters",
+      "number": 24,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2022-09-12",
+      "id": 2382605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/422/1055087.jpg",
+      "name": "Sometimes They Come Back - Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-09-19",
+      "id": 2382606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/422/1057185.jpg",
+      "name": "Sometimes They Come Back - Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-09-26",
+      "id": 2387867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/423/1059129.jpg",
+      "name": "The Write Stuff",
+      "number": 3,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-10-03",
+      "id": 2393894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/424/1061898.jpg",
+      "name": "Promising Young Ladies",
+      "number": 4,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-10-10",
+      "id": 2398525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/425/1064962.jpg",
+      "name": "Murdoch Rides Easy",
+      "number": 5,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-10-17",
+      "id": 2404470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/427/1067726.jpg",
+      "name": "Clean Hands",
+      "number": 6,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-10-24",
+      "id": 2408286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/428/1070302.jpg",
+      "name": "Murdoch and the Sonic Boom",
+      "number": 7,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-10-31",
+      "id": 2416484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1077080.jpg",
+      "name": "I Still Know What You Did Last Autumn",
+      "number": 8,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-11-07",
+      "id": 2418239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1077074.jpg",
+      "name": "Honeymoon in Hampshire",
+      "number": 9,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-11-14",
+      "id": 2421058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1077068.jpg",
+      "name": "Dash to Death",
+      "number": 10,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2022-11-21",
+      "id": 2425083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/431/1079236.jpg",
+      "name": "Dead on Arrival",
+      "number": 11,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-01-02",
+      "id": 2446096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/439/1098438.jpg",
+      "name": "Porcelain Maiden",
+      "number": 12,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-01-09",
+      "id": 2448990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/441/1102639.jpg",
+      "name": "Vengeance Makes the Man",
+      "number": 13,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-01-16",
+      "id": 2454055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106014.jpg",
+      "name": "Murdoch at the End of the World",
+      "number": 14,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-01-23",
+      "id": 2454764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1108764.jpg",
+      "name": "Breaking Ranks",
+      "number": 15,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-02-06",
+      "id": 2478281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/445/1114508.jpg",
+      "name": "An Avoidable Hinder",
+      "number": 16,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-02-13",
+      "id": 2479889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/447/1117825.jpg",
+      "name": "The Ballad of Gentleman Jones",
+      "number": 17,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-02-20",
+      "id": 2479890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1121010.jpg",
+      "name": "Virtue and Vice",
+      "number": 18,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-02-27",
+      "id": 2488351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124035.jpg",
+      "name": "Whatever Happened to Abigail Prescott",
+      "number": 19,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-03-06",
+      "id": 2488352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/450/1127377.jpg",
+      "name": "Just Desserts",
+      "number": 20,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-03-20",
+      "id": 2493921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/453/1132588.jpg",
+      "name": "Murder in F Major",
+      "number": 21,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-03-27",
+      "id": 2496002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/454/1135260.jpg",
+      "name": "Scents and Sensibility",
+      "number": 22,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-04-03",
+      "id": 2510755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/455/1137969.jpg",
+      "name": "The Long Goodbye - Part One",
+      "number": 23,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-04-10",
+      "id": 2510756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/456/1141310.jpg",
+      "name": "The Long Goodbye - Part Two",
+      "number": 24,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2023-10-02",
+      "id": 2649071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/479/1198735.jpg",
+      "name": "Do the Right Thing: Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-10-09",
+      "id": 2650107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/480/1201125.jpg",
+      "name": "Do the Right Thing: Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-10-16",
+      "id": 2658266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/481/1203546.jpg",
+      "name": "Murdoch and the Mona Lisa",
+      "number": 3,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-10-23",
+      "id": 2658267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/482/1207238.jpg",
+      "name": "Bottom of the Barrel",
+      "number": 4,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-10-30",
+      "id": 2662849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/484/1210299.jpg",
+      "name": "Station House of Horrors",
+      "number": 5,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-11-06",
+      "id": 2668008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/485/1213838.jpg",
+      "name": "Dying to Be Enlightened",
+      "number": 6,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-11-13",
+      "id": 2673130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/486/1216667.jpg",
+      "name": "Cool Million",
+      "number": 7,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-11-20",
+      "id": 2673417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/487/1219817.jpg",
+      "name": "The Cottage in the Woods",
+      "number": 8,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2023-11-27",
+      "id": 2683330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/489/1223084.jpg",
+      "name": "The Christmas List",
+      "number": 9,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-01-01",
+      "id": 2700818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/498/1245015.jpg",
+      "name": "Mrs. Crabtree's Neighborhood",
+      "number": 10,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-01-08",
+      "id": 2715878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/499/1247628.jpg",
+      "name": "A Heavy Event",
+      "number": 11,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-01-15",
+      "id": 2719164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/499/1249926.jpg",
+      "name": "Wheel of Bad Fortune",
+      "number": 12,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-01-22",
+      "id": 2731489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/500/1252373.jpg",
+      "name": "Train to Nowhere",
+      "number": 13,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-01-29",
+      "id": 2736356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/501/1254847.jpg",
+      "name": "The Smell of Alarm",
+      "number": 14,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-02-05",
+      "id": 2747909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/502/1257242.jpg",
+      "name": "Murdoch and the Treasure of Lima",
+      "number": 15,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-02-12",
+      "id": 2757468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/503/1259858.jpg",
+      "name": "Preacher Jimmy Wilde",
+      "number": 16,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-02-19",
+      "id": 2764939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/504/1262410.jpg",
+      "name": "The Fantastic Mr. Fawkes",
+      "number": 17,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-02-26",
+      "id": 2768495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/506/1265707.jpg",
+      "name": "Spirits in the Night",
+      "number": 18,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-03-04",
+      "id": 2774378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1268176.jpg",
+      "name": "A Most Surprising Bond",
+      "number": 19,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-03-11",
+      "id": 2781999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/508/1270375.jpg",
+      "name": "Rhapsody in Blood",
+      "number": 20,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-03-18",
+      "id": 2790526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/509/1273170.jpg",
+      "name": "Engaged to be Murdered",
+      "number": 21,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-03-25",
+      "id": 2792725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/510/1275615.jpg",
+      "name": "Why is Everybody Singing?",
+      "number": 22,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-04-01",
+      "id": 2799790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/511/1279534.jpg",
+      "name": "Smoke Gets in Your Eyes",
+      "number": 23,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-04-08",
+      "id": 2799791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/513/1282515.jpg",
+      "name": "For the Greater Good",
+      "number": 24,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2024-09-30",
+      "id": 3004006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1343840.jpg",
+      "name": "The New Recruit",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-10-07",
+      "id": 3008502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/538/1346314.jpg",
+      "name": "Only Murdoch in the Building",
+      "number": 2,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-10-14",
+      "id": 3010512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/539/1348435.jpg",
+      "name": "What the Dickens?!",
+      "number": 3,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-10-21",
+      "id": 3019747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/540/1351061.jpg",
+      "name": "Gimme Shelter",
+      "number": 4,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-11-04",
+      "id": 3027813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355718.jpg",
+      "name": "A Starlet Is Born",
+      "number": 5,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-11-11",
+      "id": 3033964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358486.jpg",
+      "name": "The Murdoch Link",
+      "number": 6,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-11-18",
+      "id": 3038189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361229.jpg",
+      "name": "Measure of My Dreams",
+      "number": 7,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2024-11-25",
+      "id": 3066677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/546/1365307.jpg",
+      "name": "Welcome to Paradise",
+      "number": 8,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-01-13",
+      "id": 3090664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1380118.jpg",
+      "name": "When Rubber Meets the Road",
+      "number": 9,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-01-20",
+      "id": 3099386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/552/1382489.jpg",
+      "name": "The Men Who Sold the World",
+      "number": 10,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-01-27",
+      "id": 3099387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/553/1384277.jpg",
+      "name": "Bombshells",
+      "number": 11,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-02-03",
+      "id": 3105757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/554/1386435.jpg",
+      "name": "The Star of Mandalay",
+      "number": 12,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-02-10",
+      "id": 3116487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/555/1388612.jpg",
+      "name": "The Wrong Man",
+      "number": 13,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-02-17",
+      "id": 3116488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/556/1390917.jpg",
+      "name": "A Murder Most Convenient",
+      "number": 14,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-02-24",
+      "id": 3127706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/557/1393462.jpg",
+      "name": "When Irish Eyes are Lying",
+      "number": 15,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-03-03",
+      "id": 3145530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/558/1395661.jpg",
+      "name": "Shakespeare's Beard",
+      "number": 16,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-03-10",
+      "id": 3146661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/559/1397954.jpg",
+      "name": "The Death of James Pendrick",
+      "number": 17,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-03-17",
+      "id": 3147819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/559/1399955.jpg",
+      "name": "The Incredible Astonishing Adventures of Constable George Crabtree",
+      "number": 18,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-03-24",
+      "id": 3155571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/560/1402458.jpg",
+      "name": "Heir of the Dog",
+      "number": 19,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-03-31",
+      "id": 3184337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/561/1404864.jpg",
+      "name": "Going Postal",
+      "number": 20,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-04-07",
+      "id": 3184338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1407630.jpg",
+      "name": "The Body Electric",
+      "number": 21,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-04-14",
+      "id": 3184339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1409923.jpg",
+      "name": "We Take Care of Our Own",
+      "number": 22,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2025-10-06",
+      "id": 3339010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/591/1477649.jpg",
+      "name": "The Boys Are Back in Town",
+      "number": 1,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-10-13",
+      "id": 3389408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/592/1480717.jpg",
+      "name": "Diamonds in the Sand",
+      "number": 2,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-10-20",
+      "id": 3389409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484524.jpg",
+      "name": "Toronto's Smartest Man",
+      "number": 3,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-10-27",
+      "id": 3389411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/594/1487276.jpg",
+      "name": "Unearthing the Past",
+      "number": 4,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-11-03",
+      "id": 3389412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/596/1490415.jpg",
+      "name": "The Borden Ultimatum",
+      "number": 5,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-11-10",
+      "id": 3395958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/597/1493989.jpg",
+      "name": "He Ain't Heavy, He's My Brother",
+      "number": 6,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-11-17",
+      "id": 3402188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/598/1496931.jpg",
+      "name": "Murder, She Wrote",
+      "number": 7,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-11-24",
+      "id": 3407647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/600/1500666.jpg",
+      "name": "Fashion Crimes",
+      "number": 8,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2025-12-01",
+      "id": 3456376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/601/1503231.jpg",
+      "name": "Sugar Plum Murdoch",
+      "number": 9,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-01-05",
+      "id": 3512858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/607/1517685.jpg",
+      "name": "Devil in the Saddle",
+      "number": 10,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-01-12",
+      "id": 3521216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/608/1520547.jpg",
+      "name": "Strangers on Paper",
+      "number": 11,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-01-19",
+      "id": 3521217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/609/1523996.jpg",
+      "name": "Tow Tags",
+      "number": 12,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-01-26",
+      "id": 3521218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/610/1526509.jpg",
+      "name": "Murdoch in Hogtown",
+      "number": 13,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-02-02",
+      "id": 3528453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/611/1529510.jpg",
+      "name": "Game, Set, Murdoch",
+      "number": 14,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-02-23",
+      "id": 3533130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537957.jpg",
+      "name": "The Fall of the House of Newsome",
+      "number": 15,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-03-02",
+      "id": 3533131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/616/1540651.jpg",
+      "name": "The Panic in High Park",
+      "number": 16,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-03-16",
+      "id": 3533132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1545210.jpg",
+      "name": "The Hunting Lodge",
+      "number": 17,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-03-23",
+      "id": 3533133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/618/1547482.jpg",
+      "name": "Another Brick in the Wall",
+      "number": 18,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-03-30",
+      "id": 3533134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/619/1549804.jpg",
+      "name": "The Face of Evil",
+      "number": 19,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-04-06",
+      "id": 3533135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1551898.jpg",
+      "name": "Fire in the Sky",
+      "number": 20,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-04-13",
+      "id": 3533136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/621/1553637.jpg",
+      "name": "Hell of a Woman",
+      "number": 21,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2026-10-05",
+      "id": 3780012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/644/1611066.jpg",
+      "name": "The Maltese Falconer",
+      "number": 1,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-10-12",
+      "id": 3780523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/645/1614854.jpg",
+      "name": "Arcana Dei",
+      "number": 2,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-10-19",
+      "id": 3782112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/646/1616773.jpg",
+      "name": "The Big Smoke",
+      "number": 3,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-10-26",
+      "id": 3782113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/648/1620516.jpg",
+      "name": "Off-Menu Murdoch",
+      "number": 4,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-11-02",
+      "id": 3793131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1623971.jpg",
+      "name": "Missing Persons",
+      "number": 5,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-11-09",
+      "id": 3793132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1627203.jpg",
+      "name": "A Date with Fate",
+      "number": 6,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-11-16",
+      "id": 3809429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/652/1630289.jpg",
+      "name": "Last Tango in Toronto",
+      "number": 7,
+      "runtime": 60,
+      "season": 20
+    },
+    {
+      "airdate": "2026-11-23",
+      "id": 3809430,
+      "image": null,
+      "name": "On a Cold Winter's Night",
+      "number": 8,
+      "runtime": 60,
+      "season": 20
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-593",
+  "live": true,
+  "overview": "Set in Toronto at the dawn of the 20th century, Murdoch Mysteries is a one-hour drama series that explores the intriguing world of William Murdoch, a methodical and dashing detective who pioneers innovative forensic techniques to solve some of the city's most gruesome murders. Murdoch's colleagues include the love of his life, coroner and psychiatrist Dr. Julia Ogden, a staunch ally who shares the detective's fascination for science; Constable George Crabtree, Murdoch's eager but sometimes naïve right-hand man; Inspector Brackenreid, Murdoch's skeptical yet reluctantly supportive boss; and coroner Dr. Emily Grace, Dr. Ogden's protégé.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610487.jpg",
   "rating": 8.1,
-  "runtime": null,
-  "episodes": []
+  "runtime": 60,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "593",
+  "title": "Murdoch Mysteries",
+  "type": "series",
+  "year": 2008
 }

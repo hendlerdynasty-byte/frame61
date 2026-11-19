@@ -1,22 +1,824 @@
 {
-  "schema": 1,
-  "id": "tvmaze-29",
-  "source": "tvmaze",
-  "sourceId": "29",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Vikings",
-  "year": 2013,
-  "type": "series",
-  "overview": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
-  "poster": "file:///android_asset/posters/tvmaze-29.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-03",
+      "id": 1547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21463.jpg",
+      "name": "Rites of Passage",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 1548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21464.jpg",
+      "name": "Wrath of the Northmen",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 1549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21465.jpg",
+      "name": "Dispossessed",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 1550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/907717.jpg",
+      "name": "Trial",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 1551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21466.jpg",
+      "name": "Raid",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 1552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21467.jpg",
+      "name": "Burial of the Dead",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 1553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21472.jpg",
+      "name": "A King's Ransom",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 1554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21469.jpg",
+      "name": "Sacrifice",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 1555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21470.jpg",
+      "name": "All Change",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-27",
+      "id": 1556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111364.jpg",
+      "name": "Brother's War",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-06",
+      "id": 1557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111366.jpg",
+      "name": "Invasion",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-13",
+      "id": 1558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111367.jpg",
+      "name": "Treachery",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-20",
+      "id": 1559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111368.jpg",
+      "name": "Eye for an Eye",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-27",
+      "id": 1560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111369.jpg",
+      "name": "Answers in Blood",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-03",
+      "id": 1561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111370.jpg",
+      "name": "Unforgiven",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-10",
+      "id": 1562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111371.jpg",
+      "name": "Blood Eagle",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-17",
+      "id": 1563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111372.jpg",
+      "name": "Boneless",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-24",
+      "id": 1564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111373.jpg",
+      "name": "The Choice",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-01",
+      "id": 1565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111374.jpg",
+      "name": "The Lord's Prayer",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 92004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111672.jpg",
+      "name": "Mercenary",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-26",
+      "id": 120600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111686.jpg",
+      "name": "The Wanderer",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-05",
+      "id": 140710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111954.jpg",
+      "name": "Warrior's Fate",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-12",
+      "id": 140711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112382.jpg",
+      "name": "Scarred",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-19",
+      "id": 140712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112689.jpg",
+      "name": "The Usurper",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-26",
+      "id": 140713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112707.jpg",
+      "name": "Born Again",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-02",
+      "id": 145578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112972.jpg",
+      "name": "Paris",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-09",
+      "id": 145579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112989.jpg",
+      "name": "To the Gates!",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-16",
+      "id": 145580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114097.jpg",
+      "name": "Breaking Point",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-23",
+      "id": 151525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114118.jpg",
+      "name": "The Dead",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-18",
+      "id": 536749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113398.jpg",
+      "name": "A Good Treason",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-25",
+      "id": 546170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116604.jpg",
+      "name": "Kill the Queen",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-03",
+      "id": 546171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100831.jpg",
+      "name": "Mercy",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-10",
+      "id": 546172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100833.jpg",
+      "name": "Yol",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-17",
+      "id": 618779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123323.jpg",
+      "name": "Promised",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-24",
+      "id": 618780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125401.jpg",
+      "name": "What Might Have Been",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-31",
+      "id": 632380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126316.jpg",
+      "name": "The Profit and the Loss",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-07",
+      "id": 648584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129427.jpg",
+      "name": "Portage",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-14",
+      "id": 648585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/364/910270.jpg",
+      "name": "Death All 'Round",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-21",
+      "id": 648586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/364/910271.jpg",
+      "name": "The Last Ship",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-11-30",
+      "id": 928734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206241.jpg",
+      "name": "The Outsider",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-12-07",
+      "id": 976050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206230.jpg",
+      "name": "The Vision",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-12-14",
+      "id": 976051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223066.jpg",
+      "name": "Two Journeys",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-12-21",
+      "id": 981182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/225619.jpg",
+      "name": "In the Uncertain Hour Before the Morning",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-12-28",
+      "id": 981183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/225745.jpg",
+      "name": "All His Angels",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-04",
+      "id": 1003294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230034.jpg",
+      "name": "Crossings",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-11",
+      "id": 1003295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/232684.jpg",
+      "name": "The Great Army",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-18",
+      "id": 1003296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/234955.jpg",
+      "name": "Revenge",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-25",
+      "id": 1003297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240406.jpg",
+      "name": "On the Eve",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-01",
+      "id": 1006531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241720.jpg",
+      "name": "The Reckoning",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-29",
+      "id": 1255875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/342356.jpg",
+      "name": "The Fisher King",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-11-29",
+      "id": 1363867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/342355.jpg",
+      "name": "The Departed",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-12-06",
+      "id": 1315252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344275.jpg",
+      "name": "Homeland",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-12-13",
+      "id": 1315253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346240.jpg",
+      "name": "The Plan",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-12-20",
+      "id": 1315254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349466.jpg",
+      "name": "The Prisoner",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-12-27",
+      "id": 1315255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350537.jpg",
+      "name": "The Message",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-03",
+      "id": 1315256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353094.jpg",
+      "name": "Full Moon",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-10",
+      "id": 1315257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355486.jpg",
+      "name": "The Joke",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-17",
+      "id": 1315258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356959.jpg",
+      "name": "A Simple Story",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-24",
+      "id": 1315259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/359172.jpg",
+      "name": "Moments of Vision",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-28",
+      "id": 1499249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/440028.jpg",
+      "name": "The Revelation",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-05",
+      "id": 1545336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441479.jpg",
+      "name": "Murder Most Foul",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-12",
+      "id": 1551518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442887.jpg",
+      "name": "A New God",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-19",
+      "id": 1551517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/444910.jpg",
+      "name": "The Lost Moment",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-26",
+      "id": 1551519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/178/446239.jpg",
+      "name": "Hell",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-02",
+      "id": 1577981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/447793.jpg",
+      "name": "The Buddha",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-09",
+      "id": 1577982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449086.jpg",
+      "name": "The Most Terrible Thing",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-16",
+      "id": 1577983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450723.jpg",
+      "name": "Baldur",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-23",
+      "id": 1577984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/453211.jpg",
+      "name": "What Happens in the Cave",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-30",
+      "id": 1577985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455382.jpg",
+      "name": "Ragnarok",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-12-04",
+      "id": 1729802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/574383.jpg",
+      "name": "New Beginnings",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-04",
+      "id": 1755881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/574381.jpg",
+      "name": "The Prophet",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-11",
+      "id": 1755882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/577589.jpg",
+      "name": "Ghosts, Gods and Running Dogs",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-18",
+      "id": 1755883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/580405.jpg",
+      "name": "All the Prisoners",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-01",
+      "id": 1773715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/233/584607.jpg",
+      "name": "The Key",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-08",
+      "id": 1773716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/587675.jpg",
+      "name": "Death and the Serpent",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-15",
+      "id": 1773717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/590626.jpg",
+      "name": "The Ice Maiden",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-22",
+      "id": 1773718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593832.jpg",
+      "name": "Valhalla Can Wait",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-01-29",
+      "id": 1773719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/597193.jpg",
+      "name": "Resurrection",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-05",
+      "id": 1782548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599589.jpg",
+      "name": "The Best Laid Plans",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-01-01",
+      "id": 1978329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728211.jpg",
+      "name": "King of Kings",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-01-08",
+      "id": 1993638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728203.jpg",
+      "name": "All Change",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-01-15",
+      "id": 1993639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728204.jpg",
+      "name": "The Signal",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-01-22",
+      "id": 1993640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728206.jpg",
+      "name": "Lost Souls",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-01-29",
+      "id": 1993641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728207.jpg",
+      "name": "All At Sea",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-02-05",
+      "id": 1993642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728208.jpg",
+      "name": "The Final Straw",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-02-12",
+      "id": 1993643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728252.jpg",
+      "name": "The Raft of Medusa",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-02-19",
+      "id": 1993644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728209.jpg",
+      "name": "It's Only Magic",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-02-26",
+      "id": 1993645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728210.jpg",
+      "name": "The Lord Giveth…",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-03-05",
+      "id": 1993646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/728243.jpg",
+      "name": "The Last Act",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-29",
+  "live": true,
+  "overview": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/286/715906.jpg",
   "rating": 8.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "29",
+  "title": "Vikings",
+  "type": "series",
+  "year": 2013
 }

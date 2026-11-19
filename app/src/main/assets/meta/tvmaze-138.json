@@ -1,22 +1,275 @@
 {
-  "schema": 1,
-  "id": "tvmaze-138",
-  "source": "tvmaze",
-  "sourceId": "138",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Leftovers",
-  "year": 2014,
-  "type": "series",
-  "overview": "Three years after millions of people—some 2% of the world's population—vanished into thin air, residents of Mapleton, NY weigh the pros and cons of a \"Heroes Day\" tribute to the local \"Departed\". Attempting to maintain a sense of normalcy in his strained community, police chief Kevin Garvey faces additional challenges at home with his daughter, Jill, who's lost in a cloud of apathy with her friend Aimee, and son, Tom, who has gravitated to a cult led by the charismatic Holy Wayne. Also of concern is a silent, white-clad group of chain-smoking men and women called the Guilty Remnant, who team up in pairs to stake out people and places around town. As tension in Mapleton escalates, the lives of Laurie, an unexpected member of the Guilty Remnant, and Meg, a recently engaged young woman, converge.",
-  "poster": "file:///android_asset/posters/tvmaze-138.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-06-29",
+      "id": 10729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197878.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 71,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-06",
+      "id": 10730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197879.jpg",
+      "name": "Penguin One, Us Zero",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-13",
+      "id": 10731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197880.jpg",
+      "name": "Two Boats and a Helicopter",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-20",
+      "id": 10732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197881.jpg",
+      "name": "B.J. and the A.C.",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-27",
+      "id": 10733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197882.jpg",
+      "name": "Gladys",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-03",
+      "id": 10734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197883.jpg",
+      "name": "Guest",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-10",
+      "id": 10735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197884.jpg",
+      "name": "Solace for Tired Feet",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-17",
+      "id": 10736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197885.jpg",
+      "name": "Cairo",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-24",
+      "id": 10737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197886.jpg",
+      "name": "The Garveys at Their Best",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-07",
+      "id": 10738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197888.jpg",
+      "name": "The Prodigal Son Returns",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 201568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262163.jpg",
+      "name": "Axis Mundi",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 203443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60641.jpg",
+      "name": "A Matter of Geography",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 203444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63786.jpg",
+      "name": "Off Ramp",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 271073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66009.jpg",
+      "name": "Orange Sticker",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 350692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69639.jpg",
+      "name": "No Room at the Inn",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 350694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73101.jpg",
+      "name": "Lens",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 351058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76378.jpg",
+      "name": "A Most Powerful Adversary",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-22",
+      "id": 395615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79414.jpg",
+      "name": "International Assassin",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 395616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/82211.jpg",
+      "name": "Ten Thirteen",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-06",
+      "id": 414652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84504.jpg",
+      "name": "I Live Here Now",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-16",
+      "id": 1048508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268818.jpg",
+      "name": "The Book of Kevin",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-23",
+      "id": 1093338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/271261.jpg",
+      "name": "Don't Be Ridiculous",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-30",
+      "id": 1093339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/274744.jpg",
+      "name": "Crazy Whitefella Thinking",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-07",
+      "id": 1101228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/277146.jpg",
+      "name": "G'Day Melbourne",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-14",
+      "id": 1107140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279753.jpg",
+      "name": "It's a Matt, Matt, Matt, Matt World",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-21",
+      "id": 1107141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/282550.jpg",
+      "name": "Certified",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-28",
+      "id": 1107142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285704.jpg",
+      "name": "The Most Powerful Man in the World (and His Identical Twin Brother)",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-04",
+      "id": 1107143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286046.jpg",
+      "name": "The Book of Nora",
+      "number": 8,
+      "runtime": 75,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-138",
+  "live": true,
+  "overview": "Three years after millions of people—some 2% of the world's population—vanished into thin air, residents of Mapleton, NY weigh the pros and cons of a \"Heroes Day\" tribute to the local \"Departed\". Attempting to maintain a sense of normalcy in his strained community, police chief Kevin Garvey faces additional challenges at home with his daughter, Jill, who's lost in a cloud of apathy with her friend Aimee, and son, Tom, who has gravitated to a cult led by the charismatic Holy Wayne. Also of concern is a silent, white-clad group of chain-smoking men and women called the Guilty Remnant, who team up in pairs to stake out people and places around town. As tension in Mapleton escalates, the lives of Laurie, an unexpected member of the Guilty Remnant, and Meg, a recently engaged young woman, converge.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/503/1259794.jpg",
   "rating": 8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "138",
+  "title": "The Leftovers",
+  "type": "series",
+  "year": 2014
 }

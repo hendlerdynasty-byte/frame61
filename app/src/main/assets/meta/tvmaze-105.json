@@ -1,22 +1,293 @@
 {
-  "schema": 1,
-  "id": "tvmaze-105",
-  "source": "tvmaze",
-  "sourceId": "105",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "From Dusk Till Dawn: The Series",
-  "year": 2014,
-  "type": "series",
-  "overview": "From Dusk Till Dawn: The Series, based on the thrill-ride film of the same name, is a supernatural crime saga centered around bank robber, Seth Gecko and his violent, unpredictable brother, Richard \"Richie\" Gecko, who are wanted by the FBI and Texas Rangers Earl McGraw and Freddie Gonzalez after a bank heist leaves several people dead. While on the run to Mexico, Seth and Richie encounter former pastor Jacob Fuller and his family, whom they take hostage. Using the family RV to cross the border, chaos ensues when the group detours to a strip club that is populated by vampires. They are forced to fight until dawn in order to get out alive.",
-  "poster": "file:///android_asset/posters/tvmaze-105.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-03-11",
+      "id": 7339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129919.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-18",
+      "id": 7340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129920.jpg",
+      "name": "Blood Runs Thick",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-25",
+      "id": 7341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129924.jpg",
+      "name": "Mistress",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-01",
+      "id": 7342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129926.jpg",
+      "name": "Let's Get Ramblin'",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-08",
+      "id": 7343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130188.jpg",
+      "name": "Self-Contained",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-15",
+      "id": 7344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130192.jpg",
+      "name": "Place of Dead Roads",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-29",
+      "id": 7345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131097.jpg",
+      "name": "Pandemonium",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-06",
+      "id": 7346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131098.jpg",
+      "name": "La Conquista",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-13",
+      "id": 7347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131117.jpg",
+      "name": "Boxman",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-20",
+      "id": 7348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131118.jpg",
+      "name": "The Take",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-25",
+      "id": 180512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179806.jpg",
+      "name": "Opening Night",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-01",
+      "id": 209025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179812.jpg",
+      "name": "In a Dark Time",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-08",
+      "id": 209026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179813.jpg",
+      "name": "Attack of the 50 ft. Sex Machine",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-15",
+      "id": 209027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179814.jpg",
+      "name": "The Best Little Horror House in Texas",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-22",
+      "id": 209028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179815.jpg",
+      "name": "Bondage",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-29",
+      "id": 209029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181504.jpg",
+      "name": "Bizarre Tales",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-06",
+      "id": 209030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181505.jpg",
+      "name": "Bring Me the Head of Santanico Pandemonium",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-13",
+      "id": 209031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181567.jpg",
+      "name": "The Last Temptation of Richard Gecko",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-20",
+      "id": 335794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181600.jpg",
+      "name": "There Will Be Blood",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-27",
+      "id": 341708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181540.jpg",
+      "name": "Santa Sangre",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-06",
+      "id": 871072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183784.jpg",
+      "name": "Head Games",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-06",
+      "id": 907224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184492.jpg",
+      "name": "La Reina",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-13",
+      "id": 907225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/186710.jpg",
+      "name": "Protect and Serve",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-20",
+      "id": 907226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190312.jpg",
+      "name": "Fanglorious",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-27",
+      "id": 907227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/192649.jpg",
+      "name": "Shady Glen",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-04",
+      "id": 907228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196143.jpg",
+      "name": "Straitjacket",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 907229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199391.jpg",
+      "name": "La Llorona",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-18",
+      "id": 907230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203342.jpg",
+      "name": "Rio Sangre",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-25",
+      "id": 907231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205344.jpg",
+      "name": "Matanzas",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-01",
+      "id": 907232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208187.jpg",
+      "name": "Dark Side of the Sun",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Krimi",
+    "Crime",
     "Horror"
   ],
+  "id": "tvmaze-105",
+  "live": true,
+  "overview": "From Dusk Till Dawn: The Series, based on the thrill-ride film of the same name, is a supernatural crime saga centered around bank robber, Seth Gecko and his violent, unpredictable brother, Richard \"Richie\" Gecko, who are wanted by the FBI and Texas Rangers Earl McGraw and Freddie Gonzalez after a bank heist leaves several people dead. While on the run to Mexico, Seth and Richie encounter former pastor Jacob Fuller and his family, whom they take hostage. Using the family RV to cross the border, chaos ensues when the group detours to a strip club that is populated by vampires. They are forced to fight until dawn in order to get out alive.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/70/176381.jpg",
   "rating": 6.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "105",
+  "title": "From Dusk Till Dawn: The Series",
+  "type": "series",
+  "year": 2014
 }

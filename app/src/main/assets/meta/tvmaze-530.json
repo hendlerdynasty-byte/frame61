@@ -1,20 +1,1641 @@
 {
-  "schema": 1,
-  "id": "tvmaze-530",
-  "source": "tvmaze",
-  "sourceId": "530",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Seinfeld",
-  "year": 1989,
-  "type": "series",
-  "overview": "Seinfeld is the story of a fictionalized version of stand-up comedian Jerry Seinfeld, his life in New York City and his quirky group of friends who join him in wrestling with life's most perplexing, yet often trivial questions. Often described as \"a show about nothing,\" Seinfeld mines the humor in life's mundane situations like waiting in line, searching for a lost item, or the trials and tribulations of dating.",
-  "poster": "file:///android_asset/posters/tvmaze-530.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1989-07-05",
+      "id": 48067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776821.jpg",
+      "name": "Good News, Bad News",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1990-05-31",
+      "id": 48068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603124.jpg",
+      "name": "The Stakeout",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1990-06-07",
+      "id": 48069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603125.jpg",
+      "name": "The Robbery",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1990-06-14",
+      "id": 48070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603126.jpg",
+      "name": "Male Unbonding",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1990-06-21",
+      "id": 48071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/603127.jpg",
+      "name": "The Stock Tip",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1991-01-23",
+      "id": 48072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604648.jpg",
+      "name": "The Ex-Girlfriend",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-01-30",
+      "id": 48073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604649.jpg",
+      "name": "The Pony Remark",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-02-06",
+      "id": 48074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604650.jpg",
+      "name": "The Jacket",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-02-13",
+      "id": 48075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604651.jpg",
+      "name": "The Phone Message",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-04-04",
+      "id": 48076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604652.jpg",
+      "name": "The Apartment",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-04-11",
+      "id": 48077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604653.jpg",
+      "name": "The Statue",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-04-18",
+      "id": 48078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604654.jpg",
+      "name": "The Revenge",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-04-25",
+      "id": 48079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604656.jpg",
+      "name": "The Heart Attack",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-05-02",
+      "id": 48080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604657.jpg",
+      "name": "The Deal",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-05-16",
+      "id": 48081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604658.jpg",
+      "name": "The Baby Shower",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-05-23",
+      "id": 48082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604659.jpg",
+      "name": "The Chinese Restaurant",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-06-26",
+      "id": 48083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604660.jpg",
+      "name": "The Busboy",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-09-18",
+      "id": 48084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604709.jpg",
+      "name": "The Note",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-09-25",
+      "id": 48085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/783431.jpg",
+      "name": "The Truth",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-10-02",
+      "id": 48086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604711.jpg",
+      "name": "The Pen",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-10-09",
+      "id": 48087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604712.jpg",
+      "name": "The Dog",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-10-16",
+      "id": 48088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604713.jpg",
+      "name": "The Library",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-10-30",
+      "id": 48089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604715.jpg",
+      "name": "The Parking Garage",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-11-06",
+      "id": 48090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604717.jpg",
+      "name": "The Cafe",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-11-13",
+      "id": 48091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604718.jpg",
+      "name": "The Tape",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-11-20",
+      "id": 48092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/784570.jpg",
+      "name": "The Nose Job",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-11-27",
+      "id": 48093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604720.jpg",
+      "name": "The Stranded",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-12-04",
+      "id": 48094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604721.jpg",
+      "name": "The Alternate Side",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-12-11",
+      "id": 48095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604722.jpg",
+      "name": "The Red Dot",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-01-08",
+      "id": 48096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604723.jpg",
+      "name": "The Subway",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-01-15",
+      "id": 48097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604724.jpg",
+      "name": "The Pez Dispenser",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-01-29",
+      "id": 48098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604725.jpg",
+      "name": "The Suicide",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-02-05",
+      "id": 48099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/314/785149.jpg",
+      "name": "The Fix-Up",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-02-12",
+      "id": 48100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604727.jpg",
+      "name": "The Boyfriend (1)",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-02-12",
+      "id": 48101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/314/786535.jpg",
+      "name": "The Boyfriend (2)",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-02-26",
+      "id": 48102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604729.jpg",
+      "name": "The Limo",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-03-04",
+      "id": 48103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604730.jpg",
+      "name": "The Good Samaritan",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-03-25",
+      "id": 48104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604731.jpg",
+      "name": "The Letter",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-04-22",
+      "id": 48105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604733.jpg",
+      "name": "The Parking Space",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-05-06",
+      "id": 48106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604734.jpg",
+      "name": "The Keys",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-08-12",
+      "id": 48107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610003.jpg",
+      "name": "The Trip (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-08-19",
+      "id": 48108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610004.jpg",
+      "name": "The Trip (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-16",
+      "id": 48109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610005.jpg",
+      "name": "The Pitch",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-16",
+      "id": 48110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610006.jpg",
+      "name": "The Ticket",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-23",
+      "id": 48111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610007.jpg",
+      "name": "The Wallet (1)",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-30",
+      "id": 48112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610008.jpg",
+      "name": "The Watch (2)",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-10-07",
+      "id": 48113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610009.jpg",
+      "name": "The Bubble Boy",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-10-28",
+      "id": 48114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/315/788937.jpg",
+      "name": "The Cheever Letters",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-11-04",
+      "id": 48115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610011.jpg",
+      "name": "The Opera",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-11-11",
+      "id": 48116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610012.jpg",
+      "name": "The Virgin",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-11-18",
+      "id": 48117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610013.jpg",
+      "name": "The Contest",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-11-25",
+      "id": 48118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610014.jpg",
+      "name": "The Airport",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-12-16",
+      "id": 48119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610015.jpg",
+      "name": "The Pick",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-01-06",
+      "id": 48120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610016.jpg",
+      "name": "The Movie",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-01-27",
+      "id": 48121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610017.jpg",
+      "name": "The Visa",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-02-04",
+      "id": 48122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610018.jpg",
+      "name": "The Shoes",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-02-11",
+      "id": 48123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610019.jpg",
+      "name": "The Outing",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-02-18",
+      "id": 48124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610020.jpg",
+      "name": "The Old Man",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-02-25",
+      "id": 48125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610021.jpg",
+      "name": "The Implant",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-03-18",
+      "id": 48126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610022.jpg",
+      "name": "The Junior Mint",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-04-15",
+      "id": 48127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610023.jpg",
+      "name": "The Smelly Car",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-05-13",
+      "id": 48128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610024.jpg",
+      "name": "The Handicap Spot",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-05-20",
+      "id": 48129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/320/801988.jpg",
+      "name": "The Pilot (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-05-20",
+      "id": 48130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610026.jpg",
+      "name": "The Pilot (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-09-16",
+      "id": 48131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610031.jpg",
+      "name": "The Mango",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-09-23",
+      "id": 48132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610032.jpg",
+      "name": "The Puffy Shirt",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-09-30",
+      "id": 48133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610033.jpg",
+      "name": "The Glasses",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-07",
+      "id": 48134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610034.jpg",
+      "name": "The Sniffing Accountant",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-14",
+      "id": 48135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610035.jpg",
+      "name": "The Bris",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-28",
+      "id": 48136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610036.jpg",
+      "name": "The Lip Reader",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-04",
+      "id": 48137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610038.jpg",
+      "name": "The Non-Fat Yogurt",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-11",
+      "id": 48138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818504.jpg",
+      "name": "The Barber",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-18",
+      "id": 48139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610040.jpg",
+      "name": "The Masseuse",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-12-09",
+      "id": 48140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610041.jpg",
+      "name": "The Cigar Store Indian",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-12-16",
+      "id": 48141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610042.jpg",
+      "name": "The Conversion",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-01-06",
+      "id": 48142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610043.jpg",
+      "name": "The Stall",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-02-03",
+      "id": 48143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610044.jpg",
+      "name": "The Dinner Party",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-02-10",
+      "id": 48144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610045.jpg",
+      "name": "The Marine Biologist",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-02-17",
+      "id": 48145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610046.jpg",
+      "name": "The Pie",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-02-24",
+      "id": 48146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610047.jpg",
+      "name": "The Stand-In",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-03-17",
+      "id": 48147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610048.jpg",
+      "name": "The Wife",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-04-28",
+      "id": 48148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610049.jpg",
+      "name": "The Raincoats (1)",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-04-28",
+      "id": 48149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610050.jpg",
+      "name": "The Raincoats (2)",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-05-05",
+      "id": 48150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610051.jpg",
+      "name": "The Fire",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-05-12",
+      "id": 48151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610052.jpg",
+      "name": "The Hamptons",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-05-19",
+      "id": 48152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610053.jpg",
+      "name": "The Opposite",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-09-22",
+      "id": 48153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610106.jpg",
+      "name": "The Chaperone",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-09-29",
+      "id": 48154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610107.jpg",
+      "name": "The Big Salad",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-10-06",
+      "id": 48155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610108.jpg",
+      "name": "The Pledge Drive",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-10-13",
+      "id": 48156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610109.jpg",
+      "name": "The Chinese Woman",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-10-27",
+      "id": 48157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610110.jpg",
+      "name": "The Couch",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-03",
+      "id": 48158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610112.jpg",
+      "name": "The Gymnast",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-10",
+      "id": 48159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610113.jpg",
+      "name": "The Soup",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-17",
+      "id": 48160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610114.jpg",
+      "name": "The Mom & Pop Store",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-08",
+      "id": 48161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610115.jpg",
+      "name": "The Secretary",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-15",
+      "id": 48162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610117.jpg",
+      "name": "The Race",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-05",
+      "id": 48163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610118.jpg",
+      "name": "The Switch",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-19",
+      "id": 48164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610119.jpg",
+      "name": "The Label Maker",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-26",
+      "id": 48165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610120.jpg",
+      "name": "The Scofflaw",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-02-02",
+      "id": 48166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610121.jpg",
+      "name": "Highlights of a Hundred (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-02-02",
+      "id": 48167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610122.jpg",
+      "name": "Highlights of a Hundred (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-02-09",
+      "id": 48168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610123.jpg",
+      "name": "The Beard",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-02-16",
+      "id": 48169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610124.jpg",
+      "name": "The Kiss Hello",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-02-23",
+      "id": 48170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/350/875644.jpg",
+      "name": "The Doorman",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-03-16",
+      "id": 48171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610126.jpg",
+      "name": "The Jimmy",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-04-06",
+      "id": 48172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610127.jpg",
+      "name": "The Doodle",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-04-27",
+      "id": 48173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610128.jpg",
+      "name": "The Fusilli Jerry",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-05-04",
+      "id": 48174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610129.jpg",
+      "name": "The Diplomat's Club",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-05-11",
+      "id": 48175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610130.jpg",
+      "name": "The Face Painter",
+      "number": 23,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-05-18",
+      "id": 48176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610131.jpg",
+      "name": "The Understudy",
+      "number": 24,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-09-21",
+      "id": 48177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610797.jpg",
+      "name": "The Engagement",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-09-28",
+      "id": 48178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610798.jpg",
+      "name": "The Postponement",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-10-05",
+      "id": 48179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610799.jpg",
+      "name": "The Maestro",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-10-12",
+      "id": 48180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610800.jpg",
+      "name": "The Wink",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-10-19",
+      "id": 48181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610801.jpg",
+      "name": "The Hot Tub",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-11-02",
+      "id": 48182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610802.jpg",
+      "name": "The Soup Nazi",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-11-09",
+      "id": 48183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/353/882677.jpg",
+      "name": "The Secret Code",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-11-16",
+      "id": 48184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610804.jpg",
+      "name": "The Pool Guy",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-12-07",
+      "id": 48185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610805.jpg",
+      "name": "The Sponge",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1995-12-14",
+      "id": 48186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610806.jpg",
+      "name": "The Gum",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-01-04",
+      "id": 48187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610807.jpg",
+      "name": "The Rye",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-01-25",
+      "id": 48188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610808.jpg",
+      "name": "The Caddy",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-02-01",
+      "id": 48189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610809.jpg",
+      "name": "The Seven",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-02-08",
+      "id": 48190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610810.jpg",
+      "name": "The Cadillac (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-02-08",
+      "id": 48191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610811.jpg",
+      "name": "The Cadillac (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-02-15",
+      "id": 48192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610812.jpg",
+      "name": "The Shower Head",
+      "number": 16,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-02-22",
+      "id": 48193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610813.jpg",
+      "name": "The Doll",
+      "number": 17,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-03-07",
+      "id": 48194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610814.jpg",
+      "name": "The Friars Club",
+      "number": 18,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-04-04",
+      "id": 48195,
+      "image": null,
+      "name": "The Wig Master",
+      "number": 19,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-04-25",
+      "id": 48196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/356/890870.jpg",
+      "name": "The Calzone",
+      "number": 20,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-02",
+      "id": 48197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610817.jpg",
+      "name": "The Bottle Deposit (1)",
+      "number": 21,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-02",
+      "id": 48198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610818.jpg",
+      "name": "The Bottle Deposit (2)",
+      "number": 22,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-09",
+      "id": 48199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610819.jpg",
+      "name": "The Wait Out",
+      "number": 23,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-16",
+      "id": 48200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610820.jpg",
+      "name": "The Invitations",
+      "number": 24,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-09-19",
+      "id": 48201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610952.jpg",
+      "name": "The Foundation",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-09-26",
+      "id": 48202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610953.jpg",
+      "name": "The Soul Mate",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-10-03",
+      "id": 48203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610954.jpg",
+      "name": "The Bizarro Jerry",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-10-10",
+      "id": 48204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610955.jpg",
+      "name": "The Little Kicks",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-10-17",
+      "id": 48205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610956.jpg",
+      "name": "The Package",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-10-31",
+      "id": 48206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610957.jpg",
+      "name": "The Fatigues",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-11-07",
+      "id": 48207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610958.jpg",
+      "name": "The Checks",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-11-14",
+      "id": 48208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610959.jpg",
+      "name": "The Chicken Roaster",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-11-21",
+      "id": 48209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610960.jpg",
+      "name": "The Abstinence",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1996-12-19",
+      "id": 48210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610961.jpg",
+      "name": "The Andrea Doria",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-01-09",
+      "id": 48211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610962.jpg",
+      "name": "The Little Jerry",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-01-16",
+      "id": 48212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610963.jpg",
+      "name": "The Money",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-01-30",
+      "id": 48213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610964.jpg",
+      "name": "The Comeback",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-02-06",
+      "id": 48214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610965.jpg",
+      "name": "The Van Buren Boys",
+      "number": 14,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-02-13",
+      "id": 48215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610966.jpg",
+      "name": "The Susie",
+      "number": 15,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-02-20",
+      "id": 48216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610967.jpg",
+      "name": "The Pothole",
+      "number": 16,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-03-13",
+      "id": 48217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610968.jpg",
+      "name": "The English Patient",
+      "number": 17,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-04-10",
+      "id": 48218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610969.jpg",
+      "name": "The Nap",
+      "number": 18,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-04-24",
+      "id": 48219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610970.jpg",
+      "name": "The Yada Yada",
+      "number": 19,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-05-01",
+      "id": 48220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610971.jpg",
+      "name": "The Millennium",
+      "number": 20,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-05-08",
+      "id": 48221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610972.jpg",
+      "name": "The Muffin Tops",
+      "number": 21,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-05-15",
+      "id": 48222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610973.jpg",
+      "name": "The Summer of George",
+      "number": 22,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1997-09-25",
+      "id": 48223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610974.jpg",
+      "name": "The Butter Shave",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-10-02",
+      "id": 48224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610975.jpg",
+      "name": "The Voice",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-10-09",
+      "id": 48225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610976.jpg",
+      "name": "The Serenity Now",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-10-16",
+      "id": 48226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610977.jpg",
+      "name": "The Blood",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-10-30",
+      "id": 48227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610978.jpg",
+      "name": "The Junk Mail",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-11-06",
+      "id": 48228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610979.jpg",
+      "name": "The Merv Griffin Show",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-11-13",
+      "id": 48229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610980.jpg",
+      "name": "The Slicer",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-11-20",
+      "id": 48230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610981.jpg",
+      "name": "The Betrayal",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-12-11",
+      "id": 48231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610982.jpg",
+      "name": "The Apology",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1997-12-18",
+      "id": 48232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610983.jpg",
+      "name": "The Strike",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-01-08",
+      "id": 48233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610984.jpg",
+      "name": "The Dealership",
+      "number": 11,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-01-15",
+      "id": 48234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610986.jpg",
+      "name": "The Reverse Peephole",
+      "number": 12,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-01-29",
+      "id": 48235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610987.jpg",
+      "name": "The Cartoon",
+      "number": 13,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-02-05",
+      "id": 48236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610988.jpg",
+      "name": "The Strongbox",
+      "number": 14,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-02-26",
+      "id": 48237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610989.jpg",
+      "name": "The Wizard",
+      "number": 15,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-03-19",
+      "id": 48238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610990.jpg",
+      "name": "The Burning",
+      "number": 16,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-04-09",
+      "id": 48239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610991.jpg",
+      "name": "The Bookstore",
+      "number": 17,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-04-23",
+      "id": 48240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610992.jpg",
+      "name": "The Frogger",
+      "number": 18,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-04-30",
+      "id": 48241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610993.jpg",
+      "name": "The Maid",
+      "number": 19,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-05-07",
+      "id": 48242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610994.jpg",
+      "name": "The Puerto Rican Day",
+      "number": 20,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-05-14",
+      "id": 48243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610995.jpg",
+      "name": "The Clip Show (1) (a.k.a. The Chronicle (1))",
+      "number": 21,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-05-14",
+      "id": 48244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610996.jpg",
+      "name": "The Clip Show (2) (a.k.a. The Chronicle (2))",
+      "number": 22,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-05-14",
+      "id": 48245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610997.jpg",
+      "name": "The Finale (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1998-05-14",
+      "id": 48246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610998.jpg",
+      "name": "The Finale (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 9
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-530",
+  "live": true,
+  "overview": "Seinfeld is the story of a fictionalized version of stand-up comedian Jerry Seinfeld, his life in New York City and his quirky group of friends who join him in wrestling with life's most perplexing, yet often trivial questions. Often described as \"a show about nothing,\" Seinfeld mines the humor in life's mundane situations like waiting in line, searching for a lost item, or the trials and tribulations of dating.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/83/207960.jpg",
   "rating": 8.3,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "530",
+  "title": "Seinfeld",
+  "type": "series",
+  "year": 1989
 }

@@ -1,22 +1,374 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1",
-  "source": "tvmaze",
-  "sourceId": "1",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Under the Dome",
-  "year": 2013,
-  "type": "series",
-  "overview": "Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.",
-  "poster": "file:///android_asset/posters/tvmaze-1.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-06-24",
+      "id": 1,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 2,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4389.jpg",
+      "name": "The Fire",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 3,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4390.jpg",
+      "name": "Manhunt",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 4,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4391.jpg",
+      "name": "Outbreak",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-22",
+      "id": 5,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4392.jpg",
+      "name": "Blue on Blue",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 6,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4393.jpg",
+      "name": "The Endless Thirst",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 7,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4394.jpg",
+      "name": "Imperfect Circles",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-12",
+      "id": 8,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4395.jpg",
+      "name": "Thicker Than Water",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-19",
+      "id": 9,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4396.jpg",
+      "name": "The Fourth Hand",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-26",
+      "id": 10,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4397.jpg",
+      "name": "Let the Games Begin",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-02",
+      "id": 11,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4398.jpg",
+      "name": "Speak of the Devil",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-09",
+      "id": 12,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4399.jpg",
+      "name": "Exigent Circumstances",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-16",
+      "id": 13,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4400.jpg",
+      "name": "Curtains",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 14,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10446.jpg",
+      "name": "Heads Will Roll",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 15,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10447.jpg",
+      "name": "Infestation",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 16,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10448.jpg",
+      "name": "Force Majeure",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 17,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10449.jpg",
+      "name": "Revelation",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 18,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10450.jpg",
+      "name": "Reconciliation",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 19,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10451.jpg",
+      "name": "In the Dark",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 20,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10452.jpg",
+      "name": "Going Home",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-18",
+      "id": 21,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10453.jpg",
+      "name": "Awakening",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-25",
+      "id": 22,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10454.jpg",
+      "name": "The Red Door",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-01",
+      "id": 23,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10455.jpg",
+      "name": "The Fall",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-08",
+      "id": 24,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10456.jpg",
+      "name": "Black Ice",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-15",
+      "id": 25,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10457.jpg",
+      "name": "Turn",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-22",
+      "id": 26,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10458.jpg",
+      "name": "Go Now",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-25",
+      "id": 142270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31233.jpg",
+      "name": "Move On",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-25",
+      "id": 151048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31234.jpg",
+      "name": "But I'm Not",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-02",
+      "id": 151645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31939.jpg",
+      "name": "Redux",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-09",
+      "id": 153120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32457.jpg",
+      "name": "The Kinship",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-16",
+      "id": 176889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33494.jpg",
+      "name": "Alaska",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-23",
+      "id": 176890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34493.jpg",
+      "name": "Caged",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-30",
+      "id": 185048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34948.jpg",
+      "name": "Ejecta",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-06",
+      "id": 185049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36036.jpg",
+      "name": "Breaking Point",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-13",
+      "id": 185050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/37358.jpg",
+      "name": "Plan B",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-20",
+      "id": 185051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39057.jpg",
+      "name": "Legacy",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-27",
+      "id": 185052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40250.jpg",
+      "name": "Love is a Battlefield",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-03",
+      "id": 185053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41932.jpg",
+      "name": "Incandescence",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 185054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/43622.jpg",
+      "name": "The Enemy Within",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-1",
+  "live": true,
+  "overview": "Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/610/1525272.jpg",
   "rating": 6.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1",
+  "title": "Under the Dome",
+  "type": "series",
+  "year": 2013
 }

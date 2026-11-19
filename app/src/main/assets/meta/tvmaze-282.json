@@ -1,22 +1,824 @@
 {
-  "schema": 1,
-  "id": "tvmaze-282",
-  "source": "tvmaze",
-  "sourceId": "282",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Awkward.",
-  "year": 2011,
-  "type": "series",
-  "overview": "This series takes an irreverent look at the conflict, chaos and humor that defines teenage life through the eyes of 15-year-old Jenna Hamilton, whose life begins to change when a simple accident becomes an epic misunderstanding and is blown way out of proportion.Narrated in the first-person voice of Jenna's blog posts, Awkward captures the humor within the struggles and experiences everyone can relate to from their formative years. The series picks up in the aftermath of the accident as she must deal with a new not-so-fun stigma, while at the same time managing the other daily drama that comes with being a teenager. From a secret relationship with a popular guy, to being undermined by a mean girl, and parents who just don't get it - Jenna's misfortune will eventually serve as the catalyst for amazing change, but it's not without some missteps and mishaps along the way.",
-  "poster": "file:///android_asset/posters/tvmaze-282.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-07-19",
+      "id": 29123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32999.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-26",
+      "id": 29124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32998.jpg",
+      "name": "Knocker Nightmare",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-02",
+      "id": 29125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32997.jpg",
+      "name": "The Way We Weren't",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-09",
+      "id": 29126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32996.jpg",
+      "name": "The Scarlet Eye",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-16",
+      "id": 29127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32995.jpg",
+      "name": "Jenna Lives",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-23",
+      "id": 29128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32994.jpg",
+      "name": "Queen Bee-atches",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-30",
+      "id": 29129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32992.jpg",
+      "name": "Over My Dead Body",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-06",
+      "id": 29130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32991.jpg",
+      "name": "The Adventures of Aunt Ally and the Lil' Bitch",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-13",
+      "id": 29131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32990.jpg",
+      "name": "My Super Bittersweet Sixteen",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-20",
+      "id": 29132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32989.jpg",
+      "name": "No Doubt",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 29133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32987.jpg",
+      "name": "I Am Jenna Hamilton",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 29134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32988.jpg",
+      "name": "Fateful",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-28",
+      "id": 29135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32986.jpg",
+      "name": "Resolutions",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-05",
+      "id": 29136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32985.jpg",
+      "name": "Sex, Lies and the Sanctuary",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-12",
+      "id": 29137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32984.jpg",
+      "name": "Three's a Crowd",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-19",
+      "id": 29138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32983.jpg",
+      "name": "Are You There God? It's Me, Jenna",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-26",
+      "id": 29139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32982.jpg",
+      "name": "My Love is a Black Heart",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-02",
+      "id": 29140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32981.jpg",
+      "name": "What Comes First: Sex or Love?",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-09",
+      "id": 29141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32980.jpg",
+      "name": "Another One Bites the Dust",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-16",
+      "id": 29142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32979.jpg",
+      "name": "Time After Time",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-23",
+      "id": 29143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32978.jpg",
+      "name": "Homewrecker Hamilton",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-30",
+      "id": 29144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32977.jpg",
+      "name": "Pick Me, Choose Me, Love Me",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-13",
+      "id": 29145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32976.jpg",
+      "name": "Once Upon a Blog",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-20",
+      "id": 29146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32975.jpg",
+      "name": "The Other Shoe",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-16",
+      "id": 29147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32972.jpg",
+      "name": "Cha-cha-cha-changes",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-16",
+      "id": 29148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32971.jpg",
+      "name": "Responsibly Irresponsible",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-23",
+      "id": 29149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32970.jpg",
+      "name": "A Little Less Conversation",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-30",
+      "id": 29150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32969.jpg",
+      "name": "Let's Talk About Sex",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-07",
+      "id": 29151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32968.jpg",
+      "name": "Indecent Exposure",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-14",
+      "id": 29152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32967.jpg",
+      "name": "That Girl Strikes Again",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-21",
+      "id": 29153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32966.jpg",
+      "name": "Guilt Trippin'",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-28",
+      "id": 29154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32965.jpg",
+      "name": "Rubbed Raw and Reeling",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-04",
+      "id": 29155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32964.jpg",
+      "name": "Reality Check",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-11",
+      "id": 29156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32963.jpg",
+      "name": "Redefining Jenna",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-22",
+      "id": 29157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32962.jpg",
+      "name": "Surprise!",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-29",
+      "id": 29158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32961.jpg",
+      "name": "And Then What Happened",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-05",
+      "id": 29159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32960.jpg",
+      "name": "Taking Sides",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-12",
+      "id": 29160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32959.jpg",
+      "name": "The Bad Seed",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-19",
+      "id": 29161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32958.jpg",
+      "name": "A Very Special Episode of Awkward",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-19",
+      "id": 29162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32957.jpg",
+      "name": "Less Than Hero",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-26",
+      "id": 29163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32956.jpg",
+      "name": "The Campaign Fail",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-03",
+      "id": 29164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32955.jpg",
+      "name": "Old Jenna",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-10",
+      "id": 29165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32954.jpg",
+      "name": "Karmic Relief",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-17",
+      "id": 29166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32953.jpg",
+      "name": "Who I Want to Be",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-15",
+      "id": 29167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32952.jpg",
+      "name": "No Woman is an Island",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-22",
+      "id": 29168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32951.jpg",
+      "name": "Listen to This",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-29",
+      "id": 29169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32950.jpg",
+      "name": "Touched by an Angel",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-06",
+      "id": 29170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32949.jpg",
+      "name": "Sophomore Sluts",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-13",
+      "id": 29171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32948.jpg",
+      "name": "Overnight",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-20",
+      "id": 29172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32947.jpg",
+      "name": "Crowning Moments",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-27",
+      "id": 29173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32946.jpg",
+      "name": "After Hours",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-03",
+      "id": 29174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32945.jpg",
+      "name": "Prison Breaks",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-10",
+      "id": 29175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32944.jpg",
+      "name": "My Personal Statement",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-17",
+      "id": 29176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32943.jpg",
+      "name": "Snow Job, Part 1",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-17",
+      "id": 29177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32942.jpg",
+      "name": "Snow Job, Part 2",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-23",
+      "id": 29178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32941.jpg",
+      "name": "Finals",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-30",
+      "id": 29179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32940.jpg",
+      "name": "Auld Lang Party",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-07",
+      "id": 29180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32939.jpg",
+      "name": "Welcome to Hell",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 29181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32938.jpg",
+      "name": "Bonfire of the Vanities",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-21",
+      "id": 29182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5126.jpg",
+      "name": "#drama",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-28",
+      "id": 32634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6234.jpg",
+      "name": "The New Sex Deal",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-04",
+      "id": 32635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/7884.jpg",
+      "name": "Girl Rules",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 40393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10354.jpg",
+      "name": "Over the Hump",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 40394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11305.jpg",
+      "name": "Sprang Break, Part 1",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-25",
+      "id": 57530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12672.jpg",
+      "name": "Sprang Break, Part 2",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-08-31",
+      "id": 154727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41374.jpg",
+      "name": "Prank Amateurs",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-07",
+      "id": 208297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/43008.jpg",
+      "name": "Short Circuit Party",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-14",
+      "id": 208298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46994.jpg",
+      "name": "Jenna in Wonderland",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-21",
+      "id": 215945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49992.jpg",
+      "name": "Now You See Me, Now I Don't",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-09-28",
+      "id": 252290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/21/54059.jpg",
+      "name": "The Dis-Engagement Dinner",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-05",
+      "id": 253691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/57961.jpg",
+      "name": "Don't Dream It's Over",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-12",
+      "id": 334556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60732.jpg",
+      "name": "The Big Reveal",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-19",
+      "id": 348566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/64331.jpg",
+      "name": "An Indecent Promposal",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-26",
+      "id": 348567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66425.jpg",
+      "name": "Say No to the Dress",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-02",
+      "id": 401182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/183752.jpg",
+      "name": "Reality Does Not Bite",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-09",
+      "id": 414653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73876.jpg",
+      "name": "The Graduates",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-09",
+      "id": 419780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73877.jpg",
+      "name": "Holding on and Letting Go",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 616425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122802.jpg",
+      "name": "I'm the Kind of Girl Who Found Her Voice in College",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 654784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125010.jpg",
+      "name": "WTF Happened Last Year?",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 664774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127959.jpg",
+      "name": "The Friend Connection",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-05",
+      "id": 674225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130224.jpg",
+      "name": "Best Friends for Never",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-12",
+      "id": 695012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/132625.jpg",
+      "name": "Fireworks",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 704181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/134915.jpg",
+      "name": "Digging Deep",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-26",
+      "id": 736321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/137579.jpg",
+      "name": "Girls Gone Viral",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 736322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143359.jpg",
+      "name": "Misadventures in Babysitting",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 758604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143356.jpg",
+      "name": "Living in Sin",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 767910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143355.jpg",
+      "name": "Home Again, Home Again",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 767911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148008.jpg",
+      "name": "Second Chances",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 770179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148373.jpg",
+      "name": "Happy Campers. Happier Trails",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Romanze"
+    "Comedy",
+    "Romance"
   ],
+  "id": "tvmaze-282",
+  "live": true,
+  "overview": "This series takes an irreverent look at the conflict, chaos and humor that defines teenage life through the eyes of 15-year-old Jenna Hamilton, whose life begins to change when a simple accident becomes an epic misunderstanding and is blown way out of proportion.Narrated in the first-person voice of Jenna's blog posts, Awkward captures the humor within the struggles and experiences everyone can relate to from their formative years. The series picks up in the aftermath of the accident as she must deal with a new not-so-fun stigma, while at the same time managing the other daily drama that comes with being a teenager. From a secret relationship with a popular guy, to being undermined by a mean girl, and parents who just don't get it - Jenna's misfortune will eventually serve as the catalyst for amazing change, but it's not without some missteps and mishaps along the way.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/494/1235459.jpg",
   "rating": 7.3,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "282",
+  "title": "Awkward.",
+  "type": "series",
+  "year": 2011
 }

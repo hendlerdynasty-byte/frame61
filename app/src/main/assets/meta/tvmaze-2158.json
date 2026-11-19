@@ -1,22 +1,518 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2158",
-  "source": "tvmaze",
-  "sourceId": "2158",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Shadowhunters: The Mortal Instruments",
-  "year": 2016,
-  "type": "series",
-  "overview": "Based on the bestselling young adult fantasy book series The Mortal Instruments by Cassandra Clare, Shadowhunters follows 18-year-old Clary Fray, who finds out on her birthday that she is not who she thinks she is but rather comes from a long line of Shadowhunters - human-angel hybrids who hunt down demons. When her mother, Jocelyn, is kidnapped, Clary is thrown into the world of demon hunting with mysterious Shadowhunter Jace and her best friend, Simon. Now living among faeries, warlocks, vampires and werewolves, Clary begins a journey of self-discovery as she learns more about her past and what her future may hold.",
-  "poster": "file:///android_asset/posters/tvmaze-2158.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-01-12",
+      "id": 177853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414787.jpg",
+      "name": "The Mortal Cup",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 552223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414775.jpg",
+      "name": "The Descent Into Hell Isn't Easy",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 559309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414788.jpg",
+      "name": "Dead Man's Party",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 567880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414789.jpg",
+      "name": "Raising Hell",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 567891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414790.jpg",
+      "name": "Moo Shu to Go",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 409255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414791.jpg",
+      "name": "Of Men and Angels",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 409256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414782.jpg",
+      "name": "Major Arcana",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 576135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414783.jpg",
+      "name": "Bad Blood",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-08",
+      "id": 576136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414792.jpg",
+      "name": "Rise Up",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 409257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414785.jpg",
+      "name": "This World Inverted",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 576137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414793.jpg",
+      "name": "Blood Calls to Blood",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 409258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414786.jpg",
+      "name": "Malec",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-05",
+      "id": 409259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414794.jpg",
+      "name": "Morning Star",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-01-02",
+      "id": 819591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414857.jpg",
+      "name": "This Guilty Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-09",
+      "id": 1004019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414858.jpg",
+      "name": "A Door Into the Dark",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-16",
+      "id": 1004020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414859.jpg",
+      "name": "Parabatai Lost",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-23",
+      "id": 1004021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414860.jpg",
+      "name": "Day of Wrath",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-30",
+      "id": 1004022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414861.jpg",
+      "name": "Dust and Shadows",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-06",
+      "id": 1030652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414862.jpg",
+      "name": "Iron Sisters",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-13",
+      "id": 1030653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414863.jpg",
+      "name": "How are Thou Fallen",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-20",
+      "id": 1030654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414864.jpg",
+      "name": "Love is a Devil",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-27",
+      "id": 1030655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414865.jpg",
+      "name": "Bound by Blood",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-06",
+      "id": 1030656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414866.jpg",
+      "name": "By the Light of Dawn",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-05",
+      "id": 1092321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414867.jpg",
+      "name": "Mea Maxima Culpa",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-12",
+      "id": 1092322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414868.jpg",
+      "name": "You Are Not on Your Own",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-19",
+      "id": 1099333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414869.jpg",
+      "name": "Those of Demon Blood",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-26",
+      "id": 1098446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414870.jpg",
+      "name": "The Fair Folk",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-10",
+      "id": 1162642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414871.jpg",
+      "name": "A Problem of Memory",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-17",
+      "id": 1098448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414872.jpg",
+      "name": "Day of Atonement",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-24",
+      "id": 1162643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414873.jpg",
+      "name": "A Dark Reflection",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-31",
+      "id": 1162644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414874.jpg",
+      "name": "Awake, Arise, or Be Forever Fallen",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-07",
+      "id": 1162645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414875.jpg",
+      "name": "Hail and Farewell",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-08-14",
+      "id": 1162646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414856.jpg",
+      "name": "Beside Still Water",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-03-20",
+      "id": 1328032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414894.jpg",
+      "name": "On Infernal Ground",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-27",
+      "id": 1363552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414895.jpg",
+      "name": "The Powers That Be",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-03",
+      "id": 1363553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/379075.jpg",
+      "name": "What Lies Beneath",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-10",
+      "id": 1363554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414893.jpg",
+      "name": "Thy Soul Instructed",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-17",
+      "id": 1363555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414896.jpg",
+      "name": "Stronger Than Heaven",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-24",
+      "id": 1374315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414892.jpg",
+      "name": "A Window Into an Empty Room",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-01",
+      "id": 1374316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414891.jpg",
+      "name": "Salt in the Wound",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1374317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414897.jpg",
+      "name": "A Heart of Darkness",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1374318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414898.jpg",
+      "name": "Familia Ante Omnia",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1374319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414899.jpg",
+      "name": "Erchomai",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-02-25",
+      "id": 1559492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414900.jpg",
+      "name": "Lost Souls",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-04",
+      "id": 1610486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414885.jpg",
+      "name": "Original Sin",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-11",
+      "id": 1610487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414901.jpg",
+      "name": "Beati Bellicosi",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-18",
+      "id": 1610488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414884.jpg",
+      "name": "A Kiss from a Rose",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-25",
+      "id": 1610489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414883.jpg",
+      "name": "To the Night Children",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-04-01",
+      "id": 1624434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414882.jpg",
+      "name": "Stay with Me",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-04-08",
+      "id": 1624435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414902.jpg",
+      "name": "Heavenly Fire",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-04-15",
+      "id": 1627553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414903.jpg",
+      "name": "The Beast Within",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-04-22",
+      "id": 1627554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414904.jpg",
+      "name": "Aku Cinta Kamu",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-04-29",
+      "id": 1627555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414905.jpg",
+      "name": "City of Glass",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-05-06",
+      "id": 1632969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414906.jpg",
+      "name": "Alliance",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-05-06",
+      "id": 1632970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414907.jpg",
+      "name": "All Good Things…",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Fantasy",
-    "Übernatürlich"
+    "Supernatural"
   ],
+  "id": "tvmaze-2158",
+  "live": true,
+  "overview": "Based on the bestselling young adult fantasy book series The Mortal Instruments by Cassandra Clare, Shadowhunters follows 18-year-old Clary Fray, who finds out on her birthday that she is not who she thinks she is but rather comes from a long line of Shadowhunters - human-angel hybrids who hunt down demons. When her mother, Jocelyn, is kidnapped, Clary is thrown into the world of demon hunting with mysterious Shadowhunter Jace and her best friend, Simon. Now living among faeries, warlocks, vampires and werewolves, Clary begins a journey of self-discovery as she learns more about her past and what her future may hold.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/181/454353.jpg",
   "rating": 6.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2158",
+  "title": "Shadowhunters: The Mortal Instruments",
+  "type": "series",
+  "year": 2016
 }

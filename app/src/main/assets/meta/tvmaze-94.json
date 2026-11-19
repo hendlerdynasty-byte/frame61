@@ -1,22 +1,365 @@
 {
-  "schema": 1,
-  "id": "tvmaze-94",
-  "source": "tvmaze",
-  "sourceId": "94",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Defiance",
-  "year": 2013,
-  "type": "series",
-  "overview": "Set on a future Earth, Defiance introduces players and viewers to a world where humans and aliens live together on a planet ravaged by decades of war and transformed by alien terra-forming machines. It centers on Jeb Nolan, the law-keeper in a bustling frontier boomtown that is one of the new world's few oasis of civility and inclusion. Nolan is a former Marine who fought in the alien conflict and suffered the loss of his wife and child in the war. The trauma transformed him into a lone wanderer in the wilds of this new and dangerous world.",
-  "poster": "file:///android_asset/posters/tvmaze-94.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-04-15",
+      "id": 6062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869005.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-22",
+      "id": 6063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869008.jpg",
+      "name": "Down in the Ground Where the Dead Men Go",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-29",
+      "id": 6064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869012.jpg",
+      "name": "The Devil in the Dark",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-06",
+      "id": 6065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869015.jpg",
+      "name": "A Well Respected Man",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-13",
+      "id": 6066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869019.jpg",
+      "name": "The Serpent's Egg",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-20",
+      "id": 6067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869020.jpg",
+      "name": "Brothers in Arms",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-03",
+      "id": 6068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869027.jpg",
+      "name": "Goodbye Blue Sky",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 6069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869029.jpg",
+      "name": "I Just Wasn't Made for These Times",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 6070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869034.jpg",
+      "name": "If I Ever Leave This World Alive",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 6071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869036.jpg",
+      "name": "The Bride Wore Black",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 6072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869039.jpg",
+      "name": "Past Is Prologue",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 6073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21850.jpg",
+      "name": "Everything Is Broken",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-19",
+      "id": 6074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869051.jpg",
+      "name": "The Opposite of Hallelujah",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-26",
+      "id": 6075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869053.jpg",
+      "name": "In My Secret Life",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-03",
+      "id": 6076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869059.jpg",
+      "name": "The Cord and the Ax",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-10",
+      "id": 6077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869061.jpg",
+      "name": "Beasts of Burden",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-17",
+      "id": 6078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869066.jpg",
+      "name": "Put the Damage On",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-24",
+      "id": 6079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869072.jpg",
+      "name": "This Woman's Work",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-31",
+      "id": 6080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869074.jpg",
+      "name": "If You Could See Her Through My Eyes",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-07",
+      "id": 6081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869079.jpg",
+      "name": "Slouching Towards Bethlehem",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-14",
+      "id": 6082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869083.jpg",
+      "name": "Painted from Memory",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-21",
+      "id": 6083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869086.jpg",
+      "name": "Bottom of the World",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-21",
+      "id": 6084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869091.jpg",
+      "name": "Doll Parts",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-28",
+      "id": 6085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869094.jpg",
+      "name": "All Things Must Pass",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-28",
+      "id": 6086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869096.jpg",
+      "name": "I Almost Prayed",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 153933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536661.jpg",
+      "name": "The World We Seize",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-12",
+      "id": 166059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/614/1536672.jpg",
+      "name": "The Last Unicorns",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-19",
+      "id": 166060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30517.jpg",
+      "name": "The Broken Bough",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-26",
+      "id": 171243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31292.jpg",
+      "name": "Dead Air",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-03",
+      "id": 181123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32056.jpg",
+      "name": "History Rhymes",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-10",
+      "id": 182155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/32507.jpg",
+      "name": "Where the Apples Fell",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-17",
+      "id": 183759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33624.jpg",
+      "name": "The Beauty of Our Weapons",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-24",
+      "id": 185056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34577.jpg",
+      "name": "My Name is Datak Tarr and I Have Come to Kill You",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-31",
+      "id": 185057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35033.jpg",
+      "name": "Ostinato in White",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-07",
+      "id": 185058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36075.jpg",
+      "name": "When Twilight Dims the Sky Above",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-14",
+      "id": 185059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/37437.jpg",
+      "name": "Of a Demon in My View",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-21",
+      "id": 185060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39071.jpg",
+      "name": "The Awakening",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-28",
+      "id": 185061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/40292.jpg",
+      "name": "Upon the March We Fittest Die",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-94",
+  "live": true,
+  "overview": "Set on a future Earth, Defiance introduces players and viewers to a world where humans and aliens live together on a planet ravaged by decades of war and transformed by alien terra-forming machines. It centers on Jeb Nolan, the law-keeper in a bustling frontier boomtown that is one of the new world's few oasis of civility and inclusion. Nolan is a former Marine who fought in the alien conflict and suffered the loss of his wife and child in the war. The trauma transformed him into a lone wanderer in the wilds of this new and dangerous world.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/700.jpg",
   "rating": 7.8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 62,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "94",
+  "title": "Defiance",
+  "type": "series",
+  "year": 2013
 }

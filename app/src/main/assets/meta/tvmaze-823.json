@@ -1,21 +1,661 @@
 {
-  "schema": 1,
-  "id": "tvmaze-823",
-  "source": "tvmaze",
-  "sourceId": "823",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The L Word",
-  "year": 2004,
-  "type": "series",
-  "overview": "An intimate drama series about a group of lesbian friends struggling with romance and careers in Los Angeles.",
-  "poster": "file:///android_asset/posters/tvmaze-823.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-01-15",
+      "id": 73949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772453.jpg",
+      "name": "Pilot (Part 1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-16",
+      "id": 1519793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772454.jpg",
+      "name": "Pilot (Part 2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-25",
+      "id": 73950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772455.jpg",
+      "name": "Let's Do It",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-01",
+      "id": 73951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772456.jpg",
+      "name": "Longing",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-08",
+      "id": 73952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772457.jpg",
+      "name": "Lies, Lies, Lies",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-15",
+      "id": 73953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772458.jpg",
+      "name": "Lawfully",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-22",
+      "id": 73954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772459.jpg",
+      "name": "Losing It",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-29",
+      "id": 73955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772460.jpg",
+      "name": "L'Ennui",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-07",
+      "id": 73956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772461.jpg",
+      "name": "Listen Up",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-14",
+      "id": 73957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772462.jpg",
+      "name": "Luck, Next Time",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-21",
+      "id": 73958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772463.jpg",
+      "name": "Liberally",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-28",
+      "id": 73959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772464.jpg",
+      "name": "Looking Back",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-04",
+      "id": 73960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772465.jpg",
+      "name": "Locked Up",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-11",
+      "id": 73961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772466.jpg",
+      "name": "Limb from Limb",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-20",
+      "id": 73962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772467.jpg",
+      "name": "Life, Loss, Leaving",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-27",
+      "id": 73963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772468.jpg",
+      "name": "Lap Dance",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-06",
+      "id": 73964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772469.jpg",
+      "name": "Loneliest Number",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-13",
+      "id": 73965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772470.jpg",
+      "name": "Lynch Pin",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-20",
+      "id": 73966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772471.jpg",
+      "name": "Labyrinth",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-27",
+      "id": 73967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772472.jpg",
+      "name": "Lagrimas de Oro",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 73968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772473.jpg",
+      "name": "Luminous",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-10",
+      "id": 73969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772474.jpg",
+      "name": "Loyal",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-17",
+      "id": 73970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772475.jpg",
+      "name": "Late, Later, Latent",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-24",
+      "id": 73971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772476.jpg",
+      "name": "Land Ahoy",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-01",
+      "id": 73972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772477.jpg",
+      "name": "Loud and Proud",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-08",
+      "id": 73973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772478.jpg",
+      "name": "L'Chaim",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-15",
+      "id": 73974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/772479.jpg",
+      "name": "Lacuna",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-08",
+      "id": 73975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171388.jpg",
+      "name": "Labia Majora",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-15",
+      "id": 73976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171389.jpg",
+      "name": "Lost Weekend",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-22",
+      "id": 73977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171390.jpg",
+      "name": "Lobsters",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-29",
+      "id": 73978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171391.jpg",
+      "name": "Light My Fire",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-05",
+      "id": 73979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171392.jpg",
+      "name": "Lifeline",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-12",
+      "id": 73980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171393.jpg",
+      "name": "Lifesize",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-19",
+      "id": 73981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171394.jpg",
+      "name": "Lone Star",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-26",
+      "id": 73982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171395.jpg",
+      "name": "Latecomer",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-05",
+      "id": 73983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171396.jpg",
+      "name": "Lead, Follow, or Get Out of the Way",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-12",
+      "id": 73984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171397.jpg",
+      "name": "Losing the Light",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-19",
+      "id": 73985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171398.jpg",
+      "name": "Last Dance",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-26",
+      "id": 73986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171399.jpg",
+      "name": "Left Hand of the Goddess",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-07",
+      "id": 73987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171400.jpg",
+      "name": "Legend in the Making",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-14",
+      "id": 73988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171401.jpg",
+      "name": "Livin' La Vida Loca",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-21",
+      "id": 73989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171402.jpg",
+      "name": "Lassoed",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-01-28",
+      "id": 73990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171403.jpg",
+      "name": "Layup",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-04",
+      "id": 73991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171404.jpg",
+      "name": "Lez Girls",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-11",
+      "id": 73992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171405.jpg",
+      "name": "Luck Be a Lady",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-18",
+      "id": 73993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171406.jpg",
+      "name": "Lesson Number One",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-02-25",
+      "id": 73994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171407.jpg",
+      "name": "Lexington and Concord",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-04",
+      "id": 73995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171408.jpg",
+      "name": "Lacy Lilting Lyrics",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-11",
+      "id": 73996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171409.jpg",
+      "name": "Little Boy Blue",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-18",
+      "id": 73997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171410.jpg",
+      "name": "Literary License to Kill",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-03-25",
+      "id": 73998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171411.jpg",
+      "name": "Long Time Coming",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-06",
+      "id": 73999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171412.jpg",
+      "name": "LGB Tease",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-13",
+      "id": 74000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171413.jpg",
+      "name": "Look Out, Here They Come!",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-20",
+      "id": 74001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171414.jpg",
+      "name": "Lady of the Lake",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-27",
+      "id": 74002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171415.jpg",
+      "name": "Let's Get This Party Started",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-03",
+      "id": 74003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171416.jpg",
+      "name": "Lookin' at You, Kid",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-10",
+      "id": 74004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171417.jpg",
+      "name": "Lights! Camera! Action!",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-17",
+      "id": 74005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171418.jpg",
+      "name": "Lesbians Gone Wild",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-24",
+      "id": 74006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171419.jpg",
+      "name": "Lay Down the Law",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-02",
+      "id": 74007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171420.jpg",
+      "name": "Liquid Heat",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-09",
+      "id": 74008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171421.jpg",
+      "name": "Lifecycle",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-16",
+      "id": 74009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171422.jpg",
+      "name": "Lunar Cycle",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-03-23",
+      "id": 74010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171423.jpg",
+      "name": "Loyal and True",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-18",
+      "id": 74011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171431.jpg",
+      "name": "Long Night's Journey Into Day",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-01-25",
+      "id": 74012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171432.jpg",
+      "name": "Least Likely",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-01",
+      "id": 74013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171433.jpg",
+      "name": "LMFAO",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-08",
+      "id": 74014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171434.jpg",
+      "name": "Leaving Los Angeles",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-15",
+      "id": 74015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171438.jpg",
+      "name": "Litmus Test",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-02-22",
+      "id": 74016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171435.jpg",
+      "name": "Lactose Intolerant",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-01",
+      "id": 74017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171436.jpg",
+      "name": "Last Couple Standing",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-03-08",
+      "id": 74018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/171437.jpg",
+      "name": "Last Word",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Romanze"
+    "Romance"
   ],
+  "id": "tvmaze-823",
+  "live": true,
+  "overview": "An intimate drama series about a group of lesbian friends struggling with romance and careers in Los Angeles.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/440/1102025.jpg",
   "rating": 7.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "823",
+  "title": "The L Word",
+  "type": "series",
+  "year": 2004
 }

@@ -1,21 +1,697 @@
 {
-  "schema": 1,
-  "id": "tvmaze-157",
-  "source": "tvmaze",
-  "sourceId": "157",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Americans",
-  "year": 2013,
-  "type": "series",
-  "overview": "The Americans is a period drama about the complex marriage of two KGB spies posing as Americans in suburban Washington D.C. shortly after Ronald Reagan is elected President.",
-  "poster": "file:///android_asset/posters/tvmaze-157.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-01-30",
+      "id": 11367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56771.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-06",
+      "id": 11368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56772.jpg",
+      "name": "The Clock",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-13",
+      "id": 11369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56773.jpg",
+      "name": "Gregory",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-20",
+      "id": 11370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56774.jpg",
+      "name": "In Control",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-27",
+      "id": 11371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56775.jpg",
+      "name": "COMINT",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-06",
+      "id": 11372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56776.jpg",
+      "name": "Trust Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-13",
+      "id": 11373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56777.jpg",
+      "name": "Duty and Honor",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-20",
+      "id": 11374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56778.jpg",
+      "name": "Mutually Assured Destruction",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-03",
+      "id": 11375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56779.jpg",
+      "name": "Safe House",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-10",
+      "id": 11376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56780.jpg",
+      "name": "Only You",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-17",
+      "id": 11377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56781.jpg",
+      "name": "Covert War",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-24",
+      "id": 11378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56782.jpg",
+      "name": "The Oath",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-01",
+      "id": 11379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/56783.jpg",
+      "name": "The Colonel",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 11380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166963.jpg",
+      "name": "Comrades",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 11381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166964.jpg",
+      "name": "Cardinal",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-12",
+      "id": 11382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166965.jpg",
+      "name": "The Walk In",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-19",
+      "id": 11383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166966.jpg",
+      "name": "A Little Night Music",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-26",
+      "id": 11384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166967.jpg",
+      "name": "The Deal",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-02",
+      "id": 11385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166968.jpg",
+      "name": "Behind the Red Door",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-09",
+      "id": 11386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166969.jpg",
+      "name": "ARPANET",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-16",
+      "id": 11387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166970.jpg",
+      "name": "New Car",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-23",
+      "id": 11388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166971.jpg",
+      "name": "Martial Eagle",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-30",
+      "id": 11389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166972.jpg",
+      "name": "Yousaf",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-07",
+      "id": 11390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166974.jpg",
+      "name": "Stealth",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-14",
+      "id": 11391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166975.jpg",
+      "name": "Operation Chronicle",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-21",
+      "id": 11392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166976.jpg",
+      "name": "Echo",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 57112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19993.jpg",
+      "name": "EST Men",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 58282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20787.jpg",
+      "name": "Baggage",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 58283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21578.jpg",
+      "name": "Open House",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 58284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21874.jpg",
+      "name": "Dimebag",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-25",
+      "id": 58285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22429.jpg",
+      "name": "Salang Pass",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-04",
+      "id": 58286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22909.jpg",
+      "name": "Born Again",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-11",
+      "id": 58287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23605.jpg",
+      "name": "Walter Taffet",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-18",
+      "id": 58288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24117.jpg",
+      "name": "Divestment",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-25",
+      "id": 58289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24386.jpg",
+      "name": "Do Mail Robots Dream of Electric Sheep?",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-01",
+      "id": 58290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24847.jpg",
+      "name": "Stingers",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-08",
+      "id": 58291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25139.jpg",
+      "name": "One Day in the Life of Anton Baklanov",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-15",
+      "id": 58292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25824.jpg",
+      "name": "I Am Abassin Zadran",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-22",
+      "id": 58293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26253.jpg",
+      "name": "March 8, 1983",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-16",
+      "id": 574023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116059.jpg",
+      "name": "Glanders",
+      "number": 1,
+      "runtime": 72,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-23",
+      "id": 599336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125147.jpg",
+      "name": "Pastor Tim",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-30",
+      "id": 618801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128061.jpg",
+      "name": "Experimental Prototype City of Tomorrow",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-06",
+      "id": 618802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130329.jpg",
+      "name": "Chloramphenicol",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-13",
+      "id": 618803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/132634.jpg",
+      "name": "Clark's Place",
+      "number": 5,
+      "runtime": 70,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-20",
+      "id": 618804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135056.jpg",
+      "name": "The Rat",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-27",
+      "id": 618805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136123.jpg",
+      "name": "Travel Agents",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-04",
+      "id": 618806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138101.jpg",
+      "name": "The Magic of David Copperfield V: The Statue of Liberty Disappears",
+      "number": 8,
+      "runtime": 72,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-11",
+      "id": 618807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143702.jpg",
+      "name": "The Day After",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-18",
+      "id": 618808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146389.jpg",
+      "name": "Munchkins",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-25",
+      "id": 618809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148994.jpg",
+      "name": "Dinner for Seven",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-01",
+      "id": 618810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/151288.jpg",
+      "name": "A Roy Rogers in Franconia",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-08",
+      "id": 618811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154029.jpg",
+      "name": "Persona Non Grata",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-07",
+      "id": 979889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/252975.jpg",
+      "name": "Amber Waves",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 981170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255693.jpg",
+      "name": "Pests",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1031685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258285.jpg",
+      "name": "The Midges",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1031686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261267.jpg",
+      "name": "What's the Matter with Kansas?",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1031687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/263710.jpg",
+      "name": "Lotus 1-2-3",
+      "number": 5,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-11",
+      "id": 1031688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266895.jpg",
+      "name": "Crossbreed",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-18",
+      "id": 1039848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269503.jpg",
+      "name": "The Committee on Human Rights",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-25",
+      "id": 1039849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/272095.jpg",
+      "name": "Immersion",
+      "number": 8,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1039850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/275480.jpg",
+      "name": "IHOP",
+      "number": 9,
+      "runtime": 71,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1039851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/277872.jpg",
+      "name": "Darkroom",
+      "number": 10,
+      "runtime": 70,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1039852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280529.jpg",
+      "name": "Dyatkovo",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-23",
+      "id": 1039853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283390.jpg",
+      "name": "The World Council of Churches",
+      "number": 12,
+      "runtime": 72,
+      "season": 5
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1039854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286449.jpg",
+      "name": "The Soviet Division",
+      "number": 13,
+      "runtime": 90,
+      "season": 5
+    },
+    {
+      "airdate": "2018-03-28",
+      "id": 1356409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/377584.jpg",
+      "name": "Dead Hand",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-04-04",
+      "id": 1359600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/379154.jpg",
+      "name": "Tchaikovsky",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-04-11",
+      "id": 1363213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/381303.jpg",
+      "name": "Urban Transport Planning",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-04-18",
+      "id": 1370129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/382954.jpg",
+      "name": "Mr. and Mrs. Teacup",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-04-25",
+      "id": 1375059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385230.jpg",
+      "name": "The Great Patriotic War",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-05-02",
+      "id": 1384833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386711.jpg",
+      "name": "Rififi",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-05-09",
+      "id": 1384834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/388142.jpg",
+      "name": "Harvest",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-05-16",
+      "id": 1384835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389837.jpg",
+      "name": "The Summit",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-05-23",
+      "id": 1384836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391357.jpg",
+      "name": "Jennings, Elizabeth",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-05-30",
+      "id": 1384837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/392781.jpg",
+      "name": "START",
+      "number": 10,
+      "runtime": 90,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Spionage"
+    "Espionage"
   ],
+  "id": "tvmaze-157",
+  "live": true,
+  "overview": "The Americans is a period drama about the complex marriage of two KGB spies posing as Americans in suburban Washington D.C. shortly after Ronald Reagan is elected President.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/146/366911.jpg",
   "rating": 8.5,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 62,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "157",
+  "title": "The Americans",
+  "type": "series",
+  "year": 2013
 }

@@ -1,22 +1,707 @@
 {
-  "schema": 1,
-  "id": "tvmaze-804",
-  "source": "tvmaze",
-  "sourceId": "804",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Strike Back",
-  "year": 2010,
-  "type": "series",
-  "overview": "Strike Back is a British/American action and military television series, based on a novel of the same name by novelist and former Special Air Service (SAS) soldier Chris Ryan. The series follows the actions of Section 20, a secretive branch of the British Defence Intelligence service (DI), who operate several high risk, priority missions throughout the globe.",
-  "poster": "file:///android_asset/posters/tvmaze-804.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-05-05",
+      "id": 72064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28816.jpg",
+      "name": "Iraq: Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-05",
+      "id": 72065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28817.jpg",
+      "name": "Iraq: Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-12",
+      "id": 72066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28818.jpg",
+      "name": "Zimbabwe: Part 1",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-12",
+      "id": 72067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28835.jpg",
+      "name": "Zimbabwe: Part 2",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-19",
+      "id": 72068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28836.jpg",
+      "name": "Afghanistan: Part 1",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-19",
+      "id": 72069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28837.jpg",
+      "name": "Afghanistan: Part 2",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-12",
+      "id": 72070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121219.jpg",
+      "name": "Project Dawn: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-19",
+      "id": 72071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121220.jpg",
+      "name": "Project Dawn: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-26",
+      "id": 72072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121227.jpg",
+      "name": "Project Dawn: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-09",
+      "id": 72073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121242.jpg",
+      "name": "Project Dawn: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 72074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121244.jpg",
+      "name": "Project Dawn: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 72075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121505.jpg",
+      "name": "Project Dawn: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 72076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121525.jpg",
+      "name": "Project Dawn: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-07",
+      "id": 72077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/122002.jpg",
+      "name": "Project Dawn: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-14",
+      "id": 72078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/122028.jpg",
+      "name": "Project Dawn: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-21",
+      "id": 72079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/122029.jpg",
+      "name": "Project Dawn: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-17",
+      "id": 72080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123412.jpg",
+      "name": "Vengeance: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-17",
+      "id": 72081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123414.jpg",
+      "name": "Vengeance: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-24",
+      "id": 72082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123843.jpg",
+      "name": "Vengeance: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-31",
+      "id": 72083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123844.jpg",
+      "name": "Vengeance: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-07",
+      "id": 72084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124261.jpg",
+      "name": "Vengeance: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-14",
+      "id": 72085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124260.jpg",
+      "name": "Vengeance: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-21",
+      "id": 72086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128411.jpg",
+      "name": "Vengeance: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-28",
+      "id": 72087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128447.jpg",
+      "name": "Vengeance: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-05",
+      "id": 72088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128464.jpg",
+      "name": "Vengeance: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-12",
+      "id": 72089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/128465.jpg",
+      "name": "Vengeance: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-09",
+      "id": 72090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310165.jpg",
+      "name": "Shadow Warfare: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-16",
+      "id": 72091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310167.jpg",
+      "name": "Shadow Warfare: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-23",
+      "id": 72092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310170.jpg",
+      "name": "Shadow Warfare: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-06",
+      "id": 72093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310171.jpg",
+      "name": "Shadow Warfare: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-13",
+      "id": 72094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310172.jpg",
+      "name": "Shadow Warfare: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-20",
+      "id": 72095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310188.jpg",
+      "name": "Shadow Warfare: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-27",
+      "id": 72096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310217.jpg",
+      "name": "Shadow Warfare: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-04",
+      "id": 72097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310223.jpg",
+      "name": "Shadow Warfare: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-11",
+      "id": 72098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310269.jpg",
+      "name": "Shadow Warfare: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-18",
+      "id": 72099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310270.jpg",
+      "name": "Shadow Warfare: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-03",
+      "id": 155412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28804.jpg",
+      "name": "Legacy: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-10",
+      "id": 155413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29508.jpg",
+      "name": "Legacy: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-17",
+      "id": 155414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30214.jpg",
+      "name": "Legacy: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-24",
+      "id": 155415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30215.jpg",
+      "name": "Legacy: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-01",
+      "id": 164333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31825.jpg",
+      "name": "Legacy: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-08",
+      "id": 164334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32360.jpg",
+      "name": "Legacy: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-15",
+      "id": 164335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33434.jpg",
+      "name": "Legacy: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-22",
+      "id": 164336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34356.jpg",
+      "name": "Legacy: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 164337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34913.jpg",
+      "name": "Legacy: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 164338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34914.jpg",
+      "name": "Legacy: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-31",
+      "id": 1329977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/334152.jpg",
+      "name": "Retribution: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1337575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335827.jpg",
+      "name": "Retribution: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1346463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337878.jpg",
+      "name": "Retribution: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-21",
+      "id": 1346464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340316.jpg",
+      "name": "Retribution: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-28",
+      "id": 1346465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/342387.jpg",
+      "name": "Retribution: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-01-31",
+      "id": 1346466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362240.jpg",
+      "name": "Retribution: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-02-07",
+      "id": 1346467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362241.jpg",
+      "name": "Retribution: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-02-14",
+      "id": 1346468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365540.jpg",
+      "name": "Retribution: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-02-21",
+      "id": 1347398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365541.jpg",
+      "name": "Retribution: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-02-28",
+      "id": 1347399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368084.jpg",
+      "name": "Retribution: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-01-25",
+      "id": 1580020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/453906.jpg",
+      "name": "Silent War: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-02-01",
+      "id": 1588596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/455737.jpg",
+      "name": "Silent War: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-02-08",
+      "id": 1588597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/457783.jpg",
+      "name": "Silent War: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-02-15",
+      "id": 1588598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/460322.jpg",
+      "name": "Silent War: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-02-22",
+      "id": 1588599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/462717.jpg",
+      "name": "Silent War: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-03-01",
+      "id": 1588600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/465515.jpg",
+      "name": "Silent War: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-03-08",
+      "id": 1601602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/467960.jpg",
+      "name": "Silent War: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1601603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470302.jpg",
+      "name": "Silent War: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-03-22",
+      "id": 1601604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/473306.jpg",
+      "name": "Silent War: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-03-29",
+      "id": 1601605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/475141.jpg",
+      "name": "Silent War: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-02-14",
+      "id": 1787358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/604134.jpg",
+      "name": "Vendetta: Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-02-21",
+      "id": 1797163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/607113.jpg",
+      "name": "Vendetta: Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-02-28",
+      "id": 1797164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/609567.jpg",
+      "name": "Vendetta: Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-03-06",
+      "id": 1797285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/612254.jpg",
+      "name": "Vendetta: Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-03-13",
+      "id": 1797286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/614826.jpg",
+      "name": "Vendetta: Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-03-20",
+      "id": 1797287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/618555.jpg",
+      "name": "Vendetta: Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-03-27",
+      "id": 1797288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/248/621897.jpg",
+      "name": "Vendetta: Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1797289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624877.jpg",
+      "name": "Vendetta: Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-04-10",
+      "id": 1797290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/627594.jpg",
+      "name": "Vendetta: Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2020-04-17",
+      "id": 1797291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631017.jpg",
+      "name": "Vendetta: Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krieg"
+    "War"
   ],
+  "id": "tvmaze-804",
+  "live": true,
+  "overview": "Strike Back is a British/American action and military television series, based on a novel of the same name by novelist and former Special Air Service (SAS) soldier Chris Ryan. The series follows the actions of Section 20, a secretive branch of the British Defence Intelligence service (DI), who operate several high risk, priority missions throughout the globe.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213247.jpg",
   "rating": 8.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "804",
+  "title": "Strike Back",
+  "type": "series",
+  "year": 2010
 }

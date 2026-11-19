@@ -1,22 +1,1418 @@
 {
-  "schema": 1,
-  "id": "tvmaze-45",
-  "source": "tvmaze",
-  "sourceId": "45",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "NCIS: New Orleans",
-  "year": 2014,
-  "type": "series",
-  "overview": "NCIS: New Orleans is a drama about the local field office that investigates criminal cases involving military personnel in The Big Easy, a city known for its music, entertainment and decadence. Leading the team is Special Agent Dwayne Pride, a.k.a. \"King,\" a native of New Orleans who is driven by his need to do what is right. Working with Pride is Special Agent Christopher LaSalle, who plays hard but works harder and former ATF agent Sonja Percy, who is still adjusting to the team after years of solo undercover assignments. Supporting them is coroner Dr. Loretta Wade, who is as eccentric as she is smart; her brilliant, quirky Forensic Scientist, Sebastian Lund; and Investigative Computer Specialist Patton Plame, an animated and talented hacker. New to the team is Special Agent Tammy Gregorio, a tough, acerbic FBI agent with a mysterious past in New Orleans, who is sent from D.C. to investigate the NCIS team, but also work with Pride when high-risk cases threaten the city. This colorful city that harbors a dark side is a magnet for service personnel on leave, and when overindulgence is followed by trouble, Pride's team is at its best",
-  "poster": "file:///android_asset/posters/tvmaze-45.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-09-23",
+      "id": 1974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4640.jpg",
+      "name": "Musician Heal Thyself",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-30",
+      "id": 1975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4641.jpg",
+      "name": "Carrier",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-07",
+      "id": 1976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4642.jpg",
+      "name": "Breaking Brig",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 8876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4643.jpg",
+      "name": "The Recruits",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-21",
+      "id": 8877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5117.jpg",
+      "name": "It Happened Last Night",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-28",
+      "id": 14544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6239.jpg",
+      "name": "Master of Horror",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 39625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10365.jpg",
+      "name": "Watch Over Me",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 40994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11297.jpg",
+      "name": "Love Hurts",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-25",
+      "id": 45766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12670.jpg",
+      "name": "Chasing Ghosts",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-16",
+      "id": 57322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/6/16285.jpg",
+      "name": "Stolen Valor",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-06",
+      "id": 92016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18835.jpg",
+      "name": "Baitfish",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-13",
+      "id": 116536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19120.jpg",
+      "name": "The Abyss",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 118508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20606.jpg",
+      "name": "The Walking Dead",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 122992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21505.jpg",
+      "name": "Careful What You Wish For",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 129492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21830.jpg",
+      "name": "Le Carnival de la Mort",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 139724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22264.jpg",
+      "name": "My Brother's Keeper",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-10",
+      "id": 142176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23555.jpg",
+      "name": "More Now",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 143209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24363.jpg",
+      "name": "The List",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 143210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25209.jpg",
+      "name": "The Insider",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 151463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25779.jpg",
+      "name": "Rock-a-Bye-Baby",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 151464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26534.jpg",
+      "name": "You'll Do",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 151465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26932.jpg",
+      "name": "How Much Pain Can You Take",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-12",
+      "id": 153015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27406.jpg",
+      "name": "My City",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-09-22",
+      "id": 207956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/20/50393.jpg",
+      "name": "Sic Semper Tyranis",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-09-29",
+      "id": 212026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/55419.jpg",
+      "name": "Shadow Unit",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-06",
+      "id": 217891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/57771.jpg",
+      "name": "Touched by the Sun",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-13",
+      "id": 250014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/57772.jpg",
+      "name": "I Do",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-20",
+      "id": 355621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61637.jpg",
+      "name": "Foreign Affairs",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-27",
+      "id": 355622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61638.jpg",
+      "name": "Insane in the Membrane",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-03",
+      "id": 390054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70424.jpg",
+      "name": "Broken Hearted",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-10",
+      "id": 412931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74228.jpg",
+      "name": "Confluence",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-17",
+      "id": 412932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/77391.jpg",
+      "name": "Darkest Hour",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-24",
+      "id": 455286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/80271.jpg",
+      "name": "Billy and the Kid",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-15",
+      "id": 483359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/87811.jpg",
+      "name": "Blue Christmas",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-05",
+      "id": 506851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/95562.jpg",
+      "name": "Sister City, Part II",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 544341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101112.jpg",
+      "name": "Undocumented",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 577882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110838.jpg",
+      "name": "Father's Day",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 581002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112930.jpg",
+      "name": "No Man's Land",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 600713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116103.jpg",
+      "name": "Second Chances",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 611625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118328.jpg",
+      "name": "Radio Silence",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 621938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122792.jpg",
+      "name": "If It Bleeds, It Leads",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 630717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124756.jpg",
+      "name": "Means to an End",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-05",
+      "id": 656708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130208.jpg",
+      "name": "Second Line",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 664357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/134910.jpg",
+      "name": "Collateral Damage",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 664358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140025.jpg",
+      "name": "Help Wanted",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 664359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143070.jpg",
+      "name": "The Third Man",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 660428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143071.jpg",
+      "name": "Sleeping with the Enemy",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-20",
+      "id": 843665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189955.jpg",
+      "name": "Aftershocks",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-27",
+      "id": 892031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/192635.jpg",
+      "name": "Suspicious Minds",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 892032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199274.jpg",
+      "name": "Man on Fire",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-18",
+      "id": 892035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/202469.jpg",
+      "name": "Escape Plan",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-25",
+      "id": 892037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205257.jpg",
+      "name": "Course Correction",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-15",
+      "id": 964916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/212495.jpg",
+      "name": "One Good Man",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-22",
+      "id": 971877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214852.jpg",
+      "name": "Outlaws",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-06",
+      "id": 987366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/212005.jpg",
+      "name": "Music to My Ears",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-13",
+      "id": 993530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222598.jpg",
+      "name": "Overdrive",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-03",
+      "id": 1010661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/91/229739.jpg",
+      "name": "Follow the Money",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-17",
+      "id": 1022560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/234772.jpg",
+      "name": "Let It Ride",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-24",
+      "id": 1032804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236921.jpg",
+      "name": "Hell on the High Water",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-07",
+      "id": 1039948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243242.jpg",
+      "name": "Return of the King",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-14",
+      "id": 1045391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246262.jpg",
+      "name": "Pandora's Box, Part II",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 1049509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248854.jpg",
+      "name": "End of the Line",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-07",
+      "id": 1060996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253239.jpg",
+      "name": "The Last Stand",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1060997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255663.jpg",
+      "name": "Swift, Silent, Deadly",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1075493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255706.jpg",
+      "name": "Slay the Dragon",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1088456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261377.jpg",
+      "name": "Quid Pro Quo",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1099028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/263851.jpg",
+      "name": "NOLA Confidential",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-18",
+      "id": 1107583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269625.jpg",
+      "name": "Krewe",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1117447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/275629.jpg",
+      "name": "Knockout",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1117448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/277953.jpg",
+      "name": "Down the Rabbit Hole",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1113960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280561.jpg",
+      "name": "Poetic Justice",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-26",
+      "id": 1200328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323037.jpg",
+      "name": "Rogue Nation",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-03",
+      "id": 1312328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325082.jpg",
+      "name": "#1 Fan",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-10",
+      "id": 1299683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/327322.jpg",
+      "name": "The Asset",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-17",
+      "id": 1302982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329454.jpg",
+      "name": "Dead Man Calling",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-24",
+      "id": 1312329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331507.jpg",
+      "name": "Viral",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-31",
+      "id": 1312330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/333846.jpg",
+      "name": "Acceptable Loss",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1331662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335728.jpg",
+      "name": "The Accident",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1341426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/337279.jpg",
+      "name": "Sins of the Father",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-21",
+      "id": 1341429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340255.jpg",
+      "name": "Hard Knock Life",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-12",
+      "id": 1349501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346070.jpg",
+      "name": "Mirror, Mirror",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-02",
+      "id": 1370786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/349314.jpg",
+      "name": "Monster",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-09",
+      "id": 1373699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354676.jpg",
+      "name": "Identity Crisis",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-23",
+      "id": 1383577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358607.jpg",
+      "name": "Ties That Bind",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-06",
+      "id": 1394970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363279.jpg",
+      "name": "A New Dawn",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-27",
+      "id": 1402652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368378.jpg",
+      "name": "The Last Mile",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-06",
+      "id": 1410344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370368.jpg",
+      "name": "Empathy",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1414141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/372492.jpg",
+      "name": "Treasure Hunt",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-27",
+      "id": 1419948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/150/377218.jpg",
+      "name": "Welcome to the Jungle",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-03",
+      "id": 1423329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/151/379020.jpg",
+      "name": "High Stakes",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-17",
+      "id": 1432510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/382836.jpg",
+      "name": "Powder Keg",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-01",
+      "id": 1432511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386628.jpg",
+      "name": "Mind Games",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1432512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/387979.jpg",
+      "name": "The Assassination of Dwayne Pride",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1432067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389821.jpg",
+      "name": "Checkmate, Part I",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1432068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389840.jpg",
+      "name": "Checkmate, Part II",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-09-25",
+      "id": 1494020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/422513.jpg",
+      "name": "See You Soon",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-02",
+      "id": 1500314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424519.jpg",
+      "name": "Inside Out",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-09",
+      "id": 1500315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/170/426803.jpg",
+      "name": "Diplomatic Immunity",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-16",
+      "id": 1536186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429359.jpg",
+      "name": "Legacy",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-23",
+      "id": 1537479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/431557.jpg",
+      "name": "In the Blood",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-30",
+      "id": 1540243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433377.jpg",
+      "name": "Pound of Flesh",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-13",
+      "id": 1553222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/436917.jpg",
+      "name": "Sheepdogs",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-20",
+      "id": 1556896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438430.jpg",
+      "name": "Close to Home",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-04",
+      "id": 1561857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441374.jpg",
+      "name": "Risk Assessment",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-11",
+      "id": 1565924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442745.jpg",
+      "name": "Tick Tock",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-15",
+      "id": 1573408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450568.jpg",
+      "name": "Vindicta",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-22",
+      "id": 1580451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/453020.jpg",
+      "name": "Desperate Navy Wives",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-12",
+      "id": 1588649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459497.jpg",
+      "name": "X",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-19",
+      "id": 1592848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/184/461809.jpg",
+      "name": "Conspiracy Theories",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-26",
+      "id": 1601350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464521.jpg",
+      "name": "Crab Mentality",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-12",
+      "id": 1606256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469032.jpg",
+      "name": "Survivor",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-26",
+      "id": 1609023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/189/474436.jpg",
+      "name": "Reckoning",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-02",
+      "id": 1612425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/190/476171.jpg",
+      "name": "In Plain Sight",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-09",
+      "id": 1622090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/478173.jpg",
+      "name": "A House Divided",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-16",
+      "id": 1628570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479996.jpg",
+      "name": "Jackpot",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-23",
+      "id": 1629041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/482929.jpg",
+      "name": "Trust Me",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-30",
+      "id": 1629042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485499.jpg",
+      "name": "Chaos Theory",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-07",
+      "id": 1629043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488614.jpg",
+      "name": "The River Styx, Part I",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-14",
+      "id": 1629044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/197/492539.jpg",
+      "name": "The River Styx, Part II",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-24",
+      "id": 1669458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531597.jpg",
+      "name": "Judgement Call",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-01",
+      "id": 1713730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/533998.jpg",
+      "name": "The Terminator Conundrum",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-08",
+      "id": 1714057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/536628.jpg",
+      "name": "Bad Apple",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-15",
+      "id": 1719434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/539719.jpg",
+      "name": "Overlooked",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-22",
+      "id": 1722418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542931.jpg",
+      "name": "Spies and Lies",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-05",
+      "id": 1744737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/547135.jpg",
+      "name": "Matthew 5:9",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-12",
+      "id": 1744738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/222/556552.jpg",
+      "name": "Boom-Boom-Boom-Boom",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-19",
+      "id": 1747963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/225/563818.jpg",
+      "name": "The Order of the Mongoose",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-26",
+      "id": 1752310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570459.jpg",
+      "name": "Convicted",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-17",
+      "id": 1761007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579846.jpg",
+      "name": "Requital",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-16",
+      "id": 1755009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/605103.jpg",
+      "name": "Bad Moon Rising",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-23",
+      "id": 1755008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/243/607907.jpg",
+      "name": "Waiting for Monroe",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-01",
+      "id": 1799963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/610438.jpg",
+      "name": "The Root of All Evil",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-08",
+      "id": 1799964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/613329.jpg",
+      "name": "The Man in the Red Suit",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-15",
+      "id": 1807913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/615878.jpg",
+      "name": "Relentless",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-15",
+      "id": 1808569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/615880.jpg",
+      "name": "Pride and Prejudice",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-22",
+      "id": 1808570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/619391.jpg",
+      "name": "Biased",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-29",
+      "id": 1811990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623009.jpg",
+      "name": "A Changed Woman",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-12",
+      "id": 1818424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/629131.jpg",
+      "name": "Monolith",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-19",
+      "id": 1822087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632110.jpg",
+      "name": "Predators",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-11-08",
+      "id": 1949318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/282/705306.jpg",
+      "name": "Something in the Air, Part I",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-11-15",
+      "id": 1956791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/283/708513.jpg",
+      "name": "Something in the Air, Part II",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-11-22",
+      "id": 1960234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/284/712017.jpg",
+      "name": "One of Our Own",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-12-13",
+      "id": 1972371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/288/722158.jpg",
+      "name": "We All Fall…",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-01-03",
+      "id": 1977845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/729662.jpg",
+      "name": "Operation Drano, Part I",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-01-10",
+      "id": 1984536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/731456.jpg",
+      "name": "Operation Drano, Part II",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-01-17",
+      "id": 1989332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/293/733366.jpg",
+      "name": "Leda and the Swan, Part I",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-02-14",
+      "id": 1995756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/296/741938.jpg",
+      "name": "Leda and the Swan, Part II",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-02-21",
+      "id": 1995757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/297/743994.jpg",
+      "name": "Into Thin Air",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-02-28",
+      "id": 1995758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745932.jpg",
+      "name": "Homeward Bound",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-03-28",
+      "id": 1995759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/301/753293.jpg",
+      "name": "Stashed",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-04-04",
+      "id": 2033631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756401.jpg",
+      "name": "Once Upon a Time",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-02",
+      "id": 2033632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/312/780969.jpg",
+      "name": "Choices",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-09",
+      "id": 2033633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/315/787673.jpg",
+      "name": "Illusions",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-16",
+      "id": 2033634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/317/794669.jpg",
+      "name": "Runs in the Family",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-23",
+      "id": 2033635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/320/801730.jpg",
+      "name": "Laissez Les Bons Temps Rouler",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-45",
+  "live": true,
+  "overview": "NCIS: New Orleans is a drama about the local field office that investigates criminal cases involving military personnel in The Big Easy, a city known for its music, entertainment and decadence. Leading the team is Special Agent Dwayne Pride, a.k.a. \"King,\" a native of New Orleans who is driven by his need to do what is right. Working with Pride is Special Agent Christopher LaSalle, who plays hard but works harder and former ATF agent Sonja Percy, who is still adjusting to the team after years of solo undercover assignments. Supporting them is coroner Dr. Loretta Wade, who is as eccentric as she is smart; her brilliant, quirky Forensic Scientist, Sebastian Lund; and Investigative Computer Specialist Patton Plame, an animated and talented hacker. New to the team is Special Agent Tammy Gregorio, a tough, acerbic FBI agent with a mysterious past in New Orleans, who is sent from D.C. to investigate the NCIS team, but also work with Pride when high-risk cases threaten the city. This colorful city that harbors a dark side is a magnet for service personnel on leave, and when overindulgence is followed by trouble, Pride's team is at its best",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/280/701985.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "45",
+  "title": "NCIS: New Orleans",
+  "type": "series",
+  "year": 2014
 }

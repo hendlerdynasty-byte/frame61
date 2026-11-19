@@ -1,21 +1,499 @@
 {
-  "schema": 1,
-  "id": "tvmaze-127",
-  "source": "tvmaze",
-  "sourceId": "127",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Affair",
-  "year": 2014,
-  "type": "series",
-  "overview": "At once deeply observed and intriguingly elusive, The Affair explores the emotional effects of an extramarital relationship.Noah is a New York City schoolteacher and novelist who is happily married, but resents his dependence on his wealthy father-in-law. Alison is a young waitress trying to piece her life and marriage back together in the wake of a tragedy. The provocative drama unfolds when Alison and Noah meet in Montauk at the end of Long Island.",
-  "poster": "file:///android_asset/posters/tvmaze-127.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-10-12",
+      "id": 10378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59752.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 10379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59753.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-26",
+      "id": 10380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59754.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-02",
+      "id": 13359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59756.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-09",
+      "id": 13360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59757.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-16",
+      "id": 13361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59759.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-23",
+      "id": 13362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59761.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 13363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59763.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-14",
+      "id": 13364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59764.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-21",
+      "id": 13365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59787.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 200322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/20/52330.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 210859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60273.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 210860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60274.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 210861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66013.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 210862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/68589.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 210863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/72358.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 210864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76003.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-22",
+      "id": 210865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79054.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 457668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81725.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-06",
+      "id": 457669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83911.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-13",
+      "id": 457670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86622.jpg",
+      "name": "Episode 11",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-20",
+      "id": 457671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89348.jpg",
+      "name": "Episode 12",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 836044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206108.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 968608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238774.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 975865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238773.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-11",
+      "id": 975866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238772.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-18",
+      "id": 975867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238771.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-01",
+      "id": 986144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238770.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-08",
+      "id": 986145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238769.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-15",
+      "id": 986146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238768.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-22",
+      "id": 986147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238767.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-29",
+      "id": 986148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238766.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-17",
+      "id": 1385200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396872.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-24",
+      "id": 1461835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/398583.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-01",
+      "id": 1471209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399998.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-08",
+      "id": 1471210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401334.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-15",
+      "id": 1471211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401335.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-22",
+      "id": 1471212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405263.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-29",
+      "id": 1471213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405262.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-05",
+      "id": 1471214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409133.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-12",
+      "id": 1471215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411081.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-19",
+      "id": 1471216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/412424.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 75,
+      "season": 4
+    },
+    {
+      "airdate": "2019-08-25",
+      "id": 1665007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/522147.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-01",
+      "id": 1692041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/522148.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-08",
+      "id": 1692042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/522149.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-15",
+      "id": 1692043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/522150.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-22",
+      "id": 1693921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/530888.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-29",
+      "id": 1693922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/213/532830.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-06",
+      "id": 1701910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/535363.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-13",
+      "id": 1701911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/535364.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-20",
+      "id": 1701912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541538.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 80,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-27",
+      "id": 1701913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/538138.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-11-03",
+      "id": 1746493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/544070.jpg",
+      "name": "Episode 11",
+      "number": 11,
+      "runtime": 100,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Romanze"
+    "Romance"
   ],
+  "id": "tvmaze-127",
+  "live": true,
+  "overview": "At once deeply observed and intriguingly elusive, The Affair explores the emotional effects of an extramarital relationship.Noah is a New York City schoolteacher and novelist who is happily married, but resents his dependence on his wealthy father-in-law. Alison is a young waitress trying to piece her life and marriage back together in the wake of a tragedy. The provocative drama unfolds when Alison and Noah meet in Montauk at the end of Long Island.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/494/1235104.jpg",
   "rating": 7.7,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "127",
+  "title": "The Affair",
+  "type": "series",
+  "year": 2014
 }

@@ -1,22 +1,689 @@
 {
-  "schema": 1,
-  "id": "tvmaze-387",
-  "source": "tvmaze",
-  "sourceId": "387",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Rookie Blue",
-  "year": 2010,
-  "type": "series",
-  "overview": "The stakes are high for five young cops fresh out of the Academy and ready for their first day with one of the most elite units in the city. Under the watchful guidance of their officers, Andy McNally and her four fellow rookies quickly learn that no amount of training could prepare them for this new world where every day is a first. Each case they tackle and choice they make will impact their lives, but it's their personal relationships that may play an even greater role in defining the cops they become.",
-  "poster": "file:///android_asset/posters/tvmaze-387.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-06-24",
+      "id": 35279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79476.jpg",
+      "name": "Fresh Paint",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-01",
+      "id": 35280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79477.jpg",
+      "name": "Mercury Retrograde",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-08",
+      "id": 35281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79478.jpg",
+      "name": "Fite Night",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-15",
+      "id": 35282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79479.jpg",
+      "name": "Signals Crossed",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-22",
+      "id": 35283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79480.jpg",
+      "name": "Broad Daylight",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-29",
+      "id": 35284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79481.jpg",
+      "name": "Bullet Proof",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-05",
+      "id": 35285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79482.jpg",
+      "name": "Hot & Bothered",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-12",
+      "id": 35286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79483.jpg",
+      "name": "Honor Roll",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-19",
+      "id": 35287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79484.jpg",
+      "name": "Girlfriend of the Year",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-26",
+      "id": 35288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79485.jpg",
+      "name": "Big Nickel",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-02",
+      "id": 35289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79486.jpg",
+      "name": "To Serve or Protect",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-09",
+      "id": 35290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79487.jpg",
+      "name": "In Blue",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-09",
+      "id": 35291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79488.jpg",
+      "name": "Takedown",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-23",
+      "id": 35292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79491.jpg",
+      "name": "Butterflies",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-30",
+      "id": 35293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79492.jpg",
+      "name": "Might Have Been",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-07",
+      "id": 35294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79493.jpg",
+      "name": "Bad Moon Rising",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-14",
+      "id": 35295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79494.jpg",
+      "name": "Heart & Sparks",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-21",
+      "id": 35296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79495.jpg",
+      "name": "Stung",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-28",
+      "id": 35297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79496.jpg",
+      "name": "In Plain View",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-04",
+      "id": 35298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79497.jpg",
+      "name": "The One That Got Away",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-11",
+      "id": 35299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79498.jpg",
+      "name": "Monster",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-18",
+      "id": 35300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79499.jpg",
+      "name": "Brotherhood",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-25",
+      "id": 35301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79500.jpg",
+      "name": "Best Laid Plans",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-01",
+      "id": 35302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79501.jpg",
+      "name": "A Little Faith",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-08",
+      "id": 35303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79502.jpg",
+      "name": "On the Double",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-08",
+      "id": 35304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79503.jpg",
+      "name": "God's Good Grace",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-24",
+      "id": 35305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79504.jpg",
+      "name": "The First Day of the Rest of Your Life",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-05-31",
+      "id": 35306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79505.jpg",
+      "name": "Class Dismissed",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-07",
+      "id": 35307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79506.jpg",
+      "name": "A Good Shoot",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-06-28",
+      "id": 35308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79507.jpg",
+      "name": "Girls' Night Out",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-05",
+      "id": 35309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79508.jpg",
+      "name": "Messy Houses",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-12",
+      "id": 35310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79509.jpg",
+      "name": "Coming Home",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-19",
+      "id": 35311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79510.jpg",
+      "name": "Leap of Faith",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-07-26",
+      "id": 35312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79511.jpg",
+      "name": "The Girlfriend Experience",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-09",
+      "id": 35313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79512.jpg",
+      "name": "Out of Time",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-16",
+      "id": 35314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79513.jpg",
+      "name": "Cold Comforts",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-23",
+      "id": 35315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79514.jpg",
+      "name": "The Rules",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-08-30",
+      "id": 35316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79515.jpg",
+      "name": "Every Man",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-06",
+      "id": 35317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79516.jpg",
+      "name": "I Never",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-23",
+      "id": 35318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79517.jpg",
+      "name": "Surprises",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-30",
+      "id": 35319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79518.jpg",
+      "name": "Homecoming",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-06-27",
+      "id": 35320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79519.jpg",
+      "name": "Different, Not Better",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-11",
+      "id": 35321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79520.jpg",
+      "name": "The Kids Are Not Alright",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-18",
+      "id": 35322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79521.jpg",
+      "name": "Poison Pill",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-07-25",
+      "id": 35323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79522.jpg",
+      "name": "Skeletons",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-01",
+      "id": 35324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79523.jpg",
+      "name": "Friday the 13th",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-08",
+      "id": 35325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79524.jpg",
+      "name": "For Better, for Worse",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-15",
+      "id": 35326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79525.jpg",
+      "name": "What I Lost",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-22",
+      "id": 35327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79526.jpg",
+      "name": "You Are Here",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-08-29",
+      "id": 35328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79527.jpg",
+      "name": "Deception",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-05",
+      "id": 35329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79528.jpg",
+      "name": "Under Fire",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-12",
+      "id": 35330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79529.jpg",
+      "name": "You Can See the Stars",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-19",
+      "id": 35331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79532.jpg",
+      "name": "Blink",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-05-26",
+      "id": 35332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79533.jpg",
+      "name": "All by Her Selfie",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-06-02",
+      "id": 35333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79534.jpg",
+      "name": "Heart Breakers, Money Makers",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-06-09",
+      "id": 35334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79535.jpg",
+      "name": "Wanting",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 35335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79536.jpg",
+      "name": "Going Under",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 35336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79537.jpg",
+      "name": "Two Truths and a Lie",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-09",
+      "id": 35337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79538.jpg",
+      "name": "Deal with the Devil",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-16",
+      "id": 35338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79539.jpg",
+      "name": "Exit Strategy",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-23",
+      "id": 35339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79540.jpg",
+      "name": "Moving Day",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-07-30",
+      "id": 35340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79541.jpg",
+      "name": "Fragments",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-08-06",
+      "id": 35341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79542.jpg",
+      "name": "Everlasting",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-21",
+      "id": 154038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79544.jpg",
+      "name": "Open Windows",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-05-28",
+      "id": 154039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79545.jpg",
+      "name": "Perfect Family",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-04",
+      "id": 154040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79546.jpg",
+      "name": "Uprising",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-11",
+      "id": 164342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79547.jpg",
+      "name": "Letting Go",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-18",
+      "id": 167670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79548.jpg",
+      "name": "A Real Gentleman",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-06-24",
+      "id": 177945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79549.jpg",
+      "name": "Home Run",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-01",
+      "id": 177946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79550.jpg",
+      "name": "Best Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-08",
+      "id": 180538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79551.jpg",
+      "name": "Integrity Test",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-15",
+      "id": 180539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79552.jpg",
+      "name": "Ninety Degrees",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-22",
+      "id": 180540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79553.jpg",
+      "name": "Breaking Up the Band",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 180541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79554.jpg",
+      "name": "74 Epiphanies",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-387",
+  "live": true,
+  "overview": "The stakes are high for five young cops fresh out of the Academy and ready for their first day with one of the most elite units in the city. Under the watchful guidance of their officers, Andy McNally and her four fellow rookies quickly learn that no amount of training could prepare them for this new world where every day is a first. Each case they tackle and choice they make will impact their lives, but it's their personal relationships that may play an even greater role in defining the cops they become.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5609.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "387",
+  "title": "Rookie Blue",
+  "type": "series",
+  "year": 2010
 }

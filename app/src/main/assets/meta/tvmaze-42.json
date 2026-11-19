@@ -1,22 +1,581 @@
 {
-  "schema": 1,
-  "id": "tvmaze-42",
-  "source": "tvmaze",
-  "sourceId": "42",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Sleepy Hollow",
-  "year": 2013,
-  "type": "series",
-  "overview": "Sleepy Hollow is a thrilling mystery-adventure drama series spanning two and a half centuries, in which a resurrected Ichabod Crane pairs up with a present-day police lieutenant to save the enigmatic town of Sleepy Hollow--and the world--from unprecedented evil.",
-  "poster": "file:///android_asset/posters/tvmaze-42.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-09-16",
+      "id": 1935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1178.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-23",
+      "id": 1936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1179.jpg",
+      "name": "Blood Moon",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-30",
+      "id": 1937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1182.jpg",
+      "name": "For the Triumph of Evil",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-07",
+      "id": 1938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1183.jpg",
+      "name": "The Lesser Key of Solomon",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-14",
+      "id": 1939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1184.jpg",
+      "name": "John Doe",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-04",
+      "id": 1940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1185.jpg",
+      "name": "The Sin Eater",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-11",
+      "id": 1941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1187.jpg",
+      "name": "The Midnight Ride",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-18",
+      "id": 1942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1188.jpg",
+      "name": "Necromancer",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-25",
+      "id": 1943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1189.jpg",
+      "name": "Sanctuary",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-09",
+      "id": 1944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1190.jpg",
+      "name": "The Golem",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 1945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1191.jpg",
+      "name": "The Vessel",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 1946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1194.jpg",
+      "name": "The Indispensable Man",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 1947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1198.jpg",
+      "name": "Bad Blood",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-09-22",
+      "id": 1948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1200.jpg",
+      "name": "This Is War",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-29",
+      "id": 1949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1202.jpg",
+      "name": "The Kindred",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-06",
+      "id": 1950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/0/1203.jpg",
+      "name": "Root of All Evil",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-13",
+      "id": 1951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3641.jpg",
+      "name": "Go Where I Send Thee...",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-20",
+      "id": 1952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4940.jpg",
+      "name": "The Weeping Lady",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-27",
+      "id": 1953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5982.jpg",
+      "name": "And the Abyss Gazes Back",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-03",
+      "id": 14889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/7712.jpg",
+      "name": "Deliverance",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-10",
+      "id": 31862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10049.jpg",
+      "name": "Heartless",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-17",
+      "id": 39547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11192.jpg",
+      "name": "Mama",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-24",
+      "id": 39548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/12560.jpg",
+      "name": "Magnum Opus",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-01",
+      "id": 45765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/13638.jpg",
+      "name": "The Akeda",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-05",
+      "id": 92005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18710.jpg",
+      "name": "Paradise Lost",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-19",
+      "id": 108509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19556.jpg",
+      "name": "Pittura Infamante",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-26",
+      "id": 117376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19848.jpg",
+      "name": "Kali Yuga",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-02",
+      "id": 117725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20248.jpg",
+      "name": "Spellcaster",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-09",
+      "id": 122943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21390.jpg",
+      "name": "What Lies Beneath",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-16",
+      "id": 124047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21772.jpg",
+      "name": "Awakening",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-23",
+      "id": 128989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22214.jpg",
+      "name": "Tempus Fugit",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-01",
+      "id": 182239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211812.jpg",
+      "name": "I, Witness",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-08",
+      "id": 202844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211811.jpg",
+      "name": "Whispers in the Dark",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-15",
+      "id": 202845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211823.jpg",
+      "name": "Blood and Fear",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-22",
+      "id": 202846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211824.jpg",
+      "name": "The Sisters Mills",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-29",
+      "id": 202847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213547.jpg",
+      "name": "Dead Men Tell No Tales",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-05",
+      "id": 280746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216213.jpg",
+      "name": "This Red Lady from Caribee",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-12",
+      "id": 334636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216219.jpg",
+      "name": "The Art of War",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-19",
+      "id": 406216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216234.jpg",
+      "name": "Novus Ordo Seclorum",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-05",
+      "id": 479413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219076.jpg",
+      "name": "One Life",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-12",
+      "id": 577124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221337.jpg",
+      "name": "Incident at Stone Manor",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-19",
+      "id": 581854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221342.jpg",
+      "name": "Kindred Spirits",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-26",
+      "id": 581855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223879.jpg",
+      "name": "Sins of the Father",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 581856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223880.jpg",
+      "name": "Dark Mirror",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-11",
+      "id": 581857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231068.jpg",
+      "name": "Into the Wild",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-18",
+      "id": 622392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120270.jpg",
+      "name": "Incommunicado",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-25",
+      "id": 634970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233594.jpg",
+      "name": "Dawn's Early Light",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-01",
+      "id": 636780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233595.jpg",
+      "name": "Delaware",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-08",
+      "id": 636781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233596.jpg",
+      "name": "Ragnarok",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-06",
+      "id": 895364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230607.jpg",
+      "name": "Columbia",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-13",
+      "id": 994184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/233248.jpg",
+      "name": "In Plain Sight",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-20",
+      "id": 994185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235387.jpg",
+      "name": "Heads of State",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-27",
+      "id": 994186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/237820.jpg",
+      "name": "The People vs. Ichabod Crane",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-03",
+      "id": 994187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241218.jpg",
+      "name": "Blood from a Stone",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-10",
+      "id": 994188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244126.jpg",
+      "name": "Homecoming",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-17",
+      "id": 994189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247178.jpg",
+      "name": "Loco Parentis",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-24",
+      "id": 994190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249630.jpg",
+      "name": "Sick Burn",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-03",
+      "id": 994191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251702.jpg",
+      "name": "Child's Play",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-10",
+      "id": 1011055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253821.jpg",
+      "name": "Insatiable",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-17",
+      "id": 1077790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256437.jpg",
+      "name": "The Way of the Gun",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-24",
+      "id": 1077791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259261.jpg",
+      "name": "Tomorrow",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-31",
+      "id": 1077792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262257.jpg",
+      "name": "Freedom",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Mystery",
-    "Übernatürlich"
+    "Supernatural"
   ],
+  "id": "tvmaze-42",
+  "live": true,
+  "overview": "Sleepy Hollow is a thrilling mystery-adventure drama series spanning two and a half centuries, in which a resurrected Ichabod Crane pairs up with a present-day police lieutenant to save the enigmatic town of Sleepy Hollow--and the world--from unprecedented evil.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/81/204166.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "42",
+  "title": "Sleepy Hollow",
+  "type": "series",
+  "year": 2013
 }

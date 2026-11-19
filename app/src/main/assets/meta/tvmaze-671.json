@@ -1,22 +1,491 @@
 {
-  "schema": 1,
-  "id": "tvmaze-671",
-  "source": "tvmaze",
-  "sourceId": "671",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Avengers: Earth's Mightiest Heroes!",
-  "year": 2010,
-  "type": "series",
-  "overview": "When the planet is threatened by Super Villains, time-traveling conquerors, alien invaders, mythical monsters or mad robots bent on the total destruction of humanity; when the forces of evil are so overwhelming that no single hero has the power to save the world; when there is no hope left, the Avengers Assemble!",
-  "poster": "file:///android_asset/posters/tvmaze-671.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-22",
+      "id": 59028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499484.jpg",
+      "name": "Iron Man is Born!",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 59029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499485.jpg",
+      "name": "Hulk vs the World",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 59030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499486.jpg",
+      "name": "The Man in the Ant Hill",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-12",
+      "id": 59031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499487.jpg",
+      "name": "Thor the Mighty",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-14",
+      "id": 59032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499488.jpg",
+      "name": "Meet Captain America",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-20",
+      "id": 59033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499489.jpg",
+      "name": "Breakout, Part 1",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-20",
+      "id": 59034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499490.jpg",
+      "name": "Breakout, Part 2",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-27",
+      "id": 59035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499491.jpg",
+      "name": "Some Assembly Required",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-03",
+      "id": 59036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499492.jpg",
+      "name": "Living Legend",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-10",
+      "id": 59037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499493.jpg",
+      "name": "Everything is Wonderful",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-17",
+      "id": 59038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499494.jpg",
+      "name": "Panther's Quest",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-26",
+      "id": 59039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499495.jpg",
+      "name": "Gamma World, Part 1",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-26",
+      "id": 59040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499496.jpg",
+      "name": "Gamma World, Part 2",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-05",
+      "id": 59041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499497.jpg",
+      "name": "Masters of Evil",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-12",
+      "id": 59042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499498.jpg",
+      "name": "459",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-19",
+      "id": 59043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499499.jpg",
+      "name": "Widow's Sting",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-01-09",
+      "id": 59044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499500.jpg",
+      "name": "The Man Who Stole Tomorrow",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-01-16",
+      "id": 59045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499501.jpg",
+      "name": "Come the Conqueror",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-01-23",
+      "id": 59046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499502.jpg",
+      "name": "The Kang Dynasty",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 59047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499503.jpg",
+      "name": "The Casket of Ancient Winters",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 59048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499504.jpg",
+      "name": "Hail, Hydra!",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-29",
+      "id": 59049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499505.jpg",
+      "name": "Ultron-5",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 59050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408194.jpg",
+      "name": "The Ultron Imperative",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 59051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499507.jpg",
+      "name": "This Hostage Earth",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 59052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499508.jpg",
+      "name": "The Fall of Asgard",
+      "number": 25,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 59053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499509.jpg",
+      "name": "A Day Unlike Any Other",
+      "number": 26,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 59054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/563/1408193.jpg",
+      "name": "The Private War of Doctor Doom",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-08",
+      "id": 59055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416443.jpg",
+      "name": "Alone Against A.I.M.",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 59056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416447.jpg",
+      "name": "Acts of Vengeance",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 59057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499528.jpg",
+      "name": "Welcome to the Kree Empire",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 59058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499529.jpg",
+      "name": "To Steal an Ant-Man",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 59059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416452.jpg",
+      "name": "Michael Korvac",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 59060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499532.jpg",
+      "name": "Who Do You Trust?",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 59061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499534.jpg",
+      "name": "The Ballad of Beta Ray Bill",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-24",
+      "id": 59062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416454.jpg",
+      "name": "Nightmare in Red",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-01",
+      "id": 59063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499536.jpg",
+      "name": "Prisoner of War",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-08",
+      "id": 59064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499537.jpg",
+      "name": "Infiltration",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 59065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416473.jpg",
+      "name": "Secret Invasion",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 59066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499539.jpg",
+      "name": "Along Came a Spider...",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-29",
+      "id": 59067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416475.jpg",
+      "name": "Behold...The Vision!",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 59068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416482.jpg",
+      "name": "Assault on 42",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-19",
+      "id": 59069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416484.jpg",
+      "name": "Ultron Unlimited",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-09",
+      "id": 59070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/566/1416485.jpg",
+      "name": "Yellowjacket",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 59071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499545.jpg",
+      "name": "Emperor Stark",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-23",
+      "id": 59072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499546.jpg",
+      "name": "Code Red",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 59073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499547.jpg",
+      "name": "Winter Soldier",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 59074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499548.jpg",
+      "name": "The Deadliest Man Alive",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 59075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499549.jpg",
+      "name": "New Avengers",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 59076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499550.jpg",
+      "name": "Operation Galactic Storm",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 59077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499551.jpg",
+      "name": "Live Kree or Die",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 59078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499552.jpg",
+      "name": "Avengers Assemble!",
+      "number": 25,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 59079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499553.jpg",
+      "name": "Powerless",
+      "number": 26,
+      "runtime": 30,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-671",
+  "live": true,
+  "overview": "When the planet is threatened by Super Villains, time-traveling conquerors, alien invaders, mythical monsters or mad robots bent on the total destruction of humanity; when the forces of evil are so overwhelming that no single hero has the power to save the world; when there is no hope left, the Avengers Assemble!",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/399/998632.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "671",
+  "title": "The Avengers: Earth's Mightiest Heroes!",
+  "type": "series",
+  "year": 2010
 }

@@ -1,22 +1,383 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1620",
-  "source": "tvmaze",
-  "sourceId": "1620",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Mozart in the Jungle",
-  "year": 2014,
-  "type": "series",
-  "overview": "Based on the critically acclaimed memoir Mozart in the Jungle: Sex, Drugs &amp; Classical Music by Blair Tindall, Mozart in the Jungle draws back the curtain at the New York Symphony, where artistic dedication and creativity collide with mind games, politicking and survival instincts.",
-  "poster": "file:///android_asset/posters/tvmaze-1620.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-02-06",
+      "id": 142223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221435.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221439.jpg",
+      "name": "Fifth Chair",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221445.jpg",
+      "name": "Silent Symphony",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221450.jpg",
+      "name": "You Have Insulted Tchaikovsky",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221451.jpg",
+      "name": "I'm with the Maestro",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221453.jpg",
+      "name": "The Rehearsal",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221460.jpg",
+      "name": "You Go to My Head",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221464.jpg",
+      "name": "Mozart with the Bacon",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221465.jpg",
+      "name": "Now Fortissimo",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-23",
+      "id": 142232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221466.jpg",
+      "name": "Opening Night",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 496869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221467.jpg",
+      "name": "Stern Papa",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221469.jpg",
+      "name": "Nothing Resonates Like Rhinoceros Foreskin",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221475.jpg",
+      "name": "It All Depends on You",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221479.jpg",
+      "name": "Touché Maestro, Touché",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221480.jpg",
+      "name": "Regresso Del Rey",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221482.jpg",
+      "name": "How to Make God Laugh",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221484.jpg",
+      "name": "Can You Marry a Moon?",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221492.jpg",
+      "name": "Leave Everything Behind",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221510.jpg",
+      "name": "Amusia",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-30",
+      "id": 528705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221514.jpg",
+      "name": "Home",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 887813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221517.jpg",
+      "name": "La Fiamma",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221518.jpg",
+      "name": "The Modern Piece",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221519.jpg",
+      "name": "My Heart Opens to Your Voice",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221520.jpg",
+      "name": "Avventura Romantica",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221521.jpg",
+      "name": "Now I Will Sing",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221522.jpg",
+      "name": "Symphony of Red Tape",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221523.jpg",
+      "name": "Not Yet Titled",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221524.jpg",
+      "name": "Circles Within Circles",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221525.jpg",
+      "name": "Creative Solutions for Creative Lives",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-09",
+      "id": 979223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221526.jpg",
+      "name": "You're the Best or You F'ing Suck",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1372275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365728.jpg",
+      "name": "The Boyfriend",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365729.jpg",
+      "name": "If I Was an Elf, I Would Tell You",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365730.jpg",
+      "name": "Significant Lover",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365731.jpg",
+      "name": "An Honest Ghost",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365732.jpg",
+      "name": "The Coach",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365733.jpg",
+      "name": "Domo Arigato",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365734.jpg",
+      "name": "We're Not Robots",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365735.jpg",
+      "name": "Ichi Go Ichi E",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365736.jpg",
+      "name": "I Want You to Think of Me",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-16",
+      "id": 1412013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365737.jpg",
+      "name": "Dance",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Musik"
+    "Comedy",
+    "Music"
   ],
+  "id": "tvmaze-1620",
+  "live": true,
+  "overview": "Based on the critically acclaimed memoir Mozart in the Jungle: Sex, Drugs &amp; Classical Music by Blair Tindall, Mozart in the Jungle draws back the curtain at the New York Symphony, where artistic dedication and creativity collide with mind games, politicking and survival instincts.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/138/345853.jpg",
   "rating": 7.6,
-  "runtime": null,
-  "episodes": []
+  "runtime": 30,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1620",
+  "title": "Mozart in the Jungle",
+  "type": "series",
+  "year": 2014
 }

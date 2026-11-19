@@ -1,22 +1,923 @@
 {
-  "schema": 1,
-  "id": "tvmaze-206",
-  "source": "tvmaze",
-  "sourceId": "206",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Stargate Atlantis",
-  "year": 2004,
-  "type": "series",
-  "overview": "Atlantis, built thousands of years ago by the highly evolved Ancients, is home base for an elite expedition from Earth. These courageous military commanders and scientists leap through the city's Stargate to explore the wondrous Pegasus galaxy and battle the treacherous Wraith, who seek control of Atlantis -- at any cost.",
-  "poster": "file:///android_asset/posters/tvmaze-206.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-07-16",
+      "id": 13683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126963.jpg",
+      "name": "Rising, Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-07-16",
+      "id": 13684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126964.jpg",
+      "name": "Rising, Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-07-23",
+      "id": 13685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126965.jpg",
+      "name": "Hide and Seek",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-07-30",
+      "id": 13686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126966.jpg",
+      "name": "Thirty-Eight Minutes",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-06",
+      "id": 13687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126967.jpg",
+      "name": "Suspicion",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-13",
+      "id": 13688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126968.jpg",
+      "name": "Childhood's End",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-20",
+      "id": 13689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126969.jpg",
+      "name": "Poisoning the Well",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-08-27",
+      "id": 13690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126970.jpg",
+      "name": "Underground",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-10",
+      "id": 13691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126971.jpg",
+      "name": "Home",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-17",
+      "id": 13692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126972.jpg",
+      "name": "The Storm",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-21",
+      "id": 13693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126973.jpg",
+      "name": "The Eye",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-28",
+      "id": 13694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126974.jpg",
+      "name": "The Defiant One",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-04",
+      "id": 13695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126975.jpg",
+      "name": "Hot Zone",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-11",
+      "id": 13696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126976.jpg",
+      "name": "Sanctuary",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-18",
+      "id": 13697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126977.jpg",
+      "name": "Before I Sleep",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-25",
+      "id": 13698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126978.jpg",
+      "name": "The Brotherhood",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-04",
+      "id": 13699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126979.jpg",
+      "name": "Letters from Pegasus",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-11",
+      "id": 13700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126980.jpg",
+      "name": "The Gift",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-18",
+      "id": 13701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126981.jpg",
+      "name": "The Siege, Part 1",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-25",
+      "id": 13702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126982.jpg",
+      "name": "The Siege, Part 2",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-07-15",
+      "id": 13703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126985.jpg",
+      "name": "The Siege, Part 3",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-22",
+      "id": 13704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126986.jpg",
+      "name": "The Intruder",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-07-29",
+      "id": 13705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126987.jpg",
+      "name": "Runner",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-05",
+      "id": 13706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126988.jpg",
+      "name": "Duet",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-12",
+      "id": 13707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126989.jpg",
+      "name": "Condemned",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-19",
+      "id": 13708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126990.jpg",
+      "name": "Trinity",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-08-26",
+      "id": 13709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126991.jpg",
+      "name": "Instinct",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-09",
+      "id": 13710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126992.jpg",
+      "name": "Conversion",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-23",
+      "id": 13711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126993.jpg",
+      "name": "Aurora",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-23",
+      "id": 13712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126994.jpg",
+      "name": "The Lost Boys",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-06",
+      "id": 13713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126995.jpg",
+      "name": "The Hive",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-13",
+      "id": 13714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126996.jpg",
+      "name": "Epiphany",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-20",
+      "id": 13715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126997.jpg",
+      "name": "Critical Mass",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-27",
+      "id": 13716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126998.jpg",
+      "name": "Grace Under Pressure",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-03",
+      "id": 13717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126999.jpg",
+      "name": "The Tower",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-10",
+      "id": 13718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127000.jpg",
+      "name": "The Long Goodbye",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-17",
+      "id": 13719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127001.jpg",
+      "name": "Coup d'Etat",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-24",
+      "id": 13720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127002.jpg",
+      "name": "Michael",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-03",
+      "id": 13721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127003.jpg",
+      "name": "Inferno",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-10",
+      "id": 13722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127004.jpg",
+      "name": "Allies",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-07-14",
+      "id": 13723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127017.jpg",
+      "name": "No Man's Land",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-21",
+      "id": 13724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127018.jpg",
+      "name": "Misbegotten",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-07-28",
+      "id": 13725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127019.jpg",
+      "name": "Irresistible",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-04",
+      "id": 13726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127020.jpg",
+      "name": "Sateda",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-11",
+      "id": 13727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127021.jpg",
+      "name": "Progeny",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-18",
+      "id": 13728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127022.jpg",
+      "name": "The Real World",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-08-25",
+      "id": 13729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127023.jpg",
+      "name": "Common Ground",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-08",
+      "id": 13730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127024.jpg",
+      "name": "McKay and Mrs. Miller",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-15",
+      "id": 13731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127025.jpg",
+      "name": "Phantoms",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-22",
+      "id": 13732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127026.jpg",
+      "name": "The Return, Part 1",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-13",
+      "id": 13733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127027.jpg",
+      "name": "The Return, Part 2",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-20",
+      "id": 13734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127028.jpg",
+      "name": "Echoes",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-27",
+      "id": 13735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127029.jpg",
+      "name": "Irresponsible",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-04",
+      "id": 13736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127030.jpg",
+      "name": "Tao of Rodney",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-11",
+      "id": 13737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127031.jpg",
+      "name": "The Game",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-18",
+      "id": 13738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127032.jpg",
+      "name": "The Ark",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-01",
+      "id": 13739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127033.jpg",
+      "name": "Sunday",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-08",
+      "id": 13740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127034.jpg",
+      "name": "Submersion",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-15",
+      "id": 13741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127035.jpg",
+      "name": "Vengeance",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-06-22",
+      "id": 13742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127036.jpg",
+      "name": "First Strike",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-28",
+      "id": 13743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127039.jpg",
+      "name": "Adrift",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-05",
+      "id": 13744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127040.jpg",
+      "name": "Lifeline",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-12",
+      "id": 13745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127041.jpg",
+      "name": "Reunion",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 13746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127042.jpg",
+      "name": "Doppelganger",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 13747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127043.jpg",
+      "name": "Travelers",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 13748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127044.jpg",
+      "name": "Tabula Rasa",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 13749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127045.jpg",
+      "name": "Missing",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 13750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127046.jpg",
+      "name": "The Seer",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 13751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127047.jpg",
+      "name": "Miller's Crossing",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-12-07",
+      "id": 13752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127048.jpg",
+      "name": "This Mortal Coil",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-04",
+      "id": 13753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127049.jpg",
+      "name": "Be All My Sins Remember'd",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-11",
+      "id": 13754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127050.jpg",
+      "name": "Spoils of War",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-18",
+      "id": 13755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127051.jpg",
+      "name": "Quarantine",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-25",
+      "id": 13756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127052.jpg",
+      "name": "Harmony",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-01",
+      "id": 13757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127053.jpg",
+      "name": "Outcast",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-08",
+      "id": 13758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127054.jpg",
+      "name": "Trio",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-15",
+      "id": 13759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127055.jpg",
+      "name": "Midway",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-22",
+      "id": 13760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127056.jpg",
+      "name": "The Kindred, Part 1",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-02-29",
+      "id": 13761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127057.jpg",
+      "name": "The Kindred, Part 2",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-03-07",
+      "id": 13762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127058.jpg",
+      "name": "The Last Man",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-07-11",
+      "id": 13763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127062.jpg",
+      "name": "Search and Rescue",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-07-18",
+      "id": 13764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127063.jpg",
+      "name": "The Seed",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-07-25",
+      "id": 13765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127064.jpg",
+      "name": "Broken Ties",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-08-01",
+      "id": 13766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127065.jpg",
+      "name": "The Daedalus Variations",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-08-15",
+      "id": 13767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127066.jpg",
+      "name": "Ghost in the Machine",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-08-22",
+      "id": 13768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127067.jpg",
+      "name": "The Shrine",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-05",
+      "id": 13769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127068.jpg",
+      "name": "Whispers",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-12",
+      "id": 13770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127069.jpg",
+      "name": "The Queen",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-19",
+      "id": 13771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127070.jpg",
+      "name": "Tracker",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-09-26",
+      "id": 13772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127071.jpg",
+      "name": "First Contact",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-10",
+      "id": 13773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127072.jpg",
+      "name": "The Lost Tribe",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-17",
+      "id": 13774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127073.jpg",
+      "name": "Outsiders",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-24",
+      "id": 13775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127074.jpg",
+      "name": "Inquisition",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-07",
+      "id": 13776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127075.jpg",
+      "name": "The Prodigal",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-14",
+      "id": 13777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127076.jpg",
+      "name": "Remnants",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-21",
+      "id": 13778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127077.jpg",
+      "name": "Brain Storm",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-05",
+      "id": 13779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127078.jpg",
+      "name": "Infection",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-12",
+      "id": 13780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127079.jpg",
+      "name": "Identity",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-02",
+      "id": 13781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127080.jpg",
+      "name": "Vegas",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-09",
+      "id": 13782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127081.jpg",
+      "name": "Enemy at the Gate",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-206",
+  "live": true,
+  "overview": "Atlantis, built thousands of years ago by the highly evolved Ancients, is home base for an elite expedition from Earth. These courageous military commanders and scientists leap through the city's Stargate to explore the wondrous Pegasus galaxy and battle the treacherous Wraith, who seek control of Atlantis -- at any cost.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245482.jpg",
   "rating": 8.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "206",
+  "title": "Stargate Atlantis",
+  "type": "series",
+  "year": 2004
 }

@@ -1,22 +1,815 @@
 {
-  "schema": 1,
-  "id": "tvmaze-429",
-  "source": "tvmaze",
-  "sourceId": "429",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Farscape",
-  "year": 1999,
-  "type": "series",
-  "overview": "Astronaut John Crichton assumes he'll be home in time for dinner. But a freak accident during an experimental space mission catapults him across a thousand galaxies to an alien battlefield. Suddenly, he's trapped among alien creatures wielding deadly technology - a battle that 20th century sci-fi pop culture never prepared him for. Hunted by a merciless military race, Crichton begins his quest for home from a galaxy far, far away...",
-  "poster": "file:///android_asset/posters/tvmaze-429.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1999-03-19",
+      "id": 40286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499198.jpg",
+      "name": "Premiere",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-03-26",
+      "id": 40290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1121513.jpg",
+      "name": "Back and Back and Back to the Future",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-04-09",
+      "id": 40289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/586/1467271.jpg",
+      "name": "Throne for a Loss",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-04-16",
+      "id": 40292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499204.jpg",
+      "name": "PK Tech Girl",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-04-23",
+      "id": 40291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499203.jpg",
+      "name": "Thank God It's Friday... Again",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-04-30",
+      "id": 40287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499199.jpg",
+      "name": "I, E.T.",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-05-14",
+      "id": 40288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499200.jpg",
+      "name": "Exodus from Genesis",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-06-11",
+      "id": 40293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499205.jpg",
+      "name": "That Old Black Magic",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-06-18",
+      "id": 40294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499206.jpg",
+      "name": "DNA Mad Scientist",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-06-25",
+      "id": 40295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499207.jpg",
+      "name": "They've Got a Secret",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-09",
+      "id": 40296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499208.jpg",
+      "name": "Till the Blood Runs Clear",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-16",
+      "id": 40298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499210.jpg",
+      "name": "The Flax",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-23",
+      "id": 40297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499209.jpg",
+      "name": "Rhapsody in Blue",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-07-30",
+      "id": 40299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499211.jpg",
+      "name": "Jeremiah Crichton",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-13",
+      "id": 40300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499212.jpg",
+      "name": "Durka Returns",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-08-20",
+      "id": 40301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499213.jpg",
+      "name": "A Human Reaction",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-10",
+      "id": 40302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499214.jpg",
+      "name": "Through the Looking Glass",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-09-17",
+      "id": 40303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499215.jpg",
+      "name": "A Bug's Life",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-07",
+      "id": 40304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499216.jpg",
+      "name": "Nerve",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-14",
+      "id": 40305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499217.jpg",
+      "name": "The Hidden Memory",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-21",
+      "id": 40306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499218.jpg",
+      "name": "Bone to Be Wild",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-01-28",
+      "id": 40307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499219.jpg",
+      "name": "Family Ties",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-17",
+      "id": 40308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499220.jpg",
+      "name": "Mind the Baby",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-03-24",
+      "id": 40309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499221.jpg",
+      "name": "Vitas Mortis",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-03-31",
+      "id": 40310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499222.jpg",
+      "name": "Taking the Stone",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-04-07",
+      "id": 40311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499223.jpg",
+      "name": "Crackers Don't Matter",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-04-14",
+      "id": 40312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499224.jpg",
+      "name": "The Way We Weren't",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-04-21",
+      "id": 40313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499225.jpg",
+      "name": "Picture If You Will",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-06-16",
+      "id": 40314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499226.jpg",
+      "name": "Home on the Remains",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-06-23",
+      "id": 40315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499227.jpg",
+      "name": "Dream a Little Dream",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-07-07",
+      "id": 40316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499228.jpg",
+      "name": "Out of Their Minds",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-07-14",
+      "id": 40320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499229.jpg",
+      "name": "My Three Crichtons",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-07-21",
+      "id": 40317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499230.jpg",
+      "name": "Look at the Princess Part I: A Kiss Is But a Kiss",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-07-28",
+      "id": 40318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499231.jpg",
+      "name": "Look at the Princess Part II: I Do, I Think",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-08-04",
+      "id": 40319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499232.jpg",
+      "name": "Look at the Princess Part III: The Maltese Crichton",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-08-11",
+      "id": 40321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499233.jpg",
+      "name": "Beware of Dog",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-08-18",
+      "id": 40322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499234.jpg",
+      "name": "Won't Get Fooled Again",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-08-25",
+      "id": 40323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499235.jpg",
+      "name": "The Locket",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-09-08",
+      "id": 40324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499236.jpg",
+      "name": "The Ugly Truth",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-09-15",
+      "id": 40325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499237.jpg",
+      "name": "A Clockwork Nebari",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-05",
+      "id": 40326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499238.jpg",
+      "name": "Liars, Guns and Money Part I: A Not So Simple Plan",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-12",
+      "id": 40327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499239.jpg",
+      "name": "Liars, Guns and Money Part II: With Friends Like These...",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-19",
+      "id": 40328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499240.jpg",
+      "name": "Liars, Guns and Money Part III: Plan B",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-26",
+      "id": 40329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499241.jpg",
+      "name": "Die Me, Dichotomy",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-03-16",
+      "id": 40330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499242.jpg",
+      "name": "Season of Death",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-03-23",
+      "id": 40331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499243.jpg",
+      "name": "Suns and Lovers",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-03-30",
+      "id": 40332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499244.jpg",
+      "name": "Self Inflicted Wounds Part I: Could'a, Would'a, Should'a",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-04-06",
+      "id": 40333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499245.jpg",
+      "name": "Self Inflicted Wounds Part II: Wait for the Wheel",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-04-13",
+      "id": 40334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499246.jpg",
+      "name": "...Different Destinations",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-04-20",
+      "id": 40335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499247.jpg",
+      "name": "Eat Me",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-06-15",
+      "id": 40336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499248.jpg",
+      "name": "Thanks for Sharing",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-06-22",
+      "id": 40337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499249.jpg",
+      "name": "Green Eyed Monster",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-06-29",
+      "id": 40338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499250.jpg",
+      "name": "Losing Time",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-07-06",
+      "id": 40339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364056.jpg",
+      "name": "Relativity",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-07-13",
+      "id": 40340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364055.jpg",
+      "name": "Incubator",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-07-14",
+      "id": 40341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364054.jpg",
+      "name": "Meltdown",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-07-20",
+      "id": 40342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364053.jpg",
+      "name": "Scratch 'n' Sniff",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-07-27",
+      "id": 40343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364052.jpg",
+      "name": "Infinite Possibilities Part I: Daedalus Demands",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-08-03",
+      "id": 40344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364050.jpg",
+      "name": "Infinite Possibilities Part II: Icarus Abides",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-08-10",
+      "id": 40345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364049.jpg",
+      "name": "Revenging Angel",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-08-17",
+      "id": 40346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364047.jpg",
+      "name": "The Choice",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-08-24",
+      "id": 40347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/545/1364045.jpg",
+      "name": "Fractures",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-05",
+      "id": 40348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361584.jpg",
+      "name": "I-Yensch, You-Yensch",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-12",
+      "id": 40349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361578.jpg",
+      "name": "Into the Lion's Den Part I: Lambs to the Slaughter",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-19",
+      "id": 40350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361581.jpg",
+      "name": "Into the Lion's Den Part II: Wolf in Sheep's Clothing",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-26",
+      "id": 40351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361570.jpg",
+      "name": "Dog with Two Bones",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-06-07",
+      "id": 40352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361552.jpg",
+      "name": "Crichton Kicks",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-06-14",
+      "id": 40353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361539.jpg",
+      "name": "What Was Lost Part I: Sacrifice",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-06-21",
+      "id": 40354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361536.jpg",
+      "name": "What Was Lost Part II: Resurrection",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-06-28",
+      "id": 40355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361531.jpg",
+      "name": "Lava's a Many Splendored Thing",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-07-12",
+      "id": 40356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361528.jpg",
+      "name": "Promises",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-07-19",
+      "id": 40357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361523.jpg",
+      "name": "Natural Election",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-07-26",
+      "id": 40358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361521.jpg",
+      "name": "John Quixote",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-08-02",
+      "id": 40359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361519.jpg",
+      "name": "I Shrink Therefore I Am",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-08-09",
+      "id": 40360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361518.jpg",
+      "name": "A Prefect Murder",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-08-16",
+      "id": 40361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361517.jpg",
+      "name": "Coup by Clam",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2002-08-23",
+      "id": 40362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361514.jpg",
+      "name": "Unrealized Reality",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-10",
+      "id": 40363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361513.jpg",
+      "name": "Kansas",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-17",
+      "id": 40364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361509.jpg",
+      "name": "Terra Firma",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-24",
+      "id": 40365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361510.jpg",
+      "name": "Twice Shy",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-01-31",
+      "id": 40366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361553.jpg",
+      "name": "Mental as Anything",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-07",
+      "id": 40367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361559.jpg",
+      "name": "Bringing Home the Beacon",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-14",
+      "id": 40368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361560.jpg",
+      "name": "A Constellation of Doubt",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-21",
+      "id": 40369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361561.jpg",
+      "name": "Prayer",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-02-28",
+      "id": 40370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361562.jpg",
+      "name": "We're So Screwed Part I: Fetal Attraction",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-03-07",
+      "id": 40371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361563.jpg",
+      "name": "We're So Screwed Part II: Hot to Katratzi",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-03-14",
+      "id": 40372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361565.jpg",
+      "name": "We're So Screwed Part III: La Bomba",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2003-03-21",
+      "id": 40373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/544/1361567.jpg",
+      "name": "Bad Timing",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-429",
+  "live": true,
+  "overview": "Astronaut John Crichton assumes he'll be home in time for dinner. But a freak accident during an experimental space mission catapults him across a thousand galaxies to an alien battlefield. Suddenly, he's trapped among alien creatures wielding deadly technology - a battle that 20th century sci-fi pop culture never prepared him for. Hunted by a merciless military race, Crichton begins his quest for home from a galaxy far, far away...",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/3/7531.jpg",
   "rating": 8.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "429",
+  "title": "Farscape",
+  "type": "series",
+  "year": 1999
 }

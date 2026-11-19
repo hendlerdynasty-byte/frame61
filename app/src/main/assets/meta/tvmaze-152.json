@@ -1,22 +1,761 @@
 {
-  "schema": 1,
-  "id": "tvmaze-152",
-  "source": "tvmaze",
-  "sourceId": "152",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Ray Donovan",
-  "year": 2013,
-  "type": "series",
-  "overview": "Set in the sprawling mecca of the rich and famous, Ray Donovan does the dirty work for LA's top power players as the go-to guy who makes the problems of the city's celebrities, superstar athletes, and business moguls disappear. This powerful drama unfolds when his father is unexpectedly released from prison, setting off a chain of events that shakes the Donovan family to its core.",
-  "poster": "file:///android_asset/posters/tvmaze-152.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-06-30",
+      "id": 11190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179206.jpg",
+      "name": "The Bag or the Bat",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-07",
+      "id": 11191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179205.jpg",
+      "name": "A Mouth Is a Mouth",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-14",
+      "id": 11192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179203.jpg",
+      "name": "Twerk",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-21",
+      "id": 11193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179202.jpg",
+      "name": "Black Cadillac",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-28",
+      "id": 11194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179198.jpg",
+      "name": "The Golem",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-04",
+      "id": 11195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179196.jpg",
+      "name": "Housewarming",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-11",
+      "id": 11196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179191.jpg",
+      "name": "New Birthday",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-18",
+      "id": 11197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179190.jpg",
+      "name": "Bridget",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-25",
+      "id": 11198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179189.jpg",
+      "name": "Road Trip",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-08",
+      "id": 11199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179187.jpg",
+      "name": "Fite Nite",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-15",
+      "id": 11200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179179.jpg",
+      "name": "Bucky Fuckn' Dent",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-22",
+      "id": 11201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179180.jpg",
+      "name": "Same Exactly",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-13",
+      "id": 11202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179166.jpg",
+      "name": "Yo Soy Capitan",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-20",
+      "id": 11203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179167.jpg",
+      "name": "Uber Ray",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-27",
+      "id": 11204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179168.jpg",
+      "name": "Gem and Loan",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-03",
+      "id": 11205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179169.jpg",
+      "name": "S U C K",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-10",
+      "id": 11206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179170.jpg",
+      "name": "Irish Spring",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-17",
+      "id": 11207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179171.jpg",
+      "name": "Viagra",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-24",
+      "id": 11208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179172.jpg",
+      "name": "Walk This Way",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-31",
+      "id": 11209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179173.jpg",
+      "name": "Sunny",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-07",
+      "id": 11210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179174.jpg",
+      "name": "Snowflake",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-14",
+      "id": 11211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179175.jpg",
+      "name": "Volcheck",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-21",
+      "id": 11212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179176.jpg",
+      "name": "Rodef",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 11213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179177.jpg",
+      "name": "The Captain",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-12",
+      "id": 151758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33002.jpg",
+      "name": "The Kalamazoo",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-19",
+      "id": 167352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34013.jpg",
+      "name": "Ding",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-26",
+      "id": 167353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34774.jpg",
+      "name": "Come and Knock on Our Door",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-02",
+      "id": 184506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35415.jpg",
+      "name": "Breakfast of Champions",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-09",
+      "id": 187769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36397.jpg",
+      "name": "Handshake Deal",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-16",
+      "id": 200323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/37968.jpg",
+      "name": "Swing Vote",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-23",
+      "id": 200324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39685.jpg",
+      "name": "All Must Be Loved",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-30",
+      "id": 200325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41035.jpg",
+      "name": "Tulip",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-06",
+      "id": 203355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/17/42616.jpg",
+      "name": "The Octopus",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-13",
+      "id": 203356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/18/46382.jpg",
+      "name": "One Night in Yerevan",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-20",
+      "id": 203357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/19/49662.jpg",
+      "name": "Poker",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-27",
+      "id": 203358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/21/53559.jpg",
+      "name": "Exsuscito",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-26",
+      "id": 701984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/159538.jpg",
+      "name": "Girl With Guitar",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-03",
+      "id": 811731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/164364.jpg",
+      "name": "Marisol",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-10",
+      "id": 811732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/167673.jpg",
+      "name": "Little Bill Primm's Big Green Horseshoe",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-17",
+      "id": 811733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169673.jpg",
+      "name": "Federal Boobie Inspector",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-24",
+      "id": 811734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/172037.jpg",
+      "name": "Get Even Before Leavin'",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-31",
+      "id": 811735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/69/173553.jpg",
+      "name": "Fish and Bird",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-07",
+      "id": 843418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175634.jpg",
+      "name": "Norman Saves the World",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-14",
+      "id": 860538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/177995.jpg",
+      "name": "The Texan",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-21",
+      "id": 860539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180235.jpg",
+      "name": "Goodbye Beautiful",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-28",
+      "id": 860540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/181952.jpg",
+      "name": "Lake Hollywood",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-09-11",
+      "id": 882418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/186075.jpg",
+      "name": "Chinese Algebra",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-09-18",
+      "id": 882419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/189986.jpg",
+      "name": "Rattus Rattus",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-06",
+      "id": 1157233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308904.jpg",
+      "name": "Abby",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-13",
+      "id": 1157765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310884.jpg",
+      "name": "Las Vegas",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1157766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312690.jpg",
+      "name": "Dogwalker",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-27",
+      "id": 1157767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314359.jpg",
+      "name": "Sold",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-09-10",
+      "id": 1251065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318452.jpg",
+      "name": "Shabbos Goy",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-09-17",
+      "id": 1251066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320342.jpg",
+      "name": "Shelley Duvall",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-09-24",
+      "id": 1251067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/322429.jpg",
+      "name": "If I Should Fall from Grace with God",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-01",
+      "id": 1251068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/324522.jpg",
+      "name": "Horses",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-08",
+      "id": 1289715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/326872.jpg",
+      "name": "Mister Lucky",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1251070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/328869.jpg",
+      "name": "Bob the Builder",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-22",
+      "id": 1251071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/330909.jpg",
+      "name": "Michael",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-29",
+      "id": 1289716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/333003.jpg",
+      "name": "Time Takes a Cigarette",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-28",
+      "id": 1510149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/432992.jpg",
+      "name": "Staten Island, Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-04",
+      "id": 1540239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/434379.jpg",
+      "name": "Staten Island, Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-11",
+      "id": 1540240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/436031.jpg",
+      "name": "He Be Tight. He Be Mean",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-18",
+      "id": 1540241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/437758.jpg",
+      "name": "Pudge",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-11-25",
+      "id": 1540242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/439225.jpg",
+      "name": "Ellis Island",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-12-02",
+      "id": 1553229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/440907.jpg",
+      "name": "A Girl Named Maria",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-12-09",
+      "id": 1553230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442304.jpg",
+      "name": "The 1–3–2",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-12-16",
+      "id": 1560035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442679.jpg",
+      "name": "Who Once Was Dead",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-12-23",
+      "id": 1560034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/444380.jpg",
+      "name": "Dream On",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2018-12-30",
+      "id": 1560033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/178/446790.jpg",
+      "name": "Baby",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-01-06",
+      "id": 1574790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/448280.jpg",
+      "name": "Never Gonna Give You Up",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-01-13",
+      "id": 1574791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449831.jpg",
+      "name": "The Dead",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-17",
+      "id": 1690421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/561043.jpg",
+      "name": "Faith. Hope. Love. Luck.",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-11-24",
+      "id": 1691250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568190.jpg",
+      "name": "A Good Man Is Hard to Find",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-12-01",
+      "id": 1691251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/572687.jpg",
+      "name": "Family Pictures",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-12-08",
+      "id": 1691252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575803.jpg",
+      "name": "Hispes",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-12-15",
+      "id": 1691253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/578566.jpg",
+      "name": "An Irish Lullaby",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-12-22",
+      "id": 1691254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/581363.jpg",
+      "name": "Inside Guy",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-12-29",
+      "id": 1691255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/581718.jpg",
+      "name": "The Transfer Agent",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-01-05",
+      "id": 1691256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/234/586111.jpg",
+      "name": "Passport and a Gun",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-01-12",
+      "id": 1691257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/235/587568.jpg",
+      "name": "Bugs",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-01-19",
+      "id": 1691258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/236/591416.jpg",
+      "name": "You'll Never Walk Alone",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-152",
+  "live": true,
+  "overview": "Set in the sprawling mecca of the rich and famous, Ray Donovan does the dirty work for LA's top power players as the go-to guy who makes the problems of the city's celebrities, superstar athletes, and business moguls disappear. This powerful drama unfolds when his father is unexpectedly released from prison, setting off a chain of events that shakes the Donovan family to its core.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/212/531511.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "152",
+  "title": "Ray Donovan",
+  "type": "series",
+  "year": 2013
 }

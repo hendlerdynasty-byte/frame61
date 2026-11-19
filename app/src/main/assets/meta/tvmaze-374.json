@@ -1,22 +1,509 @@
 {
-  "schema": 1,
-  "id": "tvmaze-374",
-  "source": "tvmaze",
-  "sourceId": "374",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Inside No. 9",
-  "year": 2014,
-  "type": "series",
-  "overview": "An anthology of darkly comic twisted tales by Steve Pemberton and Reece Shearsmith, each one taking place behind a door marked 'number 9'.",
-  "poster": "file:///android_asset/posters/tvmaze-374.jpg",
-  "genres": [
-    "Komödie",
-    "Thriller",
-    "Übernatürlich"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-02-05",
+      "id": 34479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575167.jpg",
+      "name": "Sardines",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-12",
+      "id": 34480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575166.jpg",
+      "name": "A Quiet Night In",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-19",
+      "id": 34481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575165.jpg",
+      "name": "Tom and Gerri",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 34482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575164.jpg",
+      "name": "Last Gasp",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 34483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575163.jpg",
+      "name": "The Understudy",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-12",
+      "id": 34484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575162.jpg",
+      "name": "The Harrowing",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-26",
+      "id": 144549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575161.jpg",
+      "name": "La Couchette",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-02",
+      "id": 145086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575160.jpg",
+      "name": "The 12 Days of Christine",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-09",
+      "id": 151743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575159.jpg",
+      "name": "The Trial of Elizabeth Gadge",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-16",
+      "id": 153007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575158.jpg",
+      "name": "Cold Comfort",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-23",
+      "id": 153526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575157.jpg",
+      "name": "Nana's Party",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-29",
+      "id": 153997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575156.jpg",
+      "name": "Seance Time",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-27",
+      "id": 998012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575155.jpg",
+      "name": "The Devil of Christmas",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 1064188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575154.jpg",
+      "name": "The Bill",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-28",
+      "id": 1069811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575153.jpg",
+      "name": "The Riddle of the Sphinx",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-07",
+      "id": 1074998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575152.jpg",
+      "name": "Empty Orchestra",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1085112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575151.jpg",
+      "name": "Diddle Diddle Dumpling",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1090004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575150.jpg",
+      "name": "Private View",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-01-02",
+      "id": 1369152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575149.jpg",
+      "name": "Zanzibar",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-09",
+      "id": 1369153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575148.jpg",
+      "name": "Bernie Clifton's Dressing Room",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-16",
+      "id": 1369154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575147.jpg",
+      "name": "Once Removed",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-23",
+      "id": 1369155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575146.jpg",
+      "name": "To Have and to Hold",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-30",
+      "id": 1369156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575145.jpg",
+      "name": "And the Winner Is...",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-06",
+      "id": 1369157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575144.jpg",
+      "name": "Tempting Fate",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2020-02-03",
+      "id": 1791097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/597526.jpg",
+      "name": "The Referee's a W***er",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-10",
+      "id": 1796651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599888.jpg",
+      "name": "Death Be Not Proud",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-17",
+      "id": 1796887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/602176.jpg",
+      "name": "Love's Great Adventure",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-02-24",
+      "id": 1796891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/606534.jpg",
+      "name": "Misdirection",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-02",
+      "id": 1796893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/599889.jpg",
+      "name": "Thinking Out Loud",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2020-03-09",
+      "id": 1796894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/244/611337.jpg",
+      "name": "The Stakeout",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2021-05-10",
+      "id": 2079460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/783400.jpg",
+      "name": "Wuthering Heist",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2021-05-17",
+      "id": 2084853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/315/788090.jpg",
+      "name": "Simon Says",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2021-05-24",
+      "id": 2084854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795310.jpg",
+      "name": "Lip Service",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2021-05-31",
+      "id": 2084855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/802675.jpg",
+      "name": "Hurry Up and Wait",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2021-06-07",
+      "id": 2084856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/324/810832.jpg",
+      "name": "How Do You Plead",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2021-06-14",
+      "id": 2084857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816177.jpg",
+      "name": "Last Night of the Proms",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2022-04-20",
+      "id": 2309379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008899.jpg",
+      "name": "Merrily, Merrily",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-04-27",
+      "id": 2310612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1013383.jpg",
+      "name": "Mr. King",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-05-11",
+      "id": 2317557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/407/1018949.jpg",
+      "name": "Nine Lives Kat",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-05-18",
+      "id": 2323575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1020878.jpg",
+      "name": "Kid/Nap",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-05-25",
+      "id": 2327084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1022791.jpg",
+      "name": "A Random Act of Kindness",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-06-01",
+      "id": 2330255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1023830.jpg",
+      "name": "Wise Owl",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2022-12-22",
+      "id": 2439079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/432/1081843.jpg",
+      "name": "The Bones of St Nicholas",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2023-04-27",
+      "id": 2528244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/458/1145279.jpg",
+      "name": "Mother's Ruin",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2023-05-04",
+      "id": 2530048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/459/1147663.jpg",
+      "name": "Paraskevidekatriaphobia",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2023-05-11",
+      "id": 2535799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/459/1149210.jpg",
+      "name": "Love Is a Stranger",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2023-05-18",
+      "id": 2539803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/461/1154771.jpg",
+      "name": "3 by 3",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2023-05-25",
+      "id": 2545337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/461/1154914.jpg",
+      "name": "The Last Weekend",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2024-05-08",
+      "id": 2840702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/516/1290879.jpg",
+      "name": "Boo to a Goose",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2024-05-15",
+      "id": 2846076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/518/1295874.jpg",
+      "name": "The Trolley Problem",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2024-05-22",
+      "id": 2856640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/519/1298509.jpg",
+      "name": "Mulberry Close",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2024-05-29",
+      "id": 2870260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/521/1302865.jpg",
+      "name": "CTRL/ALT/ESC",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2024-06-05",
+      "id": 2880255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/521/1304264.jpg",
+      "name": "Curse of the Ninth",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2024-06-12",
+      "id": 2895668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/522/1306976.jpg",
+      "name": "Plodding On",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Thriller",
+    "Supernatural"
+  ],
+  "id": "tvmaze-374",
+  "live": true,
+  "overview": "An anthology of darkly comic twisted tales by Steve Pemberton and Reece Shearsmith, each one taking place behind a door marked 'number 9'.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/62/156641.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "374",
+  "title": "Inside No. 9",
+  "type": "series",
+  "year": 2014
 }

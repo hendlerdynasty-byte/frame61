@@ -1,22 +1,824 @@
 {
-  "schema": 1,
-  "id": "tvmaze-9",
-  "source": "tvmaze",
-  "sourceId": "9",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Revenge",
-  "year": 2011,
-  "type": "series",
-  "overview": "This is not a story about forgiveness; Revenge is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.",
-  "poster": "file:///android_asset/posters/tvmaze-9.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-09-21",
+      "id": 341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4099.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-28",
+      "id": 342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4100.jpg",
+      "name": "Trust",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-05",
+      "id": 343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4101.jpg",
+      "name": "Betrayal",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-12",
+      "id": 344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4102.jpg",
+      "name": "Duplicity",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-19",
+      "id": 345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4103.jpg",
+      "name": "Guilt",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-26",
+      "id": 346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4104.jpg",
+      "name": "Intrigue",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-02",
+      "id": 347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4105.jpg",
+      "name": "Charade",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-16",
+      "id": 348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4106.jpg",
+      "name": "Treachery",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-23",
+      "id": 349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4107.jpg",
+      "name": "Suspicion",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-07",
+      "id": 350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4108.jpg",
+      "name": "Loyalty",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-04",
+      "id": 351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4109.jpg",
+      "name": "Duress",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-11",
+      "id": 352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4110.jpg",
+      "name": "Infamy",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-18",
+      "id": 353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4111.jpg",
+      "name": "Commitment",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-08",
+      "id": 354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4112.jpg",
+      "name": "Perception",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-15",
+      "id": 355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4113.jpg",
+      "name": "Chaos",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-29",
+      "id": 356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4114.jpg",
+      "name": "Scandal",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-18",
+      "id": 357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4115.jpg",
+      "name": "Doubt",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-25",
+      "id": 358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4116.jpg",
+      "name": "Justice",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-02",
+      "id": 359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4117.jpg",
+      "name": "Absolution",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-09",
+      "id": 360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4118.jpg",
+      "name": "Legacy",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-16",
+      "id": 361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4119.jpg",
+      "name": "Grief",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-23",
+      "id": 362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4120.jpg",
+      "name": "Reckoning",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4077.jpg",
+      "name": "Destiny",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4078.jpg",
+      "name": "Resurrection",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4079.jpg",
+      "name": "Confidence",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4080.jpg",
+      "name": "Intuition",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4081.jpg",
+      "name": "Forgiveness",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4082.jpg",
+      "name": "Illusion",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4083.jpg",
+      "name": "Penance",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4084.jpg",
+      "name": "Lineage",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-02",
+      "id": 371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4085.jpg",
+      "name": "Revelations",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-06",
+      "id": 372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4086.jpg",
+      "name": "Power",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-13",
+      "id": 373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4087.jpg",
+      "name": "Sabotage",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-20",
+      "id": 374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4088.jpg",
+      "name": "Collusion",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-10",
+      "id": 375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4089.jpg",
+      "name": "Union",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-17",
+      "id": 376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4090.jpg",
+      "name": "Sacrifice",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4091.jpg",
+      "name": "Retribution",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4092.jpg",
+      "name": "Illumination",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4093.jpg",
+      "name": "Victory",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4094.jpg",
+      "name": "Masquerade",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4095.jpg",
+      "name": "Identity",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4096.jpg",
+      "name": "Engagement",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4097.jpg",
+      "name": "Truth (1)",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4098.jpg",
+      "name": "Truth (2)",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4050.jpg",
+      "name": "Fear",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4051.jpg",
+      "name": "Sin",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4052.jpg",
+      "name": "Confession",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4053.jpg",
+      "name": "Mercy",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4054.jpg",
+      "name": "Control",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-03",
+      "id": 390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4055.jpg",
+      "name": "Dissolution",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4056.jpg",
+      "name": "Resurgence",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4057.jpg",
+      "name": "Secrecy",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-08",
+      "id": 393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4058.jpg",
+      "name": "Surrender",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-15",
+      "id": 394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4059.jpg",
+      "name": "Exodus",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-05",
+      "id": 395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4060.jpg",
+      "name": "Homecoming",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-12",
+      "id": 396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4062.jpg",
+      "name": "Endurance",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-19",
+      "id": 397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4063.jpg",
+      "name": "Hatred",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-09",
+      "id": 398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4064.jpg",
+      "name": "Payback",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-16",
+      "id": 399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4065.jpg",
+      "name": "Struggle",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-23",
+      "id": 400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4066.jpg",
+      "name": "Disgrace",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-30",
+      "id": 401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4067.jpg",
+      "name": "Addiction",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-06",
+      "id": 402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4068.jpg",
+      "name": "Blood",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4069.jpg",
+      "name": "Allegiance",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4070.jpg",
+      "name": "Revolution",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4071.jpg",
+      "name": "Impetus",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4072.jpg",
+      "name": "Execution",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4073.jpg",
+      "name": "Renaissance",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-05",
+      "id": 408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4074.jpg",
+      "name": "Disclosure",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-12",
+      "id": 409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4075.jpg",
+      "name": "Ashes",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4700.jpg",
+      "name": "Meteor",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-26",
+      "id": 411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5750.jpg",
+      "name": "Repercussions",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-02",
+      "id": 7807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/7393.jpg",
+      "name": "Damage",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-09",
+      "id": 14890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22160.jpg",
+      "name": "Ambush",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-16",
+      "id": 32255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11028.jpg",
+      "name": "Contact",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-30",
+      "id": 44336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/13531.jpg",
+      "name": "INTEL",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 44337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14569.jpg",
+      "name": "Atonement",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-04",
+      "id": 58270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18646.jpg",
+      "name": "Epitaph",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-11",
+      "id": 96539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19026.jpg",
+      "name": "Madness",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-18",
+      "id": 96540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19536.jpg",
+      "name": "Abduction",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-25",
+      "id": 96541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19835.jpg",
+      "name": "Kindred",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-08",
+      "id": 124008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23239.jpg",
+      "name": "Bait",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-15",
+      "id": 141798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23939.jpg",
+      "name": "Retaliation",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-22",
+      "id": 141799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24251.jpg",
+      "name": "Loss",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-29",
+      "id": 142353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24657.jpg",
+      "name": "Clarity",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 150967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25617.jpg",
+      "name": "Exposure",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 150968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26031.jpg",
+      "name": "Burn",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 152763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26491.jpg",
+      "name": "Aftermath",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 153481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26858.jpg",
+      "name": "Plea",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 154117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27308.jpg",
+      "name": "Two Graves",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Thriller",
     "Mystery"
   ],
+  "id": "tvmaze-9",
+  "live": true,
+  "overview": "This is not a story about forgiveness; Revenge is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "9",
+  "title": "Revenge",
+  "type": "series",
+  "year": 2011
 }

@@ -1,22 +1,662 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1589",
-  "source": "tvmaze",
-  "sourceId": "1589",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "iZombie",
-  "year": 2015,
-  "type": "series",
-  "overview": "Olivia \"Liv\" Moore is a rosy-cheeked, disciplined, over-achieving medical resident who had her life path completely mapped out... until the night she attended a party that unexpectedly turned into a zombie feeding frenzy. As one of the newly undead, Liv has devised a way to resist her baser urges to devour fresh human brains--she's taken a job in the Seattle coroner's office.In this appropriately dead-end job, she can secretly snack on the brains of the many Jane and John Doe corpses that make a final stop in the morgue. Liv remains resigned to an eternity without hope or purpose, until she realizes that with every brain she consumes, she retains a portion of that person's memories, and she begins to experience visions from the point of view of the murder victims. It's not the same as being alive again, but at least she can find purpose in her undead existence by helping to solve the murders of those who are indeed fully dead.",
-  "poster": "file:///android_asset/posters/tvmaze-1589.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-03-17",
+      "id": 140028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/548/1371676.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 140029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24355.jpg",
+      "name": "Brother, Can You Spare a Brain?",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-31",
+      "id": 140030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/271/679468.jpg",
+      "name": "The Exterminator",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 140667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25227.jpg",
+      "name": "Liv and Let Clive",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 140668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25786.jpg",
+      "name": "Flight of the Living Dead",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-21",
+      "id": 144501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26239.jpg",
+      "name": "Virtual Reality Bites",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 144502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26531.jpg",
+      "name": "Maternity Liv",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 144503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26946.jpg",
+      "name": "Dead Air",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-12",
+      "id": 144504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1373138.jpg",
+      "name": "Patriot Brains",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-19",
+      "id": 144505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1373140.jpg",
+      "name": "Mr. Berserk",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-26",
+      "id": 156071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/28282.jpg",
+      "name": "Astroburger",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-02",
+      "id": 156072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1373401.jpg",
+      "name": "Dead Rat, Live Rat, Brown Rat, White Rat",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-09",
+      "id": 156073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1373424.jpg",
+      "name": "Blaine's World",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-06",
+      "id": 182147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/549/1373429.jpg",
+      "name": "Grumpy Old Liv",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-13",
+      "id": 282621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376615.jpg",
+      "name": "Zombie Bro",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-20",
+      "id": 326732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/64164.jpg",
+      "name": "Real Dead Housewife of Seattle",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-27",
+      "id": 246330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/57721.jpg",
+      "name": "Even Cowgirls Get the Black and Blues",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-03",
+      "id": 379112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69607.jpg",
+      "name": "Love & Basketball",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-10",
+      "id": 397505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73447.jpg",
+      "name": "Max Wager",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-17",
+      "id": 410656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76766.jpg",
+      "name": "Abra Cadaver",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-01",
+      "id": 458726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/82489.jpg",
+      "name": "The Hurt Stalker",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-08",
+      "id": 476433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379239.jpg",
+      "name": "Cape Town",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 523738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379240.jpg",
+      "name": "Method Head",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 552156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/551/1379244.jpg",
+      "name": "Fifty Shades of Grey Matter",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 579816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107821.jpg",
+      "name": "Physician, Heal Thy Selfie",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 590457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112533.jpg",
+      "name": "The Whopper",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 600638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115288.jpg",
+      "name": "Eternal Sunshine of the Caffeinated Mind",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 622459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124521.jpg",
+      "name": "He Blinded Me... with Science",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 646928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127393.jpg",
+      "name": "Pour Some Sugar, Zombie",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-05",
+      "id": 647337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129829.jpg",
+      "name": "Reflections of the Way Liv Used to Be",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-12",
+      "id": 647338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/132111.jpg",
+      "name": "Dead Beat",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-12",
+      "id": 647339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/132117.jpg",
+      "name": "Salivation Army",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 991412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/263670.jpg",
+      "name": "Heaven Just Got a Little Bit Smoother",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-11",
+      "id": 991413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267034.jpg",
+      "name": "Zombie Knows Best",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-18",
+      "id": 991414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/887839.jpg",
+      "name": "Eat, Pray, Liv",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-25",
+      "id": 1048413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/887844.jpg",
+      "name": "Wag the Tongue Slowly",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1105957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/275428.jpg",
+      "name": "Spanking the Zombie",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1105958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/887863.jpg",
+      "name": "Some Like It Hot Mess",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1105959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/355/887871.jpg",
+      "name": "Dirt Nap Time",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-23",
+      "id": 1105960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283467.jpg",
+      "name": "Eat a Knievel",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-30",
+      "id": 1150075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/286391.jpg",
+      "name": "Twenty-Sided, Die",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-06",
+      "id": 1150076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289030.jpg",
+      "name": "Return of the Dead Guy",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-13",
+      "id": 1150077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/291558.jpg",
+      "name": "Conspiracy Weary",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-20",
+      "id": 1150078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/293971.jpg",
+      "name": "Looking for Mr. Goodbrain (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-27",
+      "id": 1150079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/296245.jpg",
+      "name": "Looking for Mr. Goodbrain (2)",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-02-26",
+      "id": 1271700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/364180.jpg",
+      "name": "Are You Ready for Some Zombies?",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-05",
+      "id": 1412575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/366274.jpg",
+      "name": "Blue Bloody",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-12",
+      "id": 1415383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368808.jpg",
+      "name": "Brainless in Seattle (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-19",
+      "id": 1419461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/369427.jpg",
+      "name": "Brainless in Seattle (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-26",
+      "id": 1422628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370756.jpg",
+      "name": "Goon Struck",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-09",
+      "id": 1426898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/150/376052.jpg",
+      "name": "My Really Fair Lady",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-16",
+      "id": 1426900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380397.jpg",
+      "name": "Don't Hate the Player, Hate the Brain",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-23",
+      "id": 1426901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380399.jpg",
+      "name": "Chivalry Is Dead",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-30",
+      "id": 1426903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380403.jpg",
+      "name": "Mac-Liv-Moore",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-07",
+      "id": 1426904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/387680.jpg",
+      "name": "Yipee Ki Brain, Motherscratcher!",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-14",
+      "id": 1426906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389344.jpg",
+      "name": "Insane in the Germ Brain",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-21",
+      "id": 1426907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/390958.jpg",
+      "name": "You've Got to Hide Your Liv Away",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-28",
+      "id": 1426909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/392365.jpg",
+      "name": "And He Shall Be a Good Man",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-05-02",
+      "id": 1473837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485927.jpg",
+      "name": "Thug Death",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-09",
+      "id": 1524163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489838.jpg",
+      "name": "Dead Lift",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-16",
+      "id": 1524164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/197/493228.jpg",
+      "name": "Five, Six, Seven, Ate!",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-23",
+      "id": 1641851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/198/497051.jpg",
+      "name": "Dot Zom",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-30",
+      "id": 1641852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499952.jpg",
+      "name": "Death Moves Pretty Fast",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-06",
+      "id": 1641853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502425.jpg",
+      "name": "The Scratchmaker",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-13",
+      "id": 1641854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504872.jpg",
+      "name": "Filleted to Rest",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-20",
+      "id": 1641855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/202/506668.jpg",
+      "name": "Death of a Car Salesman",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-06-27",
+      "id": 1641856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508034.jpg",
+      "name": "The Fresh Princess",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-07-11",
+      "id": 1641857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/512222.jpg",
+      "name": "Night and the Zombie City",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-07-18",
+      "id": 1665352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513876.jpg",
+      "name": "Killer Queen",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-07-25",
+      "id": 1678138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515680.jpg",
+      "name": "Bye, Zombies",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-01",
+      "id": 1678864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/517513.jpg",
+      "name": "All's Well That Ends Well",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Horror"
   ],
+  "id": "tvmaze-1589",
+  "live": true,
+  "overview": "Olivia \"Liv\" Moore is a rosy-cheeked, disciplined, over-achieving medical resident who had her life path completely mapped out... until the night she attended a party that unexpectedly turned into a zombie feeding frenzy. As one of the newly undead, Liv has devised a way to resist her baser urges to devour fresh human brains--she's taken a job in the Seattle coroner's office.In this appropriately dead-end job, she can secretly snack on the brains of the many Jane and John Doe corpses that make a final stop in the morgue. Liv remains resigned to an eternity without hope or purpose, until she realizes that with every brain she consumes, she retains a portion of that person's memories, and she begins to experience visions from the point of view of the murder victims. It's not the same as being alive again, but at least she can find purpose in her undead existence by helping to solve the murders of those who are indeed fully dead.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/477/1194487.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1589",
+  "title": "iZombie",
+  "type": "series",
+  "year": 2015
 }

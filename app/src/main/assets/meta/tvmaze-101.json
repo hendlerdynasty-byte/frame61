@@ -1,22 +1,1427 @@
 {
-  "schema": 1,
-  "id": "tvmaze-101",
-  "source": "tvmaze",
-  "sourceId": "101",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Good Wife",
-  "year": 2009,
-  "type": "series",
-  "overview": "The Good Wife follows Alicia Florrick, a wife and mother who boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail. Pushing aside the betrayal and crushing public humiliation caused by her husband Peter, Alicia starts over by pursuing her original career as a defense attorney.",
-  "poster": "file:///android_asset/posters/tvmaze-101.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-09-22",
+      "id": 6799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/142867.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-09-29",
+      "id": 6800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1022669.jpg",
+      "name": "Stripped",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-06",
+      "id": 6801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/142941.jpg",
+      "name": "Home",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-13",
+      "id": 6802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/142983.jpg",
+      "name": "Fixed",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-20",
+      "id": 6803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143730.jpg",
+      "name": "Crash",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-03",
+      "id": 6804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143733.jpg",
+      "name": "Conjugal",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-10",
+      "id": 6805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756921.jpg",
+      "name": "Unorthodox",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-17",
+      "id": 6806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756922.jpg",
+      "name": "Unprepared",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-24",
+      "id": 6807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145231.jpg",
+      "name": "Threesome",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-12-15",
+      "id": 6808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756923.jpg",
+      "name": "Lifeguard",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-01-05",
+      "id": 6809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145250.jpg",
+      "name": "Infamy",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-01-12",
+      "id": 6810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145264.jpg",
+      "name": "Painkiller",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-02",
+      "id": 6811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756924.jpg",
+      "name": "Bad",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-02-09",
+      "id": 6812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756925.jpg",
+      "name": "Hi",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-02",
+      "id": 6813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756926.jpg",
+      "name": "Bang",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-09",
+      "id": 6814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756927.jpg",
+      "name": "Fleas",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-16",
+      "id": 6815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756928.jpg",
+      "name": "Heart",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-06",
+      "id": 6816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756929.jpg",
+      "name": "Doubt",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-27",
+      "id": 6817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756930.jpg",
+      "name": "Boom",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-04",
+      "id": 6818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756931.jpg",
+      "name": "Mock",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-11",
+      "id": 6819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756932.jpg",
+      "name": "Unplugged",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-18",
+      "id": 6820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756933.jpg",
+      "name": "Hybristophilia",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-25",
+      "id": 6821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756934.jpg",
+      "name": "Running",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-28",
+      "id": 6822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146213.jpg",
+      "name": "Taking Control",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-05",
+      "id": 6823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756936.jpg",
+      "name": "Double Jeopardy",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-12",
+      "id": 6824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756937.jpg",
+      "name": "Breaking Fast",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-19",
+      "id": 6825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756938.jpg",
+      "name": "Cleaning House",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-26",
+      "id": 6826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756939.jpg",
+      "name": "VIP Treatment",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-09",
+      "id": 6827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756940.jpg",
+      "name": "Poisoned Pill",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-16",
+      "id": 6828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756941.jpg",
+      "name": "Bad Girls",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-23",
+      "id": 6829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756942.jpg",
+      "name": "On Tap",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-12-14",
+      "id": 6830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756943.jpg",
+      "name": "Nine Hours",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-11",
+      "id": 6831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756944.jpg",
+      "name": "Breaking Up",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-18",
+      "id": 6832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756945.jpg",
+      "name": "Two Courts",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-01",
+      "id": 6833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756946.jpg",
+      "name": "Silly Season",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-08",
+      "id": 6834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756947.jpg",
+      "name": "Real Deal",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-15",
+      "id": 6835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756948.jpg",
+      "name": "Net Worth",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-02-22",
+      "id": 6836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756949.jpg",
+      "name": "Silver Bullet",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-01",
+      "id": 6837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756950.jpg",
+      "name": "Great Firewall",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-22",
+      "id": 6838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756951.jpg",
+      "name": "Ham Sandwich",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-29",
+      "id": 6839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756952.jpg",
+      "name": "Killer Song",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-05",
+      "id": 6840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756953.jpg",
+      "name": "Wrongful Termination",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-12",
+      "id": 6841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756954.jpg",
+      "name": "Foreign Affairs",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-03",
+      "id": 6842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756955.jpg",
+      "name": "In Sickness",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-10",
+      "id": 6843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756956.jpg",
+      "name": "Getting Off",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-17",
+      "id": 6844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756957.jpg",
+      "name": "Closing Arguments",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 6845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756959.jpg",
+      "name": "A New Day",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 6846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756960.jpg",
+      "name": "The Death Zone",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-09",
+      "id": 6847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756961.jpg",
+      "name": "Get a Room",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-16",
+      "id": 6848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756962.jpg",
+      "name": "Feeding the Rat",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-23",
+      "id": 6849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756963.jpg",
+      "name": "Marthas and Caitlins",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-10-30",
+      "id": 6850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756964.jpg",
+      "name": "Affairs of State",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-06",
+      "id": 6851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756965.jpg",
+      "name": "Executive Order 13224",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-13",
+      "id": 6852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756966.jpg",
+      "name": "Here Comes Santa",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-11-20",
+      "id": 6853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756967.jpg",
+      "name": "Whiskey Tango Foxtrot",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 6854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756968.jpg",
+      "name": "Parenting Made Easy",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 6855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756969.jpg",
+      "name": "What Went Wrong",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-08",
+      "id": 6856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756970.jpg",
+      "name": "Alienation of Affection",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-15",
+      "id": 6857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756971.jpg",
+      "name": "Bitcoin for Dummies",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-29",
+      "id": 6858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026815.jpg",
+      "name": "Another Ham Sandwich",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-02-19",
+      "id": 6859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756973.jpg",
+      "name": "Live from Damascus",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-04",
+      "id": 6860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756974.jpg",
+      "name": "After the Fall",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-11",
+      "id": 6861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756975.jpg",
+      "name": "Long Way Home",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-18",
+      "id": 6862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756976.jpg",
+      "name": "Gloves Come Off",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 6863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756977.jpg",
+      "name": "Blue Ribbon Panel",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 6864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756978.jpg",
+      "name": "Pants on Fire",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 6865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756979.jpg",
+      "name": "The Penalty Box",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 6866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756980.jpg",
+      "name": "The Dream Team",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 6867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/93428.jpg",
+      "name": "I Fought the Law",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 6868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96305.jpg",
+      "name": "And the Law Won",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 6869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96306.jpg",
+      "name": "Two Girls, One Code",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 6870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102219.jpg",
+      "name": "Don't Haze Me, Bro",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 6871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102220.jpg",
+      "name": "Waiting for the Knock",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 6872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106149.jpg",
+      "name": "The Art of War",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 6873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108971.jpg",
+      "name": "Anatomy of a Joke",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-18",
+      "id": 6874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/111548.jpg",
+      "name": "Here Comes the Judge",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 6875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113963.jpg",
+      "name": "A Defense of Marriage",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-12-02",
+      "id": 6876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116567.jpg",
+      "name": "Battle of the Proxies",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-06",
+      "id": 6877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119122.jpg",
+      "name": "Boom De Yah Da",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-13",
+      "id": 6878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121239.jpg",
+      "name": "Je Ne Sais What?",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-01-27",
+      "id": 6879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123562.jpg",
+      "name": "The Seven Day Rule",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-17",
+      "id": 6880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127215.jpg",
+      "name": "Red Team/Blue Team",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-03",
+      "id": 6881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129452.jpg",
+      "name": "Going for the Gold",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 6882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/131038.jpg",
+      "name": "Runnin' with the Devil",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 6883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133279.jpg",
+      "name": "Invitation to an Inquest",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 6884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136219.jpg",
+      "name": "Death of a Client",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 6885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138653.jpg",
+      "name": "The Wheels of Justice",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 6886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141520.jpg",
+      "name": "Rape: A Modern Perspective",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 6887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145120.jpg",
+      "name": "A More Perfect Union",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 6888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/147362.jpg",
+      "name": "What's in the Box?",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-29",
+      "id": 6890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244675.jpg",
+      "name": "Everything is Ending",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-06",
+      "id": 6891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244678.jpg",
+      "name": "The Bit Bucket",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-13",
+      "id": 6892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247608.jpg",
+      "name": "A Precious Commodity",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-20",
+      "id": 6893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249970.jpg",
+      "name": "Outside the Bubble",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-10-27",
+      "id": 6894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/252047.jpg",
+      "name": "Hitting the Fan",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-03",
+      "id": 6895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254323.jpg",
+      "name": "The Next Day",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-10",
+      "id": 6896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256838.jpg",
+      "name": "The Next Week",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-17",
+      "id": 6897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259774.jpg",
+      "name": "The Next Month",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-11-24",
+      "id": 6898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/262618.jpg",
+      "name": "Whack-a-Mole",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-12-01",
+      "id": 6899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/270630.jpg",
+      "name": "The Decision Tree",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-01-05",
+      "id": 6900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/270634.jpg",
+      "name": "Goliath and David",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-01-12",
+      "id": 6901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/270659.jpg",
+      "name": "We, the Juries",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-09",
+      "id": 6902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276771.jpg",
+      "name": "Parallel Construction, Bitches",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-16",
+      "id": 6903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276776.jpg",
+      "name": "A Few Words",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-23",
+      "id": 6904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276841.jpg",
+      "name": "Dramatics, Your Honor",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-30",
+      "id": 6905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276842.jpg",
+      "name": "The Last Call",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 6906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276843.jpg",
+      "name": "A Material World",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 6907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276844.jpg",
+      "name": "All Tapped Out",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 6908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276845.jpg",
+      "name": "Tying the Knot",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 6909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276846.jpg",
+      "name": "The Deep Web",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 6910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276847.jpg",
+      "name": "The One Percent",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 6911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276848.jpg",
+      "name": "A Weird Year",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-21",
+      "id": 6912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353856.jpg",
+      "name": "The Line",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-09-28",
+      "id": 6913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4637.jpg",
+      "name": "Trust Issues",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-05",
+      "id": 6914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4638.jpg",
+      "name": "Dear God",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-12",
+      "id": 6915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4639.jpg",
+      "name": "Oppo Research",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-19",
+      "id": 6916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362175.jpg",
+      "name": "Shiny Objects",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-10-26",
+      "id": 14041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5858.jpg",
+      "name": "Old Spice",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-02",
+      "id": 28353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/7622.jpg",
+      "name": "Message Discipline",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-09",
+      "id": 39411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/9914.jpg",
+      "name": "Red Zone",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-16",
+      "id": 40955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11024.jpg",
+      "name": "Sticky Content",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-11-23",
+      "id": 45258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/12449.jpg",
+      "name": "The Trial",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-01-04",
+      "id": 57553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/18641.jpg",
+      "name": "Hail Mary",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-01-11",
+      "id": 116521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19022.jpg",
+      "name": "The Debate",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-01",
+      "id": 120564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22755.jpg",
+      "name": "Dark Money",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-08",
+      "id": 140639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23235.jpg",
+      "name": "Mind's Eye",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-15",
+      "id": 141515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23936.jpg",
+      "name": "Open Source",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-22",
+      "id": 143176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24321.jpg",
+      "name": "Red Meat",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-03-29",
+      "id": 144444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24659.jpg",
+      "name": "Undisclosed Recipients",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-05",
+      "id": 151646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25055.jpg",
+      "name": "Loser Edit",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 151503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25612.jpg",
+      "name": "Winning Ugly",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 151504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26487.jpg",
+      "name": "The Deconstruction",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 151505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26841.jpg",
+      "name": "Don't Fail",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 151506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27302.jpg",
+      "name": "Wanna Partner?",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 202572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/57322.jpg",
+      "name": "Bond",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 245979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/60276.jpg",
+      "name": "Innocents",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 252202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63113.jpg",
+      "name": "Cooked",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 295616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63210.jpg",
+      "name": "Taxed",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 355489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63211.jpg",
+      "name": "Payback",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 390552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73107.jpg",
+      "name": "Lies",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 401000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76376.jpg",
+      "name": "Driven",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-22",
+      "id": 442581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79417.jpg",
+      "name": "Restraint",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 461929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/82203.jpg",
+      "name": "Discovery",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-12-13",
+      "id": 487399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/87326.jpg",
+      "name": "KSR",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-01-10",
+      "id": 527849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97743.jpg",
+      "name": "Iowa",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-01-17",
+      "id": 541919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100463.jpg",
+      "name": "Tracks",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-01-31",
+      "id": 560924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/107423.jpg",
+      "name": "Judged",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-02-14",
+      "id": 570418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112363.jpg",
+      "name": "Monday",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-02-21",
+      "id": 570419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115034.jpg",
+      "name": "Targets",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-03-06",
+      "id": 570420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119843.jpg",
+      "name": "Hearing",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-03-20",
+      "id": 633789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124444.jpg",
+      "name": "Shoot",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-03-27",
+      "id": 637936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127179.jpg",
+      "name": "Unmanned",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-04-17",
+      "id": 663426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/134251.jpg",
+      "name": "Landing",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-04-24",
+      "id": 663427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136968.jpg",
+      "name": "Party",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-05-01",
+      "id": 663428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138927.jpg",
+      "name": "Verdict",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2016-05-08",
+      "id": 617860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/142770.jpg",
+      "name": "End",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
-    "Justiz"
+    "Crime",
+    "Legal"
   ],
+  "id": "tvmaze-101",
+  "live": true,
+  "overview": "The Good Wife follows Alicia Florrick, a wife and mother who boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail. Pushing aside the betrayal and crushing public humiliation caused by her husband Peter, Alicia starts over by pursuing her original career as a defense attorney.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/59/148162.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "101",
+  "title": "The Good Wife",
+  "type": "series",
+  "year": 2009
 }

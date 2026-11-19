@@ -1,22 +1,140 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1050",
-  "source": "tvmaze",
-  "sourceId": "1050",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Top of the Lake",
-  "year": 2013,
-  "type": "series",
-  "overview": "A woman haunted by her past, Detective Robin Griffin, investigates complex and unsettling cases in Jane Campion's mystery drama.",
-  "poster": "file:///android_asset/posters/tvmaze-1050.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-18",
+      "id": 101304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600359.jpg",
+      "name": "Paradise Sold",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-18",
+      "id": 101305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600358.jpg",
+      "name": "Searchers Search",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 101306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600357.jpg",
+      "name": "The Edge of the Universe",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-01",
+      "id": 101307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600355.jpg",
+      "name": "A Rainbow Above Us",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 101308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600354.jpg",
+      "name": "The Dark Creator",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 101309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600353.jpg",
+      "name": "No Goodbyes, Thanks",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 101310,
+      "image": null,
+      "name": "Finale",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1257413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365275.jpg",
+      "name": "China Girl",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1249998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600350.jpg",
+      "name": "The Loved One",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1249999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600349.jpg",
+      "name": "Surrogate",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1250000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600348.jpg",
+      "name": "Birthday",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1250001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600347.jpg",
+      "name": "Who's Your Daddy?",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-07-27",
+      "id": 1250002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600346.jpg",
+      "name": "The Battle of the Mothers",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-1050",
+  "live": true,
+  "overview": "A woman haunted by her past, Detective Robin Griffin, investigates complex and unsettling cases in Jane Campion's mystery drama.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/16957.jpg",
   "rating": 7.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1050",
+  "title": "Top of the Lake",
+  "type": "series",
+  "year": 2013
 }

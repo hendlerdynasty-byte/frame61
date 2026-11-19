@@ -1,22 +1,455 @@
 {
-  "schema": 1,
-  "id": "tvmaze-833",
-  "source": "tvmaze",
-  "sourceId": "833",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Hustle",
-  "year": 2004,
-  "type": "series",
-  "overview": "Hustle is a series that follows a group of con artists who specialise in \"long cons\"—extended deceptions which require greater commitment, but which return a higher reward than simple confidence tricks.",
-  "poster": "file:///android_asset/posters/tvmaze-833.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-02-24",
+      "id": 77726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978432.jpg",
+      "name": "The Con is On",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-02",
+      "id": 77727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978433.jpg",
+      "name": "Faking It",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-09",
+      "id": 77728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978434.jpg",
+      "name": "Picture Perfect",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-16",
+      "id": 77729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978435.jpg",
+      "name": "Cops and Robbers",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-23",
+      "id": 77730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978436.jpg",
+      "name": "A Touch of Class",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-30",
+      "id": 77731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978437.jpg",
+      "name": "The Last Gamble",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-29",
+      "id": 77732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978438.jpg",
+      "name": "Gold Mine",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-05",
+      "id": 77733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978439.jpg",
+      "name": "Confessions",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-12",
+      "id": 77734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978440.jpg",
+      "name": "The Lesson",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-19",
+      "id": 77735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978441.jpg",
+      "name": "Missions",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-26",
+      "id": 77736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978442.jpg",
+      "name": "Old Acquaintance",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-05-03",
+      "id": 77737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978443.jpg",
+      "name": "Eye of the Beholder",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-10",
+      "id": 77738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978444.jpg",
+      "name": "Price for Fame",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-17",
+      "id": 77739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978445.jpg",
+      "name": "Albert's Challenge",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-24",
+      "id": 77740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978446.jpg",
+      "name": "Ties That Bind Us",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-03-31",
+      "id": 77741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978447.jpg",
+      "name": "A Bollywood Dream",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-07",
+      "id": 77742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978448.jpg",
+      "name": "The Hustler's News of Today",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-04-14",
+      "id": 77743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978449.jpg",
+      "name": "Law and Corruption",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-03",
+      "id": 77744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907064.jpg",
+      "name": "As One Flew Out of the Cuckoo's Nest, One Flew In",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-10",
+      "id": 77745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907065.jpg",
+      "name": "Signing Up to Wealth",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-17",
+      "id": 77746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907066.jpg",
+      "name": "Getting Even",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-24",
+      "id": 77747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907067.jpg",
+      "name": "A Designer's Paradise",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-05-31",
+      "id": 77748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907068.jpg",
+      "name": "Conning the Artists",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-06-07",
+      "id": 77749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907069.jpg",
+      "name": "Big Daddy Calling",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2009-01-08",
+      "id": 77750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907070.jpg",
+      "name": "Return of the Prodigal",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-15",
+      "id": 77751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907071.jpg",
+      "name": "New Recruits",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-22",
+      "id": 77752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907072.jpg",
+      "name": "Lest Ye Be Judged",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-29",
+      "id": 77753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907073.jpg",
+      "name": "Diamond Seeker",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-05",
+      "id": 77754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907074.jpg",
+      "name": "Politics",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-12",
+      "id": 77755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907075.jpg",
+      "name": "The Road Less Travelled",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2010-01-04",
+      "id": 77756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907076.jpg",
+      "name": "And This Little Piggy Had Money",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-11",
+      "id": 77757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907077.jpg",
+      "name": "The Thieving Mistake",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-18",
+      "id": 77758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907078.jpg",
+      "name": "Tiger Troubles",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-25",
+      "id": 77759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907079.jpg",
+      "name": "The Father of Jewels",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-01",
+      "id": 77760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907080.jpg",
+      "name": "Conned Out of Luck",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-08",
+      "id": 77761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907081.jpg",
+      "name": "The Hush Heist",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2011-01-07",
+      "id": 77762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907082.jpg",
+      "name": "Silent Witness",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 77763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907083.jpg",
+      "name": "Old Sparks Come New",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-21",
+      "id": 77764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907084.jpg",
+      "name": "Clearance from a Deal",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 77765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907085.jpg",
+      "name": "Benny's Funeral",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-02-11",
+      "id": 77766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907086.jpg",
+      "name": "The Fall of Railton FC",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-02-18",
+      "id": 77767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907087.jpg",
+      "name": "The Delivery",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2012-01-13",
+      "id": 77768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907088.jpg",
+      "name": "Gold Finger",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-20",
+      "id": 77769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907089.jpg",
+      "name": "Picasso Finger Painting",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 77770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907090.jpg",
+      "name": "Curiosity Caught the Kat",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-02-03",
+      "id": 77771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907091.jpg",
+      "name": "Eat Yourself Slender",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-02-10",
+      "id": 77772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907092.jpg",
+      "name": "Ding Dong That's My Song",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-02-17",
+      "id": 77773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/907093.jpg",
+      "name": "The Con is Off",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-833",
+  "live": true,
+  "overview": "Hustle is a series that follows a group of con artists who specialise in \"long cons\"—extended deceptions which require greater commitment, but which return a higher reward than simple confidence tricks.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15780.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "833",
+  "title": "Hustle",
+  "type": "series",
+  "year": 2004
 }

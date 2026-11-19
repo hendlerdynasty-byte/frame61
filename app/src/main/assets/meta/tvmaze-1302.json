@@ -1,22 +1,626 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1302",
-  "source": "tvmaze",
-  "sourceId": "1302",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Millennium",
-  "year": 1996,
-  "type": "series",
-  "overview": "Retired serial-profiler Frank Black has moved his family to Seattle to escape the violence and horror he dealt with while working for the FBI in Washington, D.C. Although his uncanny and often unsettling ability to see into the twisted minds of serial killers has caused him much inner torment, Black knows his \"gift\" can still be used to help protect and save others. For that reason he has joined the mysterious Millennium Group, a team of underground ex-law enforcement experts dedicated to fighting against the ever-growing forces of evil and darkness in the world.",
-  "poster": "file:///android_asset/posters/tvmaze-1302.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1996-10-25",
+      "id": 110602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432366.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-01",
+      "id": 110603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432368.jpg",
+      "name": "Gehenna",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-08",
+      "id": 110604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/321/803614.jpg",
+      "name": "Dead Letters",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-15",
+      "id": 110605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432369.jpg",
+      "name": "The Judge",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-22",
+      "id": 110606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/329/823749.jpg",
+      "name": "522666",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-29",
+      "id": 110607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432371.jpg",
+      "name": "Kingdom Come",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-12-06",
+      "id": 110608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432376.jpg",
+      "name": "Blood Relatives",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-12-20",
+      "id": 110609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432377.jpg",
+      "name": "The Well-Worn Lock",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-03",
+      "id": 110610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432381.jpg",
+      "name": "Wide Open",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-10",
+      "id": 110611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432382.jpg",
+      "name": "The Wild and the Innocent",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-24",
+      "id": 110612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432383.jpg",
+      "name": "Weeds",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-31",
+      "id": 110613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432384.jpg",
+      "name": "Loin Like a Hunting Flame",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-07",
+      "id": 110614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432365.jpg",
+      "name": "Force Majeure",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-14",
+      "id": 110615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/376/940439.jpg",
+      "name": "The Thin White Line",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-21",
+      "id": 110616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/380/952225.jpg",
+      "name": "Sacrament",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-03-21",
+      "id": 110617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432388.jpg",
+      "name": "Covenant",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-03-28",
+      "id": 110618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432389.jpg",
+      "name": "Walkabout",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-04-18",
+      "id": 110619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1106781.jpg",
+      "name": "Lamentation",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-04-25",
+      "id": 110620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432390.jpg",
+      "name": "Powers, Principalities, Thrones and Dominions",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-02",
+      "id": 110621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432396.jpg",
+      "name": "Broken World",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-09",
+      "id": 110622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432398.jpg",
+      "name": "Maranatha",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-16",
+      "id": 110623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432405.jpg",
+      "name": "Paper Dove",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-09-19",
+      "id": 110624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/560/1401009.jpg",
+      "name": "The Beginning & The End",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-09-26",
+      "id": 110625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/582/1456100.jpg",
+      "name": "Beware of the Dog",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-10-03",
+      "id": 110626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/599/1498310.jpg",
+      "name": "Sense and Antisense",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-10-17",
+      "id": 110627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/612/1530033.jpg",
+      "name": "Monster",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-10-24",
+      "id": 110628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424391.jpg",
+      "name": "A Single Blade of Grass",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-10-31",
+      "id": 110629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424398.jpg",
+      "name": "The Curse of Frank Black",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-07",
+      "id": 110630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424867.jpg",
+      "name": "19:19",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-14",
+      "id": 110631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/569/1424919.jpg",
+      "name": "The Hand of Saint Sebastian",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-21",
+      "id": 110632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425082.jpg",
+      "name": "Jose Chung's Doomsday Defense",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-12-19",
+      "id": 110633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425203.jpg",
+      "name": "Midnight of the Century",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-09",
+      "id": 110634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1425322.jpg",
+      "name": "Goodbye Charlie",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-23",
+      "id": 110635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1428973.jpg",
+      "name": "Luminary",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-02-06",
+      "id": 110636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1428974.jpg",
+      "name": "The Mikado",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-02-27",
+      "id": 110637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1429111.jpg",
+      "name": "The Pest House",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-06",
+      "id": 110638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1429350.jpg",
+      "name": "Owls",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-13",
+      "id": 110639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1429407.jpg",
+      "name": "Roosters",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-20",
+      "id": 110640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/571/1429856.jpg",
+      "name": "Siren",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-04-03",
+      "id": 110641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1430443.jpg",
+      "name": "In Arcadia Ego",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-04-17",
+      "id": 110642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1430457.jpg",
+      "name": "Anamnesis",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-04-24",
+      "id": 110643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1430562.jpg",
+      "name": "A Room with No View",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-01",
+      "id": 110644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1430697.jpg",
+      "name": "Somehow, Satan Got Behind Me",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-08",
+      "id": 110645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1431122.jpg",
+      "name": "The Fourth Horseman",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-15",
+      "id": 110646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1431581.jpg",
+      "name": "The Time is Now",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-10-02",
+      "id": 110647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/572/1432358.jpg",
+      "name": "The Innocents",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-09",
+      "id": 110648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1432635.jpg",
+      "name": "Exegesis",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-16",
+      "id": 110649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1432713.jpg",
+      "name": "TEOTWAWKI",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-23",
+      "id": 110650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1432900.jpg",
+      "name": "Closure",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-30",
+      "id": 110651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1433182.jpg",
+      "name": "...Thirteen Years Later",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-11-06",
+      "id": 110652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1433740.jpg",
+      "name": "Skull and Bones",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-11-13",
+      "id": 110653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1434037.jpg",
+      "name": "Through a Glass, Darkly",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-12-11",
+      "id": 110654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1434257.jpg",
+      "name": "Human Essence",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-12-18",
+      "id": 110655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1434425.jpg",
+      "name": "Omerta",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-01-15",
+      "id": 110656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/573/1434531.jpg",
+      "name": "Borrowed Time",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-01-22",
+      "id": 110657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1435614.jpg",
+      "name": "Collateral Damage",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-05",
+      "id": 110658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1435681.jpg",
+      "name": "The Sound of Snow",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-12",
+      "id": 110659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1436104.jpg",
+      "name": "Antipas",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-19",
+      "id": 110660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1436163.jpg",
+      "name": "Matryoshka",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-03-19",
+      "id": 110661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1436383.jpg",
+      "name": "Forcing the End",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-09",
+      "id": 110662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1437868.jpg",
+      "name": "Saturn Dreaming of Mercury",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-16",
+      "id": 110663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438094.jpg",
+      "name": "Darwin's Eye",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-23",
+      "id": 110664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438395.jpg",
+      "name": "Bardo Thodol",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-30",
+      "id": 110665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438592.jpg",
+      "name": "Seven and One",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-07",
+      "id": 110666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438921.jpg",
+      "name": "Nostalgia",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-14",
+      "id": 110667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1438958.jpg",
+      "name": "Via Dolorosa",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-21",
+      "id": 110668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/575/1439216.jpg",
+      "name": "Goodbye to All That",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-1302",
+  "live": true,
+  "overview": "Retired serial-profiler Frank Black has moved his family to Seattle to escape the violence and horror he dealt with while working for the FBI in Washington, D.C. Although his uncanny and often unsettling ability to see into the twisted minds of serial killers has caused him much inner torment, Black knows his \"gift\" can still be used to help protect and save others. For that reason he has joined the mysterious Millennium Group, a team of underground ex-law enforcement experts dedicated to fighting against the ever-growing forces of evil and darkness in the world.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/7/18464.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1302",
+  "title": "Millennium",
+  "type": "series",
+  "year": 1996
 }

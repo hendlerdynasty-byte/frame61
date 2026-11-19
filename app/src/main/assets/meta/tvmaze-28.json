@@ -1,21 +1,778 @@
 {
-  "schema": 1,
-  "id": "tvmaze-28",
-  "source": "tvmaze",
-  "sourceId": "28",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Californication",
-  "year": 2007,
-  "type": "series",
-  "overview": "Californication is a series based around the writer Hank Moody. He moves to California and suffers a writers block as well as many other family and personal issues. His drinking and generally unhealthy lifestyle interrupts his relationships with his long term lover Karen and his daughter Becca as he struggles with his manager Charlie Runkle.",
-  "poster": "file:///android_asset/posters/tvmaze-28.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-08-13",
+      "id": 1463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337516.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-20",
+      "id": 1464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239589.jpg",
+      "name": "Hell-A Woman",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-27",
+      "id": 1465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337557.jpg",
+      "name": "The Whore of Babylon",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-03",
+      "id": 1466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239623.jpg",
+      "name": "Fear and Loathing at the Fundraiser",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-10",
+      "id": 1467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337569.jpg",
+      "name": "LOL",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-17",
+      "id": 1468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337579.jpg",
+      "name": "Absinthe Makes the Heart Grow Fonder",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-24",
+      "id": 1469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239818.jpg",
+      "name": "Girls, Interrupted",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 1470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337583.jpg",
+      "name": "California Son",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 1471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337585.jpg",
+      "name": "Filthy Lucre",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 1472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337591.jpg",
+      "name": "The Devil's Threesome",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 1473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239823.jpg",
+      "name": "Turn the Page",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-29",
+      "id": 1474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337600.jpg",
+      "name": "The Last Waltz",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 1475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242591.jpg",
+      "name": "Slip of the Tongue",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 1476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337799.jpg",
+      "name": "The Great Ashby",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 1477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337808.jpg",
+      "name": "No Way to Treat a Lady",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 1478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242596.jpg",
+      "name": "The Raw & the Cooked",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 1479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337810.jpg",
+      "name": "Vaginatown",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-02",
+      "id": 1480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1337812.jpg",
+      "name": "Coke Dick & the First Kick",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 1481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338121.jpg",
+      "name": "In a Lonely Place",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 1482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338125.jpg",
+      "name": "Going Down and Out in Beverly Hills",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 1483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338126.jpg",
+      "name": "La Ronde",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-30",
+      "id": 1484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242604.jpg",
+      "name": "In Utero",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-07",
+      "id": 1485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242607.jpg",
+      "name": "Blues from Laurel Canyon",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-14",
+      "id": 1486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242613.jpg",
+      "name": "La Petite Mort",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 1487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338247.jpg",
+      "name": "Wish You Were Here",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 1488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338260.jpg",
+      "name": "The Land of Rape and Honey",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-11",
+      "id": 1489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338267.jpg",
+      "name": "Verities & Balderdash",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-18",
+      "id": 1490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338269.jpg",
+      "name": "Zoso",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-25",
+      "id": 1491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338733.jpg",
+      "name": "Slow Happy Boys",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-01",
+      "id": 1492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338736.jpg",
+      "name": "Glass Houses",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-08",
+      "id": 1493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338745.jpg",
+      "name": "So Here's the Thing...",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-15",
+      "id": 1494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243040.jpg",
+      "name": "The Apartment",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-22",
+      "id": 1495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338782.jpg",
+      "name": "Mr. Bad Example",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-29",
+      "id": 1496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338787.jpg",
+      "name": "Dogtown",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-12-06",
+      "id": 1497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338805.jpg",
+      "name": "Comings & Goings",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-12-13",
+      "id": 1498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338810.jpg",
+      "name": "Mia Culpa",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-09",
+      "id": 1499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1338825.jpg",
+      "name": "Exile on Main St.",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-16",
+      "id": 1500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339228.jpg",
+      "name": "Suicide Solution",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-23",
+      "id": 1501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339233.jpg",
+      "name": "Home Sweet Home",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-30",
+      "id": 1502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243049.jpg",
+      "name": "Monkey Business",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-06",
+      "id": 1503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339239.jpg",
+      "name": "Freeze-Frame",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-13",
+      "id": 1504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339244.jpg",
+      "name": "Lawyers, Guns and Money",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-20",
+      "id": 1505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339423.jpg",
+      "name": "The Recused",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-27",
+      "id": 1506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339424.jpg",
+      "name": "Lights, Camera, Asshole",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-06",
+      "id": 1507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247430.jpg",
+      "name": "Another Perfect Day",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-13",
+      "id": 1508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247433.jpg",
+      "name": "The Trial",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-20",
+      "id": 1509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247677.jpg",
+      "name": "The Last Supper",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-27",
+      "id": 1510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247680.jpg",
+      "name": "...And Justice for All",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-08",
+      "id": 1511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247686.jpg",
+      "name": "JFK --> LAX",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-15",
+      "id": 1512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247709.jpg",
+      "name": "The Way of the Fist",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-22",
+      "id": 1513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247720.jpg",
+      "name": "Boys & Girls",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-29",
+      "id": 1514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247760.jpg",
+      "name": "Waiting for the Miracle",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-02-05",
+      "id": 1515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248207.jpg",
+      "name": "The Ride-Along",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-02-12",
+      "id": 1516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248208.jpg",
+      "name": "Love Song",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-02-19",
+      "id": 1517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248217.jpg",
+      "name": "Here I Go Again",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-04",
+      "id": 1518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248239.jpg",
+      "name": "Raw",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-11",
+      "id": 1519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248598.jpg",
+      "name": "At the Movies",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-18",
+      "id": 1520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248601.jpg",
+      "name": "Perverts & Whores",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 1521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248602.jpg",
+      "name": "The Party",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 1522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248607.jpg",
+      "name": "Hell Ain't a Bad Place to Be",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-13",
+      "id": 1523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249202.jpg",
+      "name": "The Unforgiven",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-01-20",
+      "id": 1524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249203.jpg",
+      "name": "Quitters",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-01-27",
+      "id": 1525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249780.jpg",
+      "name": "Dead Rock Stars",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-10",
+      "id": 1526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249792.jpg",
+      "name": "Hell Bent for Leather",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-17",
+      "id": 1527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249804.jpg",
+      "name": "Rock and a Hard Place",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-02-24",
+      "id": 1528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249811.jpg",
+      "name": "In the Clouds",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-03",
+      "id": 1529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249815.jpg",
+      "name": "The Dope Show",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-10",
+      "id": 1530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249821.jpg",
+      "name": "Everybody's a Fucking Critic",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-17",
+      "id": 1531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249827.jpg",
+      "name": "Mad Dogs & Englishmen",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-24",
+      "id": 1532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249836.jpg",
+      "name": "Blind Faith",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 1533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249838.jpg",
+      "name": "The Abby",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 1534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249865.jpg",
+      "name": "I'll Lay My Monsters Down",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 1535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250940.jpg",
+      "name": "Levon",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 1536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250952.jpg",
+      "name": "Julia",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 1537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251863.jpg",
+      "name": "Like Father Like Son",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 1538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251873.jpg",
+      "name": "Dicks",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 1539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251876.jpg",
+      "name": "Getting the Poison Out",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 1540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251880.jpg",
+      "name": "Kickoff",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-25",
+      "id": 1541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251882.jpg",
+      "name": "Smile",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 1542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251897.jpg",
+      "name": "30 Minutes or Less",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 1543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/252613.jpg",
+      "name": "Faith, Hope, Love",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 1544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/252619.jpg",
+      "name": "Dinner with Friends",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 1545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/535/1339755.jpg",
+      "name": "Daughter",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 1546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/252898.jpg",
+      "name": "Grace",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-28",
+  "live": true,
+  "overview": "Californication is a series based around the writer Hank Moody. He moves to California and suffers a writers block as well as many other family and personal issues. His drinking and generally unhealthy lifestyle interrupts his relationships with his long term lover Karen and his daughter Becca as he struggles with his manager Charlie Runkle.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/38/95017.jpg",
   "rating": 7.9,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "28",
+  "title": "Californication",
+  "type": "series",
+  "year": 2007
 }

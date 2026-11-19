@@ -1,22 +1,401 @@
 {
-  "schema": 1,
-  "id": "tvmaze-340",
-  "source": "tvmaze",
-  "sourceId": "340",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Librarians",
-  "year": 2014,
-  "type": "series",
-  "overview": "In The Librarians, four ordinary people from around the world are selected to work for the Library, an ancient order dedicated to solving supernatural mysteries and protecting the innocent from the secret magical world all around us.",
-  "poster": "file:///android_asset/posters/tvmaze-340.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-12-07",
+      "id": 32196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/510/1275394.jpg",
+      "name": "The Librarians and the Crown of King Arthur",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-07",
+      "id": 45767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/540/1351120.jpg",
+      "name": "The Librarians and the Sword in the Stone",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-14",
+      "id": 46279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1426760.jpg",
+      "name": "The Librarians and the Horns of a Dilemma",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-21",
+      "id": 46280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/576/1442345.jpg",
+      "name": "The Librarians and Santa's Midnight Run",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-28",
+      "id": 46281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/577/1443499.jpg",
+      "name": "The Librarians and the Apple of Discord",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-04",
+      "id": 46282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475832.jpg",
+      "name": "The Librarians and the Fables of Doom",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-11",
+      "id": 46283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19034.jpg",
+      "name": "The Librarians and the Rule of Three",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-11",
+      "id": 46284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19035.jpg",
+      "name": "The Librarians and the Heart of Darkness",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-18",
+      "id": 46285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19537.jpg",
+      "name": "The Librarians and the City of Light",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-18",
+      "id": 46286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19538.jpg",
+      "name": "The Librarians and the Loom of Fate",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 212191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63770.jpg",
+      "name": "And the Drowned Book",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 215211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/69509.jpg",
+      "name": "And the Broken Staff",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 246337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/72799.jpg",
+      "name": "And What Lies Beneath the Stones",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 246338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76082.jpg",
+      "name": "And the Cost of Education",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-22",
+      "id": 246339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79278.jpg",
+      "name": "And the Hollow Men",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 246340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81908.jpg",
+      "name": "And the Infernal Contract",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-06",
+      "id": 353009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84107.jpg",
+      "name": "And the Image of Image",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-13",
+      "id": 353010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86648.jpg",
+      "name": "And the Point of Salvation",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-20",
+      "id": 353011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89298.jpg",
+      "name": "And the Happily Ever Afters",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-27",
+      "id": 353012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91487.jpg",
+      "name": "And the Final Curtain",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 731106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208709.jpg",
+      "name": "And the Rise of Chaos",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 939453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222788.jpg",
+      "name": "And the Fangs of Death",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 966468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222787.jpg",
+      "name": "And the Reunion of Evil",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-11",
+      "id": 966469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/222146.jpg",
+      "name": "And the Self-Fulfilling Prophecy",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-18",
+      "id": 966470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222776.jpg",
+      "name": "And the Tears of a Clown",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-25",
+      "id": 966471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222778.jpg",
+      "name": "And the Trial of the Triangle",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-01",
+      "id": 1001638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222779.jpg",
+      "name": "And the Curse of Cindy",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-08",
+      "id": 854881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222782.jpg",
+      "name": "And the Eternal Question",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-15",
+      "id": 868543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222783.jpg",
+      "name": "And the Fatal Separation",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-22",
+      "id": 878231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236355.jpg",
+      "name": "And the Wrath of Chaos",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-12-13",
+      "id": 1142760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346175.jpg",
+      "name": "And the Dark Secret",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-13",
+      "id": 1372237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346201.jpg",
+      "name": "And the Steal of Fortune",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-20",
+      "id": 1176900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/348119.jpg",
+      "name": "And the Christmas Thief",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-20",
+      "id": 1176904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/139/348143.jpg",
+      "name": "And the Silver Screen",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-27",
+      "id": 1207207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350467.jpg",
+      "name": "And the Bleeding Crown",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-27",
+      "id": 1203712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/350469.jpg",
+      "name": "And the Graves of Time",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-03",
+      "id": 1215079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352887.jpg",
+      "name": "And the Disenchanted Forest",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-10",
+      "id": 1225116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354894.jpg",
+      "name": "And the Hidden Sanctuary",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-17",
+      "id": 1235994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/356852.jpg",
+      "name": "And a Town Called Feud",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-24",
+      "id": 1249845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358914.jpg",
+      "name": "And Some Dude Named Jeff",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-31",
+      "id": 1372952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/361238.jpg",
+      "name": "And the Trial of the One",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-07",
+      "id": 1270921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363368.jpg",
+      "name": "And the Echoes of Memory",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
-    "Übernatürlich"
+    "Adventure",
+    "Supernatural"
   ],
+  "id": "tvmaze-340",
+  "live": true,
+  "overview": "In The Librarians, four ordinary people from around the world are selected to work for the Library, an ancient order dedicated to solving supernatural mysteries and protecting the innocent from the secret magical world all around us.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/135/338167.jpg",
   "rating": 7.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "340",
+  "title": "The Librarians",
+  "type": "series",
+  "year": 2014
 }

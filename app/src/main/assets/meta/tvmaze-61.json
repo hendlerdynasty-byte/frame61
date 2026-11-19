@@ -1,22 +1,473 @@
 {
-  "schema": 1,
-  "id": "tvmaze-61",
-  "source": "tvmaze",
-  "sourceId": "61",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Orphan Black",
-  "year": 2013,
-  "type": "series",
-  "overview": "Orphan Black is about Sarah, an outsider and orphan whose life changes dramatically after witnessing the suicide of a woman, \"Beth\", who looks just like her. Sarah takes her identity, her boyfriend and her money. But instead of solving her problems, the street-smart chameleon is thrust headlong into a kaleidoscopic mystery. She makes the dizzying discovery that she and the dead woman are clones... but are they the only ones? Sarah quickly finds herself caught in the middle of a deadly conspiracy, racing to find answers.",
-  "poster": "file:///android_asset/posters/tvmaze-61.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-03-30",
+      "id": 2548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63842.jpg",
+      "name": "Natural Selection",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-06",
+      "id": 2549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63843.jpg",
+      "name": "Instinct",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-13",
+      "id": 2550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63845.jpg",
+      "name": "Variation Under Nature",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-20",
+      "id": 2551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63847.jpg",
+      "name": "Effects of External Conditions",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-27",
+      "id": 2552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63848.jpg",
+      "name": "Conditions of Existence",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-04",
+      "id": 2553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63849.jpg",
+      "name": "Variations Under Domestication",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-11",
+      "id": 2554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63851.jpg",
+      "name": "Parts Developed in an Unusual Manner",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-18",
+      "id": 2555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63852.jpg",
+      "name": "Entangled Bank",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-25",
+      "id": 2556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63853.jpg",
+      "name": "Unconscious Selection",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-01",
+      "id": 2557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63854.jpg",
+      "name": "Endless Forms Most Beautiful",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-19",
+      "id": 2558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63857.jpg",
+      "name": "Nature Under Constraint and Vexed",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-26",
+      "id": 2559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63858.jpg",
+      "name": "Governed by Sound Reason and True Religion",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-03",
+      "id": 2560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63859.jpg",
+      "name": "Mingling Its Own Nature with It",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-10",
+      "id": 2561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63860.jpg",
+      "name": "Governed as It Were by Chance",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-17",
+      "id": 2562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63861.jpg",
+      "name": "Ipsa Scientia Potestas Est",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-24",
+      "id": 2563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3917.jpg",
+      "name": "To Hound Nature in Her Wanderings",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-31",
+      "id": 2564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3916.jpg",
+      "name": "Knowledge of Causes, and Secret Motion of Things",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-07",
+      "id": 2565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3915.jpg",
+      "name": "Variable and Full of Perturbation",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-14",
+      "id": 2566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3914.jpg",
+      "name": "Things Which Have Never Yet Been Done",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-21",
+      "id": 2567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/3913.jpg",
+      "name": "By Means Which Have Never Yet Been Tried",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-18",
+      "id": 93520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156139.jpg",
+      "name": "The Weight of This Combination",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-25",
+      "id": 153171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156140.jpg",
+      "name": "Transitory Sacrifices of Crisis",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-02",
+      "id": 153896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156141.jpg",
+      "name": "Formalized, Complex, and Costly",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-09",
+      "id": 154116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156142.jpg",
+      "name": "Newer Elements of Our Defense",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-16",
+      "id": 154573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156143.jpg",
+      "name": "Scarred by Many Past Frustrations",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-23",
+      "id": 154574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156144.jpg",
+      "name": "Certain Agony of the Battlefield",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-30",
+      "id": 155554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156146.jpg",
+      "name": "Community of Dreadful Fear and Hate",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-06",
+      "id": 155555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156148.jpg",
+      "name": "Ruthless in Purpose, and Insidious in Method",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-13",
+      "id": 155556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156149.jpg",
+      "name": "Insolvent Phantom of Tomorrow",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-20",
+      "id": 155557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156151.jpg",
+      "name": "History Yet to Be Written",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-14",
+      "id": 578655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156152.jpg",
+      "name": "The Collapse of Nature",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-21",
+      "id": 655330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156154.jpg",
+      "name": "Transgressive Border Crossing",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-28",
+      "id": 655339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/137863.jpg",
+      "name": "The Stigmata of Progress",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-05",
+      "id": 670686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/140545.jpg",
+      "name": "From Instinct to Rational Control",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-12",
+      "id": 670687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/144034.jpg",
+      "name": "Human Raw Material",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-19",
+      "id": 670688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146921.jpg",
+      "name": "The Scandal of Altruism",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-26",
+      "id": 670689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/149092.jpg",
+      "name": "The Antisocialism of Sex",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-02",
+      "id": 670690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/152270.jpg",
+      "name": "The Redesign of Natural Objects",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-09",
+      "id": 670691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154093.jpg",
+      "name": "The Mitigation of Competition",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-16",
+      "id": 670692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156990.jpg",
+      "name": "From Dancing Mice to Psychopaths",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-10",
+      "id": 1065446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290657.jpg",
+      "name": "The Few Who Dare",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-17",
+      "id": 1069555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/293007.jpg",
+      "name": "Clutch of Greed",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-06-24",
+      "id": 1069556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/295324.jpg",
+      "name": "Beneath Her Heart",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-01",
+      "id": 1069557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297575.jpg",
+      "name": "Let the Children and Childbearers Toil",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-08",
+      "id": 1069558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299592.jpg",
+      "name": "Ease for Idle Millionaires",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-15",
+      "id": 1069559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301760.jpg",
+      "name": "Manacled Slim Wrists",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-22",
+      "id": 1075229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304447.jpg",
+      "name": "Gag or Throttle",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-29",
+      "id": 1075230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306529.jpg",
+      "name": "Guillotines Decide",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-05",
+      "id": 1075231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308452.jpg",
+      "name": "One Fettered Slave",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-12",
+      "id": 1069560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310489.jpg",
+      "name": "To Right the Wrongs of Many",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-61",
+  "live": true,
+  "overview": "Orphan Black is about Sarah, an outsider and orphan whose life changes dramatically after witnessing the suicide of a woman, \"Beth\", who looks just like her. Sarah takes her identity, her boyfriend and her money. But instead of solving her problems, the street-smart chameleon is thrust headlong into a kaleidoscopic mystery. She makes the dizzying discovery that she and the dead woman are clones... but are they the only ones? Sarah quickly finds herself caught in the middle of a deadly conspiracy, racing to find answers.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/484/1210257.jpg",
   "rating": 8.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "61",
+  "title": "Orphan Black",
+  "type": "series",
+  "year": 2013
 }

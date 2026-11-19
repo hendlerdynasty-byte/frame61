@@ -1,22 +1,410 @@
 {
-  "schema": 1,
-  "id": "tvmaze-800",
-  "source": "tvmaze",
-  "sourceId": "800",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Kyle XY",
-  "year": 2006,
-  "type": "series",
-  "overview": "Kyle XY is an incredible mystery about a teenager with no past. The series tells the surprising journey of Kyle, a 16 year-old teenage savant who is missing instinctive human behavior such as anger, joy and love, and the family who found him. After coming out of the woods and found walking into traffic, Kyle is sent to a youth detention center where he comes into contact with his first experience of eating food and human interaction: not all of it friendly. At the center they realize that Kyle is not like any ordinary teenager, especially once they find that he is missing his belly-button. With questions of 'Who is this kid?' and 'Where did he come from?' psychologist Nicole Trager is called in to help get some much needed answers.",
-  "poster": "file:///android_asset/posters/tvmaze-800.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-06-26",
+      "id": 71434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756106.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-03",
+      "id": 71435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756107.jpg",
+      "name": "Sleepless in Seattle",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-10",
+      "id": 71436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756108.jpg",
+      "name": "The Lies That Bind",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-17",
+      "id": 71437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756109.jpg",
+      "name": "Diving In",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-24",
+      "id": 71438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756110.jpg",
+      "name": "This Is Not a Test",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-07-31",
+      "id": 71439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756111.jpg",
+      "name": "Blame It On The Rain",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-07",
+      "id": 71440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756112.jpg",
+      "name": "Kyle Got Game",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-14",
+      "id": 71441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756113.jpg",
+      "name": "Memory Serves",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-21",
+      "id": 71442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756114.jpg",
+      "name": "Overheard",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2006-08-28",
+      "id": 71443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756115.jpg",
+      "name": "Endgame",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-11",
+      "id": 71444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756117.jpg",
+      "name": "The Prophet",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-06-18",
+      "id": 71445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756118.jpg",
+      "name": "The Homecoming",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-06-25",
+      "id": 71446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756119.jpg",
+      "name": "The List Is Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-02",
+      "id": 71447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756120.jpg",
+      "name": "Balancing Act",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-09",
+      "id": 71448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756121.jpg",
+      "name": "Come to Your Senses",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-16",
+      "id": 71449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756122.jpg",
+      "name": "Does Kyle Dream of Electric Fish",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-23",
+      "id": 71450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756123.jpg",
+      "name": "Free To Be You And Me",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-07-30",
+      "id": 71451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756124.jpg",
+      "name": "What's The Frequency, Kyle?",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-06",
+      "id": 71452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756125.jpg",
+      "name": "Ghost in the Machine",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-13",
+      "id": 71453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756126.jpg",
+      "name": "House of Cards",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-20",
+      "id": 71454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756127.jpg",
+      "name": "Hands on a Hybrid",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-08-27",
+      "id": 71455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756128.jpg",
+      "name": "Lockdown",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-03",
+      "id": 71456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756129.jpg",
+      "name": "Leap of Faith",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-14",
+      "id": 71457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756130.jpg",
+      "name": "To C.I.R. With Love",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-21",
+      "id": 71458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756131.jpg",
+      "name": "The Future's So Bright, I Gotta Wear Shades",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-01-28",
+      "id": 71459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756132.jpg",
+      "name": "Great Expectations",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-04",
+      "id": 71460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756133.jpg",
+      "name": "Grounded",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-11",
+      "id": 71461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756134.jpg",
+      "name": "Between The Rack and a Hard Place",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-18",
+      "id": 71462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756135.jpg",
+      "name": "First Cut Is the Deepest",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-02-25",
+      "id": 71463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756136.jpg",
+      "name": "Primary Colors",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-03",
+      "id": 71464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756137.jpg",
+      "name": "Grey Matters",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-10",
+      "id": 71465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756138.jpg",
+      "name": "Hello...",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-03-17",
+      "id": 71466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756139.jpg",
+      "name": "I've Had the Time of My Life",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-12",
+      "id": 71467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756140.jpg",
+      "name": "It Happened One Night",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-01-19",
+      "id": 71468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756141.jpg",
+      "name": "Psychic Friend",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-01-26",
+      "id": 71469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756142.jpg",
+      "name": "Electric Kiss",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-02",
+      "id": 71470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756143.jpg",
+      "name": "In the Company of Men",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-09",
+      "id": 71471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756144.jpg",
+      "name": "Life Support",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 71472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756145.jpg",
+      "name": "Welcome to Latnok",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-02-23",
+      "id": 71473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756146.jpg",
+      "name": "Chemistry 101",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-02",
+      "id": 71474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756147.jpg",
+      "name": "The Tell-Tale Heart",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-09",
+      "id": 71475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756148.jpg",
+      "name": "Guess Who's Coming to Dinner",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-03-16",
+      "id": 71476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/302/756149.jpg",
+      "name": "Bringing Down the House",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Mystery"
   ],
+  "id": "tvmaze-800",
+  "live": true,
+  "overview": "Kyle XY is an incredible mystery about a teenager with no past. The series tells the surprising journey of Kyle, a 16 year-old teenage savant who is missing instinctive human behavior such as anger, joy and love, and the family who found him. After coming out of the woods and found walking into traffic, Kyle is sent to a youth detention center where he comes into contact with his first experience of eating food and human interaction: not all of it friendly. At the center they realize that Kyle is not like any ordinary teenager, especially once they find that he is missing his belly-button. With questions of 'Who is this kid?' and 'Where did he come from?' psychologist Nicole Trager is called in to help get some much needed answers.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15591.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "800",
+  "title": "Kyle XY",
+  "type": "series",
+  "year": 2006
 }

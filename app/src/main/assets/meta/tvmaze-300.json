@@ -1,22 +1,311 @@
 {
-  "schema": 1,
-  "id": "tvmaze-300",
-  "source": "tvmaze",
-  "sourceId": "300",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Murder in the First",
-  "year": 2014,
-  "type": "series",
-  "overview": "Murder in the First follows homicide detectives Terry English and Hildy Mulligan as they investigate two seemingly unrelated murders. The mystery deepens, however, when they find both murders have a common denominator in a Silicon Valley wunderkind.",
-  "poster": "file:///android_asset/posters/tvmaze-300.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-06-09",
+      "id": 30681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166986.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 30682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166987.jpg",
+      "name": "The City of Sisterly Love",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 30683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166988.jpg",
+      "name": "Who's Your Daddy",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 30684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166989.jpg",
+      "name": "Burning Woman",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 30685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166995.jpg",
+      "name": "Pants on Fire",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 30686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166990.jpg",
+      "name": "Punch Drunk",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 30687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166991.jpg",
+      "name": "Suck My Alibi",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 30688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166992.jpg",
+      "name": "Win Some, Lose Some",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 30689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166993.jpg",
+      "name": "Family Matters",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 30690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166994.jpg",
+      "name": "Blunt the Edge",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-08",
+      "id": 153075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/29366.jpg",
+      "name": "Twenty-Fifteen",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-15",
+      "id": 153212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30263.jpg",
+      "name": "Schizofrenzy",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-22",
+      "id": 153213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31037.jpg",
+      "name": "Blue on Blue",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-29",
+      "id": 153214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31817.jpg",
+      "name": "My Sugar Walls",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-06",
+      "id": 153215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32233.jpg",
+      "name": "The McCormack Mulligan",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-13",
+      "id": 153216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33274.jpg",
+      "name": "Oh, Mexico",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-20",
+      "id": 153217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34254.jpg",
+      "name": "State of the Union",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-27",
+      "id": 153218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34853.jpg",
+      "name": "Out of the Shadows",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-03",
+      "id": 153219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/167635.jpg",
+      "name": "Bruja Blanca",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-10",
+      "id": 153220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/36624.jpg",
+      "name": "Nothing But the Truth",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-17",
+      "id": 181809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/38450.jpg",
+      "name": "Down Time",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-24",
+      "id": 181810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39939.jpg",
+      "name": "Number Thirty Nine",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-26",
+      "id": 679094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/162110.jpg",
+      "name": "Normandy Bitch",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-03",
+      "id": 764822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/158107.jpg",
+      "name": "Tropic of Cancer",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-10",
+      "id": 826318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167227.jpg",
+      "name": "Black and Blue",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-17",
+      "id": 826319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167228.jpg",
+      "name": "The Barbers of Seville",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-24",
+      "id": 826320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167229.jpg",
+      "name": "Follow the Money",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-07-31",
+      "id": 826321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167230.jpg",
+      "name": "Sam I Am",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-14",
+      "id": 826322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167231.jpg",
+      "name": "Let's Make a Deal",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-21",
+      "id": 836046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167232.jpg",
+      "name": "Daddy Dearest",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-28",
+      "id": 836047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167233.jpg",
+      "name": "Rise of the Phoenix",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-04",
+      "id": 863649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167234.jpg",
+      "name": "Kat's Meow",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-300",
+  "live": true,
+  "overview": "Murder in the First follows homicide detectives Terry English and Hildy Mulligan as they investigate two seemingly unrelated murders. The mystery deepens, however, when they find both murders have a common denominator in a Silicon Valley wunderkind.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/192/481470.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "300",
+  "title": "Murder in the First",
+  "type": "series",
+  "year": 2014
 }

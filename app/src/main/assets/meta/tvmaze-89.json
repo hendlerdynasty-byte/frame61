@@ -1,21 +1,571 @@
 {
-  "schema": 1,
-  "id": "tvmaze-89",
-  "source": "tvmaze",
-  "sourceId": "89",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Unforgettable",
-  "year": 2011,
-  "type": "series",
-  "overview": "Unforgettable follows Carrie Wells, an enigmatic former police detective with a rare condition that makes her memory so flawless that every place, every conversation, every moment of joy and every heartbreak is forever embedded in her mind. It's not just that she doesn't forget anything - she can't; except for one thing: the details that would help solve her sister's long-ago murder. Carrie has tried to put her past behind her, but she's unexpectedly reunited with her ex-boyfriend and partner, NYPD Detective Al Burns when she consults on a homicide case.",
-  "poster": "file:///android_asset/posters/tvmaze-89.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-09-20",
+      "id": 5852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99519.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 5853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99518.jpg",
+      "name": "Heroes",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-04",
+      "id": 5854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99517.jpg",
+      "name": "Check Out Time",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-11",
+      "id": 5855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99516.jpg",
+      "name": "Up in Flames",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-18",
+      "id": 5856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99514.jpg",
+      "name": "With Honor",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-25",
+      "id": 5857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99513.jpg",
+      "name": "Friended",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-01",
+      "id": 5858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99512.jpg",
+      "name": "Road Block",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 5859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99511.jpg",
+      "name": "Lost Things",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-15",
+      "id": 5860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99510.jpg",
+      "name": "Golden Bird",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-22",
+      "id": 5861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99509.jpg",
+      "name": "Trajectories",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-13",
+      "id": 5862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/507/1267804.jpg",
+      "name": "Spirited Away",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-03",
+      "id": 5863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99506.jpg",
+      "name": "Butterfly Effect",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-10",
+      "id": 5864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99505.jpg",
+      "name": "Brotherhood",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 5865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99503.jpg",
+      "name": "Carrie's Caller",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 5866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99502.jpg",
+      "name": "The Following Sea",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 5867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99501.jpg",
+      "name": "Heartbreak",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-28",
+      "id": 5868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99500.jpg",
+      "name": "Blind Alleys",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 5869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99498.jpg",
+      "name": "The Comeback",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-27",
+      "id": 5870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99497.jpg",
+      "name": "Allegiances",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 5871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99496.jpg",
+      "name": "You Are Here",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-01",
+      "id": 5872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99495.jpg",
+      "name": "Endgame",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-08",
+      "id": 5873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99492.jpg",
+      "name": "The Man in the Woods",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-28",
+      "id": 5874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99490.jpg",
+      "name": "Bigtime",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-04",
+      "id": 5875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99488.jpg",
+      "name": "Incognito",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-11",
+      "id": 5876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99487.jpg",
+      "name": "Day of the Jackie",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-18",
+      "id": 5877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99485.jpg",
+      "name": "Memory Kings",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-25",
+      "id": 5878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99484.jpg",
+      "name": "Past Tense",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-01",
+      "id": 5879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99483.jpg",
+      "name": "Line Up or Shut Up",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-08",
+      "id": 5880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99482.jpg",
+      "name": "Maps and Legends",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-04",
+      "id": 5881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99480.jpg",
+      "name": "Till Death",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-11",
+      "id": 5882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99479.jpg",
+      "name": "Flesh and Blood",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-18",
+      "id": 5883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99477.jpg",
+      "name": "Manhunt",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-25",
+      "id": 5884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99476.jpg",
+      "name": "East of Islip",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-02",
+      "id": 5885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99475.jpg",
+      "name": "Omega Hour",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-09",
+      "id": 5886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99474.jpg",
+      "name": "Reunion",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 5887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/22/57048.jpg",
+      "name": "New Hundred",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-06",
+      "id": 5888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/62286.jpg",
+      "name": "The Combination",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-13",
+      "id": 5889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/62289.jpg",
+      "name": "The Haircut",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-20",
+      "id": 5890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99466.jpg",
+      "name": "Cashing Out",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-27",
+      "id": 5891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99467.jpg",
+      "name": "A Moveable Feast",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-03",
+      "id": 5892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99469.jpg",
+      "name": "Stray Bullet",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-17",
+      "id": 5893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99470.jpg",
+      "name": "Throwing Shade",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-24",
+      "id": 5894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99472.jpg",
+      "name": "The Island",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-30",
+      "id": 5895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99473.jpg",
+      "name": "Admissions",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-31",
+      "id": 5896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99465.jpg",
+      "name": "Fire and Ice",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-07",
+      "id": 5897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99463.jpg",
+      "name": "True Identity",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-14",
+      "id": 5898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99461.jpg",
+      "name": "Moving On",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-14",
+      "id": 5899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99460.jpg",
+      "name": "DOA",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-27",
+      "id": 213033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81086.jpg",
+      "name": "Blast from the Past",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-11-27",
+      "id": 376859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81087.jpg",
+      "name": "Gut Check",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-04",
+      "id": 426210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81874.jpg",
+      "name": "Behind the Beat",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-11",
+      "id": 404149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86379.jpg",
+      "name": "Dollars And Scents",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-12-18",
+      "id": 480202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/89290.jpg",
+      "name": "All In",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-01",
+      "id": 532035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94093.jpg",
+      "name": "The Return of Eddie",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-08",
+      "id": 532036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99459.jpg",
+      "name": "We Can Be Heroes",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-15",
+      "id": 533174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99454.jpg",
+      "name": "Breathing Space",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-15",
+      "id": 546033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99520.jpg",
+      "name": "Shelter from the Storm",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 533175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102250.jpg",
+      "name": "Game On",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 570267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102251.jpg",
+      "name": "About Face",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 570269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102252.jpg",
+      "name": "Bad Company",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 570271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102253.jpg",
+      "name": "Paranoid Android",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-89",
+  "live": true,
+  "overview": "Unforgettable follows Carrie Wells, an enigmatic former police detective with a rare condition that makes her memory so flawless that every place, every conversation, every moment of joy and every heartbreak is forever embedded in her mind. It's not just that she doesn't forget anything - she can't; except for one thing: the details that would help solve her sister's long-ago murder. Carrie has tried to put her past behind her, but she's unexpectedly reunited with her ex-boyfriend and partner, NYPD Detective Al Burns when she consults on a homicide case.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/663.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "89",
+  "title": "Unforgettable",
+  "type": "series",
+  "year": 2011
 }

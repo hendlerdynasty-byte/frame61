@@ -1,22 +1,455 @@
 {
-  "schema": 1,
-  "id": "tvmaze-520",
-  "source": "tvmaze",
-  "sourceId": "520",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Lie to Me*",
-  "year": 2009,
-  "type": "series",
-  "overview": "This compelling new drama series stars Tim Roth as Dr. Cal Lightman, the world's leading deception expert who studies facial expressions and involuntary body language to discover not only if someone is lying, but why. Based on the real-life scientific discoveries of Dr. Paul Ekman, the series follows Lightman and his team of deception experts as they assist law enforcement and government agencies to expose the truth behind the lies.",
-  "poster": "file:///android_asset/posters/tvmaze-520.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-01-21",
+      "id": 46921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97205.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-28",
+      "id": 46922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97206.jpg",
+      "name": "Moral Waiver",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-04",
+      "id": 46923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97236.jpg",
+      "name": "A Perfect Score",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-18",
+      "id": 46924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97262.jpg",
+      "name": "Love Always",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-04",
+      "id": 46925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97398.jpg",
+      "name": "Unchained",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-11",
+      "id": 46926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97431.jpg",
+      "name": "Do No Harm",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-18",
+      "id": 46927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/97460.jpg",
+      "name": "The Best Policy",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-01",
+      "id": 46928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97645.jpg",
+      "name": "Depraved Heart",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-08",
+      "id": 46929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97716.jpg",
+      "name": "Life Is Priceless",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-22",
+      "id": 46930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97760.jpg",
+      "name": "Better Half",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-29",
+      "id": 46931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97877.jpg",
+      "name": "Undercover",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-06",
+      "id": 46932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97985.jpg",
+      "name": "Blinded",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-13",
+      "id": 46933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/98174.jpg",
+      "name": "Sacrifice",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-09-28",
+      "id": 46934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/633/1583394.jpg",
+      "name": "The Core of It",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-05",
+      "id": 46935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/98565.jpg",
+      "name": "Truth or Consequences",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-12",
+      "id": 46936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/650/1626171.jpg",
+      "name": "Control Factor",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-19",
+      "id": 46937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/98955.jpg",
+      "name": "Honey",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-26",
+      "id": 46938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/98956.jpg",
+      "name": "Grievous Bodily Harm",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-09",
+      "id": 46939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99018.jpg",
+      "name": "Lack of Candor",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-16",
+      "id": 46940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99290.jpg",
+      "name": "Black Friday",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-23",
+      "id": 46941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99349.jpg",
+      "name": "Secret Santa",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-30",
+      "id": 46942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99654.jpg",
+      "name": "Fold Equity",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-14",
+      "id": 46943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100098.jpg",
+      "name": "Tractor Man",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-07",
+      "id": 46944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100411.jpg",
+      "name": "Beat the Devil",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-14",
+      "id": 46945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100508.jpg",
+      "name": "Sweet Sixteen",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-21",
+      "id": 46946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100857.jpg",
+      "name": "The Whole Truth",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-28",
+      "id": 46947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100891.jpg",
+      "name": "React to Contact",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-07-12",
+      "id": 46948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101174.jpg",
+      "name": "Teacher and Pupils",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-07-19",
+      "id": 46949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101204.jpg",
+      "name": "Delinquent",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-07-26",
+      "id": 46950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101206.jpg",
+      "name": "Bullet Bump",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-08-02",
+      "id": 46951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101312.jpg",
+      "name": "Headlock",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-08-16",
+      "id": 46952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101467.jpg",
+      "name": "Pied Piper",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-08-23",
+      "id": 46953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101537.jpg",
+      "name": "Exposed",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-08-30",
+      "id": 46954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101682.jpg",
+      "name": "Darkness and Light",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-13",
+      "id": 46955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/101902.jpg",
+      "name": "Black and White",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 46956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102221.jpg",
+      "name": "In the Red",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 46957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102283.jpg",
+      "name": "The Royal We",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 46958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/41/102645.jpg",
+      "name": "Dirty Loyal",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 46959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/105093.jpg",
+      "name": "Double Blind",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-08",
+      "id": 46960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/105153.jpg",
+      "name": "The Canary's Song",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-15",
+      "id": 46961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/42/106238.jpg",
+      "name": "Beyond Belief",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-22",
+      "id": 46962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107643.jpg",
+      "name": "Veronica",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-29",
+      "id": 46963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107917.jpg",
+      "name": "Smoked",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-10",
+      "id": 46964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108252.jpg",
+      "name": "Funhouse",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-10",
+      "id": 46965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108371.jpg",
+      "name": "Rebound",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-17",
+      "id": 46966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108693.jpg",
+      "name": "Saved",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-24",
+      "id": 46967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108879.jpg",
+      "name": "Gone",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-31",
+      "id": 46968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/109101.jpg",
+      "name": "Killer App",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-520",
+  "live": true,
+  "overview": "This compelling new drama series stars Tim Roth as Dr. Cal Lightman, the world's leading deception expert who studies facial expressions and involuntary body language to discover not only if someone is lying, but why. Based on the real-life scientific discoveries of Dr. Paul Ekman, the series follows Lightman and his team of deception experts as they assist law enforcement and government agencies to expose the truth behind the lies.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11275.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "520",
+  "title": "Lie to Me*",
+  "type": "series",
+  "year": 2009
 }

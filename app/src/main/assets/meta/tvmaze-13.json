@@ -1,22 +1,1679 @@
 {
-  "schema": 1,
-  "id": "tvmaze-13",
-  "source": "tvmaze",
-  "sourceId": "13",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Flash",
-  "year": 2014,
-  "type": "series",
-  "overview": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash!",
-  "poster": "file:///android_asset/posters/tvmaze-13.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-10-07",
+      "id": 592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669257.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669258.jpg",
+      "name": "Fastest Man Alive",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-21",
+      "id": 594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669274.jpg",
+      "name": "Things You Can't Outrun",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-28",
+      "id": 595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6085.jpg",
+      "name": "Going Rogue",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 32198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669259.jpg",
+      "name": "Plastique",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 39622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669260.jpg",
+      "name": "The Flash Is Born",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-25",
+      "id": 44364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669261.jpg",
+      "name": "Power Outage",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-02",
+      "id": 45278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669262.jpg",
+      "name": "Flash vs. Arrow",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-09",
+      "id": 45314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669263.jpg",
+      "name": "The Man in the Yellow Suit",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-20",
+      "id": 45797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669264.jpg",
+      "name": "Revenge of the Rogues",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-27",
+      "id": 109545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669265.jpg",
+      "name": "The Sound and the Fury",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 109546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669266.jpg",
+      "name": "Crazy for You",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 109547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669267.jpg",
+      "name": "The Nuclear Man",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 117402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669268.jpg",
+      "name": "Fallout",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-17",
+      "id": 117404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669269.jpg",
+      "name": "Out of Time",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-24",
+      "id": 120499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24356.jpg",
+      "name": "Rogue Time",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-31",
+      "id": 128598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24716.jpg",
+      "name": "Tricksters",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-14",
+      "id": 150969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669270.jpg",
+      "name": "All Star Team Up",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-21",
+      "id": 144529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26394.jpg",
+      "name": "Who Is Harrison Wells?",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 144530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669271.jpg",
+      "name": "The Trap",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 151706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669272.jpg",
+      "name": "Grodd Lives",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-12",
+      "id": 151802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669273.jpg",
+      "name": "Rogue Air",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-19",
+      "id": 144533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669275.jpg",
+      "name": "Fast Enough",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-06",
+      "id": 182146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669277.jpg",
+      "name": "The Man Who Saved Central City",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-13",
+      "id": 211206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669278.jpg",
+      "name": "Flash of Two Worlds",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-20",
+      "id": 187808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669279.jpg",
+      "name": "Family of Rogues",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-27",
+      "id": 284974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669280.jpg",
+      "name": "The Fury of Firestorm",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-03",
+      "id": 379082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669281.jpg",
+      "name": "The Darkness and the Light",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-10",
+      "id": 397298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/73392.jpg",
+      "name": "Enter Zoom",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-17",
+      "id": 405830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/76610.jpg",
+      "name": "Gorilla Warfare",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-01",
+      "id": 442592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669276.jpg",
+      "name": "Legends of Today",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-08",
+      "id": 426089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84840.jpg",
+      "name": "Running to Stand Still",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 510531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669282.jpg",
+      "name": "Potential Energy",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 543069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669283.jpg",
+      "name": "The Reverse-Flash Returns",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 526408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669284.jpg",
+      "name": "Fast Lane",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 578912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669285.jpg",
+      "name": "Welcome to Earth-2",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 589453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114428.jpg",
+      "name": "Escape from Earth-2",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 600637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/669286.jpg",
+      "name": "King Shark",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 622447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120239.jpg",
+      "name": "Trajectory",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 630267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124833.jpg",
+      "name": "Flash Back",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 670722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129604.jpg",
+      "name": "Versus Zoom",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-26",
+      "id": 670723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/133907.jpg",
+      "name": "Back to Normal",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 647394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139642.jpg",
+      "name": "Rupture",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 647395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143603.jpg",
+      "name": "The Runaway Dinosaur",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-17",
+      "id": 647396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146068.jpg",
+      "name": "Invincible",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-24",
+      "id": 647397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148047.jpg",
+      "name": "The Race of His Life",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-04",
+      "id": 816120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/196039.jpg",
+      "name": "Flashpoint",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 938170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199247.jpg",
+      "name": "Paradox",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-18",
+      "id": 945250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/202257.jpg",
+      "name": "Magenta",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-25",
+      "id": 953504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204990.jpg",
+      "name": "The New Rogues",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-01",
+      "id": 902606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/207695.jpg",
+      "name": "Monster",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-15",
+      "id": 968462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/212360.jpg",
+      "name": "Shade",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-22",
+      "id": 930901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/214942.jpg",
+      "name": "Killer Frost",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-11-29",
+      "id": 970055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/217823.jpg",
+      "name": "Invasion!",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-12-06",
+      "id": 992911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220280.jpg",
+      "name": "The Present",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-24",
+      "id": 991400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236805.jpg",
+      "name": "Borrowing Problems from the Future",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-31",
+      "id": 1040744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239783.jpg",
+      "name": "Dead or Alive",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-07",
+      "id": 1046398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242972.jpg",
+      "name": "Untouchable",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 1047346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248758.jpg",
+      "name": "Attack on Gorilla City",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-28",
+      "id": 1047347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250762.jpg",
+      "name": "Attack on Central City",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-07",
+      "id": 1058392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/252957.jpg",
+      "name": "The Wrath of Savitar",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1058393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/255526.jpg",
+      "name": "Into the Speed Force",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1046399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258250.jpg",
+      "name": "Duet",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1085286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261165.jpg",
+      "name": "Abra Kadabra",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-04-25",
+      "id": 1102201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262037.jpg",
+      "name": "The Once and Future Flash",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-02",
+      "id": 1106150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/275432.jpg",
+      "name": "I Know Who You Are",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-09",
+      "id": 1106151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/277717.jpg",
+      "name": "Cause and Effect",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-16",
+      "id": 1106152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280467.jpg",
+      "name": "Infantino Street",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-23",
+      "id": 1106153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283270.jpg",
+      "name": "Finish Line",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-10-10",
+      "id": 1185335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/327181.jpg",
+      "name": "The Flash Reborn",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-17",
+      "id": 1260728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329334.jpg",
+      "name": "Mixed Signals",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-24",
+      "id": 1260729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331264.jpg",
+      "name": "Luck Be a Lady",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-31",
+      "id": 1265915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/333712.jpg",
+      "name": "Elongated Journey Into Night",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-07",
+      "id": 1278760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335646.jpg",
+      "name": "Girls Night Out",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1311511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337910.jpg",
+      "name": "When Harry Met Harry…",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-21",
+      "id": 1311516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340117.jpg",
+      "name": "Therefore I Am",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-11-28",
+      "id": 1318469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/342044.jpg",
+      "name": "Crisis on Earth-X, Part 3",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-12-05",
+      "id": 1339396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344015.jpg",
+      "name": "Don't Run",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-16",
+      "id": 1360476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344082.jpg",
+      "name": "The Trial of the Flash",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-23",
+      "id": 1356733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358516.jpg",
+      "name": "The Elongated Knight Rises",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-01-30",
+      "id": 1360940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/360911.jpg",
+      "name": "Honey, I Shrunk Team Flash",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-06",
+      "id": 1366845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/363117.jpg",
+      "name": "True Colors",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-02-27",
+      "id": 1392782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/368149.jpg",
+      "name": "Subject 9",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-06",
+      "id": 1370130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/370256.jpg",
+      "name": "Enter Flashtime",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1398108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/372299.jpg",
+      "name": "Run, Iris, Run",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-10",
+      "id": 1412081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380813.jpg",
+      "name": "Null and Annoyed",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-17",
+      "id": 1415867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/382762.jpg",
+      "name": "Lose Yourself",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-24",
+      "id": 1415868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385015.jpg",
+      "name": "Fury Rogue",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-01",
+      "id": 1415869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386528.jpg",
+      "name": "Therefore She Is",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1426876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/387945.jpg",
+      "name": "Harry and the Harrisons",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1426877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389580.jpg",
+      "name": "Think Fast",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-22",
+      "id": 1426878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391112.jpg",
+      "name": "We Are the Flash",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-10-09",
+      "id": 1473791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/170/426634.jpg",
+      "name": "Nora",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-16",
+      "id": 1498565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/171/429280.jpg",
+      "name": "Blocked",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-23",
+      "id": 1514685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/172/431420.jpg",
+      "name": "The Death of Vibe",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-10-30",
+      "id": 1514686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433186.jpg",
+      "name": "News Flash",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-13",
+      "id": 1514687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/174/436801.jpg",
+      "name": "All Doll'd Up",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-20",
+      "id": 1514688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438343.jpg",
+      "name": "The Icicle Cometh",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-11-27",
+      "id": 1548214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/439749.jpg",
+      "name": "O Come, All Ye Thankful",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-04",
+      "id": 1557700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441262.jpg",
+      "name": "What's Past Is Prologue",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-12-09",
+      "id": 1557701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442329.jpg",
+      "name": "Elseworlds, Part 1",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-15",
+      "id": 1557702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/180/450511.jpg",
+      "name": "The Flash & The Furious",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-22",
+      "id": 1588294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/452911.jpg",
+      "name": "Seeing Red",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-01-29",
+      "id": 1589564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/181/454820.jpg",
+      "name": "Memorabilia",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-05",
+      "id": 1593271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/182/456836.jpg",
+      "name": "Goldfaced",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-02-12",
+      "id": 1597481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/183/459282.jpg",
+      "name": "Cause and XS",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-05",
+      "id": 1608986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/466930.jpg",
+      "name": "King Shark vs. Gorilla Grodd",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-12",
+      "id": 1613284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/468991.jpg",
+      "name": "Failure Is an Orphan",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-19",
+      "id": 1616383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471994.jpg",
+      "name": "Time Bomb",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-16",
+      "id": 1625231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479951.jpg",
+      "name": "Godspeed",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-23",
+      "id": 1626685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/482823.jpg",
+      "name": "Snow Pack",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-30",
+      "id": 1626686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485330.jpg",
+      "name": "Gone Rogue",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-07",
+      "id": 1626687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488831.jpg",
+      "name": "The Girl with the Red Lightning",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-05-14",
+      "id": 1626688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/492332.jpg",
+      "name": "Legacy",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-10-08",
+      "id": 1672028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/536586.jpg",
+      "name": "Into the Void",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-15",
+      "id": 1672037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/539543.jpg",
+      "name": "A Flash of the Lightning",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-22",
+      "id": 1687240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542812.jpg",
+      "name": "Dead Man Running",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-10-29",
+      "id": 1687241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/544928.jpg",
+      "name": "There Will Be Blood",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-05",
+      "id": 1692469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/547108.jpg",
+      "name": "Kiss Kiss Breach Breach",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-19",
+      "id": 1692470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/225/563730.jpg",
+      "name": "License to Elongate",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-11-26",
+      "id": 1692471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/570642.jpg",
+      "name": "The Last Temptation of Barry Allen, Part 1",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-03",
+      "id": 1692472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/229/573856.jpg",
+      "name": "The Last Temptation of Barry Allen, Part 2",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-12-10",
+      "id": 1692473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/577165.jpg",
+      "name": "Crisis on Infinite Earths: Part Three",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-04",
+      "id": 1767393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/240/600152.jpg",
+      "name": "Marathon",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-11",
+      "id": 1767394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/241/602717.jpg",
+      "name": "Love Is a Battlefield",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-18",
+      "id": 1767395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/605830.jpg",
+      "name": "A Girl Named Sue",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-25",
+      "id": 1767396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/242/606069.jpg",
+      "name": "Grodd Friended Me",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-10",
+      "id": 1796430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/245/613871.jpg",
+      "name": "Death of the Speed Force",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-03-17",
+      "id": 1796431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/616577.jpg",
+      "name": "The Exorcism of Nash Wells",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-21",
+      "id": 1796432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/632892.jpg",
+      "name": "So Long and Goodnight",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-04-28",
+      "id": 1808695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/254/635947.jpg",
+      "name": "Liberation",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-05-05",
+      "id": 1808698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/639039.jpg",
+      "name": "Pay the Piper",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-05-12",
+      "id": 1808699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/641949.jpg",
+      "name": "Success Is Assured",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2021-03-02",
+      "id": 1960530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/746650.jpg",
+      "name": "All's Well That Ends Wells",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-03-09",
+      "id": 1960631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/299/749359.jpg",
+      "name": "The Speed of Thought",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-03-16",
+      "id": 1960632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/750301.jpg",
+      "name": "Mother",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-03-23",
+      "id": 1977702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/751926.jpg",
+      "name": "Central City Strong",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-03-30",
+      "id": 1977703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/301/753800.jpg",
+      "name": "Fear Me",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-04-06",
+      "id": 2049988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/303/759989.jpg",
+      "name": "The One with the Nineties",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-04-13",
+      "id": 2062318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/769059.jpg",
+      "name": "Growing Pains",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-04",
+      "id": 2072255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/313/782707.jpg",
+      "name": "The People v. Killer Frost",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-11",
+      "id": 2072267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/315/789355.jpg",
+      "name": "Timeless",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-18",
+      "id": 2080883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/796747.jpg",
+      "name": "Family Matters, Part 1",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-05-25",
+      "id": 2085390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/797704.jpg",
+      "name": "Family Matters, Part 2",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-06-08",
+      "id": 2091450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817519.jpg",
+      "name": "Good-Bye Vibrations",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-06-15",
+      "id": 2102160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/329/823796.jpg",
+      "name": "Masquerade",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-06-22",
+      "id": 2108880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/332/831081.jpg",
+      "name": "Rayo de Luz",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-06-29",
+      "id": 2113419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/334/836836.jpg",
+      "name": "Enemy at the Gates",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-07-06",
+      "id": 2116220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/337/844639.jpg",
+      "name": "P.O.W.",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-07-13",
+      "id": 2120142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/339/849910.jpg",
+      "name": "Heart of the Matter, Part 1",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-07-20",
+      "id": 2122972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/341/854967.jpg",
+      "name": "Heart of the Matter, Part 2",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2021-11-16",
+      "id": 2113279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/375/939873.jpg",
+      "name": "Armageddon, Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2021-11-23",
+      "id": 2210348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/377/944105.jpg",
+      "name": "Armageddon, Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2021-11-30",
+      "id": 2210350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/379/948981.jpg",
+      "name": "Armageddon, Part 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2021-12-07",
+      "id": 2210351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/381/953680.jpg",
+      "name": "Armageddon, Part 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2021-12-14",
+      "id": 2210352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/383/959010.jpg",
+      "name": "Armageddon, Part 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2210353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997925.jpg",
+      "name": "Impulsive Excessive Disorder",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-03-16",
+      "id": 2282491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1000454.jpg",
+      "name": "Lockdown",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-03-23",
+      "id": 2284420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1002907.jpg",
+      "name": "The Fire Next Time",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-03-30",
+      "id": 2284421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1006011.jpg",
+      "name": "Phantoms",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-04-06",
+      "id": 2284422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1008422.jpg",
+      "name": "Reckless",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-04-13",
+      "id": 2284423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/404/1010523.jpg",
+      "name": "Resurrection",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-04-27",
+      "id": 2308813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/406/1016954.jpg",
+      "name": "Death Rises",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-05-04",
+      "id": 2308814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/407/1019210.jpg",
+      "name": "Death Falls",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-05-11",
+      "id": 2308815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/408/1021120.jpg",
+      "name": "Funeral for a Friend",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-05-18",
+      "id": 2308816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1023468.jpg",
+      "name": "Into the Still Force",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-05-25",
+      "id": 2308817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1025421.jpg",
+      "name": "The Curious Case of Bartholomew Allen",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-06-08",
+      "id": 2308818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/412/1031267.jpg",
+      "name": "Keep It Dark",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-06-15",
+      "id": 2308819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/413/1032811.jpg",
+      "name": "The Man in the Yellow Tie",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-06-22",
+      "id": 2311286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/413/1034273.jpg",
+      "name": "Negative, Part One",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2022-06-29",
+      "id": 2311287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/414/1035993.jpg",
+      "name": "Negative, Part Two",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2023-02-08",
+      "id": 2443144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/446/1115025.jpg",
+      "name": "Wednesday Ever After",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-02-15",
+      "id": 2445034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/447/1118919.jpg",
+      "name": "Hear No Evil",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-02-22",
+      "id": 2445035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1122201.jpg",
+      "name": "Rogues of War",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-03-01",
+      "id": 2445036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1124096.jpg",
+      "name": "The Mask of the Red Death, Part One",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-03-08",
+      "id": 2445037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/451/1128192.jpg",
+      "name": "The Mask of the Red Death, Part Two",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-03-15",
+      "id": 2480738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/452/1131170.jpg",
+      "name": "The Good, the Bad, and the Lucky",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-03-29",
+      "id": 2501353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/453/1133680.jpg",
+      "name": "Wildest Dreams",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-04-05",
+      "id": 2501352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/455/1139260.jpg",
+      "name": "Partners in Time",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-04-26",
+      "id": 2501351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/455/1139493.jpg",
+      "name": "It's My Party and I'll Die If I Want To",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-05-03",
+      "id": 2501350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/459/1149387.jpg",
+      "name": "A New World, Part 1: Reunions",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-05-10",
+      "id": 2501349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/460/1151479.jpg",
+      "name": "A New World, Part 2: The Blues",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-05-17",
+      "id": 2501348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/461/1154594.jpg",
+      "name": "A New World, Part 3: Changes",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2023-05-24",
+      "id": 2501347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/462/1156826.jpg",
+      "name": "A New World, Part 4: Finale",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Science-Fiction"
   ],
+  "id": "tvmaze-13",
+  "live": true,
+  "overview": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash!",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/448/1121792.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "13",
+  "title": "The Flash",
+  "type": "series",
+  "year": 2014
 }

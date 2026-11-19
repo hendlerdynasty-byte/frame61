@@ -1,20 +1,2478 @@
 {
-  "schema": 1,
-  "id": "tvmaze-553",
-  "source": "tvmaze",
-  "sourceId": "553",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Cheers",
-  "year": 1982,
-  "type": "series",
-  "overview": "Cheers takes viewers back to the Boston bar where everybody knows your name. As former baseball star Sam Malone and his colleague Diane Chambers fight their mutual attractions, they cater to their regulars including Norm Petersen and Cliff Claven. Talking about their problems, laughing at each other's flaws and trying to be there when someone needs them, the gang are joined by naïve farm boy Woody, bitter waitress Carla , troubled psychiatrist Frasier and his wife.",
-  "poster": "file:///android_asset/posters/tvmaze-553.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1982-09-30",
+      "id": 51398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237793.jpg",
+      "name": "Give Me a Ring Sometime",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-07",
+      "id": 51399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237794.jpg",
+      "name": "Sam's Women",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-14",
+      "id": 51400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237795.jpg",
+      "name": "The Tortelli Tort",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-21",
+      "id": 51401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237796.jpg",
+      "name": "Sam at Eleven",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-28",
+      "id": 51402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237797.jpg",
+      "name": "Coach's Daughter",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-04",
+      "id": 51403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237798.jpg",
+      "name": "Any Friend of Diane's",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-11",
+      "id": 51404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237799.jpg",
+      "name": "Friends, Romans, Accountants",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-18",
+      "id": 51405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237800.jpg",
+      "name": "Truce or Consequences",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-25",
+      "id": 51406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237801.jpg",
+      "name": "Coach Returns to Action",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-02",
+      "id": 51407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237802.jpg",
+      "name": "Endless Slumper",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-09",
+      "id": 51408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237803.jpg",
+      "name": "One for the Book",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-16",
+      "id": 51409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237804.jpg",
+      "name": "The Spy Who Came in for a Cold One",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-06",
+      "id": 51410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237805.jpg",
+      "name": "Now Pitching, Sam Malone",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-13",
+      "id": 51411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237806.jpg",
+      "name": "Let Me Count the Ways",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-20",
+      "id": 51412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237807.jpg",
+      "name": "Father Knows Last",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-27",
+      "id": 51413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237808.jpg",
+      "name": "The Boys in the Bar",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-02-10",
+      "id": 51414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237809.jpg",
+      "name": "Diane's Perfect Date",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-02-17",
+      "id": 51415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237810.jpg",
+      "name": "No Contest",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-02-24",
+      "id": 51416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237811.jpg",
+      "name": "Pick a Con ... Any Con",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-03-03",
+      "id": 51417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237812.jpg",
+      "name": "Someone Single, Someone Blue",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-03-24",
+      "id": 51418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237813.jpg",
+      "name": "Showdown",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-03-31",
+      "id": 51419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237814.jpg",
+      "name": "Showdown",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1983-09-29",
+      "id": 51420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237846.jpg",
+      "name": "Power Play",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-13",
+      "id": 51421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237847.jpg",
+      "name": "Little Sister Don't Cha",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-20",
+      "id": 51422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237848.jpg",
+      "name": "Personal Business",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-27",
+      "id": 51423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237849.jpg",
+      "name": "Homicidal Ham",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-03",
+      "id": 51424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237850.jpg",
+      "name": "Sumner's Return",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-10",
+      "id": 51425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237851.jpg",
+      "name": "Affairs of the Heart",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-17",
+      "id": 51426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237852.jpg",
+      "name": "Old Flames",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-24",
+      "id": 51427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237853.jpg",
+      "name": "Manager Coach",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-01",
+      "id": 51428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237854.jpg",
+      "name": "They Called Me Mayday",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-08",
+      "id": 51429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237855.jpg",
+      "name": "How Do I Love Thee, Let Me Call You Back",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-15",
+      "id": 51430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237856.jpg",
+      "name": "Just Three Friends",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-22",
+      "id": 51431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237857.jpg",
+      "name": "Where There's a Will...",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-05",
+      "id": 51432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237858.jpg",
+      "name": "Battle of the Exes",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-12",
+      "id": 51433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237859.jpg",
+      "name": "No Help Wanted",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-19",
+      "id": 51434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237861.jpg",
+      "name": "And Coachie Makes Three",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-26",
+      "id": 51435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237862.jpg",
+      "name": "Cliff's Rocky Moment",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-02",
+      "id": 51436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237863.jpg",
+      "name": "Fortune and Men's Weight",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-09",
+      "id": 51437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237864.jpg",
+      "name": "Snow Job",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-16",
+      "id": 51438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237865.jpg",
+      "name": "Coach Buries a Grudge",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-23",
+      "id": 51439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237866.jpg",
+      "name": "Norman's Conquest",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-05-03",
+      "id": 51440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237867.jpg",
+      "name": "I'll Be Seeing You",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-05-10",
+      "id": 51441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237868.jpg",
+      "name": "I'll Be Seeing You",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1984-09-27",
+      "id": 51442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237879.jpg",
+      "name": "Rebound",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-04",
+      "id": 51443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237880.jpg",
+      "name": "Rebound",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-18",
+      "id": 51444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237882.jpg",
+      "name": "I Call Your Name",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-25",
+      "id": 51445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/649/1622823.jpg",
+      "name": "Fairy Tales Can Come True",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-01",
+      "id": 51446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237884.jpg",
+      "name": "Sam Turns the Other Cheek",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-08",
+      "id": 51447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237885.jpg",
+      "name": "Coach in Love (1)",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-15",
+      "id": 51448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237886.jpg",
+      "name": "Coach in Love (2)",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-22",
+      "id": 51449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237887.jpg",
+      "name": "Diane Meets Mom",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-29",
+      "id": 51450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237888.jpg",
+      "name": "An American Family",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-06",
+      "id": 51451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237889.jpg",
+      "name": "Diane's Allergy",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-13",
+      "id": 51452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237890.jpg",
+      "name": "Peterson Crusoe",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-20",
+      "id": 51453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237891.jpg",
+      "name": "A Ditch in Time",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-03",
+      "id": 51454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237892.jpg",
+      "name": "Whodunit?",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-10",
+      "id": 51455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237893.jpg",
+      "name": "The Heart is a Lonely Snipe Hunter",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-24",
+      "id": 51456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237894.jpg",
+      "name": "King of the Hill",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-31",
+      "id": 51457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237895.jpg",
+      "name": "Teacher's Pet",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-07",
+      "id": 51458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237896.jpg",
+      "name": "The Mail Goes to Jail",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-14",
+      "id": 51462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237897.jpg",
+      "name": "Bar Bet",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-21",
+      "id": 51459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237898.jpg",
+      "name": "Behind Every Great Man",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-28",
+      "id": 51460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237899.jpg",
+      "name": "If Ever I Would Leave You",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-07",
+      "id": 51461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237900.jpg",
+      "name": "The Executive's Executioner",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-04-11",
+      "id": 51463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237901.jpg",
+      "name": "Cheerio, Cheers",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-04-18",
+      "id": 51464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237902.jpg",
+      "name": "The Bartender's Tale",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-05-02",
+      "id": 51465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237903.jpg",
+      "name": "The Belles of St. Clete's",
+      "number": 24,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-05-09",
+      "id": 51466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237904.jpg",
+      "name": "Rescue Me",
+      "number": 25,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1985-09-26",
+      "id": 51467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237908.jpg",
+      "name": "Birth, Death, Love and Rice",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-03",
+      "id": 51468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237909.jpg",
+      "name": "Woody Goes Belly Up",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-17",
+      "id": 51469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237910.jpg",
+      "name": "Someday My Prince Will Come",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-24",
+      "id": 51470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237911.jpg",
+      "name": "The Groom Wore Clearasil",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-31",
+      "id": 51471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237912.jpg",
+      "name": "Diane's Nightmare",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-07",
+      "id": 51472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237913.jpg",
+      "name": "I Will Gladly Pay You Tuesday",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-14",
+      "id": 51473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237914.jpg",
+      "name": "2 Good 2 Be 4 Real",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-21",
+      "id": 51474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237915.jpg",
+      "name": "Love Thy Neighbor",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-28",
+      "id": 51475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237916.jpg",
+      "name": "From Beer to Eternity",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-05",
+      "id": 51476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237917.jpg",
+      "name": "The Barstoolie",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-12",
+      "id": 51477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237918.jpg",
+      "name": "Don Juan is Hell",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-19",
+      "id": 51478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237919.jpg",
+      "name": "Fools and Their Money",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-09",
+      "id": 51479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237920.jpg",
+      "name": "Take My Shirt... Please?",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-16",
+      "id": 51480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237921.jpg",
+      "name": "Suspicion",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-23",
+      "id": 51481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237922.jpg",
+      "name": "The Triangle",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-30",
+      "id": 51482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237923.jpg",
+      "name": "Cliffie's Big Score",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-06",
+      "id": 51483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237924.jpg",
+      "name": "Second Time Around",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-13",
+      "id": 51484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237925.jpg",
+      "name": "The Peterson Principle",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-20",
+      "id": 51485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237926.jpg",
+      "name": "Dark Imaginings",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-27",
+      "id": 51486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237927.jpg",
+      "name": "Save the Last Dance for Me",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-13",
+      "id": 51487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237928.jpg",
+      "name": "Fear is My Co-Pilot",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-20",
+      "id": 51488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237929.jpg",
+      "name": "Diane Chambers Day",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-27",
+      "id": 51489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237930.jpg",
+      "name": "Relief Bartender",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-01",
+      "id": 51490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237931.jpg",
+      "name": "Strange Bedfellows (1)",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-08",
+      "id": 51491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237932.jpg",
+      "name": "Strange Bedfellows (2)",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-05-15",
+      "id": 51492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237933.jpg",
+      "name": "Strange Bedfellows (3)",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1986-09-25",
+      "id": 51493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237935.jpg",
+      "name": "The Proposal",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-10-02",
+      "id": 51494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237936.jpg",
+      "name": "The Cape Cad",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-10-09",
+      "id": 51495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237937.jpg",
+      "name": "Money Dearest",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-10-16",
+      "id": 51496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237938.jpg",
+      "name": "Abnormal Psychology",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-10-30",
+      "id": 51497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237939.jpg",
+      "name": "House of Horrors with Formal Dining and Used Brick",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-06",
+      "id": 51498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237940.jpg",
+      "name": "Tan N' Wash",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-13",
+      "id": 51499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237941.jpg",
+      "name": "Young Dr. Weinstein",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-20",
+      "id": 51500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237942.jpg",
+      "name": "Knights of the Scimitar",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-11-27",
+      "id": 51501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237943.jpg",
+      "name": "Thanksgiving Orphans",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-12-04",
+      "id": 51502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237944.jpg",
+      "name": "Everyone Imitates Art",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-12-11",
+      "id": 51503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237945.jpg",
+      "name": "The Book of Samuel",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1986-12-18",
+      "id": 51504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237946.jpg",
+      "name": "Dance, Diane, Dance",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-01-08",
+      "id": 51505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237947.jpg",
+      "name": "Chambers vs Malone",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-01-15",
+      "id": 51506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237948.jpg",
+      "name": "Diamond Sam",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-01-22",
+      "id": 51507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237949.jpg",
+      "name": "Spellbound",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-01-29",
+      "id": 51508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237950.jpg",
+      "name": "Never Love a Goalie (1)",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-05",
+      "id": 51509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237951.jpg",
+      "name": "Never Love a Goalie (2)",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-12",
+      "id": 51510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237952.jpg",
+      "name": "One Last Fling",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-18",
+      "id": 51511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237953.jpg",
+      "name": "Dog Bites Cliff",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-02-26",
+      "id": 51512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237954.jpg",
+      "name": "Dinner at Eight-ish",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-05",
+      "id": 51513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237955.jpg",
+      "name": "Simon Says",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-19",
+      "id": 51514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237956.jpg",
+      "name": "The Godfather, Part III",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-03-26",
+      "id": 51515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237957.jpg",
+      "name": "Norm's First Hurrah",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-04-02",
+      "id": 51516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237958.jpg",
+      "name": "Cheers: the Motion Picture",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-04-30",
+      "id": 51517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237959.jpg",
+      "name": "A House is Not a Home",
+      "number": 25,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-05-07",
+      "id": 51518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237960.jpg",
+      "name": "I Do, Adieu",
+      "number": 26,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1987-09-24",
+      "id": 51519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237972.jpg",
+      "name": "Home is the Sailor",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-01",
+      "id": 51520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237973.jpg",
+      "name": "'I' on Sports",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-15",
+      "id": 51521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237974.jpg",
+      "name": "Little Carla, Happy at Last (1)",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-22",
+      "id": 51522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237975.jpg",
+      "name": "Little Carla, Happy at Last (2)",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-10-29",
+      "id": 51523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237976.jpg",
+      "name": "The Crane Mutiny",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-05",
+      "id": 51524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237977.jpg",
+      "name": "Paint Your Office",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-12",
+      "id": 51525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237978.jpg",
+      "name": "The Last Angry Mailman",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-19",
+      "id": 51526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237980.jpg",
+      "name": "Bidding on the Boys",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-11-26",
+      "id": 51527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237981.jpg",
+      "name": "Pudd'n Head Boyd",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-12-03",
+      "id": 51528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237982.jpg",
+      "name": "A Kiss is Still a Kiss",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-12-10",
+      "id": 51529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237983.jpg",
+      "name": "My Fair Clavin",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1987-12-17",
+      "id": 51530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237984.jpg",
+      "name": "Christmas Cheers",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-07",
+      "id": 51531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237985.jpg",
+      "name": "Woody For Hire, Meets Norman of the Apes",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-14",
+      "id": 51532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237986.jpg",
+      "name": "And God Created Woodman",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-01-21",
+      "id": 51533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237987.jpg",
+      "name": "Tale of Two Cuties",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-04",
+      "id": 51534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237988.jpg",
+      "name": "Yacht of Fools",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-11",
+      "id": 51535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237989.jpg",
+      "name": "To All the Girls I've Loved Before",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-18",
+      "id": 51536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237990.jpg",
+      "name": "Let Sleeping Drakes Lie",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-02-25",
+      "id": 51537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237991.jpg",
+      "name": "Airport V",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-03",
+      "id": 51538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237992.jpg",
+      "name": "The Sam in the Gray Flannel Suit",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-10",
+      "id": 51539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237993.jpg",
+      "name": "Our Hourly Bread",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-24",
+      "id": 51540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237994.jpg",
+      "name": "Slumber Party Massacred",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-03-31",
+      "id": 51541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237995.jpg",
+      "name": "Bar Wars",
+      "number": 23,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-04-28",
+      "id": 51542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237996.jpg",
+      "name": "The Big Kiss-Off",
+      "number": 24,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-05-05",
+      "id": 51543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1237997.jpg",
+      "name": "Backseat Becky, Up Front",
+      "number": 25,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1988-10-27",
+      "id": 51544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238000.jpg",
+      "name": "How to Recede in Business",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-03",
+      "id": 51545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238001.jpg",
+      "name": "Swear to God",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-10",
+      "id": 51546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238002.jpg",
+      "name": "Executive Sweet (1)",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-17",
+      "id": 51547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238003.jpg",
+      "name": "One Happy Chappy in a Snappy Serape (2)",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-11-24",
+      "id": 51548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238004.jpg",
+      "name": "Those Lips, Those Ice",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-08",
+      "id": 51549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238005.jpg",
+      "name": "Norm, Is That You?",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-15",
+      "id": 51550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238006.jpg",
+      "name": "How to Win Friends and Electrocute People",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1988-12-22",
+      "id": 51551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238007.jpg",
+      "name": "Jumping Jerks",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-01-05",
+      "id": 51552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238008.jpg",
+      "name": "Send in the Crane",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-01-12",
+      "id": 51553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238009.jpg",
+      "name": "Bar Wars II: The Woodman Strikes Back",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-01-19",
+      "id": 51554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238010.jpg",
+      "name": "Adventures in Housesitting",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-02",
+      "id": 51555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238011.jpg",
+      "name": "Please Mr. Postman",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-09",
+      "id": 51556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238012.jpg",
+      "name": "Golden Boyd",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-16",
+      "id": 51557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238013.jpg",
+      "name": "I Kid You Not",
+      "number": 14,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-02-23",
+      "id": 51558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238014.jpg",
+      "name": "Don't Paint Your Chickens",
+      "number": 15,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-02",
+      "id": 51559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238015.jpg",
+      "name": "The Cranemakers",
+      "number": 16,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-16",
+      "id": 51560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238016.jpg",
+      "name": "Hot Rocks",
+      "number": 17,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-03-30",
+      "id": 51561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238017.jpg",
+      "name": "What's Up, Doc?",
+      "number": 18,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-04-06",
+      "id": 51562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238018.jpg",
+      "name": "The Gift of the Woodi",
+      "number": 19,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-04-13",
+      "id": 51563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238019.jpg",
+      "name": "Call Me Irresponsible",
+      "number": 20,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-04-27",
+      "id": 51564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238020.jpg",
+      "name": "Sisterly Love",
+      "number": 21,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-05-04",
+      "id": 51565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238021.jpg",
+      "name": "The Visiting Lecher",
+      "number": 22,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1989-09-21",
+      "id": 51566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238022.jpg",
+      "name": "The Improbable Dream (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-09-28",
+      "id": 51567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238023.jpg",
+      "name": "The Improbable Dream (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-12",
+      "id": 51568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238024.jpg",
+      "name": "A Bar is Born",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-19",
+      "id": 51569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238025.jpg",
+      "name": "How to Marry a Mailman",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-10-26",
+      "id": 51570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238026.jpg",
+      "name": "The Two Faces of Norm",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-02",
+      "id": 51571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238027.jpg",
+      "name": "The Stork Brings a Crane",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-09",
+      "id": 51572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238028.jpg",
+      "name": "Death Takes a Holiday on Ice",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-16",
+      "id": 51573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238029.jpg",
+      "name": "For Real Men Only",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-23",
+      "id": 51574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238030.jpg",
+      "name": "Two Girls for Every Boyd",
+      "number": 9,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-11-30",
+      "id": 51575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238031.jpg",
+      "name": "The Art of the Steal",
+      "number": 10,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-12-07",
+      "id": 51576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238032.jpg",
+      "name": "Feeble Attraction",
+      "number": 11,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1989-12-14",
+      "id": 51577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238033.jpg",
+      "name": "Sam Ahoy",
+      "number": 12,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-01-04",
+      "id": 51578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238034.jpg",
+      "name": "Sammy and the Professor",
+      "number": 13,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-01-18",
+      "id": 51579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238035.jpg",
+      "name": "What is... Cliff Clavin?",
+      "number": 14,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-01-25",
+      "id": 51580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238036.jpg",
+      "name": "Finally! (1)",
+      "number": 15,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-01",
+      "id": 51581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238037.jpg",
+      "name": "Finally! (2)",
+      "number": 16,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-08",
+      "id": 51582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238038.jpg",
+      "name": "Woody or Won't He",
+      "number": 17,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-15",
+      "id": 51583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238039.jpg",
+      "name": "Severe Crane Damage",
+      "number": 18,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-02-22",
+      "id": 51584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238040.jpg",
+      "name": "Indoor Fun with Sammy and Robby",
+      "number": 19,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-08",
+      "id": 51585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238041.jpg",
+      "name": "50-50 Carla",
+      "number": 20,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-15",
+      "id": 51586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238042.jpg",
+      "name": "Bar Wars III: The Return of Tecumseh",
+      "number": 21,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-03-29",
+      "id": 51587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238043.jpg",
+      "name": "Loverboyd",
+      "number": 22,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-12",
+      "id": 51588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238044.jpg",
+      "name": "The Ghost and Mrs. Lebec",
+      "number": 23,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-19",
+      "id": 51589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238045.jpg",
+      "name": "Mr. Otis Regrets",
+      "number": 24,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-04-26",
+      "id": 51590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238046.jpg",
+      "name": "Cry Hard (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-05-03",
+      "id": 51591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238047.jpg",
+      "name": "Cry Harder (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1990-09-20",
+      "id": 51592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238048.jpg",
+      "name": "Love is a Really, Really, Perfectly Okay Thing",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-09-27",
+      "id": 51593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238049.jpg",
+      "name": "Cheers Fouls Out",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-04",
+      "id": 51594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238050.jpg",
+      "name": "Rebecca Redux",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-11",
+      "id": 51595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238051.jpg",
+      "name": "Where Nobody Knows Your Name",
+      "number": 4,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-18",
+      "id": 51596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238052.jpg",
+      "name": "Ma Always Liked You Best",
+      "number": 5,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-10-25",
+      "id": 51597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238053.jpg",
+      "name": "Grease",
+      "number": 6,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-01",
+      "id": 51598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238054.jpg",
+      "name": "Breaking In is Hard to Do",
+      "number": 7,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-15",
+      "id": 51601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238055.jpg",
+      "name": "Bad Neighbor Sam",
+      "number": 8,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-11-22",
+      "id": 51602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238056.jpg",
+      "name": "Veggie-Boyd",
+      "number": 9,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-12-06",
+      "id": 51603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238057.jpg",
+      "name": "Norm and Cliff's Excellent Adventure",
+      "number": 10,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1990-12-13",
+      "id": 51604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238058.jpg",
+      "name": "Woody Interruptus",
+      "number": 11,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-01-03",
+      "id": 51605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238059.jpg",
+      "name": "Honor Thy Mother",
+      "number": 12,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-01-10",
+      "id": 51606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238060.jpg",
+      "name": "Achilles Hill",
+      "number": 13,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-01-24",
+      "id": 51607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238061.jpg",
+      "name": "The Days of Wine and Neuroses (1)",
+      "number": 14,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-01-31",
+      "id": 51608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238062.jpg",
+      "name": "Wedding Bell Blues (2)",
+      "number": 15,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-07",
+      "id": 51609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238063.jpg",
+      "name": "I'm Getting My Act Together and Sticking it in Your Face",
+      "number": 16,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-14",
+      "id": 51610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238064.jpg",
+      "name": "Sam Time Next Year",
+      "number": 17,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-21",
+      "id": 51611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238065.jpg",
+      "name": "Crash of the Titans",
+      "number": 18,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-02-28",
+      "id": 51612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238066.jpg",
+      "name": "It's a Wonderful Wife",
+      "number": 19,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-14",
+      "id": 51613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238067.jpg",
+      "name": "Cheers Has Chili",
+      "number": 20,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-21",
+      "id": 51614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238068.jpg",
+      "name": "Carla Loves Clavin",
+      "number": 21,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-03-28",
+      "id": 51615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238069.jpg",
+      "name": "Pitch It Again, Sam",
+      "number": 22,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-04-04",
+      "id": 51616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238070.jpg",
+      "name": "Rat Girl",
+      "number": 23,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-04-25",
+      "id": 51617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238071.jpg",
+      "name": "Home Malone",
+      "number": 24,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-05-02",
+      "id": 51618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238072.jpg",
+      "name": "Uncle Sam Wants You",
+      "number": 25,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "1991-09-19",
+      "id": 51619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238075.jpg",
+      "name": "Baby Balk",
+      "number": 1,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-09-26",
+      "id": 51620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238076.jpg",
+      "name": "Get Your Kicks on Route 666",
+      "number": 2,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-03",
+      "id": 51621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238077.jpg",
+      "name": "Madame LaCarla",
+      "number": 3,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-10",
+      "id": 51622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238078.jpg",
+      "name": "The Norm Who Came in from the Cold",
+      "number": 4,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-17",
+      "id": 51623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238079.jpg",
+      "name": "Ma's Little Maggie",
+      "number": 5,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-24",
+      "id": 51624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238080.jpg",
+      "name": "Unplanned Parenthood",
+      "number": 6,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-10-31",
+      "id": 51625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238081.jpg",
+      "name": "Bar Wars V: the Final Judgement",
+      "number": 7,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-07",
+      "id": 51626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238082.jpg",
+      "name": "Where Have All the Floorboards Gone?",
+      "number": 8,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-14",
+      "id": 51627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238083.jpg",
+      "name": "Head Over Hill",
+      "number": 9,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-11-21",
+      "id": 51628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238084.jpg",
+      "name": "A Fine French Whine",
+      "number": 10,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-12-05",
+      "id": 51629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238085.jpg",
+      "name": "I'm Okay, You're Defective",
+      "number": 11,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1991-12-12",
+      "id": 51630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238086.jpg",
+      "name": "Go Make",
+      "number": 12,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-02",
+      "id": 51631,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238087.jpg",
+      "name": "Don't Shoot... I'm Only the Psychiatrist",
+      "number": 13,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-09",
+      "id": 51632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238088.jpg",
+      "name": "No Rest for the Woody",
+      "number": 14,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-16",
+      "id": 51633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238089.jpg",
+      "name": "My Son, the Father",
+      "number": 15,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-01-30",
+      "id": 51634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238090.jpg",
+      "name": "One Hugs, the Other Doesn't",
+      "number": 16,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-06",
+      "id": 51635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238091.jpg",
+      "name": "A Diminished Rebecca with a Suspended Cliff",
+      "number": 17,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-13",
+      "id": 51636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238092.jpg",
+      "name": "License to Hill",
+      "number": 18,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-20",
+      "id": 51637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238093.jpg",
+      "name": "Rich Man, Wood Man",
+      "number": 19,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-02-27",
+      "id": 51638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238094.jpg",
+      "name": "Smotherly Love",
+      "number": 20,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-03-26",
+      "id": 51639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238095.jpg",
+      "name": "Take Me Out of the Ball Game",
+      "number": 21,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-04-23",
+      "id": 51640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238096.jpg",
+      "name": "Rebecca's Lover... Not",
+      "number": 22,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-04-30",
+      "id": 51641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238097.jpg",
+      "name": "Bar Wars VI: This Time It's for Real",
+      "number": 23,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-05-07",
+      "id": 51642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238098.jpg",
+      "name": "Heeeeeere's... Cliffy!",
+      "number": 24,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-05-14",
+      "id": 51643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238099.jpg",
+      "name": "An Old-Fashioned Wedding (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-05-14",
+      "id": 51644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238100.jpg",
+      "name": "An Old-Fashioned Wedding (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "1992-09-24",
+      "id": 51645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238101.jpg",
+      "name": "The Little Match Girl",
+      "number": 1,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-01",
+      "id": 51646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238102.jpg",
+      "name": "The Beer is Always Greener",
+      "number": 2,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-08",
+      "id": 51647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238103.jpg",
+      "name": "The King of Beers",
+      "number": 3,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-22",
+      "id": 51648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238104.jpg",
+      "name": "The Magnificent Six",
+      "number": 4,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-10-29",
+      "id": 51649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238105.jpg",
+      "name": "Do Not Forsake Me O' My Postman",
+      "number": 5,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-11-05",
+      "id": 51650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238106.jpg",
+      "name": "Teaching with the Enemy (1)",
+      "number": 6,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-11-12",
+      "id": 51651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238107.jpg",
+      "name": "The Girl in the Plastic Bubble (2)",
+      "number": 7,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-11-19",
+      "id": 51652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238108.jpg",
+      "name": "Ill-Gotten Gaines",
+      "number": 8,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-12-03",
+      "id": 51653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238109.jpg",
+      "name": "Feelings... Whoa, Whoa, Whoa",
+      "number": 9,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-12-10",
+      "id": 51654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238110.jpg",
+      "name": "Daddy's Little Middle-Aged Girl",
+      "number": 10,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1992-12-17",
+      "id": 51655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238111.jpg",
+      "name": "Love Me, Love My Car",
+      "number": 11,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-01-07",
+      "id": 51656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238112.jpg",
+      "name": "Sunday Dinner",
+      "number": 12,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-01-14",
+      "id": 51657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238113.jpg",
+      "name": "Norm's Big Audit",
+      "number": 13,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-01-21",
+      "id": 51658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238114.jpg",
+      "name": "It's a Mad, Mad, Mad, Mad Bar",
+      "number": 14,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-04",
+      "id": 51659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238115.jpg",
+      "name": "Loathe and Marriage",
+      "number": 15,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-11",
+      "id": 51660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238116.jpg",
+      "name": "Is There a Doctor in the Howe? (1)",
+      "number": 16,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-18",
+      "id": 51661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238117.jpg",
+      "name": "The Bar Manager, The Shrink, His Wife and Her Lover (2)",
+      "number": 17,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-02-25",
+      "id": 51662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238118.jpg",
+      "name": "The Last Picture Show",
+      "number": 18,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-03-18",
+      "id": 51663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238119.jpg",
+      "name": "Bar Wars VII: The Naked Prey",
+      "number": 19,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-04-01",
+      "id": 51664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238120.jpg",
+      "name": "Look Before You Sleep",
+      "number": 20,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-04-22",
+      "id": 51665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238121.jpg",
+      "name": "Woody Gets an Election",
+      "number": 21,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-04-29",
+      "id": 51666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238122.jpg",
+      "name": "It's Lonely on the Top",
+      "number": 22,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-06",
+      "id": 51667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238123.jpg",
+      "name": "Rebecca Gaines, Rebecca Loses (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-06",
+      "id": 51668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238124.jpg",
+      "name": "Rebecca Gaines, Rebecca Loses (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-13",
+      "id": 51669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238125.jpg",
+      "name": "The Guy Can't Help It",
+      "number": 25,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-20",
+      "id": 51670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238126.jpg",
+      "name": "One for the Road (1)",
+      "number": 26,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-20",
+      "id": 51671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238127.jpg",
+      "name": "One for the Road (2)",
+      "number": 27,
+      "runtime": 30,
+      "season": 11
+    },
+    {
+      "airdate": "1993-05-20",
+      "id": 51672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/495/1238128.jpg",
+      "name": "One for the Road (3)",
+      "number": 28,
+      "runtime": 30,
+      "season": 11
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-553",
+  "live": true,
+  "overview": "Cheers takes viewers back to the Boston bar where everybody knows your name. As former baseball star Sam Malone and his colleague Diane Chambers fight their mutual attractions, they cater to their regulars including Norm Petersen and Cliff Claven. Talking about their problems, laughing at each other's flaws and trying to be there when someone needs them, the gang are joined by naïve farm boy Woody, bitter waitress Carla , troubled psychiatrist Frasier and his wife.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/495/1238129.jpg",
   "rating": 8.1,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "553",
+  "title": "Cheers",
+  "type": "series",
+  "year": 1982
 }

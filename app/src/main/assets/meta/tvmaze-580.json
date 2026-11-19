@@ -1,21 +1,814 @@
 {
-  "schema": 1,
-  "id": "tvmaze-580",
-  "source": "tvmaze",
-  "sourceId": "580",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Raising Hope",
-  "year": 2010,
-  "type": "series",
-  "overview": "At 23 years old, Jimmy Chance is going nowhere in life. He skims pools for a living, parties every night and still lives at home with his family, including his parents and his cousin, Mike. Jimmy's life takes a drastic turn when a chance romantic encounter with Lucy goes awry once he discovers she is a wanted felon. Months later, when Jimmy pays a visit to the local prison, he discovers Lucy gave birth to their baby, who he is now charged with raising.",
-  "poster": "file:///android_asset/posters/tvmaze-580.jpg",
-  "genres": [
-    "Komödie",
-    "Familie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-09-21",
+      "id": 54804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487035.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-28",
+      "id": 54805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487036.jpg",
+      "name": "Dead Tooth",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-05",
+      "id": 54806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487037.jpg",
+      "name": "Dream Hoarders",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-12",
+      "id": 54807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487039.jpg",
+      "name": "Say Cheese",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-26",
+      "id": 54808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487040.jpg",
+      "name": "Happy Halloween",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-26",
+      "id": 54809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487041.jpg",
+      "name": "Family Secrets",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-09",
+      "id": 54810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487042.jpg",
+      "name": "The Sniffles",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-16",
+      "id": 54811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487043.jpg",
+      "name": "Blue Dots",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-23",
+      "id": 54812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487044.jpg",
+      "name": "Meet the Grandparents",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-11-30",
+      "id": 54813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487045.jpg",
+      "name": "Burt Rocks",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-12-07",
+      "id": 54814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487046.jpg",
+      "name": "Toy Story",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-08",
+      "id": 54815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487047.jpg",
+      "name": "Romeo and Romeo",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-15",
+      "id": 54816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487048.jpg",
+      "name": "A Germ of a Story",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-02-22",
+      "id": 54817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487049.jpg",
+      "name": "What Up, Cuz?",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-03-01",
+      "id": 54818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487050.jpg",
+      "name": "Snip Snip",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-03-08",
+      "id": 54819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487051.jpg",
+      "name": "The Cultish Personality",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-03-15",
+      "id": 54820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487052.jpg",
+      "name": "Mongooses",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-19",
+      "id": 54821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487053.jpg",
+      "name": "Cheaters",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-26",
+      "id": 54822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487054.jpg",
+      "name": "Sleep Training",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-03",
+      "id": 54823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487055.jpg",
+      "name": "Everybody Flirts...Sometimes",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-10",
+      "id": 54824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487058.jpg",
+      "name": "Baby Monitor",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-17",
+      "id": 54825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/487062.jpg",
+      "name": "Don't Vote for This Episode",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-20",
+      "id": 54826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487702.jpg",
+      "name": "Prodigy",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 54827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487703.jpg",
+      "name": "Sabrina Has Money",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-04",
+      "id": 54828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487704.jpg",
+      "name": "Kidnapped",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-10-05",
+      "id": 54829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487705.jpg",
+      "name": "Henderson, Nevada-Adjacent Baby! Henderson, Nevada-Adjacent!",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-01",
+      "id": 54830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487706.jpg",
+      "name": "Killer Hope",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 54831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487707.jpg",
+      "name": "Jimmy and the Kid",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-15",
+      "id": 54832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487711.jpg",
+      "name": "Burt's Parents",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-11-29",
+      "id": 54833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487713.jpg",
+      "name": "Bro-gurt",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-06",
+      "id": 54834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487714.jpg",
+      "name": "The Men of New Natesville",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-13",
+      "id": 54835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487715.jpg",
+      "name": "It's a Hopeful Life",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-17",
+      "id": 54836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487716.jpg",
+      "name": "Mrs. Smartypants",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-01-31",
+      "id": 54837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487718.jpg",
+      "name": "Gambling Again",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 54838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487719.jpg",
+      "name": "Tarot Cards",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 54839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487720.jpg",
+      "name": "Jimmy's Fake Girlfriend",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 54840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487721.jpg",
+      "name": "Sheer Madness",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 54841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487722.jpg",
+      "name": "Single White Female Role Model",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 54842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487723.jpg",
+      "name": "Spanks Butt, No Spanks",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 54843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487724.jpg",
+      "name": "Poking Holes in the Story",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-03-27",
+      "id": 54844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487725.jpg",
+      "name": "Hogging All the Glory",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-03",
+      "id": 54845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487726.jpg",
+      "name": "Sabrina's New Jimmy",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 54846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487727.jpg",
+      "name": "Inside Probe",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-17",
+      "id": 54847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487728.jpg",
+      "name": "I Want My Baby Back, Baby Back, Baby Back",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-02",
+      "id": 54848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489285.jpg",
+      "name": "Not Indecent, But Not Quite Decent Enough Proposal",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-09",
+      "id": 54849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489286.jpg",
+      "name": "Throw Maw Maw from the House (Part 1)",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-16",
+      "id": 54850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489287.jpg",
+      "name": "Throw Maw Maw from the House (Part 2)",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-23",
+      "id": 54851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489290.jpg",
+      "name": "If a Ham Falls in the Woods",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-30",
+      "id": 54852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489293.jpg",
+      "name": "Don't Ask, Don't Tell Me What to Do",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-13",
+      "id": 54853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489294.jpg",
+      "name": "What Up, Bro?",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-20",
+      "id": 54854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489295.jpg",
+      "name": "Candy Wars",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-27",
+      "id": 54855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489296.jpg",
+      "name": "The Walk for the Runs",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-04",
+      "id": 54856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489297.jpg",
+      "name": "Squeak Means Squeak",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-11",
+      "id": 54857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489298.jpg",
+      "name": "The Last Christmas",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-08",
+      "id": 54858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489299.jpg",
+      "name": "Credit Where Credit is Due",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-15",
+      "id": 54859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489300.jpg",
+      "name": "Lord of the Ring",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-22",
+      "id": 54860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489301.jpg",
+      "name": "What Happens at Howdy's Doesn't Stay at Howdy's",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-29",
+      "id": 54861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489302.jpg",
+      "name": "Modern Wedding",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-29",
+      "id": 54862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489877.jpg",
+      "name": "Yo Zappa Do (Part 1)",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-05",
+      "id": 54863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489878.jpg",
+      "name": "Yo Zappa Do (Part 2)",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-05",
+      "id": 54864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489879.jpg",
+      "name": "Sex, Clown and Videotape",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-19",
+      "id": 54865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489880.jpg",
+      "name": "Arbor Daze",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-26",
+      "id": 54866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489881.jpg",
+      "name": "Making the Band",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-02-26",
+      "id": 54867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489882.jpg",
+      "name": "The Old Girl",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-28",
+      "id": 54868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489883.jpg",
+      "name": "Burt-Mitzvah: The Musical",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-03-28",
+      "id": 54869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489884.jpg",
+      "name": "Mother's Day",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 54870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489885.jpg",
+      "name": "Déjà Vu Man",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 54871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489886.jpg",
+      "name": "Burt Bucks",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-22",
+      "id": 54872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489887.jpg",
+      "name": "Ship Happens",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-22",
+      "id": 54873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489889.jpg",
+      "name": "Hi-Def",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-29",
+      "id": 54874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489890.jpg",
+      "name": "Extreme Howdy's Makeover",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-29",
+      "id": 54875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489891.jpg",
+      "name": "Adoption",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-06",
+      "id": 54876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/489892.jpg",
+      "name": "Murder, She Hoped",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-06",
+      "id": 54877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490478.jpg",
+      "name": "Dysfunction Function",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-13",
+      "id": 54878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490480.jpg",
+      "name": "The Chance Who Stole Christmas",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-13",
+      "id": 54879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490482.jpg",
+      "name": "Bee Story",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-10",
+      "id": 54880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490485.jpg",
+      "name": "Hey There, Delilah",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-17",
+      "id": 54881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490488.jpg",
+      "name": "Hot Dish",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-24",
+      "id": 54882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490489.jpg",
+      "name": "Thrilla in Natesvilla",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-01-31",
+      "id": 54883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490492.jpg",
+      "name": "Road to Natesville",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-02-07",
+      "id": 54884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490493.jpg",
+      "name": "Anniversary Ball",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-02-28",
+      "id": 54885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490495.jpg",
+      "name": "The One Where They Get High",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 54886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490498.jpg",
+      "name": "Baby Phat",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-14",
+      "id": 54887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490500.jpg",
+      "name": "Dinner with Tropes",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-21",
+      "id": 54888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490502.jpg",
+      "name": "Para-Natesville Activity",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-03-28",
+      "id": 54889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490504.jpg",
+      "name": "Man's Best Friend",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-04",
+      "id": 54890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490507.jpg",
+      "name": "How I Met Your Mullet",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-04",
+      "id": 54891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490509.jpg",
+      "name": "The Father Daughter Dance",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "id": "tvmaze-580",
+  "live": true,
+  "overview": "At 23 years old, Jimmy Chance is going nowhere in life. He skims pools for a living, parties every night and still lives at home with his family, including his parents and his cousin, Mike. Jimmy's life takes a drastic turn when a chance romantic encounter with Lucy goes awry once he discovers she is a wanted felon. Months later, when Jimmy pays a visit to the local prison, he discovers Lucy gave birth to their baby, who he is now charged with raising.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11870.jpg",
   "rating": 7.9,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "580",
+  "title": "Raising Hope",
+  "type": "series",
+  "year": 2010
 }

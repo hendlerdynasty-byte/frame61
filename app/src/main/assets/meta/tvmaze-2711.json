@@ -1,22 +1,491 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2711",
-  "source": "tvmaze",
-  "sourceId": "2711",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Scooby-Doo! Mystery Incorporated",
-  "year": 2010,
-  "type": "series",
-  "overview": "A sleepy little village, Crystal Cove boasts a long history of ghost sightings, poltergeists, demon possessions, phantoms and other paranormal occurrences. The renowned sleuthing team of Fred, Daphne, Velma, Shaggy and Scooby-Doo prove all of this simply isn't real, and along the way, uncover a larger, season-long mystery that will change everything on Scooby-Doo! Mystery Incorporated.",
-  "poster": "file:///android_asset/posters/tvmaze-2711.jpg",
-  "genres": [
-    "Komödie",
-    "Action",
-    "Abenteuer"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-07-12",
+      "id": 203576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/380/950313.jpg",
+      "name": "Beware the Beast from Below",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-19",
+      "id": 203577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247453.jpg",
+      "name": "The Creeping Creatures",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-26",
+      "id": 203578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247454.jpg",
+      "name": "Secret of the Ghost Rig",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-02",
+      "id": 203579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/799071.jpg",
+      "name": "Revenge of the Man Crab",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-09",
+      "id": 203580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/799082.jpg",
+      "name": "The Song of Mystery",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-16",
+      "id": 203581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/799112.jpg",
+      "name": "The Legend of Alice May",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-23",
+      "id": 203582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/799211.jpg",
+      "name": "In Fear of the Phantom",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-30",
+      "id": 203583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/319/799531.jpg",
+      "name": "The Grasp of the Gnome",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-06",
+      "id": 203584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/324/811175.jpg",
+      "name": "Battle of the Humungonauts",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 203585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/324/811205.jpg",
+      "name": "Howl of the Fright Hound",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 203586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/324/811274.jpg",
+      "name": "The Secret Serum",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 203587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/812814.jpg",
+      "name": "The Shrieking Madness",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 203588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/812838.jpg",
+      "name": "When the Cicada Calls",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-03",
+      "id": 203589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813045.jpg",
+      "name": "Mystery Solvers Club State Finals",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-10",
+      "id": 203590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813142.jpg",
+      "name": "The Wild Brood",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-17",
+      "id": 203591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813192.jpg",
+      "name": "Where Walks Aphrodite",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-24",
+      "id": 203592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/274822.jpg",
+      "name": "Escape from Mystery Manor",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-31",
+      "id": 203593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813870.jpg",
+      "name": "The Dragon's Secret",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-07",
+      "id": 203594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813888.jpg",
+      "name": "Nightfright",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-14",
+      "id": 203595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/325/813923.jpg",
+      "name": "The Siren's Song",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-21",
+      "id": 203596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816178.jpg",
+      "name": "Menace of the Manticore",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-28",
+      "id": 203597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816215.jpg",
+      "name": "Attack of the Headless Horror",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-05",
+      "id": 203598,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816225.jpg",
+      "name": "A Haunting in Crystal Cove",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-12",
+      "id": 203599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816229.jpg",
+      "name": "Dead Justice",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-19",
+      "id": 203600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816359.jpg",
+      "name": "Pawn of Shadows",
+      "number": 25,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-26",
+      "id": 203601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/816384.jpg",
+      "name": "All Fear the Freak",
+      "number": 26,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-30",
+      "id": 203602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/817951.jpg",
+      "name": "The Night the Clown Cried",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-31",
+      "id": 203603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818126.jpg",
+      "name": "The House of the Nightmare Witch",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-01",
+      "id": 203604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818131.jpg",
+      "name": "The Night the Clown Cried II - Tears of Doom!",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-02",
+      "id": 203605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818144.jpg",
+      "name": "Web of the Dreamweaver!",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-03",
+      "id": 203606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818364.jpg",
+      "name": "The Hodag of Horror",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-06",
+      "id": 203607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819571.jpg",
+      "name": "Art of Darkness!",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-07",
+      "id": 203608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819582.jpg",
+      "name": "The Gathering Gloom",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-08",
+      "id": 203609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819590.jpg",
+      "name": "The Night on Haunted Mountain",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-09",
+      "id": 203610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266283.jpg",
+      "name": "Grim Judgement",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-10",
+      "id": 203611,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266420.jpg",
+      "name": "Night Terrors",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-13",
+      "id": 203612,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/820012.jpg",
+      "name": "The Midnight Zone",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-14",
+      "id": 203613,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/820018.jpg",
+      "name": "Scarebear",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-15",
+      "id": 203614,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/267738.jpg",
+      "name": "Wrath of the Krampus",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-16",
+      "id": 203615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/820303.jpg",
+      "name": "Heart of Evil",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-17",
+      "id": 203616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/820311.jpg",
+      "name": "Theater of the Doomed",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 203617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/267739.jpg",
+      "name": "Aliens Among Us",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 203618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822216.jpg",
+      "name": "The Horrible Herd",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-26",
+      "id": 203619,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822218.jpg",
+      "name": "Dance of the Undead",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-27",
+      "id": 203620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/267737.jpg",
+      "name": "The Devouring",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-28",
+      "id": 203621,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822262.jpg",
+      "name": "Stand and Deliver",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-29",
+      "id": 203622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822268.jpg",
+      "name": "The Man in the Mirror",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-02",
+      "id": 203623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822314.jpg",
+      "name": "Nightmare in Red",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-03",
+      "id": 203624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822316.jpg",
+      "name": "Dark Night of the Hunters",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-04",
+      "id": 203625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822381.jpg",
+      "name": "Gates of Gloom",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 203626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822383.jpg",
+      "name": "Through the Curtain",
+      "number": 25,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 203627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/328/822405.jpg",
+      "name": "Come Undone",
+      "number": 26,
+      "runtime": 30,
+      "season": 2
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Action",
+    "Adventure"
+  ],
+  "id": "tvmaze-2711",
+  "live": true,
+  "overview": "A sleepy little village, Crystal Cove boasts a long history of ghost sightings, poltergeists, demon possessions, phantoms and other paranormal occurrences. The renowned sleuthing team of Fred, Daphne, Velma, Shaggy and Scooby-Doo prove all of this simply isn't real, and along the way, uncover a larger, season-long mystery that will change everything on Scooby-Doo! Mystery Incorporated.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/14/36568.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2711",
+  "title": "Scooby-Doo! Mystery Incorporated",
+  "type": "series",
+  "year": 2010
 }

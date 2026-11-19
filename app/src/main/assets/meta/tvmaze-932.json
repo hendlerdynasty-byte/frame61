@@ -1,22 +1,6593 @@
 {
-  "schema": 1,
-  "id": "tvmaze-932",
-  "source": "tvmaze",
-  "sourceId": "932",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Modern Marvels",
-  "year": 1993,
-  "type": "series",
-  "overview": "Celebrating ingenuity, invention and imagination on a grand scale, \"Modern Marvels\" tells the amazing stories of the doers, dreamers and sometime-schemers who create everyday items, technological advancements and man-made wonders. From the Statue of Liberty to distilled spirits, and canals to bridges, no subject seems out of reach. Science, technology, electronics, mechanics, engineering, architecture, industry, mass production, manufacturing, and agriculture are just some of the many topics that have been covered during the long-running series.",
-  "poster": "file:///android_asset/posters/tvmaze-932.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-12-10",
+      "id": 235161,
+      "image": null,
+      "name": "Grand Coulee Dam",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-21",
+      "id": 235162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/557/1394594.jpg",
+      "name": "Empire State Building",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-03-12",
+      "id": 235165,
+      "image": null,
+      "name": "The Panama Canal",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-02-11",
+      "id": 235174,
+      "image": null,
+      "name": "Mount Rushmore",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1994-01-01",
+      "id": 1779572,
+      "image": null,
+      "name": "Cruise Ships",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-12-16",
+      "id": 235240,
+      "image": null,
+      "name": "Balloons",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-01",
+      "id": 235163,
+      "image": null,
+      "name": "The Transcontinental Railroad",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-14",
+      "id": 235166,
+      "image": null,
+      "name": "Las Vegas",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-01-22",
+      "id": 235164,
+      "image": null,
+      "name": "Eiffel Tower",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-11-12",
+      "id": 235204,
+      "image": null,
+      "name": "Domed Stadiums",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-03-19",
+      "id": 235176,
+      "image": null,
+      "name": "Gothic Cathedrals",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-05-21",
+      "id": 235167,
+      "image": null,
+      "name": "Golden Gate Bridge",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-12-16",
+      "id": 1779573,
+      "image": null,
+      "name": "Ocean Liners",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-04",
+      "id": 2955867,
+      "image": null,
+      "name": "The Railroads that Tamed the West",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-27",
+      "id": 2955868,
+      "image": null,
+      "name": "Tunnels",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-06-16",
+      "id": 2955869,
+      "image": null,
+      "name": "Paving America",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-06-30",
+      "id": 2955870,
+      "image": null,
+      "name": "Brooklyn Bridge",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1995-08-20",
+      "id": 235168,
+      "image": null,
+      "name": "Space Shuttle",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-01",
+      "id": 235170,
+      "image": null,
+      "name": "Brooklyn Bridge",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-01",
+      "id": 235169,
+      "image": null,
+      "name": "Silver Mines",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-08",
+      "id": 1779551,
+      "image": null,
+      "name": "Tunnels",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-02",
+      "id": 235175,
+      "image": null,
+      "name": "Tennessee Valley Authority",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-29",
+      "id": 235171,
+      "image": null,
+      "name": "Paving America",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-11-09",
+      "id": 235172,
+      "image": null,
+      "name": "Oil",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-01-06",
+      "id": 235208,
+      "image": null,
+      "name": "The NYC Subway",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-04",
+      "id": 235173,
+      "image": null,
+      "name": "The Railroads That Tamed The West",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-27",
+      "id": 2937682,
+      "image": null,
+      "name": "Grand Coulee Dam",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-03",
+      "id": 2937683,
+      "image": null,
+      "name": "Golden Gate Bridge",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-07",
+      "id": 2937696,
+      "image": null,
+      "name": "The Tennessee Valley Authority",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-04",
+      "id": 2937685,
+      "image": null,
+      "name": "Trans-Continental Railroad",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-11",
+      "id": 2937686,
+      "image": null,
+      "name": "Mt. Rushmore",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-18",
+      "id": 2937687,
+      "image": null,
+      "name": "Ocean Liners",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-25",
+      "id": 2937688,
+      "image": null,
+      "name": "Panama Canal",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-02-29",
+      "id": 2937689,
+      "image": null,
+      "name": "Monuments To Freedom: The People's House",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-09",
+      "id": 2937690,
+      "image": null,
+      "name": "Gothic Cathedrals",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-10",
+      "id": 2937691,
+      "image": null,
+      "name": "Eiffel Tower",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-03-24",
+      "id": 2937692,
+      "image": null,
+      "name": "Empire State Building",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-04-14",
+      "id": 2937693,
+      "image": null,
+      "name": "Domed Stadiums",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-08",
+      "id": 2937698,
+      "image": null,
+      "name": "The Phonograph",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-01-03",
+      "id": 2937695,
+      "image": null,
+      "name": "Space Shuttle",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-08",
+      "id": 2937699,
+      "image": null,
+      "name": "The Electric Light",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-08",
+      "id": 2937700,
+      "image": null,
+      "name": "The Motion Picture",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-20",
+      "id": 2937701,
+      "image": null,
+      "name": "Television: Window to the World",
+      "number": 26,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-24",
+      "id": 2937702,
+      "image": null,
+      "name": "The Computer",
+      "number": 27,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-12-15",
+      "id": 2937703,
+      "image": null,
+      "name": "The Camera",
+      "number": 28,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-16",
+      "id": 2937704,
+      "image": null,
+      "name": "Stealth Technology",
+      "number": 29,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-03-23",
+      "id": 2937705,
+      "image": null,
+      "name": "Pyramids: Majesty and Mystery",
+      "number": 30,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-13",
+      "id": 2937706,
+      "image": null,
+      "name": "Roller Coasters",
+      "number": 31,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-06-08",
+      "id": 2937707,
+      "image": null,
+      "name": "Observatories: Stonehenge To Space Telescopes",
+      "number": 32,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-06-22",
+      "id": 2937708,
+      "image": null,
+      "name": "The Great Wall Of China",
+      "number": 33,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-02",
+      "id": 2955860,
+      "image": null,
+      "name": "America's Highways",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-09-15",
+      "id": 235177,
+      "image": null,
+      "name": "The Telephone",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-06",
+      "id": 1779550,
+      "image": null,
+      "name": "Aqueducts",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-10-20",
+      "id": 235178,
+      "image": null,
+      "name": "Television: Window to the World",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-11-24",
+      "id": 235179,
+      "image": null,
+      "name": "Creation Of The Computer",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-12-15",
+      "id": 235180,
+      "image": null,
+      "name": "Captured Light",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-01-01",
+      "id": 235181,
+      "image": null,
+      "name": "Air Force One: A History",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-16",
+      "id": 235182,
+      "image": null,
+      "name": "Stealth Technology",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-03-23",
+      "id": 235184,
+      "image": null,
+      "name": "Pyramids: Majesty And Mystery",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-04-13",
+      "id": 235183,
+      "image": null,
+      "name": "Roller Coasters: Search for the Ultimate Thrill",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-06-08",
+      "id": 235185,
+      "image": null,
+      "name": "Observatories: Stonehenge To The Space Telescopes",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-06-22",
+      "id": 235186,
+      "image": null,
+      "name": "The Great Wall Of China",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-12-28",
+      "id": 3747233,
+      "image": null,
+      "name": "Clocks",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1997-08-17",
+      "id": 235188,
+      "image": null,
+      "name": "Satellites",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-08-24",
+      "id": 235189,
+      "image": null,
+      "name": "Radio: Out Of Thin Air",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-04-20",
+      "id": 235212,
+      "image": null,
+      "name": "The Motion Picture",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-01",
+      "id": 1779559,
+      "image": null,
+      "name": "Electric Light",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-01",
+      "id": 1779552,
+      "image": null,
+      "name": "The Phonograph",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-07",
+      "id": 235190,
+      "image": null,
+      "name": "Great Towers In The Sky",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-03-16",
+      "id": 235252,
+      "image": null,
+      "name": "Household Wonders",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-21",
+      "id": 1779556,
+      "image": null,
+      "name": "Radar",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-28",
+      "id": 235191,
+      "image": null,
+      "name": "Forensic Science: The Crimefighter's Weapon",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-05",
+      "id": 235192,
+      "image": null,
+      "name": "The Search For The Polio Vaccine",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-12",
+      "id": 235193,
+      "image": null,
+      "name": "The Stock Exchange",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-12",
+      "id": 235194,
+      "image": null,
+      "name": "Transcontinental Railroads",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-02-11",
+      "id": 235245,
+      "image": null,
+      "name": "NORAD - The War Game Fortress",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-26",
+      "id": 235195,
+      "image": null,
+      "name": "Transatlantic Cable: 2500 Miles Of Copper",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-27",
+      "id": 235196,
+      "image": null,
+      "name": "Earthmovers: The Power to Move Mountains",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2001-05-14",
+      "id": 235298,
+      "image": null,
+      "name": "International Airports",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-03",
+      "id": 235197,
+      "image": null,
+      "name": "Deep Sea Exploration: Challenging The Abyss",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-04",
+      "id": 235198,
+      "image": null,
+      "name": "The Alaskan Oil Pipeline",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-06-27",
+      "id": 235187,
+      "image": null,
+      "name": "Statue Of Liberty",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-18",
+      "id": 235200,
+      "image": null,
+      "name": "American Steel: Built To Last",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-08",
+      "id": 235199,
+      "image": null,
+      "name": "Battlefield Engineering",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-01",
+      "id": 1779549,
+      "image": null,
+      "name": "Space Tech",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-11-29",
+      "id": 2955871,
+      "image": null,
+      "name": "Engineering Disasters 2",
+      "number": 30,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1998-07-27",
+      "id": 235638,
+      "image": null,
+      "name": "Aquariums",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-08-03",
+      "id": 235201,
+      "image": null,
+      "name": "Las Vegas Hotels",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-09-28",
+      "id": 1779548,
+      "image": null,
+      "name": "Antibiotics",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-10-28",
+      "id": 235202,
+      "image": null,
+      "name": "Medical Imaging: The Voyage Inward",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-13",
+      "id": 235215,
+      "image": null,
+      "name": "Bombs",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-11-23",
+      "id": 235203,
+      "image": null,
+      "name": "Prosthetics",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-07",
+      "id": 235205,
+      "image": null,
+      "name": "Weather Predictions",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-12-16",
+      "id": 1779569,
+      "image": null,
+      "name": "Stereo and the Sound Revolution",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-01",
+      "id": 235206,
+      "image": null,
+      "name": "Mail Delivery: Erasing The Miles",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-01-01",
+      "id": 235207,
+      "image": null,
+      "name": "Airships",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-08",
+      "id": 1779563,
+      "image": null,
+      "name": "History Of Tall Buildings",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-02-22",
+      "id": 235209,
+      "image": null,
+      "name": "Engineering Disasters (1)",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-09",
+      "id": 1779547,
+      "image": null,
+      "name": "City Parks",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-15",
+      "id": 235210,
+      "image": null,
+      "name": "Spy Technology",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-03-30",
+      "id": 235211,
+      "image": null,
+      "name": "Battlefield Medicine",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-04-26",
+      "id": 235213,
+      "image": null,
+      "name": "U.S. Mints: Money Machines",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-01",
+      "id": 235214,
+      "image": null,
+      "name": "Rescue Technology",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-05-25",
+      "id": 235216,
+      "image": null,
+      "name": "Scuba Diving & Underwater Breathing",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-06-21",
+      "id": 235217,
+      "image": null,
+      "name": "Dynamite",
+      "number": 25,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-07-06",
+      "id": 235218,
+      "image": null,
+      "name": "Offshore Oil Drilling",
+      "number": 26,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-07-12",
+      "id": 235219,
+      "image": null,
+      "name": "Hoover Dam",
+      "number": 27,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-07-19",
+      "id": 235220,
+      "image": null,
+      "name": "Baseball Parks",
+      "number": 28,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-07-20",
+      "id": 235221,
+      "image": null,
+      "name": "Oakland Bay Bridge",
+      "number": 29,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-08-02",
+      "id": 235222,
+      "image": null,
+      "name": "New York Bridges",
+      "number": 30,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-08-09",
+      "id": 1779546,
+      "image": null,
+      "name": "Crash Testing",
+      "number": 31,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-08-23",
+      "id": 235223,
+      "image": null,
+      "name": "Parachutes",
+      "number": 32,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-08-31",
+      "id": 235224,
+      "image": null,
+      "name": "Newspapers",
+      "number": 33,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-09-06",
+      "id": 235225,
+      "image": null,
+      "name": "Fireworks",
+      "number": 34,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-09-13",
+      "id": 235226,
+      "image": null,
+      "name": "The Atlantic Wall",
+      "number": 35,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-09-27",
+      "id": 235227,
+      "image": null,
+      "name": "Simulators",
+      "number": 36,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-11",
+      "id": 235228,
+      "image": null,
+      "name": "The Tool Bench: Power Tools",
+      "number": 37,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-12",
+      "id": 235229,
+      "image": null,
+      "name": "The Tool Bench: Hand Tools",
+      "number": 38,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-13",
+      "id": 235230,
+      "image": null,
+      "name": "More Earth Movers",
+      "number": 39,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-18",
+      "id": 235231,
+      "image": null,
+      "name": "Forts",
+      "number": 40,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-10-25",
+      "id": 235232,
+      "image": null,
+      "name": "Emergency Room",
+      "number": 41,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-08",
+      "id": 235233,
+      "image": null,
+      "name": "Demolition",
+      "number": 42,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-15",
+      "id": 235234,
+      "image": null,
+      "name": "Motorcycles",
+      "number": 43,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-16",
+      "id": 235235,
+      "image": null,
+      "name": "Security Systems",
+      "number": 44,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-11-29",
+      "id": 235236,
+      "image": null,
+      "name": "Engineering Disasters (2)",
+      "number": 45,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-12-08",
+      "id": 235237,
+      "image": null,
+      "name": "Niagara Power",
+      "number": 46,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-12-13",
+      "id": 235238,
+      "image": null,
+      "name": "Casino Technology",
+      "number": 47,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1999-12-14",
+      "id": 235239,
+      "image": null,
+      "name": "Lost Marvels",
+      "number": 48,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2000-01-03",
+      "id": 235241,
+      "image": null,
+      "name": "Household Gadgets",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-10",
+      "id": 235242,
+      "image": null,
+      "name": "City Beneath Our Feet, The AKA Underground Surprises",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-01-11",
+      "id": 235243,
+      "image": null,
+      "name": "The Chunnel",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-03",
+      "id": 235244,
+      "image": null,
+      "name": "The Space Station",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-26",
+      "id": 235246,
+      "image": null,
+      "name": "The Pentagon",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-02-29",
+      "id": 235247,
+      "image": null,
+      "name": "Bridges",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-06",
+      "id": 235248,
+      "image": null,
+      "name": "Prisons",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-13",
+      "id": 235249,
+      "image": null,
+      "name": "Gadgets (1)",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-14",
+      "id": 235250,
+      "image": null,
+      "name": "Great Inventions",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-03-15",
+      "id": 235251,
+      "image": null,
+      "name": "Office Wonders",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-04-17",
+      "id": 235253,
+      "image": null,
+      "name": "Police Technology",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-08",
+      "id": 235254,
+      "image": null,
+      "name": "Disaster Technology",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-25",
+      "id": 235255,
+      "image": null,
+      "name": "Tower Bridge",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-05-31",
+      "id": 235256,
+      "image": null,
+      "name": "Concrete",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-06-06",
+      "id": 235257,
+      "image": null,
+      "name": "Camping Technology",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-06-12",
+      "id": 235258,
+      "image": null,
+      "name": "Private Planes",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-06-19",
+      "id": 235259,
+      "image": null,
+      "name": "Race Cars",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-06-22",
+      "id": 235260,
+      "image": null,
+      "name": "Traffic",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-07-27",
+      "id": 235261,
+      "image": null,
+      "name": "Buses",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-07-31",
+      "id": 235262,
+      "image": null,
+      "name": "Gold Mines",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-08-03",
+      "id": 235263,
+      "image": null,
+      "name": "Banks",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-08-14",
+      "id": 235264,
+      "image": null,
+      "name": "The Erie Canal",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-08-22",
+      "id": 235265,
+      "image": null,
+      "name": "Trucks",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-09-11",
+      "id": 235266,
+      "image": null,
+      "name": "Aswan Dam",
+      "number": 24,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-09-13",
+      "id": 235267,
+      "image": null,
+      "name": "China's Great Dam",
+      "number": 25,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-09-18",
+      "id": 235268,
+      "image": null,
+      "name": "The Maginot Line",
+      "number": 26,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-09",
+      "id": 235269,
+      "image": null,
+      "name": "Video Games: Just For Fun",
+      "number": 27,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-16",
+      "id": 235270,
+      "image": null,
+      "name": "Body Shop (1)",
+      "number": 28,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-16",
+      "id": 235271,
+      "image": null,
+      "name": "Body Shop (2)",
+      "number": 29,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-17",
+      "id": 235272,
+      "image": null,
+      "name": "Machine Tools",
+      "number": 30,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-18",
+      "id": 235273,
+      "image": null,
+      "name": "Farming Technology",
+      "number": 31,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-19",
+      "id": 235274,
+      "image": null,
+      "name": "Assembly Line",
+      "number": 32,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-10-25",
+      "id": 235275,
+      "image": null,
+      "name": "Suez Canal",
+      "number": 33,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-02",
+      "id": 235276,
+      "image": null,
+      "name": "London Underground",
+      "number": 34,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-06",
+      "id": 235277,
+      "image": null,
+      "name": "Combat Training",
+      "number": 35,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-08",
+      "id": 235278,
+      "image": null,
+      "name": "Remote Operated Vehicles",
+      "number": 36,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-11-14",
+      "id": 235279,
+      "image": null,
+      "name": "Death Devices",
+      "number": 37,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-05",
+      "id": 235280,
+      "image": null,
+      "name": "Power Plants",
+      "number": 38,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-12",
+      "id": 235281,
+      "image": null,
+      "name": "Inventions Of War",
+      "number": 39,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-17",
+      "id": 235282,
+      "image": null,
+      "name": "Plumbing: The Arteries Of Civilization",
+      "number": 40,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2000-12-19",
+      "id": 235283,
+      "image": null,
+      "name": "Line Of Defense",
+      "number": 41,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2001-01-04",
+      "id": 235284,
+      "image": null,
+      "name": "Proving Grounds",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-16",
+      "id": 235285,
+      "image": null,
+      "name": "Commercial Jets",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-22",
+      "id": 235287,
+      "image": null,
+      "name": "Apollo 13",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-01-29",
+      "id": 235288,
+      "image": null,
+      "name": "Survival Technology",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-07",
+      "id": 235289,
+      "image": null,
+      "name": "Chesapeake Bay Bridge and Tunnel",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-12",
+      "id": 235290,
+      "image": null,
+      "name": "Garage Gadgets",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-02-22",
+      "id": 235291,
+      "image": null,
+      "name": "Construction Machines",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-01",
+      "id": 235292,
+      "image": null,
+      "name": "Hadrian's Wall",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-12",
+      "id": 235293,
+      "image": null,
+      "name": "Monster Trucks",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-03-19",
+      "id": 235294,
+      "image": null,
+      "name": "Lighthouses",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-11",
+      "id": 235295,
+      "image": null,
+      "name": "Computers",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-04-16",
+      "id": 235296,
+      "image": null,
+      "name": "Engineering Disasters (3)",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-07",
+      "id": 235297,
+      "image": null,
+      "name": "Chemical and Biological Weapons",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-14",
+      "id": 1779562,
+      "image": null,
+      "name": "International Airports (2)",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-05-21",
+      "id": 235299,
+      "image": null,
+      "name": "Codes",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-11-14",
+      "id": 235372,
+      "image": null,
+      "name": "The M-16",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-06-11",
+      "id": 235300,
+      "image": null,
+      "name": "The Colosseum",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-06-19",
+      "id": 235301,
+      "image": null,
+      "name": "Battle Gear",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-06-25",
+      "id": 235302,
+      "image": null,
+      "name": "Hardware Stores (1)",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-06-25",
+      "id": 235303,
+      "image": null,
+      "name": "World Trade Center",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-06-27",
+      "id": 235304,
+      "image": null,
+      "name": "Gadgets (2)",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-07-24",
+      "id": 235305,
+      "image": null,
+      "name": "Cattle Ranches",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-07-25",
+      "id": 235306,
+      "image": null,
+      "name": "Saloons",
+      "number": 23,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-08-21",
+      "id": 235307,
+      "image": null,
+      "name": "Cannons",
+      "number": 24,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-08-28",
+      "id": 235308,
+      "image": null,
+      "name": "Nuclear Subs",
+      "number": 25,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-09-04",
+      "id": 235309,
+      "image": null,
+      "name": "Air Shows",
+      "number": 26,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-09-11",
+      "id": 235310,
+      "image": null,
+      "name": "West Point",
+      "number": 27,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-09-18",
+      "id": 235311,
+      "image": null,
+      "name": "Quarries",
+      "number": 28,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-09-19",
+      "id": 235312,
+      "image": null,
+      "name": "Diamond Mines",
+      "number": 29,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-15",
+      "id": 235314,
+      "image": null,
+      "name": "The House (1)",
+      "number": 30,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-15",
+      "id": 235315,
+      "image": null,
+      "name": "The House (2)",
+      "number": 31,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-17",
+      "id": 235316,
+      "image": null,
+      "name": "Work Clothes",
+      "number": 32,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-23",
+      "id": 235317,
+      "image": null,
+      "name": "Bunkers",
+      "number": 33,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-10-30",
+      "id": 235319,
+      "image": null,
+      "name": "Cemeteries",
+      "number": 34,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-10-23",
+      "id": 235318,
+      "image": null,
+      "name": "War Games",
+      "number": 35,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-27",
+      "id": 235320,
+      "image": null,
+      "name": "Drive-Thru",
+      "number": 36,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-28",
+      "id": 235321,
+      "image": null,
+      "name": "Los Angeles",
+      "number": 37,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-11-29",
+      "id": 235322,
+      "image": null,
+      "name": "Times Square",
+      "number": 38,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-12-01",
+      "id": 235323,
+      "image": null,
+      "name": "Glass",
+      "number": 39,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-12-04",
+      "id": 235324,
+      "image": null,
+      "name": "Firing Ranges",
+      "number": 40,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2001-12-11",
+      "id": 235325,
+      "image": null,
+      "name": "The St. Louis Arch",
+      "number": 41,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2002-01-02",
+      "id": 235326,
+      "image": null,
+      "name": "Failed Inventions",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-17",
+      "id": 235327,
+      "image": null,
+      "name": "Helicopters",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-28",
+      "id": 235328,
+      "image": null,
+      "name": "Private Jets (1)",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-28",
+      "id": 235329,
+      "image": null,
+      "name": "Private Jets (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-30",
+      "id": 235330,
+      "image": null,
+      "name": "Remote Control",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-01-31",
+      "id": 235331,
+      "image": null,
+      "name": "Million Dollar Tech",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-01",
+      "id": 235332,
+      "image": null,
+      "name": "Pleasure Boats",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-19",
+      "id": 235333,
+      "image": null,
+      "name": "Bullet Proof",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-02-26",
+      "id": 235334,
+      "image": null,
+      "name": "Siege Machines",
+      "number": 9,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-05",
+      "id": 235335,
+      "image": null,
+      "name": "The Junkyard",
+      "number": 10,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-12",
+      "id": 235336,
+      "image": null,
+      "name": "The F-14",
+      "number": 11,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-19",
+      "id": 235337,
+      "image": null,
+      "name": "Motors",
+      "number": 12,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-03-26",
+      "id": 235338,
+      "image": null,
+      "name": "The Wheel",
+      "number": 13,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-09",
+      "id": 1779544,
+      "image": null,
+      "name": "Star City",
+      "number": 14,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-16",
+      "id": 235339,
+      "image": null,
+      "name": "Ice Breakers",
+      "number": 15,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-04-18",
+      "id": 235340,
+      "image": null,
+      "name": "Fire & Ice",
+      "number": 16,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-07",
+      "id": 235341,
+      "image": null,
+      "name": "Axes, Swords And Knives",
+      "number": 17,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-14",
+      "id": 235342,
+      "image": null,
+      "name": "The World's Biggest Machines (1)",
+      "number": 18,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-05-21",
+      "id": 235343,
+      "image": null,
+      "name": "Drag Racing",
+      "number": 19,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-02",
+      "id": 235344,
+      "image": null,
+      "name": "Big Rigs of Combat: Tanks/Jeeps",
+      "number": 20,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-04",
+      "id": 235345,
+      "image": null,
+      "name": "The Manhattan Project",
+      "number": 21,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-11",
+      "id": 235346,
+      "image": null,
+      "name": "The Tackle Box",
+      "number": 22,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-12",
+      "id": 235347,
+      "image": null,
+      "name": "Hunting Gear",
+      "number": 23,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-18",
+      "id": 235348,
+      "image": null,
+      "name": "Camouflage",
+      "number": 24,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-20",
+      "id": 235349,
+      "image": null,
+      "name": "Models",
+      "number": 25,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-06-25",
+      "id": 235350,
+      "image": null,
+      "name": "Hangars",
+      "number": 26,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-07-02",
+      "id": 235351,
+      "image": null,
+      "name": "Beach Technology",
+      "number": 27,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-07-15",
+      "id": 235352,
+      "image": null,
+      "name": "Super Guns",
+      "number": 29,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-07-16",
+      "id": 235353,
+      "image": null,
+      "name": "Strategic Air Command",
+      "number": 30,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-07-23",
+      "id": 235354,
+      "image": null,
+      "name": "Gasoline",
+      "number": 31,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-07-24",
+      "id": 235355,
+      "image": null,
+      "name": "Engines",
+      "number": 32,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-06",
+      "id": 235356,
+      "image": null,
+      "name": "Towing",
+      "number": 33,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-08",
+      "id": 235357,
+      "image": null,
+      "name": "Jet Engines",
+      "number": 34,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-13",
+      "id": 235358,
+      "image": null,
+      "name": "Nordhausen",
+      "number": 35,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-15",
+      "id": 235359,
+      "image": null,
+      "name": "Liberty Ships of WWII",
+      "number": 37,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-21",
+      "id": 235360,
+      "image": null,
+      "name": "The Magnum",
+      "number": 38,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-27",
+      "id": 235361,
+      "image": null,
+      "name": "Magnets",
+      "number": 39,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-08-30",
+      "id": 235362,
+      "image": null,
+      "name": "Breweries",
+      "number": 40,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-10",
+      "id": 235363,
+      "image": null,
+      "name": "The Chrysler Building",
+      "number": 41,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-17",
+      "id": 235364,
+      "image": null,
+      "name": "The Autobahn",
+      "number": 42,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-18",
+      "id": 235365,
+      "image": null,
+      "name": "Pickup Trucks",
+      "number": 43,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-20",
+      "id": 235366,
+      "image": null,
+      "name": "Muscle Cars",
+      "number": 44,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-01-03",
+      "id": 1779545,
+      "image": null,
+      "name": "Home Tech",
+      "number": 45,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-08",
+      "id": 235367,
+      "image": null,
+      "name": "Cranes",
+      "number": 46,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-09-10",
+      "id": 1779558,
+      "image": null,
+      "name": "The Internet: Behind the Web",
+      "number": 48,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-22",
+      "id": 235368,
+      "image": null,
+      "name": "Sherman Tanks",
+      "number": 49,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-28",
+      "id": 235369,
+      "image": null,
+      "name": "Train Wrecks",
+      "number": 50,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2001-09-25",
+      "id": 235313,
+      "image": null,
+      "name": "The Secret Life of the Crash Test Dummy",
+      "number": 51,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-10-30",
+      "id": 235370,
+      "image": null,
+      "name": "High Tech Sex",
+      "number": 52,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-06",
+      "id": 1779567,
+      "image": null,
+      "name": "The Spitfire",
+      "number": 53,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-13",
+      "id": 235371,
+      "image": null,
+      "name": "Tunnels of Vietnam",
+      "number": 55,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-11-15",
+      "id": 235373,
+      "image": null,
+      "name": "The Winchester",
+      "number": 56,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-02",
+      "id": 235374,
+      "image": null,
+      "name": "James Bond Gadgets (1)",
+      "number": 57,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-02",
+      "id": 235375,
+      "image": null,
+      "name": "James Bond Gadgets (2)",
+      "number": 58,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-04",
+      "id": 235376,
+      "image": null,
+      "name": "Limos",
+      "number": 59,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-05",
+      "id": 235377,
+      "image": null,
+      "name": "Digi-Tech",
+      "number": 60,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-05",
+      "id": 235378,
+      "image": null,
+      "name": "Salt Mines",
+      "number": 61,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-10",
+      "id": 235379,
+      "image": null,
+      "name": "Concept Cars",
+      "number": 62,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-17",
+      "id": 235380,
+      "image": null,
+      "name": "Runways",
+      "number": 63,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2002-12-18",
+      "id": 1779568,
+      "image": null,
+      "name": "War Planes of World War II",
+      "number": 64,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2003-01-01",
+      "id": 235381,
+      "image": null,
+      "name": "Trans-Siberian Railroad",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-07",
+      "id": 235382,
+      "image": null,
+      "name": "Castles & Dungeons",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-30",
+      "id": 235383,
+      "image": null,
+      "name": "Ice Road Truckers",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-01-31",
+      "id": 235384,
+      "image": null,
+      "name": "Winter Warriors",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-04",
+      "id": 235385,
+      "image": null,
+      "name": "Booby Traps",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-02-11",
+      "id": 235386,
+      "image": null,
+      "name": "Alcan Highway",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-04",
+      "id": 235387,
+      "image": null,
+      "name": "Twin Towers Of The East",
+      "number": 7,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-05",
+      "id": 235388,
+      "image": null,
+      "name": "Mackinac Bridge",
+      "number": 8,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-11",
+      "id": 235389,
+      "image": null,
+      "name": "Bullet Trains",
+      "number": 9,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-13",
+      "id": 235390,
+      "image": null,
+      "name": "Non-Lethal Weapons",
+      "number": 10,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-18",
+      "id": 235391,
+      "image": null,
+      "name": "Army Corps Of Engineers",
+      "number": 12,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-03-26",
+      "id": 235392,
+      "image": null,
+      "name": "Black Hawk: Night Stalker",
+      "number": 13,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-01",
+      "id": 235393,
+      "image": null,
+      "name": "Titanic Tech",
+      "number": 15,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-02",
+      "id": 235394,
+      "image": null,
+      "name": "Coal Mines",
+      "number": 16,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-10",
+      "id": 235395,
+      "image": null,
+      "name": "Secrets Of The Acropolis",
+      "number": 17,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-04-30",
+      "id": 235396,
+      "image": null,
+      "name": "Machine Guns",
+      "number": 18,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-01",
+      "id": 235397,
+      "image": null,
+      "name": "Ball Turret Gunners",
+      "number": 19,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-08",
+      "id": 235398,
+      "image": null,
+      "name": "U.S. Guns Of World War II",
+      "number": 20,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-10",
+      "id": 235399,
+      "image": null,
+      "name": "MiG 15",
+      "number": 21,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-10",
+      "id": 235400,
+      "image": null,
+      "name": "T-34: Russian Victory",
+      "number": 22,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-15",
+      "id": 235401,
+      "image": null,
+      "name": "Tank Crews",
+      "number": 23,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-21",
+      "id": 235402,
+      "image": null,
+      "name": "Harley-Davidson",
+      "number": 24,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-22",
+      "id": 235403,
+      "image": null,
+      "name": "Torture Devices",
+      "number": 25,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-05-26",
+      "id": 235404,
+      "image": null,
+      "name": "Cosmodrome",
+      "number": 26,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-06-03",
+      "id": 235405,
+      "image": null,
+      "name": "Exterminator",
+      "number": 27,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-06-24",
+      "id": 235406,
+      "image": null,
+      "name": "High Voltage",
+      "number": 29,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-06-25",
+      "id": 235407,
+      "image": null,
+      "name": "Dangerous Cargo (1)",
+      "number": 30,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-06-26",
+      "id": 235408,
+      "image": null,
+      "name": "Gunslingers",
+      "number": 31,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-02",
+      "id": 235409,
+      "image": null,
+      "name": "More Engineering Disasters",
+      "number": 32,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-02",
+      "id": 235410,
+      "image": null,
+      "name": "Engineering Disasters (4)",
+      "number": 33,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-08",
+      "id": 235411,
+      "image": null,
+      "name": "Nature Tech: Tsunamis",
+      "number": 34,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-09",
+      "id": 235412,
+      "image": null,
+      "name": "Logging Tech",
+      "number": 35,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-16",
+      "id": 235413,
+      "image": null,
+      "name": "Breaking The Sound Barrier",
+      "number": 36,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-22",
+      "id": 235414,
+      "image": null,
+      "name": "4x4",
+      "number": 37,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-23",
+      "id": 235415,
+      "image": null,
+      "name": "Car Crashes",
+      "number": 38,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-23",
+      "id": 1779555,
+      "image": null,
+      "name": "Sandhogs",
+      "number": 39,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-24",
+      "id": 235416,
+      "image": null,
+      "name": "Convertibles",
+      "number": 40,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-07-30",
+      "id": 235417,
+      "image": null,
+      "name": "Loading Docks",
+      "number": 41,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-05",
+      "id": 235418,
+      "image": null,
+      "name": "Terror Tech: Military",
+      "number": 42,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-05",
+      "id": 235419,
+      "image": null,
+      "name": "Nature Tech: Tornadoes",
+      "number": 43,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-06",
+      "id": 235420,
+      "image": null,
+      "name": "Military Movers (1)",
+      "number": 44,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-07",
+      "id": 235421,
+      "image": null,
+      "name": "Police Guns",
+      "number": 45,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-12",
+      "id": 235422,
+      "image": null,
+      "name": "Terror Tech: Defending The Highrise",
+      "number": 46,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-13",
+      "id": 235423,
+      "image": null,
+      "name": "Bullets",
+      "number": 47,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-15",
+      "id": 235424,
+      "image": null,
+      "name": "Aircraft Carrier",
+      "number": 48,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-18",
+      "id": 1779566,
+      "image": null,
+      "name": "The Gunboats of Vietnam",
+      "number": 49,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-19",
+      "id": 235425,
+      "image": null,
+      "name": "Metal",
+      "number": 50,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-21",
+      "id": 235426,
+      "image": null,
+      "name": "Landmines",
+      "number": 51,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-08-26",
+      "id": 235427,
+      "image": null,
+      "name": "Space Shuttle Columbia",
+      "number": 52,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-03",
+      "id": 235428,
+      "image": null,
+      "name": "Overseas Highway",
+      "number": 53,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-08",
+      "id": 235429,
+      "image": null,
+      "name": "Terror Tech: Civilian",
+      "number": 54,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-24",
+      "id": 235430,
+      "image": null,
+      "name": "Machu Picchu",
+      "number": 55,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-24",
+      "id": 1779543,
+      "image": null,
+      "name": "The PT Boats",
+      "number": 56,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-09-30",
+      "id": 235431,
+      "image": null,
+      "name": "Smart Bombs",
+      "number": 59,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-15",
+      "id": 235432,
+      "image": null,
+      "name": "Lake Pontchartrain Causeway",
+      "number": 60,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-21",
+      "id": 235433,
+      "image": null,
+      "name": "Inviting Disaster (1): Three Mile Island",
+      "number": 61,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-22",
+      "id": 235434,
+      "image": null,
+      "name": "The Luftwaffe",
+      "number": 62,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-22",
+      "id": 235435,
+      "image": null,
+      "name": "Panzers",
+      "number": 63,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2001-01-20",
+      "id": 235286,
+      "image": null,
+      "name": "U-Boats",
+      "number": 64,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-28",
+      "id": 235436,
+      "image": null,
+      "name": "Inviting Disaster (2): The Kursk",
+      "number": 65,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-10-29",
+      "id": 235437,
+      "image": null,
+      "name": "FBI's Crime Lab",
+      "number": 66,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-04",
+      "id": 235438,
+      "image": null,
+      "name": "Inviting Disaster (3): The Space Shuttles",
+      "number": 67,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-04",
+      "id": 235439,
+      "image": null,
+      "name": "Inviting Disaster (4): Building Failures",
+      "number": 68,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-05",
+      "id": 235440,
+      "image": null,
+      "name": "Shipyards",
+      "number": 69,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-12",
+      "id": 235441,
+      "image": null,
+      "name": "Extreme Trucks",
+      "number": 71,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-17",
+      "id": 395435,
+      "image": null,
+      "name": "Guns of Infamy",
+      "number": 72,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-25",
+      "id": 235442,
+      "image": null,
+      "name": "ET Tech",
+      "number": 73,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-27",
+      "id": 235443,
+      "image": null,
+      "name": "The Technology Of Lewis And Clark",
+      "number": 75,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-11-28",
+      "id": 235444,
+      "image": null,
+      "name": "B-52",
+      "number": 76,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-02",
+      "id": 235445,
+      "image": null,
+      "name": "Extreme Sports Gadgets",
+      "number": 77,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 1650959,
+      "image": null,
+      "name": "Early machine guns",
+      "number": 78,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-03",
+      "id": 235446,
+      "image": null,
+      "name": "Tailgating",
+      "number": 79,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-03",
+      "id": 1779560,
+      "image": null,
+      "name": "Wheel Estate",
+      "number": 80,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-04",
+      "id": 1779557,
+      "image": null,
+      "name": "Sports Cars",
+      "number": 81,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-17",
+      "id": 235447,
+      "image": null,
+      "name": "Technology Of Kitty Hawk",
+      "number": 82,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-18",
+      "id": 235448,
+      "image": null,
+      "name": "Egyptian Pyramids",
+      "number": 83,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-19",
+      "id": 235449,
+      "image": null,
+      "name": "The Berlin Wall",
+      "number": 84,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-23",
+      "id": 235450,
+      "image": null,
+      "name": "Toys",
+      "number": 85,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2003-12-30",
+      "id": 235451,
+      "image": null,
+      "name": "Engineering Disasters (5)",
+      "number": 86,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2004-01-16",
+      "id": 235452,
+      "image": null,
+      "name": "Guns Of The Russian Military",
+      "number": 1,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-01-17",
+      "id": 235453,
+      "image": null,
+      "name": "The F-15",
+      "number": 2,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-01-22",
+      "id": 1779553,
+      "image": null,
+      "name": "Submarines",
+      "number": 3,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-04",
+      "id": 235454,
+      "image": null,
+      "name": "Pacific Coast Highway",
+      "number": 4,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-12",
+      "id": 235455,
+      "image": null,
+      "name": "Gangster Guns",
+      "number": 5,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-02-18",
+      "id": 235456,
+      "image": null,
+      "name": "Racetrack Tech",
+      "number": 7,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-03",
+      "id": 235457,
+      "image": null,
+      "name": "Oil Fire Fighting",
+      "number": 8,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-17",
+      "id": 235458,
+      "image": null,
+      "name": "Command Central",
+      "number": 9,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-19",
+      "id": 235459,
+      "image": null,
+      "name": "Front Line Reporting",
+      "number": 10,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-03-31",
+      "id": 235460,
+      "image": null,
+      "name": "Nature's Engineers",
+      "number": 11,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-07",
+      "id": 235461,
+      "image": null,
+      "name": "Bible Tech",
+      "number": 12,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-14",
+      "id": 235462,
+      "image": null,
+      "name": "The Power Grid",
+      "number": 13,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-21",
+      "id": 235463,
+      "image": null,
+      "name": "Bathroom Tech (1)",
+      "number": 14,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-28",
+      "id": 235464,
+      "image": null,
+      "name": "Engineering Disasters (6)",
+      "number": 15,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-04-30",
+      "id": 235465,
+      "image": null,
+      "name": "F-18 Hornet",
+      "number": 16,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-12",
+      "id": 235466,
+      "image": null,
+      "name": "Hydraulics",
+      "number": 17,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-05-26",
+      "id": 235467,
+      "image": null,
+      "name": "Plane Crashes",
+      "number": 19,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-06-03",
+      "id": 235468,
+      "image": null,
+      "name": "D-Day Tech",
+      "number": 20,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-06-07",
+      "id": 235469,
+      "image": null,
+      "name": "A-10 Tankbuster",
+      "number": 21,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-06-09",
+      "id": 235470,
+      "image": null,
+      "name": "Rubber",
+      "number": 22,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-06-15",
+      "id": 235471,
+      "image": null,
+      "name": "City Water",
+      "number": 23,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-06-17",
+      "id": 235472,
+      "image": null,
+      "name": "Greatest Movie Gadgets",
+      "number": 24,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-07-06",
+      "id": 235473,
+      "image": null,
+      "name": "Robots",
+      "number": 25,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-07-08",
+      "id": 235474,
+      "image": null,
+      "name": "Nuclear Technology",
+      "number": 26,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-07-14",
+      "id": 235475,
+      "image": null,
+      "name": "Distilleries",
+      "number": 27,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-07-21",
+      "id": 235476,
+      "image": null,
+      "name": "Apollo 11",
+      "number": 28,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-07-28",
+      "id": 235477,
+      "image": null,
+      "name": "World War I Tech",
+      "number": 29,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-08-04",
+      "id": 235478,
+      "image": null,
+      "name": "Oil Tankers",
+      "number": 30,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-08-11",
+      "id": 235479,
+      "image": null,
+      "name": "Engineering Disasters (7)",
+      "number": 31,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-08-18",
+      "id": 235480,
+      "image": null,
+      "name": "Athens Subway",
+      "number": 32,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-08-25",
+      "id": 235481,
+      "image": null,
+      "name": "Extreme Aircraft (1)",
+      "number": 33,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-01",
+      "id": 235482,
+      "image": null,
+      "name": "George Washington Bridge",
+      "number": 34,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-06",
+      "id": 235483,
+      "image": null,
+      "name": "Building A Skyscraper (1): The Skeleton",
+      "number": 35,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-06",
+      "id": 235484,
+      "image": null,
+      "name": "Building A Skyscraper (2): The Exterior",
+      "number": 36,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-07",
+      "id": 235485,
+      "image": null,
+      "name": "Building A Skyscraper (3): The Human Environment",
+      "number": 37,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-07",
+      "id": 235486,
+      "image": null,
+      "name": "Building A Skyscraper (4): The Arteries",
+      "number": 38,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-08",
+      "id": 235487,
+      "image": null,
+      "name": "The Sears Tower",
+      "number": 39,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-08",
+      "id": 1779542,
+      "image": null,
+      "name": "SOS Tech",
+      "number": 40,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-15",
+      "id": 235488,
+      "image": null,
+      "name": "Police Pursuit",
+      "number": 41,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-15",
+      "id": 235489,
+      "image": null,
+      "name": "St. Lawrence Seaway",
+      "number": 42,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-22",
+      "id": 235490,
+      "image": null,
+      "name": "St. Lawrence Tech",
+      "number": 44,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-09-29",
+      "id": 235491,
+      "image": null,
+      "name": "World's Biggest Machines (2)",
+      "number": 45,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2006-08-03",
+      "id": 235661,
+      "image": null,
+      "name": "Guns of Israel",
+      "number": 47,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-05",
+      "id": 235492,
+      "image": null,
+      "name": "Engineering Disasters (8)",
+      "number": 48,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-06",
+      "id": 235493,
+      "image": null,
+      "name": "Harvesting",
+      "number": 49,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-12",
+      "id": 235494,
+      "image": null,
+      "name": "Engineering Disasters (9)",
+      "number": 50,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-15",
+      "id": 235495,
+      "image": null,
+      "name": "Guns Of The Civil War",
+      "number": 51,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-19",
+      "id": 235496,
+      "image": null,
+      "name": "Engineering Disasters (10)",
+      "number": 52,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-20",
+      "id": 235497,
+      "image": null,
+      "name": "Presidential Movers",
+      "number": 53,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-20",
+      "id": 235498,
+      "image": null,
+      "name": "Gas Tech",
+      "number": 54,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-26",
+      "id": 235499,
+      "image": null,
+      "name": "Engineering Disasters (11)",
+      "number": 55,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-27",
+      "id": 235500,
+      "image": null,
+      "name": "The World's Longest Bridge",
+      "number": 56,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-10-29",
+      "id": 235501,
+      "image": null,
+      "name": "M1 Abrams Supertank!",
+      "number": 58,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-09",
+      "id": 235502,
+      "image": null,
+      "name": "Engineering Disasters (12)",
+      "number": 59,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-10",
+      "id": 235503,
+      "image": null,
+      "name": "Surveillance Tech",
+      "number": 60,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-16",
+      "id": 235504,
+      "image": null,
+      "name": "Engineering Disasters (13)",
+      "number": 61,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-17",
+      "id": 235505,
+      "image": null,
+      "name": "Sub Disasters",
+      "number": 62,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-23",
+      "id": 235506,
+      "image": null,
+      "name": "Engineering Disasters (14)",
+      "number": 63,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-11-24",
+      "id": 1779541,
+      "image": null,
+      "name": "Movie Theaters",
+      "number": 64,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-01",
+      "id": 235507,
+      "image": null,
+      "name": "Washington Monument",
+      "number": 65,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-08",
+      "id": 235508,
+      "image": null,
+      "name": "Engineering Disasters (15)",
+      "number": 66,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-16",
+      "id": 235509,
+      "image": null,
+      "name": "Snackfood Tech (1)",
+      "number": 67,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-21",
+      "id": 235510,
+      "image": null,
+      "name": "Commercial Fishing",
+      "number": 68,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-21",
+      "id": 235511,
+      "image": null,
+      "name": "Dangerous Cargo (2)",
+      "number": 69,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-22",
+      "id": 235512,
+      "image": null,
+      "name": "Ancient Discoveries (1)",
+      "number": 70,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-22",
+      "id": 235513,
+      "image": null,
+      "name": "Ancient Discoveries (2)",
+      "number": 71,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-22",
+      "id": 235514,
+      "image": null,
+      "name": "Ancient Discoveries (3)",
+      "number": 72,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-23",
+      "id": 235515,
+      "image": null,
+      "name": "Engineering Disasters (16)",
+      "number": 73,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-28",
+      "id": 235516,
+      "image": null,
+      "name": "Doomsday Tech (1)",
+      "number": 74,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2004-12-28",
+      "id": 235517,
+      "image": null,
+      "name": "Doomsday Tech (2)",
+      "number": 75,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2012-02-06",
+      "id": 1779554,
+      "image": null,
+      "name": "The Computer",
+      "number": 76,
+      "runtime": 60,
+      "season": 11
+    },
+    {
+      "airdate": "2005-01-05",
+      "id": 235518,
+      "image": null,
+      "name": "Poison",
+      "number": 1,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-06",
+      "id": 235519,
+      "image": null,
+      "name": "Car Tech Of The Future",
+      "number": 2,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-12",
+      "id": 235520,
+      "image": null,
+      "name": "The Arch",
+      "number": 3,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-18",
+      "id": 235521,
+      "image": null,
+      "name": "Nature's Engineers (2)",
+      "number": 4,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-01-26",
+      "id": 235522,
+      "image": null,
+      "name": "World's Biggest Machines (3)",
+      "number": 5,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-01",
+      "id": 235523,
+      "image": null,
+      "name": "The Butcher",
+      "number": 6,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-04",
+      "id": 235524,
+      "image": null,
+      "name": "Blackbird Stealth!",
+      "number": 7,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-15",
+      "id": 235525,
+      "image": null,
+      "name": "George Washington Carver Tech",
+      "number": 8,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-23",
+      "id": 235527,
+      "image": null,
+      "name": "Desert Tech",
+      "number": 10,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-23",
+      "id": 235528,
+      "image": null,
+      "name": "Sub-Zero",
+      "number": 11,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-23",
+      "id": 235529,
+      "image": null,
+      "name": "The Great Bridge: 8 Miles Of Steel",
+      "number": 12,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-02-28",
+      "id": 235530,
+      "image": null,
+      "name": "Howard Hughes Tech",
+      "number": 13,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-03-02",
+      "id": 235531,
+      "image": null,
+      "name": "Edwards Air Force Base",
+      "number": 14,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-03-09",
+      "id": 235532,
+      "image": null,
+      "name": "Taxidermy",
+      "number": 15,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-03-09",
+      "id": 235533,
+      "image": null,
+      "name": "SWAT",
+      "number": 16,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-03-16",
+      "id": 235534,
+      "image": null,
+      "name": "Deadliest Weapons",
+      "number": 17,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-04-07",
+      "id": 235535,
+      "image": null,
+      "name": "The Doomsday Clock",
+      "number": 18,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-04-26",
+      "id": 235536,
+      "image": null,
+      "name": "The Basement",
+      "number": 19,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-04-27",
+      "id": 235537,
+      "image": null,
+      "name": "Paint",
+      "number": 20,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-04-27",
+      "id": 235538,
+      "image": null,
+      "name": "Mega Movers",
+      "number": 21,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2012-07-16",
+      "id": 1650969,
+      "image": null,
+      "name": "Punishment",
+      "number": 22,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-05-11",
+      "id": 235539,
+      "image": null,
+      "name": "Bricks",
+      "number": 23,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-05-18",
+      "id": 235540,
+      "image": null,
+      "name": "Glue",
+      "number": 24,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-05-20",
+      "id": 235541,
+      "image": null,
+      "name": "F/A-22 Raptor",
+      "number": 25,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-05-25",
+      "id": 235542,
+      "image": null,
+      "name": "Civil War Tech",
+      "number": 26,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-03",
+      "id": 235543,
+      "image": null,
+      "name": "Machines Of D-Day",
+      "number": 27,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-08",
+      "id": 235544,
+      "image": null,
+      "name": "The John Hancock Center",
+      "number": 28,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-15",
+      "id": 235545,
+      "image": null,
+      "name": "The Cape Cod Canal",
+      "number": 29,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-16",
+      "id": 235546,
+      "image": null,
+      "name": "Secret Japanese Aircraft Of WWII",
+      "number": 30,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-19",
+      "id": 235547,
+      "image": null,
+      "name": "Boys Toys: Private Collections",
+      "number": 31,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-22",
+      "id": 235548,
+      "image": null,
+      "name": "Future Tech",
+      "number": 32,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-06-29",
+      "id": 235549,
+      "image": null,
+      "name": "Edison Tech",
+      "number": 33,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-07-01",
+      "id": 235550,
+      "image": null,
+      "name": "Secrets Of Soviet Space Disasters",
+      "number": 34,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-07-05",
+      "id": 235551,
+      "image": null,
+      "name": "Mountain Roads",
+      "number": 35,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-07-20",
+      "id": 235552,
+      "image": null,
+      "name": "Cowboy Tech",
+      "number": 36,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-07-27",
+      "id": 235553,
+      "image": null,
+      "name": "Sewers",
+      "number": 37,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-07-29",
+      "id": 235554,
+      "image": null,
+      "name": "Challenger Tank",
+      "number": 38,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-02",
+      "id": 235555,
+      "image": null,
+      "name": "World's Biggest Machines (4)",
+      "number": 39,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-03",
+      "id": 235556,
+      "image": null,
+      "name": "Dredging",
+      "number": 40,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-10",
+      "id": 235557,
+      "image": null,
+      "name": "Lube Job",
+      "number": 41,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-17",
+      "id": 235558,
+      "image": null,
+      "name": "Secret Luftwaffe Aircraft Of WWII",
+      "number": 42,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-24",
+      "id": 235559,
+      "image": null,
+      "name": "Route 66",
+      "number": 43,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-24",
+      "id": 235560,
+      "image": null,
+      "name": "The World's Fastest",
+      "number": 44,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-26",
+      "id": 235561,
+      "image": null,
+      "name": "B-2 Bomber",
+      "number": 45,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-31",
+      "id": 235562,
+      "image": null,
+      "name": "High Risk: Helicopter Linemen",
+      "number": 46,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-08-31",
+      "id": 235563,
+      "image": null,
+      "name": "Wiring America",
+      "number": 47,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-02",
+      "id": 235564,
+      "image": null,
+      "name": "HMS Victory",
+      "number": 48,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-05-24",
+      "id": 1779574,
+      "image": null,
+      "name": "HMS Victory",
+      "number": 49,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-14",
+      "id": 235565,
+      "image": null,
+      "name": "Coffee",
+      "number": 51,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-14",
+      "id": 235566,
+      "image": null,
+      "name": "Sugar",
+      "number": 52,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-14",
+      "id": 235567,
+      "image": null,
+      "name": "Cereal: History In A Bowl",
+      "number": 53,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-22",
+      "id": 235568,
+      "image": null,
+      "name": "F117: Nighthawk Stealth",
+      "number": 54,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-09-24",
+      "id": 235569,
+      "image": null,
+      "name": "German Small Arms Of WWII",
+      "number": 55,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-10-05",
+      "id": 235570,
+      "image": null,
+      "name": "The Auto Shop",
+      "number": 56,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-10-14",
+      "id": 235571,
+      "image": null,
+      "name": "Secret Allied Aircraft Of WWII",
+      "number": 57,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-02",
+      "id": 235572,
+      "image": null,
+      "name": "Engineering Disasters (17)",
+      "number": 58,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-16",
+      "id": 235573,
+      "image": null,
+      "name": "Brewing",
+      "number": 59,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-11-30",
+      "id": 235574,
+      "image": null,
+      "name": "The Lumberyard",
+      "number": 60,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-04",
+      "id": 235576,
+      "image": null,
+      "name": "Da Vinci Tech",
+      "number": 61,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-05",
+      "id": 235577,
+      "image": null,
+      "name": "Custom Cars",
+      "number": 62,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-06",
+      "id": 235578,
+      "image": null,
+      "name": "Hardware (2)",
+      "number": 63,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-02-08",
+      "id": 235586,
+      "image": null,
+      "name": "Weird Weapons: The Allies",
+      "number": 64,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-20",
+      "id": 235579,
+      "image": null,
+      "name": "More Snackfood Tech",
+      "number": 65,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-25",
+      "id": 235580,
+      "image": null,
+      "name": "Walt Disney World",
+      "number": 66,
+      "runtime": 120,
+      "season": 12
+    },
+    {
+      "airdate": "2005-12-29",
+      "id": 235581,
+      "image": null,
+      "name": "Nature Tech: Hurricanes",
+      "number": 67,
+      "runtime": 60,
+      "season": 12
+    },
+    {
+      "airdate": "2006-01-04",
+      "id": 235582,
+      "image": null,
+      "name": "Containers",
+      "number": 1,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-01-11",
+      "id": 235583,
+      "image": null,
+      "name": "Fire",
+      "number": 2,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-01-18",
+      "id": 235584,
+      "image": null,
+      "name": "Cotton",
+      "number": 3,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-02-08",
+      "id": 235587,
+      "image": null,
+      "name": "Engineering Disasters (18)",
+      "number": 4,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-02-14",
+      "id": 235588,
+      "image": null,
+      "name": "Candy",
+      "number": 5,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-02-21",
+      "id": 235589,
+      "image": null,
+      "name": "Weird Weapons: The Axis",
+      "number": 6,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-02-24",
+      "id": 235590,
+      "image": null,
+      "name": "Nature Tech: Avalanches",
+      "number": 7,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-02-28",
+      "id": 235591,
+      "image": null,
+      "name": "Engineering Disasters: New Orleans",
+      "number": 8,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-03-08",
+      "id": 235592,
+      "image": null,
+      "name": "Leather",
+      "number": 9,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-03-22",
+      "id": 235593,
+      "image": null,
+      "name": "Engineering Disasters (19)",
+      "number": 10,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-04-26",
+      "id": 235594,
+      "image": null,
+      "name": "Insulation",
+      "number": 11,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-05-02",
+      "id": 235595,
+      "image": null,
+      "name": "Hi-Tech Hitler",
+      "number": 12,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-05-03",
+      "id": 235596,
+      "image": null,
+      "name": "Shovels",
+      "number": 13,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-05-10",
+      "id": 235597,
+      "image": null,
+      "name": "Drilling",
+      "number": 16,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-05-24",
+      "id": 235598,
+      "image": null,
+      "name": "'80's Tech",
+      "number": 17,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-05-25",
+      "id": 235599,
+      "image": null,
+      "name": "Ben Franklin Tech",
+      "number": 18,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-06-12",
+      "id": 235600,
+      "image": null,
+      "name": "Copper Kings",
+      "number": 19,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-06-14",
+      "id": 235601,
+      "image": null,
+      "name": "Heavy Metals: Copper, Uranium, Chromium, Lead, Nickel And Zinc",
+      "number": 20,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-06-19",
+      "id": 235602,
+      "image": null,
+      "name": "Money",
+      "number": 21,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-06-28",
+      "id": 235604,
+      "image": null,
+      "name": "BBQ Tech",
+      "number": 23,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-03",
+      "id": 235605,
+      "image": null,
+      "name": "High Explosives",
+      "number": 24,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-12",
+      "id": 235606,
+      "image": null,
+      "name": "Pirate Tech",
+      "number": 25,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-26",
+      "id": 235607,
+      "image": null,
+      "name": "Boneyard: Where Machines End Their Lives",
+      "number": 26,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-26",
+      "id": 235608,
+      "image": null,
+      "name": "World's Biggest Machines (5)",
+      "number": 27,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-28",
+      "id": 235609,
+      "image": null,
+      "name": "Super Tools: Skyscraper",
+      "number": 28,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-08-23",
+      "id": 235612,
+      "image": null,
+      "name": "Mummy Tech",
+      "number": 31,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-08-03",
+      "id": 235669,
+      "image": null,
+      "name": "Batteries",
+      "number": 32,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-06",
+      "id": 235614,
+      "image": null,
+      "name": "Water",
+      "number": 33,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-08-30",
+      "id": 235613,
+      "image": null,
+      "name": "Levees",
+      "number": 34,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-13",
+      "id": 235616,
+      "image": null,
+      "name": "Copper",
+      "number": 35,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-07",
+      "id": 235615,
+      "image": null,
+      "name": "Cola Wars",
+      "number": 36,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-18",
+      "id": 235618,
+      "image": null,
+      "name": "Building In The Name Of God",
+      "number": 37,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-17",
+      "id": 235617,
+      "image": null,
+      "name": "Shotguns",
+      "number": 38,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-20",
+      "id": 235620,
+      "image": null,
+      "name": "Renewable Energy",
+      "number": 39,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-06-21",
+      "id": 235603,
+      "image": null,
+      "name": "Horsepower",
+      "number": 40,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-26",
+      "id": 235622,
+      "image": null,
+      "name": "Atlantic Intracoastal Waterway",
+      "number": 41,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-27",
+      "id": 235623,
+      "image": null,
+      "name": "Stealth & Beyond: Air Stealth",
+      "number": 42,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-21",
+      "id": 235621,
+      "image": null,
+      "name": "Cities Of The Underworld",
+      "number": 43,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-04",
+      "id": 235625,
+      "image": null,
+      "name": "Ink",
+      "number": 44,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-11",
+      "id": 235626,
+      "image": null,
+      "name": "Distilleries (2)",
+      "number": 45,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-27",
+      "id": 235662,
+      "image": null,
+      "name": "Stealth & Beyond: Sea Stealth",
+      "number": 46,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-01",
+      "id": 235628,
+      "image": null,
+      "name": "Tomcat Sunset",
+      "number": 47,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-08",
+      "id": 235629,
+      "image": null,
+      "name": "Tobacco",
+      "number": 48,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-18",
+      "id": 235627,
+      "image": null,
+      "name": "World's Strongest (1)",
+      "number": 49,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 235631,
+      "image": null,
+      "name": "Breakfast Tech",
+      "number": 50,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-29",
+      "id": 235632,
+      "image": null,
+      "name": "Wine",
+      "number": 51,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-15",
+      "id": 235630,
+      "image": null,
+      "name": "Supermarket",
+      "number": 52,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-07-28",
+      "id": 1779570,
+      "image": null,
+      "name": "The AK-47",
+      "number": 53,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-12-10",
+      "id": 235635,
+      "image": null,
+      "name": "Snow",
+      "number": 54,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-11-29",
+      "id": 235633,
+      "image": null,
+      "name": "Harvesting (2)",
+      "number": 55,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-12-06",
+      "id": 235634,
+      "image": null,
+      "name": "Engineering Disasters (20)",
+      "number": 56,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-08-02",
+      "id": 235610,
+      "image": null,
+      "name": "Nuts",
+      "number": 57,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-12-13",
+      "id": 235636,
+      "image": null,
+      "name": "Tea",
+      "number": 58,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-12-20",
+      "id": 235637,
+      "image": null,
+      "name": "Christmas Tech",
+      "number": 59,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-01-01",
+      "id": 1779540,
+      "image": null,
+      "name": "Wind",
+      "number": 60,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-09-20",
+      "id": 2955862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/578/1446272.jpg",
+      "name": "Freight Trains",
+      "number": 360,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2006-10-09",
+      "id": 2955863,
+      "image": null,
+      "name": "More Earth Movers",
+      "number": 361,
+      "runtime": 60,
+      "season": 13
+    },
+    {
+      "airdate": "2007-01-17",
+      "id": 1650928,
+      "image": null,
+      "name": "Balls",
+      "number": 1,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-01-24",
+      "id": 1650929,
+      "image": null,
+      "name": "Environmental Tech",
+      "number": 2,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2006-02-20",
+      "id": 235640,
+      "image": null,
+      "name": "Canning",
+      "number": 3,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-02-07",
+      "id": 1650930,
+      "image": null,
+      "name": "Pumps",
+      "number": 4,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-02-11",
+      "id": 1650931,
+      "image": null,
+      "name": "Ice",
+      "number": 5,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2009-10-28",
+      "id": 1779571,
+      "image": null,
+      "name": "More Ice",
+      "number": 6,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 1650932,
+      "image": null,
+      "name": "The Destroyer",
+      "number": 7,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-02-18",
+      "id": 1650933,
+      "image": null,
+      "name": "Star Trek Tech",
+      "number": 8,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-02-21",
+      "id": 1650934,
+      "image": null,
+      "name": "Weapons of Mass Destruction",
+      "number": 9,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-03-04",
+      "id": 1650935,
+      "image": null,
+      "name": "Barbarian Battle Tech",
+      "number": 10,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-03-28",
+      "id": 1650936,
+      "image": null,
+      "name": "Dams",
+      "number": 11,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-04-12",
+      "id": 1650937,
+      "image": null,
+      "name": "Yard Tech",
+      "number": 12,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-04-18",
+      "id": 1650938,
+      "image": null,
+      "name": "More Military Movers",
+      "number": 13,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-02",
+      "id": 1650939,
+      "image": null,
+      "name": "Deep Sea Salvage",
+      "number": 14,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-09",
+      "id": 1650940,
+      "image": null,
+      "name": "Welding",
+      "number": 15,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-16",
+      "id": 1650942,
+      "image": null,
+      "name": "60's Tech",
+      "number": 16,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-16",
+      "id": 1650941,
+      "image": null,
+      "name": "It Came from Outer Space",
+      "number": 17,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-23",
+      "id": 1650943,
+      "image": null,
+      "name": "World's Strongest (2)",
+      "number": 18,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-30",
+      "id": 1650944,
+      "image": null,
+      "name": "Engineering Disasters of the 70's",
+      "number": 19,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-05-30",
+      "id": 1650945,
+      "image": null,
+      "name": "70's Tech",
+      "number": 20,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-06-13",
+      "id": 1650946,
+      "image": null,
+      "name": "Truck Stops",
+      "number": 21,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-06-20",
+      "id": 1650947,
+      "image": null,
+      "name": "Fertilizer",
+      "number": 22,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-06-27",
+      "id": 1650948,
+      "image": null,
+      "name": "Cheese",
+      "number": 23,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-07-18",
+      "id": 1650949,
+      "image": null,
+      "name": "Saws",
+      "number": 24,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-07-25",
+      "id": 1650950,
+      "image": null,
+      "name": "Aluminum",
+      "number": 25,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-07-30",
+      "id": 1650951,
+      "image": null,
+      "name": "Sticky Stuff",
+      "number": 26,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-08-06",
+      "id": 1650952,
+      "image": null,
+      "name": "Chocolate",
+      "number": 27,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-08-13",
+      "id": 1650953,
+      "image": null,
+      "name": "Bedroom Tech",
+      "number": 28,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-08-23",
+      "id": 1650954,
+      "image": null,
+      "name": "Vacuums",
+      "number": 29,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-08-27",
+      "id": 1650955,
+      "image": null,
+      "name": "Traps",
+      "number": 30,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-09-03",
+      "id": 1650956,
+      "image": null,
+      "name": "Star Wars Tech",
+      "number": 32,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-09-20",
+      "id": 1650957,
+      "image": null,
+      "name": "Extreme Aircraft (2)",
+      "number": 33,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-09-25",
+      "id": 1650958,
+      "image": null,
+      "name": "Deep Freeze",
+      "number": 34,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 235672,
+      "image": null,
+      "name": "Acid",
+      "number": 35,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-11",
+      "id": 1650960,
+      "image": null,
+      "name": "World's Sharpest",
+      "number": 36,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-10-25",
+      "id": 1650961,
+      "image": null,
+      "name": "Engineering Disasters (21)",
+      "number": 37,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 1650962,
+      "image": null,
+      "name": "Environmental Tech (2)",
+      "number": 38,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-19",
+      "id": 1650963,
+      "image": null,
+      "name": "Corn",
+      "number": 39,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-11-27",
+      "id": 1650964,
+      "image": null,
+      "name": "The Pig",
+      "number": 40,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-12-03",
+      "id": 1650965,
+      "image": null,
+      "name": "Rocks",
+      "number": 41,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-12-10",
+      "id": 1650966,
+      "image": null,
+      "name": "Most Shocking",
+      "number": 42,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-12-17",
+      "id": 1650967,
+      "image": null,
+      "name": "Cold Cuts",
+      "number": 43,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2007-12-24",
+      "id": 1650968,
+      "image": null,
+      "name": "Fast Food Tech",
+      "number": 44,
+      "runtime": 60,
+      "season": 14
+    },
+    {
+      "airdate": "2008-01-07",
+      "id": 235682,
+      "image": null,
+      "name": "Milk",
+      "number": 1,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-01-14",
+      "id": 235683,
+      "image": null,
+      "name": "Carbon",
+      "number": 2,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-02-07",
+      "id": 235684,
+      "image": null,
+      "name": "90's Tech",
+      "number": 3,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-02-28",
+      "id": 235685,
+      "image": null,
+      "name": "Superhighways",
+      "number": 4,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-03-06",
+      "id": 235686,
+      "image": null,
+      "name": "World's Strongest (3)",
+      "number": 5,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-03-10",
+      "id": 235687,
+      "image": null,
+      "name": "Strange Weapons",
+      "number": 6,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-03-17",
+      "id": 235688,
+      "image": null,
+      "name": "Whiskey",
+      "number": 7,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-03-19",
+      "id": 235689,
+      "image": null,
+      "name": "Alaskan Fishing",
+      "number": 8,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-03-24",
+      "id": 235690,
+      "image": null,
+      "name": "Bread",
+      "number": 9,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-04-04",
+      "id": 235691,
+      "image": null,
+      "name": "Ultimate Gadgets",
+      "number": 10,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-04-07",
+      "id": 235692,
+      "image": null,
+      "name": "Locomotives",
+      "number": 11,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-04-30",
+      "id": 235693,
+      "image": null,
+      "name": "Rats",
+      "number": 12,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-05-14",
+      "id": 235694,
+      "image": null,
+      "name": "Nikola Tesla's Mad Electricity",
+      "number": 13,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-05-30",
+      "id": 235695,
+      "image": null,
+      "name": "Axes",
+      "number": 15,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-06",
+      "id": 235696,
+      "image": null,
+      "name": "Most Dangerous",
+      "number": 16,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-09",
+      "id": 235697,
+      "image": null,
+      "name": "Super Hot",
+      "number": 17,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-16",
+      "id": 235698,
+      "image": null,
+      "name": "Lead",
+      "number": 18,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-20",
+      "id": 235699,
+      "image": null,
+      "name": "Corpse Tech",
+      "number": 19,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-23",
+      "id": 235700,
+      "image": null,
+      "name": "Ice Cream",
+      "number": 20,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-06-30",
+      "id": 235701,
+      "image": null,
+      "name": "Bathroom Tech (2)",
+      "number": 21,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-07-10",
+      "id": 235702,
+      "image": null,
+      "name": "Crashes",
+      "number": 22,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-07-17",
+      "id": 235703,
+      "image": null,
+      "name": "Underwear",
+      "number": 23,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-07-21",
+      "id": 235704,
+      "image": null,
+      "name": "Batman Tech",
+      "number": 24,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-07-24",
+      "id": 235705,
+      "image": null,
+      "name": "Coin Operated",
+      "number": 25,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-07-31",
+      "id": 235706,
+      "image": null,
+      "name": "Secrets Of Oil",
+      "number": 26,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-08-14",
+      "id": 235707,
+      "image": null,
+      "name": "Iron",
+      "number": 27,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-08-27",
+      "id": 235708,
+      "image": null,
+      "name": "Wheat",
+      "number": 28,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-08-28",
+      "id": 235709,
+      "image": null,
+      "name": "Dangerous Roads",
+      "number": 29,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-09-18",
+      "id": 235710,
+      "image": null,
+      "name": "Mold & Fungus",
+      "number": 30,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 235711,
+      "image": null,
+      "name": "Soft Drinks",
+      "number": 31,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-13",
+      "id": 235713,
+      "image": null,
+      "name": "Corrosion & Decomposition",
+      "number": 32,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 235714,
+      "image": null,
+      "name": "Bull's-Eye",
+      "number": 33,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 235715,
+      "image": null,
+      "name": "Halloween Tech",
+      "number": 34,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-11-19",
+      "id": 235716,
+      "image": null,
+      "name": "The Horse",
+      "number": 35,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 235717,
+      "image": null,
+      "name": "The Turkey",
+      "number": 36,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-01",
+      "id": 235718,
+      "image": null,
+      "name": "Salt",
+      "number": 37,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-09",
+      "id": 235719,
+      "image": null,
+      "name": "Car Wash",
+      "number": 38,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-19",
+      "id": 235720,
+      "image": null,
+      "name": "Retro Tech",
+      "number": 39,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-22",
+      "id": 235721,
+      "image": null,
+      "name": "Super Human",
+      "number": 40,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-23",
+      "id": 235722,
+      "image": null,
+      "name": "Measure It",
+      "number": 41,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2008-12-26",
+      "id": 235723,
+      "image": null,
+      "name": "Night",
+      "number": 42,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2010-04-01",
+      "id": 235734,
+      "image": null,
+      "name": "Fry It",
+      "number": 43,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2010-03-25",
+      "id": 235733,
+      "image": null,
+      "name": "Mega Meals",
+      "number": 44,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2010-01-29",
+      "id": 3312743,
+      "image": null,
+      "name": "De Havilland Mosquito",
+      "number": 45,
+      "runtime": 60,
+      "season": 15
+    },
+    {
+      "airdate": "2010-01-14",
+      "id": 235724,
+      "image": null,
+      "name": "Dirt",
+      "number": 1,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-01-21",
+      "id": 235725,
+      "image": null,
+      "name": "Eggs",
+      "number": 2,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-01-28",
+      "id": 235726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/557/1394614.jpg",
+      "name": "The Potato",
+      "number": 3,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-02-04",
+      "id": 235727,
+      "image": null,
+      "name": "Tuna",
+      "number": 4,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-02-11",
+      "id": 235728,
+      "image": null,
+      "name": "Winter Tech",
+      "number": 5,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-03-02",
+      "id": 235729,
+      "image": null,
+      "name": "Chrome",
+      "number": 6,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-03-04",
+      "id": 235730,
+      "image": null,
+      "name": "Start to Finish",
+      "number": 7,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-03-11",
+      "id": 235731,
+      "image": null,
+      "name": "Beans",
+      "number": 8,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-03-18",
+      "id": 235732,
+      "image": null,
+      "name": "Hot & Spicy",
+      "number": 9,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-04-15",
+      "id": 235735,
+      "image": null,
+      "name": "Deliver It",
+      "number": 10,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-04-22",
+      "id": 235736,
+      "image": null,
+      "name": "Helicopters (2)",
+      "number": 11,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-04-29",
+      "id": 235737,
+      "image": null,
+      "name": "Super Ships",
+      "number": 12,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-05-06",
+      "id": 235738,
+      "image": null,
+      "name": "Big & Small",
+      "number": 13,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-05-13",
+      "id": 235739,
+      "image": null,
+      "name": "Breaking Point",
+      "number": 14,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-05-20",
+      "id": 235740,
+      "image": null,
+      "name": "Keep Out",
+      "number": 15,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-05-27",
+      "id": 235741,
+      "image": null,
+      "name": "Super Steam",
+      "number": 16,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-06-03",
+      "id": 235742,
+      "image": null,
+      "name": "Doors",
+      "number": 17,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-06-10",
+      "id": 235743,
+      "image": null,
+      "name": "The Real National Treasure",
+      "number": 18,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-06-17",
+      "id": 235744,
+      "image": null,
+      "name": "Top Ten",
+      "number": 19,
+      "runtime": 60,
+      "season": 16
+    },
+    {
+      "airdate": "2010-10-29",
+      "id": 235745,
+      "image": null,
+      "name": "Mega Stores",
+      "number": 1,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-11-05",
+      "id": 235746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/557/1394593.jpg",
+      "name": "Supersized Food",
+      "number": 2,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-11-12",
+      "id": 235747,
+      "image": null,
+      "name": "Coin Operated II",
+      "number": 3,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-11-19",
+      "id": 235748,
+      "image": null,
+      "name": "Engineering Disasters 22",
+      "number": 4,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-11-26",
+      "id": 235749,
+      "image": null,
+      "name": "Dogs",
+      "number": 5,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-12-03",
+      "id": 235750,
+      "image": null,
+      "name": "Built to Last",
+      "number": 6,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-12-10",
+      "id": 235751,
+      "image": null,
+      "name": "Secret Underground",
+      "number": 7,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-12-17",
+      "id": 235752,
+      "image": null,
+      "name": "Made in the USA",
+      "number": 8,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-12-21",
+      "id": 235753,
+      "image": null,
+      "name": "Driver's Seat",
+      "number": 9,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2010-12-29",
+      "id": 235754,
+      "image": null,
+      "name": "Rice",
+      "number": 10,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 235755,
+      "image": null,
+      "name": "Packaging",
+      "number": 11,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2011-01-21",
+      "id": 235756,
+      "image": null,
+      "name": "Grease",
+      "number": 12,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 235757,
+      "image": null,
+      "name": "Ropes & Chains",
+      "number": 13,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2011-02-04",
+      "id": 235758,
+      "image": null,
+      "name": "American Trucking",
+      "number": 14,
+      "runtime": 60,
+      "season": 17
+    },
+    {
+      "airdate": "2011-10-03",
+      "id": 235759,
+      "image": null,
+      "name": "Inside Your Walls",
+      "number": 1,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-10-10",
+      "id": 235760,
+      "image": null,
+      "name": "Built by Hand",
+      "number": 2,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-10-24",
+      "id": 235761,
+      "image": null,
+      "name": "Swamp Tech",
+      "number": 3,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-11-07",
+      "id": 235762,
+      "image": null,
+      "name": "Is That a... in Your Pocket?",
+      "number": 4,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-11-14",
+      "id": 235763,
+      "image": null,
+      "name": "Food Trucks",
+      "number": 5,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-11-28",
+      "id": 235764,
+      "image": null,
+      "name": "Weird Machines",
+      "number": 6,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-05",
+      "id": 235765,
+      "image": null,
+      "name": "More Candy",
+      "number": 7,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-19",
+      "id": 235769,
+      "image": null,
+      "name": "Wood",
+      "number": 8,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-26",
+      "id": 235770,
+      "image": null,
+      "name": "Convenience Stores",
+      "number": 9,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-07",
+      "id": 235766,
+      "image": null,
+      "name": "Battle Ready",
+      "number": 10,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-16",
+      "id": 235768,
+      "image": null,
+      "name": "Waterproof",
+      "number": 11,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-01-16",
+      "id": 235771,
+      "image": null,
+      "name": "Tiny Weapons",
+      "number": 12,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2011-12-08",
+      "id": 235767,
+      "image": null,
+      "name": "Stink",
+      "number": 13,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-01-30",
+      "id": 235773,
+      "image": null,
+      "name": "Under Pressure",
+      "number": 14,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-02-06",
+      "id": 235774,
+      "image": null,
+      "name": "Shoes",
+      "number": 15,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-02-20",
+      "id": 1779565,
+      "image": null,
+      "name": "Going Medieval",
+      "number": 16,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-02-27",
+      "id": 235775,
+      "image": null,
+      "name": "Alaska Tech",
+      "number": 17,
+      "runtime": 60,
+      "season": 18
+    },
+    {
+      "airdate": "2012-07-16",
+      "id": 235776,
+      "image": null,
+      "name": "Mega Speed Countdown",
+      "number": 1,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2012-07-23",
+      "id": 1650970,
+      "image": null,
+      "name": "Mega Machine Countdown",
+      "number": 2,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2012-07-30",
+      "id": 1650971,
+      "image": null,
+      "name": "Mega Weapon Countdown",
+      "number": 3,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2012-08-27",
+      "id": 1650972,
+      "image": null,
+      "name": "Mega Food Countdown",
+      "number": 4,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2013-09-07",
+      "id": 1650973,
+      "image": null,
+      "name": "Mega Snack Countdown",
+      "number": 5,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2013-09-14",
+      "id": 1650974,
+      "image": null,
+      "name": "Super Strong Countdown",
+      "number": 6,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2013-09-21",
+      "id": 1650975,
+      "image": null,
+      "name": "Amazing Job Countdown",
+      "number": 7,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2013-09-28",
+      "id": 1650976,
+      "image": null,
+      "name": "Strangest Countdown",
+      "number": 8,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 1650977,
+      "image": null,
+      "name": "Hottest Rides Countdown",
+      "number": 9,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 235786,
+      "image": null,
+      "name": "Amazing Gadgets Countdown",
+      "number": 10,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2015-04-11",
+      "id": 235772,
+      "image": null,
+      "name": "Panama Canal Supersized",
+      "number": 11,
+      "runtime": 60,
+      "season": 19
+    },
+    {
+      "airdate": "2021-02-21",
+      "id": 2008763,
+      "image": null,
+      "name": "Food: Cookies",
+      "number": 1,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-02-28",
+      "id": 2030793,
+      "image": null,
+      "name": "Food: Cheese",
+      "number": 2,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-03-07",
+      "id": 2030794,
+      "image": null,
+      "name": "Food: Ice Cream",
+      "number": 3,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-03-14",
+      "id": 2036432,
+      "image": null,
+      "name": "Food: Chocolate",
+      "number": 4,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-03-21",
+      "id": 2036433,
+      "image": null,
+      "name": "Food: Snacks",
+      "number": 5,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-03-28",
+      "id": 2036434,
+      "image": null,
+      "name": "The Future of Food",
+      "number": 6,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-04-04",
+      "id": 2046185,
+      "image": null,
+      "name": "Food: Fast Food",
+      "number": 7,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-04-11",
+      "id": 2046186,
+      "image": null,
+      "name": "Food: Inventions and Innovations",
+      "number": 8,
+      "runtime": 62,
+      "season": 20
+    },
+    {
+      "airdate": "2021-07-25",
+      "id": 2125652,
+      "image": null,
+      "name": "Adventure Machines",
+      "number": 1,
+      "runtime": 62,
+      "season": 21
+    },
+    {
+      "airdate": "2021-08-01",
+      "id": 2131786,
+      "image": null,
+      "name": "Heavy Machinery",
+      "number": 2,
+      "runtime": 62,
+      "season": 21
+    },
+    {
+      "airdate": "2021-08-08",
+      "id": 2131787,
+      "image": null,
+      "name": "Moving America",
+      "number": 3,
+      "runtime": 62,
+      "season": 21
+    },
+    {
+      "airdate": "2021-08-15",
+      "id": 2131788,
+      "image": null,
+      "name": "Power Tools",
+      "number": 4,
+      "runtime": 62,
+      "season": 21
+    },
+    {
+      "airdate": "2022-03-02",
+      "id": 2955861,
+      "image": null,
+      "name": "Dangerous Drives",
+      "number": 5,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2955864,
+      "image": null,
+      "name": "Car Wash Tech",
+      "number": 6,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2022-08-08",
+      "id": 2955865,
+      "image": null,
+      "name": "Strange Machines",
+      "number": 14,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2022-08-08",
+      "id": 2955866,
+      "image": null,
+      "name": "Yard Tech Plus",
+      "number": 15,
+      "runtime": 60,
+      "season": 21
+    },
+    {
+      "airdate": "2021-11-28",
+      "id": 2216874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/379/948355.jpg",
+      "name": "Classic Toys",
+      "number": 1,
+      "runtime": 62,
+      "season": 22
+    },
+    {
+      "airdate": "2021-12-05",
+      "id": 2219798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/381/952502.jpg",
+      "name": "Top Toys & Games",
+      "number": 2,
+      "runtime": 62,
+      "season": 22
+    },
+    {
+      "airdate": "2022-02-16",
+      "id": 2257101,
+      "image": null,
+      "name": "Wild Rides",
+      "number": 1,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "2022-02-16",
+      "id": 2257102,
+      "image": null,
+      "name": "Steam Power",
+      "number": 2,
+      "runtime": 62,
+      "season": 23
+    },
+    {
+      "airdate": "2022-02-23",
+      "id": 2257103,
+      "image": null,
+      "name": "Ultimate Helicopters",
+      "number": 3,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "2022-02-23",
+      "id": 2257104,
+      "image": null,
+      "name": "Maximum Horsepower",
+      "number": 4,
+      "runtime": 62,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-11",
+      "id": 2347814,
+      "image": null,
+      "name": "Dangerous Drives",
+      "number": 5,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-11",
+      "id": 2347815,
+      "image": null,
+      "name": "Car Wash Tech",
+      "number": 6,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-18",
+      "id": 2347816,
+      "image": null,
+      "name": "Freight Trains Plus",
+      "number": 7,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-18",
+      "id": 2347817,
+      "image": null,
+      "name": "Locomotives Plus",
+      "number": 8,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-25",
+      "id": 2347818,
+      "image": null,
+      "name": "Harvesting Plus",
+      "number": 9,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2022-07-25",
+      "id": 2347819,
+      "image": null,
+      "name": "Mad Electricity Plus",
+      "number": 10,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "2022-08-01",
+      "id": 2362936,
+      "image": null,
+      "name": "Tech Treasures",
+      "number": 11,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "2022-08-01",
+      "id": 2362937,
+      "image": null,
+      "name": "Coin Operated Plus",
+      "number": 12,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2372133,
+      "image": null,
+      "name": "Bathroom Tech Plus",
+      "number": 13,
+      "runtime": 58,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362941,
+      "image": null,
+      "name": "Extra Salty",
+      "number": 16,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362942,
+      "image": null,
+      "name": "More Dirt",
+      "number": 17,
+      "runtime": 63,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362943,
+      "image": null,
+      "name": "Super Sharp Saws",
+      "number": 18,
+      "runtime": 62,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362944,
+      "image": null,
+      "name": "Amazing Aluminum",
+      "number": 19,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362945,
+      "image": null,
+      "name": "Addicted to Chrome",
+      "number": 20,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362946,
+      "image": null,
+      "name": "More Iron",
+      "number": 21,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362947,
+      "image": null,
+      "name": "World of Wood",
+      "number": 22,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362948,
+      "image": null,
+      "name": "Rocks Greatest Hits",
+      "number": 23,
+      "runtime": 60,
+      "season": 23
+    },
+    {
+      "airdate": "",
+      "id": 2362949,
+      "image": null,
+      "name": "Super Power Pressure",
+      "number": 24,
+      "runtime": 60,
+      "season": 23
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Mystery",
     "Nature",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-932",
+  "live": true,
+  "overview": "Celebrating ingenuity, invention and imagination on a grand scale, \"Modern Marvels\" tells the amazing stories of the doers, dreamers and sometime-schemers who create everyday items, technological advancements and man-made wonders. From the Statue of Liberty to distilled spirits, and canals to bridges, no subject seems out of reach. Science, technology, electronics, mechanics, engineering, architecture, industry, mass production, manufacturing, and agriculture are just some of the many topics that have been covered during the long-running series.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/417/1044178.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "932",
+  "title": "Modern Marvels",
+  "type": "series",
+  "year": 1993
 }

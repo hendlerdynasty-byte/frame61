@@ -1,22 +1,743 @@
 {
-  "schema": 1,
-  "id": "tvmaze-940",
-  "source": "tvmaze",
-  "sourceId": "940",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Dead Zone",
-  "year": 2002,
-  "type": "series",
-  "overview": "Based on the characters and story from the best-selling novel by Stephen King, The Dead Zone is a unique psychological thriller that combines a rich mix of the paranormal, action, and a continuing quest for justice.",
-  "poster": "file:///android_asset/posters/tvmaze-940.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2002-06-16",
+      "id": 91449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624093.jpg",
+      "name": "Wheel of Fortune",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-06-23",
+      "id": 91450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624111.jpg",
+      "name": "What It Seems",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-06-30",
+      "id": 91451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624162.jpg",
+      "name": "Quality of Life",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-07-07",
+      "id": 91452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624172.jpg",
+      "name": "Enigma",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-07-14",
+      "id": 91453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624477.jpg",
+      "name": "Unreasonable Doubt",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-07-21",
+      "id": 91454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624484.jpg",
+      "name": "The House",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-07-28",
+      "id": 91455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624501.jpg",
+      "name": "Enemy Mind",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-08-04",
+      "id": 91456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624521.jpg",
+      "name": "Netherworld",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-08-11",
+      "id": 91457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624526.jpg",
+      "name": "The Siege",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-08-18",
+      "id": 91458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624548.jpg",
+      "name": "Here There Be Monsters",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-08-25",
+      "id": 91459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624551.jpg",
+      "name": "Dinner with Dana",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-08",
+      "id": 91460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624552.jpg",
+      "name": "Shaman",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-15",
+      "id": 91461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625087.jpg",
+      "name": "Destiny",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-01-05",
+      "id": 91462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625348.jpg",
+      "name": "Valley of the Shadow",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-12",
+      "id": 91463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625351.jpg",
+      "name": "Descent (1)",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-01-19",
+      "id": 91464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625352.jpg",
+      "name": "Ascent (2)",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-02",
+      "id": 91465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625354.jpg",
+      "name": "The Outsider",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-09",
+      "id": 91466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625355.jpg",
+      "name": "Precipitate",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-16",
+      "id": 91467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625357.jpg",
+      "name": "Scars",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-02-23",
+      "id": 91468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625559.jpg",
+      "name": "Misbegotten",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-02",
+      "id": 91469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625560.jpg",
+      "name": "Cabin Pressure",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-09",
+      "id": 91470,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625561.jpg",
+      "name": "The Man Who Never Was",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-16",
+      "id": 91471,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625573.jpg",
+      "name": "Dead Men Tell Tales",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-30",
+      "id": 91472,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625630.jpg",
+      "name": "Playing God",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-04-06",
+      "id": 91473,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625656.jpg",
+      "name": "Zion",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-06",
+      "id": 91474,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625662.jpg",
+      "name": "The Storm",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-13",
+      "id": 91475,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625681.jpg",
+      "name": "Plague",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-20",
+      "id": 91476,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625707.jpg",
+      "name": "Deja Voodoo",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-27",
+      "id": 91477,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625734.jpg",
+      "name": "The Hunt",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-08-03",
+      "id": 91478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625761.jpg",
+      "name": "The Mountain",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-08-10",
+      "id": 91479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625765.jpg",
+      "name": "The Combination",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-08-17",
+      "id": 91480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625784.jpg",
+      "name": "Visions",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-06-06",
+      "id": 91481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376092.jpg",
+      "name": "Finding Rachel (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-06-13",
+      "id": 91482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376093.jpg",
+      "name": "Finding Rachel (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-06-20",
+      "id": 91483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376095.jpg",
+      "name": "Collision",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-06-27",
+      "id": 91484,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376096.jpg",
+      "name": "Cold Hard Truth",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-07-04",
+      "id": 91485,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376097.jpg",
+      "name": "Total Awareness",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-07-18",
+      "id": 91486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376098.jpg",
+      "name": "No Questions Asked",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-07-25",
+      "id": 91487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376099.jpg",
+      "name": "Looking Glass",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-01",
+      "id": 91488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376100.jpg",
+      "name": "Speak Now",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-08",
+      "id": 91489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376101.jpg",
+      "name": "Cycle of Violence",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-15",
+      "id": 91490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376102.jpg",
+      "name": "Instinct",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-22",
+      "id": 91491,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376103.jpg",
+      "name": "Shadows",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-08-22",
+      "id": 91492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376105.jpg",
+      "name": "Tipping Point (1)",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-06-12",
+      "id": 91493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376106.jpg",
+      "name": "Broken Circle (2)",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-06-19",
+      "id": 91494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376108.jpg",
+      "name": "The Collector",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-06-26",
+      "id": 91495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376109.jpg",
+      "name": "Double Vision",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-07-10",
+      "id": 91496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376823.jpg",
+      "name": "Still Life",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-07-17",
+      "id": 91497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376111.jpg",
+      "name": "Heroes & Demons",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-07-24",
+      "id": 91498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376112.jpg",
+      "name": "The Last Goodbye",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-07-31",
+      "id": 91499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376113.jpg",
+      "name": "Grains of Sand",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-08-07",
+      "id": 91500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376114.jpg",
+      "name": "Vanguard",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-08-14",
+      "id": 91501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376118.jpg",
+      "name": "Babble On",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-08-21",
+      "id": 91502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376116.jpg",
+      "name": "Coming Home",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-08-28",
+      "id": 91503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376119.jpg",
+      "name": "Saved",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-12-04",
+      "id": 91504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376120.jpg",
+      "name": "A Very Dead Zone Christmas",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-06-18",
+      "id": 91505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376930.jpg",
+      "name": "Forbidden Fruit",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-06-25",
+      "id": 91506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376931.jpg",
+      "name": "Independence Day",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-07-02",
+      "id": 91507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376932.jpg",
+      "name": "Panic",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-07-09",
+      "id": 91508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376933.jpg",
+      "name": "Articles of Faith",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-07-16",
+      "id": 91509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376934.jpg",
+      "name": "The Inside Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-07-23",
+      "id": 91510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376935.jpg",
+      "name": "Lotto Fever",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-07-30",
+      "id": 91511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376936.jpg",
+      "name": "Symmetry",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-08-06",
+      "id": 91512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376937.jpg",
+      "name": "Vortex",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-08-13",
+      "id": 91513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376938.jpg",
+      "name": "Revelations",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-08-20",
+      "id": 91514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376939.jpg",
+      "name": "Into the Heart of Darkness",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-08-27",
+      "id": 91515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376940.jpg",
+      "name": "The Hunting Party",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-06-17",
+      "id": 91516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376947.jpg",
+      "name": "Heritage",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-06-24",
+      "id": 91517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376948.jpg",
+      "name": "Ego",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-07-01",
+      "id": 91518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376949.jpg",
+      "name": "Re-Entry",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-07-08",
+      "id": 91519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376950.jpg",
+      "name": "Big Top",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-07-15",
+      "id": 91520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376951.jpg",
+      "name": "Interred",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-07-22",
+      "id": 91521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376952.jpg",
+      "name": "Switch",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-07-29",
+      "id": 91522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376953.jpg",
+      "name": "Numb",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-08-05",
+      "id": 91523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376954.jpg",
+      "name": "Outcome",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-08-12",
+      "id": 91524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376955.jpg",
+      "name": "Transgressions",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-08-19",
+      "id": 91525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376956.jpg",
+      "name": "Drift",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-08-26",
+      "id": 91526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376957.jpg",
+      "name": "Exile",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-09-09",
+      "id": 91527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376958.jpg",
+      "name": "Ambush",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-09-16",
+      "id": 91528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/550/1376959.jpg",
+      "name": "Denouement",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Fantasy",
     "Thriller"
   ],
+  "id": "tvmaze-940",
+  "live": true,
+  "overview": "Based on the characters and story from the best-selling novel by Stephen King, The Dead Zone is a unique psychological thriller that combines a rich mix of the paranormal, action, and a continuing quest for justice.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/16191.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "940",
+  "title": "The Dead Zone",
+  "type": "series",
+  "year": 2002
 }

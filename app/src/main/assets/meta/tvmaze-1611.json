@@ -1,22 +1,608 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1611",
-  "source": "tvmaze",
-  "sourceId": "1611",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Spider-Man",
-  "year": 1994,
-  "type": "series",
-  "overview": "Spider-Man (1994) tells the story of a 19-year-old Peter Parker in his first year at Empire State University, and his alter-ego Spider-Man. The show features Spider-Man's classic villains, including the Kingpin, the Green Goblin, the Lizard, the Scorpion, Doctor Octopus, Mysterio, the Rhino, the Shocker, The Vulture and the Chameleon, as well as more recent villains such as Venom, Carnage and the Hobgoblin.",
-  "poster": "file:///android_asset/posters/tvmaze-1611.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1994-11-19",
+      "id": 141632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651247.jpg",
+      "name": "Night of the Lizard",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-04",
+      "id": 141633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651248.jpg",
+      "name": "The Spider Slayer",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-11",
+      "id": 141634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651249.jpg",
+      "name": "Return of the Spider Slayers",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-18",
+      "id": 141635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651250.jpg",
+      "name": "Doctor Octopus: Armed and Dangerous",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-02-25",
+      "id": 141636,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651251.jpg",
+      "name": "The Menace of Mysterio",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-03-11",
+      "id": 141637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651252.jpg",
+      "name": "The Sting of the Scorpion",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-01",
+      "id": 141638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651253.jpg",
+      "name": "Kraven the Hunter",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-29",
+      "id": 141639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651254.jpg",
+      "name": "The Alien Costume, Part One",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-06",
+      "id": 141640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651255.jpg",
+      "name": "The Alien Costume, Part Two",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-13",
+      "id": 141641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651256.jpg",
+      "name": "The Alien Costume, Part Three",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-20",
+      "id": 141642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651257.jpg",
+      "name": "The Hobgoblin, Part One",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-27",
+      "id": 141643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651258.jpg",
+      "name": "The Hobgoblin, Part Two",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-06-11",
+      "id": 141644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651259.jpg",
+      "name": "Day of the Chameleon",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1995-09-09",
+      "id": 141645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651260.jpg",
+      "name": "Chapter I - The Insidious Six",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-16",
+      "id": 141646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651261.jpg",
+      "name": "Chapter II - Battle of the Insidious Six",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-23",
+      "id": 141647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651262.jpg",
+      "name": "Chapter III - Hydro-Man",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-09-30",
+      "id": 141648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651263.jpg",
+      "name": "Chapter IV - The Mutant Agenda",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-07",
+      "id": 141649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651264.jpg",
+      "name": "Chapter V - Mutants' Revenge",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-10-28",
+      "id": 141650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651265.jpg",
+      "name": "Chapter VI - Morbius",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-04",
+      "id": 141651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651266.jpg",
+      "name": "Chapter VII - Enter the Punisher",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-11",
+      "id": 141652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651267.jpg",
+      "name": "Chapter VIII - Duel of the Hunters",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-18",
+      "id": 141653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651268.jpg",
+      "name": "Chapter XI - Tablet of Time",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1995-11-25",
+      "id": 141654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651269.jpg",
+      "name": "Chapter XII - Ravages of Time",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-03",
+      "id": 141655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651270.jpg",
+      "name": "Chapter IX - Blade, the Vampire Hunter",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-10",
+      "id": 141656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651271.jpg",
+      "name": "Chapter X - The Immortal Vampire",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-17",
+      "id": 141657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651272.jpg",
+      "name": "Chapter XIII - Shriek of the Vulture",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1996-02-24",
+      "id": 141658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651273.jpg",
+      "name": "Chapter XIV - The Final Nightmare",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-27",
+      "id": 141659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651274.jpg",
+      "name": "Chapter I - Doctor Strange",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-04",
+      "id": 141660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651275.jpg",
+      "name": "Chapter II - Make a Wish",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-11",
+      "id": 141661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651276.jpg",
+      "name": "Chapter III - Attack of the Octobot",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-05-18",
+      "id": 141662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651277.jpg",
+      "name": "Chapter IV - Enter the Green Goblin",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-14",
+      "id": 141663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651278.jpg",
+      "name": "Chapter V - Rocket Racer",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-21",
+      "id": 141664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651279.jpg",
+      "name": "Chapter VI - Framed",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-28",
+      "id": 141665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651280.jpg",
+      "name": "Chapter VII - The Man Without Fear",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-05",
+      "id": 141666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651281.jpg",
+      "name": "Chapter VIII - The Ultimate Slayer",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-12",
+      "id": 141667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651283.jpg",
+      "name": "Chapter IX - Tombstone",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-26",
+      "id": 141668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651284.jpg",
+      "name": "Chapter XII - The Spot",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-02",
+      "id": 141669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651285.jpg",
+      "name": "Chapter X - Venom Returns",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-09",
+      "id": 141670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651286.jpg",
+      "name": "Chapter XI - Carnage",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-16",
+      "id": 141671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651287.jpg",
+      "name": "Chapter XIII - Goblin War!",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-23",
+      "id": 141672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651288.jpg",
+      "name": "Chapter XIV - Turning Point",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-01",
+      "id": 141673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651289.jpg",
+      "name": "Chapter I - Guilty",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-08",
+      "id": 141674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651290.jpg",
+      "name": "Chapter II - The Cat",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-15",
+      "id": 141675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651291.jpg",
+      "name": "Chapter III - The Black Cat",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-02-22",
+      "id": 141676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651292.jpg",
+      "name": "Chapter IV - The Return of Kraven",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-03",
+      "id": 141677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651293.jpg",
+      "name": "Chapter V - Partners",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-10",
+      "id": 141678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651294.jpg",
+      "name": "Chapter VI - The Awakening",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-05-17",
+      "id": 141679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651295.jpg",
+      "name": "Chapter VII - The Vampire Queen",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-07-12",
+      "id": 141680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651296.jpg",
+      "name": "Chapter VIII - The Return of the Green Goblin",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-07-19",
+      "id": 141681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651297.jpg",
+      "name": "Chapter IX - The Haunting of Mary Jane Watson",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-07-26",
+      "id": 141682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651298.jpg",
+      "name": "Chapter X - The Lizard King",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-08-02",
+      "id": 141683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651299.jpg",
+      "name": "Chapter XI - The Prowler",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1997-09-12",
+      "id": 141684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651300.jpg",
+      "name": "The Wedding",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-19",
+      "id": 141685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651301.jpg",
+      "name": "Six Forgotten Warriors Chapter I",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-26",
+      "id": 141686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651302.jpg",
+      "name": "Six Forgotten Warriors, Chapter II - Unclaimed Legacy",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-03",
+      "id": 141687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651303.jpg",
+      "name": "Six Forgotten Warriors, Chapter III - Secrets of the Six",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-10",
+      "id": 141688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651304.jpg",
+      "name": "Six Forgotten Warriors, Chapter IV - The Six Fight Again",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-17",
+      "id": 141689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651305.jpg",
+      "name": "Six Forgotten Warriors, Chapter V - The Price of Heroism",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-24",
+      "id": 141690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651306.jpg",
+      "name": "The Return of Hydro-Man Part One",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-10-31",
+      "id": 141691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651307.jpg",
+      "name": "The Return of Hydro-Man Part Two",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-07",
+      "id": 141692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651308.jpg",
+      "name": "Secret Wars, Chapter I - Arrival",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-14",
+      "id": 141693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651309.jpg",
+      "name": "Secret Wars, Chapter II - The Gauntlet of the Red Skull",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1997-11-21",
+      "id": 141694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651310.jpg",
+      "name": "Secret Wars, Chapter III - Doom",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-31",
+      "id": 141695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651311.jpg",
+      "name": "Spider Wars, Chapter I - I Really, Really Hate Clones",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1998-01-31",
+      "id": 141696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/651312.jpg",
+      "name": "Spider Wars, Chapter II - Farewell, Spider-Man",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-1611",
+  "live": true,
+  "overview": "Spider-Man (1994) tells the story of a 19-year-old Peter Parker in his first year at Empire State University, and his alter-ego Spider-Man. The show features Spider-Man's classic villains, including the Kingpin, the Green Goblin, the Lizard, the Scorpion, Doctor Octopus, Mysterio, the Rhino, the Shocker, The Vulture and the Chameleon, as well as more recent villains such as Venom, Carnage and the Hobgoblin.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/8/21945.jpg",
   "rating": 8.1,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1611",
+  "title": "Spider-Man",
+  "type": "series",
+  "year": 1994
 }

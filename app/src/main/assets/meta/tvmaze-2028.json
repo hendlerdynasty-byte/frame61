@@ -1,22 +1,257 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2028",
-  "source": "tvmaze",
-  "sourceId": "2028",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Deutschland",
-  "year": 2015,
-  "type": "series",
-  "overview": "Deutschland is a coming-of-age spy thriller, which unfolds just as the Cold War between East and West comes to a head. The drama follows Martin Rauch as the 24-year-old East German native is pulled from the world as he knows it and sent to the West as an undercover spy for the Stasi foreign service. Hiding in plain sight in the West German army, he must gather the secrets of NATO military strategy. Everything is new, nothing is quite what it seems and everyone he encounters is harboring secrets, both political and personal.",
-  "poster": "file:///android_asset/posters/tvmaze-2028.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-06-17",
+      "id": 162178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30409.jpg",
+      "name": "Quantum Jump",
+      "number": 1,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-24",
+      "id": 180577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30410.jpg",
+      "name": "Brave Guy",
+      "number": 2,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-01",
+      "id": 180578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/31971.jpg",
+      "name": "Atlantic Lion",
+      "number": 3,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-08",
+      "id": 180579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/32390.jpg",
+      "name": "Northern Wedding",
+      "number": 4,
+      "runtime": 49,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-15",
+      "id": 180580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/33445.jpg",
+      "name": "Cold Fire",
+      "number": 5,
+      "runtime": 47,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-22",
+      "id": 180581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34374.jpg",
+      "name": "Brandy Station",
+      "number": 6,
+      "runtime": 46,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 180582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/13/34919.jpg",
+      "name": "Bold Guard",
+      "number": 7,
+      "runtime": 45,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-05",
+      "id": 185561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/14/35856.jpg",
+      "name": "Able Archer",
+      "number": 8,
+      "runtime": 46,
+      "season": 1
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1511678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499822.jpg",
+      "name": "Tar Baby",
+      "number": 1,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1511679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499823.jpg",
+      "name": "Ommegang",
+      "number": 2,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1511680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499824.jpg",
+      "name": "Dragon Rouge",
+      "number": 3,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499825.jpg",
+      "name": "Le Cafard",
+      "number": 4,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499826.jpg",
+      "name": "Green Book",
+      "number": 5,
+      "runtime": 48,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499827.jpg",
+      "name": "Tjello",
+      "number": 6,
+      "runtime": 44,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499828.jpg",
+      "name": "El Dorado Canyon",
+      "number": 7,
+      "runtime": 47,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499829.jpg",
+      "name": "Vula",
+      "number": 8,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499830.jpg",
+      "name": "Chickenfeed",
+      "number": 9,
+      "runtime": 45,
+      "season": 2
+    },
+    {
+      "airdate": "2018-10-19",
+      "id": 1549248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499831.jpg",
+      "name": "Total Onslaught",
+      "number": 10,
+      "runtime": 49,
+      "season": 2
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1924313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687568.jpg",
+      "name": "Kyrie Eleison",
+      "number": 1,
+      "runtime": 50,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687569.jpg",
+      "name": "November Nights",
+      "number": 2,
+      "runtime": 49,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687570.jpg",
+      "name": "Magic",
+      "number": 3,
+      "runtime": 50,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687571.jpg",
+      "name": "Operation Condor",
+      "number": 4,
+      "runtime": 50,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687575.jpg",
+      "name": "Timișoara Rebellion",
+      "number": 5,
+      "runtime": 52,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687572.jpg",
+      "name": "Quando Ti Guardo",
+      "number": 6,
+      "runtime": 49,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687573.jpg",
+      "name": "Phase Zwei",
+      "number": 7,
+      "runtime": 51,
+      "season": 3
+    },
+    {
+      "airdate": "2020-09-25",
+      "id": 1937315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/275/687574.jpg",
+      "name": "The End of History",
+      "number": 8,
+      "runtime": 51,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
     "Thriller"
   ],
+  "id": "tvmaze-2028",
+  "live": true,
+  "overview": "Deutschland is a coming-of-age spy thriller, which unfolds just as the Cold War between East and West comes to a head. The drama follows Martin Rauch as the 24-year-old East German native is pulled from the world as he knows it and sent to the West as an undercover spy for the Stasi foreign service. Hiding in plain sight in the West German army, he must gather the secrets of NATO military strategy. Everything is new, nothing is quite what it seems and everyone he encounters is harboring secrets, both political and personal.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/271/678699.jpg",
   "rating": 8,
-  "runtime": null,
-  "episodes": []
+  "runtime": 47,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2028",
+  "title": "Deutschland",
+  "type": "series",
+  "year": 2015
 }

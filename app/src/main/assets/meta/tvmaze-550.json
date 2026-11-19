@@ -1,22 +1,1643 @@
 {
-  "schema": 1,
-  "id": "tvmaze-550",
-  "source": "tvmaze",
-  "sourceId": "550",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Desperate Housewives",
-  "year": 2004,
-  "type": "series",
-  "overview": "In the town of Fairview there's a street called Wisteria Lane; a peaceful cul-de-sac with manicured lawns and beautiful houses. It's a place where you know all your neighbors and your neighbors know all about you. It's the perfect suburban fantasy. But, behind every picket fence there are secrets. And, in every seemingly happy home, you'll find jealousy, lust, passion, and sometimes…murder.",
-  "poster": "file:///android_asset/posters/tvmaze-550.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-10-03",
+      "id": 50921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531645.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-10",
+      "id": 50922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531646.jpg",
+      "name": "Ah, But Underneath",
+      "number": 2,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-17",
+      "id": 50923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531647.jpg",
+      "name": "Pretty Little Picture",
+      "number": 3,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-24",
+      "id": 50924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531648.jpg",
+      "name": "Who's That Woman?",
+      "number": 4,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-31",
+      "id": 50925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531649.jpg",
+      "name": "Come in, Stranger",
+      "number": 5,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-07",
+      "id": 50926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531650.jpg",
+      "name": "Running to Stand Still",
+      "number": 6,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-21",
+      "id": 50927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531651.jpg",
+      "name": "Anything You Can Do",
+      "number": 7,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-28",
+      "id": 50928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531652.jpg",
+      "name": "Guilty",
+      "number": 8,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-12",
+      "id": 50929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531653.jpg",
+      "name": "Suspicious Minds",
+      "number": 9,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-19",
+      "id": 50930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531654.jpg",
+      "name": "Come Back to Me",
+      "number": 10,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-09",
+      "id": 50931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531655.jpg",
+      "name": "Move On",
+      "number": 11,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-16",
+      "id": 50932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531656.jpg",
+      "name": "Every Day a Little Death",
+      "number": 12,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-23",
+      "id": 50933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531657.jpg",
+      "name": "Your Fault",
+      "number": 13,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-13",
+      "id": 50934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531658.jpg",
+      "name": "Love Is in the Air",
+      "number": 14,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-20",
+      "id": 50935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531659.jpg",
+      "name": "Impossible",
+      "number": 15,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-27",
+      "id": 50936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531660.jpg",
+      "name": "The Ladies Who Lunch",
+      "number": 16,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 50937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531661.jpg",
+      "name": "There Won't Be Trumpets",
+      "number": 17,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-10",
+      "id": 50938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531662.jpg",
+      "name": "Children Will Listen",
+      "number": 18,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-17",
+      "id": 50939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531663.jpg",
+      "name": "Live Alone and Like It",
+      "number": 19,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-01",
+      "id": 50940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531664.jpg",
+      "name": "Fear No More",
+      "number": 20,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-08",
+      "id": 50941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531665.jpg",
+      "name": "Sunday in the Park with George",
+      "number": 21,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-15",
+      "id": 50942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531666.jpg",
+      "name": "Goodbye for Now",
+      "number": 22,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-22",
+      "id": 50943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/531667.jpg",
+      "name": "One Wonderful Day",
+      "number": 23,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-25",
+      "id": 50944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/638464.jpg",
+      "name": "Next",
+      "number": 1,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-02",
+      "id": 50945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/638469.jpg",
+      "name": "You Could Drive a Person Crazy",
+      "number": 2,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-09",
+      "id": 50946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541146.jpg",
+      "name": "You'll Never Get Away From Me",
+      "number": 3,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-16",
+      "id": 50947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/638733.jpg",
+      "name": "My Heart Belongs to Daddy",
+      "number": 4,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-23",
+      "id": 50948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541148.jpg",
+      "name": "They Asked Me Why I Believe In You",
+      "number": 5,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-06",
+      "id": 50949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/639364.jpg",
+      "name": "I Wish I Could Forget You",
+      "number": 6,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-13",
+      "id": 50950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/639407.jpg",
+      "name": "Color and Light",
+      "number": 7,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-20",
+      "id": 50951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541151.jpg",
+      "name": "The Sun Won't Set",
+      "number": 8,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-27",
+      "id": 50952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640014.jpg",
+      "name": "That's Good, That's Bad",
+      "number": 9,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-04",
+      "id": 50953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640046.jpg",
+      "name": "Coming Home",
+      "number": 10,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-08",
+      "id": 50954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640699.jpg",
+      "name": "One More Kiss",
+      "number": 11,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-15",
+      "id": 50955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640736.jpg",
+      "name": "We're Gonna Be All Right",
+      "number": 12,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-22",
+      "id": 50956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/640747.jpg",
+      "name": "There's Something About a War",
+      "number": 13,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-12",
+      "id": 50957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/256/641270.jpg",
+      "name": "Silly People",
+      "number": 14,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-19",
+      "id": 50958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541158.jpg",
+      "name": "Thank You So Much",
+      "number": 15,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-12",
+      "id": 50959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/643625.jpg",
+      "name": "There Is No Other Way",
+      "number": 16,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-26",
+      "id": 50960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/643954.jpg",
+      "name": "Could I Leave You?",
+      "number": 17,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-02",
+      "id": 50961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/644296.jpg",
+      "name": "Everybody Says Don't",
+      "number": 18,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-16",
+      "id": 50962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/644361.jpg",
+      "name": "Don't Look at Me",
+      "number": 19,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-30",
+      "id": 50963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/257/644743.jpg",
+      "name": "It Wasn't Meant to Happen",
+      "number": 20,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-07",
+      "id": 50964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/258/645191.jpg",
+      "name": "I Know Things Now",
+      "number": 21,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-14",
+      "id": 50965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541165.jpg",
+      "name": "No One Is Alone",
+      "number": 22,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-21",
+      "id": 50966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541166.jpg",
+      "name": "Remember (1)",
+      "number": 23,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-21",
+      "id": 50967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/258/645258.jpg",
+      "name": "Remember (2)",
+      "number": 24,
+      "runtime": 43,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-24",
+      "id": 50968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541169.jpg",
+      "name": "Listen to the Rain on the Roof",
+      "number": 1,
+      "runtime": 43,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-01",
+      "id": 50969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541170.jpg",
+      "name": "It Takes Two",
+      "number": 2,
+      "runtime": 43,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-08",
+      "id": 50970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541171.jpg",
+      "name": "A Weekend In the Country",
+      "number": 3,
+      "runtime": 43,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-15",
+      "id": 50971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541172.jpg",
+      "name": "Like It Was",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-22",
+      "id": 50972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541173.jpg",
+      "name": "Nice She Ain't",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-29",
+      "id": 50973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541174.jpg",
+      "name": "Sweetheart, I Have to Confess",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-05",
+      "id": 50974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541175.jpg",
+      "name": "Bang",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-12",
+      "id": 50975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541176.jpg",
+      "name": "Children and Art",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-19",
+      "id": 50976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541177.jpg",
+      "name": "Beautiful Girls",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-26",
+      "id": 50977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541178.jpg",
+      "name": "The Miracle Song",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-07",
+      "id": 50978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541179.jpg",
+      "name": "No Fits, No Fights, No Feuds",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-14",
+      "id": 50979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541180.jpg",
+      "name": "Not While I'm Around",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-21",
+      "id": 50980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541181.jpg",
+      "name": "Come Play Wiz Me",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-11",
+      "id": 50981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541183.jpg",
+      "name": "I Remember That",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-18",
+      "id": 50982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541184.jpg",
+      "name": "The Little Things You Do Together",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-03-04",
+      "id": 50983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541186.jpg",
+      "name": "My Husband, the Pig",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-08",
+      "id": 50984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541187.jpg",
+      "name": "Dress Big",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-15",
+      "id": 50985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541188.jpg",
+      "name": "Liaisons",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-22",
+      "id": 50986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541190.jpg",
+      "name": "God, That's Good",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-04-29",
+      "id": 50987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541191.jpg",
+      "name": "Gossip",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-06",
+      "id": 50988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541192.jpg",
+      "name": "Into the Woods",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-13",
+      "id": 50989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541193.jpg",
+      "name": "What Would We Do Without You?",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-20",
+      "id": 50990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541194.jpg",
+      "name": "Getting Married Today",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-30",
+      "id": 50991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542191.jpg",
+      "name": "Now You Know",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-07",
+      "id": 50992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542192.jpg",
+      "name": "Smiles of a Summer Night",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-14",
+      "id": 50993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542193.jpg",
+      "name": "The Game",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-21",
+      "id": 50994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542194.jpg",
+      "name": "If There's Anything I Can't Stand",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-28",
+      "id": 50995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542195.jpg",
+      "name": "Art Isn't Easy",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-04",
+      "id": 50996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542196.jpg",
+      "name": "Now I Know, Don't Be Scared",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-11",
+      "id": 50997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542197.jpg",
+      "name": "You Can't Judge a Book by Its Cover",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-11-25",
+      "id": 50998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542198.jpg",
+      "name": "A Distant Past",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-12-02",
+      "id": 50999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542200.jpg",
+      "name": "Something's Coming",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-01-06",
+      "id": 51000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542202.jpg",
+      "name": "Welcome to Kanagawa",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-13",
+      "id": 51001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542205.jpg",
+      "name": "Sunday",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-20",
+      "id": 51002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542206.jpg",
+      "name": "In Buddy's Eyes",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-04-27",
+      "id": 51003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542207.jpg",
+      "name": "Hello, Little Girl",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-04",
+      "id": 51004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542208.jpg",
+      "name": "Opening Doors",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-11",
+      "id": 51005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542209.jpg",
+      "name": "Mother Said",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-18",
+      "id": 51006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542210.jpg",
+      "name": "The Gun Song",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-05-18",
+      "id": 51007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542211.jpg",
+      "name": "Free",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 51008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542212.jpg",
+      "name": "You're Gonna Love Tomorrow",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 51009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542213.jpg",
+      "name": "We're So Happy You're So Happy",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 51010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542214.jpg",
+      "name": "Kids Ain't Like Everybody Else",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 51011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542215.jpg",
+      "name": "Back in Business",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 51012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542216.jpg",
+      "name": "Mirror, Mirror",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-02",
+      "id": 51013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542217.jpg",
+      "name": "There's Always a Woman",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-09",
+      "id": 51014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542218.jpg",
+      "name": "What More Do I Need?",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-16",
+      "id": 51015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542219.jpg",
+      "name": "City on Fire",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-11-30",
+      "id": 51016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542220.jpg",
+      "name": "Me and My Town",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-12-07",
+      "id": 51017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542221.jpg",
+      "name": "A Vision's Just a Vision",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-04",
+      "id": 51018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542222.jpg",
+      "name": "Home Is the Place",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-11",
+      "id": 51019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542224.jpg",
+      "name": "Connect! Connect!",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-18",
+      "id": 51020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542225.jpg",
+      "name": "The Best Thing That Could Have Happened",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-08",
+      "id": 51021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542226.jpg",
+      "name": "Mama Spent Money When She Had None",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-15",
+      "id": 51022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542227.jpg",
+      "name": "In a World Where the Kings Are Employers",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-03-08",
+      "id": 51023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542228.jpg",
+      "name": "Crime Doesn't Pay",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-03-15",
+      "id": 51024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542229.jpg",
+      "name": "The Story of Lucy and Jessie",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-03-22",
+      "id": 51025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542230.jpg",
+      "name": "A Spark. To Pierce the Dark.",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-04-19",
+      "id": 51026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542232.jpg",
+      "name": "Look Into Their Eyes and You See What They Know",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-04-26",
+      "id": 51027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542234.jpg",
+      "name": "Rose's Turn",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-03",
+      "id": 51028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542237.jpg",
+      "name": "Bargaining",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-10",
+      "id": 51029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542238.jpg",
+      "name": "Marry Me a Little",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-17",
+      "id": 51030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542239.jpg",
+      "name": "Everybody Says Don't",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-05-17",
+      "id": 51031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542240.jpg",
+      "name": "If It's Only in Your Head",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 51032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542489.jpg",
+      "name": "Nice Is Different Than Good",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 51033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542490.jpg",
+      "name": "Being Alive",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-11",
+      "id": 51034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542491.jpg",
+      "name": "Never Judge a Lady by Her Lover",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-18",
+      "id": 51035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542492.jpg",
+      "name": "The God-Why-Don't-You-Love-Me Blues",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-25",
+      "id": 51036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542493.jpg",
+      "name": "Everybody Ought to Have a Maid",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-01",
+      "id": 51037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542494.jpg",
+      "name": "Don't Walk on the Grass",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-08",
+      "id": 51038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542495.jpg",
+      "name": "Careful the Things You Say",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-15",
+      "id": 51039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542496.jpg",
+      "name": "The Coffee Cup",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-29",
+      "id": 51040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542497.jpg",
+      "name": "Would I Think of Suicide?",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-12-06",
+      "id": 51041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542498.jpg",
+      "name": "Boom Crunch",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-03",
+      "id": 51042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/542499.jpg",
+      "name": "If...",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-10",
+      "id": 51043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542500.jpg",
+      "name": "You Gotta Get a Gimmick",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-17",
+      "id": 51044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542501.jpg",
+      "name": "How About a Friendly Shrink?",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-31",
+      "id": 51045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542502.jpg",
+      "name": "The Glamorous Life",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-21",
+      "id": 51046,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542503.jpg",
+      "name": "Lovely",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-28",
+      "id": 51047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542504.jpg",
+      "name": "The Chase",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-03-14",
+      "id": 51048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542505.jpg",
+      "name": "Chromolume #7",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-03-21",
+      "id": 51049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542506.jpg",
+      "name": "My Two Young Men",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-04-18",
+      "id": 51050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542507.jpg",
+      "name": "We All Deserve to Die",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-04-25",
+      "id": 51051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542508.jpg",
+      "name": "Epiphany",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-05-02",
+      "id": 51052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542509.jpg",
+      "name": "A Little Night Music",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-05-09",
+      "id": 51053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542510.jpg",
+      "name": "The Ballad of Booth",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-05-16",
+      "id": 51054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542511.jpg",
+      "name": "I Guess This Is Goodbye",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 51055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542628.jpg",
+      "name": "Remember Paul",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 51056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542629.jpg",
+      "name": "You Must Meet My Wife",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-10-10",
+      "id": 51057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542630.jpg",
+      "name": "Truly Content",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 51058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542631.jpg",
+      "name": "The Thing That Counts is What's Inside",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-10-24",
+      "id": 51059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542632.jpg",
+      "name": "Let Me Entertain You",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-10-31",
+      "id": 51060,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542633.jpg",
+      "name": "Excited and Scared",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-11-07",
+      "id": 51061,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542634.jpg",
+      "name": "A Humiliating Business",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-11-14",
+      "id": 51062,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542635.jpg",
+      "name": "Sorry Grateful",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-12-05",
+      "id": 51063,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542637.jpg",
+      "name": "Pleasant Little Kingdom",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2010-12-12",
+      "id": 51064,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542638.jpg",
+      "name": "Down The Block There's a Riot",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-02",
+      "id": 51065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542640.jpg",
+      "name": "Assassins",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-09",
+      "id": 51066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542642.jpg",
+      "name": "Where Do I Belong?",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-01-16",
+      "id": 51067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542644.jpg",
+      "name": "I'm Still Here",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-02-13",
+      "id": 51068,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542645.jpg",
+      "name": "Flashback",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-02-20",
+      "id": 51069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542646.jpg",
+      "name": "Farewell Letter",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-03-06",
+      "id": 51070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542647.jpg",
+      "name": "Searching",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-04-03",
+      "id": 51071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542648.jpg",
+      "name": "Everything's Different, Nothing's Changed",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-04-17",
+      "id": 51072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542649.jpg",
+      "name": "Moments in the Woods",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-04-24",
+      "id": 51073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542650.jpg",
+      "name": "The Lies Ill-Concealed",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 51074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542651.jpg",
+      "name": "I'll Swallow Poison on Sunday",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 51075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542652.jpg",
+      "name": "Then I Really Got Scared",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 51076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542653.jpg",
+      "name": "And Lots of Security...",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 51077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542654.jpg",
+      "name": "Come on Over for Dinner",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 51078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542656.jpg",
+      "name": "Secrets That I Never Want to Know",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 51079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542657.jpg",
+      "name": "Making the Connection",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-09",
+      "id": 51080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542658.jpg",
+      "name": "Watch While I Revise the World",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-16",
+      "id": 51081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542659.jpg",
+      "name": "School of Hard Knocks",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-23",
+      "id": 51082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542660.jpg",
+      "name": "The Art of Making Art",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-10-30",
+      "id": 51083,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542661.jpg",
+      "name": "Witch's Lament",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-11-06",
+      "id": 51084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542662.jpg",
+      "name": "Always in Control",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-11-13",
+      "id": 51085,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542663.jpg",
+      "name": "Suspicion Song",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 51086,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542664.jpg",
+      "name": "Putting It Together",
+      "number": 9,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-08",
+      "id": 51087,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542665.jpg",
+      "name": "What's to Discuss, Old Friend?",
+      "number": 10,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-15",
+      "id": 51088,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542666.jpg",
+      "name": "Who Can Say What's True?",
+      "number": 11,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-01-22",
+      "id": 51089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542667.jpg",
+      "name": "What's the Good of Being Good",
+      "number": 12,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-02-12",
+      "id": 51090,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542668.jpg",
+      "name": "Is This What You Call Love?",
+      "number": 13,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-02-19",
+      "id": 51091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542669.jpg",
+      "name": "Get Out of My Life",
+      "number": 14,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-03-04",
+      "id": 51092,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542670.jpg",
+      "name": "She Needs Me",
+      "number": 15,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-03-11",
+      "id": 51093,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542671.jpg",
+      "name": "You Take for Granted",
+      "number": 16,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-03-18",
+      "id": 51094,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542672.jpg",
+      "name": "Women and Death",
+      "number": 17,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 51095,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542673.jpg",
+      "name": "Any Moment",
+      "number": 18,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 51096,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542674.jpg",
+      "name": "With So Little to Be Sure Of",
+      "number": 19,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 51097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542675.jpg",
+      "name": "Lost My Power",
+      "number": 20,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 51098,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542676.jpg",
+      "name": "The People Will Hear",
+      "number": 21,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 51099,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542677.jpg",
+      "name": "Give Me the Blame (1)",
+      "number": 22,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 51100,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/542679.jpg",
+      "name": "Finishing the Hat (2)",
+      "number": 23,
+      "runtime": 60,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Mystery"
   ],
+  "id": "tvmaze-550",
+  "live": true,
+  "overview": "In the town of Fairview there's a street called Wisteria Lane; a peaceful cul-de-sac with manicured lawns and beautiful houses. It's a place where you know all your neighbors and your neighbors know all about you. It's the perfect suburban fantasy. But, behind every picket fence there are secrets. And, in every seemingly happy home, you'll find jealousy, lust, passion, and sometimes…murder.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11549.jpg",
   "rating": 7.7,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 55,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "550",
+  "title": "Desperate Housewives",
+  "type": "series",
+  "year": 2004
 }

@@ -1,22 +1,923 @@
 {
-  "schema": 1,
-  "id": "tvmaze-6",
-  "source": "tvmaze",
-  "sourceId": "6",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The 100",
-  "year": 2014,
-  "type": "series",
-  "overview": "Ninety-seven years ago, nuclear Armageddon decimated planet Earth, destroying civilization. The only survivors were the 400 inhabitants of 12 international space stations that were in orbit at the time. Three generations have been born in space, the survivors now number 4,000, and resources are running out on their dying \"Ark\" - the 12 stations now linked together and repurposed to keep the survivors alive. Draconian measures including capital punishment and population control are the order of the day, as the leaders of the Ark take ruthless steps to ensure their future, including secretly exiling a group of 100 juvenile prisoners to the Earth's surface to test whether it's habitable.",
-  "poster": "file:///android_asset/posters/tvmaze-6.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-03-19",
+      "id": 175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282022.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-26",
+      "id": 176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282044.jpg",
+      "name": "Earth Skills",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-02",
+      "id": 177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282053.jpg",
+      "name": "Earth Kills",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-09",
+      "id": 178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282066.jpg",
+      "name": "Murphy's Law",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-16",
+      "id": 179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282080.jpg",
+      "name": "Twilight's Last Gleaming",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-23",
+      "id": 180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282086.jpg",
+      "name": "His Sister's Keeper",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-30",
+      "id": 181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282100.jpg",
+      "name": "Contents Under Pressure",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-07",
+      "id": 182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282115.jpg",
+      "name": "Day Trip",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-14",
+      "id": 183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282126.jpg",
+      "name": "Unity Day",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-21",
+      "id": 184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282139.jpg",
+      "name": "I Am Become Death",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-28",
+      "id": 185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282153.jpg",
+      "name": "The Calm",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-04",
+      "id": 186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282164.jpg",
+      "name": "We Are Grounders - Part I",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-11",
+      "id": 187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282180.jpg",
+      "name": "We Are Grounders - Part II",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-22",
+      "id": 188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283720.jpg",
+      "name": "The 48",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-29",
+      "id": 15839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283725.jpg",
+      "name": "Inclement Weather",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-05",
+      "id": 15840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283744.jpg",
+      "name": "Reapercussions",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-12",
+      "id": 32252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283748.jpg",
+      "name": "Many Happy Returns",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 39623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283766.jpg",
+      "name": "Human Trials",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-03",
+      "id": 45764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283778.jpg",
+      "name": "Fog of War",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-10",
+      "id": 45793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283797.jpg",
+      "name": "Long Into an Abyss",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-17",
+      "id": 45794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283818.jpg",
+      "name": "Spacewalker",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-21",
+      "id": 45795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283825.jpg",
+      "name": "Remember Me",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 109543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283843.jpg",
+      "name": "Survival of the Fittest",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 109544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283853.jpg",
+      "name": "Coup de Grâce",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 117525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283880.jpg",
+      "name": "Rubicon",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 117526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283894.jpg",
+      "name": "Resurrection",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-25",
+      "id": 117527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283913.jpg",
+      "name": "Bodyguard of Lies",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-04",
+      "id": 117591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283924.jpg",
+      "name": "Blood Must Have Blood, Part One",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-11",
+      "id": 117592,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/283935.jpg",
+      "name": "Blood Must Have Blood, Part Two",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-21",
+      "id": 486839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284659.jpg",
+      "name": "Wanheda: Part One",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-28",
+      "id": 487378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284680.jpg",
+      "name": "Wanheda: Part Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-04",
+      "id": 527216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284691.jpg",
+      "name": "Ye Who Enter Here",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-11",
+      "id": 527217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284703.jpg",
+      "name": "Watch the Thrones",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-18",
+      "id": 570431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284716.jpg",
+      "name": "Hakeldama",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-25",
+      "id": 600639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284731.jpg",
+      "name": "Bitter Harvest",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-03",
+      "id": 611567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284753.jpg",
+      "name": "Thirteen",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-10",
+      "id": 621909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284780.jpg",
+      "name": "Terms and Conditions",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-31",
+      "id": 646906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284811.jpg",
+      "name": "Stealing Fire",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-07",
+      "id": 647374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284824.jpg",
+      "name": "Fallen",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-14",
+      "id": 647375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284837.jpg",
+      "name": "Nevermore",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-21",
+      "id": 647376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284851.jpg",
+      "name": "Demons",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-28",
+      "id": 647377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284903.jpg",
+      "name": "Join or Die",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-05",
+      "id": 647378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284915.jpg",
+      "name": "Red Sky at Morning",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-12",
+      "id": 647379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284935.jpg",
+      "name": "Perverse Instantiation - Part One",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-19",
+      "id": 647380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284950.jpg",
+      "name": "Perverse Instantiation - Part Two",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-01",
+      "id": 921709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484329.jpg",
+      "name": "Echoes",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-08",
+      "id": 1033946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484330.jpg",
+      "name": "Heavy Lies the Crown",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-15",
+      "id": 1033947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484331.jpg",
+      "name": "The Four Horsemen",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-22",
+      "id": 1047344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484332.jpg",
+      "name": "A Lie Guarded",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-01",
+      "id": 1049489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484333.jpg",
+      "name": "The Tinder Box",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-15",
+      "id": 1048222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484334.jpg",
+      "name": "We Will Rise",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-22",
+      "id": 1085452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484335.jpg",
+      "name": "Gimme Shelter",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-29",
+      "id": 1088338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484336.jpg",
+      "name": "God Complex",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-26",
+      "id": 1106146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484337.jpg",
+      "name": "DNR",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-03",
+      "id": 1106147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484338.jpg",
+      "name": "Die All, Die Merrily",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-10",
+      "id": 1106148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484339.jpg",
+      "name": "The Other Side",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-17",
+      "id": 1049248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484340.jpg",
+      "name": "The Chosen",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-24",
+      "id": 1076269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484341.jpg",
+      "name": "Praimfaya",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-04-24",
+      "id": 1260726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385068.jpg",
+      "name": "Eden",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-01",
+      "id": 1274837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386558.jpg",
+      "name": "Red Queen",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1270509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/387953.jpg",
+      "name": "Sleeping Giants",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1285341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389567.jpg",
+      "name": "Pandora's Box",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-22",
+      "id": 1302908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391121.jpg",
+      "name": "Shifting Sands",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-05",
+      "id": 1311532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/394257.jpg",
+      "name": "Exit Wounds",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-19",
+      "id": 1351933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484342.jpg",
+      "name": "Acceptable Losses",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-26",
+      "id": 1351934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484343.jpg",
+      "name": "How We Get to Peace",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-10",
+      "id": 1360941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401654.jpg",
+      "name": "Sic Semper Tyrannis",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-17",
+      "id": 1360942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/403572.jpg",
+      "name": "The Warriors Will",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-24",
+      "id": 1389961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405588.jpg",
+      "name": "The Dark Year",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-07-31",
+      "id": 1389963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/407819.jpg",
+      "name": "Damocles - Part One",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-08-07",
+      "id": 1471697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409348.jpg",
+      "name": "Damocles - Part Two",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-04-30",
+      "id": 1513965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/194/485562.jpg",
+      "name": "Sanctum",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-05-07",
+      "id": 1513966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/492153.jpg",
+      "name": "Red Sun Rising",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-05-14",
+      "id": 1641811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/197/492894.jpg",
+      "name": "The Children of Gabriel",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-05-21",
+      "id": 1651341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/198/496616.jpg",
+      "name": "The Face Behind the Glass",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-05-28",
+      "id": 1654722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499634.jpg",
+      "name": "The Gospel of Josephine",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-06-11",
+      "id": 1660325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/504493.jpg",
+      "name": "Memento Mori",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-06-18",
+      "id": 1663312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/202/506003.jpg",
+      "name": "Nevermind",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-06-25",
+      "id": 1664975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508259.jpg",
+      "name": "The Old Man and the Anomaly",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-07-09",
+      "id": 1664976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/204/512006.jpg",
+      "name": "What You Take With You",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-07-16",
+      "id": 1664977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514788.jpg",
+      "name": "Matryoshka",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-07-23",
+      "id": 1664978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515426.jpg",
+      "name": "Ashes to Ashes",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-07-30",
+      "id": 1664979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/517407.jpg",
+      "name": "Adjustment Protocol",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2019-08-06",
+      "id": 1664980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/519028.jpg",
+      "name": "The Blood of Sanctum",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2020-05-20",
+      "id": 1812363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/259/648857.jpg",
+      "name": "From the Ashes",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-05-27",
+      "id": 1837819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/259/648899.jpg",
+      "name": "The Garden",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-06-03",
+      "id": 1837820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/259/647625.jpg",
+      "name": "False Gods",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-06-10",
+      "id": 1837821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/260/652365.jpg",
+      "name": "Hesperides",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-06-17",
+      "id": 1837822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/261/652851.jpg",
+      "name": "Welcome to Bardo",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-06-24",
+      "id": 1837823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/262/655156.jpg",
+      "name": "Nakara",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-07-01",
+      "id": 1837824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/263/659205.jpg",
+      "name": "The Queen's Gambit",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-07-08",
+      "id": 1837825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/264/661650.jpg",
+      "name": "Anaconda",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-07-15",
+      "id": 1837826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/264/662125.jpg",
+      "name": "The Flock",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-08-05",
+      "id": 1902790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668290.jpg",
+      "name": "A Little Sacrifice",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-08-12",
+      "id": 1905323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/593/1484344.jpg",
+      "name": "Etherea",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-08-19",
+      "id": 1908139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/268/670579.jpg",
+      "name": "The Stranger",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-09-09",
+      "id": 1913277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/271/678044.jpg",
+      "name": "Blood Giant",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-09-16",
+      "id": 1913278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/272/682161.jpg",
+      "name": "A Sort of Homecoming",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-09-23",
+      "id": 1913279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/273/684782.jpg",
+      "name": "The Dying of the Light",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2020-09-30",
+      "id": 1913280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/274/687437.jpg",
+      "name": "The Last War",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-6",
+  "live": true,
+  "overview": "Ninety-seven years ago, nuclear Armageddon decimated planet Earth, destroying civilization. The only survivors were the 400 inhabitants of 12 international space stations that were in orbit at the time. Three generations have been born in space, the survivors now number 4,000, and resources are running out on their dying \"Ark\" - the 12 stations now linked together and repurposed to keep the survivors alive. Draconian measures including capital punishment and population control are the order of the day, as the leaders of the Ark take ruthless steps to ensure their future, including secretly exiling a group of 100 juvenile prisoners to the Earth's surface to test whether it's habitable.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/477/1194981.jpg",
   "rating": 7.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "6",
+  "title": "The 100",
+  "type": "series",
+  "year": 2014
 }

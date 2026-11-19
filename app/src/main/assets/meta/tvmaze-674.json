@@ -1,22 +1,410 @@
 {
-  "schema": 1,
-  "id": "tvmaze-674",
-  "source": "tvmaze",
-  "sourceId": "674",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Southland",
-  "year": 2009,
-  "type": "series",
-  "overview": "From Emmy Award winners John Wells, Ann Biderman and Chris Chulack comes a raw and authentic look at the police unit in Los Angeles. From the beaches of Malibu to the streets of East LA, Southland is a fast moving drama that will take you inside the lives of cops, criminals, victims and their families.John Cooper is a seasoned Los Angeles cop, assigned to train young rookie Ben Sherman. Cooper's honest, no nonsense approach to the job leaves Sherman questioning whether or not he has what it takes to become a police officer.",
-  "poster": "file:///android_asset/posters/tvmaze-674.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-04-09",
+      "id": 59360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/667405.jpg",
+      "name": "Unknown Trouble",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-16",
+      "id": 59361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/667406.jpg",
+      "name": "Mozambique",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-23",
+      "id": 59362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537923.jpg",
+      "name": "See the Woman",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-30",
+      "id": 59363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/667432.jpg",
+      "name": "Sally in the Alley",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-07",
+      "id": 59364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537935.jpg",
+      "name": "Two Gangs",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-14",
+      "id": 59365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/667471.jpg",
+      "name": "Westside",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-05-21",
+      "id": 59366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/667474.jpg",
+      "name": "Derailed",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-03-02",
+      "id": 59367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1538068.jpg",
+      "name": "Phase Three",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-09",
+      "id": 59368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/667594.jpg",
+      "name": "Butch and Sundance",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-16",
+      "id": 59369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1538074.jpg",
+      "name": "U-Boat",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-23",
+      "id": 59370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1538080.jpg",
+      "name": "The Runner",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-30",
+      "id": 59371,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/667627.jpg",
+      "name": "What Makes Sammy Run?",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-06",
+      "id": 59372,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668017.jpg",
+      "name": "Maximum Deployment",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-01-04",
+      "id": 59373,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668027.jpg",
+      "name": "Let It Snow",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-11",
+      "id": 59374,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668367.jpg",
+      "name": "Punching Water",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-18",
+      "id": 59375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668370.jpg",
+      "name": "Discretion",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-25",
+      "id": 59376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668372.jpg",
+      "name": "Code 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-01",
+      "id": 59377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668376.jpg",
+      "name": "The Winds",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-08",
+      "id": 59378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668386.jpg",
+      "name": "Cop or Not",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-15",
+      "id": 59379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668398.jpg",
+      "name": "Sideways",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-22",
+      "id": 59380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668399.jpg",
+      "name": "Fixing a Hole",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-01",
+      "id": 59381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668415.jpg",
+      "name": "Failure Drill",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-08",
+      "id": 59382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/267/668420.jpg",
+      "name": "Graduation Day",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-01-17",
+      "id": 59383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770179.jpg",
+      "name": "Wednesday",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-24",
+      "id": 59384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537696.jpg",
+      "name": "Underwater",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-31",
+      "id": 59385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537707.jpg",
+      "name": "Community",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 59386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537711.jpg",
+      "name": "Identity",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 59387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537713.jpg",
+      "name": "Legacy",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 59388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537717.jpg",
+      "name": "Integrity Check",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-28",
+      "id": 59389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537718.jpg",
+      "name": "Fallout",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 59390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537719.jpg",
+      "name": "God's Work",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 59391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537722.jpg",
+      "name": "Risk",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 59392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/615/1537725.jpg",
+      "name": "Thursday",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-02-13",
+      "id": 59393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770189.jpg",
+      "name": "Bats and Hats",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-20",
+      "id": 59394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770190.jpg",
+      "name": "Heat",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-27",
+      "id": 59395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770191.jpg",
+      "name": "Babel",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-06",
+      "id": 59396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770192.jpg",
+      "name": "Under the Big Top",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-13",
+      "id": 59397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770193.jpg",
+      "name": "Off Duty",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-20",
+      "id": 59398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770194.jpg",
+      "name": "Bleed Out",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-27",
+      "id": 59399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770195.jpg",
+      "name": "Heroes",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-03",
+      "id": 59400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770196.jpg",
+      "name": "The Felix Paradox",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-10",
+      "id": 59401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770197.jpg",
+      "name": "Chaos",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-17",
+      "id": 59402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/308/770198.jpg",
+      "name": "Reckoning",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-674",
+  "live": true,
+  "overview": "From Emmy Award winners John Wells, Ann Biderman and Chris Chulack comes a raw and authentic look at the police unit in Los Angeles. From the beaches of Malibu to the streets of East LA, Southland is a fast moving drama that will take you inside the lives of cops, criminals, victims and their families.John Cooper is a seasoned Los Angeles cop, assigned to train young rookie Ben Sherman. Cooper's honest, no nonsense approach to the job leaves Sherman questioning whether or not he has what it takes to become a police officer.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/5/14795.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "674",
+  "title": "Southland",
+  "type": "series",
+  "year": 2009
 }

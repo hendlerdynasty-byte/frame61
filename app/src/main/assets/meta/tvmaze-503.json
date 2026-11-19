@@ -1,22 +1,50 @@
 {
-  "schema": 1,
-  "id": "tvmaze-503",
-  "source": "tvmaze",
-  "sourceId": "503",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Lost Room",
-  "year": 2006,
-  "type": "series",
-  "overview": "A mysterious event at the Sunshine Motel caused ordinary things in Room 10 to transform into indestructible objects with extraordinary powers. Detective Joe Miller discovers the dangerous potential of these objects when his daughter becomes lost in the room. His only hope of saving her is to find The Key, but shadowy figures will stop at nothing to keep it - and the other objects - for themselves.",
-  "poster": "file:///android_asset/posters/tvmaze-503.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2006-12-11",
+      "id": 45903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136481.jpg",
+      "name": "Part 1: The Key and the Clock",
+      "number": 1,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-12",
+      "id": 45904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136484.jpg",
+      "name": "Part 2: The Comb and the Box",
+      "number": 2,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2006-12-13",
+      "id": 45905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136507.jpg",
+      "name": "Part 3: The Eye and the Prime Object",
+      "number": 3,
+      "runtime": 90,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Thriller"
   ],
+  "id": "tvmaze-503",
+  "live": true,
+  "overview": "A mysterious event at the Sunshine Motel caused ordinary things in Room 10 to transform into indestructible objects with extraordinary powers. Detective Joe Miller discovers the dangerous potential of these objects when his daughter becomes lost in the room. His only hope of saving her is to find The Key, but shadowy figures will stop at nothing to keep it - and the other objects - for themselves.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/10835.jpg",
   "rating": 8,
   "runtime": 90,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "503",
+  "title": "The Lost Room",
+  "type": "series",
+  "year": 2006
 }

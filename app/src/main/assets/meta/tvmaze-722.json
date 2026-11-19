@@ -1,21 +1,1642 @@
 {
-  "schema": 1,
-  "id": "tvmaze-722",
-  "source": "tvmaze",
-  "sourceId": "722",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Golden Girls",
-  "year": 1985,
-  "type": "series",
-  "overview": "The Golden Girls follows four South Florida seniors sharing a house, their dreams, and a whole lot of cheesecake. Bright, promiscuous, clueless, and hilarious, these lovely mismatched ladies form the perfect circle of friends.",
-  "poster": "file:///android_asset/posters/tvmaze-722.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1985-09-14",
+      "id": 63861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86531.jpg",
+      "name": "The Engagement",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-21",
+      "id": 63862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/88787.jpg",
+      "name": "Guess Who's Coming to the Wedding?",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-28",
+      "id": 63863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86794.jpg",
+      "name": "Rose the Prude",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-10-05",
+      "id": 63864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86791.jpg",
+      "name": "Transplant",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-10-19",
+      "id": 63865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593669.jpg",
+      "name": "The Triangle",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-10-26",
+      "id": 63866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593670.jpg",
+      "name": "On Golden Girls",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-11-02",
+      "id": 63867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593671.jpg",
+      "name": "The Competition",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-11-09",
+      "id": 63868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/384/962432.jpg",
+      "name": "Break-In",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-11-16",
+      "id": 63869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593677.jpg",
+      "name": "Blanche and the Younger Man",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-11-23",
+      "id": 63870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593684.jpg",
+      "name": "Heart Attack",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-11-30",
+      "id": 63871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593685.jpg",
+      "name": "The Return of Dorothy's Ex",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-12-07",
+      "id": 63872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593686.jpg",
+      "name": "The Custody Battle",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-12-14",
+      "id": 63873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593687.jpg",
+      "name": "A Little Romance",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1985-12-21",
+      "id": 63874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/397/993619.jpg",
+      "name": "That Was No Lady",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-01-11",
+      "id": 63875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593689.jpg",
+      "name": "In a Bed of Rose's",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-01-18",
+      "id": 63876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593691.jpg",
+      "name": "The Truth Will Out",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-02-01",
+      "id": 63877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593692.jpg",
+      "name": "Nice and Easy",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-02-08",
+      "id": 63878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593693.jpg",
+      "name": "The Operation",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-02-15",
+      "id": 63879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/398/997096.jpg",
+      "name": "Second Motherhood",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-02-22",
+      "id": 63880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86551.jpg",
+      "name": "Adult Education",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-03-01",
+      "id": 63881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/86552.jpg",
+      "name": "The Flu",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-03-08",
+      "id": 63882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593696.jpg",
+      "name": "Job Hunting",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-03-29",
+      "id": 63883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593698.jpg",
+      "name": "Blind Ambitions",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-05-03",
+      "id": 63884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593699.jpg",
+      "name": "Big Daddy",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-05-10",
+      "id": 63885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593700.jpg",
+      "name": "The Way We Met",
+      "number": 25,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1986-09-27",
+      "id": 63886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1000121.jpg",
+      "name": "End of the Curse",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-10-04",
+      "id": 63887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1000340.jpg",
+      "name": "Ladies of the Evening",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-10-11",
+      "id": 63888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593753.jpg",
+      "name": "Take Him, He's Mine",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-11-01",
+      "id": 63889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593754.jpg",
+      "name": "It's a Miserable Life",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-11-08",
+      "id": 63890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1002766.jpg",
+      "name": "Isn't It Romantic",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-11-15",
+      "id": 63891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1002776.jpg",
+      "name": "Big Daddy's Little Lady",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-11-22",
+      "id": 63892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1002897.jpg",
+      "name": "Family Affair",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-11-29",
+      "id": 63893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593759.jpg",
+      "name": "Vacation",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-12-06",
+      "id": 63894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593760.jpg",
+      "name": "Joust Between Friends",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-12-13",
+      "id": 63895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1003442.jpg",
+      "name": "Love, Rose",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1986-12-20",
+      "id": 63896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593762.jpg",
+      "name": "'Twas the Nightmare Before Christmas",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-01-03",
+      "id": 63897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593763.jpg",
+      "name": "The Sisters",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-01-10",
+      "id": 63898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593764.jpg",
+      "name": "The Stan Who Came to Dinner",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-01-17",
+      "id": 63899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593765.jpg",
+      "name": "The Actor",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-01-24",
+      "id": 63900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593766.jpg",
+      "name": "Before and After",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-01-31",
+      "id": 63901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593767.jpg",
+      "name": "And Then There Was One",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-02-07",
+      "id": 63902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593768.jpg",
+      "name": "Bedtime Story",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-02-14",
+      "id": 63903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593769.jpg",
+      "name": "Forgive Me, Father",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-02-21",
+      "id": 63904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/405/1013121.jpg",
+      "name": "Long Days Journey Into Marinara",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-02-28",
+      "id": 63905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593771.jpg",
+      "name": "Whose Face Is This, Anyway?",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-03-14",
+      "id": 63906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593772.jpg",
+      "name": "Dorothy's Prized Pupil",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-03-21",
+      "id": 63907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/407/1018091.jpg",
+      "name": "Diamond in the Rough",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-04-11",
+      "id": 63908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593774.jpg",
+      "name": "Son-in-Law Dearest",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-05-02",
+      "id": 63909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/407/1019945.jpg",
+      "name": "To Catch a Neighbor",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-05-09",
+      "id": 63910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593776.jpg",
+      "name": "A Piece of Cake",
+      "number": 25,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-05-16",
+      "id": 63911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593777.jpg",
+      "name": "Empty Nests",
+      "number": 26,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1987-09-19",
+      "id": 63912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1025132.jpg",
+      "name": "Old Friends",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-09-26",
+      "id": 63913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/410/1026934.jpg",
+      "name": "One for the Money",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-10-03",
+      "id": 63914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593780.jpg",
+      "name": "Bringing Up Baby",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-10-17",
+      "id": 63915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593781.jpg",
+      "name": "The Housekeeper",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-10-24",
+      "id": 63916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593782.jpg",
+      "name": "Nothing to Fear But Fear Itself",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-10-31",
+      "id": 63917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593783.jpg",
+      "name": "Letter to Gorbachev",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-11-07",
+      "id": 63918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593784.jpg",
+      "name": "Strange Bedfellows",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-11-14",
+      "id": 63919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593785.jpg",
+      "name": "Brotherly Love",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-11-21",
+      "id": 63920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593787.jpg",
+      "name": "A Visit from Little Sven",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-11-28",
+      "id": 63921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593788.jpg",
+      "name": "The Audit",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-12-05",
+      "id": 63922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593789.jpg",
+      "name": "Three on a Couch",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-12-12",
+      "id": 63923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593790.jpg",
+      "name": "Charlie's Buddy",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1987-12-19",
+      "id": 63924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593791.jpg",
+      "name": "The Artist",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-01-09",
+      "id": 63925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593792.jpg",
+      "name": "Blanche's Little Girl",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-01-16",
+      "id": 63926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593793.jpg",
+      "name": "Dorothy's New Friend",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-01-23",
+      "id": 63927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593794.jpg",
+      "name": "Grab That Dough",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-02-06",
+      "id": 63928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593795.jpg",
+      "name": "My Brother, My Father",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-02-13",
+      "id": 63929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593796.jpg",
+      "name": "Golden Moments (1)",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-02-13",
+      "id": 63930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593797.jpg",
+      "name": "Golden Moments (2)",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-02-20",
+      "id": 63931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593798.jpg",
+      "name": "And Ma Makes Three",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-02-27",
+      "id": 63932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593799.jpg",
+      "name": "Larceny and Old Lace",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-03-12",
+      "id": 63933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593800.jpg",
+      "name": "Rose's Big Adventure",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-03-19",
+      "id": 63934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593801.jpg",
+      "name": "Mixed Blessing",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-04-30",
+      "id": 63935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593802.jpg",
+      "name": "Mister Terrific",
+      "number": 24,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-05-07",
+      "id": 63936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593803.jpg",
+      "name": "Mother's Day",
+      "number": 25,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1988-10-08",
+      "id": 63937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593804.jpg",
+      "name": "Yes, We Have No Havanas",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-10-22",
+      "id": 63938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593805.jpg",
+      "name": "The Days and Nights of Sophia Petrillo",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-10-29",
+      "id": 63939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593806.jpg",
+      "name": "The One That Got Away",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-11-05",
+      "id": 63940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593807.jpg",
+      "name": "Yokel Hero",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-11-12",
+      "id": 63941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593808.jpg",
+      "name": "Bang the Drum, Stanley",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-11-19",
+      "id": 63942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593809.jpg",
+      "name": "Sophia's Wedding (1)",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-11-26",
+      "id": 63943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593810.jpg",
+      "name": "Sophia's Wedding (2)",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-12-03",
+      "id": 63944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593811.jpg",
+      "name": "Brother, Can You Spare That Jacket?",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1988-12-10",
+      "id": 63945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593812.jpg",
+      "name": "Scared Straight",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-01-07",
+      "id": 63946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593813.jpg",
+      "name": "Stan Takes a Wife",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-01-14",
+      "id": 63947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593814.jpg",
+      "name": "The Auction",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-01-28",
+      "id": 63948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593815.jpg",
+      "name": "Blind Date",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-02-04",
+      "id": 63949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593816.jpg",
+      "name": "The Impotence of Being Ernest",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-02-06",
+      "id": 63950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593817.jpg",
+      "name": "Love Me Tender",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-02-11",
+      "id": 63951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593818.jpg",
+      "name": "Valentine's Day",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-02-18",
+      "id": 63952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593819.jpg",
+      "name": "Two Rode Together",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-02-25",
+      "id": 63953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593820.jpg",
+      "name": "You Gotta Have Hope",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-03-04",
+      "id": 63954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593821.jpg",
+      "name": "Fiddler on the Ropes",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-03-18",
+      "id": 63955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593822.jpg",
+      "name": "Till Death Do We Volley",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-03-25",
+      "id": 63956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593823.jpg",
+      "name": "High Anxiety",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-04-01",
+      "id": 63957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/94424.jpg",
+      "name": "Little Sister",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-04-15",
+      "id": 63958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593824.jpg",
+      "name": "Sophia's Choice",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-04-29",
+      "id": 63959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593825.jpg",
+      "name": "Rites of Spring",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-05-06",
+      "id": 63960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593826.jpg",
+      "name": "Foreign Exchange",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-05-13",
+      "id": 63961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593827.jpg",
+      "name": "We're Outta Here (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-05-13",
+      "id": 63962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593828.jpg",
+      "name": "We're Outta Here (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1989-09-23",
+      "id": 63963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593829.jpg",
+      "name": "Sick and Tired (1)",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-09-30",
+      "id": 63964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593830.jpg",
+      "name": "Sick and Tired (2)",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-10-14",
+      "id": 63965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593831.jpg",
+      "name": "The Accurate Conception",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-10-21",
+      "id": 63966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593833.jpg",
+      "name": "Rose Fights Back",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-10-28",
+      "id": 63967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593834.jpg",
+      "name": "Love Under the Big Top",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-11-04",
+      "id": 63968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593835.jpg",
+      "name": "Dancing in the Dark",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-11-11",
+      "id": 63969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593836.jpg",
+      "name": "Not Another Monday",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-11-18",
+      "id": 63970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593837.jpg",
+      "name": "That Old Feeling",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-11-25",
+      "id": 63971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593838.jpg",
+      "name": "Comedy of Errors",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-12-02",
+      "id": 63972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593839.jpg",
+      "name": "All That Jazz",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-12-09",
+      "id": 63973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593840.jpg",
+      "name": "Ebb Tide",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1989-12-16",
+      "id": 63974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593841.jpg",
+      "name": "Have Yourself a Very Little Christmas",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-01-06",
+      "id": 63975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593842.jpg",
+      "name": "Mary Has a Little Lamb",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-01-13",
+      "id": 63976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593843.jpg",
+      "name": "Great Expectations",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-01-27",
+      "id": 63977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593844.jpg",
+      "name": "Triple Play",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-02-03",
+      "id": 63978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593845.jpg",
+      "name": "Clinton Avenue Memoirs",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-02-10",
+      "id": 63979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593846.jpg",
+      "name": "Like the Beep Beep Beep of the Tom-Tom",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-02-12",
+      "id": 63980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593847.jpg",
+      "name": "An Illegitimate Concern",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-02-17",
+      "id": 63981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593848.jpg",
+      "name": "72 Hours",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-02-24",
+      "id": 63982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593849.jpg",
+      "name": "Twice in a Lifetime",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-03-03",
+      "id": 63983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593850.jpg",
+      "name": "Sisters and Other Strangers",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-03-24",
+      "id": 63984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593851.jpg",
+      "name": "Cheaters",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-03-31",
+      "id": 63985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593852.jpg",
+      "name": "The Mangiacavallo Curse Makes a Lousy Wedding Present",
+      "number": 23,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-04-28",
+      "id": 63986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593853.jpg",
+      "name": "All Bets Are Off",
+      "number": 24,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-05-05",
+      "id": 63987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593854.jpg",
+      "name": "The President's Coming! The President's Coming! (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-05-05",
+      "id": 63988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593855.jpg",
+      "name": "The President's Coming! The President's Coming! (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1990-09-22",
+      "id": 63989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593856.jpg",
+      "name": "Blanche Delivers",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-09-29",
+      "id": 63990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593857.jpg",
+      "name": "Once, in St. Olaf",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-10-06",
+      "id": 63991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593858.jpg",
+      "name": "If at Last You Do Succeed",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-10-13",
+      "id": 63992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593859.jpg",
+      "name": "Snap Out of It",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-10-20",
+      "id": 63993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593860.jpg",
+      "name": "Wham, Bam, Thank You, Mammy",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-10-27",
+      "id": 63994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593861.jpg",
+      "name": "Feelings",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-11-03",
+      "id": 63995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593862.jpg",
+      "name": "Zborn Again",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-11-10",
+      "id": 63996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593863.jpg",
+      "name": "How Do You Solve a Problem Like Sophia?",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-11-17",
+      "id": 63997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593864.jpg",
+      "name": "Mrs. George Devereaux",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-11-24",
+      "id": 63998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593865.jpg",
+      "name": "Girls Just Wanna Have Fun... Before They Die",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-12-01",
+      "id": 63999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593866.jpg",
+      "name": "Stand by Your Man",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1990-12-15",
+      "id": 64000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593867.jpg",
+      "name": "Ebbtide's Revenge",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-01-05",
+      "id": 64001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593868.jpg",
+      "name": "The Bloom is Off the Rose",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-01-12",
+      "id": 64002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593869.jpg",
+      "name": "Sisters of the Bride",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-01-19",
+      "id": 64003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593870.jpg",
+      "name": "Miles to Go",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-02-02",
+      "id": 64004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593871.jpg",
+      "name": "There Goes the Bride (1)",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-02-09",
+      "id": 64005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593872.jpg",
+      "name": "There Goes the Bride (2)",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-02-16",
+      "id": 64006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593873.jpg",
+      "name": "Older and Wiser",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-02-16",
+      "id": 64007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593874.jpg",
+      "name": "Melodrama",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-03-02",
+      "id": 64008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593875.jpg",
+      "name": "Even Grandmas Get the Blues",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-03-09",
+      "id": 64009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593876.jpg",
+      "name": "Witness",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-03-23",
+      "id": 64010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593877.jpg",
+      "name": "What a Difference a Date Makes",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-04-06",
+      "id": 64011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593878.jpg",
+      "name": "Love for Sale",
+      "number": 23,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-04-27",
+      "id": 64012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593879.jpg",
+      "name": "Never Yell Fire in a Crowded Retirement Home (1)",
+      "number": 24,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-04-27",
+      "id": 64013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593880.jpg",
+      "name": "Never Yell Fire in a Crowded Retirement Home (2)",
+      "number": 25,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-05-04",
+      "id": 64014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593881.jpg",
+      "name": "Henny Penny -- Straight, No Chaser",
+      "number": 26,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1991-09-21",
+      "id": 64015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593882.jpg",
+      "name": "Hey, Look Me Over",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-09-28",
+      "id": 64016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593883.jpg",
+      "name": "The Case of the Libertine Belle",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-10-05",
+      "id": 64017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593884.jpg",
+      "name": "Beauty and the Beast",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-10-12",
+      "id": 64018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593885.jpg",
+      "name": "That's for Me to Know",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-10-19",
+      "id": 64019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593886.jpg",
+      "name": "Where's Charlie?",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-10-26",
+      "id": 64020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593887.jpg",
+      "name": "Mother Load",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-11-02",
+      "id": 64021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593888.jpg",
+      "name": "Dateline: Miami",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-11-09",
+      "id": 64022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593889.jpg",
+      "name": "The Monkey Show (1)",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-11-09",
+      "id": 64023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593890.jpg",
+      "name": "The Monkey Show (2)",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-11-16",
+      "id": 64024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593891.jpg",
+      "name": "Ro$e Love$ Mile$",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-11-23",
+      "id": 64025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593892.jpg",
+      "name": "Room 7",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-12-07",
+      "id": 64026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593893.jpg",
+      "name": "From Here to the Pharmacy",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1991-12-14",
+      "id": 64027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593894.jpg",
+      "name": "The Pope's Ring",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-01-04",
+      "id": 64028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593895.jpg",
+      "name": "Old Boyfriends",
+      "number": 14,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-01-11",
+      "id": 64029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593896.jpg",
+      "name": "Goodbye, Mr. Gordon",
+      "number": 15,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-01-25",
+      "id": 64030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593897.jpg",
+      "name": "The Commitments",
+      "number": 16,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-02-08",
+      "id": 64031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593898.jpg",
+      "name": "Questions and Answers",
+      "number": 17,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-02-15",
+      "id": 64032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593899.jpg",
+      "name": "Ebbtide VI: The Wrath of Stan",
+      "number": 18,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-02-22",
+      "id": 64033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593900.jpg",
+      "name": "Journey to the Center of Attention",
+      "number": 19,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-02-29",
+      "id": 64034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593901.jpg",
+      "name": "A Midwinter Night's Dream",
+      "number": 20,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-02-29",
+      "id": 64035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593902.jpg",
+      "name": "A Midwinter Night's Dream Part Two",
+      "number": 21,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-03-07",
+      "id": 64036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593903.jpg",
+      "name": "Rose: Portrait of a Woman",
+      "number": 22,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-04-25",
+      "id": 64037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593904.jpg",
+      "name": "Home Again, Rose (1)",
+      "number": 23,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-05-02",
+      "id": 64038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593905.jpg",
+      "name": "Home Again, Rose (2)",
+      "number": 24,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-05-09",
+      "id": 64039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593906.jpg",
+      "name": "One Flew Out of the Cuckoo's Nest (1)",
+      "number": 25,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1992-05-09",
+      "id": 64040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/593907.jpg",
+      "name": "One Flew Out of the Cuckoo's Nest (2)",
+      "number": 26,
+      "runtime": 30,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-722",
+  "live": true,
+  "overview": "The Golden Girls follows four South Florida seniors sharing a house, their dreams, and a whole lot of cheesecake. Bright, promiscuous, clueless, and hilarious, these lovely mismatched ladies form the perfect circle of friends.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15097.jpg",
   "rating": 8.1,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "722",
+  "title": "The Golden Girls",
+  "type": "series",
+  "year": 1985
 }

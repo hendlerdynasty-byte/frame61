@@ -1,21 +1,778 @@
 {
-  "schema": 1,
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2003-11-02",
+      "id": 31381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469975.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-09",
+      "id": 31382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469976.jpg",
+      "name": "Top Banana",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-16",
+      "id": 31383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469977.jpg",
+      "name": "Bringing Up Buster",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-23",
+      "id": 31384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469978.jpg",
+      "name": "Key Decisions",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-11-30",
+      "id": 31385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469979.jpg",
+      "name": "Charity Drive",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-07",
+      "id": 31386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469980.jpg",
+      "name": "Visiting Ours",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-14",
+      "id": 31387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469981.jpg",
+      "name": "In God We Trust",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2003-12-21",
+      "id": 31388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469982.jpg",
+      "name": "My Mother, the Car",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-04",
+      "id": 31389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469983.jpg",
+      "name": "Storming the Castle",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-11",
+      "id": 31390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469984.jpg",
+      "name": "Pier Pressure",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-01-25",
+      "id": 31391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469985.jpg",
+      "name": "Public Relations",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-08",
+      "id": 31392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469986.jpg",
+      "name": "Marta Complex",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-02-15",
+      "id": 31393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469987.jpg",
+      "name": "Beef Consommé",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-07",
+      "id": 31394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469988.jpg",
+      "name": "Shock and Aww",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-14",
+      "id": 31395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469989.jpg",
+      "name": "Staff Infection",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-17",
+      "id": 31396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469990.jpg",
+      "name": "Altar Egos",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-21",
+      "id": 31397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469991.jpg",
+      "name": "Justice is Blind",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-03-28",
+      "id": 31398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469992.jpg",
+      "name": "Missing Kitty",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-04",
+      "id": 31399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469994.jpg",
+      "name": "Best Man for the Gob",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-11",
+      "id": 31400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469995.jpg",
+      "name": "Whistler's Mother",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-04-25",
+      "id": 31401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469996.jpg",
+      "name": "Not Without My Daughter",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-06-06",
+      "id": 31402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469997.jpg",
+      "name": "Let 'Em Eat Cake",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-07",
+      "id": 31403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469998.jpg",
+      "name": "The One Where Michael Leaves",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-14",
+      "id": 31404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469999.jpg",
+      "name": "The One Where They Build a House",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-11-21",
+      "id": 31405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470000.jpg",
+      "name": "Amigos",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-12-05",
+      "id": 31406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470001.jpg",
+      "name": "Good Grief!",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-12-12",
+      "id": 31407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470002.jpg",
+      "name": "Sad Sack",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2004-12-19",
+      "id": 31408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470003.jpg",
+      "name": "Afternoon Delight",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-16",
+      "id": 31409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470004.jpg",
+      "name": "Switch Hitter",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-23",
+      "id": 31410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470005.jpg",
+      "name": "Queen for a Day",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-01-30",
+      "id": 31411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470006.jpg",
+      "name": "Burning Love",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-02-13",
+      "id": 31412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470007.jpg",
+      "name": "Ready, Aim, Marry Me",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-06",
+      "id": 31413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470008.jpg",
+      "name": "Out on a Limb",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-06",
+      "id": 31414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470009.jpg",
+      "name": "My Hand to God",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-13",
+      "id": 31415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470010.jpg",
+      "name": "Motherboy XXX",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-20",
+      "id": 31416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470011.jpg",
+      "name": "The Immaculate Election",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-03-27",
+      "id": 31417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470012.jpg",
+      "name": "Sword of Destiny",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-03",
+      "id": 31418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470013.jpg",
+      "name": "Meet the Veals",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-10",
+      "id": 31419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470014.jpg",
+      "name": "Spring Breakout",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-04-17",
+      "id": 31420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470015.jpg",
+      "name": "The Righteous Brothers",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-19",
+      "id": 31421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004693.jpg",
+      "name": "The Cabin Show",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-09-26",
+      "id": 31422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004695.jpg",
+      "name": "For British Eyes Only",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-03",
+      "id": 31423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004696.jpg",
+      "name": "Forget Me Now",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-07",
+      "id": 31424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004697.jpg",
+      "name": "Notapusy",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-07",
+      "id": 31425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004698.jpg",
+      "name": "Mr. F",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-05",
+      "id": 31426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004699.jpg",
+      "name": "The Ocean Walker",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-12",
+      "id": 31427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004700.jpg",
+      "name": "Prison Break-In",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-19",
+      "id": 31428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004701.jpg",
+      "name": "Making a Stand",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-01-02",
+      "id": 31429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004702.jpg",
+      "name": "S.O.B.s",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-10",
+      "id": 31430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004704.jpg",
+      "name": "Fakin' It",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-10",
+      "id": 31431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004705.jpg",
+      "name": "Family Ties",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-10",
+      "id": 31432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004706.jpg",
+      "name": "Exit Strategy",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2006-02-10",
+      "id": 31433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004707.jpg",
+      "name": "Development Arrested",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004711.jpg",
+      "name": "Flight of the Phoenix",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004712.jpg",
+      "name": "Borderline Personalities",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004713.jpg",
+      "name": "Indian Takers",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004714.jpg",
+      "name": "The B. Team",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004715.jpg",
+      "name": "A New Start",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004716.jpg",
+      "name": "Double Crossers",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004717.jpg",
+      "name": "Colony Collapse",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004718.jpg",
+      "name": "Red Hairing",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004719.jpg",
+      "name": "Smashed",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004720.jpg",
+      "name": "Queen B.",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004721.jpg",
+      "name": "A New Attitude",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004722.jpg",
+      "name": "Señoritis",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004723.jpg",
+      "name": "It Gets Better",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004724.jpg",
+      "name": "Off the Hook",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 31448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004725.jpg",
+      "name": "Blockheads",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1464268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004729.jpg",
+      "name": "Family Leave",
+      "number": 1,
+      "runtime": 26,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143908.jpg",
+      "name": "Self-Deportation",
+      "number": 2,
+      "runtime": 28,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143909.jpg",
+      "name": "Everyone Gets Atrophy",
+      "number": 3,
+      "runtime": 27,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143910.jpg",
+      "name": "An Old Start",
+      "number": 4,
+      "runtime": 28,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143911.jpg",
+      "name": "Sinking Feelings",
+      "number": 5,
+      "runtime": 27,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143912.jpg",
+      "name": "Emotional Baggage",
+      "number": 6,
+      "runtime": 33,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143913.jpg",
+      "name": "Rom-Traum",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2018-05-29",
+      "id": 1473869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143914.jpg",
+      "name": "Premature Independence",
+      "number": 8,
+      "runtime": 36,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469967.jpg",
+      "name": "Unexpected Company",
+      "number": 9,
+      "runtime": 27,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469968.jpg",
+      "name": "Taste Makers",
+      "number": 10,
+      "runtime": 25,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469969.jpg",
+      "name": "Chain Migration",
+      "number": 11,
+      "runtime": 26,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469970.jpg",
+      "name": "Check Mates",
+      "number": 12,
+      "runtime": 25,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469971.jpg",
+      "name": "The Untethered Sole",
+      "number": 13,
+      "runtime": 28,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469972.jpg",
+      "name": "Saving for Arraignment Day",
+      "number": 14,
+      "runtime": 28,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469973.jpg",
+      "name": "Courting Disasters",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2019-03-15",
+      "id": 1612265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469974.jpg",
+      "name": "The Fallout",
+      "number": 16,
+      "runtime": 47,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
   "id": "tvmaze-321",
+  "live": true,
+  "overview": "After being passed over as partner at The Bluth Co., widower Michael resolves to quit the family business and move away to spend more quality time with his 13-year-old son, George Michael. But when his father George Bluth Sr. is arrested for shifty accounting practices and the family assets are frozen, Michael is forced to stay in Orange County to help his wildly eccentric family pick up the pieces.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/338/846049.jpg",
+  "rating": 8.2,
+  "runtime": 30,
+  "schema": 1,
   "source": "tvmaze",
   "sourceId": "321",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
   "title": "Arrested Development",
-  "year": 2003,
   "type": "series",
-  "overview": "After being passed over as partner at The Bluth Co., widower Michael resolves to quit the family business and move away to spend more quality time with his 13-year-old son, George Michael. But when his father George Bluth Sr. is arrested for shifty accounting practices and the family assets are frozen, Michael is forced to stay in Orange County to help his wildly eccentric family pick up the pieces.",
-  "poster": "file:///android_asset/posters/tvmaze-321.jpg",
-  "genres": [
-    "Komödie",
-    "Familie"
-  ],
-  "rating": 8.2,
-  "runtime": null,
-  "episodes": []
+  "year": 2003
 }

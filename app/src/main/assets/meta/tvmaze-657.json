@@ -1,22 +1,797 @@
 {
-  "schema": 1,
-  "id": "tvmaze-657",
-  "source": "tvmaze",
-  "sourceId": "657",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Spooks",
-  "year": 2002,
-  "type": "series",
-  "overview": "Tense drama series about the different challenges faced by the British Security Service as they work against the clock to safeguard the nation.A team of agents in the British security intelligence service work to protect the U.K. from terrorists and other threats to national security. A repackaged version of the BBC series \"Spooks,\" \"MI-5\" follows a counterterrorism unit based in the highly secure suite of offices called The Grid, where Harry Pearce oversees the team and deals with the often dirty politics of the spy game.",
-  "poster": "file:///android_asset/posters/tvmaze-657.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2002-05-13",
+      "id": 57950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/329/824511.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-20",
+      "id": 57951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596243.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-05-27",
+      "id": 57952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596244.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-06-04",
+      "id": 57953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596245.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-06-10",
+      "id": 57954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596246.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-06-17",
+      "id": 57955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596247.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-06-02",
+      "id": 57956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596248.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-06-09",
+      "id": 57957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596249.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-06-16",
+      "id": 57958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596250.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-06-23",
+      "id": 57959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596251.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-07",
+      "id": 57960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596252.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-14",
+      "id": 57961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596253.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-21",
+      "id": 57962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596254.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-07-28",
+      "id": 57963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596255.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-08-04",
+      "id": 57964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596256.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-08-11",
+      "id": 57965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596257.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 57966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596258.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-10-18",
+      "id": 57967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596259.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-10-25",
+      "id": 57968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596260.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-11-01",
+      "id": 57969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596261.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-11-08",
+      "id": 57970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596262.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-11-15",
+      "id": 57971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596263.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-11-22",
+      "id": 57972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596264.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-11-29",
+      "id": 57973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596265.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-12-06",
+      "id": 57974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596266.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-12-13",
+      "id": 57975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596267.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-09-12",
+      "id": 57976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596268.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-13",
+      "id": 57977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596269.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-22",
+      "id": 57978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596270.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-09-29",
+      "id": 57979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596271.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-06",
+      "id": 57980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596272.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-13",
+      "id": 57981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596273.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-20",
+      "id": 57982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596274.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-10-27",
+      "id": 57983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596275.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-11-03",
+      "id": 57984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596276.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-11-10",
+      "id": 57985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596277.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-17",
+      "id": 57986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596278.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-09-17",
+      "id": 57987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596279.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-09-18",
+      "id": 57988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596280.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-09-25",
+      "id": 57989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596281.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-10-02",
+      "id": 57990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596282.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-10-09",
+      "id": 57991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596283.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-10-16",
+      "id": 57992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596284.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-10-23",
+      "id": 57993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596285.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-10-30",
+      "id": 57994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596286.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2006-11-13",
+      "id": 57995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596287.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-10-16",
+      "id": 57996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596289.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-10-16",
+      "id": 57997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596290.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-10-23",
+      "id": 57998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596291.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-10-30",
+      "id": 57999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596292.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-11-06",
+      "id": 58000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596293.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-11-13",
+      "id": 58001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596294.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-11-20",
+      "id": 58002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596295.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-11-27",
+      "id": 58003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596296.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-12-04",
+      "id": 58004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596297.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2007-12-18",
+      "id": 58005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/238/596298.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 58006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488020.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 58007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488019.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-10-28",
+      "id": 58008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488018.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-11-03",
+      "id": 58009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488017.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 58010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488016.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 58011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488015.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 58012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488014.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 58013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488013.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2009-11-04",
+      "id": 58014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488012.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-11-06",
+      "id": 58015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488011.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-11-13",
+      "id": 58016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488010.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-11-20",
+      "id": 58017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488009.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-11-27",
+      "id": 58018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488008.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-12-04",
+      "id": 58019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488007.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-12-16",
+      "id": 58020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488006.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2009-12-23",
+      "id": 58021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488005.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2010-09-20",
+      "id": 58022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488004.jpg",
+      "name": "Plymouth",
+      "number": 1,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-09-27",
+      "id": 58023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488003.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 58024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488002.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 58025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488001.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 58026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/488000.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 58027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487999.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-11-01",
+      "id": 58028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487998.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2010-11-08",
+      "id": 58029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487997.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 9
+    },
+    {
+      "airdate": "2011-09-18",
+      "id": 58030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487996.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2011-09-25",
+      "id": 58031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487995.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2011-10-02",
+      "id": 58032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487994.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2011-10-09",
+      "id": 58033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487993.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2011-10-16",
+      "id": 58034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487992.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 10
+    },
+    {
+      "airdate": "2011-10-23",
+      "id": 58035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487991.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 10
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Thriller",
-    "Spionage"
+    "Espionage"
   ],
+  "id": "tvmaze-657",
+  "live": true,
+  "overview": "Tense drama series about the different challenges faced by the British Security Service as they work against the clock to safeguard the nation.A team of agents in the British security intelligence service work to protect the U.K. from terrorists and other threats to national security. A repackaged version of the BBC series \"Spooks,\" \"MI-5\" follows a counterterrorism unit based in the highly secure suite of offices called The Grid, where Harry Pearce oversees the team and deals with the often dirty politics of the spy game.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/5/13652.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "657",
+  "title": "Spooks",
+  "type": "series",
+  "year": 2002
 }

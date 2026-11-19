@@ -1,22 +1,140 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1042",
-  "source": "tvmaze",
-  "sourceId": "1042",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Wonderfalls",
-  "year": 2004,
-  "type": "series",
-  "overview": "From the producer of Angel and Firefly comes Wonderfalls. Although a recent graduate of Brown University, Jaye Tyler decides to ignore her degree, live in a trailer and work at a tourist gift shop in Niagara Falls called Wonderfalls—-much to the despair of her well-to-do family. But Jaye's aimless life takes a startling turn after a lion figurine begins talking to her. Her family calls it an \"episode,\" but Jaye knows better.Fearing for her sanity, Jaye nevertheless starts doing exactly what an increasing number of inanimate objects tell her to do and is amazed when her outrageous actions begin changing people's lives in unexpected ways.",
-  "poster": "file:///android_asset/posters/tvmaze-1042.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-10-04",
+      "id": 101131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289399.jpg",
+      "name": "Wax Lion",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-11",
+      "id": 101132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289400.jpg",
+      "name": "Karma Chameleon",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-18",
+      "id": 101133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289401.jpg",
+      "name": "Wound-Up Penguin",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-25",
+      "id": 101134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289420.jpg",
+      "name": "Pink Flamingos",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-01",
+      "id": 101135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289423.jpg",
+      "name": "Crime Dog",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-08",
+      "id": 101136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289424.jpg",
+      "name": "Barrel Bear",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-15",
+      "id": 101137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289425.jpg",
+      "name": "Lovesick Ass",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-22",
+      "id": 101138,
+      "image": null,
+      "name": "Muffin Buffalo",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-29",
+      "id": 101139,
+      "image": null,
+      "name": "Safety Canary",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-06",
+      "id": 101140,
+      "image": null,
+      "name": "Lying Pig",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-13",
+      "id": 101141,
+      "image": null,
+      "name": "Cocktail Bunny",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-20",
+      "id": 101142,
+      "image": null,
+      "name": "Totem Mole",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-27",
+      "id": 101143,
+      "image": null,
+      "name": "Caged Bird",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Fantasy"
   ],
+  "id": "tvmaze-1042",
+  "live": true,
+  "overview": "From the producer of Angel and Firefly comes Wonderfalls. Although a recent graduate of Brown University, Jaye Tyler decides to ignore her degree, live in a trailer and work at a tourist gift shop in Niagara Falls called Wonderfalls—-much to the despair of her well-to-do family. But Jaye's aimless life takes a startling turn after a lion figurine begins talking to her. Her family calls it an \"episode,\" but Jaye knows better.Fearing for her sanity, Jaye nevertheless starts doing exactly what an increasing number of inanimate objects tell her to do and is amazed when her outrageous actions begin changing people's lives in unexpected ways.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/16927.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1042",
+  "title": "Wonderfalls",
+  "type": "series",
+  "year": 2004
 }

@@ -1,22 +1,617 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1895",
-  "source": "tvmaze",
-  "sourceId": "1895",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Relic Hunter",
-  "year": 1999,
-  "type": "series",
-  "overview": "Tia Carrere stars as a university professor and black belt who globetrots after lost, stolen and rumored-of artifacts and antiquities.",
-  "poster": "file:///android_asset/posters/tvmaze-1895.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1999-09-25",
+      "id": 157899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/729498.jpg",
+      "name": "Buddha's Bowl",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-02",
+      "id": 157900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/729501.jpg",
+      "name": "Smoking Gun",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-09",
+      "id": 157901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/291/729518.jpg",
+      "name": "The Headless Nun",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-16",
+      "id": 157902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/292/731716.jpg",
+      "name": "Flag Day",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-23",
+      "id": 157903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/294/735397.jpg",
+      "name": "Thank You Very Much",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-10-30",
+      "id": 157904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/295/737930.jpg",
+      "name": "Diamond in the Rough",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-06",
+      "id": 157905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/295/737940.jpg",
+      "name": "Transformation",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-13",
+      "id": 157906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745846.jpg",
+      "name": "Etched in Stone",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-20",
+      "id": 157907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745847.jpg",
+      "name": "The Book of Love",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1999-11-27",
+      "id": 157908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745859.jpg",
+      "name": "The Myth of the Maze",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-05",
+      "id": 157909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745865.jpg",
+      "name": "Irish Crown Affair",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-12",
+      "id": 157910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/298/745873.jpg",
+      "name": "The Emperor's Bride",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-19",
+      "id": 157911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768253.jpg",
+      "name": "Afterlife and Death",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-02-26",
+      "id": 157912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768259.jpg",
+      "name": "Nine Lives",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-04",
+      "id": 157913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776103.jpg",
+      "name": "Affaire de Coeur",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-03-11",
+      "id": 157914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776109.jpg",
+      "name": "A Vanishing Art",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-22",
+      "id": 157915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776111.jpg",
+      "name": "A Good Year",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-04-29",
+      "id": 157916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776112.jpg",
+      "name": "The Last Knight",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-06",
+      "id": 157917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776113.jpg",
+      "name": "Love Letter",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-13",
+      "id": 157918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776117.jpg",
+      "name": "Possessed",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-20",
+      "id": 157919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776119.jpg",
+      "name": "Nothing But the Truth",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-05-27",
+      "id": 157920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/310/776120.jpg",
+      "name": "Memories of Montmartre",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2000-09-23",
+      "id": 157921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795783.jpg",
+      "name": "The Put Back",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-09-30",
+      "id": 157922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795785.jpg",
+      "name": "Dagger of Death",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-07",
+      "id": 157923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795789.jpg",
+      "name": "Last of the Mochicas",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-14",
+      "id": 157924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795823.jpg",
+      "name": "The Legend of the Lost",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-21",
+      "id": 157925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/318/795826.jpg",
+      "name": "Fertile Ground",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-10-28",
+      "id": 157926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/326/815120.jpg",
+      "name": "Gypsy Jigsaw",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-04",
+      "id": 157927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/327/818541.jpg",
+      "name": "Three Rivers to Cross",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-11",
+      "id": 157928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/409/1022804.jpg",
+      "name": "Roman Holiday",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-18",
+      "id": 157929,
+      "image": null,
+      "name": "Cross of Voodoo",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2000-11-25",
+      "id": 157930,
+      "image": null,
+      "name": "Lost Contact",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-13",
+      "id": 157931,
+      "image": null,
+      "name": "The Real Thing",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-01-20",
+      "id": 157932,
+      "image": null,
+      "name": "M.I.A.",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-03",
+      "id": 157933,
+      "image": null,
+      "name": "Out of the Past",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-10",
+      "id": 157934,
+      "image": null,
+      "name": "Eyes of Toklamanee",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-17",
+      "id": 157935,
+      "image": null,
+      "name": "Run Sydney Run",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-02-24",
+      "id": 157936,
+      "image": null,
+      "name": "French Connection",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-04-16",
+      "id": 157937,
+      "image": null,
+      "name": "Don't Go Into the Woods",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-04-23",
+      "id": 157938,
+      "image": null,
+      "name": "Midnight Flight",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-04-30",
+      "id": 157939,
+      "image": null,
+      "name": "The Executioner's Mask",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-07",
+      "id": 157940,
+      "image": null,
+      "name": "The Royal Ring",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-14",
+      "id": 157941,
+      "image": null,
+      "name": "Set in Stone",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-05-21",
+      "id": 157942,
+      "image": null,
+      "name": "Deadline",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2001-09-17",
+      "id": 157943,
+      "image": null,
+      "name": "Wages of Sydney",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-09-24",
+      "id": 157944,
+      "image": null,
+      "name": "Mr. Right",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-01",
+      "id": 157945,
+      "image": null,
+      "name": "Sydney at Ten",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-08",
+      "id": 157946,
+      "image": null,
+      "name": "The Light of Truth",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-15",
+      "id": 157947,
+      "image": null,
+      "name": "Treasure Island",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-22",
+      "id": 157948,
+      "image": null,
+      "name": "Star of Nadir",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-10-29",
+      "id": 157949,
+      "image": null,
+      "name": "Vampire's Kiss",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-05",
+      "id": 157950,
+      "image": null,
+      "name": "Devil Doll",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-12",
+      "id": 157951,
+      "image": null,
+      "name": "Incognito",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2001-11-19",
+      "id": 157952,
+      "image": null,
+      "name": "All Choked Up",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-14",
+      "id": 157953,
+      "image": null,
+      "name": "Warlock of Nu Theta Phi",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-21",
+      "id": 157954,
+      "image": null,
+      "name": "Women Want to Know",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-01-28",
+      "id": 157955,
+      "image": null,
+      "name": "Fire in the Sky",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-04",
+      "id": 157956,
+      "image": null,
+      "name": "Hunting with the Enemy",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-11",
+      "id": 157957,
+      "image": null,
+      "name": "Antianeiral",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-02-18",
+      "id": 157958,
+      "image": null,
+      "name": "Under the Ice",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-15",
+      "id": 157959,
+      "image": null,
+      "name": "Arthur's Cross",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-22",
+      "id": 157960,
+      "image": null,
+      "name": "Faux Fox",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-04-29",
+      "id": 157961,
+      "image": null,
+      "name": "Pandora's Box",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-06",
+      "id": 157962,
+      "image": null,
+      "name": "The Warlord",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-13",
+      "id": 157963,
+      "image": null,
+      "name": "Fountain of Youth",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2002-05-20",
+      "id": 157964,
+      "image": null,
+      "name": "So Shall It Be",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-1895",
+  "live": true,
+  "overview": "Tia Carrere stars as a university professor and black belt who globetrots after lost, stolen and rumored-of artifacts and antiquities.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/359/897755.jpg",
   "rating": 7.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1895",
+  "title": "Relic Hunter",
+  "type": "series",
+  "year": 1999
 }

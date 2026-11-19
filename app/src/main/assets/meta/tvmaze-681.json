@@ -1,22 +1,797 @@
 {
-  "schema": 1,
-  "id": "tvmaze-681",
-  "source": "tvmaze",
-  "sourceId": "681",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Pretender",
-  "year": 1996,
-  "type": "series",
-  "overview": "Jarod is a Pretender - a genius whose exceptional intelligence allows him to assume various identities at will, be it doctor, test pilot or lawyer. Taken from his parents at an early age, Jarod was brought up in the Centre, a think-tank facility where he believed his computer-like mind was being used to benefit mankind. But when he learned the simulations he solved were being sold to the highest-bidder no matter what their intent, Jarod escaped. Now on the run, Jarod embarks on a search for his true identity while also attempting to balance out any wrong his simulations have caused by helping people who are as powerless as he once was.",
-  "poster": "file:///android_asset/posters/tvmaze-681.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1996-09-19",
+      "id": 59844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317540.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-09-28",
+      "id": 59845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317557.jpg",
+      "name": "Every Picture Tells a Story",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-10-19",
+      "id": 59846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317565.jpg",
+      "name": "Flyer",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-10-26",
+      "id": 59847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317690.jpg",
+      "name": "Curious Jarod",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-02",
+      "id": 59848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317703.jpg",
+      "name": "The Paper Clock",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-09",
+      "id": 59849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317715.jpg",
+      "name": "To Serve and Protect",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-11-16",
+      "id": 59850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317735.jpg",
+      "name": "A Virus Among Us",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-12-14",
+      "id": 59851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317755.jpg",
+      "name": "Not Even a Mouse",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-04",
+      "id": 59852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317745.jpg",
+      "name": "Mirage",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-11",
+      "id": 59853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317750.jpg",
+      "name": "The Better Part of Valor",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-01-18",
+      "id": 59854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317757.jpg",
+      "name": "Bomb Squad",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-01",
+      "id": 59855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317768.jpg",
+      "name": "Prison Story",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-08",
+      "id": 59856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317805.jpg",
+      "name": "Bazooka Jarod",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-02-15",
+      "id": 59857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317788.jpg",
+      "name": "Ranger Jarod",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-03-08",
+      "id": 59858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317809.jpg",
+      "name": "Jaroldo!",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-03-22",
+      "id": 59859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317815.jpg",
+      "name": "Under the Reds",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-04-05",
+      "id": 59860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317827.jpg",
+      "name": "Keys",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-04-26",
+      "id": 59861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317833.jpg",
+      "name": "Unhappy Landings",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-03",
+      "id": 59862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317837.jpg",
+      "name": "Jarod's Honor",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-10",
+      "id": 59863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317844.jpg",
+      "name": "Baby Love",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-17",
+      "id": 59864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317853.jpg",
+      "name": "The Dragon House (1)",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-05-17",
+      "id": 59865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317856.jpg",
+      "name": "The Dragon House (2)",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1997-11-01",
+      "id": 59866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317917.jpg",
+      "name": "Back From the Dead Again",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-08",
+      "id": 59867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318120.jpg",
+      "name": "Scott Free",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-15",
+      "id": 59868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318121.jpg",
+      "name": "Over the Edge",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-11-22",
+      "id": 59869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318124.jpg",
+      "name": "Exposed",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-12-06",
+      "id": 59870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318147.jpg",
+      "name": "Nip and Tuck",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1997-12-13",
+      "id": 59871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318159.jpg",
+      "name": "Past Sim",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-03",
+      "id": 59872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318164.jpg",
+      "name": "Collateral Damage",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-10",
+      "id": 59873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318185.jpg",
+      "name": "Hazards",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-17",
+      "id": 59874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318207.jpg",
+      "name": "F/X",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-01-31",
+      "id": 59875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318222.jpg",
+      "name": "Indy Show",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-02-07",
+      "id": 59876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318246.jpg",
+      "name": "Gigolo Jarod",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-07",
+      "id": 59877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318253.jpg",
+      "name": "Toy Surprise",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-14",
+      "id": 59878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318260.jpg",
+      "name": "A Stand Up Guy",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-21",
+      "id": 59879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318268.jpg",
+      "name": "Unforgotten",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-03-28",
+      "id": 59880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318325.jpg",
+      "name": "Bulletproof",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-04-04",
+      "id": 59881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318647.jpg",
+      "name": "Silence",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-04-11",
+      "id": 59882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318648.jpg",
+      "name": "Crash",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-02",
+      "id": 59883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318652.jpg",
+      "name": "Stolen",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-02",
+      "id": 59884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318651.jpg",
+      "name": "Red Rock Jarod",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-09",
+      "id": 59885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318659.jpg",
+      "name": "Bank",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-16",
+      "id": 59886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318664.jpg",
+      "name": "Bloodlines (1)",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-05-16",
+      "id": 59887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318667.jpg",
+      "name": "Bloodlines (2)",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1998-10-17",
+      "id": 59888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318677.jpg",
+      "name": "Crazy",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-24",
+      "id": 59889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318687.jpg",
+      "name": "Hope and Prey",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-10-31",
+      "id": 59890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318759.jpg",
+      "name": "Once in a Blue Moon",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-11-07",
+      "id": 59891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318762.jpg",
+      "name": "Someone to Trust",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-11-14",
+      "id": 59892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319606.jpg",
+      "name": "Betrayal",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-11-21",
+      "id": 59893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319622.jpg",
+      "name": "Parole",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-12-12",
+      "id": 59894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319628.jpg",
+      "name": "Homefront",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-01-02",
+      "id": 59895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319629.jpg",
+      "name": "Flesh and Blood",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-01-09",
+      "id": 59896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319631.jpg",
+      "name": "Murder 101",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-06",
+      "id": 59897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319637.jpg",
+      "name": "Mr. Lee",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-06",
+      "id": 59898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319641.jpg",
+      "name": "The Assassin",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-13",
+      "id": 59899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319645.jpg",
+      "name": "Unsinkable",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-20",
+      "id": 59900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319653.jpg",
+      "name": "Pool",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-02-27",
+      "id": 59901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319650.jpg",
+      "name": "At the Hour of Our Death",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-03-20",
+      "id": 59902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319655.jpg",
+      "name": "Countdown",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-03",
+      "id": 59903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319657.jpg",
+      "name": "P.T.B.",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-04-10",
+      "id": 59904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319658.jpg",
+      "name": "Ties That Bind",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-01",
+      "id": 59905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319666.jpg",
+      "name": "Wake Up",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-08",
+      "id": 59906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319668.jpg",
+      "name": "End Game",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-22",
+      "id": 59907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318704.jpg",
+      "name": "Qallupilluit",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-22",
+      "id": 59908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319672.jpg",
+      "name": "DoNotErase (1)",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-05-22",
+      "id": 59909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319673.jpg",
+      "name": "DoNotErase (2)",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1999-09-25",
+      "id": 59910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319676.jpg",
+      "name": "The World's Changing",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-10-02",
+      "id": 59911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319687.jpg",
+      "name": "Survival",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-10-30",
+      "id": 59912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319695.jpg",
+      "name": "Angel's Flight",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-11-06",
+      "id": 59913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319734.jpg",
+      "name": "Risque Business",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-11-13",
+      "id": 59914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319742.jpg",
+      "name": "Road Trip",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-12-04",
+      "id": 59915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319748.jpg",
+      "name": "Extreme",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-12-11",
+      "id": 59916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319757.jpg",
+      "name": "Wild Child",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-01-08",
+      "id": 59917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319761.jpg",
+      "name": "Rules of Engagement",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-01-15",
+      "id": 59918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319764.jpg",
+      "name": "'Til Death Do Us Part",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-02-05",
+      "id": 59919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319766.jpg",
+      "name": "Spin Doctor",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-02-12",
+      "id": 59920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319885.jpg",
+      "name": "Cold Dick",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-02-19",
+      "id": 59921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319887.jpg",
+      "name": "Lifeline",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-02-26",
+      "id": 59922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319890.jpg",
+      "name": "Ghosts From the Past",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-03-11",
+      "id": 59923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319891.jpg",
+      "name": "The Agent of Year Zero",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-03-25",
+      "id": 59924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319893.jpg",
+      "name": "Junk",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-04-22",
+      "id": 59925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319901.jpg",
+      "name": "School Daze",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-04-29",
+      "id": 59926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319902.jpg",
+      "name": "Meltdown",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-05-06",
+      "id": 59927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319903.jpg",
+      "name": "Corn Man A Comin",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-05-13",
+      "id": 59928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319912.jpg",
+      "name": "The Inner Sense (1)",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2000-05-13",
+      "id": 59929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319916.jpg",
+      "name": "The Inner Sense (2)",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Mystery"
   ],
+  "id": "tvmaze-681",
+  "live": true,
+  "overview": "Jarod is a Pretender - a genius whose exceptional intelligence allows him to assume various identities at will, be it doctor, test pilot or lawyer. Taken from his parents at an early age, Jarod was brought up in the Centre, a think-tank facility where he believed his computer-like mind was being used to benefit mankind. But when he learned the simulations he solved were being sold to the highest-bidder no matter what their intent, Jarod escaped. Now on the run, Jarod embarks on a search for his true identity while also attempting to balance out any wrong his simulations have caused by helping people who are as powerless as he once was.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/5/14846.jpg",
   "rating": 7.3,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "681",
+  "title": "The Pretender",
+  "type": "series",
+  "year": 1996
 }

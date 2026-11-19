@@ -1,22 +1,293 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2427",
-  "source": "tvmaze",
-  "sourceId": "2427",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Ash vs Evil Dead",
-  "year": 2015,
-  "type": "series",
-  "overview": "Ash is back in Ash vs Evil Dead! 30 years after his last fight, Ash Williams unleashes the Evil in an act of carelessness, bringing Deadite mayhem into his life again. Bruce Campbell will be reprising his role as Ash, the stock boy, aging lothario and chainsaw-handed monster hunter who has spent the last 30 years avoiding responsibility, maturity and the terrors of the Evil Dead. When a Deadite plague threatens to destroy all of mankind, Ash is finally forced to face his demons - personal and literal. Destiny, it turns out, has no plans to release the unlikely hero from its \"Evil\" grip.",
-  "poster": "file:///android_asset/posters/tvmaze-2427.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-10-31",
+      "id": 185034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/20/52347.jpg",
+      "name": "El Jefe",
+      "number": 1,
+      "runtime": 43,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-07",
+      "id": 215532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/71670.jpg",
+      "name": "Bait",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-14",
+      "id": 215533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/75987.jpg",
+      "name": "Books from Beyond",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-21",
+      "id": 215534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78218.jpg",
+      "name": "Brujo",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-28",
+      "id": 215535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81010.jpg",
+      "name": "The Host",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-05",
+      "id": 215536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83523.jpg",
+      "name": "The Killer of Killers",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-12",
+      "id": 215537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84698.jpg",
+      "name": "Fire in the Hole",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-19",
+      "id": 215538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/88613.jpg",
+      "name": "Ashes to Ashes",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-26",
+      "id": 215539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/36/91096.jpg",
+      "name": "Bound in Flesh",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-02",
+      "id": 405939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/37/93508.jpg",
+      "name": "The Dark One",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-02",
+      "id": 813788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/193764.jpg",
+      "name": "Home",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-09",
+      "id": 902825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/197443.jpg",
+      "name": "The Morgue",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-16",
+      "id": 902826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200634.jpg",
+      "name": "Last Call",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-23",
+      "id": 902827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/203828.jpg",
+      "name": "DUI",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-30",
+      "id": 902828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/206624.jpg",
+      "name": "Confinement",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-06",
+      "id": 902829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208796.jpg",
+      "name": "Trapped Inside",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-13",
+      "id": 902830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211205.jpg",
+      "name": "Delusion",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 902831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213501.jpg",
+      "name": "Ashy Slashy",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 902832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219086.jpg",
+      "name": "Home Again",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-11",
+      "id": 902833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/219860.jpg",
+      "name": "Second Coming",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2018-02-25",
+      "id": 1325539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/367546.jpg",
+      "name": "Family",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-04",
+      "id": 1388296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/367563.jpg",
+      "name": "Booth Three",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-11",
+      "id": 1388297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/369221.jpg",
+      "name": "Apparently Dead",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-18",
+      "id": 1401442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/148/371484.jpg",
+      "name": "Unfinished Business",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-03-25",
+      "id": 1401443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/149/373691.jpg",
+      "name": "Baby Proof",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-01",
+      "id": 1407865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/147/369806.jpg",
+      "name": "Tales from the Rift",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-08",
+      "id": 1410583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/380128.jpg",
+      "name": "Twist and Shout",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-15",
+      "id": 1416178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/382081.jpg",
+      "name": "Rifting Apart",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-22",
+      "id": 1416179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/383542.jpg",
+      "name": "Judgement Day",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-29",
+      "id": 1419039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/384099.jpg",
+      "name": "The Mettle of Man",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
+    "Comedy",
     "Action",
     "Horror"
   ],
+  "id": "tvmaze-2427",
+  "live": true,
+  "overview": "Ash is back in Ash vs Evil Dead! 30 years after his last fight, Ash Williams unleashes the Evil in an act of carelessness, bringing Deadite mayhem into his life again. Bruce Campbell will be reprising his role as Ash, the stock boy, aging lothario and chainsaw-handed monster hunter who has spent the last 30 years avoiding responsibility, maturity and the terrors of the Evil Dead. When a Deadite plague threatens to destroy all of mankind, Ash is finally forced to face his demons - personal and literal. Destiny, it turns out, has no plans to release the unlikely hero from its \"Evil\" grip.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/145/363490.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2427",
+  "title": "Ash vs Evil Dead",
+  "type": "series",
+  "year": 2015
 }

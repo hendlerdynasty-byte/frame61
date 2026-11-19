@@ -1,21 +1,346 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2757",
-  "source": "tvmaze",
-  "sourceId": "2757",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Colony",
-  "year": 2016,
-  "type": "series",
-  "overview": "Colony is a naturalistic drama about a family that's torn by opposing forces and makes difficult decisions as its members balance staying together with surviving the struggle of the human race. Set in the near future, the story takes place in Los Angeles, which exists in a state of occupation by a force of outside intruders. Some people choose to collaborate with the authorities and benefit from the new order, while others rebel and suffer the consequences. Josh Holloway stars in Colony as Will Bowman a former FBI agent who — in a bid to protect his family — is forced to collaborate with the occupational government to bring down the growing resistance movement inside the L.A. colony. Sarah Wayne Callies co-stars as Katie Bowman, Will's wife and a mother of three who struggles daily to keep her family safe and united in an occupied Los Angeles.",
-  "poster": "file:///android_asset/posters/tvmaze-2757.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-01-14",
+      "id": 204058,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/100979.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-21",
+      "id": 544587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213098.jpg",
+      "name": "A Brave New World",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-28",
+      "id": 544588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215491.jpg",
+      "name": "98 Seconds",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-04",
+      "id": 544589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218407.jpg",
+      "name": "Blind Spot",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-11",
+      "id": 544590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220811.jpg",
+      "name": "Geronimo",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-18",
+      "id": 544591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/223184.jpg",
+      "name": "Yoknapatawpha",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-25",
+      "id": 557564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/90/227137.jpg",
+      "name": "Broussard",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-03",
+      "id": 557565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/91/227955.jpg",
+      "name": "In from the Cold",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-10",
+      "id": 557566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230641.jpg",
+      "name": "Zero Day",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-17",
+      "id": 557567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/232970.jpg",
+      "name": "Gateway",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-01-12",
+      "id": 990688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235897.jpg",
+      "name": "Eleven.Thirteen",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-19",
+      "id": 1009725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235259.jpg",
+      "name": "Somewhere Out There",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1022415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/237716.jpg",
+      "name": "Sublimation",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-02",
+      "id": 1046366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241086.jpg",
+      "name": "Panopticon",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-09",
+      "id": 1046367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243813.jpg",
+      "name": "Company Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-16",
+      "id": 1046368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247052.jpg",
+      "name": "Fallout",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-23",
+      "id": 1046369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249489.jpg",
+      "name": "Free Radicals",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-02",
+      "id": 1058394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251502.jpg",
+      "name": "Good Intentions",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-09",
+      "id": 1058395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/253816.jpg",
+      "name": "Taman Shud",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-16",
+      "id": 1058396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256183.jpg",
+      "name": "The Garden of Beasts",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-23",
+      "id": 1076573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258859.jpg",
+      "name": "Lost Boy",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-30",
+      "id": 1035957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262027.jpg",
+      "name": "Seppuku",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-06",
+      "id": 1076574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/264581.jpg",
+      "name": "Ronin",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-02",
+      "id": 1430242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386715.jpg",
+      "name": "Maquis",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-09",
+      "id": 1441375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/388128.jpg",
+      "name": "Puzzle Man",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-16",
+      "id": 1441376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389804.jpg",
+      "name": "Sierra Maestra",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-23",
+      "id": 1441377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391345.jpg",
+      "name": "Hospitium",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-30",
+      "id": 1441378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/392687.jpg",
+      "name": "End of the Road",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-06",
+      "id": 1441379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/394408.jpg",
+      "name": "The Emerald City",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-13",
+      "id": 1467768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396242.jpg",
+      "name": "A Clean, Well-Lighted Place",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-20",
+      "id": 1467769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/397400.jpg",
+      "name": "Lazarus",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-27",
+      "id": 1467770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/398807.jpg",
+      "name": "The Big Empty",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-04",
+      "id": 1478637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400142.jpg",
+      "name": "Sea Spray",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-11",
+      "id": 1478638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401765.jpg",
+      "name": "Disposable Heroes",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-18",
+      "id": 1478639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/404187.jpg",
+      "name": "Bonzo",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-25",
+      "id": 1478640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405986.jpg",
+      "name": "What Goes Around",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction"
   ],
+  "id": "tvmaze-2757",
+  "live": true,
+  "overview": "Colony is a naturalistic drama about a family that's torn by opposing forces and makes difficult decisions as its members balance staying together with surviving the struggle of the human race. Set in the near future, the story takes place in Los Angeles, which exists in a state of occupation by a force of outside intruders. Some people choose to collaborate with the authorities and benefit from the new order, while others rebel and suffer the consequences. Josh Holloway stars in Colony as Will Bowman a former FBI agent who — in a bid to protect his family — is forced to collaborate with the occupational government to bring down the growing resistance movement inside the L.A. colony. Sarah Wayne Callies co-stars as Katie Bowman, Will's wife and a mother of three who struggles daily to keep her family safe and united in an occupied Los Angeles.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/156/391152.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2757",
+  "title": "Colony",
+  "type": "series",
+  "year": 2016
 }

@@ -1,22 +1,536 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2114",
-  "source": "tvmaze",
-  "sourceId": "2114",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Quantico",
-  "year": 2015,
-  "type": "series",
-  "overview": "Quantico is about a diverse group of recruits that have arrived at the FBI Quantico Base for training. They are the best, the brightest and the most vetted, so it seems impossible that one of them is suspected of masterminding the biggest attack on New York City since 9/11.",
-  "poster": "file:///android_asset/posters/tvmaze-2114.jpg",
-  "genres": [
-    "Krimi",
-    "Mystery",
-    "Spionage"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-09-27",
+      "id": 167671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112998.jpg",
+      "name": "Run",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-04",
+      "id": 209150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113000.jpg",
+      "name": "America",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-11",
+      "id": 209151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113001.jpg",
+      "name": "Cover",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-18",
+      "id": 209152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169459.jpg",
+      "name": "Kill",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-25",
+      "id": 267348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118338.jpg",
+      "name": "Found",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-01",
+      "id": 365300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120407.jpg",
+      "name": "God",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-08",
+      "id": 394067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169460.jpg",
+      "name": "Go",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-15",
+      "id": 401013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122908.jpg",
+      "name": "Over",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-29",
+      "id": 453268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124987.jpg",
+      "name": "Guilty",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-06",
+      "id": 461951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/127976.jpg",
+      "name": "Quantico",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-13",
+      "id": 461952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130141.jpg",
+      "name": "Inside",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-06",
+      "id": 471071,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/53/132580.jpg",
+      "name": "Alex",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-13",
+      "id": 622526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/164244.jpg",
+      "name": "Clear",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-20",
+      "id": 622527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167489.jpg",
+      "name": "Answer",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-27",
+      "id": 637934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169420.jpg",
+      "name": "Turn",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-03",
+      "id": 637935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169421.jpg",
+      "name": "Clue",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-10",
+      "id": 645711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169422.jpg",
+      "name": "Care",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-17",
+      "id": 677838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169424.jpg",
+      "name": "Soon",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-24",
+      "id": 677839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169426.jpg",
+      "name": "Fast",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-01",
+      "id": 677840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169428.jpg",
+      "name": "Drive",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-08",
+      "id": 677841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169430.jpg",
+      "name": "Right",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-15",
+      "id": 677842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169432.jpg",
+      "name": "Yes",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-09-25",
+      "id": 848256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199988.jpg",
+      "name": "KUDOVE",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-02",
+      "id": 900035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199990.jpg",
+      "name": "LIPSTICK",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-16",
+      "id": 900036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199998.jpg",
+      "name": "STESCALADE",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-23",
+      "id": 899912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205596.jpg",
+      "name": "KUBARK",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-30",
+      "id": 952778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/208350.jpg",
+      "name": "KMFORGET",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-06",
+      "id": 961276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/210769.jpg",
+      "name": "AQUILINE",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-13",
+      "id": 971906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/210770.jpg",
+      "name": "LCFLUTTER",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 980929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215305.jpg",
+      "name": "ODENVY",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-23",
+      "id": 999284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236759.jpg",
+      "name": "CLEOPATRA",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-30",
+      "id": 1039957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239463.jpg",
+      "name": "JMPALM",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-06",
+      "id": 1048218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/242812.jpg",
+      "name": "ZRTORCH",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-13",
+      "id": 1055616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/245807.jpg",
+      "name": "FALLENORACLE",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-20",
+      "id": 1056989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/248580.jpg",
+      "name": "EPICSHELTER",
+      "number": 13,
+      "runtime": 59,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-20",
+      "id": 1079047,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/258081.jpg",
+      "name": "LNWILT",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-27",
+      "id": 1093455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261565.jpg",
+      "name": "MOCKINGBIRD",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-03",
+      "id": 1099034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/263461.jpg",
+      "name": "MKTOPAZ",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-10",
+      "id": 1109741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269127.jpg",
+      "name": "ODYOKE",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-17",
+      "id": 1118296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/269396.jpg",
+      "name": "KUMONK",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-24",
+      "id": 1127396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/272186.jpg",
+      "name": "MHORDER",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-01",
+      "id": 1127397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/275266.jpg",
+      "name": "GLOBALREACH",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-08",
+      "id": 1127398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278098.jpg",
+      "name": "RAINBOW",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-15",
+      "id": 1127399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/280378.jpg",
+      "name": "RESISTANCE",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-04-26",
+      "id": 1386575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/385658.jpg",
+      "name": "The Conscience Code",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-03",
+      "id": 1362625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/387130.jpg",
+      "name": "Fear and Flesh",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-10",
+      "id": 1362626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/388687.jpg",
+      "name": "Hell's Gate",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-25",
+      "id": 1414929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/391814.jpg",
+      "name": "Spy Games",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-01",
+      "id": 1414930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/393459.jpg",
+      "name": "The Blood of Romeo",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-15",
+      "id": 1414931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396788.jpg",
+      "name": "Heaven's Fall",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-22",
+      "id": 1414926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/398147.jpg",
+      "name": "Bullet Train",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-29",
+      "id": 1414927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399407.jpg",
+      "name": "Deep Cover",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-06",
+      "id": 1414928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400791.jpg",
+      "name": "Fear Feargach",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-13",
+      "id": 1427148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/161/402784.jpg",
+      "name": "No Place Is Home",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-20",
+      "id": 1427149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401620.jpg",
+      "name": "The Art of War",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1427150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/401621.jpg",
+      "name": "Ghosts",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-08-03",
+      "id": 1427151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/409012.jpg",
+      "name": "Who Are You?",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Crime",
+    "Mystery",
+    "Espionage"
+  ],
+  "id": "tvmaze-2114",
+  "live": true,
+  "overview": "Quantico is about a diverse group of recruits that have arrived at the FBI Quantico Base for training. They are the best, the brightest and the most vetted, so it seems impossible that one of them is suspected of masterminding the biggest attack on New York City since 9/11.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/14/35887.jpg",
   "rating": 6.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2114",
+  "title": "Quantico",
+  "type": "series",
+  "year": 2015
 }

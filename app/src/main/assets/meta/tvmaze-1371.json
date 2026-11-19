@@ -1,22 +1,347 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1371",
-  "source": "tvmaze",
-  "sourceId": "1371",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Westworld",
-  "year": 2016,
-  "type": "series",
-  "overview": "Westworld is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
-  "poster": "file:///android_asset/posters/tvmaze-1371.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-10-02",
+      "id": 869671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195475.jpg",
+      "name": "The Original",
+      "number": 1,
+      "runtime": 68,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-09",
+      "id": 911201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195436.jpg",
+      "name": "Chestnut",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-16",
+      "id": 911204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198183.jpg",
+      "name": "The Stray",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-23",
+      "id": 911205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/201367.jpg",
+      "name": "Dissonance Theory",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-10-30",
+      "id": 927174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204265.jpg",
+      "name": "Contrapasso",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-06",
+      "id": 932057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/207324.jpg",
+      "name": "The Adversary",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-13",
+      "id": 938404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/209400.jpg",
+      "name": "Trompe L'Oeil",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-20",
+      "id": 943065,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/211554.jpg",
+      "name": "Trace Decay",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-11-27",
+      "id": 943066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/85/213932.jpg",
+      "name": "The Well-Tempered Clavier",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-12-04",
+      "id": 943067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216453.jpg",
+      "name": "The Bicameral Mind",
+      "number": 10,
+      "runtime": 90,
+      "season": 1
+    },
+    {
+      "airdate": "2018-04-22",
+      "id": 1214222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/152/381118.jpg",
+      "name": "Journey Into Night",
+      "number": 1,
+      "runtime": 74,
+      "season": 2
+    },
+    {
+      "airdate": "2018-04-29",
+      "id": 1440915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/153/382957.jpg",
+      "name": "Reunion",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-06",
+      "id": 1440916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386069.jpg",
+      "name": "Virtù e Fortuna",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-13",
+      "id": 1440917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/387630.jpg",
+      "name": "The Riddle of the Sphinx",
+      "number": 4,
+      "runtime": 71,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-20",
+      "id": 1446362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/155/389365.jpg",
+      "name": "Akane No Mai",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-05-27",
+      "id": 1453278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/390990.jpg",
+      "name": "Phase Space",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-06-03",
+      "id": 1459961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/156/392143.jpg",
+      "name": "Les Écorchés",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-06-10",
+      "id": 1459788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/157/393811.jpg",
+      "name": "Kiksuya",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-06-17",
+      "id": 1459789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/395754.jpg",
+      "name": "Vanishing Point",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-06-24",
+      "id": 1459790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/397018.jpg",
+      "name": "The Passenger",
+      "number": 10,
+      "runtime": 90,
+      "season": 2
+    },
+    {
+      "airdate": "2020-03-15",
+      "id": 1789333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/615760.jpg",
+      "name": "Parce Domine",
+      "number": 1,
+      "runtime": 70,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-22",
+      "id": 1800146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/619379.jpg",
+      "name": "The Winter Line",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-03-29",
+      "id": 1800147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/619381.jpg",
+      "name": "The Absence of Field",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-05",
+      "id": 1800148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/623071.jpg",
+      "name": "The Mother of Exiles",
+      "number": 4,
+      "runtime": 70,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-12",
+      "id": 1800149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/251/629355.jpg",
+      "name": "Genre",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-19",
+      "id": 1829375,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/632212.jpg",
+      "name": "Decoherence",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1800151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/254/635599.jpg",
+      "name": "Passed Pawn",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2020-05-03",
+      "id": 1800152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/254/635189.jpg",
+      "name": "Crisis Theory",
+      "number": 8,
+      "runtime": 75,
+      "season": 3
+    },
+    {
+      "airdate": "2022-06-26",
+      "id": 2326389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/414/1035413.jpg",
+      "name": "The Auguries",
+      "number": 1,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2022-07-03",
+      "id": 2326655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/414/1036909.jpg",
+      "name": "Well Enough Alone",
+      "number": 2,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2022-07-10",
+      "id": 2326656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/415/1038520.jpg",
+      "name": "Années Folles",
+      "number": 3,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2022-07-17",
+      "id": 2326657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/415/1039531.jpg",
+      "name": "Generation Loss",
+      "number": 4,
+      "runtime": 51,
+      "season": 4
+    },
+    {
+      "airdate": "2022-07-24",
+      "id": 2326658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/416/1042460.jpg",
+      "name": "Zhuangzi",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-07-31",
+      "id": 2326659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/417/1044302.jpg",
+      "name": "Fidelity",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-08-07",
+      "id": 2326660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/418/1045645.jpg",
+      "name": "Metanoia",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2022-08-14",
+      "id": 2326661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/418/1046925.jpg",
+      "name": "Que Será, Será",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Science-Fiction",
     "Western"
   ],
+  "id": "tvmaze-1371",
+  "live": true,
+  "overview": "Westworld is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113927.jpg",
   "rating": 8.2,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 63,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1371",
+  "title": "Westworld",
+  "type": "series",
+  "year": 2016
 }

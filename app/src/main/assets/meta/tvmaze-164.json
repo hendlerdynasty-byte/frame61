@@ -1,22 +1,365 @@
 {
-  "schema": 1,
-  "id": "tvmaze-164",
-  "source": "tvmaze",
-  "sourceId": "164",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Banshee",
-  "year": 2013,
-  "type": "series",
-  "overview": "Banshee stars Antony Starr as Lucas Hood, an ex-con and master thief who assumes the identity of the sheriff of Banshee, Pennsylvania, where he continues his criminal activities, even as he's hunted by the shadowy gangsters he betrayed years earlier.",
-  "poster": "file:///android_asset/posters/tvmaze-164.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-01-11",
+      "id": 11746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005116.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-01-18",
+      "id": 11747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005117.jpg",
+      "name": "The Rave",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-01-25",
+      "id": 11748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005118.jpg",
+      "name": "Meet the New Boss",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-01",
+      "id": 11749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005119.jpg",
+      "name": "Half Deaf Is Better Than All Dead",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-08",
+      "id": 11750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005120.jpg",
+      "name": "The Kindred",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-15",
+      "id": 11751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005121.jpg",
+      "name": "Wicks",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-22",
+      "id": 11752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005122.jpg",
+      "name": "Behold a Pale Rider",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 11753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005123.jpg",
+      "name": "We Shall Live Forever",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-08",
+      "id": 11754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005124.jpg",
+      "name": "Always the Cowboy",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-15",
+      "id": 11755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005125.jpg",
+      "name": "A Mixture of Madness",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-10",
+      "id": 11756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005126.jpg",
+      "name": "Little Fish",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-17",
+      "id": 11757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005127.jpg",
+      "name": "The Thunder Man",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-24",
+      "id": 11758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005128.jpg",
+      "name": "The Warrior Class",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-31",
+      "id": 11759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005129.jpg",
+      "name": "Bloodlines",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-07",
+      "id": 11760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005130.jpg",
+      "name": "The Truth About Unicorns",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 11761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005131.jpg",
+      "name": "Armies of One",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-21",
+      "id": 11762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005132.jpg",
+      "name": "Ways to Bury a Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-28",
+      "id": 11763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005133.jpg",
+      "name": "Evil for Evil",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 11764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005134.jpg",
+      "name": "Homecoming",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-14",
+      "id": 11765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005135.jpg",
+      "name": "Bullets and Tears",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-09",
+      "id": 92050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005136.jpg",
+      "name": "The Fire Trials",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-16",
+      "id": 96532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005137.jpg",
+      "name": "Snakes and Whatnot",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-23",
+      "id": 96533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005138.jpg",
+      "name": "A Fixer of Sorts",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-01-30",
+      "id": 96534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005139.jpg",
+      "name": "Real Life is the Nightmare",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-06",
+      "id": 117410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005140.jpg",
+      "name": "Tribal",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-13",
+      "id": 122723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005141.jpg",
+      "name": "We Were All Someone Else Yesterday",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-20",
+      "id": 128600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005142.jpg",
+      "name": "You Can't Hide from the Dead",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 128601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005143.jpg",
+      "name": "All the Wisdom I Got Left",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-06",
+      "id": 141516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005144.jpg",
+      "name": "Even God Doesn't Know What to Make of You",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-13",
+      "id": 141517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005145.jpg",
+      "name": "We All Pay Eventually",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-01",
+      "id": 355603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005152.jpg",
+      "name": "Something Out of the Bible",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-08",
+      "id": 355623,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005146.jpg",
+      "name": "The Burden of Beauty",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-15",
+      "id": 355624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005147.jpg",
+      "name": "The Book of Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-22",
+      "id": 936563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190301.jpg",
+      "name": "Innocent Might Be a Bit of a Stretch",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-29",
+      "id": 355625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005148.jpg",
+      "name": "A Little Late to Grow a Pair",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-06",
+      "id": 355626,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005149.jpg",
+      "name": "Only One Way a Dogfight Ends",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-13",
+      "id": 355627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005151.jpg",
+      "name": "Truths Other Than the Ones You Tell Yourself",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-05-20",
+      "id": 355639,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1005150.jpg",
+      "name": "Requiem",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-164",
+  "live": true,
+  "overview": "Banshee stars Antony Starr as Lucas Hood, an ex-con and master thief who assumes the identity of the sheriff of Banshee, Pennsylvania, where he continues his criminal activities, even as he's hunted by the shadowy gangsters he betrayed years earlier.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/504/1260183.jpg",
   "rating": 8.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "164",
+  "title": "Banshee",
+  "type": "series",
+  "year": 2013
 }

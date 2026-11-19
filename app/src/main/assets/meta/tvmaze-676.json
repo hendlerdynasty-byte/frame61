@@ -1,22 +1,869 @@
 {
-  "schema": 1,
-  "id": "tvmaze-676",
-  "source": "tvmaze",
-  "sourceId": "676",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Sex and the City",
-  "year": 1998,
-  "type": "series",
-  "overview": "A candid, comic view of sex and relationships, Sex and the City stars Sarah Jessica Parker as Carrie Bradshaw, a New York-based writer who explores and experiences the unique world of Manhattan's dating scene, chronicling the mating habits of single New Yorkers. Executive produced by Michael Patrick King, the series also stars cast regulars Kim Cattrall as PR executive Samantha Jones, who's seen -- and done -- it all; Kristin Davis as Charlotte York, still trying to hold on to the idea of happily ever after; and Cynthia Nixon as corporate lawyer and mother Miranda Hobbes, a pragmatist trying to balance the idea of love with the realities of life.",
-  "poster": "file:///android_asset/posters/tvmaze-676.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1998-06-06",
+      "id": 59493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306547.jpg",
+      "name": "Sex and the City",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-06-06",
+      "id": 59494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306548.jpg",
+      "name": "Models and Mortals",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-06-21",
+      "id": 59495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306550.jpg",
+      "name": "Bay of Married Pigs",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-06-28",
+      "id": 59496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306761.jpg",
+      "name": "Valley of the Twenty-Something Guys",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-07-05",
+      "id": 59497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306558.jpg",
+      "name": "The Power of Female Sex",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-07-12",
+      "id": 59498,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306559.jpg",
+      "name": "Secret Sex",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-07-19",
+      "id": 59499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306732.jpg",
+      "name": "The Monogamists",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-07-26",
+      "id": 59500,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306733.jpg",
+      "name": "Three's a Crowd",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-08-02",
+      "id": 59501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306735.jpg",
+      "name": "The Turtle and the Hare",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-08-09",
+      "id": 59502,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306736.jpg",
+      "name": "The Baby Shower",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-08-16",
+      "id": 59503,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306737.jpg",
+      "name": "The Drought",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1998-08-23",
+      "id": 59504,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306747.jpg",
+      "name": "Oh Come All Ye Faithful",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1999-06-06",
+      "id": 59505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306751.jpg",
+      "name": "Take Me Out to the Ballgame",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-06-13",
+      "id": 59506,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306759.jpg",
+      "name": "The Awful Truth",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-06-20",
+      "id": 59507,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306760.jpg",
+      "name": "The Freak Show",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-06-27",
+      "id": 59508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306762.jpg",
+      "name": "They Shoot Single People, Don't They?",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-07-04",
+      "id": 59509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306772.jpg",
+      "name": "Four Women and a Funeral",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-07-11",
+      "id": 59510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306773.jpg",
+      "name": "The Cheating Curve",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-07-18",
+      "id": 59511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306795.jpg",
+      "name": "The Chicken Dance",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-07-25",
+      "id": 59512,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306826.jpg",
+      "name": "The Man, The Myth, The Viagra",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-08-01",
+      "id": 59513,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306835.jpg",
+      "name": "Old Dogs, New Dicks",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-08-08",
+      "id": 59514,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306836.jpg",
+      "name": "The Caste System",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-08-15",
+      "id": 59515,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306871.jpg",
+      "name": "Evolution",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-08-22",
+      "id": 59516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306874.jpg",
+      "name": "La Douleur Exquise!",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-08-29",
+      "id": 59517,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306894.jpg",
+      "name": "Games People Play",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-09-05",
+      "id": 59518,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306896.jpg",
+      "name": "The Fuck Buddy",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-09-12",
+      "id": 59519,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306902.jpg",
+      "name": "Shortcomings",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-09-19",
+      "id": 59520,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306903.jpg",
+      "name": "Was It Good for You?",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-09-26",
+      "id": 59521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306922.jpg",
+      "name": "Twenty-Something Girls vs. Thirty-Something Women",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1999-10-03",
+      "id": 59522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306946.jpg",
+      "name": "Ex and the City",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2000-06-04",
+      "id": 59523,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307074.jpg",
+      "name": "Where's There's Smoke...",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-06-11",
+      "id": 59524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307075.jpg",
+      "name": "Politically Erect",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-06-18",
+      "id": 59525,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307090.jpg",
+      "name": "Attack of the Five Foot Ten Woman",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-06-25",
+      "id": 59526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307092.jpg",
+      "name": "Boy, Girl, Boy, Girl...",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-07-09",
+      "id": 59527,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307093.jpg",
+      "name": "No Ifs, Ands, or Butts",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-07-16",
+      "id": 59528,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307106.jpg",
+      "name": "Are We Sluts?",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-07-23",
+      "id": 59529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307129.jpg",
+      "name": "Drama Queens",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-07-30",
+      "id": 59530,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307149.jpg",
+      "name": "The Big Time",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-08-06",
+      "id": 59531,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307150.jpg",
+      "name": "Easy Come, Easy Go",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-08-13",
+      "id": 59532,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307152.jpg",
+      "name": "All or Nothing",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-08-20",
+      "id": 59533,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307153.jpg",
+      "name": "Running with Scissors",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-08-27",
+      "id": 59534,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307157.jpg",
+      "name": "Don't Ask, Don't Tell",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-09-10",
+      "id": 59535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307190.jpg",
+      "name": "Escape from New York",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-09-17",
+      "id": 59536,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307192.jpg",
+      "name": "Sex and Another City",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-09-24",
+      "id": 59537,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307196.jpg",
+      "name": "Hot Child in the City",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-10-01",
+      "id": 59538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307201.jpg",
+      "name": "Frenemies",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-10-08",
+      "id": 59539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307209.jpg",
+      "name": "What Goes Around Comes Around",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2000-10-15",
+      "id": 59540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307214.jpg",
+      "name": "Cock a Doodle Do!",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2001-06-03",
+      "id": 59541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307224.jpg",
+      "name": "The Agony and the 'Ex'-tacy",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-06-03",
+      "id": 59542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307225.jpg",
+      "name": "The Real Me",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-06-10",
+      "id": 59543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307226.jpg",
+      "name": "Defining Moments",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-06-17",
+      "id": 59544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307227.jpg",
+      "name": "What's Sex Got to Do with It?",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-06-24",
+      "id": 59545,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307326.jpg",
+      "name": "Ghost Town",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-07-01",
+      "id": 59546,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307329.jpg",
+      "name": "Baby, Talk is Cheap",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-07-08",
+      "id": 59547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307331.jpg",
+      "name": "Time and Punishment",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-07-15",
+      "id": 59548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307333.jpg",
+      "name": "My Motherboard, My Self",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-07-22",
+      "id": 59549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307334.jpg",
+      "name": "Sex and the Country",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-07-29",
+      "id": 59550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307337.jpg",
+      "name": "Belles of the Balls",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-08-05",
+      "id": 59551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307338.jpg",
+      "name": "Coulda, Woulda, Shoulda",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2001-08-12",
+      "id": 59552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307346.jpg",
+      "name": "Just Say Yes",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-01-06",
+      "id": 59553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307383.jpg",
+      "name": "The Good Fight",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-01-13",
+      "id": 59554,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307391.jpg",
+      "name": "All That Glitters...",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-01-20",
+      "id": 59555,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307395.jpg",
+      "name": "Change of a Dress",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-01-27",
+      "id": 59556,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307396.jpg",
+      "name": "Ring a Ding Ding",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-02-03",
+      "id": 59557,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307397.jpg",
+      "name": "A 'Vogue' Idea",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-02-10",
+      "id": 59558,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307401.jpg",
+      "name": "I Heart NY",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2002-07-21",
+      "id": 59559,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307449.jpg",
+      "name": "Anchors Away",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-07-28",
+      "id": 59560,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307451.jpg",
+      "name": "Unoriginal Sin",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-08-04",
+      "id": 59561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307468.jpg",
+      "name": "Luck Be an Old Lady",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-08-11",
+      "id": 59562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307470.jpg",
+      "name": "Cover Girl",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-08-18",
+      "id": 59563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307601.jpg",
+      "name": "Plus One is the Loneliest Number",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-08-25",
+      "id": 59564,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307604.jpg",
+      "name": "Critical Condition",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-09-01",
+      "id": 59565,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307618.jpg",
+      "name": "The Big Journey",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2002-09-08",
+      "id": 59566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307627.jpg",
+      "name": "I Love a Charade",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2003-06-22",
+      "id": 59567,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307724.jpg",
+      "name": "To Market, To Market",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-06-29",
+      "id": 59568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307742.jpg",
+      "name": "Great Sexpectations",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-07-06",
+      "id": 59569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307746.jpg",
+      "name": "The Perfect Present",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-07-13",
+      "id": 59570,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307747.jpg",
+      "name": "Pick-a-Little, Talk-a-Little",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-07-20",
+      "id": 59571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308824.jpg",
+      "name": "Lights, Camera, Relationship",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-07-27",
+      "id": 59572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308831.jpg",
+      "name": "Hop, Skip and a Week",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-08-03",
+      "id": 59573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308838.jpg",
+      "name": "The Post-It Always Sticks Twice",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-08-10",
+      "id": 59574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308842.jpg",
+      "name": "The Catch",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-08-17",
+      "id": 59575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308853.jpg",
+      "name": "A Woman's Right to Shoes",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-08-24",
+      "id": 59576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308854.jpg",
+      "name": "Boy, Interrupted",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-09-07",
+      "id": 59577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308889.jpg",
+      "name": "The Domino Effect",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2003-09-14",
+      "id": 59578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308891.jpg",
+      "name": "One",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-01-04",
+      "id": 59579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308989.jpg",
+      "name": "Let There Be Light",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-01-11",
+      "id": 59580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308991.jpg",
+      "name": "The Ick Factor",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-01-18",
+      "id": 59581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309019.jpg",
+      "name": "Catch-38",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-01-25",
+      "id": 59582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309020.jpg",
+      "name": "Out of the Frying Pan",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-02-01",
+      "id": 59583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309022.jpg",
+      "name": "The Cold War",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-02-08",
+      "id": 59584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309029.jpg",
+      "name": "Splat!",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-02-15",
+      "id": 59585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309036.jpg",
+      "name": "An American Girl in Paris (Part Une)",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2004-02-22",
+      "id": 59586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309037.jpg",
+      "name": "An American Girl in Paris (Part Deux)",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
-    "Romanze"
+    "Comedy",
+    "Romance"
   ],
+  "id": "tvmaze-676",
+  "live": true,
+  "overview": "A candid, comic view of sex and relationships, Sex and the City stars Sarah Jessica Parker as Carrie Bradshaw, a New York-based writer who explores and experiences the unique world of Manhattan's dating scene, chronicling the mating habits of single New Yorkers. Executive produced by Michael Patrick King, the series also stars cast regulars Kim Cattrall as PR executive Samantha Jones, who's seen -- and done -- it all; Kristin Davis as Charlotte York, still trying to hold on to the idea of happily ever after; and Cynthia Nixon as corporate lawyer and mother Miranda Hobbes, a pragmatist trying to balance the idea of love with the realities of life.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486658.jpg",
   "rating": 7,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "676",
+  "title": "Sex and the City",
+  "type": "series",
+  "year": 1998
 }

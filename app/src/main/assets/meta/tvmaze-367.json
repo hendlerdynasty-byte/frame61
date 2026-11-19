@@ -1,21 +1,589 @@
 {
-  "schema": 1,
-  "id": "tvmaze-367",
-  "source": "tvmaze",
-  "sourceId": "367",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Six Feet Under",
-  "year": 2001,
-  "type": "series",
-  "overview": "When death is your business, what is your life? For the Fisher family, the world outside of their family-owned funeral home continues to be at least as challenging as--and far less predictable than--the one inside on Six Feet Under.",
-  "poster": "file:///android_asset/posters/tvmaze-367.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-06-03",
+      "id": 34194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110000.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-06-10",
+      "id": 34195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110299.jpg",
+      "name": "The Will",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-06-17",
+      "id": 34196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110308.jpg",
+      "name": "The Foot",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-06-24",
+      "id": 34197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110579.jpg",
+      "name": "Familia",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-07-01",
+      "id": 34198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110906.jpg",
+      "name": "An Open Book",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-07-08",
+      "id": 34199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/112451.jpg",
+      "name": "The Room",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-07-15",
+      "id": 34200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112608.jpg",
+      "name": "Brotherhood",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-07-22",
+      "id": 34201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112748.jpg",
+      "name": "Crossroads",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-07-29",
+      "id": 34202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112947.jpg",
+      "name": "Life's Too Short",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-05",
+      "id": 34203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113396.jpg",
+      "name": "The New Person",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-12",
+      "id": 34204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113436.jpg",
+      "name": "The Trip",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-19",
+      "id": 34205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113767.jpg",
+      "name": "A Private Life",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2001-08-19",
+      "id": 34206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/113888.jpg",
+      "name": "Knock, Knock",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-03-03",
+      "id": 34207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114700.jpg",
+      "name": "In the Game",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-10",
+      "id": 34208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114926.jpg",
+      "name": "Out, Out, Brief Candle",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-17",
+      "id": 34209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115333.jpg",
+      "name": "The Plan",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-24",
+      "id": 34210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/115506.jpg",
+      "name": "Driving Mr. Mossback",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-31",
+      "id": 34211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/116574.jpg",
+      "name": "The Invisible Woman",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-07",
+      "id": 34212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/117196.jpg",
+      "name": "In Place of Anger",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-14",
+      "id": 34213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/117639.jpg",
+      "name": "Back to the Garden",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-21",
+      "id": 34214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118142.jpg",
+      "name": "It's the Most Wonderful Time of the Year",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-28",
+      "id": 34215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118324.jpg",
+      "name": "Someone Else's Eyes",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-05",
+      "id": 34216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118575.jpg",
+      "name": "The Secret",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-12",
+      "id": 34217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118717.jpg",
+      "name": "The Liar and the Whore",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-19",
+      "id": 34218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119471.jpg",
+      "name": "I'll Take You",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2002-06-02",
+      "id": 34219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118720.jpg",
+      "name": "The Last Time",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2003-03-02",
+      "id": 34220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/119869.jpg",
+      "name": "Perfect Circles",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-09",
+      "id": 34221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120594.jpg",
+      "name": "You Never Know",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-16",
+      "id": 34222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120549.jpg",
+      "name": "The Eye Inside",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-23",
+      "id": 34223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120550.jpg",
+      "name": "Nobody Sleeps",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-30",
+      "id": 34224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/120954.jpg",
+      "name": "The Trap",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-06",
+      "id": 34225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121393.jpg",
+      "name": "Making Love Work",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-13",
+      "id": 34226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121418.jpg",
+      "name": "Timing and Space",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-20",
+      "id": 34227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121596.jpg",
+      "name": "Tears, Bones and Desire",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-27",
+      "id": 34228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121727.jpg",
+      "name": "The Opening",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-04",
+      "id": 34229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/121810.jpg",
+      "name": "Everyone Leaves",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-11",
+      "id": 34230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/48/122078.jpg",
+      "name": "Death Works Overtime",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-18",
+      "id": 34231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122512.jpg",
+      "name": "Twilight",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2003-06-01",
+      "id": 34232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/122602.jpg",
+      "name": "I'm Sorry, I'm Lost",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2004-06-13",
+      "id": 34233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/123766.jpg",
+      "name": "Falling into Place",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-06-20",
+      "id": 34234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124090.jpg",
+      "name": "In Case of Rapture",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-06-27",
+      "id": 34235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124585.jpg",
+      "name": "Parallel Play",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-07-11",
+      "id": 34236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124768.jpg",
+      "name": "Can I Come Up Now?",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-07-18",
+      "id": 34237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/49/124965.jpg",
+      "name": "That's My Dog",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-07-25",
+      "id": 34238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125031.jpg",
+      "name": "Terror Starts at Home",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-08-01",
+      "id": 34239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125679.jpg",
+      "name": "The Dare",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-08-08",
+      "id": 34240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/125956.jpg",
+      "name": "Coming and Going",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-08-15",
+      "id": 34241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126282.jpg",
+      "name": "Grinding the Corn",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-08-22",
+      "id": 34242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126870.jpg",
+      "name": "The Black Forest",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-08-29",
+      "id": 34243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/126960.jpg",
+      "name": "Bomb Shelter",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-12",
+      "id": 34244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127371.jpg",
+      "name": "Untitled",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2005-06-06",
+      "id": 34245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/51/129588.jpg",
+      "name": "A Coat of White Primer",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-06-13",
+      "id": 34246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130200.jpg",
+      "name": "Dancing for Me",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-06-20",
+      "id": 34247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/130395.jpg",
+      "name": "Hold My Hand",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-06-27",
+      "id": 34248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/52/132370.jpg",
+      "name": "Time Flies",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-07-04",
+      "id": 34249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135135.jpg",
+      "name": "Eat a Peach",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-07-10",
+      "id": 34250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136503.jpg",
+      "name": "The Rainbow of Her Reasons",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-07-17",
+      "id": 34251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136583.jpg",
+      "name": "The Silence",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-07-24",
+      "id": 34252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136843.jpg",
+      "name": "Singing for Our Lives",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-07-31",
+      "id": 34253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/136938.jpg",
+      "name": "Ecotone",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-08-07",
+      "id": 34254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/137492.jpg",
+      "name": "All Alone",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-08-14",
+      "id": 34255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/137684.jpg",
+      "name": "Static",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2005-08-21",
+      "id": 34256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/137694.jpg",
+      "name": "Everyone's Waiting",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie"
+    "Comedy"
   ],
+  "id": "tvmaze-367",
+  "live": true,
+  "overview": "When death is your business, what is your life? For the Fisher family, the world outside of their family-owned funeral home continues to be at least as challenging as--and far less predictable than--the one inside on Six Feet Under.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5480.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "367",
+  "title": "Six Feet Under",
+  "type": "series",
+  "year": 2001
 }

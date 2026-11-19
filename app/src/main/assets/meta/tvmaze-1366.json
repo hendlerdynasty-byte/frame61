@@ -1,22 +1,257 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1366",
-  "source": "tvmaze",
-  "sourceId": "1366",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Fortitude",
-  "year": 2015,
-  "type": "series",
-  "overview": "Fortitude is a place like nowhere else. Although surrounded by the savage beauty of the Arctic landscape, Fortitude is one of the safest towns on earth. There has never been a violent crime here. Until now. In such a close-knit community a murder touches everyone and the unsettling, mysterious horror of this crime threatens the future of the town itself.",
-  "poster": "file:///android_asset/posters/tvmaze-1366.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-01-29",
+      "id": 117661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23091.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-29",
+      "id": 124070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23092.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-05",
+      "id": 128842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23093.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-12",
+      "id": 128938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23094.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 129562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23095.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-26",
+      "id": 140709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23096.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-05",
+      "id": 142311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23097.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-12",
+      "id": 142516,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23668.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-19",
+      "id": 144543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24112.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-26",
+      "id": 144544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24387.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-02",
+      "id": 151701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1436580.jpg",
+      "name": "Episode 11",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-09",
+      "id": 153394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25300.jpg",
+      "name": "Episode 12",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1017042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237478.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1019256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237469.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1019257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237470.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1019258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237471.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237472.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237473.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237474.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237475.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049589,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237476.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-26",
+      "id": 1049590,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237477.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-12-06",
+      "id": 1555610,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/440574.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-06",
+      "id": 1572616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441483.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-06",
+      "id": 1572617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441484.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-12-06",
+      "id": 1572618,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/443657.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Science-Fiction",
     "Thriller",
     "Mystery"
   ],
+  "id": "tvmaze-1366",
+  "live": true,
+  "overview": "Fortitude is a place like nowhere else. Although surrounded by the savage beauty of the Arctic landscape, Fortitude is one of the safest towns on earth. There has never been a violent crime here. Until now. In such a close-knit community a murder touches everyone and the unsettling, mysterious horror of this crime threatens the future of the town itself.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/7/19009.jpg",
   "rating": 7.6,
-  "runtime": null,
-  "episodes": []
+  "runtime": 60,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1366",
+  "title": "Fortitude",
+  "type": "series",
+  "year": 2015
 }

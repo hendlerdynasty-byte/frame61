@@ -1,22 +1,590 @@
 {
-  "schema": 1,
-  "id": "tvmaze-395",
-  "source": "tvmaze",
-  "sourceId": "395",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Longmire",
-  "year": 2012,
-  "type": "series",
-  "overview": "Longmire, a contemporary crime thriller set in Big Sky country, is based on the Walt Longmire Mystery novels by best-selling author Craig Johnson. It focuses on a Wyoming sheriff who's rebuilding his life and career following the death of his wife.",
-  "poster": "file:///android_asset/posters/tvmaze-395.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-06-03",
+      "id": 39013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184099.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 39014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184107.jpg",
+      "name": "The Dark Road",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-17",
+      "id": 39015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184111.jpg",
+      "name": "A Damn Shame",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-24",
+      "id": 39016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184114.jpg",
+      "name": "The Cancer",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-01",
+      "id": 39017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/185124.jpg",
+      "name": "Dog Soldier",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-08",
+      "id": 39018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/185125.jpg",
+      "name": "The Worst Kind of Hunter",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 39019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/186795.jpg",
+      "name": "8 Seconds",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 39020,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/186792.jpg",
+      "name": "An Incredibly Beautiful Thing",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 39021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190061.jpg",
+      "name": "Dogs, Horses, and Indians",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 39022,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190063.jpg",
+      "name": "Unfinished Business",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-27",
+      "id": 39023,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191205.jpg",
+      "name": "Unquiet Mind",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-03",
+      "id": 39024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191204.jpg",
+      "name": "Carcasses",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 39025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191201.jpg",
+      "name": "Death Came in Like Thunder",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 39026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191196.jpg",
+      "name": "The Road to Hell",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 39027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191186.jpg",
+      "name": "Party's Over",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 39028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191185.jpg",
+      "name": "Tell It Slant",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 39029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191184.jpg",
+      "name": "Sound and Fury",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 39030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191183.jpg",
+      "name": "The Great Spirit",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 39031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191182.jpg",
+      "name": "Tuscan Red",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 39032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191181.jpg",
+      "name": "Election Day",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-12",
+      "id": 39033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/197/494458.jpg",
+      "name": "Natural Order",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-19",
+      "id": 39034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191177.jpg",
+      "name": "A Good Death is Hard to Find",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-26",
+      "id": 39035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191176.jpg",
+      "name": "Bad Medicine",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-02",
+      "id": 39036,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191207.jpg",
+      "name": "The White Warrior",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-09",
+      "id": 39037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191208.jpg",
+      "name": "Of Children and Travelers",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 39038,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191215.jpg",
+      "name": "Miss Cheyenne",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 39039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191217.jpg",
+      "name": "In the Pines",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 39040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191226.jpg",
+      "name": "Wanted Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 39041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191227.jpg",
+      "name": "Reports of My Death",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 39042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191231.jpg",
+      "name": "Population 25",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 39043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191241.jpg",
+      "name": "Harvest",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 39044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191252.jpg",
+      "name": "Counting Coup",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 39045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191267.jpg",
+      "name": "Ashes to Ashes",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191268.jpg",
+      "name": "Down by the River",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191273.jpg",
+      "name": "War Eagle",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191274.jpg",
+      "name": "High Noon",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191275.jpg",
+      "name": "Four Arrows",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191276.jpg",
+      "name": "Help Wanted",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191277.jpg",
+      "name": "The Calling Back",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191278.jpg",
+      "name": "Highway Robbery",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191281.jpg",
+      "name": "Hector Lives",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191282.jpg",
+      "name": "Shotgun",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-09-10",
+      "id": 215583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191288.jpg",
+      "name": "What Happens on the Rez...",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 412933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190383.jpg",
+      "name": "A Fog That Won't Lift",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190693.jpg",
+      "name": "One Good Memory",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190573.jpg",
+      "name": "Chrysalis",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190572.jpg",
+      "name": "The Judas Wolf",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190571.jpg",
+      "name": "Pure Peckinpah",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190568.jpg",
+      "name": "Objection",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190567.jpg",
+      "name": "From This Day Forward",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190566.jpg",
+      "name": "Stand Your Ground",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190565.jpg",
+      "name": "Continual Soiree",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-23",
+      "id": 921553,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190564.jpg",
+      "name": "The Stuff Dreams Are Made Of",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1329894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362070.jpg",
+      "name": "The Eagle and the Osprey",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362113.jpg",
+      "name": "Fever",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362117.jpg",
+      "name": "Thank You, Victoria",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362407.jpg",
+      "name": "A Thing I'll Never Understand",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362453.jpg",
+      "name": "Burned Up My Tears",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/362475.jpg",
+      "name": "No Greater Character Endorsement",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/362502.jpg",
+      "name": "Opiates and Antibiotics",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/362712.jpg",
+      "name": "Cowboy Bill",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/362724.jpg",
+      "name": "Running Eagle Challenge",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-11-17",
+      "id": 1357256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/145/362741.jpg",
+      "name": "Goodbye is Always Implied",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Thriller",
     "Western"
   ],
+  "id": "tvmaze-395",
+  "live": true,
+  "overview": "Longmire, a contemporary crime thriller set in Big Sky country, is based on the Walt Longmire Mystery novels by best-selling author Craig Johnson. It focuses on a Wyoming sheriff who's rebuilding his life and career following the death of his wife.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/74/186713.jpg",
   "rating": 8.3,
-  "runtime": null,
-  "episodes": []
+  "runtime": 60,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "395",
+  "title": "Longmire",
+  "type": "series",
+  "year": 2012
 }

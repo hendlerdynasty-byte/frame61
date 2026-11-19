@@ -1,22 +1,266 @@
 {
-  "schema": 1,
-  "id": "tvmaze-16",
-  "source": "tvmaze",
-  "sourceId": "16",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Penny Dreadful",
-  "year": 2014,
-  "type": "series",
-  "overview": "Some of literature's most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined by a core of original characters in a complex, frightening new narrative. Penny Dreadful is a psychological thriller filled with dark mystery and suspense, where personal demons from the past can be stronger than vampires, evil spirits and immortal beasts.",
-  "poster": "file:///android_asset/posters/tvmaze-16.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-05-11",
+      "id": 601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1427230.jpg",
+      "name": "Night Work",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135783.jpg",
+      "name": "Séance",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-25",
+      "id": 603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135784.jpg",
+      "name": "Resurrection",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 604,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135785.jpg",
+      "name": "Demimonde",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135796.jpg",
+      "name": "Closer than Sisters",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135786.jpg",
+      "name": "What Death Can Join Together",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135787.jpg",
+      "name": "Possession",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/54/135788.jpg",
+      "name": "Grand Guignol",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 128866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139332.jpg",
+      "name": "Fresh Hell",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 153332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139333.jpg",
+      "name": "Verbis Diablo",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-17",
+      "id": 153333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139335.jpg",
+      "name": "The Nightcomers",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-24",
+      "id": 153334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139337.jpg",
+      "name": "Evil Spirits in Heavenly Places",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-31",
+      "id": 153335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139338.jpg",
+      "name": "Above the Vaulted Sky",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-07",
+      "id": 155600,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139339.jpg",
+      "name": "Glorious Horrors",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-14",
+      "id": 155601,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139345.jpg",
+      "name": "Little Scorpion",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-21",
+      "id": 155602,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139341.jpg",
+      "name": "Memento Mori",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-28",
+      "id": 155603,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139343.jpg",
+      "name": "And Hell Itself My Only Foe",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-05",
+      "id": 162070,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139344.jpg",
+      "name": "And They Were Enemies",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-01",
+      "id": 568407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141454.jpg",
+      "name": "The Day Tennyson Died",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-08",
+      "id": 697015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/141461.jpg",
+      "name": "Predators Far and Near",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-15",
+      "id": 697016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143298.jpg",
+      "name": "Good and Evil Braided Be",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-22",
+      "id": 697017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145934.jpg",
+      "name": "A Blade of Grass",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-29",
+      "id": 697018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/145735.jpg",
+      "name": "This World Is Our Hell",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-05",
+      "id": 766193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/152969.jpg",
+      "name": "No Beast So Fierce",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-12",
+      "id": 766194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155040.jpg",
+      "name": "Ebb Tide",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-19",
+      "id": 766195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157865.jpg",
+      "name": "Perpetual Night",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-19",
+      "id": 766196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157881.jpg",
+      "name": "The Blessed Dark",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Horror",
     "Thriller",
-    "Übernatürlich"
+    "Supernatural"
   ],
+  "id": "tvmaze-16",
+  "live": true,
+  "overview": "Some of literature's most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined by a core of original characters in a complex, frightening new narrative. Penny Dreadful is a psychological thriller filled with dark mystery and suspense, where personal demons from the past can be stronger than vampires, evil spirits and immortal beasts.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/48/122260.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "16",
+  "title": "Penny Dreadful",
+  "type": "series",
+  "year": 2014
 }

@@ -1,21 +1,922 @@
 {
-  "schema": 1,
-  "id": "tvmaze-564",
-  "source": "tvmaze",
-  "sourceId": "564",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Nip/Tuck",
-  "year": 2003,
-  "type": "series",
-  "overview": "Two plastic surgeons who are close friends and business partners, own an overwhelmingly successful plastic surgery practice and attempt to bring inner peace and visceral contentment to their patients through external cosmetic procedures. Although their clients aspire to cover up their pain, it is the surgeons who truly wear the masks of anguish and unhappiness, sadness and disillusionment. For more than two decades, they have shared a love for the same woman, who despite being married to one, has loved both. And at midlife, the doctors question the prosperity that has brought them so much -- and has offered so little.",
-  "poster": "file:///android_asset/posters/tvmaze-564.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2003-07-22",
+      "id": 52914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767560.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-07-29",
+      "id": 52915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767561.jpg",
+      "name": "Mandi/Randi",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-08-05",
+      "id": 52916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767562.jpg",
+      "name": "Nanette Babcock",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-08-12",
+      "id": 52917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767563.jpg",
+      "name": "Sofia Lopez",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-08-19",
+      "id": 52918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767564.jpg",
+      "name": "Kurt Dempsey",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-02",
+      "id": 52919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767565.jpg",
+      "name": "Megan O'Hara",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-09",
+      "id": 52920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767566.jpg",
+      "name": "Cliff Mantegna",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-16",
+      "id": 52921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767567.jpg",
+      "name": "Cara Fitzgerald",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-23",
+      "id": 52922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767568.jpg",
+      "name": "Sofia Lopez II",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-09-30",
+      "id": 52923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767569.jpg",
+      "name": "Adelle Coffin",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-07",
+      "id": 52924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767570.jpg",
+      "name": "Montana/Sassy/Justice",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-14",
+      "id": 52925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767571.jpg",
+      "name": "Antonia Ramos",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2003-10-21",
+      "id": 52926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767572.jpg",
+      "name": "Escobar Gallardo",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-06-22",
+      "id": 52927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767573.jpg",
+      "name": "Erica Noughton",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-06-29",
+      "id": 52928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767574.jpg",
+      "name": "Christian Troy",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-07-06",
+      "id": 52929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767575.jpg",
+      "name": "Manya Mabika",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-07-13",
+      "id": 52930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767576.jpg",
+      "name": "Mrs. Grubman",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-07-20",
+      "id": 52931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767577.jpg",
+      "name": "Joel Gideon",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-07-27",
+      "id": 52932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767578.jpg",
+      "name": "Bobbi Broderick",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-08-03",
+      "id": 52933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767579.jpg",
+      "name": "Naomi Gaines",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-08-10",
+      "id": 52934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767580.jpg",
+      "name": "Agatha Ripp",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-08-17",
+      "id": 52935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767581.jpg",
+      "name": "Rose & Raven Rosenberg",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-08-24",
+      "id": 52936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767582.jpg",
+      "name": "Kimber Henry",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-08-31",
+      "id": 52937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767583.jpg",
+      "name": "Natasha Charles",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-07",
+      "id": 52938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767584.jpg",
+      "name": "Julia McNamara",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-14",
+      "id": 52939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767585.jpg",
+      "name": "Oona Wentworth",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-21",
+      "id": 52940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767586.jpg",
+      "name": "Trudy Nye",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-09-28",
+      "id": 52941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767587.jpg",
+      "name": "Sean McNamara",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2004-10-05",
+      "id": 52942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767588.jpg",
+      "name": "Joan Rivers",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-09-20",
+      "id": 52943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767589.jpg",
+      "name": "Momma Boone",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-09-27",
+      "id": 52944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767590.jpg",
+      "name": "Kiki",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-04",
+      "id": 52945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767591.jpg",
+      "name": "Derek, Alex, and Gary",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-11",
+      "id": 52946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767592.jpg",
+      "name": "Rhea Reynolds",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-18",
+      "id": 52947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767593.jpg",
+      "name": "Granville Trapp",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-25",
+      "id": 52948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767594.jpg",
+      "name": "Frankenlaura",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-01",
+      "id": 52949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767595.jpg",
+      "name": "Ben White",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-08",
+      "id": 52950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767596.jpg",
+      "name": "Tommy Bolton",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-15",
+      "id": 52951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767597.jpg",
+      "name": "Hannah Tedesco",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-22",
+      "id": 52952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767598.jpg",
+      "name": "Madison Berg",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-11-29",
+      "id": 52953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767599.jpg",
+      "name": "Abby Mays",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-06",
+      "id": 52954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767600.jpg",
+      "name": "Sal Perri",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-13",
+      "id": 52955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767601.jpg",
+      "name": "Joy Kringle",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-20",
+      "id": 52956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767602.jpg",
+      "name": "Cherry Peck",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2005-12-20",
+      "id": 52957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767603.jpg",
+      "name": "Quentin Costa",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-09-05",
+      "id": 52958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767604.jpg",
+      "name": "Cindy Plumb",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-12",
+      "id": 52959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767605.jpg",
+      "name": "Blu Mondae",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-19",
+      "id": 52960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767606.jpg",
+      "name": "Monica Wilder",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-09-26",
+      "id": 52961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767607.jpg",
+      "name": "Shari Noble",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-03",
+      "id": 52962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767608.jpg",
+      "name": "Dawn Budge",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 52963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767609.jpg",
+      "name": "Faith Wolper, Ph.D",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 52964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767610.jpg",
+      "name": "Burt Landau",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 52965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767611.jpg",
+      "name": "Conor McNamara",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-10-31",
+      "id": 52966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767612.jpg",
+      "name": "Liz Cruz",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-07",
+      "id": 52967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767613.jpg",
+      "name": "Merrill Bobolit",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-14",
+      "id": 52968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767614.jpg",
+      "name": "Conor McNamara, 2026",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-21",
+      "id": 52969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767615.jpg",
+      "name": "Diana Lubey",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 52970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767616.jpg",
+      "name": "Reefer",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-05",
+      "id": 52971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767617.jpg",
+      "name": "Willy Ward",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2006-12-12",
+      "id": 52972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767618.jpg",
+      "name": "Gala Gallardo",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2007-10-30",
+      "id": 52973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767619.jpg",
+      "name": "Carly Summers",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-06",
+      "id": 52974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767620.jpg",
+      "name": "Joyce & Sharon Monroe",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-13",
+      "id": 52975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767621.jpg",
+      "name": "Everett Poe",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-20",
+      "id": 52976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767622.jpg",
+      "name": "Dawn Budge II",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-11-27",
+      "id": 52977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767623.jpg",
+      "name": "Chaz Darling",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-12-04",
+      "id": 52978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767624.jpg",
+      "name": "Damien Sands",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-12-11",
+      "id": 52979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767625.jpg",
+      "name": "Dr. Joshua Lee",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2007-12-18",
+      "id": 52980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767626.jpg",
+      "name": "Duke Collins",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-15",
+      "id": 52981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767627.jpg",
+      "name": "Rachel Ben Natan",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-22",
+      "id": 52982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767628.jpg",
+      "name": "Magda & Jeff",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-01-29",
+      "id": 52983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767629.jpg",
+      "name": "Kyle Ainge",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-05",
+      "id": 52984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767630.jpg",
+      "name": "Lulu Grandiron",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-12",
+      "id": 52985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767631.jpg",
+      "name": "August Walden",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2008-02-19",
+      "id": 52986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767632.jpg",
+      "name": "Candy Richards",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-06",
+      "id": 52987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767633.jpg",
+      "name": "Ronnie Chase",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-13",
+      "id": 52988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767634.jpg",
+      "name": "Gene Shelly",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 52989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767635.jpg",
+      "name": "Roxy St. James",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-03",
+      "id": 52990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767636.jpg",
+      "name": "Ricky Wells",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 52991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767637.jpg",
+      "name": "Manny Skerritt",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 52992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767638.jpg",
+      "name": "Budi Sabri",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-02-24",
+      "id": 52993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767639.jpg",
+      "name": "Allegra Calderello",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-03-03",
+      "id": 52994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767640.jpg",
+      "name": "Giselle Blaylock & Legend Chandler",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2009-10-14",
+      "id": 52995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767642.jpg",
+      "name": "Don Hoberman",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-21",
+      "id": 52996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767643.jpg",
+      "name": "Enigma",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-10-28",
+      "id": 52997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767644.jpg",
+      "name": "Briggitte Reinholt",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-04",
+      "id": 52998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767645.jpg",
+      "name": "Jenny Juggs",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-11",
+      "id": 52999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767646.jpg",
+      "name": "Abigail Sullivan",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-18",
+      "id": 53000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767647.jpg",
+      "name": "Alexis Stone",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-11-25",
+      "id": 53001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767648.jpg",
+      "name": "Alexis Stone II",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-12-02",
+      "id": 53002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767649.jpg",
+      "name": "Lola Wlodkowski",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-12-09",
+      "id": 53003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767650.jpg",
+      "name": "Benny Nilsson",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2009-12-16",
+      "id": 53004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767651.jpg",
+      "name": "Wesley Clovis",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-06",
+      "id": 53005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767652.jpg",
+      "name": "Dan Daly",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-13",
+      "id": 53006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767653.jpg",
+      "name": "Willow Banks",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-20",
+      "id": 53007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767654.jpg",
+      "name": "Joel Seabrook",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-01-27",
+      "id": 53008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767655.jpg",
+      "name": "Sheila Carlton",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-03",
+      "id": 53009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767656.jpg",
+      "name": "Virginia Hayes",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-10",
+      "id": 53010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767657.jpg",
+      "name": "Dr. Griffin",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-17",
+      "id": 53011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767658.jpg",
+      "name": "Christian Troy II",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-02-24",
+      "id": 53012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767659.jpg",
+      "name": "Edith and Walter Krieger",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2010-03-03",
+      "id": 53013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/767660.jpg",
+      "name": "Hiro Yoshimura",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Medical"
   ],
+  "id": "tvmaze-564",
+  "live": true,
+  "overview": "Two plastic surgeons who are close friends and business partners, own an overwhelmingly successful plastic surgery practice and attempt to bring inner peace and visceral contentment to their patients through external cosmetic procedures. Although their clients aspire to cover up their pain, it is the surgeons who truly wear the masks of anguish and unhappiness, sadness and disillusionment. For more than two decades, they have shared a love for the same woman, who despite being married to one, has loved both. And at midlife, the doctors question the prosperity that has brought them so much -- and has offered so little.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11715.jpg",
   "rating": 7.8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "564",
+  "title": "Nip/Tuck",
+  "type": "series",
+  "year": 2003
 }

@@ -1,21 +1,346 @@
 {
-  "schema": 1,
-  "id": "tvmaze-840",
-  "source": "tvmaze",
-  "sourceId": "840",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Treme",
-  "year": 2010,
-  "type": "series",
-  "overview": "New Orleans, 38 months after Hurricane Katrina: Barack Obama has just been elected to the White House, giving this battered, majority-black city reason for optimism. Yet for every entrenched resident who hopes to improve his or her lot - or just return to a sense of pre-Katrina normalcy - others are intent on capitalizing on the city's vulnerability and suffocating its culture.",
-  "poster": "file:///android_asset/posters/tvmaze-840.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-04-11",
+      "id": 78209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433254.jpg",
+      "name": "Do You Know What It Means?",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-18",
+      "id": 78210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433255.jpg",
+      "name": "Meet De Boys on the Battlefront",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-25",
+      "id": 78211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433256.jpg",
+      "name": "Right Place, Wrong Time",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-02",
+      "id": 78212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433257.jpg",
+      "name": "At the Foot of Canal Street",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-09",
+      "id": 78213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433258.jpg",
+      "name": "Shame, Shame, Shame",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-16",
+      "id": 78214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433259.jpg",
+      "name": "Shallow Water, Oh Mama",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-23",
+      "id": 78215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433260.jpg",
+      "name": "Smoke My Peace Pipe",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-06",
+      "id": 78216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433261.jpg",
+      "name": "All on a Mardi Gras Day",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-13",
+      "id": 78217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433262.jpg",
+      "name": "Wish Someone Would Care",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-20",
+      "id": 78218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433263.jpg",
+      "name": "I'll Fly Away",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-24",
+      "id": 78219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433264.jpg",
+      "name": "Accentuate the Positive",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 78220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433266.jpg",
+      "name": "Everything I Do Gonh Be Funky",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 78221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433267.jpg",
+      "name": "On Your Way Down",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 78222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433268.jpg",
+      "name": "Santa Claus, Do You Ever Get the Blues?",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 78223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433283.jpg",
+      "name": "Slip Away",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-29",
+      "id": 78224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433284.jpg",
+      "name": "Feels Like Rain",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 78225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433295.jpg",
+      "name": "Carnival Time",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 78226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433289.jpg",
+      "name": "Can I Change My Mind?",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 78227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433291.jpg",
+      "name": "What is New Orleans?",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 78228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433293.jpg",
+      "name": "That's What Lovers Do",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-03",
+      "id": 78229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433294.jpg",
+      "name": "Do Watcha Wanna",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-23",
+      "id": 78230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433307.jpg",
+      "name": "Knock with Me - Rock with Me",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-30",
+      "id": 78231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433308.jpg",
+      "name": "Saints",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-07",
+      "id": 78232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433309.jpg",
+      "name": "Me Donkey Want Water",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-14",
+      "id": 78233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433310.jpg",
+      "name": "The Greatest Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-21",
+      "id": 78234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433311.jpg",
+      "name": "I Thought I Heard Buddy Bolden Say",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-28",
+      "id": 78235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433312.jpg",
+      "name": "Careless Love",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-04",
+      "id": 78236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433313.jpg",
+      "name": "Promised Land",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-11",
+      "id": 78237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433314.jpg",
+      "name": "Don't You Leave Me Here",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-18",
+      "id": 78238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433315.jpg",
+      "name": "Poor Man's Paradise",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 78239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433316.jpg",
+      "name": "Tipitina",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-12-01",
+      "id": 78240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433317.jpg",
+      "name": "Yes We Can Can",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-08",
+      "id": 78241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433318.jpg",
+      "name": "This City",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-15",
+      "id": 78242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433319.jpg",
+      "name": "Dippermouth Blues",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-22",
+      "id": 78243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433320.jpg",
+      "name": "Sunset on Louisianne",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-29",
+      "id": 78244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/173/433321.jpg",
+      "name": "…To Miss New Orleans",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Musik"
+    "Music"
   ],
+  "id": "tvmaze-840",
+  "live": true,
+  "overview": "New Orleans, 38 months after Hurricane Katrina: Barack Obama has just been elected to the White House, giving this battered, majority-black city reason for optimism. Yet for every entrenched resident who hopes to improve his or her lot - or just return to a sense of pre-Katrina normalcy - others are intent on capitalizing on the city's vulnerability and suffocating its culture.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/173/433306.jpg",
   "rating": 7.7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "840",
+  "title": "Treme",
+  "type": "series",
+  "year": 2010
 }

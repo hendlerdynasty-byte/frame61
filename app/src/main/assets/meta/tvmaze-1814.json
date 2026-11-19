@@ -1,22 +1,419 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1814",
-  "source": "tvmaze",
-  "sourceId": "1814",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Doctor Blake Mysteries",
-  "year": 2013,
-  "type": "series",
-  "overview": "Doctor Lucien Blake returns to Ballarat to once again solve a series of strange and baffling murders, only to find change is afoot, nothing is sacred, and no one is safe.",
-  "poster": "file:///android_asset/posters/tvmaze-1814.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-02-01",
+      "id": 154980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284426.jpg",
+      "name": "Still Waters",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-08",
+      "id": 154981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284438.jpg",
+      "name": "The Greater Good",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-15",
+      "id": 154982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284439.jpg",
+      "name": "Death of a Travelling Salesman",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-22",
+      "id": 154983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284440.jpg",
+      "name": "Brotherly Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-01",
+      "id": 154984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284441.jpg",
+      "name": "Hearts and Flowers",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-08",
+      "id": 154985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284442.jpg",
+      "name": "If the Shoe Fits",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-15",
+      "id": 154986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284443.jpg",
+      "name": "Bedlam",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-22",
+      "id": 154987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284444.jpg",
+      "name": "Game of Champions",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-29",
+      "id": 154988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284445.jpg",
+      "name": "All That Glitters",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-05",
+      "id": 154989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284446.jpg",
+      "name": "Someone's Son, Someone's Daughter",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-07",
+      "id": 154990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284447.jpg",
+      "name": "The Heart of the Matter",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-14",
+      "id": 154991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284448.jpg",
+      "name": "The Food of Love",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-21",
+      "id": 154992,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284449.jpg",
+      "name": "A Foreign Field",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-28",
+      "id": 154993,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284450.jpg",
+      "name": "Smoke and Mirrors",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 154994,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284451.jpg",
+      "name": "Crossing the Line",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-14",
+      "id": 154995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284452.jpg",
+      "name": "Mortal Coil",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-21",
+      "id": 154996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284453.jpg",
+      "name": "The Silence",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-28",
+      "id": 154997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284454.jpg",
+      "name": "The Ties of the Past",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-04",
+      "id": 154998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284455.jpg",
+      "name": "The Sky is Empty",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-11",
+      "id": 154999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284456.jpg",
+      "name": "An Invincible Summer",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-13",
+      "id": 155000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284457.jpg",
+      "name": "King of the Lake",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-20",
+      "id": 155001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284458.jpg",
+      "name": "My Brother's Keeper",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 155002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284459.jpg",
+      "name": "This Time and This Place",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-06",
+      "id": 155003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284460.jpg",
+      "name": "By the Southern Cross",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-13",
+      "id": 155004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284461.jpg",
+      "name": "A Night to Remember",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-20",
+      "id": 155005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284462.jpg",
+      "name": "Women and Children",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-27",
+      "id": 155006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284463.jpg",
+      "name": "Room Without a View",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-03",
+      "id": 155007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284464.jpg",
+      "name": "Darkness Visible",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-05",
+      "id": 566355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284465.jpg",
+      "name": "The Open Road",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-12",
+      "id": 566356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284466.jpg",
+      "name": "Golden Years",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-19",
+      "id": 604744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284467.jpg",
+      "name": "Lucky Numbers",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-26",
+      "id": 614067,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284468.jpg",
+      "name": "Against the Odds",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-04",
+      "id": 623509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284469.jpg",
+      "name": "The Price of Love",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-11",
+      "id": 632388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284470.jpg",
+      "name": "A Difficult Lie",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-18",
+      "id": 638051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284471.jpg",
+      "name": "For Whom the Bell Tolls",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-03-25",
+      "id": 650583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284472.jpg",
+      "name": "The Visible World",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-17",
+      "id": 1282167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325467.jpg",
+      "name": "A Lethal Combination",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-09-24",
+      "id": 1292591,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325466.jpg",
+      "name": "Sorrow Songs",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-01",
+      "id": 1308521,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325465.jpg",
+      "name": "The Call of the Void",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-08",
+      "id": 1315672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325468.jpg",
+      "name": "All She Leaves Behind",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-15",
+      "id": 1327467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344294.jpg",
+      "name": "Measure Twice",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-22",
+      "id": 1328857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/327534.jpg",
+      "name": "First Dance",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-10-29",
+      "id": 1333337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/336206.jpg",
+      "name": "A Good Drop",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-11-05",
+      "id": 1339679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331624.jpg",
+      "name": "Hear the Angels Sing",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-1814",
+  "live": true,
+  "overview": "Doctor Lucien Blake returns to Ballarat to once again solve a series of strange and baffling murders, only to find change is afoot, nothing is sacred, and no one is safe.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/113/284395.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1814",
+  "title": "The Doctor Blake Mysteries",
+  "type": "series",
+  "year": 2013
 }

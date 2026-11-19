@@ -1,22 +1,779 @@
 {
-  "schema": 1,
-  "id": "tvmaze-825",
-  "source": "tvmaze",
-  "sourceId": "825",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Knight Rider",
-  "year": 1982,
-  "type": "series",
-  "overview": "The series follows the thrilling adventures of Michael Knight, a detective thought to be dead, who's been given a new face and identity. His assignment: to fight crime with the help of an artificially intelligent, talking car named K.I.T.T., a high-speed, futuristic weapon outfitted with high-tech gadgets and a personality of its own. Driven by justice, they set out to take down criminals who operate above the law.",
-  "poster": "file:///android_asset/posters/tvmaze-825.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1982-09-26",
+      "id": 74136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204056.jpg",
+      "name": "Knight of the Phoenix",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-01",
+      "id": 74138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323018.jpg",
+      "name": "Deadly Maneuvers",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-08",
+      "id": 74139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323019.jpg",
+      "name": "Good Day at White Rock",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-22",
+      "id": 74140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323021.jpg",
+      "name": "Slammin' Sammy's Stunt Show Spectacular",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-10-29",
+      "id": 74141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323022.jpg",
+      "name": "Just My Bill",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-05",
+      "id": 74142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323026.jpg",
+      "name": "Not a Drop to Drink",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-12",
+      "id": 74143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323028.jpg",
+      "name": "No Big Thing",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-19",
+      "id": 74144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323030.jpg",
+      "name": "Trust Doesn't Rust",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-11-26",
+      "id": 74145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323031.jpg",
+      "name": "Inside Out",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-03",
+      "id": 74146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323127.jpg",
+      "name": "The Final Verdict",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-10",
+      "id": 74147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323133.jpg",
+      "name": "A Plush Ride",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1982-12-17",
+      "id": 74148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323135.jpg",
+      "name": "Forget Me Not",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-14",
+      "id": 74149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323161.jpg",
+      "name": "Hearts of Stone",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-21",
+      "id": 74150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323162.jpg",
+      "name": "Give Me Liberty... or Give Me Death",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-01-28",
+      "id": 74151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323165.jpg",
+      "name": "The Topaz Connection",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-02-18",
+      "id": 74152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323173.jpg",
+      "name": "A Nice, Indecent Little Town",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-02-25",
+      "id": 74153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323179.jpg",
+      "name": "Chariot of Gold",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-03-04",
+      "id": 74154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323187.jpg",
+      "name": "White Bird",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-03-11",
+      "id": 74155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323203.jpg",
+      "name": "Knight Moves",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-04-29",
+      "id": 74156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323206.jpg",
+      "name": "Nobody Does It Better",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-05-06",
+      "id": 74157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323207.jpg",
+      "name": "Short Notice",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1983-10-02",
+      "id": 74158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323247.jpg",
+      "name": "Goliath",
+      "number": 1,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-09",
+      "id": 74160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323261.jpg",
+      "name": "Brother's Keeper",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-16",
+      "id": 74161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323355.jpg",
+      "name": "Merchants of Death",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-23",
+      "id": 74162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323366.jpg",
+      "name": "Blind Spot",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-10-30",
+      "id": 74163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323372.jpg",
+      "name": "Return to Cadiz",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-06",
+      "id": 74164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323376.jpg",
+      "name": "K.I.T.T. the Cat",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-13",
+      "id": 74165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323378.jpg",
+      "name": "Custom K.I.T.T.",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-11-27",
+      "id": 74166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323382.jpg",
+      "name": "Soul Survivor",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-04",
+      "id": 74167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323450.jpg",
+      "name": "Ring of Fire",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-11",
+      "id": 74168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323493.jpg",
+      "name": "Knightmares",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1983-12-18",
+      "id": 74169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323512.jpg",
+      "name": "Silent Knight",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-08",
+      "id": 74170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323610.jpg",
+      "name": "A Knight in Shining Armor",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-15",
+      "id": 74171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323612.jpg",
+      "name": "Diamonds Aren't A Girl's Best Friend",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-01-29",
+      "id": 74172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323613.jpg",
+      "name": "White-Line Warriors",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-05",
+      "id": 74173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323659.jpg",
+      "name": "Race For Life",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-12",
+      "id": 74174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323690.jpg",
+      "name": "Speed Demons",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-02-19",
+      "id": 74175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323692.jpg",
+      "name": "Goliath Returns",
+      "number": 17,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1984-03-04",
+      "id": 74177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323697.jpg",
+      "name": "A Good Knight's Work",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-04-08",
+      "id": 74178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323703.jpg",
+      "name": "Mouth of the Snake [a.k.a. All That Glitters]",
+      "number": 19,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "1984-05-13",
+      "id": 74180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323710.jpg",
+      "name": "Let It Be Me",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-05-27",
+      "id": 74181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323712.jpg",
+      "name": "Big Iron",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1984-09-30",
+      "id": 74182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323719.jpg",
+      "name": "Knight of the Drones",
+      "number": 1,
+      "runtime": 120,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-07",
+      "id": 74184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323737.jpg",
+      "name": "The Ice Bandits",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-14",
+      "id": 74185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323739.jpg",
+      "name": "Knights of the Fast Lane",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-10-28",
+      "id": 74186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323802.jpg",
+      "name": "Halloween Knight",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-04",
+      "id": 74187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323803.jpg",
+      "name": "K.I.T.T. vs. K.A.R.R.",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-11",
+      "id": 74188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323805.jpg",
+      "name": "The Rotten Apples",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-11-18",
+      "id": 74189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323806.jpg",
+      "name": "Knight in Disgrace",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-02",
+      "id": 74190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323807.jpg",
+      "name": "Dead of Knight",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-09",
+      "id": 74191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323811.jpg",
+      "name": "Lost Knight",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1984-12-30",
+      "id": 74192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1323813.jpg",
+      "name": "Knight of the Chameleon",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-06",
+      "id": 74193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324022.jpg",
+      "name": "Custom Made Killer",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-01-13",
+      "id": 74194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324025.jpg",
+      "name": "Knight by a Nose",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-03",
+      "id": 74195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324030.jpg",
+      "name": "Junk Yard Dog",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-02-10",
+      "id": 74196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324037.jpg",
+      "name": "Buy Out",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-03",
+      "id": 74197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324068.jpg",
+      "name": "Knightlines",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-10",
+      "id": 74198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324071.jpg",
+      "name": "The Nineteenth Hole",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-17",
+      "id": 74199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324093.jpg",
+      "name": "Knight and Knerd",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-24",
+      "id": 74200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324101.jpg",
+      "name": "Ten Wheel Trouble",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-03-29",
+      "id": 74201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324113.jpg",
+      "name": "Knight in Retreat",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-04-05",
+      "id": 74202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324123.jpg",
+      "name": "Knight Strike",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-05-05",
+      "id": 74203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324128.jpg",
+      "name": "Circus Knights",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1985-09-20",
+      "id": 74204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324314.jpg",
+      "name": "Knight of the Juggernaut",
+      "number": 1,
+      "runtime": 120,
+      "season": 4
+    },
+    {
+      "airdate": "1985-09-27",
+      "id": 74206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324324.jpg",
+      "name": "KITTnap",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-18",
+      "id": 74207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324326.jpg",
+      "name": "Sky Knight",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-10-25",
+      "id": 74208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324327.jpg",
+      "name": "Burial Ground",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-01",
+      "id": 74209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324328.jpg",
+      "name": "The Wrong Crowd",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-08",
+      "id": 74210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324331.jpg",
+      "name": "Knight Sting",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-15",
+      "id": 74211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324347.jpg",
+      "name": "Many Happy Returns",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-11-29",
+      "id": 74212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324412.jpg",
+      "name": "Knight Racer",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-06",
+      "id": 74213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324425.jpg",
+      "name": "Knight Behind Bars",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1985-12-13",
+      "id": 74214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324435.jpg",
+      "name": "Knight Song",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-03",
+      "id": 74215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324438.jpg",
+      "name": "The Scent of Roses",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-10",
+      "id": 74216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324590.jpg",
+      "name": "Killer K.I.T.T.",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-17",
+      "id": 74217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324591.jpg",
+      "name": "Out of the Woods",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-24",
+      "id": 74218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324593.jpg",
+      "name": "Deadly Knightshade",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-01-31",
+      "id": 74219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324600.jpg",
+      "name": "Redemption of a Champion",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-07",
+      "id": 74220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324606.jpg",
+      "name": "Knight of a Thousand Devils",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-14",
+      "id": 74221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324628.jpg",
+      "name": "Hills of Fire",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-02-21",
+      "id": 74222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324636.jpg",
+      "name": "Knight Flight to Freedom",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-07",
+      "id": 74223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324641.jpg",
+      "name": "Fright Knight",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-03-14",
+      "id": 74224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324642.jpg",
+      "name": "Knight of the Rising Sun",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1986-04-04",
+      "id": 74225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/529/1324644.jpg",
+      "name": "Voo Doo Knight",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-825",
+  "live": true,
+  "overview": "The series follows the thrilling adventures of Michael Knight, a detective thought to be dead, who's been given a new face and identity. His assignment: to fight crime with the help of an artificially intelligent, talking car named K.I.T.T., a high-speed, futuristic weapon outfitted with high-tech gadgets and a personality of its own. Driven by justice, they set out to take down criminals who operate above the law.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15722.jpg",
   "rating": 7.6,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 63,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "825",
+  "title": "Knight Rider",
+  "type": "series",
+  "year": 1982
 }

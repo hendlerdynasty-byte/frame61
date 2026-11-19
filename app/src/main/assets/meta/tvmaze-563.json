@@ -1,22 +1,1220 @@
 {
-  "schema": 1,
-  "id": "tvmaze-563",
-  "source": "tvmaze",
-  "sourceId": "563",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Star Wars: The Clone Wars",
-  "year": 2008,
-  "type": "series",
-  "overview": "The Clone Wars television series chronicles the events taking place during Star Wars Episode II: Attack of the Clones and Star Wars Episode III: Revenge of the Sith. The Clone Wars will ultimately lead to the downfall of the Jedi and the rise of the Galactic Empire.",
-  "poster": "file:///android_asset/posters/tvmaze-563.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-10-03",
+      "id": 52788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871464.jpg",
+      "name": "Ambush",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-03",
+      "id": 52789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/266/665977.jpg",
+      "name": "Rising Malevolence",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-10",
+      "id": 52790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871465.jpg",
+      "name": "Shadow Malevolence",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-17",
+      "id": 52791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871466.jpg",
+      "name": "Destroy Malevolence",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-10-24",
+      "id": 52792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871467.jpg",
+      "name": "Rookies",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-07",
+      "id": 52793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871468.jpg",
+      "name": "Downfall of a Droid",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-14",
+      "id": 52794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871469.jpg",
+      "name": "Duel of the Droids",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-11-21",
+      "id": 52795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871470.jpg",
+      "name": "Bombad Jedi",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-05",
+      "id": 52796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871471.jpg",
+      "name": "Cloak of Darkness",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-12",
+      "id": 52797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871472.jpg",
+      "name": "The Lair of General Grievous",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-02",
+      "id": 52798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871473.jpg",
+      "name": "Dooku Captured",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-09",
+      "id": 52799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871474.jpg",
+      "name": "The Gungan General",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-16",
+      "id": 52800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871475.jpg",
+      "name": "Jedi Crash",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-23",
+      "id": 52801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871476.jpg",
+      "name": "Defenders of Peace",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-30",
+      "id": 52802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871477.jpg",
+      "name": "Trespass",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-06",
+      "id": 52803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871478.jpg",
+      "name": "Hidden Enemy",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-13",
+      "id": 52804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871479.jpg",
+      "name": "Blue Shadow Virus",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-13",
+      "id": 52805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871480.jpg",
+      "name": "Mystery of a Thousand Moons",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-27",
+      "id": 52806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871481.jpg",
+      "name": "Storm Over Ryloth",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-06",
+      "id": 52807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871482.jpg",
+      "name": "Innocents of Ryloth",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-13",
+      "id": 52808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871483.jpg",
+      "name": "Liberty of Ryloth",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-03-20",
+      "id": 52809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/871484.jpg",
+      "name": "Hostage Crisis",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-02",
+      "id": 52810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/347/869999.jpg",
+      "name": "Holocron Heist",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-02",
+      "id": 52811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870000.jpg",
+      "name": "Cargo of Doom",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-09",
+      "id": 52812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870001.jpg",
+      "name": "Children of the Force",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-16",
+      "id": 52813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870002.jpg",
+      "name": "Senate Spy",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-04",
+      "id": 52814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870003.jpg",
+      "name": "Landing at Point Rain",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-13",
+      "id": 52815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870004.jpg",
+      "name": "Weapons Factory",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-11-20",
+      "id": 52816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870005.jpg",
+      "name": "Legacy of Terror",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-12-04",
+      "id": 52817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870006.jpg",
+      "name": "Brain Invaders",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-01",
+      "id": 52818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870007.jpg",
+      "name": "Grievous Intrigue",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-01",
+      "id": 52819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870008.jpg",
+      "name": "The Deserter",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-22",
+      "id": 52820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870009.jpg",
+      "name": "Lightsaber Lost",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-29",
+      "id": 52821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870010.jpg",
+      "name": "The Mandalore Plot",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-05",
+      "id": 52822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870011.jpg",
+      "name": "Voyage of Temptation",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-12",
+      "id": 52823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870012.jpg",
+      "name": "Duchess of Mandalore",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-19",
+      "id": 52824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870013.jpg",
+      "name": "Senate Murders",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-26",
+      "id": 52825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870014.jpg",
+      "name": "Cat and Mouse",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-02",
+      "id": 52826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870015.jpg",
+      "name": "Bounty Hunters",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-09",
+      "id": 52827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870016.jpg",
+      "name": "The Zillo Beast",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-16",
+      "id": 52828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870017.jpg",
+      "name": "The Zillo Beast Strikes Back",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-23",
+      "id": 52829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870018.jpg",
+      "name": "Death Trap",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 52830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870019.jpg",
+      "name": "R2 Come Home",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 52831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/348/870020.jpg",
+      "name": "Lethal Trackdown",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2010-09-17",
+      "id": 52832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508658.jpg",
+      "name": "Clone Cadets",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-17",
+      "id": 52833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508659.jpg",
+      "name": "ARC Troopers",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-24",
+      "id": 52834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508660.jpg",
+      "name": "Supply Lines",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-01",
+      "id": 52835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508661.jpg",
+      "name": "Sphere of Influence",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-08",
+      "id": 52836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508662.jpg",
+      "name": "Corruption",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-15",
+      "id": 52837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508663.jpg",
+      "name": "The Academy",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-22",
+      "id": 52838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508664.jpg",
+      "name": "Assassin",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-05",
+      "id": 52839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508665.jpg",
+      "name": "Evil Plans",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-12",
+      "id": 52840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508666.jpg",
+      "name": "Hunt for Ziro",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-19",
+      "id": 52841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508667.jpg",
+      "name": "Heroes on Both Sides",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-12-03",
+      "id": 52842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508668.jpg",
+      "name": "Pursuit of Peace",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-07",
+      "id": 52843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508669.jpg",
+      "name": "Nightsisters",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-14",
+      "id": 52844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508670.jpg",
+      "name": "Monster",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-21",
+      "id": 52845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508671.jpg",
+      "name": "Witches of the Mist",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-01-28",
+      "id": 52846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508672.jpg",
+      "name": "Overlords",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-04",
+      "id": 52847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/866375.jpg",
+      "name": "Altar of Mortis",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-11",
+      "id": 52848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/872889.jpg",
+      "name": "Ghosts of Mortis",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-02-18",
+      "id": 52849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508675.jpg",
+      "name": "The Citadel",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-04",
+      "id": 52850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/872887.jpg",
+      "name": "Counter Attack",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-03-11",
+      "id": 52851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/872888.jpg",
+      "name": "Citadel Rescue",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-01",
+      "id": 52852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508678.jpg",
+      "name": "Padawan Lost",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-04-01",
+      "id": 52853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508679.jpg",
+      "name": "Wookiee Hunt",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 52854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508680.jpg",
+      "name": "Water War",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 52855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508681.jpg",
+      "name": "Gungan Attack",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 52856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508682.jpg",
+      "name": "Prisoners",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 52857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508683.jpg",
+      "name": "Shadow Warrior",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-07",
+      "id": 52858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508684.jpg",
+      "name": "Mercy Mission",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-14",
+      "id": 52859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508685.jpg",
+      "name": "Nomad Droids",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-28",
+      "id": 52860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508686.jpg",
+      "name": "Darkness on Umbara",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-04",
+      "id": 52861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/349/873637.jpg",
+      "name": "The General",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-11",
+      "id": 52862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508688.jpg",
+      "name": "Plan of Dissent",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-18",
+      "id": 52863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508689.jpg",
+      "name": "Carnage of Krell",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-25",
+      "id": 52864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508690.jpg",
+      "name": "Kidnapped",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-02",
+      "id": 52865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508691.jpg",
+      "name": "Slaves of the Republic",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-06",
+      "id": 52866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508692.jpg",
+      "name": "Escape from Kadavo",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-13",
+      "id": 52867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508694.jpg",
+      "name": "A Friend in Need",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-20",
+      "id": 52868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508696.jpg",
+      "name": "Deception",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 52869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508697.jpg",
+      "name": "Friends and Enemies",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-03",
+      "id": 52870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508698.jpg",
+      "name": "The Box",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-10",
+      "id": 52871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508699.jpg",
+      "name": "Crisis on Naboo",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-02-24",
+      "id": 52872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508700.jpg",
+      "name": "Massacre",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-02",
+      "id": 52873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508701.jpg",
+      "name": "Bounty",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-09",
+      "id": 52874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/203/508702.jpg",
+      "name": "Brothers",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-16",
+      "id": 52875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/346/866171.jpg",
+      "name": "Revenge",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-09-29",
+      "id": 52876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85607.jpg",
+      "name": "Revival",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-06",
+      "id": 52877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85608.jpg",
+      "name": "A War on Two Fronts",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-13",
+      "id": 52878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85609.jpg",
+      "name": "Front Runners",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-20",
+      "id": 52879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85610.jpg",
+      "name": "The Soft War",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-10-27",
+      "id": 52880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85611.jpg",
+      "name": "Tipping Points",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-03",
+      "id": 52881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85612.jpg",
+      "name": "The Gathering",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-10",
+      "id": 52882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85613.jpg",
+      "name": "A Test of Strength",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-17",
+      "id": 52883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85614.jpg",
+      "name": "Bound for Rescue",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-23",
+      "id": 52884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85615.jpg",
+      "name": "A Necessary Bond",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-25",
+      "id": 52885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85616.jpg",
+      "name": "Secret Weapons",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-08",
+      "id": 52886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85617.jpg",
+      "name": "A Sunny Day in the Void",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-05",
+      "id": 52887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85618.jpg",
+      "name": "Missing in Action",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-12",
+      "id": 52888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85619.jpg",
+      "name": "Point of No Return",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-19",
+      "id": 52889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85620.jpg",
+      "name": "Eminence",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-01-26",
+      "id": 52890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85621.jpg",
+      "name": "Shades of Reason",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-02",
+      "id": 52891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85622.jpg",
+      "name": "The Lawless",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-09",
+      "id": 52892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85623.jpg",
+      "name": "Sabotage",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-16",
+      "id": 52893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85624.jpg",
+      "name": "The Jedi Who Knew Too Much",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-02-23",
+      "id": 52894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85625.jpg",
+      "name": "To Catch a Jedi",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2013-03-02",
+      "id": 52895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85626.jpg",
+      "name": "The Wrong Jedi",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85596.jpg",
+      "name": "The Unknown",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85597.jpg",
+      "name": "Conspiracy",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85598.jpg",
+      "name": "Fugitive",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85599.jpg",
+      "name": "Orders",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85600.jpg",
+      "name": "An Old Friend",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85601.jpg",
+      "name": "The Rise of Clovis",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85602.jpg",
+      "name": "Crisis at the Heart",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85603.jpg",
+      "name": "The Disappeared: Pt. 1",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85604.jpg",
+      "name": "The Disappeared: Pt. 2",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85595.jpg",
+      "name": "The Lost One",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85592.jpg",
+      "name": "Voices",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85590.jpg",
+      "name": "Destiny",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2014-03-07",
+      "id": 52908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85589.jpg",
+      "name": "Sacrifice",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2020-02-21",
+      "id": 1785856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878514.jpg",
+      "name": "The Bad Batch",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-02-28",
+      "id": 1793583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878515.jpg",
+      "name": "A Distant Echo",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-03-06",
+      "id": 1806579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878516.jpg",
+      "name": "On the Wings of Keeradaks",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-03-13",
+      "id": 1806580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/246/615445.jpg",
+      "name": "Unfinished Business",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-03-20",
+      "id": 1806581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/247/619378.jpg",
+      "name": "Gone With a Trace",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-03-27",
+      "id": 1806582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878519.jpg",
+      "name": "Deal No Deal",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1806583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/250/625015.jpg",
+      "name": "Dangerous Debt",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-04-10",
+      "id": 1806584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878744.jpg",
+      "name": "Together Again",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-04-17",
+      "id": 1806585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/252/631397.jpg",
+      "name": "Old Friends Not Forgotten",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-04-24",
+      "id": 1806586,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/351/878781.jpg",
+      "name": "The Phantom Apprentice",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-05-01",
+      "id": 1806587,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/254/636973.jpg",
+      "name": "Shattered",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2020-05-04",
+      "id": 1806588,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/255/638527.jpg",
+      "name": "Victory and Death",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-563",
+  "live": true,
+  "overview": "The Clone Wars television series chronicles the events taking place during Star Wars Episode II: Attack of the Clones and Star Wars Episode III: Revenge of the Sith. The Clone Wars will ultimately lead to the downfall of the Jedi and the rise of the Galactic Empire.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/237/593387.jpg",
   "rating": 8.4,
-  "runtime": null,
-  "episodes": []
+  "runtime": 30,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "563",
+  "title": "Star Wars: The Clone Wars",
+  "type": "series",
+  "year": 2008
 }

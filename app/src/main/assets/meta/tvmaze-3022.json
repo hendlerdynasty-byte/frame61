@@ -1,22 +1,329 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3022",
-  "source": "tvmaze",
-  "sourceId": "3022",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Future Man",
-  "year": 2017,
-  "type": "series",
-  "overview": "Future Man chronicles a janitor by day, world-ranked gamer by night who is tasked with preventing the extinction of humans after mysterious visitors from the future declare him to be the key to defeating the imminent super-race invasion.",
-  "poster": "file:///android_asset/posters/tvmaze-3022.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2017-11-14",
+      "id": 1253783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337808.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1320396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337932.jpg",
+      "name": "Herpe: Fully Loaded",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1320397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337935.jpg",
+      "name": "A Riphole in Time",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1320398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337942.jpg",
+      "name": "A Fuel's Errand",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1320399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337944.jpg",
+      "name": "Justice Desserts",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1320400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337961.jpg",
+      "name": "A Blowjob Before Dying",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355048,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/337996.jpg",
+      "name": "Pandora's Mailbox",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355049,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338008.jpg",
+      "name": "Girth, Wind & Fire",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355050,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338074.jpg",
+      "name": "Operation: Fatal Attraction",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355051,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338078.jpg",
+      "name": "Operation: Natal Attraction",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355052,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338089.jpg",
+      "name": "Beyond the Truffledome",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338095.jpg",
+      "name": "Prelude to an Apocalypse",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2017-11-14",
+      "id": 1355054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338106.jpg",
+      "name": "A Date with Destiny",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1538953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449157.jpg",
+      "name": "Countdown to a Prologue",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1579793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449158.jpg",
+      "name": "The I of the Tiger",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587072,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449159.jpg",
+      "name": "A Wolf in the Torque House",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587073,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449160.jpg",
+      "name": "Guess Who's Coming to Lunch",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587074,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449161.jpg",
+      "name": "J1: Judgement Day",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587075,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449162.jpg",
+      "name": "The Binx Ultimatum",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587076,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449163.jpg",
+      "name": "Homicide: Life in the Mons",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587077,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449164.jpg",
+      "name": "The Last Horchata",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449165.jpg",
+      "name": "The Ballad of PUP-E Q. Barkington",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449166.jpg",
+      "name": "Exes and OS",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449167.jpg",
+      "name": "Dia De Los Robots",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449168.jpg",
+      "name": "The Brain Job",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2019-01-11",
+      "id": 1587082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449169.jpg",
+      "name": "Ultra-Max",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1808724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624076.jpg",
+      "name": "The Precipice of Yesterday",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1809392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624080.jpg",
+      "name": "There Will Be Borscht",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1809393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624077.jpg",
+      "name": "Trapper's Delight",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1825169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624081.jpg",
+      "name": "The Outlaw Wild Sam Bladden",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1825170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624078.jpg",
+      "name": "Haven Is for Real",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1825171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624079.jpg",
+      "name": "The Land After Time",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1825172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624082.jpg",
+      "name": "Time Rogues III: Escape from Forever",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-03",
+      "id": 1825173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/249/624083.jpg",
+      "name": "Return of the Present",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
+    "Comedy",
     "Action",
     "Science-Fiction"
   ],
+  "id": "tvmaze-3022",
+  "live": true,
+  "overview": "Future Man chronicles a janitor by day, world-ranked gamer by night who is tasked with preventing the extinction of humans after mysterious visitors from the future declare him to be the key to defeating the imminent super-race invasion.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/592/1480203.jpg",
   "rating": 7.1,
-  "runtime": null,
-  "episodes": []
+  "runtime": 30,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3022",
+  "title": "Future Man",
+  "type": "series",
+  "year": 2017
 }

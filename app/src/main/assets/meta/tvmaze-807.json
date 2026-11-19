@@ -1,22 +1,977 @@
 {
-  "schema": 1,
-  "id": "tvmaze-807",
-  "source": "tvmaze",
-  "sourceId": "807",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Wizards of Waverly Place",
-  "year": 2007,
-  "type": "series",
-  "overview": "Alex, Justin and Max Russo are not your ordinary kids - they're wizards in training! While their parents run the Waverly Sub Station, the siblings struggle to balance their ordinary lives while learning to master their extraordinary powers. But when they turn 18, only one will be deemed worthy enough to become the family wizard.",
-  "poster": "file:///android_asset/posters/tvmaze-807.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-10-12",
+      "id": 72443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/637/1592836.jpg",
+      "name": "Crazy Ten Minute Sale",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 72444,
+      "image": null,
+      "name": "First Kiss",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 72445,
+      "image": null,
+      "name": "I Almost Drowned In A Chocolate Fountain",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 72446,
+      "image": null,
+      "name": "New Employee",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 72447,
+      "image": null,
+      "name": "Disenchanted Evening",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-10",
+      "id": 72448,
+      "image": null,
+      "name": "You Can't Always Get What You Carpet",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 72449,
+      "image": null,
+      "name": "Alex's Choice",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 72450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1551786.jpg",
+      "name": "Curb Your Dragon",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2007-12-14",
+      "id": 72451,
+      "image": null,
+      "name": "Movies",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-01-06",
+      "id": 72452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/622/1555145.jpg",
+      "name": "Pop Me And We Both Go Down",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-02-10",
+      "id": 72453,
+      "image": null,
+      "name": "Potion Commotion",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-09",
+      "id": 72454,
+      "image": null,
+      "name": "Justin's Little Sister",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-04-06",
+      "id": 72455,
+      "image": null,
+      "name": "Wizard School (1)",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-04-06",
+      "id": 72456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/627/1567931.jpg",
+      "name": "Wizard School (2)",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-05-18",
+      "id": 72457,
+      "image": null,
+      "name": "The Supernatural",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-15",
+      "id": 72458,
+      "image": null,
+      "name": "Alex In The Middle",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-29",
+      "id": 72459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1551710.jpg",
+      "name": "Report Card",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-06",
+      "id": 72460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/627/1569201.jpg",
+      "name": "Credit Check",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-20",
+      "id": 72461,
+      "image": null,
+      "name": "Alex's Spring Fling",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-08-10",
+      "id": 72462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/620/1551468.jpg",
+      "name": "Quinceanera",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-08-31",
+      "id": 72463,
+      "image": null,
+      "name": "Art Museum Piece",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-12",
+      "id": 72464,
+      "image": null,
+      "name": "Smarty Pants",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-09-21",
+      "id": 72465,
+      "image": null,
+      "name": "Beware Wolf",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 72466,
+      "image": null,
+      "name": "Graphic Novel",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 72467,
+      "image": null,
+      "name": "Racing",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 72468,
+      "image": null,
+      "name": "Alex's Brother, Maximan",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 72469,
+      "image": null,
+      "name": "Saving WizTech (1)",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 72470,
+      "image": null,
+      "name": "Saving WizTech (2)",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-23",
+      "id": 72471,
+      "image": null,
+      "name": "Harper Knows",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-07",
+      "id": 72472,
+      "image": null,
+      "name": "Taxi Dance",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-14",
+      "id": 72473,
+      "image": null,
+      "name": "Baby Cupid",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-31",
+      "id": 72474,
+      "image": null,
+      "name": "Make It Happen",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-01-25",
+      "id": 72475,
+      "image": null,
+      "name": "Fairy Tale",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-15",
+      "id": 72476,
+      "image": null,
+      "name": "Fashion Week",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 72477,
+      "image": null,
+      "name": "Helping Hand",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-01",
+      "id": 72478,
+      "image": null,
+      "name": "Art Teacher",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-15",
+      "id": 72479,
+      "image": null,
+      "name": "Future Harper",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-05",
+      "id": 72480,
+      "image": null,
+      "name": "Alex Does Good",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-12",
+      "id": 72481,
+      "image": null,
+      "name": "Hugh's Not Normous",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-19",
+      "id": 72482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/627/1568923.jpg",
+      "name": "Don't Rain on Justin's Parade - Earth",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-26",
+      "id": 72483,
+      "image": null,
+      "name": "Family Game Night",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-02",
+      "id": 72484,
+      "image": null,
+      "name": "Justin's New Girlfriend",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-29",
+      "id": 72485,
+      "image": null,
+      "name": "My Tutor, Tutor",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-26",
+      "id": 72486,
+      "image": null,
+      "name": "Paint by Committee",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-10",
+      "id": 72487,
+      "image": null,
+      "name": "Wizard For a Day",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-17",
+      "id": 72488,
+      "image": null,
+      "name": "Cast-Away (To Another Show)",
+      "number": 25,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-24",
+      "id": 72489,
+      "image": null,
+      "name": "Wizards vs. Vampires on Waverly Place",
+      "number": 26,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-31",
+      "id": 72490,
+      "image": null,
+      "name": "Wizards vs. Vampires: Tasty Bites",
+      "number": 27,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-07",
+      "id": 72491,
+      "image": null,
+      "name": "Wizards vs. Vampires: Dream Date",
+      "number": 28,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-08",
+      "id": 72492,
+      "image": null,
+      "name": "Wizards & Vampires vs. Zombies",
+      "number": 29,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-21",
+      "id": 72493,
+      "image": null,
+      "name": "Retest",
+      "number": 30,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2009-10-09",
+      "id": 72494,
+      "image": null,
+      "name": "Franken Girl",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-16",
+      "id": 72495,
+      "image": null,
+      "name": "Halloween",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-23",
+      "id": 72496,
+      "image": null,
+      "name": "Monster Hunter",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-30",
+      "id": 72497,
+      "image": null,
+      "name": "Three Monsters",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-06",
+      "id": 72498,
+      "image": null,
+      "name": "Night at the Lazerama",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-20",
+      "id": 72499,
+      "image": null,
+      "name": "Doll House",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2009-12-04",
+      "id": 72500,
+      "image": null,
+      "name": "Marathoner Helper",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-15",
+      "id": 72501,
+      "image": null,
+      "name": "Alex Charms A Boy",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-22",
+      "id": 72502,
+      "image": null,
+      "name": "Wizards vs. Werewolves",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-26",
+      "id": 72503,
+      "image": null,
+      "name": "Positive Alex",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-19",
+      "id": 72504,
+      "image": null,
+      "name": "Detention Election",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-16",
+      "id": 72505,
+      "image": null,
+      "name": "Dude Looks Like Shakira",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 72506,
+      "image": null,
+      "name": "Eat to the Beat",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 72507,
+      "image": null,
+      "name": "Third Wheel",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-07",
+      "id": 72508,
+      "image": null,
+      "name": "The Good, The Bad, and the Alex",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-14",
+      "id": 72509,
+      "image": null,
+      "name": "Western Show",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-21",
+      "id": 72510,
+      "image": null,
+      "name": "Alex's Logo",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-04",
+      "id": 72511,
+      "image": null,
+      "name": "Dad's Buggin' Out",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-11",
+      "id": 72512,
+      "image": null,
+      "name": "Max's Secret Girlfriend",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-02",
+      "id": 72513,
+      "image": null,
+      "name": "Alex Russo, Matchmaker?",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-16",
+      "id": 72514,
+      "image": null,
+      "name": "Delinquent Justin",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-23",
+      "id": 72515,
+      "image": null,
+      "name": "Captain Jim Bob Sherwood",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-30",
+      "id": 72516,
+      "image": null,
+      "name": "Wizards vs. Finkles",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-20",
+      "id": 72517,
+      "image": null,
+      "name": "All About You-Niverse",
+      "number": 24,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-27",
+      "id": 72518,
+      "image": null,
+      "name": "Uncle Ernesto",
+      "number": 25,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-10",
+      "id": 72519,
+      "image": null,
+      "name": "Moving On",
+      "number": 26,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-01",
+      "id": 72520,
+      "image": null,
+      "name": "Alex Saves Mason",
+      "number": 27,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-10-15",
+      "id": 72521,
+      "image": null,
+      "name": "Wizards Exposed",
+      "number": 28,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2010-11-12",
+      "id": 72522,
+      "image": null,
+      "name": "Alex Tells the World",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2010-11-27",
+      "id": 72523,
+      "image": null,
+      "name": "Alex Gives Up",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2010-12-10",
+      "id": 72524,
+      "image": null,
+      "name": "Lucky Charmed",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2010-12-17",
+      "id": 72525,
+      "image": null,
+      "name": "Journey to the Center of Mason",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-07",
+      "id": 72526,
+      "image": null,
+      "name": "Three Maxes and a Little Lady",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-21",
+      "id": 72527,
+      "image": null,
+      "name": "Daddy's Little Girl",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-04",
+      "id": 72528,
+      "image": null,
+      "name": "Everything's Rosie for Justin",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-11",
+      "id": 72529,
+      "image": null,
+      "name": "Dancing with Angels",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-18",
+      "id": 72530,
+      "image": null,
+      "name": "Wizards vs. Angels",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-11",
+      "id": 72531,
+      "image": null,
+      "name": "Back to Max",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-08",
+      "id": 72532,
+      "image": null,
+      "name": "Zeke Finds Out",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-13",
+      "id": 72533,
+      "image": null,
+      "name": "Magic Unmasked",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-17",
+      "id": 72534,
+      "image": null,
+      "name": "Meet the Werewolves",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-24",
+      "id": 72535,
+      "image": null,
+      "name": "Beast Tamer",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-08",
+      "id": 72536,
+      "image": null,
+      "name": "Wizard of the Year",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 72537,
+      "image": null,
+      "name": "Misfortune at the Beach",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-19",
+      "id": 72538,
+      "image": null,
+      "name": "Wizards vs. Asteroid",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-26",
+      "id": 72539,
+      "image": null,
+      "name": "Justin's Back In",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 72540,
+      "image": null,
+      "name": "Alex the Puppetmaster",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 72541,
+      "image": null,
+      "name": "My Two Harpers",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-07",
+      "id": 72542,
+      "image": null,
+      "name": "Wizards of Apartment 13B",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-14",
+      "id": 72543,
+      "image": null,
+      "name": "Ghost Roommate",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-21",
+      "id": 72544,
+      "image": null,
+      "name": "Get Along, Little Zombie",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-28",
+      "id": 72545,
+      "image": null,
+      "name": "Wizards vs. Everything",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-04",
+      "id": 72546,
+      "image": null,
+      "name": "Rock Around the Clock",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-18",
+      "id": 72547,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/631/1577746.jpg",
+      "name": "Harperella",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-06",
+      "id": 72548,
+      "image": null,
+      "name": "Who Will Be The Family Wizard?",
+      "number": 27,
+      "runtime": 30,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
-    "Familie",
+    "Comedy",
+    "Family",
     "Fantasy"
   ],
+  "id": "tvmaze-807",
+  "live": true,
+  "overview": "Alex, Justin and Max Russo are not your ordinary kids - they're wizards in training! While their parents run the Waverly Sub Station, the siblings struggle to balance their ordinary lives while learning to master their extraordinary powers. But when they turn 18, only one will be deemed worthy enough to become the family wizard.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15629.jpg",
   "rating": 7.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "807",
+  "title": "Wizards of Waverly Place",
+  "type": "series",
+  "year": 2007
 }

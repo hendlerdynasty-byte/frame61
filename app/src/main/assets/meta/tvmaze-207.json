@@ -1,22 +1,383 @@
 {
-  "schema": 1,
-  "id": "tvmaze-207",
-  "source": "tvmaze",
-  "sourceId": "207",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Stargate Universe",
-  "year": 2009,
-  "type": "series",
-  "overview": "Stargate Universe follows a band of soldiers, scientists and civilians, who must fend for themselves as they are forced through a Stargate when their hidden base comes under attack. The desperate survivors emerge aboard an ancient ship, which is locked on an unknown course and unable to return to Earth. Faced with meeting the most basic needs of food, water and air, the group must unlock the secrets of the ship's Stargate to survive. The danger, adventure and hope they find on board the Destiny will reveal the heroes and villains among them.",
-  "poster": "file:///android_asset/posters/tvmaze-207.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2009-10-02",
+      "id": 13783,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127083.jpg",
+      "name": "Air: Part 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-02",
+      "id": 13784,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127084.jpg",
+      "name": "Air: Part 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-09",
+      "id": 13785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127085.jpg",
+      "name": "Air: Part 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-16",
+      "id": 13786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127086.jpg",
+      "name": "Darkness",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-23",
+      "id": 13787,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127087.jpg",
+      "name": "Light",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-10-30",
+      "id": 13788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127088.jpg",
+      "name": "Water",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-06",
+      "id": 13789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127089.jpg",
+      "name": "Earth",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-13",
+      "id": 13790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127090.jpg",
+      "name": "Time",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-11-20",
+      "id": 13791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127091.jpg",
+      "name": "Life",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-12-04",
+      "id": 13792,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127092.jpg",
+      "name": "Justice",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-02",
+      "id": 13793,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127093.jpg",
+      "name": "Space",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-09",
+      "id": 13794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127094.jpg",
+      "name": "Divided",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-16",
+      "id": 13795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127095.jpg",
+      "name": "Faith",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-23",
+      "id": 13796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127096.jpg",
+      "name": "Human",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-04-30",
+      "id": 13797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127097.jpg",
+      "name": "Lost",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-07",
+      "id": 13798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127098.jpg",
+      "name": "Sabotage",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-14",
+      "id": 13799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127099.jpg",
+      "name": "Pain",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-05-21",
+      "id": 13800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127100.jpg",
+      "name": "Subversion",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-04",
+      "id": 13801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127101.jpg",
+      "name": "Incursion: Part 1",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-06-11",
+      "id": 13802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127102.jpg",
+      "name": "Incursion: Part 2",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-28",
+      "id": 13803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127103.jpg",
+      "name": "Intervention",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-05",
+      "id": 13804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127104.jpg",
+      "name": "Aftermath",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-12",
+      "id": 13805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127105.jpg",
+      "name": "Awakening",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-19",
+      "id": 13806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127106.jpg",
+      "name": "Pathogen",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-10-26",
+      "id": 13807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127107.jpg",
+      "name": "Cloverdale",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-02",
+      "id": 13808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127108.jpg",
+      "name": "Trial and Error",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-09",
+      "id": 13809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127109.jpg",
+      "name": "The Greater Good",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-16",
+      "id": 13810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127110.jpg",
+      "name": "Malice",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-23",
+      "id": 13811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127111.jpg",
+      "name": "Visitation",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-11-30",
+      "id": 13812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127112.jpg",
+      "name": "Resurgence",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-07",
+      "id": 13813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127113.jpg",
+      "name": "Deliverance",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-14",
+      "id": 13814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127114.jpg",
+      "name": "Twin Destinies",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-21",
+      "id": 13815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127115.jpg",
+      "name": "Alliances",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-03-28",
+      "id": 13816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127116.jpg",
+      "name": "Hope",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-04",
+      "id": 13817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127117.jpg",
+      "name": "Seizure",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-11",
+      "id": 13818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127118.jpg",
+      "name": "The Hunt",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-18",
+      "id": 13819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127119.jpg",
+      "name": "Common Descent",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-04-25",
+      "id": 13820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127120.jpg",
+      "name": "Epilogue",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-02",
+      "id": 13821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127121.jpg",
+      "name": "Blockade",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-05-09",
+      "id": 13822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/50/127122.jpg",
+      "name": "Gauntlet",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-207",
+  "live": true,
+  "overview": "Stargate Universe follows a band of soldiers, scientists and civilians, who must fend for themselves as they are forced through a Stargate when their hidden base comes under attack. The desperate survivors emerge aboard an ancient ship, which is locked on an unknown course and unable to return to Earth. Faced with meeting the most basic needs of food, water and air, the group must unlock the secrets of the ship's Stargate to survive. The danger, adventure and hope they find on board the Destiny will reveal the heroes and villains among them.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/81/204195.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "207",
+  "title": "Stargate Universe",
+  "type": "series",
+  "year": 2009
 }

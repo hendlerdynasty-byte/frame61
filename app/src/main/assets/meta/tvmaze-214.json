@@ -1,22 +1,383 @@
 {
-  "schema": 1,
-  "id": "tvmaze-214",
-  "source": "tvmaze",
-  "sourceId": "214",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Kingdom",
-  "year": 2014,
-  "type": "series",
-  "overview": "Kingdom is a raw family drama set against the world of Mixed Martial Arts (MMA) in Venice, California. Alvey Kulina owns Navy St. MMA with the help of his girlfriend Lisa Prince. He is willing to go through extraordinary means to make sure his fighters are taken care of, but all of this responsibility comes at a steep price. He has complicated relationships with both of his sons, Jay and Nate, who are both struggling with their own identities and places within Alvey's life and gym.",
-  "poster": "file:///android_asset/posters/tvmaze-214.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-10-08",
+      "id": 14117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41282.jpg",
+      "name": "Set Yourself on Fire",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-15",
+      "id": 14118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4844.jpg",
+      "name": "Glass Eye",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-22",
+      "id": 14119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41281.jpg",
+      "name": "Piece of Plastic",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-29",
+      "id": 14120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41280.jpg",
+      "name": "Flowers",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-05",
+      "id": 14121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41279.jpg",
+      "name": "Eat Your Own Cooking",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-12",
+      "id": 14122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41278.jpg",
+      "name": "Please Refrain from Crying",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-19",
+      "id": 14123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41277.jpg",
+      "name": "Animator / Annihilator",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-11-26",
+      "id": 14124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41271.jpg",
+      "name": "The Gentle Slope",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-03",
+      "id": 14125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41272.jpg",
+      "name": "Cut Day",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-12-10",
+      "id": 14126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/16/41273.jpg",
+      "name": "King Beast",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 260294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74010.jpg",
+      "name": "New Money",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 260295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74011.jpg",
+      "name": "Simulations",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-28",
+      "id": 260296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74012.jpg",
+      "name": "Broken or Missing",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-04",
+      "id": 260297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74013.jpg",
+      "name": "Be First",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 260298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/29/74014.jpg",
+      "name": "Happy Hour",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-18",
+      "id": 260299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/79844.jpg",
+      "name": "Pink at Night",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-11-25",
+      "id": 452572,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84985.jpg",
+      "name": "The Demon Had a Spell",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-02",
+      "id": 452573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/84987.jpg",
+      "name": "Smoker",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-09",
+      "id": 452574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97923.jpg",
+      "name": "Living Down",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-12-16",
+      "id": 452575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/97924.jpg",
+      "name": "Traveling Alone",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-01",
+      "id": 568794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/151363.jpg",
+      "name": "Lay and Pray",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-08",
+      "id": 635155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154104.jpg",
+      "name": "No Fault",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-15",
+      "id": 635156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218557.jpg",
+      "name": "Woke Up Lonely",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-22",
+      "id": 635157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218558.jpg",
+      "name": "Do Not Disturb",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-29",
+      "id": 635158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218560.jpg",
+      "name": "Take Pills",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-06",
+      "id": 635159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218561.jpg",
+      "name": "Halos",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 635160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218562.jpg",
+      "name": "Help Wanted",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-20",
+      "id": 635161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218565.jpg",
+      "name": "Cut Man",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-27",
+      "id": 635164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218566.jpg",
+      "name": "Late to Leave",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-03",
+      "id": 635165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/87/218567.jpg",
+      "name": "No Sharp Objects",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-31",
+      "id": 1036956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289637.jpg",
+      "name": "Wolf Tickets",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-07",
+      "id": 1074605,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/291872.jpg",
+      "name": "Ritual",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-14",
+      "id": 1074606,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/117/294451.jpg",
+      "name": "Thank You, Boys",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-21",
+      "id": 1074607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/296771.jpg",
+      "name": "Headhunter",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-06-28",
+      "id": 1074608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/298543.jpg",
+      "name": "Please Give",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-05",
+      "id": 1074609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/300851.jpg",
+      "name": "All Talk",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-12",
+      "id": 1160579,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/303547.jpg",
+      "name": "Platinum Level",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-19",
+      "id": 1160580,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/305803.jpg",
+      "name": "Old Pueblo",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-26",
+      "id": 1160581,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307765.jpg",
+      "name": "Cactus",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-02",
+      "id": 1160582,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/483288.jpg",
+      "name": "Lie Down in the Light",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Familie",
-    "Sport"
+    "Family",
+    "Sports"
   ],
+  "id": "tvmaze-214",
+  "live": true,
+  "overview": "Kingdom is a raw family drama set against the world of Mixed Martial Arts (MMA) in Venice, California. Alvey Kulina owns Navy St. MMA with the help of his girlfriend Lisa Prince. He is willing to go through extraordinary means to make sure his fighters are taken care of, but all of this responsibility comes at a steep price. He has complicated relationships with both of his sons, Jay and Nate, who are both struggling with their own identities and places within Alvey's life and gym.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/116/291395.jpg",
   "rating": 7.9,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "214",
+  "title": "Kingdom",
+  "type": "series",
+  "year": 2014
 }

@@ -1,22 +1,923 @@
 {
-  "schema": 1,
-  "id": "tvmaze-176",
-  "source": "tvmaze",
-  "sourceId": "176",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Teen Wolf",
-  "year": 2011,
-  "type": "series",
-  "overview": "Always an outsider and often unnoticed, Scott McCall yearns to be recognized in some small way that takes him out of his typical state of high school anonymity. When his best friend, Stiles, convinces him to go into the woods one night to join a police search for a dead body, Scott encounters a creature in the darkness. Narrowly escaping an attack with a vicious bite in his side, the next day brings strange surprises for Scott at school and his life will never be the same.MTV's reboot of the classic 1980s cult movie Teen Wolf.",
-  "poster": "file:///android_asset/posters/tvmaze-176.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-06-05",
+      "id": 12703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414706.jpg",
+      "name": "Wolf Moon",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-06",
+      "id": 12704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414707.jpg",
+      "name": "Second Chance at First Line",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-13",
+      "id": 12705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414708.jpg",
+      "name": "Pack Mentality",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-20",
+      "id": 12706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414709.jpg",
+      "name": "Magic Bullet",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-27",
+      "id": 12707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414710.jpg",
+      "name": "The Tell",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-04",
+      "id": 12708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414711.jpg",
+      "name": "Heart Monitor",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-11",
+      "id": 12709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414712.jpg",
+      "name": "Night School",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-18",
+      "id": 12710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414713.jpg",
+      "name": "Lunatic",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-25",
+      "id": 12711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414714.jpg",
+      "name": "Wolf's Bane",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-01",
+      "id": 12712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414715.jpg",
+      "name": "Co-Captain",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-08",
+      "id": 12713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414716.jpg",
+      "name": "Formality",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-08-15",
+      "id": 12714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414717.jpg",
+      "name": "Code Breaker",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 12715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142024.jpg",
+      "name": "Omega",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-04",
+      "id": 12716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142025.jpg",
+      "name": "Shape Shifted",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-11",
+      "id": 12717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142026.jpg",
+      "name": "Ice Pick",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-18",
+      "id": 12718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142027.jpg",
+      "name": "Abomination",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-25",
+      "id": 12719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142028.jpg",
+      "name": "Venomous",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-02",
+      "id": 12720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142029.jpg",
+      "name": "Frenemy",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-09",
+      "id": 12721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142030.jpg",
+      "name": "Restraint",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-16",
+      "id": 12722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142031.jpg",
+      "name": "Raving",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-23",
+      "id": 12723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142032.jpg",
+      "name": "Party Guessed",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-07-30",
+      "id": 12724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142033.jpg",
+      "name": "Fury",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-06",
+      "id": 12725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142034.jpg",
+      "name": "Battlefield",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-08-13",
+      "id": 12726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142035.jpg",
+      "name": "Master Plan",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-03",
+      "id": 12727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142038.jpg",
+      "name": "Tattoo",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 12728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142039.jpg",
+      "name": "Chaos Rising",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 12729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142040.jpg",
+      "name": "Fireflies",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 12730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142041.jpg",
+      "name": "Unleashed",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 12731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142043.jpg",
+      "name": "Frayed",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 12732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142044.jpg",
+      "name": "Motel California",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 12733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142045.jpg",
+      "name": "Currents",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-22",
+      "id": 12734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142046.jpg",
+      "name": "Visionary",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 12735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142047.jpg",
+      "name": "The Girl Who Knew Too Much",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 12736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142048.jpg",
+      "name": "The Overlooked",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-12",
+      "id": 12737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142049.jpg",
+      "name": "Alpha Pact",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-08-19",
+      "id": 12738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142050.jpg",
+      "name": "Lunar Ellipse",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-06",
+      "id": 12739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142051.jpg",
+      "name": "Anchors",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 12740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142052.jpg",
+      "name": "More Bad Than Good",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 12741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142053.jpg",
+      "name": "Galvanize",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 12742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142054.jpg",
+      "name": "Illuminated",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-03",
+      "id": 12743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142055.jpg",
+      "name": "Silverfinger",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-10",
+      "id": 12744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142056.jpg",
+      "name": "Riddled",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-17",
+      "id": 12745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142057.jpg",
+      "name": "Letharia Vulpina",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-24",
+      "id": 12746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142058.jpg",
+      "name": "Echo House",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 12747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142059.jpg",
+      "name": "The Fox and the Wolf",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 12748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142060.jpg",
+      "name": "De-Void",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 12749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142061.jpg",
+      "name": "Insatiable",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 12750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142062.jpg",
+      "name": "The Divine Move",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 12751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414732.jpg",
+      "name": "The Dark Moon",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 12752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414733.jpg",
+      "name": "117",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 12753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414734.jpg",
+      "name": "Muted",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 12754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414735.jpg",
+      "name": "The Benefactor",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 12755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414736.jpg",
+      "name": "I.E.D.",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 12756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414740.jpg",
+      "name": "Orphaned",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 12757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414738.jpg",
+      "name": "Weaponized",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 12758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414731.jpg",
+      "name": "Time of Death",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-18",
+      "id": 12759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414730.jpg",
+      "name": "Perishable",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-08-24",
+      "id": 12760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414729.jpg",
+      "name": "Monstrous",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-01",
+      "id": 12761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414728.jpg",
+      "name": "A Promise to the Dead",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-08",
+      "id": 12762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414727.jpg",
+      "name": "Smoke and Mirrors",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-29",
+      "id": 151524,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414743.jpg",
+      "name": "Creatures of the Night",
+      "number": 1,
+      "runtime": 63,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-30",
+      "id": 153328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414746.jpg",
+      "name": "Parasomnia",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-06",
+      "id": 153329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414747.jpg",
+      "name": "Dreamcatchers",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-13",
+      "id": 153330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414744.jpg",
+      "name": "Condition Terminal",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-20",
+      "id": 184680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414745.jpg",
+      "name": "A Novel Approach",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-07-27",
+      "id": 184681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414748.jpg",
+      "name": "Required Reading",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-03",
+      "id": 190078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414742.jpg",
+      "name": "Strange Frequencies",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-10",
+      "id": 190079,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414741.jpg",
+      "name": "Ouroboros",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-17",
+      "id": 201012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414749.jpg",
+      "name": "Lies of Omission",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-08-24",
+      "id": 201457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414750.jpg",
+      "name": "Status Asthmaticus",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-05",
+      "id": 363111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414751.jpg",
+      "name": "The Last Chimera",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 549196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414752.jpg",
+      "name": "Damnatio Memoriae",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 564988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414753.jpg",
+      "name": "Codominance",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 570657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414754.jpg",
+      "name": "The Sword and the Spirit",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 581585,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414755.jpg",
+      "name": "Amplification",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 595728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414756.jpg",
+      "name": "Lie Ability",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 604759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414757.jpg",
+      "name": "A Credible Threat",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 570659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414758.jpg",
+      "name": "The Maid of Gévaudan",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 604757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414759.jpg",
+      "name": "The Beast of Beacon Hills",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-08",
+      "id": 604758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414760.jpg",
+      "name": "Apotheosis",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-11-15",
+      "id": 876168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414762.jpg",
+      "name": "Memory Lost",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-22",
+      "id": 976032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414763.jpg",
+      "name": "Superposition",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-29",
+      "id": 976033,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220117.jpg",
+      "name": "Sundowning",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-12-06",
+      "id": 976034,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220435.jpg",
+      "name": "Relics",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-12-13",
+      "id": 976035,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222650.jpg",
+      "name": "Radio Silence",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-03",
+      "id": 976037,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/91/229825.jpg",
+      "name": "Ghosted",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-10",
+      "id": 1028366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236940.jpg",
+      "name": "Heartless",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-17",
+      "id": 1033362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236953.jpg",
+      "name": "Blitzkrieg",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-24",
+      "id": 1033917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/236955.jpg",
+      "name": "Memory Found",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-31",
+      "id": 1033918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/239001.jpg",
+      "name": "Riders on the Storm",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-07-30",
+      "id": 1224486,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306723.jpg",
+      "name": "Said the Spider to the Fly",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-08-06",
+      "id": 1260039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/309014.jpg",
+      "name": "Raw Talent",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-08-13",
+      "id": 1260042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414764.jpg",
+      "name": "After Images",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1260043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414761.jpg",
+      "name": "Face-to-Faceless",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1260044,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414765.jpg",
+      "name": "Pressure Test",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-03",
+      "id": 1277778,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414766.jpg",
+      "name": "Triggers",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-10",
+      "id": 1277779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414767.jpg",
+      "name": "Werewolves of London",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-17",
+      "id": 1277780,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320277.jpg",
+      "name": "Genotype",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-17",
+      "id": 1277781,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320293.jpg",
+      "name": "Broken Glass",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2017-09-24",
+      "id": 1277782,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/324065.jpg",
+      "name": "The Wolves of War",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Romanze",
-    "Übernatürlich"
+    "Romance",
+    "Supernatural"
   ],
+  "id": "tvmaze-176",
+  "live": true,
+  "overview": "Always an outsider and often unnoticed, Scott McCall yearns to be recognized in some small way that takes him out of his typical state of high school anonymity. When his best friend, Stiles, convinces him to go into the woods one night to join a police search for a dead body, Scott encounters a creature in the darkness. Narrowly escaping an attack with a vicious bite in his side, the next day brings strange surprises for Scott at school and his life will never be the same.MTV's reboot of the classic 1980s cult movie Teen Wolf.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/30/75365.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "176",
+  "title": "Teen Wolf",
+  "type": "series",
+  "year": 2011
 }

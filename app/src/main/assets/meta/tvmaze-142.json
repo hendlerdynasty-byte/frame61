@@ -1,20 +1,606 @@
 {
-  "schema": 1,
-  "id": "tvmaze-142",
-  "source": "tvmaze",
-  "sourceId": "142",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Veep",
-  "year": 2012,
-  "type": "series",
-  "overview": "Former Senator Selina Meyer has accepted the call to serve as Vice President of the United States. The job is nothing like she imagined and everything she was warned about. Veep follows Meyer and her staff as they attempt to make their mark and leave a lasting legacy, without getting tripped up in the day-to-day political games that define Washington.",
-  "poster": "file:///android_asset/posters/tvmaze-142.jpg",
-  "genres": [
-    "Komödie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-04-22",
+      "id": 10869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279421.jpg",
+      "name": "Fundraiser",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 10870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279422.jpg",
+      "name": "Frozen Yoghurt",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 10871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279423.jpg",
+      "name": "Catherine",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 10872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279424.jpg",
+      "name": "Chung",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 10873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279425.jpg",
+      "name": "Nicknames",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-27",
+      "id": 10874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279426.jpg",
+      "name": "Baseball",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 10875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279427.jpg",
+      "name": "Full Disclosure",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 10876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279428.jpg",
+      "name": "Tears",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 10877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279429.jpg",
+      "name": "Midterms",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 10878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279430.jpg",
+      "name": "Signals",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 10879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279431.jpg",
+      "name": "Hostages",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 10880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279432.jpg",
+      "name": "The Vic Allen Dinner",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 10881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279433.jpg",
+      "name": "Helsinki",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-19",
+      "id": 10882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279434.jpg",
+      "name": "Andrew",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 10883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279435.jpg",
+      "name": "Shutdown",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-09",
+      "id": 10884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279436.jpg",
+      "name": "First Response",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-16",
+      "id": 10885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279437.jpg",
+      "name": "Running",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-23",
+      "id": 10886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279438.jpg",
+      "name": "D.C.",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-06",
+      "id": 10887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279439.jpg",
+      "name": "Some New Beginnings",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 10888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279440.jpg",
+      "name": "The Choice",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 10889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279441.jpg",
+      "name": "Alicia",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 10890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279442.jpg",
+      "name": "Clovis",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 10891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279443.jpg",
+      "name": "Fishing",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 10892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279444.jpg",
+      "name": "Detroit",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 10893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279445.jpg",
+      "name": "Special Relationship",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 10894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279446.jpg",
+      "name": "Debate",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 10895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279447.jpg",
+      "name": "Crate",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 10896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279448.jpg",
+      "name": "New Hampshire",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 117408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413976.jpg",
+      "name": "Joint Session",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 144080,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413977.jpg",
+      "name": "East Wing",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 144081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413978.jpg",
+      "name": "Data",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 151798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413979.jpg",
+      "name": "Tehran",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 153642,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413980.jpg",
+      "name": "Convention",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-17",
+      "id": 153643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279449.jpg",
+      "name": "Storms and Pancakes",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-24",
+      "id": 155127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413981.jpg",
+      "name": "Mommy Meyer",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-31",
+      "id": 155128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413982.jpg",
+      "name": "B/ill",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-07",
+      "id": 155593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413983.jpg",
+      "name": "Testimony",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-14",
+      "id": 155594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413984.jpg",
+      "name": "Election Night",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2016-04-24",
+      "id": 560882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413985.jpg",
+      "name": "Morning After",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-01",
+      "id": 664669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413986.jpg",
+      "name": "Nev-ah-da",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-08",
+      "id": 664670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413987.jpg",
+      "name": "The Eagle",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-15",
+      "id": 664671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413988.jpg",
+      "name": "Mother",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-22",
+      "id": 667496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413989.jpg",
+      "name": "Thanksgiving",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-29",
+      "id": 674292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413990.jpg",
+      "name": "C**tgate",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-05",
+      "id": 717458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413991.jpg",
+      "name": "Congressional Ball",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-12",
+      "id": 667497,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413992.jpg",
+      "name": "Camp David",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-19",
+      "id": 729568,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413993.jpg",
+      "name": "Kissing Your Sister",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-26",
+      "id": 729569,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413994.jpg",
+      "name": "Inauguration",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2017-04-16",
+      "id": 1065726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413995.jpg",
+      "name": "Omaha",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-23",
+      "id": 1093307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413996.jpg",
+      "name": "Library",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-30",
+      "id": 1093308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413997.jpg",
+      "name": "Georgia",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-07",
+      "id": 1125419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413998.jpg",
+      "name": "Justice",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-14",
+      "id": 1125420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279686.jpg",
+      "name": "Chicklet",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-21",
+      "id": 1125421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279687.jpg",
+      "name": "Qatar",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-28",
+      "id": 1144687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1413999.jpg",
+      "name": "Blurb",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-06-11",
+      "id": 1163030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414000.jpg",
+      "name": "Judge",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-06-18",
+      "id": 1163031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414001.jpg",
+      "name": "A Woman First",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-06-25",
+      "id": 1163032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414002.jpg",
+      "name": "Groundbreaking",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2019-03-31",
+      "id": 1606426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414003.jpg",
+      "name": "Iowa",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-04-07",
+      "id": 1610415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414004.jpg",
+      "name": "Discovery Weekend",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-04-14",
+      "id": 1610416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414005.jpg",
+      "name": "Pledge",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-04-21",
+      "id": 1610417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/482339.jpg",
+      "name": "South Carolina",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-04-28",
+      "id": 1610418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/482338.jpg",
+      "name": "Super Tuesday",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-05-05",
+      "id": 1610419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/193/484802.jpg",
+      "name": "Oslo",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2019-05-12",
+      "id": 1610420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487651.jpg",
+      "name": "Veep",
+      "number": 7,
+      "runtime": 46,
+      "season": 7
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy"
+  ],
+  "id": "tvmaze-142",
+  "live": true,
+  "overview": "Former Senator Selina Meyer has accepted the call to serve as Vice President of the United States. The job is nothing like she imagined and everything she was warned about. Veep follows Meyer and her staff as they attempt to make their mark and leave a lasting legacy, without getting tripped up in the day-to-day political games that define Washington.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/189/472887.jpg",
   "rating": 7.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "142",
+  "title": "Veep",
+  "type": "series",
+  "year": 2012
 }

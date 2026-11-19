@@ -1,22 +1,572 @@
 {
-  "schema": 1,
-  "id": "tvmaze-810",
-  "source": "tvmaze",
-  "sourceId": "810",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "In Plain Sight",
-  "year": 2008,
-  "type": "series",
-  "overview": "In Plain Sight follows the story of a Federal Marshall with the Witness Protection program who must hide her high-risk, high-impact job from her family. To those that know her, Mary Shannon is a glorified meter maid, but her real job is much more dangerous. She must oversee federal witnesses who have been relocated through the Witness Protection program and make sure that they stay safe.",
-  "poster": "file:///android_asset/posters/tvmaze-810.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-06-01",
+      "id": 72687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351118.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-08",
+      "id": 72688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351135.jpg",
+      "name": "Hoosier Daddy",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-15",
+      "id": 72689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351151.jpg",
+      "name": "Never the Bride",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-22",
+      "id": 72690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351191.jpg",
+      "name": "Trojan Horst",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-06-29",
+      "id": 72691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351394.jpg",
+      "name": "Who Shot Jay Arnstein?",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-06",
+      "id": 72692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351406.jpg",
+      "name": "High Priced Spread",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-13",
+      "id": 72693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351412.jpg",
+      "name": "Iris Doesn't Live Here Anymore",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-20",
+      "id": 72694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351414.jpg",
+      "name": "Don of the Dead",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-27",
+      "id": 72695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351417.jpg",
+      "name": "Good Cop, Dead Cop",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-08-03",
+      "id": 72696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351460.jpg",
+      "name": "To Serge with Love",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-08-10",
+      "id": 72697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351466.jpg",
+      "name": "Stan by Me",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-08-17",
+      "id": 72698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351473.jpg",
+      "name": "A Fine Meth",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-04-19",
+      "id": 72699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351637.jpg",
+      "name": "Gilted Lily",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-26",
+      "id": 72700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/351650.jpg",
+      "name": "In My Humboldt Opinion",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-03",
+      "id": 72701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/140/352493.jpg",
+      "name": "A Stand-Up Triple",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-10",
+      "id": 72702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352549.jpg",
+      "name": "Rubble with a Cause",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-17",
+      "id": 72703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352552.jpg",
+      "name": "Aguna Matatala",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-05-31",
+      "id": 72704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352830.jpg",
+      "name": "One Night Stan",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-07",
+      "id": 72705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/352833.jpg",
+      "name": "Duplicate Bridge",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-14",
+      "id": 72706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353087.jpg",
+      "name": "A Frond in Need",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-21",
+      "id": 72707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353358.jpg",
+      "name": "Who's Bugging Mary?",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-06-28",
+      "id": 72708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353366.jpg",
+      "name": "Miles to Go",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-12",
+      "id": 72709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353369.jpg",
+      "name": "Jailbait",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-19",
+      "id": 72710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353373.jpg",
+      "name": "Training Video",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-26",
+      "id": 72711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353377.jpg",
+      "name": "Let's Get It Ahn",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-02",
+      "id": 72712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353378.jpg",
+      "name": "Once a Ponzi Time",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-09",
+      "id": 72713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353383.jpg",
+      "name": "Don't Cry for Me Albuquerque",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-03-31",
+      "id": 72714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353776.jpg",
+      "name": "Father Goes West",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-07",
+      "id": 72715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353789.jpg",
+      "name": "When Mary Met Marshall",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-14",
+      "id": 72716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353797.jpg",
+      "name": "Coma Chameleon",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-21",
+      "id": 72717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353798.jpg",
+      "name": "Whistle Stop",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-28",
+      "id": 72718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353799.jpg",
+      "name": "Fish or Cut Betta",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-05",
+      "id": 72719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353879.jpg",
+      "name": "No Clemency for Old Men",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-12",
+      "id": 72720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353882.jpg",
+      "name": "Love's Faber Lost",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-19",
+      "id": 72721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353888.jpg",
+      "name": "Son of Mann",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-02",
+      "id": 72722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353894.jpg",
+      "name": "Death Becomes Her",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-09",
+      "id": 72723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/353977.jpg",
+      "name": "Her Days Are Numbered",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-16",
+      "id": 72724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354009.jpg",
+      "name": "The Born Identity",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-23",
+      "id": 72725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354012.jpg",
+      "name": "WITSEC Stepmother",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-30",
+      "id": 72726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354034.jpg",
+      "name": "A Priest Walks Into a Bar",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 72727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354040.jpg",
+      "name": "The Art of the Steal",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 72728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354071.jpg",
+      "name": "Crazy Like a Witness",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 72729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354204.jpg",
+      "name": "Love in the Time of Colorado",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 72730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354207.jpg",
+      "name": "Meet the Shannons",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 72731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354221.jpg",
+      "name": "Second Crime Around",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 72732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354226.jpg",
+      "name": "Something A-Mish",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 72733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354229.jpg",
+      "name": "I'm a Liver Not a Fighter",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 72734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354504.jpg",
+      "name": "Kumar vs. Kumar",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-10",
+      "id": 72735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354699.jpg",
+      "name": "The Rolling Stones",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-17",
+      "id": 72736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/141/354709.jpg",
+      "name": "Girls, Interrupted",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 72737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355267.jpg",
+      "name": "Provo-Cation",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-31",
+      "id": 72738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355280.jpg",
+      "name": "A Womb with a View",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-07",
+      "id": 72739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355293.jpg",
+      "name": "Something Borrowed, Something Blew Up",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-16",
+      "id": 72740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355513.jpg",
+      "name": "The Anti-Social Network",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-23",
+      "id": 72741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355522.jpg",
+      "name": "Four Marshalls and a Baby",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-30",
+      "id": 72742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355528.jpg",
+      "name": "Reservations, I've Got a Few",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-06",
+      "id": 72743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355534.jpg",
+      "name": "The Merry Wives of WITSEC",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-13",
+      "id": 72744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355536.jpg",
+      "name": "Drag Me to Hell",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-20",
+      "id": 72745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355571.jpg",
+      "name": "The Medal of Mary",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-27",
+      "id": 72746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355572.jpg",
+      "name": "Sacrificial Lam",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-04",
+      "id": 72747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/142/355597.jpg",
+      "name": "All's Well That Ends",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-810",
+  "live": true,
+  "overview": "In Plain Sight follows the story of a Federal Marshall with the Witness Protection program who must hide her high-risk, high-impact job from her family. To those that know her, Mary Shannon is a glorified meter maid, but her real job is much more dangerous. She must oversee federal witnesses who have been relocated through the Witness Protection program and make sure that they stay safe.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15649.jpg",
   "rating": 7.9,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "810",
+  "title": "In Plain Sight",
+  "type": "series",
+  "year": 2008
 }

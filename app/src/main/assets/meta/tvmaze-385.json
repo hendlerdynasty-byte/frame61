@@ -1,20 +1,849 @@
 {
-  "schema": 1,
-  "id": "tvmaze-385",
-  "source": "tvmaze",
-  "sourceId": "385",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Mad Men",
-  "year": 2007,
-  "type": "series",
-  "overview": "The series revolves around the conflicted world of Don Draper, the biggest ad man in the business, and his colleagues at the Sterling Cooper Draper Pryce Advertising Agency. As Don makes the plays in the boardroom and the bedroom, he struggles to stay a step ahead of the rapidly changing times and the young executives nipping at his heels. The series also depicts authentically the roles of men and women in this era while exploring the true human nature beneath the guise of 1960s traditional family values.",
-  "poster": "file:///android_asset/posters/tvmaze-385.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-07-19",
+      "id": 35185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/522883.jpg",
+      "name": "Smoke Gets in Your Eyes",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-07-26",
+      "id": 35186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763193.jpg",
+      "name": "Ladies Room",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-02",
+      "id": 35187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763194.jpg",
+      "name": "Marriage of Figaro",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-09",
+      "id": 35188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763195.jpg",
+      "name": "New Amsterdam",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-16",
+      "id": 35189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763196.jpg",
+      "name": "Five G",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-23",
+      "id": 35190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763197.jpg",
+      "name": "Babylon",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-08-30",
+      "id": 35191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763198.jpg",
+      "name": "Red in the Face",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-06",
+      "id": 35192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763199.jpg",
+      "name": "The Hobo Code",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-13",
+      "id": 35193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763200.jpg",
+      "name": "Shoot",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-09-27",
+      "id": 35194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763201.jpg",
+      "name": "Long Weekend",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-04",
+      "id": 35195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763202.jpg",
+      "name": "Indian Summer",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-11",
+      "id": 35196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763203.jpg",
+      "name": "Nixon vs. Kennedy",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-18",
+      "id": 35197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763204.jpg",
+      "name": "The Wheel",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-07-27",
+      "id": 35198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763205.jpg",
+      "name": "For Those Who Think Young",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-08-03",
+      "id": 35199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763206.jpg",
+      "name": "Flight 1",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-08-10",
+      "id": 35200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763207.jpg",
+      "name": "The Benefactor",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-08-17",
+      "id": 35201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763208.jpg",
+      "name": "Three Sundays",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-08-24",
+      "id": 35202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763209.jpg",
+      "name": "The New Girl",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-08-31",
+      "id": 35203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763210.jpg",
+      "name": "Maidenform",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-09-07",
+      "id": 35204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763211.jpg",
+      "name": "The Gold Violin",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-09-14",
+      "id": 35205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763212.jpg",
+      "name": "A Night to Remember",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-09-28",
+      "id": 35206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763213.jpg",
+      "name": "Six Month Leave",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-05",
+      "id": 35207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763214.jpg",
+      "name": "The Inheritance",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-12",
+      "id": 35208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763215.jpg",
+      "name": "The Jet Set",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-19",
+      "id": 35209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763216.jpg",
+      "name": "The Mountain King",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-26",
+      "id": 35210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763217.jpg",
+      "name": "Meditations in an Emergency",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-16",
+      "id": 35211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763218.jpg",
+      "name": "Out of Town",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-23",
+      "id": 35212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763219.jpg",
+      "name": "Love Among the Ruins",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-08-30",
+      "id": 35213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763220.jpg",
+      "name": "My Old Kentucky Home",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-06",
+      "id": 35214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763221.jpg",
+      "name": "The Arrangements",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-13",
+      "id": 35215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763222.jpg",
+      "name": "The Fog",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-20",
+      "id": 35216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763223.jpg",
+      "name": "Guy Walks Into an Advertising Agency",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-09-27",
+      "id": 35217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763224.jpg",
+      "name": "Seven Twenty Three",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-04",
+      "id": 35218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763225.jpg",
+      "name": "Souvenir",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-11",
+      "id": 35219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763226.jpg",
+      "name": "Wee Small Hours",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-18",
+      "id": 35220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763227.jpg",
+      "name": "The Color Blue",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-10-25",
+      "id": 35221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763228.jpg",
+      "name": "The Gypsy and the Hobo",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-01",
+      "id": 35222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763229.jpg",
+      "name": "The Grown-Ups",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-11-08",
+      "id": 35223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/305/763230.jpg",
+      "name": "Shut the Door. Have a Seat.",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-25",
+      "id": 35224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66705.jpg",
+      "name": "Public Relations",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-01",
+      "id": 35225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66706.jpg",
+      "name": "Christmas Comes But Once a Year",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-08",
+      "id": 35226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66707.jpg",
+      "name": "The Good News",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-15",
+      "id": 35227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66708.jpg",
+      "name": "The Rejected",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-22",
+      "id": 35228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66709.jpg",
+      "name": "The Chrysanthemum and the Sword",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-08-29",
+      "id": 35229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66710.jpg",
+      "name": "Waldorf Stories",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-05",
+      "id": 35230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66711.jpg",
+      "name": "The Suitcase",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-12",
+      "id": 35231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66712.jpg",
+      "name": "The Summer Man",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-19",
+      "id": 35232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66713.jpg",
+      "name": "The Beautiful Girls",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-26",
+      "id": 35233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66714.jpg",
+      "name": "Hands and Knees",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-03",
+      "id": 35234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66715.jpg",
+      "name": "Chinese Wall",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-10",
+      "id": 35235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66716.jpg",
+      "name": "Blowing Smoke",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-17",
+      "id": 35236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66717.jpg",
+      "name": "Tomorrowland",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 35237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66751.jpg",
+      "name": "A Little Kiss (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-03-25",
+      "id": 35238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66752.jpg",
+      "name": "A Little Kiss (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 35239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66753.jpg",
+      "name": "Tea Leaves",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-08",
+      "id": 35240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66754.jpg",
+      "name": "Mystery Date",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 35241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66755.jpg",
+      "name": "Signal 30",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 35242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66756.jpg",
+      "name": "Far Away Places",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 35243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66757.jpg",
+      "name": "At the Codfish Ball",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 35244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66758.jpg",
+      "name": "Lady Lazarus",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 35245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66759.jpg",
+      "name": "Dark Shadows",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 35246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66760.jpg",
+      "name": "Christmas Waltz",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-05-27",
+      "id": 35247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66761.jpg",
+      "name": "The Other Woman",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 35248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66762.jpg",
+      "name": "Commissions and Fees",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-06-10",
+      "id": 35249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66763.jpg",
+      "name": "The Phantom",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 35250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66769.jpg",
+      "name": "The Doorway (1)",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 35251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66770.jpg",
+      "name": "The Doorway (2)",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 35252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66771.jpg",
+      "name": "The Collaborators",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 35253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66772.jpg",
+      "name": "To Have and to Hold",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 35254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66773.jpg",
+      "name": "The Flood",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 35255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66786.jpg",
+      "name": "For Immediate Release",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 35256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66775.jpg",
+      "name": "Man with a Plan",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-05-19",
+      "id": 35257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66776.jpg",
+      "name": "The Crash",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-05-26",
+      "id": 35258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66777.jpg",
+      "name": "The Better Half",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 35259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66778.jpg",
+      "name": "A Tale of Two Cities",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-09",
+      "id": 35260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66779.jpg",
+      "name": "Favors",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-16",
+      "id": 35261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66780.jpg",
+      "name": "The Quality of Mercy",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2013-06-23",
+      "id": 35262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/66781.jpg",
+      "name": "In Care Of",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 35263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67068.jpg",
+      "name": "Time Zones",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 35264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67069.jpg",
+      "name": "A Day's Work",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 35265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67070.jpg",
+      "name": "Field Trip",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 35266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67071.jpg",
+      "name": "The Monolith",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 35267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67072.jpg",
+      "name": "The Runaways",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 35268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67073.jpg",
+      "name": "The Strategy",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2014-05-25",
+      "id": 35269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67074.jpg",
+      "name": "Waterloo",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-05",
+      "id": 117599,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67075.jpg",
+      "name": "Severance",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 152873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67076.jpg",
+      "name": "New Business",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 152874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67077.jpg",
+      "name": "The Forecast",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 152875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67078.jpg",
+      "name": "Time & Life",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 154711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67079.jpg",
+      "name": "Lost Horizon",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 154712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67080.jpg",
+      "name": "The Milk and Honey Route",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2015-05-17",
+      "id": 154713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/352/880868.jpg",
+      "name": "Person to Person",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama"
   ],
+  "id": "tvmaze-385",
+  "live": true,
+  "overview": "The series revolves around the conflicted world of Don Draper, the biggest ad man in the business, and his colleagues at the Sterling Cooper Draper Pryce Advertising Agency. As Don makes the plays in the boardroom and the bedroom, he struggles to stay a step ahead of the rapidly changing times and the young executives nipping at his heels. The series also depicts authentically the roles of men and women in this era while exploring the true human nature beneath the guise of 1960s traditional family values.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5589.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "385",
+  "title": "Mad Men",
+  "type": "series",
+  "year": 2007
 }

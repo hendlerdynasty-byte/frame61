@@ -1,22 +1,860 @@
 {
-  "schema": 1,
-  "id": "tvmaze-453",
-  "source": "tvmaze",
-  "sourceId": "453",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Tales from the Crypt",
-  "year": 1989,
-  "type": "series",
-  "overview": "Cadaverous scream legend/all-around punster the Crypt Keeper hosts these forays of fright and fun based on classic E.C. Comics tales from back in the day – and drawing on the talents of top filmmakers Richard Donner, Walter Hill, Joel Silver, Robert Zemeckis and others. So belly up to the bar and name your poison. Is it a deranged Santa on a personal slay ride? A man surgically implanted with as many lives (and deaths) as a cat? Honeymooners who each want the other to fulfill the 'til-death vow pronto? These and more terror-rific tales await. Ghoul love 'em!",
-  "poster": "file:///android_asset/posters/tvmaze-453.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1989-06-10",
+      "id": 42377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594244.jpg",
+      "name": "The Man Who Was Death",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1989-06-10",
+      "id": 42378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594245.jpg",
+      "name": "And All Through the House",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1989-06-10",
+      "id": 42379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594246.jpg",
+      "name": "Dig That Cat... He's Real Gone",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1989-06-14",
+      "id": 42380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594247.jpg",
+      "name": "Only Sin Deep",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1989-06-21",
+      "id": 42381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594248.jpg",
+      "name": "Lover Come Hack to Me",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1989-06-28",
+      "id": 42382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594249.jpg",
+      "name": "Collection Completed",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1990-04-21",
+      "id": 42383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594250.jpg",
+      "name": "Dead Right",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-04-21",
+      "id": 42384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594251.jpg",
+      "name": "The Switch",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-04-21",
+      "id": 42385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188221.jpg",
+      "name": "Cutting Cards",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-04-24",
+      "id": 42386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594252.jpg",
+      "name": "'Til Death",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-05-01",
+      "id": 42387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594253.jpg",
+      "name": "Three's a Crowd",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-05-08",
+      "id": 42388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594254.jpg",
+      "name": "The Thing from the Grave",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-05-15",
+      "id": 42389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594255.jpg",
+      "name": "The Sacrifice",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-05-22",
+      "id": 42390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594256.jpg",
+      "name": "For Cryin' Out Loud",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-05-29",
+      "id": 42391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594257.jpg",
+      "name": "Four-Sided Triangle",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-06-05",
+      "id": 42392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594258.jpg",
+      "name": "The Ventriloquist's Dummy",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-06-12",
+      "id": 42393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594259.jpg",
+      "name": "Judy, You're Not Yourself Today",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-06-19",
+      "id": 42394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594261.jpg",
+      "name": "Fitting Punishment",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-06-26",
+      "id": 42395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594262.jpg",
+      "name": "Korman's Kalamity",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-07-03",
+      "id": 42396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594264.jpg",
+      "name": "Lower Berth",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-07-10",
+      "id": 42397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594265.jpg",
+      "name": "Mute Witness to Murder",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-07-17",
+      "id": 42398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216888.jpg",
+      "name": "Television Terror",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-07-24",
+      "id": 42399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594266.jpg",
+      "name": "My Brother's Keeper",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1990-07-31",
+      "id": 42400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594267.jpg",
+      "name": "The Secret",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1991-06-15",
+      "id": 42401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188207.jpg",
+      "name": "Loved to Death",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-06-15",
+      "id": 42402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188333.jpg",
+      "name": "Carrion Death",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-06-15",
+      "id": 42403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594501.jpg",
+      "name": "The Trap",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-06-19",
+      "id": 42404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594502.jpg",
+      "name": "Abra Cadaver",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-06-26",
+      "id": 42405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594503.jpg",
+      "name": "Top Billing",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-07-03",
+      "id": 42406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594504.jpg",
+      "name": "Dead Wait",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-07-10",
+      "id": 42407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188751.jpg",
+      "name": "The Reluctant Vampire",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-07-17",
+      "id": 42408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594505.jpg",
+      "name": "Easel Kill Ya",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-07-24",
+      "id": 42409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594506.jpg",
+      "name": "Undertaking Palor",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-07-31",
+      "id": 42410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594507.jpg",
+      "name": "Mournin' Mess",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-08-07",
+      "id": 42411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594508.jpg",
+      "name": "Split Second",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-08-14",
+      "id": 42412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/297/742828.jpg",
+      "name": "Deadline",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-08-21",
+      "id": 42413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594510.jpg",
+      "name": "Spoiled",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-08-28",
+      "id": 42414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266743.jpg",
+      "name": "Yellow",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1992-06-27",
+      "id": 42415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594511.jpg",
+      "name": "None But the Lonely Heart",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-06-27",
+      "id": 42416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594512.jpg",
+      "name": "This'll Kill Ya",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-06-27",
+      "id": 42417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/113/284329.jpg",
+      "name": "On a Deadman's Chest",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-07-04",
+      "id": 42418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594513.jpg",
+      "name": "Seance",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-07-11",
+      "id": 42419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594514.jpg",
+      "name": "Beauty Rest",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-07-22",
+      "id": 42420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594515.jpg",
+      "name": "What's Cookin'",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-07-25",
+      "id": 42421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594516.jpg",
+      "name": "The New Arrival",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-08-01",
+      "id": 42422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594517.jpg",
+      "name": "Showdown",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-08-08",
+      "id": 42423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594518.jpg",
+      "name": "King of the Road",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-08-19",
+      "id": 42424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594519.jpg",
+      "name": "Maniac at Large",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-08-26",
+      "id": 42425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594520.jpg",
+      "name": "Split Personality",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-02",
+      "id": 42426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594521.jpg",
+      "name": "Strung Along",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-09",
+      "id": 42427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594522.jpg",
+      "name": "Werewolf Concerto",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-09-16",
+      "id": 42428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594523.jpg",
+      "name": "Curiosity Killed",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1993-10-02",
+      "id": 42429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594524.jpg",
+      "name": "Death of Some Salesmen",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-02",
+      "id": 42430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594525.jpg",
+      "name": "As Ye Sow",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-02",
+      "id": 42431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/187524.jpg",
+      "name": "Forever Ambergris",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-06",
+      "id": 42432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594526.jpg",
+      "name": "Food for Thought",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-13",
+      "id": 42433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594527.jpg",
+      "name": "People Who Live in Brass Hearses",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-20",
+      "id": 42434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594528.jpg",
+      "name": "Two for the Show",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-27",
+      "id": 42435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594529.jpg",
+      "name": "House of Horror",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-03",
+      "id": 42436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594530.jpg",
+      "name": "Well Cooked Hams",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-10",
+      "id": 42437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594531.jpg",
+      "name": "Creep Course",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-17",
+      "id": 42438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594532.jpg",
+      "name": "Came the Dawn",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-11-24",
+      "id": 42439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594533.jpg",
+      "name": "Oil's Well That Ends Well",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-12-01",
+      "id": 42440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594534.jpg",
+      "name": "Half-Way Horrible",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-12-08",
+      "id": 42441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594535.jpg",
+      "name": "Till Death Do We Part",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1994-10-31",
+      "id": 42442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594536.jpg",
+      "name": "Let the Punishment Fit the Crime",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-10-31",
+      "id": 42443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594537.jpg",
+      "name": "Only Skin Deep",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-10-31",
+      "id": 42444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594538.jpg",
+      "name": "Whirlpool",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-09",
+      "id": 42445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594539.jpg",
+      "name": "Operation Friendship",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-16",
+      "id": 42446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/75/188246.jpg",
+      "name": "Revenge Is the Nuts",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-23",
+      "id": 42447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594540.jpg",
+      "name": "The Bribe",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-11-30",
+      "id": 42448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594541.jpg",
+      "name": "The Pit",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-07",
+      "id": 42449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594542.jpg",
+      "name": "The Assassin",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-14",
+      "id": 42450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594543.jpg",
+      "name": "Staired in Horror",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-21",
+      "id": 42451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594544.jpg",
+      "name": "In the Groove",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1994-12-28",
+      "id": 42452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594545.jpg",
+      "name": "Surprise Party",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-04",
+      "id": 42453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594546.jpg",
+      "name": "Doctor of Horror",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-11",
+      "id": 42454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594547.jpg",
+      "name": "Comes the Dawn",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-18",
+      "id": 42455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594548.jpg",
+      "name": "99 & 44/100% Pure Horror",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1995-01-25",
+      "id": 42456,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594549.jpg",
+      "name": "You, Murderer",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1996-04-19",
+      "id": 42457,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594550.jpg",
+      "name": "Fatal Caper",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-04-26",
+      "id": 42458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594551.jpg",
+      "name": "Last Respects",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-03",
+      "id": 42459,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594552.jpg",
+      "name": "A Slight Case of Murder",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-17",
+      "id": 42460,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594553.jpg",
+      "name": "Escape",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-24",
+      "id": 42461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594554.jpg",
+      "name": "Horror in the Night",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-05-31",
+      "id": 42462,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594555.jpg",
+      "name": "Cold War",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-06-07",
+      "id": 42463,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594556.jpg",
+      "name": "Kidnapper",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-06-14",
+      "id": 42464,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594557.jpg",
+      "name": "Report from the Grave",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-06-21",
+      "id": 42465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594558.jpg",
+      "name": "Smoke Wrings",
+      "number": 9,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-06-28",
+      "id": 42466,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/210839.jpg",
+      "name": "About Face",
+      "number": 10,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-07-05",
+      "id": 42467,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594559.jpg",
+      "name": "Confession",
+      "number": 11,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-07-12",
+      "id": 42468,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594560.jpg",
+      "name": "Ear Today... Gone Tomorrow",
+      "number": 12,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1996-07-19",
+      "id": 42469,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/237/594561.jpg",
+      "name": "The Third Pig",
+      "number": 13,
+      "runtime": 30,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
+    "Comedy",
     "Fantasy",
     "Horror"
   ],
+  "id": "tvmaze-453",
+  "live": true,
+  "overview": "Cadaverous scream legend/all-around punster the Crypt Keeper hosts these forays of fright and fun based on classic E.C. Comics tales from back in the day – and drawing on the talents of top filmmakers Richard Donner, Walter Hill, Joel Silver, Robert Zemeckis and others. So belly up to the bar and name your poison. Is it a deranged Santa on a personal slay ride? A man surgically implanted with as many lives (and deaths) as a cat? Honeymooners who each want the other to fulfill the 'til-death vow pronto? These and more terror-rific tales await. Ghoul love 'em!",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/3/9142.jpg",
   "rating": 8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "453",
+  "title": "Tales from the Crypt",
+  "type": "series",
+  "year": 1989
 }

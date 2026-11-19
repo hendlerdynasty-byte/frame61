@@ -1,22 +1,725 @@
 {
-  "schema": 1,
-  "id": "tvmaze-90",
-  "source": "tvmaze",
-  "sourceId": "90",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Haven",
-  "year": 2010,
-  "type": "series",
-  "overview": "When FBI Special Agent Audrey Parker is dispatched to the small town of Haven, Maine, on a routine case, she soon finds herself increasingly involved in the return of \"The Troubles\", a plague of supernatural afflictions that have occurred in the town at least twice before. With an openness to the possibility of the paranormal, she also finds a more personal link in Haven that may lead her to the mother she has never known.She and her partner, police detective Nathan Wuornos, find themselves frequently facing problems caused by both the effects of the Troubles, as well as the activities of town folk who take more drastic measures against those who are Troubled.",
-  "poster": "file:///android_asset/posters/tvmaze-90.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2010-07-09",
+      "id": 5900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39564.jpg",
+      "name": "Welcome to Haven",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-16",
+      "id": 5901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39565.jpg",
+      "name": "Butterfly",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-23",
+      "id": 5902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39566.jpg",
+      "name": "Harmony",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-07-30",
+      "id": 5903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39567.jpg",
+      "name": "Consumed",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-06",
+      "id": 5904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39568.jpg",
+      "name": "Ball and Chain",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-13",
+      "id": 5905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39569.jpg",
+      "name": "Fur",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-20",
+      "id": 5906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39570.jpg",
+      "name": "Sketchy",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-08-27",
+      "id": 5907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39571.jpg",
+      "name": "Ain't No Sunshine",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-10",
+      "id": 5908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39572.jpg",
+      "name": "As You Were",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-17",
+      "id": 5909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39573.jpg",
+      "name": "The Hand You're Dealt",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-09-24",
+      "id": 5910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39574.jpg",
+      "name": "The Trial of Audrey Parker",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-01",
+      "id": 5911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39575.jpg",
+      "name": "Resurfacing",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2010-10-08",
+      "id": 5912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39576.jpg",
+      "name": "Spiral",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-07-15",
+      "id": 5913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39551.jpg",
+      "name": "A Tale of Two Audreys",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-22",
+      "id": 5914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39552.jpg",
+      "name": "Fear & Loathing",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-07-29",
+      "id": 5915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39553.jpg",
+      "name": "Love Machine",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-05",
+      "id": 5916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39554.jpg",
+      "name": "Sparks and Recreation",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-12",
+      "id": 5917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39555.jpg",
+      "name": "Roots",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-19",
+      "id": 5918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39556.jpg",
+      "name": "Audrey Parker's Day Off",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-08-26",
+      "id": 5919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39557.jpg",
+      "name": "The Tides That Bind",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-02",
+      "id": 5920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39558.jpg",
+      "name": "Friend or Faux",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-09",
+      "id": 5921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39559.jpg",
+      "name": "Lockdown",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-16",
+      "id": 5922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39560.jpg",
+      "name": "Who, What, Where, Wendigo?",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-23",
+      "id": 5923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39561.jpg",
+      "name": "Business as Usual",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-09-30",
+      "id": 5924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39562.jpg",
+      "name": "Sins of the Fathers",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2011-12-06",
+      "id": 5959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39563.jpg",
+      "name": "Silent Night",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-21",
+      "id": 5925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39538.jpg",
+      "name": "301",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-09-28",
+      "id": 5926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39539.jpg",
+      "name": "Stay",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-05",
+      "id": 5927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39540.jpg",
+      "name": "The Farmer",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-12",
+      "id": 5928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39541.jpg",
+      "name": "Over My Head",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-19",
+      "id": 5929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39542.jpg",
+      "name": "Double Jeopardy",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-10-26",
+      "id": 5930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39543.jpg",
+      "name": "Real Estate",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-02",
+      "id": 5931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39544.jpg",
+      "name": "Magic Hour (1)",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-09",
+      "id": 5932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39545.jpg",
+      "name": "Magic Hour (2)",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-16",
+      "id": 5933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39546.jpg",
+      "name": "Sarah",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-11-30",
+      "id": 5934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39547.jpg",
+      "name": "Burned",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2012-12-07",
+      "id": 5935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39548.jpg",
+      "name": "Last Goodbyes",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-17",
+      "id": 5936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39549.jpg",
+      "name": "Reunion",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-01-17",
+      "id": 5937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39515.jpg",
+      "name": "Thanks for the Memories",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-13",
+      "id": 5938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39514.jpg",
+      "name": "Fallout",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-20",
+      "id": 5939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39513.jpg",
+      "name": "Survivors",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-09-27",
+      "id": 5940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39512.jpg",
+      "name": "Bad Blood",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-04",
+      "id": 5941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39511.jpg",
+      "name": "Lost and Found",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-11",
+      "id": 5942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39510.jpg",
+      "name": "The New Girl",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-18",
+      "id": 5943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39509.jpg",
+      "name": "Countdown",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-10-25",
+      "id": 5944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39508.jpg",
+      "name": "Lay Me Down",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-01",
+      "id": 5945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39507.jpg",
+      "name": "Crush",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-08",
+      "id": 5946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39506.jpg",
+      "name": "William",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-15",
+      "id": 5947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39505.jpg",
+      "name": "The Trouble with Troubles",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-11-22",
+      "id": 5948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39504.jpg",
+      "name": "Shot in the Dark",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-06",
+      "id": 5949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39503.jpg",
+      "name": "When the Bough Breaks",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2013-12-13",
+      "id": 5950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39502.jpg",
+      "name": "The Lighthouse",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-11",
+      "id": 5951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4334.jpg",
+      "name": "See No Evil",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-18",
+      "id": 5952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4335.jpg",
+      "name": "Speak No Evil",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-09-25",
+      "id": 5953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4336.jpg",
+      "name": "Spotlight",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-02",
+      "id": 5954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4337.jpg",
+      "name": "Much Ado About Mara",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-10",
+      "id": 5955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4338.jpg",
+      "name": "The Old Switcheroo (1)",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-17",
+      "id": 5956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/1/4339.jpg",
+      "name": "The Old Switcheroo (2)",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-24",
+      "id": 5957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39501.jpg",
+      "name": "Nowhere Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-10-31",
+      "id": 5958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39500.jpg",
+      "name": "Exposure",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-07",
+      "id": 14418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39499.jpg",
+      "name": "Morbidity",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-14",
+      "id": 31864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39498.jpg",
+      "name": "Mortality",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-21",
+      "id": 38911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39496.jpg",
+      "name": "Reflections",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-11-28",
+      "id": 38912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39495.jpg",
+      "name": "Chemistry",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2014-12-05",
+      "id": 39977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/15/39494.jpg",
+      "name": "Chosen",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-08",
+      "id": 202795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58697.jpg",
+      "name": "New World Order",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-08",
+      "id": 233106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/58703.jpg",
+      "name": "Power",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-15",
+      "id": 233644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61696.jpg",
+      "name": "The Trial of Nathan Wuornos",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-22",
+      "id": 311116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63203.jpg",
+      "name": "Enter Sandman",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-10-29",
+      "id": 311117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/67032.jpg",
+      "name": "Wild Card",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-05",
+      "id": 311118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/70667.jpg",
+      "name": "Perditus",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-12",
+      "id": 311119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/75018.jpg",
+      "name": "Just Passing Through",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-19",
+      "id": 311120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/77701.jpg",
+      "name": "Close to Home",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-11-26",
+      "id": 311121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/80604.jpg",
+      "name": "A Matter of Time",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-03",
+      "id": 311122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/82996.jpg",
+      "name": "Blind Spot",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-10",
+      "id": 311123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/34/85480.jpg",
+      "name": "The Widening Gyre",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-17",
+      "id": 311124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/87972.jpg",
+      "name": "Now",
+      "number": 25,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-12-17",
+      "id": 311489,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/35/87984.jpg",
+      "name": "Forever",
+      "number": 26,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
-    "Übernatürlich"
+    "Crime",
+    "Supernatural"
   ],
+  "id": "tvmaze-90",
+  "live": true,
+  "overview": "When FBI Special Agent Audrey Parker is dispatched to the small town of Haven, Maine, on a routine case, she soon finds herself increasingly involved in the return of \"The Troubles\", a plague of supernatural afflictions that have occurred in the town at least twice before. With an openness to the possibility of the paranormal, she also finds a more personal link in Haven that may lead her to the mother she has never known.She and her partner, police detective Nathan Wuornos, find themselves frequently facing problems caused by both the effects of the Troubles, as well as the activities of town folk who take more drastic measures against those who are Troubled.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/672.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "90",
+  "title": "Haven",
+  "type": "series",
+  "year": 2010
 }

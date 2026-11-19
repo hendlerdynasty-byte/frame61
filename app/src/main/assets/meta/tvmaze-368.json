@@ -1,21 +1,679 @@
 {
-  "schema": 1,
-  "id": "tvmaze-368",
-  "source": "tvmaze",
-  "sourceId": "368",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Red Dwarf",
-  "year": 1988,
-  "type": "series",
-  "overview": "Lost in space and light years away from earth is the Jupiter Mining Ship Red Dwarf. In the late 22nd century, an on-board radiation leak kills all of the crew except for low-ranking technician Dave Lister, who is in suspended animation at the time, and his pregnant cat, Frankenstein, who is safely sealed in the cargo hold.",
-  "poster": "file:///android_asset/posters/tvmaze-368.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1988-02-15",
+      "id": 34259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107989.jpg",
+      "name": "The End",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-02-22",
+      "id": 34260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/107991.jpg",
+      "name": "Future Echoes",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-02-29",
+      "id": 34261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108288.jpg",
+      "name": "Balance of Power",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-03-07",
+      "id": 34262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108711.jpg",
+      "name": "Waiting for God",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-03-14",
+      "id": 34263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108720.jpg",
+      "name": "Confidence and Paranoia",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-03-21",
+      "id": 34264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/43/108722.jpg",
+      "name": "Me²",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "1988-09-06",
+      "id": 34265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110040.jpg",
+      "name": "Kryten",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1988-09-13",
+      "id": 34266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/605/1513485.jpg",
+      "name": "Better Than Life",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1988-09-20",
+      "id": 34267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110146.jpg",
+      "name": "Thanks for the Memory",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1988-09-27",
+      "id": 34268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110203.jpg",
+      "name": "Stasis Leak",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1988-10-04",
+      "id": 34269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110206.jpg",
+      "name": "Queeg",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1988-10-11",
+      "id": 34270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/44/110588.jpg",
+      "name": "Parallel Universe",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "1989-11-14",
+      "id": 34271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163959.jpg",
+      "name": "Backwards",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1989-11-21",
+      "id": 34272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163988.jpg",
+      "name": "Marooned",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1989-11-28",
+      "id": 34273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163991.jpg",
+      "name": "Polymorph",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1989-12-05",
+      "id": 34274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192310.jpg",
+      "name": "Bodyswap",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1989-12-12",
+      "id": 34275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192309.jpg",
+      "name": "Timeslides",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1989-12-19",
+      "id": 34276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192308.jpg",
+      "name": "The Last Day",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "1991-02-14",
+      "id": 34277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192307.jpg",
+      "name": "Camille",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1991-02-21",
+      "id": 34278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192305.jpg",
+      "name": "D.N.A.",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1991-02-28",
+      "id": 34279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192304.jpg",
+      "name": "Justice",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1991-03-07",
+      "id": 34280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192303.jpg",
+      "name": "White Hole",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1991-03-14",
+      "id": 34281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192302.jpg",
+      "name": "Dimension Jump",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1991-03-21",
+      "id": 34282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/192301.jpg",
+      "name": "Meltdown",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "1992-02-20",
+      "id": 34283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191895.jpg",
+      "name": "Holoship",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1992-02-27",
+      "id": 34284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191887.jpg",
+      "name": "The Inquisitor",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1992-03-05",
+      "id": 34285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191886.jpg",
+      "name": "Terrorform",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1992-03-12",
+      "id": 34286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191879.jpg",
+      "name": "Quarantine",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1992-03-19",
+      "id": 34287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191878.jpg",
+      "name": "Demons & Angels",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1992-03-26",
+      "id": 34288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191876.jpg",
+      "name": "Back to Reality",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "1993-10-07",
+      "id": 34289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191871.jpg",
+      "name": "Psirens",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1993-10-14",
+      "id": 34290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191868.jpg",
+      "name": "Legion",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1993-10-21",
+      "id": 34291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191867.jpg",
+      "name": "Gunmen of the Apocalypse",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1993-10-28",
+      "id": 34292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191866.jpg",
+      "name": "Emohawk - Polymorph II",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1993-11-04",
+      "id": 34293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191865.jpg",
+      "name": "Rimmerworld",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1993-11-11",
+      "id": 34294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191864.jpg",
+      "name": "Out of Time",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "1997-01-17",
+      "id": 34295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191863.jpg",
+      "name": "Tikka to Ride",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-01-24",
+      "id": 34296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191862.jpg",
+      "name": "Stoke Me a Clipper",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-01-31",
+      "id": 34297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191861.jpg",
+      "name": "Ouroboros",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-02-07",
+      "id": 34298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191860.jpg",
+      "name": "Duct Soup",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-02-14",
+      "id": 34299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191859.jpg",
+      "name": "Blue",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-02-21",
+      "id": 34300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191858.jpg",
+      "name": "Beyond a Joke",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-02-28",
+      "id": 34301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191857.jpg",
+      "name": "Epideme",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1997-03-07",
+      "id": 34302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191856.jpg",
+      "name": "Nanarchy",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-18",
+      "id": 34303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191855.jpg",
+      "name": "Back in the Red, Part 1",
+      "number": 1,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-02-25",
+      "id": 34304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191854.jpg",
+      "name": "Back in the Red, Part 2",
+      "number": 2,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-03-04",
+      "id": 34305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191853.jpg",
+      "name": "Back in the Red, Part 3",
+      "number": 3,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-03-11",
+      "id": 34306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191849.jpg",
+      "name": "Cassandra",
+      "number": 4,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-03-18",
+      "id": 34307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191848.jpg",
+      "name": "Krytie TV",
+      "number": 5,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-03-25",
+      "id": 34308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191847.jpg",
+      "name": "Pete, Part 1",
+      "number": 6,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-04-01",
+      "id": 34309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191846.jpg",
+      "name": "Pete, Part 2",
+      "number": 7,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "1999-04-05",
+      "id": 34310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/191845.jpg",
+      "name": "Only the Good...",
+      "number": 8,
+      "runtime": 30,
+      "season": 8
+    },
+    {
+      "airdate": "2009-04-10",
+      "id": 34311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175125.jpg",
+      "name": "Back to Earth, Part 1",
+      "number": 1,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-11",
+      "id": 34312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175126.jpg",
+      "name": "Back to Earth, Part 2",
+      "number": 2,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2009-04-12",
+      "id": 34313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175127.jpg",
+      "name": "Back to Earth, Part 3",
+      "number": 3,
+      "runtime": 30,
+      "season": 9
+    },
+    {
+      "airdate": "2012-10-04",
+      "id": 34314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175118.jpg",
+      "name": "Trojan",
+      "number": 1,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-11",
+      "id": 34315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175119.jpg",
+      "name": "Fathers and Suns",
+      "number": 2,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-18",
+      "id": 34316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175120.jpg",
+      "name": "Lemons",
+      "number": 3,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-10-25",
+      "id": 34317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175121.jpg",
+      "name": "Entangled",
+      "number": 4,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-01",
+      "id": 34318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175122.jpg",
+      "name": "Dear Dave",
+      "number": 5,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2012-11-08",
+      "id": 34319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175123.jpg",
+      "name": "The Beginning",
+      "number": 6,
+      "runtime": 30,
+      "season": 10
+    },
+    {
+      "airdate": "2016-09-22",
+      "id": 886615,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184274.jpg",
+      "name": "Twentica",
+      "number": 1,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2016-09-29",
+      "id": 886616,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197699.jpg",
+      "name": "Samsara",
+      "number": 2,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2016-10-06",
+      "id": 886617,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/197698.jpg",
+      "name": "Give & Take",
+      "number": 3,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2016-10-13",
+      "id": 886620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458505.jpg",
+      "name": "Officer Rimmer",
+      "number": 4,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2016-10-20",
+      "id": 886622,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458506.jpg",
+      "name": "Krysis",
+      "number": 5,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2016-10-27",
+      "id": 886625,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1458507.jpg",
+      "name": "Can of Worms",
+      "number": 6,
+      "runtime": 40,
+      "season": 11
+    },
+    {
+      "airdate": "2017-10-12",
+      "id": 1290548,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329865.jpg",
+      "name": "Cured",
+      "number": 1,
+      "runtime": 40,
+      "season": 12
+    },
+    {
+      "airdate": "2017-10-19",
+      "id": 1304402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329863.jpg",
+      "name": "Siliconia",
+      "number": 2,
+      "runtime": 40,
+      "season": 12
+    },
+    {
+      "airdate": "2017-10-26",
+      "id": 1304403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329864.jpg",
+      "name": "Timewave",
+      "number": 3,
+      "runtime": 40,
+      "season": 12
+    },
+    {
+      "airdate": "2017-11-02",
+      "id": 1304404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329871.jpg",
+      "name": "Mechocracy",
+      "number": 4,
+      "runtime": 40,
+      "season": 12
+    },
+    {
+      "airdate": "2017-11-09",
+      "id": 1304405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329872.jpg",
+      "name": "M-Corp",
+      "number": 5,
+      "runtime": 40,
+      "season": 12
+    },
+    {
+      "airdate": "2017-11-16",
+      "id": 1304406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329873.jpg",
+      "name": "Skipper",
+      "number": 6,
+      "runtime": 40,
+      "season": 12
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Komödie",
+    "Comedy",
     "Science-Fiction"
   ],
+  "id": "tvmaze-368",
+  "live": true,
+  "overview": "Lost in space and light years away from earth is the Jupiter Mining Ship Red Dwarf. In the late 22nd century, an on-board radiation leak kills all of the crew except for low-ranking technician Dave Lister, who is in suspended animation at the time, and his pregnant cat, Frankenstein, who is safely sealed in the cargo hold.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5497.jpg",
   "rating": 7.9,
-  "runtime": null,
-  "episodes": []
+  "runtime": 32,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "368",
+  "title": "Red Dwarf",
+  "type": "series",
+  "year": 1988
 }

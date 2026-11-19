@@ -1,22 +1,734 @@
 {
-  "schema": 1,
-  "id": "tvmaze-490",
-  "source": "tvmaze",
-  "sourceId": "490",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Star Trek",
-  "year": 1966,
-  "type": "series",
-  "overview": "The original Star Trek series focuses on the 23rd century adventures of Captain James T. Kirk and the U.S.S. Enterprise (NCC-1701), a powerful interstellar spacecraft dispatched by Earth-based Starfleet Command to explore the galaxy. Kirk commands a crew of 430 men and women aboard his starship, which can travel at speeds surpassing the speed of light. Kirk's five-year mission—and his mandate from Starfleet—is to seek out new life and new civilizations, and to boldly go where no man has gone before.",
-  "poster": "file:///android_asset/posters/tvmaze-490.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1966-09-08",
+      "id": 44377,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/83/207633.jpg",
+      "name": "The Man Trap",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-09-15",
+      "id": 44378,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242086.jpg",
+      "name": "Charlie X",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-09-22",
+      "id": 44379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/287327.jpg",
+      "name": "Where No Man Has Gone Before",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-09-29",
+      "id": 44380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238400.jpg",
+      "name": "The Naked Time",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-10-06",
+      "id": 44381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242089.jpg",
+      "name": "The Enemy Within",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-10-13",
+      "id": 44382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242090.jpg",
+      "name": "Mudd's Women",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-10-20",
+      "id": 44383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242091.jpg",
+      "name": "What Are Little Girls Made of?",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-10-27",
+      "id": 44384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242092.jpg",
+      "name": "Miri",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-11-03",
+      "id": 44385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242093.jpg",
+      "name": "Dagger of the Mind",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-11-10",
+      "id": 44386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242094.jpg",
+      "name": "The Corbomite Maneuver",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-11-17",
+      "id": 44387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242095.jpg",
+      "name": "The Menagerie Part I",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-11-24",
+      "id": 44388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242096.jpg",
+      "name": "The Menagerie Part II",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-12-08",
+      "id": 44389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/143/358559.jpg",
+      "name": "The Conscience of the King",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-12-15",
+      "id": 44390,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242098.jpg",
+      "name": "Balance of Terror",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1966-12-29",
+      "id": 44391,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242099.jpg",
+      "name": "Shore Leave",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-01-05",
+      "id": 44392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242100.jpg",
+      "name": "The Galileo Seven",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-01-12",
+      "id": 44393,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/230184.jpg",
+      "name": "The Squire of Gothos",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-01-19",
+      "id": 44394,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242102.jpg",
+      "name": "Arena",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-01-26",
+      "id": 44395,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/237361.jpg",
+      "name": "Tomorrow Is Yesterday",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-02-02",
+      "id": 44396,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242104.jpg",
+      "name": "Court Martial",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-02-09",
+      "id": 44397,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/240089.jpg",
+      "name": "The Return of the Archons",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-02-16",
+      "id": 44398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242106.jpg",
+      "name": "Space Seed",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-02-23",
+      "id": 44399,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242107.jpg",
+      "name": "A Taste of Armageddon",
+      "number": 23,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-03-02",
+      "id": 44400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242108.jpg",
+      "name": "This Side of Paradise",
+      "number": 24,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-03-09",
+      "id": 44401,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/84/212225.jpg",
+      "name": "The Devil in the Dark",
+      "number": 25,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-03-23",
+      "id": 44402,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242110.jpg",
+      "name": "Errand of Mercy",
+      "number": 26,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-03-30",
+      "id": 44403,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242111.jpg",
+      "name": "The Alternative Factor",
+      "number": 27,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-04-06",
+      "id": 44404,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242112.jpg",
+      "name": "The City on the Edge of Forever",
+      "number": 28,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-04-13",
+      "id": 44405,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242113.jpg",
+      "name": "Operation: Annihilate!",
+      "number": 29,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1967-09-15",
+      "id": 44406,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1075311.jpg",
+      "name": "Amok Time",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-09-22",
+      "id": 44407,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/430/1075875.jpg",
+      "name": "Who Mourns for Adonais?",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-09-29",
+      "id": 44408,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242117.jpg",
+      "name": "The Changeling",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-10-06",
+      "id": 44409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242118.jpg",
+      "name": "Mirror, Mirror",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-10-13",
+      "id": 44410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242119.jpg",
+      "name": "The Apple",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-10-20",
+      "id": 44411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242120.jpg",
+      "name": "The Doomsday Machine",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-10-27",
+      "id": 44412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242121.jpg",
+      "name": "Catspaw",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-11-03",
+      "id": 44413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242122.jpg",
+      "name": "I, Mudd",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-11-10",
+      "id": 44414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242123.jpg",
+      "name": "Metamorphosis",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-11-17",
+      "id": 44415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242124.jpg",
+      "name": "Journey to Babel",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-12-01",
+      "id": 44416,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/144/361476.jpg",
+      "name": "Friday's Child",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-12-08",
+      "id": 44417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242126.jpg",
+      "name": "The Deadly Years",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-12-15",
+      "id": 44418,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/437/1094690.jpg",
+      "name": "Obsession",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-12-22",
+      "id": 44419,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/438/1095322.jpg",
+      "name": "Wolf in the Fold",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1967-12-29",
+      "id": 44420,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242129.jpg",
+      "name": "The Trouble with Tribbles",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-01-05",
+      "id": 44421,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/439/1098602.jpg",
+      "name": "The Gamesters of Triskelion",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-01-12",
+      "id": 44422,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/440/1101988.jpg",
+      "name": "A Piece of the Action",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-01-19",
+      "id": 44423,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242132.jpg",
+      "name": "The Immunity Syndrome",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-02-02",
+      "id": 44424,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242133.jpg",
+      "name": "A Private Little War",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-02-09",
+      "id": 44425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/441/1103965.jpg",
+      "name": "Return to Tomorrow",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-02-16",
+      "id": 44426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/442/1105178.jpg",
+      "name": "Patterns of Force",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-02-23",
+      "id": 44427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1107561.jpg",
+      "name": "By Any Other Name",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-03-01",
+      "id": 44428,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/443/1109693.jpg",
+      "name": "The Omega Glory",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-03-08",
+      "id": 44429,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242138.jpg",
+      "name": "The Ultimate Computer",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-03-15",
+      "id": 44430,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/447/1117504.jpg",
+      "name": "Bread and Circuses",
+      "number": 25,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-03-29",
+      "id": 44431,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1121250.jpg",
+      "name": "Assignment: Earth",
+      "number": 26,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1968-09-20",
+      "id": 44432,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242142.jpg",
+      "name": "Spock's Brain",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-09-27",
+      "id": 44433,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242143.jpg",
+      "name": "The Enterprise Incident",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-10-04",
+      "id": 44434,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242144.jpg",
+      "name": "The Paradise Syndrome",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-10-11",
+      "id": 44435,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242145.jpg",
+      "name": "And the Children Shall Lead",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-10-18",
+      "id": 44436,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/459/1148804.jpg",
+      "name": "Is There in Truth No Beauty?",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-10-25",
+      "id": 44437,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262044.jpg",
+      "name": "Spectre of the Gun",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-11-01",
+      "id": 44438,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/464/1160912.jpg",
+      "name": "Day of the Dove",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-11-08",
+      "id": 44439,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/464/1161581.jpg",
+      "name": "For the World is Hollow and I Have Touched the Sky",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-11-15",
+      "id": 44440,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242150.jpg",
+      "name": "The Tholian Web",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-11-22",
+      "id": 44441,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242151.jpg",
+      "name": "Plato's Stepchildren",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-11-29",
+      "id": 44442,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/466/1167495.jpg",
+      "name": "Wink of an Eye",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-12-06",
+      "id": 44443,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242153.jpg",
+      "name": "The Empath",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1968-12-20",
+      "id": 44444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242154.jpg",
+      "name": "Elaan of Troyius",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-01-03",
+      "id": 44445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195280.jpg",
+      "name": "Whom Gods Destroy",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-01-10",
+      "id": 44446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242156.jpg",
+      "name": "Let That Be Your Last Battlefield",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-01-17",
+      "id": 44447,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242157.jpg",
+      "name": "The Mark of Gideon",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-01-24",
+      "id": 44448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195860.jpg",
+      "name": "That Which Survives",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-01-31",
+      "id": 44449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242159.jpg",
+      "name": "The Lights of Zetar",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-02-14",
+      "id": 44450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242160.jpg",
+      "name": "Requiem for Methuselah",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-02-21",
+      "id": 44451,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242161.jpg",
+      "name": "The Way to Eden",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-02-28",
+      "id": 44452,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/476/1190640.jpg",
+      "name": "The Cloud Minders",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-03-07",
+      "id": 44453,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/477/1192592.jpg",
+      "name": "The Savage Curtain",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-03-14",
+      "id": 44454,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242164.jpg",
+      "name": "All Our Yesterdays",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1969-06-03",
+      "id": 44455,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/496/1242165.jpg",
+      "name": "Turnabout Intruder",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-490",
+  "live": true,
+  "overview": "The original Star Trek series focuses on the 23rd century adventures of Captain James T. Kirk and the U.S.S. Enterprise (NCC-1701), a powerful interstellar spacecraft dispatched by Earth-based Starfleet Command to explore the galaxy. Kirk commands a crew of 430 men and women aboard his starship, which can travel at speeds surpassing the speed of light. Kirk's five-year mission—and his mandate from Starfleet—is to seek out new life and new civilizations, and to boldly go where no man has gone before.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/496/1242166.jpg",
   "rating": 8.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "490",
+  "title": "Star Trek",
+  "type": "series",
+  "year": 1966
 }

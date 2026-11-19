@@ -1,22 +1,959 @@
 {
-  "schema": 1,
-  "id": "tvmaze-198",
-  "source": "tvmaze",
-  "sourceId": "198",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Fosters",
-  "year": 2013,
-  "type": "series",
-  "overview": "The Fosters is a critically-acclaimed series that centers on biracial lesbian couple Stef and Lena Foster, who are raising a multi-ethnic family mix of foster and biological kids. The second season will continue to explore the growing Fosters clan, with all the triumphs and travails, twists and turns, that fans of the series have come to expect. Callie and Jude will try to adjust to their new roles in the family, and everyone will deal with the fallout from their previous actions. Past mistakes will come home to roost, consequences will be handed out, and victories will be hard fought, and ultimately well-won. Their deep bonds will grow, enabling America's most modern family to face the future head on, with love in their hearts.",
-  "poster": "file:///android_asset/posters/tvmaze-198.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-06-03",
+      "id": 13280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414566.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-10",
+      "id": 13281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414567.jpg",
+      "name": "Consequently",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-17",
+      "id": 13282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414568.jpg",
+      "name": "Hostile Acts",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-24",
+      "id": 13283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414569.jpg",
+      "name": "Quinceañera",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-01",
+      "id": 13284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414570.jpg",
+      "name": "The Morning After",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-08",
+      "id": 13285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414589.jpg",
+      "name": "Saturday",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-15",
+      "id": 13286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414572.jpg",
+      "name": "The Fallout",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-22",
+      "id": 13287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414573.jpg",
+      "name": "Clean",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-07-29",
+      "id": 13288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414574.jpg",
+      "name": "Vigil",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-08-05",
+      "id": 13289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414575.jpg",
+      "name": "I Do",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-13",
+      "id": 13290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414576.jpg",
+      "name": "The Honeymoon",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-20",
+      "id": 13291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414577.jpg",
+      "name": "House and Home",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 13292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414578.jpg",
+      "name": "Things Unsaid",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-03",
+      "id": 13293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414579.jpg",
+      "name": "Family Day",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-10",
+      "id": 13294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414580.jpg",
+      "name": "Padre",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-17",
+      "id": 13295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414581.jpg",
+      "name": "Us Against the World",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-24",
+      "id": 13296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414582.jpg",
+      "name": "Kids in the Hall",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 13297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414583.jpg",
+      "name": "Escapes and Reversals",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 13298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414584.jpg",
+      "name": "Don't Let Go",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 13299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414585.jpg",
+      "name": "Metropolis",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 13300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414586.jpg",
+      "name": "Adoption Day",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-16",
+      "id": 13301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414594.jpg",
+      "name": "Things Unknown",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-23",
+      "id": 13302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414591.jpg",
+      "name": "Take Me Out",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-06-30",
+      "id": 13303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414595.jpg",
+      "name": "Play",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-07",
+      "id": 13304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414596.jpg",
+      "name": "Say Something",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-14",
+      "id": 13305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414592.jpg",
+      "name": "Truth Be Told",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-21",
+      "id": 13306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414597.jpg",
+      "name": "Mother",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-07-28",
+      "id": 13307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414598.jpg",
+      "name": "The Longest Day",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-04",
+      "id": 13308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414593.jpg",
+      "name": "Girls Reunited",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-11",
+      "id": 13309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/96285.jpg",
+      "name": "Leaky Faucets",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-08-18",
+      "id": 13310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414600.jpg",
+      "name": "Someone's Little Sister",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-08",
+      "id": 32268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414601.jpg",
+      "name": "Christmas Past",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-19",
+      "id": 57307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414602.jpg",
+      "name": "Over Under",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-26",
+      "id": 116535,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414603.jpg",
+      "name": "Stay",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-02",
+      "id": 117688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414604.jpg",
+      "name": "Mother Nature",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-09",
+      "id": 122724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414605.jpg",
+      "name": "Light of Day",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-16",
+      "id": 124011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414606.jpg",
+      "name": "If You Only Knew",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-23",
+      "id": 124012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414607.jpg",
+      "name": "The Silence She Keeps",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-02",
+      "id": 128881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414610.jpg",
+      "name": "Now Hear This",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-09",
+      "id": 128882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414611.jpg",
+      "name": "Justify the Means",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-16",
+      "id": 129000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414612.jpg",
+      "name": "Not That Kind of Girl",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 140341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414613.jpg",
+      "name": "The End of the Beginning",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-08",
+      "id": 157056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414621.jpg",
+      "name": "Wreckage",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-15",
+      "id": 157142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414622.jpg",
+      "name": "Father's Day",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-22",
+      "id": 157143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414623.jpg",
+      "name": "Déjà Vu",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-06-29",
+      "id": 157144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414624.jpg",
+      "name": "More Than Words",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-06",
+      "id": 157145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414625.jpg",
+      "name": "Going South",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-13",
+      "id": 157146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414626.jpg",
+      "name": "It's My Party",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-07-20",
+      "id": 157147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414627.jpg",
+      "name": "Faith, Hope, Love",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-03",
+      "id": 157149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414628.jpg",
+      "name": "Daughters",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-10",
+      "id": 157150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414629.jpg",
+      "name": "Idyllwild",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-08-17",
+      "id": 157151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414630.jpg",
+      "name": "Lucky",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-25",
+      "id": 400163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414633.jpg",
+      "name": "First Impressions",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-01",
+      "id": 500643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414634.jpg",
+      "name": "Mixed Messages",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-08",
+      "id": 500644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414635.jpg",
+      "name": "If and When",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-15",
+      "id": 500645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414636.jpg",
+      "name": "Under Water",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-22",
+      "id": 500646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414637.jpg",
+      "name": "Minor Offenses",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-29",
+      "id": 594136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414638.jpg",
+      "name": "EQ",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-07",
+      "id": 594137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414639.jpg",
+      "name": "Sixteen",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-14",
+      "id": 594138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414640.jpg",
+      "name": "Rehearsal",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-21",
+      "id": 594139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414641.jpg",
+      "name": "The Show",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-28",
+      "id": 594140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414642.jpg",
+      "name": "Kingdom Come",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-20",
+      "id": 689097,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414645.jpg",
+      "name": "Potential Energy",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-06-27",
+      "id": 781329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414646.jpg",
+      "name": "Safe",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-11",
+      "id": 847976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414647.jpg",
+      "name": "Trust",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-18",
+      "id": 853716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414648.jpg",
+      "name": "Now for Then",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-07-25",
+      "id": 853717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414649.jpg",
+      "name": "Forty",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-01",
+      "id": 854964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414650.jpg",
+      "name": "Justify",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-08",
+      "id": 854965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414651.jpg",
+      "name": "Highs & Lows",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-15",
+      "id": 854966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414652.jpg",
+      "name": "Girl Code",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-22",
+      "id": 878030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414653.jpg",
+      "name": "New York",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2016-08-29",
+      "id": 878031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414654.jpg",
+      "name": "Collateral Damage",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-01-31",
+      "id": 953608,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414655.jpg",
+      "name": "Insult to Injury",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-07",
+      "id": 1045319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414656.jpg",
+      "name": "Dream a Little Dream",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-14",
+      "id": 964066,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414657.jpg",
+      "name": "Cruel and Unusual",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 991305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414658.jpg",
+      "name": "Doors and Windows",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-28",
+      "id": 981370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414659.jpg",
+      "name": "Sex Ed",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1011054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414660.jpg",
+      "name": "The Long Haul",
+      "number": 16,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1072862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414661.jpg",
+      "name": "Diamond in the Rough",
+      "number": 17,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1072863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414662.jpg",
+      "name": "Dirty Laundry",
+      "number": 18,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1075113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414663.jpg",
+      "name": "Who Knows",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-11",
+      "id": 1075114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414664.jpg",
+      "name": "Until Tomorrow",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-07-11",
+      "id": 1139607,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414674.jpg",
+      "name": "Resist",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-18",
+      "id": 1233369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414675.jpg",
+      "name": "Exterminate Her",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-07-25",
+      "id": 1233370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414676.jpg",
+      "name": "Contact",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-01",
+      "id": 1254487,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414677.jpg",
+      "name": "Too Fast, Too Furious",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-08",
+      "id": 1254490,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414678.jpg",
+      "name": "Telling",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-15",
+      "id": 1254495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414679.jpg",
+      "name": "Welcome to the Jungler",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-22",
+      "id": 1254677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414680.jpg",
+      "name": "Chasing Waterfalls",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-08-29",
+      "id": 1254678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414681.jpg",
+      "name": "Engaged",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2017-09-05",
+      "id": 1270834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414683.jpg",
+      "name": "Prom",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-09",
+      "id": 1341828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414684.jpg",
+      "name": "Sanctuary",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-16",
+      "id": 1372702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414685.jpg",
+      "name": "Invisible",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-23",
+      "id": 1372703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414686.jpg",
+      "name": "#IWasMadeInAmerica",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-01-30",
+      "id": 1372704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414687.jpg",
+      "name": "Line in the Sand",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-02-06",
+      "id": 1395223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414666.jpg",
+      "name": "Scars",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-02-13",
+      "id": 1395224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414688.jpg",
+      "name": "Mother's Day",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-02-27",
+      "id": 1395225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414689.jpg",
+      "name": "Giving Up the Ghost",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-03-06",
+      "id": 1413980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414690.jpg",
+      "name": "Makeover",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1413981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414691.jpg",
+      "name": "Just Say Yes",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-03-13",
+      "id": 1413982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414692.jpg",
+      "name": "Many Roads",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-04",
+      "id": 1425779,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414693.jpg",
+      "name": "Meet the Fosters",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-05",
+      "id": 1426223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414694.jpg",
+      "name": "Turks & Caicos",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2018-06-06",
+      "id": 1426226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1414695.jpg",
+      "name": "Where the Heart Is",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Familie",
-    "Romanze"
+    "Family",
+    "Romance"
   ],
+  "id": "tvmaze-198",
+  "live": true,
+  "overview": "The Fosters is a critically-acclaimed series that centers on biracial lesbian couple Stef and Lena Foster, who are raising a multi-ethnic family mix of foster and biological kids. The second season will continue to explore the growing Fosters clan, with all the triumphs and travails, twists and turns, that fans of the series have come to expect. Callie and Jude will try to adjust to their new roles in the family, and everyone will deal with the fallout from their previous actions. Past mistakes will come home to roost, consequences will be handed out, and victories will be hard fought, and ultimately well-won. Their deep bonds will grow, enabling America's most modern family to face the future head on, with love in their hearts.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/116/292055.jpg",
   "rating": 7.5,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "198",
+  "title": "The Fosters",
+  "type": "series",
+  "year": 2013
 }

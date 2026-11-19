@@ -1,22 +1,725 @@
 {
-  "schema": 1,
-  "id": "tvmaze-88",
-  "source": "tvmaze",
-  "sourceId": "88",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Reign",
-  "year": 2013,
-  "type": "series",
-  "overview": "Hidden between the lines of the history books is the story of Mary Stuart, the young woman the world would come to know as Mary, Queen of Scots. Queen of Scotland since she was six days old, the teenage Mary is already a headstrong monarch - beautiful, passionate, and poised at the very beginning of her tumultuous rise to power. Arriving in France with four close friends as her ladies-in-waiting, Mary has been sent to secure Scotland's strategic alliance by formalizing her arranged engagement to the French king's dashing son, Prince Francis. But the match isn't signed and sealed, it depends more on politics, religion and secret agendas than affairs of the heart. With danger and sexual intrigue around every dark castle corner, Mary rallies her ladies-in-waiting and steels herself, ready to rule the new land and balance the demands of her country and her heart.",
-  "poster": "file:///android_asset/posters/tvmaze-88.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-10-17",
+      "id": 5829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231495.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-24",
+      "id": 5830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231494.jpg",
+      "name": "Snakes in the Garden",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-10-31",
+      "id": 5831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231500.jpg",
+      "name": "Kissed",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-07",
+      "id": 5832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231504.jpg",
+      "name": "Hearts and Minds",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-14",
+      "id": 5833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/231506.jpg",
+      "name": "A Chill in the Air",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-11-21",
+      "id": 5834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/232078.jpg",
+      "name": "Chosen",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-05",
+      "id": 5835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244757.jpg",
+      "name": "Left Behind",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-12-12",
+      "id": 5836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/232288.jpg",
+      "name": "Fated",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-23",
+      "id": 5837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/92/232290.jpg",
+      "name": "For King and Country",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-30",
+      "id": 5838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244759.jpg",
+      "name": "Sacrifice",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-06",
+      "id": 5839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244760.jpg",
+      "name": "Inquisition",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-27",
+      "id": 5840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244761.jpg",
+      "name": "Royal Blood",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-06",
+      "id": 5841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246681.jpg",
+      "name": "The Consummation",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-13",
+      "id": 5842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246682.jpg",
+      "name": "Dirty Laundry",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-20",
+      "id": 5843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247764.jpg",
+      "name": "The Darkness",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-27",
+      "id": 5844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247765.jpg",
+      "name": "Monsters",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-10",
+      "id": 5845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250030.jpg",
+      "name": "Liege Lord",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-17",
+      "id": 5846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250031.jpg",
+      "name": "No Exit",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-04-24",
+      "id": 5847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250046.jpg",
+      "name": "Toy Soldiers",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-01",
+      "id": 5848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250047.jpg",
+      "name": "Higher Ground",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-08",
+      "id": 5849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250048.jpg",
+      "name": "Long Live the King",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-05-15",
+      "id": 5850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/250049.jpg",
+      "name": "Slaughter of Innocence",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-10-02",
+      "id": 5851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261820.jpg",
+      "name": "The Plague",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-09",
+      "id": 7906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262147.jpg",
+      "name": "Drawn and Quartered",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-16",
+      "id": 7907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262325.jpg",
+      "name": "Coronation",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-23",
+      "id": 7908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/5380.jpg",
+      "name": "The Lamb and the Slaughter",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-10-30",
+      "id": 7909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/2/6682.jpg",
+      "name": "Blood for Blood",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-06",
+      "id": 32258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/3/8636.jpg",
+      "name": "Three Queens",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-13",
+      "id": 32259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/10593.jpg",
+      "name": "The Prince of the Blood",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-11-20",
+      "id": 32260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/4/11966.jpg",
+      "name": "Terror of the Faithful",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-04",
+      "id": 46276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14061.jpg",
+      "name": "Acts of War",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-12-11",
+      "id": 50199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/5/14963.jpg",
+      "name": "Mercy",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-22",
+      "id": 80887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/7/19695.jpg",
+      "name": "Getaway",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-29",
+      "id": 109661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20051.jpg",
+      "name": "Banished",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-05",
+      "id": 109662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/20813.jpg",
+      "name": "Sins of the Past",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-12",
+      "id": 109663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/21663.jpg",
+      "name": "The End of Mourning",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-19",
+      "id": 128609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/8/22000.jpg",
+      "name": "Forbidden",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-12",
+      "id": 140788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23724.jpg",
+      "name": "Tasting Revenge",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-19",
+      "id": 142246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24104.jpg",
+      "name": "Tempting Fate",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-16",
+      "id": 144492,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25895.jpg",
+      "name": "Reversal of Fortune",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-23",
+      "id": 144493,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26337.jpg",
+      "name": "Abandoned",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-04-30",
+      "id": 144494,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26674.jpg",
+      "name": "Fugitive",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-07",
+      "id": 144495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27044.jpg",
+      "name": "The Siege",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-05-14",
+      "id": 144496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27499.jpg",
+      "name": "Burn",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-10-09",
+      "id": 182152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59565.jpg",
+      "name": "Three Queens, Two Tigers",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-16",
+      "id": 284834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62844.jpg",
+      "name": "Betrothed",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-10-23",
+      "id": 326708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/65442.jpg",
+      "name": "Extreme Measures",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-06",
+      "id": 385045,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/71915.jpg",
+      "name": "The Price",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-13",
+      "id": 397950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/30/75662.jpg",
+      "name": "In a Clearing",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-11-20",
+      "id": 415091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78233.jpg",
+      "name": "Fight or Flight",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-12-04",
+      "id": 461930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/33/83634.jpg",
+      "name": "The Hound and the Hare",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-08",
+      "id": 509841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179022.jpg",
+      "name": "Our Undoing",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-15",
+      "id": 545480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/39/99659.jpg",
+      "name": "Wedlock",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-22",
+      "id": 554735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/40/102459.jpg",
+      "name": "Bruises That Lie",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-04-25",
+      "id": 611624,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/179024.jpg",
+      "name": "Succession",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-02",
+      "id": 714305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/139688.jpg",
+      "name": "No Way Out",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-09",
+      "id": 741224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143079.jpg",
+      "name": "Strange Bedfellows",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-16",
+      "id": 753392,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143078.jpg",
+      "name": "To the Death",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-05-23",
+      "id": 773529,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/59/148357.jpg",
+      "name": "Safe Passage",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-06",
+      "id": 775508,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153794.jpg",
+      "name": "Clans",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-13",
+      "id": 775509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155995.jpg",
+      "name": "Intruders",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-06-20",
+      "id": 775510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/159123.jpg",
+      "name": "Spiders in a Jar",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-02-10",
+      "id": 991417,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244168.jpg",
+      "name": "With Friends Like These",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-17",
+      "id": 1029596,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247100.jpg",
+      "name": "A Grain of Deception",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-24",
+      "id": 1029597,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249555.jpg",
+      "name": "Leaps of Faith",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-03",
+      "id": 1063324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/251824.jpg",
+      "name": "Playing with Fire",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-17",
+      "id": 1063325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256542.jpg",
+      "name": "Highland Games",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-24",
+      "id": 1088458,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259344.jpg",
+      "name": "Love & Death",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-31",
+      "id": 1095571,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262161.jpg",
+      "name": "Hanging Swords",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-07",
+      "id": 1101280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/265136.jpg",
+      "name": "Uncharted Waters",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-14",
+      "id": 1105941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268124.jpg",
+      "name": "Pulling Strings",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-28",
+      "id": 1105942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/273605.jpg",
+      "name": "A Better Man",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-05",
+      "id": 1105943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/110/276428.jpg",
+      "name": "Dead of Night",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-12",
+      "id": 1105944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/278679.jpg",
+      "name": "The Shakedown",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-05-19",
+      "id": 1105945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281631.jpg",
+      "name": "Coup de Grâce",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-02",
+      "id": 1105946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/287441.jpg",
+      "name": "A Bride. A Box. A Body.",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-09",
+      "id": 1146944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290320.jpg",
+      "name": "Blood in the Water",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-06-16",
+      "id": 1146948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/292106.jpg",
+      "name": "All It Cost Her",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Romanze",
-    "Historie"
+    "Romance",
+    "History"
   ],
+  "id": "tvmaze-88",
+  "live": true,
+  "overview": "Hidden between the lines of the history books is the story of Mary Stuart, the young woman the world would come to know as Mary, Queen of Scots. Queen of Scotland since she was six days old, the teenage Mary is already a headstrong monarch - beautiful, passionate, and poised at the very beginning of her tumultuous rise to power. Arriving in France with four close friends as her ladies-in-waiting, Mary has been sent to secure Scotland's strategic alliance by formalizing her arranged engagement to the French king's dashing son, Prince Francis. But the match isn't signed and sealed, it depends more on politics, religion and secret agendas than affairs of the heart. With danger and sexual intrigue around every dark castle corner, Mary rallies her ladies-in-waiting and steels herself, ready to rule the new land and balance the demands of her country and her heart.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/81/204119.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "88",
+  "title": "Reign",
+  "type": "series",
+  "year": 2013
 }

@@ -1,21 +1,1336 @@
 {
-  "schema": 1,
-  "id": "tvmaze-58",
-  "source": "tvmaze",
-  "sourceId": "58",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "New Girl",
-  "year": 2011,
-  "type": "series",
-  "overview": "New Girl is a single-camera ensemble comedy starring Zooey Deschanel as Jess, an offbeat girl who - after a bad breakup - moves in with three single guys and essentially sets a bomb off in their lives.",
-  "poster": "file:///android_asset/posters/tvmaze-58.jpg",
-  "genres": [
-    "Komödie",
-    "Romanze"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-09-20",
+      "id": 2148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412735.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-09-27",
+      "id": 2149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412736.jpg",
+      "name": "Kryptonite",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-10-04",
+      "id": 2150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412737.jpg",
+      "name": "Wedding",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-01",
+      "id": 2151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199991.jpg",
+      "name": "Naked",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-08",
+      "id": 2152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412738.jpg",
+      "name": "Cece Crashes",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-15",
+      "id": 2153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412739.jpg",
+      "name": "Thanksgiving",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-11-29",
+      "id": 2154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412740.jpg",
+      "name": "Bells",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-06",
+      "id": 2155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412741.jpg",
+      "name": "Bad in Bed",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2011-12-13",
+      "id": 2156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412742.jpg",
+      "name": "The 23rd",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-17",
+      "id": 2157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200003.jpg",
+      "name": "The Story of the 50",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-01-31",
+      "id": 2158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412743.jpg",
+      "name": "Jess and Julia",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-07",
+      "id": 2159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412744.jpg",
+      "name": "The Landlord",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-14",
+      "id": 2160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412745.jpg",
+      "name": "Valentine's Day",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-02-21",
+      "id": 2161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412746.jpg",
+      "name": "Bully",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-06",
+      "id": 2162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412747.jpg",
+      "name": "Injured",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-13",
+      "id": 2163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412748.jpg",
+      "name": "Control",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-20",
+      "id": 2164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412749.jpg",
+      "name": "Fancyman (1)",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-03-27",
+      "id": 2165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412750.jpg",
+      "name": "Fancyman (2)",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-03",
+      "id": 2166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412751.jpg",
+      "name": "Secrets",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-10",
+      "id": 2167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412752.jpg",
+      "name": "Normal",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-17",
+      "id": 2168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412753.jpg",
+      "name": "Kids",
+      "number": 21,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-24",
+      "id": 2169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412754.jpg",
+      "name": "Tomatoes",
+      "number": 22,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-01",
+      "id": 2170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412755.jpg",
+      "name": "Backslide",
+      "number": 23,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-05-08",
+      "id": 2171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412756.jpg",
+      "name": "See Ya",
+      "number": 24,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-25",
+      "id": 2172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412759.jpg",
+      "name": "Re-Launch",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-09-25",
+      "id": 2173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412760.jpg",
+      "name": "Katie",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-02",
+      "id": 2174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412761.jpg",
+      "name": "Fluffer",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-09",
+      "id": 2175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412762.jpg",
+      "name": "Neighbors",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-23",
+      "id": 2176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412764.jpg",
+      "name": "Models",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-10-30",
+      "id": 2177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412765.jpg",
+      "name": "Halloween",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-13",
+      "id": 2178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412766.jpg",
+      "name": "Menzies",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-20",
+      "id": 2179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412767.jpg",
+      "name": "Parents",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-11-27",
+      "id": 2180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412768.jpg",
+      "name": "Eggs",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-04",
+      "id": 2181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412769.jpg",
+      "name": "Bathtub",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2012-12-11",
+      "id": 2182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412770.jpg",
+      "name": "Santa",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-08",
+      "id": 2183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412771.jpg",
+      "name": "Cabin",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-15",
+      "id": 2184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412772.jpg",
+      "name": "A Father's Love",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-22",
+      "id": 2185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412773.jpg",
+      "name": "Pepperwood",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-01-29",
+      "id": 2186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412774.jpg",
+      "name": "Cooler",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-05",
+      "id": 2187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412775.jpg",
+      "name": "Table 34",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-19",
+      "id": 2188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412776.jpg",
+      "name": "Parking Spot",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-02-26",
+      "id": 2189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412777.jpg",
+      "name": "TinFinity",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-19",
+      "id": 2190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412778.jpg",
+      "name": "Quick Hardening Caulk",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-26",
+      "id": 2191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412779.jpg",
+      "name": "Chicago",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-04",
+      "id": 2192,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412780.jpg",
+      "name": "First Date",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-09",
+      "id": 2193,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412781.jpg",
+      "name": "Bachelorette Party",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-04-30",
+      "id": 2194,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412782.jpg",
+      "name": "Virgins",
+      "number": 23,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-07",
+      "id": 2195,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412783.jpg",
+      "name": "Winston's Birthday",
+      "number": 24,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-05-14",
+      "id": 2196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412784.jpg",
+      "name": "Elaine's Big Day",
+      "number": 25,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-17",
+      "id": 2197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412788.jpg",
+      "name": "All In",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-09-24",
+      "id": 2198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412789.jpg",
+      "name": "Nerd",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-01",
+      "id": 2199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412790.jpg",
+      "name": "Double Date",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-08",
+      "id": 2200,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412791.jpg",
+      "name": "The Captain",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-15",
+      "id": 2201,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412793.jpg",
+      "name": "The Box",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-10-22",
+      "id": 2202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412794.jpg",
+      "name": "Keaton",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-05",
+      "id": 2203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200386.jpg",
+      "name": "Coach",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-12",
+      "id": 2204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412795.jpg",
+      "name": "Menus",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-19",
+      "id": 2205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412796.jpg",
+      "name": "Longest Night Ever",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2013-11-26",
+      "id": 2206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412797.jpg",
+      "name": "Thanksgiving III",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-07",
+      "id": 2207,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412798.jpg",
+      "name": "Clavado En Un Bar",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-14",
+      "id": 2208,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412799.jpg",
+      "name": "Basketsball",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-21",
+      "id": 2209,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412800.jpg",
+      "name": "Birthday",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-02",
+      "id": 2210,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412801.jpg",
+      "name": "Prince",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-04",
+      "id": 2211,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412802.jpg",
+      "name": "Exes",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-11",
+      "id": 2212,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/80/200406.jpg",
+      "name": "Sister",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-25",
+      "id": 2213,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412803.jpg",
+      "name": "Sister II",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-04",
+      "id": 2214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412804.jpg",
+      "name": "Sister III",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-11",
+      "id": 2215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412805.jpg",
+      "name": "Fired Up",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-25",
+      "id": 2216,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412806.jpg",
+      "name": "Mars Landing",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-15",
+      "id": 2217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412807.jpg",
+      "name": "Big News",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-29",
+      "id": 2218,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412808.jpg",
+      "name": "Dance",
+      "number": 22,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-06",
+      "id": 2219,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412809.jpg",
+      "name": "Cruise",
+      "number": 23,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-09-16",
+      "id": 2220,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412821.jpg",
+      "name": "The Last Wedding",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-23",
+      "id": 2221,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412822.jpg",
+      "name": "Dice",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-09-30",
+      "id": 2222,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412814.jpg",
+      "name": "Julie Berkman's Older Sister",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-07",
+      "id": 2223,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412816.jpg",
+      "name": "Micro",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-10-14",
+      "id": 2224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412819.jpg",
+      "name": "Landline",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-04",
+      "id": 2225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412823.jpg",
+      "name": "Background Check",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-11",
+      "id": 2226,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412824.jpg",
+      "name": "Goldmine",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-18",
+      "id": 2227,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412825.jpg",
+      "name": "Teachers",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-11-25",
+      "id": 2228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412826.jpg",
+      "name": "Thanksgiving IV",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-02",
+      "id": 45312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412827.jpg",
+      "name": "Girl Fight",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-09",
+      "id": 46271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412828.jpg",
+      "name": "LAXmas",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-06",
+      "id": 91985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412829.jpg",
+      "name": "Shark",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-13",
+      "id": 108501,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412830.jpg",
+      "name": "Coming Out",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-03",
+      "id": 117593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412831.jpg",
+      "name": "Swuit",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-10",
+      "id": 122956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412832.jpg",
+      "name": "The Crawl",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-17",
+      "id": 124084,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412833.jpg",
+      "name": "Oregon",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-24",
+      "id": 128943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412834.jpg",
+      "name": "Spiderhunt",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-03",
+      "id": 139703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412835.jpg",
+      "name": "Walk of Shame",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-31",
+      "id": 144294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412836.jpg",
+      "name": "The Right Thing",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-07",
+      "id": 151197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412837.jpg",
+      "name": "Par 5",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-28",
+      "id": 153018,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26553.jpg",
+      "name": "Panty Gate",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-05-05",
+      "id": 153019,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412820.jpg",
+      "name": "Clean Break",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2016-01-05",
+      "id": 447398,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/38/95038.jpg",
+      "name": "Big Mama P",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-12",
+      "id": 529683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412842.jpg",
+      "name": "What About Fred",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-19",
+      "id": 530896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412843.jpg",
+      "name": "Jury Duty",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-01-26",
+      "id": 530897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412844.jpg",
+      "name": "No Girl",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-02",
+      "id": 530898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412845.jpg",
+      "name": "Bob & Carol & Nick & Schmidt",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-09",
+      "id": 530899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412846.jpg",
+      "name": "Reagan",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-16",
+      "id": 530900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/112931.jpg",
+      "name": "Wig",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-23",
+      "id": 530901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412847.jpg",
+      "name": "The Decision",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-01",
+      "id": 578448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412848.jpg",
+      "name": "Heat Wave",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-08",
+      "id": 610695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412849.jpg",
+      "name": "Goosebumps Walkaway",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-15",
+      "id": 622400,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412850.jpg",
+      "name": "The Apartment",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-22",
+      "id": 635081,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412851.jpg",
+      "name": "D-Day",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-29",
+      "id": 636795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412852.jpg",
+      "name": "Sam, Again",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-12",
+      "id": 636796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412853.jpg",
+      "name": "300 Feet",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 636798,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412854.jpg",
+      "name": "Jeff Day",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-19",
+      "id": 731003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412855.jpg",
+      "name": "Helmet",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-26",
+      "id": 697388,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412856.jpg",
+      "name": "Road Trip",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-26",
+      "id": 697389,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412857.jpg",
+      "name": "A Chill Day In",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 700106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412858.jpg",
+      "name": "Dress",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-03",
+      "id": 700107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412859.jpg",
+      "name": "Return to Sender",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 716197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412841.jpg",
+      "name": "Wedding Eve",
+      "number": 21,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-05-10",
+      "id": 716198,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412840.jpg",
+      "name": "Landing Gear",
+      "number": 22,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-09-20",
+      "id": 835413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412863.jpg",
+      "name": "House Hunt",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-09-27",
+      "id": 904670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412864.jpg",
+      "name": "Hubbedy Bubby",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-04",
+      "id": 904669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412865.jpg",
+      "name": "Single and Sufficient",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 905488,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412866.jpg",
+      "name": "Homecoming",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-10-18",
+      "id": 944755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412867.jpg",
+      "name": "Jaipur Aviv",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-15",
+      "id": 974905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412868.jpg",
+      "name": "Ready",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-22",
+      "id": 979325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412869.jpg",
+      "name": "Last Thanksgiving",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-11-29",
+      "id": 979040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412870.jpg",
+      "name": "James Wonder",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-12-06",
+      "id": 979043,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412871.jpg",
+      "name": "Es Good",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2016-12-13",
+      "id": 979042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412872.jpg",
+      "name": "Christmas Eve Eve",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-03",
+      "id": 994723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412873.jpg",
+      "name": "Raisin's Back",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-10",
+      "id": 1014844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412874.jpg",
+      "name": "The Cubicle",
+      "number": 12,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-17",
+      "id": 1015069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412875.jpg",
+      "name": "Cece's Boys",
+      "number": 13,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-01-24",
+      "id": 1025352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412876.jpg",
+      "name": "The Hike",
+      "number": 14,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-02-07",
+      "id": 1033284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412877.jpg",
+      "name": "Glue",
+      "number": 15,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-02-14",
+      "id": 1049329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412878.jpg",
+      "name": "Operation: Bobcat",
+      "number": 16,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-02-21",
+      "id": 1056964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412879.jpg",
+      "name": "Rumspringa",
+      "number": 17,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-02-28",
+      "id": 1067426,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412880.jpg",
+      "name": "Young Adult",
+      "number": 18,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-14",
+      "id": 1080730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412881.jpg",
+      "name": "Socalyalcon VI",
+      "number": 19,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-21",
+      "id": 1087376,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412882.jpg",
+      "name": "Misery",
+      "number": 20,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-28",
+      "id": 1096412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412883.jpg",
+      "name": "San Diego",
+      "number": 21,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-04",
+      "id": 1099767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412884.jpg",
+      "name": "Five Stars for Beezus",
+      "number": 22,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2018-04-10",
+      "id": 1384268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412886.jpg",
+      "name": "About Three Years Later",
+      "number": 1,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-04-17",
+      "id": 1425929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412887.jpg",
+      "name": "Tuesday Meeting",
+      "number": 2,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-04-24",
+      "id": 1425930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412888.jpg",
+      "name": "Lillypads",
+      "number": 3,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-05-01",
+      "id": 1425931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/154/386654.jpg",
+      "name": "Where the Road Goes",
+      "number": 4,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1425932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412889.jpg",
+      "name": "Godparents",
+      "number": 5,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-05-08",
+      "id": 1425933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412890.jpg",
+      "name": "Mario",
+      "number": 6,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1430632,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412891.jpg",
+      "name": "The Curse of the Pirate Bride",
+      "number": 7,
+      "runtime": 30,
+      "season": 7
+    },
+    {
+      "airdate": "2018-05-15",
+      "id": 1430633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/565/1412892.jpg",
+      "name": "Engram Pattersky",
+      "number": 8,
+      "runtime": 30,
+      "season": 7
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Romance"
+  ],
+  "id": "tvmaze-58",
+  "live": true,
+  "overview": "New Girl is a single-camera ensemble comedy starring Zooey Deschanel as Jess, an offbeat girl who - after a bad breakup - moves in with three single guys and essentially sets a bomb off in their lives.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/481/1202650.jpg",
   "rating": 7.3,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "58",
+  "title": "New Girl",
+  "type": "series",
+  "year": 2011
 }

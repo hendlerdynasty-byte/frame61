@@ -1,22 +1,392 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3255",
-  "source": "tvmaze",
-  "sourceId": "3255",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Adventures of Sherlock Holmes",
-  "year": 1984,
-  "type": "series",
-  "overview": "Sherlock Holmes is one of the world's greatest and most popular fictional detectives. His acute perception and powers of observation are called upon in solving a compendium of crime. As ever, Dr. Watson is on hand as his indispensable assistant.",
-  "poster": "file:///android_asset/posters/tvmaze-3255.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1984-04-24",
+      "id": 219667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/501/1254449.jpg",
+      "name": "A Scandal in Bohemia",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-05-01",
+      "id": 219668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/504/1260768.jpg",
+      "name": "The Dancing Men",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-05-08",
+      "id": 219669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254551.jpg",
+      "name": "The Naval Treaty",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-05-15",
+      "id": 219670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254552.jpg",
+      "name": "The Solitary Cyclist",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-05-22",
+      "id": 219671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254553.jpg",
+      "name": "The Crooked Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-05-29",
+      "id": 219672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254554.jpg",
+      "name": "The Speckled Band",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1984-06-05",
+      "id": 219673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254555.jpg",
+      "name": "The Blue Carbuncle",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-08-25",
+      "id": 219674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254556.jpg",
+      "name": "The Copper Beeches",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-01",
+      "id": 219675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254557.jpg",
+      "name": "The Greek Interpreter",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-08",
+      "id": 219676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254558.jpg",
+      "name": "The Norwood Builder",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-15",
+      "id": 219677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254559.jpg",
+      "name": "The Resident Patient",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-22",
+      "id": 219678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254560.jpg",
+      "name": "The Red-Headed League",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1985-09-29",
+      "id": 219679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254561.jpg",
+      "name": "The Final Problem",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1986-07-09",
+      "id": 219680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254562.jpg",
+      "name": "The Empty House",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-07-16",
+      "id": 219681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254563.jpg",
+      "name": "The Abbey Grange",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-07-23",
+      "id": 219682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254564.jpg",
+      "name": "The Musgrave Ritual",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-07-30",
+      "id": 219683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254565.jpg",
+      "name": "The Second Stain",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-08-06",
+      "id": 219684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254566.jpg",
+      "name": "The Man with the Twisted Lip",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-08-13",
+      "id": 219685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254567.jpg",
+      "name": "The Priory School",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1986-08-20",
+      "id": 219686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254568.jpg",
+      "name": "The Six Napoleons",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1987-12-29",
+      "id": 219687,
+      "image": null,
+      "name": "The Sign of Four",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1988-04-06",
+      "id": 219688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254569.jpg",
+      "name": "The Devil's Foot",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1988-04-13",
+      "id": 219689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254570.jpg",
+      "name": "Silver Blaze",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1988-04-20",
+      "id": 219690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254571.jpg",
+      "name": "Wisteria Lodge",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1988-04-27",
+      "id": 219691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254572.jpg",
+      "name": "The Bruce Partington Plans",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1988-08-31",
+      "id": 219692,
+      "image": null,
+      "name": "The Hound of the Baskervilles",
+      "number": 13,
+      "runtime": 120,
+      "season": 2
+    },
+    {
+      "airdate": "1991-02-21",
+      "id": 219693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254573.jpg",
+      "name": "The Disappearance of Lady Frances Carfax",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1991-02-28",
+      "id": 219694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254574.jpg",
+      "name": "The Problem of Thor Bridge",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1991-03-07",
+      "id": 219695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254575.jpg",
+      "name": "Shoscombe Old Place",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1991-03-14",
+      "id": 219696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254576.jpg",
+      "name": "The Boscombe Valley Mystery",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1991-03-21",
+      "id": 219697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254577.jpg",
+      "name": "The Illustrious Client",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1991-03-28",
+      "id": 219698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254578.jpg",
+      "name": "The Creeping Man",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1992-01-02",
+      "id": 219699,
+      "image": null,
+      "name": "The Master Blackmailer",
+      "number": 7,
+      "runtime": 132,
+      "season": 3
+    },
+    {
+      "airdate": "1993-01-27",
+      "id": 219701,
+      "image": null,
+      "name": "The Last Vampyre",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1993-02-10",
+      "id": 219703,
+      "image": null,
+      "name": "The Eligible Bachelor",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-03-07",
+      "id": 219705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254580.jpg",
+      "name": "The Three Gables",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1994-03-14",
+      "id": 219706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254581.jpg",
+      "name": "The Dying Detective",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1994-03-21",
+      "id": 219707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254582.jpg",
+      "name": "The Golden Pince-Nez",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1994-03-28",
+      "id": 219708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254583.jpg",
+      "name": "The Red Circle",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1994-04-04",
+      "id": 219709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254584.jpg",
+      "name": "The Mazarin Stone",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1994-04-11",
+      "id": 219710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254585.jpg",
+      "name": "The Cardboard Box",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-3255",
+  "live": true,
+  "overview": "Sherlock Holmes is one of the world's greatest and most popular fictional detectives. His acute perception and powers of observation are called upon in solving a compendium of crime. As ever, Dr. Watson is on hand as his indispensable assistant.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/501/1254452.jpg",
   "rating": 7.8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 63,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3255",
+  "title": "The Adventures of Sherlock Holmes",
+  "type": "series",
+  "year": 1984
 }

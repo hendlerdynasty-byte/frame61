@@ -1,21 +1,922 @@
 {
-  "schema": 1,
-  "id": "tvmaze-351",
-  "source": "tvmaze",
-  "sourceId": "351",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Baby Daddy",
-  "year": 2012,
-  "type": "series",
-  "overview": "Baby Daddy follows Ben, a young man in his early 20s living the life of a bachelor in New York City with his buddy, Tucker, and his brother, Danny. Their lives are turned upside down when they come home one day to find a baby girl left on the doorstep by an ex-girlfriend of Ben's. After much deliberation, Ben decides to raise the baby with the help of his friends and his protective and sometimes over-bearing mother, Bonnie, and his close female friend, Riley.",
-  "poster": "file:///android_asset/posters/tvmaze-351.jpg",
-  "genres": [
-    "Komödie",
-    "Familie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-06-20",
+      "id": 32831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004789.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-06-27",
+      "id": 32832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004790.jpg",
+      "name": "I Told You So",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-11",
+      "id": 32833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004791.jpg",
+      "name": "The Nurse and the Curse",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-18",
+      "id": 32834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004792.jpg",
+      "name": "Guys, Interrupted",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-07-25",
+      "id": 32835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004793.jpg",
+      "name": "Married to the Job",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-01",
+      "id": 32836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004794.jpg",
+      "name": "Take Her Out of the Ballgame",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-08",
+      "id": 32837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004795.jpg",
+      "name": "May the Best Friend Win",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-15",
+      "id": 32838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004796.jpg",
+      "name": "The Daddy Whisperer",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-22",
+      "id": 32839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004797.jpg",
+      "name": "A Wheeler Family Christmas Outing",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2012-08-29",
+      "id": 32840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004798.jpg",
+      "name": "Something Borrowed, Something Ben",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-29",
+      "id": 32841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004800.jpg",
+      "name": "I'm Not That Guy",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-05",
+      "id": 32842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004801.jpg",
+      "name": "There's Something Fitchy Going On",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-12",
+      "id": 32843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004802.jpg",
+      "name": "The Wheeler and the Dealer",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-12",
+      "id": 32844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004803.jpg",
+      "name": "New Bonnie vs. Old Ben",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-19",
+      "id": 32845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004804.jpg",
+      "name": "The Slump",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-06-26",
+      "id": 32846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004805.jpg",
+      "name": "Ben's Big Gaycare Adventure",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-10",
+      "id": 32847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004806.jpg",
+      "name": "On the Lamb-y",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-17",
+      "id": 32848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004807.jpg",
+      "name": "Never Ben in Love",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-24",
+      "id": 32849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004808.jpg",
+      "name": "All's Flair in Love and War",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-07-31",
+      "id": 32850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004809.jpg",
+      "name": "Test Anxiety",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-07",
+      "id": 32851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004810.jpg",
+      "name": "Whatever Lola Wants",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-14",
+      "id": 32852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004811.jpg",
+      "name": "The Christening",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-21",
+      "id": 32853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004812.jpg",
+      "name": "All Riled Up",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-08-28",
+      "id": 32854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004813.jpg",
+      "name": "The Emma Dilemma",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-09-04",
+      "id": 32855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004814.jpg",
+      "name": "Surprise!",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2013-12-11",
+      "id": 32856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004815.jpg",
+      "name": "Emma's First Christmas",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-15",
+      "id": 32857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004817.jpg",
+      "name": "The Naked Truth",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 32858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004818.jpg",
+      "name": "The Lying Game",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 32859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004819.jpg",
+      "name": "Lights! Camera! No Action!",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-05",
+      "id": 32860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004820.jpg",
+      "name": "Bonnie's Unreal Estate",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-12",
+      "id": 32861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004821.jpg",
+      "name": "Life's a Beach",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 32862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004822.jpg",
+      "name": "Romancing the Phone",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 32863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004823.jpg",
+      "name": "The Bet",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-12",
+      "id": 32864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004824.jpg",
+      "name": "A Knight to Remember",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-19",
+      "id": 32865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004825.jpg",
+      "name": "Go Brit or Go Home",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-03-26",
+      "id": 32866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004826.jpg",
+      "name": "An Affair Not to Remember",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-02",
+      "id": 32867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004827.jpg",
+      "name": "The Wingmom",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-09",
+      "id": 32868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004828.jpg",
+      "name": "Send in the Clowns",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-16",
+      "id": 32869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004829.jpg",
+      "name": "Play It Again, Bonnie",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-23",
+      "id": 32870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004830.jpg",
+      "name": "Livin' on a Prom",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-30",
+      "id": 32871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004831.jpg",
+      "name": "From Here to Paternity",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-07",
+      "id": 32872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004832.jpg",
+      "name": "Curious Georgie",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-14",
+      "id": 32873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004833.jpg",
+      "name": "Flirty Dancing",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-05-28",
+      "id": 32874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004834.jpg",
+      "name": "Baby Steps",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-04",
+      "id": 32875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004835.jpg",
+      "name": "Foos It or Lose It",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-11",
+      "id": 32876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004836.jpg",
+      "name": "All Aboard the Love Train",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-06-18",
+      "id": 32877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004837.jpg",
+      "name": "You Can't Go Home Again",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2014-10-22",
+      "id": 32878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004838.jpg",
+      "name": "Strip or Treat",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2014-12-10",
+      "id": 57577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004839.jpg",
+      "name": "It's a Wonderful Emma",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-14",
+      "id": 57593,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004840.jpg",
+      "name": "She Loves Me, She Loves Me Note",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-21",
+      "id": 116538,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004841.jpg",
+      "name": "I See Crazy People",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-01-28",
+      "id": 117738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004842.jpg",
+      "name": "Mugging for the Camera",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-04",
+      "id": 118448,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004843.jpg",
+      "name": "Over My Dead Bonnie",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-11",
+      "id": 118449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004844.jpg",
+      "name": "The Mother of All Dates",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-18",
+      "id": 118450,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004845.jpg",
+      "name": "House of Cards",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-02-25",
+      "id": 129499,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004846.jpg",
+      "name": "An Officer and a Gentle Ben",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-04",
+      "id": 140641,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004847.jpg",
+      "name": "Happy Birthday Two You",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-11",
+      "id": 142357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004848.jpg",
+      "name": "You Give Real Estate a Bad Name",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-03-18",
+      "id": 143217,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004849.jpg",
+      "name": "A Love/Fate Relationship",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-03",
+      "id": 157169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004850.jpg",
+      "name": "Home is Where the Wheeler Is",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-10",
+      "id": 157133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004851.jpg",
+      "name": "It Takes a Village Idiot",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-17",
+      "id": 157134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004852.jpg",
+      "name": "One Night Stand Off",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-06-24",
+      "id": 157135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004853.jpg",
+      "name": "Lowering the Bar",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-01",
+      "id": 167646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004854.jpg",
+      "name": "Wheeler War",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-08",
+      "id": 167647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004855.jpg",
+      "name": "Parental Guidance",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-15",
+      "id": 167648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004856.jpg",
+      "name": "Ring Around the Party",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-22",
+      "id": 167649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004857.jpg",
+      "name": "Till Dress Do Us Part",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 167650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004858.jpg",
+      "name": "What Happens in Vegas",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2015-08-05",
+      "id": 167651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004859.jpg",
+      "name": "It's a Nice Day for a Wheeler Wedding",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2016-02-03",
+      "id": 400135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004861.jpg",
+      "name": "Love and Carriage",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-10",
+      "id": 576028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004862.jpg",
+      "name": "Reinventing the Wheeler",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-17",
+      "id": 576029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004863.jpg",
+      "name": "Ben-geance",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-02-24",
+      "id": 576030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004864.jpg",
+      "name": "The Tuck Stops Here",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-02",
+      "id": 576031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004865.jpg",
+      "name": "The Dating Game",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-09",
+      "id": 610478,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004866.jpg",
+      "name": "Never Ben Jealous",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-16",
+      "id": 610479,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004867.jpg",
+      "name": "The Return of the Mommy",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-23",
+      "id": 610480,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004868.jpg",
+      "name": "Room-mating",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-03-30",
+      "id": 610481,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004869.jpg",
+      "name": "Stupid Cupid",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-06",
+      "id": 610482,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004860.jpg",
+      "name": "Homecoming and Going",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-01",
+      "id": 697927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004870.jpg",
+      "name": "Trial by Liar",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-08",
+      "id": 781334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004871.jpg",
+      "name": "Ben-semination",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-15",
+      "id": 781335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004872.jpg",
+      "name": "High School Diplomacy",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-22",
+      "id": 781336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004873.jpg",
+      "name": "Not So Great Grandma",
+      "number": 14,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-06-29",
+      "id": 781337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004874.jpg",
+      "name": "Unholy Matrimony",
+      "number": 15,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-06",
+      "id": 795202,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004875.jpg",
+      "name": "Double Date Double Down",
+      "number": 16,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 795203,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004876.jpg",
+      "name": "The Love Seat",
+      "number": 17,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-20",
+      "id": 795204,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004877.jpg",
+      "name": "She Said, Ben Said",
+      "number": 18,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-07-27",
+      "id": 795205,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004878.jpg",
+      "name": "Condom Conundrum",
+      "number": 19,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2016-08-03",
+      "id": 795206,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004879.jpg",
+      "name": "My Fair Emma",
+      "number": 20,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2017-03-13",
+      "id": 1038573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004883.jpg",
+      "name": "To Elle and Back",
+      "number": 1,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-20",
+      "id": 1072866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004880.jpg",
+      "name": "Pro and Con",
+      "number": 2,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-03-27",
+      "id": 1072867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004884.jpg",
+      "name": "Ben Rides a Unicorn",
+      "number": 3,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-03",
+      "id": 1074228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004885.jpg",
+      "name": "A Mother of a Day",
+      "number": 4,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-10",
+      "id": 1074229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004886.jpg",
+      "name": "When Elle Freezes Over",
+      "number": 5,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-17",
+      "id": 1074230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004882.jpg",
+      "name": "The Third Wheeler",
+      "number": 6,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-04-24",
+      "id": 1074231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004887.jpg",
+      "name": "The Sonny-Moon",
+      "number": 7,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-01",
+      "id": 1074232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004881.jpg",
+      "name": "You Cruise, You Lose",
+      "number": 8,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-08",
+      "id": 1074233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004888.jpg",
+      "name": "The Rebound",
+      "number": 9,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-15",
+      "id": 1074234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004889.jpg",
+      "name": "What's in the Box?!",
+      "number": 10,
+      "runtime": 30,
+      "season": 6
+    },
+    {
+      "airdate": "2017-05-22",
+      "id": 1151638,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004890.jpg",
+      "name": "Daddy's Girl",
+      "number": 11,
+      "runtime": 30,
+      "season": 6
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "id": "tvmaze-351",
+  "live": true,
+  "overview": "Baby Daddy follows Ben, a young man in his early 20s living the life of a bachelor in New York City with his buddy, Tucker, and his brother, Danny. Their lives are turned upside down when they come home one day to find a baby girl left on the doorstep by an ex-girlfriend of Ben's. After much deliberation, Ben decides to raise the baby with the help of his friends and his protective and sometimes over-bearing mother, Bonnie, and his close female friend, Riley.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/2/5387.jpg",
   "rating": 7.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "351",
+  "title": "Baby Daddy",
+  "type": "series",
+  "year": 2012
 }

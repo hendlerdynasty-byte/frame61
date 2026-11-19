@@ -1,22 +1,437 @@
 {
-  "schema": 1,
-  "id": "tvmaze-2759",
-  "source": "tvmaze",
-  "sourceId": "2759",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Last Kingdom",
-  "year": 2015,
-  "type": "series",
-  "overview": "The Last Kingdom is a show of heroic deeds and epic battles but with a thematic depth that embraces politics, religion, warfare, courage, love, loyalty and our universal search for identity. Combining real historical figures and events with fictional characters, it is the story of how a people combined their strength under one of the most iconic kings of history in order to reclaim their land for themselves and build a place they call home.",
-  "poster": "file:///android_asset/posters/tvmaze-2759.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-10-10",
+      "id": 204059,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/23/59570.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-17",
+      "id": 236878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62720.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 75,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-24",
+      "id": 236879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/26/65478.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-31",
+      "id": 236880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/27/68107.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-07",
+      "id": 236881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/28/72359.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-14",
+      "id": 236882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78402.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-21",
+      "id": 236883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/31/78400.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-28",
+      "id": 236884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/32/81481.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-03-16",
+      "id": 1090940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256494.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-23",
+      "id": 1097113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/261087.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-30",
+      "id": 1097114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/262801.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-06",
+      "id": 1105136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/105/264789.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-13",
+      "id": 1119053,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268966.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-20",
+      "id": 1119054,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/272449.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-27",
+      "id": 1119055,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/272952.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-04",
+      "id": 1119056,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/111/279450.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1552427,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438020.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 55,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1566995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438021.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1566996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438022.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1566997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438023.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1566998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438024.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1566999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438025.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1567001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438026.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 56,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1567003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438027.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 52,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1567006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438028.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 54,
+      "season": 3
+    },
+    {
+      "airdate": "2018-11-19",
+      "id": 1567007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/175/438029.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 53,
+      "season": 3
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634680.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 56,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634681.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 56,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634682.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634683.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634684.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634685.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 53,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634686.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 52,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634687.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 51,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634688.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 53,
+      "season": 4
+    },
+    {
+      "airdate": "2020-04-26",
+      "id": 1820744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/253/634689.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 55,
+      "season": 4
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2273465,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997599.jpg",
+      "name": "Episode 1",
+      "number": 1,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277800,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997600.jpg",
+      "name": "Episode 2",
+      "number": 2,
+      "runtime": 56,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997601.jpg",
+      "name": "Episode 3",
+      "number": 3,
+      "runtime": 53,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997602.jpg",
+      "name": "Episode 4",
+      "number": 4,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997603.jpg",
+      "name": "Episode 5",
+      "number": 5,
+      "runtime": 57,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277804,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997604.jpg",
+      "name": "Episode 6",
+      "number": 6,
+      "runtime": 53,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997605.jpg",
+      "name": "Episode 7",
+      "number": 7,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997606.jpg",
+      "name": "Episode 8",
+      "number": 8,
+      "runtime": 54,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997607.jpg",
+      "name": "Episode 9",
+      "number": 9,
+      "runtime": 55,
+      "season": 5
+    },
+    {
+      "airdate": "2022-03-09",
+      "id": 2277808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/997608.jpg",
+      "name": "Episode 10",
+      "number": 10,
+      "runtime": 56,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-2759",
+  "live": true,
+  "overview": "The Last Kingdom is a show of heroic deeds and epic battles but with a thematic depth that embraces politics, religion, warfare, courage, love, loyalty and our universal search for identity. Combining real historical figures and events with fictional characters, it is the story of how a people combined their strength under one of the most iconic kings of history in order to reclaim their land for themselves and build a place they call home.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/353/883061.jpg",
   "rating": 8.2,
-  "runtime": null,
-  "episodes": []
+  "runtime": 57,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "2759",
+  "title": "The Last Kingdom",
+  "type": "series",
+  "year": 2015
 }

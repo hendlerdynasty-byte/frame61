@@ -1,22 +1,401 @@
 {
-  "schema": 1,
-  "id": "tvmaze-237",
-  "source": "tvmaze",
-  "sourceId": "237",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Revolution",
-  "year": 2012,
-  "type": "series",
-  "overview": "What would you do without it all? In this epic adventure, a family struggles to reunite in an American landscape void of electricity: a world of empty cities, local militias and heroic freedom fighters, where every single piece of technology -- computers, planes, cars, phones, even lights -- has mysteriously blacked out forever.",
-  "poster": "file:///android_asset/posters/tvmaze-237.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2012-09-17",
+      "id": 14700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441460.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-09-24",
+      "id": 14701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441461.jpg",
+      "name": "Chained Heat",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-01",
+      "id": 14702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441462.jpg",
+      "name": "No Quarter",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-08",
+      "id": 14703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441463.jpg",
+      "name": "The Plague Dogs",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-15",
+      "id": 14704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441464.jpg",
+      "name": "Soul Train",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-10-29",
+      "id": 14705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441465.jpg",
+      "name": "Sex and Drugs",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-05",
+      "id": 14706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441466.jpg",
+      "name": "The Children's Crusade",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-12",
+      "id": 14707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441467.jpg",
+      "name": "Ties That Bind",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-19",
+      "id": 14708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441468.jpg",
+      "name": "Kashmir",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-11-26",
+      "id": 14709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490703.jpg",
+      "name": "Nobody's Fault But Mine",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 14710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490704.jpg",
+      "name": "The Stand",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-01",
+      "id": 14711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490706.jpg",
+      "name": "Ghosts",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 14712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490707.jpg",
+      "name": "The Song Remains the Same",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-22",
+      "id": 14713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490708.jpg",
+      "name": "The Night the Lights Went Out in Georgia",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-29",
+      "id": 14714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490709.jpg",
+      "name": "Home",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-06",
+      "id": 14715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490710.jpg",
+      "name": "The Love Boat",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-13",
+      "id": 14716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490712.jpg",
+      "name": "The Longest Day",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-20",
+      "id": 14717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490713.jpg",
+      "name": "Clue",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-05-27",
+      "id": 14718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490714.jpg",
+      "name": "Children of Men",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-06-03",
+      "id": 14719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490715.jpg",
+      "name": "The Dark Tower",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-09-25",
+      "id": 14720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490716.jpg",
+      "name": "Born in the U.S.A.",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-02",
+      "id": 14721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490717.jpg",
+      "name": "There Will Be Blood",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-09",
+      "id": 14722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490718.jpg",
+      "name": "Love Story",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-16",
+      "id": 14723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490719.jpg",
+      "name": "Patriot Games",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-23",
+      "id": 14724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490720.jpg",
+      "name": "One Riot, One Ranger",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-10-30",
+      "id": 14725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490721.jpg",
+      "name": "Dead Man Walking",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-06",
+      "id": 14726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490722.jpg",
+      "name": "The Patriot Act",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-13",
+      "id": 14727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490723.jpg",
+      "name": "Come Blow Your Horn",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-11-20",
+      "id": 14728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490724.jpg",
+      "name": "Everyone Says I Love You",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-08",
+      "id": 14729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490725.jpg",
+      "name": "Three Amigos",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-15",
+      "id": 14730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490726.jpg",
+      "name": "Mis Dos Padres",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-22",
+      "id": 14731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490727.jpg",
+      "name": "Captain Trips",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-29",
+      "id": 14732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490728.jpg",
+      "name": "Happy Endings",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-26",
+      "id": 14733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490730.jpg",
+      "name": "Fear and Loathing",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-05",
+      "id": 14734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490732.jpg",
+      "name": "Dreamcatcher",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-12",
+      "id": 14735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490733.jpg",
+      "name": "Exposition Boulevard",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-19",
+      "id": 14736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490734.jpg",
+      "name": "Why We Fight",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-02",
+      "id": 14737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490735.jpg",
+      "name": "Austin City Limits",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-30",
+      "id": 14738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490736.jpg",
+      "name": "$#!& Happens",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-07",
+      "id": 14739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490737.jpg",
+      "name": "Tomorrowland",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-14",
+      "id": 14740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490739.jpg",
+      "name": "Memorial Day",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-05-21",
+      "id": 14741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/490740.jpg",
+      "name": "Declaration of Independence",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-237",
+  "live": true,
+  "overview": "What would you do without it all? In this epic adventure, a family struggles to reunite in an American landscape void of electricity: a world of empty cities, local militias and heroic freedom fighters, where every single piece of technology -- computers, planes, cars, phones, even lights -- has mysteriously blacked out forever.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/55/138043.jpg",
   "rating": 7.6,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "237",
+  "title": "Revolution",
+  "type": "series",
+  "year": 2012
 }

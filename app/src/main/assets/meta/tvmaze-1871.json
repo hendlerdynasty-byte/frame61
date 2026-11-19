@@ -1,22 +1,428 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1871",
-  "source": "tvmaze",
-  "sourceId": "1871",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Mr. Robot",
-  "year": 2015,
-  "type": "series",
-  "overview": "Mr. Robot follows Elliot, a young programmer who works as a cyber-security engineer by day and as a vigilante hacker by night. Elliot finds himself at a crossroads when the mysterious leader of an underground hacker group recruits him to destroy the firm he is paid to protect. Compelled by his personal beliefs, Elliot struggles to resist the chance to take down the multinational CEOs he believes are running (and ruining) the world.",
-  "poster": "file:///android_asset/posters/tvmaze-1871.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-06-24",
+      "id": 157154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266370.jpg",
+      "name": "eps1.0_hellofriend.mov",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-01",
+      "id": 167379,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266683.jpg",
+      "name": "eps1.1_ones-and-zer0es.mpeg",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-08",
+      "id": 167380,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266701.jpg",
+      "name": "eps1.2_d3bug.mkv",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-15",
+      "id": 167381,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267080.jpg",
+      "name": "eps1.3_da3m0ns.mp4",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-22",
+      "id": 167382,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267095.jpg",
+      "name": "eps1.4_3xpl0its.wmv",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-29",
+      "id": 167383,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267138.jpg",
+      "name": "eps1.5_br4ve-trave1er.asf",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-05",
+      "id": 167384,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267152.jpg",
+      "name": "eps1.6_v1ew-s0urce.flv",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-12",
+      "id": 167385,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/267485.jpg",
+      "name": "eps1.7_wh1ter0se.m4v",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-19",
+      "id": 167386,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/267502.jpg",
+      "name": "eps1.8_m1rr0r1ng.qt",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-09-02",
+      "id": 167387,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/267554.jpg",
+      "name": "eps1.9_zer0-day.avi",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 733139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/167967.jpg",
+      "name": "eps2.0_unm4sk-pt1.tc",
+      "number": 1,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-13",
+      "id": 830870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268508.jpg",
+      "name": "eps2.0_unm4sk-pt2.tc",
+      "number": 2,
+      "runtime": 46,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-20",
+      "id": 830871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268499.jpg",
+      "name": "eps2.1_k3rnel-pan1c.ksd",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-27",
+      "id": 830872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268493.jpg",
+      "name": "eps2.2_init1.asec",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-03",
+      "id": 830873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268475.jpg",
+      "name": "eps2.3_logic-b0mb.hc",
+      "number": 5,
+      "runtime": 72,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-10",
+      "id": 830874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268463.jpg",
+      "name": "eps2.4_m4ster-s1ave.aes",
+      "number": 6,
+      "runtime": 70,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-17",
+      "id": 830875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178952.jpg",
+      "name": "eps2.5_h4ndshake.sme",
+      "number": 7,
+      "runtime": 70,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-24",
+      "id": 830876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268442.jpg",
+      "name": "eps2.6_succ3ss0r.p12",
+      "number": 8,
+      "runtime": 67,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-31",
+      "id": 830877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268429.jpg",
+      "name": "eps2.7_init5.fve",
+      "number": 9,
+      "runtime": 65,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-07",
+      "id": 830878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268416.jpg",
+      "name": "eps2.8_h1dden-pr0cess.axx",
+      "number": 10,
+      "runtime": 65,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-14",
+      "id": 861461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268408.jpg",
+      "name": "eps2.9_pyth0n-pt1.p7z",
+      "number": 11,
+      "runtime": 70,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-21",
+      "id": 910146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268391.jpg",
+      "name": "eps2.9_pyth0n-pt2.p7z",
+      "number": 12,
+      "runtime": 66,
+      "season": 2
+    },
+    {
+      "airdate": "2017-10-11",
+      "id": 1184709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/327445.jpg",
+      "name": "eps3.0_power-saver-mode.h",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-10-18",
+      "id": 1215786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329581.jpg",
+      "name": "eps3.1_undo.gz",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-10-25",
+      "id": 1215788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331608.jpg",
+      "name": "eps3.2_legacy.so",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-11-01",
+      "id": 1215789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/133/334012.jpg",
+      "name": "eps3.3_metadata.par2",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-11-08",
+      "id": 1215790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/134/335889.jpg",
+      "name": "eps3.4_runtime-err0r.r00",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-11-15",
+      "id": 1215791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/135/338259.jpg",
+      "name": "eps3.5_kill-pr0cess.inc",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-11-22",
+      "id": 1215794,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/136/340402.jpg",
+      "name": "eps3.6_fredrick+tanya.chk",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-11-29",
+      "id": 1215795,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/343498.jpg",
+      "name": "eps3.7_dont-delete-me.ko",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-12-06",
+      "id": 1215796,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/137/344253.jpg",
+      "name": "eps3.8_stage3.torrent",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-12-13",
+      "id": 1215797,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/138/346172.jpg",
+      "name": "shutdown -r",
+      "number": 10,
+      "runtime": 75,
+      "season": 3
+    },
+    {
+      "airdate": "2019-10-06",
+      "id": 1705714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/214/536060.jpg",
+      "name": "401 Unauthorized",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-10-13",
+      "id": 1723152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/215/538745.jpg",
+      "name": "402 Payment Required",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-10-20",
+      "id": 1728848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/216/541937.jpg",
+      "name": "403 Forbidden",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-10-27",
+      "id": 1733128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/217/544375.jpg",
+      "name": "404 Not Found",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-03",
+      "id": 1742746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/218/545690.jpg",
+      "name": "405 Method Not Allowed",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-10",
+      "id": 1746057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/221/553091.jpg",
+      "name": "406 Not Acceptable",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-17",
+      "id": 1752609,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/224/561942.jpg",
+      "name": "407 Proxy Authentication Required",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-11-24",
+      "id": 1754672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/227/568779.jpg",
+      "name": "408 Request Timeout",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-01",
+      "id": 1759731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/228/571952.jpg",
+      "name": "409 Conflict",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-08",
+      "id": 1762039,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/230/575698.jpg",
+      "name": "410 Gone",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-15",
+      "id": 1762040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/231/579176.jpg",
+      "name": "eXit",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-22",
+      "id": 1762041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/581610.jpg",
+      "name": "whoami",
+      "number": 12,
+      "runtime": 61,
+      "season": 4
+    },
+    {
+      "airdate": "2019-12-22",
+      "id": 1762042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/232/581609.jpg",
+      "name": "Hello, Elliot",
+      "number": 13,
+      "runtime": 66,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-1871",
+  "live": true,
+  "overview": "Mr. Robot follows Elliot, a young programmer who works as a cyber-security engineer by day and as a vigilante hacker by night. Elliot finds himself at a crossroads when the mysterious leader of an underground hacker group recruits him to destroy the firm he is paid to protect. Compelled by his personal beliefs, Elliot struggles to resist the chance to take down the multinational CEOs he believes are running (and ruining) the world.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/211/528026.jpg",
   "rating": 8.3,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1871",
+  "title": "Mr. Robot",
+  "type": "series",
+  "year": 2015
 }

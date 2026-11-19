@@ -1,22 +1,671 @@
 {
-  "schema": 1,
-  "id": "tvmaze-473",
-  "source": "tvmaze",
-  "sourceId": "473",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Veronica Mars",
-  "year": 2004,
-  "type": "series",
-  "overview": "In the wealthy, seaside community of Neptune, the rich and powerful make the rules. They own the town and are desperately trying to keep their dirty little secrets just that... secret. Unfortunately for them, there's Veronica Mars, a smart, fearless private investigator dedicated to solving the town's toughest mysteries. During the day, Veronica studies hard, but by night, she helps her father Keith with his private investigator business, sneaking through back alleys and scoping out no-tell motels with a telescopic-lens camera in an attempt to uncover the California beach town's darkest secrets.",
-  "poster": "file:///android_asset/posters/tvmaze-473.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2004-09-22",
+      "id": 43245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/296/740908.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-09-28",
+      "id": 43246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/300/750650.jpg",
+      "name": "Credit Where Credit's Due",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-12",
+      "id": 43247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513662.jpg",
+      "name": "Meet John Smith",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-19",
+      "id": 43248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/363/909951.jpg",
+      "name": "The Wrath of Con",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-10-26",
+      "id": 43249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/984888.jpg",
+      "name": "You Think You Know Somebody",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-02",
+      "id": 43250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513665.jpg",
+      "name": "Return of the Kane",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-09",
+      "id": 43251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513666.jpg",
+      "name": "The Girl Next Door",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-23",
+      "id": 43252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513667.jpg",
+      "name": "Like a Virgin",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-11-30",
+      "id": 43253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513668.jpg",
+      "name": "Drinking the Kool-Aid",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2004-12-14",
+      "id": 43254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513669.jpg",
+      "name": "An Echolls' Family Christmas",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-04",
+      "id": 43255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513670.jpg",
+      "name": "Silence of the Lamb",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-01-11",
+      "id": 43256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513671.jpg",
+      "name": "Clash of the Tritons",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-08",
+      "id": 43257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513672.jpg",
+      "name": "Lord of the Bling",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-15",
+      "id": 43258,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513673.jpg",
+      "name": "Mars vs. Mars",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-22",
+      "id": 43259,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513674.jpg",
+      "name": "Ruskie Business",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-29",
+      "id": 43260,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513675.jpg",
+      "name": "Betty and Veronica",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-05",
+      "id": 43261,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513676.jpg",
+      "name": "Kanes and Abel's",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-12",
+      "id": 43262,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513677.jpg",
+      "name": "Weapons of Class Destruction",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-19",
+      "id": 43263,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513678.jpg",
+      "name": "Hot Dogs",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-26",
+      "id": 43264,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513679.jpg",
+      "name": "M.A.D.",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-03",
+      "id": 43265,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513680.jpg",
+      "name": "A Trip to the Dentist",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-10",
+      "id": 43266,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513681.jpg",
+      "name": "Leave It to Beaver",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-28",
+      "id": 43267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513682.jpg",
+      "name": "Normal Is the Watchword",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-05",
+      "id": 43268,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513683.jpg",
+      "name": "Driver Ed",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-12",
+      "id": 43269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513684.jpg",
+      "name": "Cheatty Cheatty Bang Bang",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-19",
+      "id": 43270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513685.jpg",
+      "name": "Green-Eyed Monster",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-10-26",
+      "id": 43271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513686.jpg",
+      "name": "Blast from the Past",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-09",
+      "id": 43272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513687.jpg",
+      "name": "Rat Saw God",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-16",
+      "id": 43273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513688.jpg",
+      "name": "Nobody Puts Baby in a Corner",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-23",
+      "id": 43274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513689.jpg",
+      "name": "Ahoy, Mateys!",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-11-30",
+      "id": 43275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513690.jpg",
+      "name": "My Mother, the Fiend",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2005-12-07",
+      "id": 43276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513691.jpg",
+      "name": "One Angry Veronica",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-01-25",
+      "id": 43277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513692.jpg",
+      "name": "Donut Run",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-01",
+      "id": 43278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513693.jpg",
+      "name": "Rashard and Wallace Go to White Castle",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-02-08",
+      "id": 43279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513694.jpg",
+      "name": "Ain't No Magic Mountain High Enough",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-15",
+      "id": 43280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513695.jpg",
+      "name": "Versatile Toppings",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-22",
+      "id": 43281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513696.jpg",
+      "name": "The Quick and the Wed",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-29",
+      "id": 43282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513697.jpg",
+      "name": "The Rapes of Graff",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-05",
+      "id": 43283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513698.jpg",
+      "name": "Plan B",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-11",
+      "id": 43284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513699.jpg",
+      "name": "I Am God",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-18",
+      "id": 43285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513700.jpg",
+      "name": "Nevermind the Buttocks",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-25",
+      "id": 43286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513701.jpg",
+      "name": "Look Who's Stalking",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-02",
+      "id": 43287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513702.jpg",
+      "name": "Happy Go Lucky",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-09",
+      "id": 43288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513703.jpg",
+      "name": "Not Pictured",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-03",
+      "id": 43289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513704.jpg",
+      "name": "Welcome Wagon",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-10",
+      "id": 43290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513705.jpg",
+      "name": "My Big Fat Greek Rush Week",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-17",
+      "id": 43291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513706.jpg",
+      "name": "Wichita Linebacker",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-24",
+      "id": 43292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513707.jpg",
+      "name": "Charlie Don't Surf",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-10-31",
+      "id": 43293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513708.jpg",
+      "name": "President Evil",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-07",
+      "id": 43294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513709.jpg",
+      "name": "Hi, Infidelity",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-14",
+      "id": 43295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513710.jpg",
+      "name": "Of Vice and Men",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-21",
+      "id": 43296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513711.jpg",
+      "name": "Lord of the Pi's",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2006-11-28",
+      "id": 43297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513712.jpg",
+      "name": "Spit & Eggs",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-23",
+      "id": 43298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513713.jpg",
+      "name": "Show Me the Monkey",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-01-30",
+      "id": 43299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513714.jpg",
+      "name": "Poughkeepsie, Tramps, and Thieves",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-06",
+      "id": 43300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513715.jpg",
+      "name": "There's Got to Be a Morning After Pill",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-13",
+      "id": 43301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513716.jpg",
+      "name": "Postgame Mortem",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-20",
+      "id": 43302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513717.jpg",
+      "name": "Mars, Bars",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-02-27",
+      "id": 43303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513718.jpg",
+      "name": "Papa's Cabin",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-01",
+      "id": 43304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513719.jpg",
+      "name": "Un-American Graffiti",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-08",
+      "id": 43305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513720.jpg",
+      "name": "Debasement Tapes",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-15",
+      "id": 43306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513721.jpg",
+      "name": "I Know What You'll Do Next Summer",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-22",
+      "id": 43307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513722.jpg",
+      "name": "Weevils Wobble But They Don't Go Down",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2007-05-22",
+      "id": 43308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/513723.jpg",
+      "name": "The Bitch Is Back",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514276.jpg",
+      "name": "Spring Break Forever",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514277.jpg",
+      "name": "Chino and the Man",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514278.jpg",
+      "name": "Keep Calm and Party On",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514279.jpg",
+      "name": "Heads You Lose",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514280.jpg",
+      "name": "Losing Streak",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514281.jpg",
+      "name": "Entering a World of Pain",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514282.jpg",
+      "name": "Gods of War",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1638985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/205/514283.jpg",
+      "name": "Years, Continents, Bloodshed",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Mystery"
   ],
+  "id": "tvmaze-473",
+  "live": true,
+  "overview": "In the wealthy, seaside community of Neptune, the rich and powerful make the rules. They own the town and are desperately trying to keep their dirty little secrets just that... secret. Unfortunately for them, there's Veronica Mars, a smart, fearless private investigator dedicated to solving the town's toughest mysteries. During the day, Veronica studies hard, but by night, she helps her father Keith with his private investigator business, sneaking through back alleys and scoping out no-tell motels with a telescopic-lens camera in an attempt to uncover the California beach town's darkest secrets.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/9/24539.jpg",
   "rating": 8.5,
-  "runtime": null,
-  "episodes": []
+  "runtime": 60,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "473",
+  "title": "Veronica Mars",
+  "type": "series",
+  "year": 2004
 }

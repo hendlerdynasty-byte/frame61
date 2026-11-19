@@ -1,21 +1,364 @@
 {
-  "schema": 1,
-  "id": "tvmaze-712",
-  "source": "tvmaze",
-  "sourceId": "712",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Tudors",
-  "year": 2007,
-  "type": "series",
-  "overview": "Jonathan Rhys Meyers stars in this original, history-based drama series as the young, vibrant King Henry VIII, a competitive and lustful monarch who navigates the intrigues of the English court and the human heart with equal vigor and justifiable suspicion.",
-  "poster": "file:///android_asset/posters/tvmaze-712.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-04-01",
+      "id": 62857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220978.jpg",
+      "name": "In Cold Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-08",
+      "id": 62858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220979.jpg",
+      "name": "Simply Henry",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-15",
+      "id": 62859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220980.jpg",
+      "name": "Wolsey, Wolsey, Wolsey!",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-22",
+      "id": 62860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220981.jpg",
+      "name": "His Majesty, The King",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-04-29",
+      "id": 62861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220982.jpg",
+      "name": "Arise, My Lord",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-06",
+      "id": 62862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220983.jpg",
+      "name": "True Love",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-13",
+      "id": 62863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220984.jpg",
+      "name": "Message to the Emperor",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-05-20",
+      "id": 62864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220985.jpg",
+      "name": "Truth and Justice",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-03",
+      "id": 62865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220986.jpg",
+      "name": "Look to God First",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-06-10",
+      "id": 62866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220987.jpg",
+      "name": "The Death of Wolsey",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-03-30",
+      "id": 62867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220989.jpg",
+      "name": "Everything Is Beautiful",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-06",
+      "id": 62868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220990.jpg",
+      "name": "Tears of Blood",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-13",
+      "id": 62869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220991.jpg",
+      "name": "Checkmate",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-20",
+      "id": 62870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220992.jpg",
+      "name": "The Act of Succession",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-04-27",
+      "id": 62871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220993.jpg",
+      "name": "His Majesty's Pleasure",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-05-04",
+      "id": 62872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220994.jpg",
+      "name": "The Definition of Love",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-05-11",
+      "id": 62873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220995.jpg",
+      "name": "Matters of State",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-05-18",
+      "id": 62874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220996.jpg",
+      "name": "Lady in Waiting",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-05-25",
+      "id": 62875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220997.jpg",
+      "name": "The Act of Treason",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-06-01",
+      "id": 62876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220998.jpg",
+      "name": "Destiny and Fortune",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-05",
+      "id": 62877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/220999.jpg",
+      "name": "Civil Unrest",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-12",
+      "id": 62878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221000.jpg",
+      "name": "The Northern Uprising",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-19",
+      "id": 62879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221001.jpg",
+      "name": "Dissension and Punishment",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-04-26",
+      "id": 62880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221002.jpg",
+      "name": "The Death of a Queen",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-05-03",
+      "id": 62881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221003.jpg",
+      "name": "Problems in the Reformation",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-05-10",
+      "id": 62882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221004.jpg",
+      "name": "Search for a New Queen",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-05-17",
+      "id": 62883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221005.jpg",
+      "name": "Protestant Anne of Cleves",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2009-05-24",
+      "id": 62884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221006.jpg",
+      "name": "The Undoing of Cromwell",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-11",
+      "id": 62885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221007.jpg",
+      "name": "Moment of Nostalgia",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-04-18",
+      "id": 62886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221039.jpg",
+      "name": "Sister",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-04-25",
+      "id": 62887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221046.jpg",
+      "name": "Something for You",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-05-02",
+      "id": 62888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221083.jpg",
+      "name": "Natural Ally",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-05-09",
+      "id": 62889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221084.jpg",
+      "name": "Bottom of the Pot",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-05-16",
+      "id": 62890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221384.jpg",
+      "name": "You Have My Permission",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-05-23",
+      "id": 62891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221385.jpg",
+      "name": "Sixth and the Final Wife",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-06-06",
+      "id": 62892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221386.jpg",
+      "name": "As It Should Be",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-06-13",
+      "id": 62893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221388.jpg",
+      "name": "Secrets of the Heart",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-06-20",
+      "id": 62894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/88/221389.jpg",
+      "name": "Death of a Monarchy",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Historie"
+    "History"
   ],
+  "id": "tvmaze-712",
+  "live": true,
+  "overview": "Jonathan Rhys Meyers stars in this original, history-based drama series as the young, vibrant King Henry VIII, a competitive and lustful monarch who navigates the intrigues of the English court and the human heart with equal vigor and justifiable suspicion.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/6/15022.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "712",
+  "title": "The Tudors",
+  "type": "series",
+  "year": 2007
 }

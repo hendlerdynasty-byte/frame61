@@ -1,21 +1,778 @@
 {
-  "schema": 1,
-  "id": "tvmaze-3606",
-  "source": "tvmaze",
-  "sourceId": "3606",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Billions",
-  "year": 2016,
-  "type": "series",
-  "overview": "Billions is a complex drama about power politics in the world of New York high finance. Shrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts, power and influence to outmaneuver the other. The stakes are in the billions in this timely, provocative series.",
-  "poster": "file:///android_asset/posters/tvmaze-3606.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2016-01-17",
+      "id": 257722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906850.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-24",
+      "id": 493409,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906849.jpg",
+      "name": "Naming Rights",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-01-31",
+      "id": 493410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906848.jpg",
+      "name": "YumTime",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-07",
+      "id": 508576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906847.jpg",
+      "name": "Short Squeeze",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-14",
+      "id": 508577,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906846.jpg",
+      "name": "The Good Life",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-02-21",
+      "id": 508578,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906845.jpg",
+      "name": "The Deal",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-06",
+      "id": 508680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906844.jpg",
+      "name": "The Punch",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-13",
+      "id": 508683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906843.jpg",
+      "name": "Boasts and Rails",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-20",
+      "id": 595749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906842.jpg",
+      "name": "Where the F*ck is Donnie?",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-27",
+      "id": 595750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906841.jpg",
+      "name": "Quality of Life",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-03",
+      "id": 644712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906840.jpg",
+      "name": "Magical Thinking",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-10",
+      "id": 644716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906839.jpg",
+      "name": "The Conversation",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2017-02-19",
+      "id": 893170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906838.jpg",
+      "name": "Risk Management",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-26",
+      "id": 1026950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906837.jpg",
+      "name": "Dead Cat Bounce",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-05",
+      "id": 1058850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906836.jpg",
+      "name": "Optimal Play",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-12",
+      "id": 1058851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906835.jpg",
+      "name": "The Oath",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-19",
+      "id": 1058852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906834.jpg",
+      "name": "Currency",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-26",
+      "id": 1058853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906833.jpg",
+      "name": "Indian Four",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-02",
+      "id": 1058854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906832.jpg",
+      "name": "Victory Lap",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-09",
+      "id": 1058855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906831.jpg",
+      "name": "The Kingmaker",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-16",
+      "id": 1058856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906830.jpg",
+      "name": "Sic Transit Imperium",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-23",
+      "id": 1058857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906829.jpg",
+      "name": "With or Without You",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-30",
+      "id": 1058858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906828.jpg",
+      "name": "Golden Frog Time",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-07",
+      "id": 1058859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906827.jpg",
+      "name": "Ball in Hand",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2018-03-25",
+      "id": 1385199,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906824.jpg",
+      "name": "Tie Goes to the Runner",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-01",
+      "id": 1391509,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906823.jpg",
+      "name": "The Wrong Maria Gonzalez",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-08",
+      "id": 1391510,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906822.jpg",
+      "name": "A Generation Too Late",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-15",
+      "id": 1391511,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906821.jpg",
+      "name": "Hell of a Ride",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-22",
+      "id": 1419320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906820.jpg",
+      "name": "Flaw in the Death Star",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-04-29",
+      "id": 1419321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906819.jpg",
+      "name": "The Third Ortolan",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-06",
+      "id": 1442875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906818.jpg",
+      "name": "Not You, Mr. Dake",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-13",
+      "id": 1442876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906817.jpg",
+      "name": "All the Wilburys",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-20",
+      "id": 1442877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906816.jpg",
+      "name": "Icebreaker",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-05-27",
+      "id": 1442878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906815.jpg",
+      "name": "Redemption",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-03",
+      "id": 1443410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906814.jpg",
+      "name": "Kompenso",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-10",
+      "id": 1443411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906813.jpg",
+      "name": "Elmsley Count",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2019-03-17",
+      "id": 1580566,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470608.jpg",
+      "name": "Chucky Rhoades's Greatest Game",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-24",
+      "id": 1583224,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470614.jpg",
+      "name": "Arousal Template",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-03-31",
+      "id": 1583225,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470616.jpg",
+      "name": "Chickentown",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-07",
+      "id": 1616880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906812.jpg",
+      "name": "Overton Window",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-14",
+      "id": 1616881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906811.jpg",
+      "name": "A Proper Sendoff",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-21",
+      "id": 1616882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906810.jpg",
+      "name": "Maximum Recreational Depth",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-04-28",
+      "id": 1616883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906809.jpg",
+      "name": "Infinite Game",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-05-05",
+      "id": 1625091,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906808.jpg",
+      "name": "Fight Night",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-05-12",
+      "id": 1632674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906807.jpg",
+      "name": "American Champion",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-05-26",
+      "id": 1632675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906806.jpg",
+      "name": "New Year's Day",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-06-02",
+      "id": 1649247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/500987.jpg",
+      "name": "Lamster",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-06-09",
+      "id": 1649248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/500988.jpg",
+      "name": "Extreme Sandbox",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2020-05-03",
+      "id": 1789720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906805.jpg",
+      "name": "The New Decas",
+      "number": 1,
+      "runtime": 59,
+      "season": 5
+    },
+    {
+      "airdate": "2020-05-10",
+      "id": 1821539,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906804.jpg",
+      "name": "The Chris Rock Test",
+      "number": 2,
+      "runtime": 59,
+      "season": 5
+    },
+    {
+      "airdate": "2020-05-17",
+      "id": 1821540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906803.jpg",
+      "name": "Beg, Bribe, Bully",
+      "number": 3,
+      "runtime": 58,
+      "season": 5
+    },
+    {
+      "airdate": "2020-05-24",
+      "id": 1821541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906802.jpg",
+      "name": "Opportunity Zone",
+      "number": 4,
+      "runtime": 59,
+      "season": 5
+    },
+    {
+      "airdate": "2020-05-31",
+      "id": 1821542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906801.jpg",
+      "name": "Contract",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-06-07",
+      "id": 1821543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906800.jpg",
+      "name": "The Nordic Model",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2020-06-14",
+      "id": 1821544,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906799.jpg",
+      "name": "The Limitless Sh*t",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-05",
+      "id": 2109996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906798.jpg",
+      "name": "Copenhagen",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-12",
+      "id": 2110540,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906797.jpg",
+      "name": "Implosion",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-19",
+      "id": 2110541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906796.jpg",
+      "name": "Liberty",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-09-26",
+      "id": 2110542,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906795.jpg",
+      "name": "Victory Smoke",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2021-10-03",
+      "id": 2110543,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/362/906794.jpg",
+      "name": "No Direction Home",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2022-01-23",
+      "id": 2185697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/391/978831.jpg",
+      "name": "Cannonade",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-01-30",
+      "id": 2219012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/393/984378.jpg",
+      "name": "Lyin' Eyes",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-02-06",
+      "id": 2219013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/394/987028.jpg",
+      "name": "STD",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-02-13",
+      "id": 2219014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/396/990004.jpg",
+      "name": "Burn Rate",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-02-20",
+      "id": 2219016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/396/992182.jpg",
+      "name": "Rock of Eye",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-02-27",
+      "id": 2219017,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/397/994428.jpg",
+      "name": "Hostis Humani Generis",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-03-06",
+      "id": 2269645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/398/996728.jpg",
+      "name": "Napoleon's Hat",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-03-13",
+      "id": 2269646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/399/998746.jpg",
+      "name": "The Big Ugly",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-03-20",
+      "id": 2269647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/400/1001612.jpg",
+      "name": "Hindenburg",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-03-27",
+      "id": 2269648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/401/1004133.jpg",
+      "name": "Johnny Favorite",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-04-03",
+      "id": 2287306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/402/1006889.jpg",
+      "name": "Succession",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2022-04-10",
+      "id": 2287307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/403/1009369.jpg",
+      "name": "Cold Storage",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2023-08-11",
+      "id": 2570971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/471/1177925.jpg",
+      "name": "Tower of London",
+      "number": 1,
+      "runtime": 56,
+      "season": 7
+    },
+    {
+      "airdate": "2023-08-18",
+      "id": 2587332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/473/1182674.jpg",
+      "name": "Original Sin",
+      "number": 2,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2023-08-25",
+      "id": 2588583,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/474/1185443.jpg",
+      "name": "Winston Dick Energy",
+      "number": 3,
+      "runtime": 58,
+      "season": 7
+    },
+    {
+      "airdate": "2023-09-01",
+      "id": 2610898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/473/1183162.jpg",
+      "name": "Hurricane Rosie",
+      "number": 4,
+      "runtime": 59,
+      "season": 7
+    },
+    {
+      "airdate": "2023-09-08",
+      "id": 2610899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/476/1190276.jpg",
+      "name": "The Gulag Archipelago",
+      "number": 5,
+      "runtime": 49,
+      "season": 7
+    },
+    {
+      "airdate": "2023-09-15",
+      "id": 2610900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/477/1192523.jpg",
+      "name": "The Man in the Olive Drab T-Shirt",
+      "number": 6,
+      "runtime": 56,
+      "season": 7
+    },
+    {
+      "airdate": "2023-09-22",
+      "id": 2610901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/477/1194866.jpg",
+      "name": "DMV",
+      "number": 7,
+      "runtime": 56,
+      "season": 7
+    },
+    {
+      "airdate": "2023-09-29",
+      "id": 2610902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/479/1197761.jpg",
+      "name": "The Owl",
+      "number": 8,
+      "runtime": 57,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-06",
+      "id": 2618947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/479/1199818.jpg",
+      "name": "Game Theory Optimal",
+      "number": 9,
+      "runtime": 59,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-13",
+      "id": 2618948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/480/1202378.jpg",
+      "name": "Enemies List",
+      "number": 10,
+      "runtime": 61,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-20",
+      "id": 2618949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/481/1203666.jpg",
+      "name": "Axe Global",
+      "number": 11,
+      "runtime": 48,
+      "season": 7
+    },
+    {
+      "airdate": "2023-10-27",
+      "id": 2618950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/483/1208842.jpg",
+      "name": "Admirals Fund",
+      "number": 12,
+      "runtime": 58,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-3606",
+  "live": true,
+  "overview": "Billions is a complex drama about power politics in the world of New York high finance. Shrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts, power and influence to outmaneuver the other. The stakes are in the billions in this timely, provocative series.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/471/1179691.jpg",
   "rating": 8,
-  "runtime": null,
-  "episodes": []
+  "runtime": 59,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "3606",
+  "title": "Billions",
+  "type": "series",
+  "year": 2016
 }

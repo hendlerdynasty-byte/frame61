@@ -1,22 +1,473 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1788",
-  "source": "tvmaze",
-  "sourceId": "1788",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Killjoys",
-  "year": 2015,
-  "type": "series",
-  "overview": "Killjoys follows a fun-loving, hard living trio of interplanetary bounty hunters sworn to remain impartial as they chase deadly warrants throughout the Quad, a distant system on the brink of a bloody, multi-planetary class war.",
-  "poster": "file:///android_asset/posters/tvmaze-1788.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-06-19",
+      "id": 153963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/12/30519.jpg",
+      "name": "Bangarang",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-06-26",
+      "id": 163483,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205148.jpg",
+      "name": "The Sugar Point Run",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-03",
+      "id": 182029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205149.jpg",
+      "name": "The Harvest",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-10",
+      "id": 182030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205150.jpg",
+      "name": "Vessel",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-17",
+      "id": 182031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/265795.jpg",
+      "name": "A Glitch in the System",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-24",
+      "id": 182032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205391.jpg",
+      "name": "One Blood",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-07-31",
+      "id": 189627,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205392.jpg",
+      "name": "Kiss Kiss, Bye Bye",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-07",
+      "id": 189628,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205393.jpg",
+      "name": "Come the Rain",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-14",
+      "id": 189629,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205394.jpg",
+      "name": "Enemy Khlyen",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-08-21",
+      "id": 189630,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/82/205395.jpg",
+      "name": "Escape Velocity",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-07-01",
+      "id": 588561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/163431.jpg",
+      "name": "Dutch and the Real Girl",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-08",
+      "id": 763292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/265986.jpg",
+      "name": "Wild, Wild Westerley",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-15",
+      "id": 763293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204864.jpg",
+      "name": "Shaft",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-22",
+      "id": 763294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204865.jpg",
+      "name": "Schooled",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-29",
+      "id": 763295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204866.jpg",
+      "name": "Meet the Parents",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-05",
+      "id": 850936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/266030.jpg",
+      "name": "I Love Lucy",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-12",
+      "id": 850937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204907.jpg",
+      "name": "Heart-Shaped Box",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-19",
+      "id": 850938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204927.jpg",
+      "name": "Full Metal Monk",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-26",
+      "id": 850939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204946.jpg",
+      "name": "Johnny Be Good",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-02",
+      "id": 854297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/81/204952.jpg",
+      "name": "How to Kill Friends and Influence People",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-06-30",
+      "id": 1126785,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/118/297316.jpg",
+      "name": "Boondoggie",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-07",
+      "id": 1181786,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/299569.jpg",
+      "name": "A Skinner, Darkly",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-14",
+      "id": 1080754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/301527.jpg",
+      "name": "The Hullen Have Eyes",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-21",
+      "id": 1181788,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/121/304141.jpg",
+      "name": "The Lion, the Witch & the Warlord",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-07-28",
+      "id": 1094665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/307080.jpg",
+      "name": "Attack the Rack",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-04",
+      "id": 1100284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/308281.jpg",
+      "name": "Necropolis Now",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-11",
+      "id": 1138021,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310051.jpg",
+      "name": "The Wolf You Feed",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-18",
+      "id": 1181789,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312179.jpg",
+      "name": "Heist, Heist, Baby",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-25",
+      "id": 1181790,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314069.jpg",
+      "name": "Reckoning Ball",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-09-01",
+      "id": 1181791,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/315540.jpg",
+      "name": "Wargasm",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-07-20",
+      "id": 1465584,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/405143.jpg",
+      "name": "The Warrior Princess Bride",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-27",
+      "id": 1489633,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407075.jpg",
+      "name": "Johnny Dangerously",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-03",
+      "id": 1489634,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408698.jpg",
+      "name": "Bro-D Trip",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-10",
+      "id": 1489635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/410672.jpg",
+      "name": "What to Expect When You're Expecting … an Alien Parasite",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-17",
+      "id": 1495444,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/412239.jpg",
+      "name": "Greening Pains",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-24",
+      "id": 1495445,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/165/413394.jpg",
+      "name": "Baby, Face Killer",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-08-31",
+      "id": 1495446,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/166/415062.jpg",
+      "name": "O Mother, Where Art Thou?",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-09-07",
+      "id": 1514214,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419752.jpg",
+      "name": "It Takes a Pillage",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-09-14",
+      "id": 1514215,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420265.jpg",
+      "name": "The Kids Are Alright?",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-09-21",
+      "id": 1514595,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421873.jpg",
+      "name": "Sporemageddon",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2019-07-19",
+      "id": 1616005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/515033.jpg",
+      "name": "Run, Yala, Run",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-07-26",
+      "id": 1616006,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/206/517349.jpg",
+      "name": "Blame It on the Rain",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-02",
+      "id": 1616007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/518068.jpg",
+      "name": "Three Killjoys and a Lady",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-09",
+      "id": 1616008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/207/519948.jpg",
+      "name": "Ship Outta Luck",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-16",
+      "id": 1616009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/208/520903.jpg",
+      "name": "A Bout, A Girl",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-23",
+      "id": 1616010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/530672.jpg",
+      "name": "Three Mutineers",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-08-30",
+      "id": 1616011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/209/524355.jpg",
+      "name": "Cherchez La Bitch",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-06",
+      "id": 1616012,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/210/526887.jpg",
+      "name": "Don't Stop Beweaving",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-13",
+      "id": 1616013,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/528577.jpg",
+      "name": "Terraformance Anxiety",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2019-09-20",
+      "id": 1616014,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/212/530551.jpg",
+      "name": "Last Dance",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-1788",
+  "live": true,
+  "overview": "Killjoys follows a fun-loving, hard living trio of interplanetary bounty hunters sworn to remain impartial as they chase deadly warrants throughout the Quad, a distant system on the brink of a bloody, multi-planetary class war.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/206/515143.jpg",
   "rating": 8,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1788",
+  "title": "Killjoys",
+  "type": "series",
+  "year": 2015
 }

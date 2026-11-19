@@ -1,22 +1,716 @@
 {
-  "schema": 1,
-  "id": "tvmaze-662",
-  "source": "tvmaze",
-  "sourceId": "662",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Leverage",
-  "year": 2008,
-  "type": "series",
-  "overview": "Leverage is a slick and crafty drama following a team of expert thieves that take down corrupt corporations in elaborate high-tech schemes. Insurance investigator Nate Ford exposed scams and recovered stolen items worth millions. But his life hit the skids when his insurance company allowed his ailing 8-year-old son to die. Years later, Nate gets even as the leader of a specialized team of thieves, computer experts and con artists that right corporate and governmental injustices against honest citizens. To expose corruption, Nate will do wrong for all the right reasons –– he will provide Leverage.",
-  "poster": "file:///android_asset/posters/tvmaze-662.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2008-12-07",
+      "id": 58294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316486.jpg",
+      "name": "The Nigerian Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-09",
+      "id": 58295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/292236.jpg",
+      "name": "The Homecoming Job",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-16",
+      "id": 58296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317019.jpg",
+      "name": "The Two-Horse Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-23",
+      "id": 58297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316537.jpg",
+      "name": "The Miracle Job",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-12-30",
+      "id": 58298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316566.jpg",
+      "name": "The Bank Shot Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-06",
+      "id": 58299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316605.jpg",
+      "name": "The Stork Job",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-13",
+      "id": 58300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316611.jpg",
+      "name": "The Wedding Job",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-20",
+      "id": 58301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316801.jpg",
+      "name": "The Mile High Job",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-01-27",
+      "id": 58302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316830.jpg",
+      "name": "The Snow Job",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-03",
+      "id": 58303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316856.jpg",
+      "name": "The 12-Step Job",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-10",
+      "id": 58304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316871.jpg",
+      "name": "The Juror #6 Job",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-17",
+      "id": 58305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316976.jpg",
+      "name": "The First David Job",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-02-24",
+      "id": 58306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316994.jpg",
+      "name": "The Second David Job",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2009-07-15",
+      "id": 58307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317017.jpg",
+      "name": "The Beantown Bailout Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-22",
+      "id": 58308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317061.jpg",
+      "name": "The Tap-Out Job",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-07-29",
+      "id": 58309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317075.jpg",
+      "name": "The Order 23 Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-05",
+      "id": 58310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317098.jpg",
+      "name": "The Fairy Godparents Job",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-12",
+      "id": 58311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317111.jpg",
+      "name": "The Three Days of the Hunter Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-19",
+      "id": 58312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317125.jpg",
+      "name": "The Top Hat Job",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-08-26",
+      "id": 58313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317150.jpg",
+      "name": "The Two Live Crew Job",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-02",
+      "id": 58314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317439.jpg",
+      "name": "The Ice Man Job",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-09-09",
+      "id": 58315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317447.jpg",
+      "name": "The Lost Heir Job",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-13",
+      "id": 58316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317452.jpg",
+      "name": "The Runway Job",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-20",
+      "id": 58317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317470.jpg",
+      "name": "The Bottle Job",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-27",
+      "id": 58318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/317477.jpg",
+      "name": "The Zanzibar Marketplace Job",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-03",
+      "id": 58319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317675.jpg",
+      "name": "The Future Job",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-10",
+      "id": 58320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317685.jpg",
+      "name": "The Three Strikes Job",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-02-17",
+      "id": 58321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317691.jpg",
+      "name": "The Maltese Falcon Job",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-06-20",
+      "id": 58322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317704.jpg",
+      "name": "The Jailhouse Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-20",
+      "id": 58323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317743.jpg",
+      "name": "The Reunion Job",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-27",
+      "id": 58324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317800.jpg",
+      "name": "The Inside Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-06-27",
+      "id": 58325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317810.jpg",
+      "name": "The Scheherazade Job",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-11",
+      "id": 58326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/317828.jpg",
+      "name": "The Double-Blind Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-18",
+      "id": 58327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318239.jpg",
+      "name": "The Studio Job",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-07-25",
+      "id": 58328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318252.jpg",
+      "name": "The Gone Fishin' Job",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-01",
+      "id": 58329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318266.jpg",
+      "name": "The Boost Job",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-08",
+      "id": 58330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318292.jpg",
+      "name": "The Three-Card Monte Job",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-15",
+      "id": 58331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318302.jpg",
+      "name": "The Underground Job",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-22",
+      "id": 58332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318631.jpg",
+      "name": "The Rashomon Job",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-08-29",
+      "id": 58333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318637.jpg",
+      "name": "The King George Job",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-05",
+      "id": 58334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318650.jpg",
+      "name": "The Morning After Job",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-12-12",
+      "id": 58335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318670.jpg",
+      "name": "The Ho, Ho, Ho Job",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-12-19",
+      "id": 58336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318674.jpg",
+      "name": "The Big Bang Job",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-12-19",
+      "id": 58337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318678.jpg",
+      "name": "The San Lorenzo Job",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2011-06-26",
+      "id": 58338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318701.jpg",
+      "name": "The Long Way Down Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-03",
+      "id": 58339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318715.jpg",
+      "name": "The 10 Li'l Grifters Job",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-10",
+      "id": 58340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318751.jpg",
+      "name": "The 15 Minutes Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-17",
+      "id": 58341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318907.jpg",
+      "name": "The Van Gogh Job",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-24",
+      "id": 58342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318919.jpg",
+      "name": "The Hot Potato Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-07-31",
+      "id": 58343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318955.jpg",
+      "name": "The Carnival Job",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-14",
+      "id": 58344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318965.jpg",
+      "name": "The Grave Danger Job",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-14",
+      "id": 58345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/318995.jpg",
+      "name": "The Boiler Room Job",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-21",
+      "id": 58346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319142.jpg",
+      "name": "The Cross My Heart Job",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-08-28",
+      "id": 58347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319148.jpg",
+      "name": "The Queen's Gambit Job",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-11-27",
+      "id": 58348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319167.jpg",
+      "name": "The Experimental Job",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-04",
+      "id": 58349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319214.jpg",
+      "name": "The Office Job",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-11",
+      "id": 58350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319427.jpg",
+      "name": "The Girls' Night Out Job",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-18",
+      "id": 58351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319432.jpg",
+      "name": "The Boys' Night Out Job",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-12-25",
+      "id": 58352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/127/319434.jpg",
+      "name": "The Lonely Hearts Job",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-01",
+      "id": 58353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320288.jpg",
+      "name": "The Gold Job",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-08",
+      "id": 58354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320307.jpg",
+      "name": "The Radio Job",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-01-15",
+      "id": 58355,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/320335.jpg",
+      "name": "The Last Dam Job",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2012-07-15",
+      "id": 58356,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321181.jpg",
+      "name": "The (Very) Big Bird Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-07-22",
+      "id": 58357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321205.jpg",
+      "name": "The Blue Line Job",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-05",
+      "id": 58358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321211.jpg",
+      "name": "The First Contact Job",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-12",
+      "id": 58359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321222.jpg",
+      "name": "The French Connection Job",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-19",
+      "id": 58360,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321229.jpg",
+      "name": "The Gimme a K Street Job",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-08-26",
+      "id": 58361,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321465.jpg",
+      "name": "The D.B. Cooper Job",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-02",
+      "id": 58362,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321486.jpg",
+      "name": "The Real Fake Car Job",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-09",
+      "id": 58363,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321515.jpg",
+      "name": "The Broken Wing Job",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 58364,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321535.jpg",
+      "name": "The Rundown Job",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-09-16",
+      "id": 58365,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321554.jpg",
+      "name": "The Frame-Up Job",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-11-27",
+      "id": 58366,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321562.jpg",
+      "name": "The Low Low Price Job",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-04",
+      "id": 58367,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321704.jpg",
+      "name": "The White Rabbit Job",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-11",
+      "id": 58368,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321733.jpg",
+      "name": "The Corkscrew Job",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-18",
+      "id": 58369,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321751.jpg",
+      "name": "The Toy Job",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-12-25",
+      "id": 58370,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321797.jpg",
+      "name": "The Long Goodbye Job",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Krimi"
+    "Crime"
   ],
+  "id": "tvmaze-662",
+  "live": true,
+  "overview": "Leverage is a slick and crafty drama following a team of expert thieves that take down corrupt corporations in elaborate high-tech schemes. Insurance investigator Nate Ford exposed scams and recovered stolen items worth millions. But his life hit the skids when his insurance company allowed his ailing 8-year-old son to die. Years later, Nate gets even as the leader of a specialized team of thieves, computer experts and con artists that right corporate and governmental injustices against honest citizens. To expose corruption, Nate will do wrong for all the right reasons –– he will provide Leverage.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/125/313702.jpg",
   "rating": 8.1,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "662",
+  "title": "Leverage",
+  "type": "series",
+  "year": 2008
 }

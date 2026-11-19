@@ -1,20 +1,381 @@
 {
-  "schema": 1,
-  "id": "tvmaze-191",
-  "source": "tvmaze",
-  "sourceId": "191",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Halt and Catch Fire",
-  "year": 2014,
-  "type": "series",
-  "overview": "Halt and Catch Fire is set roughly one year after IBM all but corners the market with the release of its first major product – the IBM PC. In this fictional drama, a former IBM executive, Joe MacMillan plans to reverse engineer the flagship product of his former employer and forces his current company, Cardiff Electric, into the personal computer race. MacMillan enlists the help of Gordon Clark, a great engineer whose unrealized dreams of creating a revolutionary product have created tension in his marriage to Donna, and Cameron Howe, a volatile prodigy who puts her future in jeopardy to join MacMillan's rogue PC project. Halt and Catch Fire thrives on the spirit of innovation and explores what it's like to stand at the forefront of something world-changing and work towards it, no matter the risk.",
-  "poster": "file:///android_asset/posters/tvmaze-191.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-06-01",
+      "id": 13139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162881.jpg",
+      "name": "I/O",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 13140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162882.jpg",
+      "name": "FUD",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 13141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162883.jpg",
+      "name": "High Plains Hardware",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-22",
+      "id": 13142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162884.jpg",
+      "name": "Close to the Metal",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-06-29",
+      "id": 13143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162885.jpg",
+      "name": "Adventure",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-06",
+      "id": 13144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162886.jpg",
+      "name": "Landfall",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-13",
+      "id": 13145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162887.jpg",
+      "name": "Giant",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-20",
+      "id": 13146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162888.jpg",
+      "name": "The 214s",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-07-27",
+      "id": 13147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162889.jpg",
+      "name": "Up Helly Aa",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-08-03",
+      "id": 13148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/65/162891.jpg",
+      "name": "1984",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-05-31",
+      "id": 151753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166765.jpg",
+      "name": "SETI",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-07",
+      "id": 153887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166801.jpg",
+      "name": "New Coke",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-14",
+      "id": 153888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/166807.jpg",
+      "name": "The Way In",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-21",
+      "id": 153889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170313.jpg",
+      "name": "Play with Friends",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-06-28",
+      "id": 153890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170344.jpg",
+      "name": "Extract and Defend",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-05",
+      "id": 153891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170359.jpg",
+      "name": "10Broad36",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-12",
+      "id": 153892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170362.jpg",
+      "name": "Working for the Clampdown",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-19",
+      "id": 153893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170375.jpg",
+      "name": "Limbo",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-07-26",
+      "id": 153894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170407.jpg",
+      "name": "Kali",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-08-02",
+      "id": 153895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170415.jpg",
+      "name": "Heaven is a Place",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-08-23",
+      "id": 762967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/72/180484.jpg",
+      "name": "Valley of the Heart's Delight",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-23",
+      "id": 762968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198463.jpg",
+      "name": "One Way or Another",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-08-30",
+      "id": 767912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198461.jpg",
+      "name": "Flipping the Switch",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-06",
+      "id": 767913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/73/184408.jpg",
+      "name": "Rules of Honorable Play",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-13",
+      "id": 767914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/74/186657.jpg",
+      "name": "Yerba Buena",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-20",
+      "id": 767915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/76/190093.jpg",
+      "name": "And She Was",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-09-27",
+      "id": 767916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/192645.jpg",
+      "name": "The Threshold",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-04",
+      "id": 768040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/198460.jpg",
+      "name": "You Are Not Safe",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 768041,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199183.jpg",
+      "name": "NIM",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-10-11",
+      "id": 768042,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/79/199184.jpg",
+      "name": "NeXT",
+      "number": 10,
+      "runtime": 70,
+      "season": 3
+    },
+    {
+      "airdate": "2017-08-19",
+      "id": 1230505,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312153.jpg",
+      "name": "So It Goes",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-19",
+      "id": 1230640,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/312154.jpg",
+      "name": "Signal to Noise",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-08-26",
+      "id": 1255856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314030.jpg",
+      "name": "Miscellaneous",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-09",
+      "id": 1265942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/126/316067.jpg",
+      "name": "Tonya and Nancy",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-16",
+      "id": 1265943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321699.jpg",
+      "name": "Nowhere Man",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-23",
+      "id": 1265944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/128/321928.jpg",
+      "name": "A Connection is Made",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-09-30",
+      "id": 1265945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323866.jpg",
+      "name": "Who Needs a Guy",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-07",
+      "id": 1265946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/326047.jpg",
+      "name": "Goodwill",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-14",
+      "id": 1265947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/328501.jpg",
+      "name": "Search",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-10-14",
+      "id": 1277351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/328480.jpg",
+      "name": "Ten of Swords",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama"
   ],
+  "id": "tvmaze-191",
+  "live": true,
+  "overview": "Halt and Catch Fire is set roughly one year after IBM all but corners the market with the release of its first major product – the IBM PC. In this fictional drama, a former IBM executive, Joe MacMillan plans to reverse engineer the flagship product of his former employer and forces his current company, Cardiff Electric, into the personal computer race. MacMillan enlists the help of Gordon Clark, a great engineer whose unrealized dreams of creating a revolutionary product have created tension in his marriage to Donna, and Cameron Howe, a volatile prodigy who puts her future in jeopardy to join MacMillan's rogue PC project. Halt and Catch Fire thrives on the spirit of innovation and explores what it's like to stand at the forefront of something world-changing and work towards it, no matter the risk.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/2798.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "191",
+  "title": "Halt and Catch Fire",
+  "type": "series",
+  "year": 2014
 }

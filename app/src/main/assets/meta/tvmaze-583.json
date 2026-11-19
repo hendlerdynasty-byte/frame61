@@ -1,22 +1,806 @@
 {
-  "schema": 1,
-  "id": "tvmaze-583",
-  "source": "tvmaze",
-  "sourceId": "583",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Sliders",
-  "year": 1995,
-  "type": "series",
-  "overview": "Brilliant grad student Quinn has created a device that opens a wormhole to an infinite number of parallel universes where history has taken different paths. His first test trip goes awry stranding his physics professor Arturo, his friend Wade, and bystander Rembrandt \"Crying Man\" Brown in parallel San Francisco. Now, this foursome of Sliders must travel from one alternate reality to another in the hope of somehow finding their way home.",
-  "poster": "file:///android_asset/posters/tvmaze-583.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1995-03-22",
+      "id": 55267,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768013.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "1995-03-29",
+      "id": 55269,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768014.jpg",
+      "name": "Fever",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-05",
+      "id": 55270,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768021.jpg",
+      "name": "Last Days",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-12",
+      "id": 55271,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768015.jpg",
+      "name": "Prince of Wails",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-19",
+      "id": 55272,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768016.jpg",
+      "name": "Summer of Love",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-04-26",
+      "id": 55273,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768017.jpg",
+      "name": "Eggheads",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-03",
+      "id": 55274,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768018.jpg",
+      "name": "The Weaker Sex",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-10",
+      "id": 55275,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768019.jpg",
+      "name": "The King Is Back",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1995-05-17",
+      "id": 55276,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768020.jpg",
+      "name": "Luck of the Draw",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1996-03-01",
+      "id": 55277,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768022.jpg",
+      "name": "Into the Mystic",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-03-08",
+      "id": 55278,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768023.jpg",
+      "name": "Love Gods",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-03-15",
+      "id": 55279,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768024.jpg",
+      "name": "Gillian of the Spirits",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-03-22",
+      "id": 55280,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768025.jpg",
+      "name": "The Good, the Bad and the Wealthy",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-03-29",
+      "id": 55281,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768026.jpg",
+      "name": "El Sid",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-05",
+      "id": 55282,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768027.jpg",
+      "name": "Time Again and World",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-04-26",
+      "id": 55283,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768028.jpg",
+      "name": "In Dino Veritas",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-03",
+      "id": 55284,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768029.jpg",
+      "name": "Post Traumatic Slide Syndrome",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-24",
+      "id": 55285,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768030.jpg",
+      "name": "Obsession",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-05-31",
+      "id": 55286,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768031.jpg",
+      "name": "Greatfellas",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-06-07",
+      "id": 55287,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768032.jpg",
+      "name": "The Young and the Relentless",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-06-28",
+      "id": 55288,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768033.jpg",
+      "name": "Invasion",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-07-12",
+      "id": 55289,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768034.jpg",
+      "name": "As Time Goes By",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1996-09-20",
+      "id": 55290,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768035.jpg",
+      "name": "Rules of the Game",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-09-27",
+      "id": 55291,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768036.jpg",
+      "name": "Double Cross",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-04",
+      "id": 55292,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768037.jpg",
+      "name": "Electric Twister Acid Test",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-11",
+      "id": 55293,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768038.jpg",
+      "name": "The Guardian",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-10-18",
+      "id": 55294,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768039.jpg",
+      "name": "The Dream Masters",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-01",
+      "id": 55295,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768040.jpg",
+      "name": "Desert Storm",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-08",
+      "id": 55296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768041.jpg",
+      "name": "Dragonslide",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-15",
+      "id": 55297,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768042.jpg",
+      "name": "The Fire Within",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-22",
+      "id": 55298,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768043.jpg",
+      "name": "The Prince of Slides",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-11-29",
+      "id": 55299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768044.jpg",
+      "name": "Dead Man Sliding",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-12-06",
+      "id": 55300,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768045.jpg",
+      "name": "State of the Art",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1996-12-20",
+      "id": 55301,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768046.jpg",
+      "name": "Season's Greedings",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-03",
+      "id": 55302,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768047.jpg",
+      "name": "Murder Most Foul",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-17",
+      "id": 55303,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768048.jpg",
+      "name": "Slide Like an Egyptian",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-01-31",
+      "id": 55304,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768049.jpg",
+      "name": "Paradise Lost",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-21",
+      "id": 55305,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768050.jpg",
+      "name": "The Exodus (1)",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-02-28",
+      "id": 55306,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768051.jpg",
+      "name": "The Exodus (2)",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-03-07",
+      "id": 55307,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/307/768052.jpg",
+      "name": "Sole Survivors",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-03-14",
+      "id": 55308,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154825.jpg",
+      "name": "The Breeder",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-03-28",
+      "id": 55309,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154824.jpg",
+      "name": "The Last of Eden",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-11",
+      "id": 55310,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154823.jpg",
+      "name": "The Other Slide of Darkness",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-04-25",
+      "id": 55311,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154822.jpg",
+      "name": "Slither",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-02",
+      "id": 55312,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154821.jpg",
+      "name": "Dinoslide",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-09",
+      "id": 55313,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154820.jpg",
+      "name": "Stoker",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1997-05-16",
+      "id": 55314,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154819.jpg",
+      "name": "This Slide of Paradise",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1998-06-08",
+      "id": 55315,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154851.jpg",
+      "name": "Genesis",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-06-08",
+      "id": 55316,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154852.jpg",
+      "name": "Prophets and Loss",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-06-15",
+      "id": 55317,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154853.jpg",
+      "name": "Common Ground",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-06-22",
+      "id": 55318,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154854.jpg",
+      "name": "Virtual Slide",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-06-29",
+      "id": 55319,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154856.jpg",
+      "name": "World Killer",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-07-06",
+      "id": 55320,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154857.jpg",
+      "name": "Oh Brother, Where Art Thou?",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-07-13",
+      "id": 55321,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154858.jpg",
+      "name": "Just Say Yes",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-07-20",
+      "id": 55322,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154859.jpg",
+      "name": "The Alternateville Horror",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-07-27",
+      "id": 55323,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154860.jpg",
+      "name": "Slidecage",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-08-17",
+      "id": 55324,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154861.jpg",
+      "name": "Asylum",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-08-24",
+      "id": 55325,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154862.jpg",
+      "name": "California Reich",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-08-31",
+      "id": 55326,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154863.jpg",
+      "name": "The Dying Fields",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-11-30",
+      "id": 55327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154864.jpg",
+      "name": "Lipschitz Live!",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1998-12-07",
+      "id": 55328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154865.jpg",
+      "name": "Mother and Child",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-01-11",
+      "id": 55329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154866.jpg",
+      "name": "Net Worth",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-01-18",
+      "id": 55330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154868.jpg",
+      "name": "Slide by Wire",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-03-19",
+      "id": 55331,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154869.jpg",
+      "name": "Data World",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-03-26",
+      "id": 55332,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154870.jpg",
+      "name": "Way Out West",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-04-02",
+      "id": 55333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154871.jpg",
+      "name": "My Brother's Keeper",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-04-09",
+      "id": 55334,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154872.jpg",
+      "name": "The Chasm",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-04-16",
+      "id": 55335,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154873.jpg",
+      "name": "Roads Taken",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-04-23",
+      "id": 55336,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154874.jpg",
+      "name": "Revelations",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1999-06-11",
+      "id": 55337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154898.jpg",
+      "name": "The Unstuck Man",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-06-18",
+      "id": 55338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154897.jpg",
+      "name": "Applied Physics",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-06-25",
+      "id": 55339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154896.jpg",
+      "name": "Strangers and Comrades",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-07-09",
+      "id": 55340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154895.jpg",
+      "name": "The Great Work",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-07-16",
+      "id": 55341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154894.jpg",
+      "name": "New Gods for Old",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-07-23",
+      "id": 55342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154893.jpg",
+      "name": "Please Press One",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-07-30",
+      "id": 55343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154892.jpg",
+      "name": "A Current Affair",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-08-06",
+      "id": 55344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154891.jpg",
+      "name": "The Java Jive",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-08-13",
+      "id": 55345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154890.jpg",
+      "name": "The Return of Maggie Beckett",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-08-20",
+      "id": 55346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154889.jpg",
+      "name": "Easy Slider",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-09-10",
+      "id": 55347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154888.jpg",
+      "name": "Requiem",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-09-17",
+      "id": 55348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154887.jpg",
+      "name": "Map of the Mind",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-09-24",
+      "id": 55349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154886.jpg",
+      "name": "A Thousand Deaths",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1999-10-01",
+      "id": 55350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154885.jpg",
+      "name": "Heavy Metal",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-01-14",
+      "id": 55351,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154884.jpg",
+      "name": "To Catch a Slider",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-01-21",
+      "id": 55352,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154883.jpg",
+      "name": "Dust",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-01-28",
+      "id": 55353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154882.jpg",
+      "name": "Eye of the Storm",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2000-02-04",
+      "id": 55354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/154881.jpg",
+      "name": "The Seer",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
-    "Abenteuer",
+    "Adventure",
     "Fantasy",
     "Science-Fiction"
   ],
+  "id": "tvmaze-583",
+  "live": true,
+  "overview": "Brilliant grad student Quinn has created a device that opens a wormhole to an infinite number of parallel universes where history has taken different paths. His first test trip goes awry stranding his physics professor Arturo, his friend Wade, and bystander Rembrandt \"Crying Man\" Brown in parallel San Francisco. Now, this foursome of Sliders must travel from one alternate reality to another in the hope of somehow finding their way home.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/4/11896.jpg",
   "rating": 7.8,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "583",
+  "title": "Sliders",
+  "type": "series",
+  "year": 1995
 }

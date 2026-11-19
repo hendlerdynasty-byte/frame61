@@ -1,22 +1,842 @@
 {
-  "schema": 1,
-  "id": "tvmaze-168",
-  "source": "tvmaze",
-  "sourceId": "168",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Chuck",
-  "year": 2007,
-  "type": "series",
-  "overview": "Chuck Bartowski is a computer geek that gets catapulted into a new career as the government's most vital secret agent. When Chuck opens an e-mail subliminally encoded with government secrets, he unwittingly downloads an entire server of sensitive data into his brain. With the government's most precious secrets in Chuck's head, Major John Casey of the National Security Agency assumes the responsibility of protecting him. His partner is the CIA's top agent, Sarah Walker.",
-  "poster": "file:///android_asset/posters/tvmaze-168.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2007-09-24",
+      "id": 12101,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61912.jpg",
+      "name": "Chuck Versus the Intersect",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-01",
+      "id": 12102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61917.jpg",
+      "name": "Chuck Versus the Helicopter",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-08",
+      "id": 12103,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61918.jpg",
+      "name": "Chuck Versus the Tango",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-15",
+      "id": 12104,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61919.jpg",
+      "name": "Chuck Versus the Wookiee",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-22",
+      "id": 12105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61920.jpg",
+      "name": "Chuck Versus the Sizzling Shrimp",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-10-29",
+      "id": 12106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61921.jpg",
+      "name": "Chuck Versus the Sandworm",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-05",
+      "id": 12107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61922.jpg",
+      "name": "Chuck Versus the Alma Mater",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-12",
+      "id": 12108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61923.jpg",
+      "name": "Chuck Versus the Truth",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-19",
+      "id": 12109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61924.jpg",
+      "name": "Chuck Versus the Imported Hard Salami",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-11-26",
+      "id": 12110,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61925.jpg",
+      "name": "Chuck Versus the Nemesis",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2007-12-03",
+      "id": 12111,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61926.jpg",
+      "name": "Chuck Versus the Crown Vic",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-01-24",
+      "id": 12112,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61927.jpg",
+      "name": "Chuck Versus the Undercover Lover",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-01-24",
+      "id": 12113,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61928.jpg",
+      "name": "Chuck Versus the Marlin",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2008-09-29",
+      "id": 12114,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62703.jpg",
+      "name": "Chuck Versus the First Date",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-06",
+      "id": 12115,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62704.jpg",
+      "name": "Chuck Versus the Seduction",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-13",
+      "id": 12116,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62705.jpg",
+      "name": "Chuck Versus the Break-Up",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-20",
+      "id": 12117,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62706.jpg",
+      "name": "Chuck Versus the Cougars",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-10-27",
+      "id": 12118,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62708.jpg",
+      "name": "Chuck Versus Tom Sawyer",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-10",
+      "id": 12119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62709.jpg",
+      "name": "Chuck Versus the Ex",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-17",
+      "id": 12120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62710.jpg",
+      "name": "Chuck Versus the Fat Lady",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-11-24",
+      "id": 12121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62711.jpg",
+      "name": "Chuck Versus the Gravitron",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-01",
+      "id": 12122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62713.jpg",
+      "name": "Chuck Versus the Sensei",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-08",
+      "id": 12123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62714.jpg",
+      "name": "Chuck Versus the Delorean",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2008-12-15",
+      "id": 12124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62715.jpg",
+      "name": "Chuck Versus Santa Claus",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-02",
+      "id": 12125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62716.jpg",
+      "name": "Chuck Versus the Third Dimension",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-16",
+      "id": 12126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62718.jpg",
+      "name": "Chuck Versus the Suburbs",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-02-23",
+      "id": 12127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62719.jpg",
+      "name": "Chuck Versus the Best Friend",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-02",
+      "id": 12128,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62721.jpg",
+      "name": "Chuck Versus the Beefcake",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-09",
+      "id": 12129,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62722.jpg",
+      "name": "Chuck Versus the Lethal Weapon",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-23",
+      "id": 12130,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62723.jpg",
+      "name": "Chuck Versus the Predator",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-03-30",
+      "id": 12131,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1352589.jpg",
+      "name": "Chuck Versus the Broken Heart",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-06",
+      "id": 12132,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62725.jpg",
+      "name": "Chuck Versus the Dream Job",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-13",
+      "id": 12133,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62727.jpg",
+      "name": "Chuck Versus the First Kill",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-20",
+      "id": 12134,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62728.jpg",
+      "name": "Chuck Versus the Colonel",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2009-04-27",
+      "id": 12135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62729.jpg",
+      "name": "Chuck Versus the Ring",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2010-01-10",
+      "id": 12136,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62957.jpg",
+      "name": "Chuck Versus the Pink Slip",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-10",
+      "id": 12137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62958.jpg",
+      "name": "Chuck Versus the Three Words",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-11",
+      "id": 12138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62959.jpg",
+      "name": "Chuck Versus the Angel de la Muerte",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-18",
+      "id": 12139,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62961.jpg",
+      "name": "Chuck Versus Operation Awesome",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-01-25",
+      "id": 12140,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62962.jpg",
+      "name": "Chuck Versus First Class",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-01",
+      "id": 12141,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62963.jpg",
+      "name": "Chuck Versus the Nacho Sampler",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-02-08",
+      "id": 12142,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62964.jpg",
+      "name": "Chuck Versus the Mask",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-01",
+      "id": 12143,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62965.jpg",
+      "name": "Chuck Versus the Fake Name",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-08",
+      "id": 12144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353641.jpg",
+      "name": "Chuck Versus the Beard",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-15",
+      "id": 12145,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62968.jpg",
+      "name": "Chuck Versus the Tic Tac",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-22",
+      "id": 12146,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353661.jpg",
+      "name": "Chuck Versus the Final Exam",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-03-29",
+      "id": 12147,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353669.jpg",
+      "name": "Chuck Versus the American Hero",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-05",
+      "id": 12148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353672.jpg",
+      "name": "Chuck Versus the Other Guy",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-04-26",
+      "id": 12149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353674.jpg",
+      "name": "Chuck Versus the Honeymooners",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-03",
+      "id": 12150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62973.jpg",
+      "name": "Chuck Versus the Role Models",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-10",
+      "id": 12151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353708.jpg",
+      "name": "Chuck Versus the Tooth",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-17",
+      "id": 12152,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353717.jpg",
+      "name": "Chuck Versus the Living Dead",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-24",
+      "id": 12153,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1353733.jpg",
+      "name": "Chuck Versus the Subway",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-05-24",
+      "id": 12154,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/62978.jpg",
+      "name": "Chuck Versus the Ring: Part II",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2010-09-20",
+      "id": 12155,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354420.jpg",
+      "name": "Chuck Versus the Anniversary",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-09-27",
+      "id": 12156,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63143.jpg",
+      "name": "Chuck Versus the Suitcase",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-04",
+      "id": 12157,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354435.jpg",
+      "name": "Chuck Versus the Cubic Z",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-11",
+      "id": 12158,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354591.jpg",
+      "name": "Chuck Versus the Coup D'Etat",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-18",
+      "id": 12159,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63146.jpg",
+      "name": "Chuck Versus the Couch Lock",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-10-25",
+      "id": 12160,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63147.jpg",
+      "name": "Chuck Versus the Aisle of Terror",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-11-01",
+      "id": 12161,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354625.jpg",
+      "name": "Chuck Versus the First Fight",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-11-15",
+      "id": 12162,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63149.jpg",
+      "name": "Chuck Versus the Fear of Death",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-11-22",
+      "id": 12163,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354665.jpg",
+      "name": "Chuck Versus Phase Three",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2010-11-29",
+      "id": 12164,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/541/1354673.jpg",
+      "name": "Chuck Versus the Leftovers",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-17",
+      "id": 12165,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355109.jpg",
+      "name": "Chuck Versus the Balcony",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-24",
+      "id": 12166,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355111.jpg",
+      "name": "Chuck Versus the Gobbler",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-01-31",
+      "id": 12167,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355112.jpg",
+      "name": "Chuck Versus the Push Mix",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-07",
+      "id": 12168,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355113.jpg",
+      "name": "Chuck Versus the Seduction Impossible",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-14",
+      "id": 12169,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355117.jpg",
+      "name": "Chuck Versus the C.A.T. Squad",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-21",
+      "id": 12170,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355313.jpg",
+      "name": "Chuck Versus the Masquerade",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-02-28",
+      "id": 12171,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355322.jpg",
+      "name": "Chuck Versus the First Bank of Evil",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-14",
+      "id": 12172,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355325.jpg",
+      "name": "Chuck Versus the A-Team",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-03-21",
+      "id": 12173,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355333.jpg",
+      "name": "Chuck Versus the Muuurder",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-11",
+      "id": 12174,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63172.jpg",
+      "name": "Chuck Versus the Family Volkoff",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-04-18",
+      "id": 12175,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355361.jpg",
+      "name": "Chuck Versus the Wedding Planner",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-02",
+      "id": 12176,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355380.jpg",
+      "name": "Chuck Versus Agent X",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-09",
+      "id": 12177,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355383.jpg",
+      "name": "Chuck Versus the Last Details",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-05-16",
+      "id": 12178,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/542/1355388.jpg",
+      "name": "Chuck Versus the Cliffhanger",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2011-10-28",
+      "id": 12179,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63181.jpg",
+      "name": "Chuck Versus the Zoom",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-11-04",
+      "id": 12180,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63182.jpg",
+      "name": "Chuck Versus the Bearded Bandit",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-11-11",
+      "id": 12181,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1357850.jpg",
+      "name": "Chuck Versus the Frosted Tips",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-11-18",
+      "id": 12182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1357852.jpg",
+      "name": "Chuck Versus the Business Trip",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-12-09",
+      "id": 12183,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63185.jpg",
+      "name": "Chuck Versus the Hack Off",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-12-16",
+      "id": 12184,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63186.jpg",
+      "name": "Chuck Versus the Curse",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-12-23",
+      "id": 12185,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358007.jpg",
+      "name": "Chuck Versus the Santa Suit",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2011-12-30",
+      "id": 12186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358019.jpg",
+      "name": "Chuck Versus the Baby",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-06",
+      "id": 12187,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63189.jpg",
+      "name": "Chuck Versus the Kept Man",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-13",
+      "id": 12188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358072.jpg",
+      "name": "Chuck Versus Bo",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-20",
+      "id": 12189,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358075.jpg",
+      "name": "Chuck Versus the Bullet Train",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 12190,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358082.jpg",
+      "name": "Chuck Versus Sarah",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2012-01-27",
+      "id": 12191,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/25/63193.jpg",
+      "name": "Chuck Versus the Goodbye",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Komödie",
+    "Comedy",
     "Action"
   ],
+  "id": "tvmaze-168",
+  "live": true,
+  "overview": "Chuck Bartowski is a computer geek that gets catapulted into a new career as the government's most vital secret agent. When Chuck opens an e-mail subliminally encoded with government secrets, he unwittingly downloads an entire server of sensitive data into his brain. With the government's most precious secrets in Chuck's head, Major John Casey of the National Security Agency assumes the responsibility of protecting him. His partner is the CIA's top agent, Sarah Walker.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/0/2385.jpg",
   "rating": 8.2,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "168",
+  "title": "Chuck",
+  "type": "series",
+  "year": 2007
 }

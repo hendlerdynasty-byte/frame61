@@ -1,22 +1,1607 @@
 {
-  "schema": 1,
-  "id": "tvmaze-493",
-  "source": "tvmaze",
-  "sourceId": "493",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Star Trek: Deep Space Nine",
-  "year": 1993,
-  "type": "series",
-  "overview": "Star Trek: Deep Space Nine (DS9) focuses on the 24th century adventures of Captain Benjamin Sisko on space station Deep Space 9, an outpost situated near the mouth of a stable wormhole on the far reaches of explored space. Although Sisko commands Deep Space 9, the station actually belongs to the inhabitants of nearby Bajor, who requested Starfleet's protective presence after Bajoran freedom fighters put an end to the brutal Cardassian occupation of their world. Approximately a sixth of the station's 300 permanent residents are Starfleet personnel; there is also a sizable Bajoran militia presence. The rest of Deep Space 9's inhabitants are civilians, most of whom work in the station's Promenade, a kind of indoor marketplace. Initially, Sisko's mandate from Starfleet was to protect Bajor and the station from any hostiles who ventured into the area. But with the discovery of the nearby wormhole—a shortcut through space that leads directly to the uncharted Gamma quadrant—Sisko's mandate has expanded exponentially, as the region becomes the gateway to all manner of visitors, both friendly and extremely hostile.",
-  "poster": "file:///android_asset/posters/tvmaze-493.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "1993-01-03",
+      "id": 44807,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297824.jpg",
+      "name": "Emissary, Part I",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-03",
+      "id": 44808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411142.jpg",
+      "name": "Emissary, Part II",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-10",
+      "id": 44809,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449824.jpg",
+      "name": "Past Prologue",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-17",
+      "id": 44810,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449828.jpg",
+      "name": "A Man Alone",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-24",
+      "id": 44811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323675.jpg",
+      "name": "Babel",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-01-31",
+      "id": 44812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297829.jpg",
+      "name": "Captive Pursuit",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-07",
+      "id": 44813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297837.jpg",
+      "name": "Q-Less",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-14",
+      "id": 44814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323736.jpg",
+      "name": "Dax",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-02-21",
+      "id": 44815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/323974.jpg",
+      "name": "The Passenger",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-03-14",
+      "id": 44816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/129/324033.jpg",
+      "name": "Move Along Home",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-03-21",
+      "id": 44817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297839.jpg",
+      "name": "The Nagus",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-04-18",
+      "id": 44818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297840.jpg",
+      "name": "Vortex",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-04-25",
+      "id": 44819,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297841.jpg",
+      "name": "Battle Lines",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-02",
+      "id": 44820,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325177.jpg",
+      "name": "The Storyteller",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-09",
+      "id": 44821,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325196.jpg",
+      "name": "Progress",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-16",
+      "id": 44822,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325199.jpg",
+      "name": "If Wishes Were Horses",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-23",
+      "id": 44823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297842.jpg",
+      "name": "The Forsaken",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-05-30",
+      "id": 44824,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/130/325203.jpg",
+      "name": "Dramatis Personae",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-06-13",
+      "id": 44825,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297843.jpg",
+      "name": "Duet",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-06-20",
+      "id": 44826,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297844.jpg",
+      "name": "In the Hands of the Prophets",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "1993-09-26",
+      "id": 44827,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/328998.jpg",
+      "name": "The Homecoming",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-03",
+      "id": 44828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297846.jpg",
+      "name": "The Circle",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-10",
+      "id": 44829,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329023.jpg",
+      "name": "The Siege",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-17",
+      "id": 44830,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/131/329033.jpg",
+      "name": "Invasive Procedures",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-24",
+      "id": 44831,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/119/297848.jpg",
+      "name": "Cardassians",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-10-31",
+      "id": 44832,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/132/331068.jpg",
+      "name": "Melora",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-07",
+      "id": 44833,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365603.jpg",
+      "name": "Rules of Acquisition",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-14",
+      "id": 44834,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365602.jpg",
+      "name": "Necessary Evil",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-21",
+      "id": 44835,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365604.jpg",
+      "name": "Second Sight",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1993-11-28",
+      "id": 44836,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365605.jpg",
+      "name": "Sanctuary",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-02",
+      "id": 44837,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365607.jpg",
+      "name": "Rivals",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-09",
+      "id": 44838,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365609.jpg",
+      "name": "The Alternate",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-01-30",
+      "id": 44839,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365610.jpg",
+      "name": "Armageddon Game",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-02-06",
+      "id": 44840,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/146/365611.jpg",
+      "name": "Whispers",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-02-13",
+      "id": 44841,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408287.jpg",
+      "name": "Paradise",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-02-20",
+      "id": 44842,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408291.jpg",
+      "name": "Shadowplay",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-02-27",
+      "id": 44843,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408318.jpg",
+      "name": "Playing God",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-03-20",
+      "id": 44844,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408343.jpg",
+      "name": "Profit and Loss",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-03-27",
+      "id": 44845,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408370.jpg",
+      "name": "Blood Oath",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-04-24",
+      "id": 44846,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408941.jpg",
+      "name": "The Maquis, Part I",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-01",
+      "id": 44847,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/163/408971.jpg",
+      "name": "The Maquis, Part II",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-08",
+      "id": 44848,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411078.jpg",
+      "name": "The Wire",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-15",
+      "id": 44849,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411107.jpg",
+      "name": "Crossover",
+      "number": 23,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-05-22",
+      "id": 44850,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411116.jpg",
+      "name": "The Collaborator",
+      "number": 24,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-06-05",
+      "id": 44851,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411138.jpg",
+      "name": "Tribunal",
+      "number": 25,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-06-12",
+      "id": 44852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411139.jpg",
+      "name": "The Jem'Hadar",
+      "number": 26,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "1994-09-26",
+      "id": 44853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411140.jpg",
+      "name": "The Search, Part I",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-03",
+      "id": 44854,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411141.jpg",
+      "name": "The Search, Part II",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-16",
+      "id": 44855,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411294.jpg",
+      "name": "The House of Quark",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-23",
+      "id": 44856,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411336.jpg",
+      "name": "Equilibrium",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-10-30",
+      "id": 44857,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411355.jpg",
+      "name": "Second Skin",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-06",
+      "id": 44858,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411357.jpg",
+      "name": "The Abandoned",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-13",
+      "id": 44859,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411417.jpg",
+      "name": "Civil Defense",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-20",
+      "id": 44860,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411604.jpg",
+      "name": "Meridian",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-11-27",
+      "id": 44861,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411605.jpg",
+      "name": "Defiant",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1994-12-04",
+      "id": 44862,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411620.jpg",
+      "name": "Fascination",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-01-08",
+      "id": 44863,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411638.jpg",
+      "name": "Past Tense, Part I",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-01-15",
+      "id": 44864,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411676.jpg",
+      "name": "Past Tense, Part II",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-05",
+      "id": 44865,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/164/411693.jpg",
+      "name": "Life Support",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-12",
+      "id": 44866,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/417773.jpg",
+      "name": "Heart of Stone",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-19",
+      "id": 44867,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/417816.jpg",
+      "name": "Destiny",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-02-26",
+      "id": 44868,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/417866.jpg",
+      "name": "Prophet Motive",
+      "number": 16,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-03-05",
+      "id": 44869,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/417910.jpg",
+      "name": "Visionary",
+      "number": 17,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-04-16",
+      "id": 44870,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419162.jpg",
+      "name": "Distant Voices",
+      "number": 18,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-04-23",
+      "id": 44871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419203.jpg",
+      "name": "Through the Looking Glass",
+      "number": 19,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-07",
+      "id": 44872,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419215.jpg",
+      "name": "Improbable Cause",
+      "number": 20,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-07",
+      "id": 44873,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419230.jpg",
+      "name": "The Die is Cast",
+      "number": 21,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-14",
+      "id": 44874,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419260.jpg",
+      "name": "Explorers",
+      "number": 22,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-21",
+      "id": 44875,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419283.jpg",
+      "name": "Family Business",
+      "number": 23,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-05-28",
+      "id": 44876,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419881.jpg",
+      "name": "Shakaar",
+      "number": 24,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-06-18",
+      "id": 44877,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/167/419894.jpg",
+      "name": "Facets",
+      "number": 25,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-06-25",
+      "id": 44878,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420036.jpg",
+      "name": "The Adversary",
+      "number": 26,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "1995-10-02",
+      "id": 44879,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420054.jpg",
+      "name": "The Way of the Warrior, Part I",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-02",
+      "id": 44880,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420284.jpg",
+      "name": "The Way of the Warrior, Part II",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-09",
+      "id": 44881,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420441.jpg",
+      "name": "The Visitor",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-16",
+      "id": 44882,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420456.jpg",
+      "name": "Hippocratic Oath",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-23",
+      "id": 44883,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/420491.jpg",
+      "name": "Indiscretion",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-10-30",
+      "id": 44884,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421015.jpg",
+      "name": "Rejoined",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-06",
+      "id": 44885,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421028.jpg",
+      "name": "Starship Down",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-13",
+      "id": 44886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421267.jpg",
+      "name": "Little Green Men",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-20",
+      "id": 44887,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421283.jpg",
+      "name": "The Sword of Kahless",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1995-11-27",
+      "id": 44888,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421317.jpg",
+      "name": "Our Man Bashir",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-01",
+      "id": 44889,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/168/421339.jpg",
+      "name": "Homefront",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-08",
+      "id": 44890,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/169/424817.jpg",
+      "name": "Paradise Lost",
+      "number": 12,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-01-29",
+      "id": 44891,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441748.jpg",
+      "name": "Crossfire",
+      "number": 13,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-05",
+      "id": 44892,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441761.jpg",
+      "name": "Return to Grace",
+      "number": 14,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-12",
+      "id": 44893,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441775.jpg",
+      "name": "Sons of Mogh",
+      "number": 15,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-19",
+      "id": 44894,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/441790.jpg",
+      "name": "Bar Association",
+      "number": 16,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-02-26",
+      "id": 44895,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442240.jpg",
+      "name": "Accession",
+      "number": 17,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-08",
+      "id": 44896,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442258.jpg",
+      "name": "Rules of Engagement",
+      "number": 18,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-15",
+      "id": 44897,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442276.jpg",
+      "name": "Hard Time",
+      "number": 19,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-22",
+      "id": 44898,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/176/442288.jpg",
+      "name": "Shattered Mirror",
+      "number": 20,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-04-29",
+      "id": 44899,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442871.jpg",
+      "name": "The Muse",
+      "number": 21,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-06",
+      "id": 44900,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442883.jpg",
+      "name": "For the Cause",
+      "number": 22,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-13",
+      "id": 44901,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442896.jpg",
+      "name": "To the Death",
+      "number": 23,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-05-20",
+      "id": 44902,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442917.jpg",
+      "name": "The Quickening",
+      "number": 24,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-06-10",
+      "id": 44903,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/177/442920.jpg",
+      "name": "Body Parts",
+      "number": 25,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-06-17",
+      "id": 44904,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449503.jpg",
+      "name": "Broken Link",
+      "number": 26,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "1996-09-30",
+      "id": 44905,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449523.jpg",
+      "name": "Apocalypse Rising",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-07",
+      "id": 44906,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449544.jpg",
+      "name": "The Ship",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-14",
+      "id": 44907,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449552.jpg",
+      "name": "Looking for par'Mach in All the Wrong Places",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-21",
+      "id": 44908,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449574.jpg",
+      "name": "...Nor the Battle to the Strong",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-10-28",
+      "id": 44909,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449583.jpg",
+      "name": "The Assignment",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-04",
+      "id": 44910,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449610.jpg",
+      "name": "Trials and Tribble-ations",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-11",
+      "id": 44911,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449803.jpg",
+      "name": "Let He Who is Without Sin...",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-18",
+      "id": 44912,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449816.jpg",
+      "name": "Things Past",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-11-25",
+      "id": 44913,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449821.jpg",
+      "name": "The Ascent",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1996-12-30",
+      "id": 44914,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449835.jpg",
+      "name": "Rapture",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-01-06",
+      "id": 44915,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/179/449872.jpg",
+      "name": "The Darkness and the Light",
+      "number": 11,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-01-27",
+      "id": 44916,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463183.jpg",
+      "name": "The Begotten",
+      "number": 12,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-03",
+      "id": 44917,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463262.jpg",
+      "name": "For the Uniform",
+      "number": 13,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-10",
+      "id": 44918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463416.jpg",
+      "name": "In Purgatory's Shadow",
+      "number": 14,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-17",
+      "id": 44919,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463425.jpg",
+      "name": "By Inferno's Light",
+      "number": 15,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-02-24",
+      "id": 44920,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463547.jpg",
+      "name": "Doctor Bashir, I Presume",
+      "number": 16,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-03-31",
+      "id": 44921,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463562.jpg",
+      "name": "A Simple Investigation",
+      "number": 17,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-07",
+      "id": 44922,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463579.jpg",
+      "name": "Business as Usual",
+      "number": 18,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-14",
+      "id": 44923,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463598.jpg",
+      "name": "Ties of Blood and Water",
+      "number": 19,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-21",
+      "id": 44924,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/463989.jpg",
+      "name": "Ferengi Love Songs",
+      "number": 20,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-04-28",
+      "id": 44925,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464016.jpg",
+      "name": "Soldiers of the Empire",
+      "number": 21,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-05",
+      "id": 44926,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464031.jpg",
+      "name": "Children of Time",
+      "number": 22,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-12",
+      "id": 44927,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464038.jpg",
+      "name": "Blaze of Glory",
+      "number": 23,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-05-19",
+      "id": 44928,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464059.jpg",
+      "name": "Empok Nor",
+      "number": 24,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-06-09",
+      "id": 44929,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464073.jpg",
+      "name": "In the Cards",
+      "number": 25,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-06-16",
+      "id": 44930,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464389.jpg",
+      "name": "Call to Arms",
+      "number": 26,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "1997-09-29",
+      "id": 44931,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464396.jpg",
+      "name": "A Time to Stand",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-06",
+      "id": 44932,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464422.jpg",
+      "name": "Rocks and Shoals",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-13",
+      "id": 44933,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464454.jpg",
+      "name": "Sons and Daughters",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-20",
+      "id": 44934,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464476.jpg",
+      "name": "Behind the Lines",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-10-27",
+      "id": 44935,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464501.jpg",
+      "name": "Favor the Bold",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-03",
+      "id": 44936,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464511.jpg",
+      "name": "Sacrifice of Angels",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-10",
+      "id": 44937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464530.jpg",
+      "name": "You Are Cordially Invited",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-17",
+      "id": 44938,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464795.jpg",
+      "name": "Resurrection",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1997-11-24",
+      "id": 44939,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464869.jpg",
+      "name": "Statistical Probabilities",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-01",
+      "id": 44940,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464950.jpg",
+      "name": "The Magnificent Ferengi",
+      "number": 10,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-01-08",
+      "id": 44941,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464956.jpg",
+      "name": "Waltz",
+      "number": 11,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-02-04",
+      "id": 44942,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/185/464978.jpg",
+      "name": "Who Mourns for Morn?",
+      "number": 12,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-02-11",
+      "id": 44943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/465007.jpg",
+      "name": "Far Beyond the Stars",
+      "number": 13,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-02-18",
+      "id": 44944,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/465031.jpg",
+      "name": "One Little Ship",
+      "number": 14,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-02-25",
+      "id": 44945,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/465328.jpg",
+      "name": "Honor Among Thieves",
+      "number": 15,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-03-04",
+      "id": 44946,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/186/465349.jpg",
+      "name": "Change of Heart",
+      "number": 16,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-01",
+      "id": 44947,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469326.jpg",
+      "name": "Wrongs Darker Than Death or Night",
+      "number": 17,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-08",
+      "id": 44948,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469336.jpg",
+      "name": "Inquisition",
+      "number": 18,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-15",
+      "id": 44949,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469357.jpg",
+      "name": "In the Pale Moonlight",
+      "number": 19,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-22",
+      "id": 44950,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469373.jpg",
+      "name": "His Way",
+      "number": 20,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-04-29",
+      "id": 44951,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469407.jpg",
+      "name": "The Reckoning",
+      "number": 21,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-06",
+      "id": 44952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469447.jpg",
+      "name": "Valiant",
+      "number": 22,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-13",
+      "id": 44953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/187/469607.jpg",
+      "name": "Profit and Lace",
+      "number": 23,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-05-20",
+      "id": 44954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470036.jpg",
+      "name": "Time's Orphan",
+      "number": 24,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-06-10",
+      "id": 44955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470053.jpg",
+      "name": "The Sound of Her Voice",
+      "number": 25,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-06-17",
+      "id": 44956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470108.jpg",
+      "name": "Tears of the Prophets",
+      "number": 26,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "1998-09-30",
+      "id": 44957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470127.jpg",
+      "name": "Image in the Sand",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-07",
+      "id": 44958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470152.jpg",
+      "name": "Shadows and Symbols",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-14",
+      "id": 44959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470156.jpg",
+      "name": "Afterimage",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-21",
+      "id": 44960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470350.jpg",
+      "name": "Take Me Out to the Holosuite",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-10-28",
+      "id": 44961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470358.jpg",
+      "name": "Chrysalis",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-04",
+      "id": 44962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470368.jpg",
+      "name": "Treachery, Faith and the Great River",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-11",
+      "id": 44963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470693.jpg",
+      "name": "Once More Unto the Breach",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-18",
+      "id": 44964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470719.jpg",
+      "name": "The Siege of AR-558",
+      "number": 8,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-11-25",
+      "id": 44965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470737.jpg",
+      "name": "Covenant",
+      "number": 9,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1998-12-30",
+      "id": 44966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470756.jpg",
+      "name": "It's Only a Paper Moon",
+      "number": 10,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-01-06",
+      "id": 44967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470780.jpg",
+      "name": "Prodigal Daughter",
+      "number": 11,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-03",
+      "id": 44968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470876.jpg",
+      "name": "The Emperor's New Cloak",
+      "number": 12,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-10",
+      "id": 44969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/470952.jpg",
+      "name": "Field of Fire",
+      "number": 13,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-17",
+      "id": 44970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471136.jpg",
+      "name": "Chimera",
+      "number": 14,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-02-24",
+      "id": 44971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471451.jpg",
+      "name": "Badda-Bing, Badda-Bang",
+      "number": 15,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-03-03",
+      "id": 44972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471470.jpg",
+      "name": "Inter Arma Enim Silent Leges",
+      "number": 16,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-04-07",
+      "id": 44973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471476.jpg",
+      "name": "Penumbra",
+      "number": 17,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-04-14",
+      "id": 44974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471506.jpg",
+      "name": "'Til Death Do Us Part",
+      "number": 18,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-04-21",
+      "id": 44975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471521.jpg",
+      "name": "Strange Bedfellows",
+      "number": 19,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-04-28",
+      "id": 44976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471713.jpg",
+      "name": "The Changing Face of Evil",
+      "number": 20,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-05",
+      "id": 44977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471752.jpg",
+      "name": "When It Rains...",
+      "number": 21,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-12",
+      "id": 44978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471770.jpg",
+      "name": "Tacking Into the Wind",
+      "number": 22,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-19",
+      "id": 44979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/471794.jpg",
+      "name": "Extreme Measures",
+      "number": 23,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-05-26",
+      "id": 44980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/472391.jpg",
+      "name": "The Dogs of War",
+      "number": 24,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-06-02",
+      "id": 44981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/472405.jpg",
+      "name": "What You Leave Behind, Part I",
+      "number": 25,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "1999-06-02",
+      "id": 44982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/188/472417.jpg",
+      "name": "What You Leave Behind, Part II",
+      "number": 26,
+      "runtime": 60,
+      "season": 7
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-493",
+  "live": true,
+  "overview": "Star Trek: Deep Space Nine (DS9) focuses on the 24th century adventures of Captain Benjamin Sisko on space station Deep Space 9, an outpost situated near the mouth of a stable wormhole on the far reaches of explored space. Although Sisko commands Deep Space 9, the station actually belongs to the inhabitants of nearby Bajor, who requested Starfleet's protective presence after Bajoran freedom fighters put an end to the brutal Cardassian occupation of their world. Approximately a sixth of the station's 300 permanent residents are Starfleet personnel; there is also a sizable Bajoran militia presence. The rest of Deep Space 9's inhabitants are civilians, most of whom work in the station's Promenade, a kind of indoor marketplace. Initially, Sisko's mandate from Starfleet was to protect Bajor and the station from any hostiles who ventured into the area. But with the discovery of the nearby wormhole—a shortcut through space that leads directly to the uncharted Gamma quadrant—Sisko's mandate has expanded exponentially, as the region becomes the gateway to all manner of visitors, both friendly and extremely hostile.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/382/955996.jpg",
   "rating": 8.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "493",
+  "title": "Star Trek: Deep Space Nine",
+  "type": "series",
+  "year": 1993
 }

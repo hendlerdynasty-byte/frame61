@@ -1,22 +1,419 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1868",
-  "source": "tvmaze",
-  "sourceId": "1868",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Rosewood",
-  "year": 2015,
-  "type": "series",
-  "overview": "Meet the Beethoven of private pathologists... From executive producer Todd Harthan, Rosewood is the story of Dr. Beaumont Rosewood, Jr., the most brilliant private pathologist in Miami. Using his wildly sophisticated autopsy lab, he performs for-hire autopsies to uncover clues that the Miami PD can't see. His new partner-in-crime is Detective Villa a Miami PD detective with attitude and demons to spare. While she's impressed by Rosewood's incredible abilities, his constant optimism is more annoying than it is infectious. But somehow, week-to-week, this unlikely tag team will solve many crimes together. Joining Rosewood in his practice are his sister and \"toxicology queen,\" Pippy; and DNA specialist Tara Milly Izikoff aka TMI, who is Pippy's fiancée. Plagued with his own set of medical ailments, Rosewood sees that every moment of life should be embraced and lived to the fullest. And those moments of victims' lives that will never be are what drive him the most.",
-  "poster": "file:///android_asset/posters/tvmaze-1868.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-09-23",
+      "id": 203635,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143720.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-09-30",
+      "id": 215359,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/57/143723.jpg",
+      "name": "Fireflies and Fidelity",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-07",
+      "id": 224343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/58/146512.jpg",
+      "name": "Have-Nots and Hematomas",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-14",
+      "id": 277978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/24/61430.jpg",
+      "name": "Vandals and Vitamins",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-10-21",
+      "id": 295425,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/152695.jpg",
+      "name": "Necrosis and New Beginnings",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-04",
+      "id": 330741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155744.jpg",
+      "name": "Policies and Ponies",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-11",
+      "id": 330742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/156228.jpg",
+      "name": "Quadriplegia and Quality Time",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-18",
+      "id": 406823,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/159452.jpg",
+      "name": "Bloodhunt and Beats",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-11-25",
+      "id": 409138,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/66/167465.jpg",
+      "name": "Fashionistas and Fasciitis",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-12-02",
+      "id": 409137,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170232.jpg",
+      "name": "Aortic Atresia And Art Installations",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-02",
+      "id": 478688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/47/118653.jpg",
+      "name": "Paralytics and Priorities",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-09",
+      "id": 478689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170229.jpg",
+      "name": "Negative Autopsies and New Partners",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-16",
+      "id": 480119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170230.jpg",
+      "name": "Ballistics and BFFs",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-23",
+      "id": 635078,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170195.jpg",
+      "name": "Hydrocephalus and Hard Knocks",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-03-30",
+      "id": 636811,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170226.jpg",
+      "name": "Atherosclerosis and the Alabama Flim-Flam",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-13",
+      "id": 636812,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170228.jpg",
+      "name": "Dead Drops and Disentanglement",
+      "number": 16,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-20",
+      "id": 636813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/68/170227.jpg",
+      "name": "Silkworms y Silencio",
+      "number": 17,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-27",
+      "id": 636814,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168777.jpg",
+      "name": "Thorax, Thrombosis and Threesomes",
+      "number": 18,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-04",
+      "id": 636815,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168776.jpg",
+      "name": "Sudden Death and Shades Deep",
+      "number": 19,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-11",
+      "id": 636816,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168775.jpg",
+      "name": "Keratin and Kissyface",
+      "number": 20,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-18",
+      "id": 636817,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168774.jpg",
+      "name": "Wooberite and the Women of Rosewood",
+      "number": 21,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-05-25",
+      "id": 636818,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/168773.jpg",
+      "name": "Badges and Bombshells",
+      "number": 22,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-09-22",
+      "id": 835526,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215995.jpg",
+      "name": "Forward Motion & Frat Life",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-09-29",
+      "id": 911069,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215996.jpg",
+      "name": "Secrets & Silent Killers",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-06",
+      "id": 929937,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215997.jpg",
+      "name": "Eddie & the Empire State of Mind",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-13",
+      "id": 938247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/215998.jpg",
+      "name": "Boatopsy & Booty",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-10-27",
+      "id": 952777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216001.jpg",
+      "name": "Spirochete & Santeria",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-03",
+      "id": 959144,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216003.jpg",
+      "name": "Tree Toxins & Three Stories",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-10",
+      "id": 967337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216005.jpg",
+      "name": "Lidocaine & Long-Term Lust",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-11-17",
+      "id": 974918,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/86/216006.jpg",
+      "name": "Prosopagnosia & Parrot Fish",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-12-01",
+      "id": 979495,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/89/222876.jpg",
+      "name": "Half-Life & Havana Nights",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-06",
+      "id": 979496,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/93/232640.jpg",
+      "name": "Bacterium & the Brothers Panitch",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-13",
+      "id": 1020541,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243491.jpg",
+      "name": "Mummies & Meltdowns",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-20",
+      "id": 1026338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/94/235514.jpg",
+      "name": "Asphyxiation & Aces",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-01-27",
+      "id": 1031644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241031.jpg",
+      "name": "Puffer Fish & Personal History",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-03",
+      "id": 1031645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/243486.jpg",
+      "name": "White Matter & the Ways Back",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-10",
+      "id": 1031646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/246698.jpg",
+      "name": "Clavicle Trauma & Closure",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-17",
+      "id": 1049353,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/98/247435.jpg",
+      "name": "Benzodiazepine & The Benjamins",
+      "number": 16,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-02-24",
+      "id": 1058871,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249640.jpg",
+      "name": "Radiation & Rough Landings",
+      "number": 17,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-03-31",
+      "id": 1076576,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/104/262278.jpg",
+      "name": "Fairy Tales & Frozen Truths",
+      "number": 18,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-07",
+      "id": 1099828,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/106/265122.jpg",
+      "name": "Naegleria & Neighborhood Watch",
+      "number": 19,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-14",
+      "id": 1107057,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/107/268114.jpg",
+      "name": "Calliphoridae & Country Roads",
+      "number": 20,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-21",
+      "id": 1107637,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/108/270281.jpg",
+      "name": "Amparo & the American Dream",
+      "number": 21,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-04-28",
+      "id": 1096461,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/109/273393.jpg",
+      "name": "Blistering Heat & Brotherly Love",
+      "number": 22,
+      "runtime": 60,
+      "season": 2
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Medical"
   ],
+  "id": "tvmaze-1868",
+  "live": true,
+  "overview": "Meet the Beethoven of private pathologists... From executive producer Todd Harthan, Rosewood is the story of Dr. Beaumont Rosewood, Jr., the most brilliant private pathologist in Miami. Using his wildly sophisticated autopsy lab, he performs for-hire autopsies to uncover clues that the Miami PD can't see. His new partner-in-crime is Detective Villa a Miami PD detective with attitude and demons to spare. While she's impressed by Rosewood's incredible abilities, his constant optimism is more annoying than it is infectious. But somehow, week-to-week, this unlikely tag team will solve many crimes together. Joining Rosewood in his practice are his sister and \"toxicology queen,\" Pippy; and DNA specialist Tara Milly Izikoff aka TMI, who is Pippy's fiancée. Plagued with his own set of medical ailments, Rosewood sees that every moment of life should be embraced and lived to the fullest. And those moments of victims' lives that will never be are what drive him the most.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/81/204177.jpg",
   "rating": 7.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1868",
+  "title": "Rosewood",
+  "type": "series",
+  "year": 2015
 }

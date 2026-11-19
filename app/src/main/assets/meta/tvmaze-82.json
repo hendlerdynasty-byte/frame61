@@ -1,22 +1,680 @@
 {
-  "schema": 1,
-  "id": "tvmaze-82",
-  "source": "tvmaze",
-  "sourceId": "82",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Game of Thrones",
-  "year": 2011,
-  "type": "series",
-  "overview": "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the Game of Thrones, you either win or you die.",
-  "poster": "file:///android_asset/posters/tvmaze-82.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2011-04-17",
+      "id": 4952,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195111.jpg",
+      "name": "Winter is Coming",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-04-24",
+      "id": 4953,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195110.jpg",
+      "name": "The Kingsroad",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-01",
+      "id": 4954,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195109.jpg",
+      "name": "Lord Snow",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-08",
+      "id": 4955,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195107.jpg",
+      "name": "Cripples, Bastards, and Broken Things",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-15",
+      "id": 4956,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195106.jpg",
+      "name": "The Wolf and the Lion",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-22",
+      "id": 4957,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195105.jpg",
+      "name": "A Golden Crown",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-05-29",
+      "id": 4958,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195104.jpg",
+      "name": "You Win or You Die",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-05",
+      "id": 4959,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195097.jpg",
+      "name": "The Pointy End",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-12",
+      "id": 4960,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195099.jpg",
+      "name": "Baelor",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2011-06-19",
+      "id": 4961,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195102.jpg",
+      "name": "Fire and Blood",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2012-04-01",
+      "id": 4962,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195118.jpg",
+      "name": "The North Remembers",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-08",
+      "id": 4963,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195119.jpg",
+      "name": "The Night Lands",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-15",
+      "id": 4964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195120.jpg",
+      "name": "What is Dead May Never Die",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-22",
+      "id": 4965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195121.jpg",
+      "name": "Garden of Bones",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-04-29",
+      "id": 4966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195122.jpg",
+      "name": "The Ghost of Harrenhal",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-06",
+      "id": 4967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195123.jpg",
+      "name": "The Old Gods and the New",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-13",
+      "id": 4968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195125.jpg",
+      "name": "A Man Without Honor",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-20",
+      "id": 4969,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195126.jpg",
+      "name": "The Prince of Winterfell",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-05-27",
+      "id": 4970,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195127.jpg",
+      "name": "Blackwater",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2012-06-03",
+      "id": 4971,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195128.jpg",
+      "name": "Valar Morghulis",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2013-03-31",
+      "id": 4972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195037.jpg",
+      "name": "Valar Dohaeris",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-07",
+      "id": 4973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195038.jpg",
+      "name": "Dark Wings, Dark Words",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-14",
+      "id": 4974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195039.jpg",
+      "name": "Walk of Punishment",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-21",
+      "id": 4975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195040.jpg",
+      "name": "And Now His Watch is Ended",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-04-28",
+      "id": 4976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195041.jpg",
+      "name": "Kissed by Fire",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-05",
+      "id": 4977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195042.jpg",
+      "name": "The Climb",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-12",
+      "id": 4978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195043.jpg",
+      "name": "The Bear and the Maiden Fair",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-05-19",
+      "id": 4979,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195044.jpg",
+      "name": "Second Sons",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-02",
+      "id": 4980,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195045.jpg",
+      "name": "The Rains of Castamere",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2013-06-09",
+      "id": 4981,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195047.jpg",
+      "name": "Mhysa",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2014-04-06",
+      "id": 4982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195069.jpg",
+      "name": "Two Swords",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-13",
+      "id": 4983,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195070.jpg",
+      "name": "The Lion and the Rose",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-20",
+      "id": 4984,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195071.jpg",
+      "name": "Breaker of Chains",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-04-27",
+      "id": 4985,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195072.jpg",
+      "name": "Oathkeeper",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-04",
+      "id": 4986,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195073.jpg",
+      "name": "First of His Name",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-11",
+      "id": 4987,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195075.jpg",
+      "name": "The Laws of Gods and Men",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-05-18",
+      "id": 4988,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195076.jpg",
+      "name": "Mockingbird",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-01",
+      "id": 4989,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195077.jpg",
+      "name": "The Mountain and the Viper",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-08",
+      "id": 4990,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195078.jpg",
+      "name": "The Watchers on the Wall",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2014-06-15",
+      "id": 4991,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195079.jpg",
+      "name": "The Children",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2015-04-12",
+      "id": 116522,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195080.jpg",
+      "name": "The Wars to Come",
+      "number": 1,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-04-19",
+      "id": 144328,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195081.jpg",
+      "name": "The House of Black and White",
+      "number": 2,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-04-26",
+      "id": 144329,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195082.jpg",
+      "name": "High Sparrow",
+      "number": 3,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-03",
+      "id": 144330,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195083.jpg",
+      "name": "Sons of the Harpy",
+      "number": 4,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-10",
+      "id": 151777,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195084.jpg",
+      "name": "Kill the Boy",
+      "number": 5,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-17",
+      "id": 152766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195085.jpg",
+      "name": "Unbowed, Unbent, Unbroken",
+      "number": 6,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-24",
+      "id": 153327,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195086.jpg",
+      "name": "The Gift",
+      "number": 7,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-05-31",
+      "id": 155299,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195087.jpg",
+      "name": "Hardhome",
+      "number": 8,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-07",
+      "id": 160040,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/211/529615.jpg",
+      "name": "The Dance of Dragons",
+      "number": 9,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2015-06-14",
+      "id": 162186,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/478/1195088.jpg",
+      "name": "Mother's Mercy",
+      "number": 10,
+      "runtime": 60,
+      "season": 5
+    },
+    {
+      "airdate": "2016-04-24",
+      "id": 560813,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142371.jpg",
+      "name": "The Red Woman",
+      "number": 1,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-05-01",
+      "id": 664672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142372.jpg",
+      "name": "Home",
+      "number": 2,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-05-08",
+      "id": 664673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142370.jpg",
+      "name": "Oathbreaker",
+      "number": 3,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-05-15",
+      "id": 664674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/56/142273.jpg",
+      "name": "Book of the Stranger",
+      "number": 4,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-05-22",
+      "id": 664675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/150273.jpg",
+      "name": "The Door",
+      "number": 5,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-05-29",
+      "id": 664676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/150274.jpg",
+      "name": "Blood of My Blood",
+      "number": 6,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-06-05",
+      "id": 717449,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/60/150275.jpg",
+      "name": "The Broken Man",
+      "number": 7,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-06-12",
+      "id": 729573,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/61/153044.jpg",
+      "name": "No One",
+      "number": 8,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-06-19",
+      "id": 729574,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/62/155042.jpg",
+      "name": "Battle of the Bastards",
+      "number": 9,
+      "runtime": 60,
+      "season": 6
+    },
+    {
+      "airdate": "2016-06-26",
+      "id": 729575,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/63/157920.jpg",
+      "name": "The Winds of Winter",
+      "number": 10,
+      "runtime": 69,
+      "season": 6
+    },
+    {
+      "airdate": "2017-07-16",
+      "id": 937256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302038.jpg",
+      "name": "Dragonstone",
+      "number": 1,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-07-23",
+      "id": 1221410,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/120/302047.jpg",
+      "name": "Stormborn",
+      "number": 2,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-07-30",
+      "id": 1221411,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/122/306938.jpg",
+      "name": "The Queen's Justice",
+      "number": 3,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-08-06",
+      "id": 1221412,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/123/307677.jpg",
+      "name": "The Spoils of War",
+      "number": 4,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-08-13",
+      "id": 1221413,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/124/310839.jpg",
+      "name": "Eastwatch",
+      "number": 5,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-08-20",
+      "id": 1221414,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/312651.jpg",
+      "name": "Beyond the Wall",
+      "number": 6,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2017-08-27",
+      "id": 1221415,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/125/314502.jpg",
+      "name": "The Dragon and the Wolf",
+      "number": 7,
+      "runtime": 60,
+      "season": 7
+    },
+    {
+      "airdate": "2019-04-14",
+      "id": 1590943,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/191/479477.jpg",
+      "name": "Winterfell",
+      "number": 1,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2019-04-21",
+      "id": 1623964,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/482451.jpg",
+      "name": "A Knight of the Seven Kingdoms",
+      "number": 2,
+      "runtime": 60,
+      "season": 8
+    },
+    {
+      "airdate": "2019-04-28",
+      "id": 1623965,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/192/482465.jpg",
+      "name": "The Long Night",
+      "number": 3,
+      "runtime": 90,
+      "season": 8
+    },
+    {
+      "airdate": "2019-05-05",
+      "id": 1623966,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/195/487839.jpg",
+      "name": "The Last of the Starks",
+      "number": 4,
+      "runtime": 78,
+      "season": 8
+    },
+    {
+      "airdate": "2019-05-12",
+      "id": 1623967,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/196/491994.jpg",
+      "name": "The Bells",
+      "number": 5,
+      "runtime": 79,
+      "season": 8
+    },
+    {
+      "airdate": "2019-05-19",
+      "id": 1623968,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/198/495648.jpg",
+      "name": "The Iron Throne",
+      "number": 6,
+      "runtime": 80,
+      "season": 8
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-82",
+  "live": true,
+  "overview": "Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the Game of Thrones, you either win or you die.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245274.jpg",
   "rating": 8.9,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 61,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "82",
+  "title": "Game of Thrones",
+  "type": "series",
+  "year": 2011
 }

@@ -1,22 +1,365 @@
 {
-  "schema": 1,
-  "id": "tvmaze-182",
-  "source": "tvmaze",
-  "sourceId": "182",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Black Sails",
-  "year": 2014,
-  "type": "series",
-  "overview": "1715. The Golden Age of Piracy. New Providence Island is a lawless territory, controlled by history's most notorious pirate captains. The most feared is Captain Flint.As the British Navy returns to redeem their land and exterminate Flint and his crew, another side of him emerges. Captain Flint aligns himself with Eleanor Guthrie, daughter of the local kingpin, to hunt the ultimate prize and ensure their survival.Many opponents stand in their way: rival captains, jealous of Flint's power; Eleanor's ambitious and intrusive father; and a young sailor recently recruited onto Flint's crew, John Silver, who constantly undermines his captain's agenda.",
-  "poster": "file:///android_asset/posters/tvmaze-182.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2014-01-25",
+      "id": 13024,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175865.jpg",
+      "name": "I.",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-01",
+      "id": 13025,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175868.jpg",
+      "name": "II.",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-08",
+      "id": 13026,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175870.jpg",
+      "name": "III.",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-15",
+      "id": 13027,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175871.jpg",
+      "name": "IV.",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-02-22",
+      "id": 13028,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175872.jpg",
+      "name": "V.",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-01",
+      "id": 13029,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175873.jpg",
+      "name": "VI.",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-08",
+      "id": 13030,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175876.jpg",
+      "name": "VII.",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-03-15",
+      "id": 13031,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175878.jpg",
+      "name": "VIII.",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-24",
+      "id": 13032,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175917.jpg",
+      "name": "IX.",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-01-31",
+      "id": 41119,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/175931.jpg",
+      "name": "X.",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-07",
+      "id": 41120,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176034.jpg",
+      "name": "XI.",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-14",
+      "id": 41121,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176041.jpg",
+      "name": "XII.",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-21",
+      "id": 41122,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176070.jpg",
+      "name": "XIII.",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-02-28",
+      "id": 41123,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176075.jpg",
+      "name": "XIV.",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-07",
+      "id": 41124,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176077.jpg",
+      "name": "XV.",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-14",
+      "id": 41125,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176085.jpg",
+      "name": "XVI.",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-21",
+      "id": 41126,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176086.jpg",
+      "name": "XVII.",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-28",
+      "id": 41127,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176087.jpg",
+      "name": "XVIII.",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-01-23",
+      "id": 206089,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176288.jpg",
+      "name": "XIX.",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-01-30",
+      "id": 557342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176409.jpg",
+      "name": "XX.",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-06",
+      "id": 557343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/70/176434.jpg",
+      "name": "XXI.",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-13",
+      "id": 557344,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178244.jpg",
+      "name": "XXII.",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-20",
+      "id": 557345,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178268.jpg",
+      "name": "XXIII.",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-02-27",
+      "id": 557346,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/45/114046.jpg",
+      "name": "XXIV.",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-05",
+      "id": 557347,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/46/117320.jpg",
+      "name": "XXV.",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-12",
+      "id": 557348,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178499.jpg",
+      "name": "XXVI.",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-19",
+      "id": 557349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178501.jpg",
+      "name": "XXVII.",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2016-03-26",
+      "id": 557350,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/71/178502.jpg",
+      "name": "XXVIII.",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-01-29",
+      "id": 937082,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/237857.jpg",
+      "name": "XXIX.",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-05",
+      "id": 1045105,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/95/238682.jpg",
+      "name": "XXX.",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-12",
+      "id": 1045106,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/96/241702.jpg",
+      "name": "XXXI.",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-19",
+      "id": 1045107,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/97/244792.jpg",
+      "name": "XXXII.",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-02-26",
+      "id": 1045108,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/247866.jpg",
+      "name": "XXXIII.",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-05",
+      "id": 1045109,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/99/249971.jpg",
+      "name": "XXXIV.",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-12",
+      "id": 1049148,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/100/252009.jpg",
+      "name": "XXXV.",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-19",
+      "id": 1049149,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/101/254632.jpg",
+      "name": "XXXVI.",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-03-26",
+      "id": 1049150,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/102/256948.jpg",
+      "name": "XXXVII.",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2017-04-02",
+      "id": 1049151,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/103/259752.jpg",
+      "name": "XXXVIII.",
+      "number": 10,
+      "runtime": 71,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
     "Action",
-    "Abenteuer"
+    "Adventure"
   ],
+  "id": "tvmaze-182",
+  "live": true,
+  "overview": "1715. The Golden Age of Piracy. New Providence Island is a lawless territory, controlled by history's most notorious pirate captains. The most feared is Captain Flint.As the British Navy returns to redeem their land and exterminate Flint and his crew, another side of him emerges. Captain Flint aligns himself with Eleanor Guthrie, daughter of the local kingpin, to hunt the ultimate prize and ensure their survival.Many opponents stand in their way: rival captains, jealous of Flint's power; Eleanor's ambitious and intrusive father; and a young sailor recently recruited onto Flint's crew, John Silver, who constantly undermines his captain's agenda.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253514.jpg",
   "rating": 8.4,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "182",
+  "title": "Black Sails",
+  "type": "series",
+  "year": 2014
 }

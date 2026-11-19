@@ -1,22 +1,428 @@
 {
-  "schema": 1,
-  "id": "tvmaze-196",
-  "source": "tvmaze",
-  "sourceId": "196",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "The Following",
-  "year": 2013,
-  "type": "series",
-  "overview": "The FBI estimates there are currently over 300 active serial killers in the United States. What would happen if these killers had a way of communicating and connecting with each other? What if they were able to work together and form alliances across the country? What if one brilliant psychotic serial killer was able to bring them all together and activate a following? Welcome to The Following, a terrifying new thriller.",
-  "poster": "file:///android_asset/posters/tvmaze-196.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2013-01-21",
+      "id": 13228,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169321.jpg",
+      "name": "Pilot",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-01-28",
+      "id": 13229,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169322.jpg",
+      "name": "Chapter Two",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-04",
+      "id": 13230,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169324.jpg",
+      "name": "The Poet's Fire",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-11",
+      "id": 13231,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169325.jpg",
+      "name": "Mad Love",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-18",
+      "id": 13232,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169326.jpg",
+      "name": "The Siege",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-02-25",
+      "id": 13233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169327.jpg",
+      "name": "The Fall",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-04",
+      "id": 13234,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169328.jpg",
+      "name": "Let Me Go",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-11",
+      "id": 13235,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169329.jpg",
+      "name": "Welcome Home",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-18",
+      "id": 13236,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169330.jpg",
+      "name": "Love Hurts",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-03-25",
+      "id": 13237,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169331.jpg",
+      "name": "Guilt",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-01",
+      "id": 13238,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169333.jpg",
+      "name": "Whips & Regret",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-08",
+      "id": 13239,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169334.jpg",
+      "name": "The Curse",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-15",
+      "id": 13240,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169335.jpg",
+      "name": "Havenport",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-22",
+      "id": 13241,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169336.jpg",
+      "name": "The End is Near",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2013-04-29",
+      "id": 13242,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169337.jpg",
+      "name": "The Final Chapter",
+      "number": 15,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2014-01-19",
+      "id": 13243,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169338.jpg",
+      "name": "Resurrection",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-01-27",
+      "id": 13244,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169339.jpg",
+      "name": "For Joe",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-03",
+      "id": 13245,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169340.jpg",
+      "name": "Trust Me",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-10",
+      "id": 13246,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169341.jpg",
+      "name": "Family Affair",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-17",
+      "id": 13247,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169342.jpg",
+      "name": "Reflection",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-02-24",
+      "id": 13248,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169343.jpg",
+      "name": "Fly Away",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-03",
+      "id": 13249,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169344.jpg",
+      "name": "Sacrifice",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-10",
+      "id": 13250,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169345.jpg",
+      "name": "The Messenger",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-17",
+      "id": 13251,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169346.jpg",
+      "name": "Unmasked",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-24",
+      "id": 13252,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169347.jpg",
+      "name": "Teacher's Pet",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-03-31",
+      "id": 13253,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169348.jpg",
+      "name": "Freedom",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-07",
+      "id": 13254,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169349.jpg",
+      "name": "Betrayal",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-14",
+      "id": 13255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169350.jpg",
+      "name": "The Reaping",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-21",
+      "id": 13256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169351.jpg",
+      "name": "Silence",
+      "number": 14,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2014-04-28",
+      "id": 13257,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/67/169352.jpg",
+      "name": "Forgive",
+      "number": 15,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2015-03-02",
+      "id": 50188,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/22812.jpg",
+      "name": "New Blood",
+      "number": 1,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-09",
+      "id": 139701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23486.jpg",
+      "name": "Boxed In",
+      "number": 2,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-16",
+      "id": 142182,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24023.jpg",
+      "name": "Exposed",
+      "number": 3,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 143015,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24337.jpg",
+      "name": "Home",
+      "number": 4,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-23",
+      "id": 143016,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24338.jpg",
+      "name": "A Hostile Witness",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-03-30",
+      "id": 144337,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/24714.jpg",
+      "name": "Reunion",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-06",
+      "id": 144338,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25142.jpg",
+      "name": "The Hunt",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-13",
+      "id": 144339,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/25720.jpg",
+      "name": "Flesh & Blood",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-20",
+      "id": 144340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26058.jpg",
+      "name": "Kill the Messenger",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-04-27",
+      "id": 144341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26516.jpg",
+      "name": "Evermore",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-04",
+      "id": 144342,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/26892.jpg",
+      "name": "Demons",
+      "number": 11,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-11",
+      "id": 144343,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27395.jpg",
+      "name": "The Edge",
+      "number": 12,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-11",
+      "id": 154714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/10/27396.jpg",
+      "name": "A Simple Trade",
+      "number": 13,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-18",
+      "id": 154733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27690.jpg",
+      "name": "Dead or Alive",
+      "number": 14,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2015-05-18",
+      "id": 155296,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/11/27691.jpg",
+      "name": "The Reckoning",
+      "number": 15,
+      "runtime": 60,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Krimi",
+    "Crime",
     "Thriller"
   ],
+  "id": "tvmaze-196",
+  "live": true,
+  "overview": "The FBI estimates there are currently over 300 active serial killers in the United States. What would happen if these killers had a way of communicating and connecting with each other? What if they were able to work together and form alliances across the country? What if one brilliant psychotic serial killer was able to bring them all together and activate a following? Welcome to The Following, a terrifying new thriller.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/2868.jpg",
   "rating": 7,
   "runtime": 60,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "196",
+  "title": "The Following",
+  "type": "series",
+  "year": 2013
 }

@@ -1,22 +1,446 @@
 {
-  "schema": 1,
-  "id": "tvmaze-614",
-  "source": "tvmaze",
-  "sourceId": "614",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "12 Monkeys",
-  "year": 2015,
-  "type": "series",
-  "overview": "Inspired by the classic blockbuster film, which commemorated its 20th anniversary in 2015, 12 Monkeys explores the provocative story of a time traveler from a decimated future in a high-stakes race against the clock. Utilizing a dangerous and untested method of time travel, he journeys from 2043 to the present day on a mission to locate and eradicate the source of a deadly plague that will all but annihilate the human race.",
-  "poster": "file:///android_asset/posters/tvmaze-614.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2015-01-16",
+      "id": 57354,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285393.jpg",
+      "name": "Splinter",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-23",
+      "id": 100852,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285406.jpg",
+      "name": "Mentally Divergent",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-01-30",
+      "id": 100853,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285429.jpg",
+      "name": "Cassandra Complex",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-06",
+      "id": 117561,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285447.jpg",
+      "name": "Atari",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-13",
+      "id": 117562,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/114/285563.jpg",
+      "name": "The Night Room",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-20",
+      "id": 117563,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288806.jpg",
+      "name": "The Red Forest",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-02-27",
+      "id": 120549,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288817.jpg",
+      "name": "The Keys",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-06",
+      "id": 120550,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288845.jpg",
+      "name": "Yesterday",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-13",
+      "id": 120551,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/288860.jpg",
+      "name": "Tomorrow",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-20",
+      "id": 120552,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289123.jpg",
+      "name": "Divine Move",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-03-27",
+      "id": 141982,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289136.jpg",
+      "name": "Shonin",
+      "number": 11,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-03",
+      "id": 143255,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289154.jpg",
+      "name": "Paradox",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2015-04-10",
+      "id": 143256,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289158.jpg",
+      "name": "Arms of Mine",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2016-04-18",
+      "id": 355620,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289650.jpg",
+      "name": "Year of the Monkey",
+      "number": 1,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-04-25",
+      "id": 361340,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289661.jpg",
+      "name": "Primary",
+      "number": 2,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-02",
+      "id": 361341,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/55/138969.jpg",
+      "name": "One Hundred Years",
+      "number": 3,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-09",
+      "id": 617357,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289684.jpg",
+      "name": "Emergence",
+      "number": 4,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-16",
+      "id": 617358,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289974.jpg",
+      "name": "Bodies of Water",
+      "number": 5,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-23",
+      "id": 674010,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/115/289996.jpg",
+      "name": "Immortal",
+      "number": 6,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-05-30",
+      "id": 674011,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290008.jpg",
+      "name": "Meltdown",
+      "number": 7,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-06",
+      "id": 682102,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290021.jpg",
+      "name": "Lullaby",
+      "number": 8,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-13",
+      "id": 738656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290094.jpg",
+      "name": "Hyena",
+      "number": 9,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-20",
+      "id": 738658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290046.jpg",
+      "name": "Fatherland",
+      "number": 10,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-06-27",
+      "id": 738660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/64/162438.jpg",
+      "name": "Resurrection",
+      "number": 11,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-11",
+      "id": 738663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290075.jpg",
+      "name": "Blood Washed Away",
+      "number": 12,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2016-07-18",
+      "id": 571886,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/116/290089.jpg",
+      "name": "Memory of Tomorrow",
+      "number": 13,
+      "runtime": 60,
+      "season": 2
+    },
+    {
+      "airdate": "2017-05-19",
+      "id": 936135,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281602.jpg",
+      "name": "Mother",
+      "number": 1,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-19",
+      "id": 923233,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281587.jpg",
+      "name": "Guardians",
+      "number": 2,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-19",
+      "id": 1099972,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281588.jpg",
+      "name": "Enemy",
+      "number": 3,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-19",
+      "id": 1099973,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282179.jpg",
+      "name": "Brothers",
+      "number": 4,
+      "runtime": 45,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-20",
+      "id": 1099974,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281901.jpg",
+      "name": "Causality",
+      "number": 5,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-20",
+      "id": 1099975,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281902.jpg",
+      "name": "Nature",
+      "number": 6,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-20",
+      "id": 1099976,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/281903.jpg",
+      "name": "Nurture",
+      "number": 7,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-21",
+      "id": 1099977,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282421.jpg",
+      "name": "Masks",
+      "number": 8,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-21",
+      "id": 1099978,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282422.jpg",
+      "name": "Thief",
+      "number": 9,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2017-05-21",
+      "id": 1049594,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/112/282423.jpg",
+      "name": "Witness",
+      "number": 10,
+      "runtime": 60,
+      "season": 3
+    },
+    {
+      "airdate": "2018-06-15",
+      "id": 1126196,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396557.jpg",
+      "name": "The End",
+      "number": 1,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-15",
+      "id": 1126197,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396553.jpg",
+      "name": "Ouroboros",
+      "number": 2,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-15",
+      "id": 1215799,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/158/396552.jpg",
+      "name": "45 RPM",
+      "number": 3,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-22",
+      "id": 1215801,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/397833.jpg",
+      "name": "Legacy",
+      "number": 4,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-22",
+      "id": 1215803,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/397806.jpg",
+      "name": "After",
+      "number": 5,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-22",
+      "id": 1215802,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/397820.jpg",
+      "name": "Die Glocke",
+      "number": 6,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-29",
+      "id": 1215805,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399087.jpg",
+      "name": "Daughters",
+      "number": 7,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-29",
+      "id": 1215806,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399088.jpg",
+      "name": "Demons",
+      "number": 8,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-06-29",
+      "id": 1215808,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/159/399089.jpg",
+      "name": "One Minute More",
+      "number": 9,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-06",
+      "id": 1220349,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400501.jpg",
+      "name": "The Beginning Part 1",
+      "number": 10,
+      "runtime": 60,
+      "season": 4
+    },
+    {
+      "airdate": "2018-07-06",
+      "id": 1464333,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/160/400498.jpg",
+      "name": "The Beginning Part 2",
+      "number": 11,
+      "runtime": 60,
+      "season": 4
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-614",
+  "live": true,
+  "overview": "Inspired by the classic blockbuster film, which commemorated its 20th anniversary in 2015, 12 Monkeys explores the provocative story of a time traveler from a decimated future in a high-stakes race against the clock. Utilizing a dangerous and untested method of time travel, he journeys from 2043 to the present day on a mission to locate and eradicate the source of a deadly plague that will all but annihilate the human race.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/155/389213.jpg",
   "rating": 7.7,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 59,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "614",
+  "title": "12 Monkeys",
+  "type": "series",
+  "year": 2015
 }

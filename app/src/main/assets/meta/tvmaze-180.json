@@ -1,22 +1,149 @@
 {
-  "schema": 1,
-  "id": "tvmaze-180",
-  "source": "tvmaze",
-  "sourceId": "180",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Firefly",
-  "year": 2002,
-  "type": "series",
-  "overview": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
-  "poster": "file:///android_asset/posters/tvmaze-180.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2002-09-20",
+      "id": 12995,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23970.jpg",
+      "name": "The Train Job",
+      "number": 1,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-09-27",
+      "id": 12996,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23971.jpg",
+      "name": "Bushwhacked",
+      "number": 2,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-10-04",
+      "id": 12997,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23972.jpg",
+      "name": "Our Mrs. Reynolds",
+      "number": 3,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-10-18",
+      "id": 12998,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23973.jpg",
+      "name": "Jaynestown",
+      "number": 4,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-10-25",
+      "id": 12999,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23974.jpg",
+      "name": "Out of Gas",
+      "number": 5,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-11-01",
+      "id": 13000,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23975.jpg",
+      "name": "Shindig",
+      "number": 6,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-11-08",
+      "id": 13001,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23976.jpg",
+      "name": "Safe",
+      "number": 7,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-11-15",
+      "id": 13002,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23977.jpg",
+      "name": "Ariel",
+      "number": 8,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-12-06",
+      "id": 13003,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23978.jpg",
+      "name": "War Stories",
+      "number": 9,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-12-13",
+      "id": 13004,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23979.jpg",
+      "name": "Objects in Space",
+      "number": 10,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "2002-12-20",
+      "id": 13005,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/9/23984.jpg",
+      "name": "Serenity",
+      "number": 11,
+      "runtime": 120,
+      "season": 1
+    },
+    {
+      "airdate": "",
+      "id": 13007,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195476.jpg",
+      "name": "Trash",
+      "number": 12,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "",
+      "id": 13008,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/77/194932.jpg",
+      "name": "The Message",
+      "number": 13,
+      "runtime": 60,
+      "season": 1
+    },
+    {
+      "airdate": "",
+      "id": 13009,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/78/195473.jpg",
+      "name": "Heart of Gold",
+      "number": 14,
+      "runtime": 60,
+      "season": 1
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Drama",
-    "Abenteuer",
+    "Adventure",
     "Science-Fiction"
   ],
+  "id": "tvmaze-180",
+  "live": true,
+  "overview": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/1/2600.jpg",
   "rating": 9,
-  "runtime": 60,
-  "episodes": []
+  "runtime": 64,
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "180",
+  "title": "Firefly",
+  "type": "series",
+  "year": 2002
 }

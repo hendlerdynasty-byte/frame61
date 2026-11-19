@@ -1,21 +1,841 @@
 {
-  "schema": 1,
-  "id": "tvmaze-1473",
-  "source": "tvmaze",
-  "sourceId": "1473",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Grounded for Life",
-  "year": 2001,
-  "type": "series",
-  "overview": "Raising kids is tough, especially when you're Grounded for Life! Sean and Claudia Finnerty, a fun-loving Staten Island couple got pregnant and married by age 18. Now in their 30s, they aren't bad parents, but they're still just kids themselves.",
-  "poster": "file:///android_asset/posters/tvmaze-1473.jpg",
-  "genres": [
-    "Komödie",
-    "Familie"
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2001-01-10",
+      "id": 132643,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598207.jpg",
+      "name": "Lily B. Goode",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-17",
+      "id": 132644,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598209.jpg",
+      "name": "In My Room",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-24",
+      "id": 132645,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598210.jpg",
+      "name": "I Wanna Be Suspended",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-01-31",
+      "id": 132646,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598212.jpg",
+      "name": "Devil with a Plaid Skirt",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-07",
+      "id": 132647,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598213.jpg",
+      "name": "Action Mountain High",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-21",
+      "id": 132648,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598215.jpg",
+      "name": "You Can't Always Get What You Want",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-02-28",
+      "id": 132649,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598216.jpg",
+      "name": "Like a Virgin",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-03-28",
+      "id": 132650,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598217.jpg",
+      "name": "Devil's Haircut",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-04",
+      "id": 132651,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598218.jpg",
+      "name": "Eddie's Dead",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-18",
+      "id": 132652,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598219.jpg",
+      "name": "Catch Us If You Can",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-04-25",
+      "id": 132653,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598220.jpg",
+      "name": "Jimmy's Got a Gun",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-02",
+      "id": 132654,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598221.jpg",
+      "name": "Jimmy Was Kung-Fu Fighting",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-09",
+      "id": 132655,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598222.jpg",
+      "name": "Loser",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-16",
+      "id": 132656,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598223.jpg",
+      "name": "Mrs. Finnerty, You've Got a Lovely Daughter",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-05-23",
+      "id": 132657,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598224.jpg",
+      "name": "Love Child",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2001-09-26",
+      "id": 132658,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598225.jpg",
+      "name": "Baby, You Can't Drive My Car",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-10-03",
+      "id": 132659,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598226.jpg",
+      "name": "Dream On",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-21",
+      "id": 132660,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598227.jpg",
+      "name": "Don't Let Me Download",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-11-28",
+      "id": 132661,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598228.jpg",
+      "name": "Rubber Sold",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-05",
+      "id": 132662,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598229.jpg",
+      "name": "Bang on a Drum",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-12",
+      "id": 132663,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598231.jpg",
+      "name": "Smoke on the Daughter",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2001-12-19",
+      "id": 132664,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598232.jpg",
+      "name": "I Saw Daddy Hitting Santa Claus",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-02",
+      "id": 132665,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598233.jpg",
+      "name": "Let's Talk About Sex, Henry",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-16",
+      "id": 132666,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598234.jpg",
+      "name": "Is She Really Going Out with Walt?",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-23",
+      "id": 132667,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598235.jpg",
+      "name": "We Are Family",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-01-30",
+      "id": 132668,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598237.jpg",
+      "name": "Mr. Roboto",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-06",
+      "id": 132669,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598238.jpg",
+      "name": "Don't Fear the Reefer",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-13",
+      "id": 132670,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598241.jpg",
+      "name": "Take It to the Limit",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-02-20",
+      "id": 132671,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598242.jpg",
+      "name": "Eddie Said Knock You Out",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-06",
+      "id": 132672,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598243.jpg",
+      "name": "Safety Dance",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-03-27",
+      "id": 132673,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598245.jpg",
+      "name": "Relax!",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-03",
+      "id": 132674,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598246.jpg",
+      "name": "The Kids Are Alright",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-10",
+      "id": 132675,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598247.jpg",
+      "name": "Swearin' to God",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-17",
+      "id": 132676,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598249.jpg",
+      "name": "Eddie and This Guy with Diamonds",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-04-24",
+      "id": 132677,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598250.jpg",
+      "name": "I Fought the In-Laws",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-01",
+      "id": 132678,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598252.jpg",
+      "name": "Dust in the Wind",
+      "number": 21,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-05-08",
+      "id": 132679,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598253.jpg",
+      "name": "Oops!...I Did It Again",
+      "number": 22,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2002-09-17",
+      "id": 132680,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598254.jpg",
+      "name": "I Didn't Start the Fire",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2002-09-24",
+      "id": 132681,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598255.jpg",
+      "name": "Mustang Lily",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2002-12-03",
+      "id": 132682,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598256.jpg",
+      "name": "Cat Scratch Fever (a.k.a. The Bitch is Back)",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-02-28",
+      "id": 132683,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598257.jpg",
+      "name": "Drive Me Crazy",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-02-28",
+      "id": 132684,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598258.jpg",
+      "name": "Just Like a Woman",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-07",
+      "id": 132685,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598259.jpg",
+      "name": "Henry's Been Working for the Drug Squad",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-14",
+      "id": 132686,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598260.jpg",
+      "name": "Cuts Like a Knife",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-03-28",
+      "id": 132687,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598261.jpg",
+      "name": "Who Are You?",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-04-25",
+      "id": 132688,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598262.jpg",
+      "name": "Welcome to the Working Week",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-02",
+      "id": 132689,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598263.jpg",
+      "name": "Claudia in Disguise with Glasses",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-05-09",
+      "id": 132690,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598264.jpg",
+      "name": "Tonight's the Night",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2005-10-16",
+      "id": 132691,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598265.jpg",
+      "name": "Oh, What a Knight",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2004-09-24",
+      "id": 132692,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598266.jpg",
+      "name": "Part Time Lover",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2003-09-05",
+      "id": 132693,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598267.jpg",
+      "name": "Your Father Should Know, Pt. 1",
+      "number": 1,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-09-05",
+      "id": 132694,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598269.jpg",
+      "name": "Your Father Should Know, Pt. 2",
+      "number": 2,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-09-12",
+      "id": 132695,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598270.jpg",
+      "name": "All the Young Nudes",
+      "number": 3,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-09-19",
+      "id": 132696,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598271.jpg",
+      "name": "I Right the Wrongs",
+      "number": 4,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-09-26",
+      "id": 132697,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598272.jpg",
+      "name": "I Just Paid to Say I Love You",
+      "number": 5,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-03",
+      "id": 132698,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598273.jpg",
+      "name": "S.A.T. and Sympathy",
+      "number": 6,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-10",
+      "id": 132699,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598274.jpg",
+      "name": "Pay You Back with Interest",
+      "number": 7,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-10-31",
+      "id": 132700,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598277.jpg",
+      "name": "Ticket to Ride",
+      "number": 8,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-07",
+      "id": 132701,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598279.jpg",
+      "name": "Smells Like Teen Spirit",
+      "number": 9,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-14",
+      "id": 132702,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598280.jpg",
+      "name": "Baby Come Back",
+      "number": 10,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2003-11-21",
+      "id": 132703,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598281.jpg",
+      "name": "Been Caught Stealing",
+      "number": 11,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-09",
+      "id": 132704,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598283.jpg",
+      "name": "(She's Got) Kegs",
+      "number": 12,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-16",
+      "id": 132705,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598284.jpg",
+      "name": "My Ex-Boyfriend's Back",
+      "number": 13,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-23",
+      "id": 132706,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598285.jpg",
+      "name": "Communication Breakdown",
+      "number": 14,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-01-30",
+      "id": 132707,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598286.jpg",
+      "name": "All Apologies",
+      "number": 15,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-06",
+      "id": 132708,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598287.jpg",
+      "name": "I Think We're Alone Now",
+      "number": 16,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-13",
+      "id": 132709,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598288.jpg",
+      "name": "Can't Get Next to You",
+      "number": 17,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-20",
+      "id": 132710,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598289.jpg",
+      "name": "Racketman",
+      "number": 18,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-20",
+      "id": 132711,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598290.jpg",
+      "name": "Me and Mrs. O",
+      "number": 19,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-27",
+      "id": 132712,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598291.jpg",
+      "name": "Tombstone Blues",
+      "number": 20,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-02-27",
+      "id": 132713,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598292.jpg",
+      "name": "Pictures of Willy",
+      "number": 21,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-03-05",
+      "id": 132714,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598293.jpg",
+      "name": "It's Hard to Be a Saint in the City",
+      "number": 22,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-03-19",
+      "id": 132715,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598294.jpg",
+      "name": "Beat on the Brat",
+      "number": 23,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-03-26",
+      "id": 132716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598295.jpg",
+      "name": "The Cheat is On",
+      "number": 24,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-16",
+      "id": 132717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598296.jpg",
+      "name": "You're So Vain",
+      "number": 25,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-23",
+      "id": 132718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598297.jpg",
+      "name": "Pressure Drop",
+      "number": 26,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-04-30",
+      "id": 132719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598299.jpg",
+      "name": "Get a Job",
+      "number": 27,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-05-07",
+      "id": 132720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598300.jpg",
+      "name": "Space Camp Oddity",
+      "number": 28,
+      "runtime": 30,
+      "season": 4
+    },
+    {
+      "airdate": "2004-09-17",
+      "id": 132721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598301.jpg",
+      "name": "The Policy of Truth",
+      "number": 1,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-09-24",
+      "id": 132722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598302.jpg",
+      "name": "Man, I Feel Like a Woman",
+      "number": 2,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-01",
+      "id": 132723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598303.jpg",
+      "name": "One is the Loneliest Number",
+      "number": 3,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-08",
+      "id": 132724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598304.jpg",
+      "name": "Day Tripper",
+      "number": 4,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-15",
+      "id": 132725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598305.jpg",
+      "name": "You Better You Bet",
+      "number": 5,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-10-22",
+      "id": 132726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598306.jpg",
+      "name": "Psycho Therapy",
+      "number": 6,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-05",
+      "id": 132727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598307.jpg",
+      "name": "I'm Looking Through You",
+      "number": 7,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-12",
+      "id": 132728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598308.jpg",
+      "name": "Mystery Dance",
+      "number": 8,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2004-11-19",
+      "id": 132729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598309.jpg",
+      "name": "Do Ya Think I'm Sexy?",
+      "number": 9,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-07",
+      "id": 132730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598310.jpg",
+      "name": "Tom Sawyer",
+      "number": 10,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-14",
+      "id": 132731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598311.jpg",
+      "name": "The Letter(s)",
+      "number": 11,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-21",
+      "id": 132732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598312.jpg",
+      "name": "Crazy",
+      "number": 12,
+      "runtime": 30,
+      "season": 5
+    },
+    {
+      "airdate": "2005-01-28",
+      "id": 132733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/239/598313.jpg",
+      "name": "Hello, Goodbye",
+      "number": 13,
+      "runtime": 30,
+      "season": 5
+    }
   ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
+  "genres": [
+    "Comedy",
+    "Family"
+  ],
+  "id": "tvmaze-1473",
+  "live": true,
+  "overview": "Raising kids is tough, especially when you're Grounded for Life! Sean and Claudia Finnerty, a fun-loving Staten Island couple got pregnant and married by age 18. Now in their 30s, they aren't bad parents, but they're still just kids themselves.",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/8/21106.jpg",
   "rating": 7.9,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "1473",
+  "title": "Grounded for Life",
+  "type": "series",
+  "year": 2001
 }

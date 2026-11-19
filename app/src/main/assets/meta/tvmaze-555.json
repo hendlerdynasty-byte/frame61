@@ -1,22 +1,572 @@
 {
-  "schema": 1,
-  "id": "tvmaze-555",
-  "source": "tvmaze",
-  "sourceId": "555",
-  "fetchedAt": "2026-11-18T09:32:28Z",
-  "live": true,
-  "attribution": "TVmaze",
-  "title": "Avatar: The Last Airbender",
-  "year": 2005,
-  "type": "series",
-  "overview": "Water. Earth. Fire. Air. Only the Avatar was the master of all four elements. Only he could stop the ruthless Fire Nation from conquering the world. But when the world needed him most, he disappeared. Until now... On the South Pole, a lone Water Tribe village struggles to survive. It's here that a young Waterbender named Katara and her warrior brother Sokka rescue a strange boy named Aang from a cavernous iceberg. Not only is Aang an Airbender--a race of people no one has seen in a century--but they soon discover that Aang is also the long lost Avatar. Now it's up to Katara and Sokka to make sure Aang faces his destiny to save the tribe--and himself. Did we mention he's only 12?",
-  "poster": "file:///android_asset/posters/tvmaze-555.jpg",
+  "attribution": "TVmaze (CC BY-SA 4.0)",
+  "episodes": [
+    {
+      "airdate": "2005-02-21",
+      "id": 51716,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1427274.jpg",
+      "name": "Book One: Water - Chapter One: The Boy in the Iceberg",
+      "number": 1,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-21",
+      "id": 51717,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/570/1427281.jpg",
+      "name": "Book One: Water - Chapter Two: The Avatar Returns",
+      "number": 2,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-02-25",
+      "id": 51718,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/574/1435708.jpg",
+      "name": "Book One: Water - Chapter Three: The Southern Air Temple",
+      "number": 3,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-04",
+      "id": 51719,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499565.jpg",
+      "name": "Book One: Water - Chapter Four: The Warriors of Kyoshi",
+      "number": 4,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-18",
+      "id": 51720,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499572.jpg",
+      "name": "Book One: Water - Chapter Five: The King of Omashu",
+      "number": 5,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-03-25",
+      "id": 51721,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499579.jpg",
+      "name": "Book One: Water - Chapter Six: Imprisoned",
+      "number": 6,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-08",
+      "id": 51722,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/597/1493450.jpg",
+      "name": "Book One: Water - Chapter Seven: The Spirit World (Winter Solstice, Part 1)",
+      "number": 7,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-15",
+      "id": 51723,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499720.jpg",
+      "name": "Book One: Water - Chapter Eight: Avatar Roku (Winter Solstice, Part 2)",
+      "number": 8,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-04-29",
+      "id": 51724,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499726.jpg",
+      "name": "Book One: Water - Chapter Nine: The Waterbending Scroll",
+      "number": 9,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-06",
+      "id": 51725,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499732.jpg",
+      "name": "Book One: Water - Chapter Ten: Jet",
+      "number": 10,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-05-20",
+      "id": 51726,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499739.jpg",
+      "name": "Book One: Water - Chapter Eleven: The Great Divide",
+      "number": 11,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-03",
+      "id": 51727,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499742.jpg",
+      "name": "Book One: Water - Chapter Twelve: The Storm",
+      "number": 12,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-06-17",
+      "id": 51728,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499746.jpg",
+      "name": "Book One: Water - Chapter Thirteen: The Blue Spirit",
+      "number": 13,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-09-23",
+      "id": 51729,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499750.jpg",
+      "name": "Book One: Water - Chapter Fourteen: The Fortuneteller",
+      "number": 14,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-07",
+      "id": 51730,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499755.jpg",
+      "name": "Book One: Water - Chapter Fifteen: Bato of the Water Tribe",
+      "number": 15,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-10-21",
+      "id": 51731,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499760.jpg",
+      "name": "Book One: Water - Chapter Sixteen: The Deserter",
+      "number": 16,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-04",
+      "id": 51732,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499764.jpg",
+      "name": "Book One: Water - Chapter Seventeen: The Northern Air Temple",
+      "number": 17,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-11-18",
+      "id": 51733,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499768.jpg",
+      "name": "Book One: Water - Chapter Eighteen: The Waterbending Master",
+      "number": 18,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-12-02",
+      "id": 51734,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499773.jpg",
+      "name": "Book One: Water - Chapter Nineteen: The Siege of the North, Part 1",
+      "number": 19,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2005-12-02",
+      "id": 51735,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/199/499775.jpg",
+      "name": "Book One: Water - Chapter Twenty: The Siege of the North, Part 2",
+      "number": 20,
+      "runtime": 30,
+      "season": 1
+    },
+    {
+      "airdate": "2006-03-17",
+      "id": 51736,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501174.jpg",
+      "name": "Book Two: Earth - Chapter One: The Avatar State",
+      "number": 1,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-03-24",
+      "id": 51737,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501179.jpg",
+      "name": "Book Two: Earth - Chapter Two: The Cave of Two Lovers",
+      "number": 2,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-07",
+      "id": 51738,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501184.jpg",
+      "name": "Book Two: Earth - Chapter Three: Return to Omashu",
+      "number": 3,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-14",
+      "id": 51739,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501188.jpg",
+      "name": "Book Two: Earth - Chapter Four: The Swamp",
+      "number": 4,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-04-28",
+      "id": 51740,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501192.jpg",
+      "name": "Book Two: Earth - Chapter Five: Avatar Day",
+      "number": 5,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-05",
+      "id": 51741,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501198.jpg",
+      "name": "Book Two: Earth - Chapter Six: The Blind Bandit",
+      "number": 6,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-12",
+      "id": 51742,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407249.jpg",
+      "name": "Book Two: Earth - Chapter Seven: Zuko Alone",
+      "number": 7,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-05-26",
+      "id": 51743,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501210.jpg",
+      "name": "Book Two: Earth - Chapter Eight: The Chase",
+      "number": 8,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-06-02",
+      "id": 51744,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501213.jpg",
+      "name": "Book Two: Earth - Chapter Nine: Bitter Work",
+      "number": 9,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-07-14",
+      "id": 51745,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501216.jpg",
+      "name": "Book Two: Earth - Chapter Ten: The Library",
+      "number": 10,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-07-14",
+      "id": 51746,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501221.jpg",
+      "name": "Book Two: Earth - Chapter Eleven: The Desert",
+      "number": 11,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-15",
+      "id": 51747,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501224.jpg",
+      "name": "Book Two: Earth - Chapter Twelve: The Serpent's Pass",
+      "number": 12,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-15",
+      "id": 51748,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501229.jpg",
+      "name": "Book Two: Earth - Chapter Thirteen: The Drill",
+      "number": 13,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-22",
+      "id": 51749,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501235.jpg",
+      "name": "Book Two: Earth - Chapter Fourteen: City of Walls and Secrets",
+      "number": 14,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-09-29",
+      "id": 51750,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501237.jpg",
+      "name": "Book Two: Earth - Chapter Fifteen: The Tales of Ba Sing Se",
+      "number": 15,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-10-13",
+      "id": 51751,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501241.jpg",
+      "name": "Book Two: Earth - Chapter Sixteen: Appa's Lost Days",
+      "number": 16,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-03",
+      "id": 51752,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501244.jpg",
+      "name": "Book Two: Earth - Chapter Seventeen: Lake Laogai",
+      "number": 17,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-11-17",
+      "id": 51753,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501247.jpg",
+      "name": "Book Two: Earth - Chapter Eighteen: The Earth King",
+      "number": 18,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-01",
+      "id": 51754,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501249.jpg",
+      "name": "Book Two: Earth - Chapter Nineteen: The Guru",
+      "number": 19,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2006-12-01",
+      "id": 51755,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/501257.jpg",
+      "name": "Book Two: Earth - Chapter Twenty: The Crossroads of Destiny",
+      "number": 20,
+      "runtime": 30,
+      "season": 2
+    },
+    {
+      "airdate": "2007-09-21",
+      "id": 51756,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502451.jpg",
+      "name": "Book Three: Fire - Chapter One: The Awakening",
+      "number": 1,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-09-28",
+      "id": 51757,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502455.jpg",
+      "name": "Book Three: Fire - Chapter Two: The Headband",
+      "number": 2,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-05",
+      "id": 51758,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502461.jpg",
+      "name": "Book Three: Fire - Chapter Three: The Painted Lady",
+      "number": 3,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-12",
+      "id": 51759,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502467.jpg",
+      "name": "Book Three: Fire - Chapter Four: Sokka's Master",
+      "number": 4,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-19",
+      "id": 51760,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502468.jpg",
+      "name": "Book Three: Fire - Chapter Five: The Beach",
+      "number": 5,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-10-26",
+      "id": 51761,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502474.jpg",
+      "name": "Book Three: Fire - Chapter Six: The Avatar and the Firelord",
+      "number": 6,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-02",
+      "id": 51762,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502478.jpg",
+      "name": "Book Three: Fire - Chapter Seven: The Runaway",
+      "number": 7,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-09",
+      "id": 51763,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502481.jpg",
+      "name": "Book Three: Fire - Chapter Eighth: The Puppetmaster",
+      "number": 8,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-16",
+      "id": 51764,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502486.jpg",
+      "name": "Book Three: Fire - Chapter Nine: Nightmares and Daydreams",
+      "number": 9,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 51765,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/200/502491.jpg",
+      "name": "Book Three: Fire - Chapter Ten: The Day of Black Sun, Part 1: The Invasion",
+      "number": 10,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2007-11-30",
+      "id": 51766,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502874.jpg",
+      "name": "Book Three: Fire - Chapter Eleven: The Day of Black Sun, Part 2: The Eclipse",
+      "number": 11,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-14",
+      "id": 51767,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407254.jpg",
+      "name": "Book Three: Fire - Chapter Twelve: The Western Air Temple",
+      "number": 12,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-15",
+      "id": 51768,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/162/407258.jpg",
+      "name": "Book Three: Fire - Chapter Thirteen: The Firebending Masters",
+      "number": 13,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-16",
+      "id": 51769,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502885.jpg",
+      "name": "Book Three: Fire - Chapter Fourteen: The Boiling Rock, Part 1",
+      "number": 14,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-16",
+      "id": 51770,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502888.jpg",
+      "name": "Book Three: Fire - Chapter Fifteen: The Boiling Rock, Part 2",
+      "number": 15,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-17",
+      "id": 51771,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502893.jpg",
+      "name": "Book Three: Fire - Chapter Sixteen: The Southern Raiders",
+      "number": 16,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-18",
+      "id": 51772,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502896.jpg",
+      "name": "Book Three: Fire - Chapter Seventeen: The Ember Island Players",
+      "number": 17,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-19",
+      "id": 51773,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502903.jpg",
+      "name": "Book Three: Fire - Chapter Eighteen: Sozin's Comet, Part 1: The Phoenix King",
+      "number": 18,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-19",
+      "id": 51774,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502906.jpg",
+      "name": "Book Three: Fire - Chapter Nineteen: Sozin's Comet, Part 2: The Old Masters",
+      "number": 19,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-19",
+      "id": 51775,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502909.jpg",
+      "name": "Book Three: Fire - Chapter Twenty: Sozin's Comet, Part 3: Into the Inferno",
+      "number": 20,
+      "runtime": 30,
+      "season": 3
+    },
+    {
+      "airdate": "2008-07-19",
+      "id": 51776,
+      "image": "https://static.tvmaze.com/uploads/images/medium_landscape/201/502915.jpg",
+      "name": "Book Three: Fire - Chapter Twenty One: Sozin's Comet, Part 4: Avatar Aang",
+      "number": 21,
+      "runtime": 30,
+      "season": 3
+    }
+  ],
+  "fetchedAt": "2026-11-19T13:25:36Z",
   "genres": [
     "Action",
-    "Abenteuer",
+    "Adventure",
     "Fantasy"
   ],
+  "id": "tvmaze-555",
+  "live": true,
+  "overview": "Water. Earth. Fire. Air. Only the Avatar was the master of all four elements. Only he could stop the ruthless Fire Nation from conquering the world. But when the world needed him most, he disappeared. Until now... On the South Pole, a lone Water Tribe village struggles to survive. It's here that a young Waterbender named Katara and her warrior brother Sokka rescue a strange boy named Aang from a cavernous iceberg. Not only is Aang an Airbender--a race of people no one has seen in a century--but they soon discover that Aang is also the long lost Avatar. Now it's up to Katara and Sokka to make sure Aang faces his destiny to save the tribe--and himself. Did we mention he's only 12?",
+  "poster": "https://static.tvmaze.com/uploads/images/original_untouched/79/199224.jpg",
   "rating": 8.8,
   "runtime": 30,
-  "episodes": []
+  "schema": 1,
+  "source": "tvmaze",
+  "sourceId": "555",
+  "title": "Avatar: The Last Airbender",
+  "type": "series",
+  "year": 2005
 }
