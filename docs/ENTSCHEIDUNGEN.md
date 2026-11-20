@@ -166,6 +166,27 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Die Laufzeit kommt aus P2047 (ISO-8601) und ist der dritte Filter neben
   Genre und Jahrzehnt.
 
+## 2026-11-20 — Phase A: Diagnose vor Player-Reparatur
+
+- Der 3003-Fehler wurde am A52 über „Stranger Things“ → „Abspielen“ reproduziert;
+  acht Sekunden und weitere zehn Sekunden ohne automatische Erholung belegt.
+  Die installierte Versionsnummer wurde nicht behauptet, weil die Brücke sie
+  vor einer Fremdapp-Unterbrechung nicht auslesen konnte. Nachweise:
+  `docs/design/phase-a/REPRO-3003.md`.
+- Resolver, OkHttp und Media3 schreiben einen begrenzten, ausschließlich lokalen
+  Trace. Ein Network-Interceptor erfasst jeden Hop, Status, End-URL, Header und
+  höchstens 377 Bytes per `peekBody`; der eigentliche Medien-Body bleibt
+  unverändert. Tokens/Cookies werden nur als Namen plus kurzer SHA-256-
+  Fingerabdruck angezeigt, keine Telemetrie und keine automatische Ablage.
+- Media3 nutzt für diese Diagnose eine echte `OkHttpDataSource` über die
+  gemeinsame Netzwerkfabrik. Das Diagnose-Overlay ist standardmäßig aus und wird
+  über das Fehlerpanel oder D-Pad ↓ geöffnet. Automatische Kandidatenrotation
+  nach `onPlayerError` ist in diesem Diagnosepaket noch nicht als repariert
+  behauptet.
+- `PACKS.md` wurde aus dem Remote-Datenstand `f8ea68a` neu erzeugt. Der
+  statische Preflight-Fund „PACKS veraltet“ ist damit geschlossen; Compile,
+  Unit-Tests und quellgebundene Geräteprüfung stehen weiter aus.
+
 
 
 

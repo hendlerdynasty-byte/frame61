@@ -35,16 +35,16 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `kinox` | B | nein | html | nein | 2026-11-18T07:37:15Z | – | blocked_external |
 | `megakino` | A | nein | html | nein | 2026-11-18T07:37:16Z | – | blocked_external |
 | `moflix` | A | nein | api | ja | 2026-11-18T15:53:58Z | recorded | — |
-| `movie4k` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `netzkino` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `plex-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `pluto-tv` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `rakuten-free` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
-| `s-to` | A | nein | html | ja | 2026-11-18T07:37:16Z | recorded | — |
-| `serienstream` | A | nein | html | ja | 2026-11-18T07:37:25Z | recorded | — |
-| `streamcloud` | A | nein | html | ja | 2026-11-18T16:05:25Z | recorded | — |
-| `streamkiste` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `youtube` | C | ja | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `movie4k` | B | nein | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
+| `netzkino` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
+| `plex-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
+| `pluto-tv` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
+| `rakuten-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
+| `s-to` | A | nein | html | ja | 2026-11-19T13:25:32Z | recorded | — |
+| `serienstream` | A | nein | html | ja | 2026-11-19T13:25:34Z | recorded | — |
+| `streamcloud` | A | nein | html | ja | 2026-11-19T13:25:35Z | recorded | — |
+| `streamkiste` | A | nein | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
+| `youtube` | C | ja | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
 | `zdf` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 
 ## Hoster-Packs

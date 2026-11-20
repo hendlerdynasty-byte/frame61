@@ -1,5 +1,6 @@
 package de.hendler.frame61.scraper.engine
 
+import de.hendler.frame61.net.HttpClientFactory
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -12,7 +13,7 @@ import java.io.IOException
  * tests.
  */
 class PackHttpClient(
-    private val client: OkHttpClient = OkHttpClient()
+    private val client: OkHttpClient = HttpClientFactory.create()
 ) {
 
     @Throws(IOException::class)

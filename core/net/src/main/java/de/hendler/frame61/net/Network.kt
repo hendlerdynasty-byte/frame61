@@ -16,6 +16,7 @@ object HttpClientFactory {
             .readTimeout(8, java.util.concurrent.TimeUnit.SECONDS)
             .writeTimeout(8, java.util.concurrent.TimeUnit.SECONDS)
             .addInterceptor(ChainlinkLoggingInterceptor())
+            .addNetworkInterceptor(PlaybackDiagnosticsInterceptor())
             .build()
     }
 

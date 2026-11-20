@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.ui.CaptchaWebViewFrame
 
 /**
@@ -32,6 +33,7 @@ fun PlayerRoute(
     val state by viewModel.state.collectAsStateWithLifecycle()
     val subtitleScale by viewModel.subtitleScale.collectAsStateWithLifecycle()
     val captcha by viewModel.captchaRequest.collectAsStateWithLifecycle()
+    val diagnosticEvents by PlaybackDiagnostics.events.collectAsStateWithLifecycle()
 
     LaunchedEffect(item.id, episodeId, episodeNumber) {
         viewModel.start(
@@ -51,6 +53,7 @@ fun PlayerRoute(
             countdownSeconds = state.countdownSeconds,
             sourceNote = state.sourceNote,
             subtitleScale = subtitleScale,
+            diagnosticEvents = diagnosticEvents,
             onTogglePlay = viewModel::togglePlay,
             onSeekBack = { viewModel.seekBy(-10_000L) },
             onSeekForward = { viewModel.seekBy(10_000L) },

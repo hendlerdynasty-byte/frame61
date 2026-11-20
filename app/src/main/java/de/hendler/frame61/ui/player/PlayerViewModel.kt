@@ -7,6 +7,7 @@ import androidx.media3.exoplayer.ExoPlayer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.data.ResumeRepository
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
 import de.hendler.frame61.player.PlayerUiState
@@ -91,6 +92,7 @@ class PlayerViewModel @Inject constructor(
         this.episodeId = episodeId
         this.mirrors = fallbackCandidates
         this.mirrorIndex = 0
+        PlaybackDiagnostics.beginSession(title, episodeNumber)
 
         mediaPlayer.attach()
         mediaPlayer.onFrame = ::onFrame
@@ -123,6 +125,17 @@ class PlayerViewModel @Inject constructor(
         }
         mirrorIndex = index
         lastPositionMs = startAtMs
+        PlaybackDiagnostics.record(
+            "RESOLVER",
+            "Öffne Kandidat ${index + 1}/${mirrors.size}",
+            url = mirror.url,
+            details = mapOf(
+                "sourceId" to mirror.sourceId,
+                "hosterId" to (mirror.hosterId ?: "-"),
+                "quality" to mirror.quality,
+                "resumeMs" to startAtMs.toString()
+            )
+        )
         mediaPlayer.open(mirror.url, startAtMs = startAtMs)
         watchdog.reportFrame(startAtMs)
         _state.update { it.copy(loading = false, fatal = null) }

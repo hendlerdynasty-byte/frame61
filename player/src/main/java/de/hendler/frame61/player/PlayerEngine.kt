@@ -1,6 +1,7 @@
 package de.hendler.frame61.player
 
 import android.content.Context
+import android.util.Log
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MimeTypes
@@ -9,7 +10,11 @@ import androidx.media3.common.Player
 import androidx.media3.common.TrackSelectionOverride
 import androidx.media3.common.Tracks
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
+import androidx.media3.datasource.okhttp.OkHttpDataSource
+import de.hendler.frame61.net.HttpClientFactory
+import de.hendler.frame61.net.PlaybackDiagnostics
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -45,9 +50,16 @@ class Media3Frame61Player(
 ) {
 
     private val trackSelector = DefaultTrackSelector(context)
+    private val mediaSourceFactory = DefaultMediaSourceFactory(context)
+        .setDataSourceFactory(OkHttpDataSource.Factory(HttpClientFactory.create()))
     private val player: ExoPlayer = ExoPlayer.Builder(context)
         .setTrackSelector(trackSelector)
+        .setMediaSourceFactory(mediaSourceFactory)
         .build()
+
+    init {
+        PlaybackDiagnostics.sink = { event -> Log.d(DIAG_TAG, event.asLogLine()) }
+    }
 
     private val _state = MutableStateFlow(PlayerUiState())
     val state: StateFlow<PlayerUiState> = _state.asStateFlow()
@@ -63,11 +75,44 @@ class Media3Frame61Player(
     var onFrame: ((positionMs: Long, durationMs: Long) -> Unit)? = null
 
     private val listener = object : Player.Listener {
-        override fun onPlaybackStateChanged(playbackState: Int) = publish()
+        override fun onPlaybackStateChanged(playbackState: Int) {
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Media3-Zustand $playbackState",
+                details = mapOf("state" to stateName(playbackState))
+            )
+            publish()
+        }
+
         override fun onIsPlayingChanged(isPlaying: Boolean) = publish()
-        override fun onTracksChanged(tracks: Tracks) = publish()
-        override fun onRenderedFirstFrame() = publish()
+
+        override fun onTracksChanged(tracks: Tracks) {
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Spuren aktualisiert",
+                details = mapOf(
+                    "video" to tracks.groups.count { it.type == C.TRACK_TYPE_VIDEO }.toString(),
+                    "audio" to tracks.groups.count { it.type == C.TRACK_TYPE_AUDIO }.toString(),
+                    "text" to tracks.groups.count { it.type == C.TRACK_TYPE_TEXT }.toString()
+                )
+            )
+            publish()
+        }
+
+        override fun onRenderedFirstFrame() {
+            PlaybackDiagnostics.record("PLAYER", "Erstes Frame gerendert")
+            publish()
+        }
+
         override fun onPlayerError(error: PlaybackException) {
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Media3-Fehler ${error.errorCodeName}",
+                details = mapOf(
+                    "errorCode" to error.errorCode.toString(),
+                    "cause" to causeChain(error)
+                )
+            )
             _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
         }
     }
@@ -88,12 +133,27 @@ class Media3Frame61Player(
                 url.contains(".mp4", ignoreCase = true) -> MimeTypes.VIDEO_MP4
                 else -> null
             }
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Media3 öffnet Kandidaten",
+                url = url,
+                details = mapOf(
+                    "mimeType" to (inferred ?: "sniffing"),
+                    "startAtMs" to startAtMs.toString(),
+                    "engine" to "ExoPlayer/Media3 + OkHttpDataSource"
+                )
+            )
             val builder = MediaItem.Builder().setUri(url)
             inferred?.let { builder.setMimeType(it) }
             player.setMediaItem(builder.build(), startAtMs.coerceAtLeast(0L))
             player.prepare()
             player.play()
         }.onFailure { error ->
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Media3-Setup fehlgeschlagen: ${error.javaClass.simpleName}",
+                url = url
+            )
             _state.value = _state.value.copy(
                 error = error.message ?: error.javaClass.simpleName,
                 isPlaying = false
@@ -116,6 +176,7 @@ class Media3Frame61Player(
     }
 
     fun release() {
+        PlaybackDiagnostics.record("PLAYER", "Media3 freigegeben")
         player.removeListener(listener)
         player.release()
     }
@@ -187,4 +248,22 @@ class Media3Frame61Player(
                 )
             }
         }
+
+    private fun stateName(state: Int): String = when (state) {
+        Player.STATE_IDLE -> "IDLE"
+        Player.STATE_BUFFERING -> "BUFFERING"
+        Player.STATE_READY -> "READY"
+        Player.STATE_ENDED -> "ENDED"
+        else -> "UNKNOWN"
+    }
+
+    private fun causeChain(error: PlaybackException): String =
+        generateSequence(error.cause) { it.cause }
+            .take(4)
+            .joinToString(" <- ") { it.javaClass.simpleName }
+            .ifBlank { "none" }
+
+    private companion object {
+        const val DIAG_TAG = "Frame61Diag"
+    }
 }

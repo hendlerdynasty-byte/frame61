@@ -1,5 +1,6 @@
 package de.hendler.frame61.resolver
 
+import de.hendler.frame61.net.HttpClientFactory
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
@@ -8,7 +9,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 
 /** Network [BodyFetcher]. All errors surface as exceptions to the caller. */
 class OkHttpBodyFetcher(
-    private val client: OkHttpClient = OkHttpClient()
+    private val client: OkHttpClient = HttpClientFactory.create()
 ) : BodyFetcher {
 
     override suspend fun get(url: String, headers: Map<String, String>): String =

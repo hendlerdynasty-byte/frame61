@@ -9,6 +9,8 @@ import androidx.compose.ui.res.painterResource
 import de.hendler.frame61.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -45,14 +47,17 @@ import androidx.compose.ui.input.key.type
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.AspectRatioFrameLayout
 import androidx.media3.ui.PlayerView
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
+import de.hendler.frame61.net.PlaybackTraceEvent
 import de.hendler.frame61.player.PlayerUiState
 import kotlinx.coroutines.delay
 
@@ -74,6 +79,7 @@ fun PlayerScreen(
     countdownSeconds: Int? = null,
     sourceNote: String? = null,
     subtitleScale: Float = 1.0f,
+    diagnosticEvents: List<PlaybackTraceEvent> = emptyList(),
     onTogglePlay: () -> Unit = {},
     onSeekBack: () -> Unit = {},
     onSeekForward: () -> Unit = {},
@@ -87,6 +93,7 @@ fun PlayerScreen(
     val skin = LocalSkin.current
     var controlsVisible by remember { mutableStateOf(true) }
     var infoVisible by remember { mutableStateOf(false) }
+    var diagnosticsVisible by remember { mutableStateOf(false) }
     var interaction by remember { mutableIntStateOf(0) }
     var seekDirection by remember { mutableIntStateOf(0) }
     var sourceVisible by remember(sourceNote) { mutableStateOf(sourceNote != null) }
@@ -146,6 +153,10 @@ fun PlayerScreen(
                             infoVisible = !infoVisible
                             true
                         }
+                        android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                            diagnosticsVisible = !diagnosticsVisible
+                            true
+                        }
                         else -> false
                     }
                 }
@@ -188,6 +199,7 @@ fun PlayerScreen(
             ErrorPanel(
                 message = message,
                 onRetry = onRetry,
+                onDiagnostics = { diagnosticsVisible = true },
                 modifier = Modifier.align(Alignment.Center)
             )
         }
@@ -281,12 +293,25 @@ fun PlayerScreen(
                 )
             }
         }
+
+        if (diagnosticsVisible) {
+            DiagnosticsPanel(
+                events = diagnosticEvents,
+                onClose = { diagnosticsVisible = false },
+                modifier = Modifier.fillMaxSize()
+            )
+        }
     }
 }
 
 /** A failed stream must be visible and recoverable, never a black screen. */
 @Composable
-private fun ErrorPanel(message: String, onRetry: () -> Unit, modifier: Modifier = Modifier) {
+private fun ErrorPanel(
+    message: String,
+    onRetry: () -> Unit,
+    onDiagnostics: () -> Unit,
+    modifier: Modifier = Modifier
+) {
     val skin = LocalSkin.current
     Surface(modifier = modifier, color = skin.colors.surface) {
         Column(modifier = Modifier.padding(24.dp)) {
@@ -300,6 +325,58 @@ private fun ErrorPanel(message: String, onRetry: () -> Unit, modifier: Modifier 
             )
             Spacer(Modifier.height(16.dp))
             Button(onClick = onRetry) { Text(text = "Erneut versuchen") }
+            Text(
+                text = "Diagnose anzeigen",
+                color = skin.colors.textPrimary,
+                modifier = Modifier
+                    .padding(top = 12.dp)
+                    .tvFocusable(id = "show-diagnostics", onClick = onDiagnostics)
+            )
+        }
+    }
+}
+
+@Composable
+private fun DiagnosticsPanel(
+    events: List<PlaybackTraceEvent>,
+    onClose: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val skin = LocalSkin.current
+    BackHandler(onBack = onClose)
+    Surface(modifier = modifier.padding(24.dp), color = skin.colors.canvas.copy(alpha = 0.98f)) {
+        Column(modifier = Modifier.fillMaxSize().padding(20.dp)) {
+            Text("Wiedergabe-Diagnose", style = MaterialTheme.typography.titleLarge)
+            Text(
+                "Nur lokal · neueste zuerst · D-Pad ↓ oder Zurück schließt",
+                color = skin.colors.textSecondary,
+                style = MaterialTheme.typography.bodySmall
+            )
+            Text(
+                "Diagnose schließen",
+                color = skin.colors.primary,
+                modifier = Modifier
+                    .padding(vertical = 12.dp)
+                    .tvFocusable(id = "close-diagnostics", onClick = onClose)
+            )
+            if (events.isEmpty()) {
+                Text("Noch keine Diagnoseereignisse.", color = skin.colors.textPrimary)
+            } else {
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize(),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    items(events.takeLast(80).reversed()) { event ->
+                        Text(
+                            text = event.asLogLine(),
+                            color = skin.colors.textPrimary,
+                            fontFamily = FontFamily.Monospace,
+                            fontSize = 11.sp,
+                            lineHeight = 15.sp
+                        )
+                    }
+                }
+            }
         }
     }
 }
