@@ -13,7 +13,14 @@ data class MirrorCandidate(
     val quality: String = "unknown",
     val hosterId: String? = null,
     val healthScore: Double = 0.0,
-    val legalFree: Boolean = false
+    val legalFree: Boolean = false,
+    /** Propagated to every media request, including playlists, keys and segments. */
+    val requestHeaders: Map<String, String> = emptyMap(),
+    val cookies: String? = null,
+    val mimeType: String? = null,
+    val bitrate: Int? = null,
+    val width: Int? = null,
+    val height: Int? = null
 )
 
 /**

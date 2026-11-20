@@ -132,14 +132,18 @@ fun PlayerScreen(
     DisposableEffect(Unit) {
         PlayerKeyRouter.handler = { event ->
             when (event.action) {
-                android.view.KeyEvent.ACTION_DOWN -> if (diagnosticsVisible) {
+                android.view.KeyEvent.ACTION_DOWN -> if (event.keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+                    false
+                } else if (diagnosticsVisible) {
                     true
                 } else {
                     controlsVisible = true
                     interaction++
                     false
                 }
-                android.view.KeyEvent.ACTION_UP -> if (diagnosticsVisible) {
+                android.view.KeyEvent.ACTION_UP -> if (event.keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+                    false
+                } else if (diagnosticsVisible) {
                     when (event.keyCode) {
                         android.view.KeyEvent.KEYCODE_BACK -> diagnosticsVisible = false
                         android.view.KeyEvent.KEYCODE_DPAD_UP -> diagnosticsScope.launch {
@@ -188,7 +192,7 @@ fun PlayerScreen(
     }
 
     // First back hides the overlay, a second back leaves the player.
-    BackHandler(enabled = controlsVisible) {
+    BackHandler(enabled = controlsVisible && !diagnosticsVisible) {
         controlsVisible = false
         infoVisible = false
     }

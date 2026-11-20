@@ -9,9 +9,13 @@ import java.io.IOException
  * OkHttp client factory — shared across all modules
  */
 object HttpClientFactory {
+    const val DEFAULT_USER_AGENT =
+        "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 " +
+            "(KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
 
     fun create(): OkHttpClient {
         return OkHttpClient.Builder()
+            .cookieJar(Frame61CookieJar)
             .connectTimeout(8, java.util.concurrent.TimeUnit.SECONDS)
             .readTimeout(8, java.util.concurrent.TimeUnit.SECONDS)
             .writeTimeout(8, java.util.concurrent.TimeUnit.SECONDS)
@@ -22,6 +26,7 @@ object HttpClientFactory {
 
     fun createForWebView(): OkHttpClient {
         return OkHttpClient.Builder()
+            .cookieJar(Frame61CookieJar)
             .connectTimeout(12, java.util.concurrent.TimeUnit.SECONDS)
             .readTimeout(12, java.util.concurrent.TimeUnit.SECONDS)
             .build()

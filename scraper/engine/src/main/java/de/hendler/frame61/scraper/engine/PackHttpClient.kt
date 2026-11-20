@@ -25,6 +25,8 @@ class PackHttpClient(
     ): String {
         val url = buildUrl(pack, rule, params)
         val builder = Request.Builder().url(url)
+            .header("User-Agent", HttpClientFactory.DEFAULT_USER_AGENT)
+            .header("Referer", pack.baseUrl)
         rule.headers.forEach { (key, value) -> builder.header(key, value) }
         if (!cookies.isNullOrBlank()) builder.header("Cookie", cookies)
 

@@ -13,13 +13,16 @@ private class FakeFetcher(
     private val bodies: Map<String, String> = emptyMap()
 ) : BodyFetcher {
     val calls = mutableListOf<String>()
+    val headersByUrl = mutableMapOf<String, Map<String, String>>()
     override suspend fun get(url: String, headers: Map<String, String>): String {
         calls += "GET $url"
+        headersByUrl[url] = headers
         return bodies[url] ?: ""
     }
 
     override suspend fun post(url: String, body: String, headers: Map<String, String>): String {
         calls += "POST $url"
+        headersByUrl[url] = headers
         return bodies[url] ?: ""
     }
 }
@@ -102,7 +105,10 @@ class HosterResolverTest {
 
         // with cookies the same pack resolves
         val ok = resolver.resolve("https://voe.sx/e/1", cookies = "a=b")
-        assertEquals(HosterOutcome.Resolved("/x/index.m3u8", 2), ok)
+        assertTrue(ok is HosterOutcome.Resolved)
+        assertEquals("/x/index.m3u8", (ok as HosterOutcome.Resolved).url)
+        assertEquals("a=b", ok.cookies)
+        assertEquals("a=b", ok.requestHeaders["Cookie"])
     }
 
     @Test
@@ -160,8 +166,10 @@ class HosterResolverTest {
             )
         )
         val out = HosterResolver(listOf(p), fetcher).resolve("https://h.io/e/1")
-        assertEquals(HosterOutcome.Resolved("https://cdn/x.m3u8", 3), out)
+        assertEquals("https://cdn/x.m3u8", (out as HosterOutcome.Resolved).url)
         assertTrue(fetcher.calls.contains("POST https://h.io/api"))
+        assertEquals("https://h.io/e/1", fetcher.headersByUrl["https://h.io/api"]?.get("Referer"))
+        assertEquals(HosterResolver.DEFAULT_USER_AGENT, fetcher.headersByUrl["https://h.io/api"]?.get("User-Agent"))
     }
 
     @Test
@@ -195,7 +203,7 @@ class HosterResolverTest {
         }
         val out = HosterResolver(listOf(p), FakeFetcher(), evaluator)
             .resolve("https://host.example/e/1")
-        assertEquals(HosterOutcome.Resolved("https://cdn/x/abc123.m3u8", 2), out)
+        assertEquals("https://cdn/x/abc123.m3u8", (out as HosterOutcome.Resolved).url)
     }
 
     @Test

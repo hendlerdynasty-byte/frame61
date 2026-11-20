@@ -6,6 +6,7 @@ import android.webkit.CookieManager
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -25,6 +26,7 @@ import androidx.compose.ui.viewinterop.AndroidView
 import de.hendler.frame61.playback.CaptchaResult
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlinx.coroutines.withTimeoutOrNull
 import org.json.JSONTokener
 import kotlin.coroutines.resume
 
@@ -56,31 +58,41 @@ fun CaptchaWebViewFrame(
     DisposableEffect(bridge) {
         onDispose { bridge.dispose() }
     }
+    DisposableEffect(webView) {
+        onDispose { webView?.destroy() }
+    }
 
     LaunchedEffect(webView, url) {
         val view = webView ?: return@LaunchedEffect
-        repeat(20) { second ->
-            delay(1_000)
-            if (finished) return@LaunchedEffect
-            val state = readState(view, finalUrl) ?: return@repeat
-            val cookies = CookieManager.getInstance().getCookie(finalUrl)
-                ?.takeIf { it.isNotBlank() }
-            if (state.streamUrl != null || (cookies != null && second >= 3)) {
-                finished = true
-                onResult(
-                    CaptchaResult(
-                        token = state.token,
-                        cookies = cookies,
-                        streamUrl = state.streamUrl
+        withTimeoutOrNull(20_000L) {
+            repeat(20) { second ->
+                delay(1_000)
+                if (finished) return@LaunchedEffect
+                val state = readState(view, finalUrl) ?: return@repeat
+                val cookies = CookieManager.getInstance().getCookie(finalUrl)
+                    ?.takeIf { it.isNotBlank() }
+                if (state.streamUrl != null || (cookies != null && second >= 3)) {
+                    finished = true
+                    onResult(
+                        CaptchaResult(
+                            token = state.token,
+                            cookies = cookies,
+                            streamUrl = state.streamUrl
+                        )
                     )
-                )
-                return@LaunchedEffect
+                    return@LaunchedEffect
+                }
             }
         }
         if (!finished) {
             finished = true
             onCancel()
         }
+    }
+
+    BackHandler(enabled = !finished) {
+        finished = true
+        onCancel()
     }
 
     Box(modifier = modifier.fillMaxSize()) {

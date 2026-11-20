@@ -9,6 +9,7 @@ import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
 import androidx.media3.common.TrackSelectionOverride
 import androidx.media3.common.Tracks
+import androidx.media3.datasource.ResolvingDataSource
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
@@ -39,6 +40,12 @@ data class PlayerUiState(
 
 data class TrackLabel(val id: String, val label: String, val language: String?)
 
+/** Preserve Range and other DataSpec headers while adding resolver context. */
+internal fun mergeMediaRequestHeaders(
+    mediaHeaders: Map<String, String>,
+    dataSpecHeaders: Map<String, String>
+): Map<String, String> = mediaHeaders + dataSpecHeaders
+
 /**
  * Media3 wrapper.
  *
@@ -46,15 +53,12 @@ data class TrackLabel(val id: String, val label: String, val language: String?)
  * place that reports playback progress, so the watchdog has one source of truth.
  */
 class Media3Frame61Player(
-    context: Context
+    private val context: Context
 ) {
 
     private val trackSelector = DefaultTrackSelector(context)
-    private val mediaSourceFactory = DefaultMediaSourceFactory(context)
-        .setDataSourceFactory(OkHttpDataSource.Factory(HttpClientFactory.create()))
     private val player: ExoPlayer = ExoPlayer.Builder(context)
         .setTrackSelector(trackSelector)
-        .setMediaSourceFactory(mediaSourceFactory)
         .build()
 
     init {
@@ -74,6 +78,7 @@ class Media3Frame61Player(
 
     /** Called on every published frame tick — the watchdog consumes this. */
     var onFrame: ((positionMs: Long, durationMs: Long) -> Unit)? = null
+    var onError: ((PlaybackException) -> Unit)? = null
 
     private val listener = object : Player.Listener {
         override fun onPlaybackStateChanged(playbackState: Int) {
@@ -118,6 +123,7 @@ class Media3Frame61Player(
                 )
             )
             _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
+            onError?.invoke(error)
         }
     }
 
@@ -126,7 +132,13 @@ class Media3Frame61Player(
         publish()
     }
 
-    fun open(url: String, mimeType: String? = null, startAtMs: Long = 0L) {
+    fun open(
+        url: String,
+        mimeType: String? = null,
+        startAtMs: Long = 0L,
+        requestHeaders: Map<String, String> = emptyMap(),
+        cookies: String? = null
+    ) {
         // A missing media-source class used to kill the whole process
         // (ClassNotFoundException: HlsMediaSource$Factory, A52 15:14:32).
         // The dependency is fixed, but a broken build must never crash the UI:
@@ -146,12 +158,31 @@ class Media3Frame61Player(
                 details = mapOf(
                     "mimeType" to (inferred ?: "sniffing"),
                     "startAtMs" to startAtMs.toString(),
+                    "headerNames" to requestHeaders.keys.sorted().joinToString(","),
+                    "cookies" to (cookies != null).toString(),
                     "engine" to "ExoPlayer/Media3 + OkHttpDataSource"
                 )
             )
             val builder = MediaItem.Builder().setUri(url)
             inferred?.let { builder.setMimeType(it) }
-            player.setMediaItem(builder.build(), startAtMs.coerceAtLeast(0L))
+            val mediaHeaders = if (cookies.isNullOrBlank()) {
+                requestHeaders
+            } else {
+                requestHeaders + mapOf("Cookie" to cookies)
+            }
+            val okHttpFactory = OkHttpDataSource.Factory(HttpClientFactory.create())
+            val resolvingFactory = ResolvingDataSource.Factory(
+                okHttpFactory,
+                ResolvingDataSource.Resolver { dataSpec ->
+                    dataSpec.withRequestHeaders(
+                        mergeMediaRequestHeaders(mediaHeaders, dataSpec.requestHeaders)
+                    )
+                }
+            )
+            val source = DefaultMediaSourceFactory(context)
+                .setDataSourceFactory(resolvingFactory)
+                .createMediaSource(builder.build())
+            player.setMediaSource(source, startAtMs.coerceAtLeast(0L))
             player.prepare()
             player.play()
         }.onFailure { error ->
