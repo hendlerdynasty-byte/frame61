@@ -7,7 +7,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 - Source-Packs: **31**
 - legal-frei: **13**, Grauzone Tier A/B: **19**
-- live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
+- live verifiziert: **9** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmstarts, s-to, serienstream)
 - Fixtures: 12 recorded, 8 synthetic, 11 ohne
 - Hoster-Packs: **11** (live verifiziert: 2)
 
@@ -27,14 +27,14 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `dokujunkies` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmfans` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `filmo` | A | nein | html | ja | 2026-11-18T07:37:14Z | recorded | — |
-| `filmpalast` | A | nein | html | ja | 2026-11-18T07:37:14Z | recorded | — |
+| `filmpalast` | A | nein | html | nein | 2026-11-20T20:34:18Z | recorded | BLOCKED |
 | `filmstarts` | B | ja | api | ja | 2026-11-18T07:37:14Z | recorded | — |
 | `hdfilme` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
 | `kika` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 | `kinokiste` | A | nein | html | nein | 2026-11-18T07:37:15Z | – | blocked_external |
 | `kinox` | B | nein | html | nein | 2026-11-18T07:37:15Z | – | blocked_external |
 | `megakino` | A | nein | html | nein | 2026-11-18T07:37:16Z | – | blocked_external |
-| `moflix` | A | nein | api | ja | 2026-11-18T15:53:58Z | recorded | — |
+| `moflix` | A | nein | api | nein | 2026-11-20T20:34:18Z | recorded | runtime_required |
 | `movie4k` | B | nein | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
 | `netzkino` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
 | `plex-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
@@ -42,7 +42,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `rakuten-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
 | `s-to` | A | nein | html | ja | 2026-11-19T13:25:32Z | recorded | — |
 | `serienstream` | A | nein | html | ja | 2026-11-19T13:25:34Z | recorded | — |
-| `streamcloud` | A | nein | html | ja | 2026-11-19T13:25:35Z | recorded | — |
+| `streamcloud` | A | nein | html | nein | 2026-11-20T20:34:18Z | recorded | runtime_required |
 | `streamkiste` | A | nein | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
 | `youtube` | C | ja | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
 | `zdf` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |

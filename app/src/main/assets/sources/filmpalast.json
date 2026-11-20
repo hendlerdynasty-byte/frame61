@@ -34,11 +34,11 @@
       }
     ]
   },
-  "verified": true,
-  "last_check": "2026-11-18T07:37:14Z",
+  "verified": false,
+  "last_check": "2026-11-20T20:34:18Z",
   "check": {
-    "status": "verified",
-    "reason": "",
+    "status": "BLOCKED",
+    "reason": "Detailseite liefert HTTP 200 mit 49 Bytes: Verbindungsfehler. Bitte später erneut versuchen. App und unabhängiger Abruf",
     "checked": [
       "search.resultSelector",
       "search.titleSelector",

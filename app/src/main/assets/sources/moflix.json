@@ -16,13 +16,22 @@
     "titlePath": "name",
     "yearPath": "year",
     "typePath": "type",
+    "playbackIdPath": "primary_video.id",
     "pageLimit": 20
   },
-  "verified": true,
-  "last_check": "2026-11-18T15:53:58Z",
+  "streams": {
+    "endpoint": "/watch/{titleId}",
+    "format": "api",
+    "jsonEmbedded": true,
+    "streamPath": "watchPage.alternative_videos",
+    "streamQualityPath": "quality",
+    "streamLangPath": "language"
+  },
+  "verified": false,
+  "last_check": "2026-11-20T20:34:18Z",
   "check": {
-    "status": "verified",
-    "reason": "",
+    "status": "runtime_required",
+    "reason": "Suche und Watch-Kette belegt; Abspielen auf A52 noch nicht nachgewiesen",
     "checked": [
       "search.jsonPath",
       "search.idPath",

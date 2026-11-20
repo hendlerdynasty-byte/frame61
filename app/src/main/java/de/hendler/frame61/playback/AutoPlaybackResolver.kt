@@ -170,7 +170,12 @@ class AutoPlaybackResolver @Inject constructor(
         }
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
             ?: return emptyList()
-        val streams = interpreter.streams(pack, hit.id, episodeNumber.toString(), cookies)
+        val streams = interpreter.streams(
+            pack,
+            hit.playbackId ?: hit.id,
+            episodeNumber.toString(),
+            cookies
+        )
         return streams.mapNotNull { stream ->
             val resolved = resolveHoster(pack, stream, sessionId)
             resolved?.let {
