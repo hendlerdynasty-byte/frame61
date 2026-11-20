@@ -179,6 +179,7 @@ class PlaybackDiagnosticsTest {
             val event = PlaybackDiagnostics.events.value.single { it.status == 200 }
             assertEquals("HLS", event.details["container"])
             assertEquals("gzip", event.details["contentEncoding"])
+            assertEquals("-", event.details["sniffError"])
         } finally {
             server.shutdown()
         }

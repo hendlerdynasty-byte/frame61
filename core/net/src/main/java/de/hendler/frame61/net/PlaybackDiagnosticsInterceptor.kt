@@ -64,8 +64,9 @@ internal fun sniffForDiagnostics(response: Response): ByteArray {
     val peekBytes = if (isGzip) MAX_GZIP_BYTES else MAX_SNIFF_BYTES
     val raw = response.peekBody(peekBytes.toLong()).use { it.bytes() }
     return if (isGzip) {
-        GzipSource(Buffer().write(raw)).buffer().use {
-            it.readByteArray(MAX_SNIFF_BYTES.toLong())
+        GzipSource(Buffer().write(raw)).buffer().use { source ->
+            source.request(MAX_SNIFF_BYTES.toLong())
+            source.readByteArray(minOf(MAX_SNIFF_BYTES.toLong(), source.buffer.size))
         }
     } else {
         raw
