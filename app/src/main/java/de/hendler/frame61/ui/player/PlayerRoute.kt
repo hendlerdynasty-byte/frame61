@@ -46,6 +46,7 @@ fun PlayerRoute(
         PlayerScreen(
             state = state.ui,
             player = viewModel.player,
+            fallbackView = viewModel.fallbackPlayerView,
             countdownSeconds = state.countdownSeconds,
             sourceNote = state.sourceNote,
             subtitleScale = subtitleScale,

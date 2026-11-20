@@ -84,6 +84,7 @@ class PlayerViewModel @Inject constructor(
 
     /** The Media3 instance the [PlayerScreen] renders into. */
     val player: ExoPlayer get() = mediaPlayer.exoPlayer
+    val fallbackPlayerView: android.view.SurfaceView get() = mediaPlayer.fallbackView
 
     fun start(
         profileId: Long,

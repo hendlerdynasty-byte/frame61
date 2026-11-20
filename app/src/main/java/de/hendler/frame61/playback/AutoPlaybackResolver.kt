@@ -10,6 +10,7 @@ import de.hendler.frame61.resolver.HosterPack
 import de.hendler.frame61.resolver.HosterPackValidator
 import de.hendler.frame61.resolver.HosterResolver
 import de.hendler.frame61.resolver.MirrorCandidate
+import de.hendler.frame61.resolver.MirrorSelector
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
 import de.hendler.frame61.scraper.engine.PackInterpreter
 import de.hendler.frame61.scraper.engine.PackLoader
@@ -283,14 +284,7 @@ class AutoPlaybackResolver @Inject constructor(
     }
 
     private fun order(candidates: List<MirrorCandidate>): List<MirrorCandidate> =
-        candidates.distinctBy { it.url }.sortedWith(
-            compareByDescending<MirrorCandidate> { it.legalFree }
-                .thenByDescending { it.lang.startsWith("de", ignoreCase = true) }
-                .thenByDescending {
-                    it.quality.filter(Char::isDigit).toIntOrNull() ?: 0
-                }
-                .thenByDescending { it.healthScore }
-        )
+        MirrorSelector.order(candidates.distinctBy { it.url })
 
     companion object {
         private const val TAG = "Frame61Resolve"

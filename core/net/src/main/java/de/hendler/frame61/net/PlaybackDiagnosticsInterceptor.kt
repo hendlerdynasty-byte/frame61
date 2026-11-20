@@ -37,6 +37,12 @@ class PlaybackDiagnosticsInterceptor : Interceptor {
         val elapsedMs = (System.nanoTime() - started) / 1_000_000L
         val sniff = runCatching { sniffForDiagnostics(response) }
         val firstBytes = sniff.getOrNull()
+        val container = firstBytes?.let(ContainerSniffer::detect) ?: "SNIFF_FAILED"
+        val hlsDetails = if (container == "HLS" && firstBytes != null) {
+            HlsVariantParser.summarize(firstBytes.toString(Charsets.UTF_8))
+        } else {
+            emptyMap()
+        }
         PlaybackDiagnostics.record(
             category = "HTTP",
             message = "Antwort ${response.code}",
@@ -49,11 +55,11 @@ class PlaybackDiagnosticsInterceptor : Interceptor {
                 "elapsedMs" to "$elapsedMs",
                 "contentType" to (response.header("Content-Type") ?: "unknown"),
                 "contentEncoding" to (response.header("Content-Encoding") ?: "identity"),
-                "container" to (firstBytes?.let(ContainerSniffer::detect) ?: "SNIFF_FAILED"),
+                "container" to container,
                 "sniffBytes" to (firstBytes?.size?.toString() ?: "0"),
                 "sniffError" to (sniff.exceptionOrNull()?.javaClass?.simpleName ?: "-"),
                 "redirectFrom" to (response.priorResponse?.request?.url?.toString()?.let(PlaybackDiagnostics::safeUrl) ?: "-")
-            )
+            ) + hlsDetails
         )
         return response
     }
@@ -61,12 +67,15 @@ class PlaybackDiagnosticsInterceptor : Interceptor {
 
 internal fun sniffForDiagnostics(response: Response): ByteArray {
     val isGzip = response.header("Content-Encoding")?.equals("gzip", ignoreCase = true) == true
-    val peekBytes = if (isGzip) MAX_GZIP_BYTES else MAX_SNIFF_BYTES
+    val isManifest = response.request.url.encodedPath.endsWith(".m3u8", ignoreCase = true) ||
+        response.header("Content-Type")?.contains("mpegurl", ignoreCase = true) == true
+    val peekBytes = if (isGzip || isManifest) MAX_MANIFEST_BYTES else MAX_SNIFF_BYTES
+    val decodedLimit = if (isManifest) MAX_MANIFEST_BYTES else MAX_SNIFF_BYTES
     val raw = response.peekBody(peekBytes.toLong()).use { it.bytes() }
     return if (isGzip) {
         GzipSource(Buffer().write(raw)).buffer().use { source ->
-            source.request(MAX_SNIFF_BYTES.toLong())
-            source.readByteArray(minOf(MAX_SNIFF_BYTES.toLong(), source.buffer.size))
+            source.request(decodedLimit.toLong())
+            source.readByteArray(minOf(decodedLimit.toLong(), source.buffer.size))
         }
     } else {
         raw
@@ -74,4 +83,4 @@ internal fun sniffForDiagnostics(response: Response): ByteArray {
 }
 
 private const val MAX_SNIFF_BYTES = 377
-private const val MAX_GZIP_BYTES = 65_536
+private const val MAX_MANIFEST_BYTES = 65_536

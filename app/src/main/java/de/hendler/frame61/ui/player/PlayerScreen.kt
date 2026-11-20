@@ -81,6 +81,7 @@ import kotlinx.coroutines.launch
 fun PlayerScreen(
     state: PlayerUiState,
     player: ExoPlayer?,
+    fallbackView: android.view.SurfaceView? = null,
     countdownSeconds: Int? = null,
     sourceNote: String? = null,
     subtitleScale: Float = 1.0f,
@@ -202,7 +203,12 @@ fun PlayerScreen(
             .fillMaxSize()
             .background(Color.Black)
     ) {
-        if (player != null) {
+        if (state.engine == "Android MediaPlayer" && fallbackView != null) {
+            androidx.compose.ui.viewinterop.AndroidView(
+                modifier = Modifier.fillMaxSize(),
+                factory = { fallbackView }
+            )
+        } else if (player != null) {
             androidx.compose.ui.viewinterop.AndroidView(
                 modifier = Modifier.fillMaxSize(),
                 factory = { ctx -> createPlayerView(ctx, subtitleScale) },

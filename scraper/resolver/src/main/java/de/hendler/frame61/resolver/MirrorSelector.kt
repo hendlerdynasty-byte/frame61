@@ -34,6 +34,8 @@ object MirrorSelector {
             compareByDescending<MirrorCandidate> { it.healthScore }
                 .thenBy { if (it.lang.equals(preferredLang, ignoreCase = true)) 0 else 1 }
                 .thenByDescending { qualityRank(it.quality) }
+                .thenByDescending { it.height ?: 0 }
+                .thenByDescending { it.bitrate ?: 0 }
                 .thenByDescending { if (it.legalFree) 1 else 0 }
         )
 

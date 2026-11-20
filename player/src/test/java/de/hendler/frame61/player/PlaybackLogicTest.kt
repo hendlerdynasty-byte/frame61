@@ -90,6 +90,16 @@ class PlaybackLogicTest {
     }
 
     @Test
+    fun `required containers are inferred even with query parameters`() {
+        assertEquals("application/x-mpegURL", inferMediaMimeType("https://x/master.m3u8?token=1"))
+        assertEquals("video/mp4", inferMediaMimeType("https://x/movie.mp4?token=1"))
+        assertEquals("video/x-matroska", inferMediaMimeType("https://x/movie.mkv?token=1"))
+        assertEquals("video/x-msvideo", inferMediaMimeType("https://x/movie.avi?token=1"))
+        assertEquals("video/mp2t", inferMediaMimeType("https://x/segment.ts?token=1"))
+        assertEquals("video/custom", inferMediaMimeType("https://x/movie.bin", "video/custom"))
+    }
+
+    @Test
     fun `media headers preserve range and carry resolver context`() {
         val merged = mergeMediaRequestHeaders(
             mapOf("User-Agent" to "Frame61", "Referer" to "https://source.invalid/e/1", "Cookie" to "cf=1"),

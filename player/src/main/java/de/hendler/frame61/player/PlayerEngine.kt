@@ -32,7 +32,8 @@ data class PlayerUiState(
     val textTracks: List<TrackLabel> = emptyList(),
     val selectedAudio: String? = null,
     val selectedText: String? = null,
-    val speed: Float = 1.0f
+    val speed: Float = 1.0f,
+    val engine: String = "Media3"
 ) {
     val fraction: Float get() = if (durationMs > 0) positionMs.toFloat() / durationMs else 0f
     val isNearEnd: Boolean get() = durationMs > 0 && fraction >= 0.9f
@@ -45,6 +46,15 @@ internal fun mergeMediaRequestHeaders(
     mediaHeaders: Map<String, String>,
     dataSpecHeaders: Map<String, String>
 ): Map<String, String> = mediaHeaders + dataSpecHeaders
+
+internal fun inferMediaMimeType(url: String, declared: String? = null): String? = declared ?: when {
+    url.contains(".m3u8", ignoreCase = true) -> MimeTypes.APPLICATION_M3U8
+    url.contains(".mp4", ignoreCase = true) -> MimeTypes.VIDEO_MP4
+    url.contains(".mkv", ignoreCase = true) -> "video/x-matroska"
+    url.contains(".avi", ignoreCase = true) -> "video/x-msvideo"
+    url.contains(".ts", ignoreCase = true) -> "video/mp2t"
+    else -> null
+}
 
 /**
  * Media3 wrapper.
@@ -60,6 +70,12 @@ class Media3Frame61Player(
     private val player: ExoPlayer = ExoPlayer.Builder(context)
         .setTrackSelector(trackSelector)
         .build()
+    private val fallback = SystemFallbackPlayer(context)
+    private var useFallback = false
+    private var fallbackAttempted = false
+    private var currentUrl = ""
+    private var currentHeaders: Map<String, String> = emptyMap()
+    private var primaryError: PlaybackException? = null
 
     init {
         PlaybackDiagnostics.sink = { event -> Log.d(DIAG_TAG, event.asLogLine()) }
@@ -75,10 +91,11 @@ class Media3Frame61Player(
      * bypass it for control, only for rendering.
      */
     val exoPlayer: ExoPlayer get() = player
+    val fallbackView: android.view.SurfaceView get() = fallback.surfaceView
 
     /** Called on every published frame tick — the watchdog consumes this. */
     var onFrame: ((positionMs: Long, durationMs: Long) -> Unit)? = null
-    var onError: ((PlaybackException) -> Unit)? = null
+    var onError: ((PlaybackException?) -> Unit)? = null
 
     private val listener = object : Player.Listener {
         override fun onPlaybackStateChanged(playbackState: Int) {
@@ -101,7 +118,9 @@ class Media3Frame61Player(
                 details = mapOf(
                     "video" to tracks.groups.count { it.type == C.TRACK_TYPE_VIDEO }.toString(),
                     "audio" to tracks.groups.count { it.type == C.TRACK_TYPE_AUDIO }.toString(),
-                    "text" to tracks.groups.count { it.type == C.TRACK_TYPE_TEXT }.toString()
+                    "text" to tracks.groups.count { it.type == C.TRACK_TYPE_TEXT }.toString(),
+                    "variants" to videoFormats(tracks),
+                    "selectedVideo" to (player.videoFormat?.let(::formatSummary) ?: "-")
                 )
             )
             publish()
@@ -122,8 +141,7 @@ class Media3Frame61Player(
                     "cause" to causeChain(error)
                 )
             )
-            _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
-            onError?.invoke(error)
+            startFallback(error)
         }
     }
 
@@ -144,12 +162,13 @@ class Media3Frame61Player(
         // The dependency is fixed, but a broken build must never crash the UI:
         // surface it as the normal error panel instead.
         playbackSessionId = PlaybackDiagnostics.currentSessionId
+        fallbackAttempted = false
+        useFallback = false
+        primaryError = null
+        currentUrl = url
+        fallback.release()
         runCatching {
-            val inferred = mimeType ?: when {
-                url.contains(".m3u8", ignoreCase = true) -> MimeTypes.APPLICATION_M3U8
-                url.contains(".mp4", ignoreCase = true) -> MimeTypes.VIDEO_MP4
-                else -> null
-            }
+            val inferred = inferMediaMimeType(url, mimeType)
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Media3 öffnet Kandidaten",
@@ -170,6 +189,7 @@ class Media3Frame61Player(
             } else {
                 requestHeaders + mapOf("Cookie" to cookies)
             }
+            currentHeaders = mediaHeaders
             val okHttpFactory = OkHttpDataSource.Factory(HttpClientFactory.create())
             val resolvingFactory = ResolvingDataSource.Factory(
                 okHttpFactory,
@@ -196,38 +216,48 @@ class Media3Frame61Player(
                 error = error.message ?: error.javaClass.simpleName,
                 isPlaying = false
             )
+            onError?.invoke(null)
             return
         }
-        _state.value = _state.value.copy(error = null, positionMs = startAtMs, durationMs = 0L)
+        _state.value = _state.value.copy(
+            error = null,
+            positionMs = startAtMs,
+            durationMs = 0L,
+            engine = "Media3"
+        )
     }
 
-    fun play() = player.play()
+    fun play() {
+        if (useFallback) fallback.play() else player.play()
+    }
 
     fun pause() {
-        player.pause()
+        if (useFallback) fallback.pause() else player.pause()
         publish()
     }
 
     fun stop() {
         player.stop()
+        fallback.stop()
         _state.value = _state.value.copy(isPlaying = false, positionMs = 0L)
     }
 
     fun release() {
         PlaybackDiagnostics.record("PLAYER", "Media3 freigegeben", sessionId = playbackSessionId)
         player.removeListener(listener)
+        fallback.release()
         player.release()
         PlaybackDiagnostics.endSession(playbackSessionId)
     }
 
     fun seekTo(positionMs: Long) {
-        player.seekTo(positionMs.coerceAtLeast(0L))
+        if (useFallback) fallback.seekTo(positionMs) else player.seekTo(positionMs.coerceAtLeast(0L))
         _state.value = _state.value.copy(positionMs = positionMs.coerceAtLeast(0L))
     }
 
     fun setSpeed(speed: Float) {
         val clamped = speed.coerceIn(0.5f, 2.0f)
-        player.setPlaybackSpeed(clamped)
+        if (useFallback) fallback.setSpeed(clamped) else player.setPlaybackSpeed(clamped)
         _state.value = _state.value.copy(speed = clamped)
     }
 
@@ -239,6 +269,12 @@ class Media3Frame61Player(
         trackId: String?,
         update: PlayerUiState.() -> PlayerUiState
     ) {
+        if (useFallback) {
+            fallback.selectTrack(type, trackId)
+            _state.value = _state.value.update()
+            publish()
+            return
+        }
         val params = trackSelector.buildUponParameters()
         val group = player.currentTracks.groups.firstOrNull { it.type == type }
 
@@ -259,6 +295,21 @@ class Media3Frame61Player(
 
     /** Reads position/duration/buffer, publishes state and emits a frame tick. */
     fun publish() {
+        if (useFallback) {
+            val snapshot = fallback.snapshot()
+            _state.value = _state.value.copy(
+                isPlaying = snapshot.isPlaying,
+                positionMs = snapshot.positionMs,
+                durationMs = snapshot.durationMs,
+                bufferedPercent = snapshot.bufferedPercent,
+                isReady = snapshot.isReady,
+                audioTracks = snapshot.audioTracks,
+                textTracks = snapshot.textTracks,
+                engine = "Android MediaPlayer"
+            )
+            onFrame?.invoke(snapshot.positionMs, snapshot.durationMs)
+            return
+        }
         val position = player.currentPosition.coerceAtLeast(0L)
         val duration = if (player.duration == C.TIME_UNSET) 0L else player.duration.coerceAtLeast(0L)
         val buffered = player.bufferedPosition
@@ -270,6 +321,7 @@ class Media3Frame61Player(
             durationMs = duration,
             bufferedPercent = percent,
             isReady = player.playbackState == Player.STATE_READY,
+            engine = "Media3",
             audioTracks = labels(C.TRACK_TYPE_AUDIO),
             textTracks = labels(C.TRACK_TYPE_TEXT)
         )
@@ -287,6 +339,72 @@ class Media3Frame61Player(
                 )
             }
         }
+
+    private fun videoFormats(tracks: Tracks): String =
+        tracks.groups.filter { it.type == C.TRACK_TYPE_VIDEO }.flatMap { group ->
+            (0 until group.length).map { index -> formatSummary(group.getTrackFormat(index)) }
+        }.joinToString(" | ").ifBlank { "-" }
+
+    private fun formatSummary(format: androidx.media3.common.Format): String = buildString {
+        append(format.width).append('x').append(format.height)
+        append('@').append(format.bitrate)
+        format.codecs?.let { append(" codecs=").append(it) }
+        format.colorInfo?.let { append(" colorTransfer=").append(it.colorTransfer) }
+    }
+
+    private fun startFallback(error: PlaybackException) {
+        primaryError = error
+        val container = PlaybackDiagnostics.events.value.lastOrNull { event ->
+            event.url == PlaybackDiagnostics.safeUrl(currentUrl) && event.status != null
+        }?.details?.get("container")
+        if (fallbackAttempted || container in setOf("HTML", "JSON", "EMPTY")) {
+            _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
+            onError?.invoke(error)
+            return
+        }
+        fallbackAttempted = true
+        useFallback = true
+        _state.value = _state.value.copy(
+            error = null,
+            isPlaying = false,
+            isReady = false,
+            engine = "Android MediaPlayer"
+        )
+        PlaybackDiagnostics.record(
+            "PLAYER",
+            "Wechsel zu Android MediaPlayer",
+            sessionId = playbackSessionId,
+            url = currentUrl,
+            details = mapOf("container" to (container ?: "unbekannt"))
+        )
+        fallback.onFirstFrame = {
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Systemplayer erstes Frame",
+                sessionId = playbackSessionId
+            )
+            publish()
+        }
+        fallback.onPreparedChanged = { publish() }
+        fallback.onFailure = { what, extra ->
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Systemplayer fehlgeschlagen",
+                sessionId = playbackSessionId,
+                details = mapOf("what" to "$what", "extra" to "$extra")
+            )
+            _state.value = _state.value.copy(
+                error = primaryError?.errorCodeName ?: "SYSTEM_PLAYER_ERROR",
+                isPlaying = false
+            )
+            onError?.invoke(primaryError)
+        }
+        runCatching {
+            fallback.open(currentUrl, currentHeaders, _state.value.positionMs)
+        }.onFailure {
+            fallback.onFailure(-1, -1)
+        }
+    }
 
     private fun stateName(state: Int): String = when (state) {
         Player.STATE_IDLE -> "IDLE"

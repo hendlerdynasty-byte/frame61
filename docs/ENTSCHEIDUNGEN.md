@@ -195,6 +195,31 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   einem falschen `FontFamily`-Import; dieser ist korrigiert. Neuer Compile- und
   Testnachweis steht für den Folgecommit aus.
 
+## 2026-11-20 — Phase B: Request-Kontext und zwei Player-Engines
+
+- `MirrorCandidate` und aufgelöste Hoster tragen Request-Header, Cookies und
+  optionale Qualitätsdaten. Eine prozessinterne Cookie-Ablage und eine
+  `ResolvingDataSource` propagieren sie zu Playlist-, Schlüssel-, Segment- und
+  Range-Requests; DataSpec-Header haben Vorrang.
+- Media3/ExoPlayer bleibt die primäre Engine mit adaptiver Qualitätswahl und
+  Trackauswahl. Nach einem echten Wiedergabefehler versucht Android
+  `MediaPlayer` mit eigener `SurfaceView` dieselbe URL, Header und Position.
+  HTML, JSON und leere Antworten werden dagegen direkt als Resolverfehler
+  verworfen, nicht erneut als Video geöffnet. Erst nach Systemplayer-Fehler
+  rotiert der ViewModel zum nächsten Kandidaten bzw. frischen Resolverlauf.
+- Die Systemengine vermeidet ein großes natives Zusatzpaket und verwendet die
+  Hardware-Decoder des Geräts. Untertitel/Audio nutzen `TrackInfo`, Seek,
+  Tempo und Resume bleiben im gleichen ViewModel-/Room-Vertrag.
+- HLS-Master-Playlists werden bis 64 KiB gelesen; Auflösung, Bandbreite,
+  Codecs und `VIDEO-RANGE` werden ohne Stream-URLs im Trace zusammengefasst.
+  Das von Media3 tatsächlich selektierte Videoformat inklusive ColorTransfer
+  wird ebenfalls protokolliert. Nicht die größte Variante pauschal erzwingen,
+  sondern die höchste vom Gerät spielbare Auswahl zulassen.
+- Captcha-Quellen laufen erst nach normalen Packs seriell. Captcha-Timeout und
+  Back schließen regulär; Player-Back setzt `controlsVisible` nicht mehr bei
+  jedem Back-Down erneut. Ein erneuter Compile-/Gerätenachweis für diese
+  Entscheidungen wird separat dokumentiert.
+
 
 
 
