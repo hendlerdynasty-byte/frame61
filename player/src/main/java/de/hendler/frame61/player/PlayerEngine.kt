@@ -175,7 +175,7 @@ class Media3Frame61Player(
                 okHttpFactory,
                 ResolvingDataSource.Resolver { dataSpec ->
                     dataSpec.withRequestHeaders(
-                        mergeMediaRequestHeaders(mediaHeaders, dataSpec.requestHeaders)
+                        mergeMediaRequestHeaders(mediaHeaders, dataSpec.httpRequestHeaders)
                     )
                 }
             )
