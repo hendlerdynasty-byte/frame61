@@ -167,7 +167,7 @@ class PlaybackDiagnosticsTest {
             server.enqueue(
                 MockResponse().setResponseCode(200)
                     .addHeader("Content-Encoding", "gzip")
-                    .setBody(compressed.readByteString())
+                    .setBody(compressed)
             )
             PlaybackDiagnostics.clear()
             val client = OkHttpClient.Builder()
