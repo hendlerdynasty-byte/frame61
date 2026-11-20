@@ -1,5 +1,6 @@
 package de.hendler.frame61.ui.settings
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -24,6 +25,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -56,6 +58,7 @@ fun SettingsScreen(
     onOpenSources: () -> Unit = {}
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val context = LocalContext.current
     val skinsViewModel: SkinsViewModel = hiltViewModel()
     val skinsState by skinsViewModel.state.collectAsStateWithLifecycle()
     val showcase = skinsState.skins.filter { it.id in SHOWCASE_SKINS }
@@ -191,6 +194,19 @@ fun SettingsScreen(
 
         Spacer(Modifier.height(16.dp))
         Text(text = "Erweitert", style = MaterialTheme.typography.titleMedium)
+        if (context.packageName.endsWith(".perf")) {
+            OutlinedButton(
+                onClick = {
+                    context.startActivity(
+                        Intent(
+                            context,
+                            Class.forName("de.hendler.frame61.diagnostics.MediaSelfTestActivity")
+                        )
+                    )
+                },
+                modifier = Modifier.tvFocusable(id = "media-self-test", onClick = {})
+            ) { Text(text = "Player-Selbsttest") }
+        }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
                 "von ${state.sources.size})",
