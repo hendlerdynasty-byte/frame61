@@ -194,7 +194,7 @@ fun SettingsScreen(
 
         Spacer(Modifier.height(16.dp))
         Text(text = "Erweitert", style = MaterialTheme.typography.titleMedium)
-        if (context.packageName.endsWith(".perf")) {
+        if (context.packageName.endsWith(".perf") || context.packageName.endsWith(".ci")) {
             OutlinedButton(
                 onClick = {
                     context.startActivity(

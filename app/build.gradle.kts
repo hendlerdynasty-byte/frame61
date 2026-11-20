@@ -80,6 +80,12 @@ android {
             isDebuggable = false
             isProfileable = true
         }
+        // Separate CI installation beside release/perf; no signature downgrade or data wipe.
+        create("ci") {
+            initWith(getByName("perf"))
+            applicationIdSuffix = ".ci"
+            versionNameSuffix = "-ci"
+        }
     }
 
     compileOptions {
@@ -108,6 +114,11 @@ android {
 
     sourceSets {
         getByName("main").jniLibs.srcDirs("src/main/jniLibs")
+        getByName("ci") {
+            java.srcDir("src/perf/java")
+            assets.srcDir("src/perf/assets")
+            manifest.srcFile("src/perf/AndroidManifest.xml")
+        }
     }
 }
 

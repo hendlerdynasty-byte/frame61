@@ -31,7 +31,7 @@ jobs:
           ./gradlew --no-daemon --max-workers=2 \
             -Dorg.gradle.jvmargs=-Xmx2048m \
             -Pkotlin.compiler.execution.strategy=in-process \
-            gate :app:assemblePerf
+            gate :app:assembleCi
 
       - name: Upload debug and perf APKs
         if: always()
@@ -40,7 +40,7 @@ jobs:
           name: frame61-apks-${{ github.sha }}
           path: |
             app/build/outputs/apk/debug/app-debug.apk
-            app/build/outputs/apk/perf/app-perf.apk
+            app/build/outputs/apk/ci/app-ci.apk
           if-no-files-found: error
           retention-days: 14
 

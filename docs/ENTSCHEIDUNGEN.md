@@ -219,6 +219,12 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Back schließen regulär; Player-Back setzt `controlsVisible` nicht mehr bei
   jedem Back-Down erneut. Ein erneuter Compile-/Gerätenachweis für diese
   Entscheidungen wird separat dokumentiert.
+- GitHub-Actions erzeugt zusätzlich die Variante `de.hendler.frame61.ci`.
+  Grund ist der gemessene Signaturkonflikt zwischen bestehender Perf-
+  Installation und CI-Debugsignatur. Die CI-Variante nutzt dieselben
+  Produktionsquellen und Perf-Assets, aber eine eigene Paket-ID. So sind
+  Installationen neben Release/Perf ohne Deinstallation, Datenlöschung oder
+  Wechsel des Signaturschlüssels möglich. Sie ist kein Release-Artefakt.
 
 
 
