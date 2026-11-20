@@ -1,0 +1,10 @@
+11-20 13:58:01.262 13814 14948 D Frame61Diag: session=1 HTTP: GET test-streams.mux.dev url=https://test-streams.mux.dev/x36xhzz/url_8/url_633/193039199_mp4_h264_aac_fhd_7.ts headers={Accept-Encoding=identity, Host=test-streams.mux.dev, Connection=Keep-Alive, User-Agent=okhttp/4.12.0}
+11-20 13:58:02.561 13814 14948 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://test-streams.mux.dev/x36xhzz/url_8/url_633/193039199_mp4_h264_aac_fhd_7.ts status=200 headers={Accept-Encoding=identity, Host=test-streams.mux.dev, Connection=Keep-Alive, User-Agent=okhttp/4.12.0} firstBytes=474011100042F02A0001C100000001FF0001FC80194817010A6C756D6265726A details={elapsedMs=1296, contentType=application/octet-stream, contentEncoding=identity, container=MPEG-TS, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 13:58:02.561 13814 14948 D Chainlink: GET https://test-streams.mux.dev/x36xhzz/url_8/url_633/193039199_mp4_h264_aac_fhd_7.ts 200 1302ms h2 11994024B
+11-20 13:58:09.043 15480 15480 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-20 13:58:09.051 15480 15480 I AndroidRuntime: Using default boot image
+11-20 13:58:09.051 15480 15480 I AndroidRuntime: Leaving lock profiling enabled
+11-20 13:58:09.052 15480 15480 D AndroidRuntime: addProductProperty not brand or 7
+11-20 13:58:09.219 15480 15480 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-20 13:58:10.518 15480 15480 D AndroidRuntime: Shutting down VM
+11-20 13:58:11.195 13814 14948 D Frame61Diag: session=1 HTTP: GET test-streams.mux.dev url=https://test-streams.mux.dev/x36xhzz/url_8/url_634/193039199_mp4_h264_aac_fhd_7.ts headers={Accept-Encoding=identity, Host=test-streams.mux.dev, Connection=Keep-Alive, User-Agent=okhttp/4.12.0}

@@ -1,0 +1,146 @@
+11-20 15:28:07.251 21094 21094 I ExoPlayerImpl: Init 6151061 [AndroidXMedia3/1.6.0] [a52q, SM-A525F, samsung, 34]
+11-20 15:28:07.366 21094 21094 D Frame61Diag: session=1 SESSION: Wiedergabe gestartet details={title=Inception, episode=0}
+11-20 15:28:07.402 21094 21126 I Frame61Resolve: resolve 'Inception' ep=0 active=29 disabled=[kinokiste, megakino]
+11-20 15:28:07.576 21094 21118 D Frame61Diag: session=1 HTTP: GET anime-loads.org url=https://anime-loads.org/suche/Inception headers={Host=anime-loads.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.582 21094 22191 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=movie4k}
+11-20 15:28:07.582 21094 22191 I Frame61Resolve: movie4k: 0 candidate(s) in 162 ms (no usable stream)
+11-20 15:28:07.623 21094 21118 D Frame61Diag: session=1 HTTP: Antwort 403 url=https://anime-loads.org/suche/Inception status=403 headers={Host=anime-loads.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=41, contentType=text/html; charset=UTF-8, contentEncoding=identity, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.624 21094 21118 D Chainlink: GET https://anime-loads.org/suche/Inception 403 201ms h2 902B
+11-20 15:28:07.626 21094 21118 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=anime-loads}
+11-20 15:28:07.626 21094 21118 I Frame61Resolve: anime-loads: 0 candidate(s) in 224 ms (no usable stream)
+11-20 15:28:07.649 21094 22194 D Frame61Diag: session=1 HTTP: GET www.rakuten.tv url=https://www.rakuten.tv/suche/Inception headers={Host=www.rakuten.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.666 21094 22188 D Frame61Diag: session=1 HTTP: GET kinox.to url=https://kinox.to/suche/Inception headers={Host=kinox.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.671 21094 22198 D Frame61Diag: session=1 HTTP: GET streamkiste.sx url=https://streamkiste.sx/suche/Inception headers={Host=streamkiste.sx, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.683 21094 22182 D Frame61Diag: session=1 HTTP: GET moflix-stream.top url=https://moflix-stream.top/search/Inception headers={Host=moflix-stream.top, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.689 21094 22224 D Frame61Diag: session=1 HTTP: GET streamcloud.date url=https://streamcloud.date/suche?q=Inception headers={Host=streamcloud.date, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.691 21094 22189 D Frame61Diag: session=1 HTTP: GET www.kika.de url=https://www.kika.de/suche/Inception headers={Host=www.kika.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.694 21094 21119 D Frame61Diag: session=1 HTTP: GET api.ardmediathek.de url=https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Inception&page=1 headers={Accept=application/json, Host=api.ardmediathek.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.699 21094 22207 D Frame61Diag: session=1 HTTP: GET www.youtube.com url=https://www.youtube.com/results?q=Inception&q=Inception headers={Host=www.youtube.com, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.706 21094 22225 D Frame61Diag: session=1 HTTP: GET www.zdf.de url=https://www.zdf.de/suche/Inception headers={Host=www.zdf.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.739 21094 22198 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://streamkiste.sx/suche/Inception status=200 headers={Host=streamkiste.sx, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=64, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.740 21094 22198 D Chainlink: GET https://streamkiste.sx/suche/Inception 200 305ms h2 streaming
+11-20 15:28:07.757 21094 22198 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=streamkiste}
+11-20 15:28:07.757 21094 22198 I Frame61Resolve: streamkiste: 0 candidate(s) in 325 ms (no usable stream)
+11-20 15:28:07.789 21094 22209 D Frame61Diag: session=1 HTTP: GET serienstream.to url=https://serienstream.to/api/search/suggest headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.826 21094 22194 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.rakuten.tv/suche/Inception status=200 headers={Host=www.rakuten.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=175, contentType=text/html, contentEncoding=identity, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.826 21094 22194 D Chainlink: GET https://www.rakuten.tv/suche/Inception 200 392ms h2 19809B
+11-20 15:28:07.828 21094 21119 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Inception&page=1 status=200 headers={Accept=application/json, Host=api.ardmediathek.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=134, contentType=application/json;charset=UTF-8, contentEncoding=gzip, container=JSON, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.829 21094 21119 D Chainlink: GET https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Inception&page=1 200 373ms h2 streaming
+11-20 15:28:07.829 21094 22194 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=rakuten-free}
+11-20 15:28:07.829 21094 22194 I Frame61Resolve: rakuten-free: 0 candidate(s) in 400 ms (no usable stream)
+11-20 15:28:07.836 21094 21119 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=ard-mediathek}
+11-20 15:28:07.836 21094 21119 I Frame61Resolve: ard-mediathek: 0 candidate(s) in 430 ms (no usable stream)
+11-20 15:28:07.841 21094 22189 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.kika.de/suche/Inception status=404 headers={Host=www.kika.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=149, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.841 21094 22189 D Chainlink: GET https://www.kika.de/suche/Inception 404 411ms h2 streaming
+11-20 15:28:07.842 21094 22212 D Frame61Diag: session=1 HTTP: GET serienstream.to url=https://serienstream.to/api/search/suggest headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.842 21094 22189 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=kika}
+11-20 15:28:07.842 21094 22189 I Frame61Resolve: kika: 0 candidate(s) in 412 ms (no usable stream)
+11-20 15:28:07.864 21094 22207 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.youtube.com/results?q=Inception&q=Inception status=200 headers={Host=www.youtube.com, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=135, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.864 21094 22207 D Chainlink: GET https://www.youtube.com/results?q=Inception&q=Inception 200 430ms h2 streaming
+11-20 15:28:07.876 21094 21125 D Frame61Diag: session=1 HTTP: GET archive.org url=https://archive.org/advancedsearch.php?q=Inception headers={Accept=application/json, Host=archive.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:07.882 21094 22209 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://serienstream.to/api/search/suggest status=200 headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=90, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=36, sniffError=-, redirectFrom=-}
+11-20 15:28:07.882 21094 22209 D Chainlink: GET https://serienstream.to/api/search/suggest 200 451ms h2 streaming
+11-20 15:28:07.883 21094 22188 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://kinox.to/suche/Inception status=404 headers={Host=kinox.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=215, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=146, sniffError=-, redirectFrom=-}
+11-20 15:28:07.883 21094 22188 D Chainlink: GET https://kinox.to/suche/Inception 404 452ms h2 streaming
+11-20 15:28:07.883 21094 22209 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=s-to}
+11-20 15:28:07.884 21094 22209 I Frame61Resolve: s-to: 0 candidate(s) in 453 ms (no usable stream)
+11-20 15:28:07.884 21094 22188 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=kinox}
+11-20 15:28:07.884 21094 22188 I Frame61Resolve: kinox: 0 candidate(s) in 454 ms (no usable stream)
+11-20 15:28:07.885 21094 22225 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.zdf.de/suche/Inception status=404 headers={Host=www.zdf.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=166, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.885 21094 22225 D Chainlink: GET https://www.zdf.de/suche/Inception 404 450ms h2 streaming
+11-20 15:28:07.890 21094 22225 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=zdf}
+11-20 15:28:07.890 21094 22225 I Frame61Resolve: zdf: 0 candidate(s) in 457 ms (no usable stream)
+11-20 15:28:07.917 21094 22182 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://moflix-stream.top/search/Inception status=200 headers={Host=moflix-stream.top, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=187, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.917 21094 22182 D Chainlink: GET https://moflix-stream.top/search/Inception 200 486ms h2 streaming
+11-20 15:28:07.928 21094 22182 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=moflix}
+11-20 15:28:07.928 21094 22182 I Frame61Resolve: moflix: 0 candidate(s) in 500 ms (no usable stream)
+11-20 15:28:07.946 21094 22212 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://serienstream.to/api/search/suggest status=200 headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=101, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=36, sniffError=-, redirectFrom=-}
+11-20 15:28:07.947 21094 22212 D Chainlink: GET https://serienstream.to/api/search/suggest 200 516ms h2 streaming
+11-20 15:28:07.948 21094 22212 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=serienstream}
+11-20 15:28:07.948 21094 22212 I Frame61Resolve: serienstream: 0 candidate(s) in 518 ms (no usable stream)
+11-20 15:28:07.986 21094 22224 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://streamcloud.date/suche?q=Inception status=200 headers={Host=streamcloud.date, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=94, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:07.987 21094 22224 D Chainlink: GET https://streamcloud.date/suche?q=Inception 200 552ms h2 streaming
+11-20 15:28:08.016 21094 22224 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=streamcloud}
+11-20 15:28:08.016 21094 22224 I Frame61Resolve: streamcloud: 0 candidate(s) in 584 ms (no usable stream)
+11-20 15:28:08.435 21094 21125 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://archive.org/advancedsearch.php?q=Inception status=200 headers={Accept=application/json, Host=archive.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=388, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:08.435 21094 21125 D Chainlink: GET https://archive.org/advancedsearch.php?q=Inception 200 1020ms http/1.1 streaming
+11-20 15:28:08.444 21094 21125 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=archive-org}
+11-20 15:28:08.444 21094 21125 I Frame61Resolve: archive-org: 0 candidate(s) in 1040 ms (no usable stream)
+11-20 15:28:08.498 21094 22207 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=youtube}
+11-20 15:28:08.498 21094 22207 I Frame61Resolve: youtube: 0 candidate(s) in 1065 ms (no usable stream)
+11-20 15:28:10.635 21094 22190 D Frame61Diag: session=1 HTTP: GET www.filmstarts.de url=https://www.filmstarts.de/_/autocomplete/Inception headers={Host=www.filmstarts.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.635 21094 22193 D Frame61Diag: session=1 HTTP: GET filmpalast.to url=https://filmpalast.to/search/title/Inception headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.639 21094 21117 D Frame61Diag: session=1 HTTP: GET www.3sat.de url=https://www.3sat.de/suche/Inception headers={Host=www.3sat.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.641 21094 22183 D Frame61Diag: session=1 HTTP: GET filmfans.org url=https://filmfans.org/suche/Inception headers={Host=filmfans.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.650 21094 22187 D Frame61Diag: session=1 HTTP: GET dokujunkies.org url=https://dokujunkies.org/suche/Inception headers={Host=dokujunkies.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.654 21094 21124 D Frame61Diag: session=1 HTTP: GET www.arte.tv url=https://www.arte.tv/suche/Inception headers={Host=www.arte.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.656 21094 22185 D Frame61Diag: session=1 HTTP: GET www.ard.de url=https://www.ard.de/suche/Inception headers={Host=www.ard.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.663 21094 22186 D Frame61Diag: session=1 HTTP: GET filmo.to url=https://filmo.to/search/suggest?q=Inception headers={Host=filmo.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.663 21094 22192 D Frame61Diag: session=1 HTTP: GET hdfilme.to url=https://hdfilme.to/suche/Inception headers={Host=hdfilme.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.663 21094 22210 D Frame61Diag: session=1 HTTP: GET www.netzkino.de url=https://www.netzkino.de/suche/Inception headers={Host=www.netzkino.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.667 21094 22184 D Frame61Diag: session=1 HTTP: POST cine.to url=https://cine.to/request/search headers={Content-Type=application/x-www-form-urlencoded, X-Requested-With=XMLHttpRequest, Referer=https://cine.to/, Content-Length=89, Host=cine.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.672 21094 22183 D Frame61Diag: session=1 HTTP: Antwort 403 url=https://filmfans.org/suche/Inception status=403 headers={Host=filmfans.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=29, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.672 21094 22183 D Chainlink: GET https://filmfans.org/suche/Inception 403 3257ms h2 streaming
+11-20 15:28:10.674 21094 22183 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmfans}
+11-20 15:28:10.674 21094 22183 I Frame61Resolve: filmfans: 0 candidate(s) in 3263 ms (no usable stream)
+11-20 15:28:10.682 21094 22204 D Frame61Diag: session=1 HTTP: GET www.plex.tv url=https://www.plex.tv/suche/Inception headers={Host=www.plex.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.686 21094 22193 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmpalast.to/search/title/Inception status=200 headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=46, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=UNKNOWN, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.686 21094 22193 D Chainlink: GET https://filmpalast.to/search/title/Inception 200 3268ms h2 streaming
+11-20 15:28:10.689 21094 21127 D Frame61Diag: session=1 HTTP: POST aniworld.to url=https://aniworld.to/ajax/search headers={Content-Length=17, Host=aniworld.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.703 21094 22193 D Frame61Diag: session=1 HTTP: GET filmpalast.to url=https://filmpalast.to/stream/inception headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:10.750 21094 21124 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.arte.tv/suche/Inception status=404 headers={Host=www.arte.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=91, contentType=text/plain; charset=utf-8, contentEncoding=identity, container=UNKNOWN, sniffBytes=17, sniffError=-, redirectFrom=-}
+11-20 15:28:10.750 21094 22193 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmpalast.to/stream/inception status=200 headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=44, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=UNKNOWN, sniffBytes=49, sniffError=-, redirectFrom=-}
+11-20 15:28:10.751 21094 21124 D Chainlink: GET https://www.arte.tv/suche/Inception 404 3335ms h2 17B
+11-20 15:28:10.751 21094 22193 D Chainlink: GET https://filmpalast.to/stream/inception 200 48ms h2 streaming
+11-20 15:28:10.751 21094 22190 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.filmstarts.de/_/autocomplete/Inception status=200 headers={Host=www.filmstarts.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=113, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.751 21094 22190 D Chainlink: GET https://www.filmstarts.de/_/autocomplete/Inception 200 3332ms h2 streaming
+11-20 15:28:10.752 21094 21124 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=arte}
+11-20 15:28:10.753 21094 22184 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://cine.to/request/search status=200 headers={Content-Type=application/x-www-form-urlencoded, X-Requested-With=XMLHttpRequest, Referer=https://cine.to/, Content-Length=89, Host=cine.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=82, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=JSON, sniffBytes=179, sniffError=-, redirectFrom=-}
+11-20 15:28:10.753 21094 21124 I Frame61Resolve: arte: 0 candidate(s) in 3345 ms (no usable stream)
+11-20 15:28:10.754 21094 22184 D Chainlink: POST https://cine.to/request/search 200 3330ms h2 streaming
+11-20 15:28:10.754 21094 22193 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmpalast}
+11-20 15:28:10.754 21094 22193 I Frame61Resolve: filmpalast: 0 candidate(s) in 3338 ms (no usable stream)
+11-20 15:28:10.754 21094 22190 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmstarts}
+11-20 15:28:10.754 21094 22190 I Frame61Resolve: filmstarts: 0 candidate(s) in 3336 ms (no usable stream)
+11-20 15:28:10.756 21094 22184 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=cine}
+11-20 15:28:10.756 21094 22184 I Frame61Resolve: cine: 0 candidate(s) in 3349 ms (no usable stream)
+11-20 15:28:10.783 21094 21127 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://aniworld.to/ajax/search status=200 headers={Content-Length=17, Host=aniworld.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=91, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=EMPTY, sniffBytes=0, sniffError=-, redirectFrom=-}
+11-20 15:28:10.784 21094 21127 D Chainlink: POST https://aniworld.to/ajax/search 200 3361ms h2 streaming
+11-20 15:28:10.787 21094 21127 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=aniworld}
+11-20 15:28:10.787 21094 21127 I Frame61Resolve: aniworld: 0 candidate(s) in 3384 ms (no usable stream)
+11-20 15:28:10.798 21094 22210 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.netzkino.de/suche/Inception status=404 headers={Host=www.netzkino.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=132, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.798 21094 22186 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmo.to/search/suggest?q=Inception status=200 headers={Host=filmo.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=132, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=80, sniffError=-, redirectFrom=-}
+11-20 15:28:10.799 21094 22210 D Chainlink: GET https://www.netzkino.de/suche/Inception 404 3371ms h2 streaming
+11-20 15:28:10.799 21094 22186 D Chainlink: GET https://filmo.to/search/suggest?q=Inception 200 3383ms h2 streaming
+11-20 15:28:10.801 21094 22186 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmo}
+11-20 15:28:10.801 21094 22186 I Frame61Resolve: filmo: 0 candidate(s) in 3389 ms (no usable stream)
+11-20 15:28:10.802 21094 22210 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=netzkino}
+11-20 15:28:10.802 21094 22210 I Frame61Resolve: netzkino: 0 candidate(s) in 3375 ms (no usable stream)
+11-20 15:28:10.834 21094 22187 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://dokujunkies.org/suche/Inception status=404 headers={Host=dokujunkies.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=177, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.835 21094 22187 D Chainlink: GET https://dokujunkies.org/suche/Inception 404 3419ms h2 streaming
+11-20 15:28:10.837 21094 22187 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=dokujunkies}
+11-20 15:28:10.837 21094 22187 I Frame61Resolve: dokujunkies: 0 candidate(s) in 3428 ms (no usable stream)
+11-20 15:28:10.849 21094 22192 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://hdfilme.to/suche/Inception status=404 headers={Host=hdfilme.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=184, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.849 21094 22192 D Chainlink: GET https://hdfilme.to/suche/Inception 404 3428ms h2 streaming
+11-20 15:28:10.851 21094 22192 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=hdfilme}
+11-20 15:28:10.851 21094 22192 I Frame61Resolve: hdfilme: 0 candidate(s) in 3433 ms (no usable stream)
+11-20 15:28:10.867 21094 22185 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.ard.de/suche/Inception status=404 headers={Host=www.ard.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=208, contentType=text/html;charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:10.868 21094 22185 D Chainlink: GET https://www.ard.de/suche/Inception 404 3442ms h2 streaming
+11-20 15:28:10.872 21094 22185 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=ard}
+11-20 15:28:10.872 21094 22185 I Frame61Resolve: ard: 0 candidate(s) in 3465 ms (no usable stream)
+11-20 15:28:10.926 21094 22226 D Frame61Diag: session=1 HTTP: GET www.pluto.tv url=https://www.pluto.tv/suche/Inception headers={Host=www.pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:11.049 21094 22181 D Frame61Diag: session=1 HTTP: POST burningseries.ac url=https://burningseries.ac/search headers={Content-Length=22, Host=burningseries.ac, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:11.051 21094 21117 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.3sat.de/suche/Inception status=200 headers={Host=www.3sat.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=407, contentType=text/html;charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:11.052 21094 21117 D Chainlink: GET https://www.3sat.de/suche/Inception 200 3628ms h2 streaming
+11-20 15:28:11.102 21094 21117 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=3sat}
+11-20 15:28:11.102 21094 21117 I Frame61Resolve: 3sat: 0 candidate(s) in 3699 ms (no usable stream)
+11-20 15:28:11.105 21094 22226 D Frame61Diag: session=1 HTTP: Antwort 301 url=https://www.pluto.tv/suche/Inception status=301 headers={Host=www.pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=178, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=155, sniffError=-, redirectFrom=-}
+11-20 15:28:11.180 21094 22204 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.plex.tv/suche/Inception status=404 headers={Host=www.plex.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=489, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:11.181 21094 22204 D Chainlink: GET https://www.plex.tv/suche/Inception 404 3753ms h2 streaming
+11-20 15:28:11.186 21094 22204 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=plex-free}
+11-20 15:28:11.186 21094 22204 I Frame61Resolve: plex-free: 0 candidate(s) in 3759 ms (no usable stream)
+11-20 15:28:11.207 21094 22181 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://burningseries.ac/search status=200 headers={Content-Length=22, Host=burningseries.ac, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=95, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 15:28:11.208 21094 22181 D Chainlink: POST https://burningseries.ac/search 200 3785ms h2 streaming
+11-20 15:28:11.250 21094 22226 D Frame61Diag: session=1 HTTP: GET pluto.tv url=https://pluto.tv/suche/Inception headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 15:28:11.773 21094 22226 D Frame61Diag: session=1 HTTP: Antwort 301 url=https://pluto.tv/suche/Inception status=301 headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=521, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=166, sniffError=-, redirectFrom=-}
+11-20 15:28:11.777 21094 22226 D Frame61Diag: session=1 HTTP: GET pluto.tv url=https://pluto.tv/suche/Inception/ headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
