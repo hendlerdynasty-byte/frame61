@@ -133,8 +133,8 @@ class SystemFallbackPlayer(context: Context) {
             durationMs = duration,
             bufferedPercent = bufferedPercent,
             isReady = prepared,
-            audioTracks = labels(MediaPlayer.TrackInfo.TRACK_TYPE_AUDIO),
-            textTracks = labels(MediaPlayer.TrackInfo.TRACK_TYPE_TIMEDTEXT)
+            audioTracks = labels(MediaPlayer.TrackInfo.MEDIA_TRACK_TYPE_AUDIO),
+            textTracks = labels(MediaPlayer.TrackInfo.MEDIA_TRACK_TYPE_TIMEDTEXT)
         )
     }
 
