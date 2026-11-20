@@ -63,12 +63,12 @@ fun CaptchaWebViewFrame(
     }
 
     LaunchedEffect(webView, url) {
-        val view = webView ?: return@withTimeoutOrNull
+        val view = webView ?: return@LaunchedEffect
         withTimeoutOrNull(20_000L) {
-            repeat(20) { second ->
+            for (second in 0 until 20) {
                 delay(1_000)
-                if (finished) return@withTimeoutOrNull
-                val state = readState(view, finalUrl) ?: return@repeat
+                if (finished) break
+                val state = readState(view, finalUrl) ?: continue
                 val cookies = CookieManager.getInstance().getCookie(finalUrl)
                     ?.takeIf { it.isNotBlank() }
                 if (state.streamUrl != null || (cookies != null && second >= 3)) {
@@ -80,7 +80,7 @@ fun CaptchaWebViewFrame(
                             streamUrl = state.streamUrl
                         )
                     )
-                    return@withTimeoutOrNull
+                    break
                 }
             }
         }
