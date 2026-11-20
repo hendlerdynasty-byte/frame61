@@ -186,6 +186,14 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - `PACKS.md` wurde aus dem Remote-Datenstand `f8ea68a` neu erzeugt. Der
   statische Preflight-Fund „PACKS veraltet“ ist damit geschlossen; Compile,
   Unit-Tests und quellgebundene Geräteprüfung stehen weiter aus.
+- Der unabhängige Review von `d04ee1b` fand sechs Diagnosedefekte. Vor dem
+  Geräteeinsatz wurden Klartext-/Hex-Secrets aus Textbodies unterbunden,
+  Fehlertexte maskiert, Sessionende und verspätete Ereignisse gebunden,
+  Gzip-/Sniff-Fehler getrennt, Panel-Tasten modal abgeschirmt und die Diagnose
+  auch für Fatalzustände zugänglich gemacht. Die Gegenproben prüfen zusätzlich
+  Log-Sink und Hexdekodierung. Der alte Remote-Snapshot scheiterte außerdem an
+  einem falschen `FontFamily`-Import; dieser ist korrigiert. Neuer Compile- und
+  Testnachweis steht für den Folgecommit aus.
 
 
 

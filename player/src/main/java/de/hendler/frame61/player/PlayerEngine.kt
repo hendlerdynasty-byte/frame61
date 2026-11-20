@@ -63,6 +63,7 @@ class Media3Frame61Player(
 
     private val _state = MutableStateFlow(PlayerUiState())
     val state: StateFlow<PlayerUiState> = _state.asStateFlow()
+    private var playbackSessionId: Long = 0L
 
     /**
      * The underlying Media3 player, for views that need the instance itself
@@ -79,6 +80,7 @@ class Media3Frame61Player(
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Media3-Zustand $playbackState",
+                sessionId = playbackSessionId,
                 details = mapOf("state" to stateName(playbackState))
             )
             publish()
@@ -90,6 +92,7 @@ class Media3Frame61Player(
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Spuren aktualisiert",
+                sessionId = playbackSessionId,
                 details = mapOf(
                     "video" to tracks.groups.count { it.type == C.TRACK_TYPE_VIDEO }.toString(),
                     "audio" to tracks.groups.count { it.type == C.TRACK_TYPE_AUDIO }.toString(),
@@ -100,7 +103,7 @@ class Media3Frame61Player(
         }
 
         override fun onRenderedFirstFrame() {
-            PlaybackDiagnostics.record("PLAYER", "Erstes Frame gerendert")
+            PlaybackDiagnostics.record("PLAYER", "Erstes Frame gerendert", sessionId = playbackSessionId)
             publish()
         }
 
@@ -108,6 +111,7 @@ class Media3Frame61Player(
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Media3-Fehler ${error.errorCodeName}",
+                sessionId = playbackSessionId,
                 details = mapOf(
                     "errorCode" to error.errorCode.toString(),
                     "cause" to causeChain(error)
@@ -127,6 +131,7 @@ class Media3Frame61Player(
         // (ClassNotFoundException: HlsMediaSource$Factory, A52 15:14:32).
         // The dependency is fixed, but a broken build must never crash the UI:
         // surface it as the normal error panel instead.
+        playbackSessionId = PlaybackDiagnostics.currentSessionId
         runCatching {
             val inferred = mimeType ?: when {
                 url.contains(".m3u8", ignoreCase = true) -> MimeTypes.APPLICATION_M3U8
@@ -136,6 +141,7 @@ class Media3Frame61Player(
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Media3 öffnet Kandidaten",
+                sessionId = playbackSessionId,
                 url = url,
                 details = mapOf(
                     "mimeType" to (inferred ?: "sniffing"),
@@ -152,6 +158,7 @@ class Media3Frame61Player(
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Media3-Setup fehlgeschlagen: ${error.javaClass.simpleName}",
+                sessionId = playbackSessionId,
                 url = url
             )
             _state.value = _state.value.copy(
@@ -176,9 +183,10 @@ class Media3Frame61Player(
     }
 
     fun release() {
-        PlaybackDiagnostics.record("PLAYER", "Media3 freigegeben")
+        PlaybackDiagnostics.record("PLAYER", "Media3 freigegeben", sessionId = playbackSessionId)
         player.removeListener(listener)
         player.release()
+        PlaybackDiagnostics.endSession(playbackSessionId)
     }
 
     fun seekTo(positionMs: Long) {

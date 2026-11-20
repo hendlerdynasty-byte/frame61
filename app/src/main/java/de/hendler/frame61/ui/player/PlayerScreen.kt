@@ -10,7 +10,9 @@ import de.hendler.frame61.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -32,6 +34,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -47,7 +50,7 @@ import androidx.compose.ui.input.key.type
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.text.FontFamily
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -60,6 +63,7 @@ import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.net.PlaybackTraceEvent
 import de.hendler.frame61.player.PlayerUiState
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Full-screen player.
@@ -80,6 +84,7 @@ fun PlayerScreen(
     sourceNote: String? = null,
     subtitleScale: Float = 1.0f,
     diagnosticEvents: List<PlaybackTraceEvent> = emptyList(),
+    fatalMessage: String? = null,
     onTogglePlay: () -> Unit = {},
     onSeekBack: () -> Unit = {},
     onSeekForward: () -> Unit = {},
@@ -97,6 +102,8 @@ fun PlayerScreen(
     var interaction by remember { mutableIntStateOf(0) }
     var seekDirection by remember { mutableIntStateOf(0) }
     var sourceVisible by remember(sourceNote) { mutableStateOf(sourceNote != null) }
+    val diagnosticsListState = rememberLazyListState()
+    val diagnosticsScope = rememberCoroutineScope()
 
     LaunchedEffect(sourceNote) {
         sourceVisible = sourceNote != null
@@ -124,12 +131,25 @@ fun PlayerScreen(
     DisposableEffect(Unit) {
         PlayerKeyRouter.handler = { event ->
             when (event.action) {
-                android.view.KeyEvent.ACTION_DOWN -> {
+                android.view.KeyEvent.ACTION_DOWN -> if (diagnosticsVisible) {
+                    true
+                } else {
                     controlsVisible = true
                     interaction++
                     false
                 }
-                android.view.KeyEvent.ACTION_UP -> {
+                android.view.KeyEvent.ACTION_UP -> if (diagnosticsVisible) {
+                    when (event.keyCode) {
+                        android.view.KeyEvent.KEYCODE_BACK -> diagnosticsVisible = false
+                        android.view.KeyEvent.KEYCODE_DPAD_UP -> diagnosticsScope.launch {
+                            diagnosticsListState.scrollBy(-480f)
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_DOWN -> diagnosticsScope.launch {
+                            diagnosticsListState.scrollBy(480f)
+                        }
+                    }
+                    true
+                } else {
                     controlsVisible = true
                     interaction++
                     when (event.keyCode) {
@@ -154,7 +174,7 @@ fun PlayerScreen(
                             true
                         }
                         android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
-                            diagnosticsVisible = !diagnosticsVisible
+                            diagnosticsVisible = true
                             true
                         }
                         else -> false
@@ -294,9 +314,30 @@ fun PlayerScreen(
             }
         }
 
+        fatalMessage?.let { message ->
+            Surface(modifier = Modifier.fillMaxSize(), color = skin.colors.canvas) {
+                Column(
+                    modifier = Modifier.fillMaxSize().padding(32.dp),
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(message, style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        "Diagnose anzeigen",
+                        color = skin.colors.primary,
+                        modifier = Modifier
+                            .padding(top = 16.dp)
+                            .tvFocusable(id = "show-fatal-diagnostics", onClick = {
+                                diagnosticsVisible = true
+                            })
+                    )
+                }
+            }
+        }
+
         if (diagnosticsVisible) {
             DiagnosticsPanel(
                 events = diagnosticEvents,
+                listState = diagnosticsListState,
                 onClose = { diagnosticsVisible = false },
                 modifier = Modifier.fillMaxSize()
             )
@@ -339,6 +380,7 @@ private fun ErrorPanel(
 @Composable
 private fun DiagnosticsPanel(
     events: List<PlaybackTraceEvent>,
+    listState: LazyListState,
     onClose: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -348,7 +390,7 @@ private fun DiagnosticsPanel(
         Column(modifier = Modifier.fillMaxSize().padding(20.dp)) {
             Text("Wiedergabe-Diagnose", style = MaterialTheme.typography.titleLarge)
             Text(
-                "Nur lokal · neueste zuerst · D-Pad ↓ oder Zurück schließt",
+                "Nur lokal · neueste zuerst · ↑/↓ blättert · Zurück schließt",
                 color = skin.colors.textSecondary,
                 style = MaterialTheme.typography.bodySmall
             )
@@ -363,6 +405,7 @@ private fun DiagnosticsPanel(
                 Text("Noch keine Diagnoseereignisse.", color = skin.colors.textPrimary)
             } else {
                 LazyColumn(
+                    state = listState,
                     modifier = Modifier.fillMaxSize(),
                     verticalArrangement = Arrangement.spacedBy(10.dp)
                 ) {

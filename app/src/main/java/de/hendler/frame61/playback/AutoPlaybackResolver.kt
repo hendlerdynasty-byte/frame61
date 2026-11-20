@@ -67,14 +67,18 @@ class AutoPlaybackResolver @Inject constructor(
         HosterResolver(hosterPacks, OkHttpBodyFetcher(), jsEvaluator)
     }
 
-    suspend fun resolve(title: String, episodeNumber: Int = 0): List<MirrorCandidate> =
+    suspend fun resolve(
+        title: String,
+        episodeNumber: Int = 0,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId
+    ): List<MirrorCandidate> =
         withContext(Dispatchers.IO) {
             val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
             val key = "$title|$episodeNumber|${disabled.hashCode()}"
             val now = System.currentTimeMillis()
             cache[key]?.takeIf { now - it.at < CACHE_MS }?.let {
                 Log.i(TAG, "cache hit '$title' (${it.mirrors.size} mirrors)")
-                trace("cache", "Treffer mit ${it.mirrors.size} Kandidaten")
+                trace(sessionId, "cache", "Treffer mit ${it.mirrors.size} Kandidaten")
                 return@withContext it.mirrors
             }
 
@@ -91,16 +95,16 @@ class AutoPlaybackResolver @Inject constructor(
                         val started = System.currentTimeMillis()
                         val result = runCatching {
                             withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
-                                resolvePack(pack, title, episodeNumber)
+                                resolvePack(pack, title, episodeNumber, sessionId)
                             } ?: run {
-                                trace(pack.id, "Zeitüberschreitung nach $SOURCE_TIMEOUT_MS ms")
+                                trace(sessionId, pack.id, "Zeitüberschreitung nach $SOURCE_TIMEOUT_MS ms")
                                 emptyList()
                             }
                         }.getOrElse { error ->
-                            trace(pack.id, "Resolverfehler: ${error.javaClass.simpleName}")
+                            trace(sessionId, pack.id, "Resolverfehler: ${error.javaClass.simpleName}")
                             emptyList()
                         }
-                        trace(pack.id, "${result.size} Kandidaten")
+                        trace(sessionId, pack.id, "${result.size} Kandidaten")
                         Log.i(
                             TAG,
                             "${pack.id}: ${result.size} candidate(s) in " +
@@ -123,7 +127,8 @@ class AutoPlaybackResolver @Inject constructor(
     private suspend fun resolvePack(
         pack: SourcePack,
         title: String,
-        episodeNumber: Int
+        episodeNumber: Int,
+        sessionId: Long
     ): List<MirrorCandidate> {
         if (pack.id == ArdPlaybackResolver.PACK_ID) {
             return ardResolver.resolve(title, episodeNumber)
@@ -144,7 +149,7 @@ class AutoPlaybackResolver @Inject constructor(
             ?: return emptyList()
         val streams = interpreter.streams(pack, hit.id, episodeNumber.toString(), cookies)
         return streams.mapNotNull { stream ->
-            val url = resolveHoster(pack, stream)
+            val url = resolveHoster(pack, stream, sessionId)
             url?.let {
                 MirrorCandidate(
                     sourceId = pack.id,
@@ -161,11 +166,15 @@ class AutoPlaybackResolver @Inject constructor(
         }
     }
 
-    private suspend fun resolveHoster(pack: SourcePack, stream: StreamResult): String? {
-        trace(pack.id, "Hosterauflösung ${stream.hosterId ?: "unknown"}", stream.url)
+    private suspend fun resolveHoster(
+        pack: SourcePack,
+        stream: StreamResult,
+        sessionId: Long
+    ): String? {
+        trace(sessionId, pack.id, "Hosterauflösung ${stream.hosterId ?: "unknown"}", stream.url)
         if (!stream.url.startsWith("https://")) {
             Log.w(TAG, "${pack.id}: non-https stream rejected")
-            trace(pack.id, "Nicht-HTTPS-Ziel verworfen", stream.url)
+            trace(sessionId, pack.id, "Nicht-HTTPS-Ziel verworfen", stream.url)
             return null
         }
         val hosterCaptcha = pack.captcha
@@ -196,32 +205,33 @@ class AutoPlaybackResolver @Inject constructor(
         }.getOrNull()
         return when (outcome) {
             is HosterOutcome.Resolved -> outcome.url.also {
-                trace(pack.id, "Hoster aufgelöst", it)
+                trace(sessionId, pack.id, "Hoster aufgelöst", it)
             }
             is HosterOutcome.Unknown -> stream.url.also {
-                trace(pack.id, "Unbekannter Hoster als Kandidat durchgereicht", it)
+                trace(sessionId, pack.id, "Unbekannter Hoster als Kandidat durchgereicht", it)
             }
             is HosterOutcome.CaptchaRequired -> {
-                trace(pack.id, "Captcha erforderlich", stream.url)
+                trace(sessionId, pack.id, "Captcha erforderlich", stream.url)
                 null
             }
             is HosterOutcome.Failed -> {
                 Log.w(TAG, "${pack.id}: hoster failed (${outcome.reason})")
-                trace(pack.id, "Hoster fehlgeschlagen: ${outcome.reason}", outcome.url)
+                trace(sessionId, pack.id, "Hoster fehlgeschlagen: ${outcome.reason}", outcome.url)
                 null
             }
             null -> {
                 Log.w(TAG, "${pack.id}: hoster timeout")
-                trace(pack.id, "Hoster-Zeitüberschreitung", stream.url)
+                trace(sessionId, pack.id, "Hoster-Zeitüberschreitung", stream.url)
                 null
             }
         }
     }
 
-    private fun trace(sourceId: String, message: String, url: String? = null) {
+    private fun trace(sessionId: Long, sourceId: String, message: String, url: String? = null) {
         PlaybackDiagnostics.record(
             category = "RESOLVER",
             message = message,
+            sessionId = sessionId,
             url = url,
             details = mapOf("sourceId" to sourceId)
         )

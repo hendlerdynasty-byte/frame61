@@ -92,7 +92,7 @@ class PlayerViewModel @Inject constructor(
         this.episodeId = episodeId
         this.mirrors = fallbackCandidates
         this.mirrorIndex = 0
-        PlaybackDiagnostics.beginSession(title, episodeNumber)
+        val diagnosticSessionId = PlaybackDiagnostics.beginSession(title, episodeNumber)
 
         mediaPlayer.attach()
         mediaPlayer.onFrame = ::onFrame
@@ -100,8 +100,9 @@ class PlayerViewModel @Inject constructor(
         viewModelScope.launch {
             // Real sources first; the demo is only a last-resort fallback and is
             // never labelled as a source (source failures are log-only).
-            val resolved = runCatching { autoResolver.resolve(title, episodeNumber) }
-                .getOrDefault(emptyList())
+            val resolved = runCatching {
+                autoResolver.resolve(title, episodeNumber, sessionId = diagnosticSessionId)
+            }.getOrDefault(emptyList())
             mirrors = resolved.ifEmpty { fallbackCandidates }
             _state.update {
                 it.copy(
@@ -112,12 +113,20 @@ class PlayerViewModel @Inject constructor(
                 )
             }
             val resume = resumeRepository.load(profileId, CatalogPlayback.stableId(titleId), episodeId)
-            openMirror(index = 0, startAtMs = resume?.positionMs ?: 0L)
+            openMirror(
+                index = 0,
+                startAtMs = resume?.positionMs ?: 0L,
+                sessionId = diagnosticSessionId
+            )
             startTicker()
         }
     }
 
-    private fun openMirror(index: Int, startAtMs: Long) {
+    private fun openMirror(
+        index: Int,
+        startAtMs: Long,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId
+    ) {
         val mirror = mirrors.getOrNull(index)
         if (mirror == null) {
             _state.update { it.copy(loading = false, fatal = "Keine Quelle verfügbar") }
@@ -128,6 +137,7 @@ class PlayerViewModel @Inject constructor(
         PlaybackDiagnostics.record(
             "RESOLVER",
             "Öffne Kandidat ${index + 1}/${mirrors.size}",
+            sessionId = sessionId,
             url = mirror.url,
             details = mapOf(
                 "sourceId" to mirror.sourceId,

@@ -43,16 +43,14 @@ object ContainerSniffer {
             lower.startsWith("<head") || lower.startsWith("<body")
         ) return "HTML"
         if (lower.startsWith("{") || lower.startsWith("[")) return "JSON"
-        if (bytes.size >= 12 && bytes[4].toInt().toChar() == 'f' &&
-            bytes[5].toInt().toChar() == 't' && bytes[6].toInt().toChar() == 'y' &&
-            bytes[7].toInt().toChar() == 'p'
-        ) return "MP4"
+        if (bytes.size >= 12 && bytes.asciiAt(4, "ftyp")) return "MP4"
         if (bytes.startsWith(0x1A, 0x45, 0xDF, 0xA3)) return "MKV"
-        if (bytes.size >= 12 && bytes.asciiAt(0, "RIFF") && bytes.asciiAt(8, "AVI ")) {
-            return "AVI"
-        }
+        if (bytes.size >= 12 && bytes.asciiAt(0, "RIFF") && bytes.asciiAt(8, "AVI ")) return "AVI"
+        if (bytes.size >= 12 && bytes.asciiAt(0, "RIFF") && bytes.asciiAt(8, "WAVE")) return "WAV"
         if (text.startsWith("FLV")) return "FLV"
         if (text.startsWith("OggS")) return "OGG"
+        if (bytes.startsWith(0x30, 0x26, 0xB2, 0x75)) return "ASF"
+        if (bytes.startsWith(0x2E, 0x52, 0x4D, 0x46)) return "REALMEDIA"
         if (bytes.startsWith(0x00, 0x00, 0x01, 0xBA)) return "MPEG-PS"
         if (bytes.startsWith(0x47) && bytes.size > 188 && bytes[188].toInt() == 0x47) {
             return "MPEG-TS"
@@ -70,8 +68,8 @@ object ContainerSniffer {
 
 /**
  * Process-local diagnostics shared by resolver, network and player modules.
- * No event is persisted or sent anywhere. Query tokens and cookie values are
- * represented by a short SHA-256 fingerprint so hops remain comparable.
+ * No event is persisted or sent anywhere. Late events from another session are
+ * dropped, and textual response bodies are never duplicated into the trace.
  */
 object PlaybackDiagnostics {
     private const val MAX_EVENTS = 500
@@ -84,40 +82,69 @@ object PlaybackDiagnostics {
     var currentSessionId: Long = 0L
         private set
 
+    @Volatile
+    private var active = false
+
     /** Optional Android log bridge; tests and non-UI callers can leave it null. */
     @Volatile
     var sink: ((PlaybackTraceEvent) -> Unit)? = null
 
     fun beginSession(title: String, episodeNumber: Int): Long {
         val id = sessionIds.incrementAndGet()
-        currentSessionId = id
-        synchronized(lock) { _events.value = emptyList() }
-        record("SESSION", "Wiedergabe gestartet", details = mapOf("title" to title, "episode" to "$episodeNumber"))
+        synchronized(lock) {
+            currentSessionId = id
+            active = true
+            _events.value = emptyList()
+        }
+        record(
+            "SESSION",
+            "Wiedergabe gestartet",
+            sessionId = id,
+            details = mapOf("title" to title, "episode" to "$episodeNumber")
+        )
         return id
     }
+
+    fun endSession(sessionId: Long) {
+        record("SESSION", "Wiedergabe beendet", sessionId = sessionId)
+        val ended = synchronized(lock) {
+            if (currentSessionId == sessionId && active) {
+                active = false
+                true
+            } else {
+                false
+            }
+        }
+        if (ended) sink = null
+    }
+
+    fun isActive(sessionId: Long): Boolean = active && sessionId != 0L && sessionId == currentSessionId
 
     fun record(
         category: String,
         message: String,
+        sessionId: Long = currentSessionId,
         url: String? = null,
         status: Int? = null,
         headers: Map<String, String> = emptyMap(),
         firstBytes: ByteArray? = null,
         details: Map<String, String> = emptyMap()
     ) {
+        val safeBytes = firstBytes?.let(::safeBinarySignature)
         val event = PlaybackTraceEvent(
             timestampMs = System.currentTimeMillis(),
-            sessionId = currentSessionId,
+            sessionId = sessionId,
             category = category,
-            message = message.take(240),
+            message = safeMessage(message).take(240),
             url = url?.let(::safeUrl),
             status = status,
             headers = safeHeaders(headers),
-            bytesHex = firstBytes?.take(32)?.joinToString("") { "%02X".format(it) },
-            bytesPreview = firstBytes?.let(::safePreview),
-            details = details.mapValues { (_, value) -> value.take(240) }
+            bytesHex = safeBytes?.hex,
+            bytesPreview = safeBytes?.preview,
+            details = details.mapValues { (_, value) -> safeMessage(value).take(240) }
         )
         synchronized(lock) {
+            if (!isActive(sessionId)) return
             _events.value = (_events.value + event).takeLast(MAX_EVENTS)
         }
         runCatching { sink?.invoke(event) }
@@ -142,15 +169,28 @@ object PlaybackDiagnostics {
                 }
                 SENSITIVE_HEADERS.any { name.equals(it, ignoreCase = true) } ->
                     "sha256=${fingerprint(value)}"
-                else -> value.take(240)
+                name.equals("Referer", ignoreCase = true) -> safeUrl(value)
+                else -> safeMessage(value).take(240)
             }
         }
 
+    fun safeMessage(raw: String): String {
+        val withoutUserInfo = USER_INFO.replace(raw) { match -> match.groupValues[1] }
+        val withoutRawUrls = URL_PATTERN.replace(withoutUserInfo) { match -> safeUrl(match.value) }
+        val withoutBearer = BEARER_PATTERN.replace(withoutRawUrls) { match ->
+            "${match.groupValues[1]}sha256:${fingerprint(match.groupValues[2])}"
+        }
+        return SENSITIVE_ASSIGNMENT.replace(withoutBearer) { match ->
+            "${match.groupValues[1]}=sha256:${fingerprint(match.groupValues[2])}"
+        }
+    }
+
     fun safeUrl(raw: String): String {
-        val queryStart = raw.indexOf('?')
-        if (queryStart < 0) return raw.substringBefore('#').take(500)
-        val base = raw.substring(0, queryStart)
-        val query = raw.substring(queryStart + 1).substringBefore('#')
+        val withoutUserInfo = USER_INFO.replace(raw) { match -> match.groupValues[1] }
+        val queryStart = withoutUserInfo.indexOf('?')
+        if (queryStart < 0) return withoutUserInfo.substringBefore('#').take(500)
+        val base = withoutUserInfo.substring(0, queryStart)
+        val query = withoutUserInfo.substring(queryStart + 1).substringBefore('#')
         val safeQuery = query.split('&').joinToString("&") { part ->
             val key = part.substringBefore('=')
             val value = part.substringAfter('=', "")
@@ -164,19 +204,25 @@ object PlaybackDiagnostics {
         return "$base?$safeQuery".take(500)
     }
 
-    private fun safePreview(bytes: ByteArray): String = bytes.take(64).joinToString("") { value ->
-        val code = value.toInt() and 0xFF
-        when {
-            code in 32..126 -> code.toChar().toString()
-            code == 10 || code == 13 || code == 9 -> " "
-            else -> "."
-        }
+    private data class SafeBytes(val hex: String? = null, val preview: String? = null)
+
+    private fun safeBinarySignature(bytes: ByteArray): SafeBytes = when (ContainerSniffer.detect(bytes)) {
+        "HLS" -> SafeBytes(preview = "#EXTM3U [weitere Textbytes redigiert]")
+        "MP4", "MKV", "AVI", "MPEG-TS", "MPEG-PS", "FLV", "OGG", "MP3", "ASF", "REALMEDIA" ->
+            SafeBytes(hex = bytes.take(32).joinToString("") { "%02X".format(it) })
+        else -> SafeBytes()
     }
 
     private fun fingerprint(value: String): String =
         MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
             .take(6).joinToString("") { "%02x".format(it) }
 
+    private val URL_PATTERN = Regex("""https?://[^\s<>"']+""")
+    private val USER_INFO = Regex("""(?i)(https?://)[^/@\s]+@""")
+    private val BEARER_PATTERN = Regex("""(?i)(bearer\s+)([A-Za-z0-9._~+/-]+=?)""")
+    private val SENSITIVE_ASSIGNMENT = Regex(
+        """(?i)\b(token|auth|signature|sig|jwt|session|cookie|credential|password|key|hdnts|hdnea|policy)=([^\s&;,}]+)"""
+    )
     private val SENSITIVE_HEADERS = setOf(
         "Authorization", "Proxy-Authorization", "Set-Cookie", "X-Api-Key", "X-Auth-Token"
     )

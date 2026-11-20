@@ -2,14 +2,10 @@ package de.hendler.frame61.ui.player
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.meta.CatalogItem
@@ -54,6 +50,7 @@ fun PlayerRoute(
             sourceNote = state.sourceNote,
             subtitleScale = subtitleScale,
             diagnosticEvents = diagnosticEvents,
+            fatalMessage = state.fatal,
             onTogglePlay = viewModel::togglePlay,
             onSeekBack = { viewModel.seekBy(-10_000L) },
             onSeekForward = { viewModel.seekBy(10_000L) },
@@ -71,14 +68,6 @@ fun PlayerRoute(
                 onResult = viewModel::submitCaptcha,
                 onCancel = viewModel::cancelCaptcha
             )
-        }
-    }
-
-    state.fatal?.let { message ->
-        Surface {
-            Box(modifier = Modifier.fillMaxSize().padding(32.dp)) {
-                Text(text = message)
-            }
         }
     }
 
