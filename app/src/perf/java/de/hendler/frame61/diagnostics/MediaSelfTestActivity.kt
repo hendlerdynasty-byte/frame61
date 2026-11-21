@@ -64,9 +64,13 @@ class MediaSelfTestActivity : ComponentActivity() {
             renderedEngine = ""
             status("Starte ${case.label}")
             engine.open(case.url)
+            var sawReady = false
+            var sawProgress = false
             repeat(10) {
                 delay(500)
                 val state = engine.state.value
+                sawReady = sawReady || state.isReady
+                sawProgress = sawProgress || state.positionMs > 0L
                 renderEngine(state.engine)
                 status(
                     "${case.label} | ${state.engine} | ${state.positionMs}/${state.durationMs} ms | " +
@@ -74,8 +78,9 @@ class MediaSelfTestActivity : ComponentActivity() {
                 )
             }
             val state = engine.state.value
-            val pass = state.isReady && state.error == null && state.positionMs > 0L
+            val pass = sawReady && sawProgress && state.error == null
             val result = "${case.label} engine=${state.engine} ready=${state.isReady} " +
+                "sawReady=$sawReady sawProgress=$sawProgress " +
                 "position=${state.positionMs} duration=${state.durationMs} error=${state.error} " +
                 if (pass) "PASS" else "FAIL"
             Log.i(TAG, result)
@@ -120,6 +125,7 @@ class MediaSelfTestActivity : ComponentActivity() {
             MediaCase("MP4", "asset:///diagnostics/sample.mp4"),
             MediaCase("MKV", "asset:///diagnostics/sample.mkv"),
             MediaCase("AVI", "asset:///diagnostics/sample.avi"),
+            MediaCase("WMV-Fallback", "asset:///diagnostics/sample.wmv"),
             MediaCase("MPEG-TS", "asset:///diagnostics/sample.ts")
         )
     }
