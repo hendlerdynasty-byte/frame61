@@ -9,6 +9,7 @@ import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
 import androidx.media3.common.TrackSelectionOverride
 import androidx.media3.common.Tracks
+import androidx.media3.datasource.DefaultDataSource
 import androidx.media3.datasource.ResolvingDataSource
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
@@ -199,8 +200,9 @@ class Media3Frame61Player(
                     )
                 }
             )
+            val dataSourceFactory = DefaultDataSource(context, resolvingFactory)
             val source = DefaultMediaSourceFactory(context)
-                .setDataSourceFactory(resolvingFactory)
+                .setDataSourceFactory(dataSourceFactory)
                 .createMediaSource(builder.build())
             player.setMediaSource(source, startAtMs.coerceAtLeast(0L))
             player.prepare()
