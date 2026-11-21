@@ -200,7 +200,7 @@ class Media3Frame61Player(
                     )
                 }
             )
-            val dataSourceFactory = DefaultDataSource(context, resolvingFactory)
+            val dataSourceFactory = DefaultDataSource(context, resolvingFactory.createDataSource())
             val source = DefaultMediaSourceFactory(context)
                 .setDataSourceFactory(dataSourceFactory)
                 .createMediaSource(builder.build())
