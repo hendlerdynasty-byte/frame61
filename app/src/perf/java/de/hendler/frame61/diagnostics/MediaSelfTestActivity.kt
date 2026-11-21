@@ -9,6 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
+import androidx.media3.common.MimeTypes
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.ui.PlayerView
 import de.hendler.frame61.player.Media3Frame61Player
@@ -78,10 +79,14 @@ class MediaSelfTestActivity : ComponentActivity() {
                 )
             }
             val state = engine.state.value
-            val pass = sawReady && sawProgress && state.error == null
+            val primaryError = engine.lastPrimaryErrorName
+            val engineExpected = state.engine == case.expectedEngine
+            val fallbackProven = case.expectedEngine != "Media3" || primaryError != null
+            val pass = sawReady && sawProgress && state.error == null && engineExpected && fallbackProven
             val result = "${case.label} engine=${state.engine} ready=${state.isReady} " +
                 "sawReady=$sawReady sawProgress=$sawProgress " +
                 "position=${state.positionMs} duration=${state.durationMs} error=${state.error} " +
+                "primaryError=${primaryError ?: "-"} " +
                 if (pass) "PASS" else "FAIL"
             Log.i(TAG, result)
             results += result
@@ -119,7 +124,8 @@ class MediaSelfTestActivity : ComponentActivity() {
     private data class MediaCase(
         val label: String,
         val url: String,
-        val mimeType: String? = null
+        val mimeType: String? = null,
+        val expectedEngine: String = "Media3"
     )
 
     private companion object {
@@ -129,10 +135,15 @@ class MediaSelfTestActivity : ComponentActivity() {
             MediaCase("MP4", "asset:///diagnostics/sample.mp4"),
             MediaCase("MKV", "asset:///diagnostics/sample.mkv"),
             MediaCase("AVI", "asset:///diagnostics/sample.avi"),
+            // Controlled fallback proof: the bytes are a valid MP4, but the
+            // primary engine is told they are Matroska, so Media3 must fail
+            // with a real parsing error. The system player receives the same
+            // file through its real ".mp4" path and must play it.
             MediaCase(
                 "MP4-Fallback",
                 "asset:///diagnostics/sample.mp4",
-                "application/x-frame61-force-primary-failure"
+                MimeTypes.APPLICATION_MKV,
+                expectedEngine = "Android MediaPlayer"
             ),
             MediaCase("MPEG-TS", "asset:///diagnostics/sample.ts")
         )

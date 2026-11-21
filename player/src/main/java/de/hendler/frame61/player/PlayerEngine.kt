@@ -94,6 +94,9 @@ class Media3Frame61Player(
     val exoPlayer: ExoPlayer get() = player
     val fallbackView: android.view.SurfaceView get() = fallback.surfaceView
 
+    /** Error code of the primary engine that caused the last fallback attempt. */
+    val lastPrimaryErrorName: String? get() = primaryError?.errorCodeName
+
     /** Called on every published frame tick — the watchdog consumes this. */
     var onFrame: ((positionMs: Long, durationMs: Long) -> Unit)? = null
     var onError: ((PlaybackException?) -> Unit)? = null
