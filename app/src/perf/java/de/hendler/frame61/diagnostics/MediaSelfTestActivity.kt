@@ -136,13 +136,14 @@ class MediaSelfTestActivity : ComponentActivity() {
             MediaCase("MKV", "asset:///diagnostics/sample.mkv"),
             MediaCase("AVI", "asset:///diagnostics/sample.avi"),
             // Controlled fallback proof: the bytes are a valid MP4, but the
-            // primary engine is told they are Matroska, so Media3 must fail
-            // with a real parsing error. The system player receives the same
-            // file through its real ".mp4" path and must play it.
+            // primary engine is told they are an HLS playlist, so Media3 must
+            // fail with a real parsing error instead of sniffing the container.
+            // The system player receives the same file through its real ".mp4"
+            // path and must play it.
             MediaCase(
                 "MP4-Fallback",
                 "asset:///diagnostics/sample.mp4",
-                MimeTypes.APPLICATION_MKV,
+                MimeTypes.APPLICATION_M3U8,
                 expectedEngine = "Android MediaPlayer"
             ),
             MediaCase("MPEG-TS", "asset:///diagnostics/sample.ts")
