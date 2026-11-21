@@ -225,6 +225,10 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Produktionsquellen und Perf-Assets, aber eine eigene Paket-ID. So sind
   Installationen neben Release/Perf ohne Deinstallation, Datenlöschung oder
   Wechsel des Signaturschlüssels möglich. Sie ist kein Release-Artefakt.
+- Die nachfolgende `acceptance`-Variante ersetzt `.ci` für wiederholbare
+  Installationen, da jeder frische GitHub-Runner einen anderen Debugkey
+  erzeugt. CI baut sie ohne Signaturmaterial; erst lokal erfolgt die Signatur
+  mit dem vorhandenen FRAME61-Key. So bleiben auch Folgeupdates kompatibel.
 
 
 

@@ -86,6 +86,13 @@ android {
             applicationIdSuffix = ".ci"
             versionNameSuffix = "-ci"
         }
+        // CI builds this unsigned; local acceptance signing uses the existing release key.
+        create("acceptance") {
+            initWith(getByName("perf"))
+            applicationIdSuffix = ".acceptance"
+            versionNameSuffix = "-acceptance"
+            signingConfig = null
+        }
     }
 
     compileOptions {
@@ -115,6 +122,11 @@ android {
     sourceSets {
         getByName("main").jniLibs.srcDirs("src/main/jniLibs")
         getByName("ci") {
+            java.srcDir("src/perf/java")
+            assets.srcDir("src/perf/assets")
+            manifest.srcFile("src/perf/AndroidManifest.xml")
+        }
+        getByName("acceptance") {
             java.srcDir("src/perf/java")
             assets.srcDir("src/perf/assets")
             manifest.srcFile("src/perf/AndroidManifest.xml")
