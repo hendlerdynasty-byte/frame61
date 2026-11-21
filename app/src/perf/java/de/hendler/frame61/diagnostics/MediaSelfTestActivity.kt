@@ -63,7 +63,7 @@ class MediaSelfTestActivity : ComponentActivity() {
         for (case in CASES) {
             renderedEngine = ""
             status("Starte ${case.label}")
-            engine.open(case.url)
+            engine.open(case.url, mimeType = case.mimeType)
             var sawReady = false
             var sawProgress = false
             repeat(10) {
@@ -116,7 +116,11 @@ class MediaSelfTestActivity : ComponentActivity() {
         super.onDestroy()
     }
 
-    private data class MediaCase(val label: String, val url: String)
+    private data class MediaCase(
+        val label: String,
+        val url: String,
+        val mimeType: String? = null
+    )
 
     private companion object {
         const val TAG = "Frame61MediaTest"
@@ -125,7 +129,11 @@ class MediaSelfTestActivity : ComponentActivity() {
             MediaCase("MP4", "asset:///diagnostics/sample.mp4"),
             MediaCase("MKV", "asset:///diagnostics/sample.mkv"),
             MediaCase("AVI", "asset:///diagnostics/sample.avi"),
-            MediaCase("WMV-Fallback", "asset:///diagnostics/sample.wmv"),
+            MediaCase(
+                "MP4-Fallback",
+                "asset:///diagnostics/sample.mp4",
+                "application/x-frame61-force-primary-failure"
+            ),
             MediaCase("MPEG-TS", "asset:///diagnostics/sample.ts")
         )
     }

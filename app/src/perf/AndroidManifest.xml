@@ -5,5 +5,9 @@
             android:name="de.hendler.frame61.diagnostics.MediaSelfTestActivity"
             android:exported="false"
             android:screenOrientation="unspecified" />
+        <activity
+            android:name="de.hendler.frame61.diagnostics.SessionStressActivity"
+            android:exported="false"
+            android:screenOrientation="unspecified" />
     </application>
 </manifest>

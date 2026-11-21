@@ -220,7 +220,7 @@ class Media3Frame61Player(
                 error = error.message ?: error.javaClass.simpleName,
                 isPlaying = false
             )
-            onError?.invoke(null)
+            startFallback(null)
             return
         }
         _state.value = _state.value.copy(
@@ -356,13 +356,16 @@ class Media3Frame61Player(
         format.colorInfo?.let { append(" colorTransfer=").append(it.colorTransfer) }
     }
 
-    private fun startFallback(error: PlaybackException) {
+    private fun startFallback(error: PlaybackException?) {
         primaryError = error
         val container = PlaybackDiagnostics.events.value.lastOrNull { event ->
             event.url == PlaybackDiagnostics.safeUrl(currentUrl) && event.status != null
         }?.details?.get("container")
         if (fallbackAttempted || container in setOf("HTML", "JSON", "EMPTY")) {
-            _state.value = _state.value.copy(error = error.errorCodeName, isPlaying = false)
+            _state.value = _state.value.copy(
+                error = error?.errorCodeName ?: "MEDIA3_SETUP_FAILED",
+                isPlaying = false
+            )
             onError?.invoke(error)
             return
         }

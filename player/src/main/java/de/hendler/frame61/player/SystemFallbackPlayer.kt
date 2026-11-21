@@ -47,7 +47,15 @@ class SystemFallbackPlayer(context: Context) {
         player.setDisplay(surfaceView.holder)
         if (url.startsWith("asset:///")) {
             val path = url.removePrefix("asset:///")
-            val file = java.io.File(appContext.cacheDir, "fallback-${path.hashCode()}.media")
+            // Android's system player picks its extractor from the path. The
+            // extension must survive the temporary copy, otherwise a valid MP4
+            // is judged by the artificial ".media" suffix instead of its bytes.
+            val extension = Regex("\\.([A-Za-z0-9]{1,8})$").find(path)?.groupValues?.get(1)
+                ?: "media"
+            val file = java.io.File(
+                appContext.cacheDir,
+                "fallback-${path.hashCode()}.$extension"
+            )
             appContext.assets.open(path).use { input ->
                 file.outputStream().use { output -> input.copyTo(output) }
             }

@@ -208,6 +208,17 @@ fun SettingsScreen(
                 },
                 modifier = Modifier.tvFocusable(id = "media-self-test", onClick = {})
             ) { Text(text = "Player-Selbsttest") }
+            OutlinedButton(
+                onClick = {
+                    context.startActivity(
+                        Intent(
+                            context,
+                            Class.forName("de.hendler.frame61.diagnostics.SessionStressActivity")
+                        )
+                    )
+                },
+                modifier = Modifier.tvFocusable(id = "session-stress-test", onClick = {})
+            ) { Text(text = "30-Minuten-Sessiontest") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
