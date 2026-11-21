@@ -49,19 +49,16 @@
     ]
   },
   "verified": false,
-  "last_check": "2026-11-18T07:37:15Z",
+  "last_check": "2026-11-21T12:45:52Z",
   "check": {
-    "status": "blocked_external",
-    "reason": "Rotationsliste 6 Domains geprueft: kinoz.to -> kion.ru, kinox.tv/.me JS-Redirect, kinox.sx DNS, kinox.farm Domain-for-sale, kinox.cloud /lander; kein Index erreichbar",
+    "status": "selector_missing",
+    "reason": "Selektoren ohne Treffer: search.resultSelector; Domain liefert nur einen Meta-Refresh auf kion.ru; kein Index mehr.",
     "checked": [
-      "kinoz.to",
-      "kinox.tv",
-      "kinox.me",
-      "kinox.sx",
-      "kinox.farm",
-      "kinox.cloud"
+      "search.resultSelector"
     ],
-    "misses": [],
-    "http_status": null
+    "misses": [
+      "search.resultSelector"
+    ],
+    "http_status": 200
   }
 }
