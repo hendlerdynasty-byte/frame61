@@ -13,6 +13,7 @@ class SystemFallbackPlayer(context: Context) {
     val surfaceView = SurfaceView(context)
 
     private val appContext = context.applicationContext
+    private var assetDescriptor: android.content.res.AssetFileDescriptor? = null
     private var mediaPlayer: MediaPlayer? = null
     private var prepared = false
     private var pendingSeekMs = 0L
@@ -45,9 +46,9 @@ class SystemFallbackPlayer(context: Context) {
         mediaPlayer = player
         player.setDisplay(surfaceView.holder)
         if (url.startsWith("asset:///")) {
-            appContext.assets.openFd(url.removePrefix("asset:///")).use { descriptor ->
-                player.setDataSource(descriptor.fileDescriptor, descriptor.startOffset, descriptor.length)
-            }
+            assetDescriptor = appContext.assets.openFd(url.removePrefix("asset:///"))
+            val descriptor = checkNotNull(assetDescriptor)
+            player.setDataSource(descriptor.fileDescriptor, descriptor.startOffset, descriptor.length)
         } else {
             player.setDataSource(appContext, Uri.parse(url), headers)
         }
@@ -91,6 +92,8 @@ class SystemFallbackPlayer(context: Context) {
         runCatching { mediaPlayer?.setDisplay(null) }
         runCatching { mediaPlayer?.reset() }
         runCatching { mediaPlayer?.release() }
+        runCatching { assetDescriptor?.close() }
+        assetDescriptor = null
         mediaPlayer = null
         prepared = false
         pendingSeekMs = 0L

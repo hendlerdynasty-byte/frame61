@@ -405,7 +405,12 @@ class Media3Frame61Player(
         }
         runCatching {
             fallback.open(currentUrl, currentHeaders, _state.value.positionMs)
-        }.onFailure {
+        }.onFailure { error ->
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Systemplayer-Setupfehler: ${error.javaClass.simpleName}: ${error.message}",
+                sessionId = playbackSessionId
+            )
             fallback.onFailure(-1, -1)
         }
     }
