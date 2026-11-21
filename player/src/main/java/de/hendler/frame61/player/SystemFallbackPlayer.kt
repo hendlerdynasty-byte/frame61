@@ -44,7 +44,13 @@ class SystemFallbackPlayer(context: Context) {
         val player = MediaPlayer()
         mediaPlayer = player
         player.setDisplay(surfaceView.holder)
-        player.setDataSource(appContext, Uri.parse(url), headers)
+        if (url.startsWith("asset:///")) {
+            appContext.assets.openFd(url.removePrefix("asset:///")).use { descriptor ->
+                player.setDataSource(descriptor.fileDescriptor, descriptor.startOffset, descriptor.length)
+            }
+        } else {
+            player.setDataSource(appContext, Uri.parse(url), headers)
+        }
         player.setOnPreparedListener {
             prepared = true
             if (pendingSeekMs > 0L) player.seekTo(pendingSeekMs.toInt())

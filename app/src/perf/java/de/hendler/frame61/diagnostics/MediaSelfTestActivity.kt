@@ -53,6 +53,7 @@ class MediaSelfTestActivity : ComponentActivity() {
             ))
         }
         setContentView(root)
+        de.hendler.frame61.net.PlaybackDiagnostics.beginSession("media-self-test", 0)
         engine.attach()
         testJob = lifecycleScope.launch { runCases() }
     }
@@ -115,11 +116,11 @@ class MediaSelfTestActivity : ComponentActivity() {
     private companion object {
         const val TAG = "Frame61MediaTest"
         val CASES = listOf(
-            MediaCase("HLS", "file:///android_asset/diagnostics/sample.m3u8"),
-            MediaCase("MP4", "file:///android_asset/diagnostics/sample.mp4"),
-            MediaCase("MKV", "file:///android_asset/diagnostics/sample.mkv"),
-            MediaCase("AVI", "file:///android_asset/diagnostics/sample.avi"),
-            MediaCase("MPEG-TS", "file:///android_asset/diagnostics/sample.ts")
+            MediaCase("HLS", "asset:///diagnostics/sample.m3u8"),
+            MediaCase("MP4", "asset:///diagnostics/sample.mp4"),
+            MediaCase("MKV", "asset:///diagnostics/sample.mkv"),
+            MediaCase("AVI", "asset:///diagnostics/sample.avi"),
+            MediaCase("MPEG-TS", "asset:///diagnostics/sample.ts")
         )
     }
 }
