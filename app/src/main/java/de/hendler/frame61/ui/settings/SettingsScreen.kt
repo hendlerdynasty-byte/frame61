@@ -219,6 +219,17 @@ fun SettingsScreen(
                 },
                 modifier = Modifier.tvFocusable(id = "session-stress-test", onClick = {})
             ) { Text(text = "30-Minuten-Sessiontest") }
+            OutlinedButton(
+                onClick = {
+                    context.startActivity(
+                        Intent(
+                            context,
+                            Class.forName("de.hendler.frame61.diagnostics.SourceCoverageActivity")
+                        )
+                    )
+                },
+                modifier = Modifier.tvFocusable(id = "source-coverage-test", onClick = {})
+            ) { Text(text = "Quellen-Abdeckung") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
