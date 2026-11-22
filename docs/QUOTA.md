@@ -36,6 +36,27 @@ funk) mit 2–6 Kandidaten; je Titel spielte der erste Kandidat.
 Rohdaten: `~/hendler-dynasty/evidence/frame61/quota/baseline-243971d.txt`
 (vollständige 100-Zeilen-Tabelle), UI-Dumps `12-poll3/`.
 
+## Zweiter Lauf (Build `e242198`, 22.11.2026, A52)
+
+| Kennzahl | Wert | Ziel 1.4.0 |
+|---|---|---|
+| Erfolgsquote | **5 / 100 = 5 %** | ≥ 95 % |
+| Startzeit p50 | **2.635 ms** | — |
+| Startzeit p95 | **2.714 ms** | < 3.000 ms ✅ |
+| Ø Startzeit | 2.662 ms | — |
+| Fehlerklassen | 61 × 3003, 34 × `NO_CANDIDATE` | 0 sichtbar |
+
+Was sich bewegt hat: Die Auflösung ist von ~11 s auf **~1,6–1,9 s** gefallen
+(`resolveFast` mit 600-ms-Frist, parallele Hoster-Ketten). Die Kandidaten
+kommen jetzt aus den großen Indizes — `serienstream.to` (56 Titel),
+`devideosrc.co` (35), `vidaraa.cc` (3), `vixeo.io` (2), `flyfile.app` (1) —
+aber sie sind **HTML-Zwischenseiten**, die der Player nicht abspielen kann
+(3003). Genau dort setzt der nächste Schritt an: Ketten über mehrere
+Hoster-Packs, ein Redirect-Gate-Pack für `serienstream.to`, ein JS-Pack für
+`devideosrc` und eine generische Embed-Auflösung für Hosts ohne Pack.
+
+Rohdaten: `~/hendler-dynasty/evidence/frame61/quota/run5-final-75.txt`.
+
 ## Ursachen der Baseline
 
 1. **`NO_CANDIDATE` (55)** — die großen Serien-/Film-Indizes haben in diesem

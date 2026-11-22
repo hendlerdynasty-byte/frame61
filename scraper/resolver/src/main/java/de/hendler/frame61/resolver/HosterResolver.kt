@@ -101,12 +101,15 @@ class HosterResolver(
             // WebView baut die Seite und meldet die erste echte Medien-URL
             // (video/source/window.sources/getActiveLink). Nur bei Embed-Formen,
             // damit kein fremder Host den Start verzögert.
-            if (depth == 0 && jsEvaluator != null && looksLikeEmbed(url)) {
-                val extracted = runCatching {
-                    jsEvaluator.evaluate(url, GENERIC_EMBED_SCRIPT, GENERIC_EMBED_MS)
-                }.getOrNull()
-                if (!extracted.isNullOrBlank() && extracted.startsWith("https://")) {
-                    return HosterOutcome.Resolved(extracted, 1, headers, effectiveCookies)
+            if (depth == 0 && looksLikeEmbed(url)) {
+                val evaluator = jsEvaluator
+                if (evaluator != null) {
+                    val extracted = runCatching {
+                        evaluator.evaluate(url, GENERIC_EMBED_SCRIPT, GENERIC_EMBED_MS)
+                    }.getOrNull()
+                    if (!extracted.isNullOrBlank() && extracted.startsWith("https://")) {
+                        return HosterOutcome.Resolved(extracted, 1, headers, effectiveCookies)
+                    }
                 }
             }
             return HosterOutcome.Unknown(url, headers, effectiveCookies)
