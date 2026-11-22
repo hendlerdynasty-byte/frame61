@@ -1,7 +1,54 @@
 # ENTSCHEIDUNGEN.md — getroffene Defaults
 
-Stand: 2026-11-22. Bei Unklarheit gilt der hier dokumentierte Default; die
+Stand: 22.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
+
+## 2026-11-22 — Auflösung endet nach dem ersten Kandidaten (600 ms Frist)
+
+- Befund aus der Baseline: Der Resolver wartete auf die langsamste Quelle
+  (4 s Timeout), obwohl ARD nach ~1 s einen spielbaren Stream liefert; dazu
+  liefen die Hoster-Ketten je Stream sequentiell. Gemessen: p95 5,6 s bis zum
+  ersten Bild.
+- Default: `AutoPlaybackResolver.resolveFast` sammelt alle Quellen parallel
+  ein und beendet das Einsammeln **600 ms nach dem ersten Kandidaten**
+  (`FIRST_CANDIDATE_GRACE_MS`). Die restlichen Quellen werden nicht
+  weiterverfolgt; der Player startet. Die vollständige Liste bleibt über
+  `resolve` für den Fehlerfall (Neuauflösung) verfügbar. Die Hoster-Kette
+  eines Packs läuft parallel statt sequentiell.
+- Wirkung (gemessen): Startzeit p95 5.615 ms → im zweiten Lauf 4.664 ms
+  (vor dem Timeout-Fix); nach dem Fix greift die Frist tatsächlich.
+
+## 2026-11-22 — Kein libVLC als zweite Engine
+
+- Prüfung: libVLC würde die zweite Player-Stufe stellen, kostet aber als
+  Abhängigkeit rund 15–40 MiB (native Libraries für alle ABIs). Der
+  Debug-APK liegt bei 36,7 MiB, die harte Grenze bei 45 MiB — ein
+  Zusatzpaket dieser Größe würde die Abnahme sprengen.
+- Default: **kein** libVLC. Die zweite Stufe bleibt der Android-Systemplayer
+  (`SystemFallbackPlayer`, Hardware-Decoder), die dritte die Neuauflösung mit
+  anderem Kandidaten. Das deckt HLS, MP4, MKV, AVI und MPEG-TS bereits ab
+  (Selbsttest 6/6) und hält die APK-Grenze ein.
+
+## 2026-11-22 — Nur eine WebView gleichzeitig, Vorwärmen verzögert
+
+- Befund: Der Lauf mit `25dba40` endete in einem ANR („Frame61 wird wiederholt
+  beendet", `Input dispatching timed out … Waited 10003ms for FocusEvent`).
+  Ursache: Das Vorwärmen der Captcha-Hoster lief beim ersten Resolve und
+  erzeugte vier WebViews gleichzeitig auf dem Hauptthread.
+- Default: `WebViewJsEvaluator` serialisiert alle Zugriffe über einen
+  `Mutex`; das Vorwärmen startet erst **5 s nach dem App-Start** aus
+  `MainActivity` heraus (nicht mehr aus dem Resolver) und umfasst
+  **höchstens zwei** Hosts. Der Resolver bleibt damit frei von
+  WebView-Arbeit, solange kein Captcha-Host tatsächlich aufgelöst wird.
+
+## 2026-11-22 — Titel-Quote ist die Abnahmegröße, nicht die Domainliste
+
+- Default: Der Erfolg wird an **100 zufällig gezogenen Katalogtiteln**
+  gemessen (`PlaybackQuotaActivity`, Seed 20261122), nicht an der Zahl
+  erreichbarer Domains. Jeder Titel zählt nur mit fortschreitender
+  Wiedergabe; Startzeit = Auflösung + Puffer bis zur ersten Position.
+- Die Messung ist reproduzierbar: gleiche Stichprobe, gleiche Kette, Protokoll
+  in Logcat, Statusbereich und Datei.
 
 ## 2026-11-22 — Systemplayer-Fallback haengt die Surface erst bei `surfaceCreated`
 
@@ -283,3 +330,45 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 
 
 
+
+## 2026-11-22 — POST-Bodies tragen immer einen Content-Type
+
+- Befund: `aniworld.to/ajax/search` antwortet auf einen POST **ohne**
+  `Content-Type` mit HTTP 200 und **leerem** Rumpf (`text/html`, 0 Bytes).
+  Verifiziert mit curl: POST mit `application/x-www-form-urlencoded` liefert
+  19.350 Bytes JSON (74 Treffer), ohne Content-Type 0 Bytes. Der App-Client
+  (`PackHttpClient`) hat den Body mit `toRequestBody(null)` gesendet — daher
+  die „Regression“ 200/0 Treffer auf dem Gerät.
+- Default: `PackHttpClient` setzt bei POST `application/x-www-form-urlencoded`,
+  wenn die Regel keinen eigenen `Content-Type` nennt. Eine Regel mit eigenem
+  Header behält ihren Wert.
+- Wirkung: `aniworld` (und jedes weitere POST-Pack) ist wieder suchfähig.
+
+## 2026-11-22 — Stream-Ziele werden absolutisiert, Attribute gelesen, Ketten verfolgt
+
+- Befund: `aniworld.to` liefert Hoster-Links als `data-link-target="/redirect/<id>"`
+  relativ, Sprache als `data-lang-key`, Hoster als Text im `<h4>`.
+- Default:
+  1. `parseStreamsHtml` macht relative Ziele mit der `baseUrl` absolut.
+  2. Neue optionale Felder `langAttr`/`hosterAttr` lesen den Wert aus einem
+     Attribut statt aus dem Elementtext.
+  3. `HosterResolver` folgt bis zu drei Weiterleitungen, wenn für den Host
+     kein Hoster-Pack existiert, und löst die End-URL erneut auf. Direkte
+     Medien-URLs (`.mp4/.m3u8/.mkv/...`) lösen keinen Lookup aus.
+  4. `vidmoly.biz` ist als Domain ergänzt (die Kette landet dort, nicht auf
+     `.to/.me/.net`).
+- Wirkung: `/redirect/<id>`-Ketten werden zum echten Hoster-Stream statt zu
+  einer HTML-Seite, die der Player mit 3003 quittiert.
+
+## 2026-11-22 — Captchas laufen still in einer versteckten WebView
+
+- Default: `HeadlessCaptchaSolver` öffnet eine **nicht an die View-Hierarchie
+  gehängte** WebView, wartet auf die Challenge und erntet die Cookies
+  (`WebViewJsEvaluator.cookiesFor`). Die Cookies werden pro Host 15 Minuten
+  zwischengespeichert; beim ersten Zugriff auf einen Captcha-Hoster läuft ein
+  stilles Vorwärmen im Hintergrund.
+- Der sichtbare `CaptchaBroker`/WebView-Dialog bleibt **Rückfallebene** und
+  erscheint nur, wenn die stille Lösung scheitert. Damit ist „null sichtbare
+  Captchas“ erreichbar, ohne eine Quelle fallenzulassen.
+- `HosterResolver` erhält dafür den optionalen `CaptchaSolver`; ohne Solver
+  bleibt das bisherige Verhalten (`CaptchaRequired`) erhalten.

@@ -31,6 +31,25 @@
     "episodeLinkSelector": "td.seasonEpisodeTitle a",
     "episodeIndexSelector": "td.season1EpisodeID"
   },
+  "streams": {
+    "endpoint": "/anime/stream/{titleId}/staffel-1/episode-{episodeId}",
+    "format": "html",
+    "selector": "li[data-link-target]",
+    "urlAttr": "data-link-target",
+    "langAttr": "data-lang-key",
+    "langMap": {
+      "1": "de",
+      "2": "en",
+      "3": "orig"
+    },
+    "hosterSelector": "h4",
+    "referrers": [
+      {
+        "domain": "aniworld.to",
+        "accept": true
+      }
+    ]
+  },
   "verified": true,
   "last_check": "2026-11-22T01:28:51Z",
   "check": {

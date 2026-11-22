@@ -233,6 +233,17 @@ fun SettingsScreen(
                 },
                 modifier = Modifier.tvFocusable(id = "source-coverage-test", onClick = {})
             ) { Text(text = "Quellen-Abdeckung") }
+            OutlinedButton(
+                onClick = {
+                    context.startActivity(
+                        Intent(
+                            context,
+                            Class.forName("de.hendler.frame61.diagnostics.PlaybackQuotaActivity")
+                        )
+                    )
+                },
+                modifier = Modifier.tvFocusable(id = "playback-quota-test", onClick = {})
+            ) { Text(text = "Titel-Quote") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +

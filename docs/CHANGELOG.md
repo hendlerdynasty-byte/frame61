@@ -2,6 +2,60 @@
 
 ## [Unreleased]
 
+### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
+
+#### Hinzugefügt
+- **Messharness `PlaybackQuotaActivity`** (nur `ci`/`acceptance`): zieht 100
+  Katalogtitel deterministisch (Seed 20261122), löst sie über die
+  Produktionskette auf und spielt bis zu drei Kandidaten. Pro Titel werden
+  Ergebnis, Zeit bis zum ersten Bild, Kandidatenzahl, versuchte Hosts und
+  Fehlerklasse protokolliert — im Logcat, im Statusbereich und in einer Datei.
+  Bericht: [QUOTA.md](QUOTA.md).
+- **Captcha-Pipeline ohne sichtbaren Dialog**: `HeadlessCaptchaSolver` nutzt
+  eine versteckte WebView (`WebViewJsEvaluator.cookiesFor`), cacht Cookies pro
+  Host 15 Minuten und wärmt zwei Hoster beim App-Start vor. Der sichtbare
+  `CaptchaBroker` bleibt Rückfallebene.
+- **Hoster-Ketten**: Eine Resultat-URL, die zu einem anderen Hoster-Pack
+  gehört, wird rekursiv aufgelöst (bis drei Stufen). Dazu Packs für
+  `serienstream` (Redirect-Gate per JS) und `devideosrc`, eine generische
+  Embed-Auflösung für Hosts ohne Pack sowie `vidsonic`.
+- **Stream-Regeln** für `s.to` (Serien) und `aniworld` (Anime):
+  Hoster-Links, Sprache und Hoster aus Attributen, relative Ziele absolut.
+
+#### Geändert
+- `resolveFast`: Der Resolver sammelt alle Quellen parallel ein und kehrt
+  **600 ms nach dem ersten Kandidaten** zurück statt auf die langsamste
+  Quelle zu warten. Der Player nutzt diesen Pfad; die vollständige Liste
+  bleibt für die Fehlerrotation verfügbar.
+- Hoster-Auflösung je Pack **parallel** statt sequentiell.
+- Quellbudget 4 s → **9 s**, Obergrenze des Einsammelns **12 s** (Packs mit
+  JS-Kette brauchen länger; im schnellen Pfad läuft die Captcha-Runde nicht).
+- POST-Bodies tragen `application/x-www-form-urlencoded`, wenn die Regel
+  keinen eigenen Content-Type nennt.
+- Stream-Ziele werden absolut (`baseUrl`), `langAttr`/`hosterAttr` lesen
+  Sprache und Hoster aus Attributen.
+- `HEAD`-Ketten: `HosterResolver` folgt Weiterleitungen bis drei Stufen.
+
+#### Behoben
+- **aniworld-Regression (HTTP 200 / 0 Treffer):** POST ohne Content-Type —
+  DDoS-Guard antwortet mit 200 und leerem Rumpf. Behoben, aniworld liefert
+  wieder 74 Treffer.
+- **Crash-Loop „Frame61 wird wiederholt beendet“:** `ClosedSendChannelException`
+  aus `send()` beim Abbruch des Einsammelns. Jetzt `trySend` in eigenem Scope.
+- **ANR durch parallele WebViews:** WebView-Zugriffe serialisiert, Vorwärmen
+  verzögert und auf zwei Hosts begrenzt.
+
+#### Gemessen (A52, 100-Titel-Stichprobe)
+| Lauf | Quote | Startzeit p95 | Fehlerklassen |
+|---|---|---|---|
+| Baseline `243971d` | 6/100 | 5.615 ms | 55 NO_CANDIDATE, 38 × 3003 |
+| `e242198` | 5/100 | **2.714 ms** | 34 NO_CANDIDATE, 61 × 3003 |
+| `f673eb2` | 4/100 | 3.142 ms | 86 NO_CANDIDATE, 10 × 3003 |
+| `4ebb58a` | läuft | — | — |
+
+Die 95-%-Marke ist mit dem aktuellen Quellenbestand **nicht** erreicht; Gründe
+und nächste Schritte in [QUOTA.md](QUOTA.md).
+
 ### Phase B — Player-Härtung, Quellen-Abdeckung, Release 1.3.0 (2026-11-22)
 
 #### Hinzugefügt

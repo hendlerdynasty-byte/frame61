@@ -22,6 +22,24 @@
     "resultSelector": "body",
     "titleSelector": "h1"
   },
+  "streams": {
+    "endpoint": "/serie/{titleId}/staffel-1/episode-{episodeId}",
+    "format": "html",
+    "selector": "button.link-box[data-play-url]",
+    "urlAttr": "data-play-url",
+    "langAttr": "data-language-label",
+    "langMap": {
+      "Deutsch": "de",
+      "Englisch": "en"
+    },
+    "hosterAttr": "data-provider-name",
+    "referrers": [
+      {
+        "domain": "serienstream.to",
+        "accept": true
+      }
+    ]
+  },
   "verified": true,
   "last_check": "2026-11-22T01:29:56Z",
   "check": {

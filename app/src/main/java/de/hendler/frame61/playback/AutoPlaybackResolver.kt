@@ -20,7 +20,11 @@ import de.hendler.frame61.ui.player.CatalogPlayback
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
@@ -44,6 +48,7 @@ class AutoPlaybackResolver @Inject constructor(
     private val ardResolver: ArdPlaybackResolver,
     private val captchaBroker: CaptchaBroker,
     private val jsEvaluator: WebViewJsEvaluator,
+    private val headlessCaptchaSolver: HeadlessCaptchaSolver,
     private val prefs: ProfileDataStore
 ) {
 
@@ -55,6 +60,13 @@ class AutoPlaybackResolver @Inject constructor(
     )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
+
+    /**
+     * Scope für die parallelen Quellen-Calls. Er gehört nicht zum Aufrufer:
+     * nach der kurzen Frist darf der Player starten, während die langsamen
+     * Quellen im Hintergrund noch bis zu ihrem Timeout laufen.
+     */
+    private val resolveScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
 
     private val hosterPacks: List<HosterPack> by lazy {
         val assets = context.assets
@@ -70,7 +82,26 @@ class AutoPlaybackResolver @Inject constructor(
     }
 
     private val hosterResolver: HosterResolver by lazy {
-        HosterResolver(hosterPacks, OkHttpBodyFetcher(), jsEvaluator)
+        HosterResolver(
+            packs = hosterPacks,
+            fetcher = OkHttpBodyFetcher(),
+            jsEvaluator = jsEvaluator,
+            captchaSolver = headlessCaptchaSolver
+        )
+    }
+
+    /**
+     * Hoster mit Captcha still vorwärmen, damit der erste Titel nicht auf eine
+     * Challenge wartet. Wird bewusst **nicht** beim Anlegen des Resolvers
+     * aufgerufen (das erzeugte mehrere WebViews gleichzeitig und blockierte den
+     * Hauptthread → ANR), sondern verzögert vom Einstiegspunkt der App.
+     */
+    fun warmUpCaptchaHosts() {
+        val urls = hosterPacks
+            .filter { !it.captcha.isNullOrBlank() }
+            .mapNotNull { pack -> pack.domains.firstOrNull()?.let { "https://$it/" } }
+            .take(MAX_WARMUP_HOSTS)
+        if (urls.isNotEmpty()) headlessCaptchaSolver.warmUp(urls)
     }
 
     suspend fun resolve(
@@ -78,6 +109,30 @@ class AutoPlaybackResolver @Inject constructor(
         episodeNumber: Int = 0,
         sessionId: Long = PlaybackDiagnostics.currentSessionId,
         fresh: Boolean = false
+    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, 0L)
+
+    /**
+     * Wie [resolve], kehrt aber schon [graceMs] nach dem ersten Kandidaten
+     * zurück, statt auf die langsamste Quelle zu warten.
+     *
+     * Motivation aus der Messung: die ARD-Kette liefert in ~1 s einen
+     * spielbaren Stream, der Lauf wartete aber 4 s auf den Timeout der
+     * langsamsten Quelle (gemessen p95 5,6 s bis zum ersten Bild).
+     */
+    suspend fun resolveFast(
+        title: String,
+        episodeNumber: Int = 0,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId,
+        fresh: Boolean = false,
+        graceMs: Long = FIRST_CANDIDATE_GRACE_MS
+    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, graceMs)
+
+    private suspend fun resolveInternal(
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long,
+        fresh: Boolean,
+        graceMs: Long
     ): List<MirrorCandidate> =
         withContext(Dispatchers.IO) {
             val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
@@ -95,16 +150,15 @@ class AutoPlaybackResolver @Inject constructor(
                 TAG,
                 "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
                     "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
-                    "disabled=${disabled.sorted()}"
+                    "disabled=${disabled.sorted()} grace=$graceMs"
             )
 
-            val candidates = coroutineScope {
-                packs.map { pack ->
-                    async { resolveWithTimeout(pack, title, episodeNumber, sessionId) }
-                }.awaitAll().flatten()
-            }
+            val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
 
-            val captchaCandidates = if (candidates.isEmpty()) {
+            // Captcha-Quellen sind die letzte Runde und nur im vollständigen
+            // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
+            // mehrere 9-s-Blöcke verlängern (gemessen 27 s ohne Kandidat).
+            val captchaCandidates = if (candidates.isEmpty() && graceMs == 0L) {
                 allPacks.filter { it.captcha != null }.flatMap { pack ->
                     resolveWithTimeout(pack, title, episodeNumber, sessionId)
                 }
@@ -147,6 +201,65 @@ class AutoPlaybackResolver @Inject constructor(
         return result
     }
 
+    /**
+     * Alle Packs parallel befragen, Ergebnisse einsammeln.
+     *
+     * Mit [graceMs] > 0 endet das Einsammeln, sobald nach dem ersten
+     * Kandidaten die Frist abgelaufen ist — die übrigen Quellen laufen dann
+     * nicht weiter und der Player startet sofort.
+     */
+    private suspend fun collectCandidates(
+        packs: List<SourcePack>,
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long,
+        graceMs: Long
+    ): List<MirrorCandidate> {
+        if (packs.isEmpty()) return emptyList()
+        // Eigener Scope statt coroutineScope: die Quellen laufen nach dem Abbruch
+        // im Hintergrund weiter (blockierende OkHttp-Calls lassen sich nicht
+        // abbrechen), der Player wartet aber nicht auf sie.
+        val channel = Channel<List<MirrorCandidate>>(packs.size)
+        packs.forEach { pack ->
+            resolveScope.launch {
+                val result = resolveWithTimeout(pack, title, episodeNumber, sessionId)
+                // trySend statt send: die Kapazitaet entspricht der Zahl der
+                // Packs, also geht kein Ergebnis verloren. Ein suspendierendes
+                // send wuerde beim Abbruch eine ClosedSendChannelException in
+                // einem Kind-Coroutine werfen — die die App beendet.
+                channel.trySend(result)
+            }
+        }
+        val collected = mutableListOf<MirrorCandidate>()
+        var received = 0
+        var firstAt = 0L
+        val start = System.currentTimeMillis()
+        // Obergrenze für den ganzen Durchgang: eine Quelle mit JS-Kette darf
+        // bis zu 12 s brauchen, danach wird ohne Kandidaten zurückgekehrt.
+        val hardDeadline = HARD_DEADLINE_MS
+        while (received < packs.size) {
+            val now = System.currentTimeMillis()
+            // Nach dem ersten Kandidaten gilt die kurze Frist — nicht der
+            // Timeout der langsamsten Quelle. Ohne diese Grenze wartet der
+            // Lauf weiter auf den naechsten Empfang (gemessen 4,7 s statt 1,6 s).
+            val budget = if (firstAt != 0L && graceMs > 0L) {
+                graceMs - (now - firstAt)
+            } else {
+                hardDeadline - (now - start)
+            }
+            if (budget <= 0L) break
+            val batch = withTimeoutOrNull(budget) { channel.receive() } ?: break
+            received++
+            if (batch.isEmpty()) continue
+            collected += batch
+            if (firstAt == 0L) firstAt = System.currentTimeMillis()
+        }
+        if (firstAt != 0L && graceMs > 0L) {
+            Log.i(TAG, "erste Kandidaten nach ${firstAt - start} ms, ${collected.size} gesammelt")
+        }
+        return collected
+    }
+
     private suspend fun resolvePack(
         pack: SourcePack,
         title: String,
@@ -176,9 +289,15 @@ class AutoPlaybackResolver @Inject constructor(
             episodeNumber.toString(),
             cookies
         )
-        return streams.mapNotNull { stream ->
-            val resolved = resolveHoster(pack, stream, sessionId)
-            resolved?.let {
+        // Hoster parallel aufloesen: eine Seite mit sechs Zielen kostete
+        // bisher sechs Ketten hintereinander (gemessen 11 s ohne Kandidat).
+        val resolved = coroutineScope {
+            streams.map { stream ->
+                async { stream to resolveHoster(pack, stream, sessionId) }
+            }.awaitAll()
+        }
+        return resolved.mapNotNull { (stream, hoster) ->
+            hoster?.let {
                 MirrorCandidate(
                     sourceId = pack.id,
                     titleId = CatalogPlayback.stableId(hit.id),
@@ -293,8 +412,23 @@ class AutoPlaybackResolver @Inject constructor(
 
     companion object {
         private const val TAG = "Frame61Resolve"
-        private const val SOURCE_TIMEOUT_MS = 4_000L
-        private const val HOSTER_TIMEOUT_MS = 4_000L
+        /**
+         * Budget je Quelle. 9 s statt 4 s: Packs mit JS-Kette (serienstream
+         * Redirect-Gate, devideosrc, vidmoly) brauchen länger als ein reiner
+         * HTTP-Pfad. Der Player wartet trotzdem nicht darauf — resolveFast
+         * kehrt 600 ms nach dem ersten Kandidaten zurück.
+         */
+        private const val SOURCE_TIMEOUT_MS = 9_000L
+        private const val HOSTER_TIMEOUT_MS = 9_000L
         private const val CACHE_MS = 15L * 60L * 1000L
+
+        /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
+        const val FIRST_CANDIDATE_GRACE_MS = 600L
+
+        /** Obergrenze des Einsammelns, wenn gar kein Kandidat kommt. */
+        private const val HARD_DEADLINE_MS = 12_000L
+
+        /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
+        private const val MAX_WARMUP_HOSTS = 2
     }
 }

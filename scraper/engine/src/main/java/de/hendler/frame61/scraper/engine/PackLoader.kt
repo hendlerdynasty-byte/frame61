@@ -85,6 +85,10 @@ data class PackRule(
     val qualitySelector: String? = null,
     val langSelector: String? = null,
     val hosterSelector: String? = null,
+    /** Read the language from an attribute instead of the element text. */
+    val langAttr: String? = null,
+    /** Read the hoster name from an attribute instead of the element text. */
+    val hosterAttr: String? = null,
     val healthAttr: String? = null,
     val minHealth: Double? = null,
     val qualityMap: Map<String, String> = emptyMap(),

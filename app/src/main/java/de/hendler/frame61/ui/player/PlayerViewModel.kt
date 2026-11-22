@@ -114,8 +114,10 @@ class PlayerViewModel @Inject constructor(
         viewModelScope.launch {
             // Real sources first; the demo is only a last-resort fallback and is
             // never labelled as a source (source failures are log-only).
+            // resolveFast: sobald ein Kandidat steht, startet der Player — der
+            // Rest der Quellen darf den Start nicht verzögern.
             val resolved = runCatching {
-                autoResolver.resolve(title, episodeNumber, sessionId = diagnosticSessionId)
+                autoResolver.resolveFast(title, episodeNumber, sessionId = diagnosticSessionId)
             }.getOrDefault(emptyList())
             mirrors = resolved.ifEmpty { fallbackCandidates }
             _state.update {
