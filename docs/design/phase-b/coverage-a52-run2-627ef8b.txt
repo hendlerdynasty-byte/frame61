@@ -1,0 +1,35 @@
+INDEX aniworld VERDICT=BLOCKED DETAIL=HTTP 200, aber 0 Treffer aus der Antwort (text/html; charset=UTF-8, 0 Bytes, Anfang: )
+INDEX bs-to VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 10733 Treffer, erster 'Boruto | Naruto Next Generations' (Boruto | Naruto Next Generations)
+PLAY bs-to VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX filmpalast VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (inception)
+PLAY filmpalast VERDICT=BLOCKED DETAIL=Wiedergabe fehlgeschlagen: kein Fortschritt (Media3, 0 ms, Fehler=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, primary=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED)
+INDEX filmstarts VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 3 Treffer, erster 'Inception' (143692)
+PLAY filmstarts VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX kinokiste VERDICT=BLOCKED DETAIL=HTTP 401 https://kinokiste.cloud/suche/inception | Doku: kinokiste.cloud: JWT-/Bot-Gate (HTTP 401), Chrome-Headless 40 B
+INDEX kinox VERDICT=BLOCKED DETAIL=HTTP 404 https://kinox.to/suche/inception | Doku: kinox.to: 6 Rotationsdomains, HTTP 404 auf /suche
+INDEX megakino VERDICT=BLOCKED DETAIL=HTTP 200, aber 0 Treffer aus der Antwort (text/html; charset=UTF-8, 2952 Bytes, Anfang: <!DOCTYPE html><html lang="en" data-adblockkey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANnylWw2vLY4hUn9w06zQKbhKBfvjFUCsdFlb6Td) | Doku: megakino.de: DNS/Platzhalter, HTTP 200 ohne Treffer
+INDEX moflix VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 5 Treffer, erster 'Inception' (1620235)
+PLAY moflix VERDICT=VERIFIED_PLAYBACK DETAIL=lief 62/8887921 ms (engine=Media3, primary=-, Fehler=-)
+INDEX movie2k VERDICT=BLOCKED DETAIL=movie2k: kein Pack — .to/.ch Platzhalter, kein Server
+INDEX s-to VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Black Doves' (black-doves)
+PLAY s-to VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX serienstream VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Black Doves' (black-doves)
+PLAY serienstream VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX streamcloud VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (27205-inception-stream-deutsch)
+PLAY streamcloud VERDICT=BLOCKED DETAIL=Wiedergabe fehlgeschlagen: kein Fortschritt (Media3, 0 ms, Fehler=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, primary=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED)
+INDEX filmo VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (inception)
+PLAY filmo VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX cine VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (1375666)
+PLAY cine VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+HOSTER direct VERDICT=BLOCKED DETAIL=aufgelöst, aber nicht abgespielt: kein Fortschritt (Media3, 0 ms, Fehler=-, primary=-)
+HOSTER vidmoly VERDICT=BLOCKED DETAIL=aufgelöst, aber nicht abgespielt: kein Fortschritt (Media3, 0 ms, Fehler=-, primary=-)
+HOSTER voe VERDICT=BLOCKED DETAIL=Captcha erforderlich (webview) — WebView-Lösung nötig
+HOSTER doodstream VERDICT=BLOCKED DETAIL=Captcha erforderlich (webview) — WebView-Lösung nötig
+HOSTER filemoon VERDICT=BLOCKED DETAIL=Hoster: get fehlgeschlagen: HTTP 405 für https://filemoon.to/api/videos/89crzins1ufc/playback
+HOSTER streamtape VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: Homepage ohne oeffentliche Dateiliste, API nur mit Konto
+HOSTER vidoza VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: Landingpage ohne oeffentliche Dateiliste
+HOSTER mixdrop VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: mixdrop.co TLS-Verbindung fehlgeschlagen (18.11.2026)
+HOSTER luluvdo VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: luluvdo.com/.net nicht aufloesbar (18.11.2026)
+HOSTER loadx VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: loadx.ws Timeout (18.11.2026)
+HOSTER streamhide VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: streamhide.com liefert nur JS-Redirect ohne Dateilink
+COVERAGE SUMMARY index=9/14 playback=1/14 hoster=0/11
