@@ -63,6 +63,7 @@ class SourceCoverageActivity : ComponentActivity() {
     private var coverageJob: Job? = null
     private var renderedEngine = ""
     private val results = mutableListOf<String>()
+    private var verifiedMedia: PlayableMedia? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,21 +78,24 @@ class SourceCoverageActivity : ComponentActivity() {
             setPadding(20, 20, 20, 20)
         }
         playerContainer = FrameLayout(this)
+        // Der Status braucht Platz, der Player aber eine echte Flaeche: ein
+        // 1-Pixel-PlayerView liefert weder Bild noch fortschreitende Position.
+        scroll = ScrollView(this).apply { addView(statusView) }
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setBackgroundColor(Color.BLACK)
-            addView(statusView, LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            ))
-            addView(playerContainer, LinearLayout.LayoutParams(
+            addView(scroll, LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 0,
                 1f
             ))
+            addView(playerContainer, LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                0,
+                2f
+            ))
         }
-        scroll = ScrollView(this).apply { addView(root) }
-        setContentView(scroll)
+        setContentView(root)
         de.hendler.frame61.net.PlaybackDiagnostics.beginSession("source-coverage", 0)
         engine.attach()
         coverageJob = lifecycleScope.launch { runCoverage() }
@@ -326,6 +330,7 @@ class SourceCoverageActivity : ComponentActivity() {
         results += summary
         status(results.joinToString("\n"))
         scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
+        openPlaybackWindow()
     }
 
     /**
@@ -428,20 +433,47 @@ class SourceCoverageActivity : ComponentActivity() {
                 // der Systemplayer kann noch uebernehmen.
                 seenError = state.error
             } else if (state.isReady && state.positionMs > 0L) {
+                if (verifiedMedia == null) {
+                    verifiedMedia = PlayableMedia(url, headers, cookies)
+                }
                 return PlayOutcome(
                     true,
                     "lief ${state.positionMs}/${state.durationMs} ms " +
-                        "(engine=${state.engine}, primary=${engine.lastPrimaryErrorName ?: "-"}, " +
-                        "Fehler=${seenError ?: "-"})"
+                        "(engine=${state.engine}, playing=${state.isPlaying}, " +
+                        "primary=${engine.lastPrimaryErrorName ?: "-"}, " +
+                        "Fehler=${seenError ?: "-"}, url=$url)"
                 )
             }
         }
         val state = engine.state.value
         engine.stop()
         val detail = "kein Fortschritt (${state.engine}, ${state.positionMs} ms, " +
-            "Fehler=${state.error ?: "-"}, primary=${engine.lastPrimaryErrorName ?: "-"})"
-        Log.w(TAG, "PLAY FAILED url=$url $detail")
+            "ready=${state.isReady}, playing=${state.isPlaying}, " +
+            "Fehler=${state.error ?: "-"}, primary=${engine.lastPrimaryErrorName ?: "-"}, url=$url)"
+        Log.w(TAG, "PLAY FAILED $detail")
         return PlayOutcome(false, detail)
+    }
+
+    /**
+     * After the summary the first verified stream is played again and kept
+     * running. The window gives the operator a screenshot of a real playback
+     * instead of a stopped player.
+     */
+    private suspend fun openPlaybackWindow() {
+        val media = verifiedMedia ?: return
+        Log.i(TAG, "WIEDERGABE-FENSTER url=${media.url}")
+        results += "WIEDERGABE-FENSTER ${media.url}"
+        status(results.joinToString("\n"))
+        engine.open(media.url, requestHeaders = media.headers, cookies = media.cookies)
+        while (true) {
+            delay(PLAYBACK_POLL_MS)
+            val state = engine.state.value
+            renderEngine(state.engine)
+            if (state.error != null) {
+                Log.w(TAG, "WIEDERGABE-FENSTER Fehler ${state.error}")
+                return
+            }
+        }
     }
 
     private fun hosterPacks(): List<HosterPack> {
@@ -508,6 +540,12 @@ class SourceCoverageActivity : ComponentActivity() {
     }
 
     private data class PlayOutcome(val ok: Boolean, val detail: String)
+
+    private data class PlayableMedia(
+        val url: String,
+        val headers: Map<String, String>,
+        val cookies: String?
+    )
 
     private data class Target(val packId: String, val query: String, val reason: String = "")
 
