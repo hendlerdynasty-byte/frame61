@@ -59,7 +59,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `loadx` | loadx.ws | 2 | nein |
 | `luluvdo` | luluvdo.com, luluvdo.net | 2 | nein |
 | `mixdrop` | mixdrop.co, mixdrop.to, mixdrop.ch | 2 | nein |
-| `serienstream-gate` | serienstream.to, s.to | 1 | nein |
+| `serienstream` | serienstream.to, s.to | 1 | nein |
 | `streamhide` | streamhide.to, streamhide.com | 2 | nein |
 | `streamtape` | streamtape.com, streamtape.to | 4 | nein |
 | `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net, vidmoly.biz | 2 | ja |
