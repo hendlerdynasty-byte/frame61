@@ -1,7 +1,54 @@
 # ENTSCHEIDUNGEN.md — getroffene Defaults
 
-Stand: 2026-11-17. Bei Unklarheit gilt der hier dokumentierte Default; die
+Stand: 2026-11-22. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
+
+## 2026-11-22 — Systemplayer-Fallback haengt die Surface erst bei `surfaceCreated`
+
+- Befund auf dem A52: `Systemplayer-Setupfehler: IllegalArgumentException: The
+  surface has been released`. Ursache: Die Fallback-`SurfaceView` wird erst
+  angehaengt, wenn die UI auf den Systemplayer umschaltet — `setDisplay()` lief
+  also vor `surfaceCreated`.
+- Default: `SystemFallbackPlayer` ruft `setDisplay()` nur, wenn
+  `holder.surface?.isValid == true`; sonst uebernimmt der `SurfaceHolder.Callback`
+  die Verknuepfung, sobald die Surface existiert. Das ist Produktionscode, der
+  auch im echten Player-Screen greift (`AndroidView` entsteht erst nach dem
+  Zustandswechsel).
+- Beleg: `player/.../SystemFallbackPlayer.kt`, Commit `be5281e`, Selbsttest
+  6/6 PASS auf dem A52 mit `engine=Android MediaPlayer` und
+  `primaryError=ERROR_CODE_PARSING_MANIFEST_MALFORMED`.
+
+## 2026-11-22 — TV-Navigation ist eine feste Seitenleiste
+
+- Default: Auf TV (leanback-Feature **oder** `UI_MODE_TYPE_TELEVISION`) rendert
+  die App eine linke, feste Navigationsleiste (`TvSideNav`); die
+  Bottom-Navigation bleibt Phone-only. Erkennung ueber beide Signale, damit
+  auch ein TV-Systemimage ohne `FEATURE_LEANBACK` erfasst wird.
+- Beleg: `frame61-androidtv-31` (echtes Android-TV-Image, `mCurUiMode=0x24`),
+  Fokustrail Start → Filme → Serien → Suche → RIGHT in den Inhalt → LEFT
+  zurueck → CENTER, keine Nodes unterhalb y=1026 (keine untere Leiste).
+
+## 2026-11-22 — „verified" heisst Wiedergabe auf dem Geraet
+
+- Zwei Ebenen werden getrennt berichtet:
+  1. **Pack-Ebene** — der Fetch-Worker belegt die Such-/Detail-/Stream-Kette
+     live (`check.status`, `last_check`, Fixture-Hashes).
+  2. **Geraete-Ebene** — `SourceCoverageActivity` (nur `ci`/`acceptance`)
+     fährt dieselbe Kette auf dem Gerät und zählt nur dann als `verified`,
+     wenn der Produktionsplayer wirklich fortschreitet.
+- Blockierte Quellen werden mit Ursache, HTTP-Status und Versuchen belegt;
+  es gibt keine Attrappen und keine Hochstufung aufgrunde eines grünen Fixtures.
+
+## 2026-11-22 — Release-Bau im Actions-Gate, Signatur nur lokal
+
+- Default: Der Gate-Job baut zusaetzlich `:app:assembleRelease` und
+  `:app:bundleRelease` **ohne** Signing-Env. Signiert wird ausschliesslich auf
+  dem Mac mit `zipalign`/`apksigner` (APK) und `jarsigner` (AAB) und dem
+  Keystore ausserhalb des Repos. Kein Signing-Secret erreicht den Runner.
+- Diagnose-Quellen (`src/perf`) sind nur in den Varianten `ci` und
+  `acceptance` enthalten. Die `perf`-Variante traegt sie nicht; die
+  Diagnose-Buttons in den Einstellungen erscheinen deshalb nur dort, wo die
+  Klassen existieren.
 
 ## 2026-11-17 — GitHub-Repo ist öffentlich
 
