@@ -231,7 +231,9 @@ class AutoPlaybackResolver @Inject constructor(
         var received = 0
         var firstAt = 0L
         val start = System.currentTimeMillis()
-        val hardDeadline = SOURCE_TIMEOUT_MS + HOSTER_TIMEOUT_MS * 2 + 2_000L
+        // Obergrenze für den ganzen Durchgang: eine Quelle mit JS-Kette darf
+        // bis zu 12 s brauchen, danach wird ohne Kandidaten zurückgekehrt.
+        val hardDeadline = HARD_DEADLINE_MS
         while (received < packs.size) {
             val now = System.currentTimeMillis()
             // Nach dem ersten Kandidaten gilt die kurze Frist — nicht der
@@ -407,12 +409,21 @@ class AutoPlaybackResolver @Inject constructor(
 
     companion object {
         private const val TAG = "Frame61Resolve"
-        private const val SOURCE_TIMEOUT_MS = 4_000L
-        private const val HOSTER_TIMEOUT_MS = 4_000L
+        /**
+         * Budget je Quelle. 9 s statt 4 s: Packs mit JS-Kette (serienstream
+         * Redirect-Gate, devideosrc, vidmoly) brauchen länger als ein reiner
+         * HTTP-Pfad. Der Player wartet trotzdem nicht darauf — resolveFast
+         * kehrt 600 ms nach dem ersten Kandidaten zurück.
+         */
+        private const val SOURCE_TIMEOUT_MS = 9_000L
+        private const val HOSTER_TIMEOUT_MS = 9_000L
         private const val CACHE_MS = 15L * 60L * 1000L
 
         /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
         const val FIRST_CANDIDATE_GRACE_MS = 600L
+
+        /** Obergrenze des Einsammelns, wenn gar kein Kandidat kommt. */
+        private const val HARD_DEADLINE_MS = 12_000L
 
         /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
         private const val MAX_WARMUP_HOSTS = 2
