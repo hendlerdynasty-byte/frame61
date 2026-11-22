@@ -210,8 +210,8 @@ Es gibt keine untere Navigationsleiste mehr. Start des Release-APK:
 |---|---|---|
 | `frame61-1.3.0.apk` | `0be6e691c665f46a6e675b633dd62511d680ae88e2cc22160e8834fdb2bb0541` | 20.016.408 B |
 | `frame61-1.3.0.aab` | `1044b3196d07f59c2b25831ea09269c82a0c9862a9ee7a6279b3e0d06c2995c6` | 24.693.080 B |
-| Debug-APK (Gate, `c303a69`) | `58c47bbcb4dbe7d35f67b63a7639a78007fcd2e87eb8e7ccb3cc1f101663d2fe` | 38.530.632 B (36,7 MiB) |
-| Acceptance-APK (Gate, `c303a69`, unsigniert) | `235799f1b187cf8425738031686af44e8b8f268392a7262d48c215945478329a` | 20.236.617 B |
+| Debug-APK (Gate, `ef4dd78`) | `90b083f7e73aefb93ead6d79ff96a43dd4b4f3a776fbba953f39832f40e178c4` | 38.530.636 B (36,7 MiB) |
+| Acceptance-APK (Gate, `ef4dd78`, unsigniert) | `6d4754565be671a3692cc49c7e961aa51cbe3dada1ce51278af41d909b5d7b9d` | 20.236.617 B |
 
 - Quellstand `9353e5a`, VersionCode 4, versionName 1.3.0, Package
   `de.hendler.frame61`. Der Endstand von `main` ist `c303a69`; der
@@ -247,13 +247,14 @@ Es gibt keine untere Navigationsleiste mehr. Start des Release-APK:
 |---|---|---|---|
 | Unit-Tests | **121/121**, 0 Failures, 0 Errors, 0 Skipped (25 Testklassen, 10 Module) | alle grün | ✅ |
 | Lint (Debug) | **0 Errors**, 106 Warnings | 0 Errors | ✅ |
-| Debug-APK | 36,7 MiB (38.530.632 B) | < 45 MiB | ✅ |
+| Debug-APK | 36,7 MiB (38.530.636 B) | < 45 MiB | ✅ |
 | Validator | 0 Fehler (Katalog, Meta-Snapshots, Index, Source- und Hoster-Fixtures, Packs) | 0 | ✅ |
 
-Gate: Actions-Lauf **`44994263454`**, Job `gate`, Quellstand **`c303a69`**
-(`main`); Evidenz-Artefakt `frame61-gate-evidence-c303a692…` enthält die
-Test-XML (25 Dateien) und den Lint-Report. Derselbe Lauf liefert den
-unsigned Release-APK/AAB.
+Gate: Actions-Lauf **`44996700256`**, Quellstand **`ef4dd78`** (Endstand von
+`main`), beide Jobs grün (`gate` und `release`); Evidenz-Artefakt
+`frame61-gate-evidence-ef4dd78f…` enthält die Test-XML (25 Dateien) und den
+Lint-Report. Der Lauf `44994263454` auf `c303a69` war ebenfalls grün
+(release-Job nach einem Runner-Netzwerk-Flake neu gestartet).
 
 Der Vorlauf `44989416861` (Merge `9353e5a`) war am `:packsReport` rot
 („docs/PACKS.md ist veraltet"), weil der Merge die `last_check`-Zeitstempel
