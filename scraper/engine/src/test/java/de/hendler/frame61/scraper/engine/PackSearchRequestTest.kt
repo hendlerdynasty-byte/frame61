@@ -51,6 +51,9 @@ class PackSearchRequestTest {
     fun `fetch keeps the status code while get fails with it`() {
         val server = MockWebServer()
         server.start()
+        // Two answers: one for the fetch, one for the get. Without the second
+        // one the server would keep the request open until the client times out.
+        server.enqueue(MockResponse().setResponseCode(404).setBody("not found"))
         server.enqueue(MockResponse().setResponseCode(404).setBody("not found"))
         val client = PackHttpClient(OkHttpClient())
         val source = pack(
