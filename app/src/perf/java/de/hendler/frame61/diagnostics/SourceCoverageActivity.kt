@@ -215,7 +215,7 @@ class SourceCoverageActivity : ComponentActivity() {
      * Runs the blocking pack calls off the main thread and keeps the failure
      * reason, but never swallows the cancellation of the enclosing timeout.
      */
-    private suspend fun <T> guarded(block: () -> T): Result<T> = withContext(Dispatchers.IO) {
+    private suspend fun <T> guarded(block: suspend () -> T): Result<T> = withContext(Dispatchers.IO) {
         try {
             Result.success(block())
         } catch (cancelled: CancellationException) {
