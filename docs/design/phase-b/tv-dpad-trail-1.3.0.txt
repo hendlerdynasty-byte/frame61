@@ -1,0 +1,20 @@
+TV-Abnahme des signierten Release-APK 1.3.0 (versionCode 4)
+Android-TV-Emulator frame61-androidtv-31, emulator-5554, uimode 0x24 (TV),
+leanback-Feature vorhanden. Installierter Stand: de.hendler.frame61 1.3.0 / VC4.
+
+D-Pad-Weg (Keyevents 20=DOWN 19=UP 22=RIGHT 21=LEFT 23=CENTER), fokussierter
+Knoten je Dump aus dem UI-Dump:
+
+06-focus-20.xml  focus= ('Serien', '[106,352][262,456]', 'TextView')  DOWN   -> Leiste, zweiter Eintrag
+06-focus-19.xml  focus= ('Filme',  '[106,208][262,312]', 'TextView')  UP     -> Leiste, erster Eintrag
+06-focus-22.xml  focus= ('',       '[278,15][1834,481]',  'View')    RIGHT  -> Inhalt (x ab 278)
+06-focus-21.xml  focus= ('Filme',  '[106,208][262,312]', 'TextView')  LEFT   -> zurueck in die Leiste
+06-focus-23.xml  focus= ('Start',  '[106,64][262,168]',  'TextView')  CENTER -> Auswahl
+
+Die Navigation liegt in der festen linken Seitenleiste (x=106..262); eine
+untere Leiste gibt es nicht.
+
+Start: Status: ok, LaunchState: COLD, TotalTime 1114 ms
+Crashpruefung: 0 FATAL EXCEPTION, 0 ANR
+Screenshots: 04-startup.png 1.486.092 B, 07-after-dpad.png 1.089.253 B
+UI-Dumps: 05-startup.xml 24.350 B, 08-focus.xml 17.948 B

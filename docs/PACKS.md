@@ -25,12 +25,12 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `bs-to` | B | nein | html | ja | 2026-11-22T01:28:52Z | recorded | — |
 | `cine` | A | nein | api | ja | 2026-11-22T01:28:54Z | recorded | — |
 | `dokujunkies` | A | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `filmfans` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
+| `filmfans` | B | nein | html | nein | 2026-11-21T12:45:49Z | – | kein belegtes Ziel (Worker) |
 | `filmo` | A | nein | html | ja | 2026-11-22T01:28:55Z | recorded | — |
 | `filmpalast` | A | nein | html | ja | 2026-11-22T01:28:55Z | recorded | — |
 | `filmstarts` | B | ja | api | ja | 2026-11-22T01:28:56Z | recorded | — |
-| `hdfilme` | B | nein | html | nein | 2026-11-17T17:35:17Z | – | kein belegtes Ziel (Worker) |
-| `kika` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
+| `hdfilme` | B | nein | html | nein | 2026-11-21T12:45:50Z | – | kein belegtes Ziel (Worker) |
+| `kika` | C | ja | html | nein | 2026-11-21T12:45:50Z | synthetic | kein belegtes Ziel (Worker) |
 | `kinokiste` | A | nein | html | nein | 2026-11-22T01:28:56Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `kinox` | B | nein | html | nein | 2026-11-22T01:28:59Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `megakino` | A | nein | html | nein | 2026-11-22T01:28:59Z | – | Selektoren ohne Treffer: search.resultSelector |

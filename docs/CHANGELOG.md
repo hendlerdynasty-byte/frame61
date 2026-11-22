@@ -2,6 +2,60 @@
 
 ## [Unreleased]
 
+### Phase B — Player-Härtung, Quellen-Abdeckung, Release 1.3.0 (2026-11-22)
+
+#### Hinzugefügt
+- `SourceCoverageActivity` (nur `ci`/`acceptance`): Abdeckungslauf auf dem
+  Geraet — je Indexseite der HTTP-Status, die Trefferzahl und der erste
+  Treffer, danach die Produktionskette `streams → Hoster → Player`. Ergebnis
+  auf dem Samsung A52: 9/14 Indexseiten, 1/14 Index-Wiedergabe, 2/11 Hoster
+  (`direct`, `vidmoly`); neun Ziele blockiert mit HTTP-Status und Grund.
+- `hoster_targets.json` (nur `ci`/`acceptance`) mit elf Hosterzielen,
+  Herkunft und dokumentiertem Sperrgrund.
+- `docs/design/phase-b/`: Selbsttest 6/6, 30-Minuten-Sessiontest, TV-Fokusweg,
+  zwei Abdeckungslaeufe und der Nachweis einer laufenden Wiedergabe.
+- `PackHttpClient.fetch()` liefert den HTTP-Status mit; `get()` wirft bei
+  4xx/5xx `IOException("HTTP <code> für <url>")`. Blockierte Quellen tragen
+  damit ihren Status im Protokoll statt nur einer Fehlermeldung.
+
+#### Geändert
+- `PackInterpreter.search` reicht die Query auch unter dem Parameternamen der
+  Regel (`queryParam`) heraus. Ein Pack mit `term` (s.to, SerienStream) wurde
+  vorher ohne Suchbegriff abgerufen und lieferte 0 Treffer.
+- `PackHttpClient` kodiert Pfad-Platzhalter ausser `id` und haengt die Query
+  nicht doppelt an, wenn der Pfad sie bereits enthaelt.
+- Die Coverage-Activity liest die Playerposition live (`engine.publish()`)
+  wie der App-Ticker; vorher meldete sie Position 0 fuer einen Player, der
+  bereit war und lief.
+- TV-Navigation als feste linke Seitenleiste statt unterer Leiste.
+- Release-Version 1.3.0, `versionCode` 4.
+
+#### Behoben
+- `ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED` (3003) bei zwei Quellen bleibt
+  bestehen und ist jetzt mit der konkreten Stream-URL belegt:
+  `vidsonic.net/e/8zwnbxa44ivc` (filmpalast) und `devideosrc.co/movie/tt1375666`
+  (streamcloud). Beide liefern kein parsebares Mediencontainer; der
+  Systemplayer uebernimmt, der Fortschritt bleibt 0.
+
+#### Dokumentation
+- `docs/ABSCHLUSS-PHASE-B.md`: Abschlussbericht der Phase B mit Ampel je
+  Arbeitspaket, Quellzahlen, blockierten Quellen (Ursache, HTTP-Status,
+  Versuche), Tests, Lint, Performance, APK-Groesse und Artefakt-Hashes.
+- `docs/STATE.md` auf den Stand 22.11.2026 (Release 1.3.0/VC4) gebracht.
+- `docs/ABSCHLUSS-TV.md`: Phase-B-Stand (Release auf dem TV-Emulator,
+  D-Pad-Fokusweg der Seitenleiste) und DoD-Eintraege 23–27 ergaenzt.
+- `docs/RELEASE.md` und `docs/PERF2.md`: Release 1.3.0 mit Hashes und
+  Nachmessung am signierten Release-APK (Kaltstart p95 334 ms, Scroll p95
+  22 ms, Janky 3,01 %).
+- `README.md` an den tatsaechlichen Quellenstand angepasst: verifizierte
+  Packs tragen `verified: true` mit technischem Beleg; die TV-Navigation
+  sitzt als Seitenleiste; der Gate laeuft ueber GitHub Actions, signiert
+  wird lokal. `docs/OWNER-ÜBERSICHT.md` traegt einen Hinweis auf den
+  aktuellen Stand.
+- `scripts/sign_release_aab.sh`: AAB-Signierung lokal mit `jarsigner`
+  (`-storepass:env`/`-keypass:env`), damit kein Passwort in der
+  Kommandozeile steht.
+
 ### Block 18 — Abschluss Release 1.2.0 (2026-11-19)
 
 #### Hinzugefügt

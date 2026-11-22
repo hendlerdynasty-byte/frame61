@@ -1,8 +1,9 @@
 # PERF2.md — Performance Block 11
 
-Stand: 18.11.2026. Messung auf dem Samsung SM-A525F (A52), Android 14
+Stand: 22.11.2026. Messung auf dem Samsung SM-A525F (A52), Android 14
 (SDK 34), USB, 80 % Akku. Die Zahlen gelten für die genannten Builds, nicht
-für einen Store-Release.
+für einen Store-Release. Am Ende steht die Nachmessung des signierten
+Release-APK 1.3.0 (Abschnitt „Nachmessung Release 1.3.0“).
 
 ## Builds
 
@@ -79,3 +80,26 @@ Ziele: Scroll-p95 < 40 ms, Janky < 5 % → **PASS** (Perf: 24 ms, 3,71 %).
   wurde fuer Debug und Perf verwendet.
 - Die Zahlen sind Einzelmessungen auf einem Geraet, keine p95-Studie ueber
   viele Geraete.
+
+## Nachmessung Release 1.3.0 (22.11.2026)
+
+Dieselbe Methode, jetzt auf dem **signierten Release-APK 1.3.0 / VC4**
+(`0be6e691…`, Quellstand `9353e5a`) auf dem Samsung A52 (Android 14, USB).
+Geraete-Job `job-f147cb8b1d6848d4` PASS; Belege in
+`docs/design/phase-b/perf-release-1.3.0.txt`.
+
+| Kennzahl | Release 1.3.0 | Block 11 (Perf) | Grenze | Ergebnis |
+|---|---|---|---|---|
+| Kaltstart p95 | **334 ms** (323, 303, 307, 297, 325, 334, 303, 319, 310, 310) | 323 ms | < 1200 ms | PASS, keine Regression |
+| Scroll p50 / p90 / p95 / p99 | **15 / 20 / 22 / 28 ms** | 16 / 19 / 24 / 28 ms | p95 < 40 ms | PASS, keine Regression |
+| Janky | **19 von 631 = 3,01 %** | 3,71 % | < 5 % | PASS, keine Regression |
+
+Die TV-Navigation als feste Seitenleiste (Phase B) hat die Scrollwerte
+gegenueber Block 11 nicht verschlechtert; Kaltstart und Janky liegen
+innerhalb des vorher gemessenen Bereichs.
+
+Einschraenkung: Das Baseline Profile liegt nicht im Repository (es wurde
+fuer Block 11 lokal erzeugt und nicht committet). Der Release-Bau enthaelt
+daher **kein** Baseline-Profile, und die Messung ist mit dem Release-Build
+ohne Profil vollstaendig. Der Vergleich Block 11 zu Release 1.3.0 ist
+deshalb nicht apples-to-apples, die Grenzwerte sind es aber.

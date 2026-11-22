@@ -1,8 +1,39 @@
-# RELEASE.md — Frame61 1.2.0
+# RELEASE.md — Frame61 1.3.0
 
-Stand: 19.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
+Stand: 22.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
 
-## Aktueller Release 1.2.0
+## Aktueller Release 1.3.0
+
+| Artefakt | SHA-256 | Groesse |
+|---|---|---|
+| `frame61-1.3.0.apk` | `0be6e691c665f46a6e675b633dd62511d680ae88e2cc22160e8834fdb2bb0541` | 20.016.408 B |
+| `frame61-1.3.0.aab` | `1044b3196d07f59c2b25831ea09269c82a0c9862a9ee7a6279b3e0d06c2995c6` | 24.693.080 B |
+
+- Quellstand `9353e5a` (Merge Phase B auf `main`), VersionCode 4,
+  versionName 1.3.0, Package `de.hendler.frame61`.
+- Bau: Actions-Lauf `44989416861` (`android-gate`, Job `release`) liefert das
+  unsignierte APK/AAB; signiert wird lokal mit dem Keystore ausserhalb des
+  Repos (`scripts/sign_acceptance.sh`, `scripts/sign_release_aab.sh`).
+  Kein Signing-Secret verlässt den Mac.
+- Signatur: `CN=Frame61, O=Hendler Dynasty, C=DE`, Zertifikat-SHA-256
+  `1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52`
+  (unveraendert gegenueber 1.2.0, damit Updates ohne Datenverlust
+  installieren). `zipalign -c` und `apksigner verify` bestaetigt,
+  `jarsigner -verify` bestaetigt das AAB.
+- GitHub-Release: https://github.com/hendlerdynasty-byte/frame61/releases/tag/v1.3.0
+  Beide Assets sind veroeffentlicht; der APK-Asset-Hash wurde ueber HTTP
+  nachgeladen und stimmt mit dem Manifest ueberein
+  (`0be6e691…`, 20.016.408 B).
+- Update-Manifest: https://hendlerdynasty-byte.github.io/frame61/update.json
+  (`versionCode` 4, `versionName` 1.3.0, `apkUrl` auf das Release-Asset,
+  `sha256` des APK). Pages-Lauf siehe `docs/ABSCHLUSS-PHASE-B.md`.
+- Geraete: Release-APK auf dem Samsung A52 installiert (Device-Lab-Job
+  `job-f147cb8b1d6848d4` PASS) und auf dem Android-TV-Emulator
+  `frame61-androidtv-31` (`versionCode=4`, `versionName=1.3.0`, 0 Crash,
+  0 ANR, D-Pad-Fokusweg in der linken Leiste).
+- Ablage lokal: `~/hendler-dynasty/releases/frame61/1.3.0/`.
+
+## Vorgaenger 1.2.0
 
 | Artefakt | SHA-256 | Groesse |
 |---|---|---|
