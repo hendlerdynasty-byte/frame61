@@ -26,11 +26,15 @@ Stand: 22.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
   (`0be6e691…`, 20.016.408 B).
 - Update-Manifest: https://hendlerdynasty-byte.github.io/frame61/update.json
   (`versionCode` 4, `versionName` 1.3.0, `apkUrl` auf das Release-Asset,
-  `sha256` des APK). Pages-Lauf siehe `docs/ABSCHLUSS-PHASE-B.md`.
+  `sha256` des APK). Pages-Lauf `44994210706` (Quellstand `c303a69`),
+  Manifest live geprüft: HTTP 200, `versionCode` 4, SHA-256 des APK.
 - Geraete: Release-APK auf dem Samsung A52 installiert (Device-Lab-Job
   `job-f147cb8b1d6848d4` PASS) und auf dem Android-TV-Emulator
   `frame61-androidtv-31` (`versionCode=4`, `versionName=1.3.0`, 0 Crash,
   0 ANR, D-Pad-Fokusweg in der linken Leiste).
+- Gate auf dem Endstand von `main`: Actions-Lauf `44994263454` (Quellstand
+  `c303a69`, nur Doku-Ergänzungen gegenüber `9353e5a`) — Job `gate` grün mit
+  121/121 Tests, Lint 0 Errors / 106 Warnings, Debug-APK 36,7 MiB.
 - Ablage lokal: `~/hendler-dynasty/releases/frame61/1.3.0/`.
 
 ## Vorgaenger 1.2.0

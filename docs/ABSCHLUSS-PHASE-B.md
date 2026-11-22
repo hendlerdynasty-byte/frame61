@@ -210,10 +210,21 @@ Es gibt keine untere Navigationsleiste mehr. Start des Release-APK:
 |---|---|---|
 | `frame61-1.3.0.apk` | `0be6e691c665f46a6e675b633dd62511d680ae88e2cc22160e8834fdb2bb0541` | 20.016.408 B |
 | `frame61-1.3.0.aab` | `1044b3196d07f59c2b25831ea09269c82a0c9862a9ee7a6279b3e0d06c2995c6` | 24.693.080 B |
-| Debug-APK (Gate) | siehe Abschnitt 7 | 38.530.293 B (36,7 MiB) |
+| Debug-APK (Gate, `c303a69`) | `58c47bbcb4dbe7d35f67b63a7639a78007fcd2e87eb8e7ccb3cc1f101663d2fe` | 38.530.632 B (36,7 MiB) |
+| Acceptance-APK (Gate, `c303a69`, unsigniert) | `235799f1b187cf8425738031686af44e8b8f268392a7262d48c215945478329a` | 20.236.617 B |
 
 - Quellstand `9353e5a`, VersionCode 4, versionName 1.3.0, Package
-  `de.hendler.frame61`.
+  `de.hendler.frame61`. Der Endstand von `main` ist `c303a69`; der
+  Unterschied besteht **nur** aus Doku, `site/update.json` und dem
+  Signier-Skript — keine Kotlin-/Gradle-Datei. Belegt durch den
+  APK-Vergleich: `classes.dex`, `resources.arsc` und `AndroidManifest.xml`
+  des veroeffentlichten signierten APK sind **byte-identisch** mit dem
+  Release-Bau aus `c303a69` (Actions-Lauf `44994263454`, unsigned APK
+  `b9aebba8d63798907eff7ae0b93f904793a77ca07f652d08b143ebd539d3107f`,
+  19.736.447 B; AAB `34e6fffe277ef5abb882eeee935fed36743d440161d9f7cb10ed049e6c9238bc`).
+  Nur `assets/dexopt/baseline.prof` unterscheidet sich um ein Byte
+  (R8-Profil-Rewriting ist nicht bit-reproduzierbar), `baseline.profm` ist
+  identisch.
 - Signatur `CN=Frame61, O=Hendler Dynasty, C=DE`, Zertifikat-SHA-256
   `1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52`
   (unverändert gegenüber 1.2.0, Updates ohne Datenverlust). `zipalign -c`,
@@ -236,15 +247,22 @@ Es gibt keine untere Navigationsleiste mehr. Start des Release-APK:
 |---|---|---|---|
 | Unit-Tests | **121/121**, 0 Failures, 0 Errors, 0 Skipped (25 Testklassen, 10 Module) | alle grün | ✅ |
 | Lint (Debug) | **0 Errors**, 106 Warnings | 0 Errors | ✅ |
-| Debug-APK | 36,7 MiB (38.530.293 B) | < 45 MiB | ✅ |
+| Debug-APK | 36,7 MiB (38.530.632 B) | < 45 MiB | ✅ |
 | Validator | 0 Fehler (Katalog, Meta-Snapshots, Index, Source- und Hoster-Fixtures, Packs) | 0 | ✅ |
 
-Gate: Actions-Lauf `android-gate`, Job `gate`, Quellstand siehe
-`docs/RELEASE.md`; Evidenz-Artefakt `frame61-gate-evidence-<sha>` enthält die
-Test-XML und den Lint-Report. Fehlgeschlagener Vorlauf `44989416861` (Merge
-`9353e5a`) scheiterte ausschließlich an `:packsReport` („docs/PACKS.md ist
-veraltet"), weil der Merge die `last_check`-Zeitstempel verändert hatte;
-`docs/PACKS.md` wurde daraufhin aus dem Live-Stand neu erzeugt.
+Gate: Actions-Lauf **`44994263454`**, Job `gate`, Quellstand **`c303a69`**
+(`main`); Evidenz-Artefakt `frame61-gate-evidence-c303a692…` enthält die
+Test-XML (25 Dateien) und den Lint-Report. Derselbe Lauf liefert den
+unsigned Release-APK/AAB.
+
+Der Vorlauf `44989416861` (Merge `9353e5a`) war am `:packsReport` rot
+(„docs/PACKS.md ist veraltet"), weil der Merge die `last_check`-Zeitstempel
+verändert hatte; `docs/PACKS.md` wurde daraufhin aus dem Live-Stand neu
+erzeugt (`python3 tools/packs_report.py --root .`), danach lief das Gate
+grün. Im Lauf `44994263454` scheiterte zunächst nur der **release**-Job an
+einem Runner-Netzwerk-Flake (`java.net.SocketException: Connection reset`
+beim Download der Gradle-Distribution) — kein Codefehler; der Job wurde neu
+gestartet.
 
 ---
 
@@ -257,9 +275,11 @@ veraltet"), weil der Merge die `last_check`-Zeitstempel verändert hatte;
 | Janky | **19 von 631 = 3,01 %** | 3,71 % | < 5 % | PASS, keine Regression |
 
 Belege: `docs/PERF2.md`, `docs/design/phase-b/perf-release-1.3.0.txt`
-(Job `job-f147cb8b1d6848d4`). Einzelmessung auf einem Gerät; das Baseline
-Profile liegt nicht im Repository (Block-11-Vergleich daher nicht
-apples-to-apples, die Grenzwerte sind es).
+(Job `job-f147cb8b1d6848d4`). Einzelmessung auf einem Gerät. Das Baseline
+Profile liegt als HRF-Datei im Repository (`app/src/main/baseline-prof.txt`)
+und ist im signierten Release-APK enthalten (`assets/dexopt/baseline.prof` /
+`.profm`) — Block 11 und Release 1.3.0 sind damit in Profil und
+Messmethode vergleichbar.
 
 ---
 

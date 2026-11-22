@@ -98,8 +98,12 @@ Die TV-Navigation als feste Seitenleiste (Phase B) hat die Scrollwerte
 gegenueber Block 11 nicht verschlechtert; Kaltstart und Janky liegen
 innerhalb des vorher gemessenen Bereichs.
 
-Einschraenkung: Das Baseline Profile liegt nicht im Repository (es wurde
-fuer Block 11 lokal erzeugt und nicht committet). Der Release-Bau enthaelt
-daher **kein** Baseline-Profile, und die Messung ist mit dem Release-Build
-ohne Profil vollstaendig. Der Vergleich Block 11 zu Release 1.3.0 ist
-deshalb nicht apples-to-apples, die Grenzwerte sind es aber.
+Einschraenkung: Das Baseline Profile liegt als HRF-Datei im Repository
+(`app/src/main/baseline-prof.txt`, 25.774 Methoden, aus dem ART-Dump des A52
+erzeugt, Commit `0ca67d6`). AGP/R8 schreibt daraus fuer **Perf- und
+Release-Variante** `assets/dexopt/baseline.prof` und `baseline.profm` — im
+signierten Release-APK 1.3.0 sind beide enthalten (14.313 B / 1.395 B, per
+`unzip -l` geprueft). Der Vergleich Block 11 zu Release 1.3.0 ist in Profil
+und Messmethode damit apples-to-apples; unterschiedlich sind die uebrigen
+Release-Optimierungen (R8, Shrink, kein Debug-Key) und die TV-Seitenleiste,
+die es in Block 11 noch nicht gab.

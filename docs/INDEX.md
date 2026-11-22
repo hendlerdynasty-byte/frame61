@@ -132,10 +132,13 @@ mit HTTP-Status, Antwortgroesse und Grund belegt.
   Treffer. Die Query geht jetzt auch unter dem Namen der Regel raus; der
   Mac-Vergleich bestaetigt: vorher `GET /api/search/suggest` (ohne `term`),
   nachher `?term=black%20doves` mit dem Treffer „Black Doves“.
-- Fuenf der zehn verifizierten Packs haben **keine Streamregel** (bs-to,
-  filmstarts, s-to, serienstream, filmo) und liefern im Produktionspfad
-  deshalb bewusst keine Kandidaten. Das ist kein Geraetefehler, sondern der
-  dokumentierte Umfang dieser Packs.
+- Sechs der neun auf dem Geraet erreichbaren Indexseiten haben **keine
+  Streamregel** (bs-to, filmstarts, s-to, serienstream, filmo, cine) und
+  liefern im Produktionspfad deshalb bewusst keine Kandidaten. Das ist kein
+  Geraetefehler, sondern der dokumentierte Umfang dieser Packs. Filmpalast
+  und Streamcloud liefern zwar einen Stream, aber
+  `ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED` (3003); nur moflix spielt ueber
+  den Indexpfad.
 - Die Playerposition wird ereignisgesteuert aktualisiert; die App liest sie
   ueber einen Ticker (`PlayerViewModel.startTicker`). Die Diagnose-Activity
   hatte keinen Ticker und meldete deshalb Position 0 fuer einen Player, der
@@ -144,11 +147,15 @@ mit HTTP-Status, Antwortgroesse und Grund belegt.
 
 ## Gate-Nachweis (22.11.2026)
 
-Aktuell: Actions-Lauf `44981062911` (Quellstand `627ef8b`), Exit 0,
-**121/121 Tests**, 0 Failures, 0 Errors, Lint **0 Errors** (106 Warnings),
-Debug-APK 36,7 MiB (Grenze 45 MiB). Damit sind 10 von 14 Packs live
-verifiziert; vier Reste haben Domain-/Pfadbelege im Pack und in diesem
-Dokument.
+Aktuell: Actions-Lauf `44994263454` (Quellstand `c303a69`, Endstand von
+`main`), Job `gate` grün: **121/121 Tests**, 0 Failures, 0 Errors,
+Lint **0 Errors** (106 Warnings), Debug-APK 36,7 MiB (Grenze 45 MiB).
+
+Zwei Zaehlungen, die nicht dasselbe meinen: **10 von 14** Ziel-Packs tragen im
+Bundle `verified: true` (technischer Nachweis aus Aufzeichnung plus
+Fixture). Auf dem **Geraet** waren es **9 von 14** Indexseiten — aniworld
+liefert dort eine leere Antwort (edge-spezifisch, siehe Tabelle oben). Vier
+Reste haben Domain-/Pfadbelege im Pack und in diesem Dokument.
 
 Aelterer Beleg (18.11.2026): `frame61-f843b2abc544-1795022941`, Exit 0,
 **104/104 Tests**, Debug-APK `68ffe83bed006247426e40b739be48c6f76a3262d8ebbef2cbfdf41db2691627`
