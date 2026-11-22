@@ -213,19 +213,26 @@ class AutoPlaybackResolver @Inject constructor(
         val start = System.currentTimeMillis()
         val hardDeadline = SOURCE_TIMEOUT_MS + HOSTER_TIMEOUT_MS * 2 + 2_000L
         while (received < packs.size) {
-            val remaining = hardDeadline - (System.currentTimeMillis() - start)
-            if (remaining <= 0L) break
-            val batch = withTimeoutOrNull(remaining) { channel.receive() } ?: break
+            val now = System.currentTimeMillis()
+            // Nach dem ersten Kandidaten gilt die kurze Frist — nicht der
+            // Timeout der langsamsten Quelle. Ohne diese Grenze wartet der
+            // Lauf weiter auf den naechsten Empfang (gemessen 4,7 s statt 1,6 s).
+            val budget = if (firstAt != 0L && graceMs > 0L) {
+                graceMs - (now - firstAt)
+            } else {
+                hardDeadline - (now - start)
+            }
+            if (budget <= 0L) break
+            val batch = withTimeoutOrNull(budget) { channel.receive() } ?: break
             received++
             if (batch.isEmpty()) continue
             collected += batch
             if (firstAt == 0L) firstAt = System.currentTimeMillis()
-            if (graceMs > 0L && System.currentTimeMillis() - firstAt >= graceMs) {
-                Log.i(TAG, "grace erreicht: ${collected.size} Kandidaten, Rest verworfen")
-                break
-            }
         }
         channel.close()
+        if (firstAt != 0L && graceMs > 0L) {
+            Log.i(TAG, "erste Kandidaten nach ${firstAt - start} ms, ${collected.size} gesammelt")
+        }
         collected
     }
 
