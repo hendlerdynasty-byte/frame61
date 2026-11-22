@@ -24,6 +24,7 @@ class StreamRuleParseTest {
             {
               "id":"aniworld","name":"aniworld.to","baseUrl":"https://aniworld.to","kind":"html",
               "streams":{
+                "endpoint":"/anime/stream/{titleId}",
                 "selector":"li[data-link-target]",
                 "urlAttr":"data-link-target",
                 "langAttr":"data-lang-key",
@@ -61,7 +62,7 @@ class StreamRuleParseTest {
             """
             {
               "id":"direct","name":"direct","baseUrl":"https://cdn.example","kind":"html",
-              "streams":{"selector":"a.play","urlAttr":"href"}
+              "streams":{"endpoint":"/watch/{titleId}","selector":"a.play","urlAttr":"href"}
             }
             """.trimIndent()
         )

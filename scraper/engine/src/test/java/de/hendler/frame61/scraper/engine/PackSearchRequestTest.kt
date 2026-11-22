@@ -99,9 +99,10 @@ class PackSearchRequestTest {
 
         val recorded = server.takeRequest()
         assertEquals("POST", recorded.method)
+        // OkHttp haengt beim POST den Zeichensatz an den Typ.
         assertEquals(
             "application/x-www-form-urlencoded",
-            recorded.getHeader("Content-Type")
+            recorded.getHeader("Content-Type")?.substringBefore(';')
         )
         assertEquals("keyword=naruto", recorded.body.readUtf8())
         assertEquals(200, response.status)
@@ -128,7 +129,10 @@ class PackSearchRequestTest {
         client.fetch(source, rule, mapOf("query" to "naruto"))
 
         val recorded = server.takeRequest()
-        assertEquals("application/json", recorded.getHeader("Content-Type"))
+        assertEquals(
+            "application/json",
+            recorded.getHeader("Content-Type")?.substringBefore(';')
+        )
         assertEquals("""{"q":"naruto"}""", recorded.body.readUtf8())
         server.shutdown()
     }
