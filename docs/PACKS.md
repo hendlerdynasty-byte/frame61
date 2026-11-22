@@ -9,7 +9,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 - legal-frei: **13**, Grauzone Tier A/B: **19**
 - live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
 - Fixtures: 12 recorded, 8 synthetic, 11 ohne
-- Hoster-Packs: **13** (live verifiziert: 2)
+- Hoster-Packs: **15** (live verifiziert: 2)
 
 ## Source-Packs
 
@@ -51,6 +51,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 | ID | Domains | Schritte | verified |
 |---|---|---|---|
+| `devideosrc` | devideosrc.co, devideosrc.com, devideosrc.net | 1 | nein |
 | `direct` | akamaihd.net, daserste.de, ardmediathek.de, ard.de | 1 | ja |
 | `doodstream` | doodstream.com, dood.watch, dood.re, do7go.com, playmogo.com | 2 | nein |
 | `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com, n1mwq.org | 11 | nein |
@@ -58,6 +59,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `loadx` | loadx.ws | 2 | nein |
 | `luluvdo` | luluvdo.com, luluvdo.net | 2 | nein |
 | `mixdrop` | mixdrop.co, mixdrop.to, mixdrop.ch | 2 | nein |
+| `serienstream-gate` | serienstream.to, s.to | 1 | nein |
 | `streamhide` | streamhide.to, streamhide.com | 2 | nein |
 | `streamtape` | streamtape.com, streamtape.to | 4 | nein |
 | `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net, vidmoly.biz | 2 | ja |
