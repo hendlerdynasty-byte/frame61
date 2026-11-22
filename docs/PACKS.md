@@ -35,16 +35,16 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `kinox` | B | nein | html | nein | 2026-11-22T01:28:59Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `megakino` | A | nein | html | nein | 2026-11-22T01:28:59Z | – | Selektoren ohne Treffer: search.resultSelector |
 | `moflix` | A | nein | api | ja | 2026-11-22T01:29:00Z | recorded | — |
-| `movie4k` | B | nein | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
-| `netzkino` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
-| `plex-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | – | kein belegtes Ziel (Worker) |
-| `pluto-tv` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
-| `rakuten-free` | C | ja | html | nein | 2026-11-19T13:25:32Z | synthetic | kein belegtes Ziel (Worker) |
-| `s-to` | A | nein | html | ja | 2026-11-22T01:29:56Z | recorded | — |
-| `serienstream` | A | nein | html | ja | 2026-11-22T01:29:56Z | recorded | — |
-| `streamcloud` | A | nein | html | ja | 2026-11-22T01:29:57Z | recorded | — |
-| `streamkiste` | A | nein | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
-| `youtube` | C | ja | html | nein | 2026-11-19T13:25:36Z | – | kein belegtes Ziel (Worker) |
+| `movie4k` | B | nein | html | nein | 2026-11-22T12:40:10Z | – | kein belegtes Ziel (Worker) |
+| `netzkino` | C | ja | html | nein | 2026-11-22T12:40:10Z | synthetic | kein belegtes Ziel (Worker) |
+| `plex-free` | C | ja | html | nein | 2026-11-22T12:40:10Z | – | kein belegtes Ziel (Worker) |
+| `pluto-tv` | C | ja | html | nein | 2026-11-22T12:40:10Z | synthetic | kein belegtes Ziel (Worker) |
+| `rakuten-free` | C | ja | html | nein | 2026-11-22T12:40:10Z | synthetic | kein belegtes Ziel (Worker) |
+| `s-to` | A | nein | html | ja | 2026-11-22T12:40:10Z | recorded | — |
+| `serienstream` | A | nein | html | ja | 2026-11-22T12:40:12Z | recorded | — |
+| `streamcloud` | A | nein | html | ja | 2026-11-22T12:40:13Z | recorded | — |
+| `streamkiste` | A | nein | html | nein | 2026-11-22T12:40:14Z | – | kein belegtes Ziel (Worker) |
+| `youtube` | C | ja | html | nein | 2026-11-22T12:40:14Z | – | kein belegtes Ziel (Worker) |
 | `zdf` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
 
 ## Hoster-Packs
