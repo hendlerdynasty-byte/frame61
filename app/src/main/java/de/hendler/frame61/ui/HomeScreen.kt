@@ -54,6 +54,9 @@ import de.hendler.frame61.ui.home.TvHome
 @AndroidEntryPoint
 class MainActivity : androidx.appcompat.app.AppCompatActivity() {
 
+    @Inject
+    lateinit var autoResolver: de.hendler.frame61.playback.AutoPlaybackResolver
+
     override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
         if (de.hendler.frame61.ui.player.PlayerKeyRouter.dispatch(event)) return true
         return super.dispatchKeyEvent(event)
@@ -65,6 +68,14 @@ class MainActivity : androidx.appcompat.app.AppCompatActivity() {
         setContentView(content)
         content.setContent {
             Frame61 { navController -> HomeScreen(navController) }
+        }
+        // Captcha-Hoster still vorwaermen, damit der erste Titel nicht auf eine
+        // Challenge wartet. Bewusst verzögert und hoechstens zwei Hosts:
+        // mehrere gleichzeitige WebViews auf dem Hauptthread blockieren die
+        // Nachrichten-Schleife (ANR bei 25dba40).
+        androidx.lifecycle.lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+            kotlinx.coroutines.delay(5_000L)
+            runCatching { autoResolver.warmUpCaptchaHosts() }
         }
     }
 }

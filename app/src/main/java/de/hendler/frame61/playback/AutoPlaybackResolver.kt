@@ -78,17 +78,20 @@ class AutoPlaybackResolver @Inject constructor(
             fetcher = OkHttpBodyFetcher(),
             jsEvaluator = jsEvaluator,
             captchaSolver = headlessCaptchaSolver
-        ).also { warmUpCaptchaHosts() }
+        )
     }
 
     /**
-     * Hoster mit Captcha beim ersten Zugriff still vorwärmen, damit der erste
-     * Titel nicht auf eine Challenge wartet.
+     * Hoster mit Captcha still vorwärmen, damit der erste Titel nicht auf eine
+     * Challenge wartet. Wird bewusst **nicht** beim Anlegen des Resolvers
+     * aufgerufen (das erzeugte mehrere WebViews gleichzeitig und blockierte den
+     * Hauptthread → ANR), sondern verzögert vom Einstiegspunkt der App.
      */
-    private fun warmUpCaptchaHosts() {
+    fun warmUpCaptchaHosts() {
         val urls = hosterPacks
             .filter { !it.captcha.isNullOrBlank() }
             .mapNotNull { pack -> pack.domains.firstOrNull()?.let { "https://$it/" } }
+            .take(MAX_WARMUP_HOSTS)
         if (urls.isNotEmpty()) headlessCaptchaSolver.warmUp(urls)
     }
 
@@ -394,5 +397,8 @@ class AutoPlaybackResolver @Inject constructor(
 
         /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
         const val FIRST_CANDIDATE_GRACE_MS = 600L
+
+        /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
+        private const val MAX_WARMUP_HOSTS = 2
     }
 }

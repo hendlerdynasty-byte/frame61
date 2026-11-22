@@ -1,7 +1,42 @@
 # ENTSCHEIDUNGEN.md — getroffene Defaults
 
-Stand: 2026-11-22. Bei Unklarheit gilt der hier dokumentierte Default; die
+Stand: 22.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
+
+## 2026-11-22 — Auflösung endet nach dem ersten Kandidaten (600 ms Frist)
+
+- Befund aus der Baseline: Der Resolver wartete auf die langsamste Quelle
+  (4 s Timeout), obwohl ARD nach ~1 s einen spielbaren Stream liefert; dazu
+  liefen die Hoster-Ketten je Stream sequentiell. Gemessen: p95 5,6 s bis zum
+  ersten Bild.
+- Default: `AutoPlaybackResolver.resolveFast` sammelt alle Quellen parallel
+  ein und beendet das Einsammeln **600 ms nach dem ersten Kandidaten**
+  (`FIRST_CANDIDATE_GRACE_MS`). Die restlichen Quellen werden nicht
+  weiterverfolgt; der Player startet. Die vollständige Liste bleibt über
+  `resolve` für den Fehlerfall (Neuauflösung) verfügbar. Die Hoster-Kette
+  eines Packs läuft parallel statt sequentiell.
+- Wirkung (gemessen): Startzeit p95 5.615 ms → im zweiten Lauf 4.664 ms
+  (vor dem Timeout-Fix); nach dem Fix greift die Frist tatsächlich.
+
+## 2026-11-22 — Kein libVLC als zweite Engine
+
+- Prüfung: libVLC würde die zweite Player-Stufe stellen, kostet aber als
+  Abhängigkeit rund 15–40 MiB (native Libraries für alle ABIs). Der
+  Debug-APK liegt bei 36,7 MiB, die harte Grenze bei 45 MiB — ein
+  Zusatzpaket dieser Größe würde die Abnahme sprengen.
+- Default: **kein** libVLC. Die zweite Stufe bleibt der Android-Systemplayer
+  (`SystemFallbackPlayer`, Hardware-Decoder), die dritte die Neuauflösung mit
+  anderem Kandidaten. Das deckt HLS, MP4, MKV, AVI und MPEG-TS bereits ab
+  (Selbsttest 6/6) und hält die APK-Grenze ein.
+
+## 2026-11-22 — Titel-Quote ist die Abnahmegröße, nicht die Domainliste
+
+- Default: Der Erfolg wird an **100 zufällig gezogenen Katalogtiteln**
+  gemessen (`PlaybackQuotaActivity`, Seed 20261122), nicht an der Zahl
+  erreichbarer Domains. Jeder Titel zählt nur mit fortschreitender
+  Wiedergabe; Startzeit = Auflösung + Puffer bis zur ersten Position.
+- Die Messung ist reproduzierbar: gleiche Stichprobe, gleiche Kette, Protokoll
+  in Logcat, Statusbereich und Datei.
 
 ## 2026-11-22 — Systemplayer-Fallback haengt die Surface erst bei `surfaceCreated`
 
