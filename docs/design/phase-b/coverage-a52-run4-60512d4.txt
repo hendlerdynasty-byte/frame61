@@ -1,0 +1,36 @@
+INDEX aniworld VERDICT=BLOCKED DETAIL=HTTP 200, aber 0 Treffer aus der Antwort (text/html; charset=UTF-8, 0 Bytes, Anfang: )
+INDEX bs-to VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 10733 Treffer, erster 'Boruto | Naruto Next Generations' (Boruto | Naruto Next Generations)
+PLAY bs-to VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX filmpalast VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (inception)
+PLAY filmpalast VERDICT=BLOCKED DETAIL=Wiedergabe fehlgeschlagen: kein Fortschritt (Media3, 0 ms, ready=false, playing=false, Fehler=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, primary=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, url=https://vidsonic.net/e/8zwnbxa44ivc)
+INDEX filmstarts VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 3 Treffer, erster 'Inception' (143692)
+PLAY filmstarts VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX kinokiste VERDICT=BLOCKED DETAIL=HTTP 401 https://kinokiste.cloud/suche/inception | Doku: kinokiste.cloud: JWT-/Bot-Gate (HTTP 401), Chrome-Headless 40 B
+INDEX kinox VERDICT=BLOCKED DETAIL=HTTP 404 https://kinox.to/suche/inception | Doku: kinox.to: 6 Rotationsdomains, HTTP 404 auf /suche
+INDEX megakino VERDICT=BLOCKED DETAIL=HTTP 200, aber 0 Treffer aus der Antwort (text/html; charset=UTF-8, 2927 Bytes, Anfang: <!DOCTYPE html><html lang="en" data-adblockkey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANnylWw2vLY4hUn9w06zQKbhKBfvjFUCsdFlb6Td) | Doku: megakino.de: DNS/Platzhalter, HTTP 200 ohne Treffer
+INDEX moflix VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 5 Treffer, erster 'Inception' (1620235)
+PLAY moflix VERDICT=VERIFIED_PLAYBACK DETAIL=lief 62/8887921 ms (engine=Media3, playing=true, primary=-, Fehler=-, url=https://s1-s1001604.97bf1.com/hls/YF6axZpBqVAJLtnIE9XvS2MPQoYA0V2Z/master.m3u8?token=4a4b0acdbf7ab7fbb147676e2a332917-1795353274-2a02%3A2454%3A9918%3A8000%3Ab58c%3A824a%3A1b65%3A6704-39fcc050b9582cd398e7e490b2376f29b0577820cbf1fb5d13ff48de84be8a9f)
+INDEX movie2k VERDICT=BLOCKED DETAIL=movie2k: kein Pack — .to/.ch Platzhalter, kein Server
+INDEX s-to VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Black Doves' (black-doves)
+PLAY s-to VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX serienstream VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Black Doves' (black-doves)
+PLAY serienstream VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX streamcloud VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (27205-inception-stream-deutsch)
+PLAY streamcloud VERDICT=BLOCKED DETAIL=Wiedergabe fehlgeschlagen: kein Fortschritt (Media3, 0 ms, ready=false, playing=false, Fehler=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, primary=ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED, url=https://devideosrc.co/movie/tt1375666)
+INDEX filmo VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (inception)
+PLAY filmo VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+INDEX cine VERDICT=VERIFIED_INDEX DETAIL=HTTP 200, 1 Treffer, erster 'Inception' (1375666)
+PLAY cine VERDICT=BLOCKED DETAIL=Indexseite erreichbar, aber das Pack hat keine Stream-Regel
+HOSTER direct VERDICT=VERIFIED_PLAYBACK DETAIL=lief 937/2695082 ms (engine=Media3, playing=true, primary=-, Fehler=-, url=https://ctv-videos.daserste.de/de/2026/05/07/409/409_16651_sendeton_960x540-50p-1600kbit.mp4)
+HOSTER vidmoly VERDICT=VERIFIED_PLAYBACK DETAIL=lief 182/1371240 ms (engine=Media3, playing=true, primary=-, Fehler=-, url=https://box-1583-q.vmeas.cloud/hls2/04/01431/8irnzzsknabi_n/master.m3u8?t=uLnpJNcBqLVN56M4DW6iWqAJWb9AHyMo3m70K5DnbBQ=&s=1795324493&e=43200&v=&i=0.4&sp=0&asn=16202)
+HOSTER voe VERDICT=BLOCKED DETAIL=Captcha erforderlich (webview) — WebView-Lösung nötig
+HOSTER doodstream VERDICT=BLOCKED DETAIL=Captcha erforderlich (webview) — WebView-Lösung nötig
+HOSTER filemoon VERDICT=BLOCKED DETAIL=Hoster: get fehlgeschlagen: HTTP 405 für https://filemoon.to/api/videos/89crzins1ufc/playback
+HOSTER streamtape VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: Homepage ohne oeffentliche Dateiliste, API nur mit Konto
+HOSTER vidoza VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: Landingpage ohne oeffentliche Dateiliste
+HOSTER mixdrop VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: mixdrop.co TLS-Verbindung fehlgeschlagen (18.11.2026)
+HOSTER luluvdo VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: luluvdo.com/.net nicht aufloesbar (18.11.2026)
+HOSTER loadx VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: loadx.ws Timeout (18.11.2026)
+HOSTER streamhide VERDICT=BLOCKED DETAIL=kein Dateiziel ermittelbar: streamhide.com liefert nur JS-Redirect ohne Dateilink
+COVERAGE SUMMARY index=9/14 playback=1/14 hoster=2/11
+WIEDERGABE-FENSTER https://s1-s1001604.97bf1.com/hls/YF6axZpBqVAJLtnIE9XvS2MPQoYA0V2Z/master.m3u8?token=4a4b0acdbf7ab7fbb147676e2a332917-1795353274-2a02%3A2454%3A9918%3A8000%3Ab58c%3A824a%3A1b65%3A6704-39fcc050b9582cd398e7e490b2376f29b0577820cbf1fb5d13ff48de84be8a9f
