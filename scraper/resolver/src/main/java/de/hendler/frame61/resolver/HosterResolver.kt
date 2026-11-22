@@ -37,6 +37,17 @@ sealed interface HosterOutcome {
 }
 
 /**
+ * Headless challenge/captcha solver.
+ *
+ * Returns the cookies that unlock [url] (DDoS-Guard, Cloudflare, hoster
+ * captcha) or null. Implemented on the device with a hidden WebView, so the
+ * user never sees a captcha.
+ */
+fun interface CaptchaSolver {
+    suspend fun solve(url: String, timeoutMs: Long): String?
+}
+
+/**
  * Turns a hoster page URL into a playable URL by running the pack's steps.
  *
  * Never throws: every failure is a value ([HosterOutcome.Failed]), and a pack
@@ -47,7 +58,8 @@ class HosterResolver(
     private val packs: List<HosterPack>,
     private val fetcher: BodyFetcher,
     private val jsEvaluator: JsEvaluator? = null,
-    private val powSolver: PowSolver = PowSolver()
+    private val powSolver: PowSolver = PowSolver(),
+    private val captchaSolver: CaptchaSolver? = null
 ) {
 
     private val json = Json {
@@ -68,27 +80,41 @@ class HosterResolver(
         resolve(url, cookies, depth = 0)
 
     private suspend fun resolve(url: String, cookies: String?, depth: Int): HosterOutcome {
-        val defaultHeaders = linkedMapOf(
-            "User-Agent" to DEFAULT_USER_AGENT,
-            "Referer" to url
-        )
-        if (!cookies.isNullOrBlank()) defaultHeaders["Cookie"] = cookies
+        var effectiveCookies = cookies
         val pack = findPack(url)
         if (pack == null) {
+            val headers = linkedMapOf(
+                "User-Agent" to DEFAULT_USER_AGENT,
+                "Referer" to url
+            )
+            if (!effectiveCookies.isNullOrBlank()) headers["Cookie"] = effectiveCookies
             // Kein Hoster-Pack: Ketten wie aniworld.to/redirect/<id> zeigen auf
             // den echten Hoster. Ohne das bleibt ein HTML-Ziel stehen und der
             // Player scheitert mit 3003. Direkte Medien-URLs bleiben unangetastet.
             if (depth < MAX_REDIRECT_DEPTH && !looksLikeMedia(url)) {
-                val followed = runCatching { fetcher.resolveRedirect(url, defaultHeaders) }.getOrNull()
+                val followed = runCatching { fetcher.resolveRedirect(url, headers) }.getOrNull()
                 if (!followed.isNullOrBlank() && followed != url) {
-                    return resolve(followed, cookies, depth + 1)
+                    return resolve(followed, effectiveCookies, depth + 1)
                 }
             }
-            return HosterOutcome.Unknown(url, defaultHeaders, cookies)
+            return HosterOutcome.Unknown(url, headers, effectiveCookies)
         }
-        if (!pack.captcha.isNullOrBlank() && cookies.isNullOrBlank()) {
-            return HosterOutcome.CaptchaRequired(url, pack.captcha)
+        if (!pack.captcha.isNullOrBlank() && effectiveCookies.isNullOrBlank()) {
+            // Erst still im Hintergrund loesen (versteckte WebView, Cookie-Cache).
+            // Nur wenn das scheitert, bekommt der Nutzer ueberhaupt einen
+            // Captcha-Dialog zu sehen.
+            val solved = runCatching { captchaSolver?.solve(url, CAPTCHA_SOLVE_MS) }.getOrNull()
+            if (solved.isNullOrBlank()) {
+                return HosterOutcome.CaptchaRequired(url, pack.captcha)
+            }
+            effectiveCookies = solved
         }
+
+        val defaultHeaders = linkedMapOf(
+            "User-Agent" to DEFAULT_USER_AGENT,
+            "Referer" to url
+        )
+        if (!effectiveCookies.isNullOrBlank()) defaultHeaders["Cookie"] = effectiveCookies
 
         val vars = linkedMapOf(
             "url" to url,
@@ -181,7 +207,7 @@ class HosterResolver(
 
         return when {
             finalValue.isNullOrBlank() -> HosterOutcome.Failed(url, "kein Ergebnis", used)
-            else -> HosterOutcome.Resolved(finalValue, used, requestHeaders.toMap(), cookies)
+            else -> HosterOutcome.Resolved(finalValue, used, requestHeaders.toMap(), effectiveCookies)
         }
     }
 
@@ -218,6 +244,9 @@ class HosterResolver(
 
         /** Redirect hops before a chain URL is treated as unknown. */
         const val MAX_REDIRECT_DEPTH = 3
+
+        /** Budget for a headless captcha solve before the UI fallback is used. */
+        const val CAPTCHA_SOLVE_MS = 15_000L
 
         private val MEDIA_PATH = Regex("""(?i)\.(?:mp4|m3u8|mkv|avi|ts|webm|mov|m4v|mpd)(?:[?#]|$)""")
 

@@ -79,6 +79,62 @@ class WebViewJsEvaluator @Inject constructor(
         }.getOrDefault(false)
     }
 
+    /**
+     * Lädt [url] in einer versteckten WebView und gibt die Cookies zurück, die
+     * die Seite setzt (DDoS-Guard, Cloudflare, Hoster-Challenge).
+     *
+     * Die WebView wird nicht an die View-Hierarchie gehängt — der Nutzer sieht
+     * keine Checkbox und keinen Dialog. Ein Cookie gilt als Ertrag, sobald es
+     * nach dem Laden für [settleMs] stabil bleibt.
+     */
+    @SuppressLint("SetJavaScriptEnabled")
+    suspend fun cookiesFor(url: String, timeoutMs: Long = 15_000L, settleMs: Long = 1_200L): String? =
+        withContext(Dispatchers.Main) {
+            withTimeoutOrNull(timeoutMs) {
+                suspendCancellableCoroutine { continuation ->
+                    val handler = Handler(Looper.getMainLooper())
+                    var completed = false
+                    lateinit var webView: WebView
+                    fun finish(value: String?) {
+                        if (completed) return
+                        completed = true
+                        runCatching { webView.destroy() }
+                        continuation.resume(value)
+                    }
+                    fun harvest(): String? =
+                        runCatching { CookieManager.getInstance().getCookie(url) }
+                            .getOrNull()
+                            ?.takeIf { it.isNotBlank() }
+                    fun poll() {
+                        if (completed) return
+                        val cookies = harvest()
+                        if (cookies != null) {
+                            handler.postDelayed({ finish(cookies) }, settleMs)
+                        } else {
+                            handler.postDelayed({ poll() }, POLL_MS)
+                        }
+                    }
+                    webView = WebView(context).apply {
+                        settings.javaScriptEnabled = true
+                        settings.domStorageEnabled = true
+                        CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
+                        webViewClient = object : WebViewClient() {
+                            override fun onPageFinished(view: WebView?, finishedUrl: String?) {
+                                poll()
+                            }
+                        }
+                    }
+                    continuation.invokeOnCancellation {
+                        if (!completed) {
+                            completed = true
+                            runCatching { webView.destroy() }
+                        }
+                    }
+                    webView.loadUrl(url)
+                }
+            }
+        }
+
     private fun unquote(raw: String?): String? {
         if (raw.isNullOrBlank() || raw == "null") return null
         return runCatching { (JSONTokener(raw).nextValue() as? String)?.takeIf { it.isNotBlank() } }

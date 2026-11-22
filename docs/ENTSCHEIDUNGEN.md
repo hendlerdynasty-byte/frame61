@@ -283,3 +283,45 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 
 
 
+
+## 2026-11-22 — POST-Bodies tragen immer einen Content-Type
+
+- Befund: `aniworld.to/ajax/search` antwortet auf einen POST **ohne**
+  `Content-Type` mit HTTP 200 und **leerem** Rumpf (`text/html`, 0 Bytes).
+  Verifiziert mit curl: POST mit `application/x-www-form-urlencoded` liefert
+  19.350 Bytes JSON (74 Treffer), ohne Content-Type 0 Bytes. Der App-Client
+  (`PackHttpClient`) hat den Body mit `toRequestBody(null)` gesendet — daher
+  die „Regression“ 200/0 Treffer auf dem Gerät.
+- Default: `PackHttpClient` setzt bei POST `application/x-www-form-urlencoded`,
+  wenn die Regel keinen eigenen `Content-Type` nennt. Eine Regel mit eigenem
+  Header behält ihren Wert.
+- Wirkung: `aniworld` (und jedes weitere POST-Pack) ist wieder suchfähig.
+
+## 2026-11-22 — Stream-Ziele werden absolutisiert, Attribute gelesen, Ketten verfolgt
+
+- Befund: `aniworld.to` liefert Hoster-Links als `data-link-target="/redirect/<id>"`
+  relativ, Sprache als `data-lang-key`, Hoster als Text im `<h4>`.
+- Default:
+  1. `parseStreamsHtml` macht relative Ziele mit der `baseUrl` absolut.
+  2. Neue optionale Felder `langAttr`/`hosterAttr` lesen den Wert aus einem
+     Attribut statt aus dem Elementtext.
+  3. `HosterResolver` folgt bis zu drei Weiterleitungen, wenn für den Host
+     kein Hoster-Pack existiert, und löst die End-URL erneut auf. Direkte
+     Medien-URLs (`.mp4/.m3u8/.mkv/...`) lösen keinen Lookup aus.
+  4. `vidmoly.biz` ist als Domain ergänzt (die Kette landet dort, nicht auf
+     `.to/.me/.net`).
+- Wirkung: `/redirect/<id>`-Ketten werden zum echten Hoster-Stream statt zu
+  einer HTML-Seite, die der Player mit 3003 quittiert.
+
+## 2026-11-22 — Captchas laufen still in einer versteckten WebView
+
+- Default: `HeadlessCaptchaSolver` öffnet eine **nicht an die View-Hierarchie
+  gehängte** WebView, wartet auf die Challenge und erntet die Cookies
+  (`WebViewJsEvaluator.cookiesFor`). Die Cookies werden pro Host 15 Minuten
+  zwischengespeichert; beim ersten Zugriff auf einen Captcha-Hoster läuft ein
+  stilles Vorwärmen im Hintergrund.
+- Der sichtbare `CaptchaBroker`/WebView-Dialog bleibt **Rückfallebene** und
+  erscheint nur, wenn die stille Lösung scheitert. Damit ist „null sichtbare
+  Captchas“ erreichbar, ohne eine Quelle fallenzulassen.
+- `HosterResolver` erhält dafür den optionalen `CaptchaSolver`; ohne Solver
+  bleibt das bisherige Verhalten (`CaptchaRequired`) erhalten.

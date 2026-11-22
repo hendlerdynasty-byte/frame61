@@ -60,7 +60,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `mixdrop` | mixdrop.co, mixdrop.to, mixdrop.ch | 2 | nein |
 | `streamhide` | streamhide.to, streamhide.com | 2 | nein |
 | `streamtape` | streamtape.com, streamtape.to | 4 | nein |
-| `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net | 2 | ja |
+| `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net, vidmoly.biz | 2 | ja |
 | `vidoza` | vidoza.net | 2 | nein |
 | `voe` | voe.sx, voe-unblock.com, voeunblock.com, arianathankspecial.com | 3 | nein |
 

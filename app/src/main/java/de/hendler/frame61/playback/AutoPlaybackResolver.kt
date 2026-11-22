@@ -44,6 +44,7 @@ class AutoPlaybackResolver @Inject constructor(
     private val ardResolver: ArdPlaybackResolver,
     private val captchaBroker: CaptchaBroker,
     private val jsEvaluator: WebViewJsEvaluator,
+    private val headlessCaptchaSolver: HeadlessCaptchaSolver,
     private val prefs: ProfileDataStore
 ) {
 
@@ -70,7 +71,23 @@ class AutoPlaybackResolver @Inject constructor(
     }
 
     private val hosterResolver: HosterResolver by lazy {
-        HosterResolver(hosterPacks, OkHttpBodyFetcher(), jsEvaluator)
+        HosterResolver(
+            packs = hosterPacks,
+            fetcher = OkHttpBodyFetcher(),
+            jsEvaluator = jsEvaluator,
+            captchaSolver = headlessCaptchaSolver
+        ).also { warmUpCaptchaHosts() }
+    }
+
+    /**
+     * Hoster mit Captcha beim ersten Zugriff still vorwärmen, damit der erste
+     * Titel nicht auf eine Challenge wartet.
+     */
+    private fun warmUpCaptchaHosts() {
+        val urls = hosterPacks
+            .filter { !it.captcha.isNullOrBlank() }
+            .mapNotNull { pack -> pack.domains.firstOrNull()?.let { "https://$it/" } }
+        if (urls.isNotEmpty()) headlessCaptchaSolver.warmUp(urls)
     }
 
     suspend fun resolve(
