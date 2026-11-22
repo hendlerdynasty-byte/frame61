@@ -194,7 +194,10 @@ fun SettingsScreen(
 
         Spacer(Modifier.height(16.dp))
         Text(text = "Erweitert", style = MaterialTheme.typography.titleMedium)
-        if (context.packageName.endsWith(".perf") || context.packageName.endsWith(".ci") ||
+        // Die Diagnose-Activities liegen nur in den Quellordnern `ci` und
+        // `acceptance`. Die perf-Variante traegt sie nicht — dort waere der
+        // Button ein toter Verweis auf eine nicht vorhandene Klasse.
+        if (context.packageName.endsWith(".ci") ||
             context.packageName.endsWith(".acceptance")
         ) {
             OutlinedButton(
