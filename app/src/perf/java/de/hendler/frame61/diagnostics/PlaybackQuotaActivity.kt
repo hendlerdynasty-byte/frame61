@@ -126,9 +126,11 @@ class PlaybackQuotaActivity : ComponentActivity() {
             var usedIndex = -1
             var lastError = if (mirrors.isEmpty()) "NO_CANDIDATE" else "NO_PLAY"
             var usedHost = "-"
+            val triedHosts = mutableListOf<String>()
 
             for ((candidateIndex, mirror) in mirrors.take(MAX_CANDIDATES).withIndex()) {
                 tried = candidateIndex + 1
+                triedHosts += host(mirror.url)
                 val attempt = playCandidate(mirror)
                 if (attempt.firstFrameMs != null) {
                     played = true
@@ -156,7 +158,7 @@ class PlaybackQuotaActivity : ComponentActivity() {
                     "QUOTA idx=${index + 1} id=${item.id} type=${item.type} " +
                         "title=${item.title.sanitize()} RESULT=FAIL " +
                         "candidates=${mirrors.size} tried=$tried resolveMs=$resolveMs " +
-                        "err=$lastError"
+                        "hosts=[${triedHosts.joinToString(",")}] err=$lastError"
                 )
             }
             scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }

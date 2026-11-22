@@ -13,6 +13,7 @@
     {
       "action": "js",
       "url": "https://{host}{path}",
+      "saveAs": "file",
       "script": "(function(){try{var v=window._videoUrl;if(typeof v==='string'&&v.indexOf('http')===0)return v;var p=document.querySelector('video');if(p&&p.src&&p.src.indexOf('http')===0)return p.src;var s=document.querySelectorAll('source');for(var i=0;i<s.length;i++){if(s[i].src&&s[i].src.indexOf('http')===0)return s[i].src;}}catch(e){}return '';})()"
     }
   ],
