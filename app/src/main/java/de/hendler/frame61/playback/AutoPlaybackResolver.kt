@@ -20,6 +20,7 @@ import de.hendler.frame61.ui.player.CatalogPlayback
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
@@ -95,6 +96,30 @@ class AutoPlaybackResolver @Inject constructor(
         episodeNumber: Int = 0,
         sessionId: Long = PlaybackDiagnostics.currentSessionId,
         fresh: Boolean = false
+    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, 0L)
+
+    /**
+     * Wie [resolve], kehrt aber schon [graceMs] nach dem ersten Kandidaten
+     * zurück, statt auf die langsamste Quelle zu warten.
+     *
+     * Motivation aus der Messung: die ARD-Kette liefert in ~1 s einen
+     * spielbaren Stream, der Lauf wartete aber 4 s auf den Timeout der
+     * langsamsten Quelle (gemessen p95 5,6 s bis zum ersten Bild).
+     */
+    suspend fun resolveFast(
+        title: String,
+        episodeNumber: Int = 0,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId,
+        fresh: Boolean = false,
+        graceMs: Long = FIRST_CANDIDATE_GRACE_MS
+    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, graceMs)
+
+    private suspend fun resolveInternal(
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long,
+        fresh: Boolean,
+        graceMs: Long
     ): List<MirrorCandidate> =
         withContext(Dispatchers.IO) {
             val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
@@ -112,14 +137,10 @@ class AutoPlaybackResolver @Inject constructor(
                 TAG,
                 "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
                     "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
-                    "disabled=${disabled.sorted()}"
+                    "disabled=${disabled.sorted()} grace=$graceMs"
             )
 
-            val candidates = coroutineScope {
-                packs.map { pack ->
-                    async { resolveWithTimeout(pack, title, episodeNumber, sessionId) }
-                }.awaitAll().flatten()
-            }
+            val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
 
             val captchaCandidates = if (candidates.isEmpty()) {
                 allPacks.filter { it.captcha != null }.flatMap { pack ->
@@ -164,6 +185,49 @@ class AutoPlaybackResolver @Inject constructor(
         return result
     }
 
+    /**
+     * Alle Packs parallel befragen, Ergebnisse einsammeln.
+     *
+     * Mit [graceMs] > 0 endet das Einsammeln, sobald nach dem ersten
+     * Kandidaten die Frist abgelaufen ist — die übrigen Quellen laufen dann
+     * nicht weiter und der Player startet sofort.
+     */
+    private suspend fun collectCandidates(
+        packs: List<SourcePack>,
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long,
+        graceMs: Long
+    ): List<MirrorCandidate> = coroutineScope {
+        if (packs.isEmpty()) return@coroutineScope emptyList()
+        val channel = Channel<List<MirrorCandidate>>(packs.size)
+        packs.forEach { pack ->
+            launch {
+                channel.send(resolveWithTimeout(pack, title, episodeNumber, sessionId))
+            }
+        }
+        val collected = mutableListOf<MirrorCandidate>()
+        var received = 0
+        var firstAt = 0L
+        val start = System.currentTimeMillis()
+        val hardDeadline = SOURCE_TIMEOUT_MS + HOSTER_TIMEOUT_MS * 2 + 2_000L
+        while (received < packs.size) {
+            val remaining = hardDeadline - (System.currentTimeMillis() - start)
+            if (remaining <= 0L) break
+            val batch = withTimeoutOrNull(remaining) { channel.receive() } ?: break
+            received++
+            if (batch.isEmpty()) continue
+            collected += batch
+            if (firstAt == 0L) firstAt = System.currentTimeMillis()
+            if (graceMs > 0L && System.currentTimeMillis() - firstAt >= graceMs) {
+                Log.i(TAG, "grace erreicht: ${collected.size} Kandidaten, Rest verworfen")
+                break
+            }
+        }
+        channel.close()
+        collected
+    }
+
     private suspend fun resolvePack(
         pack: SourcePack,
         title: String,
@@ -193,9 +257,15 @@ class AutoPlaybackResolver @Inject constructor(
             episodeNumber.toString(),
             cookies
         )
-        return streams.mapNotNull { stream ->
-            val resolved = resolveHoster(pack, stream, sessionId)
-            resolved?.let {
+        // Hoster parallel aufloesen: eine Seite mit sechs Zielen kostete
+        // bisher sechs Ketten hintereinander (gemessen 11 s ohne Kandidat).
+        val resolved = coroutineScope {
+            streams.map { stream ->
+                async { stream to resolveHoster(pack, stream, sessionId) }
+            }.awaitAll()
+        }
+        return resolved.mapNotNull { (stream, hoster) ->
+            hoster?.let {
                 MirrorCandidate(
                     sourceId = pack.id,
                     titleId = CatalogPlayback.stableId(hit.id),
@@ -313,5 +383,8 @@ class AutoPlaybackResolver @Inject constructor(
         private const val SOURCE_TIMEOUT_MS = 4_000L
         private const val HOSTER_TIMEOUT_MS = 4_000L
         private const val CACHE_MS = 15L * 60L * 1000L
+
+        /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
+        const val FIRST_CANDIDATE_GRACE_MS = 600L
     }
 }

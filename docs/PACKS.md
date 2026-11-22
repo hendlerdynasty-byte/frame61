@@ -9,7 +9,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 - legal-frei: **13**, Grauzone Tier A/B: **19**
 - live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
 - Fixtures: 12 recorded, 8 synthetic, 11 ohne
-- Hoster-Packs: **12** (live verifiziert: 2)
+- Hoster-Packs: **13** (live verifiziert: 2)
 
 ## Source-Packs
 
@@ -62,6 +62,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `streamtape` | streamtape.com, streamtape.to | 4 | nein |
 | `vidmoly` | vidmoly.to, vidmoly.me, vidmoly.net, vidmoly.biz | 2 | ja |
 | `vidoza` | vidoza.net | 2 | nein |
+| `vidsonic` | vidsonic.net, vidsonic.to, vidsonic.co | 1 | nein |
 | `voe` | voe.sx, voe-unblock.com, voeunblock.com, arianathankspecial.com | 3 | nein |
 
 ## Regeln

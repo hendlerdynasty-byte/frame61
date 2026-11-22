@@ -113,7 +113,7 @@ class PlaybackQuotaActivity : ComponentActivity() {
             var mirrors = emptyList<MirrorCandidate>()
             val resolved = withTimeoutOrNull(RESOLVE_BUDGET_MS) {
                 withContext(Dispatchers.IO) {
-                    autoResolver.resolve(item.title, episode, fresh = true)
+                    autoResolver.resolveFast(item.title, episode, fresh = true)
                 }
             }
             if (resolved != null) mirrors = resolved

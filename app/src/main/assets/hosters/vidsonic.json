@@ -1,0 +1,24 @@
+{
+  "id": "vidsonic",
+  "name": "Vidonico",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "vidsonic.net",
+    "vidsonic.to",
+    "vidsonic.co"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "js",
+      "url": "https://{host}{path}",
+      "script": "(function(){try{var v=window._videoUrl;if(typeof v==='string'&&v.indexOf('http')===0)return v;var p=document.querySelector('video');if(p&&p.src&&p.src.indexOf('http')===0)return p.src;var s=document.querySelectorAll('source');for(var i=0;i<s.length;i++){if(s[i].src&&s[i].src.indexOf('http')===0)return s[i].src;}}catch(e){}return '';})()"
+    }
+  ],
+  "last_check": "2026-11-22T01:31:09Z",
+  "check": {
+    "status": "step_failed",
+    "reason": "Player baut die URL per JS (_decode); ohne WebView kein Stream"
+  }
+}
