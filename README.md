@@ -4,15 +4,25 @@ Streaming-App für Android TV (Fire OS) und Handy. Katalog-Browser mit
 Provider-Fassade: die Oberfläche kennt keine Quelle, der Resolver kennt keine
 Oberfläche. Identität eines Titels ist die TMDB-ID; Site-Titel sind Mirrors.
 
-## Rechtsstand — die wichtigste Regel
+## Quellenstand — die wichtigste Regel
 
-Frame61 baut **keine** Index-Seiten-Scraper. Alles Grauzonige (streamkiste,
-s.to, cine.to, filmpalast, aniworld, megakino, kinokiste, dokujunkies, movie4k,
-hdfilme, kinox, bs.to, filmfans, anime-loads) kommt ausschließlich als
-JSON-Pack aus `assets/sources/` hinein. Diese Packs sind **Attrappen**:
-keine echten Selektoren, `verified: false`, `UNVERIFIED`. Es wird nichts
-recherchiert. Die App ist ohne einen einzigen Index-Treffer voll benutzbar —
-über die legal-freien Quellen und den mitgelieferten Katalog.
+Frame61 baut **keine** Index-Seiten-Scraper. Jede Quelle kommt ausschließlich
+als JSON-Pack aus `app/src/main/assets/sources/` (plus Hot-Load aus dem
+internen `sources/`-Verzeichnis) hinein; Selektoren, Pfade und HTTP-Regeln
+stehen im Pack, nicht im Code.
+
+Ein Pack trägt `verified: true`, wenn sein Suchpfad technisch belegt ist:
+live am Gerät geprüft (Indexseite liefert Treffer) und durch ein Fixture
+abgesichert. Der Stand je Pack steht in [docs/PACKS.md](docs/PACKS.md), die
+Index-Nachweise in [docs/INDEX.md](docs/INDEX.md), die Hoster-Nachweise in
+[docs/HOSTERS.md](docs/HOSTERS.md). Nicht verifizierte Packs behalten
+`verified: false` und einen dokumentierten Sperrgrund — es werden keine
+Selektoren ohne Beleg erfunden.
+
+`verified` ist ein **technischer** Nachweis (Antwort, Treffer, Wiedergabe),
+keine Rechts- oder Lizenzfreigabe. Die App ist ohne einen einzigen
+Index-Treffer voll benutzbar — über die legal-freien Quellen (ARD Mediathek,
+Archive.org, ZDF, arte, 3sat, …) und den mitgelieferten Katalog.
 
 ## Architektur
 
@@ -63,10 +73,17 @@ Resume schreibt alle 5 s, >90 % = gesehen.
 
 ## Player
 
-Media3 mit HLS, Spurwahl (Audio/Untertitel), Tempo, Aspect-Fix.
+Media3 (ExoPlayer) als Hauptengine: HLS, progressives MP4, MKV, AVI,
+MPEG-TS, Spurwahl (Audio/Untertitel), Tempo, Aspect-Fix. Nach einem echten
+Wiedergabefehler übernimmt der Android-Systemplayer mit eigener Surface
+dieselbe URL mit derselben Position; HTML-, JSON- und leere Antworten werden
+als Resolverfehler verworfen statt erneut als Video geöffnet zu werden.
+Request-Kontext (User-Agent, Referer, Cookies) läuft über eine auflösende
+DataSource auf jedem Hop.
 Watchdog: 8 s ohne Frame → nächster Mirror, ohne UI-Flackern.
 Next-Episode-Countdown: 8 s ab 90 %, abbrechbar.
 Resume nach Kill exakt, offline aus Room.
+Gerätebeleg: [docs/ABSCHLUSS-PHASE-B.md](docs/ABSCHLUSS-PHASE-B.md).
 
 ## Episoden und Metadaten
 
@@ -88,7 +105,10 @@ einen Skin beim Namen; Screens lesen Tokens über `LocalSkin`.
 Screens: Home (Billboard + Regale), Suche, Detail, Player, Profilwahl,
 Profil-Edit, Skins, Layout-Builder, Quellen (Source Lab), Einstellungen.
 TV zuerst: D-Pad, FocusRestorer, 48-dp-Ziele, Fokusring nie abgeschnitten;
-Touch als Bonus.
+Touch als Bonus. Die Navigation sitzt auf dem TV als feste linke
+Seitenleiste (nicht als untere Leiste); Fokusweg DOWN/UP/RIGHT/LEFT/CENTER ist
+auf dem Android-TV-Emulator belegt
+([docs/design/phase-b/tv-dpad-trail-1.3.0.txt](docs/design/phase-b/tv-dpad-trail-1.3.0.txt)).
 
 Layout-Builder: 12 Reihen (Billboard, ContinueWatching, BecauseYouWatched,
 Top10, NewEpisodes, GenreRail, Collection, FreeLegal, AiringToday, Random,
@@ -106,8 +126,16 @@ Quellen sind je Profil keyed.
   Live am A52 belegt (Babylon Berlin, S01/E01).
 - **Archive.org** (legal-frei, keyless): API-Pack mit recorded Fixture, vom
   Worker live verifiziert.
-- Alle übrigen Packs sind `verified: false`; Status und Grund stehen in
-  [docs/PACKS.md](docs/PACKS.md). Es werden keine Selektoren ohne HTML-Beleg
+- **Index-Packs** (aniworld, bs-to, cine, filmo, filmpalast, filmstarts,
+  moflix, s-to, serienstream, streamcloud u. a.): Suchpfad technisch belegt.
+  Am A52 gemessen: 9/14 Indexseiten liefern Treffer, 1/14 spielt über den
+  Indexpfad (moflix), 2/11 Hoster liefern laufende Wiedergabe (`direct`,
+  `vidmoly`). Blockierte Quellen stehen mit HTTP-Status und Grund in
+  [docs/INDEX.md](docs/INDEX.md), [docs/HOSTERS.md](docs/HOSTERS.md) und
+  [docs/ABSCHLUSS-PHASE-B.md](docs/ABSCHLUSS-PHASE-B.md).
+- Nicht verifizierte Packs behalten `verified: false` und einen dokumentierten
+  Sperrgrund; Status und Grund je Pack stehen in
+  [docs/PACKS.md](docs/PACKS.md). Es werden keine Selektoren ohne Beleg
   erfunden.
 - Der Player zeigt die Quelle an („ARD Mediathek" oder „Demo-Stream"). Der
   Demo-HLS ist nur ein sichtbarer Fallback.
@@ -121,22 +149,34 @@ remote:
 # schnell, lokal, ohne Gradle
 scripts/preflight.sh
 
-# voller Gate (remote)
+# voller Gate über GitHub Actions (kostenlos, bereits konfiguriert)
+gh workflow run android-gate.yml --ref main
+
+# Alternative: Remote-Build auf dem Firmenserver
 python3 ~/hendler-device-ops/remote_build.py \
   --repo "<absoluter Pfad zu frame61>" --tasks "gate"
 ```
 
-Das Skript exportiert einen sauberen Git-HEAD (signing-/env-Dateien
-ausgeschlossen), baut auf `contabo-build` (JDK17/SDK36), prüft Hashes und
-lädt die Artefakte zurück. Voraussetzung: sauberer HEAD; bei WIP einen
-isolierten Snapshot anlegen, niemals fremden WIP committen.
+Das Actions-Gate baut `debug`, `perf`, `acceptance` und ein **unsigned**
+Release-APK/AAB und lädt sie als Artefakte hoch. Signiert wird **lokal am
+Mac** (Keystore ausserhalb des Repos, Passwort aus dem macOS-Keychain):
+
+```sh
+scripts/sign_acceptance.sh <unsigned.apk> <signed.apk>   # zipalign + apksigner
+scripts/sign_release_aab.sh <unsigned.aab> <signed.aab>   # jarsigner
+```
+
+Kein Signing-Secret verlässt den Mac. Voraussetzung für jeden Bau: sauberer
+HEAD; bei WIP einen isolierten Snapshot anlegen, niemals fremden WIP
+committen.
 
 `./gradlew gate` bündelt `:app:assembleDebug`, `:app:lint`, alle
 Unit-Tests, den Pack-/Meta-Validator, die Fetch-Werkzeug-Tests, den
 PACKS.md-Abgleich und die APK-Größenprüfung (≤ 45 MiB). Details:
 [STAND.md](docs/STAND.md), [SCHEMA.md](docs/SCHEMA.md),
-[PACKS.md](docs/PACKS.md), [PERF.md](docs/PERF.md),
-[SIGNING.md](docs/SIGNING.md), [UPDATE.md](docs/UPDATE.md).
+[PACKS.md](docs/PACKS.md), [PERF2.md](docs/PERF2.md),
+[SIGNING.md](docs/SIGNING.md), [UPDATE.md](docs/UPDATE.md),
+[RELEASE.md](docs/RELEASE.md).
 
 ## Sideload
 
@@ -150,9 +190,16 @@ PACKS.md-Abgleich und die APK-Größenprüfung (≤ 45 MiB). Details:
 
 ## Dokumentation
 
+- `docs/ABSCHLUSS-PHASE-B.md` — **aktueller Abschlussbericht**: Ampel je
+  Arbeitspaket, Quellzahlen, Tests, Lint, Performance, Artefakt-Hashes,
+  blockierte Quellen mit HTTP-Status und Grund
+- `docs/STATE.md` — was läuft, was offen ist, mit Belegen
+- `docs/RELEASE.md` — Release 1.3.0 (APK/AAB, Signatur, Hashes, Update-Pfad)
+- `docs/ABSCHLUSS-TV.md` — TV-Ziel (Blöcke 0–18 + Phase B, DoD-Tabelle)
 - `docs/OWNER-ÜBERSICHT.md` — **ein Dokument für alles**: Ziel/Wunsch, Ist-Stand,
   was nicht umgesetzt ist und warum, DoD-Checkliste, offene Punkte
-- `docs/STATE.md` — was läuft, was offen ist, mit Belegen
+- `docs/INDEX.md` / `docs/HOSTERS.md` / `docs/PACKS.md` — Quell-, Hoster- und
+  Pack-Stand mit Belegen
 - `docs/SOURCE_PACK.md` — Vertrag für Source Packs (Pflichtfelder, Dialekte)
 - `docs/SCRAPER.md` — Scraper-Engine und Resolver
 - `docs/SKINS.md` — Skin-System und Tokens

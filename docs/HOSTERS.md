@@ -1,10 +1,15 @@
 # Hoster — Stand und Nachweise
 
-Stand: 18.11.2026. Ziel waren 10 Hoster mit echter Schrittkette, aufgezeichneter
+Stand: 22.11.2026. Ziel waren 10 Hoster mit echter Schrittkette, aufgezeichneter
 Antwort (`responseSha256`) und Status `verified`. Erreicht sind **2 von 10**:
 Vidmoly und `direct` (ARD-Slice). Die Kette ist seit Block 13 um `js`, `pow`
 und Cookie-/WebView-Rueckgabe erweitert; die verbleibenden Hoster haben
 benannte, live gepruefte Gruende.
+
+Auf der **Geraete-Ebene** (Samsung A52, 22.11.2026) laufen genau diese beiden
+Hoster auch wirklich: `direct` (ARD-MP4) und `vidmoly` (HLS) spielen mit
+Media3 auf dem Geraet. Die uebrigen neun sind dort blockiert — jeweils mit
+HTTP-Status oder Grund; siehe [„Geraete-Ebene"](#geraete-ebene-22112026).
 
 ## Methode
 
@@ -105,6 +110,41 @@ Firestream und Vidaraa stehen nicht in den 10 geforderten Ziel-Hostern und
 haben daher keinen Pack. Streamtape, Vidoza, Mixdrop, Luluvdo, Loadx und
 Streamhide tauchen auf keinem der verifizierten Indizes auf; ihre Gruende
 bleiben in `hoster_targets.json` erhalten.
+
+## Geraete-Ebene (22.11.2026)
+
+Quellstand `60512d4`, signierte acceptance-APK `308bdf4a…`, Samsung A52,
+Job `job-654784df242d4d93` PASS. Die `SourceCoverageActivity` loest jeden
+Hoster mit dem Produktions-Resolver auf und spielt die gefundene URL mit dem
+Produktionsplayer. Massgeblicher Lauf: `60512d4`,
+`docs/design/phase-b/coverage-a52-run4-60512d4.txt`.
+
+| Hoster | Geraet | Befund |
+|---|---|---|
+| `direct` | **VERIFIED_PLAYBACK** | ARD-MP4 `ctv-videos.daserste.de/…/409_16651_sendeton_960x540-50p-1600kbit.mp4` lief 937/2.695.082 ms (Media3, `playing=true`, kein Fehler) |
+| `vidmoly` | **VERIFIED_PLAYBACK** | HLS `box-1583-q.vmeas.cloud/hls2/04/01431/8irnzzsknabi_n/master.m3u8` lief 182/1.371.240 ms (Media3, `playing=true`, kein Fehler) |
+| `voe` | BLOCKED | `CaptchaRequired (webview)` — die WebView-Loesung liefert den Token, der im Geraetelauf nicht zurueckkam |
+| `doodstream` | BLOCKED | `CaptchaRequired (webview)` — Cloudflare-Challenge, WebView-Loesung noetig |
+| `filemoon` | BLOCKED | `get fehlgeschlagen: HTTP 405` fuer `https://filemoon.to/api/videos/89crzins1ufc/playback` — der Playback-Endpunkt verlangt Browser-Kontext |
+| `streamtape` | BLOCKED | kein Dateiziel: Homepage ohne oeffentliche Dateiliste, API nur mit Konto |
+| `vidoza` | BLOCKED | kein Dateiziel: Landingpage ohne oeffentliche Dateiliste |
+| `mixdrop` | BLOCKED | kein Dateiziel: `mixdrop.co` TLS-Verbindung fehlgeschlagen (18.11.2026) |
+| `luluvdo` | BLOCKED | kein Dateiziel: `luluvdo.com`/`.net` nicht aufloesbar (18.11.2026) |
+| `loadx` | BLOCKED | kein Dateiziel: `loadx.ws` Timeout (18.11.2026) |
+| `streamhide` | BLOCKED | kein Dateiziel: `streamhide.com` liefert nur JS-Redirect ohne Dateilink |
+
+**2 von 11 Hosterzielen spielen auf dem Geraet.** Die neun blockierten Ziele
+sind externe Sperren, keine Parserfehler: Captcha-Gates (2), ein
+Browser-Pflicht-Endpunkt (1) und sechs Hoster ohne oeffentlich erreichbare
+Dateiliste. Jeder Eintrag nennt HTTP-Status oder Grund; die vollstaendigen
+Zeilen stehen im Abdeckungslauf.
+
+Ein Hinweis zur Messung: die Position wird im Player ereignisgesteuert
+aktualisiert, die App liest sie ueber einen Ticker. Die Diagnose-Activity
+hatte keinen Ticker und meldete fuer `direct` und `vidmoly` Position 0, obwohl
+beide bereit waren und liefen. Seit `60512d4` liest die Activity denselben
+Zustand wie die App (`engine.publish()`), danach zaehlen beide Hoster als
+verifiziert.
 
 ## Gate-Nachweis (18.11.2026)
 

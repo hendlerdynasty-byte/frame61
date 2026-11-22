@@ -1,10 +1,24 @@
-# ABSCHLUSS-TV.md — Frame61, Blöcke 0–18
+# ABSCHLUSS-TV.md — Frame61, Blöcke 0–18 + Phase B
 
-Stand: 19.11.2026. Quellstand `89d5fff` (Merge Block 18). Dieses Dokument
-ersetzt für das 10-Foot-TV-Ziel die alte `ABSCHLUSS.md`-Liste; die alte Datei
-bleibt als Historie des ersten Ziels liegen.
+Stand: 22.11.2026. Quellstand `9353e5a` (Merge Phase B auf `main`), Release
+**1.3.0 / VersionCode 4**. Dieses Dokument ersetzt für das 10-Foot-TV-Ziel die
+alte `ABSCHLUSS.md`-Liste; die alte Datei bleibt als Historie des ersten
+Ziels liegen. Der vollständige Phasen-B-Bericht steht in
+[ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md).
 
-## Gate
+## Phase B (22.11.2026) — TV-Stand
+
+| Gegenstand | Wert | Beleg |
+|---|---|---|
+| Release auf dem TV | signiertes Release-APK 1.3.0 / VC4, `versionCode=4`, `versionName=1.3.0` | `docs/RELEASE.md` |
+| Start | `Status: ok`, `LaunchState: COLD`, `TotalTime 1114 ms` | `docs/design/phase-b/tv-dpad-trail-1.3.0.txt` |
+| Stabilität | 0 FATAL EXCEPTION, 0 ANR | `docs/design/phase-b/tv-dpad-trail-1.3.0.txt` |
+| Navigation | feste linke Seitenleiste (x=106..262), RIGHT in den Inhalt (x≥278), LEFT zurück, CENTER wählt; **keine untere Leiste** | `docs/design/phase-b/tv-dpad-trail-1.3.0.txt` |
+| Startbild | `docs/design/phase-b/tv-release-startup-1.3.0.png` (1.486.092 B) | Emulator `frame61-androidtv-31`, `emulator-5554`, `uimode 0x24`, leanback vorhanden |
+| Playback auf TV | **NOT_RUN** — auf dem Emulator wurde Navigation und Start belegt, keine Stream-Wiedergabe | — |
+| Echtes Fire TV | **NOT_RUN**, Gerät unangetastet (Owner-Policy: keine ADB-Befehle, keine Screenshots, keine Tests) | — |
+
+## Gate (Blöcke 0–18)
 
 | Kennzahl | Wert |
 |---|---|
@@ -53,8 +67,8 @@ bleibt als Historie des ersten Ziels liegen.
 | 6 | Suche aggregiert, dedupliziert, deutsch zuerst | ✅ | `Frame61Search`-Logs, Tests |
 | 7 | Fallback ohne sichtbaren Quellenausfall | ✅ | `Frame61Resolve`-Log |
 | 8 | Player ohne permanentes HUD | ✅ | A52-Player-Screenshots |
-| 9 | 14 Indexseiten live | ⚠ 10/14 | 4 extern blockiert mit Domain-/Pfadbeleg, `docs/INDEX.md` |
-| 10 | 10 Hoster live | ⚠ 2/10 | 3 Quellblockaden, 5 ohne Ziel, `docs/HOSTERS.md` |
+| 9 | 14 Indexseiten live | ⚠ 10/14 (Block 18) | 4 extern blockiert mit Domain-/Pfadbeleg, `docs/INDEX.md` |
+| 10 | 10 Hoster live | ⚠ 2/10 (Block 18) | 3 Quellblockaden, 5 ohne Ziel, `docs/HOSTERS.md` |
 | 11 | Katalog ≥ 600, lokale Poster, Filter | ✅ | **1000/1000**, 416 Filme, Validator, A52 |
 | 12 | Fortschritt und Meine Liste persistent | ✅ | Room-Resume, DataStore, A52-Screenshot |
 | 13 | Kaltstart p95 < 1200 ms | ✅ | R8-Perf: **323 ms** |
@@ -67,19 +81,27 @@ bleibt als Historie des ersten Ziels liegen.
 | 20 | Installation aus Release | ✅ | `adb install -r` aus Release-Asset auf TV-Emulator, `versionCode=3` |
 | 21 | Fire TV unangetastet | ✅ | Kein echtes Fire-TV-Gerät benutzt |
 | 22 | Keine Platzhalter/erfundenen Werte | ✅ | Validator, Fixtures, Messprotokolle |
+| 23 | TV-Navigation: untere Leiste durch Seitenleiste ersetzt | ✅ (Phase B) | Fokusweg DOWN/UP/RIGHT/LEFT/CENTER belegt, `docs/design/phase-b/tv-dpad-trail-1.3.0.txt` |
+| 24 | TV trägt den Release-Stand 1.3.0 / VC4 | ✅ | Release-APK installiert, `versionCode=4`, 0 Crash, 0 ANR |
+| 25 | 14 Indexseiten live (Messung am Gerät, Phase B) | ⚠ 9/14 | 5 blockiert mit HTTP-Status und Grund, `docs/design/phase-b/coverage-a52-run4-60512d4.txt` |
+| 26 | 10 Hoster live (Messung am Gerät, Phase B) | ⚠ 2/11 | 9 blockiert mit HTTP-Status und Grund, `docs/HOSTERS.md` |
+| 27 | TV-Wiedergabe einer Streamquelle | ⚠ NOT_RUN | Auf dem Emulator belegt sind Start und Navigation, keine Stream-Wiedergabe; Fire TV unangetastet |
 
 ## Bekannte Grenzen
 
-- **Index 10/14 und Hoster 2/10**: Kinox (6 Domains), Kinokiste (JWT/Bot-Gate),
-  Megakino (DNS) und Movie2k (Parking/SPA) bleiben extern blockiert mit
-  dokumentierten Versuchen. VOE, Doodstream und Filemoon haben konkrete
-  Quellblockaden; Streamtape, Vidoza, Mixdrop, Luluvdo, Loadx und Streamhide
-  haben kein erreichbares Dateiziel. Keine Attrappen.
+- **Index und Hoster (Messung am Gerät, Phase B):** 9/14 Indexseiten, 1/14
+  Wiedergabe über den Indexpfad, 2/11 Hoster. Aniworld (HTTP 200, 0 Treffer),
+  Kinokiste (HTTP 401), Kinox (HTTP 404), Megakino (HTTP 200, Platzhalter) und
+  Movie2k (kein Server) bleiben extern blockiert; VOE, Doodstream (Captcha) und
+  Filemoon (HTTP 405) haben konkrete Quellblockaden; Streamtape, Vidoza,
+  Mixdrop, Luluvdo, Loadx und Streamhide haben kein erreichbares Dateiziel.
+  Keine Attrappen. Details: `docs/ABSCHLUSS-PHASE-B.md`, `docs/HOSTERS.md`.
 - **Play Protect**: Auf dem A52 ist die letzte Bestätigung extern blockiert;
   kein APK an Google gesendet. Auf dem TV-Emulator lief der Pfad durch
   „Install unknown apps" komplett bis `versionCode=3`.
 - **Fire-TV-Hardware**: unangetastet; Emulator-Startzeiten sind keine
-  Hardware-Messwerte.
+  Hardware-Messwerte. Auf dem TV-Emulator ist die Phase-B-Navigation belegt,
+  die Stream-Wiedergabe dort nicht (NOT_RUN).
 - **Kein Store**: kein Play-Upload, kein Rollout, keine Store-Freigabe.
 - **Performance**: Einzelmessungen auf einem A52; `am start -W` misst den
   Activity-Start, keine geräteübergreifende p95-Studie.
@@ -87,3 +109,5 @@ bleibt als Historie des ersten Ziels liegen.
   leerem Host. Gate und Release wurden mit identischem Export und denselben
   Gradle-Flags direkt in frischen Jobordnern ausgeführt (keine fremden
   Prozesse beendet). Jobs und Hashes sind oben dokumentiert.
+- **Release-Bau in Phase B:** GitHub Actions statt Remote-Build; das Signing
+  bleibt lokal am Mac, kein Secret-Transfer.
