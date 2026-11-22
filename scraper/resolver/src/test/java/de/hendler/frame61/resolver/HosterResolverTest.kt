@@ -305,4 +305,37 @@ class HosterResolverTest {
         assertTrue(out is HosterOutcome.Resolved)
         assertNotNull((out as HosterOutcome.Resolved).url)
     }
+
+    @Test
+    fun `a chain across two hoster packs resolves to the final url`() = runTest {
+        val fetcher = FakeFetcher(
+            bodies = mapOf(
+                "https://gate.example/r?t=1" to "<html>gate</html>",
+                "https://voe.example/e/1" to "window.sources=[{file:'https://cdn.example/v.m3u8'}]"
+            )
+        )
+        val gate = pack(
+            id = "gate",
+            domains = listOf("gate.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "get", url = "https://{host}{path}", saveAs = "page"),
+                HosterStep(action = "copy", url = "https://voe.example/e/1", saveAs = "file")
+            )
+        )
+        val voe = pack(
+            id = "voe",
+            domains = listOf("voe.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "get", url = "https://{host}{path}", saveAs = "page"),
+                HosterStep(action = "regex", input = "page", pattern = "file:'([^']+)'", group = 1, saveAs = "file")
+            )
+        )
+
+        val out = HosterResolver(listOf(gate, voe), fetcher).resolve("https://gate.example/r?t=1")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals("https://cdn.example/v.m3u8", (out as HosterOutcome.Resolved).url)
+    }
 }

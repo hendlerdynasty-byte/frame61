@@ -1,0 +1,24 @@
+{
+  "id": "serienstream-gate",
+  "name": "SerienStream Redirect",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "serienstream.to",
+    "s.to"
+  ],
+  "result": "file",
+  "steps": [
+    {
+      "action": "js",
+      "url": "https://{host}{path}",
+      "saveAs": "file",
+      "script": "(function(){try{var h=location.hostname||'';if(location.protocol==='https:'&&h.indexOf('serienstream')<0&&h!=='s.to'&&h.indexOf('.s.to')<0)return location.href;}catch(e){}return '';})()"
+    }
+  ],
+  "last_check": "2026-11-22T01:31:09Z",
+  "check": {
+    "status": "step_failed",
+    "reason": "/r?t=<token> ist ein JS-Redirect-Gate; der Token ist einmalig (HTTP 410 bei Wiederholung)"
+  }
+}

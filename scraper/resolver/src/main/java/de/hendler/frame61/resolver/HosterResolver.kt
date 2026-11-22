@@ -97,6 +97,18 @@ class HosterResolver(
                     return resolve(followed, effectiveCookies, depth + 1)
                 }
             }
+            // Letzte Stufe: eine Embed-Seite ohne eigenes Pack. Die versteckte
+            // WebView baut die Seite und meldet die erste echte Medien-URL
+            // (video/source/window.sources/getActiveLink). Nur bei Embed-Formen,
+            // damit kein fremder Host den Start verzögert.
+            if (depth == 0 && jsEvaluator != null && looksLikeEmbed(url)) {
+                val extracted = runCatching {
+                    jsEvaluator.evaluate(url, GENERIC_EMBED_SCRIPT, GENERIC_EMBED_MS)
+                }.getOrNull()
+                if (!extracted.isNullOrBlank() && extracted.startsWith("https://")) {
+                    return HosterOutcome.Resolved(extracted, 1, headers, effectiveCookies)
+                }
+            }
             return HosterOutcome.Unknown(url, headers, effectiveCookies)
         }
         if (!pack.captcha.isNullOrBlank() && effectiveCookies.isNullOrBlank()) {
@@ -205,10 +217,35 @@ class HosterResolver(
                 ?: return HosterOutcome.Failed(url, "result '${pack.result}' nicht erzeugt", used)
         }
 
-        return when {
-            finalValue.isNullOrBlank() -> HosterOutcome.Failed(url, "kein Ergebnis", used)
-            else -> HosterOutcome.Resolved(finalValue, used, requestHeaders.toMap(), effectiveCookies)
+        if (finalValue.isNullOrBlank()) {
+            return HosterOutcome.Failed(url, "kein Ergebnis", used)
         }
+
+        // Ketten ueber mehrere Hoster-Packs: eine Zwischenadresse (z. B. der
+        // serienstream.to-Redirect-Gate) zeigt auf den echten Hoster. Ohne
+        // diese Stufe bleibt die HTML-Seite stehen und der Player meldet 3003.
+        if (depth < MAX_REDIRECT_DEPTH && finalValue.startsWith("https://")) {
+            val nextPack = findPack(finalValue)
+            if (nextPack != null && nextPack.id != pack.id) {
+                val cookieHeader = requestHeaders["Cookie"]
+                return when (val inner = resolve(finalValue, cookieHeader, depth + 1)) {
+                    is HosterOutcome.Resolved -> inner
+                    is HosterOutcome.CaptchaRequired ->
+                        HosterOutcome.CaptchaRequired(finalValue, inner.kind)
+                    is HosterOutcome.Failed ->
+                        HosterOutcome.Failed(finalValue, inner.reason, used)
+                    is HosterOutcome.Unknown ->
+                        HosterOutcome.Resolved(
+                            finalValue,
+                            used,
+                            requestHeaders.toMap(),
+                            effectiveCookies
+                        )
+                }
+            }
+        }
+
+        return HosterOutcome.Resolved(finalValue, used, requestHeaders.toMap(), effectiveCookies)
     }
 
     /** `{host}`, `{path}` and stored variables are substituted. */
@@ -247,6 +284,30 @@ class HosterResolver(
 
         /** Budget for a headless captcha solve before the UI fallback is used. */
         const val CAPTCHA_SOLVE_MS = 15_000L
+
+        /** Generische Embed-Aufloesung: kurz halten, sie ist die letzte Stufe. */
+        const val GENERIC_EMBED_MS = 5_000L
+
+        private val EMBED_PATH = Regex("""(?i)/(?:e|embed|video|stream|play)/[^/?#]+""")
+
+        /** Nur Embed-Formen aufloesen, keine beliebigen fremden Hosts. */
+        fun looksLikeEmbed(url: String): Boolean = EMBED_PATH.containsMatchIn(url)
+
+        /**
+         * Liest die erste echte Medien-URL aus einer Embed-Seite — unabhängig
+         * vom konkreten Hoster (video/source/window.sources/getActiveLink).
+         */
+        const val GENERIC_EMBED_SCRIPT =
+            "(function(){try{var v=document.querySelector('video');" +
+                "if(v&&v.src&&v.src.indexOf('http')===0)return v.src;" +
+                "var s=document.querySelectorAll('source');" +
+                "for(var i=0;i<s.length;i++){if(s[i].src&&s[i].src.indexOf('http')===0)return s[i].src;}" +
+                "if(window.sources&&sources.length){var f=sources[0].file||sources[0].src;" +
+                "if(f&&f.indexOf('http')===0)return f;}" +
+                "if(typeof getActiveLink==='function'){var l=getActiveLink();" +
+                "if(l&&l.indexOf('http')===0)return l;}" +
+                "var ifr=document.querySelector('iframe');" +
+                "if(ifr&&ifr.src&&ifr.src.indexOf('http')===0)return ifr.src;}"+"catch(e){}return '';})()"
 
         private val MEDIA_PATH = Regex("""(?i)\.(?:mp4|m3u8|mkv|avi|ts|webm|mov|m4v|mpd)(?:[?#]|$)""")
 
