@@ -27,15 +27,32 @@ class SystemFallbackPlayer(context: Context) {
     init {
         surfaceView.holder.addCallback(object : SurfaceHolder.Callback {
             override fun surfaceCreated(holder: SurfaceHolder) {
-                mediaPlayer?.setDisplay(holder)
+                // The surface arrives after the player was created, so this is
+                // the normal path that attaches the video output.
+                runCatching { mediaPlayer?.setDisplay(holder) }
             }
 
             override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) = Unit
 
             override fun surfaceDestroyed(holder: SurfaceHolder) {
-                mediaPlayer?.setDisplay(null)
+                runCatching { mediaPlayer?.setDisplay(null) }
             }
         })
+    }
+
+    /**
+     * The view is attached to the window only after the UI switched to the
+     * fallback engine, so the surface usually does not exist yet when [open]
+     * runs. Calling `setDisplay` on a released surface throws
+     * "IllegalArgumentException: The surface has been released" and killed the
+     * whole fallback (measured on the A52). The holder callback attaches the
+     * surface as soon as it exists.
+     */
+    private fun attachSurfaceIfReady(player: MediaPlayer) {
+        val holder = surfaceView.holder
+        if (holder.surface?.isValid == true) {
+            runCatching { player.setDisplay(holder) }
+        }
     }
 
     fun open(url: String, headers: Map<String, String>, startAtMs: Long) {
@@ -44,7 +61,7 @@ class SystemFallbackPlayer(context: Context) {
         lastPositionMs = pendingSeekMs
         val player = MediaPlayer()
         mediaPlayer = player
-        player.setDisplay(surfaceView.holder)
+        attachSurfaceIfReady(player)
         if (url.startsWith("asset:///")) {
             val path = url.removePrefix("asset:///")
             // Android's system player picks its extractor from the path. The

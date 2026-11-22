@@ -81,7 +81,13 @@ class MediaSelfTestActivity : ComponentActivity() {
             val state = engine.state.value
             val primaryError = engine.lastPrimaryErrorName
             val engineExpected = state.engine == case.expectedEngine
-            val fallbackProven = case.expectedEngine != "Media3" || primaryError != null
+            // For the fallback case the primary engine must have failed for
+            // real; for the plain cases it must not have failed at all.
+            val fallbackProven = if (case.expectedEngine == "Media3") {
+                primaryError == null
+            } else {
+                primaryError != null
+            }
             val pass = sawReady && sawProgress && state.error == null && engineExpected && fallbackProven
             val result = "${case.label} engine=${state.engine} ready=${state.isReady} " +
                 "sawReady=$sawReady sawProgress=$sawProgress " +
