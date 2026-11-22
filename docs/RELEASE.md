@@ -32,8 +32,8 @@ Stand: 22.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
   `job-f147cb8b1d6848d4` PASS) und auf dem Android-TV-Emulator
   `frame61-androidtv-31` (`versionCode=4`, `versionName=1.3.0`, 0 Crash,
   0 ANR, D-Pad-Fokusweg in der linken Leiste).
-- Gate auf dem Endstand von `main`: Actions-Lauf `44994263454` (Quellstand
-  `c303a69`, nur Doku-Ergänzungen gegenüber `9353e5a`) — Job `gate` grün mit
+- Gate auf dem Endstand von `main`: Actions-Lauf `44996700256` (Quellstand
+  `ef4dd78`, nur Doku-Ergänzungen gegenüber `9353e5a`) — beide Jobs grün,
   121/121 Tests, Lint 0 Errors / 106 Warnings, Debug-APK 36,7 MiB.
 - Ablage lokal: `~/hendler-dynasty/releases/frame61/1.3.0/`.
 
