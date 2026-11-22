@@ -1,0 +1,54 @@
+{
+  "_comment": "Ziele der Hoster-Kette fuer den Geraete-Lauf. Nur in ci/acceptance, nicht im Release-Build. Herkunft: tools/fetch/hoster_targets.json.",
+  "targets": [
+    {
+      "hoster": "direct",
+      "url": "https://ctv-videos.daserste.de/de/2026/05/07/409/409_16651_sendeton_960x540-50p-1600kbit.mp4",
+      "reason": "ARD-Slice, im ARD-Slice auf dem A52 abgespielt"
+    },
+    {
+      "hoster": "vidmoly",
+      "url": "https://vidmoly.net/embed-8irnzzsknabi.html",
+      "reason": "aniworld.to/redirect/3049671 (301)"
+    },
+    {
+      "hoster": "voe",
+      "url": "https://voe.sx/pid7osbd3o2b",
+      "reason": "filmpalast.to Detailseite; JS-Redirect, WebView-Kette noetig"
+    },
+    {
+      "hoster": "doodstream",
+      "url": "https://do7go.com/e/5hyj5kblvy1n",
+      "reason": "aniworld.to/redirect/4059006 -> do7go.com -> playmogo.com; Cloudflare 403"
+    },
+    {
+      "hoster": "filemoon",
+      "url": "https://filemoon.to/d/89crzins1ufc",
+      "reason": "aniworld.to/redirect/2922355 (301); Playback-API ohne Browser-Kontext HTTP 405"
+    },
+    {
+      "hoster": "streamtape",
+      "reason": "kein Dateiziel ermittelbar: Homepage ohne oeffentliche Dateiliste, API nur mit Konto"
+    },
+    {
+      "hoster": "vidoza",
+      "reason": "kein Dateiziel ermittelbar: Landingpage ohne oeffentliche Dateiliste"
+    },
+    {
+      "hoster": "mixdrop",
+      "reason": "kein Dateiziel ermittelbar: mixdrop.co TLS-Verbindung fehlgeschlagen (18.11.2026)"
+    },
+    {
+      "hoster": "luluvdo",
+      "reason": "kein Dateiziel ermittelbar: luluvdo.com/.net nicht aufloesbar (18.11.2026)"
+    },
+    {
+      "hoster": "loadx",
+      "reason": "kein Dateiziel ermittelbar: loadx.ws Timeout (18.11.2026)"
+    },
+    {
+      "hoster": "streamhide",
+      "reason": "kein Dateiziel ermittelbar: streamhide.com liefert nur JS-Redirect ohne Dateilink"
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
@@ -19,8 +20,11 @@ import de.hendler.frame61.resolver.HosterPack
 import de.hendler.frame61.resolver.HosterPackValidator
 import de.hendler.frame61.resolver.HosterResolver
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
+import de.hendler.frame61.scraper.engine.PackHttpClient
 import de.hendler.frame61.scraper.engine.PackInterpreter
 import de.hendler.frame61.scraper.engine.PackLoader
+import de.hendler.frame61.scraper.engine.PackRule
+import de.hendler.frame61.scraper.engine.StreamResult
 import javax.inject.Inject
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
@@ -29,6 +33,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
+import org.json.JSONObject
 
 /**
  * Perf-only proof of the real source chain on the device.
@@ -38,6 +43,9 @@ import kotlinx.coroutines.withTimeoutOrNull
  * resolved URL with the production engine. A source only counts as verified
  * when the player actually advanced on the device; everything else is reported
  * as BLOCKED with the live cause (HTTP status, timeout, captcha, dead host).
+ *
+ * Every line of the result is written to the screen *and* to the log, so the
+ * run can be read back from a screenshot, a UI dump and logcat.
  */
 @AndroidEntryPoint
 @androidx.annotation.OptIn(UnstableApi::class)
@@ -46,10 +54,12 @@ class SourceCoverageActivity : ComponentActivity() {
     @Inject lateinit var interpreter: PackInterpreter
     @Inject lateinit var jsEvaluator: WebViewJsEvaluator
 
+    private val http = PackHttpClient()
     private lateinit var engine: Media3Frame61Player
     private lateinit var playerView: PlayerView
     private lateinit var playerContainer: FrameLayout
     private lateinit var statusView: TextView
+    private lateinit var scroll: ScrollView
     private var coverageJob: Job? = null
     private var renderedEngine = ""
     private val results = mutableListOf<String>()
@@ -63,7 +73,7 @@ class SourceCoverageActivity : ComponentActivity() {
         }
         statusView = TextView(this).apply {
             setTextColor(Color.WHITE)
-            textSize = 14f
+            textSize = 12f
             setPadding(20, 20, 20, 20)
         }
         playerContainer = FrameLayout(this)
@@ -80,135 +90,242 @@ class SourceCoverageActivity : ComponentActivity() {
                 1f
             ))
         }
-        setContentView(root)
+        scroll = ScrollView(this).apply { addView(root) }
+        setContentView(scroll)
         de.hendler.frame61.net.PlaybackDiagnostics.beginSession("source-coverage", 0)
         engine.attach()
         coverageJob = lifecycleScope.launch { runCoverage() }
     }
 
     private suspend fun runCoverage() {
-        val packs = packLoader.loadAllPacks()
+        val packs = packLoader.loadAllPacks().associateBy { it.id }
         val hosterResolver = HosterResolver(hosterPacks(), OkHttpBodyFetcher(), jsEvaluator)
-        var verified = 0
-        var blocked = 0
-        for (target in TARGETS) {
-            val pack = packs.firstOrNull { it.id == target.id }
+        val hosterTargetList = hosterTargets()
+        var indexVerified = 0
+        var playbackVerified = 0
+
+        for (target in INDEX_TARGETS) {
+            val pack = packs[target.packId]
             if (pack == null) {
-                blocked++
-                report(target, "BLOCKED", "kein Pack im Bundle (Dokumentationsbeleg noetig)")
+                report("INDEX ${target.packId}", "BLOCKED", target.reason)
                 continue
             }
-            val hits = withTimeoutOrNull(SEARCH_TIMEOUT_MS) {
-                guarded { interpreter.search(pack, target.query) }
-            }
-            if (hits == null) {
-                blocked++
-                report(target, "BLOCKED", "Suche nach ${SEARCH_TIMEOUT_MS} ms ohne Antwort")
+            val searchRule = pack.search
+            if (searchRule == null) {
+                report("INDEX ${target.packId}", "BLOCKED", "keine Suchregel im Pack")
                 continue
             }
-            val searchFailure = hits.exceptionOrNull()
-            if (searchFailure != null) {
-                blocked++
-                report(target, "BLOCKED", "Suche: ${searchFailure.message ?: searchFailure.javaClass.simpleName}")
+            val response = withTimeoutOrNull(HTTP_TIMEOUT_MS) {
+                guarded { http.fetch(pack, searchRule, searchParams(searchRule, target.query)) }
+            }
+            if (response == null) {
+                report(
+                    "INDEX ${target.packId}",
+                    "BLOCKED",
+                    "HTTP-Zeitüberschreitung nach $HTTP_TIMEOUT_MS ms (${target.query})",
+                    target.reason
+                )
                 continue
             }
-            val hit = hits.getOrThrow().firstOrNull()
-            if (hit == null) {
-                blocked++
-                report(target, "BLOCKED", "Suche '${target.query}' lieferte keine Treffer")
+            val failure = response.exceptionOrNull()
+            if (failure != null) {
+                report(
+                    "INDEX ${target.packId}",
+                    "BLOCKED",
+                    "HTTP/Netzwerk: ${failure.message ?: failure.javaClass.simpleName}",
+                    target.reason
+                )
+                continue
+            }
+            val answer = response.getOrThrow()
+            if (answer.status !in 200..299) {
+                report(
+                    "INDEX ${target.packId}",
+                    "BLOCKED",
+                    "HTTP ${answer.status} ${answer.url}",
+                    target.reason
+                )
+                continue
+            }
+            val hits = interpreter.parseSearch(pack, answer.body)
+            if (hits.isEmpty()) {
+                report(
+                    "INDEX ${target.packId}",
+                    "BLOCKED",
+                    "HTTP ${answer.status}, aber 0 Treffer aus der Antwort " +
+                        "(${answer.contentType ?: "ohne Content-Type"}, ${answer.body.length} Bytes, " +
+                        "Anfang: ${answer.body.take(120).sanitize()})",
+                    target.reason
+                )
+                continue
+            }
+            indexVerified++
+            // Die Produktion waehlt den Treffer, dessen Titel die Suchanfrage
+            // enthaelt — dieselbe Regel gilt hier.
+            val hit = hits.firstOrNull { it.title.contains(target.query, ignoreCase = true) }
+                ?: hits.first()
+            report(
+                "INDEX ${target.packId}",
+                "VERIFIED_INDEX",
+                "HTTP ${answer.status}, ${hits.size} Treffer, erster '${hit.title}' " +
+                    "(${hit.playbackId ?: hit.id})"
+            )
+
+            val streamRule = pack.streams
+            if (streamRule == null) {
+                report(
+                    "PLAY ${target.packId}",
+                    "BLOCKED",
+                    "Indexseite erreichbar, aber das Pack hat keine Stream-Regel"
+                )
+                continue
+            }
+            if (streamRule.endpoint.isNullOrBlank() && streamRule.path.isNullOrBlank()) {
+                report(
+                    "PLAY ${target.packId}",
+                    "BLOCKED",
+                    "Stream-Regel ohne endpoint/path — kein adressierbares Streamziel"
+                )
                 continue
             }
             val titleId = hit.playbackId ?: hit.id
-            val streams = withTimeoutOrNull(STREAM_TIMEOUT_MS) {
-                guarded { interpreter.streams(pack, titleId, "1") }
+            val streamParams = mapOf(
+                "titleId" to titleId,
+                "id" to titleId,
+                "episodeId" to "1"
+            )
+            val streamResult = withTimeoutOrNull(HTTP_TIMEOUT_MS) {
+                guarded { http.fetch(pack, streamRule, streamParams) }
             }
-            if (streams == null) {
-                blocked++
-                report(target, "BLOCKED", "Streamabruf nach ${STREAM_TIMEOUT_MS} ms ohne Antwort")
+            if (streamResult == null) {
+                report(
+                    "PLAY ${target.packId}",
+                    "BLOCKED",
+                    "Streamabruf: Zeitüberschreitung nach $HTTP_TIMEOUT_MS ms"
+                )
                 continue
             }
-            val streamFailure = streams.exceptionOrNull()
+            val streamFailure = streamResult.exceptionOrNull()
             if (streamFailure != null) {
-                blocked++
                 report(
-                    target,
+                    "PLAY ${target.packId}",
                     "BLOCKED",
                     "Streamabruf: ${streamFailure.message ?: streamFailure.javaClass.simpleName}"
                 )
                 continue
             }
-            val streamList = streams.getOrDefault(emptyList())
-            if (streamList.isEmpty()) {
-                blocked++
+            val streamsAnswer = streamResult.getOrThrow()
+            if (streamsAnswer.status !in 200..299) {
                 report(
-                    target,
+                    "PLAY ${target.packId}",
                     "BLOCKED",
-                    "Treffer '${hit.title}' ohne Stream (Regel fehlt oder Seite liefert nichts)"
+                    "Streamabruf HTTP ${streamsAnswer.status} ${streamsAnswer.url}"
                 )
                 continue
             }
-            var done = false
-            var lastReason = "keine Hoster-Aufloesung"
-            for (stream in streamList.take(MAX_STREAMS)) {
-                val outcome = withTimeoutOrNull(HOSTER_TIMEOUT_MS) {
-                    guarded { hosterResolver.resolve(stream.url) }
-                }
-                val failure = outcome?.exceptionOrNull()
-                if (failure != null) {
-                    lastReason = "Hoster ${stream.hosterId ?: "?"}: " +
-                        (failure.message ?: failure.javaClass.simpleName)
-                    continue
-                }
-                val url: String
-                val headers: Map<String, String>
-                val cookies: String?
-                val resolved = outcome?.getOrNull()
-                when (resolved) {
-                    is HosterOutcome.Resolved -> {
-                        url = resolved.url
-                        headers = resolved.requestHeaders
-                        cookies = resolved.cookies
-                    }
-                    is HosterOutcome.Unknown -> {
-                        url = resolved.url
-                        headers = resolved.requestHeaders
-                        cookies = resolved.cookies
-                    }
-                    is HosterOutcome.Failed -> {
-                        lastReason = "Hoster ${stream.hosterId ?: "?"}: ${resolved.reason}"
-                        continue
-                    }
-                    is HosterOutcome.CaptchaRequired -> {
-                        lastReason = "Captcha erforderlich (${resolved.kind})"
-                        continue
-                    }
-                    null -> {
-                        lastReason = "Hoster-Zeitueberschreitung nach $HOSTER_TIMEOUT_MS ms"
-                        continue
-                    }
-                }
-                Log.i(
-                    TAG,
-                    "SOURCE ${target.id} RESOLVED hoster=${stream.hosterId ?: "-"} " +
-                        "url=$url headers=${headers.keys.sorted()}"
+            val streams = interpreter.parseStreams(pack, streamsAnswer.body)
+            if (streams.isEmpty()) {
+                report(
+                    "PLAY ${target.packId}",
+                    "BLOCKED",
+                    "HTTP ${streamsAnswer.status}, aber keine Stream-Einträge in der Antwort"
                 )
-                val played = play(url, headers, cookies)
-                if (played != null) {
-                    verified++
-                    report(target, "VERIFIED_PLAYBACK", played)
-                    done = true
-                    break
-                }
-                lastReason = "Wiedergabe fehlgeschlagen: $played"
+                continue
             }
-            if (!done) {
-                blocked++
-                report(target, "BLOCKED", lastReason)
+            val played = playStreams(streams.take(MAX_STREAMS), hosterResolver)
+            if (played.ok) {
+                playbackVerified++
+                report("PLAY ${target.packId}", "VERIFIED_PLAYBACK", played.detail)
+            } else {
+                report("PLAY ${target.packId}", "BLOCKED", played.detail)
             }
         }
-        val summary = "COVERAGE SUMMARY verified=$verified blocked=$blocked"
+
+        // Hoster-Kette: jeder Hoster mit belegtem Ziel wird auf dem Gerät
+        // aufgeloest und abgespielt; Hoster ohne belegtes Ziel bleiben mit dem
+        // dokumentierten Grund blockiert.
+        var hosterVerified = 0
+        val hosterPackList = hosterPacks().associateBy { it.id }
+        for (target in hosterTargetList) {
+            if (hosterPackList[target.hosterId] == null) {
+                report("HOSTER ${target.hosterId}", "BLOCKED", "kein Hoster-Pack im Bundle")
+                continue
+            }
+            val url = target.url
+            if (url.isNullOrBlank()) {
+                report(
+                    "HOSTER ${target.hosterId}",
+                    "BLOCKED",
+                    target.reason.ifBlank { "kein belegtes Ziel" }
+                )
+                continue
+            }
+            val outcome = withTimeoutOrNull(HOSTER_TIMEOUT_MS) {
+                guarded { hosterResolver.resolve(url) }
+            }
+            if (outcome == null) {
+                report(
+                    "HOSTER ${target.hosterId}",
+                    "BLOCKED",
+                    "Hoster-Zeitüberschreitung nach $HOSTER_TIMEOUT_MS ms"
+                )
+                continue
+            }
+            val failure = outcome.exceptionOrNull()
+            if (failure != null) {
+                report(
+                    "HOSTER ${target.hosterId}",
+                    "BLOCKED",
+                    "Hoster: ${failure.message ?: failure.javaClass.simpleName}"
+                )
+                continue
+            }
+            when (val resolved = outcome.getOrNull()) {
+                is HosterOutcome.Resolved -> {
+                    val played = play(resolved.url, resolved.requestHeaders, resolved.cookies)
+                    if (played.ok) {
+                        hosterVerified++
+                        report("HOSTER ${target.hosterId}", "VERIFIED_PLAYBACK", played.detail)
+                    } else {
+                        report(
+                            "HOSTER ${target.hosterId}",
+                            "BLOCKED",
+                            "aufgelöst, aber nicht abgespielt: ${played.detail}"
+                        )
+                    }
+                }
+                is HosterOutcome.Unknown -> {
+                    val played = play(resolved.url, resolved.requestHeaders, resolved.cookies)
+                    if (played.ok) {
+                        hosterVerified++
+                        report("HOSTER ${target.hosterId}", "VERIFIED_PLAYBACK", played.detail)
+                    } else {
+                        report(
+                            "HOSTER ${target.hosterId}",
+                            "BLOCKED",
+                            "unbekannter Hoster, nicht abgespielt: ${played.detail}"
+                        )
+                    }
+                }
+                is HosterOutcome.Failed ->
+                    report("HOSTER ${target.hosterId}", "BLOCKED", "Hoster: ${resolved.reason}")
+                is HosterOutcome.CaptchaRequired ->
+                    report(
+                        "HOSTER ${target.hosterId}",
+                        "BLOCKED",
+                        "Captcha erforderlich (${resolved.kind}) — WebView-Lösung nötig"
+                    )
+                null -> report("HOSTER ${target.hosterId}", "BLOCKED", "kein Ergebnis")
+            }
+        }
+
+        val summary = "COVERAGE SUMMARY index=$indexVerified/${INDEX_TARGETS.size} " +
+            "playback=$playbackVerified/${INDEX_TARGETS.size} " +
+            "hoster=$hosterVerified/${hosterTargetList.size}"
         Log.i(TAG, summary)
-        status("$summary\n${results.joinToString("\n")}")
+        results += summary
+        status(results.joinToString("\n"))
+        scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
     }
 
     /**
@@ -226,32 +343,105 @@ class SourceCoverageActivity : ComponentActivity() {
     }
 
     /**
-     * Plays [url] with the production engine and returns a short proof line, or
-     * null when the player did not advance.
+     * The query reaches the request under the rule's own parameter name, the
+     * same way [PackInterpreter.search] does it.
+     */
+    private fun searchParams(rule: PackRule, query: String): Map<String, String> {
+        val params = linkedMapOf("query" to query, "q" to query, "page" to "1")
+        val name = rule.queryParam
+        if (!name.isNullOrBlank() && name !in params) params[name] = query
+        return params
+    }
+
+    /** Resolves the first stream that plays; returns the proof line or null. */
+    private suspend fun playStreams(
+        streams: List<StreamResult>,
+        hosterResolver: HosterResolver
+    ): PlayOutcome {
+        var lastReason = "keine Hoster-Auflösung"
+        for (stream in streams) {
+            if (!stream.url.startsWith("https://")) {
+                lastReason = "Nicht-HTTPS-Ziel verworfen: ${stream.url}"
+                continue
+            }
+            val outcome = withTimeoutOrNull(HOSTER_TIMEOUT_MS) {
+                guarded { hosterResolver.resolve(stream.url) }
+            }
+            if (outcome == null) {
+                lastReason = "Hoster ${stream.hosterId ?: "-"}: Zeitüberschreitung nach " +
+                    "$HOSTER_TIMEOUT_MS ms"
+                continue
+            }
+            val failure = outcome.exceptionOrNull()
+            if (failure != null) {
+                lastReason = "Hoster ${stream.hosterId ?: "-"}: " +
+                    (failure.message ?: failure.javaClass.simpleName)
+                continue
+            }
+            when (val resolved = outcome.getOrNull()) {
+                is HosterOutcome.Resolved -> {
+                    Log.i(
+                        TAG,
+                        "SOURCE ${stream.hosterId ?: "-"} RESOLVED url=${resolved.url} " +
+                            "headers=${resolved.requestHeaders.keys.sorted()}"
+                    )
+                    val played = play(resolved.url, resolved.requestHeaders, resolved.cookies)
+                    if (played.ok) return played
+                    lastReason = "Wiedergabe fehlgeschlagen: ${played.detail}"
+                }
+                is HosterOutcome.Unknown -> {
+                    val played = play(resolved.url, resolved.requestHeaders, resolved.cookies)
+                    if (played.ok) return played
+                    lastReason = "Wiedergabe fehlgeschlagen: ${played.detail}"
+                }
+                is HosterOutcome.Failed -> lastReason = "Hoster: ${resolved.reason}"
+                is HosterOutcome.CaptchaRequired ->
+                    lastReason = "Captcha erforderlich (${resolved.kind})"
+                null -> lastReason = "kein Hoster-Ergebnis"
+            }
+        }
+        Log.w(TAG, "PLAY STREAMS FAILED $lastReason")
+        return PlayOutcome(false, lastReason)
+    }
+
+    /**
+     * Plays [url] with the production engine.
+     *
+     * The poll keeps running after a primary error: the player may switch to
+     * the Android system player, and only the final state decides whether the
+     * source played.
      */
     private suspend fun play(
         url: String,
         headers: Map<String, String>,
         cookies: String?
-    ): String? {
+    ): PlayOutcome {
         status("Spiele $url")
         engine.open(url, requestHeaders = headers, cookies = cookies)
+        var seenError: String? = null
         repeat(PLAYBACK_POLLS) {
             delay(PLAYBACK_POLL_MS)
             val state = engine.state.value
             renderEngine(state.engine)
-            status(
-                "Spiele $url\n${state.engine} ${state.positionMs}/${state.durationMs} ms " +
-                    (state.error ?: "kein Fehler")
-            )
             if (state.error != null) {
-                return "Fehler ${state.error} (primary=${engine.lastPrimaryErrorName ?: "-"})"
-            }
-            if (state.isReady && state.positionMs > 0L) {
-                return "lief ${state.positionMs} ms (engine=${state.engine})"
+                // Der Primaerfehler wird festgehalten, aber der Lauf geht weiter:
+                // der Systemplayer kann noch uebernehmen.
+                seenError = state.error
+            } else if (state.isReady && state.positionMs > 0L) {
+                return PlayOutcome(
+                    true,
+                    "lief ${state.positionMs}/${state.durationMs} ms " +
+                        "(engine=${state.engine}, primary=${engine.lastPrimaryErrorName ?: "-"}, " +
+                        "Fehler=${seenError ?: "-"})"
+                )
             }
         }
-        return null
+        val state = engine.state.value
+        engine.stop()
+        val detail = "kein Fortschritt (${state.engine}, ${state.positionMs} ms, " +
+            "Fehler=${state.error ?: "-"}, primary=${engine.lastPrimaryErrorName ?: "-"})"
+        Log.w(TAG, "PLAY FAILED url=$url $detail")
+        return PlayOutcome(false, detail)
     }
 
     private fun hosterPacks(): List<HosterPack> {
@@ -267,11 +457,30 @@ class SourceCoverageActivity : ComponentActivity() {
             }
     }
 
-    private fun report(target: Target, verdict: String, detail: String) {
-        val line = "SOURCE ${target.id} VERDICT=$verdict DETAIL=$detail"
+    /** The ten hosters of the delivery list plus the ARD direct stream. */
+    private fun hosterTargets(): List<HosterTarget> {
+        val assets = applicationContext.assets
+        val file = runCatching {
+            assets.open("diagnostics/hoster_targets.json").bufferedReader().use { it.readText() }
+        }.getOrNull() ?: return emptyList()
+        val root = runCatching { JSONObject(file) }.getOrNull() ?: return emptyList()
+        val array = root.optJSONArray("targets") ?: return emptyList()
+        return (0 until array.length()).mapNotNull { index ->
+            val entry = array.optJSONObject(index) ?: return@mapNotNull null
+            HosterTarget(
+                hosterId = entry.optString("hoster"),
+                url = entry.optString("url").takeIf { it.isNotBlank() },
+                reason = entry.optString("reason")
+            )
+        }
+    }
+
+    private fun report(scope: String, verdict: String, detail: String, documented: String = "") {
+        val suffix = if (verdict == "BLOCKED" && documented.isNotBlank()) " | Doku: $documented" else ""
+        val line = "$scope VERDICT=$verdict DETAIL=$detail$suffix"
         results += line
         Log.i(TAG, line)
-        status("${results.size}/${TARGETS.size} $line")
+        status("${results.size} $line")
     }
 
     private fun renderEngine(engineName: String) {
@@ -298,13 +507,16 @@ class SourceCoverageActivity : ComponentActivity() {
         super.onDestroy()
     }
 
-    private data class Target(val id: String, val query: String)
+    private data class PlayOutcome(val ok: Boolean, val detail: String)
+
+    private data class Target(val packId: String, val query: String, val reason: String = "")
+
+    private data class HosterTarget(val hosterId: String, val url: String?, val reason: String)
 
     private companion object {
         const val TAG = "Frame61Coverage"
-        const val SEARCH_TIMEOUT_MS = 10_000L
-        const val STREAM_TIMEOUT_MS = 10_000L
-        const val HOSTER_TIMEOUT_MS = 10_000L
+        const val HTTP_TIMEOUT_MS = 15_000L
+        const val HOSTER_TIMEOUT_MS = 15_000L
         const val PLAYBACK_POLL_MS = 1_000L
         const val PLAYBACK_POLLS = 12
         const val MAX_STREAMS = 3
@@ -312,18 +524,23 @@ class SourceCoverageActivity : ComponentActivity() {
         /**
          * The 14 index pages of the delivery list. The query is the one the
          * fetch worker uses for the same page, so the device run and the
-         * recorded fixtures talk about the same title.
+         * recorded fixtures talk about the same title. The reason is the
+         * documented cause from docs/INDEX.md for pages that stay blocked.
          */
-        val TARGETS = listOf(
+        val INDEX_TARGETS = listOf(
             Target("aniworld", "naruto"),
             Target("bs-to", "naruto"),
             Target("filmpalast", "inception"),
             Target("filmstarts", "inception"),
-            Target("kinokiste", "inception"),
-            Target("kinox", "inception"),
-            Target("megakino", "inception"),
+            Target(
+                "kinokiste",
+                "inception",
+                "kinokiste.cloud: JWT-/Bot-Gate (HTTP 401), Chrome-Headless 40 B"
+            ),
+            Target("kinox", "inception", "kinox.to: 6 Rotationsdomains, HTTP 404 auf /suche"),
+            Target("megakino", "inception", "megakino.de: DNS/Platzhalter, HTTP 200 ohne Treffer"),
             Target("moflix", "inception"),
-            Target("movie2k", "inception"),
+            Target("movie2k", "inception", "movie2k: kein Pack — .to/.ch Platzhalter, kein Server"),
             Target("s-to", "black doves"),
             Target("serienstream", "black doves"),
             Target("streamcloud", "inception"),
@@ -332,3 +549,7 @@ class SourceCoverageActivity : ComponentActivity() {
         )
     }
 }
+
+/** Keeps the answer snippet readable and free of control characters. */
+private fun String.sanitize(): String =
+    replace(Regex("\\s+"), " ").take(120)
