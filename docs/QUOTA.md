@@ -57,6 +57,24 @@ Hoster-Packs, ein Redirect-Gate-Pack für `serienstream.to`, ein JS-Pack für
 
 Rohdaten: `~/hendler-dynasty/evidence/frame61/quota/run5-final-75.txt`.
 
+## Dritter Lauf (Build `f673eb2`, 22.11.2026, A52)
+
+| Kennzahl | Wert | Ziel 1.4.0 |
+|---|---|---|
+| Erfolgsquote | **4 / 100 = 4 %** | ≥ 95 % |
+| Startzeit p50 / p95 | 3.142 / 3.142 ms | < 3.000 ms |
+| Fehlerklassen | 86 × `NO_CANDIDATE`, 10 × 3003 | 0 sichtbar |
+
+Wichtiger Befund: Die neuen JS-Ketten (serienstream-Redirect, devideosrc,
+vidmoly) brauchen **deutlich länger als 4 s**. Da `SOURCE_TIMEOUT_MS` bei 4 s
+lag, wurde jede Pack-Auflösung mit JS-Schritt nach 4 s abgebrochen und lieferte
+**0 Kandidaten** — die Quote fiel von 5 auf 4 %, obwohl die Zahl der 3003-Fälle
+von 61 auf 10 sank. Der nächste Lauf (`4ebb58a`) hebt das Quellbudget auf 9 s
+und die Obergrenze des Einsammelns auf 12 s; `resolveFast` bleibt bei 600 ms
+nach dem ersten Kandidaten, schnelle Quellen starten also unverändert in ~1,6 s.
+
+Rohdaten: `~/hendler-dynasty/evidence/frame61/quota/run6-final-84.txt`.
+
 ## Ursachen der Baseline
 
 1. **`NO_CANDIDATE` (55)** — die großen Serien-/Film-Indizes haben in diesem

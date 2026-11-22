@@ -155,7 +155,10 @@ class AutoPlaybackResolver @Inject constructor(
 
             val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
 
-            val captchaCandidates = if (candidates.isEmpty()) {
+            // Captcha-Quellen sind die letzte Runde und nur im vollständigen
+            // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
+            // mehrere 9-s-Blöcke verlängern (gemessen 27 s ohne Kandidat).
+            val captchaCandidates = if (candidates.isEmpty() && graceMs == 0L) {
                 allPacks.filter { it.captcha != null }.flatMap { pack ->
                     resolveWithTimeout(pack, title, episodeNumber, sessionId)
                 }
