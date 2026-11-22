@@ -141,17 +141,22 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         val doc = Jsoup.parse(body)
         var health = 1.0
         return rule.selector.selectNodes(doc).mapNotNull { node ->
-            val url = node.attrOr(rule.urlAttr ?: "href")
-            if (url.isBlank()) return@mapNotNull null
+            val raw = node.attrOr(rule.urlAttr ?: "href")
+            if (raw.isBlank()) return@mapNotNull null
+            // Seiten wie aniworld.to liefern `/redirect/<id>` relativ; ohne
+            // die Basis-Domain bleibt die Kette ein HTML-Ziel statt eines
+            // Hosters und die Wiedergabe scheitert mit 3003.
+            val url = absolutize(pack.baseUrl, raw)
             rule.healthAttr?.let { attr -> node.attrOrNull(attr)?.toDoubleOrNull()?.let { health = it } }
             if (health < (rule.minHealth ?: 0.0)) return@mapNotNull null
             val rawQuality = rule.qualitySelector.textOf(node)
-            val rawLang = rule.langSelector.textOf(node)
+            val rawLang = rule.langSelector.attrOrText(node, rule.langAttr)
+            val rawHoster = rule.hosterSelector.attrOrText(node, rule.hosterAttr)
             StreamResult(
                 url = url,
                 quality = rule.qualityMap[rawQuality] ?: rawQuality.ifBlank { null },
                 lang = rule.langMap[rawLang] ?: rawLang.ifBlank { null },
-                hosterId = rule.hosterSelector.textOf(node).ifBlank { null },
+                hosterId = rawHoster.ifBlank { null },
                 health = health
             )
         }
@@ -302,6 +307,29 @@ private fun Element.selectFirstOrNull(css: String): Element? =
 private fun Element.attrOr(name: String): String = attr(name).trim()
 
 private fun Element.attrOrNull(name: String): String? = attr(name).trim().ifBlank { null }
+
+/**
+ * Liest einen Wert aus einem Attribut, sonst aus dem Elementtext.
+ *
+ * `aniworld.to` trägt den Hoster als `title` am Icon und die Sprache als
+ * `data-lang-key` am Eintrag — reiner Text wäre dort leer.
+ */
+private fun String?.attrOrText(node: Element, attr: String?): String {
+    if (attr.isNullOrBlank()) return textOf(node)
+    val holder = if (isNullOrBlank()) node else selectFirstIn(node) ?: node
+    return holder.attrOrNull(attr).orEmpty()
+}
+
+/** Macht relative Ziele (/redirect/123) zu einer absoluten URL. */
+private fun absolutize(baseUrl: String, url: String): String {
+    if (url.startsWith("http://") || url.startsWith("https://")) return url
+    val base = baseUrl.trimEnd('/')
+    return when {
+        url.startsWith("/") -> base + url
+        url.isBlank() -> url
+        else -> "$base/$url"
+    }
+}
 
 /** Native Jsoup absolute-URL resolution. */
 private fun Element.absHref(attribute: String): String =

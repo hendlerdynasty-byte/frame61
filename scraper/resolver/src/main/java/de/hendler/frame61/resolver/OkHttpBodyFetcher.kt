@@ -37,4 +37,29 @@ class OkHttpBodyFetcher(
                 responseBody
             }
         }
+
+    /**
+     * Letztziel nach allen Weiterleitungen, ohne den Rumpf zu lesen.
+     *
+     * Indexseiten wie aniworld.to liefern `/redirect/<id>`, das per 302 auf den
+     * echten Hoster zeigt. Der Resolver braucht diese End-URL, sonst versucht
+     * er, eine HTML-Seite abzuspielen.
+     */
+    override suspend fun resolveRedirect(url: String, headers: Map<String, String>): String? =
+        withContext(Dispatchers.IO) {
+            val builder = Request.Builder().url(url).get()
+            headers.forEach { (k, v) -> builder.header(k, v) }
+            client.newCall(builder.build()).execute().use { response ->
+                val finalUrl = response.request.url.toString()
+                when {
+                    finalUrl != url -> finalUrl
+                    response.code in 300..399 ->
+                        response.header("Location")?.let { location ->
+                            if (location.startsWith("http")) location
+                            else url.substringBeforeLast('/') + "/" + location
+                        }
+                    else -> null
+                }
+            }
+        }
 }

@@ -2,6 +2,7 @@ package de.hendler.frame61.scraper.engine
 
 import de.hendler.frame61.net.HttpClientFactory
 import okhttp3.HttpUrl.Companion.toHttpUrl
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -62,8 +63,18 @@ class PackHttpClient(
         if (!cookies.isNullOrBlank()) builder.header("Cookie", cookies)
 
         if (rule.method.equals("POST", ignoreCase = true)) {
-            val body = render(rule.body.orEmpty(), params).toRequestBody(null)
-            builder.post(body)
+            val bodyText = render(rule.body.orEmpty(), params)
+            // Ein POST ohne Content-Type beantworten DDoS-Guard und aehnliche
+            // Vorderfronten mit HTTP 200 und **leerem** Koerper (gemessen:
+            // aniworld.to/ajax/search -> 200, 0 Bytes, text/html). Deshalb
+            // steht hier ein Formular-Content-Type als Vorgabe; eine Regel mit
+            // eigenem Content-Type behaelt ihren Wert.
+            val explicitType = rule.headers.entries
+                .firstOrNull { it.key.equals("Content-Type", ignoreCase = true) }
+                ?.value
+            val contentType = explicitType ?: FORM_CONTENT_TYPE
+            builder.header("Content-Type", contentType)
+            builder.post(bodyText.toRequestBody(contentType.toMediaTypeOrNull()))
         } else {
             builder.get()
         }
@@ -79,6 +90,9 @@ class PackHttpClient(
     }
 
     companion object {
+        /** Default content type for POST bodies; a rule may override it. */
+        const val FORM_CONTENT_TYPE = "application/x-www-form-urlencoded"
+
         /** Replaces `{{name}}` placeholders; unknown names stay untouched. */
         fun render(template: String, params: Map<String, String>): String {
             var out = template

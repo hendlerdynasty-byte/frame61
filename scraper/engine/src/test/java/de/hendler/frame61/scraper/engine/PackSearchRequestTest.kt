@@ -79,6 +79,61 @@ class PackSearchRequestTest {
     }
 
     @Test
+    fun `a post body carries the form content type`() {
+        val server = MockWebServer()
+        server.start()
+        server.enqueue(MockResponse().setResponseCode(200).setBody("""{"hits":[]}"""))
+        val client = PackHttpClient(OkHttpClient())
+        val source = pack(
+            """
+            {
+              "id":"aniworld","name":"aniworld.to","baseUrl":"${server.url("/")}",
+              "kind":"api",
+              "search":{"endpoint":"/ajax/search","method":"POST","body":"keyword={{query}}","jsonPath":".","idPath":"link","titlePath":"title"}
+            }
+            """.trimIndent()
+        )
+        val rule = requireNotNull(source.search)
+
+        val response = client.fetch(source, rule, mapOf("query" to "naruto"))
+
+        val recorded = server.takeRequest()
+        assertEquals("POST", recorded.method)
+        assertEquals(
+            "application/x-www-form-urlencoded",
+            recorded.getHeader("Content-Type")
+        )
+        assertEquals("keyword=naruto", recorded.body.readUtf8())
+        assertEquals(200, response.status)
+        server.shutdown()
+    }
+
+    @Test
+    fun `a rule content type survives the post default`() {
+        val server = MockWebServer()
+        server.start()
+        server.enqueue(MockResponse().setResponseCode(200).setBody("""{"hits":[]}"""))
+        val client = PackHttpClient(OkHttpClient())
+        val source = pack(
+            """
+            {
+              "id":"jsonpost","name":"JSON","baseUrl":"${server.url("/")}",
+              "kind":"api",
+              "search":{"endpoint":"/api","method":"POST","headers":{"Content-Type":"application/json"},"body":"{\"q\":\"{{query}}\"}","jsonPath":".","idPath":"id","titlePath":"title"}
+            }
+            """.trimIndent()
+        )
+        val rule = requireNotNull(source.search)
+
+        client.fetch(source, rule, mapOf("query" to "naruto"))
+
+        val recorded = server.takeRequest()
+        assertEquals("application/json", recorded.getHeader("Content-Type"))
+        assertEquals("""{"q":"naruto"}""", recorded.body.readUtf8())
+        server.shutdown()
+    }
+
+    @Test
     fun `a query with spaces stays one path segment`() {
         val server = MockWebServer()
         server.start()

@@ -10,7 +10,8 @@ import org.junit.Test
 
 /** Offline: a scripted fetcher replaces the network. */
 private class FakeFetcher(
-    private val bodies: Map<String, String> = emptyMap()
+    private val bodies: Map<String, String> = emptyMap(),
+    private val redirects: Map<String, String> = emptyMap()
 ) : BodyFetcher {
     val calls = mutableListOf<String>()
     val headersByUrl = mutableMapOf<String, Map<String, String>>()
@@ -24,6 +25,11 @@ private class FakeFetcher(
         calls += "POST $url"
         headersByUrl[url] = headers
         return bodies[url] ?: ""
+    }
+
+    override suspend fun resolveRedirect(url: String, headers: Map<String, String>): String? {
+        calls += "HEAD $url"
+        return redirects[url]
     }
 }
 
@@ -243,5 +249,60 @@ class HosterResolverTest {
         val out = HosterResolver(listOf(p), fetcher).resolve("https://host.example/e/1", "cf_clearance=1")
         assertTrue(out is HosterOutcome.Resolved)
         assertEquals("cf_clearance=1", fetcher.cookie)
+    }
+
+    @Test
+    fun `a redirect chain is followed to the real hoster`() = runTest {
+        val fetcher = FakeFetcher(
+            bodies = mapOf("https://vidmoly.example/embed-1.html" to "sources: [{ file: 'https://cdn.example/x.m3u8' }]"),
+            redirects = mapOf("https://index.example/redirect/1" to "https://vidmoly.example/embed-1.html")
+        )
+        val vidmoly = pack(
+            id = "vidmoly",
+            domains = listOf("vidmoly.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "get", url = "https://{host}{path}", saveAs = "page"),
+                HosterStep(action = "regex", input = "page", pattern = "file: '([^']+)'", group = 1, saveAs = "file")
+            )
+        )
+        val out = HosterResolver(listOf(vidmoly), fetcher)
+            .resolve("https://index.example/redirect/1")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals("https://cdn.example/x.m3u8", (out as HosterOutcome.Resolved).url)
+    }
+
+    @Test
+    fun `a direct media url never costs a redirect lookup`() = runTest {
+        val fetcher = FakeFetcher(
+            bodies = mapOf("https://cdn.example/x.mp4" to "ignored"),
+            redirects = mapOf("https://cdn.example/x.mp4" to "https://elsewhere.example/")
+        )
+        val out = HosterResolver(emptyList(), fetcher).resolve("https://cdn.example/x.mp4")
+
+        assertTrue(out is HosterOutcome.Unknown)
+        assertFalse(fetcher.calls.contains("HEAD https://cdn.example/x.mp4"))
+    }
+
+    @Test
+    fun `a hoster pack still matches after a redirect`() = runTest {
+        val fetcher = FakeFetcher(
+            bodies = mapOf("https://voe.example/e/1" to "window.sources=[{file:'https://cdn.example/v.m3u8'}]"),
+            redirects = mapOf("https://index.example/redirect/2" to "https://voe.example/e/1")
+        )
+        val voe = pack(
+            id = "voe",
+            domains = listOf("voe.example"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "get", url = "https://{host}{path}", saveAs = "page"),
+                HosterStep(action = "regex", input = "page", pattern = "file:'([^']+)'", group = 1, saveAs = "file")
+            )
+        )
+        val out = HosterResolver(listOf(voe), fetcher).resolve("https://index.example/redirect/2")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertNotNull((out as HosterOutcome.Resolved).url)
     }
 }

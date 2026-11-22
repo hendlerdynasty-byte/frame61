@@ -12,6 +12,12 @@ import kotlinx.serialization.json.contentOrNull
 interface BodyFetcher {
     suspend fun get(url: String, headers: Map<String, String>): String
     suspend fun post(url: String, body: String, headers: Map<String, String>): String
+
+    /**
+     * Returns the final URL after following redirects, or null when the answer
+     * is no redirect. Default keeps test doubles simple.
+     */
+    suspend fun resolveRedirect(url: String, headers: Map<String, String>): String? = null
 }
 
 sealed interface HosterOutcome {
@@ -58,13 +64,28 @@ class HosterResolver(
             .maxByOrNull { pack -> pack.domains.filter { host == it || host.endsWith(".$it") }.maxOf { it.length } }
     }
 
-    suspend fun resolve(url: String, cookies: String? = null): HosterOutcome {
+    suspend fun resolve(url: String, cookies: String? = null): HosterOutcome =
+        resolve(url, cookies, depth = 0)
+
+    private suspend fun resolve(url: String, cookies: String?, depth: Int): HosterOutcome {
         val defaultHeaders = linkedMapOf(
             "User-Agent" to DEFAULT_USER_AGENT,
             "Referer" to url
         )
         if (!cookies.isNullOrBlank()) defaultHeaders["Cookie"] = cookies
-        val pack = findPack(url) ?: return HosterOutcome.Unknown(url, defaultHeaders, cookies)
+        val pack = findPack(url)
+        if (pack == null) {
+            // Kein Hoster-Pack: Ketten wie aniworld.to/redirect/<id> zeigen auf
+            // den echten Hoster. Ohne das bleibt ein HTML-Ziel stehen und der
+            // Player scheitert mit 3003. Direkte Medien-URLs bleiben unangetastet.
+            if (depth < MAX_REDIRECT_DEPTH && !looksLikeMedia(url)) {
+                val followed = runCatching { fetcher.resolveRedirect(url, defaultHeaders) }.getOrNull()
+                if (!followed.isNullOrBlank() && followed != url) {
+                    return resolve(followed, cookies, depth + 1)
+                }
+            }
+            return HosterOutcome.Unknown(url, defaultHeaders, cookies)
+        }
         if (!pack.captcha.isNullOrBlank() && cookies.isNullOrBlank()) {
             return HosterOutcome.CaptchaRequired(url, pack.captcha)
         }
@@ -194,6 +215,14 @@ class HosterResolver(
 
     companion object {
         const val DEFAULT_USER_AGENT = HttpClientFactory.DEFAULT_USER_AGENT
+
+        /** Redirect hops before a chain URL is treated as unknown. */
+        const val MAX_REDIRECT_DEPTH = 3
+
+        private val MEDIA_PATH = Regex("""(?i)\.(?:mp4|m3u8|mkv|avi|ts|webm|mov|m4v|mpd)(?:[?#]|$)""")
+
+        /** Direct media targets must not cost a redirect round-trip. */
+        fun looksLikeMedia(url: String): Boolean = MEDIA_PATH.containsMatchIn(url)
 
         fun hostOf(url: String): String? =
             Regex("""^[a-zA-Z][a-zA-Z0-9+.-]*://([^/?#]+)""").find(url)

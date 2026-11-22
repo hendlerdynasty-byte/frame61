@@ -138,7 +138,7 @@ class PlaybackQuotaActivity : ComponentActivity() {
                     lastError = "-"
                     break
                 }
-                lastError = attempt.errorClass
+                lastError = attempt.errorClass ?: "NO_PROGRESS"
             }
 
             if (played) {
@@ -184,7 +184,7 @@ class PlaybackQuotaActivity : ComponentActivity() {
     private suspend fun playCandidate(mirror: MirrorCandidate): Attempt {
         val started = SystemClock.elapsedRealtime()
         engine.open(mirror.url, requestHeaders = mirror.requestHeaders, cookies = mirror.cookies)
-        var lastError = "NO_PROGRESS"
+        var lastError: String? = "NO_PROGRESS"
         repeat(PLAYBACK_POLLS) {
             delay(PLAYBACK_POLL_MS)
             // Ereignisgesteuerter Zustand: ohne publish() bleibt die Position
@@ -199,7 +199,7 @@ class PlaybackQuotaActivity : ComponentActivity() {
         }
         val state = engine.state.value
         if (engine.lastPrimaryErrorName != null && lastError == "NO_PROGRESS") {
-            lastError = engine.lastPrimaryErrorName!!
+            lastError = engine.lastPrimaryErrorName
         }
         Log.w(
             TAG,
