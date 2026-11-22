@@ -29,6 +29,18 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   anderem Kandidaten. Das deckt HLS, MP4, MKV, AVI und MPEG-TS bereits ab
   (Selbsttest 6/6) und hält die APK-Grenze ein.
 
+## 2026-11-22 — Nur eine WebView gleichzeitig, Vorwärmen verzögert
+
+- Befund: Der Lauf mit `25dba40` endete in einem ANR („Frame61 wird wiederholt
+  beendet", `Input dispatching timed out … Waited 10003ms for FocusEvent`).
+  Ursache: Das Vorwärmen der Captcha-Hoster lief beim ersten Resolve und
+  erzeugte vier WebViews gleichzeitig auf dem Hauptthread.
+- Default: `WebViewJsEvaluator` serialisiert alle Zugriffe über einen
+  `Mutex`; das Vorwärmen startet erst **5 s nach dem App-Start** aus
+  `MainActivity` heraus (nicht mehr aus dem Resolver) und umfasst
+  **höchstens zwei** Hosts. Der Resolver bleibt damit frei von
+  WebView-Arbeit, solange kein Captcha-Host tatsächlich aufgelöst wird.
+
 ## 2026-11-22 — Titel-Quote ist die Abnahmegröße, nicht die Domainliste
 
 - Default: Der Erfolg wird an **100 zufällig gezogenen Katalogtiteln**

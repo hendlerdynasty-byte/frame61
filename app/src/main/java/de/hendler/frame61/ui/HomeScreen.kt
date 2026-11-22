@@ -23,7 +23,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.lifecycleScope
 import javax.inject.Inject
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.ui.unit.dp
@@ -75,10 +74,11 @@ class MainActivity : androidx.appcompat.app.AppCompatActivity() {
         // Challenge wartet. Bewusst verzögert und hoechstens zwei Hosts:
         // mehrere gleichzeitige WebViews auf dem Hauptthread blockieren die
         // Nachrichten-Schleife (ANR bei 25dba40).
-        androidx.lifecycle.lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
-            kotlinx.coroutines.delay(5_000L)
-            runCatching { autoResolver.warmUpCaptchaHosts() }
-        }
+        content.postDelayed({
+            Thread {
+                runCatching { autoResolver.warmUpCaptchaHosts() }
+            }.start()
+        }, 5_000L)
     }
 }
 
