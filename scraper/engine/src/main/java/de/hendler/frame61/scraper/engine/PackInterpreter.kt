@@ -32,13 +32,26 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         cookies: String? = null
     ): List<SearchResult> {
         val rule = pack.search ?: return emptyList()
-        val body = http.get(
-            pack,
-            rule,
-            mapOf("query" to query, "q" to query, "page" to page.toString()),
-            cookies
-        )
+        val body = http.get(pack, rule, searchParams(rule, query, page), cookies)
         return parseSearch(pack, body)
+    }
+
+    /**
+     * The query is also offered under the rule's own parameter name.
+     *
+     * A pack with `queryParam = "term"` would otherwise be searched without a
+     * term at all — the request would go out empty and the answer would carry
+     * zero hits.
+     */
+    private fun searchParams(rule: PackRule, query: String, page: Int): Map<String, String> {
+        val params = linkedMapOf(
+            "query" to query,
+            "q" to query,
+            "page" to page.toString()
+        )
+        val name = rule.queryParam
+        if (!name.isNullOrBlank() && name !in params) params[name] = query
+        return params
     }
 
     fun detail(pack: SourcePack, id: String, cookies: String? = null): DetailResult? {
