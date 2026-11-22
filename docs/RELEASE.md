@@ -1,8 +1,31 @@
-# RELEASE.md — Frame61 1.3.0
+# RELEASE.md — Frame61 1.4.0 (Kandidat) / 1.3.0 (live)
 
 Stand: 22.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
 
-## Aktueller Release 1.3.0
+## Kandidat 1.4.0 / VC5 — signiert, noch nicht veröffentlicht
+
+| Artefakt | SHA-256 | Groesse |
+|---|---|---|
+| `frame61-1.4.0.apk` | `93bf140f5734b5adfe58f28fa0959cf68d30db0bcc1cefe293876b873c8d16b8` | 20.033.020 B |
+| `frame61-1.4.0.aab` | `5fead8868e148508eb507528bf961798ab75a572cf74d3e48f8b9e9be23c943f` | 24.706.504 B |
+
+- Quellstand `312347a` (Branch `release-1.4.0`, Code = `main` + Versionsbump),
+  VersionCode 5, versionName 1.4.0, Package `de.hendler.frame61`.
+- Unsigned gebaut von Actions-Lauf `45060048093` (Job `release`),
+  signiert am Mac mit `scripts/sign_acceptance.sh` bzw.
+  `scripts/sign_release_aab.sh`. Zertifikat `1201f46d…` (unverändert),
+  `apksigner verify` und `jarsigner -verify` bestätigt.
+- **Nicht veröffentlicht:** Der zugehörige Gate-Lauf auf `c303a69`/`main` ist
+  grün, aber die Abnahme am Gerät steht aus, weil der A52 während der Messung
+  gesperrt wurde (Owner muss entsperren). Der Kandidat wird erst nach dem
+  Gerätenachweis als GitHub-Release `v1.4.0` und mit `update.json`
+  (`versionCode` 5) veröffentlicht.
+- Inhalt: Quoten-Messharness, schnelle Auflösung (`resolveFast`), parallele
+  Hoster-Ketten, Captcha-Pipeline ohne sichtbaren Dialog, Stream-Regeln für
+  s.to/aniworld, Hoster-Packs für vidsonic/serienstream/devideosrc,
+  generische Embed-Auflösung. Zahlen: [QUOTA.md](QUOTA.md).
+
+## Live: Release 1.3.0
 
 | Artefakt | SHA-256 | Groesse |
 |---|---|---|

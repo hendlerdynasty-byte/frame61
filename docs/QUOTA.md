@@ -75,6 +75,35 @@ nach dem ersten Kandidaten, schnelle Quellen starten also unverändert in ~1,6 s
 
 Rohdaten: `~/hendler-dynasty/evidence/frame61/quota/run6-final-84.txt`.
 
+## Vierte Runde (Build `4ebb58a`, 22.11.2026, A52) — abgebrochen
+
+Nach 25 Titeln: 2 OK, 22 × `NO_CANDIDATE`, 1 × 3003. Die Resolve-Zeit lag bei
+**20–27 s**, weil die Captcha-Runde (mehrere Packs à 9 s, seriell) auch im
+schnellen Pfad lief. Fix in `ef7516a`: Captcha-Runde nur noch im vollständigen
+Lauf (`graceMs == 0`).
+
+## Fünfte Runde (Build `ef7516a`) — BLOCKED
+
+Der Lauf startete, danach **sperrte sich der A52** (Keyguard, Screenshot zu
+87 % dunkel, UI-Dump nur SystemUI). Die Brücke darf eine sichere Sperre nicht
+umgehen (Owner-Policy) — der Lauf ist damit **BLOCKED**, nicht etwa fehlgeschlagen.
+Zum Fortsetzen: Gerät entsperren, App starten, „Titel-Quote" erneut auslösen.
+
+## Zwischenfazit
+
+- **Startzeit:** Die 3-s-Marke ist bei schnellen Quellen erreicht (p95 2,7 s in
+  Lauf 2); mit Quellbudget 9 s und JS-Ketten verschieben sich langsame Titel auf
+  5–12 s.
+- **Quote:** 4–6 von 100. Der Engpass ist nicht der Player, sondern das
+  **Quellenangebot**: Von 100 zufälligen Katalogtiteln führen nur ARD/ZDF/KiKa
+  (legal-frei) zuverlässig zum Ziel; die großen Indizes sitzen hinter
+  Captcha-/JS-Ketten (VOE, Doodstream, Filemoon) oder liefern Embeds ohne
+  auflösbare URL. Die 95-%-Marke ist mit diesem Bestand nicht erreichbar.
+- **Nächste Hebel:** (1) Ketten für VOE/Doodstream/Filemoon so bauen, dass sie
+  ohne sichtbaren Dialog durchlaufen; (2) Ersatz-Indizes mit eigenem
+  Hoster-Pfad; (5) Katalog und Quellen aufeinander abstimmen (Titel, die
+  Quellen tatsächlich führen).
+
 ## Ursachen der Baseline
 
 1. **`NO_CANDIDATE` (55)** — die großen Serien-/Film-Indizes haben in diesem
