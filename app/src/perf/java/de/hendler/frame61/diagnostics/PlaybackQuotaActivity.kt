@@ -84,7 +84,17 @@ class PlaybackQuotaActivity : ComponentActivity() {
         }
         setContentView(root)
         engine.attach()
-        quotaJob = lifecycleScope.launch { runQuota() }
+        // Ein Fehler im Harness darf die App nicht mit in den Abgrund reissen:
+        // der Lauf ist ein Messwerkzeug, kein Produktpfad. Die Ursache landet
+        // sichtbar im Statusbereich statt in einem Crash-Loop.
+        quotaJob = lifecycleScope.launch {
+            try {
+                runQuota()
+            } catch (error: Throwable) {
+                Log.e(TAG, "QUOTA FATAL", error)
+                report("QUOTA FATAL ${error.javaClass.simpleName}: ${error.message}")
+            }
+        }
     }
 
     private suspend fun runQuota() {
@@ -111,10 +121,17 @@ class PlaybackQuotaActivity : ComponentActivity() {
             val episode = if (item.type == "series") 1 else 0
             val started = SystemClock.elapsedRealtime()
             var mirrors = emptyList<MirrorCandidate>()
-            val resolved = withTimeoutOrNull(RESOLVE_BUDGET_MS) {
-                withContext(Dispatchers.IO) {
-                    autoResolver.resolveFast(item.title, episode, fresh = true)
+            val resolved = runCatching {
+                withTimeoutOrNull(RESOLVE_BUDGET_MS) {
+                    withContext(Dispatchers.IO) {
+                        autoResolver.resolveFast(item.title, episode, fresh = true)
+                    }
                 }
+            }.getOrElse { error ->
+                Log.e(TAG, "QUOTA RESOLVE ERROR ${item.id}", error)
+                report("QUOTA RESOLVE-FEHLER idx=${index + 1} id=${item.id} " +
+                    "${error.javaClass.simpleName}: ${error.message}")
+                null
             }
             if (resolved != null) mirrors = resolved
             val resolveMs = SystemClock.elapsedRealtime() - started
