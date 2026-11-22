@@ -426,6 +426,11 @@ class SourceCoverageActivity : ComponentActivity() {
         var seenError: String? = null
         repeat(PLAYBACK_POLLS) {
             delay(PLAYBACK_POLL_MS)
+            // Die Position wird ereignisgesteuert aktualisiert; ohne den
+            // Ticker der App bleibt der Zustand auf dem Stand des letzten
+            // Player-Ereignisses stehen (Position 0 trotz laufender
+            // Wiedergabe). publish() liest denselben Zustand wie die App.
+            engine.publish()
             val state = engine.state.value
             renderEngine(state.engine)
             if (state.error != null) {
@@ -467,6 +472,7 @@ class SourceCoverageActivity : ComponentActivity() {
         engine.open(media.url, requestHeaders = media.headers, cookies = media.cookies)
         while (true) {
             delay(PLAYBACK_POLL_MS)
+            engine.publish()
             val state = engine.state.value
             renderEngine(state.engine)
             if (state.error != null) {
