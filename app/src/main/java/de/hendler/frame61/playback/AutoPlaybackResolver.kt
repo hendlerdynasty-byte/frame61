@@ -4,11 +4,13 @@ import android.content.Context
 import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
 import de.hendler.frame61.data.ProfileDataStore
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.resolver.HosterOutcome
 import de.hendler.frame61.resolver.HosterPack
 import de.hendler.frame61.resolver.HosterPackValidator
 import de.hendler.frame61.resolver.HosterResolver
 import de.hendler.frame61.resolver.MirrorCandidate
+import de.hendler.frame61.resolver.MirrorSelector
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
 import de.hendler.frame61.scraper.engine.PackInterpreter
 import de.hendler.frame61.scraper.engine.PackLoader
@@ -46,6 +48,11 @@ class AutoPlaybackResolver @Inject constructor(
 ) {
 
     private data class CacheEntry(val at: Long, val mirrors: List<MirrorCandidate>)
+    private data class ResolvedStream(
+        val url: String,
+        val headers: Map<String, String>,
+        val cookies: String?
+    )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
 
@@ -66,44 +73,45 @@ class AutoPlaybackResolver @Inject constructor(
         HosterResolver(hosterPacks, OkHttpBodyFetcher(), jsEvaluator)
     }
 
-    suspend fun resolve(title: String, episodeNumber: Int = 0): List<MirrorCandidate> =
+    suspend fun resolve(
+        title: String,
+        episodeNumber: Int = 0,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId,
+        fresh: Boolean = false
+    ): List<MirrorCandidate> =
         withContext(Dispatchers.IO) {
             val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
             val key = "$title|$episodeNumber|${disabled.hashCode()}"
             val now = System.currentTimeMillis()
-            cache[key]?.takeIf { now - it.at < CACHE_MS }?.let {
+            if (!fresh) cache[key]?.takeIf { now - it.at < CACHE_MS }?.let {
                 Log.i(TAG, "cache hit '$title' (${it.mirrors.size} mirrors)")
+                trace(sessionId, "cache", "Treffer mit ${it.mirrors.size} Kandidaten")
                 return@withContext it.mirrors
             }
 
-            val packs = packLoader.loadAllPacks().filter { it.id !in disabled }
+            val allPacks = packLoader.loadAllPacks().filter { it.id !in disabled }
+            val packs = allPacks.filter { it.captcha == null }
             Log.i(
                 TAG,
-                "resolve '$title' ep=$episodeNumber active=${packs.size} " +
+                "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
+                    "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
                     "disabled=${disabled.sorted()}"
             )
 
             val candidates = coroutineScope {
                 packs.map { pack ->
-                    async {
-                        val started = System.currentTimeMillis()
-                        val result = runCatching {
-                            withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
-                                resolvePack(pack, title, episodeNumber)
-                            }.orEmpty()
-                        }.getOrDefault(emptyList())
-                        Log.i(
-                            TAG,
-                            "${pack.id}: ${result.size} candidate(s) in " +
-                                "${System.currentTimeMillis() - started} ms" +
-                                if (result.isEmpty()) " (no usable stream)" else ""
-                        )
-                        result
-                    }
+                    async { resolveWithTimeout(pack, title, episodeNumber, sessionId) }
                 }.awaitAll().flatten()
             }
 
-            val ordered = order(candidates)
+            val captchaCandidates = if (candidates.isEmpty()) {
+                allPacks.filter { it.captcha != null }.flatMap { pack ->
+                    resolveWithTimeout(pack, title, episodeNumber, sessionId)
+                }
+            } else {
+                emptyList()
+            }
+            val ordered = order(candidates + captchaCandidates)
             if (ordered.isEmpty()) {
                 Log.w(TAG, "all sources exhausted for '$title' ep=$episodeNumber")
             }
@@ -111,10 +119,39 @@ class AutoPlaybackResolver @Inject constructor(
             ordered
         }
 
+    private suspend fun resolveWithTimeout(
+        pack: SourcePack,
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long
+    ): List<MirrorCandidate> {
+        val started = System.currentTimeMillis()
+        val result = runCatching {
+            withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
+                resolvePack(pack, title, episodeNumber, sessionId)
+            } ?: run {
+                trace(sessionId, pack.id, "Zeitüberschreitung nach $SOURCE_TIMEOUT_MS ms")
+                emptyList()
+            }
+        }.getOrElse { error ->
+            trace(sessionId, pack.id, "Resolverfehler: ${error.javaClass.simpleName}")
+            emptyList()
+        }
+        trace(sessionId, pack.id, "${result.size} Kandidaten")
+        Log.i(
+            TAG,
+            "${pack.id}: ${result.size} candidate(s) in " +
+                "${System.currentTimeMillis() - started} ms" +
+                if (result.isEmpty()) " (no usable stream)" else ""
+        )
+        return result
+    }
+
     private suspend fun resolvePack(
         pack: SourcePack,
         title: String,
-        episodeNumber: Int
+        episodeNumber: Int,
+        sessionId: Long
     ): List<MirrorCandidate> {
         if (pack.id == ArdPlaybackResolver.PACK_ID) {
             return ardResolver.resolve(title, episodeNumber)
@@ -133,35 +170,57 @@ class AutoPlaybackResolver @Inject constructor(
         }
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
             ?: return emptyList()
-        val streams = interpreter.streams(pack, hit.id, episodeNumber.toString(), cookies)
+        val streams = interpreter.streams(
+            pack,
+            hit.playbackId ?: hit.id,
+            episodeNumber.toString(),
+            cookies
+        )
         return streams.mapNotNull { stream ->
-            val url = resolveHoster(pack, stream)
-            url?.let {
+            val resolved = resolveHoster(pack, stream, sessionId)
+            resolved?.let {
                 MirrorCandidate(
                     sourceId = pack.id,
                     titleId = CatalogPlayback.stableId(hit.id),
                     episodeId = if (episodeNumber > 0) episodeNumber.toLong() else null,
-                    url = it,
+                    url = it.url,
                     lang = stream.lang?.take(2) ?: "de",
                     quality = stream.quality ?: "auto",
                     hosterId = stream.hosterId,
                     healthScore = 1.0,
-                    legalFree = pack.legalFree
+                    legalFree = pack.legalFree,
+                    requestHeaders = it.headers,
+                    cookies = it.cookies
                 )
             }
         }
     }
 
-    private suspend fun resolveHoster(pack: SourcePack, stream: StreamResult): String? {
+    private suspend fun resolveHoster(
+        pack: SourcePack,
+        stream: StreamResult,
+        sessionId: Long
+    ): ResolvedStream? {
+        trace(sessionId, pack.id, "Hosterauflösung ${stream.hosterId ?: "unknown"}", stream.url)
         if (!stream.url.startsWith("https://")) {
             Log.w(TAG, "${pack.id}: non-https stream rejected")
+            trace(sessionId, pack.id, "Nicht-HTTPS-Ziel verworfen", stream.url)
             return null
         }
         val hosterCaptcha = pack.captcha
         if (hosterCaptcha != null) {
             Log.i(TAG, "${pack.id}: captcha $hosterCaptcha -> WebView")
             val result = captchaBroker.await(stream.url, hosterCaptcha, pack.id)
-            result?.streamUrl?.takeIf { it.startsWith("https://") }?.let { return it }
+            result?.streamUrl?.takeIf { it.startsWith("https://") }?.let {
+                return ResolvedStream(
+                    it,
+                    mapOf(
+                        "User-Agent" to HosterResolver.DEFAULT_USER_AGENT,
+                        "Referer" to stream.url
+                    ),
+                    result.cookies
+                )
+            }
             val cookies = result?.cookies
             if (cookies.isNullOrBlank()) {
                 Log.w(TAG, "${pack.id}: captcha ohne Cookie/Stream beendet")
@@ -173,7 +232,11 @@ class AutoPlaybackResolver @Inject constructor(
                 }
             }.getOrNull()
             return when (second) {
-                is HosterOutcome.Resolved -> second.url
+                is HosterOutcome.Resolved -> ResolvedStream(
+                    second.url,
+                    second.requestHeaders,
+                    second.cookies
+                )
                 else -> {
                     Log.w(TAG, "${pack.id}: Kette nach Captcha ohne Ergebnis")
                     null
@@ -184,29 +247,49 @@ class AutoPlaybackResolver @Inject constructor(
             withTimeoutOrNull(HOSTER_TIMEOUT_MS) { hosterResolver.resolve(stream.url) }
         }.getOrNull()
         return when (outcome) {
-            is HosterOutcome.Resolved -> outcome.url
-            is HosterOutcome.Unknown -> stream.url
-            is HosterOutcome.CaptchaRequired -> null
+            is HosterOutcome.Resolved -> ResolvedStream(
+                outcome.url,
+                outcome.requestHeaders,
+                outcome.cookies
+            ).also {
+                trace(sessionId, pack.id, "Hoster aufgelöst", it.url)
+            }
+            is HosterOutcome.Unknown -> ResolvedStream(
+                outcome.url,
+                outcome.requestHeaders,
+                outcome.cookies
+            ).also {
+                trace(sessionId, pack.id, "Unbekannter Hoster als Kandidat durchgereicht", it.url)
+            }
+            is HosterOutcome.CaptchaRequired -> {
+                trace(sessionId, pack.id, "Captcha erforderlich", stream.url)
+                null
+            }
             is HosterOutcome.Failed -> {
                 Log.w(TAG, "${pack.id}: hoster failed (${outcome.reason})")
+                trace(sessionId, pack.id, "Hoster fehlgeschlagen: ${outcome.reason}", outcome.url)
                 null
             }
             null -> {
                 Log.w(TAG, "${pack.id}: hoster timeout")
+                trace(sessionId, pack.id, "Hoster-Zeitüberschreitung", stream.url)
                 null
             }
         }
     }
 
-    private fun order(candidates: List<MirrorCandidate>): List<MirrorCandidate> =
-        candidates.distinctBy { it.url }.sortedWith(
-            compareByDescending<MirrorCandidate> { it.legalFree }
-                .thenByDescending { it.lang.startsWith("de", ignoreCase = true) }
-                .thenByDescending {
-                    it.quality.filter(Char::isDigit).toIntOrNull() ?: 0
-                }
-                .thenByDescending { it.healthScore }
+    private fun trace(sessionId: Long, sourceId: String, message: String, url: String? = null) {
+        PlaybackDiagnostics.record(
+            category = "RESOLVER",
+            message = message,
+            sessionId = sessionId,
+            url = url,
+            details = mapOf("sourceId" to sourceId)
         )
+    }
+
+    private fun order(candidates: List<MirrorCandidate>): List<MirrorCandidate> =
+        MirrorSelector.order(candidates.distinctBy { it.url })
 
     companion object {
         private const val TAG = "Frame61Resolve"

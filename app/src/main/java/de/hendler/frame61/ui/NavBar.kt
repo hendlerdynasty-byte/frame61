@@ -1,14 +1,19 @@
 package de.hendler.frame61.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -63,6 +68,45 @@ fun NavBar(
                 color = if (selected) skin.colors.primary else skin.colors.textSecondary,
                 modifier = Modifier
                     .padding(horizontal = 2.dp)
+                    .semantics { contentDescription = dest.label }
+                    .tvFocusable(id = "nav-${dest.route}", onClick = { onNavigate(dest.route) })
+            )
+        }
+    }
+}
+
+/**
+ * Fixed left rail for TV. The bottom bar is a phone pattern: on a 10-foot
+ * screen it sits outside the comfortable focus path and wastes vertical space.
+ * Every entry keeps the same stable focus id as [NavBar], so existing TV
+ * automation and focus restoration keep working.
+ */
+@Composable
+fun TvSideNav(
+    currentRoute: String,
+    onNavigate: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val skin = LocalSkin.current
+    Column(
+        modifier = modifier
+            .width(88.dp)
+            .fillMaxHeight()
+            .background(skin.colors.surface)
+            .verticalScroll(rememberScrollState())
+            .padding(vertical = 8.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp)
+    ) {
+        NavDestination.entries.forEach { dest ->
+            val selected = currentRoute == dest.route
+            Text(
+                text = dest.label,
+                style = MaterialTheme.typography.labelMedium.copy(fontSize = 12.sp),
+                maxLines = 1,
+                color = if (selected) skin.colors.primary else skin.colors.textSecondary,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 8.dp, vertical = 10.dp)
                     .semantics { contentDescription = dest.label }
                     .tvFocusable(id = "nav-${dest.route}", onClick = { onNavigate(dest.route) })
             )

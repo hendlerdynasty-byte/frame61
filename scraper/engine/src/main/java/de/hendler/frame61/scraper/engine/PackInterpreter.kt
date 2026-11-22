@@ -32,13 +32,26 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         cookies: String? = null
     ): List<SearchResult> {
         val rule = pack.search ?: return emptyList()
-        val body = http.get(
-            pack,
-            rule,
-            mapOf("query" to query, "q" to query, "page" to page.toString()),
-            cookies
-        )
+        val body = http.get(pack, rule, searchParams(rule, query, page), cookies)
         return parseSearch(pack, body)
+    }
+
+    /**
+     * The query is also offered under the rule's own parameter name.
+     *
+     * A pack with `queryParam = "term"` would otherwise be searched without a
+     * term at all — the request would go out empty and the answer would carry
+     * zero hits.
+     */
+    private fun searchParams(rule: PackRule, query: String, page: Int): Map<String, String> {
+        val params = linkedMapOf(
+            "query" to query,
+            "q" to query,
+            "page" to page.toString()
+        )
+        val name = rule.queryParam
+        if (!name.isNullOrBlank() && name !in params) params[name] = query
+        return params
     }
 
     fun detail(pack: SourcePack, id: String, cookies: String? = null): DetailResult? {
@@ -160,14 +173,16 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
                 id = id,
                 title = title,
                 year = rule.yearPath.stringOn(item)?.toIntOrNull(),
-                type = rule.typePath.stringOn(item)
+                type = rule.typePath.stringOn(item),
+                playbackId = rule.playbackIdPath.stringOn(item)
             )
         }
     }
 
     fun parseStreamsApi(pack: SourcePack, body: String, params: Map<String, String> = emptyMap()): List<StreamResult> {
         val rule = pack.streams ?: return emptyList()
-        val items = rule.streamPath.arrayIn(body) ?: rule.jsonPath.arrayIn(body) ?: return emptyList()
+        val source = body.extractJson(rule)
+        val items = rule.streamPath.arrayIn(source) ?: rule.jsonPath.arrayIn(source) ?: return emptyList()
         return items.mapNotNull { item ->
             val template = rule.streamUrlTemplate
             val url = if (template != null) {
@@ -333,11 +348,48 @@ private fun JsonElement.walk(path: String): JsonElement? {
 
 /** Embedded loader JSON (Moflix) can be lifted out of an HTML page. */
 private fun String.extractJson(rule: PackRule?): String {
+    if (rule?.jsonEmbedded == true) return extractNamedJsonObject("loaders")
     val pattern = rule?.jsonExtractRegex ?: return this
     if (pattern.isBlank()) return this
     return runCatching {
         Regex("(?s)$pattern").find(this)?.groupValues?.getOrNull(1).orEmpty()
     }.getOrDefault("")
+}
+
+/** Reads one complete named JSON object without stopping at a nested array. */
+private fun String.extractNamedJsonObject(name: String): String {
+    val marker = "\"$name\""
+    val markerAt = indexOf(marker)
+    if (markerAt < 0) return ""
+    val colonAt = indexOf(':', markerAt + marker.length)
+    if (colonAt < 0) return ""
+    val start = (colonAt + 1 until length).firstOrNull { !this[it].isWhitespace() } ?: return ""
+    if (this[start] != '{' && this[start] != '[') return ""
+    var inString = false
+    var escaped = false
+    var depth = 0
+    for (index in start until length) {
+        val char = this[index]
+        if (escaped) {
+            escaped = false
+            continue
+        }
+        if (char == '\\' && inString) {
+            escaped = true
+            continue
+        }
+        if (char == '"') {
+            inString = !inString
+            continue
+        }
+        if (inString) continue
+        if (char == '{' || char == '[') depth++
+        if (char == '}' || char == ']') {
+            depth--
+            if (depth == 0) return substring(start, index + 1)
+        }
+    }
+    return ""
 }
 
 private fun String?.arrayIn(body: String): List<JsonElement>? {
@@ -372,7 +424,8 @@ data class SearchResult(
     val title: String,
     val year: Int? = null,
     val type: String? = null,
-    val url: String? = null
+    val url: String? = null,
+    val playbackId: String? = null
 )
 
 data class DetailResult(

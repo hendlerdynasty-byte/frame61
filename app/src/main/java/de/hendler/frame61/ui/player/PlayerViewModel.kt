@@ -7,6 +7,7 @@ import androidx.media3.exoplayer.ExoPlayer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.data.ResumeRepository
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
 import de.hendler.frame61.player.PlayerUiState
@@ -17,6 +18,7 @@ import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -69,14 +71,20 @@ class PlayerViewModel @Inject constructor(
 
     private var profileId: Long = 0L
     private var titleId: String = ""
+    private var titleName: String = ""
     private var episodeId: Long = 0L
+    private var episodeNumber: Int = 0
     private var mirrors: List<MirrorCandidate> = emptyList()
+    private var fallbackMirrors: List<MirrorCandidate> = emptyList()
     private var mirrorIndex = 0
     private var lastPositionMs: Long = -1L
     private var tickJob: kotlinx.coroutines.Job? = null
+    private var recoveryJob: Job? = null
+    private val failedUrls = mutableSetOf<String>()
 
     /** The Media3 instance the [PlayerScreen] renders into. */
     val player: ExoPlayer get() = mediaPlayer.exoPlayer
+    val fallbackPlayerView: android.view.SurfaceView get() = mediaPlayer.fallbackView
 
     fun start(
         profileId: Long,
@@ -86,20 +94,29 @@ class PlayerViewModel @Inject constructor(
         episodeNumber: Int,
         fallbackCandidates: List<MirrorCandidate>
     ) {
+        recoveryJob?.cancel()
+        tickJob?.cancel()
+        failedUrls.clear()
         this.profileId = profileId
         this.titleId = titleId
+        this.titleName = title
         this.episodeId = episodeId
+        this.episodeNumber = episodeNumber
         this.mirrors = fallbackCandidates
+        this.fallbackMirrors = fallbackCandidates
         this.mirrorIndex = 0
+        val diagnosticSessionId = PlaybackDiagnostics.beginSession(title, episodeNumber)
 
         mediaPlayer.attach()
         mediaPlayer.onFrame = ::onFrame
+        mediaPlayer.onError = ::recoverFromPlayback
 
         viewModelScope.launch {
             // Real sources first; the demo is only a last-resort fallback and is
             // never labelled as a source (source failures are log-only).
-            val resolved = runCatching { autoResolver.resolve(title, episodeNumber) }
-                .getOrDefault(emptyList())
+            val resolved = runCatching {
+                autoResolver.resolve(title, episodeNumber, sessionId = diagnosticSessionId)
+            }.getOrDefault(emptyList())
             mirrors = resolved.ifEmpty { fallbackCandidates }
             _state.update {
                 it.copy(
@@ -110,12 +127,20 @@ class PlayerViewModel @Inject constructor(
                 )
             }
             val resume = resumeRepository.load(profileId, CatalogPlayback.stableId(titleId), episodeId)
-            openMirror(index = 0, startAtMs = resume?.positionMs ?: 0L)
+            openMirror(
+                index = 0,
+                startAtMs = resume?.positionMs ?: 0L,
+                sessionId = diagnosticSessionId
+            )
             startTicker()
         }
     }
 
-    private fun openMirror(index: Int, startAtMs: Long) {
+    private fun openMirror(
+        index: Int,
+        startAtMs: Long,
+        sessionId: Long = PlaybackDiagnostics.currentSessionId
+    ) {
         val mirror = mirrors.getOrNull(index)
         if (mirror == null) {
             _state.update { it.copy(loading = false, fatal = "Keine Quelle verfügbar") }
@@ -123,9 +148,37 @@ class PlayerViewModel @Inject constructor(
         }
         mirrorIndex = index
         lastPositionMs = startAtMs
-        mediaPlayer.open(mirror.url, startAtMs = startAtMs)
+        PlaybackDiagnostics.record(
+            "RESOLVER",
+            "Öffne Kandidat ${index + 1}/${mirrors.size}",
+            sessionId = sessionId,
+            url = mirror.url,
+            details = mapOf(
+                "sourceId" to mirror.sourceId,
+                "hosterId" to (mirror.hosterId ?: "-"),
+                "quality" to mirror.quality,
+                "resumeMs" to startAtMs.toString()
+            )
+        )
+        mediaPlayer.open(
+            url = mirror.url,
+            mimeType = mirror.mimeType,
+            startAtMs = startAtMs,
+            requestHeaders = mirror.requestHeaders,
+            cookies = mirror.cookies
+        )
         watchdog.reportFrame(startAtMs)
-        _state.update { it.copy(loading = false, fatal = null) }
+        _state.update {
+            it.copy(
+                loading = false,
+                fatal = null,
+                sourceNote = when (mirror.sourceId) {
+                    "ard" -> "ARD Mediathek"
+                    "demo" -> "Demo-Stream"
+                    else -> mirror.sourceId
+                }
+            )
+        }
     }
 
     /** Frame tick: resume throttled, watchdog fed, countdown advanced. */
@@ -152,7 +205,7 @@ class PlayerViewModel @Inject constructor(
         }
 
         if (watchdog.isStalled() && mediaPlayer.state.value.isReady) {
-            rotateMirror()
+            recoverFromPlayback()
         }
 
         val next = countdown.onFrame(positionMs, durationMs)
@@ -163,15 +216,35 @@ class PlayerViewModel @Inject constructor(
         }
     }
 
-    /** 8 s without a frame → next mirror, position carried over. */
-    private fun rotateMirror() {
-        val nextIndex = mirrorIndex + 1
-        if (nextIndex >= mirrors.size) {
-            _state.update { it.copy(fatal = "Alle Mirrors ausgefallen") }
-            return
+    /** Player errors and stalls rotate first, then force a fresh resolution. */
+    private fun recoverFromPlayback(error: androidx.media3.common.PlaybackException? = null) {
+        if (recoveryJob?.isActive == true) return
+        recoveryJob = viewModelScope.launch {
+            val resumeMs = mediaPlayer.state.value.positionMs
+            mirrors.getOrNull(mirrorIndex)?.url?.let(failedUrls::add)
+            PlaybackDiagnostics.record(
+                "PLAYER",
+                "Automatische Neuauflösung: ${error?.errorCodeName ?: "stall"}",
+                details = mapOf("failedUrls" to failedUrls.size.toString())
+            )
+            val nextIndex = mirrorIndex + 1
+            if (nextIndex < mirrors.size) {
+                openMirror(nextIndex, resumeMs)
+                return@launch
+            }
+            val resolved = runCatching {
+                autoResolver.resolve(titleName, episodeNumber, fresh = true)
+            }.getOrDefault(emptyList())
+            val remaining = (resolved + fallbackMirrors)
+                .distinctBy { it.url }
+                .filter { it.url !in failedUrls }
+            if (remaining.isEmpty()) {
+                _state.update { it.copy(loading = false, fatal = "Alle Mirrors ausgefallen") }
+            } else {
+                mirrors = remaining
+                openMirror(0, resumeMs)
+            }
         }
-        val resumeMs = watchdog.positionMs
-        openMirror(nextIndex, resumeMs)
     }
 
     private fun startTicker() {
@@ -222,6 +295,8 @@ class PlayerViewModel @Inject constructor(
 
     override fun onCleared() {
         tickJob?.cancel()
+        recoveryJob?.cancel()
+        captchaBroker.cancel()
         // viewModelScope is already cancelled here; a one-shot IO scope keeps the
         // final position. Measured: the old save never ran, so the last seconds
         // were lost on every exit.

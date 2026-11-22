@@ -4,11 +4,16 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.focusable
+import androidx.compose.foundation.gestures.scrollBy
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import de.hendler.frame61.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -30,6 +35,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -45,16 +51,20 @@ import androidx.compose.ui.input.key.type
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.AspectRatioFrameLayout
 import androidx.media3.ui.PlayerView
 import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.tvFocusable
+import de.hendler.frame61.net.PlaybackTraceEvent
 import de.hendler.frame61.player.PlayerUiState
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Full-screen player.
@@ -71,9 +81,12 @@ import kotlinx.coroutines.delay
 fun PlayerScreen(
     state: PlayerUiState,
     player: ExoPlayer?,
+    fallbackView: android.view.SurfaceView? = null,
     countdownSeconds: Int? = null,
     sourceNote: String? = null,
     subtitleScale: Float = 1.0f,
+    diagnosticEvents: List<PlaybackTraceEvent> = emptyList(),
+    fatalMessage: String? = null,
     onTogglePlay: () -> Unit = {},
     onSeekBack: () -> Unit = {},
     onSeekForward: () -> Unit = {},
@@ -87,9 +100,12 @@ fun PlayerScreen(
     val skin = LocalSkin.current
     var controlsVisible by remember { mutableStateOf(true) }
     var infoVisible by remember { mutableStateOf(false) }
+    var diagnosticsVisible by remember { mutableStateOf(false) }
     var interaction by remember { mutableIntStateOf(0) }
     var seekDirection by remember { mutableIntStateOf(0) }
     var sourceVisible by remember(sourceNote) { mutableStateOf(sourceNote != null) }
+    val diagnosticsListState = rememberLazyListState()
+    val diagnosticsScope = rememberCoroutineScope()
 
     LaunchedEffect(sourceNote) {
         sourceVisible = sourceNote != null
@@ -117,12 +133,29 @@ fun PlayerScreen(
     DisposableEffect(Unit) {
         PlayerKeyRouter.handler = { event ->
             when (event.action) {
-                android.view.KeyEvent.ACTION_DOWN -> {
+                android.view.KeyEvent.ACTION_DOWN -> if (event.keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+                    false
+                } else if (diagnosticsVisible) {
+                    true
+                } else {
                     controlsVisible = true
                     interaction++
                     false
                 }
-                android.view.KeyEvent.ACTION_UP -> {
+                android.view.KeyEvent.ACTION_UP -> if (event.keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+                    false
+                } else if (diagnosticsVisible) {
+                    when (event.keyCode) {
+                        android.view.KeyEvent.KEYCODE_BACK -> diagnosticsVisible = false
+                        android.view.KeyEvent.KEYCODE_DPAD_UP -> diagnosticsScope.launch {
+                            diagnosticsListState.scrollBy(-480f)
+                        }
+                        android.view.KeyEvent.KEYCODE_DPAD_DOWN -> diagnosticsScope.launch {
+                            diagnosticsListState.scrollBy(480f)
+                        }
+                    }
+                    true
+                } else {
                     controlsVisible = true
                     interaction++
                     when (event.keyCode) {
@@ -146,6 +179,10 @@ fun PlayerScreen(
                             infoVisible = !infoVisible
                             true
                         }
+                        android.view.KeyEvent.KEYCODE_DPAD_DOWN -> {
+                            diagnosticsVisible = true
+                            true
+                        }
                         else -> false
                     }
                 }
@@ -156,7 +193,7 @@ fun PlayerScreen(
     }
 
     // First back hides the overlay, a second back leaves the player.
-    BackHandler(enabled = controlsVisible) {
+    BackHandler(enabled = controlsVisible && !diagnosticsVisible) {
         controlsVisible = false
         infoVisible = false
     }
@@ -166,7 +203,12 @@ fun PlayerScreen(
             .fillMaxSize()
             .background(Color.Black)
     ) {
-        if (player != null) {
+        if (state.engine == "Android MediaPlayer" && fallbackView != null) {
+            androidx.compose.ui.viewinterop.AndroidView(
+                modifier = Modifier.fillMaxSize(),
+                factory = { fallbackView }
+            )
+        } else if (player != null) {
             androidx.compose.ui.viewinterop.AndroidView(
                 modifier = Modifier.fillMaxSize(),
                 factory = { ctx -> createPlayerView(ctx, subtitleScale) },
@@ -188,6 +230,7 @@ fun PlayerScreen(
             ErrorPanel(
                 message = message,
                 onRetry = onRetry,
+                onDiagnostics = { diagnosticsVisible = true },
                 modifier = Modifier.align(Alignment.Center)
             )
         }
@@ -281,12 +324,46 @@ fun PlayerScreen(
                 )
             }
         }
+
+        fatalMessage?.let { message ->
+            Surface(modifier = Modifier.fillMaxSize(), color = skin.colors.canvas) {
+                Column(
+                    modifier = Modifier.fillMaxSize().padding(32.dp),
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(message, style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        "Diagnose anzeigen",
+                        color = skin.colors.primary,
+                        modifier = Modifier
+                            .padding(top = 16.dp)
+                            .tvFocusable(id = "show-fatal-diagnostics", onClick = {
+                                diagnosticsVisible = true
+                            })
+                    )
+                }
+            }
+        }
+
+        if (diagnosticsVisible) {
+            DiagnosticsPanel(
+                events = diagnosticEvents,
+                listState = diagnosticsListState,
+                onClose = { diagnosticsVisible = false },
+                modifier = Modifier.fillMaxSize()
+            )
+        }
     }
 }
 
 /** A failed stream must be visible and recoverable, never a black screen. */
 @Composable
-private fun ErrorPanel(message: String, onRetry: () -> Unit, modifier: Modifier = Modifier) {
+private fun ErrorPanel(
+    message: String,
+    onRetry: () -> Unit,
+    onDiagnostics: () -> Unit,
+    modifier: Modifier = Modifier
+) {
     val skin = LocalSkin.current
     Surface(modifier = modifier, color = skin.colors.surface) {
         Column(modifier = Modifier.padding(24.dp)) {
@@ -300,6 +377,60 @@ private fun ErrorPanel(message: String, onRetry: () -> Unit, modifier: Modifier 
             )
             Spacer(Modifier.height(16.dp))
             Button(onClick = onRetry) { Text(text = "Erneut versuchen") }
+            Text(
+                text = "Diagnose anzeigen",
+                color = skin.colors.textPrimary,
+                modifier = Modifier
+                    .padding(top = 12.dp)
+                    .tvFocusable(id = "show-diagnostics", onClick = onDiagnostics)
+            )
+        }
+    }
+}
+
+@Composable
+private fun DiagnosticsPanel(
+    events: List<PlaybackTraceEvent>,
+    listState: LazyListState,
+    onClose: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val skin = LocalSkin.current
+    BackHandler(onBack = onClose)
+    Surface(modifier = modifier.padding(24.dp), color = skin.colors.canvas.copy(alpha = 0.98f)) {
+        Column(modifier = Modifier.fillMaxSize().padding(20.dp)) {
+            Text("Wiedergabe-Diagnose", style = MaterialTheme.typography.titleLarge)
+            Text(
+                "Nur lokal · neueste zuerst · ↑/↓ blättert · Zurück schließt",
+                color = skin.colors.textSecondary,
+                style = MaterialTheme.typography.bodySmall
+            )
+            Text(
+                "Diagnose schließen",
+                color = skin.colors.primary,
+                modifier = Modifier
+                    .padding(vertical = 12.dp)
+                    .tvFocusable(id = "close-diagnostics", onClick = onClose)
+            )
+            if (events.isEmpty()) {
+                Text("Noch keine Diagnoseereignisse.", color = skin.colors.textPrimary)
+            } else {
+                LazyColumn(
+                    state = listState,
+                    modifier = Modifier.fillMaxSize(),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    items(events.takeLast(80).reversed()) { event ->
+                        Text(
+                            text = event.asLogLine(),
+                            color = skin.colors.textPrimary,
+                            fontFamily = FontFamily.Monospace,
+                            fontSize = 11.sp,
+                            lineHeight = 15.sp
+                        )
+                    }
+                }
+            }
         }
     }
 }

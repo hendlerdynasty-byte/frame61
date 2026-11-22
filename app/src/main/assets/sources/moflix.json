@@ -16,10 +16,19 @@
     "titlePath": "name",
     "yearPath": "year",
     "typePath": "type",
+    "playbackIdPath": "primary_video.id",
     "pageLimit": 20
   },
+  "streams": {
+    "endpoint": "/watch/{titleId}",
+    "format": "api",
+    "jsonEmbedded": true,
+    "streamPath": "watchPage.alternative_videos",
+    "streamQualityPath": "quality",
+    "streamLangPath": "language"
+  },
   "verified": true,
-  "last_check": "2026-11-21T12:45:53Z",
+  "last_check": "2026-11-22T01:29:00Z",
   "check": {
     "status": "verified",
     "reason": "",

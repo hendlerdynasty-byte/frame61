@@ -25,7 +25,7 @@ class ChainlinkLoggingInterceptor : Interceptor {
         // Log format: [Chainlink] method url → status (elapsed ms, protocol, body)
         android.util.Log.d(
             "Chainlink",
-            "$request ${response.code} ${elapsedMs}ms ${protocol} ${
+            "${request.method} ${PlaybackDiagnostics.safeUrl(request.url.toString())} ${response.code} ${elapsedMs}ms ${protocol} ${
                 if (bodySize >= 0) "${bodySize}B" else "streaming"
             }"
         )

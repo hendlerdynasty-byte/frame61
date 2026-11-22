@@ -2,17 +2,14 @@ package de.hendler.frame61.ui.player
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.ui.CaptchaWebViewFrame
 
 /**
@@ -32,6 +29,7 @@ fun PlayerRoute(
     val state by viewModel.state.collectAsStateWithLifecycle()
     val subtitleScale by viewModel.subtitleScale.collectAsStateWithLifecycle()
     val captcha by viewModel.captchaRequest.collectAsStateWithLifecycle()
+    val diagnosticEvents by PlaybackDiagnostics.events.collectAsStateWithLifecycle()
 
     LaunchedEffect(item.id, episodeId, episodeNumber) {
         viewModel.start(
@@ -48,9 +46,12 @@ fun PlayerRoute(
         PlayerScreen(
             state = state.ui,
             player = viewModel.player,
+            fallbackView = viewModel.fallbackPlayerView,
             countdownSeconds = state.countdownSeconds,
             sourceNote = state.sourceNote,
             subtitleScale = subtitleScale,
+            diagnosticEvents = diagnosticEvents,
+            fatalMessage = state.fatal,
             onTogglePlay = viewModel::togglePlay,
             onSeekBack = { viewModel.seekBy(-10_000L) },
             onSeekForward = { viewModel.seekBy(10_000L) },
@@ -68,14 +69,6 @@ fun PlayerRoute(
                 onResult = viewModel::submitCaptcha,
                 onCancel = viewModel::cancelCaptcha
             )
-        }
-    }
-
-    state.fatal?.let { message ->
-        Surface {
-            Box(modifier = Modifier.fillMaxSize().padding(32.dp)) {
-                Text(text = message)
-            }
         }
     }
 

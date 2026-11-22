@@ -996,12 +996,6 @@
 
   <div id="error"></div>
 
-  <div id="adblock-overlay" class="adblock-overlay">
-    <div class="adblock-message">
-      <p style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">AdBlock Detected!</p>
-      <p>Please disable AdBlock to watch the video.</p>
-    </div>
-  </div>
 
 
 <div id="mg_vd"></div>
@@ -1024,7 +1018,7 @@
     var file_id = 7156800;
     var file_id_clone = 7156800;
     var file_code = '8irnzzsknabi';
-    var moly_sid = '7156800-2a02:2454:9918:8000:57e:adca:5f2c:569c-0-1795014468-66e46cd2bc3656be116f56aefda73323';
+    var moly_sid = '7156800-2a02:2454:9918:8000:4d5a:21d2:605a:c744-0-1795311069-13318a85fe1ab4ffa5ab811207a2e828';
     var molyReferer = window.molyReferer || (typeof $.cookie === 'function' ? $.cookie('ref_url') : "") || "https://aniworld.to/anime/stream/naruto/staffel-1/episode-1";
   </script>
 
@@ -1074,7 +1068,7 @@
         }
     ];
     var playerInstance = player.setup({
-      sources: [{ file: 'https://box-1583-q.vmeas.cloud/hls2/04/01431/8irnzzsknabi_n/master.m3u8?t=GSGkPVE4qoYdXKbgr4-HGOa-yEAYwFK4qCwiiL4d6Go=&s=1795014468&e=43200&v=&i=0.4&sp=0&asn=16202' }],
+      sources: [{ file: 'https://box-1583-q.vmeas.cloud/hls2/04/01431/8irnzzsknabi_n/master.m3u8?t=3xFwqpY4RFbp88g7VCgULN_waVOSYGJrglHBOfeCxZA=&s=1795311069&e=43200&v=&i=0.4&sp=0&asn=16202' }],
       image: "https://box-1583-q.vmeas.cloud/i/04/01431/8irnzzsknabi.jpg",
       bitrate: "2160000",
       label: "720p HD",
@@ -1545,8 +1539,8 @@
       var isCurrentlyOut = false;
       var isVerified = false;
 
-      var mSid = '7156800-2a02:2454:9918:8000:57e:adca:5f2c:569c-0-1795014468-66e46cd2bc3656be116f56aefda73323';
-      var mToken = '82215a1358cbbc323b09fa57940723026c0a515a4babcac8ad145f6c52624cd9'; 
+      var mSid = '7156800-2a02:2454:9918:8000:4d5a:21d2:605a:c744-0-1795311069-13318a85fe1ab4ffa5ab811207a2e828';
+      var mToken = '2dc8b44c059b70b77fb7f9fbe97f5055a762045e05041567dedaf1426451b40a'; 
       var mFile = '8irnzzsknabi';
       var mUsr = '561890';
       var mEar = '1';
@@ -1729,11 +1723,11 @@
     var abLoad = false;
 
 function adBlockControl(vmAdBlocked1) {
-      $.post('#REMOVED_URL_1#', { user: '561890', 'hash': '7156800-2a02:2454:9918:8000:57e:adca:5f2c:569c-0-1795014468-66e46cd2bc3656be116f56aefda73323', 'block': vmAdBlocked1 }, function (data1) {
+      $.post('#REMOVED_URL_1#', { user: '561890', 'hash': '7156800-2a02:2454:9918:8000:4d5a:21d2:605a:c744-0-1795311069-13318a85fe1ab4ffa5ab811207a2e828', 'block': vmAdBlocked1 }, function (data1) {
         window.ab3Interval = setInterval(function () {
           ab3Started--;
           if (ab3Started === 0) {
-            $.post('#REMOVED_URL_2#', { 'user': '561890', 'hash': '7156800-2a02:2454:9918:8000:57e:adca:5f2c:569c-0-1795014468-66e46cd2bc3656be116f56aefda73323' }, function (data2) { }, 'json');
+            $.post('#REMOVED_URL_2#', { 'user': '561890', 'hash': '7156800-2a02:2454:9918:8000:4d5a:21d2:605a:c744-0-1795311069-13318a85fe1ab4ffa5ab811207a2e828' }, function (data2) { }, 'json');
             $.get('#REMOVED_URL_3#' + vmAdBlocked1, function (data) { $('#fviews').html(data); });
             if (window.ab3Interval != null) {
               clearInterval(window.ab3Interval);
@@ -1897,135 +1891,6 @@ function adBlockControl(vmAdBlocked1) {
     window.player = player;
   </script>
 
-<script>
-(function() {
-    const lang = {
-        en: { t: "AdBlock Detected", m: "AdBlock detected, please disable your ad blocker and refresh the page.", b: "Refresh Page" },
-        fr: { t: "AdBlock Détecté", m: "AdBlock détecté, veuillez désactiver votre bloqueur de publicité et rafraîchir la page.", b: "Actualiser" },
-        de: { t: "AdBlock Erkannt", m: "AdBlock erkannt, bitte deaktivieren Sie Ihren Werbeblocker und aktualisieren Sie die Seite.", b: "Aktualisieren" },
-        ru: { t: "Обнаружен AdBlock", m: "Обнаружен AdBlock, пожалуйста, отключите блокировщик рекламы и обновите страницу.", b: "Обновить" },
-        ar: { t: "تم كشف مانع الإعلانات", m: "تم اكتشاف مانع الإعلانات، يرجى تعطيل مانع الإعلانات وتحديث الصفحة.", b: "تحديث الصفحة" },
-        pt: { t: "AdBlock Detectado", m: "AdBlock detectado, por favor desative seu bloqueador de anúncios e recarregue a página.", b: "Atualizar" },
-        hu: { t: "AdBlock Észlelve", m: "AdBlock észlelve, kérjük, kapcsolja ki a hirdetésblokkolót és frissítse az oldalt.", b: "Frissítés" },
-        sq: { t: "U zbulua AdBlock", m: "U zbulua AdBlock, ju lutemi çaktivizoni bllokuesin e reklamave dhe rifreskoni faqen.", b: "Rifresko" },
-        tr: { t: "AdBlock Tespit Edildi", m: "Reklam engelleyici tespit edildi, lütfen reklam engelleyicinizi devre dışı bırakın ve sayfayı yenileyiniz.", b: "Sayfayı Yenile" }
-    };
-
-    const userL = (navigator.language || navigator.userLanguage).split('-')[0];
-    const txt = lang[userL] || lang['en'];
-
-    const styles = `
-        #x-adb-root { 
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; 
-            z-index: 2147483647; 
-            background: rgba(0,0,0,0.96); 
-            backdrop-filter: blur(10px); 
-            display: flex; justify-content: center; align-items: center; 
-            opacity: 0; animation: x-fade-in 0.2s forwards; 
-        }
-        .x-adb-box { 
-            background: #111; 
-            border: 1px solid #333; 
-            width: auto; max-width: 400px; 
-            padding: 30px; 
-            border-radius: 12px; 
-            text-align: center; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-            transform: scale(0.95); animation: x-scale-up 0.2s ease-out forwards; 
-            color: #eee; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        .x-adb-h { 
-            font-size: 18px; 
-            font-weight: 700; 
-            margin-bottom: 10px; 
-            color: #fff; 
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        .x-adb-p { 
-            font-size: 14px; 
-            color: #bbb; 
-            line-height: 1.5; 
-            margin-bottom: 25px; 
-        }
-        .x-adb-btn { 
-            background: #fff; 
-            color: #000; 
-            border: none; 
-            padding: 10px 25px; 
-            font-size: 13px; 
-            font-weight: 700; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            transition: background 0.2s; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .x-adb-btn:hover { background: #ddd; }
-        @keyframes x-fade-in { to { opacity: 1; } }
-        @keyframes x-scale-up { to { transform: scale(1); } }
-    `;
-
-    const styleEl = document.createElement('style');
-    styleEl.textContent = styles;
-    document.head.appendChild(styleEl);
-
-    function trigger() {
-        if (document.getElementById('x-adb-root')) return;
-        
-        const ui = document.createElement('div');
-        ui.id = 'x-adb-root';
-        ui.innerHTML = `
-            <div class="x-adb-box">
-                <div class="x-adb-h">${txt.t}</div>
-                <div class="x-adb-p">${txt.m}</div>
-                <button class="x-adb-btn" onclick="location.reload()">${txt.b}</button>
-            </div>`;
-        
-        document.body.appendChild(ui);
-        document.body.style.overflow = 'hidden';
-
-        const obs = new MutationObserver(() => {
-            if (!document.getElementById('x-adb-root')) trigger();
-            if (document.body.style.overflow !== 'hidden') document.body.style.overflow = 'hidden';
-        });
-        obs.observe(document.body, { childList: true, attributes: true });
-    }
-
-    async function scan() {
-        let detected = false;
-
-
-        const bait = document.createElement('div');
-        bait.className = 'pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links';
-        bait.style.cssText = 'position: absolute !important; top: -9999px !important; left: -9999px !important; width: 1px !important; height: 1px !important;';
-        document.body.appendChild(bait);
-
-
-        const networkCheck = fetch('https://googleads.g.doubleclick.net/pagead/id', { method: 'HEAD', mode: 'no-cors' })
-            .catch(() => { detected = true; });
-
-        await new Promise(r => setTimeout(r, 350));
-
-        const baitStyle = window.getComputedStyle(bait);
-        if (bait.offsetParent === null || bait.offsetHeight === 0 || bait.offsetLeft === 0 || baitStyle.display === 'none' || baitStyle.visibility === 'hidden' || baitStyle.opacity === '0') {
-            detected = true;
-        }
-        bait.remove();
-
-        await networkCheck; 
-
-        if (detected) trigger();
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', scan);
-    } else {
-        scan();
-    }
-})();
-</script>
 
 
   <div id="vj_vs"></div>
@@ -2040,7 +1905,7 @@ function adBlockControl(vmAdBlocked1) {
     $(document).ready(function () { vj_vs(); });
     setInterval(vj_vs, 110000);
   </script>
- <script type="text/javascript">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');      ym(42180914, 'init', {clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true}); </script> <script>window.vidmolyMostReplayed={token:'eyJ2IjoxLCJhdWQiOiJ2aWRtb2x5LWhlYXRtYXAiLCJ2aWQiOiI4aXJuenpza25hYmkiLCJkdXIiOjEzNzEsInNpZCI6IjZkNmVmNDg1MmNkMjA2MjYwNGY0NTg2NDIwYzZmMDdiIiwiaWF0IjoxNzk1MDE0NDY4LCJleHAiOjE3OTUwMzYwNjh9.5I4tzOcisCGpAGBVrOudSOiEXyqs14SgocwPj9BNeMo',videoId:'8irnzzsknabi',apiOrigin:'https://hrt.vidmoly.me',collectionEnabled:true,heatmapEnabled:true };</script><script src="/static/most-replayed-v27.js?v=27"></script>
+ <script type="text/javascript">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');      ym(42180914, 'init', {clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true}); </script> <script>window.vidmolyMostReplayed={token:'eyJ2IjoxLCJhdWQiOiJ2aWRtb2x5LWhlYXRtYXAiLCJ2aWQiOiI4aXJuenpza25hYmkiLCJkdXIiOjEzNzEsInNpZCI6IjExNGZkOGVhN2MzYjBiNDNmMWFhNmVmZWFlYTUyNmZlIiwiaWF0IjoxNzk1MzExMDY5LCJleHAiOjE3OTUzMzI2Njl9.dx64QTlHoxK-m8MU1tP1hXrOd8rWJWF1tyDG45E5lGE',videoId:'8irnzzsknabi',apiOrigin:'https://hrt.vidmoly.me',collectionEnabled:true,heatmapEnabled:true };</script><script src="/static/most-replayed-v27.js?v=27"></script>
   </body>
 
 </html>

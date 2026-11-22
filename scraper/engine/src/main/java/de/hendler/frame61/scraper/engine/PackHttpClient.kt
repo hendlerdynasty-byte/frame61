@@ -1,5 +1,6 @@
 package de.hendler.frame61.scraper.engine
 
+import de.hendler.frame61.net.HttpClientFactory
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -7,12 +8,25 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException
 
 /**
+ * Full answer of a pack rule, including the status code.
+ *
+ * The status is needed for the evidence: a source that answers with 401 or 404
+ * is blocked for a documented reason, not silently "without results".
+ */
+data class PackResponse(
+    val status: Int,
+    val body: String,
+    val contentType: String?,
+    val url: String
+)
+
+/**
  * Minimal HTTP front-end for [PackRule]s. Bodies are returned as text; parsing
  * is [PackInterpreter]'s job, so this class stays trivially replaceable in
  * tests.
  */
 class PackHttpClient(
-    private val client: OkHttpClient = OkHttpClient()
+    private val client: OkHttpClient = HttpClientFactory.create()
 ) {
 
     @Throws(IOException::class)
@@ -22,8 +36,28 @@ class PackHttpClient(
         params: Map<String, String>,
         cookies: String? = null
     ): String {
+        val response = fetch(pack, rule, params, cookies)
+        if (response.status !in 200..299) {
+            throw IOException("HTTP ${response.status} for ${response.url}")
+        }
+        return response.body
+    }
+
+    /**
+     * Like [get], but a 4xx/5xx answer comes back as a value with its status
+     * instead of an exception. Only transport failures throw.
+     */
+    @Throws(IOException::class)
+    fun fetch(
+        pack: SourcePack,
+        rule: PackRule,
+        params: Map<String, String>,
+        cookies: String? = null
+    ): PackResponse {
         val url = buildUrl(pack, rule, params)
         val builder = Request.Builder().url(url)
+            .header("User-Agent", HttpClientFactory.DEFAULT_USER_AGENT)
+            .header("Referer", pack.baseUrl)
         rule.headers.forEach { (key, value) -> builder.header(key, value) }
         if (!cookies.isNullOrBlank()) builder.header("Cookie", cookies)
 
@@ -35,9 +69,12 @@ class PackHttpClient(
         }
 
         client.newCall(builder.build()).execute().use { response ->
-            val body = response.body?.string().orEmpty()
-            if (!response.isSuccessful) throw IOException("HTTP ${response.code} for $url")
-            return body
+            return PackResponse(
+                status = response.code,
+                body = response.body?.string().orEmpty(),
+                contentType = response.header("Content-Type"),
+                url = url
+            )
         }
     }
 
@@ -64,10 +101,16 @@ class PackHttpClient(
 
             // `{query}`-style placeholders that survived templating become query params
             val http = url.toHttpUrlOrNull() ?: return url
-            if (rule.queryParam != null && params.isNotEmpty()) {
-                val builder = http.newBuilder()
-                params[rule.queryParam]?.let { builder.addQueryParameter(rule.queryParam, it) }
-                return builder.build().toString()
+            val queryName = rule.queryParam
+            if (queryName != null && params.isNotEmpty()) {
+                // A path that already carries the placeholder must not get the
+                // query a second time as a URL parameter.
+                val inPath = path.contains("{$queryName}") || path.contains("{{$queryName}}")
+                if (!inPath) {
+                    val builder = http.newBuilder()
+                    params[queryName]?.let { builder.addQueryParameter(queryName, it) }
+                    return builder.build().toString()
+                }
             }
             return url
         }
@@ -79,13 +122,14 @@ class PackHttpClient(
          */
         fun renderPath(template: String, params: Map<String, String>): String {
             val encoded = params.mapValues { (key, value) ->
-                if (key in PATH_ENCODED) java.net.URLEncoder.encode(value, "UTF-8").replace("+", "%20")
-                else value
+                if (key in PATH_RAW) value
+                else java.net.URLEncoder.encode(value, "UTF-8").replace("+", "%20")
             }
             return render(template, encoded)
         }
 
-        private val PATH_ENCODED = setOf("query", "q", "titleId", "episodeId")
+        /** Only `id` stays raw; every other placeholder is path-safe. */
+        private val PATH_RAW = setOf("id")
 
         private fun String.toHttpUrlOrNull() = runCatching { toHttpUrl() }.getOrNull()
     }

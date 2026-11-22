@@ -1,5 +1,6 @@
 package de.hendler.frame61.resolver
 
+import de.hendler.frame61.net.HttpClientFactory
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -14,9 +15,18 @@ interface BodyFetcher {
 }
 
 sealed interface HosterOutcome {
-    data class Resolved(val url: String, val usedSteps: Int) : HosterOutcome
+    data class Resolved(
+        val url: String,
+        val usedSteps: Int,
+        val requestHeaders: Map<String, String> = emptyMap(),
+        val cookies: String? = null
+    ) : HosterOutcome
     data class CaptchaRequired(val url: String, val kind: String) : HosterOutcome
-    data class Unknown(val url: String) : HosterOutcome
+    data class Unknown(
+        val url: String,
+        val requestHeaders: Map<String, String> = emptyMap(),
+        val cookies: String? = null
+    ) : HosterOutcome
     data class Failed(val url: String, val reason: String, val usedSteps: Int) : HosterOutcome
 }
 
@@ -49,18 +59,23 @@ class HosterResolver(
     }
 
     suspend fun resolve(url: String, cookies: String? = null): HosterOutcome {
-        val pack = findPack(url) ?: return HosterOutcome.Unknown(url)
+        val defaultHeaders = linkedMapOf(
+            "User-Agent" to DEFAULT_USER_AGENT,
+            "Referer" to url
+        )
+        if (!cookies.isNullOrBlank()) defaultHeaders["Cookie"] = cookies
+        val pack = findPack(url) ?: return HosterOutcome.Unknown(url, defaultHeaders, cookies)
         if (!pack.captcha.isNullOrBlank() && cookies.isNullOrBlank()) {
             return HosterOutcome.CaptchaRequired(url, pack.captcha)
         }
 
-        val vars = linkedMapOf<String, String>()
+        val vars = linkedMapOf(
+            "url" to url,
+            "host" to (hostOf(url).orEmpty()),
+            "path" to pathOf(url)
+        )
         var used = 0
-        val requestHeaders = if (cookies.isNullOrBlank()) {
-            emptyMap()
-        } else {
-            mapOf("Cookie" to cookies)
-        }
+        val requestHeaders = defaultHeaders
         for (step in pack.steps) {
             used++
             when (step.action) {
@@ -68,6 +83,7 @@ class HosterResolver(
                 "get" -> {
                     val target = expand(step.url ?: return HosterOutcome.Failed(url, "get ohne url", used), url, vars)
                     val headers = step.headers.mapValues { (_, value) -> expand(value, url, vars) }
+                    requestHeaders += headers
                     vars[step.saveAs ?: "body"] = runCatching {
                         fetcher.get(target, requestHeaders + headers)
                     }.getOrElse { return HosterOutcome.Failed(url, "get fehlgeschlagen: ${it.message}", used) }
@@ -76,6 +92,7 @@ class HosterResolver(
                     val target = expand(step.url ?: return HosterOutcome.Failed(url, "post ohne url", used), url, vars)
                     val body = expand(step.body.orEmpty(), url, vars)
                     val headers = step.headers.mapValues { (_, value) -> expand(value, url, vars) }
+                    requestHeaders += headers
                     vars[step.saveAs ?: "body"] = runCatching {
                         fetcher.post(target, body, requestHeaders + headers)
                     }.getOrElse { return HosterOutcome.Failed(url, "post fehlgeschlagen: ${it.message}", used) }
@@ -143,7 +160,7 @@ class HosterResolver(
 
         return when {
             finalValue.isNullOrBlank() -> HosterOutcome.Failed(url, "kein Ergebnis", used)
-            else -> HosterOutcome.Resolved(finalValue, used)
+            else -> HosterOutcome.Resolved(finalValue, used, requestHeaders.toMap(), cookies)
         }
     }
 
@@ -176,6 +193,8 @@ class HosterResolver(
     }
 
     companion object {
+        const val DEFAULT_USER_AGENT = HttpClientFactory.DEFAULT_USER_AGENT
+
         fun hostOf(url: String): String? =
             Regex("""^[a-zA-Z][a-zA-Z0-9+.-]*://([^/?#]+)""").find(url)
                 ?.groupValues?.get(1)

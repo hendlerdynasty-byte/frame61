@@ -1,0 +1,166 @@
+11-20 14:58:15.457 16473 16473 I ExoPlayerImpl: Init 8888d08 [AndroidXMedia3/1.6.0] [a52q, SM-A525F, samsung, 34]
+11-20 14:58:15.604 16473 16473 D Frame61Diag: session=1 SESSION: Wiedergabe gestartet details={title=Stranger Things, episode=0}
+11-20 14:58:15.651 16473 16499 I Frame61Resolve: resolve 'Stranger Things' ep=0 active=29 disabled=[kinokiste, megakino]
+11-20 14:58:15.955 16473 19560 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=movie4k}
+11-20 14:58:15.955 16473 19560 I Frame61Resolve: movie4k: 0 candidate(s) in 274 ms (no usable stream)
+11-20 14:58:16.031 16473 19553 D Frame61Diag: session=1 HTTP: POST burningseries.ac url=https://burningseries.ac/search headers={Content-Length=28, Host=burningseries.ac, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.041 16473 19584 D Frame61Diag: session=1 HTTP: GET serienstream.to url=https://serienstream.to/api/search/suggest headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.043 16473 16504 D Frame61Diag: session=1 HTTP: POST aniworld.to url=https://aniworld.to/ajax/search headers={Content-Length=23, Host=aniworld.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.062 16473 19590 D Frame61Diag: session=1 HTTP: GET serienstream.to url=https://serienstream.to/api/search/suggest headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.066 16473 16497 D Frame61Diag: session=1 HTTP: GET anime-loads.org url=https://anime-loads.org/suche/Stranger%20Things headers={Host=anime-loads.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.085 16473 19558 D Frame61Diag: session=1 HTTP: GET www.filmstarts.de url=https://www.filmstarts.de/_/autocomplete/Stranger%20Things headers={Host=www.filmstarts.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.095 16473 19549 D Frame61Diag: session=1 HTTP: POST cine.to url=https://cine.to/request/search headers={Content-Type=application/x-www-form-urlencoded, X-Requested-With=XMLHttpRequest, Referer=https://cine.to/, Content-Length=95, Host=cine.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.104 16473 19550 D Frame61Diag: session=1 HTTP: GET filmo.to url=https://filmo.to/search/suggest?q=Stranger%20Things headers={Host=filmo.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.109 16473 16497 D Frame61Diag: session=1 HTTP: Antwort 403 url=https://anime-loads.org/suche/Stranger%20Things status=403 headers={Host=anime-loads.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=42, contentType=text/html; charset=UTF-8, contentEncoding=identity, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.109 16473 16497 D Chainlink: GET https://anime-loads.org/suche/Stranger%20Things 403 442ms h2 902B
+11-20 14:58:16.111 16473 19569 D Frame61Diag: session=1 HTTP: GET www.kika.de url=https://www.kika.de/suche/Stranger%20Things headers={Host=www.kika.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.112 16473 19551 D Frame61Diag: session=1 HTTP: GET filmfans.org url=https://filmfans.org/suche/Stranger%20Things headers={Host=filmfans.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.112 16473 19548 D Frame61Diag: session=1 HTTP: GET dokujunkies.org url=https://dokujunkies.org/suche/Stranger%20Things headers={Host=dokujunkies.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.113 16473 19557 D Frame61Diag: session=1 HTTP: GET hdfilme.to url=https://hdfilme.to/suche/Stranger%20Things headers={Host=hdfilme.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.113 16473 19554 D Frame61Diag: session=1 HTTP: GET www.arte.tv url=https://www.arte.tv/suche/Stranger%20Things headers={Host=www.arte.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.114 16473 19582 D Frame61Diag: session=1 HTTP: GET streamkiste.sx url=https://streamkiste.sx/suche/Stranger%20Things headers={Host=streamkiste.sx, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.114 16473 19579 D Frame61Diag: session=1 HTTP: GET kinox.to url=https://kinox.to/suche/Stranger%20Things headers={Host=kinox.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.114 16473 19559 D Frame61Diag: session=1 HTTP: GET www.netzkino.de url=https://www.netzkino.de/suche/Stranger%20Things headers={Host=www.netzkino.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.115 16473 19555 D Frame61Diag: session=1 HTTP: GET moflix-stream.top url=https://moflix-stream.top/search/Stranger%20Things headers={Host=moflix-stream.top, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.115 16473 16497 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=anime-loads}
+11-20 14:58:16.116 16473 16497 I Frame61Resolve: anime-loads: 0 candidate(s) in 461 ms (no usable stream)
+11-20 14:58:16.116 16473 19583 D Frame61Diag: session=1 HTTP: GET www.zdf.de url=https://www.zdf.de/suche/Stranger%20Things headers={Host=www.zdf.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.116 16473 19546 D Frame61Diag: session=1 HTTP: GET www.ard.de url=https://www.ard.de/suche/Stranger%20Things headers={Host=www.ard.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.119 16473 19580 D Frame61Diag: session=1 HTTP: GET www.plex.tv url=https://www.plex.tv/suche/Stranger%20Things headers={Host=www.plex.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.119 16473 19547 D Frame61Diag: session=1 HTTP: GET api.ardmediathek.de url=https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Stranger%20Things&page=1 headers={Accept=application/json, Host=api.ardmediathek.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.124 16473 19584 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://serienstream.to/api/search/suggest status=200 headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=89, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=36, sniffError=-, redirectFrom=-}
+11-20 14:58:16.125 16473 19584 D Chainlink: GET https://serienstream.to/api/search/suggest 200 437ms h2 streaming
+11-20 14:58:16.128 16473 19586 D Frame61Diag: session=1 HTTP: GET www.youtube.com url=https://www.youtube.com/results?q=Stranger%20Things&q=Stranger%20Things headers={Host=www.youtube.com, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.128 16473 19556 D Frame61Diag: session=1 HTTP: GET filmpalast.to url=https://filmpalast.to/search/title/Stranger%20Things headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.128 16473 19564 D Frame61Diag: session=1 HTTP: GET www.rakuten.tv url=https://www.rakuten.tv/suche/Stranger%20Things headers={Host=www.rakuten.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.128 16473 19589 D Frame61Diag: session=1 HTTP: GET streamcloud.date url=https://streamcloud.date/suche?q=Stranger%20Things headers={Host=streamcloud.date, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.129 16473 19584 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=s-to}
+11-20 14:58:16.129 16473 19584 I Frame61Resolve: s-to: 0 candidate(s) in 442 ms (no usable stream)
+11-20 14:58:16.132 16473 16496 D Frame61Diag: session=1 HTTP: GET www.3sat.de url=https://www.3sat.de/suche/Stranger%20Things headers={Host=www.3sat.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.151 16473 19590 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://serienstream.to/api/search/suggest status=200 headers={Host=serienstream.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=87, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=36, sniffError=-, redirectFrom=-}
+11-20 14:58:16.152 16473 19590 D Chainlink: GET https://serienstream.to/api/search/suggest 200 463ms h2 streaming
+11-20 14:58:16.153 16473 19590 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=serienstream}
+11-20 14:58:16.154 16473 19590 I Frame61Resolve: serienstream: 0 candidate(s) in 467 ms (no usable stream)
+11-20 14:58:16.154 16473 16504 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://aniworld.to/ajax/search status=200 headers={Content-Length=23, Host=aniworld.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=116, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=EMPTY, sniffBytes=0, sniffError=-, redirectFrom=-}
+11-20 14:58:16.155 16473 16504 D Chainlink: POST https://aniworld.to/ajax/search 200 489ms h2 streaming
+11-20 14:58:16.156 16473 16504 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=aniworld}
+11-20 14:58:16.156 16473 16504 I Frame61Resolve: aniworld: 0 candidate(s) in 503 ms (no usable stream)
+11-20 14:58:16.160 16473 19549 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://cine.to/request/search status=200 headers={Content-Type=application/x-www-form-urlencoded, X-Requested-With=XMLHttpRequest, Referer=https://cine.to/, Content-Length=95, Host=cine.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=63, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=JSON, sniffBytes=62, sniffError=-, redirectFrom=-}
+11-20 14:58:16.160 16473 19549 D Chainlink: POST https://cine.to/request/search 200 496ms h2 streaming
+11-20 14:58:16.163 16473 19549 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=cine}
+11-20 14:58:16.163 16473 19549 I Frame61Resolve: cine: 0 candidate(s) in 502 ms (no usable stream)
+11-20 14:58:16.179 16473 19551 D Frame61Diag: session=1 HTTP: Antwort 403 url=https://filmfans.org/suche/Stranger%20Things status=403 headers={Host=filmfans.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=65, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.180 16473 19551 D Chainlink: GET https://filmfans.org/suche/Stranger%20Things 403 516ms h2 streaming
+11-20 14:58:16.182 16473 19551 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmfans}
+11-20 14:58:16.182 16473 19551 I Frame61Resolve: filmfans: 0 candidate(s) in 523 ms (no usable stream)
+11-20 14:58:16.183 16473 19556 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmpalast.to/search/title/Stranger%20Things status=200 headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=50, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=UNKNOWN, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.183 16473 19556 D Chainlink: GET https://filmpalast.to/search/title/Stranger%20Things 200 516ms h2 streaming
+11-20 14:58:16.196 16473 19553 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://burningseries.ac/search status=200 headers={Content-Length=28, Host=burningseries.ac, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=104, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.196 16473 19553 D Chainlink: POST https://burningseries.ac/search 200 532ms h2 streaming
+11-20 14:58:16.205 16473 19558 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.filmstarts.de/_/autocomplete/Stranger%20Things status=200 headers={Host=www.filmstarts.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=118, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.205 16473 19558 D Chainlink: GET https://www.filmstarts.de/_/autocomplete/Stranger%20Things 200 532ms h2 streaming
+11-20 14:58:16.212 16473 19558 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmstarts}
+11-20 14:58:16.212 16473 19558 I Frame61Resolve: filmstarts: 0 candidate(s) in 540 ms (no usable stream)
+11-20 14:58:16.236 16473 19559 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.netzkino.de/suche/Stranger%20Things status=404 headers={Host=www.netzkino.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=119, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.237 16473 19559 D Chainlink: GET https://www.netzkino.de/suche/Stranger%20Things 404 554ms h2 streaming
+11-20 14:58:16.242 16473 19559 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=netzkino}
+11-20 14:58:16.242 16473 19559 I Frame61Resolve: netzkino: 0 candidate(s) in 561 ms (no usable stream)
+11-20 14:58:16.250 16473 19582 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://streamkiste.sx/suche/Stranger%20Things status=200 headers={Host=streamkiste.sx, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=134, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.251 16473 19582 D Chainlink: GET https://streamkiste.sx/suche/Stranger%20Things 200 560ms h2 streaming
+11-20 14:58:16.255 16473 19582 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=streamkiste}
+11-20 14:58:16.255 16473 19582 I Frame61Resolve: streamkiste: 0 candidate(s) in 565 ms (no usable stream)
+11-20 14:58:16.256 16473 19554 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.arte.tv/suche/Stranger%20Things status=404 headers={Host=www.arte.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=141, contentType=text/plain; charset=utf-8, contentEncoding=identity, container=UNKNOWN, sniffBytes=17, sniffError=-, redirectFrom=-}
+11-20 14:58:16.256 16473 19564 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.rakuten.tv/suche/Stranger%20Things status=200 headers={Host=www.rakuten.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=127, contentType=text/html, contentEncoding=identity, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.256 16473 19554 D Chainlink: GET https://www.arte.tv/suche/Stranger%20Things 404 591ms h2 17B
+11-20 14:58:16.256 16473 19564 D Chainlink: GET https://www.rakuten.tv/suche/Stranger%20Things 200 568ms h2 19809B
+11-20 14:58:16.257 16473 19554 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=arte}
+11-20 14:58:16.258 16473 19554 I Frame61Resolve: arte: 0 candidate(s) in 599 ms (no usable stream)
+11-20 14:58:16.263 16473 19564 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=rakuten-free}
+11-20 14:58:16.263 16473 19564 I Frame61Resolve: rakuten-free: 0 candidate(s) in 577 ms (no usable stream)
+11-20 14:58:16.265 16473 19548 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://dokujunkies.org/suche/Stranger%20Things status=404 headers={Host=dokujunkies.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=150, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.266 16473 19548 D Chainlink: GET https://dokujunkies.org/suche/Stranger%20Things 404 601ms h2 streaming
+11-20 14:58:16.268 16473 19548 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=dokujunkies}
+11-20 14:58:16.268 16473 19548 I Frame61Resolve: dokujunkies: 0 candidate(s) in 608 ms (no usable stream)
+11-20 14:58:16.273 16473 19569 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.kika.de/suche/Stranger%20Things status=404 headers={Host=www.kika.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=160, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.275 16473 19569 D Chainlink: GET https://www.kika.de/suche/Stranger%20Things 404 599ms h2 streaming
+11-20 14:58:16.278 16473 19569 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=kika}
+11-20 14:58:16.278 16473 19569 I Frame61Resolve: kika: 0 candidate(s) in 604 ms (no usable stream)
+11-20 14:58:16.295 16473 16498 D Frame61Diag: session=1 HTTP: GET archive.org url=https://archive.org/advancedsearch.php?q=Stranger%20Things headers={Accept=application/json, Host=archive.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.309 16473 19586 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.youtube.com/results?q=Stranger%20Things&q=Stranger%20Things status=200 headers={Host=www.youtube.com, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=141, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.310 16473 19586 D Chainlink: GET https://www.youtube.com/results?q=Stranger%20Things&q=Stranger%20Things 200 615ms h2 streaming
+11-20 14:58:16.311 16473 19552 D Frame61Diag: session=1 HTTP: GET www.pluto.tv url=https://www.pluto.tv/suche/Stranger%20Things headers={Host=www.pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.313 16473 19546 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.ard.de/suche/Stranger%20Things status=404 headers={Host=www.ard.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=181, contentType=text/html;charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.314 16473 19546 D Chainlink: GET https://www.ard.de/suche/Stranger%20Things 404 649ms h2 streaming
+11-20 14:58:16.317 16473 19546 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=ard}
+11-20 14:58:16.318 16473 19546 I Frame61Resolve: ard: 0 candidate(s) in 662 ms (no usable stream)
+11-20 14:58:16.335 16473 19583 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.zdf.de/suche/Stranger%20Things status=404 headers={Host=www.zdf.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=204, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.336 16473 19583 D Chainlink: GET https://www.zdf.de/suche/Stranger%20Things 404 645ms h2 streaming
+11-20 14:58:16.343 16473 19583 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=zdf}
+11-20 14:58:16.343 16473 19583 I Frame61Resolve: zdf: 0 candidate(s) in 653 ms (no usable stream)
+11-20 14:58:16.346 16473 19557 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://hdfilme.to/suche/Stranger%20Things status=404 headers={Host=hdfilme.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=230, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.346 16473 19557 D Chainlink: GET https://hdfilme.to/suche/Stranger%20Things 404 674ms h2 streaming
+11-20 14:58:16.348 16473 19557 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=hdfilme}
+11-20 14:58:16.349 16473 19557 I Frame61Resolve: hdfilme: 0 candidate(s) in 677 ms (no usable stream)
+11-20 14:58:16.362 16473 19556 D Frame61Diag: session=1 HTTP: GET filmpalast.to url=https://filmpalast.to/stream/stranger-things-s05e08 headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.366 16473 19579 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://kinox.to/suche/Stranger%20Things status=404 headers={Host=kinox.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=250, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=146, sniffError=-, redirectFrom=-}
+11-20 14:58:16.367 16473 19579 D Chainlink: GET https://kinox.to/suche/Stranger%20Things 404 691ms h2 streaming
+11-20 14:58:16.369 16473 19579 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=kinox}
+11-20 14:58:16.369 16473 19579 I Frame61Resolve: kinox: 0 candidate(s) in 694 ms (no usable stream)
+11-20 14:58:16.400 16473 19556 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmpalast.to/stream/stranger-things-s05e08 status=200 headers={Host=filmpalast.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=35, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=UNKNOWN, sniffBytes=49, sniffError=-, redirectFrom=-}
+11-20 14:58:16.400 16473 19555 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://moflix-stream.top/search/Stranger%20Things status=200 headers={Host=moflix-stream.top, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=235, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.400 16473 19556 D Chainlink: GET https://filmpalast.to/stream/stranger-things-s05e08 200 115ms h2 streaming
+11-20 14:58:16.400 16473 19555 D Chainlink: GET https://moflix-stream.top/search/Stranger%20Things 200 724ms h2 streaming
+11-20 14:58:16.403 16473 19556 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmpalast}
+11-20 14:58:16.403 16473 19556 I Frame61Resolve: filmpalast: 0 candidate(s) in 737 ms (no usable stream)
+11-20 14:58:16.426 16473 19555 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=moflix}
+11-20 14:58:16.426 16473 19555 I Frame61Resolve: moflix: 0 candidate(s) in 751 ms (no usable stream)
+11-20 14:58:16.448 16473 19589 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://streamcloud.date/suche?q=Stranger%20Things status=200 headers={Host=streamcloud.date, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=119, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.448 16473 19589 D Chainlink: GET https://streamcloud.date/suche?q=Stranger%20Things 200 757ms h2 streaming
+11-20 14:58:16.500 16473 19552 D Frame61Diag: session=1 HTTP: Antwort 301 url=https://www.pluto.tv/suche/Stranger%20Things status=301 headers={Host=www.pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=186, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=155, sniffError=-, redirectFrom=-}
+11-20 14:58:16.507 16473 19547 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Stranger%20Things&page=1 status=200 headers={Accept=application/json, Host=api.ardmediathek.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=386, contentType=application/json;charset=UTF-8, contentEncoding=gzip, container=JSON, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.508 16473 19547 D Chainlink: GET https://api.ardmediathek.de/page-gateway/pages/ard/search?searchString=Stranger%20Things&page=1 200 809ms h2 streaming
+11-20 14:58:16.512 16473 19589 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=streamcloud}
+11-20 14:58:16.512 16473 19589 I Frame61Resolve: streamcloud: 0 candidate(s) in 823 ms (no usable stream)
+11-20 14:58:16.530 16473 19547 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=ard-mediathek}
+11-20 14:58:16.531 16473 19547 I Frame61Resolve: ard-mediathek: 0 candidate(s) in 875 ms (no usable stream)
+11-20 14:58:16.566 16473 19550 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://filmo.to/search/suggest?q=Stranger%20Things status=200 headers={Host=filmo.to, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=460, contentType=application/json, contentEncoding=gzip, container=JSON, sniffBytes=13, sniffError=-, redirectFrom=-}
+11-20 14:58:16.567 16473 19550 D Chainlink: GET https://filmo.to/search/suggest?q=Stranger%20Things 200 897ms h2 streaming
+11-20 14:58:16.568 16473 19550 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=filmo}
+11-20 14:58:16.568 16473 19550 I Frame61Resolve: filmo: 0 candidate(s) in 900 ms (no usable stream)
+11-20 14:58:16.609 16473 16496 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://www.3sat.de/suche/Stranger%20Things status=200 headers={Host=www.3sat.de, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=466, contentType=text/html;charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.611 16473 16496 D Chainlink: GET https://www.3sat.de/suche/Stranger%20Things 200 946ms h2 streaming
+11-20 14:58:16.623 16473 19580 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://www.plex.tv/suche/Stranger%20Things status=404 headers={Host=www.plex.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=502, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.624 16473 19580 D Chainlink: GET https://www.plex.tv/suche/Stranger%20Things 404 940ms h2 streaming
+11-20 14:58:16.628 16473 19580 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=plex-free}
+11-20 14:58:16.628 16473 19580 I Frame61Resolve: plex-free: 0 candidate(s) in 946 ms (no usable stream)
+11-20 14:58:16.637 16473 19552 D Frame61Diag: session=1 HTTP: GET pluto.tv url=https://pluto.tv/suche/Stranger%20Things headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:16.644 16473 16496 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=3sat}
+11-20 14:58:16.644 16473 16496 I Frame61Resolve: 3sat: 0 candidate(s) in 990 ms (no usable stream)
+11-20 14:58:16.757 16473 19586 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=youtube}
+11-20 14:58:16.757 16473 19586 I Frame61Resolve: youtube: 0 candidate(s) in 1066 ms (no usable stream)
+11-20 14:58:16.867 16473 16498 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://archive.org/advancedsearch.php?q=Stranger%20Things status=200 headers={Accept=application/json, Host=archive.org, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=385, contentType=text/html; charset=UTF-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:16.868 16473 16498 D Chainlink: GET https://archive.org/advancedsearch.php?q=Stranger%20Things 200 1203ms http/1.1 streaming
+11-20 14:58:16.877 16473 16498 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=archive-org}
+11-20 14:58:16.877 16473 16498 I Frame61Resolve: archive-org: 0 candidate(s) in 1222 ms (no usable stream)
+11-20 14:58:17.052 16473 19552 D Frame61Diag: session=1 HTTP: Antwort 301 url=https://pluto.tv/suche/Stranger%20Things status=301 headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=412, contentType=text/html, contentEncoding=gzip, container=HTML, sniffBytes=166, sniffError=-, redirectFrom=-}
+11-20 14:58:17.059 16473 19552 D Frame61Diag: session=1 HTTP: GET pluto.tv url=https://pluto.tv/suche/Stranger%20Things/ headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:17.715 16473 19552 D Frame61Diag: session=1 HTTP: Antwort 404 url=https://pluto.tv/suche/Stranger%20Things/ status=404 headers={Host=pluto.tv, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} details={elapsedMs=653, contentType=text/html; charset=utf-8, contentEncoding=gzip, container=HTML, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:17.716 16473 19552 D Chainlink: GET https://www.pluto.tv/suche/Stranger%20Things 404 2033ms h2 streaming
+11-20 14:58:17.719 16473 19552 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=pluto-tv}
+11-20 14:58:17.719 16473 19552 I Frame61Resolve: pluto-tv: 0 candidate(s) in 2037 ms (no usable stream)
+11-20 14:58:18.979 16473 19553 D Frame61Diag: session=1 RESOLVER: 0 Kandidaten details={sourceId=bs-to}
+11-20 14:58:18.979 16473 19553 I Frame61Resolve: bs-to: 0 candidate(s) in 3321 ms (no usable stream)
+11-20 14:58:18.979 16473 19553 W Frame61Resolve: all sources exhausted for 'Stranger Things' ep=0
+11-20 14:58:19.033 16473 16473 D Frame61Diag: session=1 RESOLVER: Öffne Kandidat 1/1 url=https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 details={sourceId=demo, hosterId=-, quality=1080p, resumeMs=634593}
+11-20 14:58:19.034 16473 16473 D Frame61Diag: session=1 PLAYER: Media3 öffnet Kandidaten url=https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 details={mimeType=application/x-mpegURL, startAtMs=634593, engine=ExoPlayer/Media3 + OkHttpDataSource}
+11-20 14:58:19.044 16473 16473 D Frame61Diag: session=1 PLAYER: Media3-Zustand 2 details={state=BUFFERING}
+11-20 14:58:19.229 16473 19771 D Frame61Diag: session=1 HTTP: GET test-streams.mux.dev url=https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 headers={Host=test-streams.mux.dev, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:19.250 16473 19771 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 status=200 headers={Host=test-streams.mux.dev, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} preview='#EXTM3U [weitere Textbytes redigiert]' details={elapsedMs=20, contentType=audio/mpegurl, contentEncoding=identity, container=HLS, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:19.251 16473 19771 D Chainlink: GET https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8 200 179ms h2 752B
+11-20 14:58:19.261 16473 19771 D Frame61Diag: session=1 HTTP: GET test-streams.mux.dev url=https://test-streams.mux.dev/x36xhzz/url_0/193039199_mp4_h264_aac_hd_7.m3u8 headers={Host=test-streams.mux.dev, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0}
+11-20 14:58:19.275 16473 19771 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://test-streams.mux.dev/x36xhzz/url_0/193039199_mp4_h264_aac_hd_7.m3u8 status=200 headers={Host=test-streams.mux.dev, Connection=Keep-Alive, Accept-Encoding=gzip, User-Agent=okhttp/4.12.0} preview='#EXTM3U [weitere Textbytes redigiert]' details={elapsedMs=12, contentType=audio/mpegurl, contentEncoding=identity, container=HLS, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:19.275 16473 19771 D Chainlink: GET https://test-streams.mux.dev/x36xhzz/url_0/193039199_mp4_h264_aac_hd_7.m3u8 200 14ms h2 3606B
+11-20 14:58:19.377 16473 19771 D Frame61Diag: session=1 HTTP: GET test-streams.mux.dev url=https://test-streams.mux.dev/x36xhzz/url_0/url_525/193039199_mp4_h264_aac_hd_7.ts headers={Accept-Encoding=identity, Host=test-streams.mux.dev, Connection=Keep-Alive, User-Agent=okhttp/4.12.0}
+11-20 14:58:19.378 16473 16473 D Frame61Diag: session=1 PLAYER: Spuren aktualisiert details={video=1, audio=1, text=0}
+11-20 14:58:19.402 16473 19771 D Frame61Diag: session=1 HTTP: Antwort 200 url=https://test-streams.mux.dev/x36xhzz/url_0/url_525/193039199_mp4_h264_aac_hd_7.ts status=200 headers={Accept-Encoding=identity, Host=test-streams.mux.dev, Connection=Keep-Alive, User-Agent=okhttp/4.12.0} firstBytes=474011100042F02A0001C100000001FF0001FC80194817010A6C756D6265726A details={elapsedMs=20, contentType=application/octet-stream, contentEncoding=identity, container=MPEG-TS, sniffBytes=377, sniffError=-, redirectFrom=-}
+11-20 14:58:19.402 16473 19771 D Chainlink: GET https://test-streams.mux.dev/x36xhzz/url_0/url_525/193039199_mp4_h264_aac_hd_7.ts 200 25ms h2 631868B

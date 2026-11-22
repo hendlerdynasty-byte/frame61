@@ -1,6 +1,7 @@
 package de.hendler.frame61.ui.player
 
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.net.HttpClientFactory
 import de.hendler.frame61.resolver.MirrorCandidate
 import java.security.MessageDigest
 
@@ -46,7 +47,8 @@ object CatalogPlayback {
             quality = "1080p",
             hosterId = null,
             healthScore = 1.0,
-            legalFree = true
+            legalFree = true,
+            requestHeaders = mapOf("User-Agent" to HttpClientFactory.DEFAULT_USER_AGENT)
         )
     )
 

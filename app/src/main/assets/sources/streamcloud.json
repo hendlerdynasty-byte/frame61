@@ -23,8 +23,14 @@
     "resultSelector": "body",
     "titleSelector": ".sc-h1"
   },
+  "streams": {
+    "endpoint": "/filme/{titleId}",
+    "format": "html",
+    "selector": "iframe",
+    "urlAttr": "src"
+  },
   "verified": true,
-  "last_check": "2026-11-19T13:25:35Z",
+  "last_check": "2026-11-22T01:29:57Z",
   "check": {
     "status": "verified",
     "reason": "",
@@ -33,7 +39,9 @@
       "search.titleSelector",
       "search.yearSelector",
       "detail.resultSelector",
-      "detail.titleSelector"
+      "detail.titleSelector",
+      "streams.selector",
+      "streams.urlAttr"
     ],
     "misses": [],
     "http_status": 200

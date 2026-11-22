@@ -13,7 +13,14 @@ data class MirrorCandidate(
     val quality: String = "unknown",
     val hosterId: String? = null,
     val healthScore: Double = 0.0,
-    val legalFree: Boolean = false
+    val legalFree: Boolean = false,
+    /** Propagated to every media request, including playlists, keys and segments. */
+    val requestHeaders: Map<String, String> = emptyMap(),
+    val cookies: String? = null,
+    val mimeType: String? = null,
+    val bitrate: Int? = null,
+    val width: Int? = null,
+    val height: Int? = null
 )
 
 /**
@@ -27,6 +34,8 @@ object MirrorSelector {
             compareByDescending<MirrorCandidate> { it.healthScore }
                 .thenBy { if (it.lang.equals(preferredLang, ignoreCase = true)) 0 else 1 }
                 .thenByDescending { qualityRank(it.quality) }
+                .thenByDescending { it.height ?: 0 }
+                .thenByDescending { it.bitrate ?: 0 }
                 .thenByDescending { if (it.legalFree) 1 else 0 }
         )
 

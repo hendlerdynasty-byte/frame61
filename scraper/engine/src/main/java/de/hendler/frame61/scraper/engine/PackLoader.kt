@@ -101,7 +101,11 @@ data class PackRule(
     val streamQualityPath: String? = null,
     val streamLangPath: String? = null,
     val streamNamePath: String? = null,
-    val streamUrlTemplate: String? = null
+    val streamUrlTemplate: String? = null,
+    /** Optional playback id nested in a search hit (e.g. primary_video.id). */
+    val playbackIdPath: String? = null,
+    /** Extract the complete embedded `loaders` object with balanced JSON braces. */
+    val jsonEmbedded: Boolean = false
 )
 
 @Serializable

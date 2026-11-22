@@ -1,0 +1,28 @@
+{
+  "id": "jwplayer",
+  "name": "JWPlayer Embed",
+  "version": 1,
+  "verified": false,
+  "domains": [
+    "dr0pstream.com",
+    "moflix-stream.click",
+    "gupload.site",
+    "vidara.to",
+    "moflix-stream.link",
+    "veev.to",
+    "moflix.upns.xyz"
+  ],
+  "result": "stream",
+  "steps": [
+    {
+      "action": "js",
+      "script": "(function(){try{var s=window.sources;if(s&&s[0]&&s[0].file)return s[0].file;var v=document.querySelector('video source,video');if(v&&v.src)return v.src;if(window.jwplayer){var p=window.jwplayer().getPlaylistItem();if(p&&p.file)return p.file;}var e=performance.getEntriesByType('resource');for(var i=e.length-1;i>=0;i--){if(/\\.(m3u8|mp4)(\\?|$)/.test(e[i].name))return e[i].name;}}catch(x){}return '';})()",
+      "saveAs": "stream"
+    }
+  ],
+  "last_check": "2026-11-22T01:31:09Z",
+  "check": {
+    "status": "no_target",
+    "reason": "kein Ziel in hoster_targets.json"
+  }
+}

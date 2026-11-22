@@ -1,11 +1,19 @@
 # Indexseiten — Stand und Nachweise
 
-Stand: 18.11.2026. Ziel waren 14 Indexseiten mit echter Suche, getrimmter
+Stand: 22.11.2026. Ziel waren 14 Indexseiten mit echter Suche, getrimmter
 Aufzeichnung (`responseSha256`) und `verified`. Erreicht sind **10 von 14**:
 aniworld, bs-to, cine, filmpalast, filmstarts, filmo, moflix, s.to,
 serienstream und streamcloud. Vier Seiten sind nach jeweils mindestens drei
 Domain-/Pfadversuchen als `blocked_external` mit Beleg versehen: kinox,
 kinokiste, megakino und movie2k.
+
+Zusaetzlich wurde am 22.11.2026 die **Geraete-Ebene** gemessen: die
+`SourceCoverageActivity` (nur `ci`/`acceptance`) ruft dieselbe Regel auf dem
+Samsung A52 auf und meldet je Seite den HTTP-Status, die Trefferzahl und den
+ersten Treffer. Ergebnis: **9 von 14 Indexseiten auf dem Geraet erreichbar**,
+5 mit dokumentierter Ursache blockiert — siehe
+[„Geraete-Abdeckung"](#geraete-abdeckung-22112026) und
+`docs/design/phase-b/coverage-a52-run4-60512d4.txt`.
 
 ## Methode
 
@@ -89,12 +97,62 @@ Vollantwort-Hashes liegen dort als `fullResponseSha256`.
   `data-p`-Token, keinen Stream-Link im HTML.
 - `filmstarts` ist eine Metadaten-Suche ohne Streams (kein Hoster).
 
-## Gate-Nachweis (18.11.2026)
+## Geraete-Abdeckung (22.11.2026)
 
-Aktuell: `frame61-f843b2abc544-1795022941`, Exit 0, **104/104 Tests**,
-Debug-APK `68ffe83bed006247426e40b739be48c6f76a3262d8ebbef2cbfdf41db2691627`
-(31,6 MiB). Damit sind 10 von 14 Packs live verifiziert; vier Reste haben
-Domain-/Pfadbelege im Pack und in diesem Dokument.
+Quellstand `60512d4`, APK `308bdf4a…` (signierte acceptance-Variante),
+Geraet Samsung A52, Job `job-654784df242d4d93` PASS. Die Activity fährt je
+Pack die Produktionskette `search → streams → Hoster → Player`; die Zeilen
+stehen unveraendert in `docs/design/phase-b/coverage-a52-run4-60512d4.txt`.
+
+| Seite | Geraet | Befund |
+|---|---|---|
+| bs-to | **VERIFIED_INDEX** | HTTP 200, 10.733 Treffer, erster „Boruto \| Naruto Next Generations“ |
+| filmpalast | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Inception“; Streamziel `vidsonic.net/e/8zwnbxa44ivc` → 3003 (kein Mediencontainer) |
+| filmstarts | **VERIFIED_INDEX** | HTTP 200, 3 Treffer „Inception“; Metadaten-Suche ohne Streamregel |
+| moflix | **VERIFIED_INDEX + VERIFIED_PLAYBACK** | HTTP 200, 5 Treffer; Stream lief auf dem Geraet (Media3, `playing=true`, HLS/MPEG-TS) |
+| s-to | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Black Doves“ — der `term`-Parameter kommt jetzt an (Fix `efedf6b`) |
+| serienstream | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Black Doves“ |
+| streamcloud | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Inception“; Streamziel `devideosrc.co/movie/tt1375666` → 3003 |
+| filmo | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Inception“; keine Streamregel im Pack |
+| cine | **VERIFIED_INDEX** | HTTP 200, 1 Treffer „Inception“; keine Streamregel im Pack |
+| aniworld | BLOCKED | HTTP 200, **0 Bytes**, `Content-Type: text/html`, `Content-Encoding: gzip`, Container `EMPTY` — derselbe Request vom Mac liefert 19.350 B JSON; netzwerk-/Edge-spezifisch |
+| kinokiste | BLOCKED | HTTP 401 (`https://kinokiste.cloud/suche/inception`) |
+| kinox | BLOCKED | HTTP 404 (`https://kinox.to/suche/inception`) |
+| megakino | BLOCKED | HTTP 200 mit 2.927 B Platzhalterseite (`data-adblockkey=…`), 0 Treffer |
+| movie2k | BLOCKED | kein Pack im Bundle — `.to`/`.ch` Platzhalter, kein Server |
+
+**9/14 Indexseiten auf dem Geraet erreichbar.** Fuenf Seiten sind blockiert und
+mit HTTP-Status, Antwortgroesse und Grund belegt.
+
+### Produktionsbefund aus dem Geraete-Lauf
+
+- `PackInterpreter.search` reichte die Suchanfrage nur als `query`/`q`/`page`
+  an den HTTP-Client. Ein Pack mit `queryParam: "term"` (s.to,
+  SerienStream) wurde dadurch **ohne** Suchbegriff abgerufen und lieferte 0
+  Treffer. Die Query geht jetzt auch unter dem Namen der Regel raus; der
+  Mac-Vergleich bestaetigt: vorher `GET /api/search/suggest` (ohne `term`),
+  nachher `?term=black%20doves` mit dem Treffer „Black Doves“.
+- Fuenf der zehn verifizierten Packs haben **keine Streamregel** (bs-to,
+  filmstarts, s-to, serienstream, filmo) und liefern im Produktionspfad
+  deshalb bewusst keine Kandidaten. Das ist kein Geraetefehler, sondern der
+  dokumentierte Umfang dieser Packs.
+- Die Playerposition wird ereignisgesteuert aktualisiert; die App liest sie
+  ueber einen Ticker (`PlayerViewModel.startTicker`). Die Diagnose-Activity
+  hatte keinen Ticker und meldete deshalb Position 0 fuer einen Player, der
+  bereit war und lief. Die Activity liest jetzt denselben Zustand wie die
+  App (`engine.publish()`, Fix `60512d4`).
+
+## Gate-Nachweis (22.11.2026)
+
+Aktuell: Actions-Lauf `44981062911` (Quellstand `627ef8b`), Exit 0,
+**121/121 Tests**, 0 Failures, 0 Errors, Lint **0 Errors** (106 Warnings),
+Debug-APK 36,7 MiB (Grenze 45 MiB). Damit sind 10 von 14 Packs live
+verifiziert; vier Reste haben Domain-/Pfadbelege im Pack und in diesem
+Dokument.
+
+Aelterer Beleg (18.11.2026): `frame61-f843b2abc544-1795022941`, Exit 0,
+**104/104 Tests**, Debug-APK `68ffe83bed006247426e40b739be48c6f76a3262d8ebbef2cbfdf41db2691627`
+(31,6 MiB).
 
 Aelterer Beleg:
 

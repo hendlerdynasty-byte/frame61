@@ -109,7 +109,11 @@ class ArdPlaybackResolver @Inject constructor(
             quality = stream.quality ?: "auto",
             hosterId = directPack?.id,
             healthScore = 1.0,
-            legalFree = true
+            legalFree = true,
+            requestHeaders = mapOf(
+                "User-Agent" to HosterResolver.DEFAULT_USER_AGENT,
+                "Referer" to stream.url
+            )
         )
     }
 

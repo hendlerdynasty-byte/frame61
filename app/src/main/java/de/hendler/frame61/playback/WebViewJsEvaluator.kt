@@ -2,6 +2,8 @@ package de.hendler.frame61.playback
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
 import android.webkit.CookieManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -14,16 +16,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
+import org.json.JSONObject
 import org.json.JSONTokener
 
-/**
- * Runs a pack's `js` step in a short-lived WebView.
- *
- * The WebView shares the app cookie jar with the visible captcha frame, so a
- * page whose Cloudflare/JS challenge was solved there can be evaluated again
- * here. No JavaScript bridge is installed: the script only returns a string.
- * Every WebView is destroyed after the result or the 8 s timeout.
- */
+/** Evaluates a pack script until a real HTTPS media URL appears or time runs out. */
 @Singleton
 class WebViewJsEvaluator @Inject constructor(
     @ApplicationContext private val context: Context
@@ -34,31 +30,62 @@ class WebViewJsEvaluator @Inject constructor(
         withContext(Dispatchers.Main) {
             withTimeoutOrNull(timeoutMs) {
                 suspendCancellableCoroutine { continuation ->
-                    val webView = WebView(context).apply {
+                    val handler = Handler(Looper.getMainLooper())
+                    var completed = false
+                    lateinit var webView: WebView
+                    fun finish(value: String?) {
+                        if (completed) return
+                        completed = true
+                        runCatching { webView.destroy() }
+                        continuation.resume(value)
+                    }
+                    fun probe() {
+                        if (completed) return
+                        webView.evaluateJavascript(script) { raw ->
+                            val value = unquote(raw)
+                            if (hasPlaybackResult(value)) {
+                                finish(value)
+                            } else if (!completed) {
+                                handler.postDelayed({ probe() }, POLL_MS)
+                            }
+                        }
+                    }
+                    webView = WebView(context).apply {
                         settings.javaScriptEnabled = true
                         settings.domStorageEnabled = true
                         CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
                         webViewClient = object : WebViewClient() {
                             override fun onPageFinished(view: WebView?, finishedUrl: String?) {
-                                view?.evaluateJavascript(script) { raw ->
-                                    val value = unquote(raw)
-                                    view.destroy()
-                                    continuation.resume(value)
-                                }
+                                probe()
                             }
                         }
                     }
                     continuation.invokeOnCancellation {
-                        runCatching { webView.destroy() }
+                        if (!completed) {
+                            completed = true
+                            runCatching { webView.destroy() }
+                        }
                     }
                     webView.loadUrl(url)
                 }
             }
         }
 
+    private fun hasPlaybackResult(value: String?): Boolean {
+        if (value.isNullOrBlank()) return false
+        if (value.startsWith("https://")) return true
+        return runCatching {
+            JSONObject(value).optString("stream").startsWith("https://")
+        }.getOrDefault(false)
+    }
+
     private fun unquote(raw: String?): String? {
         if (raw.isNullOrBlank() || raw == "null") return null
         return runCatching { (JSONTokener(raw).nextValue() as? String)?.takeIf { it.isNotBlank() } }
             .getOrNull()
+    }
+
+    private companion object {
+        const val POLL_MS = 500L
     }
 }

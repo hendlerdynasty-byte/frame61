@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -85,6 +86,15 @@ fun Frame61(
     val windowSizeClass = activity?.let {
         runCatching { calculateWindowSizeClass(it) }.getOrNull()
     }
+    // TV gets a fixed side rail; phones keep the bottom bar. Leanback OR the TV
+    // UI mode covers both real TV devices and the Android TV emulator.
+    val isTv = remember(activity) {
+        activity?.let { ctx ->
+            val uiMode = ctx.getSystemService(android.app.UiModeManager::class.java)
+            uiMode?.currentModeType == android.content.res.Configuration.UI_MODE_TYPE_TELEVISION ||
+                ctx.packageManager.hasSystemFeature(android.content.pm.PackageManager.FEATURE_LEANBACK)
+        } == true
+    }
 
     CompositionLocalProvider(
         LocalWindowSizeClass provides windowSizeClass,
@@ -101,10 +111,10 @@ fun Frame61(
                         navController = navController,
                         startDestination = "home",
                         modifier = Modifier.padding(
-                            start = safeH,
+                            start = (if (isTv) 96.dp else 0.dp) + safeH,
                             end = safeH,
                             top = safeV,
-                            bottom = 64.dp + safeV
+                            bottom = (if (isTv) 0.dp else 64.dp) + safeV
                         )
                     ) {
                     composable("home") { HomeScreen(navController) }
@@ -173,22 +183,33 @@ fun Frame61(
                 val currentRoute = backStack?.destination?.route ?: "home"
                 // The player is full-screen: no permanent navigation HUD.
                 if (!currentRoute.startsWith("player")) {
-                    NavBar(
-                        currentRoute = currentRoute,
-                        onNavigate = { route ->
-                            if (route == "home") {
-                                // "Start" used to be a no-op: the old code skipped
-                                // the navigation for the home route, so the tab did
-                                // nothing from any other screen (measured on A52).
-                                navController.popBackStack("home", inclusive = false)
-                            } else {
-                                navController.navigate(route) { popUpTo("home") }
-                            }
-                        },
-                        modifier = Modifier
-                            .align(androidx.compose.ui.Alignment.BottomCenter)
-                            .padding(start = safeH, end = safeH, bottom = safeV)
-                    )
+                    val navigate: (String) -> Unit = { route ->
+                        if (route == "home") {
+                            // "Start" used to be a no-op: the old code skipped
+                            // the navigation for the home route, so the tab did
+                            // nothing from any other screen (measured on A52).
+                            navController.popBackStack("home", inclusive = false)
+                        } else {
+                            navController.navigate(route) { popUpTo("home") }
+                        }
+                    }
+                    if (isTv) {
+                        TvSideNav(
+                            currentRoute = currentRoute,
+                            onNavigate = navigate,
+                            modifier = Modifier
+                                .align(androidx.compose.ui.Alignment.CenterStart)
+                                .padding(start = safeH, top = safeV, bottom = safeV)
+                        )
+                    } else {
+                        NavBar(
+                            currentRoute = currentRoute,
+                            onNavigate = navigate,
+                            modifier = Modifier
+                                .align(androidx.compose.ui.Alignment.BottomCenter)
+                                .padding(start = safeH, end = safeH, bottom = safeV)
+                        )
+                    }
                 }
                 }
             }
