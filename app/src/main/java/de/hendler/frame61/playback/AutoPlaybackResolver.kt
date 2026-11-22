@@ -21,6 +21,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.first
@@ -58,6 +60,13 @@ class AutoPlaybackResolver @Inject constructor(
     )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
+
+    /**
+     * Scope für die parallelen Quellen-Calls. Er gehört nicht zum Aufrufer:
+     * nach der kurzen Frist darf der Player starten, während die langsamen
+     * Quellen im Hintergrund noch bis zu ihrem Timeout laufen.
+     */
+    private val resolveScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
 
     private val hosterPacks: List<HosterPack> by lazy {
         val assets = context.assets
@@ -202,12 +211,20 @@ class AutoPlaybackResolver @Inject constructor(
         episodeNumber: Int,
         sessionId: Long,
         graceMs: Long
-    ): List<MirrorCandidate> = coroutineScope {
-        if (packs.isEmpty()) return@coroutineScope emptyList()
+    ): List<MirrorCandidate> {
+        if (packs.isEmpty()) return emptyList()
+        // Eigener Scope statt coroutineScope: die Quellen laufen nach dem Abbruch
+        // im Hintergrund weiter (blockierende OkHttp-Calls lassen sich nicht
+        // abbrechen), der Player wartet aber nicht auf sie.
         val channel = Channel<List<MirrorCandidate>>(packs.size)
         packs.forEach { pack ->
-            launch {
-                channel.send(resolveWithTimeout(pack, title, episodeNumber, sessionId))
+            resolveScope.launch {
+                val result = resolveWithTimeout(pack, title, episodeNumber, sessionId)
+                // trySend statt send: die Kapazitaet entspricht der Zahl der
+                // Packs, also geht kein Ergebnis verloren. Ein suspendierendes
+                // send wuerde beim Abbruch eine ClosedSendChannelException in
+                // einem Kind-Coroutine werfen — die die App beendet.
+                channel.trySend(result)
             }
         }
         val collected = mutableListOf<MirrorCandidate>()
@@ -232,11 +249,10 @@ class AutoPlaybackResolver @Inject constructor(
             collected += batch
             if (firstAt == 0L) firstAt = System.currentTimeMillis()
         }
-        channel.close()
         if (firstAt != 0L && graceMs > 0L) {
             Log.i(TAG, "erste Kandidaten nach ${firstAt - start} ms, ${collected.size} gesammelt")
         }
-        collected
+        return collected
     }
 
     private suspend fun resolvePack(
