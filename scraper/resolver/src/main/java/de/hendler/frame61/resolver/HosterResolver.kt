@@ -136,9 +136,10 @@ class HosterResolver(
         // Ohne diese Stufe blieb die HTML-Seite als Kandidat stehen — der
         // Player meldete 3003. Gemessen 23.11.2026 auf dem A52: devideosrc.co
         // war der häufigste Zielhost der CONTAINER_UNSUPPORTED-Fehlschläge.
-        if (devideosrc != null && DeVideoSrcResolver.matches(url)) {
+        val devideosrcResolver = devideosrc
+        if (devideosrcResolver != null && DeVideoSrcResolver.matches(url)) {
             val providers = runCatching {
-                devideosrc.expand(url, episodeNumber)
+                devideosrcResolver.expand(url, episodeNumber)
             }.getOrDefault(emptyList())
             if (providers.isNotEmpty()) {
                 for (provider in providers) {
