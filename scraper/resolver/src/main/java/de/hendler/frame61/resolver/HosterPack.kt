@@ -84,7 +84,7 @@ data class InterceptedMedia(
  * [script] läuft nach dem Laden der Seite (z. B. der bs.to-Klick, der die
  * Hoster-Aufdeckung erst auslöst).
  */
-fun interface MediaInterceptor {
+interface MediaInterceptor {
     suspend fun intercept(url: String, timeoutMs: Long, script: String? = null): InterceptedMedia?
 }
 

@@ -414,3 +414,88 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Captchas“ erreichbar, ohne eine Quelle fallenzulassen.
 - `HosterResolver` erhält dafür den optionalen `CaptchaSolver`; ohne Solver
   bleibt das bisherige Verhalten (`CaptchaRequired`) erhalten.
+
+## 2026-11-23 — Katalog wird nach Zielverteilung neu geerntet (35/20/20/15/10)
+
+- Befund: Der bis 22.11. geerntete Katalog bestand aus ARD 500 + bs.to 300 +
+  streamcloud 197. ARD stellte damit **50 %** des Katalogs und ist die Quelle
+  mit dem leichtesten Pfad (legal-frei, `direct`-Hoster, kein Captcha). Eine
+  Quote auf dieser Basis misst nicht das Produkt, sondern den Sockel.
+- Default (Ownerauftrag 23.11.2026): Der Katalog wird aus den A–Z-/Genre-/
+  Neuerscheinungs-Listen **der Quellen selbst** geerntet, in der Verteilung
+  35 % Serien von s.to/serienstream, 20 % Filme von filmpalast/moflix,
+  20 % Anime von aniworld, 15 % ARD/ZDF als verlässlicher Sockel, 10 % bs.to.
+  Jeder Eintrag trägt `group` (Quellengruppe) und `sourceKey` (Adressierung
+  innerhalb der Quelle).
+- Umsetzung: `tools/fetch/catalog_harvest.py` — serienstream A–Z-Liste plus
+  Detailseite (Bild), aniworld-Übersicht plus Detailseite (Cover), bs.to
+  Sitemap plus Serienseite (Cover), filmpalast A–Z-Liste (Titel, Slug und
+  Cover im selben Eintrag), moflix-Such-API (Typ, Jahr, TMDB-Poster),
+  ARD-Such-API. 997 Titel, 0 ohne Poster, Validator: 0 Fehler/0 Warnungen.
+- Abweichungen und Begründung:
+  1. **Filme 20 % = filmpalast 10 % + moflix 10 %.** filmpalast liefert die
+     Einträge vollständig aus der A–Z-Liste (kein Detailabruf, Cover im
+     Eintrag); moflix liefert Typ, Jahr und Poster direkt aus der API. Beide
+     zusammen füllen die 20 %, und die Gruppe „Filme“ hat zwei unabhängige
+     Pfade — fällt einer aus, trägt der andere.
+  2. **15 % ARD statt ARD/ZDF.** ZDF hat im Pack-Verbund nur eine
+     HTML-Suche ohne keyless Listing-API; ein zweiter Sockel hätte einen
+     zusätzlichen Pfad mit unklarem Ertrag gebraucht. ARD ist keyless und
+     messbar verlässlich, deckt die 15 % allein.
+  3. **aniworld 19 % statt 20 %, ARD 14 % statt 15 %.** Drei Titel fielen der
+     globalen Dublettenregel zum Opfer (Validator: kein Titel/Jahr doppelt).
+     Wirkung: −0,3 bzw. −0,2 Prozentpunkte, ohne Verhaltensänderung.
+  4. **serienstream trägt das Backdrop-Bild der Quelle statt eines Posters.**
+     Die Seite liefert kein Poster-Pfadmuster (`/media/images/poster/...`
+     antwortet 404, geprüft); das Backdrop ist das einzige Bild der Quelle.
+  5. **streamcloud fällt aus dem Katalog heraus.** Die Quelle führt vor allem
+     Serien-Episoden; sie steht weiter als Quelle zur Verfügung, belegt aber
+     keine Katalog-Gruppe mehr.
+
+## 2026-11-23 — Interception zeichnet auf, der Player lädt selbst
+
+- Default: `shouldInterceptRequest` gibt **null** zurück. Die Anfrage läuft
+  normal durch; die WebView liefert die Datei nicht aus. Der Player lädt die
+  Medien-URL selbst — mit den **aufgezeichneten** Kopfzeilen der
+  WebView-Anfrage (Referer, Origin, Cookie, User-Agent). Ohne diese Kopfzeilen
+  verweigern VOE, Filemoon und Co. den Abruf, sobald die Seite weitergeleitet
+  hat.
+- Die Zeit bis zum Treffer wird **gemessen** (`elapsedMs`) und protokolliert,
+  nicht als der konfigurierte Deckel (20 s) ausgegeben.
+- Die Interception kommt vor dem DOM-Abgriff: eine Embed-Seite ohne eigenes
+  Pack (VOE landet auf wechselnenden Domains) wird zuerst über die
+  WebView-Interception aufgelöst, der DOM-Abgriff bleibt Rückfallebene.
+- Nebeneffekt, der mitgewürdigt wird: die WebView lädt die Mediendatei mit,
+  weil die Anfrage durchgelassen wird. Der Player holt sie ein zweites Mal —
+  gewollt, weil nur so die Kopfzeilen des Players gelten.
+
+## 2026-11-23 — bs.to bekommt einen eigenen Wiedergabeweg
+
+- Befund (gemessen, 23.11.2026): Die Serienseite von bs.to listet die Episoden
+  mit Hoster-Link (`…/en/VOE`). Die Hoster-Seite deckt den Stream aber nur
+  per Klick auf: `ajax/embed.php` verlangt ein reCAPTCHA-v2-Token
+  (Site-Key `6Ldd07og…`); ohne Token antwortet die Schnittstelle
+  `{"success":false}` (per curl geprüft, mit und ohne Cookie-Sitzung).
+- Default: `BsToPlaybackResolver` liest die Episodentabelle, nimmt die
+  Hoster-Seite der gewünschten Folge und lässt die versteckte WebView den
+  Klick auslösen (jQuery-Ereignis mit belegten Koordinaten, weil die Seite
+  `originalEvent.which/pageX/pageY` prüft). Der Browser löst die Challenge,
+  die Interception zeichnet den Medienabruf auf.
+- Adressierung **über den Sitemap-Slug** (`bs:<slug>`), nicht über die Suche:
+  die Suche auf bs.to liefert interne Nummern statt URLs. Ohne Katalogeintrag
+  bleibt die Quelle leer — lieber keine als die falsche Serie.
+- Zeitbudget: bs.to bekommt 28 s statt 10 s. Die Challenge-Kette braucht
+  länger; mit dem Standardbudget war die Quelle **immer** abgeschnitten.
+
+## 2026-11-23 — Eine WebView app-weit, Prewarm über alle Interception-Hosts
+
+- Default: Alle WebView-Pfade (JS-Auswertung, Cookie-Ernte, Interception,
+  Prewarm) teilen sich ein Mutex (`WebViewGate`). Der gemessene ANR
+  („Frame61 wird wiederholt beendet“) kam von vier gleichzeitig erzeugten
+  WebViews; eine app-weite Sperre schließt das aus, statt es pro Stelle zu
+  verteidigen.
+- Prewarm beim App-Start deckt jetzt **alle** Hosts ab, über die die
+  Interception läuft: VOE (der Hoster von bs.to, streamcloud und aniworld)
+  sowie die Indexseiten burningseries, aniworld, streamcloud und
+  serienstream. Der Prewarm läuft im Hintergrund, sequenziell und ohne
+  Blockade des Hauptthreads.
