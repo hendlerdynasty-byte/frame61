@@ -14,6 +14,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.ui.PlayerView
 import dagger.hilt.android.AndroidEntryPoint
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.resolver.MirrorCandidate
@@ -28,21 +29,29 @@ import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import org.json.JSONObject
 
+private const val MODE_TRAIN = "train"
+private const val MODE_HOLDOUT = "holdout"
+
 /**
- * Messharness fuer die Titel-Erfolgsquote (Phase 1.4.0).
+ * Messharness fuer die Titel-Erfolgsquote (1.5.0).
  *
- * Es wird eine feste Stichprobe von 100 Katalogtiteln ueber die
- * **Produktionskette** aufgeloest (AutoPlaybackResolver wie im Player) und
- * abgespielt. Jeder Titel bekommt bis zu drei Kandidaten; ein Titel zaehlt nur
- * als Erfolg, wenn die Wiedergabe auf dem Geraet wirklich fortschreitet.
+ * Zwei getrennte Stichproben: `train` (Seed 20261122) und `holdout`
+ * (Seed 20261123, disjunkt zur Trainings-Stichprobe). Die Holdout-Stichprobe
+ * wird erst nach der Trainings-Stichprobe gezogen und nie zum Debuggen
+ * verwendet.
  *
- * Pro Titel wird eine Zeile geschrieben — in den Logcat, in eine Datei unter
- * `Android/data/<paket>/files/quota/` und in den Statusbereich, damit der Lauf
- * auch ohne Dateizugriff aus einem UI-Dump ausgelesen werden kann.
+ * Pro Titel wird gemessen:
+ *  - **Auflösungszeit** (resolveMs): vom Start bis zur Kandidatenliste,
+ *  - **Wiedergabezeit** (playMs): vom ersten Kandidaten bis zur ersten
+ *    fortschreitenden Position,
+ *  - **Startzeit** (firstFrameMs): Summe, ab dem Tippen.
+ *
+ * Fehlerklassen: `NO_CANDIDATE`, `EMBED_UNRESOLVED`, `CONTAINER_UNSUPPORTED`,
+ * `GEO_BLOCKED`, `RATE_LIMITED`, `TIMEOUT`.
  */
 @AndroidEntryPoint
 @androidx.annotation.OptIn(UnstableApi::class)
-class PlaybackQuotaActivity : ComponentActivity() {
+open class PlaybackQuotaActivity : ComponentActivity() {
 
     @Inject lateinit var autoResolver: AutoPlaybackResolver
 
@@ -84,9 +93,8 @@ class PlaybackQuotaActivity : ComponentActivity() {
         }
         setContentView(root)
         engine.attach()
-        // Ein Fehler im Harness darf die App nicht mit in den Abgrund reissen:
-        // der Lauf ist ein Messwerkzeug, kein Produktpfad. Die Ursache landet
-        // sichtbar im Statusbereich statt in einem Crash-Loop.
+        // Ein Fehler im Harness beendet die App nicht: Ursache steht sichtbar
+        // im Statusbereich und im Logcat.
         quotaJob = lifecycleScope.launch {
             try {
                 runQuota()
@@ -98,116 +106,127 @@ class PlaybackQuotaActivity : ComponentActivity() {
     }
 
     private suspend fun runQuota() {
+        val mode = sampleMode()
+        val seed = if (mode == MODE_HOLDOUT) HOLDOUT_SEED else TRAIN_SEED
         val items = loadCatalog()
         if (items.isEmpty()) {
             report("QUOTA FATAL Katalog nicht lesbar")
             return
         }
-        val sample = sample(items, SAMPLE_SIZE)
-        logFile = File(getExternalFilesDir(null), "quota/playlog-${System.currentTimeMillis()}.txt")
+        val sample = drawSample(items, mode, seed)
+        logFile = File(getExternalFilesDir(null), "quota/playlog-$mode-${System.currentTimeMillis()}.txt")
             .also { it.parentFile?.mkdirs() }
         report(
-            "QUOTA START n=${sample.size} seed=$SEED " +
-                "katalog=${items.size} datei=${logFile?.absolutePath}"
+            "QUOTA START mode=$mode n=${sample.size} seed=$seed katalog=${items.size} " +
+                "datei=${logFile?.absolutePath}"
         )
 
         var ok = 0
-        var totalFirstFrame = 0L
+        var resolveTotal = 0L
+        var firstFrameTotal = 0L
+        val resolveTimes = mutableListOf<Long>()
         val firstFrames = mutableListOf<Long>()
-        var lastCandidateCount = 0
-        val failures = mutableMapOf<String, Int>()
+        val classes = mutableMapOf<String, Int>()
 
         sample.forEachIndexed { index, item ->
             val episode = if (item.type == "series") 1 else 0
             val started = SystemClock.elapsedRealtime()
-            var mirrors = emptyList<MirrorCandidate>()
+            val traceStart = PlaybackDiagnostics.events.value.size
             val resolved = runCatching {
                 withTimeoutOrNull(RESOLVE_BUDGET_MS) {
                     withContext(Dispatchers.IO) {
                         autoResolver.resolveFast(item.title, episode, fresh = true)
                     }
                 }
-            }.getOrElse { error ->
-                Log.e(TAG, "QUOTA RESOLVE ERROR ${item.id}", error)
-                report("QUOTA RESOLVE-FEHLER idx=${index + 1} id=${item.id} " +
-                    "${error.javaClass.simpleName}: ${error.message}")
-                null
-            }
-            if (resolved != null) mirrors = resolved
+            }.getOrNull()
             val resolveMs = SystemClock.elapsedRealtime() - started
-            lastCandidateCount = mirrors.size
+            resolveTimes += resolveMs
+            resolveTotal += resolveMs
 
+            val mirrors = resolved.orEmpty()
             var played = false
             var firstFrameMs = 0L
             var tried = 0
-            var usedIndex = -1
-            var lastError = if (mirrors.isEmpty()) "NO_CANDIDATE" else "NO_PLAY"
             var usedHost = "-"
+            var errorClass = "NO_CANDIDATE"
             val triedHosts = mutableListOf<String>()
 
-            for ((candidateIndex, mirror) in mirrors.take(MAX_CANDIDATES).withIndex()) {
-                tried = candidateIndex + 1
-                triedHosts += host(mirror.url)
-                val attempt = playCandidate(mirror)
-                if (attempt.firstFrameMs != null) {
-                    played = true
-                    firstFrameMs = resolveMs + attempt.firstFrameMs
-                    usedIndex = candidateIndex
-                    usedHost = host(mirror.url)
-                    lastError = "-"
-                    break
+            if (mirrors.isNotEmpty()) {
+                for ((candidateIndex, mirror) in mirrors.take(MAX_CANDIDATES).withIndex()) {
+                    tried = candidateIndex + 1
+                    triedHosts += host(mirror.url)
+                    val attemptStarted = SystemClock.elapsedRealtime()
+                    val attempt = playCandidate(mirror)
+                    if (attempt.firstFrameMs != null) {
+                        played = true
+                        firstFrameMs = resolveMs + (SystemClock.elapsedRealtime() - attemptStarted)
+                        usedHost = host(mirror.url)
+                        errorClass = "-"
+                        break
+                    }
+                    errorClass = attempt.errorClass ?: "EMBED_UNRESOLVED"
                 }
-                lastError = attempt.errorClass ?: "NO_PROGRESS"
+            } else {
+                errorClass = classifyFailure(PlaybackDiagnostics.events.value.drop(traceStart))
             }
 
             if (played) {
                 ok++
-                totalFirstFrame += firstFrameMs
+                firstFrameTotal += firstFrameMs
                 firstFrames += firstFrameMs
                 report(
-                    "QUOTA idx=${index + 1} id=${item.id} type=${item.type} " +
-                        "RESULT=OK firstFrameMs=$firstFrameMs (resolve=$resolveMs) " +
-                        "candidates=${mirrors.size} tried=$tried used=$usedIndex host=$usedHost"
+                    "QUOTA $mode idx=${index + 1} id=${item.id} type=${item.type} " +
+                        "RESULT=OK class=- resolveMs=$resolveMs playMs=${firstFrameMs - resolveMs} " +
+                        "firstFrameMs=$firstFrameMs candidates=${mirrors.size} tried=$tried " +
+                        "host=$usedHost"
                 )
             } else {
-                failures[lastError] = (failures[lastError] ?: 0) + 1
+                classes[errorClass] = (classes[errorClass] ?: 0) + 1
                 report(
-                    "QUOTA idx=${index + 1} id=${item.id} type=${item.type} " +
-                        "title=${item.title.sanitize()} RESULT=FAIL " +
-                        "candidates=${mirrors.size} tried=$tried resolveMs=$resolveMs " +
-                        "hosts=[${triedHosts.joinToString(",")}] err=$lastError"
+                    "QUOTA $mode idx=${index + 1} id=${item.id} type=${item.type} " +
+                        "title=${item.title.sanitize()} RESULT=FAIL class=$errorClass " +
+                        "resolveMs=$resolveMs candidates=${mirrors.size} tried=$tried " +
+                        "hosts=[${triedHosts.joinToString(",")}]"
                 )
             }
             scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
         }
 
-        val sorted = firstFrames.sorted()
-        val p50 = sorted.getOrNull(sorted.size * 50 / 100.coerceAtLeast(1)) ?: 0L
-        val p95 = sorted.getOrNull(((sorted.size - 1) * 95 / 100).coerceAtLeast(0)) ?: 0L
-        val failText = failures.entries.sortedByDescending { it.value }
-            .joinToString(",") { "${it.key}:${it.value}" }
+        val resolveSorted = resolveTimes.sorted()
+        val frameSorted = firstFrames.sorted()
         report(
-            "QUOTA SUMMARY ok=$ok/${sample.size} quote=" +
-                "${ok * 100 / sample.size} p50Ms=$p50 p95Ms=$p95 " +
-                "avgMs=${if (firstFrames.isEmpty()) 0 else totalFirstFrame / firstFrames.size} " +
-                "failures=[$failText]"
+            "QUOTA SUMMARY mode=$mode ok=$ok/${sample.size} quote=${ok * 100 / sample.size} " +
+                "resolveP50Ms=${percentile(resolveSorted, 50)} " +
+                "resolveP95Ms=${percentile(resolveSorted, 95)} " +
+                "frameP50Ms=${percentile(frameSorted, 50)} " +
+                "frameP95Ms=${percentile(frameSorted, 95)} " +
+                "failures=[${classes.entries.sortedByDescending { it.value }.joinToString(",") { "${it.key}:${it.value}" }}]"
         )
-        Log.i(TAG, "QUOTA DONE datei=${logFile?.absolutePath}")
+        Log.i(TAG, "QUOTA DONE mode=$mode datei=${logFile?.absolutePath}")
     }
 
     /**
-     * Ahmt den Produktionsaufruf nach: erst auflösen, dann höchstens drei
-     * Kandidaten abspielen. Ein Kandidat gilt als Erfolg, sobald die Position
-     * auf dem Gerät fortschreitet.
+     * Klassifiziert einen Lauf ohne Kandidaten anhand der Diagnose-Ereignisse,
+     * die der Resolver waehrend dieser Messung geschrieben hat.
      */
+    private fun classifyFailure(events: List<de.hendler.frame61.net.PlaybackTraceEvent>): String {
+        val text = events.joinToString(" ") { "${it.category} ${it.message}" }.lowercase()
+        return when {
+            text.contains("429") -> "RATE_LIMITED"
+            text.contains("403") || text.contains("451") -> "GEO_BLOCKED"
+            text.contains("captcha") -> "EMBED_UNRESOLVED"
+            text.contains("zeitüberschreitung") || text.contains("timeout") -> "TIMEOUT"
+            text.contains("hoster") || text.contains("embed") -> "EMBED_UNRESOLVED"
+            else -> "NO_CANDIDATE"
+        }
+    }
+
     private suspend fun playCandidate(mirror: MirrorCandidate): Attempt {
         val started = SystemClock.elapsedRealtime()
         engine.open(mirror.url, requestHeaders = mirror.requestHeaders, cookies = mirror.cookies)
         var lastError: String? = "NO_PROGRESS"
         repeat(PLAYBACK_POLLS) {
             delay(PLAYBACK_POLL_MS)
-            // Ereignisgesteuerter Zustand: ohne publish() bleibt die Position
-            // auf dem Stand des letzten Player-Ereignisses (Fallstrick Phase B).
             engine.publish()
             val state = engine.state.value
             renderEngine(state.engine)
@@ -220,22 +239,32 @@ class PlaybackQuotaActivity : ComponentActivity() {
         if (engine.lastPrimaryErrorName != null && lastError == "NO_PROGRESS") {
             lastError = engine.lastPrimaryErrorName
         }
-        Log.w(
-            TAG,
-            "QUOTA ATTEMPT FAILED ${mirror.url.take(90)} error=$lastError " +
-                "engine=${state.engine} position=${state.positionMs}"
-        )
+        Log.w(TAG, "QUOTA ATTEMPT FAILED ${mirror.url.take(90)} error=$lastError")
         engine.stop()
-        return Attempt(null, lastError)
+        val mapped = when {
+            lastError?.contains("PARSING_CONTAINER") == true -> "CONTAINER_UNSUPPORTED"
+            lastError?.contains("timeout", ignoreCase = true) == true -> "TIMEOUT"
+            else -> "EMBED_UNRESOLVED"
+        }
+        return Attempt(null, mapped)
     }
 
-    private fun sample(items: List<CatalogItem>, count: Int): List<CatalogItem> {
-        val random = Random(SEED)
+    /** Trainings- und Holdout-Stichprobe, garantiert disjunkt. */
+    private fun drawSample(items: List<CatalogItem>, mode: String, seed: Long): List<CatalogItem> {
+        if (mode == MODE_HOLDOUT) {
+            val trainIds = sample(items, TRAIN_SEED).mapTo(mutableSetOf()) { it.id }
+            val rest = items.filter { it.id !in trainIds }
+            return sample(rest, seed)
+        }
+        return sample(items, seed)
+    }
+
+    private fun sample(items: List<CatalogItem>, seed: Long): List<CatalogItem> {
+        val random = Random(seed)
         val series = items.filter { it.type == "series" }.shuffled(random)
         val movies = items.filter { it.type != "series" }.shuffled(random)
-        val targetSeries = (count.toLong() * series.size / items.size.coerceAtLeast(1)).toInt()
-        val picked = series.take(targetSeries) + movies.take(count - targetSeries)
-        return picked.shuffled(random)
+        val targetSeries = (SAMPLE_SIZE.toLong() * series.size / items.size.coerceAtLeast(1)).toInt()
+        return (series.take(targetSeries) + movies.take(SAMPLE_SIZE - targetSeries)).shuffled(random)
     }
 
     private fun loadCatalog(): List<CatalogItem> {
@@ -247,13 +276,13 @@ class PlaybackQuotaActivity : ComponentActivity() {
         return (0 until array.length()).mapNotNull { index ->
             val entry = array.optJSONObject(index) ?: return@mapNotNull null
             val title = entry.optString("title").takeIf { it.isNotBlank() } ?: return@mapNotNull null
-            CatalogItem(
-                id = entry.optString("id"),
-                title = title,
-                type = entry.optString("type")
-            )
+            CatalogItem(id = entry.optString("id"), title = title, type = entry.optString("type"))
         }
     }
+
+    /** Welche Stichprobe gefahren wird; [PlaybackQuotaHoldoutActivity] überschreibt das. */
+    protected open fun sampleMode(): String =
+        (intent?.getStringExtra(EXTRA_SAMPLE) ?: MODE_TRAIN).lowercase()
 
     private fun report(line: String) {
         lines += line
@@ -262,10 +291,8 @@ class PlaybackQuotaActivity : ComponentActivity() {
         logFile?.appendText("$line\n")
     }
 
-    private fun host(url: String): String {
-        val after = url.substringAfter("://", "")
-        return after.substringBefore('/').ifBlank { "-" }
-    }
+    private fun host(url: String): String =
+        url.substringAfter("://", "").substringBefore('/').ifBlank { "-" }
 
     private fun renderEngine(engineName: String) {
         if (engineName == renderedEngine) return
@@ -281,6 +308,12 @@ class PlaybackQuotaActivity : ComponentActivity() {
         )
     }
 
+    private fun percentile(sorted: List<Long>, p: Int): Long {
+        if (sorted.isEmpty()) return 0L
+        val index = ((sorted.size - 1) * p / 100.0).toInt().coerceIn(0, sorted.size - 1)
+        return sorted[index]
+    }
+
     override fun onDestroy() {
         quotaJob?.cancel()
         engine.release()
@@ -293,8 +326,10 @@ class PlaybackQuotaActivity : ComponentActivity() {
 
     private companion object {
         const val TAG = "Frame61Quota"
+        const val EXTRA_SAMPLE = "sample"
         const val SAMPLE_SIZE = 100
-        const val SEED = 20261122L
+        const val TRAIN_SEED = 20261122L
+        const val HOLDOUT_SEED = 20261123L
         const val MAX_CANDIDATES = 3
         const val PLAYBACK_POLL_MS = 250L
         const val PLAYBACK_POLLS = 28
@@ -302,5 +337,15 @@ class PlaybackQuotaActivity : ComponentActivity() {
     }
 }
 
-private fun String.sanitize(): String =
-    replace(Regex("\\s+"), " ").take(60)
+private fun String.sanitize(): String = replace(Regex("\\s+"), " ").take(60)
+
+/**
+ * Zweite, disjunkte Stichprobe (Holdout). Sie wird erst gefahren, wenn die
+ * Trainings-Stichprobe fertig ist, und dient nur der Abnahme — nie zum
+ * Nachsteuern. Start über die Einstellungen („Titel-Quote Holdout").
+ */
+@AndroidEntryPoint
+@androidx.annotation.OptIn(UnstableApi::class)
+class PlaybackQuotaHoldoutActivity : PlaybackQuotaActivity() {
+    override fun sampleMode(): String = MODE_HOLDOUT
+}

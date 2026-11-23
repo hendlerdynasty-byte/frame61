@@ -244,6 +244,17 @@ fun SettingsScreen(
                 },
                 modifier = Modifier.tvFocusable(id = "playback-quota-test", onClick = {})
             ) { Text(text = "Titel-Quote") }
+            OutlinedButton(
+                onClick = {
+                    context.startActivity(
+                        Intent(
+                            context,
+                            Class.forName("de.hendler.frame61.diagnostics.PlaybackQuotaHoldoutActivity")
+                        )
+                    )
+                },
+                modifier = Modifier.tvFocusable(id = "playback-quota-holdout", onClick = {})
+            ) { Text(text = "Titel-Quote Holdout") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
