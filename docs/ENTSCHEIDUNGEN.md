@@ -1,7 +1,49 @@
 # ENTSCHEIDUNGEN.md — getroffene Defaults
 
-Stand: 22.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
+Stand: 23.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
+
+## 2026-11-23 — Der Katalog wird aus den Quellen geerntet, nicht aus TVmaze
+
+- Befund: 584 Serien aus TVmaze und 416 Filme aus Wikidata sind globale
+  Metadaten ohne Bezug zum Angebot der Zielindizes. Gemessen: 6/100 Titel
+  spielbar — nicht, weil der Player scheitert, sondern weil die Titel auf
+  keiner Quelle liegen.
+- Default: Der Katalog wird invertiert. `tools/fetch/catalog_harvest.py` erntet
+  die tatsächlich erreichbaren Bestände:
+  - **ARD Mediathek** (keyless API, `showResults`), 500 Shows — die Quelle, die
+    auf dem Gerät ohne Captcha nachweislich spielt,
+  - **bs.to** (Sitemap, 300 Serien), Poster `https://bs.cine.to/cover/<slug>.jpg`,
+  - **streamcloud.date** (Sitemap `filme-*.xml`, 197 Filme), Poster aus `og:image`.
+  Jeder Titel existiert damit per Konstruktion auf einer Quelle.
+- Sicherheit: Der Harvester prüft vor jedem Abruf https, eine Host-Allowlist und
+  öffentliche IPs; Weiterleitungen werden erneut geprüft (kein SSRF).
+
+## 2026-11-23 — Hoster-Challenges per Request-Interception, nicht per JS-Nachbau
+
+- Befund: VOE, Doodstream und Filemoon liefern ihren Stream erst nach einer
+  JS-/Cloudflare-Challenge. Ein nachgebautes Redirect-Skript scheitert, sobald
+  der Anbieter die Seite ändert.
+- Default: Die Embed-Seite lädt in einer **versteckten** WebView
+  (`WebViewMediaInterceptor`), der Browser der Seite löst seine Challenge, und
+  der Medienabruf wird über `shouldInterceptRequest` abgefangen
+  (`.m3u8`, `.mp4`, `.mpd`, `.mkv`, `video/…`). Cookies werden ausgelesen und
+  an den Player gereicht. Der sichtbare Captcha-Dialog bleibt Rückfallebene.
+
+## 2026-11-23 — Timeouts: Quelle 10 s, Hoster 20 s, Frist ab erstem Kandidaten
+
+- Der 600-ms-Abbruch nach dem **ersten gefundenen** Kandidaten (1.4.0) hat die
+  Quote gedrückt: JS-Ketten brauchen länger.
+- Default: `SOURCE_TIMEOUT_MS` 10 s, `HOSTER_TIMEOUT_MS` 20 s (inkl.
+  Interception), `HARD_DEADLINE_MS` 22 s. `resolveFast` endet weiterhin 600 ms
+  nach dem **ersten spielbaren** Kandidaten.
+
+## 2026-11-23 — Resolver nimmt den besten Treffer, wenn der Titel abweicht
+
+- Der geerntete Katalog trägt teils längere Titel (Slug, Serienzusatz).
+- Default: Passt kein Treffer exakt auf den Katalogtitel, zählt der beste
+  Treffer statt „keine Quelle" — in `AutoPlaybackResolver` und
+  `ArdPlaybackResolver`.
 
 ## 2026-11-22 — Auflösung endet nach dem ersten Kandidaten (600 ms Frist)
 
