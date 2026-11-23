@@ -49,6 +49,7 @@ class AutoPlaybackResolver @Inject constructor(
     private val captchaBroker: CaptchaBroker,
     private val jsEvaluator: WebViewJsEvaluator,
     private val headlessCaptchaSolver: HeadlessCaptchaSolver,
+    private val mediaInterceptor: WebViewMediaInterceptor,
     private val prefs: ProfileDataStore
 ) {
 
@@ -86,7 +87,8 @@ class AutoPlaybackResolver @Inject constructor(
             packs = hosterPacks,
             fetcher = OkHttpBodyFetcher(),
             jsEvaluator = jsEvaluator,
-            captchaSolver = headlessCaptchaSolver
+            captchaSolver = headlessCaptchaSolver,
+            mediaInterceptor = mediaInterceptor
         )
     }
 
@@ -413,20 +415,23 @@ class AutoPlaybackResolver @Inject constructor(
     companion object {
         private const val TAG = "Frame61Resolve"
         /**
-         * Budget je Quelle. 9 s statt 4 s: Packs mit JS-Kette (serienstream
-         * Redirect-Gate, devideosrc, vidmoly) brauchen länger als ein reiner
-         * HTTP-Pfad. Der Player wartet trotzdem nicht darauf — resolveFast
-         * kehrt 600 ms nach dem ersten Kandidaten zurück.
+         * Budget je Quelle. Packs mit JS-Kette (serienstream-Redirect, devideosrc,
+         * vidmoly) brauchen länger als ein reiner HTTP-Pfad. Der Player wartet
+         * trotzdem nicht darauf — resolveFast kehrt 600 ms nach dem ersten
+         * Kandidaten zurück.
          */
-        private const val SOURCE_TIMEOUT_MS = 9_000L
-        private const val HOSTER_TIMEOUT_MS = 9_000L
+        private const val SOURCE_TIMEOUT_MS = 10_000L
+
+        /** Hoster-Kette inkl. stiller WebView-Interception (VOE/Doodstream). */
+        private const val HOSTER_TIMEOUT_MS = 20_000L
+
         private const val CACHE_MS = 15L * 60L * 1000L
 
         /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
         const val FIRST_CANDIDATE_GRACE_MS = 600L
 
         /** Obergrenze des Einsammelns, wenn gar kein Kandidat kommt. */
-        private const val HARD_DEADLINE_MS = 12_000L
+        private const val HARD_DEADLINE_MS = 22_000L
 
         /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
         private const val MAX_WARMUP_HOSTS = 2

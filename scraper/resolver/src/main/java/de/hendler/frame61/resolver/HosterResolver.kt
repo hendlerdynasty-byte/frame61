@@ -59,7 +59,8 @@ class HosterResolver(
     private val fetcher: BodyFetcher,
     private val jsEvaluator: JsEvaluator? = null,
     private val powSolver: PowSolver = PowSolver(),
-    private val captchaSolver: CaptchaSolver? = null
+    private val captchaSolver: CaptchaSolver? = null,
+    private val mediaInterceptor: MediaInterceptor? = null
 ) {
 
     private val json = Json {
@@ -115,9 +116,25 @@ class HosterResolver(
             return HosterOutcome.Unknown(url, headers, effectiveCookies)
         }
         if (!pack.captcha.isNullOrBlank() && effectiveCookies.isNullOrBlank()) {
-            // Erst still im Hintergrund loesen (versteckte WebView, Cookie-Cache).
-            // Nur wenn das scheitert, bekommt der Nutzer ueberhaupt einen
-            // Captcha-Dialog zu sehen.
+            // Erste Wahl: die Embed-Seite still in einer WebView laden und den
+            // Medienabruf abfangen. Der Browser der Seite löst seine Challenge
+            // selbst; sichtbar wird nichts.
+            val intercepted = runCatching {
+                mediaInterceptor?.intercept(url, MEDIA_INTERCEPT_MS)
+            }.getOrNull()
+            if (intercepted != null && intercepted.url.startsWith("https://")) {
+                val headers = linkedMapOf(
+                    "User-Agent" to DEFAULT_USER_AGENT,
+                    "Referer" to url
+                )
+                return HosterOutcome.Resolved(
+                    intercepted.url,
+                    1,
+                    headers,
+                    intercepted.cookies
+                )
+            }
+            // Zweite Wahl: Cookie-basiertes Lösen über den Captcha-Broker.
             val solved = runCatching { captchaSolver?.solve(url, CAPTCHA_SOLVE_MS) }.getOrNull()
             if (solved.isNullOrBlank()) {
                 return HosterOutcome.CaptchaRequired(url, pack.captcha)
@@ -287,6 +304,9 @@ class HosterResolver(
 
         /** Budget for a headless captcha solve before the UI fallback is used. */
         const val CAPTCHA_SOLVE_MS = 15_000L
+
+        /** Budget für den stillen WebView-Interceptor (Kette inkl. Redirects). */
+        const val MEDIA_INTERCEPT_MS = 20_000L
 
         /** Generische Embed-Aufloesung: kurz halten, sie ist die letzte Stufe. */
         const val GENERIC_EMBED_MS = 5_000L

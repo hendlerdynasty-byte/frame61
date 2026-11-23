@@ -56,6 +56,20 @@ interface JsEvaluator {
     suspend fun evaluate(url: String, script: String, timeoutMs: Long = 8_000L): String?
 }
 
+/** Ergebnis einer stillen WebView-Auflösung: Medien-URL plus gesetzte Cookies. */
+data class InterceptedMedia(val url: String, val cookies: String? = null)
+
+/**
+ * Lädt eine Embed-Seite in einer versteckten WebView und fängt den Medienabruf
+ * ab (`shouldInterceptRequest`), statt das Redirect-JavaScript nachzubauen.
+ *
+ * Der Browser der Seite löst seine eigene Challenge; aufgefangen wird nur das
+ * Ergebnis (`.m3u8`, `.mp4`, `.mpd` oder `video/*`).
+ */
+fun interface MediaInterceptor {
+    suspend fun intercept(url: String, timeoutMs: Long): InterceptedMedia?
+}
+
 /** Validation and file loading without an Android Context. */
 object HosterPackValidator {
 
