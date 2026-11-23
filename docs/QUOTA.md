@@ -1,8 +1,29 @@
 # QUOTA.md — Titel-Erfolgsquote (Messharness und Baseline)
 
-Stand: 22.11.2026. Methode und Zahlen für Version 1.4.0.
+Stand: 23.11.2026. Methode und Zahlen für Version 1.5.0.
 
-## Methode
+## Methode (1.5.0)
+
+- **Zwei Stichproben, garantiert disjunkt:**
+  - **Training** (`PlaybackQuotaActivity`, Seed `20261122`, 100 Titel),
+  - **Holdout** (`PlaybackQuotaHoldoutActivity`, Seed `20261123`, 100 Titel aus
+    dem Rest des Katalogs). Die Holdout-Stichprobe wird erst nach der
+    Trainings-Stichprobe gefahren und nie zum Nachsteuern benutzt.
+- **Katalog:** invertiert — die Bibliothek kommt aus den Quellen selbst
+  (ARD 500, bs.to 300, streamcloud 197), siehe `docs/ENTSCHEIDUNGEN.md`.
+- **Kette:** derselbe Produktionsweg wie im Player —
+  `AutoPlaybackResolver.resolveFast` → Kandidaten → bis zu drei mit
+  `Media3Frame61Player`.
+- **Zeiten getrennt:** `resolveMs` (Auflösung), `playMs` (Kandidat bis erstes
+  Bild), `firstFrameMs` (Summe ab Tippen).
+- **Fehlertaxonomie:** `NO_CANDIDATE`, `EMBED_UNRESOLVED`,
+  `CONTAINER_UNSUPPORTED`, `GEO_BLOCKED`, `RATE_LIMITED`, `TIMEOUT` — die
+  Klasse wird aus den Diagnose-Ereignissen des Resolvers abgeleitet, nicht
+  geraten.
+- **Protokoll:** je Titel eine Zeile (idx, id, type, RESULT, class, resolveMs,
+  playMs, candidates, host) im Logcat, im Statusbereich und in einer Datei.
+
+## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus
   `assets/catalog/catalog.json` (1.000 Titel), Seed `20261122`,
