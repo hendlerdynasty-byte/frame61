@@ -545,3 +545,29 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   /login**). Ohne Konto läuft diese Strecke nicht; laut Auftrag wird keines
   geführt. Bewusst **nicht** nachgebaut, sondern als BLOCKED mit Beleg
   festgehalten.
+
+## 2026-11-24 — DEVIDEOSRC über die dokumentierte API statt über die Player-Seite
+
+- Befund (A52, Lauf 3, Build `078fb4b`): Quote 59/100, aber `devideosrc.co` war
+  der häufigste Zielhost der `CONTAINER_UNSUPPORTED`-Fehlschläge (~25 von 33).
+  Der alte Pack liest `getActiveLink()`/`iframe.src` im versteckten WebView —
+  der Abspieler setzt `iframe#_player.src` aber **erst nach dem Klick auf
+  Play** (Quelle: `devideosrc.co/docs`, Ereignisliste `meinecloud:*`). Ergebnis:
+  Leerwert, die HTML-Seite bleibt als Kandidat stehen, der Player meldet 3003.
+- Default: `DeVideoSrcResolver` nutzt die **dokumentierte** API
+  (`https://devideosrc.co/docs`, abgerufen 23.11.2026): Die Seite
+  `/movie/{id}` bzw. `/serial/{id}` liefert Typ, ID und Token, damit liefert
+  `POST /api/embed-links` die **Quellenliste** (Dropload, SuperVideo,
+  Doodstream, Mixdrop) in Rangfolge — bei Serien je Staffel/Episode. Die
+  Quellenliste läuft durch die bestehende Kette; jeder Anbieter wird der Reihe
+  nach versucht. Ohne API-Antwort bleibt der alte Pack-Pfad als Rückfallebene.
+- Folge für die Reihenfolge: Die Nachtsteuerung nannte bs.to → Doodstream →
+  Filemoon. Die Messung zeigt in dieser Stichprobe **andere** Engpässe
+  (devideosrc ~25, uqload 4, moflix-Hosts ~6, VOE/bs.to: 302 /login). Abweichung
+  mit Begründung: zuerst der gemessene Haupthemmer, danach uqload/moflix;
+  Doodstream bleibt drin, weil devideosrc ihn als Anbieter ausliefert.
+- Nebenbefund, mitgefixt: Doodstream liefert die Medien-URL **ohne Endung**
+  (`https://uha211.cloudatacdn.com/<hex>/myshk2p1j7~…?token=…&expiry=…`,
+  gemessen an `playmogo.com/e/…`). Weder `isMediaUrl` noch das Pack-Muster
+  (`\.(m3u8|mp4)`) erkannten sie. `MediaUrlMatcher` erkennt jetzt CDN-Host und
+  `~…?token=`-Form.

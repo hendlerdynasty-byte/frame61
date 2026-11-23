@@ -6,6 +6,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.net.PlaybackDiagnostics
+import de.hendler.frame61.resolver.DeVideoSrcResolver
 import de.hendler.frame61.resolver.HosterOutcome
 import de.hendler.frame61.resolver.HosterPack
 import de.hendler.frame61.resolver.HosterPackValidator
@@ -112,7 +113,8 @@ class AutoPlaybackResolver @Inject constructor(
             fetcher = OkHttpBodyFetcher(),
             jsEvaluator = jsEvaluator,
             captchaSolver = headlessCaptchaSolver,
-            mediaInterceptor = mediaInterceptor
+            mediaInterceptor = mediaInterceptor,
+            devideosrc = DeVideoSrcResolver(OkHttpBodyFetcher())
         )
     }
 
@@ -365,10 +367,10 @@ class AutoPlaybackResolver @Inject constructor(
         val orderedWeb = webFirst.sortedBy { if (guestCapable(it.url)) 0 else 1 }
         val resolved = coroutineScope {
             val webJobs = orderedWeb.take(MAX_WEBVIEW_STREAMS).map { stream ->
-                async { stream to resolveHoster(pack, stream, sessionId, webBudget) }
+                async { stream to resolveHoster(pack, stream, episodeNumber, sessionId, webBudget) }
             }
             val plainJobs = plain.map { stream ->
-                async { stream to resolveHoster(pack, stream, sessionId, WebViewBudget.none()) }
+                async { stream to resolveHoster(pack, stream, episodeNumber, sessionId, WebViewBudget.none()) }
             }
             (webJobs + plainJobs).awaitAll()
         }
@@ -399,6 +401,12 @@ class AutoPlaybackResolver @Inject constructor(
     private fun needsWebView(url: String): Boolean {
         val hosterPack = runCatching { hosterResolver.findPack(url) }.getOrNull()
         if (hosterPack != null && !hosterPack.captcha.isNullOrBlank()) return true
+        // DEVIDEOSRC ist selbst keine Embed-Form, liefert aber Provider-Embeds
+        // (Dropload/SuperVideo). Deren Medienabruf laeuft ueber jwplayer/hls.js
+        // — der sichtbare `video.src` ist dann ein blob:, nur der **Abruf**
+        // zeigt die m3u8. Also braucht der devideosrc-Kandidat den WebView-
+        // Versuch des Titels.
+        if (DeVideoSrcResolver.matches(url)) return true
         return HosterResolver.looksLikeEmbed(url)
     }
 
@@ -411,6 +419,7 @@ class AutoPlaybackResolver @Inject constructor(
     private suspend fun resolveHoster(
         pack: SourcePack,
         stream: StreamResult,
+        episodeNumber: Int,
         sessionId: Long,
         webBudget: WebViewBudget
     ): ResolvedStream? {
@@ -441,7 +450,7 @@ class AutoPlaybackResolver @Inject constructor(
             }
             val second = runCatching {
                 withTimeoutOrNull(HOSTER_TIMEOUT_MS * 5) {
-                    hosterResolver.resolve(stream.url, cookies, budget = webBudget)
+                    hosterResolver.resolve(stream.url, cookies, budget = webBudget, episodeNumber = episodeNumber)
                 }
             }.getOrNull()
             return when (second) {
@@ -458,7 +467,7 @@ class AutoPlaybackResolver @Inject constructor(
         }
         val outcome = runCatching {
             withTimeoutOrNull(HOSTER_TIMEOUT_MS) {
-                hosterResolver.resolve(stream.url, budget = webBudget)
+                hosterResolver.resolve(stream.url, budget = webBudget, episodeNumber = episodeNumber)
             }
         }.getOrNull()
         return when (outcome) {

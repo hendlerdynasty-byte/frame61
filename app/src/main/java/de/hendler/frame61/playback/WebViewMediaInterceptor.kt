@@ -225,7 +225,7 @@ class WebViewMediaInterceptor @Inject constructor(
                     if (requests.size < MAX_RECORDED_REQUESTS) {
                         requests.add("${request.method} ${shortUrl(target)}")
                     }
-                    if (isMediaUrl(target)) {
+                    if (MediaUrlMatcher.isMediaUrl(target)) {
                         // **Durchlassen**: null bedeutet, die WebView
                         // holt die Datei selbst. Wir zeichnen nur auf.
                         Log.i(TAG, "Medienabruf aufgezeichnet: $target")
@@ -352,14 +352,43 @@ class WebViewMediaInterceptor @Inject constructor(
         private val MEDIA_PATH = Regex(
             """(?i)\.(?:m3u8|mp4|mpd|mkv|webm|mov|m4v)(?:[?#]|$)"""
         )
+    }
+}
 
-        /** Nur echte Medienziele, keine HTML-/JS-/CSS-URLs. */
-        fun isMediaUrl(url: String): Boolean {
-            if (!url.startsWith("http")) return false
-            if (MEDIA_PATH.containsMatchIn(url)) return true
-            // Manche Hosts liefern HLS ohne Endung, aber mit Query.
-            return url.contains("master.m3u8") || url.contains("/hls/") ||
-                url.contains("playlist.m3u8")
+/**
+ * Erkennt echte Medienziele — getrennt vom Interceptor, damit die Regel ohne
+ * Geraet geprueft werden kann (app/src/test/.../WebViewMediaInterceptorTest).
+ */
+internal object MediaUrlMatcher {
+
+    private val MEDIA_PATH = Regex(
+        """(?i)\.(?:m3u8|mp4|mpd|mkv|webm|mov|m4v)(?:[?#]|$)"""
+    )
+
+    /**
+     * Doodstream liefert die Medien-URL **ohne Dateiendung**:
+     * `/pass_md5/…` antwortet mit `https://<cdn>/<pfad>~` und `makePlay()`
+     * hängt `<10 Zufallszeichen>?token=…&expiry=…` an. Gemessen 23.11.2026
+     * an `playmogo.com/e/…`:
+     * `https://uha211.cloudatacdn.com/<hex>/myshk2p1j7~…`. Weder CDN-Host
+     * noch `~` tragen eine Endung — deshalb explizit erkennen.
+     */
+    private val DOOD_CDN = Regex("""(?i)cloudatacdn\.com""")
+
+    /** `<pfad>~<zeichenkette>?token=…` bzw. `…&expiry=…` */
+    private val DOOD_PLAY = Regex("""(?i)~[a-z0-9]{6,40}\?(?:token|expiry|download)=""")
+
+    /** Nur echte Medienziele, keine HTML-/JS-/CSS-URLs. */
+    fun isMediaUrl(url: String): Boolean {
+        if (!url.startsWith("http")) return false
+        if (MEDIA_PATH.containsMatchIn(url)) return true
+        // Manche Hosts liefern HLS ohne Endung, aber mit Query.
+        if (url.contains("master.m3u8") || url.contains("/hls/") ||
+            url.contains("playlist.m3u8")
+        ) {
+            return true
         }
+        if (DOOD_CDN.containsMatchIn(url)) return true
+        return DOOD_PLAY.containsMatchIn(url)
     }
 }

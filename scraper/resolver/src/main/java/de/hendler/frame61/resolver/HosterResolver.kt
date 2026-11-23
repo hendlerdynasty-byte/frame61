@@ -97,7 +97,8 @@ class HosterResolver(
     private val jsEvaluator: JsEvaluator? = null,
     private val powSolver: PowSolver = PowSolver(),
     private val captchaSolver: CaptchaSolver? = null,
-    private val mediaInterceptor: MediaInterceptor? = null
+    private val mediaInterceptor: MediaInterceptor? = null,
+    private val devideosrc: DeVideoSrcResolver? = null
 ) {
 
     private val json = Json {
@@ -117,17 +118,45 @@ class HosterResolver(
     suspend fun resolve(
         url: String,
         cookies: String? = null,
-        budget: WebViewBudget? = null
+        budget: WebViewBudget? = null,
+        episodeNumber: Int = 0
     ): HosterOutcome =
-        resolve(url, cookies, depth = 0, budget = budget ?: WebViewBudget.unlimited())
+        resolve(url, cookies, depth = 0, budget = budget ?: WebViewBudget.unlimited(), episodeNumber)
 
     private suspend fun resolve(
         url: String,
         cookies: String?,
         depth: Int,
-        budget: WebViewBudget
+        budget: WebViewBudget,
+        episodeNumber: Int = 0
     ): HosterOutcome {
         var effectiveCookies = cookies
+        // DEVIDEOSRC liefert über eine dokumentierte API eine **Quellenliste**
+        // (Dropload/SuperVideo/Doodstream/Mixdrop) statt einer Player-Seite.
+        // Ohne diese Stufe blieb die HTML-Seite als Kandidat stehen — der
+        // Player meldete 3003. Gemessen 23.11.2026 auf dem A52: devideosrc.co
+        // war der häufigste Zielhost der CONTAINER_UNSUPPORTED-Fehlschläge.
+        if (devideosrc != null && DeVideoSrcResolver.matches(url)) {
+            val providers = runCatching {
+                devideosrc.expand(url, episodeNumber)
+            }.getOrDefault(emptyList())
+            if (providers.isNotEmpty()) {
+                for (provider in providers) {
+                    if (depth >= MAX_REDIRECT_DEPTH) break
+                    when (val outcome = resolve(provider.url, effectiveCookies, depth + 1, budget, episodeNumber)) {
+                        is HosterOutcome.Resolved -> return outcome
+                        is HosterOutcome.CaptchaRequired -> return outcome
+                        else -> Unit // nächster Anbieter
+                    }
+                }
+                return HosterOutcome.Failed(
+                    url,
+                    "devideosrc: keiner der ${providers.size} Anbieter spielbar",
+                    1
+                )
+            }
+            // Keine Liste erhalten: der bisherige Pack-Pfad bleibt in Kraft.
+        }
         val pack = findPack(url)
         if (pack == null) {
             val headers = linkedMapOf(
@@ -148,7 +177,12 @@ class HosterResolver(
             // versteckte WebView: sie baut die Seite (inkl. Cloudflare) und
             // zeichnet den **echten** Medienabruf samt Kopfzeilen auf. Erst
             // danach der DOM-Abgriff als Rückfallebene.
-            if (depth == 0 && looksLikeEmbed(url)) {
+            //
+            // Auch in einer Kette (depth > 0): devideosrc liefert Provider-
+            // Embeds, die erst hier spielbar werden. Das WebView-Budget
+            // begrenzt die Versuche je Titel — eine Schleife ist damit
+            // ausgeschlossen.
+            if (depth < MAX_REDIRECT_DEPTH && looksLikeEmbed(url)) {
                 val interceptor = mediaInterceptor
                 if (interceptor != null && budget.tryTake()) {
                     val intercepted = runCatching {
@@ -385,6 +419,13 @@ class HosterResolver(
 
         /** Generische Embed-Aufloesung: kurz halten, sie ist die letzte Stufe. */
         const val GENERIC_EMBED_MS = 5_000L
+
+        /**
+         * DEVIDEOSRC-Domains (dokumentierte Embed-API, siehe
+         * [DeVideoSrcResolver]). In `assets/hosters/devideosrc.json`
+         * gespiegelt; dort steht der aeltere Pack-Pfad als Rueckfallebene.
+         */
+        val DEVIDEOSRC_DOMAINS = listOf("devideosrc.co", "devideosrc.com", "devideosrc.net")
 
         private val EMBED_PATH = Regex("""(?i)/(?:e|embed|video|stream|play)/[^/?#]+""")
 

@@ -1,7 +1,7 @@
 {
   "id": "devideosrc",
   "name": "DeVideoSRC",
-  "version": 1,
+  "version": 2,
   "verified": false,
   "domains": [
     "devideosrc.co",
@@ -17,9 +17,9 @@
       "script": "(function(){try{if(typeof getActiveLink==='function'){var l=getActiveLink();if(l&&l.indexOf('http')===0)return l;}var f=document.querySelector('iframe');if(f&&f.src&&f.src.indexOf('http')===0)return f.src;var v=document.querySelector('video');if(v&&v.src&&v.src.indexOf('http')===0)return v.src;}catch(e){}return '';})()"
     }
   ],
-  "last_check": "2026-11-22T01:31:09Z",
+  "last_check": "2026-11-24T07:30:00Z",
   "check": {
     "status": "step_failed",
-    "reason": "Seite baut die Quellenliste per JS (getActiveLink); ohne WebView keine URL"
+    "reason": "Der Pack-Pfad ist nur noch die Rueckfallebene. Primaerweg ist die dokumentierte API: Die Seite /movie/{id} bzw. /serial/{id} liefert ein Token, damit liefert POST /api/embed-links die Quellenliste (Dropload/SuperVideo/Doodstream/Mixdrop) — umgesetzt in DeVideoSrcResolver. Der js-Schritt allein scheitert, weil der Abspieler iframe#_player.src erst nach dem Klick auf Play setzt (leerer Wert). Beleg: Lauf 3 am A52, devideosrc.co war der haeufigste Zielhost der CONTAINER_UNSUPPORTED-Fehlschlaege."
   }
 }

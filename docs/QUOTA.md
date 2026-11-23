@@ -175,6 +175,89 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run2-be45079/`
 (Titelzeilen im UI-Dump `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`,
 Antwort der Challenge/Token-Abfrage separat protokolliert).
 
+## Lauf 3 — Build `078fb4b`, 23.11.2026, A52 (WebView-Budget: ein Versuch je Titel)
+
+Stichprobe: **identisch** zu Lauf 1/2 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 21:57–22:22 (~26 min, Lauf 2 brauchte ~51 min).
+APK `6402b567…` (signiert, `de.hendler.frame61.acceptance`), Zustandsha `078fb4b0…`.
+Geänderte Basis gegenüber Lauf 2: `WebViewBudget` (ein WebView-Versuch je Titel,
+mit Frist), `QUEUE_WAIT_MS` 5 s statt unbegrenzt auf die app-weite WebView-Sperre,
+VOE-Pack `guest: false` (Log inside bei Gastsperre 302 → nach hinten sortiert).
+
+| Kennzahl | Wert | Lauf 2 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Mischwert) | **59 / 100 = 59 %** | 53 % | +6 pp |
+| Auflösung p50 / p95 | 2.130 / 27.049 ms | 4.585 / 27.186 ms | p50 **−2,5 s**, p95 −137 ms |
+| Startzeit p50 / p95 | 2.765 / 28.428 ms | 2.734 / 28.458 ms | p50 +31 ms, p95 −30 ms |
+| Fehlerklassen | 33 × `CONTAINER_UNSUPPORTED`, 8 × `NO_CANDIDATE` | 35 / 12 | −2 / **−4** |
+
+Quote je Quellengruppe (gemessene Zeile `QUOTA GROUPSEN`):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 2 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| aniworld | 19 | 16 | **84 %** | 78 % | +6 pp | `CONTAINER_UNSUPPORTED`: 3 |
+| serienstream | 43 | 28 | **65 %** | 58 % | +7 pp | `CONTAINER_UNSUPPORTED`: 11 |
+| filmpalast | 11 | 4 | **36 %** | 27 % | +9 pp | `CONTAINER_UNSUPPORTED`: 6 |
+| moflix | 11 | 3 | **27 %** | 18 % | +9 pp | `CONTAINER_UNSUPPORTED`: 8 |
+| ard | 10 | 5 | 50 % | 50 % | 0 | `CONTAINER_UNSUPPORTED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 | `CONTAINER_UNSUPPORTED`: 2 |
+
+### Befund 1 — die Warteschlange ist weg, die Interception trifft jetzt
+
+Der Kern des Blocks ist belegt: von den letzten 7 Interception-Versuchen des
+Fensters hatten **5** Requests (in Lauf 2 waren es 7 von 14 mit **null**
+Anfragen), **4 davon eine echte Medien-URL**:
+
+| Interception | Seite | gefundene Medien-URL | Dauer |
+|---|---|---|---|
+| #19 | `odysseusa.cc/e/DooiGuaaRJ73B` | `s6-s501740.97bf1.com/hls/aP7Rx…/master.m3u8?token=…` | 3.687 ms |
+| #23 | `vidaraa.cc/e/phGy6thMsf0tR` | `s7-5042yyg.s1q2105.com/hls/OD6Y…/master.m3u8?token=…` | 1.878 ms |
+| #25 | `vidaraa.cc/e/G6pMqQ070yPla` | `s7-5042yyg.s1q2105.com/hls/xcxb…/master.m3u8?token=…` | 2.121 ms |
+| #29 | `vidaraa.cc/dgBRg3f5Mg5zC` | `s1-s501740.97bf1.com/hls/HOhI…/master.m3u8?token=…` | 2.472 ms |
+
+Request-Kette vor dem Treffer (nachgewiesen im `INTERCEPT #REQ`-Fenster):
+jwplayer 8.36.2 → jQuery 3.3.1 → pako → crypto-js → acscdn `aclib.js` →
+`assets/js/fsorient.js` → `master.m3u8?token=…`. Das ist die **wirkliche**
+Interception, nicht der Deckel. Und sie trägt: `fp:by-any-means-gegen-jede-regel`
+spielt jetzt ab — **erster Treffer einer Index-Gruppe (filmpalast), der nicht aus
+dem ARD/ZDF-Sockel stammt** (`host=s7-5042yyg.s1q2105.com`, `intercept=1
+medien=1`, RESULT=OK).
+
+### Befund 2 — was jetzt noch scheitert: eine HTML-Seite als einziger Kandidat
+
+Die 33 `CONTAINER_UNSUPPORTED` haben das Muster `candidates=1 tried=1`: der
+Index liefert genau **einen** Hosterlink, und der ist eine HTML-Zielseite, die
+der Player nicht spielen kann. Gemessene Zielhosts der Fehlschläge dieser Runde:
+
+| Host | Fehlschläge | Lage |
+|---|---|---|
+| `devideosrc.co` | ~25 | alle Gruppen — der Pack liefert kein Ergebnis |
+| `uqload.vc` | 4 | kein Pack vorhanden |
+| `moflix.rpmplay.xyz`, `moflix-stream.fans`, `flyfile.app`, `strmup.to` | ~6 | kein Pack vorhanden |
+
+Damit ist die Abweichung von der Nachtsteuerung-Reihenfolge begründet (Regel 1
+der Nachtsteuerung: „Begründe jede Abweichung"): Doodstream/Filemoon spielen in
+**dieser Stichprobe praktisch keine Rolle** — gemessene Zielhosts sind
+devideosrc/uqload/moflix. `devideosrc.co` ist zuerst zu bedienen, danach
+uqload und die moflix-Hosts; bs.to bleibt in der Kette über VOE (BLOCKED) und
+verweist bei 6 von 6 Titeln auf devideosrc/uqload.
+
+### Befund 3 — warum „medien=1" trotzdem `CONTAINER_UNSUPPORTED` ergab
+
+Vier Titel fangen eine Medien-URL und fallen trotzdem in
+`CONTAINER_UNSUPPORTED` (z. B. `fp:couscous-und-geheimnisse`, `fp:coraline`,
+`fp:catweazle`, `aw:afro-samurai`). Ursache: diese Titel haben nur den
+devideosrc-Kandidaten; devideosrc hat **kein** `captcha`, läuft also über den
+Pack-Pfad statt über den Interceptor. Der Pack-Schritt `js` fragt im
+versteckten WebView `getActiveLink()/iframe.src/video.src` ab — der
+devideosrc-Abspieler setzt `iframe#_player.src` aber **erst nach dem Klick auf
+Play** (Quelle: `devideosrc.co/docs`, `meinecloudPlayer`-Ereignisse). Leerwert
+→ `Failed` → der HTML-Kandidat bleibt stehen.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run3-078fb4b/`
+(UI-Dumps `polls/p*/02.xml`, Raummeldung `jobs/smoke.log`,
+`QUICK_SMOKE` PASS `job-ea000e3e05ec443f`).
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

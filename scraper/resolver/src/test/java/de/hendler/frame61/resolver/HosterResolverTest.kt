@@ -388,4 +388,70 @@ class HosterResolverTest {
         assertTrue(out is HosterOutcome.Resolved)
         assertEquals("https://cdn.example/v.m3u8", (out as HosterOutcome.Resolved).url)
     }
+
+    @Test
+    fun `devideosrc page is expanded into the provider list`() = runTest {
+        val fetcher = FakeFetcher(
+            bodies = mapOf(
+                "https://devideosrc.co/movie/tt0111161" to
+                    "body: JSON.stringify({ type: 'movie', id: \"tt0111161\", token: \"tok-1\" })",
+                "https://devideosrc.co/api/embed-links" to
+                    """{"ok":true,"type":"movie","sources":[{"name":"dropload.io","url":"https://dr0pstream.com/e/abc","rank":1}]}"""
+            )
+        )
+        val dropload = pack(
+            id = "dropload",
+            domains = listOf("dr0pstream.com"),
+            result = "file",
+            steps = listOf(
+                HosterStep(
+                    action = "copy",
+                    url = "https://r1.dropcdn.io/hls2/master.m3u8?t=x",
+                    saveAs = "file"
+                )
+            )
+        )
+        val resolver = HosterResolver(
+            listOf(dropload),
+            fetcher,
+            devideosrc = DeVideoSrcResolver(fetcher)
+        )
+
+        val out = resolver.resolve("https://devideosrc.co/movie/tt0111161")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals(
+            "https://r1.dropcdn.io/hls2/master.m3u8?t=x",
+            (out as HosterOutcome.Resolved).url
+        )
+    }
+
+    @Test
+    fun `devideosrc without an api answer keeps the old pack path`() = runTest {
+        // Ohne Quellenliste (API leer) darf der bisherige Pack-Pfad nicht
+        // verloren gehen — sonst waere der Titel gar kein Kandidat mehr.
+        val fetcher = FakeFetcher(
+            bodies = mapOf(
+                "https://devideosrc.co/movie/tt0111161" to "<html>player</html>"
+            )
+        )
+        val devideosrc = pack(
+            id = "devideosrc",
+            domains = listOf("devideosrc.co"),
+            result = "file",
+            steps = listOf(
+                HosterStep(action = "copy", url = "https://fallback.example/v.m3u8", saveAs = "file")
+            )
+        )
+        val resolver = HosterResolver(
+            listOf(devideosrc),
+            fetcher,
+            devideosrc = DeVideoSrcResolver(fetcher)
+        )
+
+        val out = resolver.resolve("https://devideosrc.co/movie/tt0111161")
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals("https://fallback.example/v.m3u8", (out as HosterOutcome.Resolved).url)
+    }
 }
