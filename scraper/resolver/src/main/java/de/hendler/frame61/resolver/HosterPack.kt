@@ -64,7 +64,7 @@ data class InterceptedMedia(val url: String, val cookies: String? = null)
  * ab (`shouldInterceptRequest`), statt das Redirect-JavaScript nachzubauen.
  *
  * Der Browser der Seite löst seine eigene Challenge; aufgefangen wird nur das
- * Ergebnis (`.m3u8`, `.mp4`, `.mpd` oder `video/*`).
+ * Ergebnis (`.m3u8`, `.mp4`, `.mpd` oder ein `video/…`-Antworttyp).
  */
 fun interface MediaInterceptor {
     suspend fun intercept(url: String, timeoutMs: Long): InterceptedMedia?

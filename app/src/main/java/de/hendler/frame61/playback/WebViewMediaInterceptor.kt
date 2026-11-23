@@ -28,7 +28,7 @@ import kotlinx.coroutines.withTimeoutOrNull
  * Statt das Redirect-JavaScript nachzubauen, lädt der Browser der Seite die
  * Embed-URL selbst (inklusive DDoS-Guard-/Cloudflare-Challenge) und wir fangen
  * den Medienabruf über [WebViewClient.shouldInterceptRequest] ab: `.m3u8`,
-     * `.mp4`, `.mpd`, `.mkv` oder ein `video/*`-Antworttyp.
+     * `.mp4`, `.mpd`, `.mkv` oder ein `video/…`-Antworttyp.
  *
  * Der Nutzer sieht nichts: Die WebView hängt nicht an der View-Hierarchie,
  * Cookies werden ausgelesen und an den Player weitergegeben.
