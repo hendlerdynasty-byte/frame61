@@ -71,19 +71,24 @@ class ArdPlaybackResolver @Inject constructor(
                 }
         }
 
-    private fun findShow(pack: SourcePack, title: String) =
-        runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
+    private fun findShow(pack: SourcePack, title: String): de.hendler.frame61.scraper.engine.SearchResult? {
+        val hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
             .filter { it.title.isNotBlank() && it.id.isNotBlank() }
-            .sortedWith(
-                compareByDescending<de.hendler.frame61.scraper.engine.SearchResult> {
-                    it.title.equals(title, ignoreCase = true)
-                }.thenByDescending {
-                    it.title.startsWith(title, ignoreCase = true)
-                }.thenByDescending {
-                    it.title.contains(title, ignoreCase = true)
-                }
-            )
-            .firstOrNull { it.title.contains(title, ignoreCase = true) }
+        if (hits.isEmpty()) return null
+        val ordered = hits.sortedWith(
+            compareByDescending<de.hendler.frame61.scraper.engine.SearchResult> {
+                it.title.equals(title, ignoreCase = true)
+            }.thenByDescending {
+                it.title.startsWith(title, ignoreCase = true)
+            }.thenByDescending {
+                it.title.contains(title, ignoreCase = true)
+            }
+        )
+        // Der Katalog kann einen anderen Titel tragen als der Treffer; dann
+        // zählt der beste Treffer, nicht „keine Quelle“.
+        return ordered.firstOrNull { it.title.contains(title, ignoreCase = true) }
+            ?: ordered.firstOrNull()
+    }
 
     private suspend fun toCandidate(
         show: de.hendler.frame61.scraper.engine.SearchResult,

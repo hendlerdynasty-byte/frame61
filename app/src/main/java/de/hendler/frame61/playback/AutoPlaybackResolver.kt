@@ -283,7 +283,12 @@ class AutoPlaybackResolver @Inject constructor(
                     .getOrDefault(emptyList())
             }
         }
+        // Der Katalog wird aus den Quellen geerntet (1.5.0): Der Titel kann
+        // dort länger/anders geschrieben sein als im Treffer. Passt kein
+        // Treffer exakt, zählt der erste — sonst liefe jede Suche ohne Ergebnis
+        // zurück, obwohl die Quelle den Titel führt.
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
+            ?: hits.firstOrNull()
             ?: return emptyList()
         val streams = interpreter.streams(
             pack,
