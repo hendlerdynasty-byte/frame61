@@ -98,11 +98,30 @@ class HosterResolver(
                     return resolve(followed, effectiveCookies, depth + 1)
                 }
             }
-            // Letzte Stufe: eine Embed-Seite ohne eigenes Pack. Die versteckte
-            // WebView baut die Seite und meldet die erste echte Medien-URL
-            // (video/source/window.sources/getActiveLink). Nur bei Embed-Formen,
-            // damit kein fremder Host den Start verzögert.
+            // Letzte Stufe: eine Embed-Seite ohne eigenes Pack. Zuerst die
+            // versteckte WebView: sie baut die Seite (inkl. Cloudflare) und
+            // zeichnet den **echten** Medienabruf samt Kopfzeilen auf. Erst
+            // danach der DOM-Abgriff als Rückfallebene.
             if (depth == 0 && looksLikeEmbed(url)) {
+                val interceptor = mediaInterceptor
+                if (interceptor != null) {
+                    val intercepted = runCatching {
+                        interceptor.intercept(url, MEDIA_INTERCEPT_MS)
+                    }.getOrNull()
+                    if (intercepted != null && intercepted.url.startsWith("https://")) {
+                        val merged = linkedMapOf(
+                            "User-Agent" to DEFAULT_USER_AGENT,
+                            "Referer" to url
+                        )
+                        intercepted.headers.forEach { (key, value) -> merged[key] = value }
+                        return HosterOutcome.Resolved(
+                            intercepted.url,
+                            1,
+                            merged,
+                            intercepted.cookies ?: effectiveCookies
+                        )
+                    }
+                }
                 val evaluator = jsEvaluator
                 if (evaluator != null) {
                     val extracted = runCatching {
@@ -123,10 +142,14 @@ class HosterResolver(
                 mediaInterceptor?.intercept(url, MEDIA_INTERCEPT_MS)
             }.getOrNull()
             if (intercepted != null && intercepted.url.startsWith("https://")) {
+                // Die Kopfzeilen der aufgezeichneten Anfrage gehen mit zum
+                // Player (Referer/Origin/Cookie) — ohne sie verweigern die
+                // Hoster den Abruf nach der Challenge-Seite.
                 val headers = linkedMapOf(
                     "User-Agent" to DEFAULT_USER_AGENT,
                     "Referer" to url
                 )
+                intercepted.headers.forEach { (key, value) -> headers[key] = value }
                 return HosterOutcome.Resolved(
                     intercepted.url,
                     1,

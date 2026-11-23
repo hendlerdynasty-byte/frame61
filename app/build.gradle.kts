@@ -173,6 +173,8 @@ dependencies {
     implementation(libs.okio)
     implementation(libs.kotlinx.serialization)
     implementation(libs.androidx.datastore)
+    // Jsoup für die quellenspezifischen Resolver (bs.to-Episodentabelle).
+    implementation(libs.jsoup)
 
     // Media3 for the player screen (PlayerView lives in media3-ui)
     implementation(libs.androidx.media3.exoplayer)

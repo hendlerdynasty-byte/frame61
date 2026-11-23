@@ -127,8 +127,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         val resolveTimes = mutableListOf<Long>()
         val firstFrames = mutableListOf<Long>()
         val classes = mutableMapOf<String, Int>()
+        // Quote je Quellengruppe: der Mischwert allein verdeckt, welche Gruppe
+        // trägt und welche nur den leichten Pfad zählt.
+        val groupOk = mutableMapOf<String, Int>()
+        val groupTotal = mutableMapOf<String, Int>()
+        val groupClasses = mutableMapOf<String, MutableMap<String, Int>>()
 
         sample.forEachIndexed { index, item ->
+            groupTotal[item.group] = (groupTotal[item.group] ?: 0) + 1
             val episode = if (item.type == "series") 1 else 0
             val started = SystemClock.elapsedRealtime()
             val traceStart = PlaybackDiagnostics.events.value.size
@@ -172,18 +178,21 @@ open class PlaybackQuotaActivity : ComponentActivity() {
 
             if (played) {
                 ok++
+                groupOk[item.group] = (groupOk[item.group] ?: 0) + 1
                 firstFrameTotal += firstFrameMs
                 firstFrames += firstFrameMs
                 report(
-                    "QUOTA $mode idx=${index + 1} id=${item.id} type=${item.type} " +
+                    "QUOTA $mode idx=${index + 1} id=${item.id} group=${item.group} type=${item.type} " +
                         "RESULT=OK class=- resolveMs=$resolveMs playMs=${firstFrameMs - resolveMs} " +
                         "firstFrameMs=$firstFrameMs candidates=${mirrors.size} tried=$tried " +
                         "host=$usedHost"
                 )
             } else {
                 classes[errorClass] = (classes[errorClass] ?: 0) + 1
+                val groupMap = groupClasses.getOrPut(item.group) { mutableMapOf() }
+                groupMap[errorClass] = (groupMap[errorClass] ?: 0) + 1
                 report(
-                    "QUOTA $mode idx=${index + 1} id=${item.id} type=${item.type} " +
+                    "QUOTA $mode idx=${index + 1} id=${item.id} group=${item.group} type=${item.type} " +
                         "title=${item.title.sanitize()} RESULT=FAIL class=$errorClass " +
                         "resolveMs=$resolveMs candidates=${mirrors.size} tried=$tried " +
                         "hosts=[${triedHosts.joinToString(",")}]"
@@ -201,6 +210,21 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 "frameP50Ms=${percentile(frameSorted, 50)} " +
                 "frameP95Ms=${percentile(frameSorted, 95)} " +
                 "failures=[${classes.entries.sortedByDescending { it.value }.joinToString(",") { "${it.key}:${it.value}" }}]"
+        )
+        // Quote je Quellengruppe — der Mischwert allein sagt nicht, wo es hakt.
+        // Format: Gruppe | Titel | spielbar | Quote | häufigste Fehlerklasse.
+        report(
+            "QUOTA GROUPEN mode=$mode " +
+                groupTotal.keys.sorted().joinToString(" | ") { group ->
+                    val total = groupTotal[group] ?: 0
+                    val groupOkCount = groupOk[group] ?: 0
+                    val errors = groupClasses[group].orEmpty()
+                        .entries.sortedByDescending { it.value }
+                    val top = errors.firstOrNull()
+                        ?.let { "${it.key}:${it.value}" } ?: "-"
+                    val quote = if (total > 0) groupOkCount * 100 / total else 0
+                    "$group | $total | $groupOkCount | $quote% | $top"
+                }
         )
         Log.i(TAG, "QUOTA DONE mode=$mode datei=${logFile?.absolutePath}")
     }
@@ -276,7 +300,12 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         return (0 until array.length()).mapNotNull { index ->
             val entry = array.optJSONObject(index) ?: return@mapNotNull null
             val title = entry.optString("title").takeIf { it.isNotBlank() } ?: return@mapNotNull null
-            CatalogItem(id = entry.optString("id"), title = title, type = entry.optString("type"))
+            CatalogItem(
+                id = entry.optString("id"),
+                title = title,
+                type = entry.optString("type"),
+                group = entry.optString("group").ifBlank { "unbekannt" }
+            )
         }
     }
 
@@ -320,7 +349,12 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         super.onDestroy()
     }
 
-    private data class CatalogItem(val id: String, val title: String, val type: String)
+    private data class CatalogItem(
+        val id: String,
+        val title: String,
+        val type: String,
+        val group: String
+    )
 
     private data class Attempt(val firstFrameMs: Long?, val errorClass: String?)
 
@@ -333,7 +367,8 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         const val MAX_CANDIDATES = 3
         const val PLAYBACK_POLL_MS = 250L
         const val PLAYBACK_POLLS = 28
-        const val RESOLVE_BUDGET_MS = 30_000L
+        // bs.to braucht bis zu ~28 s (Challenge + Klick in der WebView).
+        const val RESOLVE_BUDGET_MS = 45_000L
     }
 }
 

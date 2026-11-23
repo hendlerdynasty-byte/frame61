@@ -56,18 +56,36 @@ interface JsEvaluator {
     suspend fun evaluate(url: String, script: String, timeoutMs: Long = 8_000L): String?
 }
 
-/** Ergebnis einer stillen WebView-Auflösung: Medien-URL plus gesetzte Cookies. */
-data class InterceptedMedia(val url: String, val cookies: String? = null)
+/**
+ * Ergebnis einer stillen WebView-Auflösung.
+ *
+ * [headers] sind die **wirklichen** Kopfzeilen, mit denen die Seite ihren
+ * Medienabruf gestellt hat (Referer, Origin, Cookie, User-Agent). Der Player
+ * schickt sie mit — ohne sie verweigern Hoster den Abruf nach dem Sprung über
+ * eine Challenge-Seite. [elapsedMs] ist die **gemessene** Zeit vom Ladestart bis
+ * zum Treffer, nicht der konfigurierte Deckel.
+ */
+data class InterceptedMedia(
+    val url: String,
+    val cookies: String? = null,
+    val headers: Map<String, String> = emptyMap(),
+    val elapsedMs: Long = 0L
+)
 
 /**
  * Lädt eine Embed-Seite in einer versteckten WebView und fängt den Medienabruf
  * ab (`shouldInterceptRequest`), statt das Redirect-JavaScript nachzubauen.
  *
- * Der Browser der Seite löst seine eigene Challenge; aufgefangen wird nur das
- * Ergebnis (`.m3u8`, `.mp4`, `.mpd` oder ein `video/…`-Antworttyp).
+ * Der Browser der Seite löst seine eigene Challenge; aufgezeichnet wird nur das
+ * Ergebnis (`.m3u8`, `.mp4`, `.mpd` oder ein `video/…`-Antworttyp). Die Anfrage
+ * wird **durchgelassen** (Rückgabe `null`), nicht aus der WebView beliefert —
+ * der Player holt die Datei selbst, mit den aufgezeichneten Kopfzeilen.
+ *
+ * [script] läuft nach dem Laden der Seite (z. B. der bs.to-Klick, der die
+ * Hoster-Aufdeckung erst auslöst).
  */
 fun interface MediaInterceptor {
-    suspend fun intercept(url: String, timeoutMs: Long): InterceptedMedia?
+    suspend fun intercept(url: String, timeoutMs: Long, script: String? = null): InterceptedMedia?
 }
 
 /** Validation and file loading without an Android Context. */

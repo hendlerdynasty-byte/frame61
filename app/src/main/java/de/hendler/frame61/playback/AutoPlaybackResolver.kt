@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
 import de.hendler.frame61.data.ProfileDataStore
+import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.resolver.HosterOutcome
 import de.hendler.frame61.resolver.HosterPack
@@ -46,6 +47,8 @@ class AutoPlaybackResolver @Inject constructor(
     private val packLoader: PackLoader,
     private val interpreter: PackInterpreter,
     private val ardResolver: ArdPlaybackResolver,
+    private val bsToResolver: BsToPlaybackResolver,
+    private val catalog: CatalogRepository,
     private val captchaBroker: CaptchaBroker,
     private val jsEvaluator: WebViewJsEvaluator,
     private val headlessCaptchaSolver: HeadlessCaptchaSolver,
@@ -68,6 +71,26 @@ class AutoPlaybackResolver @Inject constructor(
      * Quellen im Hintergrund noch bis zu ihrem Timeout laufen.
      */
     private val resolveScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+
+    /** Eigener Scope für das Vorwärmen: es darf den Start nie blockieren. */
+    private val warmUpScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+
+    /**
+     * Katalog-Titel → Quellengruppe und Quellenschlüssel.
+     *
+     * Der Katalog wird aus den Quellen geerntet; deshalb kennt er die
+     * Adressierung **innerhalb** der Quelle (Slug, API-Id). Ohne diese
+     * Zuordnung ist z. B. bs.to nicht adressierbar: die Suche dort liefert
+     * interne Nummern, keine URLs.
+     */
+    private val catalogIndex: Map<String, de.hendler.frame61.meta.CatalogItem> by lazy {
+        catalog.all()
+            .filter { it.title.isNotBlank() }
+            .associateBy { normalizeTitle(it.title) }
+    }
+
+    private fun normalizeTitle(title: String): String =
+        title.trim().lowercase().replace(Regex("\\s+"), " ")
 
     private val hosterPacks: List<HosterPack> by lazy {
         val assets = context.assets
@@ -97,6 +120,11 @@ class AutoPlaybackResolver @Inject constructor(
      * Challenge wartet. Wird bewusst **nicht** beim Anlegen des Resolvers
      * aufgerufen (das erzeugte mehrere WebViews gleichzeitig und blockierte den
      * Hauptthread → ANR), sondern verzögert vom Einstiegspunkt der App.
+     *
+     * Vorbwärmt werden zwei Wege:
+     *  - die Hoster mit Challenge (Cookie-Ernte über die versteckte WebView),
+     *  - alle Hosts, über die die **Interception** läuft: VOE (der Hoster von
+     *    bs.to, streamcloud und aniworld) sowie die Indexseiten selbst.
      */
     fun warmUpCaptchaHosts() {
         val urls = hosterPacks
@@ -104,6 +132,9 @@ class AutoPlaybackResolver @Inject constructor(
             .mapNotNull { pack -> pack.domains.firstOrNull()?.let { "https://$it/" } }
             .take(MAX_WARMUP_HOSTS)
         if (urls.isNotEmpty()) headlessCaptchaSolver.warmUp(urls)
+        warmUpScope.launch {
+            runCatching { mediaInterceptor.warmUp(INTERCEPTION_WARMUP_URLS) }
+        }
     }
 
     suspend fun resolve(
@@ -182,11 +213,15 @@ class AutoPlaybackResolver @Inject constructor(
         sessionId: Long
     ): List<MirrorCandidate> {
         val started = System.currentTimeMillis()
+        // bs.to braucht länger: Challenge + Klick + Medienabruf laufen in der
+        // versteckten WebView. Mit dem Standardbudget wäre die Quelle immer
+        // abgeschnitten — genau der Fehler, der die Quote gedrückt hat.
+        val budget = if (pack.id == BS_TO_PACK_ID) BS_TO_TIMEOUT_MS else SOURCE_TIMEOUT_MS
         val result = runCatching {
-            withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
+            withTimeoutOrNull(budget) {
                 resolvePack(pack, title, episodeNumber, sessionId)
             } ?: run {
-                trace(sessionId, pack.id, "Zeitüberschreitung nach $SOURCE_TIMEOUT_MS ms")
+                trace(sessionId, pack.id, "Zeitüberschreitung nach $budget ms")
                 emptyList()
             }
         }.getOrElse { error ->
@@ -270,6 +305,19 @@ class AutoPlaybackResolver @Inject constructor(
     ): List<MirrorCandidate> {
         if (pack.id == ArdPlaybackResolver.PACK_ID) {
             return ardResolver.resolve(title, episodeNumber)
+        }
+        if (pack.id == BS_TO_PACK_ID) {
+            // bs.to ist nur über den Sitemap-Slug adressierbar; die Suche der
+            // Seite liefert interne Nummern statt URLs. Ohne Katalogeintrag
+            // bleibt die Quelle leer — lieber keine als die falsche Serie.
+            val item = catalogIndex[normalizeTitle(title)]
+            val slug = item?.sourceKey
+            if (item?.group != GROUP_BSTO || slug.isNullOrBlank()) {
+                Log.i(TAG, "bs-to: kein Slug für '$title' (Gruppe=${item?.group ?: "-"})")
+                return emptyList()
+            }
+            trace(sessionId, pack.id, "bs.to $slug", null)
+            return bsToResolver.resolve(slug, episodeNumber, item.id)
         }
         var cookies: String? = null
         var hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
@@ -419,6 +467,25 @@ class AutoPlaybackResolver @Inject constructor(
 
     companion object {
         private const val TAG = "Frame61Resolve"
+
+        /** Pack-ID von bs.to; die Quelle braucht einen eigenen Pfad. */
+        private const val BS_TO_PACK_ID = "bs-to"
+
+        /** Kataloggruppe von bs.to. */
+        private const val GROUP_BSTO = "bsto"
+
+        /**
+         * Hosts, über die die Medien-Interception läuft. Sie werden beim Start
+         * vorgewärmt: VOE ist der Hoster von bs.to, streamcloud und aniworld;
+         * die Indexseiten selbst setzen Cloudflare-/DDoS-Guard-Cookies.
+         */
+        private val INTERCEPTION_WARMUP_URLS = listOf(
+            "https://voe.sx/",
+            "https://burningseries.ac/",
+            "https://aniworld.to/",
+            "https://streamcloud.date/",
+            "https://serienstream.to/"
+        )
         /**
          * Budget je Quelle. Packs mit JS-Kette (serienstream-Redirect, devideosrc,
          * vidmoly) brauchen länger als ein reiner HTTP-Pfad. Der Player wartet
@@ -426,6 +493,9 @@ class AutoPlaybackResolver @Inject constructor(
          * Kandidaten zurück.
          */
         private const val SOURCE_TIMEOUT_MS = 10_000L
+
+        /** Budget für bs.to (Challenge + Klick + Medienabruf in der WebView). */
+        private const val BS_TO_TIMEOUT_MS = 28_000L
 
         /** Hoster-Kette inkl. stiller WebView-Interception (VOE/Doodstream). */
         private const val HOSTER_TIMEOUT_MS = 20_000L

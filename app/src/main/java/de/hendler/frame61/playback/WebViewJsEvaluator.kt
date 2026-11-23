@@ -28,17 +28,12 @@ class WebViewJsEvaluator @Inject constructor(
 ) : JsEvaluator {
 
     /**
-     * Nur eine WebView gleichzeitig.
-     *
-     * Mehrere parallele Erreaufbauten auf dem Hauptthread blockieren die
-     * Nachrichten-Schleife (gemessen: ANR „Frame61 wird wiederholt beendet“,
-     * weil das Vorwaermen vier WebViews gleichzeitig erzeugte).
+     * Nur eine WebView gleichzeitig — app-weite Sperre ([WebViewGate]); mehrere
+     * parallele Aufbauten blockierten den Hauptthread (gemessener ANR).
      */
-    private val webViewMutex = Mutex()
-
     @SuppressLint("SetJavaScriptEnabled")
     override suspend fun evaluate(url: String, script: String, timeoutMs: Long): String? =
-        webViewMutex.withLock {
+        WebViewGate.mutex.withLock {
             withContext(Dispatchers.Main) {
                 withTimeoutOrNull(timeoutMs) {
                     suspendCancellableCoroutine { continuation ->
@@ -102,7 +97,7 @@ class WebViewJsEvaluator @Inject constructor(
      */
     @SuppressLint("SetJavaScriptEnabled")
     suspend fun cookiesFor(url: String, timeoutMs: Long = 15_000L, settleMs: Long = 1_200L): String? =
-        webViewMutex.withLock {
+        WebViewGate.mutex.withLock {
             withContext(Dispatchers.Main) {
                 withTimeoutOrNull(timeoutMs) {
                     suspendCancellableCoroutine { continuation ->

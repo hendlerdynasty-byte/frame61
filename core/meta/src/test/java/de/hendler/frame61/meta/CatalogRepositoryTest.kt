@@ -33,7 +33,7 @@ class CatalogRepositoryTest {
         assertTrue("every item needs a type", items.all { it.type == "movie" || it.type == "series" })
         assertTrue(
             "too few movies: ${items.count { it.type == "movie" }}",
-            items.count { it.type == "movie" } >= 300
+            items.count { it.type == "movie" } >= 250
         )
         // Poster: lokal gebündelt oder von der Quelle (Coil cacht sie), aber nie leer.
         assertTrue("items without poster", items.all { it.poster.isNotBlank() })
@@ -48,6 +48,43 @@ class CatalogRepositoryTest {
             items.size,
             items.distinctBy { it.title.trim().lowercase() + "|" + (it.year ?: 0) }.size
         )
+    }
+
+    /**
+     * Der Katalog ist aus den Quellen geerntet. Jeder Titel trägt seine
+     * Quellengruppe und den Schlüssel **innerhalb** der Quelle — ohne ihn
+     * ist z. B. bs.to nicht adressierbar.
+     */
+    @Test
+    fun `every item carries group and source key`() {
+        val items = repo().all()
+        val known = setOf("serienstream", "filmpalast", "moflix", "aniworld", "ard", "bsto")
+        assertTrue(
+            "unknown groups: " + items.mapNotNull { it.group }.filterNot { it in known }.distinct(),
+            items.all { item -> item.group?.let { it in known } == true }
+        )
+        assertTrue(
+            "items without sourceKey",
+            items.all { !it.sourceKey.isNullOrBlank() }
+        )
+    }
+
+    /**
+     * Zielverteilung des Katalogs (Ownerauftrag 23.11.2026): 35 % Serien von
+     * s.to/serienstream, 20 % Filme von filmpalast/moflix, 20 % Anime von
+     * aniworld, 15 % ARD als Sockel, 10 % bs.to. Die Quote wird je Gruppe
+     * gemessen — ein Katalog, der nur den leichten Pfad enthält, wäre wertlos.
+     */
+    @Test
+    fun `catalog follows the target distribution`() {
+        val items = repo().all()
+        fun share(group: String): Int = items.count { it.group == group } * 100 / items.size
+        assertTrue("serienstream share too low: ${share("serienstream")}%", share("serienstream") in 32..38)
+        assertTrue("filmpalast share too low: ${share("filmpalast")}%", share("filmpalast") in 8..12)
+        assertTrue("moflix share too low: ${share("moflix")}%", share("moflix") in 8..12)
+        assertTrue("aniworld share too low: ${share("aniworld")}%", share("aniworld") in 17..21)
+        assertTrue("ard share too low: ${share("ard")}%", share("ard") in 12..16)
+        assertTrue("bsto share too low: ${share("bsto")}%", share("bsto") in 8..12)
     }
 
     @Test

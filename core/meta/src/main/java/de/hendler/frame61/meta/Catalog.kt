@@ -18,7 +18,20 @@ data class CatalogItem(
     val rating: Double? = null,
     val runtime: Int? = null,
     val overview: String = "",
-    val poster: String = ""
+    val poster: String = "",
+    /**
+     * Quellengruppe, aus der der Titel geerntet wurde (`serienstream`,
+     * `filmpalast`, `moflix`, `aniworld`, `ard`, `bsto`, `streamcloud`).
+     * Die Quote wird je Gruppe ausgewiesen — der Mischwert allein sagt nicht,
+     * ob eine Gruppe oder die ganze Bibliothek trägt.
+     */
+    val group: String? = null,
+    /**
+     * Adressierung **innerhalb** der Quelle (Slug, API-Id, CRID). Nur die
+     * Quelle selbst kennt ihre Schlüssel; der Titel reicht nicht, weil
+     * mehrere Quellen denselben Titel führen.
+     */
+    val sourceKey: String? = null
 )
 
 @Serializable
