@@ -499,3 +499,30 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   sowie die Indexseiten burningseries, aniworld, streamcloud und
   serienstream. Der Prewarm läuft im Hintergrund, sequenziell und ohne
   Blockade des Hauptthreads.
+
+## 2026-11-23 — Quellbudget umfasst den Hoster-Schritt (gemessen)
+
+- Befund (A52, Lauf 1, Build `448109a`): 34 der 55 Fehlschläge endeten mit
+  `hoster timeout` (moflix 15, filmpalast 6, s-to 5, streamcloud 3, aniworld 3).
+  Ursache: Das Budget je Quelle (10 s) umfasste nur den Quellenschritt
+  (Suche → Detail → Streams). Die Hoster-Auflösung darf für sich allein
+  20 s brauchen (WebView-Interception) — der Schnitt fiel also **vor** dem
+  Ergebnis.
+- Default: Das Budget je Quelle (32 s) und die Obergrenze des Einsammelns
+  (34 s) umfassen beide Stufen. Das schnelle Pfadverhalten bleibt: `resolveFast`
+  kehrt 600 ms nach dem ersten Kandidaten zurück, die ARD-Kette liefert in
+  ~1 s — die Startzeit der spielbaren Titel ändert sich dadurch nicht.
+- Das Budget für bs.to (34 s) und die Hoster-Stufe (26 s) folgen derselben
+  Logik: der Schnitt darf nicht vor dem Ergebnis fallen.
+
+## 2026-11-23 — Jeder Interception-Versuch wird protokolliert
+
+- Default: Die versteckte WebView schreibt pro Versuch einen Datensatz nach
+  `InterceptionLog` (Ausgang, **gemessene** Zeit, Request-Kette der Seite,
+  Skript-Rückgabe, letzte Seite). Der Messharness zeigt die Versuche je Titel
+  (`intercept=n medien=n maxMs=n`) und die letzten sechs Versuche im Detail.
+- Grund: Ohne diesen Beleg ist nicht unterscheidbar, ob die Kette an der
+  Challenge (bs.to), am Hoster-Redirect (VOE) oder am Medienabruf gehalten
+  hat. Im Lauf 1 stand nur „keine Medien-URL" — ohne Request-Kette.
+- Die Aufzeichnung ersetzt keine Quelle: sie verändert den Ablauf nicht und
+  bleibt im Prozess (kein Telemetrie-, Server- oder Account-Ansatz).

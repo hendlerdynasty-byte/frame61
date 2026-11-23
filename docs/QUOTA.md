@@ -9,8 +9,14 @@ Stand: 23.11.2026. Methode und Zahlen für Version 1.5.0.
   - **Holdout** (`PlaybackQuotaHoldoutActivity`, Seed `20261123`, 100 Titel aus
     dem Rest des Katalogs). Die Holdout-Stichprobe wird erst nach der
     Trainings-Stichprobe gefahren und nie zum Nachsteuern benutzt.
-- **Katalog:** invertiert — die Bibliothek kommt aus den Quellen selbst
-  (ARD 500, bs.to 300, streamcloud 197), siehe `docs/ENTSCHEIDUNGEN.md`.
+- **Katalog:** invertiert und nach Zielverteilung geerntet — 997 Titel aus den
+  Quellen selbst: 35 % Serien von s.to/serienstream, 20 % Filme von
+  filmpalast/moflix, 20 % Anime von aniworld, 15 % ARD als Sockel, 10 % bs.to
+  (siehe `docs/ENTSCHEIDUNGEN.md`). Jeder Titel trägt `group` und `sourceKey`.
+- **Quote je Quellengruppe:** Der Lauf weist die Quote **pro Gruppe** aus
+  (`Gruppe | Titel | spielbar | Quote | häufigste Fehlerklasse`). Der
+  Mischwert allein verdeckt, welche Gruppe trägt und welche nur den leichten
+  Pfad zählt.
 - **Kette:** derselbe Produktionsweg wie im Player —
   `AutoPlaybackResolver.resolveFast` → Kandidaten → bis zu drei mit
   `Media3Frame61Player`.
@@ -20,8 +26,77 @@ Stand: 23.11.2026. Methode und Zahlen für Version 1.5.0.
   `CONTAINER_UNSUPPORTED`, `GEO_BLOCKED`, `RATE_LIMITED`, `TIMEOUT` — die
   Klasse wird aus den Diagnose-Ereignissen des Resolvers abgeleitet, nicht
   geraten.
-- **Protokoll:** je Titel eine Zeile (idx, id, type, RESULT, class, resolveMs,
-  playMs, candidates, host) im Logcat, im Statusbereich und in einer Datei.
+- **Auflösungsbudget:** 60 s je Titel. bs.to braucht bis zu ~28 s (Challenge +
+  Klick in der versteckten WebView); mit 30 s wäre der Titel abgeschnitten.
+- **Protokoll:** je Titel eine Zeile (idx, id, group, type, RESULT, class,
+  resolveMs, playMs, candidates, host, intercept) im Logcat, im Statusbereich
+  und in einer Datei; am Ende eine Zeile je Gruppe und die letzten
+  Interception-Versuche mit Request-Kette.
+
+### Belegregel
+
+Nach **jedem** Block wird dieselbe Stichprobe mit demselben Seed gefahren und
+das Delta festgehalten. Ein Block ohne Messung gilt nicht als abgeschlossen.
+
+## Lauf 1 — Build `448109a`, 23.11.2026, A52 (nach Katalog-Neubau + bs.to-Regel)
+
+Stichprobe: Training, Seed `20261122`, 100 Titel aus 997 Katalogeinträgen.
+Dauer ~15 min. APK `84ebb997…` (signiert, `de.hendler.frame61.acceptance`).
+
+| Kennzahl | Wert | Ziel 1.5.0 |
+|---|---|---|
+| Erfolgsquote (Mischwert) | **45 / 100 = 45 %** | ≥ 95 % |
+| Auflösung p50 / p95 | 4.734 / **10.119** ms | p95 < 2.500 ms |
+| Startzeit p50 / p95 | 3.367 / **4.172** ms | p95 < 3.000 ms |
+| Fehlerklassen | 41 × `NO_CANDIDATE`, 14 × `CONTAINER_UNSUPPORTED` | 0 sichtbar |
+
+Quote je Quellengruppe:
+
+| Gruppe | Titel | spielbar | Quote | häufigste Fehlerklasse |
+|---|---|---|---|---|
+| serienstream | 43 | 24 | 55 % | `NO_CANDIDATE`: 16 |
+| aniworld | 19 | 8 | 42 % | `NO_CANDIDATE`: 6 |
+| ard | 10 | 5 | 50 % | `CONTAINER_UNSUPPORTED`: 3 |
+| filmpalast | 11 | 3 | 27 % | `NO_CANDIDATE`: 6 |
+| moflix | 11 | 3 | 27 % | `NO_CANDIDATE`: 7 |
+| bsto | 6 | 2 | 33 % | `NO_CANDIDATE`: 4 |
+
+**Befund — die Quote misst derzeit nur den Sockel.** Alle 45 Erfolge gingen
+über ARD/ZDF/arte/kika/funk (`nrodlzdf-a.akamaihd.net`, `br-vod.ard-mcdn.de`,
+`zdfvod.akamaized.net` …). **Kein einziger Index** (s.to/serienstream, bs.to,
+aniworld, filmpalast, moflix) lieferte einen spielbaren Stream. Die Gruppen-
+Quote ist damit keine Aussage über die Index-Quellen, sondern über die
+Breite des ARD-Katalogs.
+
+Ursachen aus dem Logcat desselben Laufs:
+
+1. **34 × `hoster timeout`** (moflix 15, filmpalast 6, s-to 5, streamcloud 3,
+   aniworld 3): Das Quellbudget (10 s) schnitt die Hoster-Kette ab, **bevor**
+   die WebView-Interception (bis 20 s) fertig war. Das Budget umfasste nur
+   den Quellenschritt, nicht die Hoster-Auflösung.
+2. **bs.to:** 3 von 4 Titeln je 22–25 s ohne Kandidaten
+   (`Frame61BsTo: keine Medien-URL für Surfside-Girls S1E1`). Die Kette
+   hält an `ajax/embed.php` — die Seite verlangt ein reCAPTCHA-v2-Token
+   (`6Ldd07og…`); ohne Token antwortet der Server `{"success":false}`,
+   mit leerem Ticket `HTTP 400`.
+3. **13 × `CONTAINER_UNSUPPORTED`** auf `devideosrc.co` — HTML-Ziel statt
+   Medien-URL.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run1-448109a/`
+(Rohzeilen `polls/final-lines.txt`, Logcat `polls/p*/01-logcat.txt`,
+Endbild `A5-final/02.png`).
+
+### Delta zu Lauf 0 (Baseline 1.4.0, `243971d`)
+
+| | Lauf 0 | Lauf 1 | Delta |
+|---|---|---|---|
+| Quote | 6 % | 45 % | +39 pp |
+| Startzeit p95 | 5.615 ms | 4.172 ms | −1.443 ms |
+| Fehler 3003 | 38 | 14 | −24 |
+
+Die Stichprobe ist ab hier **neu gezogen** (Katalog-Neubau mit 997 Titeln und
+Zielverteilung). Ab Lauf 1 bleibt Sample + Seed unverändert, damit die
+Folgeblöcke vergleichbar sind.
 
 ## Ältere Methode (1.4.0)
 

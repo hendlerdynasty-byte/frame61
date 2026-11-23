@@ -16,6 +16,7 @@ import androidx.media3.ui.PlayerView
 import dagger.hilt.android.AndroidEntryPoint
 import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.playback.AutoPlaybackResolver
+import de.hendler.frame61.playback.InterceptionLog
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.resolver.MirrorCandidate
 import java.io.File
@@ -136,6 +137,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         sample.forEachIndexed { index, item ->
             groupTotal[item.group] = (groupTotal[item.group] ?: 0) + 1
             val episode = if (item.type == "series") 1 else 0
+            val interceptMark = InterceptionLog.currentSeq()
             val started = SystemClock.elapsedRealtime()
             val traceStart = PlaybackDiagnostics.events.value.size
             val resolved = runCatching {
@@ -176,6 +178,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 errorClass = classifyFailure(PlaybackDiagnostics.events.value.drop(traceStart))
             }
 
+            // Was die WebView-Interception in diesem Titel geleistet hat:
+            // Anzahl Versuche, Treffer und die **gemessene** Zeit.
+            val intercepts = InterceptionLog.since(interceptMark)
+            val interceptHit = intercepts.count { it.outcome == "medien" }
+            val interceptMax = intercepts.maxOfOrNull { it.elapsedMs } ?: 0L
+            val interceptNote =
+                "intercept=${intercepts.size} medien=$interceptHit maxMs=$interceptMax"
+
             if (played) {
                 ok++
                 groupOk[item.group] = (groupOk[item.group] ?: 0) + 1
@@ -185,7 +195,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "QUOTA $mode idx=${index + 1} id=${item.id} group=${item.group} type=${item.type} " +
                         "RESULT=OK class=- resolveMs=$resolveMs playMs=${firstFrameMs - resolveMs} " +
                         "firstFrameMs=$firstFrameMs candidates=${mirrors.size} tried=$tried " +
-                        "host=$usedHost"
+                        "host=$usedHost $interceptNote"
                 )
             } else {
                 classes[errorClass] = (classes[errorClass] ?: 0) + 1
@@ -195,7 +205,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "QUOTA $mode idx=${index + 1} id=${item.id} group=${item.group} type=${item.type} " +
                         "title=${item.title.sanitize()} RESULT=FAIL class=$errorClass " +
                         "resolveMs=$resolveMs candidates=${mirrors.size} tried=$tried " +
-                        "hosts=[${triedHosts.joinToString(",")}]"
+                        "hosts=[${triedHosts.joinToString(",")}] $interceptNote"
                 )
             }
             scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
@@ -226,6 +236,19 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "$group | $total | $groupOkCount | $quote% | $top"
                 }
         )
+        // Die letzten Interception-Versuche mit Request-Kette: nur so ist
+        // sichtbar, an welcher Stelle der Weg (Challenge, Hoster-Redirect,
+        // Medienabruf) gehalten hat.
+        InterceptionLog.all().takeLast(DETAILED_INTERCEPTS).forEach { record ->
+            report(
+                "INTERCEPT #${record.seq} ${record.outcome} ${record.elapsedMs}ms " +
+                    "url=${record.url.take(90)} media=${record.mediaUrl?.take(90) ?: "-"} " +
+                    "script=${record.scriptResult ?: "-"} last=${record.lastPage?.take(90) ?: "-"}"
+            )
+            record.requests.take(8).forEach { request ->
+                report("INTERCEPT #${record.seq} REQ $request")
+            }
+        }
         Log.i(TAG, "QUOTA DONE mode=$mode datei=${logFile?.absolutePath}")
     }
 
@@ -368,7 +391,10 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         const val PLAYBACK_POLL_MS = 250L
         const val PLAYBACK_POLLS = 28
         // bs.to braucht bis zu ~28 s (Challenge + Klick in der WebView).
-        const val RESOLVE_BUDGET_MS = 45_000L
+        const val RESOLVE_BUDGET_MS = 60_000L
+
+        /** Wie viele Interception-Versuche am Ende im Detail stehen. */
+        const val DETAILED_INTERCEPTS = 6
     }
 }
 

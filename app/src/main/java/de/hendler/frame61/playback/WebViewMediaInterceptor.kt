@@ -16,6 +16,9 @@ import de.hendler.frame61.resolver.InterceptedMedia
 import de.hendler.frame61.resolver.MediaInterceptor
 import javax.inject.Inject
 import javax.inject.Singleton
+import java.util.concurrent.ConcurrentLinkedQueue
+import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.atomic.AtomicReference
 import kotlin.coroutines.resume
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -27,7 +30,7 @@ import kotlinx.coroutines.withTimeoutOrNull
  * Löst Hoster-Embeds still über eine versteckte WebView.
  *
  * Statt das Redirect-JavaScript nachzubauen, lädt der Browser der Seite die
- * Embed-URL selbst (inklusive DDoS-Guard-/Cloudflare-Challenge) und wir
+ * Embed-URL selbst (inkl. DDoS-Guard-/Cloudflare-Challenge) und wir
  * **zeichnen** den Medienabruf auf: `.m3u8`, `.mp4`, `.mpd`, `.mkv` oder ein
  * `video/…`-Antworttyp.
  *
@@ -39,6 +42,11 @@ import kotlinx.coroutines.withTimeoutOrNull
  *  - Die Kopfzeilen der aufgezeichneten Anfrage (Referer, Origin, Cookie)
  *    wandern mit zum Player. Ohne sie verweigern VOE, Filemoon und Co. den
  *    Abruf, sobald die Seite weitergeleitet hat.
+ *
+ * Jeder Versuch wird in [InterceptionLog] protokolliert: Ausgang, **gemessene**
+ * Zeit und die Request-Kette der Seite. Ohne diesen Beleg ist nicht
+ * unterscheidbar, ob die Kette an der Challenge, am Hoster-Redirect oder am
+ * Medienabruf gehalten hat.
  *
  * Der Nutzer sieht nichts: Die WebView hängt nicht an der View-Hierarchie.
  */
@@ -52,110 +60,177 @@ class WebViewMediaInterceptor @Inject constructor(
      * Die Sperre ist app-weit (siehe [WebViewGate]), damit Auswertung, Cookie-
      * Ernte und Interception nie parallel laufen.
      */
-    override suspend fun intercept(url: String, timeoutMs: Long, script: String?): InterceptedMedia? =
-        WebViewGate.mutex.withLock {
-            withContext(Dispatchers.Main) {
-                withTimeoutOrNull(timeoutMs) {
-                    suspendCancellableCoroutine { continuation ->
-                        val handler = Handler(Looper.getMainLooper())
-                        val startedAt = System.currentTimeMillis()
-                        var finished = false
-                        lateinit var webView: WebView
-
-                        fun finish(value: InterceptedMedia?) {
-                            if (finished) return
-                            finished = true
-                            runCatching { webView.stopLoading() }
-                            runCatching { webView.destroy() }
-                            continuation.resume(value)
-                        }
-
-                        /** Medien-URL plus die Kopfzeilen, mit denen sie abgerufen wurde. */
-                        fun result(mediaUrl: String, request: WebResourceRequest?): InterceptedMedia {
-                            val requestHeaders = request?.requestHeaders.orEmpty()
-                            val pageCookies = runCatching {
-                                CookieManager.getInstance().getCookie(mediaUrl)
-                            }.getOrNull()
-                            val cookies = listOfNotNull(
-                                requestHeaders["Cookie"]?.takeIf { it.isNotBlank() },
-                                pageCookies?.takeIf { it.isNotBlank() }
-                            ).distinct().joinToString("; ").takeIf { it.isNotBlank() }
-                            val headers = linkedMapOf<String, String>()
-                            requestHeaders["Referer"]?.takeIf { it.isNotBlank() }?.let { headers["Referer"] = it }
-                            requestHeaders["Origin"]?.takeIf { it.isNotBlank() }?.let { headers["Origin"] = it }
-                            requestHeaders["User-Agent"]?.takeIf { it.isNotBlank() }
-                                ?.let { headers["User-Agent"] = it }
-                            headers["Referer"] ?: url.let { headers["Referer"] = it }
-                            headers["User-Agent"] ?: HttpClientFactory.DEFAULT_USER_AGENT
-                                .let { headers["User-Agent"] = it }
-                            return InterceptedMedia(
-                                url = mediaUrl,
-                                cookies = cookies,
-                                headers = headers,
-                                elapsedMs = System.currentTimeMillis() - startedAt
-                            )
-                        }
-
-                        fun probeDom() {
-                            if (finished) return
-                            webView.evaluateJavascript(DOM_PROBE) { raw ->
-                                val found = unquote(raw)
-                                if (!found.isNullOrBlank() && found.startsWith("http")) {
-                                    finish(result(found, null))
-                                } else if (!finished) {
-                                    handler.postDelayed({ probeDom() }, POLL_MS)
-                                }
-                            }
-                        }
-
-                        /** Skript nach dem Laden ausführen (z. B. der bs.to-Klick). */
-                        fun runScript() {
-                            if (finished || script.isNullOrBlank()) return
-                            webView.evaluateJavascript(script) { raw ->
-                                Log.i(TAG, "Skript auf $url -> ${unquote(raw) ?: "-"}")
-                                probeDom()
-                            }
-                        }
-
-                        webView = WebView(context).apply {
-                            settings.javaScriptEnabled = true
-                            settings.domStorageEnabled = true
-                            settings.mediaPlaybackRequiresUserGesture = false
-                            settings.useWideViewPort = true
-                            settings.loadWithOverviewMode = true
-                            settings.userAgentString = HttpClientFactory.DEFAULT_USER_AGENT
-                            CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
-                            webViewClient = object : WebViewClient() {
-                                override fun shouldInterceptRequest(
-                                    view: WebView?,
-                                    request: WebResourceRequest
-                                ): WebResourceResponse? {
-                                    val target = request.url.toString()
-                                    if (isMediaUrl(target)) {
-                                        // **Durchlassen**: null bedeutet, die WebView
-                                        // holt die Datei selbst. Wir zeichnen nur auf.
-                                        Log.i(TAG, "Medienabruf aufgezeichnet: $target")
-                                        handler.post { finish(result(target, request)) }
-                                    }
-                                    return null
-                                }
-
-                                override fun onPageFinished(view: WebView?, finishedUrl: String?) {
-                                    if (script.isNullOrBlank()) probeDom() else runScript()
-                                }
-                            }
-                        }
-                        continuation.invokeOnCancellation {
-                            if (!finished) {
-                                finished = true
-                                runCatching { webView.destroy() }
-                            }
-                        }
-                        webView.loadUrl(url)
+    override suspend fun intercept(url: String, timeoutMs: Long, script: String?): InterceptedMedia? {
+        val seq = InterceptionLog.nextSeq()
+        val runStartedAt = System.currentTimeMillis()
+        // Die Request-Kette wird mitgeschrieben: sie zeigt, welche Station der
+        // Kette erreicht wurde und wo sie stehen blieb (Embed-Seite, Challenge,
+        // Hoster-Redirect, Medienabruf).
+        val requests = ConcurrentLinkedQueue<String>()
+        val scriptResult = AtomicReference<String?>(null)
+        val lastPage = AtomicReference<String?>(null)
+        val media = AtomicReference<InterceptedMedia?>(null)
+        val resolved = AtomicBoolean(false)
+        try {
+            return WebViewGate.mutex.withLock {
+                withContext(Dispatchers.Main) {
+                    withTimeoutOrNull(timeoutMs) {
+                        runWebView(url, script, requests, scriptResult, lastPage, media, resolved)
                     }
                 }
             }
+        } finally {
+            // Echte Zeit, nicht der Deckel: der Versuch wird protokolliert,
+            // egal ob er mit einer Medien-URL endet, ins Leere läuft oder von
+            // außen abgebrochen wird.
+            val elapsed = System.currentTimeMillis() - runStartedAt
+            val found = media.get()
+            val outcome = when {
+                found != null -> "medien"
+                resolved.get() -> "kein-medienabruf"
+                else -> "abbruch"
+            }
+            InterceptionLog.add(
+                InterceptionLog.Record(
+                    seq = seq,
+                    url = url,
+                    outcome = outcome,
+                    elapsedMs = elapsed,
+                    mediaUrl = found?.url,
+                    scriptResult = scriptResult.get(),
+                    lastPage = lastPage.get(),
+                    requests = requests.toList()
+                )
+            )
+            Log.i(
+                TAG,
+                "Interception $url -> $outcome nach ${elapsed} ms, ${requests.size} Anfragen"
+            )
         }
+    }
+
+    /**
+     * Der eigentliche WebView-Lauf. Läuft auf dem Hauptthread (die WebView
+     * braucht ihn), hängt aber nicht in der View-Hierarchie.
+     */
+    private suspend fun runWebView(
+        url: String,
+        script: String?,
+        requests: ConcurrentLinkedQueue<String>,
+        scriptResult: AtomicReference<String?>,
+        lastPage: AtomicReference<String?>,
+        media: AtomicReference<InterceptedMedia?>,
+        resolved: AtomicBoolean
+    ): InterceptedMedia? = suspendCancellableCoroutine { continuation ->
+        val handler = Handler(Looper.getMainLooper())
+        val startedAt = System.currentTimeMillis()
+        var finished = false
+        lateinit var webView: WebView
+
+        fun finish(value: InterceptedMedia?) {
+            if (finished) return
+            finished = true
+            resolved.set(true)
+            runCatching { webView.stopLoading() }
+            runCatching { webView.destroy() }
+            continuation.resume(value)
+        }
+
+        /** Medien-URL plus die Kopfzeilen, mit denen sie abgerufen wurde. */
+        fun result(mediaUrl: String, request: WebResourceRequest?): InterceptedMedia {
+            val requestHeaders = request?.requestHeaders.orEmpty()
+            val pageCookies = runCatching {
+                CookieManager.getInstance().getCookie(mediaUrl)
+            }.getOrNull()
+            val cookies = listOfNotNull(
+                requestHeaders["Cookie"]?.takeIf { it.isNotBlank() },
+                pageCookies?.takeIf { it.isNotBlank() }
+            ).distinct().joinToString("; ").takeIf { it.isNotBlank() }
+            val headers = linkedMapOf<String, String>()
+            requestHeaders["Referer"]?.takeIf { it.isNotBlank() }?.let { headers["Referer"] = it }
+            requestHeaders["Origin"]?.takeIf { it.isNotBlank() }?.let { headers["Origin"] = it }
+            requestHeaders["User-Agent"]?.takeIf { it.isNotBlank() }
+                ?.let { headers["User-Agent"] = it }
+            headers["Referer"] ?: url.let { headers["Referer"] = it }
+            headers["User-Agent"] ?: HttpClientFactory.DEFAULT_USER_AGENT
+                .let { headers["User-Agent"] = it }
+            return InterceptedMedia(
+                url = mediaUrl,
+                cookies = cookies,
+                headers = headers,
+                elapsedMs = System.currentTimeMillis() - startedAt
+            )
+        }
+
+        fun probeDom() {
+            if (finished) return
+            webView.evaluateJavascript(DOM_PROBE) { raw ->
+                val found = unquote(raw)
+                if (!found.isNullOrBlank() && found.startsWith("http")) {
+                    val value = result(found, null)
+                    media.set(value)
+                    finish(value)
+                } else if (!finished) {
+                    handler.postDelayed({ probeDom() }, POLL_MS)
+                }
+            }
+        }
+
+        /** Skript nach dem Laden ausführen (z. B. der bs.to-Klick). */
+        fun runScript() {
+            if (finished || script.isNullOrBlank()) return
+            webView.evaluateJavascript(script) { raw ->
+                val value = unquote(raw)
+                scriptResult.set(value)
+                Log.i(TAG, "Skript auf $url -> ${value ?: "-"}")
+                probeDom()
+            }
+        }
+
+        webView = WebView(context).apply {
+            settings.javaScriptEnabled = true
+            settings.domStorageEnabled = true
+            settings.mediaPlaybackRequiresUserGesture = false
+            settings.useWideViewPort = true
+            settings.loadWithOverviewMode = true
+            settings.userAgentString = HttpClientFactory.DEFAULT_USER_AGENT
+            CookieManager.getInstance().setAcceptThirdPartyCookies(this, true)
+            webViewClient = object : WebViewClient() {
+                override fun shouldInterceptRequest(
+                    view: WebView?,
+                    request: WebResourceRequest
+                ): WebResourceResponse? {
+                    val target = request.url.toString()
+                    if (requests.size < MAX_RECORDED_REQUESTS) {
+                        requests.add("${request.method} ${shortUrl(target)}")
+                    }
+                    if (isMediaUrl(target)) {
+                        // **Durchlassen**: null bedeutet, die WebView
+                        // holt die Datei selbst. Wir zeichnen nur auf.
+                        Log.i(TAG, "Medienabruf aufgezeichnet: $target")
+                        handler.post {
+                            val found = result(target, request)
+                            media.set(found)
+                            finish(found)
+                        }
+                    }
+                    return null
+                }
+
+                override fun onPageFinished(view: WebView?, finishedUrl: String?) {
+                    lastPage.set(finishedUrl)
+                    if (script.isNullOrBlank()) probeDom() else runScript()
+                }
+            }
+        }
+        continuation.invokeOnCancellation {
+            if (!finished) {
+                finished = true
+                runCatching { webView.destroy() }
+            }
+        }
+        webView.loadUrl(url)
+    }
 
     /**
      * Vorwärmen beim App-Start: einmal pro Host die Seite laden, damit Cookies
@@ -215,10 +290,20 @@ class WebViewMediaInterceptor @Inject constructor(
         }.getOrNull()?.takeIf { it.isNotBlank() }
     }
 
+    /** Host + Pfad ohne Query — die Request-Kette bleibt lesbar. */
+    private fun shortUrl(url: String): String {
+        val host = url.substringAfter("://", "").substringBefore('/')
+        val path = url.substringAfter('/', "")
+        return "$host/${path.substringBefore('?').take(70)}"
+    }
+
     private companion object {
         const val TAG = "Frame61Intercept"
         const val POLL_MS = 500L
         const val WARMUP_TIMEOUT_MS = 15_000L
+
+        /** Mehr Requests werden nicht protokolliert — die Kette bleibt lesbar. */
+        const val MAX_RECORDED_REQUESTS = 30
 
         /** Sucht im DOM nach einer echten Medien-URL, falls kein Request abgefangen wird. */
         const val DOM_PROBE =

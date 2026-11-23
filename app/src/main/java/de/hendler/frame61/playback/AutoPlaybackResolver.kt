@@ -491,14 +491,24 @@ class AutoPlaybackResolver @Inject constructor(
          * vidmoly) brauchen länger als ein reiner HTTP-Pfad. Der Player wartet
          * trotzdem nicht darauf — resolveFast kehrt 600 ms nach dem ersten
          * Kandidaten zurück.
+         *
+         * Messung 23.11. (A52, 448109a): Mit 10 s schnitt das Budget die
+         * Hoster-Kette ab, **bevor** die WebView-Interception fertig war —
+         * 34 Titel endeten mit „hoster timeout" (moflix, filmpalast, s-to,
+         * streamcloud, aniworld). Das Budget muss deshalb Quellenschritt und
+         * Hoster-Schritt **beide** umfassen.
          */
-        private const val SOURCE_TIMEOUT_MS = 10_000L
+        private const val SOURCE_TIMEOUT_MS = 32_000L
 
         /** Budget für bs.to (Challenge + Klick + Medienabruf in der WebView). */
-        private const val BS_TO_TIMEOUT_MS = 28_000L
+        private const val BS_TO_TIMEOUT_MS = 34_000L
 
-        /** Hoster-Kette inkl. stiller WebView-Interception (VOE/Doodstream). */
-        private const val HOSTER_TIMEOUT_MS = 20_000L
+        /**
+         * Hoster-Kette inkl. stiller WebView-Interception (VOE/Doodstream).
+         * Die Interception allein darf 20 s brauchen — der Schnitt darf nicht
+         * vorher fallen, sonst geht das Ergebnis verloren, nicht nur die Zeit.
+         */
+        private const val HOSTER_TIMEOUT_MS = 26_000L
 
         private const val CACHE_MS = 15L * 60L * 1000L
 
@@ -506,7 +516,7 @@ class AutoPlaybackResolver @Inject constructor(
         const val FIRST_CANDIDATE_GRACE_MS = 600L
 
         /** Obergrenze des Einsammelns, wenn gar kein Kandidat kommt. */
-        private const val HARD_DEADLINE_MS = 22_000L
+        private const val HARD_DEADLINE_MS = 34_000L
 
         /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
         private const val MAX_WARMUP_HOSTS = 2
