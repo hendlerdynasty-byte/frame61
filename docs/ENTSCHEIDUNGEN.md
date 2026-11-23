@@ -526,3 +526,22 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   hat. Im Lauf 1 stand nur „keine Medien-URL" — ohne Request-Kette.
 - Die Aufzeichnung ersetzt keine Quelle: sie verändert den Ablauf nicht und
   bleibt im Prozess (kein Telemetrie-, Server- oder Account-Ansatz).
+
+## 2026-11-23 — Ein WebView-Versuch je Titel (Warteschlange gemessen)
+
+- Befund (A52, Lauf 2, Build `be45079`): 88 Interception-Versuche auf 27
+  Titeln, nur 2 mit einer Medien-URL. Von den im Logcat sichtbaren 14 Versuchen
+  kamen **7 mit 0 Anfragen aus der WebView zurück** — sie warteten auf die
+  app-weite Sperre ([WebViewGate]) und wurden vom Quellbudget abgeschnitten,
+  bevor die Seite je geladen hatte. Bis zu neun Streams eines Titels stellten
+  parallel je einen eigenen WebView-Lauf in dieselbe Schlange.
+- Default: `WebViewBudget` (ein Versuch je Titel, Frist = Quellbudget) plus
+  `QUEUE_WAIT_MS` = 5 s im Interceptor. Danach läuft der Rest der Streams über
+  den günstigen Weg (Pack-Schritte ohne WebView) statt eine weitere
+  Warteposition zu belegen. Der Versuch wird als `uebersprungen`
+  protokolliert, damit die Messung Schlange und Page-Fehler unterscheidet.
+- Offen: VOE bleibt die Bruststelle. Die Embed-Seite lädt ihre 30 Requests,
+  verlangt aber den Gastweg (`voe.sx/api2/session/generate-token` → **302
+  /login**). Ohne Konto läuft diese Strecke nicht; laut Auftrag wird keines
+  geführt. Bewusst **nicht** nachgebaut, sondern als BLOCKED mit Beleg
+  festgehalten.

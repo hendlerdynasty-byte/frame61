@@ -1,6 +1,7 @@
 package de.hendler.frame61.resolver
 
 import de.hendler.frame61.net.HttpClientFactory
+import java.util.concurrent.atomic.AtomicInteger
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -48,6 +49,42 @@ fun interface CaptchaSolver {
 }
 
 /**
+ * Budget für die stille WebView-Interception **je Titel**.
+ *
+ * Die versteckte WebView ist app-weit serialisiert ([WebViewGate]). Ohne
+ * Budget stellen die parallelen Hoster-Ketten eines Titels (bis zu neun
+ * Streams) je einen eigenen WebView-Lauf in die Warteschlange — der Titel
+ * wartet dann auf einen Hoster, den das Quellbudget längst abgeschnitten
+ * hat. Messung 23.11. (A52, `be45079`): 7 von 14 protokollierten Versuchen
+ * kamen **nie** in die WebView (0 Anfragen), der Rest lief in den 20-s-Deckel.
+ *
+ * Deshalb: wenige Versuche je Titel, mit Frist. Danach läuft der Rest über
+ * den günstigen Weg (Pack-Schritte ohne WebView).
+ */
+class WebViewBudget private constructor(
+    private val attempts: AtomicInteger,
+    val deadlineMs: Long
+) {
+    /**
+     * Nimmt einen Versuch heraus. `false` heißt: kein Versuch mehr frei oder
+     * die Frist abgelaufen — der Aufrufer muss den günstigen Weg nehmen.
+     */
+    fun tryTake(): Boolean =
+        attempts.getAndDecrement() > 0 && System.currentTimeMillis() < deadlineMs
+
+    companion object {
+        /** Kein WebView-Versuch — für Streams, die ohnehin ohne WebView gehen. */
+        fun none(): WebViewBudget = WebViewBudget(AtomicInteger(0), 0L)
+
+        /** Unbegrenzt — für Aufrufer außerhalb eines Titels (Tests, Diagnose). */
+        fun unlimited(): WebViewBudget = WebViewBudget(AtomicInteger(Int.MAX_VALUE), Long.MAX_VALUE)
+
+        fun of(attempts: Int, deadlineMs: Long): WebViewBudget =
+            WebViewBudget(AtomicInteger(attempts), deadlineMs)
+    }
+}
+
+/**
  * Turns a hoster page URL into a playable URL by running the pack's steps.
  *
  * Never throws: every failure is a value ([HosterOutcome.Failed]), and a pack
@@ -77,10 +114,19 @@ class HosterResolver(
             .maxByOrNull { pack -> pack.domains.filter { host == it || host.endsWith(".$it") }.maxOf { it.length } }
     }
 
-    suspend fun resolve(url: String, cookies: String? = null): HosterOutcome =
-        resolve(url, cookies, depth = 0)
+    suspend fun resolve(
+        url: String,
+        cookies: String? = null,
+        budget: WebViewBudget? = null
+    ): HosterOutcome =
+        resolve(url, cookies, depth = 0, budget = budget ?: WebViewBudget.unlimited())
 
-    private suspend fun resolve(url: String, cookies: String?, depth: Int): HosterOutcome {
+    private suspend fun resolve(
+        url: String,
+        cookies: String?,
+        depth: Int,
+        budget: WebViewBudget
+    ): HosterOutcome {
         var effectiveCookies = cookies
         val pack = findPack(url)
         if (pack == null) {
@@ -95,7 +141,7 @@ class HosterResolver(
             if (depth < MAX_REDIRECT_DEPTH && !looksLikeMedia(url)) {
                 val followed = runCatching { fetcher.resolveRedirect(url, headers) }.getOrNull()
                 if (!followed.isNullOrBlank() && followed != url) {
-                    return resolve(followed, effectiveCookies, depth + 1)
+                    return resolve(followed, effectiveCookies, depth + 1, budget)
                 }
             }
             // Letzte Stufe: eine Embed-Seite ohne eigenes Pack. Zuerst die
@@ -104,7 +150,7 @@ class HosterResolver(
             // danach der DOM-Abgriff als Rückfallebene.
             if (depth == 0 && looksLikeEmbed(url)) {
                 val interceptor = mediaInterceptor
-                if (interceptor != null) {
+                if (interceptor != null && budget.tryTake()) {
                     val intercepted = runCatching {
                         interceptor.intercept(url, MEDIA_INTERCEPT_MS)
                     }.getOrNull()
@@ -137,10 +183,16 @@ class HosterResolver(
         if (!pack.captcha.isNullOrBlank() && effectiveCookies.isNullOrBlank()) {
             // Erste Wahl: die Embed-Seite still in einer WebView laden und den
             // Medienabruf abfangen. Der Browser der Seite löst seine Challenge
-            // selbst; sichtbar wird nichts.
-            val intercepted = runCatching {
-                mediaInterceptor?.intercept(url, MEDIA_INTERCEPT_MS)
-            }.getOrNull()
+            // selbst; sichtbar wird nichts. Das Budget begrenzt die Versuche:
+            // die WebView ist app-weit serialisiert, mehr als ein Versuch je
+            // Titel erreicht die Seite ohnehin nicht mehr.
+            val intercepted = if (budget.tryTake()) {
+                runCatching {
+                    mediaInterceptor?.intercept(url, MEDIA_INTERCEPT_MS)
+                }.getOrNull()
+            } else {
+                null
+            }
             if (intercepted != null && intercepted.url.startsWith("https://")) {
                 // Die Kopfzeilen der aufgezeichneten Anfrage gehen mit zum
                 // Player (Referer/Origin/Cookie) — ohne sie verweigern die
@@ -271,7 +323,7 @@ class HosterResolver(
             val nextPack = findPack(finalValue)
             if (nextPack != null && nextPack.id != pack.id) {
                 val cookieHeader = requestHeaders["Cookie"]
-                return when (val inner = resolve(finalValue, cookieHeader, depth + 1)) {
+                return when (val inner = resolve(finalValue, cookieHeader, depth + 1, budget)) {
                     is HosterOutcome.Resolved -> inner
                     is HosterOutcome.CaptchaRequired ->
                         HosterOutcome.CaptchaRequired(finalValue, inner.kind)

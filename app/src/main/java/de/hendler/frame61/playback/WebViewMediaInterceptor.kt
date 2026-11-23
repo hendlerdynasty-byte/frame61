@@ -21,6 +21,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicReference
 import kotlin.coroutines.resume
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
@@ -71,15 +72,21 @@ class WebViewMediaInterceptor @Inject constructor(
         val lastPage = AtomicReference<String?>(null)
         val media = AtomicReference<InterceptedMedia?>(null)
         val resolved = AtomicBoolean(false)
+        // Die versteckte WebView ist app-weit serialisiert. Wartet der Versuch
+        // zu lange auf [WebViewGate], hat er das Quellbudget ohnehin aufgebraucht
+        // und wäre wertlos — Messung 23.11. (A52, be45079): 7 von 14 Versuchen
+        // endeten so, **ohne** eine einzige Anfrage in der WebView.
+        var gateHeld = false
         try {
-            return WebViewGate.mutex.withLock {
-                withContext(Dispatchers.Main) {
-                    withTimeoutOrNull(timeoutMs) {
-                        runWebView(url, script, requests, scriptResult, lastPage, media, resolved)
-                    }
+            if (!acquireGate(QUEUE_WAIT_MS)) return null
+            gateHeld = true
+            return withContext(Dispatchers.Main) {
+                withTimeoutOrNull(timeoutMs) {
+                    runWebView(url, script, requests, scriptResult, lastPage, media, resolved)
                 }
             }
         } finally {
+            if (gateHeld) WebViewGate.mutex.unlock()
             // Echte Zeit, nicht der Deckel: der Versuch wird protokolliert,
             // egal ob er mit einer Medien-URL endet, ins Leere läuft oder von
             // außen abgebrochen wird.
@@ -88,6 +95,7 @@ class WebViewMediaInterceptor @Inject constructor(
             val outcome = when {
                 found != null -> "medien"
                 resolved.get() -> "kein-medienabruf"
+                !gateHeld -> "uebersprungen"
                 else -> "abbruch"
             }
             InterceptionLog.add(
@@ -107,6 +115,19 @@ class WebViewMediaInterceptor @Inject constructor(
                 "Interception $url -> $outcome nach ${elapsed} ms, ${requests.size} Anfragen"
             )
         }
+    }
+
+    /**
+     * Holt die app-weite WebView-Sperre, aber höchstens [waitMs] lang. Danach
+     * kehrt der Versuch mit `false` zurück, statt das Quellbudget zu fressen.
+     */
+    private suspend fun acquireGate(waitMs: Long): Boolean {
+        val deadline = System.currentTimeMillis() + waitMs
+        while (!WebViewGate.mutex.tryLock()) {
+            if (System.currentTimeMillis() >= deadline) return false
+            delay(GATE_POLL_MS)
+        }
+        return true
     }
 
     /**
@@ -301,6 +322,16 @@ class WebViewMediaInterceptor @Inject constructor(
         const val TAG = "Frame61Intercept"
         const val POLL_MS = 500L
         const val WARMUP_TIMEOUT_MS = 15_000L
+
+        /**
+         * Längste Wartezeit auf die app-weite WebView-Sperre. Die Interception
+         * ist die letzte Stufe einer langen Kette; wer hier zu lange steht,
+         * hat das Budget des Titels aufgebraucht.
+         */
+        const val QUEUE_WAIT_MS = 5_000L
+
+        /** Takt, in dem die Sperre erneut versucht wird. */
+        const val GATE_POLL_MS = 60L
 
         /** Mehr Requests werden nicht protokolliert — die Kette bleibt lesbar. */
         const val MAX_RECORDED_REQUESTS = 30

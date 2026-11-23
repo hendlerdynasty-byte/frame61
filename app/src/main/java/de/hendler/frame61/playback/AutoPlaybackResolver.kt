@@ -13,6 +13,7 @@ import de.hendler.frame61.resolver.HosterResolver
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.MirrorSelector
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
+import de.hendler.frame61.resolver.WebViewBudget
 import de.hendler.frame61.scraper.engine.PackInterpreter
 import de.hendler.frame61.scraper.engine.PackLoader
 import de.hendler.frame61.scraper.engine.SourcePack
@@ -346,10 +347,26 @@ class AutoPlaybackResolver @Inject constructor(
         )
         // Hoster parallel aufloesen: eine Seite mit sechs Zielen kostete
         // bisher sechs Ketten hintereinander (gemessen 11 s ohne Kandidat).
+        //
+        // Die versteckte WebView ist app-weit serialisiert. Deshalb bekommt nur
+        // der **erste** WebView-taugliche Stream den Versuch; alle anderen
+        // laufen parallel über den günstigen Weg (Pack-Schritte ohne WebView).
+        // Messung 23.11. (A52, be45079): mit neun parallelen Versuchen kam die
+        // Hälfte nie in die WebView (0 Anfragen), der Rest lief in den 20-s-
+        // Deckel — der Titel hatte weder Stream noch Zeit.
+        val webBudget = WebViewBudget.of(
+            attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
+            deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
+        )
+        val (webFirst, plain) = streams.partition { needsWebView(it.url) }
         val resolved = coroutineScope {
-            streams.map { stream ->
-                async { stream to resolveHoster(pack, stream, sessionId) }
-            }.awaitAll()
+            val webJobs = webFirst.take(MAX_WEBVIEW_STREAMS).map { stream ->
+                async { stream to resolveHoster(pack, stream, sessionId, webBudget) }
+            }
+            val plainJobs = plain.map { stream ->
+                async { stream to resolveHoster(pack, stream, sessionId, WebViewBudget.none()) }
+            }
+            (webJobs + plainJobs).awaitAll()
         }
         return resolved.mapNotNull { (stream, hoster) ->
             hoster?.let {
@@ -370,10 +387,22 @@ class AutoPlaybackResolver @Inject constructor(
         }
     }
 
+    /**
+     * Braucht dieser Stream die versteckte WebView? Entweder weil sein
+     * Hoster-Pack eine Challenge meldet oder weil das Ziel eine Embed-Form
+     * ohne eigenes Pack ist (Embed-Gate des Resolvers).
+     */
+    private fun needsWebView(url: String): Boolean {
+        val hosterPack = runCatching { hosterResolver.findPack(url) }.getOrNull()
+        if (hosterPack != null && !hosterPack.captcha.isNullOrBlank()) return true
+        return HosterResolver.looksLikeEmbed(url)
+    }
+
     private suspend fun resolveHoster(
         pack: SourcePack,
         stream: StreamResult,
-        sessionId: Long
+        sessionId: Long,
+        webBudget: WebViewBudget
     ): ResolvedStream? {
         trace(sessionId, pack.id, "Hosterauflösung ${stream.hosterId ?: "unknown"}", stream.url)
         if (!stream.url.startsWith("https://")) {
@@ -402,7 +431,7 @@ class AutoPlaybackResolver @Inject constructor(
             }
             val second = runCatching {
                 withTimeoutOrNull(HOSTER_TIMEOUT_MS * 5) {
-                    hosterResolver.resolve(stream.url, cookies)
+                    hosterResolver.resolve(stream.url, cookies, budget = webBudget)
                 }
             }.getOrNull()
             return when (second) {
@@ -418,7 +447,9 @@ class AutoPlaybackResolver @Inject constructor(
             }
         }
         val outcome = runCatching {
-            withTimeoutOrNull(HOSTER_TIMEOUT_MS) { hosterResolver.resolve(stream.url) }
+            withTimeoutOrNull(HOSTER_TIMEOUT_MS) {
+                hosterResolver.resolve(stream.url, budget = webBudget)
+            }
         }.getOrNull()
         return when (outcome) {
             is HosterOutcome.Resolved -> ResolvedStream(
@@ -509,6 +540,16 @@ class AutoPlaybackResolver @Inject constructor(
          * vorher fallen, sonst geht das Ergebnis verloren, nicht nur die Zeit.
          */
         private const val HOSTER_TIMEOUT_MS = 26_000L
+
+        /**
+         * WebView-Budget je Titel. Ein Versuch, mit Frist: die versteckte
+         * WebView ist app-weit serialisiert, mehrere parallele Versuche eines
+         * Titels stehen nur in der Warteschlange (Messung be45079: 7 von 14
+         * Versuchen ohne eine einzige Anfrage in der WebView).
+         */
+        private const val WEBVIEW_ATTEMPTS_PER_TITLE = 1
+        private val WEBVIEW_BUDGET_MS = SOURCE_TIMEOUT_MS
+        private const val MAX_WEBVIEW_STREAMS = 1
 
         private const val CACHE_MS = 15L * 60L * 1000L
 

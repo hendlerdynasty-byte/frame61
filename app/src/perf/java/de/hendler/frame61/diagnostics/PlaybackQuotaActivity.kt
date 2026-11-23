@@ -238,8 +238,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         )
         // Die letzten Interception-Versuche mit Request-Kette: nur so ist
         // sichtbar, an welcher Stelle der Weg (Challenge, Hoster-Redirect,
-        // Medienabruf) gehalten hat.
-        InterceptionLog.all().takeLast(DETAILED_INTERCEPTS).forEach { record ->
+        // Medienabruf) gehalten hat. Versuche, die nie in die WebView kamen
+        // (übersprungen/0 Anfragen), sagen nur aus, dass die Sperre belegt
+        // war — deshalb werden zuerst die mit einer Kette ausgegeben.
+        val detailedIntercepts = InterceptionLog.all()
+            .filter { it.requests.isNotEmpty() }
+            .takeLast(DETAILED_INTERCEPTS)
+            .ifEmpty { InterceptionLog.all().takeLast(DETAILED_INTERCEPTS) }
+        detailedIntercepts.forEach { record ->
             report(
                 "INTERCEPT #${record.seq} ${record.outcome} ${record.elapsedMs}ms " +
                     "url=${record.url.take(90)} media=${record.mediaUrl?.take(90) ?: "-"} " +

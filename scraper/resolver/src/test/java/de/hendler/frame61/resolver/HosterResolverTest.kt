@@ -118,6 +118,56 @@ class HosterResolverTest {
     }
 
     @Test
+    fun `webview budget allows one attempt then refuses`() = runTest {
+        val budget = WebViewBudget.of(1, System.currentTimeMillis() + 30_000L)
+        assertTrue("der erste Versuch ist frei", budget.tryTake())
+        assertFalse("der zweite Versuch muss abgelehnt werden", budget.tryTake())
+    }
+
+    @Test
+    fun `webview budget refuses after its deadline`() = runTest {
+        val budget = WebViewBudget.of(1, System.currentTimeMillis() - 1L)
+        assertFalse("abgelaufene Frist sperrt den Versuch", budget.tryTake())
+    }
+
+    @Test
+    fun `webview budget none never allows an attempt`() = runTest {
+        val budget = WebViewBudget.none()
+        assertFalse(budget.tryTake())
+    }
+
+    @Test
+    fun `exhausted webview budget skips the interceptor and stays a soft result`() = runTest {
+        val fetcher = FakeFetcher(mapOf("https://voe.sx/e/1" to "<source src='/x/index.m3u8'>"))
+        val p = pack(
+            id = "voe",
+            domains = listOf("voe.sx"),
+            captcha = "webview",
+            result = "src",
+            steps = listOf(
+                HosterStep(action = "get", url = "https://{host}{path}", saveAs = "page"),
+                HosterStep(action = "regex", input = "page", pattern = """src='([^']+)'""", saveAs = "src")
+            )
+        )
+        val resolver = HosterResolver(
+            packs = listOf(p),
+            fetcher = fetcher,
+            mediaInterceptor = object : MediaInterceptor {
+                override suspend fun intercept(
+                    url: String,
+                    timeoutMs: Long,
+                    script: String?
+                ): InterceptedMedia? = throw AssertionError(
+                    "das Budget war erschöpft, die WebView darf nicht starten"
+                )
+            }
+        )
+        val out = resolver.resolve("https://voe.sx/e/1", budget = WebViewBudget.none())
+        assertTrue("ohne Budget-Los bleibt das Ergebnis weich", out is HosterOutcome.CaptchaRequired)
+        assertTrue("kein Netzaufruf ohne WebView", fetcher.calls.isEmpty())
+    }
+
+    @Test
     fun `a declared result that is never produced fails closed`() = runTest {
         val fetcher = FakeFetcher(mapOf("https://h.io/x" to "irgendein text"))
         val p = pack(
