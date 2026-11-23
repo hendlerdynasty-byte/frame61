@@ -10,6 +10,7 @@
     "arianathankspecial.com"
   ],
   "captcha": "webview",
+  "guest": false,
   "result": "file",
   "steps": [
     {
@@ -29,9 +30,9 @@
       "saveAs": "file"
     }
   ],
-  "last_check": "2026-11-22T01:31:09Z",
+  "last_check": "2026-11-23T19:20:00Z",
   "check": {
     "status": "step_failed",
-    "reason": "JS-Redirect/verschleierte Quelle, kein <source> im HTML"
+    "reason": "Gastweg verlangt eine Session: voe.sx/api2/session/generate-token antwortet mit 302 auf /login (DDOS-Guard-Cookies + CSRF-Token). Ohne Konto keine Embed-Wiedergabe; der Pack wird deshalb nach hinten sortiert."
   }
 }

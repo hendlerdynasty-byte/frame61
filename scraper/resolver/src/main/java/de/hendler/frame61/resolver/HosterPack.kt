@@ -22,6 +22,13 @@ data class HosterPack(
     val domains: List<String> = emptyList(),
     /** `webview` marks a hoster that needs a visible WebView frame. */
     val captcha: String? = null,
+    /**
+     * `false` heißt: Gast-Wiedergabe ist bei diesem Hoster nicht möglich
+     * (Login/Session nötig). Solche Packs werden **nach hinten** sortiert, wenn
+     * ein Titel nur einen WebView-Versuch hat — gemessen 23.11.2026 auf dem A52:
+     * `voe.sx/api2/session/generate-token` antwortet mit **302 /login**.
+     */
+    val guest: Boolean = true,
     /** Name of the variable holding the final stream URL. */
     val result: String? = null,
     val steps: List<HosterStep> = emptyList()

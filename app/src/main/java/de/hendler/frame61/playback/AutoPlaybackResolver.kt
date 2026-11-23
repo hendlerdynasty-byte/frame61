@@ -359,8 +359,12 @@ class AutoPlaybackResolver @Inject constructor(
             deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
         )
         val (webFirst, plain) = streams.partition { needsWebView(it.url) }
+        // Hoster ohne Gast-Wiedergabe (VOE: Session/302 /login) kommen zuletzt:
+        // der eine WebView-Versuch des Titels soll an einen Hoster gehen, der
+        // ohne Konto auskommt.
+        val orderedWeb = webFirst.sortedBy { if (guestCapable(it.url)) 0 else 1 }
         val resolved = coroutineScope {
-            val webJobs = webFirst.take(MAX_WEBVIEW_STREAMS).map { stream ->
+            val webJobs = orderedWeb.take(MAX_WEBVIEW_STREAMS).map { stream ->
                 async { stream to resolveHoster(pack, stream, sessionId, webBudget) }
             }
             val plainJobs = plain.map { stream ->
@@ -396,6 +400,12 @@ class AutoPlaybackResolver @Inject constructor(
         val hosterPack = runCatching { hosterResolver.findPack(url) }.getOrNull()
         if (hosterPack != null && !hosterPack.captcha.isNullOrBlank()) return true
         return HosterResolver.looksLikeEmbed(url)
+    }
+
+    /** Gast-Wiedergabe möglich? Packs mit `guest: false` (VOE) nicht. */
+    private fun guestCapable(url: String): Boolean {
+        val hosterPack = runCatching { hosterResolver.findPack(url) }.getOrNull() ?: return true
+        return hosterPack.guest
     }
 
     private suspend fun resolveHoster(
