@@ -37,7 +37,12 @@ SC_SITEMAP_INDEX = "https://streamcloud.date/sitemap.xml"
 BS_COVER = "https://bs.cine.to/cover/{slug}.jpg"
 
 # Nur die geernteten Index-Hosts; alles andere wird verworfen.
-ALLOWED_HOSTS = ("burningseries.ac", "bs.cine.to", "streamcloud.date")
+ALLOWED_HOSTS = (
+    "burningseries.ac",
+    "bs.cine.to",
+    "streamcloud.date",
+    "api.ardmediathek.de",
+)
 
 
 class UrlBlocked(urllib.error.URLError):
@@ -197,22 +202,90 @@ def harvest_movies(limit: int, workers: int = 6) -> list[dict]:
         return list(pool.map(build, entries))
 
 
+def ard_poster(entry: dict) -> str:
+    """Bild-URL aus der ARD-Antwort; `{width}` wird auf 360 gesetzt."""
+    images = entry.get("images") or {}
+    for key in ("aspect16x9", "aspect16x7", "aspect1x1"):
+        src = (images.get(key) or {}).get("src")
+        if isinstance(src, str) and src.startswith("https://"):
+            return src.replace("{width}", "360")
+    return ""
+
+
+def harvest_ard(limit: int) -> list[dict]:
+    """Erntet ARD-Shows über die keyless Such-API (pro Show ein belegter Titel).
+
+    Die ARD-Mediathek ist eine der wenigen Quellen, die auf dem Gerät
+    nachweislich ohne Captcha spielt (direct-Hoster). Ihr Bestand ist damit die
+    verlässliche Basis der Bibliothek.
+    """
+    queries = [
+        "die", "der", "das", "und", "ein", "eine", "mit", "von", "zu", "im",
+        "für", "auf", "nicht", "sich", "dem", "den", "des", "wird", "sind",
+        "als", "auch", "wie", "nur", "aber", "bei", "aus", "war", "kann",
+        "man", "wenn", "was", "wer", "wo", "jetzt", "heute", "neue", "staffel",
+        "folge", "film", "serie", "doku", "show", "live", "tatort", "natur",
+        "tier", "geschichte", "wissen", "musik", "sport", "kinder",
+    ]
+    items: list[dict] = []
+    seen: set[str] = set()
+    for query in queries:
+        if len(items) >= limit:
+            break
+        for page in (1, 2):
+            if len(items) >= limit:
+                break
+            url = (
+                "https://api.ardmediathek.de/page-gateway/pages/ard/search"
+                f"?searchString={urllib.parse.quote(query)}&page={page}"
+            )
+            try:
+                data = json.loads(fetch(url))
+            except Exception:
+                continue
+            for entry in data.get("showResults") or []:
+                crid = entry.get("id")
+                title = (entry.get("longTitle") or "").strip()
+                if not crid or not title or crid in seen:
+                    continue
+                seen.add(crid)
+                kind = entry.get("coreAssetType") or ""
+                items.append(
+                    {
+                        "id": f"ard:{crid}",
+                        "title": title,
+                        "type": "series" if kind != "SINGLE" else "movie",
+                        "year": None,
+                        "genres": [],
+                        "rating": None,
+                        "runtime": None,
+                        "overview": "",
+                        "poster": ard_poster(entry),
+                    }
+                )
+                if len(items) >= limit:
+                    break
+    return items
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", required=True)
     parser.add_argument("--series", type=int, default=600)
     parser.add_argument("--movies", type=int, default=400)
+    parser.add_argument("--ard", type=int, default=0, help="ARD-Shows zusätzlich ernten")
     parser.add_argument("--out", default="")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
     series = harvest_series(args.series)
     movies = harvest_movies(args.movies)
+    ard = harvest_ard(args.ard) if args.ard > 0 else []
     # Der Katalog ist die Auswahlliste der App: ein Titel darf nur einmal
     # auftauchen (Validator: doppelter Titel/Jahr ist ein Fehler).
     seen_titles: set[str] = set()
     items: list[dict] = []
-    for item in series + movies:
+    for item in series + movies + ard:
         key = f"{item['title'].strip().lower()}|{item.get('year') or 0}"
         if key in seen_titles:
             continue
@@ -234,7 +307,10 @@ def main() -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(catalog, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     empty = sum(1 for i in items if not i["poster"])
-    print(f"series={len(series)} movies={len(movies)} total={len(items)} ohne_poster={empty} -> {out}")
+    print(
+        f"series={len(series)} movies={len(movies)} ard={len(ard)} "
+        f"total={len(items)} ohne_poster={empty} -> {out}"
+    )
     return 0
 
 
