@@ -89,6 +89,25 @@ Der Lauf startete, danach **sperrte sich der A52** (Keyguard, Screenshot zu
 umgehen (Owner-Policy) — der Lauf ist damit **BLOCKED**, nicht etwa fehlgeschlagen.
 Zum Fortsetzen: Gerät entsperren, App starten, „Titel-Quote" erneut auslösen.
 
+## Fünfte Runde (Build `ef7516a`) — BLOCKED
+
+Der Lauf startete, danach **sperrte sich der A52** (Keyguard, Screenshot zu
+87 % dunkel, UI-Dump nur SystemUI). Die Brücke darf eine sichere Sperre nicht
+umgehen (Owner-Policy) — der Lauf ist damit **BLOCKED**, nicht etwa fehlgeschlagen.
+
+## Sechste Runde (Build `b0aaf4c` = 1.4.0, A52)
+
+Nach 11 Titeln: **1 OK, 10 × `NO_CANDIDATE`, 0 × 3003**. Die 3003-Klasse ist
+in diesem Lauf also **nicht mehr aufgetreten** — die Kandidaten, die früher
+als HTML-Embed endeten, werden jetzt entweder aufgelöst oder als
+„kein Kandidat" verworfen. Dafür kostet jeder Titel ~70 s (JS-Ketten:
+serienstream 8 s, devideosrc 8 s, generischer Embed 5 s), weshalb der Lauf für
+100 Titel ~2 h bräuchte und nach 11 Titeln zugunsten der Auswertung pausiert
+wurde.
+
+Wichtig: Die Quote von 1/11 ist **keine** belastbare Quote (zu kleine
+Stichprobe), sie zeigt nur die Richtung.
+
 ## Zwischenfazit
 
 - **Startzeit:** Die 3-s-Marke ist bei schnellen Quellen erreicht (p95 2,7 s in
