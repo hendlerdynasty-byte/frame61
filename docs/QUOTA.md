@@ -666,6 +666,167 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run7-0ef5b44/`
 `apks-0ef5b44/`), Auswertung mit `analyse_lauf.py` (Vergleich
 `run6-27afaeb/polls`) und `analyse_ursachen.py`.
 
+## Lauf 8 — Build `c6465fa`, 24.11.2026, A52 (Alternative-Kette nach Fehlschlag, Block 4e)
+
+Stichprobe: **identisch** zu Lauf 1–7 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 09:12–09:41 (~29 min). Signiertes APK `4a75877f…`
+(20.447.250 B), CI-Lauf `45347058458` grün (176/176 Tests).
+Geänderte Basis gegenüber Lauf 7: **Block 4e** — nach einem Fehlschlag wird die
+Watch-URL als zusätzlicher Kandidat in die Alternative-Kette gehängt
+(`hostOf`-Sperre gegen Endlosschleifen), Alternativen werden nacheinander
+versucht.
+
+| Kennzahl | Wert | Lauf 7 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Produktion) | **62 / 100 = 62 %** | 66 % | **−4 pp** |
+| Fast-Path | **61 / 100 = 61 %** | 66 % | −5 pp |
+| Auflösung p50 / p95 (nur OK-Titel) | 2.851 / 27.120 ms | 1.809 / 26.886 ms | p50 +1.042 ms, p95 +234 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 2.925 / 28.283 ms | 3.011 / 28.261 ms | p50 −86 ms, p95 +22 ms |
+| Fehlerklassen (Produktion) | 17 × `EMBED_UNRESOLVED`, 12 × `GEO_BLOCKED`, 9 × `CONTAINER_UNSUPPORTED` | 11 / 11 / 12 | +6 / +1 / −3 |
+| Fehlerklassen (Fast) | 17 × `EMBED_UNRESOLVED`, 12 × `GEO_BLOCKED`, 10 × `CONTAINER_UNSUPPORTED` | — | — |
+| Interception | **73** Versuche, **3** mit Medien-URL | 71 / 4 | +2 / −1 |
+
+Quote je Quellengruppe (Produktion):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 7 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 31 | **72 %** | 72 % | 0 pp | `EMBED_UNRESOLVED`: 6 |
+| aniworld | 19 | 15 | **78 %** | 95 % | −17 pp | `EMBED_UNRESOLVED`: 4 |
+| moflix | 11 | 4 | **36 %** | 27 % | +9 pp | `CONTAINER_UNSUPPORTED`: 6 |
+| filmpalast | 11 | 4 | **36 %** | 55 % | −18 pp | `EMBED_UNRESOLVED`: 5 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 4 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 2 |
+
+Im Fast-Path allein kippt moflix auf 3/11 (27 %, `CONTAINER_UNSUPPORTED`: 7) —
+dort fehlt der zweite Hoster, den Block 4e im Produktionspfad nachholt.
+
+### Befund 1 — der Rückgang ist Provider-Rotation, keine Block-4e-Regression
+
+6 Titel änderten das Ergebnis gegenüber Lauf 7: neu FAIL sind idx 34, 35, 37,
+84, 94 — allesamt Titel, die in Lauf 7 noch über `edge2-waw-sprintcdn…`,
+`prx-…ant.vmpx.online` oder `s7-5042yyg.s1q2105.com` spielten und jetzt über
+**dropcdn**-Knoten (`r1/ds1/ds2/ds5.dropcdn.io`) laufen und scheitern. Die
+Fehlziel-Hosts der FAIL-Titel sind in diesem Lauf zu **17 von 11** auf 17
+Titel angewachsen (dropcdn allein 17 Nennungen). Dieselben Titel liefen in
+Lauf 7 über dieselben Host-Familien erfolgreich — die externe Rotation der
+CDN-Knoten ist die Ursache, nicht der Code. aniworld 95→78 %, filmpalast
+55→36 % sind genau dieser Effekt.
+
+### Befund 2 — Block 4e rettet exakt **+1 Titel**
+
+idx 49 (moflix): FAIL an `moflix.rpmplay.xyz` → **OK über `cdn.plyr.io`**, den
+zweiten Hoster der Watch-Seite. 9 Titel öffneten die Alternative-Kette
+(idx 4, 13, 17, 22, 23, 43, 59, 82, 93), aber alle blieben FAIL — beide
+Kettenglieder starben an derselben Ursache (Befund 3). 4 Titel endeten mit
+`keine_weitere_Alternative` (nur ein Kandidat vorhanden).
+
+### Befund 3 — reine JS-Packs verdecken den funktionierenden Interception-Weg
+
+8 der 9 alternativen Titel (moflix/bsto, Hosts `moflix.rpmplay.xyz`,
+`moflix-stream.fans`, `strmup.to`) starben in **beiden** Kettengliedern an
+`js: kein Rückgabewert` — die reinen JS-Packs (jwplayer) liefern auf diesen
+Embed-Seiten keinen Wert, und es gab **keinen generischen Rückfall** auf die
+Interception. Dieselbe Host-Familie wird über die Interception aber
+zuverlässig gefunden: `INTERCEPT #79` auf `vidaraa.cc/e/dgBRg3f5Mg5zC` fand in
+**2.148 ms** eine echte `…master.m3u8` (`s1-s501740.97bf1.com`). Die Sperre
+lag also im Pack-Pfad, nicht in der WebView. → **Block 4f**: Interception vor
+Pack-Script für reine JS-Packs auf Embed-Seiten, plus generischer Rückfall
+nach fehlgeschlagenem Pack.
+
+### Befund 4 — parallele Alternativen reihen sich in die WebView-Queue und verhungern
+
+10 Titel starben an `Hoster-Zeitüberschreitung`. Die Alternativen liefen
+**parallel**, brauchen aber alle dieselbe app-weit serialisierte WebView
+(`WebViewGate.mutex`): Sie stellen sich hinten an und laufen jeweils in ihren
+eigenen 26-s-Timeout, ohne eine einzige Anfrage zu stellen. Außerdem erkannte
+`needsWebView` reine JS-Packs nicht — solche Hosts landeten im „plain"-Bucket
+mit `WebViewBudget.none()` und konnten die Interception gar nicht nutzen.
+→ **Block 4f**: sequentielle Alternative-Kette mit eigener Frist je Kandidat.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run8-c6465fa/`
+(Enddump `lauf8-summary.xml`, Poll-Dumps `polls/p*/0*.xml`, signiertes APK
+`app-acceptance-c6465fa.apk`, sha256 `4a75877f77bc…`), Auswertung mit
+`analyse_lauf.py run8-c6465fa/polls run7-0ef5b44/polls` und
+`analyse_ursachen.py run8-c6465fa/polls`.
+
+## Lauf 9 — Build `7cac713`, 24.11.2026, A52 (Block 4f + Block 6)
+
+Stichprobe: **identisch** zu Lauf 1–8 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 13:01–13:37 (~36 min). Signiertes APK `d2a20e66…`
+(20.447.250 B), CI-Lauf `45384683779` grün (183/183 Tests).
+Geänderte Basis gegenüber Lauf 8: **Block 4f** — (1) reine JS-Packs auf
+Embed-Seiten laufen zuerst durch die Medien-Interception, (2) nach einem
+fehlgeschlagenen Pack folgt die generische Rückfallebene
+(`genericFallback(force = true)`), (3) die Alternative-Kette ist sequenziell
+mit eigener Frist je Kandidat (60 s Gesamt, 34 s je Stream, 8 s Minimum,
+2 WebView-Versuche), (4) `needsWebView` erkennt JS-Packs; sowie **Block 6**
+(Single-Flight ohne Labeled-Return).
+
+| Kennzahl | Wert | Lauf 8 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Produktion) | **64 / 100 = 64 %** | 62 % | **+2 pp** |
+| Fast-Path | **63 / 100 = 63 %** | 61 % | **+2 pp** |
+| Auflösung p50 / p95 (nur OK-Titel) | 2.286 / 27.219 ms | 2.851 / 27.120 ms | p50 −565 ms, p95 +99 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 2.793 / 27.880 ms | 2.925 / 28.283 ms | p50 −132 ms, p95 −403 ms |
+| Fehlerklassen (Produktion) | 16 × `EMBED_UNRESOLVED`, 11 × `GEO_BLOCKED`, 9 × `CONTAINER_UNSUPPORTED` | 17 / 12 / 9 | −1 / −1 / 0 |
+| Fehlerklassen (Fast) | 15 × `EMBED_UNRESOLVED`, 11 × `CONTAINER_UNSUPPORTED`, 11 × `GEO_BLOCKED` | 17 / 10 / 12 | −2 / +1 / −1 |
+| Interception | **202** Versuche, **11 Titel** mit Medien-URL (4 davon OK) | 73 / 3 (2 OK) | +129 / +8 |
+
+Quote je Quellengruppe (Produktion):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 8 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 31 | **72 %** | 72 % | 0 pp | `EMBED_UNRESOLVED`: 5 |
+| aniworld | 19 | 17 | **89 %** | 78 % | **+11 pp** | `CONTAINER_UNSUPPORTED`: 1 |
+| moflix | 11 | 3 | **27 %** | 36 % | −9 pp | `CONTAINER_UNSUPPORTED`: 4 |
+| filmpalast | 11 | 5 | **45 %** | 36 % | +9 pp | `EMBED_UNRESOLVED`: 3 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `EMBED_UNRESOLVED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 2 |
+
+Im Fast-Path kippt nur serienstream 72→69 % (idx 1: Rotation auf
+`r1.dropcdn.io`); moflix bleibt 27 %.
+
+### Befund 1 — Block 4f greift: Interception-Nutzung verdreifacht
+
+73 → **202** Interception-Versuche, 3 → **11 Titel** mit echter Medien-URL
+(davon 4 OK: idx 44, 54, 72, 86). Der generische Rückfall wird nach
+Pack-Fehlschlag tatsächlich aufgerufen — in Lauf 8 gab es diese Ebene nicht.
+
+### Befund 2 — `js: kein Rückgabewert` als Todesursache praktisch beseitigt
+
+In Lauf 8 starben 8 Titel in beiden Kettengliedern an diesem Fehler; in Lauf 9
+noch 2 (idx 17, 23) — dort lief danach aber die Rückfallebene (idx 23: 9
+Interception-Versuche, 1 Medien-Treffer, anschließend die volle
+Alternative-Kette). Die Interception vor dem Pack-Script ersetzt den toten
+JS-Pfad auf Embed-Seiten.
+
+### Befund 3 — die Gewinne sitzen genau dort, wo Lauf 8 sie verloren hat
+
++2 pp netto aus 6 Gewinnen (idx 33, 34, 35, 37, 86, 88) und 4 Verlusten
+(idx 1, 14, 36, 49). Die drei dropcdn-Titel aus Lauf 8 (idx 34, 35, 37) sind
+über **andere Hoster** zurück (`bj169d.cloudatacdn.com`,
+`edge2-waw-sprintcdn.r66nv9ed.com`, `m1-s1001604.97bf1.com`) — die
+Alternative-Kette greift dort, wo Lauf 8s Rückgang reine Rotation war. idx 33
+und 88 bekamen in Lauf 8 **0 Kandidaten** (`GEO_BLOCKED`) und sind jetzt OK
+(`cdn.plyr.io`, `s6-s501740.97bf1.com`).
+
+### Befund 4 — Kosten der sequenziellen Kette: 6 Titel laufen die vollen 60 s leer
+
+idx 4, 13, 17, 43, 59, 82 (alles moflix/bsto mit den toten Hosts
+`moflix.rpmplay.xyz` / `moflix-stream.fans`) beendeten die Alternative-Kette
+nach 60.004–60.010 ms mit 2 geprüften WebView-Kandidaten und ohne Erfolg.
+`Hoster-Zeitüberschreitung` ist damit mit 21× die häufigste Klartext-Ursache
+(Lauf 8: 10×) — die Kette wartet jetzt die volle Frist ab, statt im
+Parallel-Timeout zu verhungern. moflix fiel dadurch 36→27 % (idx 14 und 49
+verloren, beides Rotation an `r1.dropcdn.io` bzw. `veev.to`).
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run9-7cac713/`
+(Enddump `lauf9-summary.xml`, Poll-Dumps `polls/p*/0*.xml`, signiertes APK
+`app-acceptance-7cac713.apk`, sha256 `d2a20e6607b905a6…`, CI-Evidenz
+`gate-evidence/`), Auswertung mit
+`analyse_lauf.py run9-7cac713/polls run8-c6465fa/polls` und
+`analyse_ursachen.py run9-7cac713/polls`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

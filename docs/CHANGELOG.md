@@ -123,6 +123,44 @@
   Produktionspfad ab; der Harness zählt Fast-Path und Produktion getrennt
   (`QUOTA FAST SUMMARY` / `QUOTA FAST GROUPEN`), damit die Reihe Lauf 1–7
   vergleichbar bleibt.
+- Lauf 8 (Build `c6465fa`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  **62/100 = 62 %** Produktion, **61/100 = 61 %** Fast-Path (−4/−5 pp zu Lauf 7),
+  Gruppen 72/78/36/36/50/50 %. Der Rückgang ist **Provider-Rotation** (17 Titel
+  neu an dropcdn-Knoten, aniworld 95→78 %, filmpalast 55→36 %), nicht der
+  Block: 6 Titel änderten das Ergebnis, 5 davon an externe CDN-Wechsel.
+  Block 4e rettet exakt **+1 Titel** (idx 49: `moflix.rpmplay.xyz` →
+  `cdn.plyr.io`); 9 Titel öffneten die Kette, 8 starben an `js: kein
+  Rückgabewert` — reine JS-Packs verdeckten den Interception-Weg, obwohl
+  `INTERCEPT #79` dieselbe Host-Familie in 2,1 s auflöst. 10 Titel starben an
+  `Hoster-Zeitüberschreitung`: parallele Alternativen reihen sich in die
+  serialisierte WebView-Queue. Siehe [QUOTA.md](QUOTA.md).
+- Lauf 9 (Build `7cac713`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  **64/100 = 64 %** Produktion, **63/100 = 63 %** Fast-Path (**+2/+2 pp** zu
+  Lauf 8), Gruppen 72/89/27/45/50/50 %. Block 4f belegt: Interception 73→202
+  Versuche, 3→11 Titel mit Medien-URL; `js: kein Rückgabewert` als Todesursache
+  von 8 Titeln auf 2 gesunken. Die 6 Gewinne sitzen dort, wo Lauf 8 sie an
+  Rotation verloren hatte (idx 34/35/37 über andere Hoster zurück). Kosten: 6
+  moflix/bsto-Titel laufen die volle 60-s-Alternative-Kette leer. Siehe
+  [QUOTA.md](QUOTA.md).
+- **Block 6 (Single-Flight, `1c069ab`):** `resolveInternal` hielt Cache und
+  Schlösser über verschachtelte Inline-Lambdas mit Labeled-Return — der
+  Kotlin-Compiler verweigerte das („Missing return statement“, CI
+  `45358019986`). Neu ohne Labeled-Return: Cache-Hit → `Mutex` pro
+  Auflösungsschlüssel → erneuter Cache-Hit → `resolveNow`. Gleiche Semantik,
+  kompilierbar.
+- **Block 4f (`7cac713`):** (1) Reine JS-Packs auf Embed-Seiten laufen jetzt
+  **zuerst** durch die Medien-Interception (`shouldInterceptRequest` gibt
+  `null` zurück, Referer/Origin/Cookie gehen an den Player, die **echte**
+  Interception-Zeit wird gemessen); (2) nach einem fehlgeschlagenen Pack gibt
+  es eine generische Rückfallebene (`genericFallback(force = true)`); (3) die
+  Alternative-Kette ist **sequenziell** mit eigener Frist je Kandidat
+  (`ALTERNATIVE_DEADLINE_MS` 60 s, `ALTERNATIVE_STREAM_MS` 34 s,
+  `MIN_ALTERNATIVE_MS` 8 s, 2 WebView-Versuche je Alternative) — parallele
+  WebView-Zugriffe verhungern aneinander; (4) `needsWebView` erkennt
+  JS-Schritt-Packs, damit solche Hosts nicht mehr mit `WebViewBudget.none()`
+  im „plain"-Bucket landen. CI `45384683779` grün, 183/183 Tests
+  (`HosterResolverTest` 27: Interception vor JS-Pack, Rückfall nach
+  Fehlschlag, Watch-Seite behält den Pack-Pfad).
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 

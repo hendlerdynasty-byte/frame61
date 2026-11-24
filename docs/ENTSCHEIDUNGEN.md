@@ -760,4 +760,58 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Offen: gemessen wird das in **Lauf 8**; Block 4e gilt bis dahin als
   implementiert, nicht als belegt.
 
+## 2026-11-24 — Lauf 8 gemessen: Block 4e rettet +1 Titel, der Rest ist Provider-Rotation
+
+- Befund (A52, Lauf 8, Build `c6465fa`): Produktion **62/100 = 62 %**, Fast
+  **61/100 = 61 %** (−4/−5 pp zu Lauf 7). 6 Titel änderten das Ergebnis, 5
+  davon wegen externer CDN-Rotation (neu an `ds*/r1.dropcdn.io`: idx 34, 35,
+  37, 84, 94) — dieselben Titel liefen in Lauf 7 über dieselben Host-Familien
+  noch erfolgreich. Block 4e selbst rettet genau **einen** Titel (idx 49,
+  moflix: `moflix.rpmplay.xyz` → `cdn.plyr.io`).
+- Zweiter Befund: 8 der 9 Titel mit alternativer Kette starben in beiden
+  Gliedern an `js: kein Rückgabewert` (reine JS-Packs auf den moflix-Embeds),
+  obwohl `INTERCEPT #79` dieselbe Host-Familie (vidaraa.cc) in 2,1 s mit einer
+  echten m3u8 auflöst. 10 Titel starben an `Hoster-Zeitüberschreitung`:
+  parallele Alternativen brauchen alle dieselbe serialisierte WebView
+  (`WebViewGate.mutex`) und verhungern aneinander in ihrem eigenen Timeout.
+- Entscheidung: Block 4e bleibt (der +1-Titel-Beleg ist echt), aber die
+  Alternative-Kette läuft künftig **sequenziell** mit eigener Frist je Kandidat,
+  und reine JS-Packs auf Embed-Seiten laufen **vor** dem Pack-Script durch die
+  Interception (Block 4f). Gemessen wird in Lauf 9 (gleiche Stichprobe, gleicher
+  Seed); bis dahin gilt Block 4f als implementiert, nicht als belegt.
+
+## 2026-11-24 — Interception vor Pack-Script für reine JS-Packs (Block 4f)
+
+- Befund: Reine `js`-Packs (jwplayer: `uqload.vc`, `dr0pstream.com`, die
+  moflix-Embeds) liefern auf manchen Seiten keinen Rückgabewert, während die
+  Medien-Interception derselben Seite in 1,4–2,1 s eine m3u8 findet
+  (`INTERCEPT #79`, Lauf 8). Außerdem erkannte `needsWebView` JS-Packs nicht —
+  solche Hosts liefen mit `WebViewBudget.none()` und konnten die Interception
+  nicht nutzen.
+- Default: (1) Ist das Pack **ausschließlich** `js` und die Seite
+  **embed-förmig**, läuft zuerst `WebViewMediaInterceptor.intercept` —
+  `shouldInterceptRequest` gibt `null` zurück (kein Blockieren), Referer/Origin
+  und die ausgelesenen Cookies gehen in die Player-Header, die **gemessene**
+  Interception-Zeit wird protokolliert, nicht die 20-s-Kappe. (2) Scheitert
+  ein Pack, folgt `genericFallback(force = true)` — dieselbe Interception als
+  letzte Ebene. (3) Watch-Seiten (keine Embed-Form) behalten den Pack-Pfad,
+  die Interception läuft erst danach (Test in `HosterResolverTest`).
+- Warum zuerst Interception und nicht Pack: Der Browser der Seite löst seine
+  eigene Challenge; ein nachgebautes JS-Skript scheitert, sobald der Anbieter
+  die Seite ändert (gleiche Lektion wie bei VOE/Doodstream/Filemoon).
+
+## 2026-11-24 — Alternative-Kette sequenziell statt parallel (Block 4f)
+
+- Befund (Lauf 8): Parallele Alternativen reihen sich in die app-weit
+  **eine** WebView (`WebViewGate.mutex`) — 10 Titel starben an
+  `Hoster-Zeitüberschreitung`, ohne eine einzige Anfrage zu stellen.
+- Default: `resolveAlternatives` läuft die WebView-Kandidaten **der Reihe
+  nach** mit eigener Frist (`ALTERNATIVE_DEADLINE_MS` 60 s,
+  `ALTERNATIVE_STREAM_MS` 34 s, `MIN_ALTERNATIVE_MS` 8 s,
+  `WEBVIEW_ATTEMPTS_PER_ALTERNATIVE` 2); Nicht-WebView-Kandidaten laufen
+  weiterhin parallel ohne Budget. Teilergebnisse werden behalten — ein
+  früh erfolgreicher Hoster landet nicht im Timeout des letzten.
+- Messharness deckt die Kette ab: `ALTERNATIVE_BUDGET_MS` 70 s (statt 45 s), weil
+  die 60-s-Kette sonst außen vor bliebe.
+
 
