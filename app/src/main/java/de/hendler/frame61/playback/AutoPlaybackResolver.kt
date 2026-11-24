@@ -242,12 +242,14 @@ class AutoPlaybackResolver @Inject constructor(
         for (pack in packs) {
             // Abbruch (Fokus ist weitergewandert) landet als leeres Ergebnis
             // hier — der Vorwaermlauf schreibt dann nichts in den Cache.
-            val result = runCatching {
-                withTimeoutOrNull(PREFETCH_TIMEOUT_MS) {
+            // Der Typ ist ausdruecklich: `runCatching` + `withTimeoutOrNull`
+            // inferieren sonst `List<Any?>` (CI 45471455585).
+            val result: List<MirrorCandidate> = runCatching {
+                withTimeoutOrNull<List<MirrorCandidate>>(PREFETCH_TIMEOUT_MS) {
                     resolvePackPrefetch(pack, item, episodeNumber, season)
                 }
-            }.getOrDefault(emptyList())
-            candidates += result
+            }.getOrNull().orEmpty()
+            candidates.addAll(result)
         }
         val ordered = order(candidates)
         Log.i(

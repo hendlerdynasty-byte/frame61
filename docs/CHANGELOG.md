@@ -34,6 +34,29 @@
   `json:sources.0.url` gelesen, damit die escaped Trennzeichen (`\u0026`) der
   m3u8 als echte `&` ankommen. `tools/validate_packs.py` und
   `tools/fetch/hoster_worker.py` kennen die Aktion jetzt ebenfalls.
+- **Block 7 — Vorwaermen auf Fokus:** Die Quelle des **fokussierten** Titels
+  wird im Hintergrund aufgeloest, waehrend der Nutzer noch navigiert.
+  `tvFocusable` meldet den Fokuswechsel, `PosterCard` gibt ihn als `onFocus`
+  weiter, `PrefetchController` entprellt (400 ms), serialisiert die Laeufe
+  (ein Vorwaermlauf zur Zeit) und haelt den Kandidaten 60 s bereit. Der Player
+  uebernimmt den Kandidaten sofort, waehrend die volle Aufloesung parallel
+  weiterlaeuft und nur die Fallback-Kette liefert.
+  - Der Vorwaermlauf loest **nur** die Pack(s) der Kataloggruppe des Titels
+    (`PrefetchScope`) — ein bis zwei HTTP-Anfragen statt 33 Pack-Suchen.
+  - Er benutzt einen **eigenen Hoster-Resolver ohne WebView-Bestandteile**
+    (kein `jsEvaluator`, kein Captcha-Loeser, kein Media-Interceptor). Der
+    Vorwaermlauf kann den WebView-Slot des Players damit nicht wegnehmen.
+  - `bs.to` ist bewusst **nicht** vorwaermbar (VOE laeuft ueber die stille
+    WebView).
+  - Der Player protokolliert die Zeit bis zum **ersten Bild** und ob der
+    Start aus dem Vorwaermlauf kam — Messkriterium fuer die A52-Abnahme.
+- **Block 8 — Staffel gehört zur Episodenadresse:** `EpisodeSelection` wählt
+  die Folge in drei Stufen (Staffel+Nummer, dann nur Nummer, dann die erste
+  der Quelle). Die Packs s.to und aniworld adressieren ihre Streams jetzt
+  über `staffel-{season}` statt fest `staffel-1`; `PackInterpreter.streams`
+  füllt den Platzhalter (Default 1 — bestehende Packs bleiben unverändert).
+  ARD und bs.to wählen ebenfalls nach (Staffel, Nummer).
+
 
 #### Behoben
 - **DEVIDEOSRC-API kam auf dem Gerät nie an (A52, Lauf 4):** Der Ausdruck für
@@ -62,6 +85,21 @@
   die m3u8. Live belegt am 24.11.2026: `hoster_worker` löst die Kette gegen
   die echte Seite auf (`verified`), die m3u8 antwortet mit HTTP 200
   (`application/vnd.apple.mpegurl`).
+- **Staffel-2-Folgen wurden als Staffel 1 gespielt (Block 8):** Drei Stellen
+  adressierten stillschweigend die falsche Folge:
+  - bs.to suchte `season == 1 && number == n` — eine Staffel-2-Folge traf nie,
+    der Nummer-Fallback spielte Staffel 1.
+  - ARD suchte nur nach der Nummer und wählte bei Mehrstaffel-Serien den
+    ersten Treffer aus Staffel 1.
+  - die Packs s.to und aniworld standen mit fest `staffel-1` im Stream-Endpoint
+    (404 oder eine fremde Folge).
+  Der Resume-Punkt wanderte dabei in eine andere Zeitachse.
+- **Resume-Schlüssel hing an der Quelle (Block 8):** Der Slot je Folge wird
+  jetzt aus (Titel, Staffel, Nummer) abgeleitet und ist damit über den
+  Quellenwechsel hinweg stabil. Titel ohne Metadaten-Snapshot teilten sich
+  vorher alle Folgen einen Slot (`episodeId = 0`); der alte Schlüssel wird beim
+  Lesen als Fallback mitgeprüft, damit bestehende Positionen nicht verloren
+  gehen.
 
 #### Geändert
 - Die generische Embed-Stufe greift jetzt auch **innerhalb** einer Kette

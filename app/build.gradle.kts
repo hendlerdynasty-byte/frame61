@@ -113,6 +113,16 @@ android {
         kotlinCompilerExtensionVersion = libs.versions.kotlin.get()
     }
 
+    testOptions {
+        unitTests {
+            // `android.util.Log` wirft im JVM-Test sonst "Method i in
+            // android.util.Log not mocked". Der Vorwaermlauf (Block 7)
+            // protokolliert seinen Verlauf — im Test soll der Logruf
+            // nichts tun, nicht den Test sprengen.
+            isReturnDefaultValues = true
+        }
+    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
