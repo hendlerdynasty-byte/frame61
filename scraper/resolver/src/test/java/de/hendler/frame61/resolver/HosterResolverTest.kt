@@ -491,9 +491,14 @@ class HosterResolverTest {
         assertFalse(HosterResolver.looksLikeEmbed("https://uqload.vc/embed-7uqq5rkob9z1.html"))
         assertTrue(HosterResolver.isWebFirst("https://uqload.vc/embed-7uqq5rkob9z1.html"))
         assertTrue(HosterResolver.isWebFirst("https://flyfile.app/e/abc"))
-        // Fremde Hosts bleiben unangetastet.
-        assertFalse(HosterResolver.isWebFirst("https://example.com/e/1"))
+        // Fremde Hosts **ohne** Embed-Form bleiben unangetastet.
+        assertFalse(HosterResolver.isWebFirst("https://example.com/film/1"))
         assertFalse(HosterResolver.isWebFirst("https://notuqload.vc/embed-x.html"))
+        // Die Embed-Form selbst ist host-unabhängig — genau so ist es seit
+        // Lauf 1 gemessen: odysseusa.cc und moflix-stream.click lösen nur
+        // über den stillen WebView auf. Die Host-Liste erweitert lediglich
+        // um Hosts **ohne** Embed-Form (uqload.vc, flyfile.app).
+        assertTrue(HosterResolver.isWebFirst("https://example.com/e/1"))
     }
 
     @Test
