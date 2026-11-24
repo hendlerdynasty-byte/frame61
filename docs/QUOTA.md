@@ -1,6 +1,6 @@
 # QUOTA.md — Titel-Erfolgsquote (Messharness und Baseline)
 
-Stand: 23.11.2026. Methode und Zahlen für Version 1.5.0.
+Stand: 24.11.2026. Methode und Zahlen für Version 1.5.0.
 
 ## Methode (1.5.0)
 
@@ -581,6 +581,90 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run6-27afaeb/`
 (UI-Dumps `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`), Auswertung mit
 `analyse_lauf.py` und `analyse_ursachen.py`, Host-Zählung und
 Filemoon-Zuordnung über die Skripte unter `~/hendler-dynasty/evidence/frame61/1.5.0/`.
+
+## Lauf 7 — Build `0ef5b44`, 24.11.2026, A52 (Filemoon-Playback über die API)
+
+Stichprobe: **identisch** zu Lauf 1–6 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 06:53–07:45 (~52 min). APK `b1866a54…` (signiert,
+`de.hendler.frame61.acceptance`, 20.151.553 B), CI-Läufe `45334962868` (rot,
+`docs/PACKS.md` veraltet) und `45336014603` (grün) — `packsReport` hatte den
+Drift gemeldet, die Datei wurde erzeugt (`0ef5b44`).
+Geänderte Basis gegenüber Lauf 6: Block 4d-1 — Filemoon liest den
+`playback`-Block aus `GET /api/videos/{code}` und entschlüsselt ihn
+(AES-256-GCM).
+
+| Kennzahl | Wert | Lauf 6 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Mischwert) | **66 / 100 = 66 %** | 62 % | **+4 pp** |
+| Auflösung p50 / p95 (nur OK-Titel) | 1.809 / 26.886 ms | 1.592 / 26.957 ms | p50 +217 ms, p95 −71 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 3.011 / 28.261 ms | 2.609 / 27.972 ms | p50 +402 ms, p95 +289 ms |
+| Fehlerklassen | 12 × `CONTAINER_UNSUPPORTED`, 11 × `EMBED_UNRESOLVED`, 11 × `GEO_BLOCKED` | 11 / 13 / 14 | +1 / −2 / −3 |
+| Interception | **71** Versuche, **4** mit Medien-URL | 69 / 2 | +2 / +2 |
+
+Quote je Quellengruppe:
+
+| Gruppe | Titel | spielbar | Quote | Lauf 6 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 31 | **72 %** | 70 % | +2 pp | `EMBED_UNRESOLVED`: 5 |
+| aniworld | 19 | 18 | **95 %** | 84 % | +11 pp | `EMBED_UNRESOLVED`: 1 |
+| moflix | 11 | 3 | **27 %** | 27 % | 0 pp | `CONTAINER_UNSUPPORTED`: 8 |
+| filmpalast | 11 | 6 | **55 %** | 45 % | +9 pp | `GEO_BLOCKED`: 3 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `CONTAINER_UNSUPPORTED`: 1 |
+
+### Befund 1 — Filemoon hat sich **aufgelöst**, der Gewinn liegt woanders
+
+Der Filemoon-Pfad läuft jetzt (Block 4d-1, CI-Run `45336014603`, Pack live
+`verified` mit m3u8-Treffer). Der gemessene Zugewinn von +4 pp stammt aber
+**nicht** aus dieser Quelle: `filemoon` steht in keinem der 100 Titel als
+fehlender Hoster. Die vier Gewinne kommen aus aniworld (+2: idx 84, 95 über
+`s7-5042yyg.s1q2105.com`, `wdr-progressive.ard-mcdn.de`), filmpalast (+1: idx
+64) und serienstream (+1: idx 74), verloren haben zwei ARD-Titel (idx 33, 82)
+an einen GEO-Block. Das ist dieselbe Provider-Rotation wie in Lauf 6 — der
+Block lässt sich **nur mit Host-Exposition beweisen**, nicht mit der Quote.
+
+### Befund 2 — 12 der 34 Fehlschläge sterben an **einem** toten Hoster
+
+Fehlziel-Hosts (nur FAIL-Titel):
+
+| Host | Titel |
+|---|---|
+| `moflix.rpmplay.xyz` | **12** |
+| `ds2.dropcdn.io` | 5 |
+| `moflix-stream.fans` | 3 |
+| `ds1.dropcdn.io` | 3 |
+| `strmup.to` | 2 |
+| `r1.dropcdn.io` | 2 |
+| `ds5.dropcdn.io` | 1 |
+
+Das ist der wichtigste Befund des Laufs. `moflix.rpmplay.xyz` ist ein toter
+Ad-Stub: er wird **aufgelöst** (Kandidat steht, `Hoster_aufgelöst`), die
+ausgelieferte Medien-URL ist aber nicht abspielbar (`CONTAINER_UNSUPPORTED`).
+Die moflix-Watch-Seite bietet zu dem Titel aber 3–8 **weitere** Hoster
+(`veev.to`, `vidaraa.cc`, `moflix.upns.xyz`, … — live geprüft am
+24.11.2026). Der Fast-Path löst je Quelle nur den **ersten** Hoster auf
+(`MAX_WEBVIEW_STREAMS = 1`); die Alternativen fallen unter den Tisch, obwohl
+sie danebenstehen. **Block 4e** holt sie nach Fehlschlag nach.
+
+### Befund 3 — die Fehlerklassen verschieben sich in die tote Unterseite
+
+12 × `CONTAINER_UNSUPPORTED` sind die Mehrheit der Fehlschläge, und 8 davon
+gehören zu `moflix` (Titel über einen aufgelösten, aber unspielbaren Hoster).
+Damit schiebt sich die Quote von „Quelle liefert nichts" (`NO_CANDIDATE`,
+in Lauf 1 noch 41 Titel) zu „Quelle liefert, aber ihr erster Hoster ist tot".
+
+### Befund 4 — Interception: mehr Treffer, aber weiterhin unter 6 %
+
+71 Versuche, davon 4 mit Medien-URL (5,6 %). Die Registerseite der
+Fehlschläge ist nicht die WebView, sondern die Hoster-Wahl: `INTERCEPT #65`
+und `#77` auf `vidaraa.cc` haben in 1,4–1,5 s eine
+`s7-5042yyg.s1q2105.com/hls/…master.m3u8`-URL gefunden. Die Sperre liegt
+im **Resolver**, nicht in der Interception.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run7-0ef5b44/`
+(UI-Dumps `polls/p*/0*.xml`, Enddump `lauf7-summary.xml`, APK unter
+`apks-0ef5b44/`), Auswertung mit `analyse_lauf.py` (Vergleich
+`run6-27afaeb/polls`) und `analyse_ursachen.py`.
 
 ## Ältere Methode (1.4.0)
 

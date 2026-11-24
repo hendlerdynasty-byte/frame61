@@ -104,6 +104,25 @@
   angeboten. Fehlziel-Masse: `dropcdn.io` 13, `moflix.rpmplay.xyz` 11,
   `moflix-stream.fans` 4. Filemoon stand in 1–2 Titeln der Kette und ist mit
   Block 4d-1 adressiert — siehe [QUOTA.md](QUOTA.md).
+- Lauf 7 (Build `0ef5b44`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  **66/100 = 66 %** (+4 pp zu Lauf 6), Gruppen 72/95/27/55/50/50 %. Die vier
+  Gewinne kommen aus aniworld (+2), filmpalast (+1) und serienstream (+1), zwei
+  ARD-Titel verloren an einen GEO-Block — **nicht** aus Filemoon: der
+  reparierte Pfad steht in keinem der 100 Titel als fehlender Hoster. Der
+  wichtigste Befund: 12 der 34 Fehlschläge sterben an **einem** toten Hoster
+  (`moflix.rpmplay.xyz`, aufgelöst aber unspielbar), obwohl dieselbe
+  Watch-Seite 3–8 weitere Hoster anbietet — siehe [QUOTA.md](QUOTA.md).
+- **Block 4e (Alternative-Kette, `c6465fa`):** Der Fast-Path löst je Quelle nur
+  den **ersten** Hoster auf (`MAX_WEBVIEW_STREAMS = 1`). Ist der aufgelöst,
+  aber nicht abspielbar, blieben die übrigen Hoster der Watch-Seite liegen.
+  Neu: `MirrorCandidate.streamUrl` trägt die Watch-URL mit, `hostOf()` sperrt
+  gescheiterte Hoster darüber (nicht über die Medien-URL — die sieht anders
+  aus als die Hoster-Seite, die sie erzeugt hat), und
+  `AutoPlaybackResolver.resolveAlternative` holt die nächsten Hoster
+  **derselben** Quelle nach. Player und Mess-Harness bilden beide den
+  Produktionspfad ab; der Harness zählt Fast-Path und Produktion getrennt
+  (`QUOTA FAST SUMMARY` / `QUOTA FAST GROUPEN`), damit die Reihe Lauf 1–7
+  vergleichbar bleibt.
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 

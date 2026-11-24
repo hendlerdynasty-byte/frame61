@@ -1,6 +1,6 @@
 # ENTSCHEIDUNGEN.md — getroffene Defaults
 
-Stand: 23.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
+Stand: 24.11.2026. Bei Unklarheit gilt der hier dokumentierte Default; die
 Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 
 ## 2026-11-23 — Der Katalog wird aus den Quellen geerntet, nicht aus TVmaze
@@ -729,5 +729,35 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   `scraper/resolver/src/test/resources/fixtures-hosters/filemoon/`
   (`page.body.html`, `meta.json`, `result.expected.json`), Test in
   `PlaybackPayloadCipherTest`, Pack-Prüfung durch `HosterFixtureTest`.
+
+## 2026-11-24 — Alternative-Kette nach Fehlschlag, gesperrt über die **Watch-URL**
+
+- Befund (A52, Lauf 7, Build `0ef5b44`): Von 34 Fehlschlägen sterben **12** an
+  einem einzigen Hoster (`moflix.rpmplay.xyz`), 8 davon wegen
+  `CONTAINER_UNSUPPORTED` — der Hoster wird **aufgelöst** (Kandidat steht im
+  Player), aber seine Medien-URL ist nicht abspielbar. Dieselbe Watch-Seite
+  bietet zu diesen Titeln 3–8 **weitere** Hoster (`veev.to`, `vidaraa.cc`,
+  `moflix.upns.xyz`, …; live geprüft am 24.11.2026). Der Fast-Path löst je
+  Quelle nur den **ersten** Hoster auf (`MAX_WEBVIEW_STREAMS = 1`), die
+  Alternativen fallen unter den Tisch.
+- Entscheidung: Nach dem Durchlauf aller Kandidaten holt der Player die
+  nächsten Hoster **derselben** Quelle nach
+  (`AutoPlaybackResolver.resolveAlternative`). Aufgelöst wird mit derselben
+  Kette wie im Fast-Path (`resolveStreams`, jetzt gemeinsam genutzt): ein
+  WebView-Versuch für den ersten WebView-tauglichen Hoster, die übrigen
+  parallel ohne WebView.
+- Warum über die Watch-URL gesperrt wird und nicht über die Medien-URL: Die
+  aufgelöste m3u8 (`…/master.m3u8?t=…`) sieht anders aus als die Hoster-Seite,
+  die sie erzeugt hat. Ein Vergleich der Medien-URLs hätte den **toten**
+  Hoster erneut aufgelöst — genau der Fehler des ersten Entwurfs. Der Host der
+  Watch-URL ist der einzige stabile Schlüssel (`hostOf()`); bei moflix trägt
+  jedes Alternativziel einen eigenen Host, eine Sperre greift also gezielt.
+- Messbarkeit: Das Harness zählt ab jetzt **zwei** Reihen — `QUOTA …`
+  (Produktionspfad mit Alternativen) und `QUOTA FAST …` (alter Fast-Pfad, max.
+  3 Kandidaten). Nur damit bleibt die Reihe Lauf 1–7 vergleichbar, während die
+  Hauptzahl den Produktpfad zeigt. Der Fast-Teil ändert sich nicht, sonst wäre
+  das Delta nicht eindeutig der Alternative-Kette zuzurechnen.
+- Offen: gemessen wird das in **Lauf 8**; Block 4e gilt bis dahin als
+  implementiert, nicht als belegt.
 
 
