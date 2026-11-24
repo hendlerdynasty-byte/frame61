@@ -258,6 +258,117 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run3-078fb4b/`
 (UI-Dumps `polls/p*/02.xml`, Raummeldung `jobs/smoke.log`,
 `QUICK_SMOKE` PASS `job-ea000e3e05ec443f`).
 
+## Lauf 4 — Build `d678efb`, 24.11.2026, A52 (DEVIDEOSRC-API + Doodstream-URL-Form)
+
+Stichprobe: **identisch** zu Lauf 1–3 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 01:44–02:09 (~25 min). APK `e6f74676…` (signiert,
+`de.hendler.frame61.acceptance`, 20.430.866 B), CI-Lauf `45292120284` grün,
+Smoke `job-e4d3d04d63874d9d` PASS.
+Geänderte Basis gegenüber Lauf 3: `DeVideoSrcResolver` (dokumentierte Embed-API),
+Doodstream-URL-Form (`/pass_md5/<hash>/<token>`), MediaUrlMatcher für diese Form.
+
+| Kennzahl | Wert | Lauf 3 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Mischwert) | **60 / 100 = 60 %** | 59 % | +1 pp |
+| Auflösung p50 / p95 | 1.600 / 27.007 ms | 2.130 / 27.049 ms | p50 −530 ms, p95 −42 ms |
+| Startzeit p50 / p95 | 2.624 / 28.088 ms | 2.765 / 28.428 ms | p50 −141 ms, p95 −340 ms |
+| Fehlerklassen | 34 × `CONTAINER_UNSUPPORTED`, 6 × `NO_CANDIDATE` | 33 / 8 | +1 / −2 |
+| Interception | 20 Versuche, 2 mit Medien-URL | 20 / 4 | 0 / −2 |
+
+Quote je Quellengruppe (gemessene Zeile `QUOTA GROUPEN`):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 3 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 30 | **70 %** | 65 % | +5 pp | `CONTAINER_UNSUPPORTED`: 10 |
+| aniworld | 19 | 16 | **84 %** | 84 % | 0 pp | `CONTAINER_UNSUPPORTED`: 3 |
+| moflix | 11 | 3 | **27 %** | 27 % | 0 pp | `CONTAINER_UNSUPPORTED`: 8 |
+| filmpalast | 11 | 3 | **27 %** | 36 % | **−9 pp** | `CONTAINER_UNSUPPORTED`: 8 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `CONTAINER_UNSUPPORTED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `CONTAINER_UNSUPPORTED`: 2 |
+
+### Befund 1 — die DEVIDEOSRC-API lief auf dem Gerät **nie** an
+
+Der Block 4c-1 hat die dokumentierte Embed-API eingebaut — auf dem Gerät ist sie
+**nie** gelaufen. Beleg aus dem Logcat des Laufs (16 betroffene Titel):
+
+| Anfrage | Anzahl |
+|---|---|
+| `GET https://devideosrc.co/movie/tt…` bzw. `/custom/serial/tt…/1/1` | **16** |
+| `POST https://devideosrc.co/api/embed-links` | **0** |
+
+Alle anderen POSTs des Laufs sind protokolliert (aniworld 12, cine.to 12,
+filemoon 12) — es ist also kein Lückenfenster im 400-Zeilen-Logcat.
+
+**Ursache, live reproduziert (24.11.2026):** Der Ausdruck für den
+`JSON.stringify`-Aufruf der Seite war an der Zeilengrenze zerschnitten:
+
+```
+"""…id:\s*"([^"]+)"\s*,""" + """token:\s*"([^"]+)"\s*\}"""
+```
+
+Nach dem Komma fehlt das `\s*` — die Seite schreibt aber `id: "tt12927920",
+token: "…"`. Der Ausdruck traf also **nie**. Die Rückfallebene griff dann das
+**erste** `type=`/`id=` des HTML: gemessen `kind=movie` (zufällig richtig),
+`id="_cloudToggle"` (das erste `id=` der Seite — falsch). Live-Beleg:
+
+| Variante | Ergebnis |
+|---|---|
+| `STRINGIFY` (Ist-Zustand) | **KEIN TREFFER** |
+| `STRINGIFY` (mit `\s*` nach dem Komma) | `('movie', 'tt12927920', 'bW92aWV8…')` |
+| Rückfall-`ID` auf der echten Seite | `_cloudToggle` statt `tt12927920` |
+
+Der Testbestand war zu sauber: die Fixture enthielt kein `id="_cloudToggle"`,
+deshalb blieb die CI grün, während das Gerät scheiterte. Der neue Test
+`live player page yields the film id and not the first html id` benutzt die
+echte Seitenstruktur.
+
+Zusätzlich belegt: die **Serien**-Seite (`/custom/serial/{id}/{s}/{e}`) ruft
+**gar nicht** `/api/embed-links`, sondern `/api/resolve` mit
+`{type, id, season, episode, mode, token}` — die Werte stehen dort als
+`data-*`-Attribute am `<main>`-Element. Beide Endpunkte sind am 24.11.2026
+live abgefragt und liefern dieselbe Antwortform (`sources[]` mit
+`{name, url, rank}`).
+
+### Befund 2 — devideosrc bleibt der häufigste Fehlziel-Host (16 Fehlschläge)
+
+| Host | Fehlschläge | Lage |
+|---|---|---|
+| `devideosrc.co` | **16** | API-Stufe lief nicht (Befund 1); die Player-Seite selbst blieb als HTML-Kandidat stehen |
+| `moflix.rpmplay.xyz` | 12 | `/api/public/resolve` antwortet 404 `not found` (live, 24.11.2026) |
+| `uqload.vc` | 6 | gepackter jwplayer, `embed-<id>.html` — vom Embed-Muster nicht erfasst |
+| `moflix-stream.fans` | 4 | „Video unavailable" |
+| `aniworld.to` | 3 | Kette ohne WebView-Versuch |
+| `prd.jwpltx.com` | 2 | JWPlayer-Kette |
+| `zairuc.com`, `strmup.to` | 1 + 1 | Werbe-Klick-Kette (`junimedclk.com`), 0-Byte-Antwort |
+
+**Abweichung von der Nachtsteuerung (Regel 1, „Begründe jede Abweichung"):**
+Die Reihenfolge bs.to → Doodstream → Filemoon ist umgesetzt, aber in dieser
+Stichprobe tragen die drei Stufen **nichts** bei: die Fehlziel-Hosts sind
+devideosrc (16), moflix (16) und uqload (6). Deshalb wurde zuerst devideosrc
+bedient (Block 4c-1) — dieser Block hat wegen des Regex-Fehlers **nicht
+gegriffen** (Befund 1). Nach der Korrektur ist devideosrc erneut der erste
+Kandidat, danach uqload (Block 4c-2).
+
+### Befund 3 — Zuordnung der fünf geänderten Titel
+
+| idx | Lauf 3 | Lauf 4 | Ursache |
+|---|---|---|---|
+| 1 | FAIL (`devideosrc.co`) | OK (`prx-1350-ant-d.vmpx.online`) | Gewinn über die DEVIDEOSRC-Providerkette |
+| 37 | FAIL (`devideosrc.co`) | OK (`box-c-o-l-10.vmcld.space`) | Gewinn über die DEVIDEOSRC-Providerkette |
+| 72 | FAIL (`devideosrc.co`) | OK (`cdn.plyr.io`) | Gewinn über die DEVIDEOSRC-Providerkette |
+| 34 | OK (`box-1097-y.vmbox.space`) | FAIL (`aniworld.to` ×3) | **Index-/Hoster-Wechsel**, kein Regression |
+| 86 | OK (`s7-5042yyg.s1q2105.com`) | FAIL (`devideosrc.co`) | **Index-/Hoster-Wechsel** (Lauf 3: Interception #19 auf `odysseusa.cc/e/DooiGuaaRJ73B`) |
+
+Netto +1 Titel. Die drei Gewinne zeigen: **wenn** die Providerkette greift,
+trägt sie sofort; die zwei Verluste sind Hoster-Wechsel der Indexseiten
+zwischen den Läufen (gleiche Stichprobe, aber wechselnde Ziel-Hoster) und
+keine Code-Regression. Deshalb ist der Mischwert nur eine grobe Größe — die
+Gruppenquote ist die belastbare.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run4-d678efb/`
+(UI-Dumps `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`), Auswertung mit
+`~/hendler-dynasty/evidence/frame61/1.5.0/analyse_lauf.py`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus
