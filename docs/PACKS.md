@@ -9,7 +9,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 - legal-frei: **13**, Grauzone Tier A/B: **19**
 - live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
 - Fixtures: 12 recorded, 8 synthetic, 11 ohne
-- Hoster-Packs: **15** (live verifiziert: 2)
+- Hoster-Packs: **15** (live verifiziert: 3)
 
 ## Source-Packs
 
@@ -54,7 +54,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 | `devideosrc` | devideosrc.co, devideosrc.com, devideosrc.net | 1 | nein |
 | `direct` | akamaihd.net, daserste.de, ardmediathek.de, ard.de | 1 | ja |
 | `doodstream` | doodstream.com, dood.watch, dood.re, do7go.com, playmogo.com | 2 | nein |
-| `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com, n1mwq.org | 11 | nein |
+| `filemoon` | filemoon.to, filemoon.sx, bysezejataos.com, n1mwq.org | 5 | ja |
 | `jwplayer` | dr0pstream.com, moflix-stream.click, gupload.site, vidara.to, moflix-stream.link, veev.to, moflix.upns.xyz | 1 | nein |
 | `loadx` | loadx.ws | 2 | nein |
 | `luluvdo` | luluvdo.com, luluvdo.net | 2 | nein |
