@@ -19,6 +19,7 @@ import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.InterceptionLog
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.resolver.MirrorCandidate
+import de.hendler.frame61.resolver.hostOf
 import java.io.File
 import java.util.Random
 import javax.inject.Inject
@@ -133,6 +134,13 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         val groupOk = mutableMapOf<String, Int>()
         val groupTotal = mutableMapOf<String, Int>()
         val groupClasses = mutableMapOf<String, MutableMap<String, Int>>()
+        // Fast-Path getrennt: der Vergleich mit Lauf 1-7 bleibt so erhalten,
+        // auch wenn der Harness ab jetzt zusaetzlich den Produktionspfad
+        // abbildet (Alternative nach Fehlschlag).
+        var fastOk = 0
+        val fastClasses = mutableMapOf<String, Int>()
+        val fastGroupOk = mutableMapOf<String, Int>()
+        val fastGroupClasses = mutableMapOf<String, MutableMap<String, Int>>()
 
         sample.forEachIndexed { index, item ->
             groupTotal[item.group] = (groupTotal[item.group] ?: 0) + 1
@@ -164,24 +172,102 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             var usedHost = "-"
             var errorClass = "NO_CANDIDATE"
             val triedHosts = mutableListOf<String>()
+            // Fast-Path getrennt mitzaehlen: nur so bleibt die Reihe
+            // Lauf 1-7 vergleichbar, wenn der Harness ab jetzt zusaetzlich
+            // den Produktionspfad (Alternative nach Fehlschlag) abbildet.
+            var fastPlayed = false
+            var fastFirstFrameMs = 0L
+            var fastTried = 0
+            var fastUsedHost = "-"
+            var fastErrorClass = "NO_CANDIDATE"
+            val fastHosts = mutableListOf<String>()
+            val failedUrls = mutableSetOf<String>()
+            // Gescheiterte **Hoster** (Host der Watch-URL). Für die
+            // Alternative-Kette ist das der richtige Schlüssel: die
+            // aufgelöste Medien-URL sieht anders aus als die Hoster-Seite.
+            val failedHosts = mutableSetOf<String>()
+            var lastSourceId: String? = null
 
             if (mirrors.isNotEmpty()) {
-                for ((candidateIndex, mirror) in mirrors.take(MAX_CANDIDATES).withIndex()) {
-                    tried = candidateIndex + 1
+                for (mirror in mirrors.take(MAX_CANDIDATES)) {
+                    fastTried += 1
+                    fastHosts += host(mirror.url)
+                    failedUrls += mirror.url
+                    val watchHost = mirror.streamUrl?.let { hostOf(it) }.orEmpty()
+                    if (watchHost.isNotEmpty()) failedHosts += watchHost
+                    lastSourceId = mirror.sourceId
+                    val attemptStarted = SystemClock.elapsedRealtime()
+                    val attempt = playCandidate(mirror)
+                    if (attempt.firstFrameMs != null) {
+                        fastPlayed = true
+                        fastFirstFrameMs = resolveMs + (SystemClock.elapsedRealtime() - attemptStarted)
+                        fastUsedHost = host(mirror.url)
+                        fastErrorClass = "-"
+                        break
+                    }
+                    fastErrorClass = attempt.errorClass ?: "EMBED_UNRESOLVED"
+                }
+            } else {
+                fastErrorClass = classifyFailure(PlaybackDiagnostics.events.value.drop(traceStart))
+            }
+            played = fastPlayed
+            firstFrameMs = fastFirstFrameMs
+            tried = fastTried
+            usedHost = fastUsedHost
+            errorClass = fastErrorClass
+            triedHosts += fastHosts
+
+            // Produktionspfad spiegeln (Block 4e): der Player holt nach einem
+            // Fehlschlag die naechste Alternative **derselben Quelle**. Der
+            // Fast-Path loest je Quelle nur den ersten Hoster auf — 12 der 34
+            // Fehlschlaege in Lauf 7 scheiterten an einem toten Hoster, obwohl
+            // 3-8 Alternativen danebenstanden (moflix-Watch-Seite, live geprueft
+            // am 24.11.2026).
+            //
+            // Der Fast-Teil bleibt unveraendert (max. 3 Kandidaten wie Lauf
+            // 1-7), damit das Delta **eindeutig** der Alternative-Kette
+            // zuzurechnen ist. Die Alternativen kommen obendrauf — sie
+            // treffen per Host-Sperre andere Hoster als der Fast-Teil.
+            var alternativeRound = 0
+            while (!played && alternativeRound < ALTERNATIVE_ROUNDS && lastSourceId != null) {
+                val sourceId = lastSourceId ?: break
+                val alternativeStarted = SystemClock.elapsedRealtime()
+                val alternatives = runCatching {
+                    withTimeoutOrNull(ALTERNATIVE_BUDGET_MS) {
+                        withContext(Dispatchers.IO) {
+                            autoResolver.resolveAlternative(
+                                title = item.title,
+                                episodeNumber = episode,
+                                sourceId = sourceId,
+                                excludeUrls = failedUrls.toSet(),
+                                excludeHosts = failedHosts.toSet(),
+                                sessionId = sessionId
+                            )
+                        }
+                    }
+                }.getOrNull().orEmpty()
+                val alternativeMs = SystemClock.elapsedRealtime() - alternativeStarted
+                if (alternatives.isEmpty()) break
+                for (mirror in alternatives.take(ALTERNATIVE_CANDIDATES)) {
+                    tried += 1
                     triedHosts += host(mirror.url)
+                    failedUrls += mirror.url
+                    val watchHost = mirror.streamUrl?.let { hostOf(it) }.orEmpty()
+                    if (watchHost.isNotEmpty()) failedHosts += watchHost
+                    lastSourceId = mirror.sourceId
                     val attemptStarted = SystemClock.elapsedRealtime()
                     val attempt = playCandidate(mirror)
                     if (attempt.firstFrameMs != null) {
                         played = true
-                        firstFrameMs = resolveMs + (SystemClock.elapsedRealtime() - attemptStarted)
+                        firstFrameMs = resolveMs + alternativeMs +
+                            (SystemClock.elapsedRealtime() - attemptStarted)
                         usedHost = host(mirror.url)
                         errorClass = "-"
                         break
                     }
                     errorClass = attempt.errorClass ?: "EMBED_UNRESOLVED"
                 }
-            } else {
-                errorClass = classifyFailure(PlaybackDiagnostics.events.value.drop(traceStart))
+                alternativeRound += 1
             }
             // Die Resolver-Ereignisse dieses Titels: der Grund, warum ein
             // Titel nicht Spielbar war, steht hier — vorher war er nur im
@@ -196,6 +282,22 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             val interceptMax = intercepts.maxOfOrNull { it.elapsedMs } ?: 0L
             val interceptNote =
                 "intercept=${intercepts.size} medien=$interceptHit maxMs=$interceptMax"
+
+            if (fastPlayed) {
+                fastOk++
+                fastGroupOk[item.group] = (fastGroupOk[item.group] ?: 0) + 1
+            } else {
+                fastClasses[fastErrorClass] = (fastClasses[fastErrorClass] ?: 0) + 1
+                val fastMap = fastGroupClasses.getOrPut(item.group) { mutableMapOf() }
+                fastMap[fastErrorClass] = (fastMap[fastErrorClass] ?: 0) + 1
+            }
+            report(
+                "QUOTA FAST $mode idx=${index + 1} id=${item.id} group=${item.group} " +
+                    "type=${item.type} title=${item.title.sanitize()} " +
+                    "RESULT=${if (fastPlayed) "OK" else "FAIL"} class=${if (fastPlayed) "-" else fastErrorClass} " +
+                    "resolveMs=$resolveMs candidates=${mirrors.size} tried=$fastTried " +
+                    (if (fastPlayed) "host=$fastUsedHost" else "hosts=[${fastHosts.joinToString(",")}]")
+            )
 
             if (played) {
                 ok++
@@ -249,6 +351,27 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     val total = groupTotal[group] ?: 0
                     val groupOkCount = groupOk[group] ?: 0
                     val errors = groupClasses[group].orEmpty()
+                        .entries.sortedByDescending { it.value }
+                    val top = errors.firstOrNull()
+                        ?.let { "${it.key}:${it.value}" } ?: "-"
+                    val quote = if (total > 0) groupOkCount * 100 / total else 0
+                    "$group | $total | $groupOkCount | $quote% | $top"
+                }
+        )
+        // Fast-Path separat: die Reihe Lauf 1-7 bleibt damit vergleichbar
+        // (gleiche Stichprobe, gleicher Seed, nur erster Hoster je Quelle),
+        // waehrend die Hauptzahl den Produktionspfad mit Alternativen zeigt.
+        report(
+            "QUOTA FAST SUMMARY mode=$mode ok=$fastOk/${sample.size} " +
+                "quote=${fastOk * 100 / sample.size} " +
+                "failures=[${fastClasses.entries.sortedByDescending { it.value }.joinToString(",") { "${it.key}:${it.value}" }}]"
+        )
+        report(
+            "QUOTA FAST GROUPEN mode=$mode " +
+                groupTotal.keys.sorted().joinToString(" | ") { group ->
+                    val total = groupTotal[group] ?: 0
+                    val groupOkCount = fastGroupOk[group] ?: 0
+                    val errors = fastGroupClasses[group].orEmpty()
                         .entries.sortedByDescending { it.value }
                     val top = errors.firstOrNull()
                         ?.let { "${it.key}:${it.value}" } ?: "-"
@@ -434,6 +557,13 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         const val PLAYBACK_POLLS = 28
         // bs.to braucht bis zu ~28 s (Challenge + Klick in der WebView).
         const val RESOLVE_BUDGET_MS = 60_000L
+        // Block 4e: der Produktionspfad holt nach einem Fehlschlag bis zu
+        // drei weitere Hoster **derselben** Quelle. Der Harness bildet das ab,
+        // damit die Quote den Produktpfad zeigt, nicht nur den ersten Hoster.
+        const val ALTERNATIVE_ROUNDS = 2
+        const val ALTERNATIVE_BUDGET_MS = 45_000L
+        /** Kandidaten je Alternativeschleife (zusaetzlich zum Fast-Teil). */
+        const val ALTERNATIVE_CANDIDATES = 3
 
         /** Wie viele Interception-Versuche am Ende im Detail stehen. */
         const val DETAILED_INTERCEPTS = 6

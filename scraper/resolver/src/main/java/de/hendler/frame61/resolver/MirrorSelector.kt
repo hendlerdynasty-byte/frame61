@@ -1,5 +1,7 @@
 package de.hendler.frame61.resolver
 
+import java.net.URI
+
 /**
  * One playable candidate for a title/episode. Mirrors are site copies; identity
  * stays the TMDB id.
@@ -20,8 +22,30 @@ data class MirrorCandidate(
     val mimeType: String? = null,
     val bitrate: Int? = null,
     val width: Int? = null,
-    val height: Int? = null
+    val height: Int? = null,
+    /**
+     * Die **Watch-URL**, aus der dieser Kandidat aufgelöst wurde (Hoster-Seite).
+     *
+     * Für die Alternative-Kette (Block 4e) ist das der einzige stabile
+     * Schlüssel: die aufgelöste Medien-URL (HLS) sieht anders aus als die
+     * Hoster-Seite, die sie erzeugt hat. Nur mit der Watch-URL lässt sich
+     * sagen, welcher Hoster bereits gescheitert ist — bei moflix trägt jedes
+     * Alternativziel einen eigenen Host.
+     */
+    val streamUrl: String? = null
 )
+
+/**
+ * Host einer URL, kleingeschrieben und ohne Port — "" bei unparsbarer URL.
+ *
+ * Der Host ist der Schlüssel für die Alternative-Kette: die aufgelöste
+ * Medien-URL (HLS) sieht anders aus als die Hoster-Seite, die sie erzeugt
+ * hat. Nur der Host der **Watch-URL** verrät, welcher Hoster bereits
+ * gescheitert ist (gemessen Lauf 7: 12 Titel starben auf `moflix.rpmplay.xyz`,
+ * obwohl dieselbe Watch-Seite 3–8 weitere Hoster anbot).
+ */
+fun hostOf(url: String): String =
+    runCatching { URI(url).host?.lowercase() }.getOrNull().orEmpty()
 
 /**
  * Orders mirrors exactly as specified: health score first, then language, then

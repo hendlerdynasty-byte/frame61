@@ -15,8 +15,10 @@ import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.MirrorSelector
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
 import de.hendler.frame61.resolver.WebViewBudget
+import de.hendler.frame61.resolver.hostOf
 import de.hendler.frame61.scraper.engine.PackInterpreter
 import de.hendler.frame61.scraper.engine.PackLoader
+import de.hendler.frame61.scraper.engine.SearchResult
 import de.hendler.frame61.scraper.engine.SourcePack
 import de.hendler.frame61.scraper.engine.StreamResult
 import de.hendler.frame61.ui.player.CatalogPlayback
@@ -360,10 +362,28 @@ class AutoPlaybackResolver @Inject constructor(
             attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
             deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
         )
+        return resolveStreams(pack, hit, streams, episodeNumber, sessionId, webBudget)
+    }
+
+    /**
+     * Hoster-Kette für eine Stream-Liste — gemeinsam genutzt vom Fast-Path
+     * ([resolvePack]) und von der Alternative-Kette ([resolveAlternative]).
+     *
+     * Die versteckte WebView ist app-weit serialisiert ([WebViewGate]): nur der
+     * erste WebView-taugliche Stream bekommt den Versuch, alle anderen laufen
+     * parallel über den günstigen Weg (Pack-Schritte ohne WebView). Hoster ohne
+     * Gast-Wiedergabe (VOE: Session/302 /login) kommen zuletzt — der eine
+     * WebView-Versuch soll an einen Hoster gehen, der ohne Konto auskommt.
+     */
+    private suspend fun resolveStreams(
+        pack: SourcePack,
+        hit: SearchResult,
+        streams: List<StreamResult>,
+        episodeNumber: Int,
+        sessionId: Long,
+        webBudget: WebViewBudget
+    ): List<MirrorCandidate> {
         val (webFirst, plain) = streams.partition { needsWebView(it.url) }
-        // Hoster ohne Gast-Wiedergabe (VOE: Session/302 /login) kommen zuletzt:
-        // der eine WebView-Versuch des Titels soll an einen Hoster gehen, der
-        // ohne Konto auskommt.
         val orderedWeb = webFirst.sortedBy { if (guestCapable(it.url)) 0 else 1 }
         val resolved = coroutineScope {
             val webJobs = orderedWeb.take(MAX_WEBVIEW_STREAMS).map { stream ->
@@ -387,10 +407,83 @@ class AutoPlaybackResolver @Inject constructor(
                     healthScore = 1.0,
                     legalFree = pack.legalFree,
                     requestHeaders = it.headers,
-                    cookies = it.cookies
+                    cookies = it.cookies,
+                    // Die Watch-URL bleibt erhalten: nur sie verrät, welcher
+                    // Hoster zu diesem Kandidaten gehört (Alternative-Kette).
+                    streamUrl = stream.url
                 )
             }
         }
+    }
+
+    /**
+     * Nächste Alternative derselben Quelle — für den Fall, dass der Kandidat
+     * aufgelöst wurde, aber **nicht abspielbar** ist (ExoPlayer 3003).
+     *
+     * **Messung (A52, Lauf 7, 24.11.2026):** Der Fast-Path löst je Quelle nur
+     * den ersten Hoster auf (`MAX_WEBVIEW_STREAMS = 1`). Die moflix-Watch-Seite
+     * bietet aber 3–8 weitere Hoster an (`veev.to`, `moflix.upns.xyz`,
+     * `moflix-stream.click`, `vidaraa.cc`, …) — **12 der 34 Fehlschläge**
+     * scheiterten an `moflix.rpmplay.xyz`, einem toten Ad-Stub, **obwohl**
+     * daneben spielbare Alternativen standen. Sie wurden nie aufgelöst, weil sie
+     * verworfen wurden, bevor sie an die Reihe kamen.
+     *
+     * **Der Ausschluss läuft über die Watch-URL, nicht über die Medien-URL:**
+     * die aufgelöste m3u8 sieht anders aus als die Hoster-Seite, die sie
+     * erzeugt hat. Ein Vergleich der Medien-URLs würde den toten Hoster
+     * erneut auflösen — genau der Fehler, den der erste Entwurf hatte.
+     * Deshalb wird der **Host** der Watch-URL gesperrt; bei moflix trägt jedes
+     * Alternativziel einen eigenen Host.
+     *
+     * Aufgelöst wird mit derselben Kette wie im Fast-Path ([resolveStreams]):
+     * ein WebView-Versuch für den ersten WebView-tauglichen Hoster, die
+     * übrigen parallel über den günstigen Weg.
+     */
+    suspend fun resolveAlternative(
+        title: String,
+        episodeNumber: Int,
+        sourceId: String,
+        excludeUrls: Set<String>,
+        excludeHosts: Set<String> = emptySet(),
+        sessionId: Long = PlaybackDiagnostics.currentSessionId
+    ): List<MirrorCandidate> = withContext(Dispatchers.IO) {
+        val pack = packLoader.loadAllPacks().firstOrNull { it.id == sourceId }
+            ?: return@withContext emptyList()
+        // ARD und bs.to haben keine Hoster-Alternativen (direkte Streams).
+        if (pack.id == ArdPlaybackResolver.PACK_ID || pack.id == BS_TO_PACK_ID) {
+            return@withContext emptyList()
+        }
+        val hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
+        val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
+            ?: hits.firstOrNull()
+            ?: return@withContext emptyList()
+        val streams = runCatching {
+            interpreter.streams(pack, hit.playbackId ?: hit.id, episodeNumber.toString(), null)
+        }.getOrDefault(emptyList())
+        val pending = streams.filter { stream ->
+            stream.url.startsWith("https://") &&
+                stream.url !in excludeUrls &&
+                hostOf(stream.url) !in excludeHosts
+        }
+        if (pending.isEmpty()) {
+            trace(sessionId, pack.id, "keine weitere Alternative", null)
+            return@withContext emptyList()
+        }
+        trace(
+            sessionId,
+            pack.id,
+            "${pending.size} Alternativen offen (Hosts ${pending.map { hostOf(it.url) }.distinct()})",
+            null
+        )
+        val webBudget = WebViewBudget.of(
+            attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
+            deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
+        )
+        // Eigene Frist: der Player darf nicht auf die Alternative warten,
+        // wenn ein Hoster hängt (derselbe Deckel wie der Fast-Path).
+        withTimeoutOrNull(ALTERNATIVE_TIMEOUT_MS) {
+            resolveStreams(pack, hit, pending, episodeNumber, sessionId, webBudget)
+        } ?: emptyList()
     }
 
     /**
@@ -570,6 +663,9 @@ class AutoPlaybackResolver @Inject constructor(
         private const val WEBVIEW_ATTEMPTS_PER_TITLE = 1
         private val WEBVIEW_BUDGET_MS = SOURCE_TIMEOUT_MS
         private const val MAX_WEBVIEW_STREAMS = 1
+
+        /** Frist für die Alternative-Kette nach einem Fehlschlag. */
+        private const val ALTERNATIVE_TIMEOUT_MS = 32_000L
 
         private const val CACHE_MS = 15L * 60L * 1000L
 

@@ -16,6 +16,7 @@ import de.hendler.frame61.playback.CaptchaBroker
 import de.hendler.frame61.playback.CaptchaRequest
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
+import de.hendler.frame61.resolver.hostOf
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -81,6 +82,16 @@ class PlayerViewModel @Inject constructor(
     private var tickJob: kotlinx.coroutines.Job? = null
     private var recoveryJob: Job? = null
     private val failedUrls = mutableSetOf<String>()
+    /**
+     * Hosts der **Watch-URLs**, die bereits gescheitert sind.
+     *
+     * Für die Alternative-Kette (Block 4e) ist das der richtige Schlüssel:
+     * die aufgelöste Medien-URL sieht anders aus als die Hoster-Seite, die
+     * sie erzeugt hat. Gemessen Lauf 7: 12 Titel starben auf
+     * `moflix.rpmplay.xyz`, obwohl dieselbe Watch-Seite 3–8 weitere Hoster
+     * anbot.
+     */
+    private val failedHosts = mutableSetOf<String>()
 
     /** The Media3 instance the [PlayerScreen] renders into. */
     val player: ExoPlayer get() = mediaPlayer.exoPlayer
@@ -97,6 +108,7 @@ class PlayerViewModel @Inject constructor(
         recoveryJob?.cancel()
         tickJob?.cancel()
         failedUrls.clear()
+        failedHosts.clear()
         this.profileId = profileId
         this.titleId = titleId
         this.titleName = title
@@ -223,15 +235,43 @@ class PlayerViewModel @Inject constructor(
         if (recoveryJob?.isActive == true) return
         recoveryJob = viewModelScope.launch {
             val resumeMs = mediaPlayer.state.value.positionMs
-            mirrors.getOrNull(mirrorIndex)?.url?.let(failedUrls::add)
+            val current = mirrors.getOrNull(mirrorIndex)
+            current?.url?.let(failedUrls::add)
+            val watchHost = current?.streamUrl?.let { hostOf(it) }.orEmpty()
+            if (watchHost.isNotEmpty()) failedHosts += watchHost
             PlaybackDiagnostics.record(
                 "PLAYER",
                 "Automatische Neuauflösung: ${error?.errorCodeName ?: "stall"}",
-                details = mapOf("failedUrls" to failedUrls.size.toString())
+                details = mapOf(
+                    "failedUrls" to failedUrls.size.toString(),
+                    "failedHosts" to failedHosts.joinToString(",")
+                )
             )
             val nextIndex = mirrorIndex + 1
             if (nextIndex < mirrors.size) {
                 openMirror(nextIndex, resumeMs)
+                return@launch
+            }
+            // Nächste Alternative **derselben Quelle** (Block 4e): der Fast-Path
+            // löst je Quelle nur den ersten Hoster auf. Ist der aufgelöst, aber
+            // nicht abspielbar (ExoPlayer 3003), stehen die anderen Hoster der
+            // Watch-Seite noch unberührt da — gemessen Lauf 7: 12 Fehlschläge an
+            // einem toten Hoster, obwohl 3–8 Alternativen danebenstanden.
+            val sourceId = mirrors.getOrNull(mirrorIndex)?.sourceId
+            val alternatives = sourceId?.let { id ->
+                runCatching {
+                    autoResolver.resolveAlternative(
+                        title = titleName,
+                        episodeNumber = episodeNumber,
+                        sourceId = id,
+                        excludeUrls = failedUrls.toSet(),
+                        excludeHosts = failedHosts.toSet()
+                    )
+                }.getOrDefault(emptyList())
+            }.orEmpty()
+            if (alternatives.isNotEmpty()) {
+                mirrors = alternatives
+                openMirror(0, resumeMs)
                 return@launch
             }
             val resolved = runCatching {
