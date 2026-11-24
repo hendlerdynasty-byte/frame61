@@ -669,3 +669,65 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   nicht 1:1 mit Lauf 4 vergleichbar. Vergleichbar bleiben Kopfzahl der
   Fehlschläge und Quote; im Bericht ist das ausdrücklich vermerkt.
 
+## 2026-11-24 — Block 4c-2 gilt als **unmeasured**; Provider-Rotation statt Code-Wirkung
+
+- Anlass: Lauf 6 (Build `27afaeb`, A52) kommt auf **62 %** statt 64 % (Lauf 5),
+  also −2 pp. Nach der Nachtsteuerung ist das ein Rückschritt, der eine
+  Begründung braucht.
+- Befund: `uqload.vc` — der einzige von Block 4c-2 adressierte Host — hat in
+  Lauf 5 **96** Erwähnungen im gesamten Logcat-/Dump-Material, in Lauf 6
+  **0**; `flyfile.app` 10 → **0**. In Lauf 5 standen `uqload.vc` (7
+  Fehlschläge) und `flyfile.app` (1) in den Fehlziel-Hosts. In Lauf 6 fehlen
+  beide vollständig: die Anbieterliste des Index hat zwischen den Läufen
+  rotiert, uqload wurde **gar nicht mehr angeboten**.
+- Die drei verlorenen und der gewonnene Titel (idx 49, 69, 95 → FAIL;
+  idx 94 → OK) zeigen in jedem Fall einen **anderen Anbieter**
+  (`moflix.rpmplay.xyz`, `r1.dropcdn.io`, `s1-s501740.97bf1.com`) — nicht
+  denselben Host mit anderem Ergebnis.
+- Entscheidung: Block 4c-2 wird als **unmeasured** protokolliert, nicht als
+  Erfolg und nicht als Rückschritt. Die Änderung bleibt im Code (sie ist
+  korrekt und host-unabhängig nützlich), wird aber **nicht** mit der
+  Kopfquote belegt.
+- Folge für die Messregel: Bei rotierendem Anbieterindex ist die
+  Kopfquote eines Laufs **keine** Block-Wirkung. Ab Lauf 6 wird deshalb zu
+  jedem Lauf zusätzlich dokumentiert: (a) Quote je Quellengruppe, (b) die
+  **Zuordnung je Titel** (welcher Host wurde versucht) und (c) die
+  **Host-Exposition** (wie oft kam der adressierte Host überhaupt vor). Ein
+  Block gilt erst dann als belegt, wenn sein Zielhost in der Stichprobe
+  überhaupt vorkommt.
+- Nicht geändert: Die Stichprobe selbst (Seed `20261122`, 100 Titel) bleibt
+  unverändert — nur so sind die Läufe vergleichbar. Der Holdout-Lauf
+  (Seed `20261123`) bleibt bis zum Release getrennt.
+
+## 2026-11-24 — Filemoon-Playback über `GET /api/videos/{code}` (AES-256-GCM)
+
+- Anlass: Das Filemoon-Pack war **tot** — die Kette endete auf
+  `GET /api/videos/{code}/playback`, die Seite antwortet dort inzwischen mit
+  **HTTP 405** (im Pack protokolliert als `check.status: step_failed`). In
+  Lauf 5/6 stand Filemoon in 2–4 Titeln der Auflösungskette, davon 1–2
+  Fehlschläge.
+- Beobachtung (Live, 24.11.2026): `GET https://filemoon.to/api/videos/{code}`
+  liefert den `playback`-Block mit `algorithm: AES-256-GCM`, `iv`, `payload`,
+  `key_parts` (30 Teile) und `version`. Der mitgelieferte Text ist **nicht**
+  der Schlüssel.
+- Rekonstruktion aus dem Player-Bundle der Seite (`videoPagesBundle-*.js`):
+  Der Bundle-Automat wählt genau **zwei** Teile aus — `key_parts[version-1]`
+  und `key_parts[30-version]` (1-basiert: Teile `v` und `31-v`); nur deren
+  zusammengefügte Bytes (32 B) ergeben den AES-256-Schlüssel. Ohne gültige
+  Version (1…20) greift der Automat auf **alle** Teile zurück. Beides ist in
+  `PlaybackPayloadCipher` nachgebaut und durch die Aufzeichnung getestet
+  (falsche Version → `null`; manipulierte Nutzlast → `null`).
+- Layout: `payload` ist Base64url und enthält wie bei WebCrypto Chiffretext
+  **und** 16-Byte-GCM-Tag hintereinander; `iv` ist Base64url mit 12 Byte.
+- Wichtiger Nebenpunkt: Der Klartext escaped die Trennzeichen der m3u8 als
+  `\u0026`. Ein Regex-Schritt hätte diese Escape-Sequenz **wörtlich** in die
+  URL übernommen und die m3u8 kaputt gemacht. Das Pack liest die URL deshalb
+  über `json:sources.0.url` — der JSON-Parser liefert echte `&`.
+- Belege: Live-Abruf und Entschlüsselung mit `tools/fetch/hoster_worker.py`
+  (`verified`, m3u8 mit HTTP 200 / `application/vnd.apple.mpegurl`),
+  Aufzeichnung mit SHA-256 in
+  `scraper/resolver/src/test/resources/fixtures-hosters/filemoon/`
+  (`page.body.html`, `meta.json`, `result.expected.json`), Test in
+  `PlaybackPayloadCipherTest`, Pack-Prüfung durch `HosterFixtureTest`.
+
+

@@ -478,6 +478,110 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run5-e2ec45d/`
 `A4-start/03.png`), Auswertung mit `analyse_lauf.py` und `analyse_ursachen.py`
 (beide unter `~/hendler-dynasty/evidence/frame61/1.5.0/`).
 
+## Lauf 6 — Build `27afaeb`, 24.11.2026, A52 (uqload.vc/flyfile.app als WebView-Ziel)
+
+Stichprobe: **identisch** zu Lauf 1–5 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 05:30–05:55 (~25 min). APK `0f7b1b40…` (signiert,
+`de.hendler.frame61.acceptance`, 20.430.866 B), CI-Lauf `45324713475` grün.
+Geänderte Basis gegenüber Lauf 5: `uqload.vc` und `flyfile.app` als
+WebView-Ziel (Embed-Form `/e/…`), dazu ein **korrigierter Test**, nicht
+korrigierter Code (siehe ENTSCHEIDUNGEN 24.11.2026).
+
+| Kennzahl | Wert | Lauf 5 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Mischwert) | **62 / 100 = 62 %** | 64 % | **−2 pp** |
+| Auflösung p50 / p95 (nur OK-Titel) | 1.592 / 26.957 ms | 1.616 / 26.958 ms | p50 −24 ms, p95 −1 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 2.609 / 27.972 ms | 2.663 / 28.230 ms | p50 −54 ms, p95 −258 ms |
+| Fehlerklassen | 11 × `CONTAINER_UNSUPPORTED`, 14 × `GEO_BLOCKED`, 13 × `EMBED_UNRESOLVED` | 18 / 9 / 9 | siehe Befund 2 |
+| Interception | **69** Versuche, **2** mit Medien-URL | 82 / 6 | −13 / −4 |
+
+Quote je Quellengruppe:
+
+| Gruppe | Titel | spielbar | Quote | Lauf 5 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 30 | **70 %** | 69 % | +1 pp | `GEO_BLOCKED`: 6 |
+| aniworld | 19 | 16 | **84 %** | 89 % | −5 pp | `EMBED_UNRESOLVED`: 3 |
+| moflix | 11 | 3 | **27 %** | 36 % | −9 pp | `CONTAINER_UNSUPPORTED`: 8 |
+| filmpalast | 11 | 5 | **45 %** | 45 % | 0 pp | `EMBED_UNRESOLVED`: 4 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 4 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 2 |
+
+### Befund 1 — Block 4c-2 ist **unmeasured**: der Zielhost kam nicht mehr vor
+
+Die beiden von Block 4c-2 adressierten Hosts kommen im Logcat-/Dump-Material
+dieses Laufs **überhaupt nicht** mehr vor:
+
+| Host | Lauf 5 (Erwähnungen) | Lauf 6 (Erwähnungen) |
+|---|---|---|
+| `uqload.vc` | 96 | **0** |
+| `flyfile.app` | 10 | **0** |
+
+In Lauf 5 standen `uqload.vc` (7 Fehlschläge) und `flyfile.app` (1) in den
+Fehlziel-Hosts — in Lauf 6 fehlt jeder von beiden. Der Index hat die
+Anbieterliste zwischen den Läufen rotiert; uqload wurde gar nicht mehr
+**angeboten**. Damit ist Block 4c-2 in dieser Stichprobe **weder ein Gewinn
+noch eine Regression**: die Änderung hatte keinen Anlass, zu wirken.
+
+Konsequenz für die Messung: die Kopfquote eines Laufs ist bei rotierendem
+Anbieterindex keine Block-Wirkung. Belastbar ist nur die Zuordnung **je
+Titel** (welcher Host wurde versucht) — deshalb wird ab hier beides
+dokumentiert: Quote je Gruppe **und** Zuordnung der geänderten Titel.
+
+### Befund 2 — drei Verluste, ein Gewinn, alle vier durch Providerwechsel
+
+| idx | Lauf 5 | Lauf 6 | Ursache |
+|---|---|---|---|
+| 49 | OK (`cdn.plyr.io`) | FAIL (`moflix.rpmplay.xyz`) | anderer Anbieter im Index |
+| 69 | OK (`s9-s1001604.97bf1.com`) | FAIL (`r1.dropcdn.io`) | anderer Anbieter im Index |
+| 95 | OK (`wdr-progressive.ard-mcdn.de`) | FAIL (`r1.dropcdn.io`) | anderer Anbieter im Index |
+| 94 | FAIL (`ds1.dropcdn.io`) | OK (`s1-s501740.97bf1.com`) | anderer Anbieter im Index |
+
+62 = 64 − 3 + 1. Kein Verlust geht auf den geänderten Code zurück: in allen
+vier Fällen ist der **Anbieter** ein anderer. Die Fehlziel-Masse liegt danach
+bei `dropcdn.io` (13 Titel auf 5 Subdomains), `moflix.rpmplay.xyz` (11) und
+`moflix-stream.fans` (4) — Provider, die aus dem Index kommen und nicht aus
+dem Auflöser.
+
+Die Fehlerklassen sind mit Lauf 5 vergleichbar (gleiche Taxonomie, gleiche
+Diagnose-Sitzung je Titel): `CONTAINER_UNSUPPORTED` 18 → 11,
+`GEO_BLOCKED` 9 → 14, `EMBED_UNRESOLVED` 9 → 13. Die Verschiebung ist eine
+Verschiebung **innerhalb** der Fehlschläge (andere Hosts), kein neue Fehlerart.
+
+### Befund 3 — die Interception läuft seltener, weil uqload nicht mehr vorkam
+
+69 statt 82 Versuche, 2 statt 6 mit echter Medien-URL. Der Rückgang ist
+derselbe Effekt wie in Befund 1: uqload war in Lauf 5 einer der wichtigsten
+WebView-Treiber (Block 4c-2 hatte es zum WebView-Ziel gemacht). Der
+Messharness misst weiterhin die **echte** Interception-Zeit, nicht den
+20-Sekunden-Deckel.
+
+### Befund 4 — Filemoon ist der letzte reparierbare Rest (Block 4d-1)
+
+| Lauf | Titel mit Filemoon in der Kette | davon fehlgeschlagen |
+|---|---|---|
+| Lauf 5 | 4 | 2 (`ss:andor`, `ss:gekkan-mousou-kagaku`) |
+| Lauf 6 | 2 | 1 (`ss:andor`) |
+
+Das Pack selbst war tot: die alte Kette endete auf
+`GET /api/videos/{code}/playback` → **HTTP 405** (im Pack als `check.status:
+step_failed` protokolliert). Die Seite liefert den Block inzwischen unter
+`GET /api/videos/{code}` — verschlüsselt (AES-256-GCM). Block 4d-1 liest
+diese API und entschlüsselt sie; der Live-Nachweis steht in ENTSCHEIDUNGEN
+24.11.2026. Erwarteter Zugewinn: **+1 bis +2 Titel** (1–2 pp).
+
+**Abweichung von der Nachtsteuerung (Regel 1, „Begründe jede Abweichung"):**
+Die geforderte Reihenfolge bs.to → Doodstream → Filemoon ist umgesetzt
+(Block 4b-1 bs.to, Block 4c-1 Doodstream/DEVIDEOSRC, Block 4d-1 Filemoon).
+Trägt hat in dieser Stichprobe vor allem DEVIDEOSRC (Lauf 5: +4 Titel);
+bs.to bringt in beiden Läufen 3 von 6 Titeln (50 %) und war nie der größte
+Posten. Die Gruppenverteilung der Stichprobe selbst ist unverändert
+(43/19/11/11/10/6), ARD ist mit 10 Titeln **nicht** die Mehrheit.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run6-27afaeb/`
+(UI-Dumps `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`), Auswertung mit
+`analyse_lauf.py` und `analyse_ursachen.py`, Host-Zählung und
+Filemoon-Zuordnung über die Skripte unter `~/hendler-dynasty/evidence/frame61/1.5.0/`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

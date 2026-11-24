@@ -23,6 +23,17 @@
   Ressourcen. jwplayer-Seiten (uqload.vc, dr0pstream.com) setzen die Quelle
   gepackt in `setup({sources:[{file:…}]})`; der sichtbare `video.src` ist nur
   ein `blob:`.
+- **`PlaybackPayloadCipher`** (`scraper/resolver`): liest den verschlüsselten
+  `playback`-Block einer Videoseite (AES-256-GCM, Base64url, WebCrypto-Layout
+  mit angehängtem 16-Byte-Tag) und gibt den Klartext zurück. Die Schlüssel­
+  auswahl ist 1:1 aus dem Player-Bundle der Seite rekonstruiert: Version `v`
+  → Teile `v` und `31-v` (1-basiert), sonst alle Teile.
+- **Neue Pack-Aktion `aesgcm`**: ein Schritt in der Hoster-Schrittkette
+  entschlüsselt einen solchen Block. `filemoon.json` (Version 4) nutzt sie
+  zusammen mit `GET /api/videos/{code}`; das Ergebnis wird über
+  `json:sources.0.url` gelesen, damit die escaped Trennzeichen (`\u0026`) der
+  m3u8 als echte `&` ankommen. `tools/validate_packs.py` und
+  `tools/fetch/hoster_worker.py` kennen die Aktion jetzt ebenfalls.
 
 #### Behoben
 - **DEVIDEOSRC-API kam auf dem Gerät nie an (A52, Lauf 4):** Der Ausdruck für
@@ -44,6 +55,13 @@
   (dr0pstream, superplayer) legen die Quelle nur im jwplayer-Playlist-Element
   und in der Ressourcenliste ab. Das Skript akzeptiert jetzt nur `http…`-URLs
   und fragt beide Quellen ab.
+- **Filemoon war tot (HTTP 405, Block 4d-1):** Die Pack-Kette endete auf
+  `GET /api/videos/{code}/playback`; die Seite antwortet dort inzwischen mit
+  **405**. Der Block kommt unter `GET /api/videos/{code}` — verschlüsselt
+  (AES-256-GCM). Das Pack liest jetzt diese API, entschlüsselt sie und liefert
+  die m3u8. Live belegt am 24.11.2026: `hoster_worker` löst die Kette gegen
+  die echte Seite auf (`verified`), die m3u8 antwortet mit HTTP 200
+  (`application/vnd.apple.mpegurl`).
 
 #### Geändert
 - Die generische Embed-Stufe greift jetzt auch **innerhalb** einer Kette
@@ -78,6 +96,14 @@
   (18 × `CONTAINER_UNSUPPORTED`, 9 × `GEO_BLOCKED`, 9 × `EMBED_UNRESOLVED`),
   weil der Harness je Titel eine Diagnose-Sitzung öffnet — siehe
   [QUOTA.md](QUOTA.md).
+- Lauf 6 (Build `27afaeb`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  **62/100 = 62 %** (−2 pp), Gruppen 70/84/27/45/50/50 %. Die drei Verluste
+  und der eine Gewinn sind **alle** Providerwechsel (Anbieterliste rotiert
+  zwischen den Läufen). Block 4c-2 ist dabei **unmeasured**: `uqload.vc` hatte
+  in Lauf 5 96 Erwähnungen, in Lauf 6 **0** — der Host wurde gar nicht mehr
+  angeboten. Fehlziel-Masse: `dropcdn.io` 13, `moflix.rpmplay.xyz` 11,
+  `moflix-stream.fans` 4. Filemoon stand in 1–2 Titeln der Kette und ist mit
+  Block 4d-1 adressiert — siehe [QUOTA.md](QUOTA.md).
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 
