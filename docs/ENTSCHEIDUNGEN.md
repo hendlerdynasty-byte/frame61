@@ -864,4 +864,34 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Lesen als Fallback mitgeprueft, damit bestehende Positionen nicht verloren
   gehen.
 
+## 2026-11-24 — Werkzeugpfade werden vor dem Zugriff geprueft (Mimosa-Befund)
+
+- Befund: Der Mimosa-Scan meldete **medium** „Kommandozeilenparameter →
+  Path-Traversal (ungepruefter Pfad)" mit Senke in `tools/perf/profile_to_hrf.py`
+  (dort `Path(sys.argv[1])` → `open()`, `Path(sys.argv[2])` → `write_text()`).
+  Der Scan fordert ausdruecklich eine **manuelle Bestaetigung** von
+  Datenfluss und Ausnutzbarkeit; der Befund selbst hat `verdictEffect: none`.
+- Bewertung: Der Datenfluss ist real (argv → Dateizugriff), die
+  Ausnutzbarkeit ist aber begrenzt: es sind lokale Entwicklerwerkzeuge,
+  beide Pfade nennt der Aufrufer selbst, es gibt keine Netz- oder
+  Dienstgrenze, die dabei ueberschritten wuerde. Ein Tippfehler konnte
+  trotzdem eine fremde Datei ueberschreiben — deshalb wird die Pruefung
+  trotzdem eingebaut, nicht weggelassen.
+- Default: Quelle und Ziel werden **inline am Zugriff** geprueft — keine
+  `..`-Segmente, Quelle muss eine existierende regulaere Datei und darf kein
+  Symlink sein, Ziel darf weder Verzeichnis noch Symlink sein und braucht ein
+  vorhandenes Elternverzeichnis. Dieselbe Pruefung gilt fuer die
+  Quote-Auswertung (`tools/measure/analyse_lauf.py`,
+  `analyse_ursachen.py`): dort wird nur ein existierendes Verzeichnis
+  gelesen, Symlinks auf Dateiebene werden uebersprungen.
+- Nachweis: `python3 -I tools/measure/analyse_lauf.py /etc/passwd` →
+  „kein Verzeichnis"; `python3 -I tools/perf/profile_to_hrf.py <dump> /tmp` →
+  „Ziel unbrauchbar". Die Auswertung von Lauf 9/10 liefert mit der geprueften
+  Fassung dieselben Zahlen wie vorher (64 % bzw. 69 %).
+- Offen: Drei **low**-Befunde (unsicherer Zufall in
+  `tools/fetch/catalog_harvest.py:221, 272, 312`) bleiben. Sie betreffen die
+  deterministische Stichprobenbildung (`random.Random(LISTING_SEED)`), nicht
+  Krypto- oder Sicherheitskontexte — kein Handlungsbedarf, aber im
+  Abschlussbericht benannt.
+
 
