@@ -137,6 +137,12 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         sample.forEachIndexed { index, item ->
             groupTotal[item.group] = (groupTotal[item.group] ?: 0) + 1
             val episode = if (item.type == "series") 1 else 0
+            // Ohne aktive Diagnose-Sitzung verwirft `PlaybackDiagnostics`
+            // **jedes** Ereignis — der komplette Resolver-Ablauf bliebe
+            // unsichtbar (Befund 24.11.2026: `classifyFailure` sah nie etwas,
+            // weil keine Sitzung lief). Pro Titel eine Sitzung, damit der
+            // Fehlergrund mitgemessen wird.
+            val sessionId = PlaybackDiagnostics.beginSession(item.title, episode)
             val interceptMark = InterceptionLog.currentSeq()
             val started = SystemClock.elapsedRealtime()
             val traceStart = PlaybackDiagnostics.events.value.size
@@ -177,6 +183,11 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             } else {
                 errorClass = classifyFailure(PlaybackDiagnostics.events.value.drop(traceStart))
             }
+            // Die Resolver-Ereignisse dieses Titels: der Grund, warum ein
+            // Titel nicht Spielbar war, steht hier — vorher war er nur im
+            // Logcat zu finden und dort vom 400-Zeilen-Fenster abgeschnitten.
+            val trace = PlaybackDiagnostics.events.value.drop(traceStart)
+            PlaybackDiagnostics.endSession(sessionId)
 
             // Was die WebView-Interception in diesem Titel geleistet hat:
             // Anzahl Versuche, Treffer und die **gemessene** Zeit.
@@ -205,7 +216,16 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "QUOTA $mode idx=${index + 1} id=${item.id} group=${item.group} type=${item.type} " +
                         "title=${item.title.sanitize()} RESULT=FAIL class=$errorClass " +
                         "resolveMs=$resolveMs candidates=${mirrors.size} tried=$tried " +
-                        "hosts=[${triedHosts.joinToString(",")}] $interceptNote"
+                        "hosts=[${triedHosts.joinToString(",")}] $interceptNote " +
+                        "cause=${lastResolverCause(trace)}"
+                )
+                // Die vollstaendige Resolver-Kette des Titels: nur sie zeigt,
+                // an welcher Stelle die Aufloesung wirklich gehalten hat.
+                report(
+                    "QUOTA CAUSE $mode idx=${index + 1} " +
+                        trace.filter { it.category == "RESOLVER" }
+                            .takeLast(CAUSE_EVENTS)
+                            .joinToString(" | ") { "${it.category}:${it.message.compact()}" }
                 )
             }
             scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
@@ -352,6 +372,22 @@ open class PlaybackQuotaActivity : ComponentActivity() {
     private fun host(url: String): String =
         url.substringAfter("://", "").substringBefore('/').ifBlank { "-" }
 
+    /**
+     * Der letzte Resolver-Grund dieses Titels als einzelnes Token — ohne
+     * Leerzeichen, damit die QUOTA-Zeile maschinell lesbar bleibt.
+     */
+    private fun lastResolverCause(
+        events: List<de.hendler.frame61.net.PlaybackTraceEvent>
+    ): String {
+        val resolver = events.filter { it.category == "RESOLVER" }
+        // Der Fehlgrund schlägt die Mengenangabe ("0 Kandidaten") — die steht
+        // zwar spät in der Kette, sagt aber nichts über die Ursache.
+        val event = resolver.lastOrNull { it.message.contains("fehlgeschlagen") }
+            ?: resolver.lastOrNull { it.message.contains("Zeitüberschreitung") }
+            ?: resolver.lastOrNull()
+        return event?.message?.compact()?.take(140) ?: "-"
+    }
+
     private fun renderEngine(engineName: String) {
         if (engineName == renderedEngine) return
         renderedEngine = engineName
@@ -401,10 +437,16 @@ open class PlaybackQuotaActivity : ComponentActivity() {
 
         /** Wie viele Interception-Versuche am Ende im Detail stehen. */
         const val DETAILED_INTERCEPTS = 6
+
+        /** Wie viele Resolver-Ereignisse je fehlgeschlagenem Titel protokolliert werden. */
+        const val CAUSE_EVENTS = 6
     }
 }
 
 private fun String.sanitize(): String = replace(Regex("\\s+"), " ").take(60)
+
+/** Leerzeichen zu Unterstrichen: eine Zeile, ein Token. */
+private fun String.compact(): String = replace(Regex("\\s+"), "_").take(160)
 
 /**
  * Zweite, disjunkte Stichprobe (Holdout). Sie wird erst gefahren, wenn die

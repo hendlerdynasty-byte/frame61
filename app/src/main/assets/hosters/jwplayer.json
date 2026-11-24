@@ -16,7 +16,7 @@
   "steps": [
     {
       "action": "js",
-      "script": "(function(){try{var s=window.sources;if(s&&s[0]&&s[0].file)return s[0].file;var v=document.querySelector('video source,video');if(v&&v.src)return v.src;if(window.jwplayer){var p=window.jwplayer().getPlaylistItem();if(p&&p.file)return p.file;}var e=performance.getEntriesByType('resource');for(var i=e.length-1;i>=0;i--){if(/\\.(m3u8|mp4)(\\?|$)/.test(e[i].name))return e[i].name;}}catch(x){}return '';})()",
+      "script": "(function(){try{var s=window.sources;if(s&&s[0]&&s[0].file&&s[0].file.indexOf('http')===0)return s[0].file;var v=document.querySelector('video source,video');if(v&&v.src&&v.src.indexOf('http')===0)return v.src;if(window.jwplayer){try{var p=window.jwplayer().getPlaylistItem();if(p&&p.file&&p.file.indexOf('http')===0)return p.file;}catch(y){}}var e=performance.getEntriesByType('resource');for(var i=e.length-1;i>=0;i--){if(/\\.(m3u8|mp4)(\\?|$)/.test(e[i].name))return e[i].name;}}catch(x){}return '';})()",
       "saveAs": "stream"
     }
   ],

@@ -2,6 +2,44 @@
 
 ## [Unreleased]
 
+### 1.5.0 — DEVIDEOSRC-Kette belegt statt geraten (in Arbeit, 24.11.2026)
+
+#### Behoben
+- **DEVIDEOSRC-API kam auf dem Gerät nie an (A52, Lauf 4):** Der Ausdruck für
+  den `JSON.stringify`-Aufruf der Player-Seite war an der Zeilengrenze
+  zerschnitten (nach dem Komma fehlte das `\s*`) und traf nie; die Rückfallebene
+  griff stattdessen das erste `id=` des HTML (`_cloudToggle`). Gemessen: 16 GETs
+  auf die Seite, **0** POSTs. Der Ausdruck ist korrigiert, die Rückfallebene
+  sucht nur noch innerhalb des `JSON.stringify`-Aufrufs.
+- **Serien kommen über `/api/resolve`:** Die Seite
+  `/custom/serial/{id}/{staffel}/{folge}` ruft nicht `/api/embed-links`, sondern
+  `/api/resolve` mit `{type, id, season, episode, mode, token}` — die Werte
+  stehen als `data-*`-Attribute am `<main>`-Element. Beide Formen sind
+  umgesetzt (Live-Abfrage 24.11.2026).
+- **Eine HTML-Seite ist kein Kandidat mehr:** Liefert ein Pack die Seite selbst
+  zurück (gleiches Pack, keine Medien-URL), ist das ein Fehlschlag statt eines
+  Kandidaten. Vorher bekam der Player HTML und meldete 3003 — die
+  Fehlerklasse war falsch und der Titel unbrauchbar.
+- **jwplayer-Pack lieferte `blob:` statt der m3u8:** Gepackte Player
+  (dr0pstream, superplayer) legen die Quelle nur im jwplayer-Playlist-Element
+  und in der Ressourcenliste ab. Das Skript akzeptiert jetzt nur `http…`-URLs
+  und fragt beide Quellen ab.
+
+#### Geändert
+- **Messbarkeit:** Der Messharness startete keine Diagnose-Sitzung — alle
+  Resolver-Ereignisse wurden verworfen, die Fehlerklasse konnte nur
+  `NO_CANDIDATE` heißen. Pro Titel läuft jetzt eine Sitzung; die QUOTA-Zeile
+  führt den Fehlergrund mit, dazu eine `QUOTA CAUSE`-Zeile mit der
+  Resolver-Kette.
+- **DEVIDEOSRC protokolliert jeden Schritt** (Seite geladen, Token gelesen,
+  POST, Anbieterliste) und nennt je Anbieter den Einzelgrund, wenn keiner
+  spielbar war.
+
+#### Belege
+- Lauf 4 (Build `d678efb`): 60/100 = 60 %, Gruppen 65/84/27/36/50/50 %,
+  34 × `CONTAINER_UNSUPPORTED`, 6 × `NO_CANDIDATE`. Bericht:
+  [QUOTA.md](QUOTA.md). Live-Abfrage beider devideosrc-Endpunkte am 24.11.2026.
+
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 
 #### Hinzugefügt

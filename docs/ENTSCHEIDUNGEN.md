@@ -571,3 +571,41 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   gemessen an `playmogo.com/e/…`). Weder `isMediaUrl` noch das Pack-Muster
   (`\.(m3u8|mp4)`) erkannten sie. `MediaUrlMatcher` erkennt jetzt CDN-Host und
   `~…?token=`-Form.
+
+## 2026-11-24 — DEVIDEOSRC-API korrigiert, Serienweg über `/api/resolve`
+
+- Befund (A52, Lauf 4, Build `d678efb`): Quote 60/100 (+1 pp), aber **16 GETs**
+  auf die DEVIDEOSRC-Player-Seite und **null** POSTs auf `/api/embed-links`.
+  Die im Lauf 3 eingebaute API-Stufe lief auf dem Gerät **nie** an. Andere
+  POSTs desselben Laufs (aniworld 12, cine.to 12, filemoon 12) sind
+  protokolliert — es ist kein Lückenfenster im 400-Zeilen-Logcat.
+- Ursache (live reproduziert am 24.11.2026): Der Ausdruck für den
+  `JSON.stringify`-Aufruf der Seite war an der Zeilengrenze zerschnitten —
+  nach dem Komma fehlte das `\s*`, die Seite schreibt aber
+  `id: "tt12927920", token: "…"`. Der Ausdruck traf nie. Die Rückfallebene griff
+  stattdessen das **erste** `type=`/`id=` des HTML und lieferte
+  `id="_cloudToggle"` statt der Film-ID. Der Testbestand enthielt kein solches
+  `id` — deshalb blieb die CI grün, während das Gerät scheiterte.
+- Default: Der Ausdruck ist korrigiert; die Rückfallebene sucht jetzt **nur
+  innerhalb** eines `JSON.stringify`-Aufrufs, nicht mehr im ganzen HTML. Die
+  Serien-Seite `/custom/serial/{id}/{staffel}/{folge}` ruft ohnehin **nicht**
+  `/api/embed-links`, sondern `/api/resolve` mit
+  `{type, id, season, episode, mode, token}` — die Werte stehen dort als
+  `data-*`-Attribute am `<main>`-Element. Beide Endpunkte sind am 24.11.2026
+  live abgefragt und liefern dieselbe Antwortform (`sources[]`).
+- Fail closed: Liefert ein Pack die **Seite selbst** zurück (gleiches Pack,
+  keine Medien-URL), ist das jetzt ein Fehlschlag statt eines Kandidaten. Vorher
+  bekam der Player HTML und meldete 3003 (`CONTAINER_UNSUPPORTED`) — die
+  Fehlerklasse war damit falsch und der Titel unbrauchbar. Medien-URLs des
+  gleichen Packs (Direktstream) bleiben unberührt.
+- Nebenbefund, mitgefixt: Das jwplayer-Pack-Skript lieferte bei gepackten
+  Playern (dr0pstream, superplayer) den `blob:`-Wert des `<video>`-Elements —
+  nie die m3u8. Es akzeptiert jetzt nur `http…`-URLs und fragt danach
+  jwplayer-Playlist und Ressourcenliste ab. Genau dieser Anbieter ist der
+  erste in der DEVIDEOSRC-Providerliste; ohne die Korrektur zahlt sich die
+  API-Stufe nicht aus.
+- Messbarkeit: Der Messharness startete **keine** Diagnose-Sitzung — damit
+  wurden alle Resolver-Ereignisse verworfen und die Fehlerklasse konnte nur
+  `NO_CANDIDATE` heißen. Pro Titel läuft jetzt eine Sitzung; die QUOTA-Zeile
+  führt den Fehlergrund mit, und der Resolver protokolliert jeden Schritt
+  (Seite geladen, Token gelesen, POST, Anbieterliste, Einzelgrund je Anbieter).

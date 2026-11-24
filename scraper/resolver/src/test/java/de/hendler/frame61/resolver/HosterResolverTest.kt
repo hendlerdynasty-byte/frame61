@@ -427,8 +427,34 @@ class HosterResolverTest {
     }
 
     @Test
-    fun `devideosrc without an api answer keeps the old pack path`() = runTest {
-        // Ohne Quellenliste (API leer) darf der bisherige Pack-Pfad nicht
+    fun `a pack that returns its own page fails instead of handing over html`() = runTest {
+        // Befund 24.11.2026 (A52, Lauf 4): devideosrc.co lieferte die
+        // Player-Seite selbst. Als Kandidat gespielt bekam der Player HTML
+        // und meldete 3003 (CONTAINER_UNSUPPORTED). Jetzt ist das ein
+        // ehrlicher Fehlschlag statt eines unspielbaren Kandidaten.
+        val fetcher = FakeFetcher()
+        val devideosrc = pack(
+            id = "devideosrc",
+            domains = listOf("devideosrc.co"),
+            result = "file",
+            steps = listOf(
+                HosterStep(
+                    action = "copy",
+                    url = "https://devideosrc.co/movie/tt0111161/player",
+                    saveAs = "file"
+                )
+            )
+        )
+        val resolver = HosterResolver(listOf(devideosrc), fetcher)
+
+        val out = resolver.resolve("https://devideosrc.co/movie/tt0111161")
+
+        assertTrue(out is HosterOutcome.Failed)
+        assertTrue((out as HosterOutcome.Failed).reason.contains("Seite selbst"))
+    }
+
+    @Test
+    fun `devideosrc without an api answer keeps the old pack path`() = runTest {        // Ohne Quellenliste (API leer) darf der bisherige Pack-Pfad nicht
         // verloren gehen — sonst waere der Titel gar kein Kandidat mehr.
         val fetcher = FakeFetcher(
             bodies = mapOf(

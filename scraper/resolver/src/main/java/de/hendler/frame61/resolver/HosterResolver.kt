@@ -142,17 +142,23 @@ class HosterResolver(
                 devideosrcResolver.expand(url, episodeNumber)
             }.getOrDefault(emptyList())
             if (providers.isNotEmpty()) {
+                // Die Gründe der einzelnen Anbieter mitnehmen: ohne sie ist
+                // im Protokoll nur sichtbar, dass keiner ging — nicht, warum.
+                val reasons = mutableListOf<String>()
                 for (provider in providers) {
                     if (depth >= MAX_REDIRECT_DEPTH) break
+                    val label = provider.name.ifBlank { provider.url }
                     when (val outcome = resolve(provider.url, effectiveCookies, depth + 1, budget, episodeNumber)) {
                         is HosterOutcome.Resolved -> return outcome
                         is HosterOutcome.CaptchaRequired -> return outcome
-                        else -> Unit // nächster Anbieter
+                        is HosterOutcome.Failed -> reasons += "$label: ${outcome.reason}"
+                        is HosterOutcome.Unknown -> reasons += "$label: HTML-Seite, keine Medien-URL"
                     }
                 }
                 return HosterOutcome.Failed(
                     url,
-                    "devideosrc: keiner der ${providers.size} Anbieter spielbar",
+                    "devideosrc: keiner der ${providers.size} Anbieter spielbar" +
+                        if (reasons.isEmpty()) "" else " (${reasons.joinToString("; ")})",
                     1
                 )
             }
@@ -372,6 +378,20 @@ class HosterResolver(
                             effectiveCookies
                         )
                 }
+            }
+            if (nextPack != null && !looksLikeMedia(finalValue)) {
+                // Dasselbe Pack noch einmal und **keine** Medien-URL: das
+                // Ergebnis ist die Seite selbst (gemessen 24.11.2026 auf dem
+                // A52: devideosrc.co lieferte die Player-Seite; der Player
+                // bekam HTML und meldete 3003). Als Kandidat taugt sie nicht —
+                // der Titel wird hiermit als nicht auflösbar gemeldet.
+                // Medien-URLs des gleichen Packs (z. B. der Direktstream-Pack,
+                // der die URL unverändert durchreicht) bleiben unberührt.
+                return HosterOutcome.Failed(
+                    url,
+                    "Pack '${pack.id}' liefert die Seite selbst zurück: $finalValue",
+                    used
+                )
             }
         }
 

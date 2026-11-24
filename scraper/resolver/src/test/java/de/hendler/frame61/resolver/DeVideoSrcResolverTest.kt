@@ -68,6 +68,56 @@ private const val SERIAL_ANSWER = """
 }
 """
 
+/**
+ * Auszug der **echten** Player-Seite (Live-Abfrage 24.11.2026).
+ *
+ * Entscheidend sind die beiden Stellen vor dem Aufruf: `type="text/javascript"`
+ * und `id="_cloudToggle"`. Die alte Rueckfallebene griff dort das erste
+ * `type=`/`id=` des HTML — und lieferte damit `id="_cloudToggle"` statt der
+ * Film-ID. Auf dem A52 (Lauf 4) kam deshalb kein einziger POST zustande.
+ */
+private const val LIVE_MOVIE_PAGE = """
+<html><head><script type="text/javascript">var hilfe = 1;</script></head>
+<body>
+<iframe id="_player" src=""></iframe>
+<button type="button" class="_cloud_toggle" id="_cloudToggle" aria-label="Server">Server</button>
+<script>
+      fetch('/api/embed-links', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'movie', id: "tt12927920", token: "bW92aWV8dHQxMjkyNzkyMHwwfDB8MTc5NTQ4ODMzMw.33474079e2c08a52f0e5ca79c207f946b748c9eb33f91122d0bb9abeb3f58f5b" })
+      }).then(function (r) { return r.json(); });
+</script></body></html>
+"""
+
+/** Die Serien-Seite `/custom/serial/{id}/{staffel}/{folge}` (Live 24.11.2026). */
+private const val CUSTOM_SERIAL_PAGE = """
+<html><body>
+<main class="player-shell custom-player" data-type="tv" data-id="tt43691391" data-season="1" data-episode="1" data-mode="custom" data-resolve-endpoint="/api/resolve" data-resolve-token="dHZ8dHQ0MzY5MTM5MXwxfDF8MTc5NTQ4ODQ2Ng.75efee4c24a36cea0e883182a799599cd4aa5603d7dc12b4be0a2b7b08087a24">
+    <div class="player-bg"></div>
+</main>
+<script src="/assets/player.js?v=202611060307"></script>
+</body></html>
+"""
+
+/** Antwort von `/api/resolve` (Live 24.11.2026): `sources[]` direkt. */
+private const val RESOLVE_ANSWER = """
+{
+ "ok": true,
+ "type": "tv",
+ "id": "tt43691391",
+ "imdb_id": "tt43691391",
+ "season": "1",
+ "episode": "1",
+ "sources": [
+  {"id":"dropload-io-15","name":"dropload.io","url":"https://dr0pstream.com/e/iaunge9xwvl7","embed":true,"kind":"embed","rank":1},
+  {"id":"supervideo-tv-5","name":"supervideo.tv","url":"https://superplayer.ws/e/d15u0ujxmf8f","embed":true,"kind":"embed","rank":2},
+  {"id":"doodstream-com-6","name":"doodstream.com","url":"https://doodstream.com/e/s1sopp7odx3t","embed":true,"kind":"embed","rank":3}
+ ]
+}
+"""
+
 private class ScriptedFetcher(
     val pages: Map<String, String> = emptyMap(),
     val answers: Map<String, String> = emptyMap()
@@ -119,6 +169,30 @@ class DeVideoSrcResolverTest {
     fun `page request stays null without token`() {
         assertNull(DeVideoSrcResolver.parsePageRequest("<html>kein Token</html>"))
         assertNull(DeVideoSrcResolver.parsePageRequest("""type: 'movie'; id: "tt01";"""))
+    }
+
+    @Test
+    fun `live player page yields the film id and not the first html id`() {
+        // Regression (A52, Lauf 4, 24.11.2026): der Ausdruck fuer den
+        // JSON.stringify-Aufruf war an der Zeilengrenze zerschnitten und traf
+        // nie; die Rueckfallebene griff dann `id="_cloudToggle"`.
+        val request = DeVideoSrcResolver.parsePageRequest(LIVE_MOVIE_PAGE)
+        assertEquals("movie", request?.kind)
+        assertEquals("tt12927920", request?.id)
+        assertTrue(request?.token?.startsWith("bW92aWV8") == true)
+        assertEquals("/api/embed-links", request?.endpoint)
+    }
+
+    @Test
+    fun `custom serial page is read from the data attributes`() {
+        val request = DeVideoSrcResolver.parsePageRequest(CUSTOM_SERIAL_PAGE)
+        assertEquals("tv", request?.kind)
+        assertEquals("tt43691391", request?.id)
+        assertEquals("1", request?.season)
+        assertEquals("1", request?.episode)
+        assertEquals("custom", request?.mode)
+        assertEquals("/api/resolve", request?.endpoint)
+        assertTrue(request?.token?.startsWith("dHZ8dHQ") == true)
     }
 
     @Test
@@ -200,8 +274,43 @@ class DeVideoSrcResolverTest {
     }
 
     @Test
-    fun `expand without an API answer stays empty and never throws`() = runTest {
-        val fetcher = ScriptedFetcher()
+    fun `expand posts to embed links for the live player page`() = runTest {
+        val fetcher = ScriptedFetcher(
+            pages = mapOf("https://devideosrc.co/movie/tt12927920" to LIVE_MOVIE_PAGE),
+            answers = mapOf("https://devideosrc.co/api/embed-links" to MOVIE_ANSWER)
+        )
+        val resolver = DeVideoSrcResolver(fetcher)
+        val sources = resolver.expand("https://devideosrc.co/movie/tt12927920")
+        assertEquals(4, sources.size)
+        assertEquals(2, fetcher.calls.size)
+        assertTrue(fetcher.calls[1].startsWith("POST https://devideosrc.co/api/embed-links "))
+        assertTrue(fetcher.calls[1].contains("\"id\":\"tt12927920\""))
+    }
+
+    @Test
+    fun `expand posts to the resolve endpoint for custom serial pages`() = runTest {
+        val fetcher = ScriptedFetcher(
+            pages = mapOf(
+                "https://devideosrc.co/custom/serial/tt43691391/1/1" to CUSTOM_SERIAL_PAGE
+            ),
+            answers = mapOf("https://devideosrc.co/api/resolve" to RESOLVE_ANSWER)
+        )
+        val resolver = DeVideoSrcResolver(fetcher)
+        val sources = resolver.expand(
+            "https://devideosrc.co/custom/serial/tt43691391/1/1",
+            episodeNumber = 1
+        )
+        assertEquals(3, sources.size)
+        assertEquals("https://dr0pstream.com/e/iaunge9xwvl7", sources.first().url)
+        assertTrue(fetcher.calls[1].startsWith("POST https://devideosrc.co/api/resolve "))
+        assertTrue(fetcher.calls[1].contains("\"type\":\"tv\""))
+        assertTrue(fetcher.calls[1].contains("\"season\":\"1\""))
+        assertTrue(fetcher.calls[1].contains("\"episode\":\"1\""))
+        assertTrue(fetcher.calls[1].contains("\"mode\":\"custom\""))
+    }
+
+    @Test
+    fun `expand without an API answer stays empty and never throws`() = runTest {        val fetcher = ScriptedFetcher()
         val resolver = DeVideoSrcResolver(fetcher)
         assertEquals(emptyList<DeVideoSrcSource>(), resolver.expand("https://devideosrc.co/movie/tt0111161"))
         assertEquals(1, fetcher.calls.size) // nur die Seite, kein Post
