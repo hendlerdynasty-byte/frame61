@@ -11,6 +11,7 @@ Aufruf:
 """
 import glob
 import os
+import pathlib
 import re
 import sys
 from collections import Counter
@@ -18,6 +19,30 @@ from collections import Counter
 TEXT = re.compile(r'text="([^"]*)"')
 CAUSE = re.compile(r"QUOTA CAUSE (\w+) idx=(\d+) (.*)")
 ROW = re.compile(r"QUOTA (train|holdout) idx=(\d+).*RESULT=(\w+) class=(\S+)(.*)")
+
+
+def checked_run_dir(raw: str) -> str:
+    """Prueft den Lauf-Pfad aus der Kommandozeile.
+
+    Der Pfad bestimmt, welche Dateien gelesen werden. Er kommt aus der
+    Kommandozeile und wird deshalb **validiert**, bevor er irgendwo landet:
+    keine `..`-Segmente, nur ein existierendes Verzeichnis, und Symlinks
+    auf Dateiebene werden uebersprungen (siehe `read_dumps`).
+    """
+    if ".." in pathlib.PurePath(raw).parts:
+        raise SystemExit(f"ungueltiger Lauf-Pfad (enthaelt '..'): {raw}")
+    path = pathlib.Path(raw).expanduser()
+    if not path.is_dir():
+        raise SystemExit(f"kein Verzeichnis: {raw}")
+    return str(path.resolve())
+
+
+def read_dumps(run_dir: str):
+    """Alle Poll-Dumps eines Laufs — ohne Symlinks."""
+    for path in sorted(glob.glob(os.path.join(run_dir, "p*", "*.xml"))):
+        if os.path.islink(path):
+            continue
+        yield path
 
 
 def texts(path):
@@ -29,9 +54,10 @@ def texts(path):
 
 
 def main(run_dir, mode=None):
+    run_dir = checked_run_dir(run_dir)
     causes = {}
     fails = {}
-    for path in sorted(glob.glob(os.path.join(run_dir, "p*", "*.xml"))):
+    for path in read_dumps(run_dir):
         for line in texts(path):
             m = CAUSE.match(line)
             if m:

@@ -86,8 +86,21 @@ def convert_line(line: str) -> str | None:
 
 
 def main() -> int:
-    source = Path(sys.argv[1])
-    target = Path(sys.argv[2])
+    if len(sys.argv) != 3:
+        print("Aufruf: profile_to_hrf.py <dump.txt> <ziel.hrf>", file=sys.stderr)
+        return 2
+    # Beide Pfade kommen aus der Kommandozeile: die Quelle wird gelesen, das
+    # Ziel wird geschrieben. Deshalb wird hier geprueft, statt zuzutrauen —
+    # ein Tippfehler darf keine fremde Datei ueberschreiben.
+    source = Path(sys.argv[1]).expanduser()
+    if source.is_symlink() or not source.is_file():
+        print(f"Quelldatei fehlt oder ist ein Symlink: {source}", file=sys.stderr)
+        return 2
+    target = Path(sys.argv[2]).expanduser()
+    if target.is_dir() or target.is_symlink() or not target.parent.is_dir():
+        print(f"Ziel unbrauchbar (Verzeichnis/Symlink/fehlender Elternteil): {target}",
+              file=sys.stderr)
+        return 2
     seen: set[str] = set()
     with source.open(encoding="utf-8", errors="replace") as handle:
         for line in handle:

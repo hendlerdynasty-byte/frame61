@@ -13,6 +13,7 @@ Aufruf:
 """
 import glob
 import os
+import pathlib
 import re
 import sys
 from collections import Counter, defaultdict
@@ -27,10 +28,35 @@ LINE = re.compile(
 )
 
 
+def checked_run_dir(raw: str) -> str:
+    """Prueft den Lauf-Pfad aus der Kommandozeile.
+
+    Der Pfad bestimmt, welche Dateien gelesen werden. Er kommt aus der
+    Kommandozeile und wird deshalb **validiert**, bevor er irgendwo landet:
+    keine `..`-Segmente, nur ein existierendes Verzeichnis, und Symlinks
+    auf Dateiebene werden uebersprungen (siehe `read_dumps`).
+    """
+    if ".." in pathlib.PurePath(raw).parts:
+        raise SystemExit(f"ungueltiger Lauf-Pfad (enthaelt '..'): {raw}")
+    path = pathlib.Path(raw).expanduser()
+    if not path.is_dir():
+        raise SystemExit(f"kein Verzeichnis: {raw}")
+    return str(path.resolve())
+
+
+def read_dumps(run_dir: str):
+    """Alle Poll-Dumps eines Laufs — ohne Symlinks."""
+    for path in sorted(glob.glob(os.path.join(run_dir, "p*", "*.xml"))):
+        if os.path.islink(path):
+            continue
+        yield path
+
+
 def load(run_dir, mode=None):
     """Alle eindeutigen Titelzeilen eines Laufs (spaetester Dump gewinnt)."""
+    run_dir = checked_run_dir(run_dir)
     rows = {}
-    for path in sorted(glob.glob(os.path.join(run_dir, "p*", "*.xml"))):
+    for path in read_dumps(run_dir):
         text = open(path, encoding="utf-8", errors="replace").read()
         for raw in text.split("&#10;"):
             m = LINE.match(raw)
