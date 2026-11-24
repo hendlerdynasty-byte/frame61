@@ -183,42 +183,14 @@ class HosterResolver(
             // Letzte Stufe: eine Embed-Seite ohne eigenes Pack. Zuerst die
             // versteckte WebView: sie baut die Seite (inkl. Cloudflare) und
             // zeichnet den **echten** Medienabruf samt Kopfzeilen auf. Erst
-            // danach der DOM-Abgriff als Rückfallebene.
+            // danach der DOM-Abruf als Rückfallebene.
             //
             // Auch in einer Kette (depth > 0): devideosrc liefert Provider-
             // Embeds, die erst hier spielbar werden. Das WebView-Budget
             // begrenzt die Versuche je Titel — eine Schleife ist damit
             // ausgeschlossen.
-            if (depth < MAX_REDIRECT_DEPTH && isWebFirst(url)) {
-                val interceptor = mediaInterceptor
-                if (interceptor != null && budget.tryTake()) {
-                    val intercepted = runCatching {
-                        interceptor.intercept(url, MEDIA_INTERCEPT_MS)
-                    }.getOrNull()
-                    if (intercepted != null && intercepted.url.startsWith("https://")) {
-                        val merged = linkedMapOf(
-                            "User-Agent" to DEFAULT_USER_AGENT,
-                            "Referer" to url
-                        )
-                        intercepted.headers.forEach { (key, value) -> merged[key] = value }
-                        return HosterOutcome.Resolved(
-                            intercepted.url,
-                            1,
-                            merged,
-                            intercepted.cookies ?: effectiveCookies
-                        )
-                    }
-                }
-                val evaluator = jsEvaluator
-                if (evaluator != null) {
-                    val extracted = runCatching {
-                        evaluator.evaluate(url, GENERIC_EMBED_SCRIPT, GENERIC_EMBED_MS)
-                    }.getOrNull()
-                    if (!extracted.isNullOrBlank() && extracted.startsWith("https://")) {
-                        return HosterOutcome.Resolved(extracted, 1, headers, effectiveCookies)
-                    }
-                }
-            }
+            genericFallback(url, effectiveCookies, headers, budget, depth, force = false)
+                ?.let { return it }
             return HosterOutcome.Unknown(url, headers, effectiveCookies)
         }
         if (!pack.captcha.isNullOrBlank() && effectiveCookies.isNullOrBlank()) {
@@ -238,17 +210,7 @@ class HosterResolver(
                 // Die Kopfzeilen der aufgezeichneten Anfrage gehen mit zum
                 // Player (Referer/Origin/Cookie) — ohne sie verweigern die
                 // Hoster den Abruf nach der Challenge-Seite.
-                val headers = linkedMapOf(
-                    "User-Agent" to DEFAULT_USER_AGENT,
-                    "Referer" to url
-                )
-                intercepted.headers.forEach { (key, value) -> headers[key] = value }
-                return HosterOutcome.Resolved(
-                    intercepted.url,
-                    1,
-                    headers,
-                    intercepted.cookies
-                )
+                return interceptedOutcome(url, intercepted, effectiveCookies)
             }
             // Zweite Wahl: Cookie-basiertes Lösen über den Captcha-Broker.
             val solved = runCatching { captchaSolver?.solve(url, CAPTCHA_SOLVE_MS) }.getOrNull()
@@ -258,6 +220,138 @@ class HosterResolver(
             effectiveCookies = solved
         }
 
+        // Reine JS-Packs auf einer **Embed-Seite**: erst die Interception,
+        // dann der DOM-Abgriff des Packs.
+        //
+        // Messung Lauf 8 (A52, 24.11.2026): Die sechs Alternativen der
+        // moflix-Watch-Seite (`veev.to`, `moflix.upns.xyz`,
+        // `moflix-stream.click`, `gupload.site`, …) liegen im jwplayer-Pack,
+        // dessen einziger Schritt ein `js`-Abgriff ist. **Alle sechs**
+        // scheiterten mit "js: kein Rueckgabewert" — 8 s je Seite, ohne
+        // Ergebnis. Die generische Interception fand auf derselben
+        // Host-Familie die m3u8 in **2,1 s** (INTERCEPT #79, `vidaraa.cc`).
+        //
+        // Der Pack-Script ist damit die **heuristische** Loesung, die
+        // Interception der **belegte** Weg. Also: erst abfangen, was der
+        // Browser wirklich abruft; das Script bleibt die zweite Stufe.
+        //
+        // Nur fuer Embed-Formen: die Watch-Seite von serienstream.to ist
+        // keine Embed-Seite, ihr `js`-Schritt liefert dort den Hoster-
+        // Redirect (Beleg: INTERCEPT #67/#81 — 25 s auf der Watch-Seite,
+        // ohne Medienabruf).
+        if (isJsOnlyPack(pack) && isWebFirst(url) && budget.tryTake()) {
+            val intercepted = runCatching {
+                mediaInterceptor?.intercept(url, MEDIA_INTERCEPT_MS)
+            }.getOrNull()
+            if (intercepted != null && intercepted.url.startsWith("https://")) {
+                return interceptedOutcome(url, intercepted, effectiveCookies)
+            }
+        }
+
+        val defaultHeaders = linkedMapOf(
+            "User-Agent" to DEFAULT_USER_AGENT,
+            "Referer" to url
+        )
+        if (!effectiveCookies.isNullOrBlank()) defaultHeaders["Cookie"] = effectiveCookies
+
+        val packOutcome = resolveWithPack(url, effectiveCookies, budget, pack, depth)
+        if (packOutcome !is HosterOutcome.Failed) return packOutcome
+
+        // Das Pack hat nichts geliefert — **generische Rueckfallebene**.
+        //
+        // Messung Lauf 8 (A52, 24.11.2026): Die Alternativen der
+        // moflix-Watch-Seite (`veev.to`, `moflix.upns.xyz`,
+        // `moflix-stream.click`, `gupload.site`, …) liegen im jwplayer-Pack.
+        // Dessen `js`-Schritt lieferte "kein Rueckgabewert" — und damit
+        // **verdeckte** den generischen Weg, der auf derselben Host-Familie
+        // die m3u8 findet (Live-Beleg: INTERCEPT #79 auf `vidaraa.cc`,
+        // 2,1 s, `master.m3u8` mit Token). Ohne diese Rueckfallebene
+        // blieben alle Alternativen unspielbar.
+        genericFallback(url, effectiveCookies, defaultHeaders, budget, depth, force = true)
+            ?.let { return it }
+        return packOutcome
+    }
+
+    /**
+     * Generischer Weg ohne Pack: WebView-Interception, danach DOM-Abgriff.
+     *
+     * [force] umgeht die Embed-Form-Prüfung: nach einem gescheiterten Pack
+     * ist der Treffer selbst der Beleg, dass es eine Player-Seite ist.
+     */
+    private suspend fun genericFallback(
+        url: String,
+        cookies: String?,
+        headers: Map<String, String>,
+        budget: WebViewBudget,
+        depth: Int,
+        force: Boolean
+    ): HosterOutcome? {
+        if (depth >= MAX_REDIRECT_DEPTH) return null
+        if (!force && !isWebFirst(url)) return null
+        val interceptor = mediaInterceptor
+        if (interceptor != null && budget.tryTake()) {
+            val intercepted = runCatching {
+                interceptor.intercept(url, MEDIA_INTERCEPT_MS)
+            }.getOrNull()
+            if (intercepted != null && intercepted.url.startsWith("https://")) {
+                return interceptedOutcome(url, intercepted, cookies)
+            }
+        }
+        val evaluator = jsEvaluator
+        if (evaluator != null && (force || isWebFirst(url))) {
+            val extracted = runCatching {
+                evaluator.evaluate(url, GENERIC_EMBED_SCRIPT, GENERIC_EMBED_MS)
+            }.getOrNull()
+            if (!extracted.isNullOrBlank() && extracted.startsWith("https://")) {
+                return HosterOutcome.Resolved(extracted, 1, headers, cookies)
+            }
+        }
+        return null
+    }
+
+    /**
+     * Aus dem Interception-Beleg einen spielbaren Kandidaten machen.
+     *
+     * Die Kopfzeilen der aufgezeichneten Anfrage (Referer, Origin, Cookie,
+     * User-Agent) wandern mit zum Player — ohne sie verweigern VOE, Filemoon
+     * und Co. den Abruf, sobald die Seite weitergeleitet hat.
+     */
+    private fun interceptedOutcome(
+        url: String,
+        intercepted: InterceptedMedia,
+        cookies: String?
+    ): HosterOutcome.Resolved {
+        val headers = linkedMapOf(
+            "User-Agent" to DEFAULT_USER_AGENT,
+            "Referer" to url
+        )
+        intercepted.headers.forEach { (key, value) -> headers[key] = value }
+        return HosterOutcome.Resolved(
+            intercepted.url,
+            1,
+            headers,
+            intercepted.cookies ?: cookies
+        )
+    }
+
+    /**
+     * Pack besteht **nur** aus `js`-Schritten?
+     *
+     * Solche Packs raten die Medien-URL aus dem DOM; die stille WebView sieht
+     * dagegen den **echten** Medienabruf. Auf Embed-Seiten ist der Abruf die
+     * belastbarere Quelle (Messung Lauf 8, 24.11.2026, s. [resolve]).
+     */
+    private fun isJsOnlyPack(pack: HosterPack): Boolean =
+        pack.steps.isNotEmpty() && pack.steps.all { it.action == "js" }
+
+    private suspend fun resolveWithPack(
+        url: String,
+        cookies: String?,
+        budget: WebViewBudget,
+        pack: HosterPack,
+        depth: Int
+    ): HosterOutcome {
+        val effectiveCookies = cookies
         val defaultHeaders = linkedMapOf(
             "User-Agent" to DEFAULT_USER_AGENT,
             "Referer" to url
@@ -266,7 +360,7 @@ class HosterResolver(
 
         val vars = linkedMapOf(
             "url" to url,
-            "host" to (hostOf(url).orEmpty()),
+            "host" to hostOf(url).orEmpty(),
             "path" to pathOf(url)
         )
         var used = 0

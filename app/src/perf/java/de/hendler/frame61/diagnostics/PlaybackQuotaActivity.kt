@@ -561,7 +561,11 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         // drei weitere Hoster **derselben** Quelle. Der Harness bildet das ab,
         // damit die Quote den Produktpfad zeigt, nicht nur den ersten Hoster.
         const val ALTERNATIVE_ROUNDS = 2
-        const val ALTERNATIVE_BUDGET_MS = 45_000L
+        // Muss die Kette des Resolvers abdecken (Block 4f: ALTERNATIVE_DEADLINE_MS
+        // = 60 s, sequenziell). Vorher 45 s — damit haette der Harness die
+        // Alternative-Kette abgeschnitten und ihr Ergebnis verworfen, obwohl
+        // der Resolver längst einen spielbaren Kandidaten hatte.
+        const val ALTERNATIVE_BUDGET_MS = 70_000L
         /** Kandidaten je Alternativeschleife (zusaetzlich zum Fast-Teil). */
         const val ALTERNATIVE_CANDIDATES = 3
 

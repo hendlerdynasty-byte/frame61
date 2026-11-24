@@ -509,4 +509,153 @@ class HosterResolverTest {
         assertTrue(HosterResolver.GENERIC_EMBED_SCRIPT.contains("getPlaylistItem()"))
         assertTrue(HosterResolver.GENERIC_EMBED_SCRIPT.contains("getEntriesByType('resource')"))
     }
+
+    // --- Block 4f (Lauf 8, 24.11.2026) -------------------------------------
+    //
+    // Die sechs Alternativen der moflix-Watch-Seite liegen im jwplayer-Pack
+    // (reiner `js`-Schritt). Gemessen: **alle sechs** scheiterten mit
+    // "js: kein Rueckgabewert", waehrend die generische Interception auf
+    // derselben Host-Familie die m3u8 in 2,1 s fand (INTERCEPT #79).
+
+    @Test
+    fun `js-only pack on an embed page resolves through the interception`() = runTest {
+        val p = pack(
+            id = "jwplayer",
+            domains = listOf("moflix-stream.click"),
+            result = "stream",
+            steps = listOf(HosterStep(action = "js", script = "return window.sources", saveAs = "stream"))
+        )
+        var jsCalls = 0
+        val evaluator = object : JsEvaluator {
+            override suspend fun evaluate(url: String, script: String, timeoutMs: Long): String {
+                jsCalls++
+                return ""
+            }
+        }
+        var interceptedUrl: String? = null
+        val resolver = HosterResolver(
+            packs = listOf(p),
+            fetcher = FakeFetcher(),
+            jsEvaluator = evaluator,
+            mediaInterceptor = object : MediaInterceptor {
+                override suspend fun intercept(
+                    url: String,
+                    timeoutMs: Long,
+                    script: String?
+                ): InterceptedMedia? {
+                    interceptedUrl = url
+                    return InterceptedMedia(
+                        url = "https://cdn.example/hls/master.m3u8?token=abc",
+                        headers = mapOf("Referer" to "https://cdn.example/page")
+                    )
+                }
+            }
+        )
+
+        val out = resolver.resolve(
+            "https://moflix-stream.click/embed/frbu6t77szgj",
+            budget = WebViewBudget.of(2, System.currentTimeMillis() + 30_000L)
+        )
+
+        assertTrue(out is HosterOutcome.Resolved)
+        assertEquals(
+            "https://cdn.example/hls/master.m3u8?token=abc",
+            (out as HosterOutcome.Resolved).url
+        )
+        assertEquals("https://moflix-stream.click/embed/frbu6t77szgj", interceptedUrl)
+        assertEquals("die Interception liefert zuerst — der DOM-Abgriff waere geraten", 0, jsCalls)
+    }
+
+    @Test
+    fun `a failed pack falls back to the generic interception`() = runTest {
+        // Pack ohne Embed-Form: der Pack-Weg scheitert, danach greift die
+        // generische Rueckfallebene (Block 4f) und nimmt die m3u8 mit.
+        val p = pack(
+            id = "jwplayer",
+            domains = listOf("veev.to"),
+            result = "stream",
+            steps = listOf(HosterStep(action = "js", script = "return window.sources", saveAs = "stream"))
+        )
+        val evaluator = object : JsEvaluator {
+            override suspend fun evaluate(url: String, script: String, timeoutMs: Long): String = ""
+        }
+        var interceptedUrl: String? = null
+        val resolver = HosterResolver(
+            packs = listOf(p),
+            fetcher = FakeFetcher(),
+            jsEvaluator = evaluator,
+            mediaInterceptor = object : MediaInterceptor {
+                override suspend fun intercept(
+                    url: String,
+                    timeoutMs: Long,
+                    script: String?
+                ): InterceptedMedia? {
+                    interceptedUrl = url
+                    return InterceptedMedia(url = "https://cdn.example/v.m3u8")
+                }
+            }
+        )
+
+        val out = resolver.resolve(
+            "https://veev.to/abc123",
+            budget = WebViewBudget.of(2, System.currentTimeMillis() + 30_000L)
+        )
+
+        assertTrue("das gescheiterte Pack darf den generischen Weg nicht verdecken", out is HosterOutcome.Resolved)
+        assertEquals("https://cdn.example/v.m3u8", (out as HosterOutcome.Resolved).url)
+        assertEquals("https://veev.to/abc123", interceptedUrl)
+    }
+
+    @Test
+    fun `js-only pack on a watch page keeps the pack path`() = runTest {
+        // Die Watch-Seite von serienstream.to ist **keine** Embed-Seite: ihr
+        // `js`-Schritt liefert den Hoster-Redirect. Eine Interception dort
+        // laeuft 25 s ins Leere (INTERCEPT #67/#81) — deshalb bleibt der
+        // Pack-Weg zuerst.
+        val p = pack(
+            id = "serienstream",
+            domains = listOf("serienstream.to"),
+            result = "stream",
+            steps = listOf(HosterStep(action = "js", script = "return window.target", saveAs = "stream"))
+        )
+        val order = mutableListOf<String>()
+        val evaluator = object : JsEvaluator {
+            override suspend fun evaluate(url: String, script: String, timeoutMs: Long): String {
+                order += "js"
+                return ""
+            }
+        }
+        val resolver = HosterResolver(
+            packs = listOf(p),
+            fetcher = FakeFetcher(),
+            jsEvaluator = evaluator,
+            mediaInterceptor = object : MediaInterceptor {
+                override suspend fun intercept(
+                    url: String,
+                    timeoutMs: Long,
+                    script: String?
+                ): InterceptedMedia? {
+                    order += "intercept"
+                    return null
+                }
+            }
+        )
+
+        val out = resolver.resolve(
+            "https://serienstream.to/serie/Die-Zeit/1/1-Folge-1/de/Filemoon",
+            budget = WebViewBudget.of(2, System.currentTimeMillis() + 30_000L)
+        )
+
+        assertTrue(out is HosterOutcome.Failed)
+        assertEquals(
+            "das Pack läuft vor der Interception — die Watch-Seite ist keine Embed-Seite",
+            "js",
+            order.first()
+        )
+        assertEquals(
+            "die Interception kommt erst nach dem gescheiterten Pack (Rueckfallebene)",
+            1,
+            order.count { it == "intercept" }
+        )
+    }
 }
