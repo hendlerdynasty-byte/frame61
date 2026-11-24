@@ -199,6 +199,14 @@
   im „plain"-Bucket landen. CI `45384683779` grün, 183/183 Tests
   (`HosterResolverTest` 27: Interception vor JS-Pack, Rückfall nach
   Fehlschlag, Watch-Seite behält den Pack-Pfad).
+- **Block 7 + Block 8 (`ebec382`):** CI `45480868905` grün — Gate **199/199
+  Tests**, Lint **0 Errors**, Release-Job baut APK + AAB. Acceptance-APK
+  lokal signiert (sha256 `fac02c5901b4ed94c2e7e52fb0265d14fed8cfcc1cfee299ba74b980dcfac66b`,
+  Signatur-Zertifikat `1201f46d…` — derselbe Release-Key wie Lauf 9) und per
+  Device-Lab `QUICK_SMOKE` auf dem A52 installiert (Job `job-731d24e82a274223`,
+  PASS). **Lauf 10** (gleiche Stichprobe wie Lauf 1–9: Training, Seed
+  `20261122`, 100 Titel, Katalog 997) läuft auf dem A52 — Messwerte und Delta
+  folgen in [QUOTA.md](QUOTA.md).
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 
