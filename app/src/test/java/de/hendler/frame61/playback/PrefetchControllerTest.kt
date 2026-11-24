@@ -39,7 +39,7 @@ class PrefetchControllerTest {
     )
 
     @Test
-    fun `der fokus entprellt: erst nach 400 ms wird aufgeloest`() = runTest {
+    fun `der fokus entprellt - erst nach 400 ms wird aufgeloest`() = runTest {
         val resolver = mockk<AutoPlaybackResolver>()
         coEvery { resolver.prefetch(any(), any(), any()) } coAnswers { listOf(candidate()) }
         val controller = PrefetchController(resolver, this)

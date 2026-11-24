@@ -814,4 +814,54 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
 - Messharness deckt die Kette ab: `ALTERNATIVE_BUDGET_MS` 70 s (statt 45 s), weil
   die 60-s-Kette sonst außen vor bliebe.
 
+## 2026-11-24 — Vorwaermen auf Fokus, ohne die WebView zu beruehren (Block 7)
+
+- Befund: Der Player wartete auf die vollstaendige Aufloesungskette, bevor das
+  erste Bild kam (gemessen p95 5,6 s, in schlechten Faellen 20–30 s). Der
+  einzige Vorlauf, den die App hat, ist die Zeit zwischen Fokus auf einer
+  Kachel und dem Tastendruck — sie wurde nicht genutzt.
+- Default: `tvFocusable` meldet den Fokuswechsel, `PosterCard` reicht ihn als
+  `onFocus` weiter, `PrefetchController` entprellt 400 ms, serialisiert die
+  Laeufe (Semaphor, ein Vorwaermlauf zur Zeit) und haelt den Kandidaten 60 s.
+  Der Player uebernimmt ihn sofort; die volle Aufloesung laeuft parallel und
+  liefert nur noch die Fallback-Kette.
+- **Nur die Quelle der Kataloggruppe:** `PrefetchScope` bildet die
+  Harvest-Gruppe auf ihre Pack(s) ab (serienstream→s-to, aniworld, filmpalast,
+  moflix, ard→ard-mediathek). Das sind ein bis zwei HTTP-Anfragen statt der 33
+  Pack-Suchen des vollen Laufs.
+- **Nachweisbar ohne WebView:** Der Vorwaermlauf benutzt einen *eigenen*
+  `HosterResolver` ohne `jsEvaluator`, ohne Captcha-Loeser und ohne
+  Media-Interceptor. Ein `js`-Schritt scheitert damit mit "kein WebView
+  verfuegbar", ein Captcha-Pack mit "CaptchaRequired" — die stille WebView
+  wird nicht angefasst. Grund: sie ist app-weit serialisiert; ein
+  Vorwaermlauf, der dort mitfaehrt, wuerde dem echten Start den Slot
+  wegnehmen. **bs.to bleibt deshalb aussen vor** (VOE laeuft ueber die
+  WebView).
+- Preis: Hosters, die nur im Browser loesbar sind (VOE, Doodstream,
+  jwplayer, devideosrc), liefern im Vorwaermlauf nichts. Der Vorwaermlauf ist
+  damit ein **Bonus**, keine Abkuerzung: fehlt der Kandidat, loest der Player
+  wie bisher auf.
+- Der volle Cache wird nicht geschrieben; der vorbereitete Kandidat wird
+  **einmal** uebernommen (`take`), danach loest der Player frisch auf.
+
+## 2026-11-24 — Staffel gehoert zur Episodenadresse (Block 8)
+
+- Befund: Drei Stellen adressierten eine angefragte Staffel-2-Folge als
+  Staffel 1 — bs.to (`season == 1 && number == n`), ARD (nur nach Nummer) und
+  die Packs s.to/aniworld (hart codiertes `staffel-1` im Stream-Endpoint).
+  Der Effekt war still: es wurde die falsche Folge gespielt, und der
+  Resume-Punkt wanderte in eine andere Zeitachse.
+- Default: `EpisodeSelection` waehlt in drei Stufen — (Staffel, Nummer), dann
+  nur die Nummer (Quellen, die ihre Staffel nicht sauber ausweisen, z. B. das
+  ARD-Grouping mit Teasern der ersten Staffel), sonst die erste Folge der
+  Quelle. Die Auswahl ist eine reine Funktion und dadurch testbar.
+- Der Stream-Endpoint der Packs traegt jetzt `staffel-{season}`;
+  `PackInterpreter.streams` fuellt den Platzhalter mit Default 1 — bestehende
+  Packs ohne Platzhalter bleiben unveraendert.
+- Der Resume-Schluessel leitet sich aus (Titel, Staffel, Nummer) ab und ist
+  damit ueber den Quellenwechsel hinweg stabil. Titel ohne Metadaten-Snapshot
+  teilten sich vorher alle Folgen einen Slot; der alte Schluessel wird beim
+  Lesen als Fallback mitgeprueft, damit bestehende Positionen nicht verloren
+  gehen.
+
 
