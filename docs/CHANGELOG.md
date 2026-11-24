@@ -4,6 +4,26 @@
 
 ### 1.5.0 — DEVIDEOSRC-Kette belegt statt geraten (in Arbeit, 24.11.2026)
 
+#### Hinzugefügt
+- **`DeVideoSrcResolver`**: DEVIDEOSRC wird über die dokumentierte API
+  (`POST /api/embed-links`, Token aus `/movie/{id}` bzw. `/serial/{id}`)
+  aufgelöst. Die Antwort liefert die **Quellenliste** (Dropload, SuperVideo,
+  Doodstream, Mixdrop) in Rangfolge, bei Serien je Staffel und Episode. Die
+  Liste läuft durch die bestehende Kette; jeder Anbieter wird der Reihe nach
+  versucht. Ohne API-Antwort bleibt der bisherige Pack-Pfad als Rückfallebene.
+- **`MediaUrlMatcher`**: erkennt Doodstream-URLen **ohne Dateiendung**
+  (`cloudatacdn.com` bzw. `~…?token=`-Form). Vorher galten sie weder als
+  Medien-URL noch als Pack-Treffer.
+- **WebView-Ziel-Liste (`HosterResolver.isWebFirst`)**: `uqload.vc` und
+  `flyfile.app` tragen keine Embed-Form im Pfad und bekamen deshalb
+  überhaupt keinen WebView-Versuch. Sie laufen jetzt über die stille WebView —
+  erst die Medien-Interception, dann der DOM-Abruf.
+- **DOM-Abruf erweitert**: Der generische Abgriff liest zusätzlich das
+  jwplayer-Playlist-Element und die Liste der vom Browser abgerufenen
+  Ressourcen. jwplayer-Seiten (uqload.vc, dr0pstream.com) setzen die Quelle
+  gepackt in `setup({sources:[{file:…}]})`; der sichtbare `video.src` ist nur
+  ein `blob:`.
+
 #### Behoben
 - **DEVIDEOSRC-API kam auf dem Gerät nie an (A52, Lauf 4):** Der Ausdruck für
   den `JSON.stringify`-Aufruf der Player-Seite war an der Zeilengrenze
@@ -26,6 +46,9 @@
   und fragt beide Quellen ab.
 
 #### Geändert
+- Die generische Embed-Stufe greift jetzt auch **innerhalb** einer Kette
+  (`depth > 0`): Die von DEVIDEOSRC gelieferten Provider-Embeds sind erst
+  dort spielbar. Das WebView-Budget (ein Versuch je Titel) bleibt.
 - **Messbarkeit:** Der Messharness startete keine Diagnose-Sitzung — alle
   Resolver-Ereignisse wurden verworfen, die Fehlerklasse konnte nur
   `NO_CANDIDATE` heißen. Pro Titel läuft jetzt eine Sitzung; die QUOTA-Zeile
@@ -36,9 +59,12 @@
   spielbar war.
 
 #### Belege
-- Lauf 4 (Build `d678efb`): 60/100 = 60 %, Gruppen 65/84/27/36/50/50 %,
-  34 × `CONTAINER_UNSUPPORTED`, 6 × `NO_CANDIDATE`. Bericht:
-  [QUOTA.md](QUOTA.md). Live-Abfrage beider devideosrc-Endpunkte am 24.11.2026.
+- Lauf 3 (Build `078fb4b`, A52): Quote 59 %, erste echte Medien-URL einer
+  Index-Gruppe außerhalb des ARD-Sockels.
+- Lauf 4 (Build `d678efb`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  60/100 = 60 %, Gruppen 65/84/27/36/50/50 %, 34 × `CONTAINER_UNSUPPORTED`,
+  6 × `NO_CANDIDATE` — siehe [QUOTA.md](QUOTA.md). Live-Abfrage beider
+  devideosrc-Endpunkte am 24.11.2026.
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 

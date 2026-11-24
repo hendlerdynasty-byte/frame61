@@ -407,7 +407,8 @@ class AutoPlaybackResolver @Inject constructor(
         // zeigt die m3u8. Also braucht der devideosrc-Kandidat den WebView-
         // Versuch des Titels.
         if (DeVideoSrcResolver.matches(url)) return true
-        return HosterResolver.looksLikeEmbed(url)
+        // uqload.vc/flyfile.app: JS-Player ohne Embed-Form (gemessen Lauf 3).
+        return HosterResolver.isWebFirst(url)
     }
 
     /** Gast-Wiedergabe möglich? Packs mit `guest: false` (VOE) nicht. */

@@ -609,3 +609,39 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   `NO_CANDIDATE` heißen. Pro Titel läuft jetzt eine Sitzung; die QUOTA-Zeile
   führt den Fehlergrund mit, und der Resolver protokolliert jeden Schritt
   (Seite geladen, Token gelesen, POST, Anbieterliste, Einzelgrund je Anbieter).
+## 2026-11-24 — uqload.vc und flyfile.app als WebView-Ziel (Host-Liste statt Pack)
+
+- Befund (A52, Lauf 3, Build `078fb4b`, eindeutige Titel je Zielhost):
+  `devideosrc.co` 22, `moflix.rpmplay.xyz` 7, `uqload.vc` 5,
+  `moflix-stream.fans` 2, `flyfile.app` 1, `strmup.to`/`zairuc.com` 1.
+  Bei `uqload.vc` war der Host **dreimal der einzige** Kandidat (idx 7, 9, 83);
+  die Zeilen zeigten `intercept=0` — es gab **gar keinen** WebView-Versuch.
+- Ursache: Die Embed-Erkennung verlangt `/e/`, `/embed/`, `/video/`, `/stream/`
+  oder `/play/` **mit Slash**. `uqload.vc/embed-7uqq5rkob9z1.html` und
+  `flyfile.app` tragen das Muster nicht, bekamen deshalb kein WebView-Budget,
+  und der HTML-Kandidat blieb als Player-Ziel stehen (3003).
+- Default: `HosterResolver.isWebFirst(url)` = Embed-Form **oder** Host aus
+  `WEB_FIRST_HOSTS` (`uqload.vc`, `flyfile.app`). Diese Hosts bekommen den
+  stillen WebView: erst die Medien-Interception (echter Abruf mit echten
+  Kopfzeilen), dann der DOM-Abgriff. Zusätzlich liest der generische
+  DOM-Abgriff jetzt das **jwplayer-Playlist-Element** und die Liste der vom
+  Browser abgerufenen Ressourcen — bei uqload.vc liegt die Quelle gepackt im
+  `jwplayer(...).setup({sources:[{file:…}]})`, der sichtbare `video.src` ist
+  nur ein `blob:`.
+- Beleg der Extraktion (24.11.2026, `uqload.vc/embed-7uqq5rkob9z1.html`):
+  Der Packer-Payload (Dean Edwards, Base-62) wurde entpackt und ergibt
+  `https://strm13.uqload.vc/hls2/02/05901/7uqq5rkob9z1_h/master.m3u8?t=…&s=…&e=14400&v=…`.
+  Der Abruf dieser URL liefert **HTTP 200** (`application/vnd.apple.mpegurl`)
+  mit der 1080p-Variantenliste — mit und ohne Referer. Die Strecke ist damit
+  nicht nur theoretisch, sondern abrufbar.
+- Bewusst **nicht** angefasst (gemessen tot, kein App-Defekt):
+  - `moflix.rpmplay.xyz` / `moflix.upns.xyz`: die Seite ruft
+    `GET /api/public/resolve?file1=<key>` auf. Mit **live**-Keys aus den
+    Watch-Seiten (`6qofd`, `zqwhh`, `q3ieiw`, `n8lavf`) liefert die API
+    `404 {"ok":false,"error":"not found"}`. Die Seite ist ein Ad-Stub
+    („The system is under maintenance“) mit Smartlink-Overlay — kein Spieler.
+  - `moflix-stream.fans`: liefert „Video unavailable“ (serverseitig).
+  - `strmup.to`: JWT-Weiterleitung → `zairuc.com/fk?dat=…` →
+    `click-v4.junimedclk.com/click?i=…` (Klick-Tracker, 0 Byte Antwort).
+    Eine Klick-Kette, kein Player — die WebView würde hier nur die Werbung
+    auslösen.

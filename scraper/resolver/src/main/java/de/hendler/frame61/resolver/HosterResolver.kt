@@ -189,7 +189,7 @@ class HosterResolver(
             // Embeds, die erst hier spielbar werden. Das WebView-Budget
             // begrenzt die Versuche je Titel — eine Schleife ist damit
             // ausgeschlossen.
-            if (depth < MAX_REDIRECT_DEPTH && looksLikeEmbed(url)) {
+            if (depth < MAX_REDIRECT_DEPTH && isWebFirst(url)) {
                 val interceptor = mediaInterceptor
                 if (interceptor != null && budget.tryTake()) {
                     val intercepted = runCatching {
@@ -454,8 +454,41 @@ class HosterResolver(
         fun looksLikeEmbed(url: String): Boolean = EMBED_PATH.containsMatchIn(url)
 
         /**
+         * Hosts, die nur im WebView sinnvoll auflösbar sind, aber **keine**
+         * Embed-Form im Pfad tragen (Beispiel: `uqload.vc/embed-7uqq….html`).
+         *
+         * Gemessen 23.11.2026 auf dem A52 (Lauf 3): `uqload.vc` war bei fünf
+         * Kandidaten der Zielhost — dreimal der **einzige** Kandidat — und
+         * bekam `intercept=0`, also gar keinen WebView-Versuch. Der
+         * HTML-Kandidat blieb stehen und der Player scheiterte mit 3003
+         * (`CONTAINER_UNSUPPORTED`). Die Seite selbst ist aber ein
+         * jwplayer mit gepackter `sources[].file`-Angabe
+         * (`https://strm13.uqload.vc/hls2/…/master.m3u8?t=…`).
+         *
+         * `flyfile.app` ist ein SPA mit adaptivem HLS — ebenfalls nur im
+         * WebView auflösbar.
+         */
+        val WEB_FIRST_HOSTS = listOf("uqload.vc", "flyfile.app")
+
+        /**
+         * Braucht diese URL den stillen WebView? Embed-Formen brauchen ihn
+         * immer, [WEB_FIRST_HOSTS] immer, sonst nie.
+         */
+        fun isWebFirst(url: String): Boolean {
+            if (looksLikeEmbed(url)) return true
+            val host = hostOf(url) ?: return false
+            return WEB_FIRST_HOSTS.any { host == it || host.endsWith(".$it") }
+        }
+
+        /**
          * Liest die erste echte Medien-URL aus einer Embed-Seite — unabhängig
          * vom konkreten Hoster (video/source/window.sources/getActiveLink).
+         *
+         * jwplayer-Seiten (uqload.vc, dr0pstream.com) setzen die Quelle nicht
+         * global und legen sie in den `<video>`-Element nur als `blob:` ab.
+         * Deshalb kommen zwei weitere Wege dazu: das Playlist-Element des
+         * jwplayer und die Liste der vom Browser **abgerufenen** Ressourcen
+         * (dort steht die echte m3u8 des Abrufs).
          */
         const val GENERIC_EMBED_SCRIPT =
             "(function(){try{var v=document.querySelector('video');" +
@@ -464,6 +497,11 @@ class HosterResolver(
                 "for(var i=0;i<s.length;i++){if(s[i].src&&s[i].src.indexOf('http')===0)return s[i].src;}" +
                 "if(window.sources&&sources.length){var f=sources[0].file||sources[0].src;" +
                 "if(f&&f.indexOf('http')===0)return f;}" +
+                "if(window.jwplayer){try{var p=window.jwplayer().getPlaylistItem();" +
+                "if(p&&p.file&&p.file.indexOf('http')===0)return p.file;}catch(e){}}" +
+                "var res=performance.getEntriesByType('resource');" +
+                "for(var j=res.length-1;j>=0;j--){var n=res[j].name||'';" +
+                "if(/\\.(m3u8|mp4)(\\?|$)/i.test(n))return n;}" +
                 "if(typeof getActiveLink==='function'){var l=getActiveLink();" +
                 "if(l&&l.indexOf('http')===0)return l;}" +
                 "var ifr=document.querySelector('iframe');" +

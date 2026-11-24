@@ -480,4 +480,28 @@ class HosterResolverTest {
         assertTrue(out is HosterOutcome.Resolved)
         assertEquals("https://fallback.example/v.m3u8", (out as HosterOutcome.Resolved).url)
     }
+
+    @Test
+    fun `embed forms and web-first hosts need the hidden webview`() {
+        // Embed-Formen (Slash) — seit Lauf 1 so im Gebrauch.
+        assertTrue(HosterResolver.isWebFirst("https://odysseusa.cc/e/DooiGuaaRJ73B"))
+        assertTrue(HosterResolver.isWebFirst("https://moflix-stream.click/embed/frbu6t77szgj"))
+        // Ohne Slash im Pfad: uqload.vc war in Lauf 3 der einzige Kandidat
+        // und bekam dort kein WebView (intercept=0) -> 3003.
+        assertFalse(HosterResolver.looksLikeEmbed("https://uqload.vc/embed-7uqq5rkob9z1.html"))
+        assertTrue(HosterResolver.isWebFirst("https://uqload.vc/embed-7uqq5rkob9z1.html"))
+        assertTrue(HosterResolver.isWebFirst("https://flyfile.app/e/abc"))
+        // Fremde Hosts bleiben unangetastet.
+        assertFalse(HosterResolver.isWebFirst("https://example.com/e/1"))
+        assertFalse(HosterResolver.isWebFirst("https://notuqload.vc/embed-x.html"))
+    }
+
+    @Test
+    fun `generic embed probe also reads jwplayer and resource list`() {
+        // uqload.vc liefert die Quelle gepackt im jwplayer-Setup; der
+        // sichtbare video.src ist nur ein blob:. Zwei Wege ergaenzen den
+        // Abgriff: Playlist-Element und die Liste der Browser-Abrufe.
+        assertTrue(HosterResolver.GENERIC_EMBED_SCRIPT.contains("getPlaylistItem()"))
+        assertTrue(HosterResolver.GENERIC_EMBED_SCRIPT.contains("getEntriesByType('resource')"))
+    }
 }
