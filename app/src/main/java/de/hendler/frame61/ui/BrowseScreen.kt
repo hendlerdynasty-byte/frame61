@@ -135,7 +135,9 @@ fun BrowseScreen(
                 BrowseCard(
                     item = item,
                     progress = state.progress[item.id],
-                    onClick = { onOpenTitle(item.id) }
+                    onClick = { onOpenTitle(item.id) },
+                    // Block 7: Fokus waermt die Quelle des Titels vor.
+                    onFocus = { viewModel.prefetch(item) }
                 )
             }
         }
@@ -179,7 +181,12 @@ private fun FilterRow(
 }
 
 @Composable
-private fun BrowseCard(item: CatalogItem, progress: Float?, onClick: () -> Unit) {
+private fun BrowseCard(
+    item: CatalogItem,
+    progress: Float?,
+    onClick: () -> Unit,
+    onFocus: () -> Unit = {}
+) {
     val skin = LocalSkin.current
     Column(modifier = Modifier.fillMaxWidth()) {
         PosterCard(
@@ -191,6 +198,7 @@ private fun BrowseCard(item: CatalogItem, progress: Float?, onClick: () -> Unit)
             contentDescription = "${item.title} ${item.year ?: ""}".trim(),
             focusId = "browse-${item.id}",
             onClick = onClick,
+            onFocus = onFocus,
             progress = progress
         )
         Text(
@@ -206,8 +214,14 @@ private fun BrowseCard(item: CatalogItem, progress: Float?, onClick: () -> Unit)
 class BrowseViewModel @Inject constructor(
     private val catalog: CatalogRepository,
     private val prefs: ProfileDataStore,
-    private val resume: ResumeRepository
+    private val resume: ResumeRepository,
+    private val prefetchController: de.hendler.frame61.playback.PrefetchController
 ) : ViewModel() {
+
+    /** Block 7: Quelle des gefokusten Titels im Hintergrund vorwaermen. */
+    fun prefetch(item: CatalogItem) {
+        prefetchController.prefetch(item.title)
+    }
 
     private val _state = MutableStateFlow(BrowseState())
     val state: StateFlow<BrowseState> = _state.asStateFlow()
@@ -298,8 +312,14 @@ class BrowseViewModel @Inject constructor(
 class WatchlistViewModel @Inject constructor(
     private val catalog: CatalogRepository,
     private val prefs: ProfileDataStore,
-    private val resume: ResumeRepository
+    private val resume: ResumeRepository,
+    private val prefetchController: de.hendler.frame61.playback.PrefetchController
 ) : ViewModel() {
+
+    /** Block 7: Quelle des gefokusten Titels im Hintergrund vorwaermen. */
+    fun prefetch(item: CatalogItem) {
+        prefetchController.prefetch(item.title)
+    }
 
     private val _items = MutableStateFlow<List<CatalogItem>>(emptyList())
     val items: StateFlow<List<CatalogItem>> = _items.asStateFlow()
@@ -349,7 +369,9 @@ fun WatchlistScreen(onOpenTitle: (String) -> Unit) {
                     BrowseCard(
                         item = item,
                         progress = progress[item.id],
-                        onClick = { onOpenTitle(item.id) }
+                        onClick = { onOpenTitle(item.id) },
+                        // Block 7: Fokus waermt die Quelle des Titels vor.
+                        onFocus = { viewModel.prefetch(item) }
                     )
                 }
             }

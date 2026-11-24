@@ -32,7 +32,7 @@
     "episodeIndexSelector": "td.season1EpisodeID"
   },
   "streams": {
-    "endpoint": "/anime/stream/{titleId}/staffel-1/episode-{episodeId}",
+    "endpoint": "/anime/stream/{titleId}/staffel-{season}/episode-{episodeId}",
     "format": "html",
     "selector": "li[data-link-target]",
     "urlAttr": "data-link-target",

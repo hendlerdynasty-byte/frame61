@@ -45,6 +45,8 @@ fun PosterCard(
     showBorder: Boolean = false,
     focusId: String? = null,
     onClick: (() -> Unit)? = null,
+    /** Wird genau einmal aufgerufen, wenn die Karte den Fokus **erhält** (Block 7). */
+    onFocus: (() -> Unit)? = null,
     progress: Float? = null,
     overlay: @Composable BoxScope.() -> Unit = {}
 ) {
@@ -56,7 +58,8 @@ fun PosterCard(
         Modifier.tvFocusable(
             id = focusId,
             focusedColor = skin.colors.focus,
-            onClick = onClick
+            onClick = onClick,
+            onFocusChanged = onFocus?.let { callback -> { focused: Boolean -> if (focused) callback() } }
         )
     } else {
         Modifier

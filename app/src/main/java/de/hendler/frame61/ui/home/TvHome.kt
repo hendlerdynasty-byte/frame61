@@ -75,6 +75,8 @@ data class HomeRail(
 fun TvHome(
     content: HomeContent,
     onOpenTitle: (CatalogItem) -> Unit,
+    /** Block 7: der Titel hat den Fokus — Quelle im Hintergrund vorwaermen. */
+    onPrefetch: (CatalogItem) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val skin = LocalSkin.current
@@ -100,7 +102,7 @@ fun TvHome(
     ) {
         content.billboard?.let { billboard ->
             item(key = "billboard") {
-                Billboard(item = billboard, onClick = { onOpenTitle(billboard) })
+                Billboard(item = billboard, onClick = { onOpenTitle(billboard) }, onFocus = { onPrefetch(billboard) })
             }
         }
 
@@ -108,7 +110,7 @@ fun TvHome(
             if (rail.items.isEmpty()) return@forEach
             item(key = rail.kind.key) {
                 RailHeader(title = rail.kind.title)
-                TvRail(rail = rail, onOpenTitle = onOpenTitle)
+                TvRail(rail = rail, onOpenTitle = onOpenTitle, onPrefetch = onPrefetch)
             }
         }
     }
@@ -138,7 +140,8 @@ private fun RailHeader(title: String) {
 @Composable
 private fun TvRail(
     rail: HomeRail,
-    onOpenTitle: (CatalogItem) -> Unit
+    onOpenTitle: (CatalogItem) -> Unit,
+    onPrefetch: (CatalogItem) -> Unit
 ) {
     val skin = LocalSkin.current
     LazyRow(
@@ -147,7 +150,7 @@ private fun TvRail(
         contentPadding = PaddingValues(horizontal = 4.dp)
     ) {
         items(rail.items, key = { it.id }) { item ->
-            CatalogPoster(item = item, onClick = { onOpenTitle(item) })
+            CatalogPoster(item = item, onClick = { onOpenTitle(item) }, onFocus = { onPrefetch(item) })
         }
     }
 }
@@ -159,7 +162,8 @@ private fun TvRail(
 @Composable
 private fun CatalogPoster(
     item: CatalogItem,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    onFocus: () -> Unit = {}
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
@@ -180,7 +184,8 @@ private fun CatalogPoster(
         cornerRadius = skin.layout.cardRadius,
         contentDescription = "${item.title} ${item.year ?: ""}".trim(),
         focusId = "card-${item.id}",
-        onClick = onClick
+        onClick = onClick,
+        onFocus = onFocus
     ) {
         Box(
             modifier = Modifier
@@ -211,7 +216,8 @@ private fun CatalogPoster(
 @Composable
 private fun Billboard(
     item: CatalogItem,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    onFocus: () -> Unit = {}
 ) {
     val skin = LocalSkin.current
     val typography = LocalFrame61Typography.current
@@ -230,7 +236,8 @@ private fun Billboard(
         cornerRadius = skin.layout.cardRadius,
         contentDescription = item.title,
         focusId = "billboard-${item.id}",
-        onClick = onClick
+        onClick = onClick,
+        onFocus = onFocus
     ) {
         val scrim = skin.colors.canvas.copy(alpha = skin.hero.strength)
         val gradientColors = when (skin.hero.gradient) {

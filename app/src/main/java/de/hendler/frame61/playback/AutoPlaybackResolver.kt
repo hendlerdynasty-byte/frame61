@@ -137,6 +137,26 @@ class AutoPlaybackResolver @Inject constructor(
     }
 
     /**
+     * Hoster-Resolver **ohne** WebView-Bestandteile (Block 7).
+     *
+     * Kein `jsEvaluator`, kein Captcha-Loeser, kein Media-Interceptor: ein
+     * `js`-Schritt scheitert damit mit "kein WebView verfuegbar", ein
+     * Captcha-Pack mit "CaptchaRequired" — beide **ohne** die stille WebView zu
+     * beruehren. Genau das macht den Prefetch gefahrlos: er kann den
+     * WebView-Slot des Players nicht wegnehmen.
+     */
+    private val prefetchHosterResolver: HosterResolver by lazy {
+        HosterResolver(
+            packs = hosterPacks,
+            fetcher = OkHttpBodyFetcher(),
+            jsEvaluator = null,
+            captchaSolver = null,
+            mediaInterceptor = null,
+            devideosrc = null
+        )
+    }
+
+    /**
      * Hoster mit Captcha still vorwärmen, damit der erste Titel nicht auf eine
      * Challenge wartet. Wird bewusst **nicht** beim Anlegen des Resolvers
      * aufgerufen (das erzeugte mehrere WebViews gleichzeitig und blockierte den
@@ -161,9 +181,11 @@ class AutoPlaybackResolver @Inject constructor(
     suspend fun resolve(
         title: String,
         episodeNumber: Int = 0,
+        season: Int = 1,
         sessionId: Long = PlaybackDiagnostics.currentSessionId,
         fresh: Boolean = false
-    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, 0L)
+    ): List<MirrorCandidate> =
+        resolveInternal(title, episodeNumber, season, sessionId, fresh, 0L)
 
     /**
      * Wie [resolve], kehrt aber schon [graceMs] nach dem ersten Kandidaten
@@ -176,20 +198,133 @@ class AutoPlaybackResolver @Inject constructor(
     suspend fun resolveFast(
         title: String,
         episodeNumber: Int = 0,
+        season: Int = 1,
         sessionId: Long = PlaybackDiagnostics.currentSessionId,
         fresh: Boolean = false,
         graceMs: Long = FIRST_CANDIDATE_GRACE_MS
-    ): List<MirrorCandidate> = resolveInternal(title, episodeNumber, sessionId, fresh, graceMs)
+    ): List<MirrorCandidate> =
+        resolveInternal(title, episodeNumber, season, sessionId, fresh, graceMs)
+
+    /**
+     * Vorwaermen fuer den **fokussierten** Titel (Block 7).
+     *
+     * Der Katalog weiss, aus welcher Quelle ein Titel stammt ([CatalogItem.group]).
+     * Diese Quelle wird hier **allein** aufgeloest — ein bis zwei HTTP-Anfragen
+     * statt der 33 Pack-Suchen des vollen Laufs. Das Ergebnis dient dem Player
+     * als Sofort-Kandidat: der Start wartet dann nicht mehr auf die Kette.
+     *
+     * **Ohne WebView.** Der Prefetch benutzt einen eigenen Hoster-Resolver ohne
+     * JS-Auswertung, ohne Captcha-Loeser und ohne Media-Interceptor. Damit ist
+     * der Vorwaermlauf nachweisbar WebView-frei: die stille WebView ist
+     * app-weit serialisiert ([WebViewGate]) — ein Prefetch, der dort mitfaehrt,
+     * wuerde dem echten Start den Slot wegnehmen. Hosters, die nur im Browser
+     * loesbar sind (VOE, Doodstream, jwplayer), liefern im Prefetch deshalb
+     * nichts; das ist der gewollte Preis fuer die Sicherheit, den
+     * Player-Start nicht zu blockieren.
+     *
+     * Der volle Cache wird **nicht** geschrieben: der Prefetch ist ein
+     * Vorlauf, kein Ergebnis. Was der Player daraus uebernimmt, entscheidet der
+     * Player.
+     */
+    suspend fun prefetch(
+        title: String,
+        episodeNumber: Int = 0,
+        season: Int = 1
+    ): List<MirrorCandidate> = withContext(Dispatchers.IO) {
+        val item = catalogIndex[normalizeTitle(title)] ?: return@withContext emptyList()
+        val group = item.group ?: return@withContext emptyList()
+        val wanted = PrefetchScope.packsFor(group)
+        if (wanted.isEmpty()) return@withContext emptyList()
+        val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
+        val packs = packLoader.loadAllPacks().filter { it.id in wanted && it.id !in disabled }
+        if (packs.isEmpty()) return@withContext emptyList()
+        val candidates = mutableListOf<MirrorCandidate>()
+        for (pack in packs) {
+            // Abbruch (Fokus ist weitergewandert) landet als leeres Ergebnis
+            // hier — der Vorwaermlauf schreibt dann nichts in den Cache.
+            val result = runCatching {
+                withTimeoutOrNull(PREFETCH_TIMEOUT_MS) {
+                    resolvePackPrefetch(pack, item, episodeNumber, season)
+                }
+            }.getOrDefault(emptyList())
+            candidates += result
+        }
+        val ordered = order(candidates)
+        Log.i(
+            TAG,
+            "prefetch '$title' s${season}e$episodeNumber gruppe=$group " +
+                "packs=${packs.joinToString(",") { it.id }} kandidaten=${ordered.size}"
+        )
+        ordered
+    }
+
+    /**
+     * Ein Pack **ohne WebView** aufloesen — Suche, Stream-Liste, Hoster.
+     *
+     * Nur [HosterOutcome.Resolved] zaehlt: "Unknown" ist die HTML-Seite selbst
+     * und damit kein spielbarer Kandidat.
+     */
+    private suspend fun resolvePackPrefetch(
+        pack: SourcePack,
+        item: de.hendler.frame61.meta.CatalogItem,
+        episodeNumber: Int,
+        season: Int
+    ): List<MirrorCandidate> {
+        if (pack.id == ArdPlaybackResolver.PACK_ID) {
+            // ARD laeuft ueber HTTP, ohne Hoster-Kette.
+            return ardResolver.resolve(item.title, episodeNumber, season)
+        }
+        if (pack.captcha != null) return emptyList()
+        val hits = runCatching { interpreter.search(pack, item.title) }.getOrDefault(emptyList())
+        val hit = hits.firstOrNull { it.title.contains(item.title, ignoreCase = true) }
+            ?: hits.firstOrNull()
+            ?: return emptyList()
+        val streams = runCatching {
+            interpreter.streams(
+                pack,
+                hit.playbackId ?: hit.id,
+                episodeNumber.toString(),
+                null,
+                season
+            )
+        }.getOrDefault(emptyList())
+        val out = mutableListOf<MirrorCandidate>()
+        for (stream in streams.take(PREFETCH_MAX_STREAMS)) {
+            if (!stream.url.startsWith("https://")) continue
+            val outcome = runCatching {
+                withTimeoutOrNull(PREFETCH_HOSTER_TIMEOUT_MS) {
+                    prefetchHosterResolver.resolve(
+                        stream.url,
+                        budget = WebViewBudget.none(),
+                        episodeNumber = episodeNumber
+                    )
+                }
+            }.getOrNull()
+            val resolved = outcome as? HosterOutcome.Resolved ?: continue
+            out += toCandidate(
+                pack,
+                hit,
+                stream,
+                ResolvedStream(resolved.url, resolved.requestHeaders, resolved.cookies),
+                episodeNumber,
+                season
+            )
+        }
+        return out
+    }
 
     private suspend fun resolveInternal(
         title: String,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         fresh: Boolean,
         graceMs: Long
     ): List<MirrorCandidate> = withContext(Dispatchers.IO) {
         val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
-        val key = "$title|$episodeNumber|${disabled.hashCode()}"
+        // Die Staffel gehört zur Adresse: S2E1 ist eine andere Folge als
+        // S1E1 und braucht ihren eigenen Cache-Eintrag (Block 8).
+        val key = "$title|s${season}e$episodeNumber|${disabled.hashCode()}"
         val cached = cacheHit(key, title, sessionId, fresh)
         if (cached != null) {
             cached
@@ -199,7 +334,7 @@ class AutoPlaybackResolver @Inject constructor(
             val lock = resolutionLocks.getOrPut(key) { Mutex() }
             lock.withLock {
                 val second = cacheHit(key, title, sessionId, fresh)
-                second ?: resolveNow(title, episodeNumber, sessionId, graceMs, disabled, key)
+                second ?: resolveNow(title, episodeNumber, season, sessionId, graceMs, disabled, key)
             }
         }
     }
@@ -228,6 +363,7 @@ class AutoPlaybackResolver @Inject constructor(
     private suspend fun resolveNow(
         title: String,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         graceMs: Long,
         disabled: Set<String>,
@@ -237,12 +373,12 @@ class AutoPlaybackResolver @Inject constructor(
         val packs = allPacks.filter { it.captcha == null }
         Log.i(
             TAG,
-            "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
+            "resolve '$title' s${season}e$episodeNumber active=${allPacks.size} " +
                 "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
                 "disabled=${disabled.sorted()} grace=$graceMs"
         )
 
-        val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
+        val candidates = collectCandidates(packs, title, episodeNumber, season, sessionId, graceMs)
 
         // Captcha-Quellen sind die letzte Runde und nur im vollständigen
         // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
@@ -256,7 +392,7 @@ class AutoPlaybackResolver @Inject constructor(
             val deferred = mutableListOf<MirrorCandidate>()
             for (deferredPack in allPacks) {
                 if (deferredPack.captcha == null) continue
-                deferred += resolveWithTimeout(deferredPack, title, episodeNumber, sessionId)
+                deferred += resolveWithTimeout(deferredPack, title, episodeNumber, season, sessionId)
             }
             deferred
         } else {
@@ -264,7 +400,7 @@ class AutoPlaybackResolver @Inject constructor(
         }
         val ordered = order(candidates + captchaCandidates)
         if (ordered.isEmpty()) {
-            Log.w(TAG, "all sources exhausted for '$title' ep=$episodeNumber")
+            Log.w(TAG, "all sources exhausted for '$title' s${season}e$episodeNumber")
         }
         cache[key] = CacheEntry(System.currentTimeMillis(), ordered)
         return ordered
@@ -285,6 +421,7 @@ class AutoPlaybackResolver @Inject constructor(
         pack: SourcePack,
         title: String,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long
     ): List<MirrorCandidate> {
         val started = System.currentTimeMillis()
@@ -294,7 +431,7 @@ class AutoPlaybackResolver @Inject constructor(
         val budget = if (pack.id == BS_TO_PACK_ID) BS_TO_TIMEOUT_MS else SOURCE_TIMEOUT_MS
         val result = runCatching {
             withTimeoutOrNull(budget) {
-                resolvePack(pack, title, episodeNumber, sessionId)
+                resolvePack(pack, title, episodeNumber, season, sessionId)
             } ?: run {
                 trace(sessionId, pack.id, "Zeitüberschreitung nach $budget ms")
                 emptyList()
@@ -324,6 +461,7 @@ class AutoPlaybackResolver @Inject constructor(
         packs: List<SourcePack>,
         title: String,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         graceMs: Long
     ): List<MirrorCandidate> {
@@ -334,7 +472,7 @@ class AutoPlaybackResolver @Inject constructor(
         val channel = Channel<List<MirrorCandidate>>(packs.size)
         packs.forEach { pack ->
             resolveScope.launch {
-                val result = resolveWithTimeout(pack, title, episodeNumber, sessionId)
+                val result = resolveWithTimeout(pack, title, episodeNumber, season, sessionId)
                 // trySend statt send: die Kapazitaet entspricht der Zahl der
                 // Packs, also geht kein Ergebnis verloren. Ein suspendierendes
                 // send wuerde beim Abbruch eine ClosedSendChannelException in
@@ -376,10 +514,11 @@ class AutoPlaybackResolver @Inject constructor(
         pack: SourcePack,
         title: String,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long
     ): List<MirrorCandidate> {
         if (pack.id == ArdPlaybackResolver.PACK_ID) {
-            return ardResolver.resolve(title, episodeNumber)
+            return ardResolver.resolve(title, episodeNumber, season)
         }
         if (pack.id == BS_TO_PACK_ID) {
             // bs.to ist nur über den Sitemap-Slug adressierbar; die Suche der
@@ -392,7 +531,12 @@ class AutoPlaybackResolver @Inject constructor(
                 return emptyList()
             }
             trace(sessionId, pack.id, "bs.to $slug", null)
-            return bsToResolver.resolve(slug, episodeNumber, item.id)
+            return bsToResolver.resolve(
+                slug = slug,
+                episodeNumber = episodeNumber,
+                season = season,
+                titleId = item.id
+            )
         }
         var cookies: String? = null
         var hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
@@ -417,7 +561,8 @@ class AutoPlaybackResolver @Inject constructor(
             pack,
             hit.playbackId ?: hit.id,
             episodeNumber.toString(),
-            cookies
+            cookies,
+            season
         )
         // Hoster parallel aufloesen: eine Seite mit sechs Zielen kostete
         // bisher sechs Ketten hintereinander (gemessen 11 s ohne Kandidat).
@@ -432,7 +577,7 @@ class AutoPlaybackResolver @Inject constructor(
             attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
             deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
         )
-        return resolveStreams(pack, hit, streams, episodeNumber, sessionId, webBudget)
+        return resolveStreams(pack, hit, streams, episodeNumber, season, sessionId, webBudget)
     }
 
     /**
@@ -450,6 +595,7 @@ class AutoPlaybackResolver @Inject constructor(
         hit: SearchResult,
         streams: List<StreamResult>,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         webBudget: WebViewBudget
     ): List<MirrorCandidate> {
@@ -457,15 +603,19 @@ class AutoPlaybackResolver @Inject constructor(
         val orderedWeb = webFirst.sortedBy { if (guestCapable(it.url)) 0 else 1 }
         val resolved = coroutineScope {
             val webJobs = orderedWeb.take(MAX_WEBVIEW_STREAMS).map { stream ->
-                async { stream to resolveHoster(pack, stream, episodeNumber, sessionId, webBudget) }
+                async {
+                    stream to resolveHoster(pack, stream, episodeNumber, season, sessionId, webBudget)
+                }
             }
             val plainJobs = plain.map { stream ->
-                async { stream to resolveHoster(pack, stream, episodeNumber, sessionId, WebViewBudget.none()) }
+                async {
+                    stream to resolveHoster(pack, stream, episodeNumber, season, sessionId, WebViewBudget.none())
+                }
             }
             (webJobs + plainJobs).awaitAll()
         }
         return resolved.mapNotNull { (stream, hoster) ->
-            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber) }
+            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season) }
         }
     }
 
@@ -474,11 +624,20 @@ class AutoPlaybackResolver @Inject constructor(
         hit: SearchResult,
         stream: StreamResult,
         resolved: ResolvedStream,
-        episodeNumber: Int
+        episodeNumber: Int,
+        season: Int
     ): MirrorCandidate = MirrorCandidate(
         sourceId = pack.id,
         titleId = CatalogPlayback.stableId(hit.id),
-        episodeId = if (episodeNumber > 0) episodeNumber.toLong() else null,
+        // Block 8: die Folgennummer allein ist mehrdeutig (S1E3 == S2E3 == 3).
+        // Der Kandidat trägt deshalb den aus der Adresse abgeleiteten,
+        // eindeutigen Schlüssel — ein Quellenwechsel kann so nie eine
+        // andere Folge unter derselben Id mitführen.
+        episodeId = if (episodeNumber > 0) {
+            CatalogPlayback.stableId("s${season}e$episodeNumber")
+        } else {
+            null
+        },
         url = resolved.url,
         lang = stream.lang?.take(2) ?: "de",
         quality = stream.quality ?: "auto",
@@ -520,6 +679,7 @@ class AutoPlaybackResolver @Inject constructor(
     suspend fun resolveAlternative(
         title: String,
         episodeNumber: Int,
+        season: Int = 1,
         sourceId: String,
         excludeUrls: Set<String>,
         excludeHosts: Set<String> = emptySet(),
@@ -536,7 +696,13 @@ class AutoPlaybackResolver @Inject constructor(
             ?: hits.firstOrNull()
             ?: return@withContext emptyList()
         val streams = runCatching {
-            interpreter.streams(pack, hit.playbackId ?: hit.id, episodeNumber.toString(), null)
+            interpreter.streams(
+                pack,
+                hit.playbackId ?: hit.id,
+                episodeNumber.toString(),
+                null,
+                season
+            )
         }.getOrDefault(emptyList())
         val pending = streams.filter { stream ->
             stream.url.startsWith("https://") &&
@@ -558,6 +724,7 @@ class AutoPlaybackResolver @Inject constructor(
             hit = hit,
             pending = pending,
             episodeNumber = episodeNumber,
+            season = season,
             sessionId = sessionId,
             deadlineMs = System.currentTimeMillis() + ALTERNATIVE_DEADLINE_MS
         )
@@ -592,13 +759,21 @@ class AutoPlaybackResolver @Inject constructor(
         hit: SearchResult,
         pending: List<StreamResult>,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         deadlineMs: Long
     ): List<MirrorCandidate> = coroutineScope {
         val (webFirst, plain) = pending.partition { needsWebView(it.url) }
         val plainJobs = plain.map { stream ->
             async {
-                stream to resolveHoster(pack, stream, episodeNumber, sessionId, WebViewBudget.none())
+                stream to resolveHoster(
+                    pack,
+                    stream,
+                    episodeNumber,
+                    season,
+                    sessionId,
+                    WebViewBudget.none()
+                )
             }
         }
         val webResults = mutableListOf<Pair<StreamResult, ResolvedStream?>>()
@@ -624,6 +799,7 @@ class AutoPlaybackResolver @Inject constructor(
                 pack = pack,
                 stream = stream,
                 episodeNumber = episodeNumber,
+                season = season,
                 sessionId = sessionId,
                 webBudget = budget,
                 timeoutMs = slice
@@ -632,7 +808,7 @@ class AutoPlaybackResolver @Inject constructor(
             started = System.currentTimeMillis()
         }
         (plainJobs.awaitAll() + webResults).mapNotNull { (stream, hoster) ->
-            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber) }
+            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season) }
         }
     }
 
@@ -671,11 +847,17 @@ class AutoPlaybackResolver @Inject constructor(
         pack: SourcePack,
         stream: StreamResult,
         episodeNumber: Int,
+        season: Int,
         sessionId: Long,
         webBudget: WebViewBudget,
         timeoutMs: Long = HOSTER_TIMEOUT_MS
     ): ResolvedStream? {
-        trace(sessionId, pack.id, "Hosterauflösung ${stream.hosterId ?: "unknown"}", stream.url)
+        trace(
+            sessionId,
+            pack.id,
+            "Hosterauflösung ${stream.hosterId ?: "unknown"} s${season}e$episodeNumber",
+            stream.url
+        )
         if (!stream.url.startsWith("https://")) {
             Log.w(TAG, "${pack.id}: non-https stream rejected")
             trace(sessionId, pack.id, "Nicht-HTTPS-Ziel verworfen", stream.url)
@@ -852,6 +1034,24 @@ class AutoPlaybackResolver @Inject constructor(
 
         /** Obergrenze des Einsammelns, wenn gar kein Kandidat kommt. */
         private const val HARD_DEADLINE_MS = 34_000L
+
+        // Kataloggruppe → Pack(s) fuer den Vorwaermlauf: siehe [PrefetchScope]
+        // (dort auch die Begruendung, warum `bsto` nicht vorgewaermt wird).
+
+        /** Gesamtfrist des Vorwaermlaufs je Titel. */
+        private const val PREFETCH_TIMEOUT_MS = 10_000L
+
+        /** Frist je Hoster im Vorwaermlauf. */
+        private const val PREFETCH_HOSTER_TIMEOUT_MS = 6_000L
+
+        /**
+         * Hoster je Pack im Vorwaermlauf.
+         *
+         * Die Watch-Seite listet oft acht und mehr Ziele; der Vorwaermlauf
+         * soll den Fokus nicht mit einem Dutzend Anfragen belasten. Drei
+         * Ziele reichen fuer den Sofort-Kandidaten.
+         */
+        private const val PREFETCH_MAX_STREAMS = 3
 
         /** Mehrere gleichzeitige WebViews blockieren den Hauptthread (ANR). */
         private const val MAX_WARMUP_HOSTS = 2

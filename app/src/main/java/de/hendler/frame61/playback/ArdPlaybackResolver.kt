@@ -46,20 +46,28 @@ class ArdPlaybackResolver @Inject constructor(
         directPack?.let { HosterResolver(listOf(it), OkHttpBodyFetcher()) }
     }
 
-    suspend fun resolve(title: String, episodeNumber: Int = 0): List<MirrorCandidate> =
+    suspend fun resolve(
+        title: String,
+        episodeNumber: Int = 0,
+        season: Int = 1
+    ): List<MirrorCandidate> =
         withContext(Dispatchers.IO) {
             val pack = packLoader.loadAllPacks().firstOrNull { it.id == PACK_ID }
                 ?: return@withContext emptyList()
             val show = findShow(pack, title) ?: return@withContext emptyList()
             val episodes = runCatching { interpreter.episodes(pack, show.id) }
                 .getOrDefault(emptyList())
-            val episode = if (episodeNumber > 0) {
-                episodes.firstOrNull { it.episode == episodeNumber }
-            } else {
-                null
-            } ?: episodes.firstOrNull()
+            // Block 8: zuerst (Staffel, Nummer), dann nur die Nummer — die
+            // ARD-Grouping liefert Teaser der ersten Staffel, deren Staffel
+            // nicht immer ausgewiesen ist. Ohne Staffel waehlte die Suche bei
+            // Mehrstaffel-Serien die Folge aus Staffel 1.
+            val episodeId = EpisodeSelection.select(
+                episodes.map { EpisodeTarget(it.id, it.season, it.episode) },
+                season = season,
+                number = episodeNumber
+            )?.id
 
-            val streamTarget = episode?.id ?: show.id
+            val streamTarget = episodeId ?: show.id
             val streams = runCatching { interpreter.streams(pack, show.id, streamTarget) }
                 .getOrDefault(emptyList())
             if (streams.isEmpty()) return@withContext emptyList()
@@ -67,7 +75,7 @@ class ArdPlaybackResolver @Inject constructor(
             streams
                 .sortedByDescending { it.quality?.filter(Char::isDigit)?.toIntOrNull() ?: 0 }
                 .mapNotNull { stream ->
-                    toCandidate(show, episode?.id, episodeNumber, stream)
+                    toCandidate(show, episodeId, episodeNumber, stream)
                 }
         }
 

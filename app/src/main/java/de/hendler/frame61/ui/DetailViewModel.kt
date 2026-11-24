@@ -4,8 +4,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
+import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.SnapshotEpisodeSource
+import de.hendler.frame61.playback.PrefetchController
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
@@ -17,7 +19,8 @@ import javax.inject.Inject
 class DetailViewModel @Inject constructor(
     val catalog: CatalogRepository,
     val episodes: SnapshotEpisodeSource,
-    private val prefs: ProfileDataStore
+    private val prefs: ProfileDataStore,
+    private val prefetchController: PrefetchController
 ) : ViewModel() {
 
     val watchlist: StateFlow<Set<String>> = prefs.watchlist.stateIn(
@@ -28,5 +31,14 @@ class DetailViewModel @Inject constructor(
 
     fun toggleWatchlist(titleId: String) {
         viewModelScope.launch { prefs.toggleWatchlist(titleId) }
+    }
+
+    /**
+     * Block 7: Fokus auf einen Titel/eine Folge — Quelle im Hintergrund
+     * vorwaermen. [episodeNumber]/[season] kommen aus der Folge (Block 8),
+     * damit der Prefetch dieselbe Folge adressiert wie der spätere Start.
+     */
+    fun prefetch(item: CatalogItem, episodeNumber: Int = 0, season: Int = 1) {
+        prefetchController.prefetch(item.title, episodeNumber, season)
     }
 }

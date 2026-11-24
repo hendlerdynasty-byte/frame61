@@ -38,6 +38,15 @@ RETRIES = 3
 TIMEOUT = 20
 USER_AGENT = "frame61-packcheck/1.0 (+https://github.com/; selector verification)"
 ID_PLACEHOLDER = re.compile(r"\{id\}|{{id}}|\{titleId\}|{{titleId}}|\{episodeId\}|{{episodeId}}")
+# Staffel-Platzhalter (Block 8): der Worker prueft die erste Staffel. Ohne die
+# Ersetzung bliebe `{season}` literal im Pfad stehen und die Stream-Pruefung
+# antwortete mit 404.
+SEASON_PLACEHOLDER = re.compile(r"\{season\}|\{\{season\}\}")
+
+
+def fill_season(url: str, season: int = 1) -> str:
+    """Ersetzt `{season}` im Endpoint, bevor die ID-Platzhalter laufen."""
+    return SEASON_PLACEHOLDER.sub(str(season), url)
 
 
 def iso_now() -> str:
@@ -648,7 +657,7 @@ def run_pack(pack_path: Path, target: dict | None, write: bool, root: Path | Non
             if detail_url:
                 first_id = pick_first_result(pack, body, is_json)
                 if first_id:
-                    url = ID_PLACEHOLDER.sub(first_id, detail_url)
+                    url = ID_PLACEHOLDER.sub(first_id, fill_season(detail_url))
                     try:
                         _, detail_body = fetch(
                             url,
@@ -665,7 +674,7 @@ def run_pack(pack_path: Path, target: dict | None, write: bool, root: Path | Non
             if stream_url and detail_body:
                 episode_id = first_episode_id(pack, detail_body)
                 if episode_id:
-                    url = ID_PLACEHOLDER.sub(episode_id, stream_url)
+                    url = ID_PLACEHOLDER.sub(episode_id, fill_season(stream_url))
                     try:
                         _, stream_body = fetch(url, pack.get("baseUrl") or "")
                     except Exception as exc:  # noqa: BLE001

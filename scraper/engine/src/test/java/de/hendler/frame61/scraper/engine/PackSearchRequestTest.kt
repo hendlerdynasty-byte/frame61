@@ -158,4 +158,52 @@ class PackSearchRequestTest {
         assertEquals("/suche/black%20doves", server.takeRequest().path)
         server.shutdown()
     }
+
+    @Test
+    fun `streams carries the season into the endpoint placeholder`() {
+        // Block 8: s.to/aniworld had a hardcoded `staffel-1` — a season-2
+        // episode was requested as season 1. The rule now reads
+        // `staffel-{season}` and the interpreter must fill it.
+        val server = MockWebServer()
+        server.start()
+        server.enqueue(MockResponse().setResponseCode(200).setBody("<html></html>"))
+        val client = PackHttpClient(OkHttpClient())
+        val source = pack(
+            """
+            {
+              "id":"s-to","name":"s.to","baseUrl":"${server.url("/")}",
+              "kind":"html",
+              "search":{"endpoint":"/api/search/suggest","queryParam":"term"},
+              "streams":{"endpoint":"/serie/{titleId}/staffel-{season}/episode-{episodeId}","selector":"button"}
+            }
+            """.trimIndent()
+        )
+
+        PackInterpreter(client).streams(source, "black-doves", "7", season = 2)
+
+        assertEquals("/serie/black-doves/staffel-2/episode-7", server.takeRequest().path)
+        server.shutdown()
+    }
+
+    @Test
+    fun `streams defaults to season 1 so existing packs stay unchanged`() {
+        val server = MockWebServer()
+        server.start()
+        server.enqueue(MockResponse().setResponseCode(200).setBody("<html></html>"))
+        val client = PackHttpClient(OkHttpClient())
+        val source = pack(
+            """
+            {
+              "id":"s-to","name":"s.to","baseUrl":"${server.url("/")}",
+              "kind":"html",
+              "streams":{"endpoint":"/serie/{titleId}/staffel-{season}/episode-{episodeId}","selector":"button"}
+            }
+            """.trimIndent()
+        )
+
+        PackInterpreter(client).streams(source, "black-doves", "7")
+
+        assertEquals("/serie/black-doves/staffel-1/episode-7", server.takeRequest().path)
+        server.shutdown()
+    }
 }

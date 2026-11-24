@@ -153,7 +153,7 @@ fun Frame61(
                     }
                     composable("source_lab") { SourceLabScreen() }
                     composable(
-                        route = "player/{titleId}?episodeId={episodeId}&episodeNumber={episodeNumber}",
+                        route = "player/{titleId}?episodeId={episodeId}&episodeNumber={episodeNumber}&season={season}",
                         arguments = listOf(
                             navArgument("episodeId") {
                                 type = NavType.LongType
@@ -162,13 +162,21 @@ fun Frame61(
                             navArgument("episodeNumber") {
                                 type = NavType.IntType
                                 defaultValue = 0
+                            },
+                            // Block 8: die Staffel gehört zur Episodenadresse —
+                            // ohne sie adressieren s.to/aniworld/bs.to jede
+                            // Staffel-2-Folge als Staffel 1.
+                            navArgument("season") {
+                                type = NavType.IntType
+                                defaultValue = 1
                             }
                         )
                     ) { entry ->
                         val titleId = entry.arguments?.getString("titleId").orEmpty()
                         val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
                         val episodeNumber = entry.arguments?.getInt("episodeNumber") ?: 0
-                        PlayerRouteFor(titleId, episodeId, episodeNumber)
+                        val season = entry.arguments?.getInt("season") ?: 1
+                        PlayerRouteFor(titleId, episodeId, episodeNumber, season)
                     }
                     composable("search") { SearchScreen(onOpenTitle = { id ->
                         navController.navigate("detail/$id")
@@ -243,7 +251,9 @@ fun HomeScreen(navController: NavController) {
             state.error != null -> Text(text = state.error.orEmpty())
             else -> TvHome(
                 content = state.content,
-                onOpenTitle = { navController.navigate("detail/${it.id}") }
+                onOpenTitle = { navController.navigate("detail/${it.id}") },
+                // Block 7: Fokus waermt die Quelle des Titels vor.
+                onPrefetch = { viewModel.prefetch(it) }
             )
         }
     }
@@ -312,9 +322,16 @@ fun DetailScreen(titleId: String, navController: NavController) {
                 Spacer(Modifier.height(16.dp))
                 androidx.compose.material3.Button(
                     onClick = { navController.navigate("player/${current.id}") },
-                    modifier = Modifier.tvFocusable(id = "detail-play", onClick = {
-                        navController.navigate("player/${current.id}")
-                    })
+                    modifier = Modifier.tvFocusable(
+                        id = "detail-play",
+                        onClick = {
+                            navController.navigate("player/${current.id}")
+                        },
+                        // Block 7: Fokus auf „Abspielen“ waermt die Quelle vor.
+                        onFocusChanged = { focused ->
+                            if (focused) detailViewModel.prefetch(current)
+                        }
+                    )
                 ) {
                     Text(text = "Abspielen")
                 }
@@ -352,12 +369,22 @@ fun DetailScreen(titleId: String, navController: NavController) {
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(vertical = 2.dp)
-                                .tvFocusable(id = "episode-${ep.id}", onClick = {
-                                    navController.navigate(
-                                        "player/${current.id}?episodeId=${ep.id}" +
-                                            "&episodeNumber=${ep.number}"
-                                    )
-                                })
+                                .tvFocusable(
+                                    id = "episode-${ep.id}",
+                                    onClick = {
+                                        navController.navigate(
+                                            "player/${current.id}?episodeId=${ep.id}" +
+                                                "&episodeNumber=${ep.number}&season=${ep.season}"
+                                        )
+                                    },
+                                    // Block 7 + 8: Fokus auf die Folge waermt
+                                    // genau diese Staffel/Episode vor.
+                                    onFocusChanged = { focused ->
+                                        if (focused) {
+                                            detailViewModel.prefetch(current, ep.number, ep.season)
+                                        }
+                                    }
+                                )
                         )
                     }
                 }

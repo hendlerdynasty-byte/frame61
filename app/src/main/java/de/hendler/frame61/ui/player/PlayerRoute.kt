@@ -23,7 +23,8 @@ fun PlayerRoute(
     item: CatalogItem,
     profileId: Long,
     episodeId: Long = 0L,
-    episodeNumber: Int = 0
+    episodeNumber: Int = 0,
+    season: Int = 1
 ) {
     val viewModel: PlayerViewModel = hiltViewModel()
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -31,13 +32,14 @@ fun PlayerRoute(
     val captcha by viewModel.captchaRequest.collectAsStateWithLifecycle()
     val diagnosticEvents by PlaybackDiagnostics.events.collectAsStateWithLifecycle()
 
-    LaunchedEffect(item.id, episodeId, episodeNumber) {
+    LaunchedEffect(item.id, episodeId, episodeNumber, season) {
         viewModel.start(
             profileId = profileId,
             titleId = item.id,
             title = item.title,
             episodeId = episodeId,
             episodeNumber = episodeNumber,
+            season = season,
             fallbackCandidates = CatalogPlayback.candidates(item)
         )
     }

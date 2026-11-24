@@ -23,7 +23,7 @@
     "titleSelector": "h1"
   },
   "streams": {
-    "endpoint": "/serie/{titleId}/staffel-1/episode-{episodeId}",
+    "endpoint": "/serie/{titleId}/staffel-{season}/episode-{episodeId}",
     "format": "html",
     "selector": "button.link-box[data-play-url]",
     "urlAttr": "data-play-url",

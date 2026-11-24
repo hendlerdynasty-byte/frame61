@@ -13,6 +13,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.material3.minimumInteractiveComponentSize
 import androidx.compose.ui.Modifier
@@ -105,11 +106,22 @@ fun Modifier.tvFocusable(
     focusedColor: Color = LocalSkin.current.colors.focus,
     /** Player chrome wants 4 dp; other screens use the skin token. */
     ringWidth: Dp? = null,
-    onClick: (() -> Unit)? = null
+    onClick: (() -> Unit)? = null,
+    /**
+     * Fokuswechsel melden (Block 7: Vorwaermen des gefokusten Titels).
+     *
+     * `true` = Fokus erhalten, `false` = Fokus verloren. Der Aufrufer entscheidet,
+     * was er mit dem Ereignis tut — die Kachel selbst bleibt passiv.
+     */
+    onFocusChanged: ((Boolean) -> Unit)? = null
 ): Modifier {
     val registry = LocalTvFocusRegistry.current
     val requester = remember(id) { FocusRequester() }
     val interaction = remember(id) { MutableInteractionSource() }
+    // rememberUpdatedState: die Lambda-Identitaet wechselt bei jeder
+    // Neuzeichnung. Ohne diese Bindung wuerde der Effekt bei jedem
+    // Recompose neu starten und den Prefetch mehrfach ausloesen.
+    val focusCallback by rememberUpdatedState(onFocusChanged)
     // The idiomatic read: focus state straight from the interaction source that
     // is handed to `focusable()`. `onFocusChanged` was unreliable here (measured
     // on the A52: uiautomator reported a focused node, the ring never drew).
@@ -124,6 +136,7 @@ fun Modifier.tvFocusable(
 
     LaunchedEffect(focused, id) {
         if (focused && registry is DefaultTvFocusRegistry) registry.setFocused(id)
+        focusCallback?.invoke(focused)
     }
 
     return this

@@ -40,6 +40,7 @@ class BsToPlaybackResolver @Inject constructor(
     suspend fun resolve(
         slug: String,
         episodeNumber: Int,
+        season: Int = 1,
         titleId: String
     ): List<MirrorCandidate> = withContext(Dispatchers.IO) {
         val slug = slug.trim().trim('/')
@@ -55,9 +56,15 @@ class BsToPlaybackResolver @Inject constructor(
             Log.w(TAG, "bs.to: keine Episoden für $slug")
             return@withContext emptyList()
         }
-        val wanted = episodes.firstOrNull { it.season == 1 && it.number == episodeNumber }
-            ?: episodes.firstOrNull { it.number == episodeNumber }
-            ?: episodes.first()
+        // Block 8: zuerst (Staffel, Nummer) — der alte Abgleich war
+        // `season == 1 && number == n`, eine Staffel-2-Folge traf deshalb nie
+        // und spielte über den Nummer-Fallback die Falsche.
+        val key = EpisodeSelection.select(
+            episodes.map { EpisodeTarget(it.hosterPage, it.season, it.number) },
+            season = season,
+            number = episodeNumber
+        )?.id ?: return@withContext emptyList()
+        val wanted = episodes.firstOrNull { it.hosterPage == key } ?: episodes.first()
         Log.i(TAG, "bs.to: $slug -> S${wanted.season}E${wanted.number} (${wanted.hosterPage})")
 
         // Der Browser löst Challenge + Klick, die Interception liefert die

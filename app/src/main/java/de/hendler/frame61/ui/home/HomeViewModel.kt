@@ -27,11 +27,17 @@ data class HomeUiState(
 class HomeViewModel @Inject constructor(
     application: Application,
     private val catalog: CatalogRepository,
-    private val prefs: ProfileDataStore
+    private val prefs: ProfileDataStore,
+    private val prefetchController: de.hendler.frame61.playback.PrefetchController
 ) : AndroidViewModel(application) {
 
     private val _state = MutableStateFlow(HomeUiState())
     val state: StateFlow<HomeUiState> = _state.asStateFlow()
+
+    /** Block 7: Quelle des gefokusten Titels im Hintergrund vorwaermen. */
+    fun prefetch(item: de.hendler.frame61.meta.CatalogItem) {
+        prefetchController.prefetch(item.title)
+    }
 
     init {
         load()

@@ -66,17 +66,30 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         return parseEpisodes(pack, body)
     }
 
+    /**
+     * Streams zu einem Treffer. `episodeId` ist die **interne** Id der Folge
+     * innerhalb der Quelle (nicht die Folgennummer); `season` adressiert die
+     * Staffel — Packs setzen sie als `{season}` im Endpoint ein (Block 8:
+     * vorher stand dort hart `staffel-1`, eine Staffel-2-Folge wurde als
+     * Staffel 1 adressiert). Default 1 hält bestehende Packs unverändert.
+     */
     fun streams(
         pack: SourcePack,
         id: String,
         episodeId: String? = null,
-        cookies: String? = null
+        cookies: String? = null,
+        season: Int = 1
     ): List<StreamResult> {
         val rule = pack.streams ?: return emptyList()
         val body = http.get(
             pack,
             rule,
-            mapOf("titleId" to id, "id" to id, "episodeId" to (episodeId ?: "")),
+            mapOf(
+                "titleId" to id,
+                "id" to id,
+                "episodeId" to (episodeId ?: ""),
+                "season" to season.coerceAtLeast(1).toString()
+            ),
             cookies
         )
         return parseStreams(pack, body)
