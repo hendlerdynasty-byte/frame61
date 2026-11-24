@@ -645,3 +645,27 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
     `click-v4.junimedclk.com/click?i=…` (Klick-Tracker, 0 Byte Antwort).
     Eine Klick-Kette, kein Player — die WebView würde hier nur die Werbung
     auslösen.
+
+## 2026-11-24 — Embed-Form bleibt host-unabhängig; Test-Erwartung war falsch
+
+- Befund (CI-Lauf `45318941773`, Merge-Branch `zcode/merge-4c2`): Der Test
+  `embed forms and web-first hosts need the hidden webview` schlug fehl
+  (`AssertionError` in Zeile 495). Er erwartete
+  `isWebFirst("https://example.com/e/1") == false`.
+- Sachverhalt: Die Embed-Erkennung ist **seit Lauf 1 host-unabhängig** — sie
+  erkennt die Pfadform (`/e/`, `/embed/`, `/video/`, `/stream/`, `/play/` mit
+  Slash), nicht die Domain. Genau so lösen `odysseusa.cc` und
+  `moflix-stream.click` auf; beide stehen im selben Test als **wahre**
+  WebView-Fälle. `WEB_FIRST_HOSTS` erweitert diese Regel nur um Hosts **ohne**
+  Embed-Form (`uqload.vc`, `flyfile.app`).
+- Default: Der **Code** bleibt unverändert, die **Test-Erwartung** wird
+  korrigiert: „fremde Hosts bleiben unangetastet" gilt nur für Hosts **ohne**
+  Embed-Form (`https://example.com/film/1` → kein WebView). Eine
+  Allowlist-Liste aller Embed-Hosts des Katalogs wäre eine
+  Verhaltensänderung ohne Messung — die Nachtsteuerung verlangt „measure
+  before changing".
+- Nebenwirkung, die beim selben Lauf sichtbar wurde: Die Fehlerklassen des
+  Messharness sind ab Lauf 5 **genauer** (Diagnose-Sitzung je Titel), also
+  nicht 1:1 mit Lauf 4 vergleichbar. Vergleichbar bleiben Kopfzahl der
+  Fehlschläge und Quote; im Bericht ist das ausdrücklich vermerkt.
+

@@ -369,6 +369,115 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run4-d678efb/`
 (UI-Dumps `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`), Auswertung mit
 `~/hendler-dynasty/evidence/frame61/1.5.0/analyse_lauf.py`.
 
+## Lauf 5 — Build `682683d`, 24.11.2026, A52 (DEVIDEOSRC-API greift + Diagnose)
+
+Stichprobe: **identisch** zu Lauf 1–4 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 04:47–05:12 (~25 min). APK `b6e165df…` (signiert,
+`de.hendler.frame61.acceptance`, 20.430.866 B), CI-Lauf `45317857036` grün,
+Smoke `job-54dcdea590ce4451` PASS.
+Geänderte Basis gegenüber Lauf 4: DEVIDEOSRC-Ausdruck korrigiert (mit
+`\s*` nach dem Komma), Serienweg über `/api/resolve`, HTML-Seite ist kein
+Kandidat mehr (fail closed), Diagnose-Sitzung je Titel, jwplayer-Abruf
+(Playlist + Ressourcenliste).
+
+| Kennzahl | Wert | Lauf 4 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Mischwert) | **64 / 100 = 64 %** | 60 % | **+4 pp** |
+| Auflösung p50 / p95 (nur OK-Titel) | 1.616 / 26.958 ms | 1.600 / 27.007 ms | p50 +16 ms, p95 −49 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 2.663 / 28.230 ms | 2.624 / 28.088 ms | p50 +39 ms, p95 +142 ms |
+| Fehlerklassen | 18 × `CONTAINER_UNSUPPORTED`, 9 × `GEO_BLOCKED`, 9 × `EMBED_UNRESOLVED` | 34 / 6 | siehe Befund 2 |
+| Interception | **82** Versuche, **6** mit Medien-URL | 20 / 2 | +62 / +4 |
+
+Die Bildschirm-Auswertung des Laufs meldet `resolveP50Ms=2426`,
+`resolveP95Ms=27113`, `frameP50Ms=2645`, `frameP95Ms=28181` — sie rechnet über
+alle Titel, die Auswertung oben nur über die spielbaren.
+
+Quote je Quellengruppe (gemessene Zeile `QUOTA GROUPEN`):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 4 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 30 | **69 %** | 70 % | −1 pp | `CONTAINER_UNSUPPORTED`: 6 |
+| aniworld | 19 | 17 | **89 %** | 84 % | **+5 pp** | `EMBED_UNRESOLVED`: 2 |
+| moflix | 11 | 4 | **36 %** | 27 % | **+9 pp** | `CONTAINER_UNSUPPORTED`: 7 |
+| filmpalast | 11 | 5 | **45 %** | 27 % | **+18 pp** | `EMBED_UNRESOLVED`: 3 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `CONTAINER_UNSUPPORTED`: 2 |
+
+### Befund 1 — die DEVIDEOSRC-API läuft jetzt (12 POSTs statt 0)
+
+Lauf 4 hatte 16 GETs auf die Player-Seite und **null** POSTs. Lauf 5 hat im
+Logcat-Fenster:
+
+| Anfrage | Anzahl |
+|---|---|
+| `GET https://devideosrc.co/movie/tt…` | 10 |
+| `GET https://devideosrc.co/custom/serial/tt…/1/1` | 2 |
+| `POST https://devideosrc.co/api/embed-links` | **10** |
+| `POST https://devideosrc.co/api/resolve` | **2** |
+
+Beide Endpunkte sind damit **live auf dem Gerät** — Film über
+`/api/embed-links`, Serie über `/api/resolve`. Die Auswertung der
+`QUOTA CAUSE`-Ketten bestätigt es unabhängig davon: 5 Titel zeigen die Stufe
+`devideosrc: Antwort 984 B: 4 Quellen` (bzw. 1206 B / 5 Quellen). Die Kette
+zeigt nur die **letzten 6** Resolver-Ereignisse, die Zahl 5 ist deshalb eine
+Untergrenze.
+
+### Befund 2 — die Fehlerklassen sind jetzt **genauer**, nicht nur anders
+
+In Lauf 4 standen 34 × `CONTAINER_UNSUPPORTED` und 6 × `NO_CANDIDATE`. In Lauf 5
+gibt es **kein** `NO_CANDIDATE` mehr, dafür `GEO_BLOCKED` (9) und
+`EMBED_UNRESOLVED` (9). Grund: Der Messharness öffnet jetzt je Titel eine
+Diagnose-Sitzung. Vorher wurden alle Resolver-Ereignisse verworfen, die
+Klassifikation konnte nur `NO_CANDIDATE` heißen; jetzt sieht sie 403/451
+(`GEO_BLOCKED`), Captcha/Timeout/Embed (`EMBED_UNRESOLVED`, `TIMEOUT`) und den
+HTML-Schutz (`EMBED_UNRESOLVED`). **Die Fehlerklassen von Lauf 4 und Lauf 5
+sind deshalb nicht 1:1 vergleichbar** — vergleichbar ist die Kopfzahl der
+Fehlschläge (40 in Lauf 4, 36 in Lauf 5) und die Quote.
+
+Die Ursache im Klartext (`cause=` der FAIL-Zeile, 36 Titel):
+
+| Ursache | Titel |
+|---|---|
+| `Hoster-Zeitüberschreitung` | 17 |
+| `Hoster fehlgeschlagen` | 14 |
+| `Hoster aufgelöst` (Kandidat da, Player scheitert) | 5 |
+
+### Befund 3 — vier Titel mehr, **kein Verlust**
+
+| idx | Lauf 4 | Lauf 5 | Ursache |
+|---|---|---|---|
+| 34 | FAIL (`aniworld.to` ×3) | OK (`box-1097-y.vmbox.space`) | Gewinn über die DEVIDEOSRC-Providerkette |
+| 36 | FAIL (`devideosrc.co`) | OK (`s8-5042yyg.s1q2105.com`) | Gewinn über die DEVIDEOSRC-Providerkette |
+| 49 | FAIL (`moflix.rpmplay.xyz`) | OK (`cdn.plyr.io`) | Gewinn über die Providerkette |
+| 69 | FAIL (`devideosrc.co`) | OK (`s9-s1001604.97bf1.com`) | Gewinn über die DEVIDEOSRC-Providerkette |
+
+64 = 60 + 4: In dieser Stichprobe hat **kein** Titel verloren. Die Gruppenquote
+verschiebt sich entsprechend: filmpalast +18 pp, moflix +9 pp, aniworld +5 pp,
+serienstream −1 pp (Rundung 30/43 = 69,8 %).
+
+### Befund 4 — die Interception läuft viermal so oft
+
+82 statt 20 Versuche, 6 statt 2 mit echter Medien-URL. Grund: Die
+DEVIDEOSRC-API liefert je Titel mehrere Anbieter-Embeds; jeder davon bekommt
+im Rahmen des Titelbudgets einen WebView-Versuch. Der WebView-Budget (ein
+Versuch je Titel) bleibt unverändert — die Versuche stecken in der
+Anbieterkette, nicht in einer Schleife.
+
+**Fehlziel-Hosts der 36 Fehlschläge:** `moflix.rpmplay.xyz` 11,
+`uqload.vc` 7, `moflix-stream.fans` 4, `dropcdn.io` 7 (auf 4 Subdomains),
+`junimedclk.com` 1, `strmup.to` 1, `srv2.supercdn.ws` 1, `flyfile.app` 1.
+
+**Abweichung von der Nachtsteuerung (Regel 1, „Begründe jede Abweichung"):**
+Die Reihenfolge bs.to → Doodstream → Filemoon bleibt umgesetzt, trägt in dieser
+Stichprobe aber weiterhin nichts bei — die Fehlziel-Hosts sind moflix (15) und
+uqload (7). Block 4c-2 (`uqload.vc`, `flyfile.app` als WebView-Ziel) ist deshalb
+als nächstes dran; danach moflix.
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run5-e2ec45d/`
+(UI-Dumps `polls/p*/02.xml`, Logcat `polls/p*/01-logcat.txt`, Startbild
+`A4-start/03.png`), Auswertung mit `analyse_lauf.py` und `analyse_ursachen.py`
+(beide unter `~/hendler-dynasty/evidence/frame61/1.5.0/`).
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

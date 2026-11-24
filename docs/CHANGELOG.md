@@ -49,6 +49,12 @@
 - Die generische Embed-Stufe greift jetzt auch **innerhalb** einer Kette
   (`depth > 0`): Die von DEVIDEOSRC gelieferten Provider-Embeds sind erst
   dort spielbar. Das WebView-Budget (ein Versuch je Titel) bleibt.
+- **Embed-Vertrag im Test festgeschrieben:** Die Embed-Form im Pfad ist
+  **host-unabhängig** (seit Lauf 1 so gemessen: `odysseusa.cc` und
+  `moflix-stream.click` lösen nur so auf); die Host-Liste (`uqload.vc`,
+  `flyfile.app`) erweitert nur um Hosts **ohne** Embed-Form. Der Test des
+  Merge-Branches behauptete das Gegenteil („fremde Hosts bleiben unangetastet")
+  und fiel im CI durch — die Erwartung war falsch, nicht der Code.
 - **Messbarkeit:** Der Messharness startete keine Diagnose-Sitzung — alle
   Resolver-Ereignisse wurden verworfen, die Fehlerklasse konnte nur
   `NO_CANDIDATE` heißen. Pro Titel läuft jetzt eine Sitzung; die QUOTA-Zeile
@@ -65,6 +71,13 @@
   60/100 = 60 %, Gruppen 65/84/27/36/50/50 %, 34 × `CONTAINER_UNSUPPORTED`,
   6 × `NO_CANDIDATE` — siehe [QUOTA.md](QUOTA.md). Live-Abfrage beider
   devideosrc-Endpunkte am 24.11.2026.
+- Lauf 5 (Build `682683d`, A52): gleiche Stichprobe (Seed 20261122), Quote
+  **64/100 = 64 %** (+4 pp), Gruppen 69/89/36/45/50/50 %; **12 POSTs** auf die
+  devideosrc-API (10 × `/api/embed-links`, 2 × `/api/resolve`) statt 0 in Lauf 4,
+  vier Titel mehr und **kein Verlust**. Die Fehlerklassen sind jetzt genauer
+  (18 × `CONTAINER_UNSUPPORTED`, 9 × `GEO_BLOCKED`, 9 × `EMBED_UNRESOLVED`),
+  weil der Harness je Titel eine Diagnose-Sitzung öffnet — siehe
+  [QUOTA.md](QUOTA.md).
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 
