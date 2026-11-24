@@ -38,7 +38,7 @@ SKIN_TOKENS = (
     "detailLayout",
     "playerChrome",
 )
-HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep", "copy", "js", "pow"}
+HOSTER_ACTIONS = {"get", "regex", "json", "post", "sleep", "copy", "js", "pow", "aesgcm"}
 COLOR_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
 
 
@@ -256,6 +256,8 @@ def validate_hoster(path: Path, root: Path, report: Report) -> None:
             report.error(where, f"steps[{index}] copy ohne url")
         if step.get("action") == "js" and not non_empty(step.get("script")):
             report.error(where, f"steps[{index}] js ohne script")
+        if step.get("action") == "aesgcm" and not non_empty(step.get("input")):
+            report.error(where, f"steps[{index}] aesgcm ohne input")
         if step.get("action") == "pow":
             if not non_empty(step.get("input")):
                 report.error(where, f"steps[{index}] pow ohne input")

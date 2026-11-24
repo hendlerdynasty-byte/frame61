@@ -335,6 +335,14 @@ class HosterResolver(
                         ?: return HosterOutcome.Failed(url, "json: Pfad '${step.path}' ohne Wert", used)
                     vars[step.saveAs ?: "json"] = value
                 }
+                "aesgcm" -> {
+                    // Verschluesselter playback-Block (Filemoon, 24.11.2026).
+                    val input = vars[step.input.orEmpty()]
+                        ?: return HosterOutcome.Failed(url, "aesgcm: input '${step.input}' unbekannt", used)
+                    val value = PlaybackPayloadCipher.decrypt(input)
+                        ?: return HosterOutcome.Failed(url, "aesgcm: playback-Block nicht lesbar", used)
+                    vars[step.saveAs ?: "aesgcm"] = value
+                }
                 "copy" -> {
                     // Direct stream: no hoster page, just pass the URL through.
                     val value = expand(step.url.orEmpty(), url, vars)

@@ -8,6 +8,7 @@ bricht den Lauf nicht ab; der Pack bekommt `verified:false` und `check.reason`.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import http.cookiejar
 import json
@@ -261,6 +262,14 @@ def run_steps(pack: dict, source_url: str, opener, referer: str) -> tuple[str | 
             if solution is None:
                 return None, page_body, f"step {index}: pow ohne Lösung"
             variables[step.get("saveAs") or "solution"] = solution
+        elif action == "aesgcm":
+            raw = variables.get(step.get("input") or "")
+            if raw is None:
+                return None, page_body, f"step {index}: input fehlt"
+            plain = decrypt_playback(raw)
+            if plain is None:
+                return None, page_body, f"step {index}: playback-Block nicht lesbar"
+            variables[step.get("saveAs") or "aesgcm"] = plain
         elif action == "js":
             return None, page_body, f"step {index}: js nur im App-WebView ausführbar"
     result_name = pack.get("result")
@@ -270,6 +279,45 @@ def run_steps(pack: dict, source_url: str, opener, referer: str) -> tuple[str | 
     if not final.startswith("https://"):
         return None, page_body, f"result non-https: {final[:80]}"
     return final, page_body, ""
+
+
+def b64url_decode(text: str) -> bytes:
+    clean = text.replace("-", "+").replace("_", "/")
+    return base64.b64decode(clean + "=" * ((4 - len(clean) % 4) % 4))
+
+
+def decrypt_playback(body: str) -> str | None:
+    """Entschluesselt den playback-Block (AES-256-GCM) eines Video-JSON.
+
+    Schluesselauswahl 1:1 wie der Resolver: Version v -> Teile v und 31-v
+    (1-basiert), sonst alle Teile (Filemoon, belegt 24.11.2026).
+    """
+    try:
+        from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    except ImportError:
+        return None
+    try:
+        playback = json.loads(body).get("playback") or {}
+        iv = b64url_decode(playback["iv"])
+        payload = b64url_decode(playback["payload"])
+        parts = [part for part in playback.get("key_parts", []) if part]
+        version = int(playback.get("version") or 0)
+    except (AttributeError, KeyError, TypeError, ValueError):
+        return None
+    order = [version, 31 - version] if 1 <= version <= 20 else []
+    picked = [parts[index - 1] for index in order if 1 <= index <= len(parts)] if order else []
+    if not picked:
+        picked = parts
+    try:
+        key = b"".join(b64url_decode(part) for part in picked)
+    except (ValueError, TypeError):
+        return None
+    if len(key) not in (16, 24, 32):
+        return None
+    try:
+        return AESGCM(key).decrypt(iv, payload, None).decode("utf-8")
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def classify(body: str, fallback: str) -> str:

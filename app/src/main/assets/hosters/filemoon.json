@@ -1,8 +1,8 @@
 {
   "id": "filemoon",
   "name": "Filemoon",
-  "version": 3,
-  "verified": false,
+  "version": 4,
+  "verified": true,
   "domains": [
     "filemoon.to",
     "filemoon.sx",
@@ -24,81 +24,31 @@
       "saveAs": "code"
     },
     {
-      "action": "post",
-      "url": "https://{host}/api/videos/{code}/captcha",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://{host}",
-        "Referer": "https://{host}/d/{code}"
-      },
-      "body": "{}",
-      "saveAs": "challenge"
-    },
-    {
-      "action": "json",
-      "input": "challenge",
-      "path": "pow_nonce",
-      "saveAs": "nonce"
-    },
-    {
-      "action": "json",
-      "input": "challenge",
-      "path": "pow_token",
-      "saveAs": "powToken"
-    },
-    {
-      "action": "json",
-      "input": "challenge",
-      "path": "pow_difficulty",
-      "saveAs": "difficulty"
-    },
-    {
-      "action": "pow",
-      "algorithm": "filemoon-v1",
-      "input": "nonce",
-      "difficultyInput": "difficulty",
-      "separator": ":",
-      "maxIterations": 2000000,
-      "saveAs": "solution"
-    },
-    {
-      "action": "post",
-      "url": "https://{host}/api/videos/{code}/captcha/verify",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://{host}",
-        "Referer": "https://{host}/d/{code}"
-      },
-      "body": "{\"pow_token\":\"{powToken}\",\"solution\":\"{solution}\"}",
-      "saveAs": "verify"
-    },
-    {
-      "action": "json",
-      "input": "verify",
-      "path": "token",
-      "saveAs": "captchaToken"
-    },
-    {
       "action": "get",
-      "url": "https://{host}/api/videos/{code}/playback",
-      "headers": {
-        "X-Captcha-Token": "{captchaToken}",
-        "Origin": "https://{host}",
-        "Referer": "https://{host}/d/{code}"
-      },
-      "saveAs": "playback"
+      "url": "https://{host}/api/videos/{code}",
+      "saveAs": "video"
     },
     {
-      "action": "regex",
-      "input": "playback",
-      "pattern": "\"(?:file|src)\"\\s*:\\s*\"(https:[^\"]+)\"",
-      "group": 1,
+      "action": "aesgcm",
+      "input": "video",
+      "saveAs": "sources"
+    },
+    {
+      "action": "json",
+      "input": "sources",
+      "path": "sources.0.url",
       "saveAs": "file"
     }
   ],
-  "last_check": "2026-11-22T01:30:45Z",
+  "last_check": "2026-11-24T05:17:47Z",
   "check": {
-    "status": "step_failed",
-    "reason": "step 9 get: HTTP 405"
+    "status": "verified",
+    "reason": "GET /api/videos/{code} liefert den playback-Block (AES-256-GCM); nach der Entschluesselung steht die m3u8 (HTTP 200, application/vnd.apple.mpegurl)",
+    "checked": [
+      "aesgcm",
+      "json:sources.0.url"
+    ],
+    "misses": [],
+    "http_status": 200
   }
 }

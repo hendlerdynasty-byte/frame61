@@ -98,7 +98,7 @@ interface MediaInterceptor {
 /** Validation and file loading without an Android Context. */
 object HosterPackValidator {
 
-    val ACTIONS = setOf("get", "regex", "json", "post", "sleep", "copy", "js", "pow")
+    val ACTIONS = setOf("get", "regex", "json", "post", "sleep", "copy", "js", "pow", "aesgcm")
 
     val json = Json {
         ignoreUnknownKeys = true
@@ -131,6 +131,7 @@ object HosterPackValidator {
                     if (step.input.isNullOrBlank()) return "step $index: input fehlt"
                     if (step.path.isNullOrBlank()) return "step $index: path fehlt"
                 }
+                "aesgcm" -> if (step.input.isNullOrBlank()) return "step $index: input fehlt"
                 "sleep" -> if (step.ms < 0) return "step $index: negative sleep"
                 "copy" -> if (step.url.isNullOrBlank()) return "step $index: url fehlt"
                 "js" -> if (step.script.isNullOrBlank()) return "step $index: script fehlt"
