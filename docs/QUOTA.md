@@ -827,6 +827,82 @@ Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run9-7cac713/`
 `analyse_lauf.py run9-7cac713/polls run8-c6465fa/polls` und
 `analyse_ursachen.py run9-7cac713/polls`.
 
+## Lauf 10 — Build `ebec382`, 24.11.2026, A52 (Block 7 + Block 8)
+
+Stichprobe: **identisch** zu Lauf 1–9 (Training, Seed `20261122`, 100 Titel,
+Katalog 997). Dauer 21:55–22:31 (~36 min). Signiertes APK `fac02c59…`
+(20.184.325 B), CI-Lauf `45480868905` grün (199/199 Tests, Lint 0 Errors).
+Geänderte Basis gegenüber Lauf 9: **Block 7** (Vorwaermen auf Fokus) und
+**Block 8** (Staffel gehört zur Episodenadresse, Resume-Schluessel aus
+Titel+Staffel+Nummer).
+
+| Kennzahl | Wert | Lauf 9 | Delta |
+|---|---|---|---|
+| Erfolgsquote (Produktion) | **69 / 100 = 69 %** | 64 % | **+5 pp** |
+| Fast-Path | **68 / 100 = 68 %** | 63 % | **+5 pp** |
+| Auflösung p50 / p95 (nur OK-Titel) | 2.567 / 27.152 ms | 2.286 / 27.219 ms | p50 +281 ms, p95 −67 ms |
+| Startzeit p50 / p95 (nur OK-Titel) | 2.928 / 28.502 ms | 2.793 / 27.880 ms | p50 +135 ms, p95 +622 ms |
+| Fehlerklassen (Produktion) | 14 × `EMBED_UNRESOLVED`, 9 × `GEO_BLOCKED`, 8 × `CONTAINER_UNSUPPORTED` | 16 / 11 / 9 | −2 / −2 / −1 |
+| Fehlerklassen (Fast) | 14 × `EMBED_UNRESOLVED`, 9 × `CONTAINER_UNSUPPORTED`, 9 × `GEO_BLOCKED` | 15 / 11 / 11 | −1 / −2 / −2 |
+| Interception | **189** Versuche, **9 Titel** mit Medien-URL | 202 / 11 | −13 / −2 |
+
+Quote je Quellengruppe (Produktion):
+
+| Gruppe | Titel | spielbar | Quote | Lauf 9 | Delta | häufigste Fehlerklasse |
+|---|---|---|---|---|---|---|
+| serienstream | 43 | 32 | **74 %** | 72 % | +2 pp | `EMBED_UNRESOLVED`: 6 |
+| aniworld | 19 | 18 | **94 %** | 89 % | **+5 pp** | `EMBED_UNRESOLVED`: 1 |
+| filmpalast | 11 | 7 | **63 %** | 45 % | **+18 pp** | `EMBED_UNRESOLVED`: 3 |
+| moflix | 11 | 4 | **36 %** | 27 % | **+9 pp** | `CONTAINER_UNSUPPORTED`: 5 |
+| ard | 10 | 5 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 3 |
+| bsto | 6 | 3 | 50 % | 50 % | 0 pp | `GEO_BLOCKED`: 2 |
+
+Im Fast-Path kippt nur filmpalast 63→54 % (idx 84: Fast FAIL, Produktion OK);
+die übrigen Gruppen bleiben identisch.
+
+### Befund 1 — 69 % ist die bisher höchste Quote, aber **keine** Block-Wirkung
+
+Sechs Gewinne und ein Verlust gegenüber Lauf 9: idx 14, 49, 50, 69, 82, 84
+wurden OK (Provider `cdn.plyr.io`, `cloudwindow-route.com`, `97bf1.com`,
+`akamaihd.net`, `s1q2105.com`), idx 72 verlor (previously `cdn.plyr.io`, jetzt
+`ds2.dropcdn.io`). Jede Änderung liegt an einem **anderen Anbieter** — das ist
+Provider-Rotation, nicht Wirkung von Block 7/8. Beide Blöcke sind
+**oberflächengebunden**: der Vorwaermlauf hängt am Fokus der Katalogansicht,
+die Staffel-Adressierung an der Episodenauswahl; der Mess-Harness
+(`PlaybackQuotaActivity`) löst die Titel **ohne** Katalogfokus und **ohne**
+Episodenkontext auf. Der Messpfad ist damit unverändert — die Quotedifferenz
+kann per Konstruktion nicht aus Block 7/8 stammen.
+
+### Befund 2 — die toten Hosts bleiben dieselben
+
+`moflix.rpmplay.xyz` (8 Titel) und `r1.dropcdn.io` (6) sind unverändert die
+häufigsten Fehlziele; `ds2.dropcdn.io` (5) und `ds1.dropcdn.io` (2) kommen
+dazu. Der blockierte Pfad ist also nicht behoben, die Anbieterliste rotiert
+nur. Lauf 10 bestaetigt damit die Dauerhafte Erkenntnis: **eine Kopfquote
+allein belegt keinen Block** — belastbar sind nur die Zuordnung je Titel und
+die Host-Exposition.
+
+Ursachenkette der 31 Fehlschläge: 22 × `Hoster-Zeitüberschreitung` (Lauf 9:
+21), 8 × `keine_weitere_Alternative`, 1 × `Hoster_fehlgeschlagen`. Die
+Alternative-Kette beendet 8 Titel nach 60.005–60.009 ms mit zwei geprüften
+WebView-Kandidaten — dieselbe Signatur wie in Lauf 9.
+
+### Befund 3 — Startzeit praktisch unveraendert
+
+Startzeit p50 2.928 ms (Lauf 9: 2.793 ms), p95 28.502 ms (27.880 ms). Die
+p95 liegt weiter bei ~28 s: das sind die Titel, deren Kette leer bis zum
+60-s-Alternativbudget laeuft. Der Vorwaermlauf aendert daran nichts, weil er
+im Harness gar nicht greift — sein Nutzen muss **im Player** gemessen
+werden (Fokus→OK gegenueber Fokus→2 s→OK, Protokollzeile „Erstes Bild nach
+… ms").
+
+Belege: `~/hendler-dynasty/evidence/frame61/1.5.0/run10-ebec382/`
+(Enddump `polls/latest.xml`, Poll-Dumps `polls/p*/0*.xml`, signiertes APK
+`app-acceptance-ebec382.apk`, sha256 `fac02c5901b4ed94c2e7e52fb0265d14fed8cfcc1cfee299ba74b980dcfac66b`,
+CI-Evidenz `gate-evidence/`), Auswertung mit
+`tools/measure/analyse_lauf.py run10-ebec382/polls run9-7cac713/polls` und
+`tools/measure/analyse_ursachen.py run10-ebec382/polls`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus
