@@ -30,6 +30,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
@@ -68,6 +70,20 @@ class AutoPlaybackResolver @Inject constructor(
     )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
+
+    /**
+     * Sperre je Auflösungsschlüssel — **Single-Flight**.
+     *
+     * Die versteckte WebView ist app-weit serialisiert ([WebViewGate]). Zwei
+     * gleichzeitige Auflösungen desselben Titels (Player-Start und Fehler-
+     * recovery, oder zwei Klicks auf denselben Titel) verdoppeln nicht nur
+     * die Netzlast, sie **stehlen sich gegenseitig den WebView-Slot**: der
+     * zweite Versuch stand in der Warteschlange und lief in den 20-s-Deckel,
+     * ohne eine einzige Anfrage abzusetzen (gemessen 23.11.: 7 von 14
+     * Versuchen mit 0 Anfragen). Der zweite Aufrufer wartet jetzt unter der
+     * Sperre und findet das Ergebnis des ersten im Cache.
+     */
+    private val resolutionLocks = ConcurrentHashMap<String, Mutex>()
 
     /**
      * Scope für die parallelen Quellen-Calls. Er gehört nicht zum Aufrufer:
@@ -175,41 +191,85 @@ class AutoPlaybackResolver @Inject constructor(
         withContext(Dispatchers.IO) {
             val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
             val key = "$title|$episodeNumber|${disabled.hashCode()}"
-            val now = System.currentTimeMillis()
-            if (!fresh) cache[key]?.takeIf { now - it.at < CACHE_MS }?.let {
-                Log.i(TAG, "cache hit '$title' (${it.mirrors.size} mirrors)")
-                trace(sessionId, "cache", "Treffer mit ${it.mirrors.size} Kandidaten")
-                return@withContext it.mirrors
-            }
+            cacheHit(key, title, sessionId, fresh)?.let { return@withContext it }
 
-            val allPacks = packLoader.loadAllPacks().filter { it.id !in disabled }
-            val packs = allPacks.filter { it.captcha == null }
-            Log.i(
-                TAG,
-                "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
-                    "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
-                    "disabled=${disabled.sorted()} grace=$graceMs"
-            )
-
-            val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
-
-            // Captcha-Quellen sind die letzte Runde und nur im vollständigen
-            // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
-            // mehrere 9-s-Blöcke verlängern (gemessen 27 s ohne Kandidat).
-            val captchaCandidates = if (candidates.isEmpty() && graceMs == 0L) {
-                allPacks.filter { it.captcha != null }.flatMap { pack ->
-                    resolveWithTimeout(pack, title, episodeNumber, sessionId)
-                }
-            } else {
-                emptyList()
+            // Single-Flight: unter der Sperre prüft der zweite Aufrufer den
+            // Cache erneut — der erste hat inzwischen aufgelöst.
+            val lock = resolutionLocks.getOrPut(key) { Mutex() }
+            lock.withLock {
+                cacheHit(key, title, sessionId, fresh)?.let { return@withLock it }
+                resolveNow(title, episodeNumber, sessionId, graceMs, disabled, key)
             }
-            val ordered = order(candidates + captchaCandidates)
-            if (ordered.isEmpty()) {
-                Log.w(TAG, "all sources exhausted for '$title' ep=$episodeNumber")
-            }
-            cache[key] = CacheEntry(now, ordered)
-            ordered
         }
+
+    /**
+     * Cache-Treffer — [fresh] umgeht ihn bewusst (Fehler-recovery).
+     */
+    private suspend fun cacheHit(
+        key: String,
+        title: String,
+        sessionId: Long,
+        fresh: Boolean
+    ): List<MirrorCandidate>? {
+        if (fresh) return null
+        val entry = cache[key] ?: return null
+        val age = System.currentTimeMillis() - entry.at
+        if (age >= ttlFor(entry.mirrors)) return null
+        Log.i(TAG, "cache hit '$title' (${entry.mirrors.size} mirrors, ${age} ms alt)")
+        trace(sessionId, "cache", "Treffer mit ${entry.mirrors.size} Kandidaten")
+        return entry.mirrors
+    }
+
+    /**
+     * Die eigentliche Auflösung — ohne Cache, ohne Single-Flight.
+     */
+    private suspend fun resolveNow(
+        title: String,
+        episodeNumber: Int,
+        sessionId: Long,
+        graceMs: Long,
+        disabled: Set<String>,
+        key: String
+    ): List<MirrorCandidate> {
+        val allPacks = packLoader.loadAllPacks().filter { it.id !in disabled }
+        val packs = allPacks.filter { it.captcha == null }
+        Log.i(
+            TAG,
+            "resolve '$title' ep=$episodeNumber active=${allPacks.size} " +
+                "immediate=${packs.size} deferredCaptcha=${allPacks.size - packs.size} " +
+                "disabled=${disabled.sorted()} grace=$graceMs"
+        )
+
+        val candidates = collectCandidates(packs, title, episodeNumber, sessionId, graceMs)
+
+        // Captcha-Quellen sind die letzte Runde und nur im vollständigen
+        // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
+        // mehrere 9-s-Blöcke verlängern (gemessen 27 s ohne Kandidat).
+        val captchaCandidates = if (candidates.isEmpty() && graceMs == 0L) {
+            allPacks.filter { it.captcha != null }.flatMap { pack ->
+                resolveWithTimeout(pack, title, episodeNumber, sessionId)
+            }
+        } else {
+            emptyList()
+        }
+        val ordered = order(candidates + captchaCandidates)
+        if (ordered.isEmpty()) {
+            Log.w(TAG, "all sources exhausted for '$title' ep=$episodeNumber")
+        }
+        cache[key] = CacheEntry(System.currentTimeMillis(), ordered)
+        ordered
+    }
+
+    /**
+     * Wie lange ein Cache-Eintrag gilt.
+     *
+     * Ein **leeres** Ergebnis wird nur kurz gehalten: die Anbieterliste der
+     * Indexseiten rotiert (gemessen 24.11.), ein Titel, der heute keine
+     * Quelle hat, kann Minuten später wieder eine haben. Mit 15 Minuten
+     * blieb ein Fehlschlag bis zum Neustart der App gesperrt.
+     */
+    private fun ttlFor(mirrors: List<MirrorCandidate>): Long =
+        PlaybackCachePolicy.ttlMs(mirrors.size)
 
     private suspend fun resolveWithTimeout(
         pack: SourcePack,
@@ -666,8 +726,6 @@ class AutoPlaybackResolver @Inject constructor(
 
         /** Frist für die Alternative-Kette nach einem Fehlschlag. */
         private const val ALTERNATIVE_TIMEOUT_MS = 32_000L
-
-        private const val CACHE_MS = 15L * 60L * 1000L
 
         /** Vorlauf nach dem ersten Kandidaten, bevor der Rest verworfen wird. */
         const val FIRST_CANDIDATE_GRACE_MS = 600L
