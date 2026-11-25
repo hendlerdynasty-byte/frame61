@@ -1042,6 +1042,27 @@ Release 1.5.0/VC6 darf über den Update-Kanal veröffentlicht werden.
 Belege: `holdout-9d14350/polls/latest.xml`, Auswertung
 `tools/measure/analyse_lauf.py holdout-9d14350/polls "" holdout`.
 
+## Session-Stabilität 1.5.0 (A52, Build `9d14350`, 25.11.2026)
+
+`SessionStressActivity` (Acceptance-Variante): 50 Titelwechsel mit den fünf
+mitgelieferten Container-Assets (HLS, MP4, MKV, AVI, MPEG-TS), 20
+Resume-Sprünge (Position gespeichert und wieder geöffnet), 10 Profilwechsel,
+je Titel 36 s Wiedergabe. Ergebnis nach 30,2 Minuten:
+
+```
+SESSION PASS titles=50 resumeJumps=20 profileChanges=10 errors=0
+elapsedMs=1811946 maxHeap=55798224
+```
+
+- Kein Crash, kein ANR, kein hängender Prozess; native Heap-Spitze 55,8 MB.
+- **Einschränkung, ehrlich benannt:** Das Harness spielt lokale Assets
+  (`asset:///diagnostics/sample.*`), nicht die Netzpfade — es belegt die
+  Player-Kette, Resume und Profiltrennung, **nicht** die Quellenstabilität.
+- Zwei vorherige Anläufe am selben Tag wurden durch fremde Debug-Apps auf dem
+  geteilten Gerät beendet (Vordergrundübernahme + Prozess-Neustart, kein
+  App-Crash); Fortschritt 37/50 bzw. 33/50 mit 0 Fehlern. Rohbelege:
+  `~/hendler-dynasty/evidence/frame61/1.5.0/stress-9d14350/`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

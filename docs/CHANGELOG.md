@@ -261,6 +261,13 @@
   `~/hendler-dynasty/evidence/frame61/1.5.0/holdout-9d14350/polls/`.
   **Damit ist die Veröffentlichungsregel erfüllt.**
 
+- **Sessiontest 1.5.0 (A52, `9d14350`, 25.11.2026):** `SESSION PASS
+  titles=50 resumeJumps=20 profileChanges=10 errors=0 elapsedMs=1811946
+  maxHeap=55798224` — 30,2 Minuten, fünf Container (HLS, MP4, MKV, AVI,
+  MPEG-TS), 20 Resume-Sprünge, 10 Profilwechsel, kein Crash/ANR. Grenze: das
+  Harness spielt lokale Assets, nicht die Netzpfade. Rohbelege:
+  `~/hendler-dynasty/evidence/frame61/1.5.0/stress-9d14350/`.
+
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 
 #### Hinzugefügt

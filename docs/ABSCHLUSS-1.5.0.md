@@ -23,7 +23,7 @@ und in den verlinkten Dokumenten.
 | Quellenabdeckung | 🟡 | 31 Source-Packs, **12 live verifiziert** (`tools/packs_report.py --check` → OK); 14 Indexseiten: **10 verifiziert**, 9/14 auf dem A52 erreichbar; Hoster **3/10** Kette-verifiziert (vidmoly, filemoon, direct), **2** davon auf dem A52 abgespielt. Die übrigen 7 Hoster sind mit HTTP-Status/Grund blockiert (`docs/HOSTERS.md`). Das Ziel „10/10 Hoster" ist **verfehlt**, die Abweichung ist belegt. |
 | Titel-Quote Training (Lauf 11) | 🟡 | **67/100 (67 %)**, Fast 66/100. Die 95-%-Marke des Auftrags ist nicht erreicht; die Grenze liegt auf der Hoster-Ebene (dropcdn/rpmplay), nicht in der App. Delta zu Lauf 10 (69/100) ist Provider-Rotation. |
 | Holdout-Quote | 🟢 | Seed `20261123`, disjunkt zur Trainingsprobe: **70/100 (70 %)**, Fast 68/100 — höher als im Training, also keine Überanpassung. Publikationsregel erfüllt. |
-| Session-Stabilität (30 min, 50/20/10) | ⏳ | `SessionStressActivity` mit den fünf Container-Assets — Ergebnis unten. |
+| Session-Stabilität (30 min, 50/20/10) | 🟢 | `SESSION PASS titles=50 resumeJumps=20 profileChanges=10 errors=0 elapsedMs=1811946 maxHeap=55.798.224` (30,2 min) auf dem A52 mit den fünf Container-Assets (HLS, MP4, MKV, AVI, MPEG-TS). Kein Crash, kein ANR. Zwei frühere Anläufe wurden durch fremde Debug-Apps auf dem geteilten Gerät beendet (Vordergrundübernahme + Prozess-Neustart, kein App-Fehler; 37/50 bzw. 33/50 mit 0 Fehlern) — der PASS-Lauf lief ohne Unterbrechung. |
 | Regression: Tests, Lint, APK-Größe | 🟢 | CI `45582003989`: **203 Tests, 0 Fehler, 0 Skips** (33 Report-Dateien), Lint **0 Errors / 109 Warnings**, Debug-APK 38 505 413 B = **36,7 MiB** (< 45 MiB). |
 | Performance | 🔴 | **Nicht neu gemessen (STALE).** Die Gates (Kaltstart p95 334 ms, Scroll p95 22 ms, Jank 3,01 %) stammen vom Release 1.3.0 (`docs/PERF2.md`). Für 1.5.0 fehlt die Nachmessung: die Device-Bridge bietet kein `force-stop`, ein Macrobenchmark-Lauf ist nicht Teil des CI. Es gibt **keinen Beleg** für eine Verschlechterung — und keinen dagegen. |
 | Release-Artefakte | 🟢 | APK `ee415ab9…` (19 963 388 B), AAB `39a36476…` (24 667 262 B), Zertifikat `1201f46d…` unverändert; `aapt2`: `versionCode 6`, `versionName 1.5.0`, minSdk 23, targetSdk 36; `apksigner verify`/`jarsigner -verify` bestätigt. Geräte-Smoke des Release-APK unten. |
@@ -40,6 +40,7 @@ und in den verlinkten Dokumenten.
 | Release-AAB | 24 667 262 B, sha256 `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc` |
 | Signatur | `CN=Frame61, O=Hendler Dynasty, C=DE`, Zertifikat-SHA-256 `1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52` |
 | Quote Training (Lauf 11) | 67/100 (aniworld 95 %, serienstream 70 %, filmpalast 73 %, ard 50 %, bsto 50 %, moflix 27 %) |
+| Sessiontest | 50/50 Titel, 20/20 Resume, 10/10 Profile, 0 Fehler, 30,2 min (PASS) |
 | Quote Holdout | 70/100 (aniworld 90 %, filmpalast 86 %, ard 83 %, serienstream 64 %, bsto 50 %, moflix 36 %) |
 | Quellen | 12/31 Source-Packs live verifiziert; 10/14 Indexseiten verifiziert (9/14 am A52 erreichbar); 3/10 Hoster verifiziert, 2 am Gerät abgespielt |
 | Performance | STALE (1.3.0-Stand: Kaltstart p95 334 ms, Scroll p95 22 ms, Jank 3,01 %) |
