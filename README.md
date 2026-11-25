@@ -191,7 +191,10 @@ PACKS.md-Abgleich und die APK-Größenprüfung (≤ 45 MiB). Details:
 
 ## Dokumentation
 
-- `docs/ABSCHLUSS-PHASE-B.md` — **aktueller Abschlussbericht**: Ampel je
+- `docs/ABSCHLUSS-1.5.0.md` — **aktueller Abschlussbericht 1.5.0/VC6**: Ampel je
+  Arbeitspaket, Quoten (Training + Holdout), Tests, Lint, Artefakt-Hashes,
+  offene Punkte mit Grund
+- `docs/ABSCHLUSS-PHASE-B.md` — Abschlussbericht Phase B (1.3.0/VC4): Ampel je
   Arbeitspaket, Quellzahlen, Tests, Lint, Performance, Artefakt-Hashes,
   blockierte Quellen mit HTTP-Status und Grund
 - `docs/STATE.md` — was läuft, was offen ist, mit Belegen

@@ -1,8 +1,8 @@
-# RELEASE.md — Frame61 1.5.0 (Kandidat, signiert) / 1.3.0 (live)
+# RELEASE.md — Frame61 1.5.0 (veröffentlicht) / 1.3.0 (vorherige Version)
 
 Stand: 25.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
 
-## Kandidat 1.5.0 / VC6 — signiert, Veröffentlichung nach Holdout
+## Release 1.5.0 / VC6 — signiert und als GitHub-Release veröffentlicht
 
 | Artefakt | SHA-256 | Groesse |
 |---|---|---|
@@ -27,10 +27,18 @@ Stand: 25.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
   Episodenadresse), Block 9 (Serie ohne Nummer = Folge 1), DEVIDEOSRC-Kette,
   `aesgcm`-Pack-Aktion für Filemoon, `MediaUrlMatcher` ohne Dateiendung.
   Nachweise: [CHANGELOG.md](CHANGELOG.md), Quote: [QUOTA.md](QUOTA.md).
-- **Noch nicht veröffentlicht:** GitHub-Release `v1.5.0` und `site/update.json`
-  (versionCode 6) erst nach dem Holdout-Lauf (Seed `20261123`, Build
-  `9d14350`) und dem 30-Minuten-Sessiontest. Owner-Regel: keine
-  Veröffentlichung ohne belegte Holdout-Quote.
+- **Veröffentlicht:** GitHub-Release
+  <https://github.com/hendlerdynasty-byte/frame61/releases/tag/v1.5.0> mit
+  beiden Assets (`uploaded`); der APK-Asset wurde per HTTP nachgeladen
+  (HTTP 200, 19.963.388 B) und der SHA-256 stimmt mit dem lokalen,
+  signierten Artefakt überein (`ee415ab9…`).
+- **Geräte-Smoke des Release-APK:** Device-Lab-Job `job-d9ec706e61d74b14`
+  (`QUICK_SMOKE`, Priorität `release_blocking`) **PASS** — Installation
+  (`Performing Streamed Install`/`Success`), Start ohne Fatal
+  (`mCurrentFocus=de.hendler.frame61/…MainActivity`, 0 fatal entries),
+  Screenshots 912 214 B / 912 184 B.
+- Update-Manifest `site/update.json` (versionCode 6) folgt nach dem
+  30-Minuten-Sessiontest der 1.5.0; bis dahin liefert Pages weiter `versionCode` 4.
 
 ## Nicht veröffentlichte Vorstufe 1.4.0 / VC5
 

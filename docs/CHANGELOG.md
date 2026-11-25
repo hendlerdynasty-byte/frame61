@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-### 1.5.0 — DEVIDEOSRC-Kette belegt statt geraten (in Arbeit, 24.11.2026)
+### 1.5.0 — Blöcke 7–9, DEVIDEOSRC-Kette, Quoten-Messung (25.11.2026)
 
 #### Hinzugefügt
 - **`DeVideoSrcResolver`**: DEVIDEOSRC wird über die dokumentierte API
@@ -252,6 +252,14 @@
   Provider-Rotation, keine Blockwirkung (Block 7/9 sind oberflächengebunden
   und greifen im Harness nicht). Rohbelege:
   `~/hendler-dynasty/evidence/frame61/1.5.0/run11-9d14350/polls/`.
+- **Holdout (Build `9d14350`, A52, 25.11.2026, Seed `20261123`, disjunkt):**
+  Quote **70/100 (70 %)**, Fast-Path 68/100 (68 %) — **über** der
+  Trainings-Quote (67 %), also keine Überanpassung. Gruppen: aniworld 90 %,
+  filmpalast 86 %, ard 83 %, serienstream 64 %, bsto 50 %, moflix 36 %.
+  resolveMs p50/p95 1797/27107 ms, firstFrameMs p50/p95 3016/29422 ms,
+  157 Interception-Versuche (13 mit Medien-URL). Rohbelege:
+  `~/hendler-dynasty/evidence/frame61/1.5.0/holdout-9d14350/polls/`.
+  **Damit ist die Veröffentlichungsregel erfüllt.**
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 

@@ -994,6 +994,54 @@ Belege: `run11-9d14350/polls/latest.xml`, Auswertung
 `tools/measure/analyse_lauf.py run11-9d14350/polls run10-ebec382/polls train`
 (Output oben), Ursachen-Auswertung `tools/measure/analyse_ursachen.py`.
 
+## Holdout — Build `9d14350`, 25.11.2026, A52 (Seed `20261123`)
+
+Stichprobe: **Holdout, Seed `20261123`, 100 Titel — garantiert disjunkt zur
+Trainings-Stichprobe** (der Harness zieht sie aus dem Rest des Katalogs).
+Gestartet über „Einstellungen → Titel-Quote Holdout", beobachtet mit 33
+Poll-Sitzungen (17:22–17:55 Uhr). Rohbelege:
+`~/hendler-dynasty/evidence/frame61/1.5.0/holdout-9d14350/polls/latest.xml`.
+
+**Ergebnis: 70/100 spielbar (70 %)**, Fast-Path 68/100 (68 %).
+
+| Kennzahl | Holdout (`9d14350`) | Training (`9d14350`) | Delta |
+|---|---|---|---|
+| Quote produktiv | **70/100 = 70 %** | 67/100 = 67 % | **+3 Titel** |
+| Quote Fast-Path | 68/100 = 68 % | 66/100 = 66 % | +2 Titel |
+| resolveMs p50 / p95 | 1797 / 27107 ms | 1959 / 27089 ms | ~ gleich |
+| firstFrameMs p50 / p95 | 3016 / 29422 ms | 2907 / 28584 ms | ~ gleich |
+| Fehlerklassen | EMBED_UNRESOLVED 14, GEO_BLOCKED 13, CONTAINER_UNSUPPORTED 3 | EMBED_UNRESOLVED 16, GEO_BLOCKED 9, CONTAINER_UNSUPPORTED 8 | — |
+| Interception-Versuche | 157, davon 13 mit Medien-URL | 189, davon 10 | — |
+
+Quote je Gruppe (holdout, prod):
+
+| Gruppe | Titel | spielbar | Quote | häufigste Klasse |
+|---|---|---|---|---|
+| aniworld | 20 | 18 | **90 %** | EMBED_UNRESOLVED 2 |
+| filmpalast | 7 | 6 | **86 %** | CONTAINER_UNSUPPORTED 1 |
+| ard | 18 | 15 | **83 %** | EMBED_UNRESOLVED 3 |
+| serienstream | 36 | 23 | **64 %** | GEO_BLOCKED 8 |
+| bsto | 8 | 4 | **50 %** | GEO_BLOCKED 4 |
+| moflix | 11 | 4 | **36 %** | EMBED_UNRESOLVED 4 |
+
+### Befund — die Quote generalisiert
+
+Die Holdout-Quote liegt mit **70 % über** der Trainings-Quote (67 %), obwohl
+die Stichprobe disjunkt ist und nie zum Nachsteuern benutzt wurde. Damit ist
+ausgeschlossen, dass die Trainingszahl durch Anpassung an einzelne Titel
+entstanden ist. Der Unterschied zwischen den Gruppen ist stabil
+(aniworld/filmpalast/ard deutlich über, serienstream/moflix/bsto darunter);
+die Fehlziele sind erneut dropcdn/moflix-Hosts (`r1.dropcdn.io` 5×,
+`ds2.dropcdn.io` 3×, `moflix.rpmplay.xyz` 2×). Auf der Holdout-Probe fielen
+zwei ARD-Titel an `nrodlzdf-a.akamaihd.net`/`zdfvod.akamaized.net` aus
+(GEO-Block), drei weitere an 1–2 nicht spielbaren Kandidaten.
+
+**Veröffentlichungsregel erfüllt:** Die Holdout-Quote ist damit belegt; der
+Release 1.5.0/VC6 darf über den Update-Kanal veröffentlicht werden.
+
+Belege: `holdout-9d14350/polls/latest.xml`, Auswertung
+`tools/measure/analyse_lauf.py holdout-9d14350/polls "" holdout`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

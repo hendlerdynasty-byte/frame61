@@ -15,14 +15,17 @@ nach Holdout). Quellstand `9d14350` auf `main`. Berichte:
   `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc`
   (24.667.262 B), Zertifikat `1201f46d…` (unverändert). Kein Play-Store-Upload.
 - **Gate:** Actions-Lauf `45582003989` auf `9d14350` grün — **203/203 Tests**,
-  Lint **0 Errors**, Release-Job baut APK + AAB, Geräte-Smoke PASS.
-- **Veröffentlichung steht aus:** GitHub-Release `v1.5.0` + `site/update.json`
-  (versionCode 6) werden erst nach dem **Holdout-Lauf** (Seed `20261123`,
-  9d14350) veröffentlicht — Owner-Regel: keine Veröffentlichung ohne
-  belegte Holdout-Quote.
-- **Quote:** Lauf 10 (Build `ebec382`, A52, Seed 20261122, 100 Titel): 69/100
-  Produktivpfad, 68/100 Fast-Path. **Lauf 11** (gleiche Stichprobe, Build
-  `9d14350`) läuft gerade auf dem A52 — Zahlen in [QUOTA.md](QUOTA.md).
+  Lint **0 Errors / 109 Warnings**, Release-Job baut APK + AAB, Device-Lab
+  `QUICK_SMOKE` der Acceptance-APK PASS (`job-d850fe42ccf74c6b`,
+  APK sha256 `6500069c…`, Quellstand `9d143509…`).
+- **Quote (A52, Build `9d14350`):** Lauf 11 **Training** (Seed `20261122`)
+  **67/100 (67 %)**, Fast 66/100; **Holdout** (Seed `20261123`, disjunkt)
+  **70/100 (70 %)**, Fast 68/100. Die Holdout-Quote liegt über der
+  Trainings-Quote — keine Überanpassung. Damit ist die
+  Veröffentlichungsregel erfüllt ([QUOTA.md](QUOTA.md)).
+- **Veröffentlichung:** GitHub-Release `v1.5.0` + `site/update.json`
+  (versionCode 6) folgen nach dem 30-Minuten-Sessiontest und dem
+  Device-Lab-Smoke des signierten Release-APK.
 - **Block 9 (A52-belegt):** Serie ohne Episodennummer wird als Folge 1
   aufgelöst — gemessen: `episode-0` → HTTP 404 (2516 Bytes, 0 Streams),
   `episode-1` → HTTP 200 (176859 Bytes, 4 Streams).
