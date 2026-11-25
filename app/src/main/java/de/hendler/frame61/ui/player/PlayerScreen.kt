@@ -84,6 +84,12 @@ fun PlayerScreen(
     fallbackView: android.view.SurfaceView? = null,
     countdownSeconds: Int? = null,
     sourceNote: String? = null,
+    /** Gate 1 (1.6.0): dauerhaft sichtbarer angefragter Titel. */
+    titleLabel: String = "",
+    /** Gate 1: Laufzeit aus dem Katalog, wenn bekannt. */
+    runtimeLabel: String? = null,
+    /** Sichtbarer Hinweis, wenn nur ein Trailer/Material läuft. */
+    identityHint: String? = null,
     subtitleScale: Float = 1.0f,
     diagnosticEvents: List<PlaybackTraceEvent> = emptyList(),
     fatalMessage: String? = null,
@@ -242,6 +248,40 @@ fun PlayerScreen(
                 modifier = Modifier
                     .align(Alignment.BottomEnd)
                     .padding(end = 48.dp, bottom = 160.dp)
+            )
+        }
+
+        // Gate 1 (1.6.0): Titel und Laufzeit bleiben dauerhaft eingeblendet,
+        // damit eine Fehlzuordnung sofort auffällt (Auftrag, Spezifikation).
+        if (titleLabel.isNotBlank()) {
+            Column(
+                modifier = Modifier
+                    .align(Alignment.TopStart)
+                    .padding(start = 16.dp, top = 12.dp)
+            ) {
+                Text(
+                    text = titleLabel,
+                    color = skin.colors.textPrimary,
+                    style = MaterialTheme.typography.titleSmall
+                )
+                Text(
+                    text = runtimeLabel ?: "Laufzeit unbekannt",
+                    color = skin.colors.textSecondary,
+                    style = MaterialTheme.typography.labelSmall
+                )
+            }
+        }
+
+        if (identityHint != null) {
+            Text(
+                text = identityHint,
+                color = skin.colors.textPrimary,
+                style = MaterialTheme.typography.labelMedium,
+                modifier = Modifier
+                    .align(Alignment.BottomStart)
+                    .padding(start = 16.dp, bottom = 96.dp)
+                    .background(skin.colors.accent.copy(alpha = 0.25f))
+                    .padding(horizontal = 12.dp, vertical = 6.dp)
             )
         }
 

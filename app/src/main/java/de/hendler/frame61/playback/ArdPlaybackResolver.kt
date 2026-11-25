@@ -25,7 +25,7 @@ import javax.inject.Singleton
  * `HosterResolver` with the `direct` pack (pass-through for HLS URLs).
  *
  * The API is keyless but undocumented; every step is defensive. A failure
- * returns an empty list, so the player falls back to the demo stream instead of
+ * returns an empty list, so the player shows an honest error instead of
  * showing a black screen. `verified` for the pack is only set by the worker
  * after a recorded/live check.
  */
@@ -126,7 +126,11 @@ class ArdPlaybackResolver @Inject constructor(
             requestHeaders = mapOf(
                 "User-Agent" to HosterResolver.DEFAULT_USER_AGENT,
                 "Referer" to stream.url
-            )
+            ),
+            // Gate 1 (1.6.0): Das ARD-API-Item ist die Identitätsangabe.
+            identityTitle = show.title.takeIf { it.isNotBlank() },
+            identityYear = show.year,
+            identityKind = "api"
         )
     }
 

@@ -1,23 +1,17 @@
 package de.hendler.frame61.ui.player
 
 import de.hendler.frame61.meta.CatalogItem
-import de.hendler.frame61.net.HttpClientFactory
 import de.hendler.frame61.resolver.MirrorCandidate
 import java.security.MessageDigest
 
 /**
- * Playback source for a catalog title.
+ * Katalog-Hilfen für die Wiedergabe.
  *
- * The catalog holds metadata, not stream rights. There is no resolver-backed
- * mirror for these titles yet, so playback uses a public HLS test stream. That
- * keeps the player (resume, watchdog, countdown) verifiable on a real device
- * without inventing a source for the title.
+ * Wichtig für 1.6.0: Hier liegt **kein** Platzhalter-Stream mehr. Der frühere
+ * Mux-Teststream ist entfernt; ein Titel ohne aufgelöste und identifizierte
+ * Quelle zeigt eine Fehlermeldung statt eines fremden Videos.
  */
 object CatalogPlayback {
-
-    /** Public, freely reachable HLS test stream (Mux demo asset). */
-    const val DEMO_URL = "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
-    const val DEMO_SOURCE_ID = "demo"
 
     /**
      * Stable positive Long for a catalog id, so Room's `titleId` matches across
@@ -34,25 +28,15 @@ object CatalogPlayback {
     }
 
     /**
-     * Mirrors for a title. With no resolver-backed source yet, this returns the
-     * single demo candidate.
+     * Gate 1 (1.6.0): Es gibt **keinen** Platzhalter-Kandidaten mehr.
+     *
+     * Vorher lieferte diese Funktion den Mux-Teststream für jeden Titel; wenn
+     * die Auflösung scheiterte, sah der Nutzer „irgendein Beispielvideo"
+     * statt einer Fehlermeldung. Das widerspricht der Identitätsregel: kein
+     * Kandidat ohne belegten Inhalt. Der Player zeigt stattdessen eine
+     * verständliche Meldung mit Wiederholen-Option.
+     *
      */
-    fun candidates(item: CatalogItem): List<MirrorCandidate> = listOf(
-        MirrorCandidate(
-            sourceId = DEMO_SOURCE_ID,
-            titleId = stableId(item.id),
-            episodeId = null,
-            url = DEMO_URL,
-            lang = "de",
-            quality = "1080p",
-            hosterId = null,
-            healthScore = 1.0,
-            legalFree = true,
-            requestHeaders = mapOf("User-Agent" to HttpClientFactory.DEFAULT_USER_AGENT)
-        )
-    )
-
-    /** True when the only source is the demo stream — the UI must say so. */
-    fun isDemoOnly(mirrors: List<MirrorCandidate>): Boolean =
-        mirrors.isNotEmpty() && mirrors.all { it.sourceId == DEMO_SOURCE_ID }
+    fun candidates(@Suppress("UNUSED_PARAMETER") item: CatalogItem): List<MirrorCandidate> =
+        emptyList()
 }

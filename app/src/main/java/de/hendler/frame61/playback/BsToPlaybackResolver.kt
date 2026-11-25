@@ -92,9 +92,24 @@ class BsToPlaybackResolver @Inject constructor(
                 healthScore = 1.0,
                 legalFree = false,
                 requestHeaders = intercepted.headers,
-                cookies = intercepted.cookies
+                cookies = intercepted.cookies,
+                // Gate 1 (1.6.0): Der Seitentitel der Serie aus dem bereits
+                // geladenen HTML — kein zusätzlicher Abruf.
+                identityTitle = pageTitle(html),
+                identityKind = "page"
             )
         )
+    }
+
+    /**
+     * `<title>` der Serie-Seite ohne Site-Anhang ("… | Burning Series",
+     * "… - Serien online schauen"). Leer, wenn die Seite keinen Titel trägt.
+     */
+    private fun pageTitle(html: String): String? {
+        val raw = Regex("<title[^>]*>(.*?)</title>", RegexOption.IGNORE_CASE)
+            .find(html)?.groupValues?.get(1)?.trim().orEmpty()
+        if (raw.isBlank()) return null
+        return raw.split('|', '–', '-').firstOrNull()?.trim()?.takeIf { it.isNotBlank() }
     }
 
     /**

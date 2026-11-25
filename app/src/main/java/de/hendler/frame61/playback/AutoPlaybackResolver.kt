@@ -662,7 +662,12 @@ class AutoPlaybackResolver @Inject constructor(
         cookies = resolved.cookies,
         // Die Watch-URL bleibt erhalten: nur sie verrät, welcher
         // Hoster zu diesem Kandidaten gehört (Alternative-Kette).
-        streamUrl = stream.url
+        streamUrl = stream.url,
+        // Gate 1 (1.6.0): Die Quelle nennt den Titel ihres Suchtreffers. Ohne
+        // diese Angabe darf der Kandidat nicht abgespielt werden.
+        identityTitle = hit.title.takeIf { it.isNotBlank() },
+        identityYear = hit.year,
+        identityKind = "source"
     )
 
     /**

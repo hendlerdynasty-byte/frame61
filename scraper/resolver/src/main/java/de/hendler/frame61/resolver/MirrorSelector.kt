@@ -32,7 +32,18 @@ data class MirrorCandidate(
      * sagen, welcher Hoster bereits gescheitert ist — bei moflix trägt jedes
      * Alternativziel einen eigenen Host.
      */
-    val streamUrl: String? = null
+    val streamUrl: String? = null,
+    /**
+     * Identitätsangabe der Quelle für **diesen** Kandidaten (Gate 1, 1.6.0):
+     * Suchtreffer-Titel, API-Titel oder Seitentitel. `null` = die Quelle
+     * liefert keine Angabe — der Kandidat darf dann nicht abgespielt werden.
+     */
+    val identityTitle: String? = null,
+    val identityYear: Int? = null,
+    /** Laufzeit in Sekunden, wenn die Quelle sie nennt (ARD-API, JSON-LD). */
+    val identityRuntimeSec: Int? = null,
+    /** Woher die Angabe stammt: `source` (Suchtreffer), `api` (ARD), `page` (HTML). */
+    val identityKind: String? = null
 )
 
 /**

@@ -15,6 +15,8 @@ import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.CaptchaBroker
 import de.hendler.frame61.playback.CaptchaRequest
 import de.hendler.frame61.playback.PrefetchController
+import de.hendler.frame61.resolver.ContentIdentityGate
+import de.hendler.frame61.resolver.IdentityRequest
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import de.hendler.frame61.resolver.hostOf
@@ -38,8 +40,14 @@ data class PlayerScreenState(
     val loading: Boolean = true,
     val countdownSeconds: Int? = null,
     val fatal: String? = null,
-    /** "ARD Mediathek" when the real source resolved, "Demo-Stream" otherwise. */
-    val sourceNote: String? = null
+    /** "ARD Mediathek" when the real source resolved, null otherwise. */
+    val sourceNote: String? = null,
+    /** Sichtbarer Hinweis, wenn nur ein Trailer/unbestätigter Kandidat läuft. */
+    val identityHint: String? = null,
+    /** Dauerhaft im Overlay: angefragter Titel (Gate 1, 1.6.0). */
+    val titleLabel: String = "",
+    /** Dauerhaft im Overlay: Laufzeit aus dem Katalog, wenn bekannt. */
+    val runtimeLabel: String? = null
 )
 
 /**
@@ -66,6 +74,13 @@ class PlayerViewModel @Inject constructor(
         1.0f
     )
 
+    /**
+     * Gate 1 (1.6.0): kein Kandidat wird abgespielt, ohne dass seine
+     * Identität geprüft ist. Seitengrößen sind klein; der Titel wird je URL
+     * einmal geholt und im Prozess behalten.
+     */
+    private val identityGate = ContentIdentityGate()
+    private var identityRequest: IdentityRequest? = null
     private val mediaPlayer = Media3Frame61Player(application)
     private val watchdog = PlaybackWatchdog(timeoutMs = WATCHDOG_MS)
     private val countdown = NextEpisodeCountdown(countdownMs = COUNTDOWN_MS)
@@ -132,7 +147,8 @@ class PlayerViewModel @Inject constructor(
         episodeId: Long,
         episodeNumber: Int,
         season: Int = 1,
-        fallbackCandidates: List<MirrorCandidate>
+        type: String = "movie",
+        runtimeMin: Int? = null
     ) {
         recoveryJob?.cancel()
         tickJob?.cancel()
@@ -150,9 +166,26 @@ class PlayerViewModel @Inject constructor(
         } else {
             CatalogPlayback.stableId("$titleId|s$season|e$episodeNumber")
         }
-        this.mirrors = fallbackCandidates
-        this.fallbackMirrors = fallbackCandidates
+        // Gate 1: es gibt keinen Demo-/Platzhalter-Kandidaten mehr. Ohne
+        // bestätigte Quelle bleibt der Player bei einer Fehlermeldung stehen.
+        this.mirrors = emptyList()
+        this.fallbackMirrors = emptyList()
         this.mirrorIndex = 0
+        this.identityRequest = IdentityRequest(
+            title = title,
+            type = type,
+            season = season,
+            episode = episodeNumber,
+            runtimeMin = runtimeMin
+        )
+        _state.update {
+            it.copy(
+                titleLabel = title,
+                runtimeLabel = runtimeMin?.let { min -> "${min} Min." },
+                identityHint = null,
+                fatal = null
+            )
+        }
         this.sessionStartedAt = System.currentTimeMillis()
         this.firstFrameReported = false
         this.startedFromPrefetch = false
@@ -178,7 +211,24 @@ class PlayerViewModel @Inject constructor(
             // Block 7: Kandidat aus dem Fokus-Vorwaermlauf. Liegt einer vor,
             // startet der Player sofort damit — die volle Aufloesung laeuft
             // parallel weiter und liefert nur die Fallback-Kette.
-            val prefetched = prefetchController.take(title, episodeNumber, season)
+            // Gate 1: auch der Vorwaermkandidat wird erst geprüft. Ein
+            // Vorwaermlauf ohne Identitätsangabe wird verworfen, nicht gespielt.
+            val request = identityRequest
+            val prefetchedRaw = prefetchController.take(title, episodeNumber, season)
+            val prefetched = if (request != null && prefetchedRaw.isNotEmpty()) {
+                identityGate.verify(request, prefetchedRaw)
+                    .filter { it.playable }
+                    .map { it.candidate }
+            } else {
+                emptyList()
+            }
+            if (prefetchedRaw.isNotEmpty() && prefetched.isEmpty()) {
+                PlaybackDiagnostics.record(
+                    "IDENTITY",
+                    "Vorwaermlauf verworfen: keine bestätigte Identität (${prefetchedRaw.size})",
+                    sessionId = diagnosticSessionId
+                )
+            }
             if (prefetched.isNotEmpty()) {
                 mirrors = prefetched
                 startedFromPrefetch = true
@@ -197,8 +247,9 @@ class PlayerViewModel @Inject constructor(
             // noch laeuft.
             startTicker()
 
-            // Real sources first; the demo is only a last-resort fallback and is
-            // never labelled as a source (source failures are log-only).
+            // Gate 1: Es gibt keinen Demo-/Platzhalter-Fallback mehr. Nur
+            // Kandidaten mit bestätigter Identität werden geöffnet; sonst bleibt
+            // eine verständliche Fehlermeldung stehen.
             // resolveFast: sobald ein Kandidat steht, startet der Player — der
             // Rest der Quellen darf den Start nicht verzögern.
             resolveJob = launch {
@@ -210,16 +261,72 @@ class PlayerViewModel @Inject constructor(
                         sessionId = diagnosticSessionId
                     )
                 }.getOrDefault(emptyList())
+                val verified = if (request != null) {
+                    identityGate.verify(request, resolved)
+                } else {
+                    emptyList()
+                }
+                verified.forEach { v ->
+                    PlaybackDiagnostics.record(
+                        "IDENTITY",
+                        "${v.verdict.kind.name} ${v.candidate.sourceId} ${v.verdict.matchedTitle ?: "-"}",
+                        sessionId = diagnosticSessionId,
+                        details = mapOf(
+                            "score" to String.format(java.util.Locale.ROOT, "%.2f", v.verdict.score),
+                            "evidenz" to v.evidenceSource,
+                            "grund" to v.verdict.reason
+                        )
+                    )
+                }
+                val playable = verified.filter { it.playable }.map { it.candidate }
+                val lastResort = verified.firstOrNull { it.lastResort }?.candidate
                 if (prefetched.isEmpty()) {
-                    mirrors = resolved.ifEmpty { fallbackCandidates }
-                    _state.update { it.copy(sourceNote = resolved.firstOrNull()?.let(::sourceNote)) }
-                    openMirror(index = 0, startAtMs = resumeMs, sessionId = diagnosticSessionId)
+                    when {
+                        playable.isNotEmpty() -> {
+                            mirrors = playable
+                            _state.update {
+                                it.copy(
+                                    sourceNote = sourceNote(playable.first()),
+                                    identityHint = null
+                                )
+                            }
+                            openMirror(index = 0, startAtMs = resumeMs, sessionId = diagnosticSessionId)
+                        }
+                        lastResort != null -> {
+                            // Trailer nur als letzter Ausweg — sichtbar markiert.
+                            mirrors = listOf(lastResort)
+                            _state.update {
+                                it.copy(
+                                    sourceNote = sourceNote(lastResort),
+                                    identityHint = "Vorschau: nur Trailer/Material, nicht der ganze Titel"
+                                )
+                            }
+                            openMirror(index = 0, startAtMs = resumeMs, sessionId = diagnosticSessionId)
+                        }
+                        else -> {
+                            _state.update {
+                                it.copy(
+                                    loading = false,
+                                    fatal = if (resolved.isEmpty()) {
+                                        "Keine Quelle für diesen Titel gefunden"
+                                    } else {
+                                        "Keine Quelle mit bestätigtem Inhalt gefunden"
+                                    }
+                                )
+                            }
+                            PlaybackDiagnostics.record(
+                                "IDENTITY",
+                                "kein Kandidat mit bestätigter Identität (${resolved.size} geprüft)",
+                                sessionId = diagnosticSessionId
+                            )
+                        }
+                    }
                 } else {
                     // Der Vorwaerm-Kandidat laeuft schon: die volle Liste nur
-                    // als zusaetzliche Fallbacks anhaengen, nicht umschalten.
+                    // als zusaetzliche, geprüfte Fallbacks anhaengen.
                     val known = mirrors.map { it.url }.toSet()
-                    mirrors = (mirrors + resolved.filter { it.url !in known }).distinctBy { it.url }
-                    fallbackMirrors = (resolved + fallbackMirrors).distinctBy { it.url }
+                    mirrors = (mirrors + playable.filter { it.url !in known }).distinctBy { it.url }
+                    fallbackMirrors = (playable + fallbackMirrors).distinctBy { it.url }
                 }
             }
         }
@@ -270,7 +377,9 @@ class PlayerViewModel @Inject constructor(
                 fatal = null,
                 sourceNote = when (mirror.sourceId) {
                     "ard" -> "ARD Mediathek"
-                    "demo" -> "Demo-Stream"
+                    // Es gibt keinen Demo-Kandidaten mehr; der Zweig bleibt nur für
+            // alte Resume-/Cache-Einträge, die noch auf ihn zeigen.
+            "demo" -> null
                     else -> mirror.sourceId
                 }
             )
@@ -371,19 +480,35 @@ class PlayerViewModel @Inject constructor(
                     )
                 }.getOrDefault(emptyList())
             }.orEmpty()
-            if (alternatives.isNotEmpty()) {
-                mirrors = alternatives
+            val request = identityRequest
+            val verifiedAlternatives = if (request != null && alternatives.isNotEmpty()) {
+                identityGate.verify(request, alternatives).filter { it.playable }.map { it.candidate }
+            } else {
+                emptyList()
+            }
+            if (verifiedAlternatives.isNotEmpty()) {
+                mirrors = verifiedAlternatives
                 openMirror(0, resumeMs)
                 return@launch
             }
             val resolved = runCatching {
                 autoResolver.resolve(titleName, episodeNumber, season, fresh = true)
             }.getOrDefault(emptyList())
-            val remaining = (resolved + fallbackMirrors)
+            val verifiedResolved = if (request != null) {
+                identityGate.verify(request, resolved).filter { it.playable }.map { it.candidate }
+            } else {
+                emptyList()
+            }
+            val remaining = (verifiedResolved + fallbackMirrors)
                 .distinctBy { it.url }
                 .filter { it.url !in failedUrls }
             if (remaining.isEmpty()) {
-                _state.update { it.copy(loading = false, fatal = "Alle Mirrors ausgefallen") }
+                _state.update {
+                    it.copy(
+                        loading = false,
+                        fatal = "Alle Quellen ausgefallen — keine bestätigte Wiedergabe"
+                    )
+                }
             } else {
                 mirrors = remaining
                 openMirror(0, resumeMs)

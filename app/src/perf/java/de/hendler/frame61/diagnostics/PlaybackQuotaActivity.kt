@@ -18,6 +18,8 @@ import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.InterceptionLog
 import de.hendler.frame61.player.Media3Frame61Player
+import de.hendler.frame61.resolver.ContentIdentityGate
+import de.hendler.frame61.resolver.IdentityRequest
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.hostOf
 import java.io.File
@@ -64,6 +66,12 @@ open class PlaybackQuotaActivity : ComponentActivity() {
     private lateinit var scroll: ScrollView
     private var quotaJob: Job? = null
     private var renderedEngine = ""
+    /**
+     * Gate 1 (1.6.0): Identitätsprüfung je gespieltem Kandidaten. Der Lauf
+     * zählt weiter „spielbar" (Reihe 1–11 bleibt vergleichbar) **und**
+     * „richtig" (nur mit bestätigtem Inhalt).
+     */
+    private val identityGate = ContentIdentityGate()
     private val lines = mutableListOf<String>()
     private var logFile: File? = null
 
@@ -132,6 +140,11 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         // Quote je Quellengruppe: der Mischwert allein verdeckt, welche Gruppe
         // trägt und welche nur den leichten Pfad zählt.
         val groupOk = mutableMapOf<String, Int>()
+        // Gate 1 (1.6.0): Richtigkeitsquote — nur mit bestätigtem Inhalt.
+        var richtig = 0
+        val identClasses = mutableMapOf<String, Int>()
+        val groupRichtig = mutableMapOf<String, Int>()
+        val groupIdentClasses = mutableMapOf<String, MutableMap<String, Int>>()
         val groupTotal = mutableMapOf<String, Int>()
         val groupClasses = mutableMapOf<String, MutableMap<String, Int>>()
         // Fast-Path getrennt: der Vergleich mit Lauf 1-7 bleibt so erhalten,
@@ -187,6 +200,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             // aufgelöste Medien-URL sieht anders aus als die Hoster-Seite.
             val failedHosts = mutableSetOf<String>()
             var lastSourceId: String? = null
+            var playedMirror: MirrorCandidate? = null
 
             if (mirrors.isNotEmpty()) {
                 for (mirror in mirrors.take(MAX_CANDIDATES)) {
@@ -199,6 +213,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     val attemptStarted = SystemClock.elapsedRealtime()
                     val attempt = playCandidate(mirror)
                     if (attempt.firstFrameMs != null) {
+                        playedMirror = mirror
                         fastPlayed = true
                         fastFirstFrameMs = resolveMs + (SystemClock.elapsedRealtime() - attemptStarted)
                         fastUsedHost = host(mirror.url)
@@ -258,6 +273,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     val attemptStarted = SystemClock.elapsedRealtime()
                     val attempt = playCandidate(mirror)
                     if (attempt.firstFrameMs != null) {
+                        playedMirror = mirror
                         played = true
                         firstFrameMs = resolveMs + alternativeMs +
                             (SystemClock.elapsedRealtime() - attemptStarted)
@@ -273,6 +289,45 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             // Titel nicht Spielbar war, steht hier — vorher war er nur im
             // Logcat zu finden und dort vom 400-Zeilen-Fenster abgeschnitten.
             val trace = PlaybackDiagnostics.events.value.drop(traceStart)
+            // Gate 1: Identität des tatsächlich gespielten Kandidaten prüfen.
+            // Nur CORRECT zählt als richtige Wiedergabe; fehlt eine
+            // Quellenangabe und ist keine Seite abrufbar, ist der Lauf
+            // UNKNOWN und damit nicht richtig.
+            val identityRequest = IdentityRequest(
+                title = item.title,
+                year = item.year,
+                type = item.type,
+                season = 1,
+                episode = if (episode > 0) episode else 1,
+                runtimeMin = item.runtime
+            )
+            val identVerdict = playedMirror?.let { mirror ->
+                identityGate.verify(identityRequest, listOf(mirror)).firstOrNull()
+            }
+            val identKind = when {
+                identVerdict == null -> if (played) "UNKNOWN" else "-"
+                else -> identVerdict.verdict.kind.name
+            }
+            val identScore = identVerdict?.verdict?.score ?: 0.0
+            val identReason = identVerdict?.verdict?.reason.orEmpty()
+            val identEvidence = identVerdict?.evidenceSource ?: "-"
+            if (played) {
+                if (identKind == "CORRECT") {
+                    richtig++
+                    groupRichtig[item.group] = (groupRichtig[item.group] ?: 0) + 1
+                } else {
+                    identClasses[identKind] = (identClasses[identKind] ?: 0) + 1
+                    val m = groupIdentClasses.getOrPut(item.group) { mutableMapOf() }
+                    m[identKind] = (m[identKind] ?: 0) + 1
+                }
+            }
+            report(
+                "QUOTA IDENT $mode idx=${index + 1} id=${item.id} group=${item.group} " +
+                    "played=${if (played) "ja" else "nein"} ident=$identKind " +
+                    "score=${String.format(java.util.Locale.ROOT, "%.2f", identScore)} " +
+                    "evidenz=$identEvidence" +
+                    (if (identReason.isNotBlank()) " grund=${identReason.sanitize()}" else "")
+            )
             PlaybackDiagnostics.endSession(sessionId)
 
             // Was die WebView-Interception in diesem Titel geleistet hat:
@@ -356,6 +411,25 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                         ?.let { "${it.key}:${it.value}" } ?: "-"
                     val quote = if (total > 0) groupOkCount * 100 / total else 0
                     "$group | $total | $groupOkCount | $quote% | $top"
+                }
+        )
+        // Richtigkeitsquote (Gate 1): gespielt **und** Inhalt bestätigt.
+        report(
+            "QUOTA RIGHT SUMMARY mode=$mode richtig=$richtig/${sample.size} " +
+                "quote=${richtig * 100 / sample.size} " +
+                "gespielt=$ok/${sample.size} " +
+                "falsch=[${identClasses.entries.sortedByDescending { it.value }.joinToString(",") { "${it.key}:${it.value}" }}]"
+        )
+        report(
+            "QUOTA RIGHT GROUPEN mode=$mode " +
+                groupTotal.keys.sorted().joinToString(" | ") { group ->
+                    val total = groupTotal[group] ?: 0
+                    val right = groupRichtig[group] ?: 0
+                    val top = groupIdentClasses[group].orEmpty()
+                        .entries.sortedByDescending { it.value }
+                        .firstOrNull()?.let { "${it.key}:${it.value}" } ?: "-"
+                    val quote = if (total > 0) right * 100 / total else 0
+                    "$group | $total | $right | $quote% | $top"
                 }
         )
         // Fast-Path separat: die Reihe Lauf 1-7 bleibt damit vergleichbar

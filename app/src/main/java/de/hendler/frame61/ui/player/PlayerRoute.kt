@@ -40,7 +40,8 @@ fun PlayerRoute(
             episodeId = episodeId,
             episodeNumber = episodeNumber,
             season = season,
-            fallbackCandidates = CatalogPlayback.candidates(item)
+            type = item.type,
+            runtimeMin = item.runtime
         )
     }
 
@@ -51,6 +52,9 @@ fun PlayerRoute(
             fallbackView = viewModel.fallbackPlayerView,
             countdownSeconds = state.countdownSeconds,
             sourceNote = state.sourceNote,
+            titleLabel = state.titleLabel,
+            runtimeLabel = state.runtimeLabel,
+            identityHint = state.identityHint,
             subtitleScale = subtitleScale,
             diagnosticEvents = diagnosticEvents,
             fatalMessage = state.fatal,
