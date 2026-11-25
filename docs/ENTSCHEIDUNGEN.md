@@ -864,6 +864,36 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Lesen als Fallback mitgeprueft, damit bestehende Positionen nicht verloren
   gehen.
 
+## 2026-11-25 — Eine Serie ohne Episodennummer ist die erste Folge (Block 9)
+
+- Befund: Der Geraetebeleg fuer Block 7 (A52, 25.11.2026) zeigte, dass die
+  Vorwaermung **ausloest, aber nie liefert**: `Frame61Prefetch: prefetch
+  'McGREGOR FOREVER' s1e0: kein Kandidat (272 ms)`. Ursache war nicht die
+  Quelle, sondern die Adresse: Serientitel wurden ohne Episodennummer
+  aufgeloest, die Packs s.to und aniworld setzen die Nummer aber direkt in
+  den Stream-Endpoint (`/serie/{id}/staffel-{season}/episode-{episodeId}`).
+  `episode-0` ist dort keine Folge, sondern ein 404.
+- Gegenprobe (HTTP, 25.11.2026, `serienstream.to/serie/mcgregor-forever`):
+  `staffel-1/episode-0` → **404**, 2516 Bytes, 0 Stream-Links;
+  `staffel-1/episode-1` → **200**, 176859 Bytes, 4 `link-box`-Eintraege. Die
+  Quote-Harness nutzt fuer Serien seit jeher Folge 1 — deshalb war der Lauf
+  unauffaellig, waehrend der UI-Pfad (Kachel-Fokus, „Abspielen") ins Leere
+  lief.
+- Default: `EpisodeSelection.effectiveNumber(type, number)` bildet eine Serie
+  ohne Nummer auf **Folge 1** ab; Filme und unbekannte Typen bleiben bei 0.
+  Die Regel greift an drei Stellen: Vorwaermlauf
+  (`resolvePackPrefetch`), Normalaufloesung (`resolvePack`) und
+  Alternative-Kette (`resolveAlternative`). ARD und bs.to bleiben unberuehrt —
+  sie kennen ihre eigene Adressierung.
+- Der Cache-Schluessel des Vorwaermlaufs bleibt unveraendert (`Titel|s1e0`):
+  der Player fragt mit derselben Nummer, die der Fokus geliefert hat. Was
+  sich aendert, ist die **Adresse im Endpoint** — nicht die Identitaet des
+  Eintrags. Ein Kandidat traegt jetzt `s1e1` als Episoden-ID, weil er genau
+  diese Folge adressiert.
+- Nachweis: `EpisodeSelectionTest` deckt die Regel ab (Serie ohne Nummer → 1,
+  Film ohne Nummer → 0, unbekannter Typ → 0, vorhandene Nummer bleibt).
+  Geraetebeleg folgt mit dem Acceptance-Build aus CI.
+
 ## 2026-11-24 — Werkzeugpfade werden vor dem Zugriff geprueft (Mimosa-Befund)
 
 - Befund: Der Mimosa-Scan meldete **medium** „Kommandozeilenparameter →

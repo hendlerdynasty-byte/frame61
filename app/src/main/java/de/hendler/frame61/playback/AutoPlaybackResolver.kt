@@ -238,6 +238,8 @@ class AutoPlaybackResolver @Inject constructor(
         val disabled = runCatching { prefs.disabledSources.first() }.getOrDefault(emptySet())
         val packs = packLoader.loadAllPacks().filter { it.id in wanted && it.id !in disabled }
         if (packs.isEmpty()) return@withContext emptyList()
+        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
+        val episode = EpisodeSelection.effectiveNumber(item.type, episodeNumber)
         val candidates = mutableListOf<MirrorCandidate>()
         for (pack in packs) {
             // Abbruch (Fokus ist weitergewandert) landet als leeres Ergebnis
@@ -246,16 +248,17 @@ class AutoPlaybackResolver @Inject constructor(
             // inferieren sonst `List<Any?>` (CI 45471455585).
             val result: List<MirrorCandidate> = runCatching {
                 withTimeoutOrNull<List<MirrorCandidate>>(PREFETCH_TIMEOUT_MS) {
-                    resolvePackPrefetch(pack, item, episodeNumber, season)
+                    resolvePackPrefetch(pack, item, episode, season)
                 }
             }.getOrNull().orEmpty()
             candidates.addAll(result)
         }
         val ordered = order(candidates)
+        val note = if (episode != episodeNumber) " folge=$episode" else ""
         Log.i(
             TAG,
             "prefetch '$title' s${season}e$episodeNumber gruppe=$group " +
-                "packs=${packs.joinToString(",") { it.id }} kandidaten=${ordered.size}"
+                "packs=${packs.joinToString(",") { it.id }} kandidaten=${ordered.size}$note"
         )
         ordered
     }
@@ -281,11 +284,14 @@ class AutoPlaybackResolver @Inject constructor(
         val hit = hits.firstOrNull { it.title.contains(item.title, ignoreCase = true) }
             ?: hits.firstOrNull()
             ?: return emptyList()
+        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
+        // `episode-0` ist bei s.to/aniworld eine 404 (gemessen 25.11.2026).
+        val episode = EpisodeSelection.effectiveNumber(item.type, episodeNumber)
         val streams = runCatching {
             interpreter.streams(
                 pack,
                 hit.playbackId ?: hit.id,
-                episodeNumber.toString(),
+                episode.toString(),
                 null,
                 season
             )
@@ -308,7 +314,7 @@ class AutoPlaybackResolver @Inject constructor(
                 hit,
                 stream,
                 ResolvedStream(resolved.url, resolved.requestHeaders, resolved.cookies),
-                episodeNumber,
+                episode,
                 season
             )
         }
@@ -559,10 +565,16 @@ class AutoPlaybackResolver @Inject constructor(
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
             ?: hits.firstOrNull()
             ?: return emptyList()
+        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
+        // `episode-0` ist bei s.to/aniworld eine 404 (gemessen 25.11.2026).
+        val episode = EpisodeSelection.effectiveNumber(
+            catalogIndex[normalizeTitle(title)]?.type,
+            episodeNumber
+        )
         val streams = interpreter.streams(
             pack,
             hit.playbackId ?: hit.id,
-            episodeNumber.toString(),
+            episode.toString(),
             cookies,
             season
         )
@@ -579,7 +591,7 @@ class AutoPlaybackResolver @Inject constructor(
             attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
             deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
         )
-        return resolveStreams(pack, hit, streams, episodeNumber, season, sessionId, webBudget)
+        return resolveStreams(pack, hit, streams, episode, season, sessionId, webBudget)
     }
 
     /**
@@ -697,11 +709,16 @@ class AutoPlaybackResolver @Inject constructor(
         val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
             ?: hits.firstOrNull()
             ?: return@withContext emptyList()
+        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
+        val episode = EpisodeSelection.effectiveNumber(
+            catalogIndex[normalizeTitle(title)]?.type,
+            episodeNumber
+        )
         val streams = runCatching {
             interpreter.streams(
                 pack,
                 hit.playbackId ?: hit.id,
-                episodeNumber.toString(),
+                episode.toString(),
                 null,
                 season
             )
@@ -725,7 +742,7 @@ class AutoPlaybackResolver @Inject constructor(
             pack = pack,
             hit = hit,
             pending = pending,
-            episodeNumber = episodeNumber,
+            episodeNumber = episode,
             season = season,
             sessionId = sessionId,
             deadlineMs = System.currentTimeMillis() + ALTERNATIVE_DEADLINE_MS

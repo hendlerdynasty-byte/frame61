@@ -56,9 +56,24 @@
   über `staffel-{season}` statt fest `staffel-1`; `PackInterpreter.streams`
   füllt den Platzhalter (Default 1 — bestehende Packs bleiben unverändert).
   ARD und bs.to wählen ebenfalls nach (Staffel, Nummer).
+- **Block 9 — Serie ohne Episodennummer ist Folge 1:**
+  `EpisodeSelection.effectiveNumber` bildet eine Serie ohne Nummer auf Folge 1
+  ab (Filme bleiben bei 0). Vorher adressierten Vorwärmlauf, Normalauflösung
+  und Alternative-Kette Serientitel mit `episode-0` — bei s.to/aniworld ein
+  404, gemessen: `episode-0` → 404 (2516 Bytes, 0 Streams), `episode-1` → 200
+  (4 Stream-Links). Folge: die Vorwärmung lief, lieferte aber nie einen
+  Kandidaten, und „Abspielen" aus der Detailansicht blieb bei Serien leer.
 
 
 #### Behoben
+- **Vorwärmung lieferte bei Serien nie einen Kandidaten (Block 9, A52
+  25.11.2026):** Serientitel wurden ohne Episodennummer aufgelöst — bei
+  s.to/aniworld `episode-0`, und das ist ein 404. Gemessen:
+  `serienstream.to/serie/mcgregor-forever/staffel-1/episode-0` → 404 (2516
+  Bytes, 0 Stream-Links), `…/episode-1` → 200 (176859 Bytes, 4 Streams). Der
+  Logcat zeigte `prefetch 'McGREGOR FOREVER' s1e0: kein Kandidat` — die
+  Vorwärmung lief, wirkte aber nicht. Jetzt wird eine Serie ohne Nummer als
+  Folge 1 aufgelöst (Vorwärmlauf, Normalauflösung, Alternative-Kette).
 - **DEVIDEOSRC-API kam auf dem Gerät nie an (A52, Lauf 4):** Der Ausdruck für
   den `JSON.stringify`-Aufruf der Player-Seite war an der Zeilengrenze
   zerschnitten (nach dem Komma fehlte das `\s*`) und traf nie; die Rückfallebene

@@ -55,4 +55,34 @@ class EpisodeSelectionTest {
     fun `leere liste liefert null`() {
         assertNull(EpisodeSelection.select(emptyList(), season = 1, number = 1))
     }
+
+    /**
+     * Block 9: eine Serie ohne Episodennummer ist die erste Folge.
+     *
+     * Gemessen am 25.11.2026 auf dem A52: der Vorwaermlauf addressierte
+     * Serientitel mit `episode-0`; s.to antwortet darauf mit 404, `episode-1`
+     * mit 200 und vier Streams. Ohne diese Regel lieferte die Vorwaermung fuer
+     * jede Serie "kein Kandidat".
+     */
+    @Test
+    fun `serie ohne nummer ist die erste folge`() {
+        assertEquals(1, EpisodeSelection.effectiveNumber(type = "series", number = 0))
+    }
+
+    @Test
+    fun `film ohne nummer bleibt ohne nummer`() {
+        assertEquals(0, EpisodeSelection.effectiveNumber(type = "movie", number = 0))
+    }
+
+    @Test
+    fun `unbekannter typ ohne nummer bleibt ohne nummer`() {
+        assertEquals(0, EpisodeSelection.effectiveNumber(type = null, number = 0))
+        assertEquals(0, EpisodeSelection.effectiveNumber(type = "", number = 0))
+    }
+
+    @Test
+    fun `vorhandene nummer bleibt unveraendert`() {
+        assertEquals(3, EpisodeSelection.effectiveNumber(type = "series", number = 3))
+        assertEquals(2, EpisodeSelection.effectiveNumber(type = "movie", number = 2))
+    }
 }

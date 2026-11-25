@@ -38,6 +38,30 @@ data class EpisodeTarget(
  */
 internal object EpisodeSelection {
 
+    /** Katalogtyp einer Serie. */
+    private const val TYPE_SERIES = "series"
+
+    /** Erste Folge einer Serie. */
+    private const val FIRST_EPISODE = 1
+
+    /**
+     * Ohne Episodennummer ist eine **Serie** die erste Folge.
+     *
+     * Gemessen am 25.11.2026 auf dem A52 (Block 9): der Vorwaermlauf und der
+     * Start aus der Detailansicht addressierten Serientitel mit `episode-0`.
+     * s.to antwortet darauf mit **404** (2516 Bytes, keine Stream-Links),
+     * `episode-1` dagegen mit **200** und vier Streams. Damit lieferte die
+     * Vorwaermung fuer jede Serie "kein Kandidat" — sie lief, aber ohne
+     * Wirkung (Logcat: `prefetch 'McGREGOR FOREVER' s1e0: kein Kandidat`).
+     *
+     * Filme bleiben bei 0: dort ist die Nummer bedeutungslos.
+     */
+    fun effectiveNumber(type: String?, number: Int): Int = when {
+        number > 0 -> number
+        type == TYPE_SERIES -> FIRST_EPISODE
+        else -> number
+    }
+
     fun select(
         episodes: List<EpisodeTarget>,
         season: Int,
