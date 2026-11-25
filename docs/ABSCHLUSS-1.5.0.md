@@ -27,7 +27,7 @@ und in den verlinkten Dokumenten.
 | Regression: Tests, Lint, APK-Größe | 🟢 | CI `45582003989`: **203 Tests, 0 Fehler, 0 Skips** (33 Report-Dateien), Lint **0 Errors / 109 Warnings**, Debug-APK 38 505 413 B = **36,7 MiB** (< 45 MiB). |
 | Performance | 🔴 | **Nicht neu gemessen (STALE).** Die Gates (Kaltstart p95 334 ms, Scroll p95 22 ms, Jank 3,01 %) stammen vom Release 1.3.0 (`docs/PERF2.md`). Für 1.5.0 fehlt die Nachmessung: die Device-Bridge bietet kein `force-stop`, ein Macrobenchmark-Lauf ist nicht Teil des CI. Es gibt **keinen Beleg** für eine Verschlechterung — und keinen dagegen. |
 | Release-Artefakte | 🟢 | APK `ee415ab9…` (19 963 388 B), AAB `39a36476…` (24 667 262 B), Zertifikat `1201f46d…` unverändert; `aapt2`: `versionCode 6`, `versionName 1.5.0`, minSdk 23, targetSdk 36; `apksigner verify`/`jarsigner -verify` bestätigt. Geräte-Smoke des Release-APK unten. |
-| Veröffentlichung (Release + update.json) | ⏳ | GitHub-Release `v1.5.0` + `site/update.json` (VC6) — Status unten. |
+| Veröffentlichung (Release + update.json) | 🟢 | GitHub-Release `v1.5.0` mit APK + AAB (`uploaded`); APK per HTTP nachgeladen und hash-identisch (`ee415ab9…`, 19 963 388 B). Update-Manifest live: HTTP 200, `versionCode` 6, `versionName` 1.5.0, `sha256` `ee415ab9…` (Pages-Lauf `45676076132`, completed/success). |
 
 ## Zahlen
 

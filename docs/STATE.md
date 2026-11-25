@@ -23,9 +23,13 @@ nach Holdout). Quellstand `9d14350` auf `main`. Berichte:
   **70/100 (70 %)**, Fast 68/100. Die Holdout-Quote liegt über der
   Trainings-Quote — keine Überanpassung. Damit ist die
   Veröffentlichungsregel erfüllt ([QUOTA.md](QUOTA.md)).
-- **Veröffentlichung:** GitHub-Release `v1.5.0` + `site/update.json`
-  (versionCode 6) folgen nach dem 30-Minuten-Sessiontest und dem
-  Device-Lab-Smoke des signierten Release-APK.
+- **Veröffentlicht:** GitHub-Release `v1.5.0` (APK `ee415ab9…`, AAB
+  `39a36476…`, beide Assets `uploaded`, APK per HTTP nachgeladen und
+  hash-identisch) und Update-Manifest live (`versionCode` 6, HTTP 200,
+  Pages-Lauf `45676076132`). Release-APK am A52 installiert und gestartet
+  (Device-Lab `QUICK_SMOKE` `job-d9ec706e61d74b14` PASS).
+- **Sessiontest:** `SESSION PASS titles=50 resumeJumps=20 profileChanges=10
+  errors=0` (30,2 min, fünf Container, lokale Assets) — kein Crash, kein ANR.
 - **Block 9 (A52-belegt):** Serie ohne Episodennummer wird als Folge 1
   aufgelöst — gemessen: `episode-0` → HTTP 404 (2516 Bytes, 0 Streams),
   `episode-1` → HTTP 200 (176859 Bytes, 4 Streams).

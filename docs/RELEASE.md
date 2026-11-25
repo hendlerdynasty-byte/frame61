@@ -37,8 +37,14 @@ Stand: 25.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
   (`Performing Streamed Install`/`Success`), Start ohne Fatal
   (`mCurrentFocus=de.hendler.frame61/…MainActivity`, 0 fatal entries),
   Screenshots 912 214 B / 912 184 B.
-- Update-Manifest `site/update.json` (versionCode 6) folgt nach dem
-  30-Minuten-Sessiontest der 1.5.0; bis dahin liefert Pages weiter `versionCode` 4.
+- **Update-Manifest live:** <https://hendlerdynasty-byte.github.io/frame61/update.json>
+  liefert **HTTP 200**, `versionCode` 6, `versionName` 1.5.0, `apkUrl` auf das
+  v1.5.0-Asset und `sha256` `ee415ab9…`. Pages-Lauf `45676076132`
+  (workflow_dispatch auf `main`, Quellstand `ef0c46e`) completed/success.
+  Der APK-Asset-Download wurde danach erneut gehasht: identisch.
+- **Sessiontest 1.5.0:** `SESSION PASS titles=50 resumeJumps=20
+  profileChanges=10 errors=0` über 30,2 Minuten auf dem A52 (fünf Container,
+  Resume, Profilwechsel; lokale Assets, nicht die Netzpfade).
 
 ## Nicht veröffentlichte Vorstufe 1.4.0 / VC5
 
