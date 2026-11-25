@@ -222,6 +222,36 @@
   PASS). **Lauf 10** (gleiche Stichprobe wie Lauf 1–9: Training, Seed
   `20261122`, 100 Titel, Katalog 997) läuft auf dem A52 — Messwerte und Delta
   folgen in [QUOTA.md](QUOTA.md).
+- **Block 9 (`9d14350`):** CI `45582003989` grün — Gate **203/203 Tests**,
+  Lint **0 Errors**, Release-Job baut APK + AAB. Release-Artefakte aus diesem
+  Lauf lokal signiert: APK 19 963 388 B, sha256
+  `ee415ab9aa0eb09546c3dd8bf0fe40a7660c1c9b32ed5bfc311136055d45e720`; AAB
+  24 667 262 B, sha256
+  `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc`.
+  Signatur-Zertifikat `1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52`
+  (CN=Frame61, O=Hendler Dynasty, C=DE) — derselbe Release-Key wie Lauf 9/10.
+- **Block 7 — Gerätebeleg A/B (A52, 25.11.2026, Build `9d14350`):** Der
+  Vorwärmlauf ist auf dem Gerät **funktional** belegt: Fokus auf eine
+  ARD-Karte löst `Frame61Prefetch` aus (4–9 Kandidaten in 181–1371 ms), der
+  Player startet daraus (`RESOLVER: Start aus dem Vorwaermlauf`) und meldet
+  `PLAYER: Erstes Bild nach … details={vorwaermlauf=ja}`.
+  **Der Zeitgewinn ist nicht belegt:** In zwei unabhängigen Paaren (ARD-Titel
+  #202 und #200, jeweils warm/kalt) war der Kaltpfad schneller
+  (7551 ms → 1412 ms und 3953 ms → 2776 ms). Die Auflösung, die der
+  Vorwärmlauf einspart, holt der Kaltpfad bei ARD in rund einer Sekunde nach
+  (ARD-API: 22 ms + 15 ms); maßgeblich bleibt die Medienübertragung. Messwert,
+  Rohlogcat und Nebenbefund (Fremdlast 92 % CPU eines anderen Projekts auf
+  dem Gerät) in
+  `~/hendler-dynasty/evidence/frame61/1.5.0/run10-ebec382/BLOCK7-AB-BELEG.md`.
+- **Lauf 11 (Build `9d14350`, A52, 25.11.2026, Training Seed `20261122`):**
+  Quote **67/100 (67 %)**, Fast-Path 66/100 (66 %), resolveMs p50/p95
+  1959/27089 ms, firstFrameMs p50/p95 2907/28584 ms. Gruppen: aniworld 95 %,
+  serienstream 70 %, filmpalast 73 %, ard 50 %, bsto 50 %, moflix 27 %.
+  Delta zu Lauf 10 (69/100): **−2 Titel**, sechs gekippte Titel, alle an
+  rotierenden Anbietern (`veevcdn.co`, `dropcdn.io`, `moflix.rpmplay.xyz`) —
+  Provider-Rotation, keine Blockwirkung (Block 7/9 sind oberflächengebunden
+  und greifen im Harness nicht). Rohbelege:
+  `~/hendler-dynasty/evidence/frame61/1.5.0/run11-9d14350/polls/`.
 
 ### 1.4.0 — Titel-Quote, schnelle Auflösung, Hoster-Ketten (2026-11-22)
 

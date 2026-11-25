@@ -1,53 +1,64 @@
 # STATE.md — Frame61 Status
 
-Stand: 22.11.2026 (Phase B, Release 1.3.0 / VersionCode 4). Quellstand
-`9353e5a` (Merge Phase B auf `main`). Verbindliche Abschlussberichte:
-[ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md) (aktuell), [ABSCHLUSS-TV.md](ABSCHLUSS-TV.md)
-(TV-Ziel), [ABSCHLUSS.md](ABSCHLUSS.md) (Historie Blöcke 1–8).
+Stand: 25.11.2026 (Release 1.5.0 / VersionCode 6, signiert, Veröffentlichung
+nach Holdout). Quellstand `9d14350` auf `main`. Berichte:
+[CHANGELOG.md](CHANGELOG.md) (Blöcke 7–9 + Messläufe),
+[QUOTA.md](QUOTA.md) (Quote je Lauf), [RELEASE.md](RELEASE.md) (Artefakte),
+[ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md) / [ABSCHLUSS-TV.md](ABSCHLUSS-TV.md)
+(Historie), [ABSCHLUSS.md](ABSCHLUSS.md).
 
 ## Kurzfassung
 
-- **Release:** signierter Sideload-Release **1.3.0 / VC4** (APK `0be6e691…`,
-  AAB `1044b319…`), GitHub-Release `v1.3.0`, Update-Manifest auf Pages mit
-  `versionCode` 4. Kein Play-Store-Upload, kein Rollout.
-- **Gate:** 121/121 Unit-Tests grün, Lint 0 Errors / 106 Warnings,
-  Debug-APK 36,7 MiB (< 45 MiB), Validator 0 Fehler.
-- **Player:** 3003 (`ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED`) ist im
-  Selbsttest auf dem A52 für HLS, MP4, MKV, AVI und MPEG-TS behoben
-  (6/6 PASS), Fallback auf den Android-Systemplayer belegt.
-- **Quellen (A52):** 9/14 Indexseiten verifiziert, 1/14 Wiedergabe über den
-  Indexpfad (moflix), 2/11 Hoster verifiziert (direct, vidmoly). 5 Indexseiten
-  und 9 Hoster blockiert, jeweils mit Ursache, HTTP-Status und Versuchen.
-- **TV:** untere Navigationsleiste durch eine feste linke Seitenleiste
-  ersetzt; D-Pad-Fokusweg auf dem Android-TV-Emulator belegt. Echtes Fire TV:
-  **NOT_RUN** (Gerät bleibt unangetastet).
-- **Performance (Release-APK, A52):** Kaltstart p95 334 ms, Scroll p95 22 ms,
-  Janky 3,01 % — keine Regression gegenüber Block 11.
-- **Offen:** 5 Indexseiten und 9 Hoster blockiert; HDR-Nachweis mangels
-  HDR-fähigem Testgerät; erzwungener Mid-Playback-3003 mit Rotation nicht am
-  Gerät belegt; Fire TV unangetastet; M6 bleibt deaktiviert.
+- **Release:** signierter Sideload-Release **1.5.0 / VC6** aus Quellstand
+  `9d14350` — APK sha256 `ee415ab9aa0eb09546c3dd8bf0fe40a7660c1c9b32ed5bfc311136055d45e720`
+  (19.963.388 B), AAB sha256
+  `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc`
+  (24.667.262 B), Zertifikat `1201f46d…` (unverändert). Kein Play-Store-Upload.
+- **Gate:** Actions-Lauf `45582003989` auf `9d14350` grün — **203/203 Tests**,
+  Lint **0 Errors**, Release-Job baut APK + AAB, Geräte-Smoke PASS.
+- **Veröffentlichung steht aus:** GitHub-Release `v1.5.0` + `site/update.json`
+  (versionCode 6) werden erst nach dem **Holdout-Lauf** (Seed `20261123`,
+  9d14350) veröffentlicht — Owner-Regel: keine Veröffentlichung ohne
+  belegte Holdout-Quote.
+- **Quote:** Lauf 10 (Build `ebec382`, A52, Seed 20261122, 100 Titel): 69/100
+  Produktivpfad, 68/100 Fast-Path. **Lauf 11** (gleiche Stichprobe, Build
+  `9d14350`) läuft gerade auf dem A52 — Zahlen in [QUOTA.md](QUOTA.md).
+- **Block 9 (A52-belegt):** Serie ohne Episodennummer wird als Folge 1
+  aufgelöst — gemessen: `episode-0` → HTTP 404 (2516 Bytes, 0 Streams),
+  `episode-1` → HTTP 200 (176859 Bytes, 4 Streams).
+- **Block 7 (A52-belegt, A/B):** Fokus-Vorwärmlauf liefert Kandidaten und der
+  Player startet daraus (`vorwaermlauf=ja`), aber die Zeit bis zum ersten Bild
+  war in zwei Paaren **nicht kürzer** als der Kaltstart (7551→1412 ms,
+  3953→2776 ms). Details und Messbedingungen:
+  [QUOTA.md](QUOTA.md) → „Block 7 — Gerätemessung Vorwaermlauf".
+- **Quellen:** 31 Source-Packs, **12 live verifiziert** ([PACKS.md](PACKS.md),
+  per `tools/packs_report.py --check` aktuell); 14 Indexseiten: 10 verifiziert,
+  **9/14 auf dem A52 erreichbar** ([INDEX.md](INDEX.md)); Hoster: **3/10**
+  Kette-verifiziert (vidmoly, filemoon, direct), davon **2 auf dem A52
+  abgespielt** ([HOSTERS.md](HOSTERS.md)).
+- **TV:** D-Pad-Pfad belegt (Phase B); echtes Fire TV bleibt **NOT_RUN**
+  (Gerät unangetastet).
+- **Performance:** letzte Messung am signierten Release 1.3.0 (Kaltstart p95
+  334 ms, Scroll p95 22 ms, Janky 3,01 %) — für 1.5.0 **nicht erneut gemessen**
+  (STALE, kein neuer Anlass).
+- **Offen:** Lauf 11-Auswertung, Holdout-Lauf (Seed 20261123), 30-Minuten-
+  Sessiontest mit `9d14350`, Veröffentlichung 1.5.0/VC6, Fire TV, HDR-Nachweis
+  mangels HDR-Gerät.
 
-## Belegte Änderungen der Phase B
-
-| Bereich | Änderung | Beleg |
-|---|---|---|
-| Player | Media3 mit auflösender DataSource, Systemplayer-Fallback mit eigener Surface, MIME-/Header-Kontext | `docs/design/phase-b/selftest-a52-6of6.xml` (A52, 6/6 PASS) |
-| Quellen | Abdeckung v2 im Diagnose-Activity, Live-Messung von Index und Hoster | `docs/design/phase-b/coverage-a52-run4-60512d4.txt` (index 9/14, playback 1/14, hoster 2/11) |
-| Stabilität | 30-Minuten-Sessiontest mit 50/20/10-Wechseln | `docs/design/phase-b/stress-a52-session-pass.xml` (0 Fehler) |
-| TV-UI | feste Seitenleiste statt unterer Leiste | `docs/design/phase-b/tv-dpad-trail-1.3.0.txt` |
-| Release | Version 1.3.0/VC4, unsigned Bau im Gate, lokale Signatur, Pages-Manifest | `docs/RELEASE.md` |
-| Performance | Nachmessung am signierten Release-APK | `docs/PERF2.md`, `docs/design/phase-b/perf-release-1.3.0.txt` |
-
-## Artefakt
+## Artefakt 1.5.0 / VC6
 
 | Artefakt | SHA-256 | Größe |
 |---|---|---|
-| `frame61-1.3.0.apk` | `0be6e691c665f46a6e675b633dd62511d680ae88e2cc22160e8834fdb2bb0541` | 20.016.408 B |
-| `frame61-1.3.0.aab` | `1044b3196d07f59c2b25831ea09269c82a0c9862a9ee7a6279b3e0d06c2995c6` | 24.693.080 B |
+| `frame61-1.5.0.apk` | `ee415ab9aa0eb09546c3dd8bf0fe40a7660c1c9b32ed5bfc311136055d45e720` | 19.963.388 B |
+| `frame61-1.5.0.aab` | `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc` | 24.667.262 B |
 
-Ablage: `~/hendler-dynasty/releases/frame61/1.3.0/` und
-<https://github.com/hendlerdynasty-byte/frame61/releases/tag/v1.3.0>.
-Update-Manifest: <https://hendlerdynasty-byte.github.io/frame61/update.json>.
+Ablage: `~/hendler-dynasty/releases/frame61/1.5.0/9d14350/` (APK + AAB),
+CI-Evidenz (unsigned) `~/hendler-dynasty/evidence/frame61/1.5.0/release-9d14350/`.
+Signatur lokal am Mac (`scripts/sign_acceptance.sh` / `sign_release_aab.sh`,
+Keystore außerhalb des Repos, kein Secret-Transfer): `apksigner verify
+--print-certs` → `CN=Frame61, O=Hendler Dynasty, C=DE`, Zertifikat-SHA-256
+`1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52`;
+`jarsigner -verify` → „jar verified".
 
 ## Bauen
 
@@ -60,4 +71,6 @@ scripts/sign_acceptance.sh <unsigned.apk> <signed.apk>
 scripts/sign_release_aab.sh <unsigned.aab> <signed.aab>
 ```
 
-Lokale Heavy-Builds bleiben per Owner-Policy gesperrt.
+Lokale Heavy-Builds bleiben per Owner-Policy gesperrt. Gerätetests nur über
+die zentrale Device-Lab-Lease (A52 `RZ8T703XJWF`), kein Emulator, kein
+WLAN-ADB, kein Fire TV.

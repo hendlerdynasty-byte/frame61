@@ -1,15 +1,17 @@
 # Hoster — Stand und Nachweise
 
-Stand: 22.11.2026. Ziel waren 10 Hoster mit echter Schrittkette, aufgezeichneter
-Antwort (`responseSha256`) und Status `verified`. Erreicht sind **2 von 10**:
-Vidmoly und `direct` (ARD-Slice). Die Kette ist seit Block 13 um `js`, `pow`
-und Cookie-/WebView-Rueckgabe erweitert; die verbleibenden Hoster haben
-benannte, live gepruefte Gruende.
+Stand: 25.11.2026. Ziel waren 10 Hoster mit echter Schrittkette, aufgezeichneter
+Antwort (`responseSha256`) und Status `verified`. Erreicht sind **3 von 10**:
+Vidmoly, Filemoon (24.11.2026, `aesgcm`-Schritt) und `direct` (ARD-Slice). Die
+Kette ist seit Block 13 um `js`, `pow` und Cookie-/WebView-Rueckgabe erweitert;
+die verbleibenden Hoster haben benannte, live gepruefte Gruende.
 
-Auf der **Geraete-Ebene** (Samsung A52, 22.11.2026) laufen genau diese beiden
-Hoster auch wirklich: `direct` (ARD-MP4) und `vidmoly` (HLS) spielen mit
-Media3 auf dem Geraet. Die uebrigen neun sind dort blockiert — jeweils mit
-HTTP-Status oder Grund; siehe [„Geraete-Ebene"](#geraete-ebene-22112026).
+Auf der **Geraete-Ebene** (Samsung A52) laufen davon zwei auch wirklich:
+`direct` (ARD-MP4/HLS) und `vidmoly` (HLS) spielen mit Media3 auf dem Geraet.
+Filemoon ist auf der Kette verifiziert, aber **nicht** auf dem Geraet belegt —
+die AES-GCM-Entschluesselung ist Fixture-geprueft, nicht abgespielt. Die
+uebrigen Hosts sind dort blockiert — jeweils mit HTTP-Status oder Grund; siehe
+[„Geraete-Ebene"](#geraete-ebene-22112026).
 
 ## Methode
 
@@ -38,7 +40,7 @@ python3 -I tools/validate_packs.py
 | Vidmoly | `verified` | `vidmoly.net/embed-8irnzzsknabi.html` liefert `sources: [{ file: '…master.m3u8…' }]`; Fixture mit Hash `6db7c3c1…` |
 | VOE | `step_failed` | Filmpalast-Ziel `voe.sx/pid7osbd3o2b`; JS-Redirect, kein `<source>` im HTML; `js`-Schritt + WebView-Kette vorhanden |
 | Doodstream | `step_failed` | `do7go.com` leitet auf `playmogo.com`; Cloudflare `Just a moment...` (HTTP 403); WebView-Cookie-Kette vorhanden |
-| Filemoon | `step_failed` | PoW live geloest und per `/captcha/verify` bestaetigt; `/api/videos/{code}/playback` liefert ohne Browser-Kontext HTTP 405 |
+| Filemoon | `verified` (24.11.2026) | `GET /api/videos/{code}` liefert den AES-256-GCM-`playback`-Block; nach der `aesgcm`-Entschluesselung steht die m3u8 (HTTP 200); Fixture mit Hash, `filemoon.json` `verified: true`, `last_check 2026-11-24T05:17:47Z`. Auf dem A52 nicht abgespielt |
 | Streamtape | `no_target` | Homepage ohne oeffentliche Dateiliste; API nur mit Konto |
 | Vidoza | `no_target` | Landingpage ohne oeffentliche Dateiliste |
 | Mixdrop | `no_target` | `mixdrop.co` TLS-Verbindung fehlgeschlagen (18.11.2026) |

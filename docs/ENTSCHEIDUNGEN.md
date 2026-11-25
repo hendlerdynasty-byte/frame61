@@ -925,3 +925,34 @@ Entscheidung wird mit Datum eingetragen und weitergearbeitet.
   Abschlussbericht benannt.
 
 
+
+## 2026-11-25 — Block 7 bleibt drin, aber ohne behaupteten Zeitgewinn
+
+- Messung: A/B auf dem A52 mit dem Acceptance-Build `9d14350`, zwei Paare
+  (ARD #202 und #200), jeweils Fokus→OK (warm) gegen Kaltstart (kalt). Belege:
+  `~/hendler-dynasty/evidence/frame61/1.5.0/run10-ebec382/BLOCK7-AB-BELEG.md`.
+- Ergebnis: Der Mechanismus ist belegt (4–9 Kandidaten im Vorlauf, Player
+  meldet `vorwaermlauf=ja`), aber die Zeit bis zum ersten Bild war in beiden
+  Paaren kalt kürzer (7551→1412 ms, 3953→2776 ms).
+- Entscheidung: Der Vorwärmlauf **bleibt** — er ist funktional belegt, kostet
+  im Betrieb nichts (ein Lauf zur Zeit, nur die Pack(s) der Gruppe, kein
+  WebView) und ist für Gruppen mit langsamer Auflösung der einzige Weg, die
+  Latenz vor den Player zu ziehen. Er wird **nicht** als Performance-Gewinn
+  ausgewiesen; QUOTA.md und CHANGELOG nennen den gemessenen Befund samt
+  Bedingungen (Fremdlast 92 % CPU eines anderen Projekts auf dem Gerät,
+  Resume-Offset in Paar 1).
+- Begründung gegen einen Ausbau: ein Umbau (z. B. Vorwärmen mehrerer
+  Kandidaten oder Qualitäten) würde das Budget an Netzlast erhöhen, ohne dass
+  ein Gewinn belegt wäre. Erst messen, dann bauen.
+
+## 2026-11-25 — Veröffentlichung nur nach Holdout, Geräte-Smoke am Release-APK
+
+- Regel (Owner): keine Veröffentlichung, solange die Holdout-Quote nicht belegt
+  ist. Deshalb bleiben GitHub-Release `v1.5.0` und `site/update.json`
+  (versionCode 6) gesperrt, bis der Holdout-Lauf (Seed `20261123`, Build
+  `9d14350`) auf dem A52 durch ist.
+- Zusätzlich: Vor der Veröffentlichung wird das **signierte Release-APK**
+  (`ee415ab9…`) per Device-Lab `QUICK_SMOKE` installiert und geprüft — die
+  bisherigen Gerätebelege der 1.5.0 stammen aus der Acceptance-Variante
+  (gleicher Code, anderer Build-Typ). Ohne diesen Smoke gilt das
+  Release-Artefakt als nicht gerätegeprüft.

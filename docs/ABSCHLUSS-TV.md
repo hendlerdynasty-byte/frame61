@@ -1,5 +1,12 @@
 # ABSCHLUSS-TV.md — Frame61, Blöcke 0–18 + Phase B
 
+> **Stand-Hinweis (25.11.2026):** Dieses Dokument beschreibt den TV-Stand des
+> Releases **1.3.0 / VC4** (Quellstand `9353e5a`). Die Blöcke 7–9 der 1.5.0
+> ändern die TV-Oberfläche **nicht** (Player-, Resolver- und
+> Episodenadressierung); die hier belegte Navigation und der TV-Start gelten
+> unverändert. Aktueller Release-Stand: [STATE.md](STATE.md),
+> [RELEASE.md](RELEASE.md).
+
 Stand: 22.11.2026. Quellstand `9353e5a` (Merge Phase B auf `main`), Release
 **1.3.0 / VersionCode 4**. Dieses Dokument ersetzt für das 10-Foot-TV-Ziel die
 alte `ABSCHLUSS.md`-Liste; die alte Datei bleibt als Historie des ersten

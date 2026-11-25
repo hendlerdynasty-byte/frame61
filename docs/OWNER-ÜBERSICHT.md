@@ -3,11 +3,12 @@
 Stand: 16.11.2026 (Abend). Dieses eine Dokument beantwortet:
 **Was willst du? Was haben wir? Was ist bewusst nicht umgesetzt — und warum?**
 
-> **Update 22.11.2026 (Phase B, Release 1.3.0/VC4).** Dieses Dokument
-> beschreibt den Stand vom 16.11. und ist damit **teilweise veraltet**.
+> **Update 25.11.2026 (Release 1.5.0/VC6, Quellstand `9d14350`).** Dieses
+> Dokument beschreibt den Stand vom 16.11. und ist damit **teilweise veraltet**.
 > Maßgeblich sind heute:
-> [ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md) (aktueller Abschlussbericht mit
-> Ampel je Arbeitspaket), [STATE.md](STATE.md), [RELEASE.md](RELEASE.md),
+> [STATE.md](STATE.md) (Ist-Stand mit Belegen), [RELEASE.md](RELEASE.md)
+> (signierter Kandidat 1.5.0/VC6), [CHANGELOG.md](CHANGELOG.md) (Blöcke 7–9),
+> [QUOTA.md](QUOTA.md) (Quote je Lauf), [ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md),
 > [ABSCHLUSS-TV.md](ABSCHLUSS-TV.md), [INDEX.md](INDEX.md),
 > [HOSTERS.md](HOSTERS.md) und [PACKS.md](PACKS.md).
 > Korrigiert wurde gegenüber dem Stand vom 16.11.: Die Packs sind **nicht
@@ -15,7 +16,7 @@ Stand: 16.11.2026 (Abend). Dieses eine Dokument beantwortet:
 > mit technischem Beleg (Index-Treffer live am Gerät und Fixture), siehe
 > `docs/PACKS.md` und `docs/INDEX.md`. `verified` ist ein technischer
 > Nachweis, keine Rechts- oder Lizenzfreigabe. Der Release 1.2.0 ist durch
-> **1.3.0 / VC4** abgelöst.
+> **1.5.0 / VC6** abgelöst (1.3.0/VC4 live bis zur Veröffentlichung der 1.5.0).
 
 ---
 

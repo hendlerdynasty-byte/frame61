@@ -903,6 +903,97 @@ CI-Evidenz `gate-evidence/`), Auswertung mit
 `tools/measure/analyse_lauf.py run10-ebec382/polls run9-7cac713/polls` und
 `tools/measure/analyse_ursachen.py run10-ebec382/polls`.
 
+## Block 7 — Gerätemessung Vorwaermlauf (Befund 3 geschlossen, 25.11.2026)
+
+Befund 3 (Lauf 10) verlangte die Messung **im Player**, nicht im Harness:
+Fokus→OK gegenueber Kaltstart, Protokollzeile „Erstes Bild nach … ms".
+Gefahren auf dem A52 (SM A525F, RZ8T703XJWF, Android 14, USB, Acceptance-Build
+`9d14350` aus CI 45582003989), Navigations- und Play-Kette je in **einer**
+Brueckensitzung. Rohbelege und Woertlichkeit:
+`~/hendler-dynasty/evidence/frame61/1.5.0/run10-ebec382/BLOCK7-AB-BELEG.md`.
+
+| Titel | warm (vorwaermlauf=ja) | kalt (vorwaermlauf=nein) |
+|---|---|---|
+| Die Schnetts und die Schmoos (#202) | 7551 ms, 9 Kandidaten, mp4 1920, resumeMs 575695 | 1412 ms, 9 Kandidaten |
+| Die Wannseekonferenz – Die Dokumentation (#200) | 3953 ms, 4 Kandidaten, HLS 1280, resumeMs 0 | 2776 ms, 4 Kandidaten |
+
+- **Mechanismus belegt:** Der Fokus loest die Vorwaermung aus
+  (`Frame61Prefetch`, 4–9 Kandidaten, 181–1371 ms), der Player startet daraus
+  (`RESOLVER: Start aus dem Vorwaermlauf`) und meldet `vorwaermlauf=ja`.
+- **Zeitgewinn nicht belegt:** In beiden Paaren war der Kaltpfad schneller. Die
+  eingesparte Aufloesung holt der Kaltpfad bei ARD in rund einer Sekunde nach
+  (ARD-API: 22 ms + 15 ms); den Rest bestimmt die Medienuebertragung, die in
+  beiden Pfaden gleich ist.
+- **Messbedingung:** Fremdlast auf demselben Geraet
+  (`de.hendlerdynasty.vereinsboard.debug`, 92 % CPU) — dokumentiert in
+  `P1-readonly-out/`, `P2-out/`, `P4-out/`. Die Zeitwerte sind daher verrauscht,
+  die Richtung des Ergebnisses war aber in zwei unabhaengigen Paaren gleich.
+- **Konsequenz fuer die Quote:** Der Harness kann den Vorwaermlauf per
+  Konstruktion nicht abbilden (kein Katalogfokus, kein Episodenkontext); fuer
+  die WebView-Gruppen waere nur eine Player-Messung aussagekraeftig — dort ist
+  keine vorwaermbare Gruppe messbar (`bs.to` ausgeschlossen, s.to/aniworld
+  brauchen den Episodenkontext).
+
+## Lauf 11 — Build `9d14350`, 25.11.2026, A52 (Training, Seed `20261122`)
+
+Stichprobe: Training, Seed `20261122`, 100 Titel aus 997 Katalogeinträgen,
+gleiche Probe wie Lauf 1–10. Acceptance-Build `9d14350` (CI `45582003989`,
+Gate 203/203), gestartet aus den Einstellungen („Titel-Quote") und per
+Poll-Dumps beobachtet (33 Poll-Sitzungen, 16:12–16:47 Uhr). Rohbelege:
+`~/hendler-dynasty/evidence/frame61/1.5.0/run11-9d14350/polls/`
+(`latest.xml` mit `QUOTA SUMMARY`).
+
+**Ergebnis: 67/100 spielbar (67 %)**, Fast-Path 66/100 (66 %).
+
+| Kennzahl | Lauf 11 (`9d14350`) | Lauf 10 (`ebec382`) | Delta |
+|---|---|---|---|
+| Quote produktiv | **67/100 = 67 %** | 69/100 = 69 % | **−2 Titel** |
+| Quote Fast-Path | 66/100 = 66 % | 68/100 = 68 % | −2 Titel |
+| resolveMs p50 / p95 | 1959 / 27089 ms | 2567 / 27152 ms (Summary) | − |
+| firstFrameMs p50 / p95 | 2907 / 28584 ms (Auswertung; Harness-Summary: 28449) | 2928 / 28502 ms (Summary) | ~ gleich |
+| Fehlerklassen | EMBED_UNRESOLVED 16, GEO_BLOCKED 9, CONTAINER_UNSUPPORTED 8 | EMBED_UNRESOLVED 14, GEO_BLOCKED 9, CONTAINER_UNSUPPORTED 8 | +2 EMBED_UNRESOLVED |
+| Ursachen (Klartext) | 22 × Hoster-Zeitüberschreitung, 8 × keine weitere Alternative, 3 × Hoster fehlgeschlagen | 22 × Hoster-Zeitüberschreitung, 8 × keine weitere Alternative, 1 × Hoster fehlgeschlagen | ~ gleich |
+| Interception-Versuche | 189, davon 10 mit Medien-URL | — | — |
+
+Quote je Gruppe (prod, Delta zu Lauf 10):
+
+| Gruppe | Titel | spielbar | Quote | Delta |
+|---|---|---|---|---|
+| aniworld | 19 | 18 | **95 %** | +0 pp |
+| serienstream | 43 | 30 | **70 %** | −5 pp |
+| filmpalast | 11 | 8 | **73 %** | +9 pp |
+| ard | 10 | 5 | **50 %** | +0 pp |
+| bsto | 6 | 3 | **50 %** | +0 pp |
+| moflix | 11 | 3 | **27 %** | −9 pp |
+
+### Befund — Delta ist Provider-Rotation, keine Block-Wirkung
+
+Sechs Titel kippten, alle an einem **anderen Anbieter** (idx 1, 36 wurden OK
+über `edge1-frankfurt-sprintcdn…`, `s8-5042yyg.s1q2105.com`; idx 49, 50, 64,
+82 fielen auf `veevcdn.co`/`dropcdn.io`/`moflix.rpmplay.xyz` zurück). Block 9
+ist oberflächengebunden (Episodenadresse ohne Fokus-Kontext greift im Harness
+nicht), Block 7 ebenso — die Differenz kann per Konstruktion nicht aus den
+Blöcken 7/9 stammen. Die toten Hosts sind dieselben wie in Lauf 9/10
+(`moflix.rpmplay.xyz` 9×, `ds2.dropcdn.io` 6×, `r1.dropcdn.io` 5×); auch die
+Ursachenverteilung ist praktisch identisch mit Lauf 10
+(22 × Hoster-Zeitüberschreitung, 8 × keine weitere Alternative,
+1 × Hoster fehlgeschlagen).
+
+### Befund — ARD 50 % und bsto 50 % sind echte Gerätelücken
+
+`ard`: 5/10 spielbar. Drei Titel (idx 20 „Monte Verità", 24 „Einstein und
+Hawking", 46 „Der Gesang der Flusskrebse") hatten 1–2 Kandidaten, die nicht
+spielten (`EMBED_UNRESOLVED`, „keine weitere Alternative"); zwei Titel
+(idx 29 „Eine Hochzeit mit Folgen", 62 „Eine verhängnisvolle Affäre")
+scheiterten ohne Kandidaten an `GEO_BLOCKED`. `bsto`: 3/6,
+`GEO_BLOCKED` — burningseries.ac antwortet geo-blockiert (vgl. Intercept
+#297, 25 s Abbruch). Beides ist keine Regression, sondern der gleiche Stand
+wie Lauf 10 (ARD 5/10, bsto 3/6).
+
+Belege: `run11-9d14350/polls/latest.xml`, Auswertung
+`tools/measure/analyse_lauf.py run11-9d14350/polls run10-ebec382/polls train`
+(Output oben), Ursachen-Auswertung `tools/measure/analyse_ursachen.py`.
+
 ## Ältere Methode (1.4.0)
 
 - **Stichprobe:** 100 deterministisch gezogene Katalogtitel aus

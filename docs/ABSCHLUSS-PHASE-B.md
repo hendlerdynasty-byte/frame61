@@ -1,5 +1,12 @@
 # ABSCHLUSS-PHASE-B.md — Frame61, Phase B
 
+> **Stand-Hinweis (25.11.2026):** Dieses Dokument ist der Abschlussbericht der
+> Phase B (**Release 1.3.0 / VC4**). Der aktuelle Stand ist **1.5.0 / VC6**
+> (`docs/STATE.md`, `docs/RELEASE.md`, `docs/ABSCHLUSS-1.5.0.md`); die hier
+> belegten Phasen-B-Ergebnisse (Player-Selbsttest 6/6, TV-Navigation,
+> Geräte-Abdeckung) bleiben gültig, die Quellzahlen sind in `docs/PACKS.md`
+> und `docs/INDEX.md` fortgeschrieben.
+
 Stand: 22.11.2026. Code-Stand `9353e5a` (Merge Phase B auf `main`), Release
 **1.3.0 / VersionCode 4**, signierter Sideload-Release ohne Play-Store-Upload.
 

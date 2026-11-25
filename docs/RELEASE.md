@@ -1,29 +1,46 @@
-# RELEASE.md — Frame61 1.4.0 (Kandidat) / 1.3.0 (live)
+# RELEASE.md — Frame61 1.5.0 (Kandidat, signiert) / 1.3.0 (live)
 
-Stand: 22.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
+Stand: 25.11.2026. Signierter Sideload-Release, kein Play-Store-Release.
 
-## Kandidat 1.4.0 / VC5 — signiert, noch nicht veröffentlicht
+## Kandidat 1.5.0 / VC6 — signiert, Veröffentlichung nach Holdout
+
+| Artefakt | SHA-256 | Groesse |
+|---|---|---|
+| `frame61-1.5.0.apk` | `ee415ab9aa0eb09546c3dd8bf0fe40a7660c1c9b32ed5bfc311136055d45e720` | 19.963.388 B |
+| `frame61-1.5.0.aab` | `39a36476edc075a7a2065c46d5650a5d195d1b5411d0234cfb19e87a8e2866bc` | 24.667.262 B |
+
+- Quellstand `9d14350` (`main`, Block 9), VersionCode 6, versionName 1.5.0,
+  Package `de.hendler.frame61`.
+- Unsigned gebaut von Actions-Lauf `45582003989` (Gate **203/203 Tests**,
+  Lint **0 Errors**, Job `release`), Artefakte
+  `~/hendler-dynasty/evidence/frame61/1.5.0/release-9d14350/`
+  (APK `7984a714…` 19.684.083 B, AAB `a9d88504…` 24.367.453 B).
+- Signiert am Mac mit `scripts/sign_acceptance.sh` bzw.
+  `scripts/sign_release_aab.sh`; Keystore `~/hendler-dynasty/keys/frame61-release.jks`,
+  Passwort aus der Keychain (`frame61-keystore-pass`), kein Secret verlässt den
+  Mac. Zertifikat `CN=Frame61, O=Hendler Dynasty, C=DE`,
+  SHA-256 `1201f46d50d167ab10712dadbe64751af89bf9d61f1207672d1b0ce06dec4c52`
+  (unverändert seit 1.1.0). `apksigner verify --print-certs` und
+  `zipalign -c` bestätigt, `jarsigner -verify` → „jar verified".
+- Ablage: `~/hendler-dynasty/releases/frame61/1.5.0/9d14350/`.
+- Inhalt: Block 7 (Fokus-Vorwärmlauf), Block 8 (Staffel in der
+  Episodenadresse), Block 9 (Serie ohne Nummer = Folge 1), DEVIDEOSRC-Kette,
+  `aesgcm`-Pack-Aktion für Filemoon, `MediaUrlMatcher` ohne Dateiendung.
+  Nachweise: [CHANGELOG.md](CHANGELOG.md), Quote: [QUOTA.md](QUOTA.md).
+- **Noch nicht veröffentlicht:** GitHub-Release `v1.5.0` und `site/update.json`
+  (versionCode 6) erst nach dem Holdout-Lauf (Seed `20261123`, Build
+  `9d14350`) und dem 30-Minuten-Sessiontest. Owner-Regel: keine
+  Veröffentlichung ohne belegte Holdout-Quote.
+
+## Nicht veröffentlichte Vorstufe 1.4.0 / VC5
 
 | Artefakt | SHA-256 | Groesse |
 |---|---|---|
 | `frame61-1.4.0.apk` | `93bf140f5734b5adfe58f28fa0959cf68d30db0bcc1cefe293876b873c8d16b8` | 20.033.020 B |
 | `frame61-1.4.0.aab` | `5fead8868e148508eb507528bf961798ab75a572cf74d3e48f8b9e9be23c943f` | 24.706.504 B |
 
-- Quellstand `312347a` (Branch `release-1.4.0`, Code = `main` + Versionsbump),
-  VersionCode 5, versionName 1.4.0, Package `de.hendler.frame61`.
-- Unsigned gebaut von Actions-Lauf `45060048093` (Job `release`),
-  signiert am Mac mit `scripts/sign_acceptance.sh` bzw.
-  `scripts/sign_release_aab.sh`. Zertifikat `1201f46d…` (unverändert),
-  `apksigner verify` und `jarsigner -verify` bestätigt.
-- **Nicht veröffentlicht:** Der zugehörige Gate-Lauf auf `c303a69`/`main` ist
-  grün, aber die Abnahme am Gerät steht aus, weil der A52 während der Messung
-  gesperrt wurde (Owner muss entsperren). Der Kandidat wird erst nach dem
-  Gerätenachweis als GitHub-Release `v1.4.0` und mit `update.json`
-  (`versionCode` 5) veröffentlicht.
-- Inhalt: Quoten-Messharness, schnelle Auflösung (`resolveFast`), parallele
-  Hoster-Ketten, Captcha-Pipeline ohne sichtbaren Dialog, Stream-Regeln für
-  s.to/aniworld, Hoster-Packs für vidsonic/serienstream/devideosrc,
-  generische Embed-Auflösung. Zahlen: [QUOTA.md](QUOTA.md).
+- Quellstand `312347a`, Actions-Lauf `45060048093`, VersionCode 5. Wurde nie
+  veröffentlicht (Geräteabnahme fehlte); durch 1.5.0 überholt.
 
 ## Live: Release 1.3.0
 

@@ -128,9 +128,10 @@ Quellen sind je Profil keyed.
   Worker live verifiziert.
 - **Index-Packs** (aniworld, bs-to, cine, filmo, filmpalast, filmstarts,
   moflix, s-to, serienstream, streamcloud u. a.): Suchpfad technisch belegt.
-  Am A52 gemessen: 9/14 Indexseiten liefern Treffer, 1/14 spielt über den
-  Indexpfad (moflix), 2/11 Hoster liefern laufende Wiedergabe (`direct`,
-  `vidmoly`). Blockierte Quellen stehen mit HTTP-Status und Grund in
+  Stand 25.11.2026: 10/14 Indexseiten `verified` ([docs/INDEX.md](docs/INDEX.md)),
+  am A52 liefern 9/14 Treffer; Hoster 3/10 Kette-verifiziert (`direct`,
+  `vidmoly`, `filemoon`), davon 2 auf dem A52 abgespielt (`direct`, `vidmoly`).
+  Blockierte Quellen stehen mit HTTP-Status und Grund in
   [docs/INDEX.md](docs/INDEX.md), [docs/HOSTERS.md](docs/HOSTERS.md) und
   [docs/ABSCHLUSS-PHASE-B.md](docs/ABSCHLUSS-PHASE-B.md).
 - Nicht verifizierte Packs behalten `verified: false` und einen dokumentierten
@@ -194,7 +195,8 @@ PACKS.md-Abgleich und die APK-Größenprüfung (≤ 45 MiB). Details:
   Arbeitspaket, Quellzahlen, Tests, Lint, Performance, Artefakt-Hashes,
   blockierte Quellen mit HTTP-Status und Grund
 - `docs/STATE.md` — was läuft, was offen ist, mit Belegen
-- `docs/RELEASE.md` — Release 1.3.0 (APK/AAB, Signatur, Hashes, Update-Pfad)
+- `docs/RELEASE.md` — Release 1.5.0/VC6 (signierter Kandidat, APK/AAB, Signatur,
+  Hashes) und der live 1.3.0-Stand mit Update-Pfad
 - `docs/ABSCHLUSS-TV.md` — TV-Ziel (Blöcke 0–18 + Phase B, DoD-Tabelle)
 - `docs/OWNER-ÜBERSICHT.md` — **ein Dokument für alles**: Ziel/Wunsch, Ist-Stand,
   was nicht umgesetzt ist und warum, DoD-Checkliste, offene Punkte
