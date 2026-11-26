@@ -270,6 +270,21 @@ fun SettingsScreen(
                     onClick = startAniworldPathAcceptance
                 )
             ) { Text(text = "Aniworld 20-Titel-Abnahme") }
+            val startPathScreenshotViewer = {
+                context.startActivity(
+                    Intent(
+                        context,
+                        Class.forName("de.hendler.frame61.diagnostics.PathScreenshotViewerActivity")
+                    )
+                )
+            }
+            OutlinedButton(
+                onClick = startPathScreenshotViewer,
+                modifier = Modifier.tvFocusable(
+                    id = "path-screenshot-viewer",
+                    onClick = startPathScreenshotViewer
+                )
+            ) { Text(text = "Path-Screenshots ansehen") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
