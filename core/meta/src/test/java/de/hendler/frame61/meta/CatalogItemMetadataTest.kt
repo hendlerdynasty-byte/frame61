@@ -15,14 +15,14 @@ class CatalogItemMetadataTest {
               "items": [{
                 "id": "s1", "title": "Serie", "type": "series",
                 "backdrop": "https://example.invalid/backdrop.jpg",
-                "cast": ["Person A", "Person B"]
+                "cast": [{"name":"Person A","character":"Rolle A"},{"name":"Person B"}]
               }]
             }
             """.trimIndent()
         )
         val item = repo.byId("s1")!!
         assertEquals("https://example.invalid/backdrop.jpg", item.backdrop)
-        assertEquals(listOf("Person A", "Person B"), item.cast)
+        assertEquals(listOf("Person A", "Person B"), item.cast.map { it.name })
     }
 
     @Test
@@ -31,7 +31,7 @@ class CatalogItemMetadataTest {
             """{"items":[{"id":"m1","title":"Film","type":"movie"}]}"""
         )
         val item = repo.byId("m1")!!
-        assertNull(item.backdrop)
+        assertEquals("", item.backdrop)
         assertTrue(item.cast.isEmpty())
     }
 }

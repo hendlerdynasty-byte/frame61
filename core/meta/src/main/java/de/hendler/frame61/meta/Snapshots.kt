@@ -43,7 +43,9 @@ data class MetaSnapshot(
     val genres: List<String> = emptyList(),
     val rating: Double? = null,
     val runtime: Int? = null,
-    val episodes: List<MetaEpisode> = emptyList()
+    val episodes: List<MetaEpisode> = emptyList(),
+    val backdrop: String = "",
+    val cast: List<CastMember> = emptyList()
 )
 
 @Serializable

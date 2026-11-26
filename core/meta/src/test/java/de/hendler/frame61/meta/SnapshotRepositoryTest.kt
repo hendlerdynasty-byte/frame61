@@ -30,6 +30,8 @@ class SnapshotRepositoryTest {
           "fetchedAt": "2026-11-17T00:00:00Z", "live": true,
           "attribution": "TVmaze (CC BY-SA 4.0)", "title": "Dark", "year": 2017,
           "type": "series", "overview": "Eine Familiensaga in Winden.", "poster": "p1",
+          "backdrop": "file:///android_asset/backdrops/tvmaze-1.jpg",
+          "cast": [{"name": "Louis Hofmann", "character": "Jonas Kahnwald"}],
           "genres": ["Drama", "Mystery"], "rating": 8.8, "runtime": 60,
           "episodes": [
             {"id": 11, "season": 1, "number": 1, "name": "Geheimnisse", "runtime": 51},
@@ -56,6 +58,8 @@ class SnapshotRepositoryTest {
         assertEquals(2, repo.index().entries.size)
         assertEquals("2026-11-17T00:00:00Z", repo.generatedAt())
         assertNotNull(repo.byId("tvmaze-1"))
+        assertEquals("file:///android_asset/backdrops/tvmaze-1.jpg", repo.byId("tvmaze-1")?.backdrop)
+        assertEquals("Louis Hofmann", repo.byId("tvmaze-1")?.cast?.single()?.name)
         assertNull(repo.byId("fehlt"))
     }
 

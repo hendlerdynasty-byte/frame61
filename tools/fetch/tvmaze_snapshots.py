@@ -175,7 +175,30 @@ def main() -> int:
         items = items[: args.limit]
     generated_at = iso_now()
 
+    index_path = out_dir / "index.json"
+    existing_index: dict = {}
+    if index_path.is_file():
+        try:
+            loaded_index = json.loads(index_path.read_text(encoding="utf-8"))
+            if isinstance(loaded_index, dict):
+                existing_index = loaded_index
+        except json.JSONDecodeError:
+            pass
+    deep_path_ids: set[str] = set()
+    targets_path = root / "tools/fetch/aniworld_targets.json"
+    if targets_path.is_file():
+        try:
+            targets_payload = json.loads(targets_path.read_text(encoding="utf-8"))
+            deep_path_ids = {
+                str(target["id"])
+                for target in targets_payload.get("targets", [])
+                if isinstance(target, dict) and isinstance(target.get("id"), str)
+            }
+        except (json.JSONDecodeError, KeyError, TypeError):
+            pass
+
     written = 0
+    preserved = 0
     live = 0
     fallback = 0
     for index, item in enumerate(items, start=1):
@@ -183,6 +206,16 @@ def main() -> int:
         if not identifier:
             log(f"[{index}] SKIP ohne id")
             continue
+        target = out_dir / f"{identifier}.json"
+        if identifier in deep_path_ids and target.is_file():
+            try:
+                previous = json.loads(target.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                previous = {}
+            if isinstance(previous, dict) and previous.get("source") in ("tvmaze", "anilist"):
+                preserved += 1
+                log(f"[{index}/{len(items)}] {identifier}: Tiefenpfad erhalten")
+                continue
         snapshot: dict
         if item.get("type") == "series" and str(identifier).startswith("tvmaze-") and not args.offline:
             try:
@@ -206,26 +239,42 @@ def main() -> int:
         if not args.offline and item.get("type") == "series":
             time.sleep(THROTTLE_SECONDS)
 
+    generated_entries = [
+        {
+            "id": item.get("id"),
+            "title": item.get("title", ""),
+            "year": item.get("year"),
+            "type": item.get("type", "movie"),
+            "poster": item.get("poster", ""),
+        }
+        for item in items
+        if item.get("id")
+    ]
+    previous_entries = existing_index.get("entries", [])
+    merged_entries = [
+        dict(entry) for entry in previous_entries if isinstance(entry, dict)
+    ] if isinstance(previous_entries, list) else []
+    positions = {entry.get("id"): position for position, entry in enumerate(merged_entries)}
+    for entry in generated_entries:
+        identifier = entry["id"]
+        if identifier in positions:
+            merged_entries[positions[identifier]] = entry
+        else:
+            positions[identifier] = len(merged_entries)
+            merged_entries.append(entry)
     index_payload = {
-        "schema": 1,
+        "schema": existing_index.get("schema", 1),
         "generatedAt": generated_at,
-        "entries": [
-            {
-                "id": item.get("id"),
-                "title": item.get("title", ""),
-                "year": item.get("year"),
-                "type": item.get("type", "movie"),
-                "poster": item.get("poster", ""),
-            }
-            for item in items
-            if item.get("id")
-        ],
+        "entries": merged_entries,
     }
-    (out_dir / "index.json").write_text(
+    index_path.write_text(
         json.dumps(index_payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    log(f"geschrieben: {written} Snapshots, {live} live, {fallback} Fallback -> {out_dir}")
+    log(
+        f"geschrieben: {written} Snapshots, {preserved} Tiefenpfade erhalten, "
+        f"{live} live, {fallback} Fallback -> {out_dir}"
+    )
     return 0
 
 

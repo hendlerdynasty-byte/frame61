@@ -32,6 +32,13 @@ val fetchToolTests = tasks.register<Exec>("testFetchTools") {
     )
 }
 
+val refreshAniworldMeta = tasks.register<Exec>("refreshAniworldMeta") {
+    group = "fetch"
+    description = "Aktualisiert 20 aniworld-Tiefenpfade aus TVmaze/AniList und lokalen Bildern"
+    workingDir = rootDir
+    commandLine("python3", "tools/fetch/aniworld_tvmaze.py", "--root", rootDir.absolutePath)
+}
+
 val packsReport = tasks.register<Exec>("packsReport") {
     group = "verification"
     description = "Prueft, ob docs/PACKS.md zu den Assets passt"

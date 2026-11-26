@@ -441,7 +441,7 @@ def validate_meta(root: Path, report: Report) -> None:
     for extra in sorted(file_ids - ids):
         report.error(str(meta_dir), f"Datei {extra!r} fehlt im index")
 
-    allowed_sources = {"tvmaze", "catalog", "wikipedia"}
+    allowed_sources = {"tvmaze", "anilist", "catalog", "wikipedia"}
     for path in files:
         report.count("meta_snapshots")
         data = load_json(path, report)
@@ -461,12 +461,28 @@ def validate_meta(root: Path, report: Report) -> None:
         if data.get("source") not in allowed_sources:
             report.error(where, f"source={data.get('source')!r}")
         if data.get("live") is True:
-            if data.get("source") != "tvmaze":
-                report.error(where, "live=true nur mit source=tvmaze")
+            if data.get("source") not in {"tvmaze", "anilist"}:
+                report.error(where, "live=true nur mit source=tvmaze/anilist")
             if not non_empty(data.get("sourceId")):
                 report.error(where, "live=true ohne sourceId")
             if not non_empty(data.get("fetchedAt")):
                 report.error(where, "live=true ohne fetchedAt")
+        for field, folder in (("poster", "posters"), ("backdrop", "backdrops")):
+            value = data.get(field)
+            if isinstance(value, str) and value.startswith("file:///android_asset/"):
+                relative = value.removeprefix("file:///android_asset/")
+                if not relative.startswith(folder + "/"):
+                    report.error(where, f"{field} hat unerwarteten Asset-Pfad: {relative}")
+                elif not (root / "app/src/main/assets" / relative).is_file():
+                    report.error(where, f"{field} fehlt: {relative}")
+        cast = data.get("cast")
+        if cast is not None:
+            if not isinstance(cast, list):
+                report.error(where, "cast ist keine Liste")
+            else:
+                for position, member in enumerate(cast):
+                    if not isinstance(member, dict) or not non_empty(member.get("name")):
+                        report.error(where, f"cast[{position}] ohne name")
         episodes = data.get("episodes")
         if not isinstance(episodes, list):
             report.error(where, "episodes ist keine Liste")

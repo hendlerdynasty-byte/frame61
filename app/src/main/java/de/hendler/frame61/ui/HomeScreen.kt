@@ -445,7 +445,7 @@ private fun DetailContent(
         item(key = "cast") {
             DetailTextSection(
                 title = "Besetzung",
-                text = catalogItem.cast.filter { it.isNotBlank() }.distinct().joinToString(", ")
+                text = catalogItem.cast.map { it.name }.filter { it.isNotBlank() }.distinct().joinToString(", ")
                     .ifBlank { "Keine Besetzung hinterlegt." }
             )
         }

@@ -7,6 +7,13 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
 
+/** One cast member stored in the bundled catalog and metadata snapshots. */
+@Serializable
+data class CastMember(
+    val name: String,
+    val character: String = ""
+)
+
 /** One curated title in the bundled catalog. */
 @Serializable
 data class CatalogItem(
@@ -32,10 +39,8 @@ data class CatalogItem(
      * mehrere Quellen denselben Titel führen.
      */
     val sourceKey: String? = null,
-    /** Optionales Breitbildmotiv; ältere Kataloge liefern weiterhin nur das Poster. */
-    val backdrop: String? = null,
-    /** Anzeigenamen der Besetzung; strukturierte TMDB-Credits werden hier nicht gespiegelt. */
-    val cast: List<String> = emptyList()
+    val backdrop: String = "",
+    val cast: List<CastMember> = emptyList()
 )
 
 @Serializable
