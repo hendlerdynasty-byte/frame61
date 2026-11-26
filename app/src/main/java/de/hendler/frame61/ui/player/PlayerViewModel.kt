@@ -7,6 +7,9 @@ import androidx.media3.exoplayer.ExoPlayer
 import dagger.hilt.android.lifecycle.HiltViewModel
 import de.hendler.frame61.data.ProfileDataStore
 import de.hendler.frame61.data.ResumeRepository
+import de.hendler.frame61.data.StreamEvidenceRepository
+import de.hendler.frame61.data.database.entities.StreamEvidence
+import de.hendler.frame61.data.database.entities.StreamEvidenceOutcome
 import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.player.Media3Frame61Player
 import de.hendler.frame61.player.NextEpisodeCountdown
@@ -18,6 +21,7 @@ import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.playback.PrefetchController
 import de.hendler.frame61.resolver.ContentIdentityGate
 import de.hendler.frame61.resolver.IdentityRequest
+import de.hendler.frame61.resolver.IdentityKind
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import de.hendler.frame61.resolver.hostOf
@@ -34,6 +38,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
+import java.security.MessageDigest
 import javax.inject.Inject
 
 data class PlayerScreenState(
@@ -64,6 +69,7 @@ class PlayerViewModel @Inject constructor(
     private val autoResolver: AutoPlaybackResolver,
     private val prefetchController: PrefetchController,
     private val captchaBroker: CaptchaBroker,
+    private val streamEvidenceRepository: StreamEvidenceRepository,
     prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
 
@@ -126,6 +132,7 @@ class PlayerViewModel @Inject constructor(
      */
     private var resolveJob: Job? = null
     private val failedUrls = mutableSetOf<String>()
+    private val identityScores = mutableMapOf<String, Double>()
     /**
      * Hosts der **Watch-URLs**, die bereits gescheitert sind.
      *
@@ -157,6 +164,7 @@ class PlayerViewModel @Inject constructor(
         resolveJob?.cancel()
         failedUrls.clear()
         failedHosts.clear()
+        identityScores.clear()
         this.profileId = profileId
         this.titleId = titleId
         this.titleName = title
@@ -286,6 +294,7 @@ class PlayerViewModel @Inject constructor(
                     emptyList()
                 }
                 verified.forEach { v ->
+                    identityScores[v.candidate.url] = v.verdict.score
                     PlaybackDiagnostics.record(
                         "IDENTITY",
                         "${v.verdict.kind.name} ${v.candidate.sourceId} ${v.verdict.matchedTitle ?: "-"}",
@@ -352,6 +361,11 @@ class PlayerViewModel @Inject constructor(
     }
 
     /** Anzeigename der Quelle im Player. */
+    private fun sha256(value: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
+        return digest.joinToString("") { "%02x".format(it) }
+    }
+
     private fun sourceNote(candidate: MirrorCandidate): String? =
         when (candidate.sourceId) {
             "ard" -> "ARD Mediathek"
@@ -423,6 +437,32 @@ class PlayerViewModel @Inject constructor(
                     "mirrors" to mirrors.size.toString()
                 )
             )
+            val candidate = mirrors.getOrNull(mirrorIndex)
+            if (candidate != null) {
+                val outcome = if (current.identityHint != null) {
+                    StreamEvidenceOutcome.TRAILER_ONLY
+                } else {
+                    StreamEvidenceOutcome.CORRECT
+                }
+                viewModelScope.launch {
+                    streamEvidenceRepository.record(
+                        StreamEvidence(
+                            catalogId = titleId,
+                            season = season,
+                            episode = episodeNumber,
+                            sourceId = candidate.sourceId,
+                            sourceKey = candidate.sourceId,
+                            checkedAt = System.currentTimeMillis(),
+                            outcome = outcome,
+                            identityScore = identityScores[candidate.url] ?: 0.0,
+                            httpStatus = null,
+                            container = null,
+                            redactedUrlHash = sha256(candidate.url),
+                            reason = "first frame"
+                        )
+                    )
+                }
+            }
         }
 
         // The watchdog measures *progress*, not the presence of the 1 s ticker:
