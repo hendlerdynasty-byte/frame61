@@ -445,7 +445,9 @@ private fun DetailContent(
         item(key = "cast") {
             DetailTextSection(
                 title = "Besetzung",
-                text = catalogItem.cast.map { it.name }.filter { it.isNotBlank() }.distinct().joinToString(", ")
+                text = catalogItem.cast.filter { it.name.isNotBlank() }
+                    .distinctBy { it.name }
+                    .joinToString(", ") { it.name }
                     .ifBlank { "Keine Besetzung hinterlegt." }
             )
         }
@@ -553,7 +555,7 @@ private fun DetailHero(
                     )
                 )
         ) {
-            item.backdrop?.takeIf { it.isNotBlank() }?.let { backdrop ->
+            item.backdrop.takeIf { it.isNotBlank() }?.let { backdrop ->
                 AsyncImage(
                     model = backdrop,
                     contentDescription = null,

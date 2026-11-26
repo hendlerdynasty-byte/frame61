@@ -1,7 +1,6 @@
 package de.hendler.frame61.meta
 
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -22,7 +21,9 @@ class CatalogItemMetadataTest {
         )
         val item = repo.byId("s1")!!
         assertEquals("https://example.invalid/backdrop.jpg", item.backdrop)
-        assertEquals(listOf("Person A", "Person B"), item.cast.map { it.name })
+        assertEquals("Person A, Person B", item.cast.joinToString(", ") { it.name })
+        assertEquals("Rolle A", item.cast[0].character)
+        assertEquals("", item.cast[1].character)
     }
 
     @Test
