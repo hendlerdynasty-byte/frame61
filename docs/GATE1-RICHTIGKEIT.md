@@ -64,11 +64,91 @@ Gesamtstand **224/224**.
 Stichprobe: Training, Seed `20261122`, 100 Titel, Katalog 997, Build
 `2382520`. Rohbelege: `~/hendler-dynasty/evidence/frame61/1.6.0/gate1-run/polls/`.
 
-<!-- ZAHLEN -->
+**Baseline: 2/100 richtig (2 %)** — das ist die schockierende Zahl, die die
+bisherigen 67/100 nicht zeigten. **11 Titel spielten überhaupt; 9 dieser 11
+Wiedergaben waren ein anderer Inhalt** (`WRONG_CONTENT`, 82 % der Plays).
+
+| Kennzahl | Baseline (`2382520`, 26.11.2026) |
+|---|---|
+| Stichprobe | Training, Seed `20261122`, 100 Titel |
+| Richtigkeitsquote | **2/100 = 2 %** |
+| Gespielt | 11/100 |
+| Davon falsch | 9 × `WRONG_CONTENT` |
+| Trailer / unbekannt | 0 / 0 |
+| Nicht gespielt | 89 (83 `NO_CANDIDATE`, 3 `CONTAINER_UNSUPPORTED`, 2 `EMBED_UNRESOLVED`, 1 `GEO_BLOCKED`) |
+
+Rohbeleg: `QUOTA RIGHT SUMMARY mode=train richtig=2/100 quote=2
+gespielt=11/100 falsch=[WRONG_CONTENT:9]` in
+`~/hendler-dynasty/evidence/frame61/1.6.0/gate1-run/polls/latest.xml`.
+
+**Ursache (nicht geraten, an echten Zeilen belegt):** Die played-WRONG-Fälle
+hatten durchgehend `evidenz=quelle:api`, `score=0.50` und Hosts
+`*.akamaihd.net`. Beispiele:
+
+```
+QUOTA IDENT train idx=2 id=ss:zeit-verbrechen group=serienstream played=ja
+ident=WRONG_CONTENT score=0.50 evidenz=quelle:api grund=Titel passt nicht
+QUOTA train idx=2 … RESULT=OK … host=wdradaptiv-vh.akamaihd.net
+
+QUOTA IDENT train idx=3 id=ss:mcgregor-forever group=serienstream played=ja
+ident=WRONG_CONTENT score=0.50 evidenz=quelle:api grund=Titel passt nicht
+QUOTA train idx=3 … RESULT=OK … host=nrodlzdf-a.akamaihd.net
+```
+
+Mechanismus: `ArdPlaybackResolver.findShow()` nahm den ersten ARD-Treffer,
+auch wenn der Titel nicht passte. `AutoPlaybackResolver.resolveNow()` fragte
+alle Packs parallel ab; die schnelle ARD-API gewann die 600-ms-Frist gegen die
+eigene Quellengruppe. Ergebnis: ein serienstream-Titel spielte ein fremdes
+ARD/ZDF-Video — genau die Meldung „nicht der jeweilige Inhalt".
+
+**Stopp-Regel und Umgang:** Die Baseline ist weit unter 60 %. Gebaut wird
+trotzdem nicht auf einem anderen Gate, sondern ausschließlich der belegte
+Gate-1-Fix (eigene Quellengruppe zuerst, kein ARD-Erst-Treffer-Fallback).
+Danach wird **neu gemessen**. Steht die Quote dann weiter unter 60 %, gilt
+Gate 1 als unerfüllt und die weiteren Gates bleiben geschlossen.
+
+### Nach dem Fix: Messung blockiert durch DNS-Ausfall (kein App-Ergebnis)
+
+Quellstand `c953d3f` (CI `45788635299`: gate + release grün, Acceptance-APK
+`8aa1c909…` auf dem A52 installiert, Job `job-d980de1ac0b34b22` PASS).
+
+Der erneute Trainingslauf lieferte zunächst `0/100` — **das darf nicht als
+App-Ergebnis gewertet werden**. Der Logcat zeigt zur selben Zeit:
+
+```
+10:30:26.191 D NetworkMonitor/123: PROBE_HTTP … java.net.UnknownHostException:
+  Unable to resolve host "connectivitycheck.gstatic.com"
+10:30:26.192 D NetworkMonitor/123: PROBE_HTTPS … java.net.UnknownHostException:
+  Unable to resolve host "www.google.com"
+10:30:26.196 D NetworkMonitor/123: PROBE_FALLBACK … UnknownHostException
+```
+
+Damit ist **INFRA_FAIL belegt**: das Gerät hat keine Namensauflösung; alle
+100 Titel scheitern in 100–190 ms mit `NO_CANDIDATE`. Die Fix-Messung wird
+wiederholt, sobald DNS/WLAN auf dem A52 wieder funktioniert — nicht früher,
+und ohne Änderung der Netzwerk-Einstellungen fremder Projekte.
+
+Nächster Schritt: DNS-Probe frisch prüfen (Android-Netzwerkmonitor), dann
+denselben Trainingslauf mit `c953d3f` fahren und die Quote gegen die Baseline
+2/100 ausweisen. Erst diese Messung entscheidet, ob Gate 1 erfüllt ist.
 
 ## Fehlerverteilung
 
-<!-- VERTEILUNG -->
+### Verteilung laut Harness-Summary
+
+| Befund | Anzahl | Bedeutung |
+|---|---|---|
+| `WRONG_CONTENT` | 9 | lief, aber anderes Video (ARD/ZDF-Fremdtreffer) |
+| `CORRECT` | 2 | lief und Titel bestätigt (beide aniworld) |
+| `NO_CANDIDATE` | 83 | aktuelle Quellenlage: keine Kandidaten (separates Gate-3-Thema) |
+| `CONTAINER_UNSUPPORTED` | 3 | aufgelöster Hoster liefert kein abspielbares Medium |
+| `EMBED_UNRESOLVED` | 2 | Kandidat, aber kein erstes Bild |
+| `GEO_BLOCKED` | 1 | Quellenseite sperrt die Geräte-IP |
+
+Wichtig: `NO_CANDIDATE` ist hier **nicht** durch die Identitätsprüfung
+verursacht (der Harness prüft erst nach dem Spielen). Die 11 Plays und die
+9 Fehlzuordnungen belegen den falschen Inhalt; die 83 NO_CANDIDATE zeigen
+zusätzlich, dass die Quellenverfügbarkeit an diesem Tag schlecht ist.
 
 ## Entscheidungen zu Gate 1
 
