@@ -1,9 +1,9 @@
 # STATE.md — Frame61 Status
 
-Stand: 26.11.2026 (Schritt 0 abgeschlossen, Schritt 1 aniworld läuft).
-Quellstand `565712b` auf `main`; letzter grüner CI-Lauf `45788635299` auf
-`c953d3f` (224/224 Tests, Lint 0 Errors / 109 Warnings). Aktueller Bericht:
-[GATE1-RICHTIGKEIT.md](GATE1-RICHTIGKEIT.md). Historie 1.5.0:
+Stand: 26.11.2026 (Schritt 0 und Schritt 1 abgeschlossen, Schritt 2 als
+nächstes). Quellstand `1fc5385` auf `main`; letzter grüner CI-Lauf
+`45891187615` (280/280 Tests, Lint 0 Errors / 109 Warnings / 1 Information).
+Aktueller Bericht: [SCHRITT1-ANIWORLD.md](SCHRITT1-ANIWORLD.md). Historie 1.5.0:
 [ABSCHLUSS-1.5.0.md](ABSCHLUSS-1.5.0.md), [RELEASE.md](RELEASE.md).
 
 ## Kurzfassung — Gate 1 (1.6.0)
@@ -31,19 +31,23 @@ Quellstand `565712b` auf `main`; letzter grüner CI-Lauf `45788635299` auf
   stärkste Gruppe: **16/19 richtig (84 %)**, keine Falschwiedergabe; ard 2/10,
   serienstream 1/43, bsto 1/6, filmpalast/moflix 0. Rohbelege:
   `~/hendler-dynasty/evidence/frame61/1.6.0/step0/measure-polls/latest.xml`.
-- **Schritt 1 gestartet:** aniworld als Tiefenpfad — Ziel 20/20 richtig, alle
-  mit lokalen Bildern, gefüllter Detailseite und Staffel/Folgenwahl. Die drei
-  bisherigen Fehler: Beautiful Bones, Watari-kun, Hal (`EMBED_UNRESOLVED`).
+- **Schritt 1 abgeschlossen (26.11.2026):** aniworld-Tiefenpfad **20/20 PASS**
+  auf dem A52 (Build `c70a9ac`, CI `45886687367`). Alle 20 Titel: lokale
+  Poster/Backdrops, gefüllte Metadaten, Episoden, `sourceId=aniworld`,
+  `identity=CORRECT` Score 1.00, erstes Bild, wachsende Position, Screenshot.
+  Surface-Screenshots per D-Pad-Betrachter auf Mac übertragen und gesichtet
+  (`step1/aniworld20/F6-shots/`, `F6-contact.jpg`). `aniworld.json` jetzt
+  `verified:true` (2026-11-26T20:23:16Z), PACKS.md regeneriert, Validator
+  0 Fehler / 0 Warnungen. Beleg: `step1/aniworld20/polls9/latest.xml`.
 
-## Offen (1.6.0)
+## Nächster Schritt — Schritt 2 (Katalog-Wahrheit)
 
-- Gate-1-Nachmessung (DNS), dann Entscheidung: Quote <60 % → Gate 1 unerfüllt.
-- Gate 2 Bilder/Katalog: 997 Poster hotlinked, 0/997 Laufzeiten, ARD 148/997
-  = 14,8 % (Ziel ≤20 %); lokale Ablage + Datei-/Ladequote fehlen.
-- Gate 3 Quellen: 19/31 Packs nicht live verifiziert, 7 Hoster + 4 Indexseiten
-  blockiert.
-- Gate 4 Design, Gate 5 TV/Fire TV, Gate 6 Netzpfad-Sessiontest/Perf,
-  Gate 7 Release nur bei Holdout-Richtigkeit ≥95 %.
+- Nachweis-Tabelle für jeden sichtbaren Katalogeintrag anbinden; nur Titel mit
+  belegtem Stream in Rails/Suche/Detail. Die 20 aniworld-Pfade sind der erste
+  belegte Block. Danach weitere Quellengruppen nach demselben Muster.
+- Bestehende offene Punkte: 7 Hoster + 4 Indexseiten, HDR, TV/Fire TV,
+  Netzpfad-Sessiontest/Performance. Kein Release 1.6.0, bevor Holdout-Richtigkeit
+  ≥95 % und Gate 6 erfüllt sind.
 
 ## Historie 1.5.0 / VC6 (veröffentlicht)
 
