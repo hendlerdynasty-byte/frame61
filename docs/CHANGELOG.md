@@ -14,6 +14,11 @@
   UI-/Resolver-Verdrahtung.
 - Repository-Unit-Tests und ein ohne Gradle ausführbarer SQLite-Test für
   Migration, Datenverlusterhalt, Upsert, Episode-Trennung und Outcome-Filter.
+- Reine `TitleVisibility`-Komponente filtert den Katalog ausschließlich über
+  `CORRECT`-Stream-Evidenz (Film 0/0, Serie mit positiver Folgennummer,
+  unbekannter Typ unsichtbar), fail-closed ohne Raw-Catalog-Fallback.
+  Suchtreffer werden per exakter ID oder eindeutig normalisiertem Titel/Jahr/Typ
+  kanonisiert; Unit-Tests decken Film, Serie, Outcome, Fehler und Kanonisierung ab.
 
 ### 1.5.0 — Blöcke 7–9, DEVIDEOSRC-Kette, Quoten-Messung (25.11.2026)
 
