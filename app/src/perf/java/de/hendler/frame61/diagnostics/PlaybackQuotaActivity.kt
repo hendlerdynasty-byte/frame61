@@ -560,7 +560,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         // PixelCopy vom Fenster liefert bei SurfaceView auf diesem A52 eine
         // schwarze Videofläche. Deshalb direkt von der Player-Surface lesen.
         val surfaceView = playerView.videoSurfaceView as? SurfaceView
-            ?: fallbackView as? SurfaceView
+            ?: engine.fallbackView as? SurfaceView
         val surface = surfaceView?.holder?.surface
         val width = surfaceView?.width?.takeIf { it > 0 } ?: playerContainer.width
         val height = surfaceView?.height?.takeIf { it > 0 } ?: playerContainer.height
