@@ -243,6 +243,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
 
             var resolveStatus = "NOT_RUN"
             var candidateCount = 0
+            var alternativeRounds = 0
             var resolverCause = "-"
             var identityKind = "-"
             var identityScore = 0.0
@@ -271,58 +272,43 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 val episode = checkNotNull(firstEpisode)
                 val sessionId = PlaybackDiagnostics.beginSession(title, episode.episode)
                 try {
-                    val resolved = withTimeoutOrNull(PATH_RESOLVE_BUDGET_MS) {
-                        autoResolver.resolveFast(
-                            title = title,
-                            episodeNumber = episode.episode,
-                            season = episode.season,
-                            sessionId = sessionId,
-                            fresh = true
-                        )
-                    }.orEmpty()
-                    val aniworldCandidates = resolved.filter {
-                        it.sourceId == PathCatalogValidator.SOURCE_ID
-                    }
-                    candidateCount = resolved.size
-                    resolveStatus = if (aniworldCandidates.isNotEmpty()) "PASS" else "FAIL"
-                    resolverCause = lastResolverCause(PlaybackDiagnostics.events.value)
-                    val identityRequest = IdentityRequest(
+                    val rounds = playPathRounds(
                         title = title,
-                        year = item.year,
                         type = item.type,
+                        year = item.year,
+                        runtimeMin = item.runtime,
                         season = episode.season,
-                        episode = episode.episode,
-                        runtimeMin = item.runtime
+                        episodeNumber = episode.episode,
+                        packBaseUrl = pack.baseUrl,
+                        sessionId = sessionId
                     )
-                    val verified = identityGate.verify(identityRequest, aniworldCandidates.take(MAX_CANDIDATES))
-                    val correct = verified.firstOrNull { it.verdict.kind.name == "CORRECT" }
-                    val judged = correct ?: verified.firstOrNull()
-                    identityKind = judged?.verdict?.kind?.name ?: "UNKNOWN"
-                    identityScore = judged?.verdict?.score ?: 0.0
-                    if (correct == null) {
-                        cause = "PANEL_INVALID:${identityKind}:${resolverCause}"
-                    } else {
-                        val attempt = playPathCandidate(correct.candidate, title)
-                        firstFrameStatus = if (attempt.firstFrameMs > 0L) "PASS" else "FAIL"
-                        firstFrameMs = attempt.firstFrameMs
-                        playbackStatus = if (attempt.ok) "PASS" else "FAIL"
-                        positionMs = attempt.positionMs
-                        durationMs = attempt.durationMs
-                        if (attempt.ok) {
-                            val screenshot = File(
-                                getExternalFilesDir(PATH_OUTPUT_DIR),
-                                "screenshots/${index + 1}-${safeFileName(id)}.png"
-                            ).also { it.parentFile?.mkdirs() }
-                            screenshotPath = screenshot.absolutePath
-                            report(
-                                "PATH SCREENSHOT_CUE idx=${index + 1}/${validation.ids.size} " +
-                                    "id=$id datei=$screenshotPath"
-                            )
-                            screenshotStatus = if (capturePathScreenshot(screenshot, title, attempt.positionMs, attempt.durationMs)) "PASS" else "FAIL"
-                        }
-                        if (!attempt.ok) cause = attempt.error ?: "FIRST_FRAME_OR_PROGRESS_MISSING"
-                        if (screenshotStatus == "FAIL") cause = "SCREENSHOT_FAILED"
+                    resolveStatus = rounds.resolveStatus
+                    candidateCount = rounds.candidateCount
+                    alternativeRounds = rounds.alternativeRounds
+                    resolverCause = rounds.resolverCause
+                    identityKind = rounds.identityKind
+                    identityScore = rounds.identityScore
+                    firstFrameStatus = if (rounds.firstFrameSeen) "PASS" else "FAIL"
+                    firstFrameMs = rounds.attempt?.firstFrameMs ?: 0L
+                    playbackStatus = if (rounds.attempt?.ok == true) "PASS" else "FAIL"
+                    positionMs = rounds.attempt?.positionMs ?: 0L
+                    durationMs = rounds.attempt?.durationMs ?: 0L
+                    if (rounds.attempt?.ok == true) {
+                        val screenshot = File(
+                            getExternalFilesDir(PATH_OUTPUT_DIR),
+                            "screenshots/${index + 1}-${safeFileName(id)}.png"
+                        ).also { it.parentFile?.mkdirs() }
+                        screenshotPath = screenshot.absolutePath
+                        report(
+                            "PATH SCREENSHOT_CUE idx=${index + 1}/${validation.ids.size} " +
+                                "id=$id datei=$screenshotPath"
+                        )
+                        screenshotStatus = if (
+                            capturePathScreenshot(screenshot, title, positionMs, durationMs)
+                        ) "PASS" else "FAIL"
                     }
+                    if (rounds.attempt?.ok != true) cause = resolverCause
+                    if (screenshotStatus == "FAIL") cause = "SCREENSHOT_FAILED"
                 } finally {
                     engine.stop()
                     PlaybackDiagnostics.endSession(sessionId)
@@ -344,8 +330,8 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "asset=${comparisonArtwork ?: "-"} detail=${if (detailOk) "PASS" else "FAIL"} " +
                     "detailFields=${detailValues.size} episodes=${if (episodesOk) "PASS" else "FAIL"} " +
                     "episodeCount=${episodes.size} seasons=${seasons.joinToString(",").ifBlank { "-" }} " +
-                    "resolve=$resolveStatus candidates=$candidateCount " +
-                    "resolverCause=${resolverCause.sanitize()} sourceId=${PathCatalogValidator.SOURCE_ID} " +
+                    "resolve=$resolveStatus candidateCount=$candidateCount alternativeRounds=$alternativeRounds " +
+                    "resolverCause=${resolverCause.compact()} sourceId=${PathCatalogValidator.SOURCE_ID} " +
                     "identity=$identityKind score=${String.format(java.util.Locale.ROOT, "%.2f", identityScore)} " +
                     "firstFrame=$firstFrameStatus firstFrameMs=$firstFrameMs playback=$playbackStatus " +
                     "positionMs=$positionMs durationMs=$durationMs screenshot=$screenshotStatus " +
@@ -364,6 +350,127 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 "output=${getExternalFilesDir(PATH_OUTPUT_DIR)?.absolutePath} cause=$cause"
         )
         Log.i(TAG, "PATH DONE datei=${logFile?.absolutePath}")
+    }
+
+    /** Mirrors the production candidate and alternative rounds, but only for Aniworld. */
+    private suspend fun playPathRounds(
+        title: String,
+        type: String,
+        year: Int?,
+        runtimeMin: Int?,
+        season: Int,
+        episodeNumber: Int,
+        packBaseUrl: String,
+        sessionId: Long
+    ): PathRoundResult {
+        val identityRequest = IdentityRequest(
+            title = title,
+            year = year,
+            type = type,
+            season = season,
+            episode = episodeNumber,
+            runtimeMin = runtimeMin
+        )
+        val initialCandidates = withTimeoutOrNull(PATH_RESOLVE_BUDGET_MS) {
+            autoResolver.resolveFast(
+                title = title,
+                episodeNumber = episodeNumber,
+                season = season,
+                sessionId = sessionId,
+                fresh = true
+            )
+        }
+        var candidates: List<MirrorCandidate> = initialCandidates.orEmpty()
+        val failedUrls = mutableSetOf<String>()
+        val failedHosts = mutableSetOf<String>()
+        var candidateCount = 0
+        var alternativeRounds = 0
+        var attemptedCorrect = 0
+        var firstFrameSeen = false
+        var lastAttempt: PathPlaybackAttempt? = null
+        var lastFailure = if (initialCandidates == null) "RESOLVE_TIMEOUT" else "NO_CANDIDATE"
+        var identityKind = "UNKNOWN"
+        var identityScore = 0.0
+
+        while (true) {
+            val aniworldCandidates = PathCandidatePolicy.aniworldOnly(candidates, failedUrls)
+            candidateCount += aniworldCandidates.size
+            if (aniworldCandidates.isEmpty()) break
+            val verified = identityGate.verify(identityRequest, aniworldCandidates)
+            verified.forEach {
+                identityKind = it.verdict.kind.name
+                identityScore = it.verdict.score
+            }
+            val correctCandidates = verified
+                .filter { it.verdict.kind.name == "CORRECT" }
+                .take(PathCandidatePolicy.MAX_CORRECT_PER_ROUND)
+            if (correctCandidates.isEmpty()) {
+                lastFailure = "PANEL_INVALID:$identityKind"
+            }
+            for (candidate in correctCandidates) {
+                attemptedCorrect++
+                identityKind = candidate.verdict.kind.name
+                identityScore = candidate.verdict.score
+                val attempt = playPathCandidate(candidate.candidate, title)
+                lastAttempt = attempt
+                firstFrameSeen = firstFrameSeen || attempt.firstFrameMs > 0L
+                if (attempt.ok) {
+                    return PathRoundResult(
+                        resolveStatus = "PASS",
+                        candidateCount = candidateCount,
+                        alternativeRounds = alternativeRounds,
+                        resolverCause = "-",
+                        identityKind = identityKind,
+                        identityScore = identityScore,
+                        firstFrameSeen = firstFrameSeen,
+                        attempt = attempt
+                    )
+                }
+                PathCandidatePolicy.recordFailure(
+                    packBaseUrl = packBaseUrl,
+                    candidate = candidate.candidate,
+                    failedUrls = failedUrls,
+                    failedHosts = failedHosts
+                )
+                lastFailure = attempt.error ?: "FIRST_FRAME_OR_PROGRESS_MISSING"
+            }
+            if (!PathCandidatePolicy.canRequestAlternative(attemptedCorrect, alternativeRounds)) break
+            val alternatives = withTimeoutOrNull(PATH_ALTERNATIVE_BUDGET_MS) {
+                autoResolver.resolveAlternative(
+                    title = title,
+                    episodeNumber = episodeNumber,
+                    season = season,
+                    sourceId = PathCatalogValidator.SOURCE_ID,
+                    excludeUrls = failedUrls.toSet(),
+                    excludeHosts = failedHosts.toSet(),
+                    sessionId = sessionId
+                )
+            }
+            alternativeRounds++
+            if (alternatives == null) {
+                lastFailure = "ALTERNATIVE_TIMEOUT"
+                break
+            }
+            candidates = PathCandidatePolicy.aniworldOnly(alternatives, failedUrls)
+            if (candidates.isEmpty()) {
+                lastFailure = "NO_ALTERNATIVE"
+                break
+            }
+        }
+
+        val traceCause = lastResolverCause(
+            PlaybackDiagnostics.events.value.filter { it.sessionId == sessionId }
+        )
+        return PathRoundResult(
+            resolveStatus = if (candidateCount > 0) "PASS" else "FAIL",
+            candidateCount = candidateCount,
+            alternativeRounds = alternativeRounds,
+            resolverCause = if (traceCause != "-") traceCause else lastFailure,
+            identityKind = identityKind,
+            identityScore = identityScore,
+            firstFrameSeen = firstFrameSeen,
+            attempt = lastAttempt
+        )
     }
 
     private suspend fun playPathCandidate(mirror: MirrorCandidate, title: String): PathPlaybackAttempt {
@@ -1068,6 +1175,17 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         val error: String?
     )
 
+    private data class PathRoundResult(
+        val resolveStatus: String,
+        val candidateCount: Int,
+        val alternativeRounds: Int,
+        val resolverCause: String,
+        val identityKind: String,
+        val identityScore: Double,
+        val firstFrameSeen: Boolean,
+        val attempt: PathPlaybackAttempt?
+    )
+
     private companion object {
         const val TAG = "Frame61Quota"
         const val EXTRA_SAMPLE = "sample"
@@ -1078,6 +1196,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         val PATH_ARTWORK_EXTENSIONS = listOf("jpg", "png", "webp")
         const val PATH_SOURCE_BUDGET_MS = 20_000L
         const val PATH_RESOLVE_BUDGET_MS = 70_000L
+        const val PATH_ALTERNATIVE_BUDGET_MS = 70_000L
         const val PATH_PLAYBACK_POLL_MS = 250L
         const val PATH_PLAYBACK_POLLS = 48
         const val SAMPLE_SIZE = 100
