@@ -280,7 +280,7 @@ fun PlayerScreen(
                 modifier = Modifier
                     .align(Alignment.BottomStart)
                     .padding(start = 16.dp, bottom = 96.dp)
-                    .background(skin.colors.accent.copy(alpha = 0.25f))
+                    .background(skin.colors.primary.copy(alpha = 0.25f))
                     .padding(horizontal = 12.dp, vertical = 6.dp)
             )
         }
