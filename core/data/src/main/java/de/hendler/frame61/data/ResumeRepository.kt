@@ -68,6 +68,17 @@ class ResumeRepository @Inject constructor(
             }
             .toMap()
 
+    /** Per-episode fractions for one title, used by the detail episode list. */
+    suspend fun progressByEpisode(profileId: Long, titleId: Long): Map<Long, Float> =
+        dao.getByProfile(profileId)
+            .asSequence()
+            .filter { it.titleId == titleId }
+            .mapNotNull { row ->
+                val fraction = row.fraction()
+                if (fraction > 0f) row.episodeId to fraction else null
+            }
+            .toMap()
+
     private fun PlaybackState.fraction(): Float =
         if (durationMs > 0L) (positionMs.toFloat() / durationMs).coerceIn(0f, 1f) else 0f
 

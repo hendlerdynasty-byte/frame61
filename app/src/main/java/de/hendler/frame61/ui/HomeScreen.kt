@@ -1,56 +1,83 @@
 package de.hendler.frame61.ui
 
 import androidx.activity.compose.LocalActivity
+import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Text
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
-import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.material3.Card
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.hilt.navigation.compose.hiltViewModel
-import javax.inject.Inject
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.LifecycleResumeEffect
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
 import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import coil3.compose.AsyncImage
 import dagger.hilt.android.AndroidEntryPoint
 import de.hendler.frame61.design.FocusRestorer
+import de.hendler.frame61.design.Frame61Theme
+import de.hendler.frame61.design.LocalSkin
 import de.hendler.frame61.design.PosterCard
+import de.hendler.frame61.design.ProvideTvFocusRegistry
+import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.meta.EpisodeInfo
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import de.hendler.frame61.design.Frame61Theme
-import de.hendler.frame61.design.ProvideTvFocusRegistry
-import de.hendler.frame61.design.tvFocusable
 import de.hendler.frame61.ui.home.HomeViewModel
+import de.hendler.frame61.ui.home.TvHome
 import de.hendler.frame61.ui.info.InfoScreen
 import de.hendler.frame61.ui.layout.LayoutBuilderScreen
 import de.hendler.frame61.ui.profile.ProfileScreen
 import de.hendler.frame61.ui.search.SearchScreen
 import de.hendler.frame61.ui.settings.SettingsScreen
 import de.hendler.frame61.ui.skins.SkinsScreen
-import de.hendler.frame61.ui.home.TvHome
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import java.util.Locale
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : androidx.appcompat.app.AppCompatActivity() {
@@ -88,9 +115,6 @@ class MainActivity : androidx.appcompat.app.AppCompatActivity() {
 fun Frame61(
     content: @Composable (NavController) -> Unit
 ) {
-    // The theme is driven by assets/skins/*.json — without this the app renders
-    // the hardcoded default skin (measured on the A52: default indigo focus ring,
-    // default canvas instead of the brand skin).
     val skinViewModel: SkinViewModel = hiltViewModel()
     val skin by skinViewModel.skin.collectAsStateWithLifecycle()
     val uiDensity by skinViewModel.uiDensity.collectAsStateWithLifecycle()
@@ -99,8 +123,6 @@ fun Frame61(
     val windowSizeClass = activity?.let {
         runCatching { calculateWindowSizeClass(it) }.getOrNull()
     }
-    // TV gets a fixed side rail; phones keep the bottom bar. Leanback OR the TV
-    // UI mode covers both real TV devices and the Android TV emulator.
     val isTv = remember(activity) {
         activity?.let { ctx ->
             val uiMode = ctx.getSystemService(android.app.UiModeManager::class.java)
@@ -116,122 +138,114 @@ fun Frame61(
         Frame61Theme(skin = skin) {
             ProvideTvFocusRegistry {
                 val navController = rememberNavController()
+                val backStack by navController.currentBackStackEntryAsState()
+                val currentRoute = backStack?.destination?.route ?: "home"
+                val chrome = navigationChrome(isTv, currentRoute)
+
                 BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-                    // Overscan safe area: 5 % horizontally, 3 % vertically.
                     val safeH = maxWidth * 0.05f
                     val safeV = maxHeight * 0.03f
-                    androidx.navigation.compose.NavHost(
+                    NavHost(
                         navController = navController,
                         startDestination = "home",
                         modifier = Modifier.padding(
-                            start = (if (isTv) 96.dp else 0.dp) + safeH,
+                            start = (if (chrome == NavigationChrome.SIDE) 96.dp else 0.dp) + safeH,
                             end = safeH,
-                            top = safeV,
-                            bottom = (if (isTv) 0.dp else 64.dp) + safeV
+                            top = (if (chrome == NavigationChrome.TOP) 64.dp else 0.dp) + safeV,
+                            bottom = safeV
                         )
                     ) {
-                    composable("home") { HomeScreen(navController) }
-                    composable("films") {
-                        BrowseScreen(
-                            type = "movie",
-                            title = "Filme",
-                            onOpenTitle = { id -> navController.navigate("detail/$id") }
-                        )
+                        composable("home") { HomeScreen(navController) }
+                        composable("films") {
+                            BrowseScreen(
+                                type = "movie",
+                                title = "Filme",
+                                onOpenTitle = { id -> navController.navigate("detail/$id") }
+                            )
+                        }
+                        composable("series") {
+                            BrowseScreen(
+                                type = "series",
+                                title = "Serien",
+                                onOpenTitle = { id -> navController.navigate("detail/$id") }
+                            )
+                        }
+                        composable("watchlist") {
+                            WatchlistScreen(onOpenTitle = { id -> navController.navigate("detail/$id") })
+                        }
+                        composable("detail/{titleId}") { entry ->
+                            DetailScreen(entry.arguments?.getString("titleId").orEmpty(), navController)
+                        }
+                        composable("source_lab") { SourceLabScreen() }
+                        composable(
+                            route = "player/{titleId}?episodeId={episodeId}&episodeNumber={episodeNumber}&season={season}",
+                            arguments = listOf(
+                                navArgument("episodeId") {
+                                    type = NavType.LongType
+                                    defaultValue = 0L
+                                },
+                                navArgument("episodeNumber") {
+                                    type = NavType.IntType
+                                    defaultValue = 0
+                                },
+                                navArgument("season") {
+                                    type = NavType.IntType
+                                    defaultValue = 1
+                                }
+                            )
+                        ) { entry ->
+                            val titleId = entry.arguments?.getString("titleId").orEmpty()
+                            val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
+                            val episodeNumber = entry.arguments?.getInt("episodeNumber") ?: 0
+                            val season = entry.arguments?.getInt("season") ?: 1
+                            PlayerRouteFor(titleId, episodeId, episodeNumber, season)
+                        }
+                        composable("search") { SearchScreen(onOpenTitle = { id ->
+                            navController.navigate("detail/$id")
+                        }) }
+                        composable("skins") { SkinsScreen() }
+                        composable("layout_builder") {
+                            LayoutBuilderScreen(onDone = { navController.popBackStack() })
+                        }
+                        composable("settings") {
+                            SettingsScreen(
+                                onOpenLayout = { navController.navigate("layout_builder") },
+                                onOpenInfo = { navController.navigate("info") },
+                                onOpenSources = { navController.navigate("source_lab") }
+                            )
+                        }
+                        composable("info") {
+                            InfoScreen(onBack = { navController.popBackStack() })
+                        }
+                        composable("profiles") {
+                            ProfileScreen(onProfileChosen = { navController.popBackStack() })
+                        }
                     }
-                    composable("series") {
-                        BrowseScreen(
-                            type = "series",
-                            title = "Serien",
-                            onOpenTitle = { id -> navController.navigate("detail/$id") }
-                        )
-                    }
-                    composable("watchlist") {
-                        WatchlistScreen(onOpenTitle = { id -> navController.navigate("detail/$id") })
-                    }
-                    composable("detail/{titleId}") { entry ->
-                        DetailScreen(entry.arguments?.getString("titleId").orEmpty(), navController)
-                    }
-                    composable("source_lab") { SourceLabScreen() }
-                    composable(
-                        route = "player/{titleId}?episodeId={episodeId}&episodeNumber={episodeNumber}&season={season}",
-                        arguments = listOf(
-                            navArgument("episodeId") {
-                                type = NavType.LongType
-                                defaultValue = 0L
-                            },
-                            navArgument("episodeNumber") {
-                                type = NavType.IntType
-                                defaultValue = 0
-                            },
-                            // Block 8: die Staffel gehört zur Episodenadresse —
-                            // ohne sie adressieren s.to/aniworld/bs.to jede
-                            // Staffel-2-Folge als Staffel 1.
-                            navArgument("season") {
-                                type = NavType.IntType
-                                defaultValue = 1
-                            }
-                        )
-                    ) { entry ->
-                        val titleId = entry.arguments?.getString("titleId").orEmpty()
-                        val episodeId = entry.arguments?.getLong("episodeId") ?: 0L
-                        val episodeNumber = entry.arguments?.getInt("episodeNumber") ?: 0
-                        val season = entry.arguments?.getInt("season") ?: 1
-                        PlayerRouteFor(titleId, episodeId, episodeNumber, season)
-                    }
-                    composable("search") { SearchScreen(onOpenTitle = { id ->
-                        navController.navigate("detail/$id")
-                    }) }
-                    composable("skins") { SkinsScreen() }
-                    composable("layout_builder") {
-                        LayoutBuilderScreen(onDone = { navController.popBackStack() })
-                    }
-                    composable("settings") {
-                        SettingsScreen(
-                            onOpenLayout = { navController.navigate("layout_builder") },
-                            onOpenInfo = { navController.navigate("info") },
-                            onOpenSources = { navController.navigate("source_lab") }
-                        )
-                    }
-                    composable("info") {
-                        InfoScreen(onBack = { navController.popBackStack() })
-                    }
-                    composable("profiles") {
-                        ProfileScreen(onProfileChosen = { navController.popBackStack() })
-                    }
-                }
 
-                val backStack by navController.currentBackStackEntryAsState()
-                val currentRoute = backStack?.destination?.route ?: "home"
-                // The player is full-screen: no permanent navigation HUD.
-                if (!currentRoute.startsWith("player")) {
                     val navigate: (String) -> Unit = { route ->
                         if (route == "home") {
-                            // "Start" used to be a no-op: the old code skipped
-                            // the navigation for the home route, so the tab did
-                            // nothing from any other screen (measured on A52).
                             navController.popBackStack("home", inclusive = false)
                         } else {
                             navController.navigate(route) { popUpTo("home") }
                         }
                     }
-                    if (isTv) {
-                        TvSideNav(
+                    when (chrome) {
+                        NavigationChrome.SIDE -> TvSideNav(
                             currentRoute = currentRoute,
                             onNavigate = navigate,
                             modifier = Modifier
-                                .align(androidx.compose.ui.Alignment.CenterStart)
+                                .align(Alignment.CenterStart)
                                 .padding(start = safeH, top = safeV, bottom = safeV)
                         )
-                    } else {
-                        NavBar(
+                        NavigationChrome.TOP -> NavBar(
                             currentRoute = currentRoute,
                             onNavigate = navigate,
                             modifier = Modifier
-                                .align(androidx.compose.ui.Alignment.BottomCenter)
-                                .padding(start = safeH, end = safeH, bottom = safeV)
+                                .align(Alignment.TopCenter)
+                                .padding(start = safeH, end = safeH, top = safeV)
                         )
+                        NavigationChrome.NONE -> Unit
                     }
-                }
                 }
             }
         }
@@ -252,7 +266,6 @@ fun HomeScreen(navController: NavController) {
             else -> TvHome(
                 content = state.content,
                 onOpenTitle = { navController.navigate("detail/${it.id}") },
-                // Block 7: Fokus waermt die Quelle des Titels vor.
                 onPrefetch = { viewModel.prefetch(it) }
             )
         }
@@ -265,133 +278,588 @@ fun DetailScreen(titleId: String, navController: NavController) {
     val catalog: CatalogRepository = detailViewModel.catalog
     val episodeSource = detailViewModel.episodes
     val watchlist by detailViewModel.watchlist.collectAsStateWithLifecycle()
+    val profileId by detailViewModel.profileId.collectAsStateWithLifecycle()
 
-    val item by produceState<CatalogItem?>(initialValue = null, titleId, catalog) {
-        value = withContext(Dispatchers.IO) { catalog.byId(titleId) }
+    val itemResult by produceState<Result<CatalogItem?>?>(initialValue = null, titleId, catalog) {
+        value = runCatching {
+            withContext(Dispatchers.IO) { catalog.byId(titleId) }
+        }
     }
+    val current = itemResult?.getOrNull()
 
-    // Episoden kommen aus dem lokalen Snapshot (assets/meta/<id>.json) —
-    // kein Live-Call im Client, kein Namens-Matching.
-    val episodes by produceState<List<EpisodeInfo>>(
-        initialValue = emptyList(),
-        item?.id,
+    val episodeResult by produceState<Result<List<EpisodeInfo>>?>(
+        initialValue = null,
+        current?.id,
         episodeSource
     ) {
-        val current = item
-        value = if (current != null && current.type == "series") {
-            withContext(Dispatchers.IO) { episodeSource.episodes(current.id) }
+        val item = current
+        value = if (item != null && item.type.equals("series", ignoreCase = true)) {
+            runCatching { withContext(Dispatchers.IO) { episodeSource.episodes(item.id) } }
         } else {
-            emptyList()
+            Result.success(emptyList())
+        }
+    }
+    val episodes = episodeResult?.getOrDefault(emptyList()).orEmpty()
+
+    val similarResult by produceState<Result<List<CatalogItem>>?>(
+        initialValue = null,
+        current?.id,
+        catalog
+    ) {
+        val item = current
+        value = item?.let {
+            runCatching { withContext(Dispatchers.IO) { similarTitles(it, catalog.all()) } }
         }
     }
 
-    // Der Klick liegt auf dem Button, nicht auf der Karte: eine Card mit
-    // leerem onClick schluckt auf dem TV jeden Druck, bevor der Button ihn sieht.
-    Box(modifier = Modifier.fillMaxSize()) {
-        androidx.compose.foundation.layout.Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(16.dp)
-        ) {
-            if (item == null) Text(text = "Detail: $titleId")
-            item?.let { current ->
-                androidx.compose.foundation.layout.Row(
-                    verticalAlignment = Alignment.Top
-                ) {
-                    PosterCard(
-                        posterUrl = current.poster,
-                        modifier = Modifier
-                            .width(120.dp)
-                            .height(180.dp),
-                        cornerRadius = 12.dp
-                    )
-                    Spacer(Modifier.width(16.dp))
-                    androidx.compose.foundation.layout.Column {
-                        Text(
-                            text = current.title,
-                            style = androidx.compose.material3.MaterialTheme.typography.headlineSmall
-                        )
-                        Text(text = buildString {
-                            current.year?.let { y -> append(y).append("  ·  ") }
-                            append(current.genres.joinToString(", "))
-                        })
-                    }
-                }
-                Spacer(Modifier.height(12.dp))
-                Text(text = current.overview)
-                Spacer(Modifier.height(16.dp))
-                androidx.compose.material3.Button(
-                    onClick = { navController.navigate("player/${current.id}") },
-                    modifier = Modifier.tvFocusable(
-                        id = "detail-play",
-                        onClick = {
-                            navController.navigate("player/${current.id}")
-                        },
-                        // Block 7: Fokus auf „Abspielen“ waermt die Quelle vor.
-                        onFocusChanged = { focused ->
-                            if (focused) detailViewModel.prefetch(current)
-                        }
-                    )
-                ) {
-                    Text(text = "Abspielen")
-                }
-                Spacer(Modifier.height(8.dp))
-                androidx.compose.material3.OutlinedButton(
-                    onClick = { navController.navigate("search") },
-                    modifier = Modifier.tvFocusable(id = "detail-search", onClick = {
-                        navController.navigate("search")
-                    })
-                ) {
-                    Text(text = "Ähnliche suchen")
-                }
-                Spacer(Modifier.height(8.dp))
-                androidx.compose.material3.OutlinedButton(
-                    onClick = { detailViewModel.toggleWatchlist(current.id) },
-                    modifier = Modifier.tvFocusable(id = "detail-watchlist", onClick = {
-                        detailViewModel.toggleWatchlist(current.id)
-                    })
-                ) {
-                    Text(
-                        text = if (current.id in watchlist) {
-                            "Aus Meine Liste"
-                        } else {
-                            "In Meine Liste"
-                        }
-                    )
-                }
+    var progressRefresh by remember(current?.id) { mutableStateOf(0) }
+    LifecycleResumeEffect(current?.id) {
+        progressRefresh++
+        onPauseOrDispose { }
+    }
+    val progress by produceState<Map<Long, Float>>(
+        initialValue = emptyMap(),
+        current?.id,
+        episodes,
+        profileId,
+        progressRefresh
+    ) {
+        val item = current
+        value = if (item != null) {
+            runCatching { detailViewModel.episodeProgress(item.id, profileId) }
+                .getOrDefault(emptyMap())
+        } else {
+            emptyMap()
+        }
+    }
 
-                if (current.type == "series" && episodes.isNotEmpty()) {
-                    Spacer(Modifier.height(16.dp))
-                    Text(text = "Folgen (${episodes.size})")
-                    episodes.take(60).forEach { ep ->
-                        Text(
-                            text = ep.label,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(vertical = 2.dp)
-                                .tvFocusable(
-                                    id = "episode-${ep.id}",
-                                    onClick = {
-                                        navController.navigate(
-                                            "player/${current.id}?episodeId=${ep.id}" +
-                                                "&episodeNumber=${ep.number}&season=${ep.season}"
-                                        )
-                                    },
-                                    // Block 7 + 8: Fokus auf die Folge waermt
-                                    // genau diese Staffel/Episode vor.
-                                    onFocusChanged = { focused ->
-                                        if (focused) {
-                                            detailViewModel.prefetch(current, ep.number, ep.season)
-                                        }
-                                    }
-                                )
+    Box(modifier = Modifier.fillMaxSize()) {
+        when {
+            itemResult == null -> DetailMessage("Lade …")
+            itemResult?.isFailure == true -> DetailMessage("Details konnten nicht geladen werden.")
+            current == null -> DetailMessage("Titel nicht gefunden.")
+            else -> DetailContent(
+                catalogItem = current,
+                episodes = episodes,
+                episodeResult = episodeResult,
+                similarResult = similarResult,
+                progress = progress,
+                watchlist = watchlist,
+                onOpenTitle = { id -> navController.navigate("detail/$id") },
+                onSearch = { navController.navigate("search") },
+                onToggleWatchlist = { detailViewModel.toggleWatchlist(current.id) },
+                onPlay = { target -> navController.navigate(playerRoute(current, target)) },
+                onPrefetch = { episode ->
+                    detailViewModel.prefetch(current, episode.number, episode.season)
+                },
+                onPrefetchTitle = { detailViewModel.prefetch(it) },
+                onPrefetchPlay = { target ->
+                    detailViewModel.prefetch(current, target.episodeNumber, target.season)
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun DetailContent(
+    catalogItem: CatalogItem,
+    episodes: List<EpisodeInfo>,
+    episodeResult: Result<List<EpisodeInfo>>?,
+    similarResult: Result<List<CatalogItem>>?,
+    progress: Map<Long, Float>,
+    watchlist: Set<String>,
+    onOpenTitle: (String) -> Unit,
+    onSearch: () -> Unit,
+    onToggleWatchlist: () -> Unit,
+    onPlay: (DetailPlaybackTarget) -> Unit,
+    onPrefetch: (EpisodeInfo) -> Unit,
+    onPrefetchTitle: (CatalogItem) -> Unit,
+    onPrefetchPlay: (DetailPlaybackTarget) -> Unit
+) {
+    val seasons = remember(episodes) { episodes.map { it.season }.distinct().sorted() }
+    var selectedSeason by remember(catalogItem.id) { mutableStateOf<Int?>(null) }
+    var selectedEpisodeId by remember(catalogItem.id) { mutableStateOf<Long?>(null) }
+    val activeSeason = selectedSeason ?: seasons.firstOrNull() ?: 1
+    val filteredEpisodes = remember(episodes, activeSeason) {
+        episodes.filter { it.season == activeSeason }
+            .sortedWith(compareBy<EpisodeInfo> { it.number }.thenBy { it.id })
+    }
+    val selectedEpisode = filteredEpisodes.firstOrNull { it.id == selectedEpisodeId }
+        ?: filteredEpisodes.firstOrNull()
+    val target = remember(catalogItem, episodes, activeSeason, selectedEpisodeId) {
+        detailPlaybackTarget(catalogItem, episodes, activeSeason, selectedEpisodeId)
+    }
+    val similar = similarResult?.getOrNull().orEmpty()
+
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(bottom = 24.dp)
+    ) {
+        item(key = "hero") {
+            DetailHero(
+                item = catalogItem,
+                target = target,
+                onPlay = { onPlay(target) },
+                onPrefetchPlay = { onPrefetchPlay(target) }
+            )
+        }
+        item(key = "actions") {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .horizontalScroll(rememberScrollState())
+                    .padding(horizontal = 20.dp, vertical = 8.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                OutlinedButton(
+                    onClick = onToggleWatchlist,
+                    modifier = Modifier.tvFocusable(
+                        id = "detail-watchlist",
+                        onClick = onToggleWatchlist
+                    )
+                ) {
+                    Text(if (catalogItem.id in watchlist) "Aus Meine Liste" else "In Meine Liste")
+                }
+                OutlinedButton(
+                    onClick = onSearch,
+                    modifier = Modifier.tvFocusable(id = "detail-search", onClick = onSearch)
+                ) {
+                    Text("Ähnliche suchen")
+                }
+            }
+        }
+        item(key = "synopsis") {
+            DetailTextSection(
+                title = "Synopsis",
+                text = catalogItem.overview.ifBlank { "Keine Synopsis vorhanden." }
+            )
+        }
+        item(key = "genres") {
+            DetailTextSection(
+                title = "Genres",
+                text = catalogItem.genres.filter { it.isNotBlank() }.joinToString(", ")
+                    .ifBlank { "Keine Genres hinterlegt." }
+            )
+        }
+        item(key = "cast") {
+            DetailTextSection(
+                title = "Besetzung",
+                text = catalogItem.cast.filter { it.isNotBlank() }.distinct().joinToString(", ")
+                    .ifBlank { "Keine Besetzung hinterlegt." }
+            )
+        }
+
+        if (catalogItem.type.equals("series", ignoreCase = true)) {
+            item(key = "episodes-heading") {
+                Column(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
+                    SectionTitle("Folgen")
+                    if (seasons.isNotEmpty()) {
+                        SeasonRow(
+                            seasons = seasons,
+                            activeSeason = activeSeason,
+                            episodes = episodes,
+                            onSelect = { season ->
+                                selectedSeason = season
+                                selectedEpisodeId = null
+                            },
+                            onPrefetch = onPrefetch
+                        )
+                    }
+                    selectedEpisode?.let { episode ->
+                        SelectedEpisodeBar(
+                            episode = episode,
+                            onPlay = { onPlay(target) },
+                            onPrefetchPlay = { onPrefetchPlay(target) }
+                        )
+                    }
+                    when {
+                        episodeResult == null -> EmptyLine("Folgen werden geladen …")
+                        episodeResult?.isFailure == true -> EmptyLine("Folgen konnten nicht geladen werden.")
+                        filteredEpisodes.isEmpty() -> EmptyLine("Keine Folgen für diese Staffel hinterlegt.")
+                    }
+                }
+            }
+            items(
+                items = filteredEpisodes,
+                key = { "${it.season}:${it.number}:${it.id}" }
+            ) { episode ->
+                EpisodeRow(
+                    episode = episode,
+                    selected = episode.id == selectedEpisode?.id,
+                    progress = progress[episode.id],
+                    onSelect = {
+                        selectedSeason = episode.season
+                        selectedEpisodeId = episode.id
+                    },
+                    onPrefetch = { onPrefetch(episode) }
+                )
+            }
+        }
+
+        item(key = "similar-heading") {
+            Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
+                SectionTitle("Ähnliche Titel")
+            }
+        }
+        when {
+            similarResult == null -> item(key = "similar-status") { EmptyLine("Ähnliche Titel werden geladen …") }
+            similarResult?.isFailure == true -> item(key = "similar-status") {
+                EmptyLine("Ähnliche Titel konnten nicht geladen werden.")
+            }
+            similar.isEmpty() -> item(key = "similar-status") {
+                EmptyLine("Keine ähnlichen Titel im Katalog.")
+            }
+            else -> item(key = "similar-row") {
+                LazyRow(
+                    modifier = Modifier.fillMaxWidth(),
+                    contentPadding = PaddingValues(horizontal = 20.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    items(similar, key = { it.id }) { similarItem ->
+                        SimilarCard(
+                            item = similarItem,
+                            onOpen = { onOpenTitle(similarItem.id) },
+                            onPrefetch = { onPrefetchTitle(similarItem) }
                         )
                     }
                 }
-            } ?: run {
-                Text(text = "Lade …")
             }
         }
     }
     FocusRestorer(targetId = "detail-play")
+}
+
+@Composable
+private fun DetailHero(
+    item: CatalogItem,
+    target: DetailPlaybackTarget,
+    onPlay: () -> Unit,
+    onPrefetchPlay: () -> Unit
+) {
+    val skin = LocalSkin.current
+    BoxWithConstraints(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(340.dp)
+    ) {
+        val posterWidth = if (maxWidth >= 640.dp) 150.dp else 108.dp
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.linearGradient(
+                        listOf(skin.colors.primary.copy(alpha = 0.45f), skin.colors.surface)
+                    )
+                )
+        ) {
+            item.backdrop?.takeIf { it.isNotBlank() }?.let { backdrop ->
+                AsyncImage(
+                    model = backdrop,
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(
+                        Brush.verticalGradient(
+                            colors = listOf(
+                                Color.Transparent,
+                                skin.colors.canvas.copy(alpha = 0.55f),
+                                skin.colors.canvas
+                            )
+                        )
+                    )
+            )
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(20.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                PosterCard(
+                    posterUrl = item.poster,
+                    modifier = Modifier
+                        .width(posterWidth)
+                        .aspectRatio(2f / 3f),
+                    contentDescription = "Poster zu ${item.title}"
+                )
+                Spacer(Modifier.width(16.dp))
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                ) {
+                    Text(
+                        text = item.title,
+                        style = MaterialTheme.typography.headlineMedium,
+                        maxLines = 3,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Text(
+                        text = buildList {
+                            add(if (item.type.equals("series", ignoreCase = true)) "Serie" else "Film")
+                            item.year?.let { add(it.toString()) }
+                            item.rating?.let { add("★ ${String.format(Locale.ROOT, "%.1f", it)}") }
+                            add(runtimeLabel(item.runtime))
+                        }.joinToString("  ·  "),
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    Button(
+                        onClick = onPlay,
+                        modifier = Modifier.tvFocusable(
+                            id = "detail-play",
+                            onClick = onPlay,
+                            onFocusChanged = { focused -> if (focused) onPrefetchPlay() }
+                        )
+                    ) {
+                        Text(playbackLabel(item, target))
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DetailTextSection(title: String, text: String) {
+    Column(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
+        SectionTitle(title)
+        Spacer(Modifier.height(6.dp))
+        Text(text = text, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+private fun SectionTitle(title: String) {
+    Text(text = title, style = MaterialTheme.typography.titleLarge)
+}
+
+@Composable
+private fun SeasonRow(
+    seasons: List<Int>,
+    activeSeason: Int,
+    episodes: List<EpisodeInfo>,
+    onSelect: (Int) -> Unit,
+    onPrefetch: (EpisodeInfo) -> Unit
+) {
+    val skin = LocalSkin.current
+    LazyRow(
+        modifier = Modifier.fillMaxWidth(),
+        contentPadding = PaddingValues(vertical = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        items(seasons, key = { it }) { season ->
+            val active = season == activeSeason
+            val firstEpisode = episodes.firstOrNull { it.season == season }
+            Text(
+                text = "Staffel $season",
+                style = MaterialTheme.typography.labelLarge,
+                color = if (active) skin.colors.canvas else skin.colors.textPrimary,
+                modifier = Modifier
+                    .heightIn(min = 44.dp)
+                    .clip(RoundedCornerShape(50))
+                    .background(if (active) skin.colors.focus else skin.colors.surface)
+                    .tvFocusable(
+                        id = "detail-season-$season",
+                        onClick = { onSelect(season) },
+                        onFocusChanged = { focused ->
+                            if (focused) firstEpisode?.let(onPrefetch)
+                        }
+                    )
+                    .padding(horizontal = 16.dp, vertical = 12.dp)
+            )
+        }
+    }
+}
+
+@Composable
+private fun SelectedEpisodeBar(
+    episode: EpisodeInfo,
+    onPlay: () -> Unit,
+    onPrefetchPlay: () -> Unit
+) {
+    val skin = LocalSkin.current
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(12.dp))
+            .background(skin.colors.surface)
+            .padding(12.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Column(Modifier.weight(1f)) {
+            Text("Ausgewählt", style = MaterialTheme.typography.labelMedium)
+            Text(
+                text = episode.label,
+                style = MaterialTheme.typography.bodyMedium,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
+        }
+        Spacer(Modifier.width(12.dp))
+        Button(
+            onClick = onPlay,
+            modifier = Modifier.tvFocusable(
+                id = "detail-play-selected",
+                onClick = onPlay,
+                onFocusChanged = { focused -> if (focused) onPrefetchPlay() }
+            )
+        ) {
+            Text("Abspielen")
+        }
+    }
+}
+
+@Composable
+private fun EpisodeRow(
+    episode: EpisodeInfo,
+    selected: Boolean,
+    progress: Float?,
+    onSelect: () -> Unit,
+    onPrefetch: () -> Unit
+) {
+    val skin = LocalSkin.current
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 20.dp, vertical = 6.dp)
+            .clip(RoundedCornerShape(12.dp))
+            .background(
+                if (selected) skin.colors.primary.copy(alpha = 0.18f) else skin.colors.surface
+            )
+            .tvFocusable(
+                id = "episode-${episode.id}",
+                onClick = onSelect,
+                onFocusChanged = { focused -> if (focused) onPrefetch() }
+            )
+            .padding(12.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        EpisodeThumbnail(episode)
+        Spacer(Modifier.width(12.dp))
+        Column(Modifier.weight(1f)) {
+            Text(
+                text = episode.name,
+                style = MaterialTheme.typography.titleMedium,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
+            Text(
+                text = "S%02d E%02d".format(episode.season, episode.number),
+                style = MaterialTheme.typography.labelMedium
+            )
+            val details = listOfNotNull(
+                episode.airDate?.takeIf { it.isNotBlank() },
+                episode.runtime?.takeIf { it > 0 }?.let { "$it Min." }
+            ).joinToString("  ·  ")
+            if (details.isNotBlank()) {
+                Text(text = details, style = MaterialTheme.typography.bodySmall)
+            }
+            Spacer(Modifier.height(6.dp))
+            EpisodeProgress(progress)
+            Spacer(Modifier.height(4.dp))
+            Text(
+                text = episodeProgressLabel(progress),
+                style = MaterialTheme.typography.labelSmall
+            )
+        }
+        if (selected) {
+            Spacer(Modifier.width(8.dp))
+            Text(text = "✓", color = skin.colors.focus)
+        }
+    }
+}
+
+@Composable
+private fun EpisodeThumbnail(episode: EpisodeInfo) {
+    val skin = LocalSkin.current
+    Box(
+        modifier = Modifier
+            .width(96.dp)
+            .aspectRatio(16f / 9f)
+            .clip(RoundedCornerShape(8.dp))
+            .background(skin.colors.surface)
+    ) {
+        episode.still?.takeIf { it.isNotBlank() }?.let { still ->
+            AsyncImage(
+                model = still,
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
+        } ?: Text(
+            text = "S%02d E%02d".format(episode.season, episode.number),
+            style = MaterialTheme.typography.labelMedium,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.align(Alignment.Center)
+        )
+    }
+}
+
+@Composable
+private fun EpisodeProgress(progress: Float?) {
+    val skin = LocalSkin.current
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(4.dp)
+            .clip(RoundedCornerShape(2.dp))
+            .background(skin.colors.textPrimary.copy(alpha = 0.25f))
+    ) {
+        val fraction = progress?.coerceIn(0f, 1f) ?: 0f
+        if (fraction > 0f) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth(fraction)
+                    .height(4.dp)
+                    .background(skin.colors.focus)
+            )
+        }
+    }
+}
+
+@Composable
+private fun SimilarCard(
+    item: CatalogItem,
+    onOpen: () -> Unit,
+    onPrefetch: () -> Unit
+) {
+    Column(Modifier.width(120.dp)) {
+        PosterCard(
+            posterUrl = item.poster,
+            modifier = Modifier
+                .width(120.dp)
+                .aspectRatio(2f / 3f),
+            contentDescription = "${item.title} ${item.year ?: ""}".trim(),
+            focusId = "similar-${item.id}",
+            onClick = onOpen,
+            onFocus = onPrefetch
+        )
+        Text(
+            text = item.title,
+            style = MaterialTheme.typography.bodyMedium,
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.padding(top = 6.dp)
+        )
+    }
+}
+
+@Composable
+private fun EmptyLine(text: String) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodyMedium,
+        modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
+    )
+}
+
+@Composable
+private fun DetailMessage(text: String) {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Text(text = text, textAlign = TextAlign.Center)
+    }
 }

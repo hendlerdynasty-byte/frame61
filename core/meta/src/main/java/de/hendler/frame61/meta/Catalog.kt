@@ -31,7 +31,11 @@ data class CatalogItem(
      * Quelle selbst kennt ihre Schlüssel; der Titel reicht nicht, weil
      * mehrere Quellen denselben Titel führen.
      */
-    val sourceKey: String? = null
+    val sourceKey: String? = null,
+    /** Optionales Breitbildmotiv; ältere Kataloge liefern weiterhin nur das Poster. */
+    val backdrop: String? = null,
+    /** Anzeigenamen der Besetzung; strukturierte TMDB-Credits werden hier nicht gespiegelt. */
+    val cast: List<String> = emptyList()
 )
 
 @Serializable

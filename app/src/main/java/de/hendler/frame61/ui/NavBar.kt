@@ -38,10 +38,8 @@ enum class NavDestination(val route: String, val label: String) {
 }
 
 /**
- * Bottom bar with the app's tools.
- *
- * Before this existed the Source Lab route was compiled but unreachable — the
- * user had no tools at all. Every entry is a focusable TV target.
+ * Kompakte Navigationsleiste. Die App-Shell platziert sie auf Telefonen oben;
+ * eine dauerhafte untere Leiste ist verboten. Jeder Eintrag bleibt fokussierbar.
  */
 @Composable
 fun NavBar(
@@ -76,10 +74,9 @@ fun NavBar(
 }
 
 /**
- * Fixed left rail for TV. The bottom bar is a phone pattern: on a 10-foot
- * screen it sits outside the comfortable focus path and wastes vertical space.
- * Every entry keeps the same stable focus id as [NavBar], so existing TV
- * automation and focus restoration keep working.
+ * Fixed left rail for TV. Phones use [NavBar] as a compact top bar instead.
+ * Every entry keeps the same stable focus id, so existing automation and focus
+ * restoration keep working.
  */
 @Composable
 fun TvSideNav(
