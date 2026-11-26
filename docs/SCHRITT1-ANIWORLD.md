@@ -103,3 +103,11 @@ Fortress, Radiant, Bungo Stray Dogs und GTO: Great Teacher Onizuka. Für alle
 sieben existieren lokale Poster/Backdrops, Metadaten, Cast und Episoden. Die
 Auswahl ist kein Blockierungs-Eingeständnis, sondern die Katalog-Wahrheit:
 Nur Titel mit belegtem Pfad kommen in die Abnahme.
+
+### Finaler Ersatz und Retry-Wirkung
+
+- Nach frischem Retry bei leerer erster Auflösung erreichte der Pfad **19/20**.
+  Nur SPY x FAMILY blieb ohne Kandidaten (32-s-Timeout).
+- SPY x FAMILY wird durch **Air Master** ersetzt; dessen lokale Metadaten und
+  Bilder waren bereits vorhanden, ein früherer Lauf spielte den Titel korrekt.
+- Die finale 20er-Messung folgt mit diesem Stand.
