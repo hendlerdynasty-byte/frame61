@@ -4,11 +4,13 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.os.SystemClock
 import android.text.Html
 import android.util.Log
 import android.view.Gravity
-import android.graphics.PixelCopy
+import android.view.PixelCopy
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
@@ -428,9 +430,9 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         if (decor.width <= 0 || decor.height <= 0) return false
         val bitmap = Bitmap.createBitmap(decor.width, decor.height, Bitmap.Config.ARGB_8888)
         val copied = suspendCancellableCoroutine<Boolean> { continuation ->
-            PixelCopy.request(window, bitmap) { result ->
+            PixelCopy.request(window, bitmap, { result ->
                 if (continuation.isActive) continuation.resume(result == PixelCopy.SUCCESS)
-            }
+            }, Handler(Looper.getMainLooper()))
         }
         if (!copied) {
             bitmap.recycle()
