@@ -64,3 +64,16 @@ Dazu die drei bisherigen Fehler und ein zusätzlicher Kandidat:
   adressierten Quellfolge.
 - Die drei Fehler haben VOE/Doodstream/Filemoon im Angebot, aber nur ein
   dropcdn-Kandidat erreicht die Wiedergabe.
+
+## Messstand 26.11.2026
+
+- CI `45844947689` auf `78fa07a`: Gate + Release grün, **271/271 Tests**,
+  Lint 0 Errors / 109 Warnings / 1 Information.
+- Acceptance-APK `90be70fe…` per Device-Lab `job-d02f4f1cc9af4ce8` installiert.
+- Erste echte 20er-Messung: **Katalogpanel 20/20 PASS** (lokale Poster,
+  Backdrops, Overview, Genres, Cast, Jahr, Laufzeit, Episoden), **10/20
+  Ende-zu-Ende PASS**. Die anderen 10 lieferten keinen aniworld-Kandidaten;
+  der strenge Pfad hing an der zusätzlichen Suche.
+- Fix `dc8c417`: direkter `sourceKey`, Titel + Episoden aus einem Quellrequest.
+  Nachmessung folgt; die 10/20 sind kein abgeschlossenes Gate.
+- Rohbelege: `~/hendler-dynasty/evidence/frame61/1.6.0/step1/aniworld20/polls2/latest.xml`.
