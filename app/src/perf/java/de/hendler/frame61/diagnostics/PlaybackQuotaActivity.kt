@@ -550,7 +550,9 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 id = entry.optString("id"),
                 title = title,
                 type = entry.optString("type"),
-                group = entry.optString("group").ifBlank { "unbekannt" }
+                group = entry.optString("group").ifBlank { "unbekannt" },
+                year = entry.optInt("year", 0).takeIf { it > 0 },
+                runtime = entry.optInt("runtime", 0).takeIf { it > 0 }
             )
         }
     }
@@ -615,7 +617,11 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         val id: String,
         val title: String,
         val type: String,
-        val group: String
+        val group: String,
+        /** Gate 1: Jahresangabe für die Identitätsprüfung, wenn der Katalog sie hat. */
+        val year: Int? = null,
+        /** Gate 1: Laufzeit in Minuten, wenn der Katalog sie hat. */
+        val runtime: Int? = null
     )
 
     private data class Attempt(val firstFrameMs: Long?, val errorClass: String?)
