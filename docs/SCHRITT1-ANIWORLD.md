@@ -111,3 +111,28 @@ Nur Titel mit belegtem Pfad kommen in die Abnahme.
 - SPY x FAMILY wird durch **Air Master** ersetzt; dessen lokale Metadaten und
   Bilder waren bereits vorhanden, ein früherer Lauf spielte den Titel korrekt.
 - Die finale 20er-Messung folgt mit diesem Stand.
+
+## Gate-1-Abschluss: 20/20 auf dem A52 (26.11.2026)
+
+Finaler Lauf mit Build `c70a9ac` (CI `45886687367`, **280/280 Tests**, Lint
+0 Errors / 109 Warnings / 1 Information):
+
+```
+PATH SUMMARY PASS passed=20/20 sourceId=aniworld
+```
+
+Alle 20 Titel erfüllten gleichzeitig: kanonischer Katalog, lokales dekodierbares
+Poster und Backdrop, Overview/Genres/Cast/Jahr/Laufzeit, Episodenliste,
+`sourceId=aniworld`, `identity=CORRECT` mit Score 1.00, erstes Bild, wachsende
+Position und Screenshot. Rohbelege:
+`~/hendler-dynasty/evidence/frame61/1.6.0/step1/aniworld20/polls9/latest.xml`.
+
+Screenshots: direkte Surface-Captures je Titel, auf dem Gerät im D-Pad-Betrachter
+geöffnet und auf den Mac übertragen (`F6-shots/`, 20 Dateien; Kontaktblatt
+`F6-contact.jpg`). Die Sichtprüfung zeigt sichtbare Bildinhalte bei mehreren
+Titeln (u. a. Slam Dunk, Food for the Soul, Gabriel Dropout) sowie auf allen
+Captures Titel/Laufzeit. Einzelne Frames sind dunkel/schwarz; dort belegt die
+wachsende Position zusammen mit dem First-Frame-Merkmal die Wiedergabe, aber
+nicht die visuelle Erkennung des Inhalts. `aniworld.json` ist deshalb auf
+`verified:true` mit Datum 2026-11-26T20:23:16Z gesetzt; PACKS.md wurde neu
+erzeugt und der Validator meldet 0 Fehler / 0 Warnungen.

@@ -50,13 +50,13 @@
       }
     ]
   },
-  "verified": false,
-  "last_check": "2026-11-22T01:28:51Z",
+  "verified": true,
+  "last_check": "2026-11-26T20:23:16Z",
   "check": {
-    "status": "not_run",
-    "reason": "Staffel-/Episodenadressierung statisch geändert; keine Live-Prüfung",
-    "checked": [],
+    "status": "verified",
+    "reason": "A52 Build c70a9ac: 20/20 Titel korrekt gespielt, Identität bestätigt, lokale Poster/Backdrops und Detailmetadaten, Staffel/Folgenadressierung quellbelegt",
+    "checked": ["search", "detail", "episodes", "streams", "identity", "playback"],
     "misses": [],
-    "http_status": null
+    "http_status": 200
   }
 }

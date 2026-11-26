@@ -7,7 +7,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 
 - Source-Packs: **31**
 - legal-frei: **13**, Grauzone Tier A/B: **19**
-- live verifiziert: **11** (archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
+- live verifiziert: **12** (aniworld, archive-org, ard-mediathek, bs-to, cine, filmo, filmpalast, filmstarts, moflix, s-to, serienstream, streamcloud)
 - Fixtures: 12 recorded, 8 synthetic, 11 ohne
 - Hoster-Packs: **15** (live verifiziert: 3)
 
@@ -17,7 +17,7 @@ pflegen. Stand der Prüfung = `last_check` je Pack.
 |---|---|---|---|---|---|---|---|
 | `3sat` | C | ja | html | nein | 2026-11-17T17:35:14Z | synthetic | kein belegtes Ziel (Worker) |
 | `anime-loads` | B | nein | html | nein | 2026-11-17T17:35:14Z | – | kein belegtes Ziel (Worker) |
-| `aniworld` | A | nein | html | nein | 2026-11-22T01:28:51Z | recorded | not_run |
+| `aniworld` | A | nein | html | ja | 2026-11-26T20:23:16Z | recorded | — |
 | `archive-org` | C | ja | api | ja | 2026-11-17T17:35:14Z | recorded | — |
 | `ard-mediathek` | C | ja | api | ja | 2026-11-17T17:35:16Z | recorded | — |
 | `ard` | C | ja | html | nein | 2026-11-17T17:35:17Z | synthetic | kein belegtes Ziel (Worker) |
