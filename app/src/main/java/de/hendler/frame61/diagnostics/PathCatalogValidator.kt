@@ -67,14 +67,18 @@ object PathCatalogValidator {
                     issues += Issue("ID_DUPLICATE", id, "ID kommt mehrfach vor")
                 else -> {
                     val entry = catalog.items.firstOrNull { it.id == id }
-                    when {
-                        entry == null -> issues += Issue("CATALOG_MISSING", id, "Kein Katalogeintrag")
-                        entry.group != SOURCE_ID ->
+                    if (entry == null) {
+                        issues += Issue("CATALOG_MISSING", id, "Kein Katalogeintrag")
+                    } else {
+                        if (entry.group != SOURCE_ID) {
                             issues += Issue("CATALOG_GROUP", id, "group=${entry.group}, erwartet=$SOURCE_ID")
-                        entry.sourceKey != id.removePrefix(ID_PREFIX) ->
+                        }
+                        if (entry.sourceKey != id.removePrefix(ID_PREFIX)) {
                             issues += Issue("CATALOG_SOURCE_KEY", id, "sourceKey=${entry.sourceKey}")
-                        entry.title.isBlank() ->
+                        }
+                        if (entry.title.isBlank()) {
                             issues += Issue("CATALOG_TITLE", id, "Titel ist leer")
+                        }
                     }
                 }
             }
