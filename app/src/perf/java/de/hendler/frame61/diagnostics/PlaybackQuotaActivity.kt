@@ -381,6 +381,18 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             )
         }
         var candidates: List<MirrorCandidate> = initialCandidates.orEmpty()
+        if (candidates.none { it.sourceId == PathCatalogValidator.SOURCE_ID }) {
+            delay(1_500)
+            candidates = withTimeoutOrNull(PATH_RESOLVE_BUDGET_MS) {
+                autoResolver.resolveFast(
+                    title = title,
+                    episodeNumber = episodeNumber,
+                    season = season,
+                    sessionId = sessionId,
+                    fresh = true
+                )
+            }.orEmpty()
+        }
         val failedUrls = mutableSetOf<String>()
         val failedHosts = mutableSetOf<String>()
         var candidateCount = 0

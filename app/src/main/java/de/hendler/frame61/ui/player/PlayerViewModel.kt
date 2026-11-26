@@ -256,7 +256,7 @@ class PlayerViewModel @Inject constructor(
             // resolveFast: sobald ein Kandidat steht, startet der Player — der
             // Rest der Quellen darf den Start nicht verzögern.
             resolveJob = launch {
-                val resolved = runCatching {
+                var resolved = runCatching {
                     autoResolver.resolveFast(
                         title,
                         episodeNumber,
@@ -264,6 +264,22 @@ class PlayerViewModel @Inject constructor(
                         sessionId = diagnosticSessionId
                     )
                 }.getOrDefault(emptyList())
+                if (resolved.isEmpty()) {
+                    // Anbieter rotieren innerhalb kurzer Zeit. Ein frischer
+                    // zweiter Versuch ist billiger als eine endlose Warteschleife
+                    // und verhindert, dass ein transientes 404/Timeout sofort
+                    // als endgültiger Fehler erscheint.
+                    delay(1_500)
+                    resolved = runCatching {
+                        autoResolver.resolveFast(
+                            title,
+                            episodeNumber,
+                            season,
+                            sessionId = diagnosticSessionId,
+                            fresh = true
+                        )
+                    }.getOrDefault(emptyList())
+                }
                 val verified = if (request != null) {
                     identityGate.verify(request, resolved)
                 } else {
