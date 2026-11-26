@@ -1,5 +1,8 @@
 package de.hendler.frame61.scraper.engine
 
+import okhttp3.OkHttpClient
+import okhttp3.mockwebserver.MockResponse
+import okhttp3.mockwebserver.MockWebServer
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -16,6 +19,7 @@ class AniworldEpisodeParserTest {
             """
             {
               "id":"aniworld","name":"aniworld.to","baseUrl":"https://aniworld.to","kind":"html",
+              "detail":{"endpoint":"/anime/stream/{titleId}","format":"html","resultSelector":"body","titleSelector":"h1","yearSelector":"span.year"},
               "episodes":{
                 "endpoint":"/anime/stream/{titleId}","format":"html",
                 "episodeSelector":"table.seasonEpisodesList tbody tr",
@@ -31,6 +35,7 @@ class AniworldEpisodeParserTest {
 
     private val html = """
         <html><body>
+        <h1>Demo Anime</h1><span class="year">2022</span>
         <table class="seasonEpisodesList" data-season="1"><tbody>
           <tr><td class="season1EpisodeID">1</td><td class="seasonEpisodeTitle"><a href="/anime/stream/demo/staffel-1/episode-7">Start</a></td></tr>
           <tr><td class="season1EpisodeID">3</td><td class="seasonEpisodeTitle"><a href="/anime/stream/demo/staffel-1/episode-41">Dritte Folge</a></td></tr>
@@ -60,6 +65,23 @@ class AniworldEpisodeParserTest {
             "https://aniworld.to/anime/stream/demo/staffel-2/episode-509",
             episodes[2].watchUrl
         )
+    }
+
+    @Test
+    fun `episodenseite liefert titel jahr und episoden mit einem request`() {
+        val server = MockWebServer()
+        server.start()
+        try {
+            server.enqueue(MockResponse().setResponseCode(200).setBody(html))
+            val page = PackInterpreter(PackHttpClient(OkHttpClient())).episodesWithTitle(pack, "demo")
+            assertEquals("Demo Anime", page?.title)
+            assertEquals(2022, page?.year)
+            assertEquals(5, page?.episodes?.size)
+            assertEquals(1, server.requestCount)
+            assertEquals("/anime/stream/demo", server.takeRequest().path)
+        } finally {
+            server.shutdown()
+        }
     }
 
     @Test

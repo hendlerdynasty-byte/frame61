@@ -67,6 +67,21 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
     }
 
     /**
+     * Titel und Episoden aus **einem** Abruf der Episodenseite. Nur für Packs
+     * geeignet, deren detail-/episodes-Regeln dieselbe Seite beschreiben
+     * (aniworld). Ein zusätzlicher detail-Request würde dieselbe Antwort doppelt
+     * laden und den strengen Auflöser unnötig verzögern.
+     */
+    fun episodesWithTitle(pack: SourcePack, id: String, cookies: String? = null): EpisodePage? {
+        val rule = pack.episodes ?: pack.detail ?: return null
+        val body = http.get(pack, rule, mapOf("titleId" to id, "id" to id), cookies)
+        val detail = parseDetail(pack, body)
+        val episodes = parseEpisodes(pack, body)
+        if (detail == null && episodes.isEmpty()) return null
+        return EpisodePage(title = detail?.title, year = detail?.year, episodes = episodes)
+    }
+
+    /**
      * Streams zu einem Treffer. `episodeId` ist die **interne** Id der Folge
      * innerhalb der Quelle (nicht die Folgennummer); `season` adressiert die
      * Staffel — Packs setzen sie als `{season}` im Endpoint ein (Block 8:
@@ -508,6 +523,12 @@ data class DetailResult(
     val year: Int? = null,
     val runtime: Int? = null,
     val genres: List<String> = emptyList()
+)
+
+data class EpisodePage(
+    val title: String?,
+    val year: Int? = null,
+    val episodes: List<EpisodeResult>
 )
 
 data class EpisodeResult(

@@ -1,6 +1,7 @@
 package de.hendler.frame61.playback
 
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.scraper.engine.EpisodePage
 import de.hendler.frame61.scraper.engine.EpisodeResult
 import de.hendler.frame61.scraper.engine.PackLoaderValidator
 import de.hendler.frame61.scraper.engine.SearchResult
@@ -18,6 +19,7 @@ class AniworldEpisodeTargetResolverTest {
             {
               "id":"aniworld","name":"aniworld.to","baseUrl":"https://aniworld.to","kind":"html",
               "search":{"endpoint":"/ajax/search","format":"api","jsonPath":".","idPath":"link","titlePath":"title"},
+              "detail":{"endpoint":"/anime/stream/{titleId}","format":"html","resultSelector":"body","titleSelector":"h1"},
               "episodes":{"endpoint":"/anime/stream/{titleId}","format":"html","episodeSelector":"tr"},
               "streams":{"endpoint":"/anime/stream/{titleId}/staffel-{season}/episode-{episodeId}","format":"html","selector":"li"}
             }
@@ -53,14 +55,22 @@ class AniworldEpisodeTargetResolverTest {
 
     private class FakeAccess(
         var hits: List<SearchResult>,
-        var episodes: List<EpisodeResult>
+        var episodes: List<EpisodeResult>,
+        var pageTitle: String? = "Demo Anime (Quelle)",
+        var pageYear: Int? = null
     ) : AniworldEpisodeAccess {
+        var searchCalls = 0
+        var episodePageCalls = 0
         var episodeTitleId: String? = null
         var streamCall: Triple<String, String, Int>? = null
-        override suspend fun search(pack: SourcePack, title: String, cookies: String?) = hits
-        override suspend fun episodes(pack: SourcePack, titleId: String, cookies: String?): List<EpisodeResult> {
+        override suspend fun search(pack: SourcePack, title: String, cookies: String?): List<SearchResult> {
+            searchCalls++
+            return hits
+        }
+        override suspend fun episodePage(pack: SourcePack, titleId: String, cookies: String?): EpisodePage {
+            episodePageCalls++
             episodeTitleId = titleId
-            return episodes
+            return EpisodePage(pageTitle, pageYear, episodes)
         }
         override suspend fun streams(
             pack: SourcePack,
@@ -75,15 +85,39 @@ class AniworldEpisodeTargetResolverTest {
     }
 
     @Test
-    fun `sourceKey waehlt exakten treffer und staffel interne id`() = runBlocking {
+    fun `sourceKey umgeht suche und liefert quellentitel sowie katalogjahr`() = runBlocking {
         val access = FakeAccess(hits, episodes)
         val result = AniworldEpisodeTargetResolver(access).resolve(pack, item, season = 2, number = 4)
         assertEquals("demo", result?.hit?.id)
+        assertEquals("Demo Anime (Quelle)", result?.hit?.title)
+        assertEquals(2020, result?.hit?.year)
         assertEquals("900", result?.episode?.id)
         assertEquals(2, result?.episode?.season)
         assertEquals(4, result?.episode?.episode)
+        assertEquals(0, access.searchCalls)
+        assertEquals(1, access.episodePageCalls)
         assertEquals("demo", access.episodeTitleId)
         assertEquals(Triple("demo", "900", 2), access.streamCall)
+    }
+
+    @Test
+    fun `gueltiger sourceKey braucht keinen katalogtitel fuer den seitenabruf`() = runBlocking {
+        val access = FakeAccess(hits, episodes)
+        val result = AniworldEpisodeTargetResolver(access).resolve(
+            pack, item.copy(title = " "), season = 2, number = 1
+        )
+        assertEquals("Demo Anime (Quelle)", result?.hit?.title)
+        assertEquals(0, access.searchCalls)
+        assertEquals("demo", access.episodeTitleId)
+    }
+
+    @Test
+    fun `quellenjahr auf der episodenseite hat vorrang vor katalogjahr`() = runBlocking {
+        val access = FakeAccess(hits, episodes, pageYear = 2022)
+        val result = AniworldEpisodeTargetResolver(access).resolve(pack, item, season = 2, number = 1)
+        assertEquals(2022, result?.hit?.year)
+        assertEquals(0, access.searchCalls)
+        assertEquals(1, access.episodePageCalls)
     }
 
     @Test
@@ -99,7 +133,7 @@ class AniworldEpisodeTargetResolverTest {
         val access = FakeAccess(hits, episodes)
         val result = AniworldEpisodeTargetResolver(access).resolve(pack, item, season = 2, number = 2)
         assertNull(result)
-        assertEquals("demo", access.episodeTitleId)
+        assertEquals(1, access.episodePageCalls)
         assertNull(access.streamCall)
     }
 
@@ -116,14 +150,42 @@ class AniworldEpisodeTargetResolverTest {
         val foreignItem = item.copy(group = "other", sourceKey = "not-der-aniworld-key")
         val result = AniworldEpisodeTargetResolver(access).resolve(pack, foreignItem, season = 2, number = 1)
         assertEquals("demo", result?.hit?.id)
+        assertEquals("Demo Anime (Quelle)", result?.hit?.title)
         assertEquals("509", result?.episode?.id)
+        assertEquals(1, access.searchCalls)
+        assertEquals(1, access.episodePageCalls)
     }
 
     @Test
-    fun `unbekannter suchtreffer laedt keine episodenliste`() = runBlocking {
+    fun `ungueltiger sourceKey verwendet exakte suche`() = runBlocking {
+        val access = FakeAccess(hits, episodes)
+        val result = AniworldEpisodeTargetResolver(access).resolve(
+            pack, item.copy(sourceKey = "demo/with-path"), season = 2, number = 1
+        )
+        assertEquals("demo", result?.hit?.id)
+        assertEquals(1, access.searchCalls)
+        assertEquals(1, access.episodePageCalls)
+    }
+
+    @Test
+    fun `unbekannter suchtreffer laedt keine episodenseite`() = runBlocking {
         val access = FakeAccess(listOf(SearchResult("other", "Other Anime")), episodes)
+        assertNull(
+            AniworldEpisodeTargetResolver(access).resolve(
+                pack, item.copy(sourceKey = null), season = 1, number = 1
+            )
+        )
+        assertEquals(1, access.searchCalls)
+        assertEquals(0, access.episodePageCalls)
+        assertNull(access.streamCall)
+    }
+
+    @Test
+    fun `fehlender quellentitel wird nicht durch katalogtitel ersetzt`() = runBlocking {
+        val access = FakeAccess(hits, episodes, pageTitle = " ")
         assertNull(AniworldEpisodeTargetResolver(access).resolve(pack, item, season = 1, number = 1))
-        assertNull(access.episodeTitleId)
+        assertEquals(0, access.searchCalls)
+        assertEquals(1, access.episodePageCalls)
         assertNull(access.streamCall)
     }
 

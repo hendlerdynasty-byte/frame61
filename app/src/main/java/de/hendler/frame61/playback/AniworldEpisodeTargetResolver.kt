@@ -2,6 +2,7 @@ package de.hendler.frame61.playback
 
 import de.hendler.frame61.meta.CatalogItem
 import de.hendler.frame61.resolver.ContentIdentity
+import de.hendler.frame61.scraper.engine.EpisodePage
 import de.hendler.frame61.scraper.engine.EpisodeResult
 import de.hendler.frame61.scraper.engine.PackHttpClient
 import de.hendler.frame61.scraper.engine.PackInterpreter
@@ -21,7 +22,7 @@ internal data class AniworldResolution(
 /** Austauschbarer HTTP-Zugang, damit die Zielregel ohne Netzwerk testbar ist. */
 internal interface AniworldEpisodeAccess {
     suspend fun search(pack: SourcePack, title: String, cookies: String?): List<SearchResult>
-    suspend fun episodes(pack: SourcePack, titleId: String, cookies: String?): List<EpisodeResult>
+    suspend fun episodePage(pack: SourcePack, titleId: String, cookies: String?): EpisodePage?
     suspend fun streams(
         pack: SourcePack,
         titleId: String,
@@ -35,8 +36,8 @@ private class InterpreterAniworldAccess(private val interpreter: PackInterpreter
     override suspend fun search(pack: SourcePack, title: String, cookies: String?): List<SearchResult> =
         interpreter.search(pack, title, cookies = cookies)
 
-    override suspend fun episodes(pack: SourcePack, titleId: String, cookies: String?): List<EpisodeResult> =
-        interpreter.episodes(pack, titleId, cookies)
+    override suspend fun episodePage(pack: SourcePack, titleId: String, cookies: String?): EpisodePage? =
+        interpreter.episodesWithTitle(pack, titleId, cookies)
 
     override suspend fun streams(
         pack: SourcePack,
@@ -49,8 +50,9 @@ private class InterpreterAniworldAccess(private val interpreter: PackInterpreter
 
 /**
  * Gemeinsamer strenger Zielpfad für aniworld in Normalauflösung, Prefetch und
- * Alternativkette. Ein Suchtreffer allein ist keine Episodenadresse: Erst die
- * Episodenliste liefert die interne ID und die tatsächliche Staffel.
+ * Alternativkette. Ein gültiger Katalog-sourceKey adressiert die Serie direkt;
+ * die Episodenseite liefert Titel, interne IDs und tatsächliche Staffel in einem
+ * Abruf. Nur ohne gültigen sourceKey wird exakt gesucht.
  */
 internal class AniworldEpisodeTargetResolver(
     private val access: AniworldEpisodeAccess
@@ -64,20 +66,35 @@ internal class AniworldEpisodeTargetResolver(
         cookies: String? = null
     ): AniworldResolution? {
         if (pack.id != ANIWORLD_PACK_ID || season <= 0 || number <= 0) return null
+        val directTitleId = item
+            ?.takeIf { it.group == ANIWORLD_GROUP }
+            ?.sourceKey
+            ?.let(::validTitleId)
         val title = item?.title?.trim().orEmpty()
-        if (title.isBlank()) return null
-        val sourceKey = item?.takeIf { it.group == ANIWORLD_GROUP }?.sourceKey
-        val hit = selectHit(access.search(pack, title, cookies), title, sourceKey, item?.year)
-            ?: return null
-        val titleId = hit.id.trim()
+        val selectedHit = if (directTitleId == null) {
+            if (title.isBlank()) return null
+            selectHit(access.search(pack, title, cookies), title, item?.year) ?: return null
+        } else {
+            null
+        }
+        val titleId = directTitleId ?: selectedHit?.id?.trim().orEmpty()
         if (titleId.isBlank()) return null
-        val episodes = access.episodes(pack, titleId, cookies)
+        val page = access.episodePage(pack, titleId, cookies) ?: return null
+        val sourceTitle = page.title?.trim().orEmpty()
+        if (sourceTitle.isBlank()) return null
+        val hit = SearchResult(
+            id = titleId,
+            title = sourceTitle,
+            // Der Seitentitel ist die Quellenangabe; nur das Jahr darf aus dem
+            // Katalog ergänzt werden, wenn die Quelle keines nennt.
+            year = page.year ?: selectedHit?.year ?: item?.year
+        )
         val selected = EpisodeSelection.selectExact(
-            episodes.map { EpisodeTarget(it.id, it.season, it.episode) },
+            page.episodes.map { EpisodeTarget(it.id, it.season, it.episode) },
             season,
             number
         ) ?: return null
-        val sourceEpisode = episodes.singleOrNull {
+        val sourceEpisode = page.episodes.singleOrNull {
             it.id == selected.id && it.season == selected.season && it.episode == selected.number
         } ?: return null
         val internalId = sourceEpisode.id.removePrefix("episode-").trim()
@@ -97,17 +114,10 @@ internal class AniworldEpisodeTargetResolver(
     private fun selectHit(
         hits: List<SearchResult>,
         title: String,
-        sourceKey: String?,
         catalogYear: Int?
     ): SearchResult? {
         val usable = hits.filter { it.id.isNotBlank() }
             .filter { catalogYear == null || it.year == null || catalogYear == it.year }
-        if (!sourceKey.isNullOrBlank()) {
-            val wantedKey = keyOf(sourceKey)
-            return usable.singleOrNull { hit ->
-                keyOf(hit.id) == wantedKey || hit.url?.let(::keyOf) == wantedKey
-            }
-        }
         val wantedTitle = ContentIdentity.normalize(title)
         return usable.singleOrNull { hit ->
             if (wantedTitle.isBlank()) {
@@ -118,8 +128,14 @@ internal class AniworldEpisodeTargetResolver(
         }
     }
 
-    private fun keyOf(value: String): String =
-        value.trim().trimEnd('/').substringAfterLast('/').substringBefore('?').substringBefore('#')
+    /** Sicherer einzelner titleId-Pfadsegment; keine URL, Query oder Traversal. */
+    private fun validTitleId(value: String): String? {
+        val id = value.trim()
+        if (id.isBlank() || id == "." || id == "..") return null
+        return id.takeUnless { candidate ->
+            candidate.any { it.isWhitespace() || it in "/\\?#" }
+        }
+    }
 
     /** Der Episodenlink muss genau zum Stream-Endpunkt aus ID und Staffel passen. */
     private fun matchesStreamTarget(
