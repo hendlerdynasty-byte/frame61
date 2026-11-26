@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Baut den lokalen Metadaten-Tiefenpfad fuer 20 aniworld-Titel.
 
-Der Lauf holt TVmaze-Metadaten, Episoden, Cast und Bilder. Für "Your Name"
-ist der TVmaze-Datensatz unvollständig; für die Filme "Origin: Spirits of the
-Past" und "Hal" existiert kein TVmaze-Datensatz. Nur für diese drei Titel ist
-der keylose AniList-Fallback im Zielkatalog ausdrücklich vorgesehen.
-Poster und Backdrops werden als JPEG ins App-Asset-Verzeichnis geschrieben.
+Der Lauf holt TVmaze-Metadaten, Episoden, Cast und Bilder. Fehlende TVmaze-Felder
+werden bei Bedarf aus dem keylosen AniList ergänzt; für die Filme "Origin:
+Spirits of the Past" und "Hal" ist AniList der vollständige Datenfallback, weil
+kein TVmaze-Datensatz existiert. Poster und Backdrops werden als JPEG ins
+App-Asset-Verzeichnis geschrieben.
 Fehlt ein echtes Backdrop, wird deterministisch ein dunkles Unscharf-Backdrop
 aus dem lokalen Poster erzeugt. Der Meta-Index wird nur gemergt.
 
@@ -119,7 +119,8 @@ def clean_text(value: object) -> str:
     if not isinstance(value, str):
         return ""
     without_markup = re.sub(r"<[^>]*>", "", html.unescape(value))
-    return re.sub(r"\s+", " ", without_markup).strip()
+    without_zero_width = without_markup.replace("\u200b", "").replace("\ufeff", "")
+    return re.sub(r"\s+", " ", without_zero_width).strip()
 
 
 def safe_stem(identifier: str) -> str:
@@ -195,6 +196,8 @@ def _assert_public_host(host: str) -> None:
 
 def safe_url(raw: str, exact_host: str | None = None) -> str:
     parsed = urllib.parse.urlparse(raw)
+    if parsed.scheme == "http":
+        parsed = parsed._replace(scheme="https")
     host = (parsed.hostname or "").lower()
     if parsed.scheme != "https" or parsed.port not in (None, 443) or not host:
         raise ValueError(f"unerlaubte URL: {raw}")
@@ -376,6 +379,12 @@ def build_tvmaze(target: dict[str, Any]) -> dict[str, Any]:
     show = fetch_json(show_url)
     if not isinstance(show, dict):
         raise ValueError(f"TVmaze-Show {source_id} ist kein Objekt")
+    embedded = show.get("_embedded") if isinstance(show.get("_embedded"), dict) else {}
+    if target["type"] == "series" and not embedded.get("episodes"):
+        explicit_episodes = fetch_json(f"https://{TVMAZE_API}/shows/{source_id}/episodes")
+        if isinstance(explicit_episodes, list):
+            embedded["episodes"] = explicit_episodes
+            show["_embedded"] = embedded
     images = fetch_json(f"https://{TVMAZE_API}/shows/{source_id}/images")
     if not isinstance(images, list):
         images = []
@@ -393,19 +402,16 @@ def build_tvmaze(target: dict[str, Any]) -> dict[str, Any]:
             poster_source = _resolution_url(resolutions)
         if entry.get("type") == "background" and not backdrop_source:
             backdrop_source = _resolution_url(resolutions)
-    if not poster_source:
-        raise ValueError(f"TVmaze-Show {source_id} ohne Poster")
-
     premiered = str(show.get("premiered") or "")
     year = int(premiered[:4]) if premiered[:4].isdigit() else target.get("yearHint")
     rating = (show.get("rating") or {}).get("average") if isinstance(show.get("rating"), dict) else None
+    runtime = show.get("averageRuntime") or show.get("runtime")
+    if target["type"] == "movie" and not show.get("premiered"):
+        runtime = None
     episodes = _episodes_from_tvmaze(show, target["type"])
     if target["type"] == "series" and not episodes:
         raise ValueError(f"TVmaze-Show {source_id} ohne Episoden")
-    cast = _cast_from_tvmaze(show)
-    if not cast:
-        raise ValueError(f"TVmaze-Show {source_id} ohne Cast")
-    return {
+    metadata = {
         "source": "tvmaze",
         "sourceId": str(source_id),
         "tvmazeId": source_id,
@@ -414,12 +420,28 @@ def build_tvmaze(target: dict[str, Any]) -> dict[str, Any]:
         "genres": mapped_genres(show.get("genres")),
         "overview": clean_text(show.get("summary")),
         "rating": rating,
-        "runtime": show.get("averageRuntime") or show.get("runtime"),
+        "runtime": runtime,
         "posterSource": poster_source,
         "backdropSource": backdrop_source,
         "episodes": episodes,
-        "cast": cast,
+        "cast": _cast_from_tvmaze(show),
     }
+    missing_fields = [
+        field
+        for field in ("year", "genres", "overview", "rating", "runtime", "cast")
+        if metadata.get(field) in (None, "", [])
+    ]
+    if missing_fields or not poster_source:
+        supplement = build_anilist(target)
+        for field in missing_fields:
+            if supplement.get(field) not in (None, "", []):
+                metadata[field] = supplement[field]
+        metadata["posterSource"] = poster_source or supplement.get("posterSource")
+        metadata["backdropSource"] = backdrop_source or supplement.get("backdropSource")
+        metadata["supplement"] = "anilist"
+    if not metadata.get("posterSource"):
+        raise ValueError(f"TVmaze-Show {source_id} ohne Poster")
+    return metadata
 
 
 def build_anilist(target: dict[str, Any]) -> dict[str, Any]:
@@ -504,9 +526,9 @@ def jpeg_size(data: bytes) -> tuple[int, int]:
 
 
 def _fit_image(image: Any, size: tuple[int, int]) -> Any:
-    from PIL import ImageOps
+    from PIL import Image, ImageOps
 
-    return ImageOps.fit(image, size, method=ImageOps.Resampling.LANCZOS, centering=(0.5, 0.4))
+    return ImageOps.fit(image, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.4))
 
 
 def write_poster(raw: bytes, target: Path) -> tuple[int, int]:
@@ -581,18 +603,10 @@ def build_target(root: Path, target: dict[str, Any], catalog_item: dict[str, Any
     try:
         metadata = build_tvmaze(target)
     except ValueError as exc:
-        if identifier not in (
-            "aw:your-name",
-            "aw:origin-spirits-of-the-past",
-            "aw:hal",
-        ):
+        if identifier not in ("aw:origin-spirits-of-the-past", "aw:hal"):
             raise
         log(f"  TVmaze: {exc} -> AniList-Fallback")
         metadata = build_anilist(target)
-        if identifier == "aw:your-name":
-            selected, match_score = tvmaze_match(target)
-            metadata["tvmazeId"] = int(selected["id"])
-            metadata["matchScore"] = match_score
 
     required = ("year", "genres", "overview", "rating", "runtime", "cast")
     for field in required:
@@ -622,6 +636,9 @@ def build_target(root: Path, target: dict[str, Any], catalog_item: dict[str, Any
     poster_uri = ASSET_PREFIX + poster_relative
     backdrop_uri = ASSET_PREFIX + backdrop_relative
     title = clean_text(catalog_item.get("title")) or clean_text(metadata.get("title"))
+    attribution = "TVmaze" if metadata["source"] == "tvmaze" else "AniList"
+    if metadata.get("supplement"):
+        attribution += " + AniList (fehlende Felder)"
     snapshot = {
         "schema": 1,
         "id": identifier,
@@ -629,7 +646,7 @@ def build_target(root: Path, target: dict[str, Any], catalog_item: dict[str, Any
         "sourceId": metadata["sourceId"],
         "fetchedAt": iso_now(),
         "live": True,
-        "attribution": "TVmaze" if metadata["source"] == "tvmaze" else "AniList",
+        "attribution": attribution,
         "title": title,
         "year": metadata["year"],
         "type": target["type"],
@@ -658,6 +675,7 @@ def build_target(root: Path, target: dict[str, Any], catalog_item: dict[str, Any
         "id": identifier,
         "title": title,
         "source": metadata["source"],
+        "supplement": metadata.get("supplement"),
         "tvmazeId": metadata["tvmazeId"],
         "matchScore": metadata["matchScore"],
         "episodes": len(metadata["episodes"]),
@@ -826,7 +844,10 @@ def generate(root: Path) -> int:
                 if field != "id":
                     item[field] = value
     catalog["generatedAt"] = generated_at
-    write_json(catalog_path, catalog)
+    catalog_path.write_text(
+        json.dumps(catalog, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
     write_json(index_path, merge_index(existing_index, updates, generated_at), sort_keys=True)
     reports = validate_outputs(root)
     for report in reports:
