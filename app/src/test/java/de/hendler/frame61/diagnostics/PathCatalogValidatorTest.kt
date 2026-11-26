@@ -18,6 +18,8 @@ class PathCatalogValidatorTest {
         assertEquals(20, report.ids.size)
         assertEquals(20, report.ids.toSet().size)
         assertTrue(report.ids.all { it.startsWith("aw:") })
+        assertTrue("aw:slam-dunk" in report.ids)
+        assertFalse("aw:death-note" in report.ids)
     }
 
     @Test

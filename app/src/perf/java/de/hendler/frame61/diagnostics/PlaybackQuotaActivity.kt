@@ -20,6 +20,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.ui.PlayerView
 import dagger.hilt.android.AndroidEntryPoint
+import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.meta.CatalogRepository
 import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.InterceptionLog
@@ -70,6 +72,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
     @Inject lateinit var autoResolver: AutoPlaybackResolver
     @Inject lateinit var packLoader: PackLoader
     @Inject lateinit var interpreter: PackInterpreter
+    @Inject lateinit var catalogRepository: CatalogRepository
 
     private lateinit var engine: Media3Frame61Player
     private lateinit var playerView: PlayerView
@@ -191,13 +194,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             reportPathSummary(false, 0, "PACK_MISSING")
             return
         }
-        val items = loadCatalog().associateBy { it.id }
+        val items = catalogRepository.all().associateBy { it.id }
         var passed = 0
         validation.ids.forEachIndexed { index, id ->
             val item = items.getValue(id)
             val title = decodeCatalogTitle(item.title)
             val slug = item.sourceKey ?: id.removePrefix(PathCatalogValidator.ID_PREFIX)
-            val artworkAsset = localArtwork(id)
+            val comparisonArtwork = localArtwork(id)
+            val catalogPanel = inspectCatalogPanel(item)
             val sourceData = withTimeoutOrNull(PATH_SOURCE_BUDGET_MS) {
                 withContext(Dispatchers.IO) {
                     val detail = runCatching { interpreter.detail(pack, slug) }.getOrNull()
@@ -219,7 +223,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             val episodesOk = episodes.isNotEmpty() && episodes.all { it.season > 0 && it.episode > 0 }
             val seasons = episodes.map { it.season }.distinct().sorted()
             val firstEpisode = episodes.minWithOrNull(compareBy({ it.season }, { it.episode }))
-            val panelValid = artworkAsset != null && detailOk && episodesOk && firstEpisode != null
+            val panelValid = catalogPanel.isValid && detailOk && episodesOk && firstEpisode != null
 
             var resolveStatus = "NOT_RUN"
             var identityKind = "-"
@@ -232,7 +236,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             var screenshotStatus = "NOT_RUN"
             var screenshotPath = "-"
             var cause = when {
-                artworkAsset == null -> "LOCAL_ARTWORK_MISSING"
+                !catalogPanel.poster -> "CATALOG_POSTER_INVALID"
+                !catalogPanel.backdrop -> "CATALOG_BACKDROP_INVALID"
+                !catalogPanel.overview -> "CATALOG_OVERVIEW_EMPTY"
+                !catalogPanel.genres -> "CATALOG_GENRES_EMPTY"
+                !catalogPanel.cast -> "CATALOG_CAST_EMPTY"
+                !catalogPanel.year -> "CATALOG_YEAR_MISSING"
+                !catalogPanel.runtime -> "CATALOG_RUNTIME_MISSING"
+                comparisonArtwork == null -> "COMPARISON_ARTWORK_MISSING"
                 !detailOk -> "DETAIL_FIELDS_EMPTY"
                 !episodesOk -> "EPISODES_OR_SEASONS_EMPTY"
                 else -> "-"
@@ -257,11 +268,11 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     resolveStatus = if (aniworldCandidates.isNotEmpty()) "PASS" else "FAIL"
                     val identityRequest = IdentityRequest(
                         title = title,
-                        year = detail?.year ?: item.year,
+                        year = item.year,
                         type = item.type,
                         season = episode.season,
                         episode = episode.episode,
-                        runtimeMin = detail?.runtime ?: item.runtime
+                        runtimeMin = item.runtime
                     )
                     val verified = identityGate.verify(identityRequest, aniworldCandidates.take(MAX_CANDIDATES))
                     val correct = verified.firstOrNull { it.verdict.kind.name == "CORRECT" }
@@ -298,14 +309,19 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 }
             }
 
-            val titlePassed = panelValid && resolveStatus == "PASS" &&
+            val titlePassed = panelValid && comparisonArtwork != null && resolveStatus == "PASS" &&
                 identityKind == "CORRECT" && firstFrameStatus == "PASS" &&
                 playbackStatus == "PASS" && screenshotStatus == "PASS"
             if (titlePassed) passed++
             report(
                 "PATH idx=${index + 1}/${validation.ids.size} id=$id title=${title.sanitize()} " +
-                    "catalog=PASS artwork=${if (artworkAsset != null) "PASS" else "FAIL"} " +
-                    "asset=${artworkAsset ?: "-"} detail=${if (detailOk) "PASS" else "FAIL"} " +
+                    "catalog=PASS catalogPanel=${if (catalogPanel.isValid) "PASS" else "FAIL"} " +
+                    "catalogPoster=${catalogPanel.poster.status()} catalogBackdrop=${catalogPanel.backdrop.status()} " +
+                    "overview=${catalogPanel.overview.status()} genres=${catalogPanel.genres.status()} " +
+                    "cast=${catalogPanel.cast.status()} year=${catalogPanel.year.status()} " +
+                    "runtime=${catalogPanel.runtime.status()} " +
+                    "comparisonArtwork=${if (comparisonArtwork != null) "PASS" else "FAIL"} " +
+                    "asset=${comparisonArtwork ?: "-"} detail=${if (detailOk) "PASS" else "FAIL"} " +
                     "detailFields=${detailValues.size} episodes=${if (episodesOk) "PASS" else "FAIL"} " +
                     "episodeCount=${episodes.size} seasons=${seasons.joinToString(",").ifBlank { "-" }} " +
                     "resolve=$resolveStatus sourceId=${PathCatalogValidator.SOURCE_ID} " +
@@ -313,7 +329,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "firstFrame=$firstFrameStatus firstFrameMs=$firstFrameMs playback=$playbackStatus " +
                     "positionMs=$positionMs durationMs=$durationMs screenshot=$screenshotStatus " +
                     "screenshotFile=$screenshotPath result=${if (titlePassed) "PASS" else "FAIL"} " +
-                    "panel=${if (identityKind == "CORRECT") "VALID" else "INVALID"} cause=$cause"
+                    "panel=${if (panelValid && identityKind == "CORRECT") "VALID" else "INVALID"} cause=$cause"
             )
             scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
         }
@@ -366,24 +382,43 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         )
     }
 
+    private fun inspectCatalogPanel(item: CatalogItem): CatalogPanel {
+        val poster = localCatalogAsset(item.poster)
+        val backdrop = localCatalogAsset(item.backdrop)
+        val overview = item.overview.isNotBlank()
+        val genres = item.genres.any { it.isNotBlank() }
+        val cast = item.cast.any { it.name.isNotBlank() }
+        val year = item.year != null
+        val runtime = item.runtime?.let { it > 0 } == true
+        return CatalogPanel(poster, backdrop, overview, genres, cast, year, runtime)
+    }
+
+    private fun localCatalogAsset(uri: String): Boolean {
+        val prefix = "file:///android_asset/"
+        if (!uri.startsWith(prefix)) return false
+        val path = uri.removePrefix(prefix)
+        if (path.isBlank() || path.split('/').any { it == ".." }) return false
+        return decodeAsset(path)
+    }
+
+    private fun decodeAsset(path: String): Boolean = runCatching {
+        assets.open(path).use { stream ->
+            val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+            BitmapFactory.decodeStream(stream, null, bounds)
+            if (bounds.outWidth <= 0 || bounds.outHeight <= 0) error("Bildgrenzen ungültig")
+        }
+        assets.open(path).use { stream ->
+            (BitmapFactory.decodeStream(stream) ?: error("Bild nicht dekodierbar")).recycle()
+        }
+        true
+    }.getOrDefault(false)
+
+    /** Comparison image only; the visible catalog poster/backdrop are checked above. */
     private fun localArtwork(id: String): String? {
         val slug = id.removePrefix(PathCatalogValidator.ID_PREFIX)
         for (extension in PATH_ARTWORK_EXTENSIONS) {
             val path = "$PATH_ARTWORK_DIR/$slug.$extension"
-            val decoded = runCatching {
-                assets.open(path).use { stream ->
-                    val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
-                    BitmapFactory.decodeStream(stream, null, bounds)
-                    if (bounds.outWidth <= 0 || bounds.outHeight <= 0) error("Bildgrenzen ungültig")
-                }
-                assets.open(path).use { stream ->
-                    BitmapFactory.decodeStream(stream) ?: error("Bild nicht dekodierbar")
-                }
-            }.getOrNull()
-            if (decoded != null) {
-                decoded.recycle()
-                return path
-            }
+            if (decodeAsset(path)) return path
         }
         return null
     }
@@ -834,7 +869,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
     }
 
     /** Trainings- und Holdout-Stichprobe, garantiert disjunkt. */
-    private fun drawSample(items: List<CatalogItem>, mode: String, seed: Long): List<CatalogItem> {
+    private fun drawSample(items: List<QuotaCatalogItem>, mode: String, seed: Long): List<QuotaCatalogItem> {
         if (mode == MODE_HOLDOUT) {
             val trainIds = sample(items, TRAIN_SEED).mapTo(mutableSetOf()) { it.id }
             val rest = items.filter { it.id !in trainIds }
@@ -843,7 +878,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         return sample(items, seed)
     }
 
-    private fun sample(items: List<CatalogItem>, seed: Long): List<CatalogItem> {
+    private fun sample(items: List<QuotaCatalogItem>, seed: Long): List<QuotaCatalogItem> {
         val random = Random(seed)
         val series = items.filter { it.type == "series" }.shuffled(random)
         val movies = items.filter { it.type != "series" }.shuffled(random)
@@ -851,7 +886,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         return (series.take(targetSeries) + movies.take(SAMPLE_SIZE - targetSeries)).shuffled(random)
     }
 
-    private fun loadCatalog(): List<CatalogItem> {
+    private fun loadCatalog(): List<QuotaCatalogItem> {
         val text = runCatching {
             assets.open("catalog/catalog.json").bufferedReader().use { it.readText() }
         }.getOrNull() ?: return emptyList()
@@ -860,7 +895,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         return (0 until array.length()).mapNotNull { index ->
             val entry = array.optJSONObject(index) ?: return@mapNotNull null
             val title = entry.optString("title").takeIf { it.isNotBlank() } ?: return@mapNotNull null
-            CatalogItem(
+            QuotaCatalogItem(
                 id = entry.optString("id"),
                 title = title,
                 type = entry.optString("type"),
@@ -936,7 +971,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         super.onDestroy()
     }
 
-    private data class CatalogItem(
+    private data class QuotaCatalogItem(
         val id: String,
         val title: String,
         val type: String,
@@ -950,6 +985,21 @@ open class PlaybackQuotaActivity : ComponentActivity() {
     )
 
     private data class Attempt(val firstFrameMs: Long?, val errorClass: String?)
+
+    private data class CatalogPanel(
+        val poster: Boolean,
+        val backdrop: Boolean,
+        val overview: Boolean,
+        val genres: Boolean,
+        val cast: Boolean,
+        val year: Boolean,
+        val runtime: Boolean
+    ) {
+        val isValid: Boolean
+            get() = poster && backdrop && overview && genres && cast && year && runtime
+    }
+
+    private fun Boolean.status(): String = if (this) "PASS" else "FAIL"
 
     private data class PathPlaybackAttempt(
         val ok: Boolean,
