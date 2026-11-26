@@ -67,9 +67,11 @@ def main(run_dir: str, mode: str = "") -> int:
                 continue
             idx = m2.group(2)
             current = seen.get(idx)
-            # Spätere/vollständigere Dumps gewinnen: gespielt vor nein,
-            # konkrete Identitätsklasse vor "-".
-            if current is None or (m2.group(5), m2.group(6) != "-") >= (current[4], current[5] != "-"):
+            # Vollständigere Dumps gewinnen: gespielt vor nein, konkrete
+            # Identitätsklasse vor "-". Nicht lexikografisch vergleichen.
+            def rank(value):
+                return (1 if value[4] == "ja" else 0, 1 if value[5] != "-" else 0)
+            if current is None or rank(m2.groups()) > rank(current):
                 seen[idx] = m2.groups()
 
     if not seen:
