@@ -28,14 +28,22 @@ class ContentIdentityGateTest {
         streamUrl: String? = null,
         identity: String? = null,
         kind: String? = null,
-        sourceId: String = "moflix"
+        sourceId: String = "moflix",
+        sourceSeason: Int? = null,
+        sourceEpisode: Int? = null,
+        sourceWatchUrl: String? = null,
+        identityYear: Int? = null
     ) = MirrorCandidate(
         sourceId = sourceId,
         titleId = 1,
         url = url,
         streamUrl = streamUrl,
         identityTitle = identity,
-        identityKind = kind
+        identityKind = kind,
+        identityYear = identityYear,
+        sourceSeason = sourceSeason,
+        sourceEpisode = sourceEpisode,
+        sourceWatchUrl = sourceWatchUrl
     )
 
     @Test
@@ -99,6 +107,113 @@ class ContentIdentityGateTest {
         assertEquals(IdentityKind.UNKNOWN, result[0].verdict.kind)
         assertFalse(result[0].playable)
         assertEquals(0, fetcher.calls)
+    }
+
+    @Test
+    fun `aniworld ohne quellen evidenz ist unknown ohne netzabruf`() = runBlocking {
+        val fetcher = FakeFetcher(emptyMap())
+        val result = ContentIdentityGate(fetcher).verify(
+            IdentityRequest(title = "Demo Anime", type = "series", season = 2, episode = 4),
+            listOf(
+                candidate(
+                    "https://cdn.invalid/master.m3u8",
+                    streamUrl = "https://aniworld.to/redirect/1",
+                    identity = "Demo Anime",
+                    kind = "source",
+                    sourceId = "aniworld"
+                )
+            )
+        ).single()
+        assertEquals(IdentityKind.UNKNOWN, result.verdict.kind)
+        assertFalse(result.playable)
+        assertEquals(0, fetcher.calls)
+    }
+
+    @Test
+    fun `aniworld abweichende staffel oder folge ist wrong content`() = runBlocking {
+        val request = IdentityRequest(title = "Demo Anime", type = "series", season = 2, episode = 4)
+        val base = candidate(
+            "https://cdn.invalid/master.m3u8",
+            identity = "Demo Anime",
+            kind = "source",
+            sourceId = "aniworld",
+            sourceSeason = 2,
+            sourceEpisode = 4,
+            sourceWatchUrl = "https://aniworld.to/anime/stream/demo/staffel-2/episode-509"
+        )
+        val wrongSeason = base.copy(sourceSeason = 1)
+        val wrongEpisode = base.copy(sourceEpisode = 3)
+        val gate = ContentIdentityGate(FakeFetcher(emptyMap()))
+        assertEquals(
+            IdentityKind.WRONG_CONTENT,
+            gate.verify(request, listOf(wrongSeason)).single().verdict.kind
+        )
+        assertEquals(
+            IdentityKind.WRONG_CONTENT,
+            gate.verify(request, listOf(wrongEpisode)).single().verdict.kind
+        )
+    }
+
+    @Test
+    fun `aniworld abweichende watch url ist wrong content`() = runBlocking {
+        val result = ContentIdentityGate(FakeFetcher(emptyMap())).verify(
+            IdentityRequest(title = "Demo Anime", type = "series", season = 2, episode = 4),
+            listOf(
+                candidate(
+                    "https://cdn.invalid/master.m3u8",
+                    identity = "Demo Anime",
+                    kind = "source",
+                    sourceId = "aniworld",
+                    sourceSeason = 2,
+                    sourceEpisode = 4,
+                    sourceWatchUrl = "https://aniworld.to/anime/stream/demo/staffel-1/episode-509"
+                )
+            )
+        ).single()
+        assertEquals(IdentityKind.WRONG_CONTENT, result.verdict.kind)
+        assertFalse(result.playable)
+    }
+
+    @Test
+    fun `aniworld prueft source watch url statt hoster stream url`() = runBlocking {
+        val result = ContentIdentityGate(FakeFetcher(emptyMap())).verify(
+            IdentityRequest(title = "Demo Anime", type = "series", season = 2, episode = 4),
+            listOf(
+                candidate(
+                    "https://cdn.invalid/master.m3u8",
+                    streamUrl = "https://aniworld.to/redirect/1",
+                    identity = "Demo Anime",
+                    kind = "source",
+                    sourceId = "aniworld",
+                    sourceSeason = 2,
+                    sourceEpisode = 4,
+                    sourceWatchUrl = "https://aniworld.to/anime/stream/demo/staffel-2/episode-509"
+                )
+            )
+        ).single()
+        assertEquals(IdentityKind.CORRECT, result.verdict.kind)
+        assertTrue(result.playable)
+    }
+
+    @Test
+    fun `aniworld bekanntes abweichendes jahr ist wrong content`() = runBlocking {
+        val result = ContentIdentityGate(FakeFetcher(emptyMap())).verify(
+            IdentityRequest(title = "Demo Anime", year = 2020, type = "series", season = 2, episode = 4),
+            listOf(
+                candidate(
+                    "https://cdn.invalid/master.m3u8",
+                    identity = "Demo Anime",
+                    kind = "source",
+                    sourceId = "aniworld",
+                    sourceSeason = 2,
+                    sourceEpisode = 4,
+                    sourceWatchUrl = "https://aniworld.to/anime/stream/demo/staffel-2/episode-509",
+                    identityYear = 2022
+                )
+            )
+        ).single()
+        assertEquals(IdentityKind.WRONG_CONTENT, result.verdict.kind)
+        assertTrue(result.verdict.reason.contains("Jahr"))
     }
 
     @Test

@@ -35,6 +35,9 @@ data class EpisodeTarget(
  * z. B. ARD-Grouping liefert Teaser der ersten Staffel), sonst die erste
  * Folge der Quelle. Ohne den zweiten Schritt würde eine Quelle, die
  * `season = 0` meldet, die angefragte Folge nie mehr treffen.
+ *
+ * Für quellenbelegte Adressen (aniworld) gilt stattdessen [selectExact]: kein
+ * Nummer-, Staffel- oder Erstfolge-Fallback.
  */
 internal object EpisodeSelection {
 
@@ -73,5 +76,19 @@ internal object EpisodeSelection {
             ?.let { return it }
         episodes.firstOrNull { it.number == number }?.let { return it }
         return episodes.firstOrNull()
+    }
+
+    /**
+     * Strenger Pfad für Quellen mit belegter Staffel- und Folgenadresse
+     * (aniworld). Nur ein eindeutiger exakter Treffer zählt; weder eine andere
+     * Staffel noch die erste Folge dürfen als Ersatz dienen.
+     */
+    fun selectExact(
+        episodes: List<EpisodeTarget>,
+        season: Int,
+        number: Int
+    ): EpisodeTarget? {
+        if (season <= 0 || number <= 0) return null
+        return episodes.singleOrNull { it.season == season && it.number == number }
     }
 }

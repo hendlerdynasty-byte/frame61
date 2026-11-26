@@ -140,11 +140,17 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         val doc = Jsoup.parse(body)
         return rule.episodeSelector.selectNodes(doc).mapIndexed { index, node ->
             val link = rule.episodeLinkSelector.selectFirstIn(node) ?: node.selectFirstOrNull("a") ?: node
+            val href = link.attrOr("href")
             EpisodeResult(
-                id = link.attrOr("href").toTitleId(),
-                season = rule.seasonSelector.intOf(node) ?: 1,
+                // Die URL-Adresse ist die interne Quellen-ID. `episode-509`
+                // wird zu `509`; die sichtbare Folgenummer bleibt separat.
+                id = href.toEpisodeId(),
+                // Staffel 1 darf nicht geraten werden: Ein unbekannter Wert
+                // bleibt 0 und kann vom strengen Zielauflöser nicht treffen.
+                season = episodeSeason(node, link, rule) ?: 0,
                 episode = rule.episodeIndexSelector.intOf(node) ?: (index + 1),
-                title = rule.episodeTitleSelector.textOf(node).ifBlank { link.text() }
+                title = rule.episodeTitleSelector.textOf(node).ifBlank { link.text() },
+                watchUrl = href.takeIf { it.isNotBlank() }?.let { absolutize(pack.baseUrl, it) }
             )
         }.filter { it.id.isNotBlank() }
     }
@@ -240,7 +246,7 @@ class PackInterpreter(private val http: PackHttpClient = PackHttpClient()) {
         val rule = pack.episodes ?: return emptyList()
         val items = rule.jsonPath.arrayIn(body) ?: return emptyList()
         return items.mapIndexedNotNull { index, item ->
-            val id = rule.idPath.stringOn(item) ?: return@mapIndexedNotNull null
+            val id = rule.idPath.stringOn(item)?.toEpisodeId() ?: return@mapIndexedNotNull null
             val title = rule.titlePath.stringOn(item).orEmpty().ifBlank { "Folge ${index + 1}" }
             val seasonFromTitle = Regex("""\(\s*S(\d+)\s*/\s*E(\d+)\s*\)""").find(title)
             val season = rule.episodeSeasonPath.stringOn(item)?.toIntOrNull()
@@ -293,6 +299,28 @@ private fun String?.textOf(node: Element): String {
 
 private fun String?.intOf(node: Element): Int? =
     Regex("""\d{1,4}""").findAll(this.textOf(node)).firstOrNull()?.value?.toIntOrNull()
+
+/**
+ * Staffel aus der Episodenadresse oder einem expliziten Datenattribut in ihrer
+ * Umgebung. Der Titeltext wird bewusst nicht durchsucht: „Folge 2“ ist keine
+ * Staffelangabe.
+ */
+private fun episodeSeason(node: Element, link: Element, rule: PackRule?): Int? {
+    rule?.seasonSelector?.intOf(node)?.takeIf { it > 0 }?.let { return it }
+    val href = link.attrOr("href")
+    Regex("""(?:staffel|season)[-_/]?(\d{1,2})""", RegexOption.IGNORE_CASE)
+        .find(href)?.groupValues?.getOrNull(1)?.toIntOrNull()
+        ?.takeIf { it > 0 }?.let { return it }
+    return (sequenceOf(node, link) + node.parents())
+        .takeWhile { it.tagName() != "body" }
+        .mapNotNull { element ->
+            listOf("data-season", "data-season-id", "data-season-number")
+                .firstNotNullOfOrNull { attr ->
+                    element.attrOrNull(attr)?.toIntOrNull()?.takeIf { it > 0 }
+                }
+        }
+        .firstOrNull()
+}
 
 private fun String?.selectNodes(doc: Document): List<Element> {
     if (this.isNullOrBlank()) return emptyList()
@@ -364,6 +392,10 @@ internal fun String.toTitleId(): String {
     }
     return trimmed.substringAfterLast('/').substringBefore('?').substringBefore('#')
 }
+
+/** `…/staffel-2/episode-509` → `509`, nie `episode-509`. */
+internal fun String.toEpisodeId(): String =
+    toTitleId().removePrefix("episode-")
 
 // -------------------------------------------------------------- dot-path ---
 
@@ -480,9 +512,12 @@ data class DetailResult(
 
 data class EpisodeResult(
     val id: String,
+    /** 0 = von der Quelle nicht belegt; keine erfundene Staffel 1. */
     val season: Int,
     val episode: Int,
-    val title: String
+    val title: String,
+    /** Absolute Episodenadresse aus dem Quelllink, nicht ein Hoster-Ziel. */
+    val watchUrl: String? = null
 )
 
 data class StreamResult(

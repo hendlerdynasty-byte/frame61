@@ -1,7 +1,7 @@
 {
   "id": "aniworld",
   "name": "aniworld.to",
-  "version": 2,
+  "version": 3,
   "minEngine": "1.0.0",
   "tier": "A",
   "legalFree": false,
@@ -29,7 +29,7 @@
     "episodeSelector": "table.seasonEpisodesList tbody tr",
     "episodeTitleSelector": "td.seasonEpisodeTitle",
     "episodeLinkSelector": "td.seasonEpisodeTitle a",
-    "episodeIndexSelector": "td.season1EpisodeID"
+    "episodeIndexSelector": "td[class*=\"EpisodeID\"]"
   },
   "streams": {
     "endpoint": "/anime/stream/{titleId}/staffel-{season}/episode-{episodeId}",
@@ -50,23 +50,13 @@
       }
     ]
   },
-  "verified": true,
+  "verified": false,
   "last_check": "2026-11-22T01:28:51Z",
   "check": {
-    "status": "verified",
-    "reason": "",
-    "checked": [
-      "search.jsonPath",
-      "search.idPath",
-      "search.titlePath",
-      "detail.resultSelector",
-      "detail.titleSelector",
-      "episodes.episodeSelector",
-      "episodes.episodeTitleSelector",
-      "episodes.episodeLinkSelector",
-      "episodes.episodeIndexSelector"
-    ],
+    "status": "not_run",
+    "reason": "Staffel-/Episodenadressierung statisch geändert; keine Live-Prüfung",
+    "checked": [],
     "misses": [],
-    "http_status": 200
+    "http_status": null
   }
 }

@@ -70,6 +70,7 @@ class AutoPlaybackResolver @Inject constructor(
     )
 
     private val cache = ConcurrentHashMap<String, CacheEntry>()
+    private val aniworldTargets = AniworldEpisodeTargetResolver(interpreter)
 
     /**
      * Sperre je Auflösungsschlüssel — **Single-Flight**.
@@ -280,13 +281,42 @@ class AutoPlaybackResolver @Inject constructor(
             return ardResolver.resolve(item.title, episodeNumber, season)
         }
         if (pack.captcha != null) return emptyList()
+        val episode = EpisodeSelection.effectiveNumber(item.type, episodeNumber)
+        if (pack.id == AniworldEpisodeTargetResolver.ANIWORLD_PACK_ID) {
+            val target = runCatching {
+                aniworldTargets.resolve(pack, item, season, episode)
+            }.getOrNull() ?: return emptyList()
+            val out = mutableListOf<MirrorCandidate>()
+            val ordered = StreamSelectionPolicy.order(target.streams, ::needsWebView)
+            for (stream in ordered.take(PREFETCH_MAX_STREAMS)) {
+                if (!stream.url.startsWith("https://")) continue
+                val outcome = runCatching {
+                    withTimeoutOrNull(PREFETCH_HOSTER_TIMEOUT_MS) {
+                        prefetchHosterResolver.resolve(
+                            stream.url,
+                            budget = WebViewBudget.none(),
+                            episodeNumber = episode
+                        )
+                    }
+                }.getOrNull()
+                val resolved = outcome?.takeIf(StreamSelectionPolicy::playable) as? HosterOutcome.Resolved
+                    ?: continue
+                out += toCandidate(
+                    pack,
+                    target.hit,
+                    stream,
+                    ResolvedStream(resolved.url, resolved.requestHeaders, resolved.cookies),
+                    episode,
+                    season,
+                    target
+                )
+            }
+            return out
+        }
         val hits = runCatching { interpreter.search(pack, item.title) }.getOrDefault(emptyList())
         val hit = hits.firstOrNull { it.title.contains(item.title, ignoreCase = true) }
             ?: hits.firstOrNull()
             ?: return emptyList()
-        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
-        // `episode-0` ist bei s.to/aniworld eine 404 (gemessen 25.11.2026).
-        val episode = EpisodeSelection.effectiveNumber(item.type, episodeNumber)
         val streams = runCatching {
             interpreter.streams(
                 pack,
@@ -297,18 +327,19 @@ class AutoPlaybackResolver @Inject constructor(
             )
         }.getOrDefault(emptyList())
         val out = mutableListOf<MirrorCandidate>()
-        for (stream in streams.take(PREFETCH_MAX_STREAMS)) {
+        for (stream in StreamSelectionPolicy.order(streams, ::needsWebView).take(PREFETCH_MAX_STREAMS)) {
             if (!stream.url.startsWith("https://")) continue
             val outcome = runCatching {
                 withTimeoutOrNull(PREFETCH_HOSTER_TIMEOUT_MS) {
                     prefetchHosterResolver.resolve(
                         stream.url,
                         budget = WebViewBudget.none(),
-                        episodeNumber = episodeNumber
+                        episodeNumber = episode
                     )
                 }
             }.getOrNull()
-            val resolved = outcome as? HosterOutcome.Resolved ?: continue
+            val resolved = outcome?.takeIf(StreamSelectionPolicy::playable) as? HosterOutcome.Resolved
+                ?: continue
             out += toCandidate(
                 pack,
                 hit,
@@ -565,6 +596,20 @@ class AutoPlaybackResolver @Inject constructor(
                 titleId = item.id
             )
         }
+        if (pack.id == AniworldEpisodeTargetResolver.ANIWORLD_PACK_ID) {
+            val item = catalogIndex[normalizeTitle(title)]
+            val episode = EpisodeSelection.effectiveNumber(item?.type, episodeNumber)
+            val target = runCatching {
+                aniworldTargets.resolve(pack, item, season, episode)
+            }.getOrNull() ?: return emptyList()
+            val webBudget = WebViewBudget.of(
+                attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
+                deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
+            )
+            return resolveStreams(
+                pack, target.hit, target.streams, episode, season, sessionId, webBudget, target
+            )
+        }
         var cookies: String? = null
         var hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
         val sourceCaptcha = pack.captcha
@@ -630,12 +675,13 @@ class AutoPlaybackResolver @Inject constructor(
         episodeNumber: Int,
         season: Int,
         sessionId: Long,
-        webBudget: WebViewBudget
+        webBudget: WebViewBudget,
+        target: AniworldResolution? = null
     ): List<MirrorCandidate> {
-        val (webFirst, plain) = streams.partition { needsWebView(it.url) }
-        val orderedWeb = webFirst.sortedBy { if (guestCapable(it.url)) 0 else 1 }
+        val ordered = StreamSelectionPolicy.order(streams, ::needsWebView)
+        val (webFirst, plain) = ordered.partition { needsWebView(it.url) }
         val resolved = coroutineScope {
-            val webJobs = orderedWeb.take(MAX_WEBVIEW_STREAMS).map { stream ->
+            val webJobs = webFirst.take(MAX_WEBVIEW_STREAMS).map { stream ->
                 async {
                     stream to resolveHoster(pack, stream, episodeNumber, season, sessionId, webBudget)
                 }
@@ -645,10 +691,12 @@ class AutoPlaybackResolver @Inject constructor(
                     stream to resolveHoster(pack, stream, episodeNumber, season, sessionId, WebViewBudget.none())
                 }
             }
-            (webJobs + plainJobs).awaitAll()
+            // HTTP-Tier zuerst: Diese Kandidaten sind bereits priorisiert und
+            // benötigen keinen knappen WebView-Slot.
+            (plainJobs.awaitAll() + webJobs.awaitAll())
         }
         return resolved.mapNotNull { (stream, hoster) ->
-            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season) }
+            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season, target) }
         }
     }
 
@@ -658,7 +706,8 @@ class AutoPlaybackResolver @Inject constructor(
         stream: StreamResult,
         resolved: ResolvedStream,
         episodeNumber: Int,
-        season: Int
+        season: Int,
+        target: AniworldResolution? = null
     ): MirrorCandidate = MirrorCandidate(
         sourceId = pack.id,
         titleId = CatalogPlayback.stableId(hit.id),
@@ -686,7 +735,12 @@ class AutoPlaybackResolver @Inject constructor(
         // diese Angabe darf der Kandidat nicht abgespielt werden.
         identityTitle = hit.title.takeIf { it.isNotBlank() },
         identityYear = hit.year,
-        identityKind = "source"
+        identityKind = "source",
+        // aniworld braucht die Evidenz der ausgewählten Episodenzeile. Die
+        // angefragte Adresse allein ist kein Quellenbeleg.
+        sourceSeason = target?.episode?.season,
+        sourceEpisode = target?.episode?.episode,
+        sourceWatchUrl = target?.watchUrl
     )
 
     /**
@@ -729,29 +783,47 @@ class AutoPlaybackResolver @Inject constructor(
         if (pack.id == ArdPlaybackResolver.PACK_ID || pack.id == BS_TO_PACK_ID) {
             return@withContext emptyList()
         }
-        val hits = runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
-        val hit = hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
-            ?: hits.firstOrNull()
-            ?: return@withContext emptyList()
-        // Block 9: eine Serie ohne Episodennummer ist die erste Folge.
-        val episode = EpisodeSelection.effectiveNumber(
-            catalogIndex[normalizeTitle(title)]?.type,
-            episodeNumber
-        )
-        val streams = runCatching {
-            interpreter.streams(
-                pack,
-                hit.playbackId ?: hit.id,
-                episode.toString(),
-                null,
-                season
-            )
-        }.getOrDefault(emptyList())
-        val pending = streams.filter { stream ->
-            stream.url.startsWith("https://") &&
-                stream.url !in excludeUrls &&
-                hostOf(stream.url) !in excludeHosts
+        val item = catalogIndex[normalizeTitle(title)]
+        val episode = EpisodeSelection.effectiveNumber(item?.type, episodeNumber)
+        val aniworld = if (pack.id == AniworldEpisodeTargetResolver.ANIWORLD_PACK_ID) {
+            runCatching { aniworldTargets.resolve(pack, item, season, episode) }.getOrNull()
+                ?: return@withContext emptyList()
+        } else {
+            null
         }
+        val hits = if (aniworld != null) {
+            listOf(aniworld.hit)
+        } else {
+            runCatching { interpreter.search(pack, title) }.getOrDefault(emptyList())
+        }
+        val hit = if (aniworld != null) {
+            aniworld.hit
+        } else {
+            hits.firstOrNull { it.title.contains(title, ignoreCase = true) }
+                ?: hits.firstOrNull()
+                ?: return@withContext emptyList()
+        }
+        val streams = if (aniworld != null) {
+            aniworld.streams
+        } else {
+            runCatching {
+                interpreter.streams(
+                    pack,
+                    hit.playbackId ?: hit.id,
+                    episode.toString(),
+                    null,
+                    season
+                )
+            }.getOrDefault(emptyList())
+        }
+        val pending = StreamSelectionPolicy.order(
+            streams.filter { stream ->
+                stream.url.startsWith("https://") && StreamSelectionPolicy.isExcluded(
+                    stream, pack, excludeUrls, excludeHosts
+                ).not()
+            },
+            ::needsWebView
+        )
         if (pending.isEmpty()) {
             trace(sessionId, pack.id, "keine weitere Alternative", null)
             return@withContext emptyList()
@@ -769,7 +841,8 @@ class AutoPlaybackResolver @Inject constructor(
             episodeNumber = episode,
             season = season,
             sessionId = sessionId,
-            deadlineMs = System.currentTimeMillis() + ALTERNATIVE_DEADLINE_MS
+            deadlineMs = System.currentTimeMillis() + ALTERNATIVE_DEADLINE_MS,
+            target = aniworld
         )
     }
 
@@ -804,7 +877,8 @@ class AutoPlaybackResolver @Inject constructor(
         episodeNumber: Int,
         season: Int,
         sessionId: Long,
-        deadlineMs: Long
+        deadlineMs: Long,
+        target: AniworldResolution? = null
     ): List<MirrorCandidate> = coroutineScope {
         val (webFirst, plain) = pending.partition { needsWebView(it.url) }
         val plainJobs = plain.map { stream ->
@@ -851,7 +925,7 @@ class AutoPlaybackResolver @Inject constructor(
             started = System.currentTimeMillis()
         }
         (plainJobs.awaitAll() + webResults).mapNotNull { (stream, hoster) ->
-            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season) }
+            hoster?.let { toCandidate(pack, hit, stream, it, episodeNumber, season, target) }
         }
     }
 
@@ -878,12 +952,6 @@ class AutoPlaybackResolver @Inject constructor(
         if (DeVideoSrcResolver.matches(url)) return true
         // uqload.vc/flyfile.app: JS-Player ohne Embed-Form (gemessen Lauf 3).
         return HosterResolver.isWebFirst(url)
-    }
-
-    /** Gast-Wiedergabe möglich? Packs mit `guest: false` (VOE) nicht. */
-    private fun guestCapable(url: String): Boolean {
-        val hosterPack = runCatching { hosterResolver.findPack(url) }.getOrNull() ?: return true
-        return hosterPack.guest
     }
 
     private suspend fun resolveHoster(
@@ -955,12 +1023,10 @@ class AutoPlaybackResolver @Inject constructor(
             ).also {
                 trace(sessionId, pack.id, "Hoster aufgelöst", it.url)
             }
-            is HosterOutcome.Unknown -> ResolvedStream(
-                outcome.url,
-                outcome.requestHeaders,
-                outcome.cookies
-            ).also {
-                trace(sessionId, pack.id, "Unbekannter Hoster als Kandidat durchgereicht", it.url)
+            is HosterOutcome.Unknown -> {
+                Log.w(TAG, "${pack.id}: unbekannter Hoster verworfen")
+                trace(sessionId, pack.id, "Unbekannter Hoster ist kein Spielkandidat", stream.url)
+                null
             }
             is HosterOutcome.CaptchaRequired -> {
                 trace(sessionId, pack.id, "Captcha erforderlich", stream.url)

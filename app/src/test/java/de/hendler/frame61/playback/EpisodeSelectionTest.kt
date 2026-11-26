@@ -56,6 +56,25 @@ class EpisodeSelectionTest {
         assertNull(EpisodeSelection.select(emptyList(), season = 1, number = 1))
     }
 
+    @Test
+    fun `strenge auswahl nimmt nur eindeutige staffel und nummer`() {
+        assertEquals("b2", EpisodeSelection.selectExact(episodes, season = 2, number = 2)?.id)
+        assertEquals("a3", EpisodeSelection.selectExact(episodes, season = 1, number = 3)?.id)
+    }
+
+    @Test
+    fun `strenge auswahl kennt weder staffel noch nummer noch erste folge fallback`() {
+        assertNull(EpisodeSelection.selectExact(episodes, season = 2, number = 99))
+        assertNull(EpisodeSelection.selectExact(episodes, season = 3, number = 1))
+        assertNull(EpisodeSelection.selectExact(episodes, season = 2, number = 0))
+        assertNull(EpisodeSelection.selectExact(episodes.map { it.copy(season = 0) }, 1, 3))
+    }
+
+    @Test
+    fun `strenge auswahl lehnt mehrdeutige episodenzeilen ab`() {
+        assertNull(EpisodeSelection.selectExact(episodes + EpisodeTarget("b2-alt", 2, 2), 2, 2))
+    }
+
     /**
      * Block 9: eine Serie ohne Episodennummer ist die erste Folge.
      *

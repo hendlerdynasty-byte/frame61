@@ -33,18 +33,30 @@ class ContentIdentityGate(
         fetchPageTitles: Boolean = true
     ): List<VerifiedCandidate> = candidates.map { candidate ->
         val fromSource = candidate.identityTitle?.takeIf { it.isNotBlank() }
-        val pageTitle = if (fromSource == null && fetchPageTitles) {
+        val pageTitle = if (fromSource == null && candidate.sourceId != "aniworld" && fetchPageTitles) {
             candidate.streamUrl?.let { pageTitleFor(it, candidate.requestHeaders) }
         } else {
             null
         }
         val evidenceTitle = fromSource ?: pageTitle
-        val verdict = ContentIdentity.verdict(
+        val sourceEvidenceError = if (candidate.sourceId == "aniworld") {
+            aniworldEvidenceError(request, candidate)
+        } else {
+            null
+        }
+        val verdict = sourceEvidenceError ?: ContentIdentity.verdict(
             request = request,
             evidenceTitle = evidenceTitle,
             evidenceYear = candidate.identityYear,
             evidenceRuntimeSec = candidate.identityRuntimeSec,
-            evidenceUrl = candidate.streamUrl ?: candidate.url,
+            // `episode-<id>` enthält bei aniworld die interne ID, nicht die
+            // Folgennummer. ContentIdentity prüft daran nur die Staffel; die
+            // sichtbare Folge kommt aus sourceEpisode.
+            evidenceUrl = if (candidate.sourceId == "aniworld") {
+                candidate.sourceWatchUrl
+            } else {
+                candidate.streamUrl ?: candidate.url
+            },
             sameSourceItem = candidate.identityKind == "source"
         )
         VerifiedCandidate(
@@ -56,6 +68,66 @@ class ContentIdentityGate(
                 else -> "keine"
             }
         )
+    }
+
+    /**
+     * aniworld darf nicht aus der bloß angeforderten Adresse abgeleitet werden.
+     * Fehlt eine Zeilenangabe, ist die Identität UNKNOWN; weicht Staffel, Folge
+     * oder Episodenlink ab, ist sie WRONG_CONTENT.
+     */
+    private fun aniworldEvidenceError(
+        request: IdentityRequest,
+        candidate: MirrorCandidate
+    ): IdentityVerdict? {
+        val season = candidate.sourceSeason
+        val episode = candidate.sourceEpisode
+        val watchUrl = candidate.sourceWatchUrl?.trim()
+        val runtimeUnknown = request.runtimeMin == null || candidate.identityRuntimeSec == null
+        if (season == null || episode == null || watchUrl.isNullOrBlank() ||
+            season <= 0 || episode <= 0 || request.season <= 0 || request.episode <= 0
+        ) {
+            return IdentityVerdict(
+                IdentityKind.UNKNOWN,
+                0.0,
+                matchedTitle = candidate.identityTitle,
+                reason = "aniworld: Quellen-Evidenz season/episode/watchUrl fehlt",
+                runtimeUnknown = runtimeUnknown,
+                sameSourceItem = candidate.identityKind == "source"
+            )
+        }
+        if (season != request.season || episode != request.episode) {
+            return IdentityVerdict(
+                IdentityKind.WRONG_CONTENT,
+                0.0,
+                matchedTitle = candidate.identityTitle,
+                reason = "aniworld: Quellenfolge S${season}E$episode passt nicht zu S${request.season}E${request.episode}",
+                runtimeUnknown = runtimeUnknown,
+                sameSourceItem = candidate.identityKind == "source"
+            )
+        }
+        val uri = runCatching { java.net.URI(watchUrl) }.getOrNull()
+        val marker = Regex(
+            """^/anime/stream/[^/]+/staffel-(\d{1,2})/episode-([^/]+)/?$""",
+            RegexOption.IGNORE_CASE
+        ).find(uri?.path.orEmpty())
+        val urlSeason = marker?.groupValues?.getOrNull(1)?.toIntOrNull()
+        val internalId = marker?.groupValues?.getOrNull(2)?.trim().orEmpty()
+        val validHost = uri?.host?.let {
+            it.equals("aniworld.to", ignoreCase = true) || it.endsWith(".aniworld.to", ignoreCase = true)
+        } == true
+        if (!validHost || !uri?.scheme.equals("https", ignoreCase = true) ||
+            urlSeason != season || internalId.isBlank()
+        ) {
+            return IdentityVerdict(
+                IdentityKind.WRONG_CONTENT,
+                0.0,
+                matchedTitle = candidate.identityTitle,
+                reason = "aniworld: Watch-URL belegt die Quellenfolge nicht",
+                runtimeUnknown = runtimeUnknown,
+                sameSourceItem = candidate.identityKind == "source"
+            )
+        }
+        return null
     }
 
     /** Lädt den Seitentitel einer HTML-URL (gecacht), `null` bei Fehlern. */

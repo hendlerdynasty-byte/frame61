@@ -14,6 +14,7 @@ import de.hendler.frame61.player.PlayerUiState
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.CaptchaBroker
 import de.hendler.frame61.playback.CaptchaRequest
+import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.playback.PrefetchController
 import de.hendler.frame61.resolver.ContentIdentityGate
 import de.hendler.frame61.resolver.IdentityRequest
@@ -148,7 +149,8 @@ class PlayerViewModel @Inject constructor(
         episodeNumber: Int,
         season: Int = 1,
         type: String = "movie",
-        runtimeMin: Int? = null
+        runtimeMin: Int? = null,
+        year: Int? = null
     ) {
         recoveryJob?.cancel()
         tickJob?.cancel()
@@ -173,9 +175,10 @@ class PlayerViewModel @Inject constructor(
         this.mirrorIndex = 0
         this.identityRequest = IdentityRequest(
             title = title,
+            year = year,
             type = type,
             season = season,
-            episode = episodeNumber,
+            episode = EpisodeSelection.effectiveNumber(type, episodeNumber),
             runtimeMin = runtimeMin
         )
         _state.update {
@@ -447,6 +450,7 @@ class PlayerViewModel @Inject constructor(
             val resumeMs = mediaPlayer.state.value.positionMs
             val current = mirrors.getOrNull(mirrorIndex)
             current?.url?.let(failedUrls::add)
+            current?.streamUrl?.let(failedUrls::add)
             val watchHost = current?.streamUrl?.let { hostOf(it) }.orEmpty()
             if (watchHost.isNotEmpty()) failedHosts += watchHost
             PlaybackDiagnostics.record(

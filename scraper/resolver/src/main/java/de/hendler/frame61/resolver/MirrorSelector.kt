@@ -43,7 +43,11 @@ data class MirrorCandidate(
     /** Laufzeit in Sekunden, wenn die Quelle sie nennt (ARD-API, JSON-LD). */
     val identityRuntimeSec: Int? = null,
     /** Woher die Angabe stammt: `source` (Suchtreffer), `api` (ARD), `page` (HTML). */
-    val identityKind: String? = null
+    val identityKind: String? = null,
+    /** Explizite Quellen-Evidenz der aniworld-Episodenzeile (Gate 1). */
+    val sourceSeason: Int? = null,
+    val sourceEpisode: Int? = null,
+    val sourceWatchUrl: String? = null
 )
 
 /**

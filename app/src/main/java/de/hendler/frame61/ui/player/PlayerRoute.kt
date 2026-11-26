@@ -32,7 +32,7 @@ fun PlayerRoute(
     val captcha by viewModel.captchaRequest.collectAsStateWithLifecycle()
     val diagnosticEvents by PlaybackDiagnostics.events.collectAsStateWithLifecycle()
 
-    LaunchedEffect(item.id, episodeId, episodeNumber, season) {
+    LaunchedEffect(item.id, item.year, episodeId, episodeNumber, season) {
         viewModel.start(
             profileId = profileId,
             titleId = item.id,
@@ -41,7 +41,8 @@ fun PlayerRoute(
             episodeNumber = episodeNumber,
             season = season,
             type = item.type,
-            runtimeMin = item.runtime
+            runtimeMin = item.runtime,
+            year = item.year
         )
     }
 

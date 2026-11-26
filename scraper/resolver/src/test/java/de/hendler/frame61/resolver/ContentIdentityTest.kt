@@ -167,6 +167,76 @@ class ContentIdentityTest {
     }
 
     @Test
+    fun `html entity wird vor dem titelvergleich dekodiert`() {
+        assertEquals("watari kun s", ContentIdentity.normalize("Watari-kun&amp;#039;s"))
+        assertEquals(1.0, ContentIdentity.similarity("Watari-kun's", "Watari-kun&amp;#039;s"), 0.0001)
+        assertEquals(
+            IdentityKind.CORRECT,
+            ContentIdentity.verdict(
+                IdentityRequest(title = "Watari-kun's"),
+                evidenceTitle = "Watari-kun&amp;#039;s"
+            ).kind
+        )
+    }
+
+    @Test
+    fun `jahrvergleich greift nur wenn beide seiten es kennen`() {
+        val wrongYear = ContentIdentity.verdict(
+            IdentityRequest(title = "Andor", year = 2019),
+            evidenceTitle = "Andor",
+            evidenceYear = 2022
+        )
+        assertEquals(IdentityKind.WRONG_CONTENT, wrongYear.kind)
+        assertTrue(wrongYear.reason.contains("Jahr"))
+
+        assertEquals(
+            IdentityKind.CORRECT,
+            ContentIdentity.verdict(
+                IdentityRequest(title = "Andor", year = 2022),
+                evidenceTitle = "Andor",
+                evidenceYear = null
+            ).kind
+        )
+        assertEquals(
+            IdentityKind.CORRECT,
+            ContentIdentity.verdict(
+                IdentityRequest(title = "Andor", year = null),
+                evidenceTitle = "Andor",
+                evidenceYear = 2022
+            ).kind
+        )
+        assertEquals(
+            IdentityKind.CORRECT,
+            ContentIdentity.verdict(
+                IdentityRequest(title = "Andor", year = 2022),
+                evidenceTitle = "Andor",
+                evidenceYear = 2022
+            ).kind
+        )
+    }
+
+    @Test
+    fun `ard ziffern im pfad sind keine episodenmarker`() {
+        val url = "https://akamai.example/6/5/10/asset/master.m3u8"
+        assertNull(ContentIdentity.episodeMarkerMismatch(url, 1, 1))
+        val verdict = ContentIdentity.verdict(
+            IdentityRequest(title = "Andor", type = "series", season = 1, episode = 1),
+            evidenceTitle = "Andor",
+            evidenceUrl = url
+        )
+        assertEquals(IdentityKind.CORRECT, verdict.kind)
+    }
+
+    @Test
+    fun `aniworld interne episode id wird nicht als folgennummer gelesen`() {
+        val url = "https://aniworld.to/anime/stream/demo/staffel-2/episode-509"
+        assertNull(ContentIdentity.episodeMarkerMismatch(url, 2, 4))
+        assertTrue(
+            ContentIdentity.episodeMarkerMismatch(url, 1, 4)!!.contains("Staffel")
+        )
+    }
+
+    @Test
     fun `laufzeitpruefung greift nur wenn beide seiten sie kennen`() {
         val ohneKatalog = ContentIdentity.verdict(
             IdentityRequest(title = "Ein Film", runtimeMin = null),

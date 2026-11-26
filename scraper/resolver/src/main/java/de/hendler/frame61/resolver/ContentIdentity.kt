@@ -1,5 +1,7 @@
 package de.hendler.frame61.resolver
 
+import org.jsoup.Jsoup
+
 /**
  * Inhalts-Identität eines Wiedergabe-Kandidaten (Gate 1, 1.6.0).
  *
@@ -116,7 +118,15 @@ object ContentIdentity {
      */
     fun normalize(raw: String): String {
         if (raw.isBlank()) return ""
-        var s = raw.lowercase()
+        // Suchtreffer können HTML-kodiert sein ("Watari-kun&amp;#039;s").
+        // Die doppelte Kodierung braucht zwei Dekodierungsdurchläufe; ohne
+        // sie wird aus dem Apostroph ein Zahl-Token "039".
+        var decoded = raw
+        repeat(3) {
+            val next = Jsoup.parse(decoded).text()
+            if (next != decoded) decoded = next
+        }
+        var s = decoded.lowercase()
         s = s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
         // Weitere Diakritika (é, à, ñ …) über NFD + Combining-Marks entfernen.
         s = java.text.Normalizer.normalize(s, java.text.Normalizer.Form.NFD)
@@ -232,6 +242,20 @@ object ContentIdentity {
                 sameSourceItem = sameSourceItem
             )
         }
+        // Jahr: nur wenn Katalog und Quelle es beide kennen. Ein fehlendes
+        // Jahr ist keine Abweichung; ein bekanntes, anderes Jahr sehr wohl.
+        if (request.year != null && evidenceYear != null &&
+            request.year > 0 && evidenceYear > 0 && request.year != evidenceYear
+        ) {
+            return IdentityVerdict(
+                kind = IdentityKind.WRONG_CONTENT,
+                score = score,
+                matchedTitle = evidenceTitle,
+                reason = "Jahr weicht ab (Katalog ${request.year}, Quelle $evidenceYear)",
+                runtimeUnknown = request.runtimeMin == null || evidenceRuntimeSec == null,
+                sameSourceItem = sameSourceItem
+            )
+        }
         // Serie: Staffel/Folge muss in der Adresse stehen, wenn sie dort steht.
         if (request.isSeries && request.episode > 0) {
             val marker = episodeMarkerMismatch(evidenceUrl, request.season, request.episode)
@@ -282,11 +306,24 @@ object ContentIdentity {
         val s = url.lowercase()
         val seasonMatch = Regex("staffel[-_/]?(\\d{1,2})|season[-_/]?(\\d{1,2})")
             .find(s)?.groupValues?.drop(1)?.firstOrNull { it.isNotBlank() }?.toIntOrNull()
-        val episodeMatch = Regex("folge[-_/]?(\\d{1,3})|episode[-_/]?(\\d{1,3})|/(\\d{1,3})(?:/|$)")
-            .find(s)?.groupValues?.drop(1)?.firstOrNull { it.isNotBlank() }?.toIntOrNull()
+        // Nur explizite Episodenmarker lesen. Beliebige numerische Pfadsegmente
+        // (ARD-/Akamai-Asset-IDs) sind keine Folgennummern und erzeugten sonst
+        // WRONG_CONTENT sogar bei score=1.00.
+        val episodeMatch = if (s.contains("/anime/stream/")) {
+            // aniworld: episode-<id> ist eine interne ID, keine sichtbare
+            // Folgenummer. Die Staffel bleibt aus dem URL-Marker prüfbar.
+            null
+        } else {
+            Regex("folge[-_/]?(\\d{1,3})|episode[-_/]?(\\d{1,3})")
+                .find(s)?.groupValues?.drop(1)?.firstOrNull { it.isNotBlank() }?.toIntOrNull()
+        }
         val sxe = Regex("s(\\d{1,2})e(\\d{1,3})").find(s)?.groupValues?.drop(1)
         val urlSeason = seasonMatch ?: sxe?.getOrNull(0)?.toIntOrNull()
-        val urlEpisode = episodeMatch ?: sxe?.getOrNull(1)?.toIntOrNull()
+        val urlEpisode = if (s.contains("/anime/stream/")) {
+            null
+        } else {
+            episodeMatch ?: sxe?.getOrNull(1)?.toIntOrNull()
+        }
         if (urlSeason != null && urlSeason != season) {
             return "Staffel in der Adresse ist $urlSeason, angefragt $season"
         }
