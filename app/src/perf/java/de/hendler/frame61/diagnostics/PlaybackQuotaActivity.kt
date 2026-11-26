@@ -8,7 +8,7 @@ import android.os.SystemClock
 import android.text.Html
 import android.util.Log
 import android.view.Gravity
-import android.view.PixelCopy
+import android.graphics.PixelCopy
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
