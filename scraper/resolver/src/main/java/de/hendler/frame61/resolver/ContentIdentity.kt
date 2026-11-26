@@ -144,19 +144,43 @@ object ContentIdentity {
     fun similarity(a: String, b: String): Double {
         val ta = normalize(a).split(' ').filter { it.isNotBlank() }.toSet()
         val tb = normalize(b).split(' ').filter { it.isNotBlank() }.toSet()
-        if (ta.isEmpty() || tb.isEmpty()) return 0.0
+        // Titel, die nur aus Artikeln/Rauschtokens bestehen, werden über den
+        // Rohtext verglichen statt pauschal abgelehnt.
+        if (ta.isEmpty() || tb.isEmpty()) {
+            return if (a.trim().lowercase() == b.trim().lowercase()) 1.0 else 0.0
+        }
         if (ta == tb) return 1.0
         val inter = ta.intersect(tb).size
-        return 2.0 * inter / (ta.size + tb.size)
+        val dice = 2.0 * inter / (ta.size + tb.size)
+        // Fortsetzungsziffer („2", „3", „IV") ist ein Inhaltsmerkmal: steht
+        // sie nur auf einer Seite, ist es ein anderer Titel — egal wie ähnlich
+        // der Rest ist. Ohne diese Regel wäre „Man-Eater" gegen „Man-Eater 2"
+        // mit 0,8 ein Treffer.
+        val numbersA = ta.filter { it.all(Char::isDigit) }.toSet()
+        val numbersB = tb.filter { it.all(Char::isDigit) }.toSet()
+        val sequelMismatch = numbersA != numbersB && (numbersA.isNotEmpty() || numbersB.isNotEmpty())
+        return if (sequelMismatch) minOf(dice, 0.5) else dice
     }
 
-    /** Enthält der Rohtitel einen Trailer-Marker? */
+    /**
+     * Enthält der Rohtitel einen Trailer-Marker?
+     *
+     * `trailer`, `teaser`, `vorschau`, `preview`, `ausschnitt` und
+     * `making of` zählen überall. `clip` und `sample` sind dagegen auch
+     * normale Wörter („Ein Clip aus dem Alltag") und zählen nur als
+     * eigenständiges Wort am Anfang/Ende oder in Klammern.
+     */
     fun looksLikeTrailer(raw: String?): Boolean {
         if (raw.isNullOrBlank()) return false
         val s = raw.lowercase()
-        return TRAILER_MARKERS.any { marker ->
-            s.contains(marker) && !s.contains("trailerpark")
-        }
+        if (s.contains("trailerpark")) return false
+        val strong = TRAILER_MARKERS - setOf("clip", "sample")
+        if (strong.any { s.contains(it) }) return true
+        val tokens = s.replace(Regex("[^a-z0-9]+"), " ").trim().split(' ')
+        val edge = tokens.firstOrNull()?.let { it in setOf("clip", "sample") } == true ||
+            tokens.lastOrNull()?.let { it in setOf("clip", "sample") } == true
+        val inParens = Regex("\\(\\s*(clip|sample)\\s*\\)").containsMatchIn(s)
+        return edge || inParens
     }
 
     /**

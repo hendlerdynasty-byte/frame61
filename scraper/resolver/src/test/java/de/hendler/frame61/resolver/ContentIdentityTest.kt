@@ -35,6 +35,10 @@ class ContentIdentityTest {
         )
         assertEquals(
             "man eater 2",
+            ContentIdentity.normalize("Man-Eater 2")
+        )
+        assertEquals(
+            "man eater 2 menschenfresser ist zurueck",
             ContentIdentity.normalize("Man-Eater 2 – Der Menschenfresser ist zurück")
         )
     }
