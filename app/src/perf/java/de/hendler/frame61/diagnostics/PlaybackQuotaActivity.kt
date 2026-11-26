@@ -213,7 +213,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             }
             val detail = sourceData?.first
             val episodes = sourceData?.second.orEmpty()
-            val detailValues = detail?.let {
+            val sourceDetailValues = detail?.let {
                 listOfNotNull(
                     it.description?.takeIf(String::isNotBlank),
                     it.year?.toString(),
@@ -221,7 +221,18 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     it.genres.filter(String::isNotBlank).joinToString(",").takeIf(String::isNotBlank)
                 )
             }.orEmpty()
-            val detailOk = detail != null && detail.title.isNotBlank() && detailValues.isNotEmpty()
+            // Der kanonische Katalog ist für die sichtbare Detailseite führend.
+            // Die live Quellseite kann zusätzliche Felder liefern, darf aber
+            // keine vollständige Abnahme blockieren, wenn der Katalog belegt ist.
+            val catalogDetailValues = listOfNotNull(
+                item.year?.toString(),
+                item.runtime?.toString(),
+                item.overview.takeIf(String::isNotBlank),
+                item.genres.filter(String::isNotBlank).joinToString(",").takeIf(String::isNotBlank)
+            )
+            val detailValues = sourceDetailValues.ifEmpty { catalogDetailValues }
+            val detailOk = detailValues.isNotEmpty() &&
+                (detail?.title?.isNotBlank() ?: item.title.isNotBlank())
             val episodesOk = episodes.isNotEmpty() && episodes.all { it.season > 0 && it.episode > 0 }
             val seasons = episodes.map { it.season }.distinct().sorted()
             val firstEpisode = episodes.minWithOrNull(compareBy({ it.season }, { it.episode }))
