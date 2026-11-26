@@ -1,13 +1,50 @@
 # STATE.md — Frame61 Status
 
-Stand: 25.11.2026 (Release 1.5.0 / VersionCode 6, signiert, Veröffentlichung
-nach Holdout). Quellstand `9d14350` auf `main`. Berichte:
-[CHANGELOG.md](CHANGELOG.md) (Blöcke 7–9 + Messläufe),
-[QUOTA.md](QUOTA.md) (Quote je Lauf), [RELEASE.md](RELEASE.md) (Artefakte),
-[ABSCHLUSS-PHASE-B.md](ABSCHLUSS-PHASE-B.md) / [ABSCHLUSS-TV.md](ABSCHLUSS-TV.md)
-(Historie), [ABSCHLUSS.md](ABSCHLUSS.md).
+Stand: 26.11.2026 (Gate 1 von 1.6.0, Messung durch DNS-Ausfall blockiert).
+Quellstand `39f96d9` auf `main`; letzter grüner CI-Lauf `45788635299` auf
+`c953d3f` (224/224 Tests, Lint 0 Errors / 109 Warnings). Aktueller Bericht:
+[GATE1-RICHTIGKEIT.md](GATE1-RICHTIGKEIT.md). Historie 1.5.0:
+[ABSCHLUSS-1.5.0.md](ABSCHLUSS-1.5.0.md), [RELEASE.md](RELEASE.md).
 
-## Kurzfassung
+## Kurzfassung — Gate 1 (1.6.0)
+
+- **Live bleibt 1.5.0/VC6** (`ee415ab9…` APK, Update-Kanal versionCode 6).
+  Kein neuer Release, kein Play-Store-Upload.
+- **Identitätsprüfung gebaut:** `ContentIdentity` (Titel-Dice ≥0.75, Trailer,
+  Episode, Laufzeit 10/15 %, Fortsetzungsziffern) + `ContentIdentityGate`
+  (Seitentitel-Abruf gecacht); `MirrorCandidate` trägt Quellenangaben.
+- **Beispielvideo entfernt:** `CatalogPlayback` liefert keinen Mux-Demo-Stream
+  mehr; ohne bestätigte Quelle zeigt der Player eine Fehlermeldung.
+- **Overlay:** Titel + Laufzeit dauerhaft im Player, Trailer-Hinweis sichtbar.
+- **Messung erweitert:** Harness schreibt `QUOTA IDENT` je Titel und
+  `QUOTA RIGHT SUMMARY/GROUPEN` (Richtigkeit getrennt von Spielbarkeit).
+- **Baseline (A52, `2382520`, Training Seed 20261122): 2/100 richtig; 11/100
+  gespielt, davon 9 falsch** (`WRONG_CONTENT`, 82 % der Plays). Ursache belegt:
+  ARD-Erst-Treffer-Fallback + alle Packs parallel → fremde ARD/ZDF-Videos für
+  serienstream/aniworld-Titel (`score=0.50`, `*.akamaihd.net`).
+- **Fix (`c953d3f`):** eigene Quellengruppe wird zuerst abgefragt; ARD nimmt
+  nur noch einen Treffer mit passendem Titel (≥0.75). CI grün, Acceptance-APK
+  `8aa1c909…` auf dem A52 installiert (`job-d980de1ac0b34b22` PASS).
+- **Fix-Messung = INFRA_FAIL:** A52-DNS ausgefallen (`UnknownHostException`
+  für google.com/gstatic.com), deshalb 0/100 NO_CANDIDATE — **kein App-Wert**.
+  Die Messung muss wiederholt werden, sobald DNS/WLAN wieder funktioniert.
+- **Nächster Schritt:** DNS-Probe frisch prüfen, dann exakt denselben
+  Trainingslauf mit `c953d3f` fahren (Aktionen:
+  `~/hendler-dynasty/evidence/frame61/1.6.0/gate1b-run/N4-capture.json`), Summary
+  aus den UI-Dumps lesen und gegen Baseline 2/100 ausweisen. Ohne gültige
+  Messung bleibt Gate 1 offen und Gate 2 geschlossen.
+
+## Offen (1.6.0)
+
+- Gate-1-Nachmessung (DNS), dann Entscheidung: Quote <60 % → Gate 1 unerfüllt.
+- Gate 2 Bilder/Katalog: 997 Poster hotlinked, 0/997 Laufzeiten, ARD 148/997
+  = 14,8 % (Ziel ≤20 %); lokale Ablage + Datei-/Ladequote fehlen.
+- Gate 3 Quellen: 19/31 Packs nicht live verifiziert, 7 Hoster + 4 Indexseiten
+  blockiert.
+- Gate 4 Design, Gate 5 TV/Fire TV, Gate 6 Netzpfad-Sessiontest/Perf,
+  Gate 7 Release nur bei Holdout-Richtigkeit ≥95 %.
+
+## Historie 1.5.0 / VC6 (veröffentlicht)
 
 - **Release:** signierter Sideload-Release **1.5.0 / VC6** aus Quellstand
   `9d14350` — APK sha256 `ee415ab9aa0eb09546c3dd8bf0fe40a7660c1c9b32ed5bfc311136055d45e720`
