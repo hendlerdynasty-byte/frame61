@@ -5,6 +5,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import de.hendler.frame61.resolver.HosterOutcome
 import de.hendler.frame61.resolver.HosterPack
 import de.hendler.frame61.resolver.HosterPackValidator
+import de.hendler.frame61.resolver.ContentIdentity
 import de.hendler.frame61.resolver.HosterResolver
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.OkHttpBodyFetcher
@@ -92,10 +93,14 @@ class ArdPlaybackResolver @Inject constructor(
                 it.title.contains(title, ignoreCase = true)
             }
         )
-        // Der Katalog kann einen anderen Titel tragen als der Treffer; dann
-        // zählt der beste Treffer, nicht „keine Quelle“.
-        return ordered.firstOrNull { it.title.contains(title, ignoreCase = true) }
-            ?: ordered.firstOrNull()
+        // Gate 1 (1.6.0): Der frühere Erst-Treffer-Fallback lieferte für
+        // **jeden** Titel irgendein ARD-Item — gemessen am 26.11.2026 spielte
+        // „Zeit Verbrechen" und „McGREGOR FOREVER" ein fremdes ARD/ZDF-Video
+        // (score 0.50, Host akamaihd.net). Ein Treffer zählt nur noch, wenn
+        // sein Titel dem angefragten entspricht (≥ 0,75 nach Normalisierung).
+        return ordered.firstOrNull {
+            ContentIdentity.similarity(title, it.title) >= ContentIdentity.TITLE_THRESHOLD
+        }
     }
 
     private suspend fun toCandidate(

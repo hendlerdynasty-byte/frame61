@@ -386,7 +386,26 @@ class AutoPlaybackResolver @Inject constructor(
                 "disabled=${disabled.sorted()} grace=$graceMs"
         )
 
-        val candidates = collectCandidates(packs, title, episodeNumber, season, sessionId, graceMs)
+        // Gate 1 (1.6.0): Zuerst die **eigene** Quellengruppe des Titels.
+        // Vorher liefen alle Packs parallel, und die schnelle ARD-API gewann
+        // das Rennen um die 600-ms-Frist — gemessen am 26.11.2026 spielten
+        // serienstream-Titel dadurch fremde ARD/ZDF-Videos. Die übrigen Packs
+        // bleiben als zweite Runde, aber nur wenn die eigene Gruppe leer
+        // bleibt (und werden dort ebenfalls identitätsgeprüft).
+        val ownIds = catalogIndex[normalizeTitle(title)]?.group
+            ?.let { PrefetchScope.packsFor(it) }
+            ?.toSet()
+            .orEmpty()
+        val (ownPacks, otherPacks) = if (ownIds.isEmpty()) {
+            emptyList<SourcePack>() to packs
+        } else {
+            packs.partition { it.id in ownIds }
+        }
+        var candidates = collectCandidates(ownPacks, title, episodeNumber, season, sessionId, graceMs)
+        if (candidates.isEmpty() && otherPacks.isNotEmpty()) {
+            Log.i(TAG, "'$title': eigene Gruppe ohne Kandidat, zweite Runde über ${otherPacks.size} Packs")
+            candidates = collectCandidates(otherPacks, title, episodeNumber, season, sessionId, graceMs)
+        }
 
         // Captcha-Quellen sind die letzte Runde und nur im vollständigen
         // Lauf (graceMs == 0). Im schnellen Pfad würden sie den Start um
