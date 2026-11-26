@@ -12,6 +12,7 @@ Der Pfad kommt aus der Kommandozeile und wird vor jedem Zugriff geprueft
 (keine `..`-Segmente, existierendes Verzeichnis, keine Datei-Symlinks).
 """
 import glob
+import html
 import os
 import pathlib
 import re
@@ -52,21 +53,23 @@ def main(run_dir: str, mode: str = "") -> int:
     summary = None
     groups = None
     for text in read_texts(run_dir):
-        for line in re.findall(r"text=\"([^\"]*)\"", text):
-            line = (
-                line.replace("&quot;", '"').replace("&amp;", "&")
-                .replace("&#10;", " ").replace("&lt;", "<").replace("&gt;", ">")
-            )
-            m = RIGHT_SUMMARY.search(line)
-            if m and (not mode or m.group(1) == mode):
-                summary = m.groups()
-            g = RIGHT_GROUP.search(line)
-            if g and (not mode or g.group(1) == mode):
-                groups = g.group(2)
-            for m2 in IDENT.finditer(line):
-                if mode and m2.group(1) != mode:
-                    continue
-                idx = m2.group(2)
+        # UIAutomator steckt den ganzen ScrollView-Text in einzelne text-Attribute;
+        # Entities einmalig auflösen und über den gesamten Text suchen.
+        decoded = html.unescape(" ".join(re.findall(r"text=\"([^\"]*)\"", text)))
+        m = RIGHT_SUMMARY.search(decoded)
+        if m and (not mode or m.group(1) == mode):
+            summary = m.groups()
+        g = RIGHT_GROUP.search(decoded)
+        if g and (not mode or g.group(1) == mode):
+            groups = g.group(2)
+        for m2 in IDENT.finditer(decoded):
+            if mode and m2.group(1) != mode:
+                continue
+            idx = m2.group(2)
+            current = seen.get(idx)
+            # Spätere/vollständigere Dumps gewinnen: gespielt vor nein,
+            # konkrete Identitätsklasse vor "-".
+            if current is None or (m2.group(5), m2.group(6) != "-") >= (current[4], current[5] != "-"):
                 seen[idx] = m2.groups()
 
     if not seen:
