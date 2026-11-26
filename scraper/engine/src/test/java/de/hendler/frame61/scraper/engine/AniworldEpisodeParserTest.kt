@@ -73,7 +73,10 @@ class AniworldEpisodeParserTest {
         server.start()
         try {
             server.enqueue(MockResponse().setResponseCode(200).setBody(html))
-            val page = PackInterpreter(PackHttpClient(OkHttpClient())).episodesWithTitle(pack, "demo")
+            val page = PackInterpreter(PackHttpClient(OkHttpClient())).episodesWithTitle(
+                pack.copy(baseUrl = server.url("/").toString().trimEnd('/')),
+                "demo"
+            )
             assertEquals("Demo Anime", page?.title)
             assertEquals(2022, page?.year)
             assertEquals(5, page?.episodes?.size)
