@@ -17,12 +17,11 @@ import de.hendler.frame61.player.PlayerUiState
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.CaptchaBroker
 import de.hendler.frame61.playback.CaptchaRequest
-import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.playback.PrefetchController
-import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.resolver.ContentIdentityGate
 import de.hendler.frame61.resolver.IdentityRequest
 import de.hendler.frame61.resolver.IdentityKind
+import de.hendler.frame61.ui.evidence.TitleVisibility
 import de.hendler.frame61.resolver.MirrorCandidate
 import de.hendler.frame61.resolver.PlaybackWatchdog
 import de.hendler.frame61.resolver.hostOf
@@ -71,6 +70,7 @@ class PlayerViewModel @Inject constructor(
     private val prefetchController: PrefetchController,
     private val captchaBroker: CaptchaBroker,
     private val streamEvidenceRepository: StreamEvidenceRepository,
+    private val titleVisibility: TitleVisibility,
     prefs: ProfileDataStore
 ) : AndroidViewModel(application) {
 
@@ -451,12 +451,8 @@ class PlayerViewModel @Inject constructor(
                     streamEvidenceRepository.record(
                         StreamEvidence(
                             catalogId = titleId,
-                            season = if (titleType.equals("movie", ignoreCase = true)) 0 else season,
-                            episode = if (titleType.equals("movie", ignoreCase = true)) {
-                                0
-                            } else {
-                                EpisodeSelection.effectiveNumber(titleType, episodeNumber)
-                            },
+                            season = titleVisibility.evidenceCoordinates(titleType, season, episodeNumber).first,
+                            episode = titleVisibility.evidenceCoordinates(titleType, season, episodeNumber).second,
                             sourceId = candidate.sourceId,
                             sourceKey = candidate.sourceId,
                             checkedAt = System.currentTimeMillis(),
