@@ -2,6 +2,19 @@
 
 ## [Unreleased]
 
+### Schritt 2 — Persistente Stream-Nachweise (26.11.2026)
+
+#### Hinzugefügt
+- Room-Datenmodell für Titel-/Episoden-Stream-Nachweise mit Outcome
+  `CORRECT`, `WRONG_CONTENT`, `TRAILER_ONLY` und `UNPLAYABLE`; stabile Upserts
+  je Katalog, Staffel, Folge und Quelle. Gespeichert werden nur Metadaten sowie
+  ein SHA-256-Hash der redigierten URL, keine URLs, Tokens, Cookies oder Header.
+- Additive Room-Migration **2 → 3** ohne Eingriff in bestehende Tabellen sowie
+  DAO, Hilt-Binding und daten-only `StreamEvidenceRepository`. Noch keine
+  UI-/Resolver-Verdrahtung.
+- Repository-Unit-Tests und ein ohne Gradle ausführbarer SQLite-Test für
+  Migration, Datenverlusterhalt, Upsert, Episode-Trennung und Outcome-Filter.
+
 ### 1.5.0 — Blöcke 7–9, DEVIDEOSRC-Kette, Quoten-Messung (25.11.2026)
 
 #### Hinzugefügt

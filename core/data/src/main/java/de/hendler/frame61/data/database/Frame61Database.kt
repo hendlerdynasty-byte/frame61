@@ -9,6 +9,7 @@ import de.hendler.frame61.data.database.entities.Mirror
 import de.hendler.frame61.data.database.entities.PlaybackState
 import de.hendler.frame61.data.database.entities.Profile
 import de.hendler.frame61.data.database.entities.RecVector
+import de.hendler.frame61.data.database.entities.StreamEvidence
 import de.hendler.frame61.data.database.entities.Title
 
 @Database(
@@ -18,9 +19,10 @@ import de.hendler.frame61.data.database.entities.Title
         Episode::class,
         PlaybackState::class,
         Profile::class,
-        RecVector::class
+        RecVector::class,
+        StreamEvidence::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 abstract class Frame61Database : RoomDatabase() {
@@ -31,6 +33,7 @@ abstract class Frame61Database : RoomDatabase() {
     abstract fun playbackStateDao(): PlaybackStateDao
     abstract fun profileDao(): ProfileDao
     abstract fun recVectorDao(): RecVectorDao
+    abstract fun streamEvidenceDao(): StreamEvidenceDao
 
     companion object {
         const val DATABASE_NAME = "frame61.db"
@@ -48,6 +51,13 @@ abstract class Frame61Database : RoomDatabase() {
                         "index_playback_states_profileId_titleId_episodeId " +
                         "ON playback_states (profileId, titleId, episodeId)"
                 )
+            }
+        }
+
+        /** Additive: creates stream evidence and leaves every version-2 table untouched. */
+        val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                StreamEvidenceMigration.STATEMENTS.forEach(db::execSQL)
             }
         }
     }

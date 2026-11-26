@@ -16,7 +16,10 @@ class DatabaseProvider @Inject constructor(
             Frame61Database::class.java,
             Frame61Database.DATABASE_NAME
         )
-            .addMigrations(Frame61Database.MIGRATION_1_2)
+            .addMigrations(
+                Frame61Database.MIGRATION_1_2,
+                Frame61Database.MIGRATION_2_3
+            )
             .build()
     }
 }

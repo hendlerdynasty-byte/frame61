@@ -38,4 +38,7 @@ object DatabaseModule {
 
     @Provides
     fun provideRecVectorDao(db: Frame61Database) = db.recVectorDao()
+
+    @Provides
+    fun provideStreamEvidenceDao(db: Frame61Database) = db.streamEvidenceDao()
 }
