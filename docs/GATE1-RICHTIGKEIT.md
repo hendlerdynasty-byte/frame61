@@ -132,6 +132,36 @@ Nächster Schritt: DNS-Probe frisch prüfen (Android-Netzwerkmonitor), dann
 denselben Trainingslauf mit `c953d3f` fahren und die Quote gegen die Baseline
 2/100 ausweisen. Erst diese Messung entscheidet, ob Gate 1 erfüllt ist.
 
+### Schritt 0 — gültige Nachmessung nach DNS-Erholung (26.11.2026, 11:11–11:35)
+
+Frische Netzprobe: A52 HTTP 200 von `voe.sx` in 134 ms; kein
+`UnknownHostException` im Messfenster. Acceptance-Build `c953d3f` (APK
+`8aa1c909…`) blieb installiert. Trainingslauf Seed `20261122`, 100 Titel:
+
+| Kennzahl | Baseline `2382520` | Fix `c953d3f` | Delta |
+|---|---:|---:|---:|
+| Richtigkeitsquote | **2/100** | **20/100** | **+18 pp** |
+| Gespielt | 11/100 | 26/100 | +15 |
+| Falsch gespielt | 9 | 6 | −3 |
+| Auflösung p50 / p95 | nicht berichtsfähig | 3287 / 27173 ms | — |
+| Erstes Bild p50 / p95 | nicht berichtsfähig | 11581 / 29370 ms | — |
+
+Rohbeleg: `~/hendler-dynasty/evidence/frame61/1.6.0/step0/measure-polls/latest.xml`
+(`QUOTA RIGHT SUMMARY … richtig=20/100 … gespielt=26/100 falsch=[WRONG_CONTENT:6]`).
+
+**Ergebnis je Quellengruppe:** aniworld 16/19 richtig (84 %), ard 2/10,
+serienstream 1/43, bsto 1/6, filmpalast 0/11, moflix 0/11. Die verbleibenden
+sechs Falschwiedergaben liegen in ard (3) und serienstream (3); aniworld hat
+in dieser Stichprobe **keine** Falschwiedergabe. Die drei aniworld-Fehler sind
+`EMBED_UNRESOLVED` bei Beautiful Bones, Watari-kun und Hal.
+
+**Gate-Entscheidung:** Die Gesamtquote liegt unter 60 %, aber der belegte Fix
+hat sie von 2 % auf 20 % angehoben und die Falschwiedergaben reduziert. Die
+weitere Arbeit ist daher nicht „Breite reparieren", sondern der vom Owner
+vorgegebene **Tiefenpfad aniworld**: 16/19 als Startbasis, Ziel 20/20 mit
+lokalen Bildern, gefüllter Detailseite und Staffel/Folgenwahl. Die übrigen
+Gruppen bleiben sichtbar unerfüllt; sie werden nicht als grün berichtet.
+
 ## Fehlerverteilung
 
 ### Verteilung laut Harness-Summary
