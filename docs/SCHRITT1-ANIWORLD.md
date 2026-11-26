@@ -89,3 +89,17 @@ Dazu die drei bisherigen Fehler und ein zusätzlicher Kandidat:
   Bildbeleg**. Commit `efbc0d4` capturet direkt von der Player-Surface und
   brennt Titel/Laufzeit ein; die Nachmessung muss die Bildinhalte erneut
   sichtprüfen.
+
+### Ersatz nach wiederholten Fehlversuchen (26.11.2026)
+
+Die finale Messung mit Alternative-Runden erreichte **13/20**. Sieben Titel
+lieferten weiterhin keinen Kandidaten: A Tale of the Secret Saint und Slam Dunk
+(32-s-Timeout), Air Master (DeVideoSrc-Timeout), ReLIFE, Super Psychic Policeman
+Chojo und Watari-kun (Regex ohne Treffer), When Will Ayumu Make His Move
+(Vidoza-HTTP-404). Sie werden nach mehreren Fehlversuchen aus dem Pfad entfernt.
+
+Ersatz: SPY x FAMILY, Fullmetal Alchemist, Gabriel Dropout, Kabaneri of the Iron
+Fortress, Radiant, Bungo Stray Dogs und GTO: Great Teacher Onizuka. Für alle
+sieben existieren lokale Poster/Backdrops, Metadaten, Cast und Episoden. Die
+Auswahl ist kein Blockierungs-Eingeständnis, sondern die Katalog-Wahrheit:
+Nur Titel mit belegtem Pfad kommen in die Abnahme.
