@@ -1,9 +1,15 @@
 package de.hendler.frame61.diagnostics
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
 import android.os.SystemClock
+import android.text.Html
 import android.util.Log
+import android.view.Gravity
+import android.view.PixelCopy
+import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -18,6 +24,8 @@ import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.playback.AutoPlaybackResolver
 import de.hendler.frame61.playback.InterceptionLog
 import de.hendler.frame61.player.Media3Frame61Player
+import de.hendler.frame61.scraper.engine.PackInterpreter
+import de.hendler.frame61.scraper.engine.PackLoader
 import de.hendler.frame61.resolver.ContentIdentityGate
 import de.hendler.frame61.resolver.IdentityRequest
 import de.hendler.frame61.resolver.MirrorCandidate
@@ -29,9 +37,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import org.json.JSONObject
+import kotlin.coroutines.resume
 
 private const val MODE_TRAIN = "train"
 private const val MODE_HOLDOUT = "holdout"
@@ -58,14 +68,18 @@ private const val MODE_HOLDOUT = "holdout"
 open class PlaybackQuotaActivity : ComponentActivity() {
 
     @Inject lateinit var autoResolver: AutoPlaybackResolver
+    @Inject lateinit var packLoader: PackLoader
+    @Inject lateinit var interpreter: PackInterpreter
 
     private lateinit var engine: Media3Frame61Player
     private lateinit var playerView: PlayerView
     private lateinit var playerContainer: FrameLayout
+    private lateinit var playbackOverlay: TextView
     private lateinit var statusView: TextView
     private lateinit var scroll: ScrollView
     private var quotaJob: Job? = null
     private var renderedEngine = ""
+    private var pathMode = false
     /**
      * Gate 1 (1.6.0): Identitätsprüfung je gespieltem Kandidaten. Der Lauf
      * zählt weiter „spielbar" (Reihe 1–11 bleibt vergleichbar) **und**
@@ -77,6 +91,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        pathMode = sampleMode() == MODE_ANIWORLD20
         engine = Media3Frame61Player(this)
         playerView = PlayerView(this).apply {
             useController = false
@@ -88,6 +103,13 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             setPadding(16, 16, 16, 16)
         }
         playerContainer = FrameLayout(this)
+        playbackOverlay = TextView(this).apply {
+            textSize = 18f
+            setTextColor(Color.WHITE)
+            setBackgroundColor(Color.argb(210, 0, 0, 0))
+            setPadding(20, 14, 20, 14)
+            visibility = if (pathMode) View.VISIBLE else View.GONE
+        }
         scroll = ScrollView(this).apply { addView(statusView) }
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
@@ -110,13 +132,303 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 runQuota()
             } catch (error: Throwable) {
                 Log.e(TAG, "QUOTA FATAL", error)
-                report("QUOTA FATAL ${error.javaClass.simpleName}: ${error.message}")
+                if (pathMode) {
+                    reportPathSummary(false, 0, "FATAL:${error.javaClass.simpleName}:${error.message}")
+                } else {
+                    report("QUOTA FATAL ${error.javaClass.simpleName}: ${error.message}")
+                }
             }
         }
     }
 
+    /** Fixed 20-title Aniworld path acceptance; never falls back to another source. */
+    private suspend fun runAniworldPathAcceptance() {
+        logFile = File(
+            getExternalFilesDir(PATH_OUTPUT_DIR),
+            "logs/path-${System.currentTimeMillis()}.txt"
+        ).also { it.parentFile?.mkdirs() }
+        val manifestJson = runCatching {
+            assets.open(PATH_MANIFEST_ASSET).bufferedReader().use { it.readText() }
+        }.getOrNull()
+        val catalogJson = runCatching {
+            assets.open("catalog/catalog.json").bufferedReader().use { it.readText() }
+        }.getOrNull()
+        val validation = if (manifestJson != null && catalogJson != null) {
+            PathCatalogValidator.validate(manifestJson, catalogJson)
+        } else {
+            PathCatalogValidator.Report(
+                sourceId = PathCatalogValidator.SOURCE_ID,
+                ids = emptyList(),
+                issues = listOf(
+                    PathCatalogValidator.Issue(
+                        "PATH_ASSET_MISSING",
+                        null,
+                        if (manifestJson == null) PATH_MANIFEST_ASSET else "catalog/catalog.json"
+                    )
+                )
+            )
+        }
+        report(
+            "PATH START mode=$MODE_ANIWORLD20 manifest=$PATH_MANIFEST_ASSET " +
+                "ids=${validation.ids.size} expected=${PathCatalogValidator.EXPECTED_COUNT} " +
+                "datei=${logFile?.absolutePath}"
+        )
+        if (!validation.isValid) {
+            report(
+                "PATH PANEL_INVALID " + validation.issues.joinToString(" | ") {
+                    "${it.code}:${it.id ?: "-"}:${it.message.compact()}"
+                }
+            )
+            reportPathSummary(false, 0, "PANEL_INVALID")
+            return
+        }
+
+        val pack = withContext(Dispatchers.IO) {
+            packLoader.loadAllPacks().firstOrNull { it.id == PathCatalogValidator.SOURCE_ID }
+        }
+        if (pack == null) {
+            report("PATH PANEL_INVALID sourceId=${PathCatalogValidator.SOURCE_ID} grund=Pack_fehlt")
+            reportPathSummary(false, 0, "PACK_MISSING")
+            return
+        }
+        val items = loadCatalog().associateBy { it.id }
+        var passed = 0
+        validation.ids.forEachIndexed { index, id ->
+            val item = items.getValue(id)
+            val title = decodeCatalogTitle(item.title)
+            val slug = item.sourceKey ?: id.removePrefix(PathCatalogValidator.ID_PREFIX)
+            val artworkAsset = localArtwork(id)
+            val sourceData = withTimeoutOrNull(PATH_SOURCE_BUDGET_MS) {
+                withContext(Dispatchers.IO) {
+                    val detail = runCatching { interpreter.detail(pack, slug) }.getOrNull()
+                    val episodes = runCatching { interpreter.episodes(pack, slug) }.getOrDefault(emptyList())
+                    detail to episodes
+                }
+            }
+            val detail = sourceData?.first
+            val episodes = sourceData?.second.orEmpty()
+            val detailValues = detail?.let {
+                listOfNotNull(
+                    it.description?.takeIf(String::isNotBlank),
+                    it.year?.toString(),
+                    it.runtime?.toString(),
+                    it.genres.filter(String::isNotBlank).joinToString(",").takeIf(String::isNotBlank)
+                )
+            }.orEmpty()
+            val detailOk = detail != null && detail.title.isNotBlank() && detailValues.isNotEmpty()
+            val episodesOk = episodes.isNotEmpty() && episodes.all { it.season > 0 && it.episode > 0 }
+            val seasons = episodes.map { it.season }.distinct().sorted()
+            val firstEpisode = episodes.minWithOrNull(compareBy({ it.season }, { it.episode }))
+            val panelValid = artworkAsset != null && detailOk && episodesOk && firstEpisode != null
+
+            var resolveStatus = "NOT_RUN"
+            var identityKind = "-"
+            var identityScore = 0.0
+            var firstFrameStatus = "NOT_RUN"
+            var firstFrameMs = 0L
+            var playbackStatus = "NOT_RUN"
+            var positionMs = 0L
+            var durationMs = 0L
+            var screenshotStatus = "NOT_RUN"
+            var screenshotPath = "-"
+            var cause = when {
+                artworkAsset == null -> "LOCAL_ARTWORK_MISSING"
+                !detailOk -> "DETAIL_FIELDS_EMPTY"
+                !episodesOk -> "EPISODES_OR_SEASONS_EMPTY"
+                else -> "-"
+            }
+
+            if (panelValid) {
+                val episode = checkNotNull(firstEpisode)
+                val sessionId = PlaybackDiagnostics.beginSession(title, episode.episode)
+                try {
+                    val resolved = withTimeoutOrNull(PATH_RESOLVE_BUDGET_MS) {
+                        autoResolver.resolveFast(
+                            title = title,
+                            episodeNumber = episode.episode,
+                            season = episode.season,
+                            sessionId = sessionId,
+                            fresh = true
+                        )
+                    }.orEmpty()
+                    val aniworldCandidates = resolved.filter {
+                        it.sourceId == PathCatalogValidator.SOURCE_ID
+                    }
+                    resolveStatus = if (aniworldCandidates.isNotEmpty()) "PASS" else "FAIL"
+                    val identityRequest = IdentityRequest(
+                        title = title,
+                        year = detail?.year ?: item.year,
+                        type = item.type,
+                        season = episode.season,
+                        episode = episode.episode,
+                        runtimeMin = detail?.runtime ?: item.runtime
+                    )
+                    val verified = identityGate.verify(identityRequest, aniworldCandidates.take(MAX_CANDIDATES))
+                    val correct = verified.firstOrNull { it.verdict.kind.name == "CORRECT" }
+                    val judged = correct ?: verified.firstOrNull()
+                    identityKind = judged?.verdict?.kind?.name ?: "UNKNOWN"
+                    identityScore = judged?.verdict?.score ?: 0.0
+                    if (correct == null) {
+                        cause = "PANEL_INVALID:${identityKind}"
+                    } else {
+                        val attempt = playPathCandidate(correct.candidate, title)
+                        firstFrameStatus = if (attempt.firstFrameMs > 0L) "PASS" else "FAIL"
+                        firstFrameMs = attempt.firstFrameMs
+                        playbackStatus = if (attempt.ok) "PASS" else "FAIL"
+                        positionMs = attempt.positionMs
+                        durationMs = attempt.durationMs
+                        if (attempt.ok) {
+                            val screenshot = File(
+                                getExternalFilesDir(PATH_OUTPUT_DIR),
+                                "screenshots/${index + 1}-${safeFileName(id)}.png"
+                            ).also { it.parentFile?.mkdirs() }
+                            screenshotPath = screenshot.absolutePath
+                            report(
+                                "PATH SCREENSHOT_CUE idx=${index + 1}/${validation.ids.size} " +
+                                    "id=$id datei=$screenshotPath"
+                            )
+                            screenshotStatus = if (capturePathScreenshot(screenshot)) "PASS" else "FAIL"
+                        }
+                        if (!attempt.ok) cause = attempt.error ?: "FIRST_FRAME_OR_PROGRESS_MISSING"
+                        if (screenshotStatus == "FAIL") cause = "SCREENSHOT_FAILED"
+                    }
+                } finally {
+                    engine.stop()
+                    PlaybackDiagnostics.endSession(sessionId)
+                }
+            }
+
+            val titlePassed = panelValid && resolveStatus == "PASS" &&
+                identityKind == "CORRECT" && firstFrameStatus == "PASS" &&
+                playbackStatus == "PASS" && screenshotStatus == "PASS"
+            if (titlePassed) passed++
+            report(
+                "PATH idx=${index + 1}/${validation.ids.size} id=$id title=${title.sanitize()} " +
+                    "catalog=PASS artwork=${if (artworkAsset != null) "PASS" else "FAIL"} " +
+                    "asset=${artworkAsset ?: "-"} detail=${if (detailOk) "PASS" else "FAIL"} " +
+                    "detailFields=${detailValues.size} episodes=${if (episodesOk) "PASS" else "FAIL"} " +
+                    "episodeCount=${episodes.size} seasons=${seasons.joinToString(",").ifBlank { "-" }} " +
+                    "resolve=$resolveStatus sourceId=${PathCatalogValidator.SOURCE_ID} " +
+                    "identity=$identityKind score=${String.format(java.util.Locale.ROOT, "%.2f", identityScore)} " +
+                    "firstFrame=$firstFrameStatus firstFrameMs=$firstFrameMs playback=$playbackStatus " +
+                    "positionMs=$positionMs durationMs=$durationMs screenshot=$screenshotStatus " +
+                    "screenshotFile=$screenshotPath result=${if (titlePassed) "PASS" else "FAIL"} " +
+                    "panel=${if (identityKind == "CORRECT") "VALID" else "INVALID"} cause=$cause"
+            )
+            scroll.post { scroll.fullScroll(ScrollView.FOCUS_DOWN) }
+        }
+        reportPathSummary(passed == validation.ids.size, passed, "-")
+    }
+
+    private fun reportPathSummary(pass: Boolean, passed: Int, cause: String) {
+        report(
+            "PATH SUMMARY ${if (pass) "PASS" else "FAIL"} passed=$passed/" +
+                "${PathCatalogValidator.EXPECTED_COUNT} sourceId=${PathCatalogValidator.SOURCE_ID} " +
+                "output=${getExternalFilesDir(PATH_OUTPUT_DIR)?.absolutePath} cause=$cause"
+        )
+        Log.i(TAG, "PATH DONE datei=${logFile?.absolutePath}")
+    }
+
+    private suspend fun playPathCandidate(mirror: MirrorCandidate, title: String): PathPlaybackAttempt {
+        val started = SystemClock.elapsedRealtime()
+        var firstPosition = -1L
+        engine.open(mirror.url, requestHeaders = mirror.requestHeaders, cookies = mirror.cookies)
+        repeat(PATH_PLAYBACK_POLLS) {
+            delay(PATH_PLAYBACK_POLL_MS)
+            engine.publish()
+            val state = engine.state.value
+            renderEngine(state.engine)
+            playbackOverlay.text = "$title · ${formatRuntime(state.positionMs)} / ${formatRuntime(state.durationMs)}"
+            if (state.error != null) {
+                return PathPlaybackAttempt(false, 0L, state.positionMs, state.durationMs, state.error)
+            }
+            if (state.isReady && state.positionMs > 0L) {
+                if (firstPosition < 0L) {
+                    firstPosition = state.positionMs
+                } else if (state.positionMs > firstPosition) {
+                    return PathPlaybackAttempt(
+                        true,
+                        SystemClock.elapsedRealtime() - started,
+                        state.positionMs,
+                        state.durationMs,
+                        null
+                    )
+                }
+            }
+        }
+        val state = engine.state.value
+        return PathPlaybackAttempt(
+            false,
+            if (firstPosition >= 0L) SystemClock.elapsedRealtime() - started else 0L,
+            state.positionMs,
+            state.durationMs,
+            state.error ?: engine.lastPrimaryErrorName ?: "NO_GROWING_POSITION"
+        )
+    }
+
+    private fun localArtwork(id: String): String? {
+        val slug = id.removePrefix(PathCatalogValidator.ID_PREFIX)
+        for (extension in PATH_ARTWORK_EXTENSIONS) {
+            val path = "$PATH_ARTWORK_DIR/$slug.$extension"
+            val decoded = runCatching {
+                assets.open(path).use { stream ->
+                    val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                    BitmapFactory.decodeStream(stream, null, bounds)
+                    if (bounds.outWidth <= 0 || bounds.outHeight <= 0) error("Bildgrenzen ungültig")
+                }
+                assets.open(path).use { stream ->
+                    BitmapFactory.decodeStream(stream) ?: error("Bild nicht dekodierbar")
+                }
+            }.getOrNull()
+            if (decoded != null) {
+                decoded.recycle()
+                return path
+            }
+        }
+        return null
+    }
+
+    private suspend fun capturePathScreenshot(file: File): Boolean {
+        val decor = window.decorView
+        if (decor.width <= 0 || decor.height <= 0) return false
+        val bitmap = Bitmap.createBitmap(decor.width, decor.height, Bitmap.Config.ARGB_8888)
+        val copied = suspendCancellableCoroutine<Boolean> { continuation ->
+            PixelCopy.request(window, bitmap) { result ->
+                if (continuation.isActive) continuation.resume(result == PixelCopy.SUCCESS)
+            }
+        }
+        if (!copied) {
+            bitmap.recycle()
+            return false
+        }
+        return try {
+            withContext(Dispatchers.IO) {
+                file.outputStream().use { output ->
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, output)
+                }
+            }
+        } finally {
+            bitmap.recycle()
+        }
+    }
+
+    private fun decodeCatalogTitle(raw: String): String =
+        Html.fromHtml(raw, Html.FROM_HTML_MODE_LEGACY).toString().trim().ifBlank { raw }
+
+    private fun formatRuntime(positionMs: Long): String {
+        val seconds = (positionMs.coerceAtLeast(0L) / 1_000L).toInt()
+        return "%d:%02d".format(java.util.Locale.ROOT, seconds / 60, seconds % 60)
+    }
+
+    private fun safeFileName(raw: String): String =
+        raw.replace(Regex("[^a-z0-9._-]"), "_")
+
     private suspend fun runQuota() {
         val mode = sampleMode()
+        if (mode == MODE_ANIWORLD20) {
+            runAniworldPathAcceptance()
+            return
+        }
         val seed = if (mode == MODE_HOLDOUT) HOLDOUT_SEED else TRAIN_SEED
         val items = loadCatalog()
         if (items.isEmpty()) {
@@ -207,6 +519,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     fastTried += 1
                     fastHosts += host(mirror.url)
                     failedUrls += mirror.url
+                    mirror.streamUrl?.let { failedUrls += it }
                     val watchHost = mirror.streamUrl?.let { hostOf(it) }.orEmpty()
                     if (watchHost.isNotEmpty()) failedHosts += watchHost
                     lastSourceId = mirror.sourceId
@@ -267,6 +580,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     tried += 1
                     triedHosts += host(mirror.url)
                     failedUrls += mirror.url
+                    mirror.streamUrl?.let { failedUrls += it }
                     val watchHost = mirror.streamUrl?.let { hostOf(it) }.orEmpty()
                     if (watchHost.isNotEmpty()) failedHosts += watchHost
                     lastSourceId = mirror.sourceId
@@ -552,7 +866,8 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 type = entry.optString("type"),
                 group = entry.optString("group").ifBlank { "unbekannt" },
                 year = entry.optInt("year", 0).takeIf { it > 0 },
-                runtime = entry.optInt("runtime", 0).takeIf { it > 0 }
+                runtime = entry.optInt("runtime", 0).takeIf { it > 0 },
+                sourceKey = entry.optString("sourceKey").takeIf { it.isNotBlank() }
             )
         }
     }
@@ -599,6 +914,14 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
         )
+        playerContainer.addView(
+            playbackOverlay,
+            FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                Gravity.TOP or Gravity.START
+            )
+        )
     }
 
     private fun percentile(sorted: List<Long>, p: Int): Long {
@@ -621,14 +944,33 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         /** Gate 1: Jahresangabe für die Identitätsprüfung, wenn der Katalog sie hat. */
         val year: Int? = null,
         /** Gate 1: Laufzeit in Minuten, wenn der Katalog sie hat. */
-        val runtime: Int? = null
+        val runtime: Int? = null,
+        /** Adresse innerhalb der Quellengruppe, z. B. der Aniworld-Slug. */
+        val sourceKey: String? = null
     )
 
     private data class Attempt(val firstFrameMs: Long?, val errorClass: String?)
 
+    private data class PathPlaybackAttempt(
+        val ok: Boolean,
+        val firstFrameMs: Long,
+        val positionMs: Long,
+        val durationMs: Long,
+        val error: String?
+    )
+
     private companion object {
         const val TAG = "Frame61Quota"
         const val EXTRA_SAMPLE = "sample"
+        const val MODE_ANIWORLD20 = "aniworld20"
+        const val PATH_MANIFEST_ASSET = "catalog/aniworld-path.json"
+        const val PATH_OUTPUT_DIR = "path-acceptance"
+        const val PATH_ARTWORK_DIR = "path-acceptance/aniworld"
+        val PATH_ARTWORK_EXTENSIONS = listOf("jpg", "png", "webp")
+        const val PATH_SOURCE_BUDGET_MS = 20_000L
+        const val PATH_RESOLVE_BUDGET_MS = 70_000L
+        const val PATH_PLAYBACK_POLL_MS = 250L
+        const val PATH_PLAYBACK_POLLS = 48
         const val SAMPLE_SIZE = 100
         const val TRAIN_SEED = 20261122L
         const val HOLDOUT_SEED = 20261123L

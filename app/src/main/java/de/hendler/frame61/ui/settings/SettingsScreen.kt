@@ -255,6 +255,21 @@ fun SettingsScreen(
                 },
                 modifier = Modifier.tvFocusable(id = "playback-quota-holdout", onClick = {})
             ) { Text(text = "Titel-Quote Holdout") }
+            val startAniworldPathAcceptance = {
+                context.startActivity(
+                    Intent(
+                        context,
+                        Class.forName("de.hendler.frame61.diagnostics.PlaybackQuotaActivity")
+                    ).putExtra("sample", "aniworld20")
+                )
+            }
+            OutlinedButton(
+                onClick = startAniworldPathAcceptance,
+                modifier = Modifier.tvFocusable(
+                    id = "aniworld-path-acceptance",
+                    onClick = startAniworldPathAcceptance
+                )
+            ) { Text(text = "Aniworld 20-Titel-Abnahme") }
         }
         Text(
             text = "Aktive Quellen (${state.sources.count { it.id !in state.disabledSources }} " +
