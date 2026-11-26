@@ -19,6 +19,7 @@ import de.hendler.frame61.playback.CaptchaBroker
 import de.hendler.frame61.playback.CaptchaRequest
 import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.playback.PrefetchController
+import de.hendler.frame61.playback.EpisodeSelection
 import de.hendler.frame61.resolver.ContentIdentityGate
 import de.hendler.frame61.resolver.IdentityRequest
 import de.hendler.frame61.resolver.IdentityKind
@@ -98,6 +99,7 @@ class PlayerViewModel @Inject constructor(
     private var profileId: Long = 0L
     private var titleId: String = ""
     private var titleName: String = ""
+    private var titleType: String = "movie"
     private var episodeId: Long = 0L
     private var episodeNumber: Int = 0
     private var season: Int = 1
@@ -168,6 +170,7 @@ class PlayerViewModel @Inject constructor(
         this.profileId = profileId
         this.titleId = titleId
         this.titleName = title
+        this.titleType = type
         this.episodeId = episodeId
         this.episodeNumber = episodeNumber
         this.season = season
@@ -448,8 +451,12 @@ class PlayerViewModel @Inject constructor(
                     streamEvidenceRepository.record(
                         StreamEvidence(
                             catalogId = titleId,
-                            season = season,
-                            episode = episodeNumber,
+                            season = if (titleType.equals("movie", ignoreCase = true)) 0 else season,
+                            episode = if (titleType.equals("movie", ignoreCase = true)) {
+                                0
+                            } else {
+                                EpisodeSelection.effectiveNumber(titleType, episodeNumber)
+                            },
                             sourceId = candidate.sourceId,
                             sourceKey = candidate.sourceId,
                             checkedAt = System.currentTimeMillis(),
