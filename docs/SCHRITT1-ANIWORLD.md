@@ -77,3 +77,15 @@ Dazu die drei bisherigen Fehler und ein zusätzlicher Kandidat:
 - Fix `dc8c417`: direkter `sourceKey`, Titel + Episoden aus einem Quellrequest.
   Nachmessung folgt; die 10/20 sind kein abgeschlossenes Gate.
 - Rohbelege: `~/hendler-dynasty/evidence/frame61/1.6.0/step1/aniworld20/polls2/latest.xml`.
+
+### Zweite Messung und Sichtprüfung
+
+- Direkter `sourceKey` verbesserte den Pfad auf **12/20**; verbleibende Fehler
+  waren Hoster-Timeouts/Regex-/HTTP-Fehler sowie ein Kandidat ohne erstes Bild.
+- Der Harness nutzte zunächst nur den ersten Kandidaten. Commit `c2bc5af`
+  bildet jetzt bis zu drei Kandidaten und zwei Alternative-Runden nach.
+- Die ersten 14 lokalen Screenshots waren per D-Pad-Betrachter abrufbar, aber
+  die Sichtprüfung zeigte schwarze Videoflächen. Das ist **kein gültiger
+  Bildbeleg**. Commit `efbc0d4` capturet direkt von der Player-Surface und
+  brennt Titel/Laufzeit ein; die Nachmessung muss die Bildinhalte erneut
+  sichtprüfen.
