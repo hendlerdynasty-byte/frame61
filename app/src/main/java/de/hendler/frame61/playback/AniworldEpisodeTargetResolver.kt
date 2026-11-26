@@ -19,7 +19,7 @@ internal data class AniworldResolution(
 )
 
 /** Austauschbarer HTTP-Zugang, damit die Zielregel ohne Netzwerk testbar ist. */
-internal fun interface AniworldEpisodeAccess {
+internal interface AniworldEpisodeAccess {
     suspend fun search(pack: SourcePack, title: String, cookies: String?): List<SearchResult>
     suspend fun episodes(pack: SourcePack, titleId: String, cookies: String?): List<EpisodeResult>
     suspend fun streams(
@@ -53,8 +53,9 @@ private class InterpreterAniworldAccess(private val interpreter: PackInterpreter
  * Episodenliste liefert die interne ID und die tatsächliche Staffel.
  */
 internal class AniworldEpisodeTargetResolver(
-    private val access: AniworldEpisodeAccess = InterpreterAniworldAccess(PackInterpreter())
+    private val access: AniworldEpisodeAccess
 ) {
+    constructor(interpreter: PackInterpreter) : this(InterpreterAniworldAccess(interpreter))
     suspend fun resolve(
         pack: SourcePack,
         item: CatalogItem?,
