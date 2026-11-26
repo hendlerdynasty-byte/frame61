@@ -486,7 +486,7 @@ class AutoPlaybackResolver @Inject constructor(
         // bs.to braucht länger: Challenge + Klick + Medienabruf laufen in der
         // versteckten WebView. Mit dem Standardbudget wäre die Quelle immer
         // abgeschnitten — genau der Fehler, der die Quote gedrückt hat.
-        val budget = if (pack.id == BS_TO_PACK_ID) BS_TO_TIMEOUT_MS else SOURCE_TIMEOUT_MS
+        val budget = sourceBudget(pack)
         val result = runCatching {
             withTimeoutOrNull(budget) {
                 resolvePack(pack, title, episodeNumber, season, sessionId)
@@ -604,7 +604,7 @@ class AutoPlaybackResolver @Inject constructor(
             }.getOrNull() ?: return emptyList()
             val webBudget = WebViewBudget.of(
                 attempts = WEBVIEW_ATTEMPTS_PER_TITLE,
-                deadlineMs = System.currentTimeMillis() + WEBVIEW_BUDGET_MS
+                deadlineMs = System.currentTimeMillis() + sourceBudget(pack)
             )
             return resolveStreams(
                 pack, target.hit, target.streams, episode, season, sessionId, webBudget, target
@@ -1092,6 +1092,9 @@ class AutoPlaybackResolver @Inject constructor(
          * Hoster-Schritt **beide** umfassen.
          */
         private const val SOURCE_TIMEOUT_MS = 32_000L
+        // AniWorld lädt Episodenseite, Redirects und Hoster in einer Kette.
+        // 32 s schnitten wiederholt kurz vor dem letzten Hoster ab.
+        private const val ANIWORLD_TIMEOUT_MS = 50_000L
 
         /** Budget für bs.to (Challenge + Klick + Medienabruf in der WebView). */
         private const val BS_TO_TIMEOUT_MS = 34_000L
