@@ -2,6 +2,8 @@ package de.hendler.frame61.diagnostics
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Canvas
+import android.graphics.Paint
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +14,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.PixelCopy
 import android.view.View
+import android.view.SurfaceView
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -315,7 +318,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                                 "PATH SCREENSHOT_CUE idx=${index + 1}/${validation.ids.size} " +
                                     "id=$id datei=$screenshotPath"
                             )
-                            screenshotStatus = if (capturePathScreenshot(screenshot)) "PASS" else "FAIL"
+                            screenshotStatus = if (capturePathScreenshot(screenshot, title, attempt.positionMs, attempt.durationMs)) "PASS" else "FAIL"
                         }
                         if (!attempt.ok) cause = attempt.error ?: "FIRST_FRAME_OR_PROGRESS_MISSING"
                         if (screenshotStatus == "FAIL") cause = "SCREENSHOT_FAILED"
@@ -441,18 +444,56 @@ open class PlaybackQuotaActivity : ComponentActivity() {
         return null
     }
 
-    private suspend fun capturePathScreenshot(file: File): Boolean {
-        val decor = window.decorView
-        if (decor.width <= 0 || decor.height <= 0) return false
-        val bitmap = Bitmap.createBitmap(decor.width, decor.height, Bitmap.Config.ARGB_8888)
-        val copied = suspendCancellableCoroutine<Boolean> { continuation ->
-            PixelCopy.request(window, bitmap, { result ->
-                if (continuation.isActive) continuation.resume(result == PixelCopy.SUCCESS)
-            }, Handler(Looper.getMainLooper()))
+    private suspend fun capturePathScreenshot(
+        file: File,
+        title: String,
+        positionMs: Long,
+        durationMs: Long
+    ): Boolean {
+        // PixelCopy vom Fenster liefert bei SurfaceView auf diesem A52 eine
+        // schwarze Videofläche. Deshalb direkt von der Player-Surface lesen.
+        val surfaceView = playerView.videoSurfaceView as? SurfaceView
+            ?: fallbackView as? SurfaceView
+        val surface = surfaceView?.holder?.surface
+        val width = surfaceView?.width?.takeIf { it > 0 } ?: playerContainer.width
+        val height = surfaceView?.height?.takeIf { it > 0 } ?: playerContainer.height
+        if (width <= 0 || height <= 0) return false
+        val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        val handler = Handler(Looper.getMainLooper())
+        val copied = if (surface != null && surface.isValid) {
+            suspendCancellableCoroutine<Boolean> { continuation ->
+                PixelCopy.request(surface, bitmap, { result ->
+                    if (continuation.isActive) continuation.resume(result == PixelCopy.SUCCESS)
+                }, handler)
+            }
+        } else {
+            suspendCancellableCoroutine<Boolean> { continuation ->
+                PixelCopy.request(window, bitmap, { result ->
+                    if (continuation.isActive) continuation.resume(result == PixelCopy.SUCCESS)
+                }, handler)
+            }
         }
         if (!copied) {
             bitmap.recycle()
             return false
+        }
+        if (surface != null && surface.isValid) {
+            // Titel und Laufzeit gehören zum Beleg dazu, nicht nur in die
+            // zugrunde liegende Activity gerendert.
+            val canvas = Canvas(bitmap)
+            val background = Paint().apply { color = 0xCC000000.toInt() }
+            val text = Paint().apply {
+                color = 0xFFFFFFFF.toInt()
+                textSize = 34f
+                isAntiAlias = true
+            }
+            canvas.drawRect(0f, 0f, width.toFloat(), 86f, background)
+            canvas.drawText(
+                "$title · ${formatRuntime(positionMs)} / ${formatRuntime(durationMs)}",
+                24f,
+                58f,
+                text
+            )
         }
         return try {
             withContext(Dispatchers.IO) {
