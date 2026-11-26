@@ -1,7 +1,7 @@
 # STATE.md — Frame61 Status
 
-Stand: 26.11.2026 (Gate 1 von 1.6.0, Messung durch DNS-Ausfall blockiert).
-Quellstand `39f96d9` auf `main`; letzter grüner CI-Lauf `45788635299` auf
+Stand: 26.11.2026 (Schritt 0 abgeschlossen, Schritt 1 aniworld läuft).
+Quellstand `565712b` auf `main`; letzter grüner CI-Lauf `45788635299` auf
 `c953d3f` (224/224 Tests, Lint 0 Errors / 109 Warnings). Aktueller Bericht:
 [GATE1-RICHTIGKEIT.md](GATE1-RICHTIGKEIT.md). Historie 1.5.0:
 [ABSCHLUSS-1.5.0.md](ABSCHLUSS-1.5.0.md), [RELEASE.md](RELEASE.md).
@@ -25,14 +25,15 @@ Quellstand `39f96d9` auf `main`; letzter grüner CI-Lauf `45788635299` auf
 - **Fix (`c953d3f`):** eigene Quellengruppe wird zuerst abgefragt; ARD nimmt
   nur noch einen Treffer mit passendem Titel (≥0.75). CI grün, Acceptance-APK
   `8aa1c909…` auf dem A52 installiert (`job-d980de1ac0b34b22` PASS).
-- **Fix-Messung = INFRA_FAIL:** A52-DNS ausgefallen (`UnknownHostException`
-  für google.com/gstatic.com), deshalb 0/100 NO_CANDIDATE — **kein App-Wert**.
-  Die Messung muss wiederholt werden, sobald DNS/WLAN wieder funktioniert.
-- **Nächster Schritt:** DNS-Probe frisch prüfen, dann exakt denselben
-  Trainingslauf mit `c953d3f` fahren (Aktionen:
-  `~/hendler-dynasty/evidence/frame61/1.6.0/gate1b-run/N4-capture.json`), Summary
-  aus den UI-Dumps lesen und gegen Baseline 2/100 ausweisen. Ohne gültige
-  Messung bleibt Gate 1 offen und Gate 2 geschlossen.
+- **Schritt 0 gültig gemessen (26.11.2026):** Nach DNS-Erholung (HTTP 200
+  vom A52) lief `c953d3f` auf derselben Trainingsstichprobe: **20/100 richtig**
+  vs. Baseline 2/100 (**+18 pp**), 26/100 gespielt, 6 falsch. aniworld ist die
+  stärkste Gruppe: **16/19 richtig (84 %)**, keine Falschwiedergabe; ard 2/10,
+  serienstream 1/43, bsto 1/6, filmpalast/moflix 0. Rohbelege:
+  `~/hendler-dynasty/evidence/frame61/1.6.0/step0/measure-polls/latest.xml`.
+- **Schritt 1 gestartet:** aniworld als Tiefenpfad — Ziel 20/20 richtig, alle
+  mit lokalen Bildern, gefüllter Detailseite und Staffel/Folgenwahl. Die drei
+  bisherigen Fehler: Beautiful Bones, Watari-kun, Hal (`EMBED_UNRESOLVED`).
 
 ## Offen (1.6.0)
 
