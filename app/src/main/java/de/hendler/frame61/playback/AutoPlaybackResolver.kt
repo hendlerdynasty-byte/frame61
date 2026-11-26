@@ -475,6 +475,12 @@ class AutoPlaybackResolver @Inject constructor(
     private fun ttlFor(mirrors: List<MirrorCandidate>): Long =
         PlaybackCachePolicy.ttlMs(mirrors.size)
 
+    private fun sourceBudget(pack: SourcePack): Long = when (pack.id) {
+        BS_TO_PACK_ID -> BS_TO_TIMEOUT_MS
+        AniworldEpisodeTargetResolver.ANIWORLD_PACK_ID -> ANIWORLD_TIMEOUT_MS
+        else -> SOURCE_TIMEOUT_MS
+    }
+
     private suspend fun resolveWithTimeout(
         pack: SourcePack,
         title: String,
