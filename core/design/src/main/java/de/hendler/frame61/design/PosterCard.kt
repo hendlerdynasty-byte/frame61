@@ -76,7 +76,17 @@ fun PosterCard(
                 }
             )
             .clip(shape)
-            .background(skin.colors.surface)
+            // Markanter Lade-/Fehlergrund statt grauer Kachel. Lokale Poster
+            // liegen vollständig darüber; schlägt eine Bildquelle fehl, bleibt
+            // dieser gestaltete Zustand sichtbar statt „Nichts".
+            .background(
+                Brush.linearGradient(
+                    listOf(
+                        skin.colors.primary.copy(alpha = 0.35f),
+                        skin.colors.surface
+                    )
+                )
+            )
     ) {
         val url = posterUrl.orEmpty()
         if (url.isNotBlank()) {
@@ -85,19 +95,6 @@ fun PosterCard(
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.fillMaxSize()
-            )
-        } else {
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(
-                        Brush.linearGradient(
-                            listOf(
-                                skin.colors.primary.copy(alpha = 0.35f),
-                                skin.colors.surface
-                            )
-                        )
-                    )
             )
         }
 
