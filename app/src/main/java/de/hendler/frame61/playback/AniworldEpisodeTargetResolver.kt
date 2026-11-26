@@ -1,6 +1,7 @@
 package de.hendler.frame61.playback
 
 import de.hendler.frame61.meta.CatalogItem
+import de.hendler.frame61.net.PlaybackDiagnostics
 import de.hendler.frame61.resolver.ContentIdentity
 import de.hendler.frame61.scraper.engine.EpisodePage
 import de.hendler.frame61.scraper.engine.EpisodeResult
@@ -65,23 +66,26 @@ internal class AniworldEpisodeTargetResolver(
         number: Int,
         cookies: String? = null
     ): AniworldResolution? {
-        if (pack.id != ANIWORLD_PACK_ID || season <= 0 || number <= 0) return null
+        if (pack.id != ANIWORLD_PACK_ID || season <= 0 || number <= 0) {
+            return fail("Pack oder Episodenadresse ungültig")
+        }
         val directTitleId = item
             ?.takeIf { it.group == ANIWORLD_GROUP }
             ?.sourceKey
             ?.let(::validTitleId)
         val title = item?.title?.trim().orEmpty()
         val selectedHit = if (directTitleId == null) {
-            if (title.isBlank()) return null
-            selectHit(access.search(pack, title, cookies), title, item?.year) ?: return null
+            if (title.isBlank()) return fail("Titel fehlt")
+            selectHit(access.search(pack, title, cookies), title, item?.year)
+                ?: return fail("kein exakter Suchtreffer")
         } else {
             null
         }
         val titleId = directTitleId ?: selectedHit?.id?.trim().orEmpty()
-        if (titleId.isBlank()) return null
-        val page = access.episodePage(pack, titleId, cookies) ?: return null
+        if (titleId.isBlank()) return fail("sourceKey fehlt")
+        val page = access.episodePage(pack, titleId, cookies) ?: return fail("Episodenseite nicht lesbar")
         val sourceTitle = page.title?.trim().orEmpty()
-        if (sourceTitle.isBlank()) return null
+        if (sourceTitle.isBlank()) return fail("Quellentitel fehlt")
         val hit = SearchResult(
             id = titleId,
             title = sourceTitle,
@@ -93,22 +97,40 @@ internal class AniworldEpisodeTargetResolver(
             page.episodes.map { EpisodeTarget(it.id, it.season, it.episode) },
             season,
             number
-        ) ?: return null
+        ) ?: return fail("Staffel/Folge nicht gefunden")
         val sourceEpisode = page.episodes.singleOrNull {
             it.id == selected.id && it.season == selected.season && it.episode == selected.number
-        } ?: return null
+        } ?: return fail("Episodenzeile nicht eindeutig")
         val internalId = sourceEpisode.id.removePrefix("episode-").trim()
-        if (internalId.isBlank() || internalId.startsWith("episode-")) return null
+        if (internalId.isBlank() || internalId.startsWith("episode-")) return fail("interne ID ungültig")
         val watchUrl = sourceEpisode.watchUrl?.trim().orEmpty()
-        if (!matchesStreamTarget(pack, titleId, internalId, season, watchUrl)) return null
+        if (!matchesStreamTarget(pack, titleId, internalId, season, watchUrl)) {
+            return fail("Watch-Adresse passt nicht zum Stream-Ziel")
+        }
 
         val streams = access.streams(pack, titleId, internalId, cookies, season)
+        PlaybackDiagnostics.record(
+            "RESOLVER",
+            "aniworld Ziel bestätigt",
+            details = mapOf(
+                "sourceKey" to titleId,
+                "staffel" to season.toString(),
+                "folge" to number.toString(),
+                "interneId" to internalId,
+                "streams" to streams.size.toString()
+            )
+        )
         return AniworldResolution(
             hit = hit,
             episode = sourceEpisode.copy(id = internalId),
             watchUrl = watchUrl,
             streams = streams
         )
+    }
+
+    private fun fail(reason: String): AniworldResolution? {
+        PlaybackDiagnostics.record("RESOLVER", "aniworld Ziel abgelehnt: $reason")
+        return null
     }
 
     private fun selectHit(

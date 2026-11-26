@@ -239,6 +239,8 @@ open class PlaybackQuotaActivity : ComponentActivity() {
             val panelValid = catalogPanel.isValid && detailOk && episodesOk && firstEpisode != null
 
             var resolveStatus = "NOT_RUN"
+            var candidateCount = 0
+            var resolverCause = "-"
             var identityKind = "-"
             var identityScore = 0.0
             var firstFrameStatus = "NOT_RUN"
@@ -278,7 +280,9 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     val aniworldCandidates = resolved.filter {
                         it.sourceId == PathCatalogValidator.SOURCE_ID
                     }
+                    candidateCount = resolved.size
                     resolveStatus = if (aniworldCandidates.isNotEmpty()) "PASS" else "FAIL"
+                    resolverCause = lastResolverCause(PlaybackDiagnostics.events.value)
                     val identityRequest = IdentityRequest(
                         title = title,
                         year = item.year,
@@ -293,7 +297,7 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     identityKind = judged?.verdict?.kind?.name ?: "UNKNOWN"
                     identityScore = judged?.verdict?.score ?: 0.0
                     if (correct == null) {
-                        cause = "PANEL_INVALID:${identityKind}"
+                        cause = "PANEL_INVALID:${identityKind}:${resolverCause}"
                     } else {
                         val attempt = playPathCandidate(correct.candidate, title)
                         firstFrameStatus = if (attempt.firstFrameMs > 0L) "PASS" else "FAIL"
@@ -337,7 +341,8 @@ open class PlaybackQuotaActivity : ComponentActivity() {
                     "asset=${comparisonArtwork ?: "-"} detail=${if (detailOk) "PASS" else "FAIL"} " +
                     "detailFields=${detailValues.size} episodes=${if (episodesOk) "PASS" else "FAIL"} " +
                     "episodeCount=${episodes.size} seasons=${seasons.joinToString(",").ifBlank { "-" }} " +
-                    "resolve=$resolveStatus sourceId=${PathCatalogValidator.SOURCE_ID} " +
+                    "resolve=$resolveStatus candidates=$candidateCount " +
+                    "resolverCause=${resolverCause.sanitize()} sourceId=${PathCatalogValidator.SOURCE_ID} " +
                     "identity=$identityKind score=${String.format(java.util.Locale.ROOT, "%.2f", identityScore)} " +
                     "firstFrame=$firstFrameStatus firstFrameMs=$firstFrameMs playback=$playbackStatus " +
                     "positionMs=$positionMs durationMs=$durationMs screenshot=$screenshotStatus " +
